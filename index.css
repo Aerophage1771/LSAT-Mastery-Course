@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom slate shades used by the app (from original CDN config) */
+  --color-slate-850: #151f32;
+  --color-slate-900: #0f172a;
+}
+
+/* Custom scrollbar for sidebar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
