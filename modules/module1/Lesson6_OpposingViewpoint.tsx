@@ -4,13 +4,14 @@ export const Lesson6_OpposingViewpoint: Lesson = {
   id: "1-6",
   title: "Lesson 3: The Opposing Viewpoint",
   content: [
-    { type: 'h2', text: 'The Opposing Viewpoint (PT-129-S-2-Q-13)' },
+    { type: 'h2', text: 'The Opposing Viewpoint' },
     { type: 'h3', text: 'Concept Focus: The Opposing Viewpoint' },
     { type: 'paragraph', text: "Many arguments are constructed as a direct response to another viewpoint. In these cases, the author's main goal is to challenge or refute a position held by someone else. This introduces a critical role: the **Opposing Viewpoint**, also known as the **Target of the Argument**. This role appears in about **8% of Argument Part questions**." },
     { type: 'paragraph', text: "Arguments that feature an opposing viewpoint almost always follow a predictable \"rebuttal\" structure. Look for two key signals: **Attribution** (*\"Some people argue that...\"*) followed by **The Pivot** (*\"**But** this is mistaken\"*)." },
     { type: 'hr' },
     { type: 'h3', text: 'Worked Example' },
-    { type: 'blockquote', text: "Administrators of educational institutions are enthusiastic about the educational use of computers because they believe that it will enable schools to teach far more courses with far fewer teachers than traditional methods allow. Many teachers fear computers for the same reason. But this reason is mistaken. Computerized instruction requires more, not less, time of instructors, which indicates that any reduction in the number of teachers would require an accompanying reduction in courses offered." },
+    { type: 'accordion', title: 'Question · PT-129-S-2-Q-13', content: [
+      { type: 'blockquote', text: "Administrators of educational institutions are enthusiastic about the educational use of computers because they believe that it will enable schools to teach far more courses with far fewer teachers than traditional methods allow. Many teachers fear computers for the same reason. But this reason is mistaken. Computerized instruction requires more, not less, time of instructors, which indicates that any reduction in the number of teachers would require an accompanying reduction in courses offered." },
     { type: 'paragraph', text: "**Question:** The statement that the educational use of computers enables schools to teach far more courses with far fewer teachers figures in the argument in which one of the following ways?" },
     { type: 'options', items: [
       "(A) It is presented as a possible explanation for an observation that follows it.",
@@ -18,6 +19,7 @@ export const Lesson6_OpposingViewpoint: Lesson = {
       "(C) It is a statement that the argument is designed to refute.",
       "(D) It is a statement offered in support of the argument’s main conclusion.",
       "(E) It is the argument’s main conclusion."
+    ]}
     ]},
     { type: 'hr' },
     { type: 'h3', text: 'Analysis' },

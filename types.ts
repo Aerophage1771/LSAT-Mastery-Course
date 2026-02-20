@@ -30,6 +30,7 @@ export interface Lesson {
   id: string;
   title: string;
   content: string | ContentBlock[]; // Markdown content OR structured blocks
+  formatId?: number; // 1–10: apply lesson format theme when set (e.g. Module 100)
 }
 
 export interface ModuleData {
@@ -44,4 +45,20 @@ export interface ModuleData {
 export interface CourseState {
   activeModuleId: number;
   activeLessonId: string | null;
+}
+
+// QuestionCard (full question block for macro formats)
+export type ChoiceLetter = 'A' | 'B' | 'C' | 'D' | 'E';
+
+export interface QuestionCardChoice {
+  letter: ChoiceLetter;
+  text: string;
+}
+
+export interface QuestionCardQuestion {
+  id: string;
+  stimulus: string;
+  stem: string;
+  choices: QuestionCardChoice[];
+  correctAnswer?: ChoiceLetter;
 }

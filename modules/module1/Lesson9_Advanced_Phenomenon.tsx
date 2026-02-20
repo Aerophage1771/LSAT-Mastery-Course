@@ -4,13 +4,14 @@ export const Lesson9_Advanced_Phenomenon: Lesson = {
   id: "1-9",
   title: "Advanced Lesson: The Phenomenon",
   content: [
-    { type: 'h2', text: 'Advanced Lesson 2: The Phenomenon to be Explained (PT-131-S-2-Q-7)' },
+    { type: 'h2', text: 'Advanced Lesson 2: The Phenomenon to be Explained' },
     { type: 'h3', text: 'Concept Focus: The Phenomenon to be Explained' },
     { type: 'paragraph', text: "Some arguments don't set out to prove a new fact. Instead, they start with an accepted fact, observation, or puzzle and then debate its *cause*. The initial fact isn't a premise; it frames the discussion. It's the \"what\" that the rest of the argument is trying to explain the \"why\" of." },
     { type: 'paragraph', text: "This role is often signaled by introductory language like *\"It has been noted that...\"* or *\"Scientists have discovered that...\"* The rest of the argument will focus on causality." },
     { type: 'hr' },
     { type: 'h3', text: 'Worked Example' },
-    { type: 'blockquote', text: "**Columnist:** It has been noted that attending a live musical performance is a richer experience than is listening to recorded music. Some say that this is merely because we do not see the performers when we listen to recorded music. However, there must be some other reason, for there is relatively little difference between listening to someone read a story over the radio and listening to someone in the same room read a story." },
+    { type: 'accordion', title: 'Question · PT-131-S-2-Q-7', content: [
+      { type: 'blockquote', text: "**Columnist:** It has been noted that attending a live musical performance is a richer experience than is listening to recorded music. Some say that this is merely because we do not see the performers when we listen to recorded music. However, there must be some other reason, for there is relatively little difference between listening to someone read a story over the radio and listening to someone in the same room read a story." },
     { type: 'paragraph', text: "**Question:** Which one of the following most accurately expresses the role played in the argument by the observation that attending a live musical performance is a richer experience than is listening to recorded music?" },
     { type: 'options', items: [
       "(A) It is what the columnist’s argument purports to show.",
@@ -18,6 +19,7 @@ export const Lesson9_Advanced_Phenomenon: Lesson = {
       "(C) It is what the columnist’s argument purports to explain.",
       "(D) It is what the columnist’s argument purports to refute.",
       "(E) It is what the position that the columnist tries to undermine is purported to explain."
+    ]}
     ]},
     { type: 'hr' },
     { type: 'h3', text: 'Analysis' },

@@ -59,13 +59,6 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
       units: [
         { name: "Unit 14: Advanced Passages", description: "Explore complex themes in philosophy, science, and law." }
       ]
-    },
-    {
-      title: "Resources",
-      description: "Additional materials for practice and review.",
-      units: [
-        { name: "Unit 15: Resources", description: "A repository of all Logical Reasoning and Reading Comprehension questions used in the course for practice and review." }
-      ]
     }
   ];
 

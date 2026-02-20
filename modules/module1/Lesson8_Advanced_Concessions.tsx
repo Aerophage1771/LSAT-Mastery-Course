@@ -4,13 +4,14 @@ export const Lesson8_Advanced_Concessions: Lesson = {
   id: "1-8",
   title: "Advanced Lesson: Concessions",
   content: [
-    { type: 'h2', text: 'Advanced Lesson 1: Concessions (PT-131-S-2-Q-18)' },
+    { type: 'h2', text: 'Advanced Lesson 1: Concessions' },
     { type: 'h3', text: 'Concept Focus: The Concession' },
     { type: 'paragraph', text: "A **Concession** is a statement that acknowledges a fact or point that seems to contradict or run counter to the author's main argument. The author grants this point as true before pivoting to show why it doesn't actually weaken their overall conclusion. It's a strategic move to show the author is being reasonable." },
     { type: 'paragraph', text: "They are almost always flagged with indicators like *\"**Although**...\"*, *\"**While it is true that**...\"*, or *\"**Despite**...\"*, followed by a pivot word like *\"but\"* or *\"yet\"*." },
     { type: 'hr' },
     { type: 'h3', text: 'Worked Example' },
-    { type: 'blockquote', text: "Contrary to Malthus’s arguments, human food-producing capacity has increased more rapidly than human population. Yet, agricultural advances often compromise biological diversity. Therefore, Malthus’s prediction that insufficient food will doom humanity to war, pestilence, and famine will likely be proven correct in the future, because a lack of biodiversity will eventually erode our capacity to produce food." },
+    { type: 'accordion', title: 'Question · PT-131-S-2-Q-18', content: [
+      { type: 'blockquote', text: "Contrary to Malthus’s arguments, human food-producing capacity has increased more rapidly than human population. Yet, agricultural advances often compromise biological diversity. Therefore, Malthus’s prediction that insufficient food will doom humanity to war, pestilence, and famine will likely be proven correct in the future, because a lack of biodiversity will eventually erode our capacity to produce food." },
     { type: 'paragraph', text: "**Question:** The statement that human food-producing capacity has increased more rapidly than human population plays which one of the following roles in the argument?" },
     { type: 'options', items: [
       "(A) It is a hypothesis the argument provides reasons for believing to be presently false.",
@@ -18,6 +19,7 @@ export const Lesson8_Advanced_Concessions: Lesson = {
       "(C) It is an observation that the argument suggests actually supports Malthus’s position.",
       "(D) It is a general fact that the argument offers reason to believe will eventually change.",
       "(E) It is a hypothesis that, according to the argument, is accepted on the basis of inadequate evidence."
+    ]}
     ]},
     { type: 'hr' },
     { type: 'h3', text: 'Analysis' },

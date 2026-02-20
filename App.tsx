@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Layout } from './components/Layout';
 import { LessonViewer } from './components/LessonViewer';
+import FormatShowcaseLesson from './components/FormatShowcaseLesson';
 import { Dashboard } from './components/Dashboard';
+import { QuestionBankView } from './components/QuestionBankView';
 import { ModuleData } from './types';
 
 // Import all modules
@@ -52,7 +54,6 @@ import { Module44 } from './modules/Module44';
 import { Module45 } from './modules/Module45';
 import { Module46 } from './modules/Module46';
 import { Module47 } from './modules/Module47';
-import { Module48 } from './modules/Module48';
 import { Module49 } from './modules/Module49';
 import { Module50 } from './modules/Module50';
 import { Module51 } from './modules/Module51';
@@ -64,6 +65,9 @@ import { Module56 } from './modules/Module56';
 import { Module57 } from './modules/Module57';
 import { Module58 } from './modules/Module58';
 import { Module59 } from './modules/Module59';
+import { Module100 } from './modules/Module100';
+import questionBankLR from './data/questionBankLR.json';
+import type { QuestionBankLRData } from './components/QuestionBankView';
 
 // Registry of modules
 const modules: ModuleData[] = [
@@ -86,44 +90,63 @@ const modules: ModuleData[] = [
   Module50, Module51, Module52, Module54, Module56,
   Module57, Module58,
 
-  // Resources
-  Module48, Module49, Module53
+  // Format showcase (same content, 10 typography/spacing themes)
+  Module100,
+
+  // Question Bank (48, 49, 53) is a separate top-level view, not in curriculum
 ];
 
+// LR from data/questionBankLR.json (TSV). RC from repo modules 49, 52, 53.
+const questionBankSourceModules: ModuleData[] = [Module49, Module52, Module53];
+const allModulesForViewing: ModuleData[] = [...modules, ...questionBankSourceModules];
+
+export type ActiveView = 'dashboard' | 'questionBank' | 'lesson';
+
 const App: React.FC = () => {
-  // activeModuleId is null when on the Dashboard
+  const [activeView, setActiveView] = useState<ActiveView>('dashboard');
   const [activeModuleId, setActiveModuleId] = useState<number | null>(null);
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
 
-  const activeModule = activeModuleId !== null 
-    ? modules.find(m => m.id === activeModuleId) 
+  const activeModule = activeModuleId !== null
+    ? allModulesForViewing.find(m => m.id === activeModuleId)
     : undefined;
-  
-  // Find the specific lesson content if a module is active
-  const activeLesson = activeModule 
-    ? (activeModule.lessons.find(l => l.id === activeLessonId) || activeModule.lessons[0]) 
+
+  const activeLesson = activeModule
+    ? (activeModule.lessons.find(l => l.id === activeLessonId) || activeModule.lessons[0])
     : undefined;
-    
-  // Calculate Previous and Next Lessons
+
   const currentLessonIndex = activeModule && activeLesson
     ? activeModule.lessons.findIndex(l => l.id === activeLesson.id)
     : -1;
-    
+
   const previousLesson = currentLessonIndex > 0 ? activeModule?.lessons[currentLessonIndex - 1] : undefined;
   const nextLesson = (activeModule && currentLessonIndex < activeModule.lessons.length - 1) ? activeModule.lessons[currentLessonIndex + 1] : undefined;
 
   const handleModuleSelect = (id: number) => {
+    setActiveView('lesson');
     setActiveModuleId(id);
-    const mod = modules.find(m => m.id === id);
+    const mod = allModulesForViewing.find(m => m.id === id);
     if (mod && mod.lessons.length > 0) {
-      // Automatically select first lesson when entering a module
       setActiveLessonId(mod.lessons[0].id);
     }
   };
 
   const handleGoHome = () => {
+    setActiveView('dashboard');
     setActiveModuleId(null);
     setActiveLessonId(null);
+  };
+
+  const handleGoToQuestionBank = () => {
+    setActiveView('questionBank');
+    setActiveModuleId(null);
+    setActiveLessonId(null);
+  };
+
+  const handleGoToLesson = (moduleId: number, lessonId: string) => {
+    setActiveView('lesson');
+    setActiveModuleId(moduleId);
+    setActiveLessonId(lessonId);
   };
 
   return (
@@ -131,11 +154,13 @@ const App: React.FC = () => {
       modules={modules}
       activeModuleId={activeModuleId}
       activeLessonId={activeLessonId}
+      activeView={activeView}
       onSelectModule={handleModuleSelect}
       onSelectLesson={setActiveLessonId}
       onGoHome={handleGoHome}
+      onGoToQuestionBank={handleGoToQuestionBank}
       lessonNav={
-        activeModuleId !== null && activeLesson
+        activeView === 'lesson' && activeModuleId !== null && activeLesson
           ? {
               onPrevious: previousLesson ? () => setActiveLessonId(previousLesson.id) : undefined,
               onNext: nextLesson ? () => setActiveLessonId(nextLesson.id) : undefined,
@@ -146,15 +171,29 @@ const App: React.FC = () => {
           : undefined
       }
     >
-      {activeModuleId === null ? (
+      {activeView === 'dashboard' && (
         <Dashboard modules={modules} onSelectModule={handleModuleSelect} />
-      ) : (
-        activeLesson ? (
-          <LessonViewer
-            key={activeLesson.id}
-            title={activeLesson.title}
-            content={activeLesson.content}
-          />
+      )}
+      {activeView === 'questionBank' && (
+        <QuestionBankView
+          onGoToLesson={handleGoToLesson}
+          curriculumModules={modules}
+          questionBankModules={questionBankSourceModules}
+          lrData={questionBankLR as QuestionBankLRData}
+        />
+      )}
+      {activeView === 'lesson' && (
+        activeModuleId !== null && activeLesson ? (
+          activeModuleId === 100 && activeLesson.id === '100-1' ? (
+            <FormatShowcaseLesson key="format-showcase" />
+          ) : (
+            <LessonViewer
+              key={activeLesson.id}
+              title={activeLesson.title}
+              content={activeLesson.content}
+              formatId={activeLesson.formatId}
+            />
+          )
         ) : (
           <div className="flex items-center justify-center h-full text-slate-400">
             No lesson selected

@@ -5,6 +5,7 @@ import { BookOpen, CheckCircle, Circle, Menu, X, ChevronRight, LayoutGrid, Downl
 import { generateCourseText, generateCourseRTF, generateCourseJSON, generateCourseCSV, generateCoursePDF } from '../utils/export';
 import { ExportControls } from './ExportControls';
 import { LessonViewer } from './LessonViewer';
+import { ContentBoxShowcase } from './ContentBoxShowcase';
 
 interface LessonNav {
   onPrevious?: () => void;
@@ -18,9 +19,11 @@ interface LayoutProps {
   modules: ModuleData[];
   activeModuleId: number | null;
   activeLessonId: string | null;
+  activeView?: 'dashboard' | 'questionBank' | 'lesson';
   onSelectModule: (id: number) => void;
   onSelectLesson: (id: string) => void;
   onGoHome: () => void;
+  onGoToQuestionBank?: () => void;
   lessonNav?: LessonNav | null;
   children: React.ReactNode;
 }
@@ -212,19 +215,21 @@ Please provide the content in clear, structured text as follows:
 
 
 export const Layout: React.FC<LayoutProps> = ({
-  modules, 
-  activeModuleId, 
-  activeLessonId, 
-  onSelectModule, 
+  modules,
+  activeModuleId,
+  activeLessonId,
+  activeView = 'dashboard',
+  onSelectModule,
   onSelectLesson,
   onGoHome,
+  onGoToQuestionBank,
   lessonNav,
-  children 
+  children
 }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [exportModalOpen, setExportModalOpen] = useState(false);
   const [styleGuideOpen, setStyleGuideOpen] = useState(false);
-  const [styleGuideTab, setStyleGuideTab] = useState<'components' | 'structure' | 'drills' | 'passages'>('components');
+  const [styleGuideTab, setStyleGuideTab] = useState<'components' | 'structure' | 'drills' | 'passages' | 'contentbox'>('components');
   const activeLessonRef = useRef<HTMLButtonElement | null>(null);
   const mainRef = useRef<HTMLElement | null>(null);
 
@@ -312,10 +317,15 @@ export const Layout: React.FC<LayoutProps> = ({
         </div>
         <div className="flex-1 overflow-y-auto scrollbar-hide">
           <div className="p-4 space-y-6">
-            <div>
-              <button onClick={() => { onGoHome(); setSidebarOpen(false); }} className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg transition-all duration-200 ${activeModuleId === null ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-900/50' : 'hover:bg-slate-800 text-slate-400 hover:text-slate-100'}`}>
+            <div className="space-y-1">
+              <button onClick={() => { onGoHome(); setSidebarOpen(false); }} className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg transition-all duration-200 ${activeView === 'dashboard' ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-900/50' : 'hover:bg-slate-800 text-slate-400 hover:text-slate-100'}`}>
                 <LayoutGrid size={18} /><span className="font-medium">Course Dashboard</span>
               </button>
+              {onGoToQuestionBank && (
+                <button onClick={() => { onGoToQuestionBank(); setSidebarOpen(false); }} className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg transition-all duration-200 ${activeView === 'questionBank' ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-900/50' : 'hover:bg-slate-800 text-slate-400 hover:text-slate-100'}`}>
+                  <BookOpen size={18} /><span className="font-medium">Question Bank</span>
+                </button>
+              )}
             </div>
             <div>
               <div className="space-y-1">
@@ -324,13 +334,11 @@ export const Layout: React.FC<LayoutProps> = ({
                   const isLRStart = module.id === 1;
                   const isRCStart = module.id === 21;
                   const isAdvancedStart = module.id === 50;
-                  const isResourceStart = module.id === 48;
                   return (
                     <React.Fragment key={module.id}>
                       {isLRStart && <h3 className="px-3 mt-2 mb-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Logical Reasoning</h3>}
                       {isRCStart && <h3 className="px-3 mt-6 mb-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Reading Comprehension</h3>}
                       {isAdvancedStart && <h3 className="px-3 mt-6 mb-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Advanced Passages</h3>}
-                      {isResourceStart && <h3 className="px-3 mt-6 mb-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Resources</h3>}
                       <div className="mb-1">
                         <button onClick={() => { onSelectModule(module.id); }} className={`w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 flex items-center justify-between group ${isActive ? 'bg-slate-800 text-white shadow-md' : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'}`}>
                           <span className="flex-1 truncate pr-2"><span className="opacity-50 mr-2">{module.id}.</span>{module.title}</span>
@@ -367,7 +375,10 @@ export const Layout: React.FC<LayoutProps> = ({
           <div className="flex items-center gap-4">
             <div className="flex items-center text-sm breadcrumbs text-slate-500">
               <button onClick={onGoHome} className="hover:text-indigo-600 transition-colors font-medium">Dashboard</button>
-              {activeModuleData && (
+              {activeView === 'questionBank' && (
+                <><ChevronRight size={14} className="mx-2 text-slate-300" /><span className="font-semibold text-slate-800">Question Bank</span></>
+              )}
+              {activeModuleData && activeView === 'lesson' && (
                 <><ChevronRight size={14} className="mx-2 text-slate-300" /><span className="font-semibold text-slate-800">Module {activeModuleData.id}: {activeModuleData.title}</span></>
               )}
             </div>
@@ -424,26 +435,31 @@ export const Layout: React.FC<LayoutProps> = ({
                       <button onClick={() => setStyleGuideTab('structure')} className={`px-4 py-1.5 text-xs font-bold rounded-md transition-all ${styleGuideTab === 'structure' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Structure</button>
                       <button onClick={() => setStyleGuideTab('drills')} className={`px-4 py-1.5 text-xs font-bold rounded-md transition-all ${styleGuideTab === 'drills' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Drill Format</button>
                       <button onClick={() => setStyleGuideTab('passages')} className={`px-4 py-1.5 text-xs font-bold rounded-md transition-all ${styleGuideTab === 'passages' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Passage Format</button>
+                      <button onClick={() => setStyleGuideTab('contentbox')} className={`px-4 py-1.5 text-xs font-bold rounded-md transition-all ${styleGuideTab === 'contentbox' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>ContentBox</button>
                    </div>
                 </div>
                 <button onClick={() => setStyleGuideOpen(false)} className="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-full transition-colors"><X size={20} /></button>
              </div>
              <div className="flex-1 overflow-y-auto p-6">
-                <LessonViewer 
-                   title={
-                     styleGuideTab === 'components' ? "Component Library" : 
-                     styleGuideTab === 'structure' ? "Course Structure" : 
-                     styleGuideTab === 'drills' ? "Drill Format Guide" : 
-                     "Passage Format Guide"
-                   } 
-                   content={
-                     styleGuideTab === 'components' ? styleGuideComponentsContent : 
-                     styleGuideTab === 'structure' ? styleGuideStructureContent : 
-                     styleGuideTab === 'drills' ? styleGuideDrillsContent : 
-                     styleGuidePassagesContent
-                   } 
-                   variant="modal" 
-                />
+                {styleGuideTab === 'contentbox' ? (
+                  <ContentBoxShowcase />
+                ) : (
+                  <LessonViewer 
+                     title={
+                       styleGuideTab === 'components' ? "Component Library" : 
+                       styleGuideTab === 'structure' ? "Course Structure" : 
+                       styleGuideTab === 'drills' ? "Drill Format Guide" : 
+                       "Passage Format Guide"
+                     } 
+                     content={
+                       styleGuideTab === 'components' ? styleGuideComponentsContent : 
+                       styleGuideTab === 'structure' ? styleGuideStructureContent : 
+                       styleGuideTab === 'drills' ? styleGuideDrillsContent : 
+                       styleGuidePassagesContent
+                     } 
+                     variant="modal" 
+                  />
+                )}
              </div>
           </div>
         </div>

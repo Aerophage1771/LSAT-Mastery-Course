@@ -4,7 +4,7 @@ export const Lesson10_Advanced_Counterfactual: Lesson = {
   id: "1-10",
   title: "Advanced Lesson: Counterfactual Rebuttal",
   content: [
-    { type: 'h2', text: 'Advanced Lesson 3: The Counterfactual Rebuttal (PT-125-S-4-Q-15)' },
+    { type: 'h2', text: 'Advanced Lesson 3: The Counterfactual Rebuttal' },
     { type: 'h3', text: 'Concept Focus: The Counterfactual Rebuttal' },
     { type: 'paragraph', text: "This strategy temporarily accepts an opponent's claim to show that it leads to an absurd or false conclusion. The logic is a form of proof by contradiction: \"If your claim were true, the world would look a certain way. But it doesn't. Therefore, your claim must be false.\"" },
     { type: 'process', title: 'Counterfactual Structure', steps: [
@@ -16,7 +16,8 @@ export const Lesson10_Advanced_Counterfactual: Lesson = {
     ]},
     { type: 'hr' },
     { type: 'h3', text: 'Worked Example' },
-    { type: 'blockquote', text: "**Singletary:** We of Citizens for Cycling Freedom object to the city’s new ordinance requiring bicyclists to wear helmets. If the city wanted to become a safer place for cyclists, it would not require helmets. Instead, it would construct more bicycle lanes and educate drivers about bicycle safety. Thus, passage of the ordinance reveals that the city is more concerned with the appearance of safety than with bicyclists’ actual safety." },
+    { type: 'accordion', title: 'Question · PT-125-S-4-Q-15', content: [
+      { type: 'blockquote', text: "**Singletary:** We of Citizens for Cycling Freedom object to the city’s new ordinance requiring bicyclists to wear helmets. If the city wanted to become a safer place for cyclists, it would not require helmets. Instead, it would construct more bicycle lanes and educate drivers about bicycle safety. Thus, passage of the ordinance reveals that the city is more concerned with the appearance of safety than with bicyclists’ actual safety." },
     { type: 'paragraph', text: "**Question:** Which one of the following most accurately describes the role played in Singletary’s argument by the statement that mentions driver education?" },
     { type: 'options', items: [
       "(A) It is cited as evidence for the claim that the city misunderstands the steps necessary for ensuring bicyclists’ safety.",
@@ -24,6 +25,7 @@ export const Lesson10_Advanced_Counterfactual: Lesson = {
       "(C) It is offered as evidence of the total ineffectiveness of the helmet ordinance.",
       "(D) It is offered as an example of further measures the city will take to ensure bicyclists’ safety.",
       "(E) It is presented as an illustration of the city’s overriding interest in its public image."
+    ]}
     ]},
     { type: 'hr' },
     { type: 'h3', text: 'Analysis' },

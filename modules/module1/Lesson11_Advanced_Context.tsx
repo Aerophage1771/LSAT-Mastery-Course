@@ -4,12 +4,13 @@ export const Lesson11_Advanced_Context: Lesson = {
   id: "1-11",
   title: "Advanced Lesson: Context Statements",
   content: [
-    { type: 'h2', text: 'Advanced Lesson 4: The Context Statement (PT-108-S-2-Q-22)' },
+    { type: 'h2', text: 'Advanced Lesson 4: The Context Statement' },
     { type: 'h3', text: 'Concept Focus: The Context Statement' },
     { type: 'paragraph', text: "Not all statements are part of the direct line of reasoning. Some provide **background context** or **frame the debate**. These statements introduce the topic or offer undisputed information. While thematically relevant, the argument's conclusion is proven by *other* evidence, making this statement logically separate from the final proof." },
     { type: 'hr' },
     { type: 'h3', text: 'Worked Example' },
-    { type: 'blockquote', text: "One can be at home and be in the backyard, that is, not in one’s house at all. One can also be in one’s house but not at home, if one owns the house but rents it out to others, for example. So one’s being at home is not required for one’s being in one’s own house." },
+    { type: 'accordion', title: 'Question · PT-108-S-2-Q-22', content: [
+      { type: 'blockquote', text: "One can be at home and be in the backyard, that is, not in one’s house at all. One can also be in one’s house but not at home, if one owns the house but rents it out to others, for example. So one’s being at home is not required for one’s being in one’s own house." },
     { type: 'paragraph', text: "**Question:** Which one of the following most accurately describes the relationship between the argument’s conclusion and its claim that one can be at home without being in one’s house?" },
     { type: 'options', items: [
       "(A) The claim is required to establish the conclusion.",
@@ -17,6 +18,7 @@ export const Lesson11_Advanced_Context: Lesson = {
       "(C) The claim is compatible with the truth or falsity of the conclusion.",
       "(D) The claim points out an ambiguity in the phrase “at home.”",
       "(E) The claim inadvertently contradicts the conclusion."
+    ]}
     ]},
     { type: 'hr' },
     { type: 'h3', text: 'Analysis' },

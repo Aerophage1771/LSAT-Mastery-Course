@@ -2,13 +2,21 @@
 import React, { useState } from 'react';
 import { ContentBlock, Lesson } from '../types';
 import { Lightbulb, Info, CheckCircle2, XCircle, Copy, Check, ChevronDown, ChevronUp } from 'lucide-react';
+import { ContentBox, extractPtIdFromTitle } from './ContentBox';
+import { QuestionCard } from './QuestionCard';
+import { OptionsBlock } from './OptionsBlock';
 import { ExportControls } from './ExportControls';
 import { generateLessonText, generateLessonRTF, generateLessonJSON, generateLessonCSV, generateLessonPDF } from '../utils/export';
+import { LESSON_FORMAT_THEMES, getLessonFormatTheme } from '../constants/lessonFormatThemes';
+import { parseAccordionToQuestion } from '../utils/parseAccordionToQuestion';
+import { isMacroFormat, getMacroConfig } from '../constants/macroFormatConfig';
+import { serializeToJSX, serializeToHTML, lessonTitleToComponentName } from '../utils/exportRendering';
 
 interface LessonViewerProps {
   title: string;
   content: string | ContentBlock[];
   variant?: 'default' | 'modal';
+  formatId?: number;
 }
 
 const parseInlineStyles = (text: string) => {
@@ -62,76 +70,6 @@ const CodeBlock: React.FC<{ text: string }> = ({ text }) => {
   );
 };
 
-const OptionsBlock: React.FC<{ items: string[] }> = ({ items }) => {
-  const [revealed, setRevealed] = useState(false);
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-
-  const handleSelect = (index: number) => {
-    if (!revealed) {
-      setSelectedIndex(index);
-      setRevealed(true);
-    }
-  };
-
-  return (
-    <div className="my-6 space-y-3">
-      {items.map((item, i) => {
-        // Extract metadata if present
-        const isCorrect = item.includes('(Correct)');
-        const statsMatch = item.match(/\[(\d+(\.\d+)?%)\]/);
-        const stats = statsMatch ? statsMatch[1] : null;
-        
-        // Clean text for display
-        const cleanText = item
-          .replace(/\[\d+(\.\d+)?%\]/g, '')
-          .replace('(Correct)', '')
-          .trim();
-
-        const isSelected = selectedIndex === i;
-        
-        // Determine styles based on state
-        let containerClasses = "flex-1 p-4 border rounded-lg shadow-sm transition-all relative overflow-hidden ";
-        let textClasses = "block ";
-        
-        if (revealed) {
-            if (isCorrect) {
-                containerClasses += "border-emerald-500 bg-emerald-50 ring-1 ring-emerald-500";
-                textClasses += "text-emerald-900 font-medium";
-            } else if (isSelected) {
-                containerClasses += "border-red-300 bg-red-50";
-                textClasses += "text-red-900";
-            } else {
-                containerClasses += "border-slate-200 bg-slate-50 opacity-60";
-                textClasses += "text-slate-500";
-            }
-        } else {
-            containerClasses += "bg-white border-slate-200 hover:border-indigo-400 hover:shadow-md cursor-pointer active:scale-[0.99]";
-            textClasses += "text-slate-700";
-        }
-
-        return (
-          <div key={i} className="flex group" onClick={() => handleSelect(i)}>
-            <div className={containerClasses}>
-                <div className="flex justify-between items-start gap-4">
-                    <span className={textClasses} dangerouslySetInnerHTML={{ __html: parseInlineStyles(cleanText) }} />
-                    
-                    {/* Stats / Icon display only when revealed */}
-                    {revealed && (
-                        <div className="flex flex-col items-end flex-shrink-0 min-w-[3rem] animate-in fade-in zoom-in duration-200">
-                            {isCorrect && <CheckCircle2 size={20} className="text-emerald-600 mb-1" />}
-                            {isSelected && !isCorrect && <XCircle size={20} className="text-red-500 mb-1" />}
-                            {stats && <span className="text-xs font-bold text-slate-500 bg-white/50 px-1.5 py-0.5 rounded">{stats}</span>}
-                        </div>
-                    )}
-                </div>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
-};
-
 const AccordionBlock: React.FC<{ title: string; content: string | ContentBlock[] }> = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
   
@@ -159,24 +97,30 @@ const AccordionBlock: React.FC<{ title: string; content: string | ContentBlock[]
   );
 };
 
+const defaultContainerClasses = (variant: 'default' | 'modal') => variant === 'modal'
+  ? "bg-white p-6 md:p-8 rounded-xl shadow-none"
+  : "max-w-4xl mx-auto bg-white p-8 lg:p-12 rounded-2xl shadow-sm border border-slate-100 min-h-[calc(100vh-4rem)]";
+
+const defaultTitleClasses = (variant: 'default' | 'modal') => variant === 'modal'
+  ? "text-2xl font-bold text-slate-900 mb-4 pb-4 border-b border-slate-100"
+  : "text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 pb-6 border-b border-slate-100";
+
 export const LessonViewer: React.FC<LessonViewerProps> = ({
     title,
     content,
     variant = 'default',
+    formatId,
 }) => {
+  const theme = formatId != null ? getLessonFormatTheme(LESSON_FORMAT_THEMES, formatId) : undefined;
   const currentLesson: Lesson = {
     id: 'current',
     title,
-    content
+    content,
+    ...(formatId != null && { formatId }),
   };
 
-  const containerClasses = variant === 'modal'
-    ? "bg-white p-6 md:p-8 rounded-xl shadow-none"
-    : "max-w-4xl mx-auto bg-white p-8 lg:p-12 rounded-2xl shadow-sm border border-slate-100 min-h-[calc(100vh-4rem)]";
-
-  const titleClasses = variant === 'modal'
-    ? "text-2xl font-bold text-slate-900 mb-4 pb-4 border-b border-slate-100"
-    : "text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 pb-6 border-b border-slate-100";
+  const containerClasses = theme ? theme.container : defaultContainerClasses(variant);
+  const titleClasses = theme ? theme.title : defaultTitleClasses(variant);
 
   const renderMarkdown = (text: string) => {
     const lines = text.split('\n');
@@ -208,44 +152,80 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
     });
   };
 
-  const FullAccordionBlock: React.FC<{ title: string; content: string | ContentBlock[] }> = ({ title, content }) => {
-    const [isOpen, setIsOpen] = useState(false);
-    return (
-      <div className="my-6 border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <button onClick={() => setIsOpen(!isOpen)} className="w-full flex items-center justify-between p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left">
-          <span className="font-bold text-slate-800">{title}</span>
-          {isOpen ? <ChevronUp size={20} className="text-slate-500" /> : <ChevronDown size={20} className="text-slate-500" />}
-        </button>
-        {isOpen && (
-          <div className="p-6 bg-white border-t border-slate-200">
-            <div className="prose prose-slate prose-lg max-w-none">
-              {typeof content === 'string' ? renderMarkdown(content) : renderBlocks(content)}
-            </div>
-          </div>
-        )}
-      </div>
-    );
+  const isPassageAccordion = (accordionTitle: string, accordionContent: string | ContentBlock[]) => {
+    if (/passage|read passage/i.test(accordionTitle)) return true;
+    if (typeof accordionContent === 'string' && accordionContent.length > 800) return true;
+    return false;
   };
+
+  const defaultH1 = "text-3xl font-extrabold mt-6 mb-8 text-indigo-900";
+  const defaultH2 = "text-2xl font-bold mt-12 mb-6 text-slate-900 border-l-4 border-indigo-500 pl-4 py-1 bg-slate-50 rounded-r-lg";
+  const defaultH3 = "text-xl font-bold mt-8 mb-4 text-slate-800 tracking-tight";
+  const defaultH4 = "text-lg font-bold mt-8 mb-3 text-slate-800 uppercase tracking-wide";
+  const defaultParagraph = "mb-4 leading-relaxed text-slate-700 text-lg";
+  const defaultBlockquote = "border-l-4 border-indigo-300 pl-6 py-3 my-6 bg-indigo-50/50 text-slate-700 italic rounded-r-lg shadow-sm";
+  const defaultList = "mb-6 ml-6 pl-2 marker:text-indigo-500 text-slate-700 space-y-2";
+  const defaultHr = "my-10 border-slate-200";
 
   const renderBlocks = (blocks: ContentBlock[]) => {
     return blocks.map((block, index) => {
       switch (block.type) {
-        case 'h1': return <h1 key={index} className="text-3xl font-extrabold mt-6 mb-8 text-indigo-900" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
-        case 'h2': return <h2 key={index} className="text-2xl font-bold mt-12 mb-6 text-slate-900 border-l-4 border-indigo-500 pl-4 py-1 bg-slate-50 rounded-r-lg" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
-        case 'h3': return <h3 key={index} className="text-xl font-bold mt-8 mb-4 text-slate-800 tracking-tight" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
-        case 'h4': return <h4 key={index} className="text-lg font-bold mt-8 mb-3 text-slate-800 uppercase tracking-wide" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
-        case 'paragraph': return <p key={index} className="mb-4 leading-relaxed text-slate-700 text-lg" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
-        case 'blockquote': return <blockquote key={index} className="border-l-4 border-indigo-300 pl-6 py-3 my-6 bg-indigo-50/50 text-slate-700 italic rounded-r-lg shadow-sm" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
-        case 'list':
+        case 'h1': return <h1 key={index} className={defaultH1} dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
+        case 'h2': return <h2 key={index} className={theme?.h2 ?? defaultH2} dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
+        case 'h3': return <h3 key={index} className={theme?.h3 ?? defaultH3} dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
+        case 'h4': return <h4 key={index} className={theme?.h4 ?? defaultH4} dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
+        case 'paragraph': return <p key={index} className={theme?.paragraph ?? defaultParagraph} dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
+        case 'blockquote': return <blockquote key={index} className={theme?.blockquote ?? defaultBlockquote} dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
+        case 'list': {
           const ListTag = block.ordered ? 'ol' : 'ul';
+          const listClasses = `${theme?.list ?? defaultList} ${block.ordered ? 'list-decimal' : 'list-disc'}`;
           return (
-            <ListTag key={index} className={`mb-6 ml-6 pl-2 marker:text-indigo-500 text-slate-700 space-y-2 ${block.ordered ? 'list-decimal' : 'list-disc'}`}>
+            <ListTag key={index} className={listClasses}>
               {block.items?.map((item, i) => <li key={i} dangerouslySetInnerHTML={{ __html: parseInlineStyles(item) }} />)}
             </ListTag>
           );
-        case 'hr': return <hr key={index} className="my-10 border-slate-200" />;
+        }
+        case 'hr': return <hr key={index} className={theme?.hr ?? defaultHr} />;
         case 'code': return <CodeBlock key={index} text={block.text} />;
-        case 'accordion': return <FullAccordionBlock key={index} title={block.title} content={block.content} />;
+        case 'accordion': {
+          if (typeof block.content === 'string') {
+            const variant = isPassageAccordion(block.title, block.content) ? 'passage' : 'question';
+            const id = extractPtIdFromTitle(block.title);
+            return (
+              <ContentBox key={index} variant={variant} id={id} defaultExpanded>
+                {renderMarkdown(block.content)}
+              </ContentBox>
+            );
+          }
+          if (isPassageAccordion(block.title, block.content)) {
+            const id = extractPtIdFromTitle(block.title);
+            return (
+              <ContentBox key={index} variant="passage" id={id} defaultExpanded>
+                {renderBlocks(block.content)}
+              </ContentBox>
+            );
+          }
+          const parsed = parseAccordionToQuestion(block.content, block.title);
+          if (parsed != null && formatId != null && isMacroFormat(formatId)) {
+            const macro = getMacroConfig(formatId);
+            if (macro) {
+              return (
+                <QuestionCard
+                  key={index}
+                  question={parsed}
+                  variant={macro.questionCardVariant}
+                  defaultExpanded
+                />
+              );
+            }
+          }
+          const id = extractPtIdFromTitle(block.title);
+          return (
+            <ContentBox key={index} variant="question" id={id} defaultExpanded>
+              {renderBlocks(block.content)}
+            </ContentBox>
+          );
+        }
         case 'table':
           return (
             <div key={index} className="my-8 overflow-x-auto rounded-lg border border-slate-200 shadow-sm">
@@ -357,27 +337,37 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
   };
 
   return (
-    <div className={containerClasses}>
-      <div className="mb-8 flex flex-col md:flex-row md:items-start justify-between gap-4">
-        <div>
-           <span className="text-indigo-600 font-bold tracking-wide uppercase text-sm mb-2 block">Current Lesson</span>
-           <h1 className={titleClasses}>{title}</h1>
+    <div className="bg-slate-50/50 p-4 lg:p-8" data-export-content>
+      <div className={containerClasses}>
+        <div className="bg-slate-50/50 p-4 lg:p-8">
+          <div className="mb-8 flex flex-col md:flex-row md:items-start justify-between gap-4">
+            <div>
+             <span className="text-indigo-600 font-bold tracking-wide uppercase text-sm mb-2 block">Current Lesson</span>
+             <h1 className={titleClasses}>{title}</h1>
+          </div>
+          <div className="flex-shrink-0" data-export-skip>
+            <ExportControls 
+               label="Lesson"
+               filename={`LSAT_Lesson_${title.replace(/\s+/g, '_')}`}
+               onCopy={() => generateLessonText(currentLesson)}
+               onExportText={() => generateLessonText(currentLesson)}
+               onExportRTF={() => generateLessonRTF(currentLesson)}
+               onExportJSON={() => generateLessonJSON(currentLesson)}
+               onExportCSV={() => generateLessonCSV(currentLesson)}
+               onExportPDF={() => generateLessonPDF(currentLesson)}
+               onCopyAsJSX={() => serializeToJSX(document.querySelector<HTMLElement>('[data-export-content]'), { pretty: true, wrapAsComponent: lessonTitleToComponentName(title) })}
+               onCopyAsHTML={() => serializeToHTML(document.querySelector<HTMLElement>('[data-export-content]'))}
+            />
+            </div>
+          </div>
+          <div className={containerClasses}>
+            <div className="bg-slate-50/50 p-4 lg:p-8">
+              <div className={theme ? 'max-w-none' : 'prose prose-slate prose-lg max-w-none'}>
+                {typeof content === 'string' ? renderMarkdown(content) : renderBlocks(content)}
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex-shrink-0">
-          <ExportControls 
-             label="Lesson"
-             filename={`LSAT_Lesson_${title.replace(/\s+/g, '_')}`}
-             onCopy={() => generateLessonText(currentLesson)}
-             onExportText={() => generateLessonText(currentLesson)}
-             onExportRTF={() => generateLessonRTF(currentLesson)}
-             onExportJSON={() => generateLessonJSON(currentLesson)}
-             onExportCSV={() => generateLessonCSV(currentLesson)}
-             onExportPDF={() => generateLessonPDF(currentLesson)}
-          />
-        </div>
-      </div>
-      <div className="prose prose-slate prose-lg max-w-none">
-        {typeof content === 'string' ? renderMarkdown(content) : renderBlocks(content)}
       </div>
     </div>
   );
