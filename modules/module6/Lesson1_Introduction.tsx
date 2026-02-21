@@ -3,20 +3,29 @@ import { Lesson } from '../../types';
 export const Lesson1_Introduction: Lesson = {
   id: "6-1",
   title: "Introduction",
+  formatId: 11,
   content: [
-    { type: 'h2', text: 'MODULE 6: Parallel Flaw' },
-    { type: 'paragraph', text: '**Question Goal**\n\n**Identify the specific logical error in the stimulus and find the answer choice that replicates that exact same mistake.** You are looking for the answer choice built on the same faulty logical foundation.' },
-    { type: 'h3', text: 'Introduction' },
+    { type: 'h2', text: 'Question Goal' },
+    {
+      type: 'callout',
+      text: '**Identify the specific logical error** in the stimulus and find the answer choice that replicates that exact same mistake.',
+      variant: 'goal',
+    },
+    { type: 'paragraph', text: 'This module covers Parallel Flaw.' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: 'Parallel Flaw questions represent a synthesis of two fundamental skills: identifying logical fallacies (**Flaw**) and recognizing abstract argument structures (**Parallel Reasoning**). This makes them one of the purest tests of abstract reasoning in the section.' },
     { type: 'paragraph', text: 'The task is a two-part process. First, you must precisely diagnose why the stimulus argument is logically broken. Second, you must find the answer choice that commits that identical error. While the subject matter will change (e.g., from chemistry to law), the underlying logical gap must remain the same.' },
-    { type: 'h3', text: 'Common Question Stems' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Common Question Stems' },
     { type: 'paragraph', text: 'You can recognize these questions because they ask you to find ""flawed"" or ""questionable"" reasoning that is ""similar"" or ""parallel."" Typical phrasing includes:' },
     { type: 'list', items: [
       '""""The flawed reasoning in the argument above is most similar to the flawed reasoning in which one of the following?""""',
       '""""Which one of the following exhibits a pattern of questionable reasoning most similar to that exhibited by the argument above?""""',
-      '""""The argument’s reasoning is flawed in a way that is most parallel to the way in which the reasoning in which one of the following is flawed?""""'
+      '""""The argument\'s reasoning is flawed in a way that is most parallel to the way in which the reasoning in which one of the following is flawed?""""'
     ]},
-    { type: 'h3', text: 'Core Concepts' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Core Concepts' },
     { type: 'h4', text: '1. Diagnose the Flaw with Precision' },
     { type: 'paragraph', text: "Before looking at the answers, you must determine exactly *how* the premises fail to logically guarantee the conclusion. Use the same technique as a standard Flaw question: provisionally accept the premises as true and look for the \"\"gap\"\" that prevents them from proving the conclusion. Common errors include confusing a necessary condition for a sufficient one, making a causal leap from a mere correlation, or incorrectly assuming that a whole must share the properties of its parts." },
     { type: 'h4', text: '2. Beware of ""Close"" Flaws' },

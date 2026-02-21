@@ -3,14 +3,21 @@ import { Lesson } from '../../types';
 export const Lesson1_Introduction: Lesson = {
   id: "20-1",
   title: "Introduction",
+  formatId: 11,
   content: [
-    { type: 'h2', text: 'MODULE 20: Agree / Disagree (Point at Issue)' },
-    { type: 'paragraph', text: '**Question Goal**' },
-    { type: 'paragraph', text: 'Analyze a dialogue between two speakers and identify the specific statement that one speaker would affirm and the other would deny (Point of Disagreement), or that both speakers would affirm (Point of Agreement).' },
-    { type: 'h3', text: 'Introduction' },
+    { type: 'h2', text: 'Question Goal' },
+    {
+      type: 'callout',
+      text: '**Identify the specific statement** that one speaker would affirm and the other would deny, or that both would affirm.',
+      variant: 'goal',
+    },
+    { type: 'paragraph', text: 'This module covers Agree / Disagree (Point at Issue).' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: 'Agree/Disagree questions present a short dialogue and ask you to find the precise statement at the heart of the conversation. This question type is a crucial test of **comparative reasoning**. Instead of deconstructing a single argument in isolation, you must analyze two competing viewpoints and identify the exact fault line (a **Point of Disagreement**) or common ground (a **Point of Agreement**) between them.' },
     { type: 'paragraph', text: 'Once you can identify the conclusion and premises of a single argument, the next step is to compare two arguments that are in direct conversation. Your task is to track the debate and pinpoint the exact source of conflict or consensus.' },
-    { type: 'h3', text: 'Common Question Stems' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Common Question Stems' },
     { type: 'paragraph', text: 'You can recognize these questions by their focus on the "point at issue," "disagreement," or "agreement" between two speakers.' },
     { type: 'h4', text: 'For Disagreement:' },
     { type: 'list', items: [
@@ -23,7 +30,8 @@ export const Lesson1_Introduction: Lesson = {
       '"The dialogue provides the most support for the claim that [X] and [Y] agree that..."',
       '"[X]\'s and [Y]\'s statements most strongly support the claim that both of them would agree with which one of the following?"'
     ]},
-    { type: 'h3', text: 'Core Concepts' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Core Concepts' },
     { type: 'paragraph', text: 'Your task is to impartially determine what each speaker has committed to based *only* on the text provided. The key is to understand that the correct answer is determined by the relationship between the two speakers\' positions.' },
     { type: 'h3', text: '1. The Point of Disagreement: The "Yes / No" Test' },
     { type: 'paragraph', text: 'This is the most common variant. The correct answer is a statement that one speaker would affirm ("Yes") and the other would deny ("No").' },

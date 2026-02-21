@@ -3,15 +3,22 @@ import { Lesson } from '../../types';
 export const Lesson1_Introduction: Lesson = {
   id: "14-1",
   title: "Introduction",
+  formatId: 11,
   content: [
-    { type: 'h2', text: 'MODULE 14: Principle - Generalization' },
-    { type: 'paragraph', text: '**Question Goal**' },
-    { type: 'paragraph', text: '**Identify the abstract rule or proposition that the specific situation in the stimulus perfectly exemplifies.** If the stimulus is treated as a case study, which answer choice provides the most accurate ""lesson"" or ""moral of the story""?' },
-    { type: 'h3', text: 'Introduction' },
+    { type: 'h2', text: 'Question Goal' },
+    {
+      type: 'callout',
+      text: '**Identify the abstract rule or proposition** that the specific situation in the stimulus perfectly exemplifies.',
+      variant: 'goal',
+    },
+    { type: 'paragraph', text: 'This module covers Principle - Generalization.' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: '**The Art of Abstraction**' },
     { type: 'paragraph', text: 'Principle-Generalization questions present you with a specific, self-contained scenario—such as an experiment, an anecdote, or a natural phenomenon—and ask you to identify the broader, abstract rule that this scenario represents. Your task is to look past the specific details and find the ""moral of the story.""' },
     { type: 'paragraph', text: 'This question type tests your ability to move from the specific to the general. It is the inverse of a Principle-Application question (where you are given a rule and must find a case that fits). Here, you are given the specific case and must extract the rule. Success depends on your ability to see the universal principle hidden behind a single, concrete instance.' },
-    { type: 'h3', text: 'Common Question Stems' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Common Question Stems' },
     { type: 'paragraph', text: 'You can recognize these questions by their focus on ""propositions,"" ""generalizations,"" or what the passage ""illustrates."" Typical phrasing includes:' },
     { type: 'list', items: [
       '""""The situation described above most closely conforms to which one of the following generalizations?""""',
@@ -19,7 +26,8 @@ export const Lesson1_Introduction: Lesson = {
       '""""Which one of the following principles is best illustrated by the information above?""""',
       '""""The situation as described above most closely conforms to which one of the following principles?""""'
     ]},
-    { type: 'h3', text: 'Core Concepts' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Core Concepts' },
     { type: 'h4', text: 'The Stimulus as a Case Study' },
     { type: 'paragraph', text: 'In these questions, the stimulus acts as your evidence. Unlike many other Logical Reasoning questions, it is often a descriptive passage rather than a formal argument with a conclusion. To find the principle, you must distill the **central dynamic** of the case study. Common dynamics include:' },
     { type: 'list', items: [

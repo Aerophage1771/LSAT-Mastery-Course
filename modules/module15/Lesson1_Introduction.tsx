@@ -3,21 +3,29 @@ import { Lesson } from '../../types';
 export const Lesson1_Introduction: Lesson = {
   id: "15-1",
   title: "Introduction",
+  formatId: 11,
   content: [
-    { type: 'h2', text: 'MODULE 15: Fill in the Blank' },
-    { type: 'paragraph', text: '**Question Goal**' },
-    { type: 'paragraph', text: '**Determine the logical function of the missing phrase and select the answer choice that best completes the author\'s thought process.** Are you supplying the final conclusion, or are you providing the reason why a claim is true?' },
-    { type: 'h3', text: 'Introduction' },
+    { type: 'h2', text: 'Question Goal' },
+    {
+      type: 'callout',
+      text: '**Determine the logical function** of the missing phrase and select the answer that best completes the author\'s thought.',
+      variant: 'goal',
+    },
+    { type: 'paragraph', text: 'This module covers Fill in the Blank.' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: '**Predictive Reasoning**' },
     { type: 'paragraph', text: 'Fill in the Blank questions test your logical analysis in a unique way. Instead of asking you to evaluate a completed argument, these questions stop the argument just before the final piece is placed. Your task is to act as the author and finish the thought.' },
     { type: 'paragraph', text: 'This requires **predictive reasoning**. You must understand the argument\'s trajectory—where it started and where it is going—so well that you can anticipate the next step. To succeed, you must look at the structural indicators (words like ""Therefore"" or ""because"") to determine exactly what role the blank space plays. The answer choice will always fit like a puzzle piece, perfectly completing the logic established in the stimulus.' },
-    { type: 'h3', text: 'Common Question Stems' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Common Question Stems' },
     { type: 'paragraph', text: 'The stem for these questions is almost always the same:' },
     { type: 'list', items: [
         '""""Which one of the following most logically completes the argument?""""',
         '""""Which one of the following most reasonably completes the passage?""""'
     ]},
-    { type: 'h3', text: 'Core Concepts' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Core Concepts' },
     { type: 'h4', text: '1. The Blank as the Conclusion' },
     { type: 'paragraph', text: 'This is the most common format. The stimulus will present a series of facts or evidence and end with a conclusion indicator followed by a blank.' },
     { type: 'list', items: [

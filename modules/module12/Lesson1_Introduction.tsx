@@ -3,20 +3,29 @@ import { Lesson } from '../../types';
 export const Lesson1_Introduction: Lesson = {
   id: "12-1",
   title: "Introduction",
+  formatId: 11,
   content: [
-    { type: 'h2', text: 'MODULE 12: Principle-Strengthen' },
-    { type: 'paragraph', text: '**Question Goal**\n\n**Identify the general rule or broad philosophy that, if valid, provides the strongest support for the argument’s conclusion.** What is the ""law"" that connects the specific facts of the case to the author’s reasoning?' },
-    { type: 'h3', text: 'Introduction' },
+    { type: 'h2', text: 'Question Goal' },
+    {
+      type: 'callout',
+      text: '**Identify the general rule or broad philosophy** that, if valid, provides the strongest support for the argument\'s conclusion.',
+      variant: 'goal',
+    },
+    { type: 'paragraph', text: 'This module covers Principle-Strengthen.' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: '**A Logical Backbone**\n\nPrinciple-Strengthen questions ask you to find the broad principle that serves as the logical backbone for an author\'s reasoning. Think of this as a Strengthen question where all the answer choices are written as broad, general rules, often in an ""if-then"" format. The correct answer provides a general rule that connects the argument\'s evidence to its conclusion, making the reasoning more defensible.' },
-    { type: 'h3', text: 'Common Question Stems' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Common Question Stems' },
     { type: 'paragraph', text: 'You can recognize these questions by their use of the words ""principle,"" ""proposition,"" or ""generalization,"" often combined with ""justify"" or ""conform to.""' },
     { type: 'list', items: [
-      '""""Which one of the following principles, if valid, most helps to justify the argument’s reasoning?""""',
+      '""""Which one of the following principles, if valid, most helps to justify the argument\'s reasoning?""""',
       '""""The argument most closely conforms to which one of the following principles?""""',
       '""""Which one of the following generalizations, if true, most helps to justify the conclusion?""""',
       '""""Which one of the following most accurately expresses the principle underlying the argument?""""'
     ]},
-    { type: 'h3', text: 'Core Concepts' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Core Concepts' },
     { type: 'paragraph', text: '**Matching the Argument\'s Blueprint**\n\nA principle is a universal statement that strips away the specific details of the stimulus (e.g., ""the mayor,"" ""the tax"") and replaces them with general categories (e.g., ""a public official,"" ""a policy""). To find the correct principle, you must identify the argument\'s logical blueprint and find the rule that matches it.' },
     { type: 'list', items: [
       '**The Condition (The ""If"" Part):** This part of the principle should align with the specific evidence or situation provided in the passage.',

@@ -3,13 +3,21 @@ import { Lesson } from '../../types';
 export const Lesson1_Introduction: Lesson = {
   id: "11-1",
   title: "Introduction",
+  formatId: 11,
   content: [
-    { type: 'h2', text: 'MODULE 11: Necessary Assumption' },
-    { type: 'paragraph', text: '**Question Goal**\n\n**Identify an unstated premise that the author must believe for the argument to have a chance of being valid.** In other words, which statement is a belief so essential that if it were false, the entire argument would collapse?' },
-    { type: 'h3', text: 'Introduction' },
+    { type: 'h2', text: 'Question Goal' },
+    {
+      type: 'callout',
+      text: '**Identify an unstated premise** that the author must believe for the argument to have a chance of being valid.',
+      variant: 'goal',
+    },
+    { type: 'paragraph', text: 'This module covers Necessary Assumption.' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: 'Necessary Assumption questions require you to find a ""must-have"" piece of information. Every argument with a logical gap relies on certain unstated beliefs to bridge that gap. A necessary assumption is a required belief that the author takes for granted.' },
     { type: 'paragraph', text: 'The defining characteristic of a necessary assumption is this: **if the assumption is false, the argument falls apart.** This question type builds directly on your ability to spot Logical Gaps. Once you identify the missing link in an argument, the necessary assumption is a statement that the author is forced to accept for that link to exist.' },
-    { type: 'h3', text: 'Common Stem Phrasings' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Common Question Stems' },
     { type: 'paragraph', text: 'You can recognize these questions by their use of ""required"" or ""depends on."" Typical phrasing includes:' },
     { type: 'list', items: [
       '""""The argument relies on which one of the following assumptions?""""',
@@ -18,7 +26,8 @@ export const Lesson1_Introduction: Lesson = {
       '""""The conclusion above follows only if which one of the following is assumed?""""',
       '""""The argument presupposes that...""""'
     ]},
-    { type: 'h3', text: 'Core Concepts' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Core Concepts' },
     { type: 'h4', text: 'Logical Necessity vs. Sufficiency' },
     { type: 'paragraph', text: 'The key to this question type is understanding the difference between a necessary and a sufficient assumption.' },
     { type: 'list', items: [

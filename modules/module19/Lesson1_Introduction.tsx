@@ -3,14 +3,21 @@ import { Lesson } from '../../types';
 export const Lesson1_Introduction: Lesson = {
   id: "19-1",
   title: "Introduction",
+  formatId: 11,
   content: [
-    { type: 'h2', text: 'MODULE 19: Paradox / Explain' },
-    { type: 'paragraph', text: '**Question Goal**' },
-    { type: 'paragraph', text: 'Find a new piece of information that, if true, makes a set of seemingly contradictory statements logical and consistent. In other words, what unstated fact resolves the apparent conflict?' },
-    { type: 'h3', text: 'Introduction' },
+    { type: 'h2', text: 'Question Goal' },
+    {
+      type: 'callout',
+      text: '**Find a new piece of information** that, if true, makes a set of seemingly contradictory statements logical and consistent.',
+      variant: 'goal',
+    },
+    { type: 'paragraph', text: 'This module covers Paradox / Explain.' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: 'Paradox questions present you with a set of facts that seem to contradict each other. The stimulus is not an argument with a conclusion and premises, but a description of a surprising situation. Your job is not to find a flaw or to attack the facts. Instead, you must accept everything in the stimulus as true and find the one answer choice that, if also true, explains how this seemingly impossible situation can exist.' },
     { type: 'paragraph', text: 'This question type tests your ability to identify logical inconsistencies and then resolve them with new information. It requires you to locate the tension between the facts and determine what unstated factor could account for the surprising outcome.' },
-    { type: 'h3', text: 'Common Question Stems' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Common Question Stems' },
     { type: 'paragraph', text: 'You can recognize these questions by their focus on explaining a "discrepancy," "paradox," "conflict," or "surprising result." Typical phrasing includes:' },
     { type: 'list', items: [
       '"Which one of the following, if true, most helps to resolve the apparent discrepancy?"',
@@ -18,7 +25,8 @@ export const Lesson1_Introduction: Lesson = {
       '"Which one of the following, if true, contributes most to an explanation of the phenomenon described above?"',
       '"Each of the following, if true, helps to resolve the apparent conflict... EXCEPT:"'
     ]},
-    { type: 'h3', text: 'Core Concepts' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Core Concepts' },
     { type: 'h4', text: '1. Isolate the Conflict' },
     { type: 'paragraph', text: 'Your first and most important task is to precisely identify the two conflicting ideas. The stimulus will present two facts that seem to pull in opposite directions. Look for pivot words like "however," "yet," "surprisingly," or "paradoxically" that signal the conflict. Before you look at the answer choices, you should be able to state the paradox in your own words:' },
     { type: 'list', items: [

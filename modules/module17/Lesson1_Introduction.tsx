@@ -3,14 +3,22 @@ import { Lesson } from '../../types';
 export const Lesson1_Introduction: Lesson = {
   id: "17-1",
   title: "Introduction",
+  formatId: 11,
   content: [
-    { type: 'h2', text: 'MODULE 17: Must Be True' },
-    { type: 'paragraph', text: '**Question Goal**\n\n**Identify the one statement that is logically proven by the facts in the stimulus.** What conclusion is guaranteed to be true if everything in the passage is accepted as fact?' },
-    { type: 'h3', text: 'Introduction' },
+    { type: 'h2', text: 'Question Goal' },
+    {
+      type: 'callout',
+      text: '**Identify the one statement** that is logically proven by the facts in the stimulus.',
+      variant: 'goal',
+    },
+    { type: 'paragraph', text: 'This module covers Must Be True.' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Introduction' },
     { type: 'h4', text: 'The Foundation of Deduction' },
     { type: 'paragraph', text: 'Must Be True questions test your ability to perform valid deductive inferences. In this question type, the stimulus provides a set of statements that you must accept as absolute facts. Your objective is to determine which of the answer choices is a **certain conclusion** of those statements.' },
     { type: 'paragraph', text: 'The correct answer is not an evaluation of the argument, nor is it a statement that is merely "likely" to be true. It is a statement that **cannot be false** if the stimulus is true. Success requires precise reading and a strict adherence to the information presented, without adding any outside assumptions.' },
-    { type: 'h4', text: 'Common Question Stems' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Common Question Stems' },
     { type: 'paragraph', text: 'You can recognize these questions because they ask what "must" happen, what can be "concluded," or what can be "inferred." Note that on the LSAT, "inferred" means "proven true," not "hinted at."' },
     { type: 'list', items: [
       '"If the statements above are true, which one of the following must also be true?"',
@@ -18,7 +26,8 @@ export const Lesson1_Introduction: Lesson = {
       '"Which one of the following can be properly inferred from the passage?"',
       '"Which one of the following is strictly implied by the statements above?"'
     ]},
-    { type: 'h3', text: 'Core Concepts' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Core Concepts' },
     { type: 'h4', text: '1. The Fact Test' },
     { type: 'paragraph', text: 'The proof for the correct answer must come *only* from the information contained within the stimulus. Do not use outside knowledge. If a stimulus about penguins doesn\'t mention that they live in cold climates, you cannot use that fact to answer the question.' },
     { type: 'h4', text: '2. Synthesis (Linking)' },

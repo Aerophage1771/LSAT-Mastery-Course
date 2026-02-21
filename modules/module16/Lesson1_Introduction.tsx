@@ -3,10 +3,17 @@ import { Lesson } from '../../types';
 export const Lesson1_Introduction: Lesson = {
   id: "16-1",
   title: "Introduction",
+  formatId: 11,
   content: [
-    { type: 'h2', text: 'MODULE 16: Most Strongly Supported' },
-    { type: 'paragraph', text: '**Question Goal**\n\n**Synthesize the facts provided in the stimulus to determine which answer choice is the most logical inference.** In other words, which statement is made most probable by the information given?' },
-    { type: 'h3', text: 'Introduction' },
+    { type: 'h2', text: 'Question Goal' },
+    {
+      type: 'callout',
+      text: '**Synthesize the facts** in the stimulus to determine which answer choice is the most logical inference.',
+      variant: 'goal',
+    },
+    { type: 'paragraph', text: 'This module covers Most Strongly Supported.' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Introduction' },
     { type: 'h4', text: 'The Art of Synthesis' },
     { type: 'paragraph', text: 'Most Strongly Supported (MSS) questions present you with a stimulus that is usually a collection of facts without a main conclusion. Your job is to act as the logician: you must read the facts, accept them as true, and determine what consequence naturally follows from them.' },
     { type: 'paragraph', text: 'The primary skill tested here is **synthesis**. The correct answer rarely comes from simply restating a single sentence. Instead, the answer usually emerges when you combine two or more facts from the stimulus to create a new thought.' },
@@ -16,14 +23,16 @@ export const Lesson1_Introduction: Lesson = {
       '**Must Be True:** Requires 100% logical certainty. The answer must be mathematically proven by the text.',
       '**Most Strongly Supported:** Requires a high degree of probability (99%). The correct answer is the one that requires the smallest, most reasonable logical step. While it is often mathematically provable, the standard is slightly more flexible, allowing for highly probable conclusions based on the weight of the evidence.'
     ]},
-    { type: 'h4', text: 'Common Question Stems' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Common Question Stems' },
     { type: 'paragraph', text: 'You can recognize these questions because they ask what is "supported" by the stimulus or what can be "inferred."' },
     { type: 'list', items: [
       '"Which one of the following is **most strongly supported** by the information above?"',
       '"The statements above, if true, **provide the most support** for which one of the following?"',
       '"Which one of the following can be properly **inferred** from the passage?"'
     ]},
-    { type: 'h3', text: 'Core Concepts' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Core Concepts' },
     { type: 'h4', text: '1. The Chain Reaction (Fact A + Fact B = Conclusion)' },
     { type: 'paragraph', text: 'Most valid inferences come from linking two separate premises.' },
     { type: 'list', items: [

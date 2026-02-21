@@ -3,13 +3,21 @@ import { Lesson } from '../../types';
 export const Lesson1_Introduction: Lesson = {
   id: "7-1",
   title: "Introduction",
+  formatId: 11,
   content: [
-    { type: 'h2', text: 'MODULE 7: Evaluate the Argument' },
-    { type: 'paragraph', text: '**Question Goal**\n\n**Identify the critical piece of information that would help determine whether an argument’s conclusion is logically sound.** What is the missing link that would either prove the argument works or expose its failure?' },
-    { type: 'h3', text: 'Introduction' },
-    { type: 'paragraph', text: '**The Bridge to Evaluation**\n\nEvaluate the Argument questions act as a bridge between understanding an argument’s structure and testing its validity. Most LSAT arguments are not logically airtight; there is usually a ""logical gap"" where the premises stop and the conclusion begins, but the two haven\'t quite met.' },
+    { type: 'h2', text: 'Question Goal' },
+    {
+      type: 'callout',
+      text: '**Identify the critical piece of information** that would help determine whether an argument\'s conclusion is logically sound.',
+      variant: 'goal',
+    },
+    { type: 'paragraph', text: 'This module covers Evaluate the Argument.' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Introduction' },
+    { type: 'paragraph', text: '**The Bridge to Evaluation**\n\nEvaluate the Argument questions act as a bridge between understanding an argument\'s structure and testing its validity. Most LSAT arguments are not logically airtight; there is usually a ""logical gap"" where the premises stop and the conclusion begins, but the two haven\'t quite met.' },
     { type: 'paragraph', text: 'Your task is to identify the one question whose answer would most effectively help you decide if the reasoning is sound. Think of this as a hybrid between a Strengthen and a Weaken question. You are looking for information that has the power to either bridge the gap or widen it, depending on what the actual answer turns out to be.' },
-    { type: 'h3', text: 'Common Question Stems' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Common Question Stems' },
     { type: 'paragraph', text: 'You can recognize these questions by their focus on what would be ""helpful,"" ""useful,"" or ""important"" to know or determine. Typical phrasing includes:' },
     { type: 'list', items: [
       '""""The answer to which one of the following questions would contribute most to an evaluation of the argument?""""',
@@ -17,7 +25,8 @@ export const Lesson1_Introduction: Lesson = {
       '""""Which one of the following would be most important to determine in evaluating the argument?""""',
       '""""The answer to which one of the following questions would be most helpful in order to evaluate the argument?""""'
     ]},
-    { type: 'h3', text: 'Core Concepts' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Core Concepts' },
     { type: 'h4', text: 'The Logical Gap' },
     { type: 'paragraph', text: 'The foundation of an Evaluate question is the logical gap. This is the point where the evidence fails to fully prove the conclusion, often because the author has failed to consider an alternative explanation. The correct answer will always target this gap, seeking information that could either fix the logic or expose a flaw.' },
     { type: 'h4', text: 'The Variance Test' },

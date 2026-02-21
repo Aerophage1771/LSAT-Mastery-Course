@@ -3,18 +3,27 @@ import { Lesson } from '../../types';
 export const Lesson1_Introduction: Lesson = {
   id: "13-1",
   title: "Introduction",
+  formatId: 11,
   content: [
-    { type: 'h2', text: 'MODULE 13: Principle - Apply' },
-    { type: 'paragraph', text: '**Question Goal**\n\nTake a general rule from the passage and find the one specific example in the answer choices that correctly applies it.' },
-    { type: 'h3', text: 'Introduction' },
+    { type: 'h2', text: 'Question Goal' },
+    {
+      type: 'callout',
+      text: '**Take a general rule** from the passage and find the one specific example in the answer choices that correctly applies it.',
+      variant: 'goal',
+    },
+    { type: 'paragraph', text: 'This module covers Principle - Apply.' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: 'You\'re provided a general rule (the principle). You\'re supposed to take that general rule, identify when it is applicable and the judgment that it tells you to reach, then identify the answer choice that has the same situation and the same judgment you\'re instructed to reach.' },
-    { type: 'h3', text: 'Common Question Stems' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Common Question Stems' },
     { type: 'list', items: [
       '""""Which one of the following judgments most closely conforms to the principle stated above?""""',
       '""""Which one of the following is an application of the principle described?""""',
       '""""The reasoning in which one of the following is most strongly supported by the guidelines?""""'
     ]},
-    { type: 'h3', text: 'Core Concepts' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Core Concepts' },
     { type: 'paragraph', text: 'The process is mechanical. You must break down the rule and then find the one answer choice that perfectly matches its structure.' },
     { type: 'h4', text: '1. Break Down the Rule into Its Parts' },
     { type: 'paragraph', text: 'First, identify the exact conditions that make the rule apply, and the exact result that happens when they are met.' },

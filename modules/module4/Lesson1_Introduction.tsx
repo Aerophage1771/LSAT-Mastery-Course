@@ -3,20 +3,29 @@ import { Lesson } from '../../types';
 export const Lesson1_Introduction: Lesson = {
   id: "4-1",
   title: "Introduction",
+  formatId: 11,
   content: [
-    { type: 'h2', text: 'MODULE 4: Parallel Reasoning' },
-    { type: 'paragraph', text: '**Question Goal**\n\n**Identify the abstract logical pattern of the stimulus and then find an answer choice that uses the exact same structure of reasoning.** Your job is to match the logical form, even if the topic is completely different.' },
-    { type: 'h3', text: 'Introduction' },
-    { type: 'paragraph', text: '**Distill and Replicate**\n\nParallel Reasoning questions build directly upon the skills used in Method of Reasoning. While Method questions ask you to simply *describe* the argument’s structure, Parallel questions ask you to go one step further: you must first **distill** that structure and then **replicate** it in a completely new context.' },
+    { type: 'h2', text: 'Question Goal' },
+    {
+      type: 'callout',
+      text: '**Identify the abstract logical pattern** of the stimulus and then find an answer choice that uses the exact same structure of reasoning.',
+      variant: 'goal',
+    },
+    { type: 'paragraph', text: 'This module covers Parallel Reasoning.' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Introduction' },
+    { type: 'paragraph', text: '**Distill and Replicate**\n\nParallel Reasoning questions build directly upon the skills used in Method of Reasoning. While Method questions ask you to simply *describe* the argument\'s structure, Parallel questions ask you to go one step further: you must first **distill** that structure and then **replicate** it in a completely new context.' },
     { type: 'paragraph', text: 'The stimulus will present a line of reasoning on a specific topic (e.g., banking regulations). Your task is to look past *what* the argument is about to see *how* the premises support the conclusion. You are creating a logical blueprint of the argument and looking for the answer choice that was built using that exact same blueprint.' },
-    { type: 'h3', text: 'Common Question Stems' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Common Question Stems' },
     { type: 'paragraph', text: 'You can recognize these questions because they ask you to find an argument with a ""similar"" pattern or structure. Typical phrasing includes:' },
     { type: 'list', items: [
       '""Which one of the following arguments is most similar in its reasoning to the argument above?""',
       '""The pattern of reasoning in the argument above is most similar to that in which one of the following?""',
       '""Which one of the following exhibits a pattern of reasoning most similar to that exhibited by the argument above?""'
     ]},
-    { type: 'h3', text: 'Core Concepts' },
+    { type: 'hr' },
+    { type: 'h2', text: 'Core Concepts' },
     { type: 'paragraph', text: '**Abstraction: The Skeleton of the Argument**\n\nTo solve these questions, you must strip away the specific details to reveal the argument\'s skeleton. You are essentially translating the argument into algebraic terms.' },
     { type: 'list', items: [
       '**Content:** ""If it rains, the grass gets wet. It is raining. Therefore, the grass is wet.""',
