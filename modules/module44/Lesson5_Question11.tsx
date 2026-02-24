@@ -9,23 +9,25 @@ export const Lesson5_Question11: Lesson = {
   id: "44-5",
   title: "Question 11: Analogy",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-141-S-1-P-2-Q-11" },
+    { type: 'accordion', title: 'Read Passage (PT-141-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 11: Analogy Breakdown (PT-141-S-1-P-2-Q-11)" },
     { type: 'blockquote', text: "Based on the passage, Cameron is most like which one of the following in relation to her fancy-subject pictures?" },
     { type: 'options', items: [
-      "(A) a playwright who introduces incongruous elements to preserve an aesthetic distance between characters and audience [6.0%]",
-      "(B) a rap artist whose lyrics are designed to subvert the meaning of a song sampled in his recording [2.0%]",
-      "(C) a sculptor whose works possess a certain grandeur even though they are clearly constructed out of ordinary objects [70.0%] (Correct)",
-      "(D) an architect whose buildings are designed to be as functional as possible [1.0%]",
-      "(E) a film director who employs ordinary people as actors in order to give the appearance of a documentary [21.0%]"
+      "(A) a playwright who introduces incongruous elements to preserve an aesthetic distance between characters and audience",
+      "(B) a rap artist whose lyrics are designed to subvert the meaning of a song sampled in his recording",
+      "(C) a sculptor whose works possess a certain grandeur even though they are clearly constructed out of ordinary objects (Correct)",
+      "(D) an architect whose buildings are designed to be as functional as possible",
+      "(E) a film director who employs ordinary people as actors in order to give the appearance of a documentary"
     ]},
-    { type: 'paragraph', text: "This is an analogy question asking us to find a creator who is most like Julia Margaret Cameron, based on the author's description of her work. We need to distill the essence of Cameron's artistry into a formula and find the answer choice that matches.\n\nThe author's formula for Cameron is: An artist who uses **ordinary, humble, or everyday materials and people** (housemaids, broomsticks, drapery) to create a work that aims for a **grand, romantic, or mysterious effect** (\"magical and mysterious\" scenes from mythology and literature). The key is the tension between the humble materials and the grand ambition." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This analogy question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'From a critical discussion of the work of Victorian photographer Julia...' and 'While Cameron’s fancy-subject pictures have been compared to poor amateur theatricals,...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) a playwright who introduces incongruous elements to preserve an aesthetic distance between characters and audience", text: "This fails on intent. The passage suggests Cameron's use of humble materials was a result of circumstance and the nature of the medium, not a deliberate artistic choice to create \"aesthetic distance.\" Her goal was sincere romanticism, not intellectual detachment.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) a rap artist whose lyrics are designed to subvert the meaning of a song sampled in his recording", text: "This fails on intent. Cameron was trying to *illustrate* and pay homage to her sources (the Bible, Shakespeare), not \"subvert\" their meaning.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) a sculptor whose works possess a certain grandeur even though they are clearly constructed out of ordinary objects", text: "This is a perfect analogy.\n*   \"possess a certain grandeur\" = Cameron's \"magical and mysterious\" scenes.\n*   \"clearly constructed out of ordinary objects\" = Cameron's use of broomsticks, housemaids, etc.\nThis choice perfectly captures the core tension between humble materials and grand artistic effect.", badge: "Correct", badgeColor: "green" },
-      { title: "(D) an architect whose buildings are designed to be as functional as possible", text: "This fails because Cameron's work is described as romantic and fantastical, not \"functional.\"", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) a film director who employs ordinary people as actors in order to give the appearance of a documentary", text: "This fails on the goal. Cameron used ordinary people, but her goal was the opposite of documentary realism; she was aiming for romantic fantasy. The realistic \"truth of the sitting\" was an unintentional byproduct of her medium, not her primary aesthetic goal.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) a playwright who introduces incongruous elements to preserve an aesthetic distance between characters and audience", text: "This fails on intent. The passage suggests Cameron's use of humble materials was a result of circumstance and the nature of the medium, not a deliberate artistic choice to create \"aesthetic distance.\" Her goal was sincere romanticism, not intellectual detachment. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) a rap artist whose lyrics are designed to subvert the meaning of a song sampled in his recording", text: "This fails on intent. Cameron was trying to *illustrate* and pay homage to her sources (the Bible, Shakespeare), not \"subvert\" their meaning. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) a sculptor whose works possess a certain grandeur even though they are clearly constructed out of ordinary objects", text: "This is a perfect analogy.\n*   \"possess a certain grandeur\" = Cameron's \"magical and mysterious\" scenes.\n*   \"clearly constructed out of ordinary objects\" = Cameron's use of broomsticks, housemaids, etc.\nThis choice perfectly captures the core tension between humble materials and grand artistic effect. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+      { title: "(D) an architect whose buildings are designed to be as functional as possible", text: "This fails because Cameron's work is described as romantic and fantastical, not \"functional.\" Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) a film director who employs ordinary people as actors in order to give the appearance of a documentary", text: "This fails on the goal. Cameron used ordinary people, but her goal was the opposite of documentary realism; she was aiming for romantic fantasy. The realistic \"truth of the sitting\" was an unintentional byproduct of her medium, not her primary aesthetic goal. Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

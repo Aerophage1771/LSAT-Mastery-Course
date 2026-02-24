@@ -10,19 +10,19 @@ export const Lesson2_Question8: Lesson = {
   id: "39-2",
   title: "Question 8: Main Idea",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 8 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-119-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 8: Main Idea Breakdown (PT-119-S-1-P-2-Q-8)" },
     { type: 'blockquote', text: "**Question:** Which one of the following most accurately states the main idea of the passage?" },
     { type: 'options', items: [
-      "(A) While telling a story of familial disruption, Obasan uses structure and symbolism to valorize its protagonist and critique the majority culture. [93.0%] (Correct)",
-      "(B) By means of its structure and symbolism, Obasan mounts a harsh critique of a society that disrupts its citizens’ lives. [1.0%]",
-      "(C) Although intended primarily as social criticism, given its structure Obasan can also be read as a tale of heroic transformation. [2.0%]",
-      "(D) With its three-part structure that parallels rites of passage, Obasan manages to valorize its protagonist in spite of her traumatic experiences. [3.0%]",
-      "(E) Although intended primarily as a story of heroic transformation, Obasan can also be read as a work of social criticism. [2.0%]"
+      "(A) While telling a story of familial disruption, Obasan uses structure and symbolism to valorize its protagonist and critique the majority culture. (Correct)",
+      "(B) By means of its structure and symbolism, Obasan mounts a harsh critique of a society that disrupts its citizens’ lives.",
+      "(C) Although intended primarily as social criticism, given its structure Obasan can also be read as a tale of heroic transformation.",
+      "(D) With its three-part structure that parallels rites of passage, Obasan manages to valorize its protagonist in spite of her traumatic experiences.",
+      "(E) Although intended primarily as a story of heroic transformation, Obasan can also be read as a work of social criticism."
     ]},
-    { type: 'paragraph', text: "This is the classic \"main idea\" or \"main point\" question. It's asking us to identify the single sentence that best captures the author's entire argument. The key to these questions is to find the answer choice that is both accurate and comprehensive. It can't just be one piece of the puzzle; it has to be the whole picture." },
-    { type: 'callout', title: "Prediction", variant: "tip", text: "The author's thesis, which they lay out in the first paragraph and then prove in the next two, is that *Obasan* uses **two techniques (structure and symbolism)** to achieve **two goals (heroism and critique)**. A good main idea answer *must* include all four of these elements." },
-    { type: 'paragraph', text: "Let's look for that in the answer choices." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The main idea is a balanced two-part claim: Kogawa uses form to frame Naomi's heroic transformation and uses symbolism to critique the majority culture. The correct answer must preserve both techniques and both outcomes without making one side primary." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "\"The former end is achieved through the novel's form and the latter through the symbols it employs.\" The close reinforces that dual structure: \"through the careful deployment of structure and symbol... heroic transformation and a critique of the majority culture.\"" },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

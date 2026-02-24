@@ -1,22 +1,62 @@
 
 import React, { useState } from 'react';
 import { ContentBlock, Lesson } from '../types';
-import { Lightbulb, Info, CheckCircle2, XCircle, Copy, Check, ChevronDown, ChevronUp } from 'lucide-react';
+import { Lightbulb, Info, CheckCircle2, XCircle, Copy, Check, ChevronDown, ChevronUp, Target, ListChecks, CircleDot } from 'lucide-react';
 import { ContentBox, extractPtIdFromTitle } from './ContentBox';
-import { QuestionCard } from './QuestionCard';
 import { OptionsBlock } from './OptionsBlock';
 import { ExportControls } from './ExportControls';
+import { LessonShell } from './LessonShell';
 import { generateLessonText, generateLessonRTF, generateLessonJSON, generateLessonCSV, generateLessonPDF } from '../utils/export';
 import { LESSON_FORMAT_THEMES, getLessonFormatTheme } from '../constants/lessonFormatThemes';
 import { parseAccordionToQuestion } from '../utils/parseAccordionToQuestion';
-import { isMacroFormat, getMacroConfig } from '../constants/macroFormatConfig';
+import { getBreakdownForQuestion } from '../utils/getBreakdownForQuestion';
 import { serializeToJSX, serializeToHTML, lessonTitleToComponentName } from '../utils/exportRendering';
+import { ShowcaseQuestionBlock } from './ShowcaseQuestionBlock';
+import { IntegratedRCQuestionCard } from './IntegratedRCQuestionCard';
 
 interface LessonViewerProps {
   title: string;
   content: string | ContentBlock[];
+  /** Optional subtitle (e.g. step-by-step one-liner). Passed to LessonShell when step-by-step. */
+  subtitle?: string;
+  /** Optional module pill (e.g. "Module 2 · Main Conclusion"). Passed to LessonShell when step-by-step. */
+  modulePill?: string;
   variant?: 'default' | 'modal';
   formatId?: number;
+  showExportControls?: boolean;
+}
+
+interface IntegratedRCQuestionGroup {
+  passageTitle: string;
+  passageText: string;
+  questionTitle: string;
+  stem: string;
+  options: string[];
+  analysisLeadBlocks: ContentBlock[];
+  analysisItems: { title: string; text: string; badge?: string; badgeColor?: 'green' | 'red' | 'indigo' | 'slate' | 'blue' }[];
+  endIndex: number;
+}
+
+/** Return true when lesson uses step-by-step layout (h2 guide + intro para + h3 steps). */
+function isStepByStepLesson(lesson: { title: string; content: string | ContentBlock[] }): boolean {
+  const { content } = lesson;
+  if (!Array.isArray(content) || content.length === 0) return false;
+  const first = content[0];
+  if (lesson.title === 'Step-by-Step Guide') return true;
+  if (first?.type === 'h2' && typeof first.text === 'string' && first.text.startsWith('Step-by-Step Guide:')) return true;
+  return false;
+}
+
+/** Return icon component for section heading. Matches template: CircleDot for Goal/Intro/Core Concepts, ListChecks for Stems and Step N. */
+function getSectionIcon(headingText: string): React.ComponentType<{ className?: string }> {
+  const t = headingText.toLowerCase().trim();
+  if (/^step \d+/.test(t)) return ListChecks;
+  if (t === 'question goal' || t === 'introduction') return CircleDot;
+  if (t === 'common question stems' || t.includes('common question stems')) return ListChecks;
+  if (t === 'core concepts' || t.startsWith('core concepts:')) return CircleDot;
+  if (/worked example|example|question/.test(t)) return ListChecks;
+  if (/analysis|concept|core|key takeaway/.test(t)) return Target;
+  return Target;
 }
 
 const parseInlineStyles = (text: string) => {
@@ -97,30 +137,40 @@ const AccordionBlock: React.FC<{ title: string; content: string | ContentBlock[]
   );
 };
 
-const defaultContainerClasses = (variant: 'default' | 'modal') => variant === 'modal'
-  ? "bg-white p-6 md:p-8 rounded-xl shadow-none"
-  : "max-w-4xl mx-auto bg-white p-8 lg:p-12 rounded-2xl shadow-sm border border-slate-100 min-h-[calc(100vh-4rem)]";
-
-const defaultTitleClasses = (variant: 'default' | 'modal') => variant === 'modal'
-  ? "text-2xl font-bold text-slate-900 mb-4 pb-4 border-b border-slate-100"
-  : "text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 pb-6 border-b border-slate-100";
-
 export const LessonViewer: React.FC<LessonViewerProps> = ({
     title,
     content,
+    subtitle,
+    modulePill,
     variant = 'default',
     formatId,
+    showExportControls = true,
 }) => {
   const theme = formatId != null ? getLessonFormatTheme(LESSON_FORMAT_THEMES, formatId) : undefined;
   const currentLesson: Lesson = {
     id: 'current',
     title,
     content,
+    ...(subtitle != null && { subtitle }),
     ...(formatId != null && { formatId }),
   };
-
-  const containerClasses = theme ? theme.container : defaultContainerClasses(variant);
-  const titleClasses = theme ? theme.title : defaultTitleClasses(variant);
+  const stepByStep = typeof content !== 'string' && Array.isArray(content) && content.length > 0 && isStepByStepLesson(currentLesson);
+  const firstH3Index = stepByStep ? content.findIndex((b) => b.type === 'h3') : -1;
+  const hasSteps = stepByStep && firstH3Index >= 0;
+  const introBlocks: ContentBlock[] = hasSteps ? content.slice(0, firstH3Index) : [];
+  const stepChunks: ContentBlock[][] = [];
+  if (hasSteps) {
+    for (let i = firstH3Index; i < content.length; ) {
+      if (content[i].type === 'h3') {
+        let j = i + 1;
+        while (j < content.length && content[j].type !== 'h3') j++;
+        stepChunks.push(content.slice(i, j));
+        i = j;
+      } else {
+        i++;
+      }
+    }
+  }
 
   const renderMarkdown = (text: string) => {
     const lines = text.split('\n');
@@ -140,7 +190,7 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
       }
       if (line.startsWith('---')) return <hr key={index} className="my-10 border-slate-200" />;
       if (line.startsWith('> ')) {
-        return <blockquote key={index} className="border-l-4 border-indigo-300 pl-6 py-3 my-6 bg-indigo-50/50 text-slate-700 italic rounded-r-lg shadow-sm" dangerouslySetInnerHTML={{ __html: parseInlineStyles(line.replace('> ', '')) }} />;
+        return <p key={index} className="mb-4 leading-relaxed text-slate-700 text-lg" dangerouslySetInnerHTML={{ __html: parseInlineStyles(line.replace('> ', '')) }} />;
       }
       if (trimmedLine.startsWith('* ') || trimmedLine.startsWith('- ')) {
         const itemContent = trimmedLine.replace(/^[\*\-]\s/, '');
@@ -163,19 +213,115 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
   const defaultH3 = "text-xl font-bold mt-8 mb-4 text-slate-800 tracking-tight";
   const defaultH4 = "text-lg font-bold mt-8 mb-3 text-slate-800 uppercase tracking-wide";
   const defaultParagraph = "mb-4 leading-relaxed text-slate-700 text-lg";
-  const defaultBlockquote = "border-l-4 border-indigo-300 pl-6 py-3 my-6 bg-indigo-50/50 text-slate-700 italic rounded-r-lg shadow-sm";
   const defaultList = "mb-6 ml-6 pl-2 marker:text-indigo-500 text-slate-700 space-y-2";
   const defaultHr = "my-10 border-slate-200";
 
+  /** Parse a passage accordion + question sequence into one integrated RC question card group. */
+  const parseIntegratedRCQuestionGroup = (blocks: ContentBlock[], accordionIndex: number): IntegratedRCQuestionGroup | null => {
+    const block = blocks[accordionIndex];
+    if (block.type !== 'accordion' || typeof block.content !== 'string') return null;
+    if (!isPassageAccordion(block.title, block.content)) return null;
+
+    let cursor = accordionIndex + 1;
+    if (cursor >= blocks.length || blocks[cursor].type !== 'h3') return null;
+    const questionTitle = blocks[cursor].text;
+    cursor++;
+
+    if (cursor >= blocks.length || blocks[cursor].type !== 'blockquote') return null;
+    const stem = blocks[cursor].text;
+    cursor++;
+
+    if (cursor >= blocks.length || blocks[cursor].type !== 'options') return null;
+    const options = blocks[cursor].items;
+    cursor++;
+
+    const analysisLeadBlocks: ContentBlock[] = [];
+    while (cursor < blocks.length) {
+      const current = blocks[cursor];
+      if (current.type === 'breakdown') {
+        return {
+          passageTitle: block.title,
+          passageText: block.content,
+          questionTitle,
+          stem,
+          options,
+          analysisLeadBlocks,
+          analysisItems: current.items,
+          endIndex: cursor,
+        };
+      }
+      if (current.type === 'accordion' || current.type === 'h1' || current.type === 'h2' || current.type === 'h3') {
+        return null;
+      }
+      analysisLeadBlocks.push(current);
+      cursor++;
+    }
+    return null;
+  };
+
+  /** Precompute which indices are consumed by composite blocks (showcase or integrated cards). */
+  const getConsumedIndices = (blocks: ContentBlock[]): Set<number> => {
+    const consumed = new Set<number>();
+    for (let a = 0; a < blocks.length; a++) {
+      const b = blocks[a];
+      if (b.type !== 'accordion' || typeof b.content === 'string') continue;
+      const parsed = parseAccordionToQuestion(b.content, b.title);
+      if (parsed == null) continue;
+      let processIdx = -1;
+      let breakdownIdx = -1;
+      for (let i = a + 1; i < blocks.length; i++) {
+        if (blocks[i].type === 'process') { processIdx = i; break; }
+      }
+      for (let i = a + 1; i < blocks.length; i++) {
+        if (blocks[i].type === 'breakdown') { breakdownIdx = i; break; }
+      }
+      if (processIdx >= 0) consumed.add(processIdx);
+      if (breakdownIdx >= 0) consumed.add(breakdownIdx);
+    }
+    return consumed;
+  };
+
   const renderBlocks = (blocks: ContentBlock[]) => {
+    const consumedIndices = getConsumedIndices(blocks);
+    const integratedMap = new Map<number, IntegratedRCQuestionGroup>();
+
+    for (let i = 0; i < blocks.length; i++) {
+      const parsed = parseIntegratedRCQuestionGroup(blocks, i);
+      if (!parsed) continue;
+      integratedMap.set(i, parsed);
+      for (let c = i + 1; c <= parsed.endIndex; c++) consumedIndices.add(c);
+    }
+
     return blocks.map((block, index) => {
+      if (consumedIndices.has(index) && (block.type === 'process' || block.type === 'breakdown')) {
+        return <React.Fragment key={index} />;
+      }
+      if (consumedIndices.has(index) && !integratedMap.has(index)) {
+        return <React.Fragment key={index} />;
+      }
       switch (block.type) {
         case 'h1': return <h1 key={index} className={defaultH1} dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
-        case 'h2': return <h2 key={index} className={theme?.h2 ?? defaultH2} dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
-        case 'h3': return <h3 key={index} className={theme?.h3 ?? defaultH3} dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
+        case 'h2': {
+          const Icon = getSectionIcon(block.text);
+          return (
+            <div key={index} className="flex items-center gap-2 text-slate-900 mb-4">
+              <Icon className="w-5 h-5 text-indigo-600 shrink-0" />
+              <h2 className="text-lg font-bold" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />
+            </div>
+          );
+        }
+        case 'h3': {
+          const Icon = getSectionIcon(block.text);
+          return (
+            <div key={index} className="flex items-center gap-2 text-slate-900 mb-4">
+              <Icon className="w-5 h-5 text-indigo-600 shrink-0" />
+              <h3 className="text-lg font-bold" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />
+            </div>
+          );
+        }
         case 'h4': return <h4 key={index} className={theme?.h4 ?? defaultH4} dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
         case 'paragraph': return <p key={index} className={theme?.paragraph ?? defaultParagraph} dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
-        case 'blockquote': return <blockquote key={index} className={theme?.blockquote ?? defaultBlockquote} dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
+        case 'blockquote': return <p key={index} className={theme?.paragraph ?? defaultParagraph} dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
         case 'list': {
           const ListTag = block.ordered ? 'ol' : 'ul';
           const listClasses = `${theme?.list ?? defaultList} ${block.ordered ? 'list-decimal' : 'list-disc'}`;
@@ -188,6 +334,21 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
         case 'hr': return <hr key={index} className={theme?.hr ?? defaultHr} />;
         case 'code': return <CodeBlock key={index} text={block.text} />;
         case 'accordion': {
+          const integrated = integratedMap.get(index);
+          if (integrated) {
+            return (
+              <IntegratedRCQuestionCard
+                key={index}
+                passageTitle={integrated.passageTitle}
+                passageText={integrated.passageText}
+                questionTitle={integrated.questionTitle}
+                stem={integrated.stem}
+                options={integrated.options}
+                analysisLeadBlocks={integrated.analysisLeadBlocks}
+                analysisItems={integrated.analysisItems}
+              />
+            );
+          }
           if (typeof block.content === 'string') {
             const variant = isPassageAccordion(block.title, block.content) ? 'passage' : 'question';
             const id = extractPtIdFromTitle(block.title);
@@ -206,18 +367,23 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
             );
           }
           const parsed = parseAccordionToQuestion(block.content, block.title);
-          if (parsed != null && formatId != null && isMacroFormat(formatId)) {
-            const macro = getMacroConfig(formatId);
-            if (macro) {
-              return (
-                <QuestionCard
-                  key={index}
-                  question={parsed}
-                  variant={macro.questionCardVariant}
-                  defaultExpanded
-                />
-              );
-            }
+          if (parsed != null) {
+            const { analysisSteps, choicesWithExplanations } = getBreakdownForQuestion(
+              blocks,
+              index,
+              parsed.choices,
+              parsed.correctAnswer
+            );
+            return (
+              <ShowcaseQuestionBlock
+                key={index}
+                title={block.title}
+                stimulus={parsed.stimulus}
+                stem={parsed.stem}
+                choices={choicesWithExplanations}
+                analysisSteps={analysisSteps}
+              />
+            );
           }
           const id = extractPtIdFromTitle(block.title);
           return (
@@ -249,9 +415,30 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
               </table>
             </div>
           );
-        case 'callout':
+        case 'callout': {
+          if (block.variant === 'goal') {
+            return (
+              <div key={index} className="mt-6 mb-2 rounded-xl border border-slate-200 bg-slate-50 p-5">
+                <p className="text-base leading-relaxed text-slate-700" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />
+              </div>
+            );
+          }
           const isSummary = block.variant === 'summary';
           const isTip = block.variant === 'tip';
+          const isKeyTakeaways = isSummary && block.title != null && /key takeaway/i.test(block.title);
+          if (isKeyTakeaways) {
+            const lines = block.text.split('\n').filter((l) => l.trim());
+            return (
+              <section key={index} className="my-10 rounded-2xl border border-slate-200 bg-white p-6 md:p-8">
+                <h2 className="text-xl font-bold text-slate-900">{block.title}</h2>
+                <ul className="mt-5 list-disc pl-6 space-y-4 text-[17px] leading-7 text-slate-700 marker:text-slate-400">
+                  {lines.map((line, i) => (
+                    <li key={i} dangerouslySetInnerHTML={{ __html: parseInlineStyles(line.trim()) }} />
+                  ))}
+                </ul>
+              </section>
+            );
+          }
           const bgColor = isSummary ? 'bg-indigo-50 border-indigo-100' : isTip ? 'bg-amber-50 border-amber-100' : 'bg-slate-50 border-slate-200';
           const iconColor = isSummary ? 'text-indigo-600' : isTip ? 'text-amber-600' : 'text-slate-500';
           const Icon = isSummary ? Lightbulb : isTip ? Lightbulb : Info;
@@ -270,62 +457,54 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
               </div>
             </div>
           );
+        }
         case 'options':
           return <OptionsBlock key={index} items={block.items} />;
         case 'process':
           return (
-            <div key={index} className="my-10 bg-gradient-to-br from-indigo-50 to-white p-6 md:p-8 rounded-2xl border border-indigo-100 shadow-sm">
-               {block.title && <h4 className="font-bold text-indigo-900 mb-8 uppercase tracking-wider text-sm border-b border-indigo-100 pb-2">{block.title}</h4>}
-               <div className="relative">
-                 <div className="absolute left-4 top-4 bottom-4 w-0.5 bg-indigo-200" aria-hidden="true"></div>
-                 <div className="space-y-8">
-                   {block.steps.map((step, i) => (
-                     <div key={i} className="relative flex items-start group">
-                        <div className="relative z-10 flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-indigo-600 text-white font-bold text-sm shadow-sm ring-4 ring-white group-hover:scale-110 transition-transform duration-200">{i + 1}</div>
-                        <div className="ml-6 flex-1 pt-1">
-                           <div className="text-slate-800 font-medium text-lg leading-relaxed group-hover:text-indigo-900 transition-colors" dangerouslySetInnerHTML={{ __html: parseInlineStyles(step) }} />
-                        </div>
+            <div key={index} className="my-10 rounded-xl border border-indigo-100 bg-indigo-50/30 p-6 lg:p-8">
+               {block.title && <h3 className="text-sm font-bold tracking-wider text-indigo-900 uppercase mb-6">{block.title}</h3>}
+               <ol className="space-y-6">
+                 {block.steps.map((step, i) => (
+                   <li key={i} className="flex gap-4">
+                     <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-indigo-100 text-indigo-700 text-sm font-bold">
+                       {i + 1}
                      </div>
-                   ))}
-                 </div>
-               </div>
+                     <div className="text-sm leading-relaxed text-slate-800" dangerouslySetInnerHTML={{ __html: parseInlineStyles(step) }} />
+                   </li>
+                 ))}
+               </ol>
             </div>
           );
         case 'breakdown':
-          const labelTitle = block.labels?.title || "Text";
-          const labelText = block.labels?.text || "Analysis";
-          const colLeft = block.colWidth === 'narrow' ? 'md:w-1/4' : 'md:w-1/2';
-          const colRight = block.colWidth === 'narrow' ? 'md:w-3/4' : 'md:w-1/2';
-          
           return (
-            <div key={index} className="my-8 space-y-6">
+            <div key={index} className="my-8 space-y-4">
               {block.items.map((item, i) => {
-                let badgeStyles = "bg-slate-100 text-slate-600";
-                let borderColor = "border-slate-200";
-                if (item.badgeColor === 'green') { badgeStyles = "bg-emerald-100 text-emerald-800"; borderColor = "border-emerald-200 bg-emerald-50/30"; }
-                else if (item.badgeColor === 'red') { badgeStyles = "bg-red-100 text-red-800"; borderColor = "border-red-200 bg-red-50/30"; }
-                else if (item.badgeColor === 'indigo') { badgeStyles = "bg-indigo-100 text-indigo-800"; borderColor = "border-indigo-200 bg-indigo-50/30"; }
-                else if (item.badgeColor === 'blue') { badgeStyles = "bg-blue-100 text-blue-800"; borderColor = "border-blue-200 bg-blue-50/30"; }
+                const isCorrect = item.badgeColor === 'green';
+                const cardClass = isCorrect ? 'border-emerald-200 bg-emerald-50' : 'border-red-200 bg-red-50/30';
+                const letterMatch = String(item.title).trim().match(/^\(([A-E])\)/);
+                const optionLabel = letterMatch ? `Option ${letterMatch[1]}` : (block.labels?.title ?? 'Option');
                 return (
-                  <div key={i} className={`flex flex-col md:flex-row gap-4 md:gap-8 p-6 rounded-xl border ${borderColor} transition-all hover:shadow-sm`}>
-                     <div className={`${colLeft} flex flex-col items-start`}>
-                        <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">{labelTitle}</div>
-                        <div className="text-slate-900 font-medium text-lg leading-relaxed mb-2" dangerouslySetInnerHTML={{ __html: parseInlineStyles(item.title) }} />
-                        {item.badge && (
-                          <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wide mt-1 ${badgeStyles}`}>
-                            {item.badgeColor === 'green' && <CheckCircle2 size={12} className="mr-1" />}
-                            {item.badgeColor === 'red' && <XCircle size={12} className="mr-1" />}
-                            {item.badge}
-                          </span>
-                        )}
-                     </div>
-                     <div className="hidden md:block w-px bg-slate-200 self-stretch"></div>
-                     <div className={colRight}>
-                        <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">{labelText}</div>
-                        <div className="text-slate-600 leading-relaxed space-y-2">
-                           {item.text.split('\n').map((line, i) => <p key={i} dangerouslySetInnerHTML={{ __html: parseInlineStyles(line) }} />)}
-                        </div>
-                     </div>
+                  <div key={i} className={`rounded-lg border p-5 ${cardClass}`}>
+                    <div className="flex items-start justify-between gap-4">
+                      <div>
+                        <p className={`text-xs font-bold tracking-wide uppercase ${isCorrect ? 'text-emerald-700' : 'text-slate-500'}`}>
+                          {optionLabel}
+                        </p>
+                        <p className="mt-1 text-sm font-semibold text-slate-900" dangerouslySetInnerHTML={{ __html: parseInlineStyles(item.title) }} />
+                      </div>
+                      <span
+                        className={`shrink-0 flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-bold ${
+                          isCorrect ? 'bg-white text-emerald-700 border border-emerald-200' : 'bg-white text-red-700 border border-red-200'
+                        }`}
+                      >
+                        {isCorrect ? <CheckCircle2 className="w-3.5 h-3.5" /> : <XCircle className="w-3.5 h-3.5" />}
+                        {item.badge ?? (isCorrect ? 'Correct' : 'Incorrect')}
+                      </span>
+                    </div>
+                    <div className="mt-3 text-sm leading-relaxed text-slate-700 space-y-2">
+                      {item.text.split('\n').map((line, j) => <p key={j} dangerouslySetInnerHTML={{ __html: parseInlineStyles(line) }} />)}
+                    </div>
                   </div>
                 );
               })}
@@ -336,39 +515,44 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
     });
   };
 
-  return (
-    <div className="bg-slate-50/50 p-4 lg:p-8" data-export-content>
-      <div className={containerClasses}>
-        <div className="bg-slate-50/50 p-4 lg:p-8">
-          <div className="mb-8 flex flex-col md:flex-row md:items-start justify-between gap-4">
-            <div>
-             <span className="text-indigo-600 font-bold tracking-wide uppercase text-sm mb-2 block">Current Lesson</span>
-             <h1 className={titleClasses}>{title}</h1>
-          </div>
-          <div className="flex-shrink-0" data-export-skip>
-            <ExportControls 
-               label="Lesson"
-               filename={`LSAT_Lesson_${title.replace(/\s+/g, '_')}`}
-               onCopy={() => generateLessonText(currentLesson)}
-               onExportText={() => generateLessonText(currentLesson)}
-               onExportRTF={() => generateLessonRTF(currentLesson)}
-               onExportJSON={() => generateLessonJSON(currentLesson)}
-               onExportCSV={() => generateLessonCSV(currentLesson)}
-               onExportPDF={() => generateLessonPDF(currentLesson)}
-               onCopyAsJSX={() => serializeToJSX(document.querySelector<HTMLElement>('[data-export-content]'), { pretty: true, wrapAsComponent: lessonTitleToComponentName(title) })}
-               onCopyAsHTML={() => serializeToHTML(document.querySelector<HTMLElement>('[data-export-content]'))}
-            />
-            </div>
-          </div>
-          <div className={containerClasses}>
-            <div className="bg-slate-50/50 p-4 lg:p-8">
-              <div className={theme ? 'max-w-none' : 'prose prose-slate prose-lg max-w-none'}>
-                {typeof content === 'string' ? renderMarkdown(content) : renderBlocks(content)}
-              </div>
-            </div>
-          </div>
-        </div>
+  const cardContent =
+    stepByStep && hasSteps ? (
+      <div className={theme ? 'max-w-none' : 'prose prose-slate prose-lg max-w-none'}>
+        {introBlocks.length > 0 && renderBlocks(introBlocks)}
+        {stepChunks.map((chunk, idx) => (
+          <React.Fragment key={`step-${idx}`}>
+            <hr className="my-10 border-slate-200" />
+            {renderBlocks(chunk)}
+          </React.Fragment>
+        ))}
       </div>
-    </div>
+    ) : (
+      <div className={theme ? 'max-w-none' : 'prose prose-slate prose-lg max-w-none'}>
+        {typeof content === 'string' ? renderMarkdown(content) : renderBlocks(content)}
+      </div>
+    );
+
+  return (
+    <LessonShell
+      title={title}
+      subtitle={stepByStep ? subtitle : undefined}
+      modulePill={stepByStep ? modulePill : undefined}
+      exportControls={showExportControls ? (
+        <ExportControls
+          label="Lesson"
+          filename={`LSAT_Lesson_${title.replace(/\s+/g, '_')}`}
+          onCopy={() => generateLessonText(currentLesson)}
+          onExportText={() => generateLessonText(currentLesson)}
+          onExportRTF={() => generateLessonRTF(currentLesson)}
+          onExportJSON={() => generateLessonJSON(currentLesson)}
+          onExportCSV={() => generateLessonCSV(currentLesson)}
+          onExportPDF={() => generateLessonPDF(currentLesson)}
+          onCopyAsJSX={() => serializeToJSX(document.querySelector<HTMLElement>('[data-export-content]'), { pretty: true, wrapAsComponent: lessonTitleToComponentName(title) })}
+          onCopyAsHTML={() => serializeToHTML(document.querySelector<HTMLElement>('[data-export-content]'))}
+        />
+      ) : undefined}
+    >
+      {cardContent}
+    </LessonShell>
   );
 };

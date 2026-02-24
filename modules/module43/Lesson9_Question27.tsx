@@ -11,23 +11,25 @@ export const Lesson9_Question27: Lesson = {
   id: "43-9",
   title: "Question 27: Author Viewpoint",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-4-Q-27" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-4)', content: passageText },
+    { type: 'h3', text: "Question 27: Author Viewpoint Breakdown (PT-128-S-4-P-4-Q-27)" },
     { type: 'blockquote', text: "**Question:** Which one of the following is a view advanced by the author of passage A with which the author of passage B would be most likely to agree?" },
     { type: 'options', items: [
-      "(A) It is sometimes possible for the legal system to take unmerited disadvantages into account in rendering judgment on people and their actions. [6.0%]",
-      "(B) Whether or not cosmic justice is an attainable ideal, human law should strive for it because doing so produces more just legal outcomes. [3.0%]",
-      "(C) Impartial legal processes are a better means of achieving cosmic justice than are efforts to address unmerited disadvantages directly. [7.0%]",
-      "(D) Human law should be concerned with the consequences of human actions, not with the myriad of factors that influence human actions. [83.0%] (Correct)",
-      "(E) Human legal systems can in theory achieve cosmic justice by focusing upon factors that tend to mitigate punishment. [2.0%]"
+      "(A) It is sometimes possible for the legal system to take unmerited disadvantages into account in rendering judgment on people and their actions.",
+      "(B) Whether or not cosmic justice is an attainable ideal, human law should strive for it because doing so produces more just legal outcomes.",
+      "(C) Impartial legal processes are a better means of achieving cosmic justice than are efforts to address unmerited disadvantages directly.",
+      "(D) Human law should be concerned with the consequences of human actions, not with the myriad of factors that influence human actions. (Correct)",
+      "(E) Human legal systems can in theory achieve cosmic justice by focusing upon factors that tend to mitigate punishment."
     ]},
-    { type: 'paragraph', text: "We need a point of agreement. Author A concludes we should judge based on 'outputs, or consequences,' not 'inputs.' Author B concludes that focusing on 'unmerited disadvantages' (inputs) has bad consequences and that justice should be about process. Both reject focusing on inputs in favor of a system concerned with actions and their real-world results." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "Concept focus: shared-viewpoint questions in paired passages require intersection logic. First identify what A says, then what B says, then keep only the overlap. A emphasizes judging outputs/consequences instead of hidden causal inputs. B emphasizes process justice and warns against mitigating punishment based on unmerited disadvantages. The overlap is skepticism toward input-heavy cosmic recalibration, not agreement on every reason." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "A: \"judge primarily based upon outputs, or consequences, rather than inputs.\" B: traditional justice centers on impartial process and criticizes using traumatic childhood as mitigation because of downstream harms. The best answer must capture this common direction without importing claims either passage rejects." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) It is sometimes possible for the legal system to take unmerited disadvantages into account...", text: "Author A says this is 'impossible' to do correctly. Author B calls it 'foolish.' Both disagree.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) ...human law should strive for it...", text: "This is the exact position both authors argue against.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) Impartial legal processes are a better means of achieving cosmic justice...", text: "Author B presents these as two competing, fundamentally different concepts, not as two means to the same end.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) Human law should be concerned with the consequences of human actions, not with the myriad of factors that influence human actions.", text: "**Consequences:** Author A endorses judging 'outputs, or consequences.' Author B is concerned with consequences like deterrence.\n**Not Factors:** Author A rejects 'inputs.' Author B rejects considering 'unmerited disadvantages.' This statement captures a core conclusion shared by both.", badge: "Correct", badgeColor: "green" },
-      { title: "(E) Human legal systems can in theory achieve cosmic justice...", text: "Author A says this is 'impossible.' Author B says it is 'foolish.' A direct contradiction of both views.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) It is sometimes possible for the legal system to take unmerited disadvantages into account...", text: "This conflicts with both passages. A says humans cannot perform the required cosmic calculation, and B treats this kind of adjustment as misguided and harmful in legal practice.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) ...human law should strive for it...", text: "Both authors reject this direction. A says legal systems should not try to dispense cosmic justice, and B argues that cosmic justice is a fundamentally different and problematic legal objective.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) Impartial legal processes are a better means of achieving cosmic justice...", text: "B does not treat impartial process as a route to cosmic justice; B treats traditional process justice as a different concept altogether. So this choice misstates B and cannot be shared.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) Human law should be concerned with the consequences of human actions, not with the myriad of factors that influence human actions.", text: "This best captures the overlap. A explicitly prefers output/consequence-based judgment over input-based deservedness, and B rejects broad mitigation based on unmerited background factors while stressing practical legal consequences.", badge: "Correct", badgeColor: "green" },
+      { title: "(E) Human legal systems can in theory achieve cosmic justice...", text: "A directly denies this feasibility, and B attacks the project as misguided. So this option reverses both authors' direction.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

@@ -12,17 +12,19 @@ export const Lesson3_Question15: Lesson = {
   id: "41-3",
   title: "Question 15: Inference (EXCEPT)",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-3-Q-15" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-3)', content: passageText },
+    { type: 'h3', text: "Question 15: Inference (EXCEPT) Breakdown (PT-128-S-1-P-3-Q-15)" },
     { type: 'blockquote', text: "**Question:** The passage provides information to answer all of the following questions EXCEPT:" },
     { type: 'options', items: [
-      "(A) What kinds of influences affect the national identities people construct from their past? [2.0%]",
-      "(B) Why did nineteenth-century European commentators ignore some discussion of Greek culture by ancient Greek writers? [4.0%]",
-      "(C) In what ways did African cultural influence affect the culture of ancient Greece? [85.0%] (Correct)",
-      "(D) Why was Queen Victoria of England declared empress of India in 1876? [3.0%]",
-      "(E) What is one reason why revolutionary poets speak and write as they do? [6.0%]"
+      "(A) What kinds of influences affect the national identities people construct from their past?",
+      "(B) Why did nineteenth-century European commentators ignore some discussion of Greek culture by ancient Greek writers?",
+      "(C) In what ways did African cultural influence affect the culture of ancient Greece? (Correct)",
+      "(D) Why was Queen Victoria of England declared empress of India in 1876?",
+      "(E) What is one reason why revolutionary poets speak and write as they do?"
     ]},
-    { type: 'paragraph', text: "This is an \"EXCEPT\" question, which asks to identify which of the listed questions the passage does *not* provide enough information to answer. The correct approach is to treat each answer choice as a question and search the passage for a direct or strongly implied answer. The one that cannot be answered is the correct choice." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "For an EXCEPT format, the credited choice is the one question the passage cannot answer. Here, the passage gives motivations for identity revision and concrete examples of political reinterpretation, so most choices are supported. What it does not provide is a substantive account of how African influence shaped Greece in specific domains; it only asserts that such roots existed." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The passage says Greek civilization had roots in \"Egyptian and various other African and Eastern cultures,\" but never specifies the forms of that influence. By contrast, it explicitly explains other issues, like why commentators ignored hybrid acknowledgments and why imperial elites invented traditions." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

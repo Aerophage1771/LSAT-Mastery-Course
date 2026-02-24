@@ -8,22 +8,21 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h2', text: 'Question Goal' },
     {
       type: 'callout',
-      text: '**Identify a new piece of information** that, if true, would damage the argument\'s reasoning.',
+      text: '**Identify a new piece of information that, if true, would damage the argument\'s reasoning.** Which statement makes the conclusion less likely to follow from the evidence provided?',
       variant: 'goal',
     },
-    { type: 'paragraph', text: 'This module covers Weaken.' },
     { type: 'hr' },
     { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: '**Building on Evaluation**\n\nWeaken questions build directly upon the skills developed in **Evaluate the Argument**. In the previous module, your task was to identify a question that *could* potentially help you judge an argument. In a Weaken question, you have moved past the questioning phase: you are now looking for a definitive new fact that actively widens the logical gap and exposes the argument\'s failure.' },
     { type: 'paragraph', text: 'Your task is to identify the logical link between the evidence and the claim and find the information that most effectively severs that link. You are not looking to disprove the conclusion entirely, but rather to find the fact that makes the conclusion less likely to be true. This is one of the most frequently tested skills on the LSAT, measuring your ability to identify the vulnerabilities inherent in an argument\'s design.' },
     { type: 'hr' },
     { type: 'h2', text: 'Common Question Stems' },
-    { type: 'paragraph', text: 'You can recognize these questions by the phrase """"if true"""" combined with words like """"weaken,"""" """"undermine,"""" or """"calls into question."""" Typical phrasing includes:' },
+    { type: 'paragraph', text: 'You can recognize these questions by the phrase "if true" combined with words like "weaken," "undermine," or "calls into question." Typical phrasing includes:' },
     { type: 'list', items: [
-      '""""Which one of the following, if true, most seriously weakens the argument?""""',
-      '""""Which one of the following, if true, most undermines the reasoning above?""""',
-      '""""Which one of the following, if true, casts the most doubt on the conclusion drawn above?""""',
-      '""""Which one of the following statements, if true, most seriously calls into question the claim made by the spokesperson?""""'
+      '"Which one of the following, if true, most seriously weakens the argument?"',
+      '"Which one of the following, if true, most undermines the reasoning above?"',
+      '"Which one of the following, if true, casts the most doubt on the conclusion drawn above?"',
+      '"Which one of the following statements, if true, most seriously calls into question the claim made by the spokesperson?"'
     ]},
     { type: 'hr' },
     { type: 'h2', text: 'Core Concepts' },

@@ -10,24 +10,25 @@ export const Lesson5_Question24: Lesson = {
   id: "54-5",
   title: "Question 24: Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 24 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-111-S-2-P-4)', content: passageText },
+    { type: 'h3', text: "Question 24: Inference Breakdown (PT-111-S-2-P-4-Q-24)" },
     { type: 'blockquote', text: "**Question:** According to the passage, which one of the following is a goal of Dworkin’s theory of legal interpretation?" },
     { type: 'options', items: [
-      "(A) to evaluate previous legal interpretations by judges influenced by legal positivism [9.0%]",
-      "(B) to dispute the notion that social consensus plays any role in legal interpretation [10.0%]",
-      "(C) to provide a theoretical argument against the use of moral intuition in legal interpretation [17.0%]",
-      "(D) to argue that legal decisions must be based on the principles of the original authors of the laws [18.0%]",
-      "(E) to validate theoretically the method commonly used by judges in practice [45.0%] (Correct)"
+      "(A) to evaluate previous legal interpretations by judges influenced by legal positivism",
+      "(B) to dispute the notion that social consensus plays any role in legal interpretation",
+      "(C) to provide a theoretical argument against the use of moral intuition in legal interpretation",
+      "(D) to argue that legal decisions must be based on the principles of the original authors of the laws",
+      "(E) to validate theoretically the method commonly used by judges in practice (Correct)"
     ]},
-    { type: 'paragraph', text: "This is an Inference question asking for a specific goal of Dworkin's theory, according to the passage. We must find direct textual evidence for one of the answer choices." },
-    { type: 'callout', title: "Evidence Hunt", variant: "tip", text: "The third paragraph provides the key. It states that legal positivism is 'incompatible with the actual practice of judges and lawyers...' It then says Dworkin's theory 'seeks to validate this practice.' This is a direct statement of his goal." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This inference question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Ronald Dworkin argues that judges are in danger of uncritically embracing...' and 'Once we realize, as Dworkin does, that the law has an...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-        { title: "(A)", text: "While Dworkin's theory implicitly challenges legal positivism, its main goal is broader than just evaluating past interpretations. It aims to provide a new framework for interpretation in general.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This is too strong. The passage says Dworkin believes an interpretation can be correct even without consensus, not that consensus plays no role at all.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "This is the opposite of Dworkin's position. The passage says his view allows judges to 'consult their own moral intuitions' when guided by the law's internal logic.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "The passage directly contradicts this. The final sentence says Dworkin's theory allows for 'improving upon the interpretations... of the original authors.'", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "This is a perfect match for the textual evidence. The passage explicitly states that Dworkin's theory 'seeks to validate' the 'actual practice of judges and lawyers.'", badge: "Correct", badgeColor: "green" }
+        { title: "(A)", text: "While Dworkin's theory implicitly challenges legal positivism, its main goal is broader than just evaluating past interpretations. It aims to provide a new framework for interpretation in general. Additional check: trap type is too broad, since it extends beyond what the passage actually supports.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This is too strong. The passage says Dworkin believes an interpretation can be correct even without consensus, not that consensus plays no role at all. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "This is the opposite of Dworkin's position. The passage says his view allows judges to 'consult their own moral intuitions' when guided by the law's internal logic. Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "The passage directly contradicts this. The final sentence says Dworkin's theory allows for 'improving upon the interpretations... of the original authors.' Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "This is a perfect match for the textual evidence. The passage explicitly states that Dworkin's theory 'seeks to validate' the 'actual practice of judges and lawyers.' Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" }
     ]}
   ]
 };

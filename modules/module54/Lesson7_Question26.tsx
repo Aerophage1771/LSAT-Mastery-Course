@@ -10,24 +10,25 @@ export const Lesson7_Question26: Lesson = {
   id: "54-7",
   title: "Question 26: 3rd-Party Viewpoint",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 26 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-111-S-2-P-4)', content: passageText },
+    { type: 'h3', text: "Question 26: 3rd-Party Viewpoint Breakdown (PT-111-S-2-P-4-Q-26)" },
     { type: 'blockquote', text: "**Question:** It can be inferred that legal positivists, as described in the passage, agree with which one of the following statements?" },
     { type: 'options', items: [
-      "(A) Judges sometimes ought to be allowed to use personal moral convictions as a basis for a legal interpretation. [7.0%]",
-      "(B) Disagreements about the meaning of a law are never legitimate. [8.0%]",
-      "(C) The ultimate standard of interpretation is the logic of the law itself, not moral intuition. [25.0%]",
-      "(D) The meaning of a law derives from jurists’ interpretations of that law. [39.0%] (Correct)",
-      "(E) There is no legal fact of the matter when jurists have differing moral convictions about an issue. [21.0%]"
+      "(A) Judges sometimes ought to be allowed to use personal moral convictions as a basis for a legal interpretation.",
+      "(B) Disagreements about the meaning of a law are never legitimate.",
+      "(C) The ultimate standard of interpretation is the logic of the law itself, not moral intuition.",
+      "(D) The meaning of a law derives from jurists’ interpretations of that law. (Correct)",
+      "(E) There is no legal fact of the matter when jurists have differing moral convictions about an issue."
     ]},
-    { type: 'paragraph', text: "This is a 3rd-Party Viewpoint question. We need to infer the position of 'legal positivists' based only on their description in the passage." },
-    { type: 'callout', title: "Evidence Hunt", variant: "tip", text: "The second paragraph is our primary source. It states that for positivists, the meaning of law 'rests on social convention,' which is resolved by 'registering a consensus.' This means what jurists agree upon *is* the law. The final paragraph adds that the positivist's mistake is assuming meaning 'can only consist in what people think it means... a majority of the interpreter’s peers.'" },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This 3rd-party viewpoint question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Ronald Dworkin argues that judges are in danger of uncritically embracing...' and 'Once we realize, as Dworkin does, that the law has an...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-        { title: "(A)", text: "This is incorrect. The passage states positivists believe 'law and morality are wholly distinct.' They would not support using personal moral convictions.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This is too extreme. The passage says positivists view disagreements as legitimate if they are 'over what the underlying convention is.'", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "This describes Dworkin's theory, not legal positivism. The 'internal logic' of the law is Dworkin's alternative to the positivist view.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "This aligns with the description of legal positivism. The passage explains that for positivists, the law's meaning comes from 'social convention,' determined by reaching a 'consensus' among legal professionals (jurists). Therefore, the meaning derives from what these interpreters agree it means.", badge: "Correct", badgeColor: "green" },
-        { title: "(E)", text: "This is a misreading. The passage states that for positivists, there is no legal fact when there is 'no consensus' on the law's meaning, not necessarily when jurists have different moral views.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "This is incorrect. The passage states positivists believe 'law and morality are wholly distinct.' They would not support using personal moral convictions. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This is too extreme. The passage says positivists view disagreements as legitimate if they are 'over what the underlying convention is.' Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "This describes Dworkin's theory, not legal positivism. The 'internal logic' of the law is Dworkin's alternative to the positivist view. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "This aligns with the description of legal positivism. The passage explains that for positivists, the law's meaning comes from 'social convention,' determined by reaching a 'consensus' among legal professionals (jurists). Therefore, the meaning derives from what these interpreters agree it means. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(E)", text: "This is a misreading. The passage states that for positivists, there is no legal fact when there is 'no consensus' on the law's meaning, not necessarily when jurists have different moral views. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

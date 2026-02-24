@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "1-2",
   title: "Step-by-Step Guide",
+  subtitle: "A clear process for mapping argument structure and identifying the role of any statement.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Argument Part' },
     { type: 'paragraph', text: "This section provides a clear, step-by-step process for solving any Argument Part question. The goal is to move from the stimulus to the correct answer choice efficiently and accurately by mapping the argument's structure." },

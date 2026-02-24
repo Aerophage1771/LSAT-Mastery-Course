@@ -9,26 +9,28 @@ export const Lesson5_Question18: Lesson = {
   id: "52-5",
   title: "Question 18: Inference (Author Viewpoint)",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 18 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-110-S-4-P-3)', content: passageText },
+    { type: 'h3', text: "Question 18: Inference (Author Viewpoint) Breakdown (PT-110-S-4-P-3-Q-18)" },
     { type: 'blockquote', text: "**Question:** It can be inferred from the passage that Meyerson would be most likely to agree with which one of the following statements about “external considerations” (second-to-last sentence of the passage)?" },
     { type: 'options', items: [
-      "(A) How one determines the extent to which these considerations are relevant depends on one’s degree of belief in the legal process. [12.0%]",
-      "(B) The extent to which these considerations are part of the legal process depends on the extent to which the policies and values can be endorsed. [25.0%]",
-      "(C) When these considerations have more moral authority than the law, the former should outweigh the latter. [5.0%]",
-      "(D) If one uses these considerations in determining a legal solution, one is assuming that the policies and values are desirable. [14.0%]",
-      "(E) Whether these considerations are separate from or integral to the legal process is a matter of debate. [44.0%] (Correct)"
+      "(A) How one determines the extent to which these considerations are relevant depends on one’s degree of belief in the legal process.",
+      "(B) The extent to which these considerations are part of the legal process depends on the extent to which the policies and values can be endorsed.",
+      "(C) When these considerations have more moral authority than the law, the former should outweigh the latter.",
+      "(D) If one uses these considerations in determining a legal solution, one is assuming that the policies and values are desirable.",
+      "(E) Whether these considerations are separate from or integral to the legal process is a matter of debate. (Correct)"
     ]},
-    { type: 'paragraph', text: "This question asks for an inference about Meyerson's view on 'external considerations.' The final paragraph details a specific point of disagreement on this topic. A CLS scholar would object that using 'external considerations of purpose, policy, and value' requires endorsing them. Meyerson's reply is that 'such considerations may be viewed as part of, not separate from, the rules of the game.' The core of the issue is definitional: are these considerations 'external' or 'internal' to the law? The fact that Meyerson and a CLS scholar hold opposing views on this very question shows that it is a point of contention." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This inference (author viewpoint) question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Philosopher Denise Meyerson views the Critical Legal Studies (CLS) movement as...' and 'But Meyerson replies that such considerations may be viewed as part...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "Meyerson argues that applying the law does not require believing in it. This choice incorrectly links the relevance of the considerations to one's belief in the legal process, which contradicts her point.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This is the opposite of Meyerson's argument. She separates the act of applying legal rules (including these considerations) from endorsing their values, using a game analogy to make her point.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "The passage does not show Meyerson discussing a situation where external considerations should outweigh the law based on moral authority. Her argument is about what constitutes the law, not when to disregard it.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "This statement represents the CLS position that Meyerson specifically argues against. Meyerson believes that one can use these considerations without necessarily thinking the underlying policies are good or desirable.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "This statement accurately reflects the debate presented in the passage. A CLS scholar views these considerations as 'external' to the law, while Meyerson argues they 'may be viewed as part of' the law's rules. This difference in perspective shows that their role is a matter of debate.", badge: "Correct", badgeColor: "green" }
+        { title: "(A)", text: "Meyerson argues that applying the law does not require believing in it. This choice incorrectly links the relevance of the considerations to one's belief in the legal process, which contradicts her point. Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This is the opposite of Meyerson's argument. She separates the act of applying legal rules (including these considerations) from endorsing their values, using a game analogy to make her point. Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "The passage does not show Meyerson discussing a situation where external considerations should outweigh the law based on moral authority. Her argument is about what constitutes the law, not when to disregard it. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "This statement represents the CLS position that Meyerson specifically argues against. Meyerson believes that one can use these considerations without necessarily thinking the underlying policies are good or desirable. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "This statement accurately reflects the debate presented in the passage. A CLS scholar views these considerations as 'external' to the law, while Meyerson argues they 'may be viewed as part of' the law's rules. This difference in perspective shows that their role is a matter of debate. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" }
       ]
     }
   ]

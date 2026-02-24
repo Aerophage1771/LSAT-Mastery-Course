@@ -11,23 +11,25 @@ export const Lesson2_Question20: Lesson = {
   id: "43-2",
   title: "Question 20: Title",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-4-Q-20" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-4)', content: passageText },
+    { type: 'h3', text: "Question 20: Title Breakdown (PT-128-S-4-P-4-Q-20)" },
     { type: 'blockquote', text: "**Question:** Which one of the following pairs of titles would be most appropriate for passage A and passage B, respectively?" },
     { type: 'options', items: [
-      "(A) “Cosmic Justice Meets Human Limitations”\n“Fairness as Process versus Cosmic Fairness” [87.0%] (Correct)",
-      "(B) “Sowell’s Theory of Justice”\n“The Key to Deterrence” [2.0%]",
-      "(C) “Just Deserts”\n“Fair and Unfair Disadvantages” [0.0%]",
-      "(D) “A Critique of Sowell”\n“Traditional Justice Writ Large” [1.0%]",
-      "(E) “The Impossibility of Achieving Cosmic Justice”\n“Fair Trials versus Justice as Impartial Process” [10.0%]"
+      "(A) “Cosmic Justice Meets Human Limitations”\n“Fairness as Process versus Cosmic Fairness” (Correct)",
+      "(B) “Sowell’s Theory of Justice”\n“The Key to Deterrence”",
+      "(C) “Just Deserts”\n“Fair and Unfair Disadvantages”",
+      "(D) “A Critique of Sowell”\n“Traditional Justice Writ Large”",
+      "(E) “The Impossibility of Achieving Cosmic Justice”\n“Fair Trials versus Justice as Impartial Process”"
     ]},
-    { type: 'paragraph', text: "This question asks us to select the most appropriate pair of titles. A fitting title must concisely capture the central argument of its passage." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "Concept focus: title questions test whether you can compress each passage to its central job. In a paired-title question, each title has to fit its own passage and the two titles together should preserve the main contrast between the passages. Passage A argues that cosmic justice collides with human limits. Passage B contrasts process-based traditional justice with outcome-driven cosmic justice and then criticizes the cosmic model." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Use three anchors: A says cosmic justice is impossible for human law because we cannot know enough; B says traditional justice is about fair process; B then says cosmic justice seeks to correct unmerited disadvantages and can undermine deterrence. The best title pair must capture both A's impossibility claim and B's process-vs-cosmic contrast." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) “Cosmic Justice Meets Human Limitations” / “Fairness as Process versus Cosmic Fairness”", text: "**Title for A:** 'Cosmic Justice Meets Human Limitations' is an excellent summary. The entire passage is about the collision between the abstract concept and practical human reality.\n**Title for B:** 'Fairness as Process versus Cosmic Fairness' is equally strong. 'Fairness as Process' is an accurate description of traditional justice, and 'versus' highlights the central contrast.\n**Verdict:** Both titles are highly accurate.", badge: "Correct", badgeColor: "green" },
-      { title: "(B) “Sowell’s Theory of Justice” / “The Key to Deterrence”", text: "**Title for A:** Too broad. The passage only introduces one term from Sowell.\n**Title for B:** Too narrow. Deterrence is mentioned only in the final sentence as one negative consequence.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) “Just Deserts” / “Fair and Unfair Disadvantages”", text: "**Title for A:** Misleading. The passage's point is that humans *cannot* determine 'just deserts.'\n**Title for B:** Too vague. It omits the crucial concept of 'traditional justice' and the central contrast.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) “A Critique of Sowell” / “Traditional Justice Writ Large”", text: "**Title for A:** Inaccurate. The author is applying Sowell's concept, not criticizing it.\n**Title for B:** Contradicts the text, which states cosmic justice is 'fundamentally different' from traditional justice, not a larger version of it.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) “The Impossibility of Achieving Cosmic Justice” / “Fair Trials versus Justice as Impartial Process”", text: "**Title for A:** A strong and accurate title, making this a tempting distractor.\n**Title for B:** Fatally flawed. The passage presents a 'fair trial' as an *example* of 'justice as impartial process,' not as something in opposition to it. It also omits cosmic justice entirely.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) “Cosmic Justice Meets Human Limitations” / “Fairness as Process versus Cosmic Fairness”", text: "Both titles match the passage-level roles. The first captures A's core claim that cosmic justice runs into human epistemic limits. The second captures B's central contrast: traditional justice is process-based, while cosmic justice asks for a different kind of fairness.", badge: "Correct", badgeColor: "green" },
+      { title: "(B) “Sowell’s Theory of Justice” / “The Key to Deterrence”", text: "The first title is too broad and biographical in focus; Passage A is not a survey of Sowell's whole theory. The second overweights one late consequence in Passage B (deterrence) and misses B's main framework contrast between traditional and cosmic justice.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) “Just Deserts” / “Fair and Unfair Disadvantages”", text: "For A, this misleads because A argues humans cannot calculate true deservedness under cosmic standards. For B, the wording is too loose and drops the defining contrast between process-justice and cosmic justice.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) “A Critique of Sowell” / “Traditional Justice Writ Large”", text: "A is not a critique of Sowell; it adopts his term and extends the argument about feasibility. B is explicitly the opposite of \"writ large\": it says cosmic justice is fundamentally different from traditional justice, not merely a bigger version.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) “The Impossibility of Achieving Cosmic Justice” / “Fair Trials versus Justice as Impartial Process”", text: "The first title fits A well, which makes this tempting. The failure is in B: fair trials are presented as an example of impartial-process justice, not as a rival to it, and the title also loses B's central process-vs-cosmic framing.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

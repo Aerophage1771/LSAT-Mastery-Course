@@ -8,10 +8,9 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h2', text: 'Question Goal' },
     {
       type: 'callout',
-      text: '**Identify the one statement** that is logically proven by the facts in the stimulus.',
+      text: '**Identify the one statement that is logically proven by the facts in the stimulus.** What conclusion is guaranteed to be true if everything in the passage is accepted as fact?',
       variant: 'goal',
     },
-    { type: 'paragraph', text: 'This module covers Must Be True.' },
     { type: 'hr' },
     { type: 'h2', text: 'Introduction' },
     { type: 'h4', text: 'The Foundation of Deduction' },

@@ -11,23 +11,25 @@ export const Lesson3_Question21: Lesson = {
   id: "43-3",
   title: "Question 21: Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-4-Q-21" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-4)', content: passageText },
+    { type: 'h3', text: "Question 21: Inference Breakdown (PT-128-S-4-P-4-Q-21)" },
     { type: 'blockquote', text: "**Question:** Which one of the following is mentioned in passage B, but not in passage A?" },
     { type: 'options', items: [
-      "(A) punishment [7.0%]",
-      "(B) trials [88.0%] (Correct)",
-      "(C) rewards [2.0%]",
-      "(D) legal systems [1.0%]",
-      "(E) human limitations [3.0%]"
+      "(A) punishment",
+      "(B) trials (Correct)",
+      "(C) rewards",
+      "(D) legal systems",
+      "(E) human limitations"
     ]},
-    { type: 'paragraph', text: "This is a detail-finding question. We must scan both passages for each term. The correct answer will be present in B and absent in A." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "Concept focus: this is a comparative retrieval question disguised as inference. The skill is to audit each keyword against both passages, not to reason abstractly. Build a quick two-column check for each choice: appears in A? appears in B? The correct answer must be yes for B and no for A." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Passage A uses terms like \"rewards and punishments,\" \"human legal systems,\" and \"human limitations.\" Passage B repeatedly uses trial-specific language such as \"criminal case,\" \"trial,\" and \"criminal trials.\" That difference is the fastest path to the answer." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) punishment", text: "Passage A mentions 'rewards and **punishments**.' Passage B discusses mitigating **punishment**. Mentioned in both.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) trials", text: "Passage A discusses 'legal systems' abstractly but never uses the word 'trials.' Passage B uses 'trials' multiple times as a central example. Mentioned in B, not in A.", badge: "Correct", badgeColor: "green" },
-      { title: "(C) rewards", text: "Passage A mentions '**rewards** and punishments.' Passage B does not mention 'rewards.' Mentioned in A, not in B.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) legal systems", text: "Passage A mentions 'human **legal systems**.' Mentioned in A.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) human limitations", text: "Passage A's central theme is 'inherent **human limitations**.' Passage B does not mention this. Mentioned in A, not in B.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) punishment", text: "This fails because the term appears in both passages. A mentions \"rewards and punishments,\" and B discusses mitigating punishment to pursue cosmic justice.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) trials", text: "This matches the stem exactly. B is organized around trial examples (fair trial, unfair trial, criminal trials), while A stays at a general legal-theory level and does not use trial framing.", badge: "Correct", badgeColor: "green" },
+      { title: "(C) rewards", text: "This is the mirror-image trap. A explicitly includes \"rewards and punishments,\" but B never talks about rewards.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) legal systems", text: "A directly says \"our human legal systems.\" Since the stem requires a term mentioned in B but not A, this cannot be correct.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) human limitations", text: "A foregrounds \"inherent human limitations\" as its core premise. B criticizes cosmic justice in process and policy terms, but the phrase in the choice is already present in A.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

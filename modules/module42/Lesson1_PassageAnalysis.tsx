@@ -6,24 +6,26 @@ In Manhattan, the ex-wife of a television writer and aspiring novelist offers a 
 It is also significant that in Allen’s films, the less artistic the characters, the more likely their narrative is to result in a happy ending. Thus, the filmmaker in Crimes and Misdemeanors, the novelist in Husbands and Wives, and the screenwriter in Celebrity all wind up desolate and solitary, largely because of the egocentric and exploitative attitudes embodied in their art and the effects of those attitudes on those around them. On the other hand, the unpretentious, thoroughly inartistic title character in Zelig dies an untroubled, even happy, death, only slightly compromised by his failure to finish reading Moby-Dick. And the title character and talent agent in Broadway Danny Rose is the beneficiary of the most gratifying resolution Allen has scripted, primarily due to altruistic devotion to his utterly talentless nightclub performers.`;
 
 export const Lesson1_PassageAnalysis: Lesson = {
-      id: "42-1",
-      title: "Passage Analysis",
-      content: [
-        { type: 'accordion', title: 'Read Passage', content: passageText },
-        { type: 'h3', text: "Passage Analysis" },
-        { type: 'h4', text: "Paragraph 1: The Thesis and the Prime Example" },
-        { type: 'paragraph', text: "The first paragraph introduces the film *Deconstructing Harry* and its protagonist, the \"extremely neurotic and narcissistic\" writer Harry Block. This character serves as the author's primary piece of evidence. The author argues that while the film is a comedy, its real significance is how it serves as an \"extravagantly exaggerated censure\" of a life obsessed with art. The author then lays out the central thesis: *Deconstructing Harry*, while perhaps the most \"peevish\" of Allen's portraits of artists, is not a new idea for him but a \"concentrated reprise of a theme present throughout his career.\"" },
-        { type: 'h4', text: "Paragraph 2: Supporting Evidence, Part 1 - *Stardust Memories*" },
-        { type: 'paragraph', text: "To prove this is a recurring theme, the author cites an earlier film, *Stardust Memories*. A cynical film producer criticizes the artist protagonist, saying, \"They try to document their private suffering and fob it off as art.\" The author adds another layer of analysis, suggesting this producer may be a \"projection of [the artist's] personal self-recriminations,\" reinforcing the charge of solipsism. The author concludes that this specific critique appears so often in Allen's work that it seems to be an \"unresolved personal issue\" for the filmmaker himself." },
-        { type: 'h4', text: "Paragraph 3: Supporting Evidence, Part 2 - *Manhattan*" },
-        { type: 'paragraph', text: "The third paragraph provides more evidence from the film *Manhattan*. The ex-wife of a writer exposes his artistic pretensions, claiming his supposedly profound fear of death was \"mere narcissism.\" This serves as another clear example of the recurring theme of the artist as a self-centered pretender." },
-        { type: 'h4', text: "Paragraph 4: The Final Proof - The Inverse Correlation" },
-        { type: 'paragraph', text: "This paragraph presents the author's most powerful evidence by identifying a broad pattern across many of Allen's films: an inverse correlation between being an artist and achieving a happy ending. The author notes that artistic characters in films like *Crimes and Misdemeanors* and *Celebrity* end up \"desolate and solitary\" due to their \"egocentric and exploitative attitudes.\" In contrast, unpretentious, \"thoroughly inartistic\" characters like Zelig and Broadway Danny Rose are rewarded with happy and gratifying resolutions, often due to their altruism. This narrative pattern is presented as the ultimate proof of Allen's deep-seated critique of the artistic life." },
-        { type: 'h4', text: "Summary" },
-        { type: 'list', items: [
-            "**The Central Thesis:** The passage argues that a sustained critique of the artist's life—portraying artists as narcissistic, solipsistic, and exploitative—is a central, recurring theme in Woody Allen's films. *Deconstructing Harry* is the most intense expression of this career-long preoccupation.",
-            "**Evidence from Dialogue:** The author supports this claim with direct quotes and character critiques from films like *Stardust Memories* and *Manhattan*, where characters accuse artists of packaging their private suffering as art and being driven by narcissism.",
-            "**Evidence from Narrative Outcomes:** The most compelling evidence is a structural pattern across Allen's filmography. Artistic characters consistently end up miserable and alone, while inartistic, altruistic characters are rewarded with happy endings."
-        ]}
-      ]
+  id: "42-1",
+  title: "Passage Analysis",
+  content: [
+    { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-2)', content: passageText },
+    { type: 'h3', text: "Passage Analysis: Woody Allen and the Artist Figure (PT-128-S-4-P-2)" },
+    { type: 'paragraph', text: "The passage argues that Allen repeatedly portrays artistic identity as morally and psychologically corrosive. *Deconstructing Harry* is presented not as an outlier but as the sharpest version of a recurring critique." },
+    { type: 'paragraph', text: "Read the structure as cumulative proof. Paragraph 1 states the claim, Paragraphs 2-3 supply textual evidence from earlier films, and Paragraph 4 broadens the case by identifying a cross-film pattern in narrative outcomes." },
+    { type: 'hr' },
+    { type: 'h4', text: "Paragraph 1: Thesis Framed Through *Deconstructing Harry*" },
+    { type: 'paragraph', text: "The opening paragraph introduces Harry Block as emblematic of Allen's artistic self-critique. Comedy is treated as surface; the deeper function is censure of a life organized around self-regarding artistic production." },
+    { type: 'paragraph', text: "Its key move is historical framing: the film condenses a theme that, according to the author, has appeared throughout Allen's career." },
+    { type: 'h4', text: "Paragraph 2: First Line of Evidence from *Stardust Memories*" },
+    { type: 'paragraph', text: "The second paragraph supports the thesis with explicit dialogue that equates art with self-display and private suffering. It then intensifies the claim by suggesting the critic figure may voice the artist's own self-indictment." },
+    { type: 'paragraph', text: "This paragraph therefore does more than quote: it uses the quote to argue that Allen repeatedly stages accusations of artistic solipsism from within his narratives." },
+    { type: 'h4', text: "Paragraph 3: Reinforcement Through *Manhattan*" },
+    { type: 'paragraph', text: "The third paragraph adds parallel evidence. A second film again links artistic aspiration with narcissism, reinforcing consistency across works rather than a one-off rhetorical flourish." },
+    { type: 'paragraph', text: "Functionally, this paragraph strengthens reliability by showing the pattern survives a change in character and context." },
+    { type: 'h4', text: "Paragraph 4: Macro Pattern in Narrative Outcomes" },
+    { type: 'paragraph', text: "The final paragraph shifts from quotation-level evidence to structural evidence. Across multiple films, artistic characters end in isolation, while less artistic and more relational characters receive stable or positive resolutions." },
+    { type: 'paragraph', text: "This broad distribution of endings is presented as the passage's strongest proof that Allen's critique is built into narrative design, not just isolated dialogue choices." },
+    { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "The passage claims that Allen consistently critiques the artist figure as narcissistic and ethically compromised. It supports that claim first through repeated character judgments in individual films, then through a broader pattern in endings where artistic self-absorption correlates with isolation and inartistic generosity correlates with reward." }
+  ]
 };

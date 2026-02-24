@@ -8,26 +8,28 @@ export const Lesson3_Question16: Lesson = {
   id: "57-3",
   title: "Question 16: Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 16 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-114-S-3-P-3)', content: passageText },
+    { type: 'h3', text: "Question 16: Inference Breakdown (PT-114-S-3-P-3-Q-16)" },
     { type: 'blockquote', text: "**Question:** Given the passage’s argument, which one of the following sentences most logically completes the last paragraph?" },
     { type: 'options', items: [
-      "(A) Only if they adhere to this structure, Abrams believes, can historical sociologists conclude with any certainty that the events that constitute the historical record are influenced by the actions of individuals. [3.0%]",
-      "(B) Only if they adhere to this structure, Abrams believes, will historical sociologists be able to counter the standard sociological assumption that there is very little connection between history and individual agency. [4.0%]",
-      "(C) Unless they can agree to adhere to this structure, Abrams believes, historical sociologists risk having their discipline treated as little more than an interesting but ultimately indefensible adjunct to history and sociology. [2.0%]",
-      "(D) By adhering to this structure, Abrams believes, historical sociologists can shed light on issues that traditional sociologists have chosen to ignore in their one-sided approaches to the formation of societies. [38.0%]",
-      "(E) By adhering to this structure, Abrams believes, historical sociologists will be able to better portray the complex connections between human agency and history. [54.0%] (Correct)"
+      "(A) Only if they adhere to this structure, Abrams believes, can historical sociologists conclude with any certainty that the events that constitute the historical record are influenced by the actions of individuals.",
+      "(B) Only if they adhere to this structure, Abrams believes, will historical sociologists be able to counter the standard sociological assumption that there is very little connection between history and individual agency.",
+      "(C) Unless they can agree to adhere to this structure, Abrams believes, historical sociologists risk having their discipline treated as little more than an interesting but ultimately indefensible adjunct to history and sociology.",
+      "(D) By adhering to this structure, Abrams believes, historical sociologists can shed light on issues that traditional sociologists have chosen to ignore in their one-sided approaches to the formation of societies.",
+      "(E) By adhering to this structure, Abrams believes, historical sociologists will be able to better portray the complex connections between human agency and history. (Correct)"
     ]},
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "The last paragraph outlines Abrams's four-part method. The purpose of this method is explicitly stated: 'In order to capture the various facets of this mutual interaction...' between the individual and social forces. The logical completion should summarize this goal." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This inference question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'In explaining the foundations of the discipline known as historical sociology—the...' and 'In order to capture the various facets of this mutual interaction,...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "This is too narrow. It only mentions the influence of individuals on events, ignoring the other half of Abrams's 'mutual interaction'—the influence of society on individuals.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This misrepresents the problem. The passage states that sociologists take a 'one-sided' approach, not that they see 'very little connection' between individuals and history.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "The passage discusses Abrams's theory, not the professional reputation or academic standing of historical sociology. This is out of scope.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "This is a plausible goal, but it's not the primary purpose of the four-part method. The method's explicit goal is to capture the 'mutual interaction' in history, not just to critique other sociologists.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "This choice perfectly summarizes the purpose of Abrams's method as described in the passage. The entire passage builds to this idea of a 'mutual interaction' between individuals making history ('human agency') and the social forces that shape them ('history'). The four-part structure is designed to analyze and 'portray' these 'complex connections.'", badge: "Correct", badgeColor: "green" }
+        { title: "(A)", text: "This is too narrow. It only mentions the influence of individuals on events, ignoring the other half of Abrams's 'mutual interaction'—the influence of society on individuals. Additional check: trap type is too narrow, since it leaves out a required part of the passage's claim.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This misrepresents the problem. The passage states that sociologists take a 'one-sided' approach, not that they see 'very little connection' between individuals and history. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "The passage discusses Abrams's theory, not the professional reputation or academic standing of historical sociology. This is out of scope. Additional check: trap type is out of scope, because it shifts away from the stem's target issue.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "This is a plausible goal, but it's not the primary purpose of the four-part method. The method's explicit goal is to capture the 'mutual interaction' in history, not just to critique other sociologists. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "This choice perfectly summarizes the purpose of Abrams's method as described in the passage. The entire passage builds to this idea of a 'mutual interaction' between individuals making history ('human agency') and the social forces that shape them ('history'). The four-part structure is designed to analyze and 'portray' these 'complex connections.' Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" }
       ]
     }
   ]

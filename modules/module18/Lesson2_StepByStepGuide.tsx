@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "18-2",
   title: "Step-by-Step Guide",
+  subtitle: "Find the one answer that contradicts the given facts.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Must Be False' },
     { type: 'paragraph', text: 'This guide gives you a simple, clear way to solve any **Must Be False** question. Your main goal is to look at the facts provided and find the one answer that completely goes against them.' },

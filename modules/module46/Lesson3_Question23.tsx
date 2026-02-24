@@ -16,23 +16,25 @@ export const Lesson3_Question23: Lesson = {
   id: "46-3",
   title: "Question 23: Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-141-S-1-P-4-Q-23" },
+    { type: 'accordion', title: 'Read Passage (PT-141-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 23: Inference Breakdown (PT-141-S-1-P-4-Q-23)" },
     { type: 'blockquote', text: "**Question:** Both passages explicitly mention which one of the following?" },
     { type: 'options', items: [
-      "(A) transfer of property from one owner to another [62.0%] (Correct)",
-      "(B) a legal basis for recovery of property [13.0%]",
-      "(C) entitlement to property in a wholly just world [8.0%]",
-      "(D) practicability of rectification of past injustice [16.0%]",
-      "(E) injustice committed as part of an invasion [2.0%]"
+      "(A) transfer of property from one owner to another (Correct)",
+      "(B) a legal basis for recovery of property",
+      "(C) entitlement to property in a wholly just world",
+      "(D) practicability of rectification of past injustice",
+      "(E) injustice committed as part of an invasion"
     ]},
-    { type: 'paragraph', text: "This is a detail-oriented question asking what is \"explicitly mention[ed]\" in both passages. We must find a concept that is literally stated in the text of Passage A and the text of Passage B." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This inference question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'There are two principles that are fundamental to a theory of...' and 'But the original wrong can most easily be righted by returning...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: "Option", text: "Analysis" }, items: [
-      { title: "(A) transfer of property from one owner to another", text: "*   **Passage A:** Yes, this is a core concept. It defines the \"principle of justice in **transfer**\" as specifying conditions for \"the **transfer of property** from one person to another.\"\n*   **Passage B:** Yes, this is also a core concept. It discusses the Indian Nonintercourse Act, which regulates \"**transfers of lands** from Native Americans to others.\"\n*   **Verdict:** This is explicitly mentioned in both.", badge: "Correct", badgeColor: "green" },
-      { title: "(B) a legal basis for recovery of property", text: "*   **Passage A:** No. The passage is philosophical and discusses moral \"principles,\" not a \"legal basis.\"\n*   **Passage B:** Yes. The Nonintercourse Act is a legal basis, and the passage mentions \"suits have been initiated.\"\n*   **Verdict:** Only in B.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) entitlement to property in a wholly just world", text: "*   **Passage A:** Yes, it uses the exact phrase \"if the world were **wholly just**\" to discuss entitlement.\n*   **Passage B:** No. This passage is concerned with the real, unjust world.\n*   **Verdict:** Only in A.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) practicability of rectification of past injustice", text: "*   **Passage A:** No. It introduces the principle of rectification as a theoretical necessity but does not discuss its practical application.\n*   **Passage B:** Yes. It acknowledges that restoration \"may be **impractical**\" and should be done \"wherever that is **feasible**.\"\n*   **Verdict:** Only in B.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) injustice committed as part of an invasion", text: "*   **Passage A:** No. It gives general examples like theft and fraud, not invasion.\n*   **Passage B:** Yes. It refers to the \"European **invasion** of North America.\"\n*   **Verdict:** Only in B.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) transfer of property from one owner to another", text: "*   **Passage A:** Yes, this is a core concept. It defines the \"principle of justice in **transfer**\" as specifying conditions for \"the **transfer of property** from one person to another.\"\n*   **Passage B:** Yes, this is also a core concept. It discusses the Indian Nonintercourse Act, which regulates \"**transfers of lands** from Native Americans to others.\"\n*   **Verdict:** This is explicitly mentioned in both. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+      { title: "(B) a legal basis for recovery of property", text: "*   **Passage A:** No. The passage is philosophical and discusses moral \"principles,\" not a \"legal basis.\"\n*   **Passage B:** Yes. The Nonintercourse Act is a legal basis, and the passage mentions \"suits have been initiated.\"\n*   **Verdict:** Only in B. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) entitlement to property in a wholly just world", text: "*   **Passage A:** Yes, it uses the exact phrase \"if the world were **wholly just**\" to discuss entitlement.\n*   **Passage B:** No. This passage is concerned with the real, unjust world.\n*   **Verdict:** Only in A. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) practicability of rectification of past injustice", text: "*   **Passage A:** No. It introduces the principle of rectification as a theoretical necessity but does not discuss its practical application.\n*   **Passage B:** Yes. It acknowledges that restoration \"may be **impractical**\" and should be done \"wherever that is **feasible**.\"\n*   **Verdict:** Only in B. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) injustice committed as part of an invasion", text: "*   **Passage A:** No. It gives general examples like theft and fraud, not invasion.\n*   **Passage B:** Yes. It refers to the \"European **invasion** of North America.\"\n*   **Verdict:** Only in B. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

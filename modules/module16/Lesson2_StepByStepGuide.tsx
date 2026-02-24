@@ -3,10 +3,11 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "16-2",
   title: "Step-by-Step Guide",
+  subtitle: "Take the given facts and find the most logical conclusion.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Most Strongly Supported' },
     { type: 'paragraph', text: 'This guide shows you how to solve "Most Strongly Supported" questions. You will learn how to take the facts you\'re given and find the most logical conclusion while avoiding common mistakes.' },
-    { type: 'h4', text: "Step 1: Identify the Question's Goal" },
+    { type: 'h3', text: "Step 1: Identify the Question's Goal" },
     { type: 'paragraph', text: 'First, look at the question itself (the "stem"). Words like *"most strongly supported,"* *"can be properly inferred,"* or *"most supported by the information"* tell you that your job is to find the most provable conclusion based only on what you\'ve read.' },
     { type: 'h4', text: "Step 2: Break Down the Information" },
     { type: 'paragraph', text: 'Read the text provided (the "stimulus") and break it down into clear facts. While these passages are often just a collection of information, they can occasionally contain an argument. Your goal is to understand how each piece of information relates to the others. Pay close attention to:' },
@@ -15,7 +16,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
       '**Strength of Language:** Words like *most, some, only, unless,* and *probably* define how broad or limited the facts are.',
       '**Links Between Ideas:** Look for things like cause-and-effect, comparisons, or general rules.'
     ]},
-    { type: 'h4', text: "Step 3: Connect the Evidence" },
+    { type: 'h3', text: "Step 3: Connect the Evidence" },
     { type: 'paragraph', text: 'Before looking at the answers, take a moment to see how the facts fit together. Ask yourself: *What is the most direct result of combining these points?*' },
     { type: 'list', items: [
       '**Look for Chains:** If Fact A leads to Fact B, and Fact B leads to Fact C, you can often link Fact A directly to Fact C.',
@@ -24,10 +25,10 @@ export const Lesson2_StepByStepGuide: Lesson = {
       '**Find the Overlap:** If the text uses words like "most," look for where different groups might cross over.'
     ]},
     { type: 'paragraph', text: 'Try to put the conclusion in your own words before reading the choices.' },
-    { type: 'h4', text: "Step 4: Evaluate the Choices" },
+    { type: 'h3', text: "Step 4: Evaluate the Choices" },
     { type: 'paragraph', text: 'Check each answer choice against the facts. For each one, ask: **"Is this statement made highly likely by the information I just read?"**' },
     { type: 'paragraph', text: 'The right answer should feel like a natural "next step." It should not require you to make any big guesses or outside assumptions.' },
-    { type: 'h4', text: "Step 5: Avoid Common Mistakes" },
+    { type: 'h3', text: "Step 5: Avoid Common Mistakes" },
     { type: 'paragraph', text: 'Watch out for these common "traps." This is the most important part of picking the right answer.' },
     { type: 'list', items: [
       '**Trap: Too Strong / Extreme.** Does the choice use words like *all, never, only, must,* or *impossible*? Unless the text is just as strong, this is usually wrong. Look for cautious words like *some, can,* or *may*.',

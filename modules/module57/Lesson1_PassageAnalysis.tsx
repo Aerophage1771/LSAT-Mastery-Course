@@ -8,16 +8,20 @@ export const Lesson1_PassageAnalysis: Lesson = {
   id: "57-1",
   title: "Passage Analysis: Historical Sociology",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Passage Breakdown" },
-    { type: 'paragraph', text: "This passage dives into some heady academic theory from a sociologist named Philip Abrams. The main takeaway is his argument that we can't understand society or history with a one-sided view. Instead, he proposes a two-way model where people and the world they live in are constantly shaping each other." },
+    { type: 'accordion', title: 'Read Passage (PT-114-S-3-P-3)', content: passageText },
+    { type: 'h3', text: "Passage Analysis: Historical Sociology (PT-114-S-3-P-3)" },
+    { type: 'paragraph', text: "The passage explains Philip Abrams's concept of \"structuring,\" a two-way process in which individuals and social structures continuously produce one another. It then extends that model from sociology to historical explanation." },
+    { type: 'paragraph', text: "Track the movement from theory to method. Paragraph 1 introduces the conceptual correction, Paragraph 2 applies it to historical agency under contingency, and Paragraph 3 converts it into a practical analytic framework for historians." },
     { type: 'hr' },
-    { type: 'h4', text: "Paragraph 1: The Problem with Sociology & Abrams's Fix" },
-    { type: 'paragraph', text: "Abrams starts by pointing out a flaw in his field. He says sociologists tend to see things as a one-way street: either people make society, or society makes people. Abrams says this is wrong. His big idea, which he calls 'structuring,' is that it's a continuous, two-way process. People build society, and society builds people, all at the same time." },
-    { type: 'h4', text: "Paragraph 2: Applying 'Structuring' to History" },
-    { type: 'paragraph', text: "Next, the passage shows how Abrams applies this idea to history. Sure, people 'make history,' but they don't do it in a vacuum. Abrams argues that our ability to act is limited by the world we're born into—our 'contingencies.' These are things like our social class, our family's wealth, the political ideas around us, and even just plain luck. These contingencies shape who we are and what actions are possible for us." },
-    { type: 'h4', text: "Paragraph 3: A 'How-To' Guide for Historians" },
-    { type: 'paragraph', text: "The final paragraph gets practical. To understand this complex process, Abrams says historians should focus on specific, significant 'events' where an individual's action and their social circumstances (contingencies) collide. He argues a great historical figure isn't great in isolation; they are great because they perfectly embody the social forces that made their actions possible. To analyze these moments, he lays out a four-step method: describe the event, explain the social context, detail the life of the person involved, and analyze the consequences." },
-    { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "The passage explains sociologist Philip Abrams's theory of 'structuring'—a two-way process where people shape society and society shapes people. Abrams applies this to history, arguing that individuals can only 'make history' within the limits set by their social conditions ('contingencies'). To analyze this, he proposes a four-step method for studying key historical events where individual action and broader social forces intersect." }
+    { type: 'h4', text: "Paragraph 1: Correcting One-Sided Sociology" },
+    { type: 'paragraph', text: "The first paragraph rejects models that privilege either individual agency or social determination alone. Abrams's intervention is to treat both as mutually constitutive within an ongoing process he calls structuring." },
+    { type: 'paragraph', text: "Its function is conceptual: it replaces either/or explanation with reciprocal causation as the default lens." },
+    { type: 'h4', text: "Paragraph 2: Historical Action Under Contingency" },
+    { type: 'paragraph', text: "The second paragraph applies structuring to history. Individuals act, but the scope and form of action are shaped by contingencies such as class position, household economy, ideology, and chance." },
+    { type: 'paragraph', text: "This reframes agency as situated capacity. Historical actors are neither fully autonomous nor fully determined; they operate within structured opportunity sets." },
+    { type: 'h4', text: "Paragraph 3: Method for Event-Based Historical Sociology" },
+    { type: 'paragraph', text: "The final paragraph converts theory into method by identifying analytically rich \"events\" where agency and contingency intersect. These moments reveal both individual action and the social forces enabling it." },
+    { type: 'paragraph', text: "Abrams's four-part procedure operationalizes that goal: describe the event, specify its social context, profile the agent, and analyze consequences for both history and actor." },
+    { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "The passage argues that social and historical explanation requires a reciprocal model of structuring, in which people and institutions co-produce one another. It then proposes an event-centered method for analyzing how contingent social conditions and individual agency interact to generate historical outcomes." }
   ]
 };

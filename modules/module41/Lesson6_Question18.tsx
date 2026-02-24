@@ -12,19 +12,19 @@ export const Lesson6_Question18: Lesson = {
   id: "41-6",
   title: "Question 18: 3rd-Party Viewpoint",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-3-Q-18" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-3)', content: passageText },
+    { type: 'h3', text: "Question 18: 3rd-Party Viewpoint Breakdown (PT-128-S-1-P-3-Q-18)" },
     { type: 'blockquote', text: "**Question:** The “purveyors of nationalist dogma” mentioned in the second-to-last sentence of the passage would be most likely to agree with which one of the following?" },
     { type: 'options', items: [
-      "(A) Colonized nations should not attempt to regain their historical cultures. [5.0%]",
-      "(B) Imperial cultures should incorporate the traditions of their colonies. [2.0%]",
-      "(C) The cultural traditions of a nation should remain untainted by outside influences. [83.0%] (Correct)",
-      "(D) A country’s cultural identity partakes of many social and cultural domains. [5.0%]",
-      "(E) National histories are created to further aspirations to sovereignty and dominance. [6.0%]"
+      "(A) Colonized nations should not attempt to regain their historical cultures.",
+      "(B) Imperial cultures should incorporate the traditions of their colonies.",
+      "(C) The cultural traditions of a nation should remain untainted by outside influences. (Correct)",
+      "(D) A country’s cultural identity partakes of many social and cultural domains.",
+      "(E) National histories are created to further aspirations to sovereignty and dominance."
     ]},
-    { type: 'paragraph', text: "This question asks what the \"purveyors of nationalist dogma\" would most likely agree with. To answer, we must first define this group based on the information in the final paragraph." },
-    { type: 'paragraph', text: "The passage states that \"we have never been as aware as we are now of the fact that historical and cultural experiences... cross national boundaries, despite the claims to the contrary made by purveyors of nationalist dogma.\" This sentence structure defines the group by what they oppose. The author's view is that cultures are interconnected and hybrid. Therefore, the \"purveyors of nationalist dogma\" must believe the opposite: that cultures are (or should be) pure, self-contained, monolithic, and confined within national boundaries. Their \"dogma\" is the belief in a unique and pure national identity." },
-    { type: 'paragraph', text: "We are looking for an answer choice that reflects this belief in cultural purity and separation from outside influences." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This asks for the belief a nationalist dogmatist would affirm, not the author's critique of that belief. In the final paragraph, nationalist dogma is positioned against the idea of cross-cultural hybridity, so the correct viewpoint should insist on purity, uniqueness, and insulation from foreign influence." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The author says cross-domain, cross-boundary cultural experience exists \"despite the claims to the contrary made by purveyors of nationalist dogma.\" The close further rejects their premise: cultures are not monolithic and contain significant \"foreign\" elements." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

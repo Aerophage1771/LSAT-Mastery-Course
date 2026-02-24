@@ -10,22 +10,19 @@ export const Lesson9_Question13: Lesson = {
   id: "40-9",
   title: "Question 13: Weaken",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-2-Q-13" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 13: Weaken Breakdown (PT-128-S-1-P-2-Q-13)" },
     { type: 'blockquote', text: "**Question:** Which one of the following, if true, would most weaken the author’s argument against harsh punishment for debtors?" },
     { type: 'options', items: [
-      "(A) Extensive study of the economic and legal history of many countries has shown that most individuals who served prison time for bankruptcy subsequently exhibited greater economic responsibility. [17.0%]",
-      "(B) The bankruptcy of a certain large company has had a significant negative impact on the local economy even though virtually all of the affected employees were able to obtain similar jobs within the community. [5.0%]",
-      "(C) Once imprisonment was no longer a consequence of insolvency, bankruptcy filings increased dramatically, then leveled off before increasing again during the 1930s. [3.0%]",
-      "(D) The court-ordered liquidation of a large and insolvent company’s assets threw hundreds of people out of work, but the local economy nevertheless demonstrated robust growth in the immediate aftermath. [14.0%]",
-      "(E) Countries that continue to imprison debtors enjoy greater economic health than do comparable countries that have ceased to do so. [61.0%] (Correct)"
+      "(A) Extensive study of the economic and legal history of many countries has shown that most individuals who served prison time for bankruptcy subsequently exhibited greater economic responsibility.",
+      "(B) The bankruptcy of a certain large company has had a significant negative impact on the local economy even though virtually all of the affected employees were able to obtain similar jobs within the community.",
+      "(C) Once imprisonment was no longer a consequence of insolvency, bankruptcy filings increased dramatically, then leveled off before increasing again during the 1930s.",
+      "(D) The court-ordered liquidation of a large and insolvent company’s assets threw hundreds of people out of work, but the local economy nevertheless demonstrated robust growth in the immediate aftermath.",
+      "(E) Countries that continue to imprison debtors enjoy greater economic health than do comparable countries that have ceased to do so. (Correct)"
     ]},
-    { type: 'paragraph', text: "This is a weaken question. The task is to find a new piece of information that, if true, would most undermine the author's \"argument against harsh punishment for debtors.\"" },
-    { type: 'paragraph', text: "First, we must identify the core of the author's argument. The author's case against harsh punishment is not based on morality or humanitarianism, but on pragmatic, economic grounds. The central claim is that the modern, non-punitive system is superior because it promotes \"continued economic activity\" and serves the \"public good,\" leading to greater overall \"economic health.\" The punitive system is bad because it harms the economy." },
-    { type: 'list', items: [
-      "**Author's Equation:** Less Punishment = Better Economic Health.",
-      "**Weakening Equation:** More Punishment = Better Economic Health."
-    ]},
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "To weaken this argument, the strongest evidence must attack its central practical premise: punitive treatment harms economic outcomes and modern non-punitive law better serves collective welfare. A local anecdote or side observation is weak; a broad cross-country comparison showing better economic health under debtor imprisonment directly undercuts the passage's core justification." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The argument's core claim is economic: modern law should be retained because it preserves \"productive economic activity\" and serves \"the varied interests of the greatest number of citizens.\" A strong weakener must challenge that economy-level premise directly."},
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

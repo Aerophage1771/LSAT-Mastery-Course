@@ -10,17 +10,20 @@ export const Lesson1_PassageAnalysis: Lesson = {
   id: "40-1",
   title: "Passage Analysis",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Passage Analysis" },
-    { type: 'h4', text: "Paragraph 1: The Thesis and the Central Conflict" },
-    { type: 'paragraph', text: "The first paragraph serves as an introduction and thesis statement, laying out the entire debate. The author identifies a major shift in bankruptcy law: from a focus on punishment to a focus on remedy for both debtors and their creditors. The author acknowledges the main counterargument—that this shift has led to an increase in bankruptcies and widespread criticism. However, the author immediately establishes their position, arguing that restricting access to bankruptcy would stifle economic activity. The paragraph concludes with a clear thesis: the temptation to return to a punitive system must be resisted because modern bankruptcy laws serve the needs of an interdependent society and the greatest number of citizens." },
-    
-    { type: 'h4', text: "Paragraph 2: The Old System and Why It Failed" },
-    { type: 'paragraph', text: "This paragraph explains the historical punitive approach to show why it was flawed. Punishments were severe, including imprisonment and the dissolution of companies. This approach was rooted in a moralistic belief that debt was a personal failing or a violation of a \"sacrosanct social contract.\" The author then systematically refutes this logic by highlighting its counterproductive outcomes. For creditors, imprisoned debtors cannot work to repay debts. For society, dissolving a large enterprise leads to mass unemployment and the disruption of essential services. The paragraph concludes that the old system was a practical failure." },
-
-    { type: 'h4', text: "Paragraph 3: The Modern System and Why It Works" },
-    { type: 'paragraph', text: "The final paragraph details the logic and mechanics of the modern system. It is based on two core beliefs: that the public good is paramount, and that the public good is best served by keeping individuals and companies economically productive. The primary mechanism is a court-directed reorganization of obligations, which involves debt relief and a structured transfer of assets. The author adds nuance by acknowledging that some punitive elements remain (e.g., public records, credit reports), but these do not prevent a return to economic activity. The paragraph concludes by restating the ultimate goal of modern bankruptcy law: to ensure continued economic engagement, restore financial health, and provide creditors with the best chance of repayment." },
-    
-    { type: 'callout', title: "Summary", variant: "summary", text: "**The Central Argument:** The passage argues that the modern shift in bankruptcy law from a punitive to a remedial model is a positive development that benefits debtors, creditors, and society, and that a return to the old system should be resisted.\n\n**The Flaws of the Past:** The old, punitive system was based on a moralistic view of debt and failed in practice. Imprisoning debtors and dissolving companies prevented creditors from being repaid and caused widespread economic harm.\n\n**The Strengths of the Present:** The modern, remedy-focused system is based on a pragmatic concern for the \"public good.\" Through court-directed reorganization, it keeps individuals and companies economically active, allowing them to recover and providing creditors with the best possible chance of repayment." }
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Passage Analysis: Bankruptcy Law Reform (PT-128-S-1-P-2)" },
+    { type: 'paragraph', text: "The passage argues that modern bankruptcy law should remain remedial rather than punitive. The author acknowledges criticism of rising bankruptcy use but maintains that restricting relief would damage broader economic functioning." },
+    { type: 'paragraph', text: "Track the argument as a contrast structure: Paragraph 1 states the thesis, Paragraph 2 diagnoses the failures of the older punitive model, and Paragraph 3 explains why the modern system better serves both private and public interests." },
+    { type: 'hr' },
+    { type: 'h4', text: "Paragraph 1: Thesis and Policy Stakes" },
+    { type: 'paragraph', text: "The opening paragraph frames a policy dispute. It identifies the historical shift away from punishment, notes public criticism, and then takes a clear position against reverting to harsher access rules." },
+    { type: 'paragraph', text: "Its key claim is consequential: in an interdependent economy, bankruptcy law should preserve productive capacity rather than enforce moral condemnation." },
+    { type: 'h4', text: "Paragraph 2: Why the Punitive Model Failed" },
+    { type: 'paragraph', text: "The second paragraph reconstructs the older framework and exposes its weaknesses. Insolvency was treated as moral breach, leading to imprisonment of debtors and dissolution of firms." },
+    { type: 'paragraph', text: "The author counters this with practical outcomes: creditors recover less when debtors are incapacitated, and society absorbs collateral damage such as unemployment and service disruption." },
+    { type: 'h4', text: "Paragraph 3: Why the Remedial Model Prevails" },
+    { type: 'paragraph', text: "The final paragraph explains the modern logic. It prioritizes public welfare and treats continued participation in economic life as the best path for both debtors and creditors." },
+    { type: 'paragraph', text: "Court-directed reorganization, debt relief, and structured asset transfer are presented as corrective tools. Limited punitive consequences remain, but they no longer define the system's purpose." },
+    { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "The passage defends the modern remedial approach to bankruptcy law. It argues that the punitive model failed both creditors and society, while reorganization-based law better protects economic continuity, improves repayment prospects, and serves the public good." }
   ]
 };

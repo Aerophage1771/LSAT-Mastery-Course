@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "10-2",
   title: "Step-by-Step Guide",
+  subtitle: "Find the logical gap, then the premise that makes the conclusion certain.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Sufficient Assumption' },
     { type: 'paragraph', text: 'This section provides a clear, step-by-step process for solving any Sufficient Assumption question. The goal is to understand the author\'s argument, find the logical flaw(s), and find the one answer choice that, when added as a new premise, makes the conclusion 100% certain.' },

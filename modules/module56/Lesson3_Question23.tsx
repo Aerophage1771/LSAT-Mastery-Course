@@ -8,27 +8,28 @@ export const Lesson3_Question23: Lesson = {
   id: "56-3",
   title: "Question 23: Function",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 23 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-113-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 23: Function Breakdown (PT-113-S-1-P-4-Q-23)" },
     { type: 'blockquote', text: "**Question:** The question in the second sentence of the second paragraph functions primarily as" },
     { type: 'options', items: [
-      "(A) the introduction to a thought experiment whose results the author expects will vary widely among different people [4.0%]",
-      "(B) a rhetorical question whose assumed answer is in conflict with the previously accepted view concerning risk-taking behavior [25.0%]",
-      "(C) the basis for an illustration of how the previously accepted view concerning risk-taking behavior applies accurately to some types of situations [63.0%] (Correct)",
-      "(D) a suggestion that the discrepancies between subjective and objective valuations of possible decision outcomes are more illusive than real [4.0%]",
-      "(E) a transitional device to smooth an otherwise abrupt switch from discussion of previous theories to discussion of some previously unaccepted research findings [5.0%]"
+      "(A) the introduction to a thought experiment whose results the author expects will vary widely among different people",
+      "(B) a rhetorical question whose assumed answer is in conflict with the previously accepted view concerning risk-taking behavior",
+      "(C) the basis for an illustration of how the previously accepted view concerning risk-taking behavior applies accurately to some types of situations (Correct)",
+      "(D) a suggestion that the discrepancies between subjective and objective valuations of possible decision outcomes are more illusive than real",
+      "(E) a transitional device to smooth an otherwise abrupt switch from discussion of previous theories to discussion of some previously unaccepted research findings"
     ]},
-    { type: 'paragraph', text: "This is a Function question. It asks for the purpose of the question about the $100 gamble in the second paragraph. We must analyze its role in the context of that paragraph's argument." },
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "The second paragraph starts by describing the 'previously accepted view' that people are risk-averse when seeking gains. The question about the gamble serves as a specific, concrete example to illustrate and explain this very concept." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This function question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Recent investigations into the psychology of decision making have sparked interest...' and 'In international affairs, it is vital that each actor in such...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "The passage suggests the opposite. It states that subjects 'commonly judge' the gamble in a specific way, implying the results are consistent, not that they 'vary widely.'", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "The answer to the question actually supports and clarifies the previously accepted view; it does not conflict with it. The example shows why people are risk-averse when seeking gains.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "This is correct. The question about the gamble and the subsequent explanation serve as an 'illustration' to show how the 'previously accepted view' works in practice for situations involving potential gains.", badge: "Correct", badgeColor: "green" },
-        { title: "(D)", text: "The entire passage is about how the differences between objective and subjective valuations are real and important. This question highlights one of those real discrepancies.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "The question is part of the discussion of the previous theory, not a transition away from it. The actual transition to the new research findings occurs later in the paragraph with the word 'Nevertheless.'", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "The passage suggests the opposite. It states that subjects 'commonly judge' the gamble in a specific way, implying the results are consistent, not that they 'vary widely.' Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "The answer to the question actually supports and clarifies the previously accepted view; it does not conflict with it. The example shows why people are risk-averse when seeking gains. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "This is correct. The question about the gamble and the subsequent explanation serve as an 'illustration' to show how the 'previously accepted view' works in practice for situations involving potential gains. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(D)", text: "The entire passage is about how the differences between objective and subjective valuations are real and important. This question highlights one of those real discrepancies. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "The question is part of the discussion of the previous theory, not a transition away from it. The actual transition to the new research findings occurs later in the paragraph with the word 'Nevertheless.' Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

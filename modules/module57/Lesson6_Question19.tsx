@@ -8,26 +8,28 @@ export const Lesson6_Question19: Lesson = {
   id: "57-6",
   title: "Question 19: Purpose of Paragraph",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 19 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-114-S-3-P-3)', content: passageText },
+    { type: 'h3', text: "Question 19: Purpose of Paragraph Breakdown (PT-114-S-3-P-3-Q-19)" },
     { type: 'blockquote', text: "**Question:** The primary function of the first paragraph of the passage is to" },
     { type: 'options', items: [
-      "(A) outline the merits of Abrams’s conception of historical sociology [3.0%]",
-      "(B) convey the details of Abrams’s conception of historical sociology [14.0%]",
-      "(C) anticipate challenges to Abrams’s conception of historical sociology [2.0%]",
-      "(D) examine the roles of key terms used in Abrams’s conception of historical sociology [3.0%]",
-      "(E) identify the basis of Abrams’s conception of historical sociology [77.0%] (Correct)"
+      "(A) outline the merits of Abrams’s conception of historical sociology",
+      "(B) convey the details of Abrams’s conception of historical sociology",
+      "(C) anticipate challenges to Abrams’s conception of historical sociology",
+      "(D) examine the roles of key terms used in Abrams’s conception of historical sociology",
+      "(E) identify the basis of Abrams’s conception of historical sociology (Correct)"
     ]},
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "The first paragraph introduces a problem in sociology (one-sided approaches) and then presents Abrams's solution ('structuring'). This problem-solution setup serves as the foundation or 'basis' for his entire theory, which is then applied to history in the rest of the passage." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This purpose of paragraph question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'In explaining the foundations of the discipline known as historical sociology—the...' and 'In order to capture the various facets of this mutual interaction,...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "The paragraph introduces Abrams's concept, but it doesn't argue for its 'merits' or advantages. It simply presents the idea and the problem it is meant to solve.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This is too broad. The paragraph introduces the core concept, but the subsequent paragraphs provide the specific 'details' of its application to history, such as 'contingencies' and the four-part research method.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "The paragraph does not mention any potential criticisms or challenges to Abrams's theory. It describes a challenge *that Abrams's theory aims to overcome*.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "While it introduces the key term 'structuring,' the paragraph's main function is much broader than just defining terms. It establishes the entire intellectual problem that motivates Abrams's work.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "This is correct. The first paragraph explains the problem (the 'one-sided approaches' in sociology) that Abrams's theory is designed to solve. It then introduces his core idea of 'structuring' as the solution. This establishes the intellectual foundation, or 'basis,' for his entire conception of historical sociology.", badge: "Correct", badgeColor: "green" }
+        { title: "(A)", text: "The paragraph introduces Abrams's concept, but it doesn't argue for its 'merits' or advantages. It simply presents the idea and the problem it is meant to solve. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This is too broad. The paragraph introduces the core concept, but the subsequent paragraphs provide the specific 'details' of its application to history, such as 'contingencies' and the four-part research method. Additional check: trap type is too broad, since it extends beyond what the passage actually supports.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "The paragraph does not mention any potential criticisms or challenges to Abrams's theory. It describes a challenge *that Abrams's theory aims to overcome*. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "While it introduces the key term 'structuring,' the paragraph's main function is much broader than just defining terms. It establishes the entire intellectual problem that motivates Abrams's work. Additional check: trap type is too broad, since it extends beyond what the passage actually supports.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "This is correct. The first paragraph explains the problem (the 'one-sided approaches' in sociology) that Abrams's theory is designed to solve. It then introduces his core idea of 'structuring' as the solution. This establishes the intellectual foundation, or 'basis,' for his entire conception of historical sociology. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" }
       ]
     }
   ]

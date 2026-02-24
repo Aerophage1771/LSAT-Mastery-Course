@@ -8,26 +8,28 @@ export const Lesson7_Question20: Lesson = {
   id: "57-7",
   title: "Question 20: Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 20 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-114-S-3-P-3)', content: passageText },
+    { type: 'h3', text: "Question 20: Inference Breakdown (PT-114-S-3-P-3-Q-20)" },
     { type: 'blockquote', text: "**Question:** Based on the passage, which one of the following is the LEAST illustrative example of the effect of a contingency upon an individual?" },
     { type: 'options', items: [
-      "(A) the effect of the fact that a person experienced political injustice on that person’s decision to work for political reform [5.0%]",
-      "(B) the effect of the fact that a person was raised in an agricultural region on that person’s decision to pursue a career in agriculture [3.0%]",
-      "(C) the effect of the fact that a person lives in a particular community on that person’s decision to visit friends in another community [86.0%] (Correct)",
-      "(D) the effect of the fact that a person’s parents practiced a particular religion on that person’s decision to practice that religion [4.0%]",
-      "(E) the effect of the fact that a person grew up in financial hardship on that person’s decision to help others in financial hardship [2.0%]"
+      "(A) the effect of the fact that a person experienced political injustice on that person’s decision to work for political reform",
+      "(B) the effect of the fact that a person was raised in an agricultural region on that person’s decision to pursue a career in agriculture",
+      "(C) the effect of the fact that a person lives in a particular community on that person’s decision to visit friends in another community (Correct)",
+      "(D) the effect of the fact that a person’s parents practiced a particular religion on that person’s decision to practice that religion",
+      "(E) the effect of the fact that a person grew up in financial hardship on that person’s decision to help others in financial hardship"
     ]},
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "The passage defines 'contingencies' as deep, identity-forming social factors that shape our capacities and partially determine our major actions. We are looking for the example that is the most trivial and least illustrative of this profound influence." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This inference question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'In explaining the foundations of the discipline known as historical sociology—the...' and 'In order to capture the various facets of this mutual interaction,...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "Experiencing political injustice is a significant social condition that can profoundly shape one's identity and motivate major life actions, such as working for reform. This is a strong example.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "Being raised in an agricultural region is a key social and economic condition that directly influences one's skills, opportunities, and career path—a major life decision. This is a good example.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "This is the correct answer. Deciding to visit friends in another town is a simple, everyday choice. It does not illustrate the deep, identity-forming influence of a contingency that shapes one's 'capacities' and 'partially determines the sorts of actions' one can perform in a larger historical sense. It is a trivial decision compared to the others.", badge: "Correct", badgeColor: "green" },
-        { title: "(D)", text: "The religion one is raised in is a powerful social and ideological contingency that shapes personal identity, beliefs, and major life choices. This is a classic example.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "The passage specifically lists 'the condition of our household’s economy' as a contingency. Growing up in hardship can deeply affect a person's values and identity, leading to significant life decisions. This is a very illustrative example.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "Experiencing political injustice is a significant social condition that can profoundly shape one's identity and motivate major life actions, such as working for reform. This is a strong example. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "Being raised in an agricultural region is a key social and economic condition that directly influences one's skills, opportunities, and career path—a major life decision. This is a good example. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "This is the correct answer. Deciding to visit friends in another town is a simple, everyday choice. It does not illustrate the deep, identity-forming influence of a contingency that shapes one's 'capacities' and 'partially determines the sorts of actions' one can perform in a larger historical sense. It is a trivial decision compared to the others. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(D)", text: "The religion one is raised in is a powerful social and ideological contingency that shapes personal identity, beliefs, and major life choices. This is a classic example. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "The passage specifically lists 'the condition of our household’s economy' as a contingency. Growing up in hardship can deeply affect a person's values and identity, leading to significant life decisions. This is a very illustrative example. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

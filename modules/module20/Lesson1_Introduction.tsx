@@ -8,10 +8,9 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h2', text: 'Question Goal' },
     {
       type: 'callout',
-      text: '**Identify the specific statement** that one speaker would affirm and the other would deny, or that both would affirm.',
+      text: '**Analyze a dialogue between two speakers and identify the specific statement that one speaker would affirm and the other would deny (Point of Disagreement), or that both speakers would affirm (Point of Agreement).**',
       variant: 'goal',
     },
-    { type: 'paragraph', text: 'This module covers Agree / Disagree (Point at Issue).' },
     { type: 'hr' },
     { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: 'Agree/Disagree questions present a short dialogue and ask you to find the precise statement at the heart of the conversation. This question type is a crucial test of **comparative reasoning**. Instead of deconstructing a single argument in isolation, you must analyze two competing viewpoints and identify the exact fault line (a **Point of Disagreement**) or common ground (a **Point of Agreement**) between them.' },

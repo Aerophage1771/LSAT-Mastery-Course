@@ -10,18 +10,19 @@ export const Lesson8_Question15: Lesson = {
   id: "39-8",
   title: "Question 15: Author's Values",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 15 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-119-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 15: Author's Values Breakdown (PT-119-S-1-P-2-Q-15)" },
     { type: 'blockquote', text: "**Question:** Based on the passage, which one of the following aspects of Kogawa’s work does the author of the passage appear to value most highly?" },
     { type: 'options', items: [
-      "(A) her willingness to make political statements [3.0%]",
-      "(B) her imaginative development of characters [3.0%]",
-      "(C) her subtle use of literary techniques [90.0%] (Correct)",
-      "(D) her knowledge of Christian rituals and symbols [3.0%]",
-      "(E) her objectivity in describing Naomi’s tragic life [1.0%]"
+      "(A) her willingness to make political statements",
+      "(B) her imaginative development of characters",
+      "(C) her subtle use of literary techniques (Correct)",
+      "(D) her knowledge of Christian rituals and symbols",
+      "(E) her objectivity in describing Naomi’s tragic life"
     ]},
-    { type: 'paragraph', text: "In other words, what is it about this book that most impresses our critic? What are they spending the entire passage praising?" },
-    { type: 'paragraph', text: "The author's focus is relentlessly on the *how*. They are not just saying, \"This book is about a hero and it criticizes society.\" They are saying, \"Look at the brilliant *way* Kogawa uses literary craft—these specific, subtle techniques—to achieve these effects.\" The author's admiration is clearly for Kogawa's skill as a literary artist." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This author's-values question asks what the critic most admires. Across the passage, the praise is directed at craft: how Kogawa engineers effects through structure and symbolism. The credited choice therefore names subtle literary technique, while wrong choices are too broad, too narrow, or focused on content rather than method." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The setup says Kogawa \"employs subtle techniques,\" and the close confirms value focus: \"through the careful deployment of structure and symbol.\" Those lines point to technique as the primary object of praise." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

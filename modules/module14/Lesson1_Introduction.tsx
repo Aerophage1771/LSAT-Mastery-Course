@@ -8,23 +8,22 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h2', text: 'Question Goal' },
     {
       type: 'callout',
-      text: '**Identify the abstract rule or proposition** that the specific situation in the stimulus perfectly exemplifies.',
+      text: '**Identify the abstract rule or proposition that the specific situation in the stimulus perfectly exemplifies.** If the stimulus is treated as a case study, which answer choice provides the most accurate "lesson" or "moral of the story"?',
       variant: 'goal',
     },
-    { type: 'paragraph', text: 'This module covers Principle - Generalization.' },
     { type: 'hr' },
     { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: '**The Art of Abstraction**' },
-    { type: 'paragraph', text: 'Principle-Generalization questions present you with a specific, self-contained scenario—such as an experiment, an anecdote, or a natural phenomenon—and ask you to identify the broader, abstract rule that this scenario represents. Your task is to look past the specific details and find the ""moral of the story.""' },
+    { type: 'paragraph', text: 'Principle-Generalization questions present you with a specific, self-contained scenario, such as an experiment, an anecdote, or a natural phenomenon, and ask you to identify the broader, abstract rule that this scenario represents. Your task is to look past the specific details and find the "moral of the story."' },
     { type: 'paragraph', text: 'This question type tests your ability to move from the specific to the general. It is the inverse of a Principle-Application question (where you are given a rule and must find a case that fits). Here, you are given the specific case and must extract the rule. Success depends on your ability to see the universal principle hidden behind a single, concrete instance.' },
     { type: 'hr' },
     { type: 'h2', text: 'Common Question Stems' },
-    { type: 'paragraph', text: 'You can recognize these questions by their focus on ""propositions,"" ""generalizations,"" or what the passage ""illustrates."" Typical phrasing includes:' },
+    { type: 'paragraph', text: 'You can recognize these questions by their focus on "propositions," "generalizations," or what the passage "illustrates." Typical phrasing includes:' },
     { type: 'list', items: [
-      '""""The situation described above most closely conforms to which one of the following generalizations?""""',
-      '""""The passage most precisely illustrates which one of the following propositions?""""',
-      '""""Which one of the following principles is best illustrated by the information above?""""',
-      '""""The situation as described above most closely conforms to which one of the following principles?""""'
+      '"The situation described above most closely conforms to which one of the following generalizations?"',
+      '"The passage most precisely illustrates which one of the following propositions?"',
+      '"Which one of the following principles is best illustrated by the information above?"',
+      '"The situation as described above most closely conforms to which one of the following principles?"'
     ]},
     { type: 'hr' },
     { type: 'h2', text: 'Core Concepts' },
@@ -39,14 +38,14 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h4', text: 'The Universal Rule' },
     { type: 'paragraph', text: 'The correct answer will take the central dynamic you identified and rephrase it in abstract, general terms. It will swap out specific nouns and verbs for broad categories. For example:' },
     { type: 'list', items: [
-      '""Guppies"" might become ""organisms.""',
-      '""Politicians"" might become ""publicly known figures.""',
-      '""A surcharge vs. a discount"" might become ""how a situation is presented.""'
+      '"Guppies" might become "organisms."',
+      '"Politicians" might become "publicly known figures."',
+      '"A surcharge vs. a discount" might become "how a situation is presented."'
     ]},
     { type: 'h4', text: 'Criteria for the Correct Principle' },
     { type: 'list', ordered: true, items: [
-      '**Strict Support:** You must be able to prove the principle using *only* the facts provided in the stimulus. If a principle makes a claim about ""effectiveness"" but the stimulus only discusses ""intent,"" the principle is not supported.',
-      '**Proper Strength:** Pay close attention to the force of the language. If the stimulus describes something that ""can"" or ""sometimes"" happens, an answer choice claiming it ""usually"" or ""always"" happens is too strong and therefore incorrect. Moderate language (e.g., ""can,"" ""may,"" ""sometimes"") is frequently found in correct Principle-Generalization answers.'
+      '**Strict Support:** You must be able to prove the principle using *only* the facts provided in the stimulus. If a principle makes a claim about "effectiveness" but the stimulus only discusses "intent," the principle is not supported.',
+      '**Proper Strength:** Pay close attention to the force of the language. If the stimulus describes something that "can" or "sometimes" happens, an answer choice claiming it "usually" or "always" happens is too strong and therefore incorrect. Moderate language (e.g., "can," "may," "sometimes") is frequently found in correct Principle-Generalization answers.'
     ]}
   ]
 };

@@ -10,24 +10,25 @@ export const Lesson2_Question21: Lesson = {
   id: "54-2",
   title: "Question 21: Main Point",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 21 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-111-S-2-P-4)', content: passageText },
+    { type: 'h3', text: "Question 21: Main Point Breakdown (PT-111-S-2-P-4-Q-21)" },
     { type: 'blockquote', text: "**Question:** Which one of the following most accurately expresses the main point of the passage?" },
     { type: 'options', items: [
-      "(A) Dworkin regards natural law theory as a middle ground between legal positivism and judicial activism. [2.0%]",
-      "(B) Dworkin holds that judicial interpretations should not be based solely on identifying a consensus or solely on moral intuition, but should be consistent with the reasoning that underlies the law. [84.0%] (Correct)",
-      "(C) Dworkin argues that the internal logic of the law should generally guide judges except in instances where consensus is registered or judges have strong moral intuitions. [3.0%]",
-      "(D) Dworkin’s theory of legal interpretation is based on borrowing equally from natural law theory and legal positivism. [8.0%]",
-      "(E) Dworkin validates judges’ dependence on moral intuition, reason, and the intent of the authors of a law, but only in cases where a social consensus is not present. [3.0%]"
+      "(A) Dworkin regards natural law theory as a middle ground between legal positivism and judicial activism.",
+      "(B) Dworkin holds that judicial interpretations should not be based solely on identifying a consensus or solely on moral intuition, but should be consistent with the reasoning that underlies the law. (Correct)",
+      "(C) Dworkin argues that the internal logic of the law should generally guide judges except in instances where consensus is registered or judges have strong moral intuitions.",
+      "(D) Dworkin’s theory of legal interpretation is based on borrowing equally from natural law theory and legal positivism.",
+      "(E) Dworkin validates judges’ dependence on moral intuition, reason, and the intent of the authors of a law, but only in cases where a social consensus is not present."
     ]},
-    { type: 'paragraph', text: "This is a Main Point question. We need to find the answer that best summarizes the author's entire argument about Dworkin's theory." },
-    { type: 'callout', title: "Prediction", variant: "tip", text: "The passage presents Dworkin's theory as a 'middle ground' that avoids the flaws of two other theories. It rejects legal positivism (which relies solely on consensus) and natural law (which relies on unconstrained moral conviction). The core of Dworkin's alternative is that interpretation must be guided by the law's 'internal logic' or underlying principles. The main point must capture this rejection of the two extremes in favor of this third way." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This main point question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Ronald Dworkin argues that judges are in danger of uncritically embracing...' and 'Once we realize, as Dworkin does, that the law has an...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-        { title: "(A)", text: "This misidentifies the theories. The passage states Dworkin's own theory is the middle ground; he sees natural law as an unacceptable extreme.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This is a perfect summary. It correctly identifies Dworkin's rejection of both legal positivism ('not based solely on identifying a consensus') and natural law ('not solely on moral intuition'). It also accurately states his alternative: interpretations 'should be consistent with the reasoning that underlies the law' (the 'internal logic').", badge: "Correct", badgeColor: "green" },
-        { title: "(C)", text: "This misrepresents Dworkin's view. He argues the internal logic is the primary guide that *constrains* moral intuition and can be correct *even without* consensus. It doesn't give way to them.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "The phrase 'borrowing equally' is too strong and is not supported by the text. His theory is a distinct alternative, not a simple blend of the other two.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "This incorrectly limits the application of Dworkin's theory to cases 'where a social consensus is not present.' The passage presents it as a general approach. It also misstates his view on authors' intent, as he believes interpretations can be improved upon.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "This misidentifies the theories. The passage states Dworkin's own theory is the middle ground; he sees natural law as an unacceptable extreme. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This is a perfect summary. It correctly identifies Dworkin's rejection of both legal positivism ('not based solely on identifying a consensus') and natural law ('not solely on moral intuition'). It also accurately states his alternative: interpretations 'should be consistent with the reasoning that underlies the law' (the 'internal logic'). Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(C)", text: "This misrepresents Dworkin's view. He argues the internal logic is the primary guide that *constrains* moral intuition and can be correct *even without* consensus. It doesn't give way to them. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "The phrase 'borrowing equally' is too strong and is not supported by the text. His theory is a distinct alternative, not a simple blend of the other two. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "This incorrectly limits the application of Dworkin's theory to cases 'where a social consensus is not present.' The passage presents it as a general approach. It also misstates his view on authors' intent, as he believes interpretations can be improved upon. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

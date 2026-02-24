@@ -9,26 +9,28 @@ export const Lesson7_Question20: Lesson = {
   id: "52-7",
   title: "Question 20: Structure",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 20 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-110-S-4-P-3)', content: passageText },
+    { type: 'h3', text: "Question 20: Structure Breakdown (PT-110-S-4-P-3-Q-20)" },
     { type: 'blockquote', text: "**Question:** Which one of the following most accurately describes the organization of the final paragraph in the passage?" },
     { type: 'options', items: [
-      "(A) A criticism is identified and its plausibility is investigated. [42.0%] (Correct)",
-      "(B) The different arguments made by two opponents of a certain viewpoint are advanced. [24.0%]",
-      "(C) The arguments for and against a certain position are outlined, then a new position is offered to reconcile them. [13.0%]",
-      "(D) A belief is presented and its worth is debated on the basis of its practical consequences. [18.0%]",
-      "(E) Two different solutions are imagined in order to summarize a controversy. [4.0%]"
+      "(A) A criticism is identified and its plausibility is investigated. (Correct)",
+      "(B) The different arguments made by two opponents of a certain viewpoint are advanced.",
+      "(C) The arguments for and against a certain position are outlined, then a new position is offered to reconcile them.",
+      "(D) A belief is presented and its worth is debated on the basis of its practical consequences.",
+      "(E) Two different solutions are imagined in order to summarize a controversy."
     ]},
-    { type: 'paragraph', text: "This is a Structure question focused on the final paragraph. We must map its logical flow. The paragraph begins by identifying a 'CLS charge' (a criticism of legal formalism). Meyerson then responds to this charge. A potential CLS counter-response ('A CLS scholar might object...') is introduced, followed by Meyerson's final reply. This entire sequence is an investigation into the plausibility of the initial CLS criticism." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This structure question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Philosopher Denise Meyerson views the Critical Legal Studies (CLS) movement as...' and 'But Meyerson replies that such considerations may be viewed as part...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "This answer is correct because the paragraph's structure follows this exact pattern. It first identifies the 'CLS charge' (the criticism) and then investigates its plausibility by presenting Meyerson's counterargument, a potential objection from a CLS scholar, and Meyerson's final reply.", badge: "Correct", badgeColor: "green" },
-        { title: "(B)", text: "This choice is incorrect because the paragraph presents arguments from two opposing sides (Meyerson versus CLS), not from two opponents who share the same viewpoint.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "While the paragraph does outline arguments for and against a position, it does not offer a new position to reconcile them. Instead, Meyerson's argument is presented as a direct refutation of the CLS position.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "The paragraph presents a debate about the logical relationship between two ideas (legal formalism and objectivism), not a debate about the practical consequences of holding a certain belief.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "The paragraph does not imagine two different solutions to summarize a controversy. It examines a single point of disagreement in detail by presenting an argument and a series of responses to it.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "This answer is correct because the paragraph's structure follows this exact pattern. It first identifies the 'CLS charge' (the criticism) and then investigates its plausibility by presenting Meyerson's counterargument, a potential objection from a CLS scholar, and Meyerson's final reply. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(B)", text: "This choice is incorrect because the paragraph presents arguments from two opposing sides (Meyerson versus CLS), not from two opponents who share the same viewpoint. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "While the paragraph does outline arguments for and against a position, it does not offer a new position to reconcile them. Instead, Meyerson's argument is presented as a direct refutation of the CLS position. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "The paragraph presents a debate about the logical relationship between two ideas (legal formalism and objectivism), not a debate about the practical consequences of holding a certain belief. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "The paragraph does not imagine two different solutions to summarize a controversy. It examines a single point of disagreement in detail by presenting an argument and a series of responses to it. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

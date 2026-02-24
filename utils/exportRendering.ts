@@ -2,7 +2,10 @@
  * DOM-based serialization of the lesson content area to JSX or HTML.
  * Used for "Copy as JSX" and "Copy as HTML" in the lesson export UI.
  * Root element must be marked with data-export-content.
+ * Also provides data-to-JSX generation for full course export.
  */
+
+import type { ContentBlock, Lesson, ModuleData } from '../types';
 
 const VOID_TAGS = new Set([
   'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr',
@@ -206,4 +209,136 @@ export function serializeToHTML(
   }
 
   return `<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>${visit(root)}</body></html>`;
+}
+
+// --- Data-to-JSX (for full course export without DOM) ---
+
+/** Escape string for use inside JSX {'...'} so quotes and braces are safe. */
+function escapeForJSXLiteral(s: string): string {
+  if (!s) return '';
+  return s
+    .replace(/\\/g, '\\\\')
+    .replace(/'/g, "\\'")
+    .replace(/\n/g, '\\n')
+    .replace(/\r/g, '\\r')
+    .replace(/\{/g, '\\{')
+    .replace(/\}/g, '\\}');
+}
+
+function contentBlockToJSX(block: ContentBlock, indent: number): string {
+  const i = '  '.repeat(indent);
+  switch (block.type) {
+    case 'paragraph':
+      return `${i}<p className="mb-4 leading-relaxed text-slate-700 text-base">{'${escapeForJSXLiteral(block.text)}'}</p>`;
+    case 'h1':
+      return `${i}<h1 className="text-3xl font-extrabold text-slate-900 mb-6">{'${escapeForJSXLiteral(block.text)}'}</h1>`;
+    case 'h2':
+      return `${i}<h2 className="text-xl font-bold mt-8 mb-4 text-slate-900">{'${escapeForJSXLiteral(block.text)}'}</h2>`;
+    case 'h3':
+      return `${i}<h3 className="text-lg font-bold mt-6 mb-3 text-slate-800">{'${escapeForJSXLiteral(block.text)}'}</h3>`;
+    case 'h4':
+      return `${i}<h4 className="text-base font-bold mt-4 mb-2 text-slate-800">{'${escapeForJSXLiteral(block.text)}'}</h4>`;
+    case 'blockquote':
+      return `${i}<p className="mb-4 leading-relaxed text-slate-700 text-base">{'${escapeForJSXLiteral(block.text)}'}</p>`;
+    case 'hr':
+      return `${i}<hr className="my-10 border-slate-200" />`;
+    case 'list': {
+      const Tag = block.ordered ? 'ol' : 'ul';
+      const listClass = block.ordered ? 'ml-6 space-y-2 list-decimal text-slate-700' : 'ml-6 space-y-2 list-disc text-slate-700';
+      const items = (block.items || [])
+        .map((item) => `  ${i}<li className="mb-2">{'${escapeForJSXLiteral(item)}'}</li>`)
+        .join('\n');
+      return `${i}<${Tag} className="${listClass}">\n${items}\n${i}</${Tag}>`;
+    }
+    case 'code':
+      return `${i}<pre className="p-4 bg-slate-100 rounded-lg text-sm overflow-x-auto"><code>{'${escapeForJSXLiteral(block.text)}'}</code></pre>`;
+    case 'callout':
+      return `${i}<div className="rounded-xl border border-slate-200 bg-slate-50 p-5 my-4">\n${i}  <p className="text-base leading-relaxed text-slate-700">{'${escapeForJSXLiteral(block.text)}'}</p>\n${i}</div>`;
+    default:
+      return `${i}{/* unsupported block: ${(block as ContentBlock).type } */}`;
+  }
+}
+
+function lessonContentToJSX(content: string | ContentBlock[], indent: number): string {
+  const i = '  '.repeat(indent);
+  if (typeof content === 'string') {
+    return `${i}<p className="mb-4 leading-relaxed text-slate-700">{'${escapeForJSXLiteral(content)}'}</p>`;
+  }
+  return content.map((b) => contentBlockToJSX(b, indent)).join('\n');
+}
+
+function lessonToJSX(lesson: Lesson, indent: number): string {
+  const i = '  '.repeat(indent);
+  const titleEscaped = escapeForJSXLiteral(lesson.title);
+  const body = lessonContentToJSX(lesson.content, indent + 2);
+  return `${i}<section key="${lesson.id}" className="mb-10">
+${i}  <h2 className="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">{'${titleEscaped}'}</h2>
+${i}  <div className="space-y-4">
+${body}
+${i}  </div>
+${i}</section>`;
+}
+
+function moduleToJSX(module: ModuleData, indent: number): string {
+  const i = '  '.repeat(indent);
+  const titleEscaped = escapeForJSXLiteral(`Module ${module.id}: ${module.title}`);
+  const descEscaped = escapeForJSXLiteral(module.description);
+  const lessons = module.lessons.map((l) => lessonToJSX(l, indent + 2)).join('\n\n');
+  return `${i}<section key="${module.id}" className="mb-12">
+${i}  <h2 className="text-3xl font-bold text-slate-900 mb-2">{'${titleEscaped}'}</h2>
+${i}  <p className="text-slate-600 mb-8">{'${descEscaped}'}</p>
+${lessons}
+${i}</section>`;
+}
+
+/**
+ * Generate a full React component as JSX string that renders a single lesson.
+ * Used for "Copy as JSX" in the export modal when scope is current lesson.
+ */
+export function generateLessonJSX(lesson: Lesson): string {
+  const componentName = lessonTitleToComponentName(lesson.title);
+  const titleEscaped = escapeForJSXLiteral(lesson.title);
+  const body = lessonContentToJSX(lesson.content, 4);
+  return `'use client';
+
+import React from 'react';
+
+export default function ${componentName}() {
+  return (
+    <div className="min-h-screen bg-slate-50 font-sans p-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-3xl font-bold text-slate-900 mb-8">{'${titleEscaped}'}</h1>
+        <div className="space-y-6">
+${body}
+        </div>
+      </div>
+    </div>
+  );
+}
+`;
+}
+
+/**
+ * Generate a full React component as JSX string that renders the entire course.
+ * Used for "Copy as JSX" in the export modal when scope is entire course.
+ */
+export function generateCourseJSX(modules: ModuleData[]): string {
+  const modulesJSX = modules.map((m) => moduleToJSX(m, 4)).join('\n\n');
+  return `'use client';
+
+import React from 'react';
+
+export default function LSATMasteryCourseJSX() {
+  return (
+    <div className="min-h-screen bg-slate-50 font-sans p-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-4xl font-extrabold text-slate-900 mb-4">LSAT Mastery Course</h1>
+        <p className="text-lg text-slate-600 mb-12">Full course content export.</p>
+
+${modulesJSX}
+      </div>
+    </div>
+  );
+}
+`;
 }

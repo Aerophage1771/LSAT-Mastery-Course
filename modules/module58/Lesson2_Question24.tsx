@@ -9,26 +9,28 @@ export const Lesson2_Question24: Lesson = {
   id: "58-2",
   title: "Question 24: Main Idea",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 24 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-115-S-3-P-4)', content: passageText },
+    { type: 'h3', text: "Question 24: Main Idea Breakdown (PT-115-S-3-P-4-Q-24)" },
     { type: 'blockquote', text: "**Question:** Which one of the following most accurately expresses the main point of the passage?" },
     { type: 'options', items: [
-      "(A) Despite the widely recognized need to revise Canadian copyright law to protect works from unauthorized reproduction and distribution over the Internet, users of the Internet have mounted many legal challenges to the criminalizing of digitalization. [6.0%]",
-      "(B) Although the necessity of revising Canadian copyright law to protect works from unauthorized reproduction and distribution over the Internet is widely recognized, effective criminalizing of digitalization is likely to prove highly complicated. [88.0%] (Correct)",
-      "(C) While the unauthorized reproduction and distribution of copyrighted works over the Internet is not yet a crime, legal experts believe it is only a matter of time before Canadian copyright law is amended to prohibit unauthorized digitalization. [2.0%]",
-      "(D) Despite the fact that current Canadian copyright law does not cover digitalization, the unauthorized reproduction and distribution of copyrighted works over the Internet clearly ought to be considered a crime. [2.0%]",
-      "(E) Although legal experts in Canada disagree about the most effective way to punish the unauthorized reproduction and distribution of copyrighted works over the Internet, they nonetheless agree that such digitalization should clearly be a punishable crime. [2.0%]"
+      "(A) Despite the widely recognized need to revise Canadian copyright law to protect works from unauthorized reproduction and distribution over the Internet, users of the Internet have mounted many legal challenges to the criminalizing of digitalization.",
+      "(B) Although the necessity of revising Canadian copyright law to protect works from unauthorized reproduction and distribution over the Internet is widely recognized, effective criminalizing of digitalization is likely to prove highly complicated. (Correct)",
+      "(C) While the unauthorized reproduction and distribution of copyrighted works over the Internet is not yet a crime, legal experts believe it is only a matter of time before Canadian copyright law is amended to prohibit unauthorized digitalization.",
+      "(D) Despite the fact that current Canadian copyright law does not cover digitalization, the unauthorized reproduction and distribution of copyrighted works over the Internet clearly ought to be considered a crime.",
+      "(E) Although legal experts in Canada disagree about the most effective way to punish the unauthorized reproduction and distribution of copyrighted works over the Internet, they nonetheless agree that such digitalization should clearly be a punishable crime."
     ]},
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "The passage has a problem-solution structure. Problem: The law is outdated. Proposed solution: Criminalize digitalization. Author's argument: This solution is not as simple as it seems and has many complications. The main point must capture this entire arc: the need for a solution and the difficulty of implementing it." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This main idea question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'The following passage was written in the mid-1990s.' and 'But even if the law is revised to contain a more...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "The passage describes a philosophical conflict, but it never mentions internet users mounting 'legal challenges.' This is an unsupported detail.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This is a perfect summary. It acknowledges the 'necessity of revising' the law (the problem) but focuses on the author's main argument that doing so is 'highly complicated' (the analysis in paragraph 3).", badge: "Correct", badgeColor: "green" },
-        { title: "(C)", text: "The passage doesn't suggest that a legal change is inevitable ('only a matter of time'). In fact, it emphasizes the deep-seated philosophical clash that will be 'hard to resolve,' making a solution uncertain.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "The author describes the problem from a neutral, analytical perspective. They do not take a personal stance on what 'ought to be considered a crime.' This is a prescriptive statement the author does not make.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "The passage mentions that 'some experts' propose criminalizing digitalization, not that there is a broad agreement among all experts. This overstates the level of consensus.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "The passage describes a philosophical conflict, but it never mentions internet users mounting 'legal challenges.' This is an unsupported detail. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This is a perfect summary. It acknowledges the 'necessity of revising' the law (the problem) but focuses on the author's main argument that doing so is 'highly complicated' (the analysis in paragraph 3). Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(C)", text: "The passage doesn't suggest that a legal change is inevitable ('only a matter of time'). In fact, it emphasizes the deep-seated philosophical clash that will be 'hard to resolve,' making a solution uncertain. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "The author describes the problem from a neutral, analytical perspective. They do not take a personal stance on what 'ought to be considered a crime.' This is a prescriptive statement the author does not make. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "The passage mentions that 'some experts' propose criminalizing digitalization, not that there is a broad agreement among all experts. This overstates the level of consensus. Additional check: trap type is too broad, since it extends beyond what the passage actually supports.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

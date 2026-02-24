@@ -8,26 +8,28 @@ export const Lesson5_Question18: Lesson = {
   id: "57-5",
   title: "Question 18: Analogy",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 18 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-114-S-3-P-3)', content: passageText },
+    { type: 'h3', text: "Question 18: Analogy Breakdown (PT-114-S-3-P-3-Q-18)" },
     { type: 'blockquote', text: "**Question:** Which one of the following is most analogous to the ideal work of a historical sociologist as outlined by Abrams?" },
     { type: 'options', items: [
-      "(A) In a report on the enactment of a bill into law, a journalist explains why the need for the bill arose, sketches the biography of the principal legislator who wrote the bill, and ponders the effect that the bill’s enactment will have both on society and on the legislator’s career. [67.0%] (Correct)",
-      "(B) In a consultation with a patient, a doctor reviews the patient’s medical history, suggests possible reasons for the patient’s current condition, and recommends steps that the patient should take in the future to ensure that the condition improves or at least does not get any worse. [9.0%]",
-      "(C) In an analysis of a historical novel, a critic provides information to support the claim that details of the work’s setting are accurate, explains why the subject of the novel was of particular interest to the author, and compares the novel with some of the author’s other books set in the same period. [9.0%]",
-      "(D) In a presentation to stockholders, a corporation’s chief executive officer describes the corporation’s most profitable activities during the past year, introduces the vice president largely responsible for those activities, and discusses new projects the vice president will initiate in the coming year. [7.0%]",
-      "(E) In developing a film based on a historical event, a filmmaker conducts interviews with participants in the event, bases part of the film’s screenplay on the interviews, and concludes the screenplay with a sequence of scenes speculating on the outcome of the event had certain details been different. [8.0%]"
+      "(A) In a report on the enactment of a bill into law, a journalist explains why the need for the bill arose, sketches the biography of the principal legislator who wrote the bill, and ponders the effect that the bill’s enactment will have both on society and on the legislator’s career. (Correct)",
+      "(B) In a consultation with a patient, a doctor reviews the patient’s medical history, suggests possible reasons for the patient’s current condition, and recommends steps that the patient should take in the future to ensure that the condition improves or at least does not get any worse.",
+      "(C) In an analysis of a historical novel, a critic provides information to support the claim that details of the work’s setting are accurate, explains why the subject of the novel was of particular interest to the author, and compares the novel with some of the author’s other books set in the same period.",
+      "(D) In a presentation to stockholders, a corporation’s chief executive officer describes the corporation’s most profitable activities during the past year, introduces the vice president largely responsible for those activities, and discusses new projects the vice president will initiate in the coming year.",
+      "(E) In developing a film based on a historical event, a filmmaker conducts interviews with participants in the event, bases part of the film’s screenplay on the interviews, and concludes the screenplay with a sequence of scenes speculating on the outcome of the event had certain details been different."
     ]},
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "This is an analogy question. We must find a scenario that mirrors Abrams's four-part method: (1) describe the event, (2) explain the social context, (3) summarize the individual agent's history, and (4) analyze the consequences for both the larger system and the individual." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This analogy question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'In explaining the foundations of the discipline known as historical sociology—the...' and 'In order to capture the various facets of this mutual interaction,...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "This is a perfect analogy. The journalist's report follows all four steps: (1) event: bill enactment, (2) context: why the bill was needed, (3) agent: legislator's biography, and (4) consequences: effect on society (history) and the legislator's career (individual).", badge: "Correct", badgeColor: "green" },
-        { title: "(B)", text: "This lacks a broader social context and focuses solely on the individual patient's medical history and future, not on the interaction between an individual and wider social forces.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "This is an analysis of a work of fiction, not a real historical event. It also fails to analyze the event's consequences for both history and the individual, instead comparing the novel to other books.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "This is a forward-looking business report, not a historical analysis. It misses the key elements of social context and the past consequences of a specific event.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "This scenario ends with speculation about a different outcome ('what might have been'). Abrams's method focuses on analyzing the actual consequences of an event, not imagining alternate histories.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "This is a perfect analogy. The journalist's report follows all four steps: (1) event: bill enactment, (2) context: why the bill was needed, (3) agent: legislator's biography, and (4) consequences: effect on society (history) and the legislator's career (individual). Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(B)", text: "This lacks a broader social context and focuses solely on the individual patient's medical history and future, not on the interaction between an individual and wider social forces. Additional check: trap type is too broad, since it extends beyond what the passage actually supports.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "This is an analysis of a work of fiction, not a real historical event. It also fails to analyze the event's consequences for both history and the individual, instead comparing the novel to other books. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "This is a forward-looking business report, not a historical analysis. It misses the key elements of social context and the past consequences of a specific event. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "This scenario ends with speculation about a different outcome ('what might have been'). Abrams's method focuses on analyzing the actual consequences of an event, not imagining alternate histories. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

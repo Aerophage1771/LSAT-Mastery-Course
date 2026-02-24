@@ -9,24 +9,25 @@ export const Lesson3_Question23: Lesson = {
   id: "50-3",
   title: "Question 23: Weaken/Strengthen",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-108-S-1-P-4-Q-23" },
+    { type: 'accordion', title: 'Read Passage (PT-108-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 23: Weaken/Strengthen Breakdown (PT-108-S-1-P-4-Q-23)" },
     { type: 'blockquote', text: "**Question:** Which one of the following statements, if true, lends the most support to the view that language has an essential correspondence to the things it describes?" },
     { type: 'options', items: [
-      "(A) The categories of physical objects employed by one language correspond remarkably to the categories employed by another language that developed independently of the first. [73.0%] (Correct)",
-      "(B) The categories of physical objects employed by one language correspond remarkably to the categories employed by another language that derives from the first. [3.0%]",
-      "(C) The categories of physical objects employed by speakers of a language correspond remarkably to the categories employed by other speakers of the same language. [11.0%]",
-      "(D) The sentence structures of languages in scientifically sophisticated societies vary little from language to language. [3.0%]",
-      "(E) Native speakers of many languages believe that the categories of physical objects employed by their language correspond to natural categories of objects in the world. [10.0%]"
+      "(A) The categories of physical objects employed by one language correspond remarkably to the categories employed by another language that developed independently of the first. (Correct)",
+      "(B) The categories of physical objects employed by one language correspond remarkably to the categories employed by another language that derives from the first.",
+      "(C) The categories of physical objects employed by speakers of a language correspond remarkably to the categories employed by other speakers of the same language.",
+      "(D) The sentence structures of languages in scientifically sophisticated societies vary little from language to language.",
+      "(E) Native speakers of many languages believe that the categories of physical objects employed by their language correspond to natural categories of objects in the world."
     ]},
-    { type: 'h3', text: "Explanation" },
-    { type: 'paragraph', text: "The passage discusses a debate about the nature of language and its connection to the real world. One side argues that language has an essential, fundamental correspondence to the objects and behaviors it describes. The other side claims the relationship is based on social agreement or convention, making knowledge less certain." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This weaken/strengthen question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'What it means to “explain” something in science often comes down...' and 'In pursuing the implications of this theory, linguists have reached the...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A)", text: "This choice provides the strongest evidence for an essential link between language and reality. If two languages that developed completely independently of each other ended up with the same categories for objects, it would be a huge coincidence. A better explanation is that both languages are simply reflecting the same real-world structure, which supports the idea of an 'essential correspondence'." },
-      { title: "(B)", text: "If one language comes from another, it is expected that they would share similar categories. This shows how languages are passed down, not that they have an essential link to the things they describe." },
-      { title: "(C)", text: "That speakers of the same language use the same categories is a given; it's part of what it means to speak a common language. This fact doesn't say anything about whether those categories reflect reality or are just shared conventions." },
-      { title: "(D)", text: "This answer is about sentence structure, not about the way languages categorize objects. The question is concerned with how language corresponds to 'things', which relates more to vocabulary and categories." },
-      { title: "(E)", text: "What people believe about their language does not prove that their belief is true. The fact that speakers think their language reflects reality isn't evidence that it actually does." }
+      { title: "(A)", text: "This choice provides the strongest evidence for an essential link between language and reality. If two languages that developed completely independently of each other ended up with the same categories for objects, it would be a huge coincidence. A better explanation is that both languages are simply reflecting the same real-world structure, which supports the idea of an 'essential correspondence'. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(B)", text: "If one language comes from another, it is expected that they would share similar categories. This shows how languages are passed down, not that they have an essential link to the things they describe. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(C)", text: "That speakers of the same language use the same categories is a given; it's part of what it means to speak a common language. This fact doesn't say anything about whether those categories reflect reality or are just shared conventions. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(D)", text: "This answer is about sentence structure, not about the way languages categorize objects. The question is concerned with how language corresponds to 'things', which relates more to vocabulary and categories. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(E)", text: "What people believe about their language does not prove that their belief is true. The fact that speakers think their language reflects reality isn't evidence that it actually does. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." }
     ]}
   ]
 };

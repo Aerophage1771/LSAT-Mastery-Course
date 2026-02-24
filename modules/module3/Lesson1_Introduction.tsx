@@ -8,10 +8,9 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h2', text: 'Question Goal' },
     {
       type: 'callout',
-      text: '**Describe the argumentative strategy** the author uses to support the conclusion. In other words, what is the logical structure of the argument?',
+      text: 'What specific rhetorical or logical strategy does the author use to justify their stance? How does the author\'s evidence function to support the main point? Is the argument drawing an analogy, ruling out alternative explanations, or appealing to a general principle?',
       variant: 'goal',
     },
-    { type: 'paragraph', text: 'This module covers Method of Reasoning.' },
     { type: 'hr' },
     { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: "Method of Reasoning questions require you to describe how an argument attempts to reach its conclusion. Rather than getting caught up in the details of *what* is being discussed, you must analyze *how* the argument is constructed. Your task is to describe the logical design of the argument." },

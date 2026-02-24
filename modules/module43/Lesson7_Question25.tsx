@@ -11,23 +11,25 @@ export const Lesson7_Question25: Lesson = {
   id: "43-7",
   title: "Question 25: Application",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-4-Q-25" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-4)', content: passageText },
+    { type: 'h3', text: "Question 25: Application Breakdown (PT-128-S-4-P-4-Q-25)" },
     { type: 'blockquote', text: "**Question:** Passage A most strongly supports which one of the following inferences regarding the example of the murderer in passage B?" },
     { type: 'options', items: [
-      "(A) From the perspective of cosmic justice, the murderer cannot be considered responsible for his crime. [1.0%]",
-      "(B) Once the jury has convicted the murderer, the judge should be permitted substantial discretion in determining his punishment. [2.0%]",
-      "(C) Recognition of our common human fallibility should lead us to err in the direction of leniency toward the murderer. [4.0%]",
-      "(D) The extent, if any, to which the murderer’s culpability is mitigated by his childhood is beyond the ability of any judge or jury to determine. [88.0%] (Correct)",
-      "(E) The murderer’s childhood must be presumed to have been without influence upon his criminal behavior. [5.0%]"
+      "(A) From the perspective of cosmic justice, the murderer cannot be considered responsible for his crime.",
+      "(B) Once the jury has convicted the murderer, the judge should be permitted substantial discretion in determining his punishment.",
+      "(C) Recognition of our common human fallibility should lead us to err in the direction of leniency toward the murderer.",
+      "(D) The extent, if any, to which the murderer’s culpability is mitigated by his childhood is beyond the ability of any judge or jury to determine. (Correct)",
+      "(E) The murderer’s childhood must be presumed to have been without influence upon his criminal behavior."
     ]},
-    { type: 'paragraph', text: "We must apply the core argument of Passage A to the murderer example from Passage B. Passage A's central thesis is that humans are incapable of the 'complicated calculus' required to weigh 'inputs' like a traumatic childhood to determine 'deservedness.' It's an impossible task for us." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "Concept focus: application questions test whether you can transfer a rule from one context to another without changing its force. Passage A says humans cannot reliably compute deservedness from all causal inputs, so law should not attempt that cosmic-level calculation. When you apply that rule to Passage B's murderer example, the safe inference is about epistemic limits, not about automatic mercy, automatic severity, or certainty about responsibility." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Key transfer chain: A says we lack the knowledge and computational capacity for the \"complicated calculus\" of deservedness; B asks how traumatic childhood should affect sentencing. Applying A means we cannot determine the precise degree of mitigation that background factor should receive." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) From the perspective of cosmic justice, the murderer cannot be considered responsible...", text: "Passage A argues we can't *know* the verdict of cosmic justice, not what that verdict would be.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) Once the jury has convicted..., the judge should be permitted substantial discretion...", text: "This is the opposite of Passage A's argument. 'Substantial discretion' would empower the judge to attempt the impossible 'calculus' of cosmic justice.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) Recognition of our common human fallibility should lead us to err in the direction of leniency...", text: "Passage A's conclusion is about our cognitive limits, not a moral imperative for leniency. The author argues we should judge based on 'outputs,' which could lead to a harsh sentence.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) The extent, if any, to which the murderer’s culpability is mitigated by his childhood is beyond the ability of any judge or jury to determine.", text: "This is a direct and precise application of Passage A's central thesis. The passage argues we can't perform the 'complicated calculus,' so determining the exact 'extent' of mitigation is 'beyond the ability' of a human judge.", badge: "Correct", badgeColor: "green" },
-      { title: "(E) The murderer’s childhood must be presumed to have been without influence...", text: "Passage A's position is one of agnosticism ('we can't know'), not a definitive presumption of no influence.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) From the perspective of cosmic justice, the murderer cannot be considered responsible...", text: "A never gives a substantive cosmic verdict about this defendant. Its claim is that humans cannot know enough to produce that verdict reliably, so this choice overstates what A supports.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) Once the jury has convicted..., the judge should be permitted substantial discretion...", text: "A pushes away from broad discretionary recalibration based on hidden causal factors. Expanding discretion to weigh those factors is the very move A warns is beyond human capacity.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) Recognition of our common human fallibility should lead us to err in the direction of leniency...", text: "A does not derive a one-direction sentencing policy like leniency. It argues for limits on cosmic-style input balancing and for greater reliance on outputs/process, which does not logically force lighter punishment.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) The extent, if any, to which the murderer’s culpability is mitigated by his childhood is beyond the ability of any judge or jury to determine.", text: "This is the clean application of A's core rule. If humans cannot run the full causal calculus needed for deservedness, then no judge or jury can confidently compute the precise mitigation value of traumatic childhood.", badge: "Correct", badgeColor: "green" },
+      { title: "(E) The murderer’s childhood must be presumed to have been without influence...", text: "A does not say background factors have no influence. It says humans cannot quantify their rightful weight with cosmic precision, which is a different and narrower claim.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

@@ -8,10 +8,9 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h2', text: 'Question Goal' },
     {
       type: 'callout',
-      text: '**Find a new piece of information** that, if true, makes a set of seemingly contradictory statements logical and consistent.',
+      text: '**Find a new piece of information that, if true, makes a set of seemingly contradictory statements logical and consistent.** In other words, what unstated fact resolves the apparent conflict?',
       variant: 'goal',
     },
-    { type: 'paragraph', text: 'This module covers Paradox / Explain.' },
     { type: 'hr' },
     { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: 'Paradox questions present you with a set of facts that seem to contradict each other. The stimulus is not an argument with a conclusion and premises, but a description of a surprising situation. Your job is not to find a flaw or to attack the facts. Instead, you must accept everything in the stimulus as true and find the one answer choice that, if also true, explains how this seemingly impossible situation can exist.' },

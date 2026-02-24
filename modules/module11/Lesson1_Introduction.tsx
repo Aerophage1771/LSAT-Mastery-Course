@@ -8,23 +8,22 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h2', text: 'Question Goal' },
     {
       type: 'callout',
-      text: '**Identify an unstated premise** that the author must believe for the argument to have a chance of being valid.',
+      text: '**Identify an unstated premise that the author must believe for the argument to have a chance of being valid.** In other words, which statement is a belief so essential that if it were false, the entire argument would collapse?',
       variant: 'goal',
     },
-    { type: 'paragraph', text: 'This module covers Necessary Assumption.' },
     { type: 'hr' },
     { type: 'h2', text: 'Introduction' },
-    { type: 'paragraph', text: 'Necessary Assumption questions require you to find a ""must-have"" piece of information. Every argument with a logical gap relies on certain unstated beliefs to bridge that gap. A necessary assumption is a required belief that the author takes for granted.' },
+    { type: 'paragraph', text: 'Necessary Assumption questions require you to find a "must-have" piece of information. Every argument with a logical gap relies on certain unstated beliefs to bridge that gap. A necessary assumption is a required belief that the author takes for granted.' },
     { type: 'paragraph', text: 'The defining characteristic of a necessary assumption is this: **if the assumption is false, the argument falls apart.** This question type builds directly on your ability to spot Logical Gaps. Once you identify the missing link in an argument, the necessary assumption is a statement that the author is forced to accept for that link to exist.' },
     { type: 'hr' },
     { type: 'h2', text: 'Common Question Stems' },
-    { type: 'paragraph', text: 'You can recognize these questions by their use of ""required"" or ""depends on."" Typical phrasing includes:' },
+    { type: 'paragraph', text: 'You can recognize these questions by their use of "required" or "depends on." Typical phrasing includes:' },
     { type: 'list', items: [
-      '""""The argument relies on which one of the following assumptions?""""',
-      '""""The argument depends on assuming which one of the following?""""',
-      '""""Which one of the following is an assumption required by the argument?""""',
-      '""""The conclusion above follows only if which one of the following is assumed?""""',
-      '""""The argument presupposes that...""""'
+      '"The argument relies on which one of the following assumptions?"',
+      '"The argument depends on assuming which one of the following?"',
+      '"Which one of the following is an assumption required by the argument?"',
+      '"The conclusion above follows only if which one of the following is assumed?"',
+      '"The argument presupposes that..."'
     ]},
     { type: 'hr' },
     { type: 'h2', text: 'Core Concepts' },
@@ -39,9 +38,9 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'paragraph', text: 'To apply this test:' },
     { type: 'list', ordered: true, items: [
       'Identify a potential answer choice.',
-      '**Logically negate it.** Turn the statement into its opposite (e.g., ""The car is blue"" becomes ""The car is not blue""; ""All X are Y"" becomes ""Some X are not Y"").',
+      '**Logically negate it.** Turn the statement into its opposite (e.g., "The car is blue" becomes "The car is not blue"; "All X are Y" becomes "Some X are not Y").',
       'Add the negated statement to the argument\'s premises.',
-      'Ask: ""With this new information, does the argument\'s conclusion still follow from its premises?""'
+      'Ask: "With this new information, does the argument\'s conclusion still follow from its premises?"'
     ]},
     { type: 'paragraph', text: 'If the negated statement **destroys** the argument, making the conclusion illogical or unsupported, you have found the Necessary Assumption. The argument *depends* on that statement being true because its falsehood is fatal to the argument\'s logic.' }
   ]

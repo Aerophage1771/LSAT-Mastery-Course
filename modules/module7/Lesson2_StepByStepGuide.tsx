@@ -2,10 +2,12 @@ import { Lesson } from '../../types';
 
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "7-2",
-  title: "Step-by-Step Guide: Evaluate the Argument",
+  title: "Step-by-Step Guide",
+  subtitle: "Understand the argument's structure, then pinpoint the logical gap before looking at answers.",
   content: [
-    { type: 'h3', text: "Step 1: Break Down the Argument" },
+    { type: 'h2', text: "Step-by-Step Guide: Evaluate the Argument" },
     { type: 'paragraph', text: "Before looking at the answer choices, you must have a perfect understanding of the argument's structure." },
+    { type: 'h3', text: "Step 1: Break Down the Argument" },
     { type: 'list', items: [
       '**Identify the Conclusion:** What is the author’s final claim, judgment, or recommendation?',
       '**Identify the Premises:** What evidence is provided to support that claim?',

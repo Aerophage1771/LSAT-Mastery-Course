@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "9-2",
   title: "Step-by-Step Guide",
+  subtitle: "Find the argument's weak spot and the choice that fixes it.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Strengthen' },
     { type: 'paragraph', text: 'This guide provides a clear process for handling any **Strengthen** question. The goal is to move from the stimulus to the right answer quickly by finding the argument\'s weak spot and picking the choice that fixes it.' },

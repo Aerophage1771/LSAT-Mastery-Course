@@ -10,18 +10,19 @@ export const Lesson7_Question14: Lesson = {
   id: "39-7",
   title: "Question 14: Inference (Society)",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 14 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-119-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 14: Inference (Society) Breakdown (PT-119-S-1-P-2-Q-14)" },
     { type: 'blockquote', text: "**Question:** The passage suggests that Joy Kogawa believes which one of the following about the society that shuns Naomi?" },
     { type: 'options', items: [
-      "(A) It discouraged its citizens from seeking out their heritage. [31.0%]",
-      "(B) It endeavored to thwart its citizens’ attempts at heroic transformation. [7.0%]",
-      "(C) It violated its own supposed religious ethics by doing so. [54.0%] (Correct)",
-      "(D) It prohibited its citizens from participating in rites of passage. [2.0%]",
-      "(E) It demanded that loyalty to the government replace loyalty to the family. [6.0%]"
+      "(A) It discouraged its citizens from seeking out their heritage.",
+      "(B) It endeavored to thwart its citizens’ attempts at heroic transformation.",
+      "(C) It violated its own supposed religious ethics by doing so. (Correct)",
+      "(D) It prohibited its citizens from participating in rites of passage.",
+      "(E) It demanded that loyalty to the government replace loyalty to the family."
     ]},
-    { type: 'paragraph', text: "The passage states: \"Kogawa’s use of motifs drawn from Christian rituals and symbols **forms a subtle critique of the professed ethics of the majority culture that has shunned Naomi.**\"" },
-    { type: 'paragraph', text: "So, the author is inferring that Kogawa believes the majority society's *actions* (shunning Naomi) were hypocritical because they didn't live up to their *professed ethics*. Since the passage mentions \"Christian rituals and symbols,\" the most logical inference is that Kogawa is using those Christian symbols to highlight how the majority society's actions were contrary to its own Christian ethics." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The inference turns on the contrast between what the majority culture professes and what it does. The passage says Kogawa's Christian motifs function as a critique of professed ethics in a society that shuns Naomi, so the credited answer must express ethical inconsistency rather than a new policy claim." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The anchor phrase is \"a subtle critique of the professed ethics of the majority culture that has shunned Naomi,\" which supports a hypocrisy inference." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

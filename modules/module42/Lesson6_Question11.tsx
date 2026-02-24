@@ -9,25 +9,25 @@ export const Lesson6_Question11: Lesson = {
       id: "42-6",
       title: "Question 11: Phrase Function",
       content: [
-        { type: 'accordion', title: 'Read Passage', content: passageText },
-        { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-2-Q-11" },
+        { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-2)', content: passageText },
+        { type: 'h3', text: "Question 11: Phrase Function Breakdown (PT-128-S-4-P-2-Q-11)" },
         { type: 'blockquote', text: "**Question:** The author mentions the character Zelig primarily in order to" },
         { type: 'options', items: [
-          "(A) counter the prevailing critical view of Allen’s films [1.0%]",
-          "(B) exemplify a primary preoccupation of Allen’s works [4.0%]",
-          "(C) serve as a contrast to the fate of artistic characters in Allen’s films [91.0%] (Correct)",
-          "(D) demonstrate that artistic characters have always been important in Allen’s films [1.0%]",
-          "(E) illustrate Allen’s obvious affection for the nonartist characters he creates [4.0%]"
+          "(A) counter the prevailing critical view of Allen’s films",
+          "(B) exemplify a primary preoccupation of Allen’s works",
+          "(C) serve as a contrast to the fate of artistic characters in Allen’s films (Correct)",
+          "(D) demonstrate that artistic characters have always been important in Allen’s films",
+          "(E) illustrate Allen’s obvious affection for the nonartist characters he creates"
         ]},
-        { type: 'paragraph', text: "This question asks for the primary reason the author mentions the character Zelig. This is a rhetorical function question, requiring an understanding of Zelig's role within the structure of the author's argument, specifically in the final paragraph." },
-        { type: 'paragraph', text: "The final paragraph is built on a contrast. It begins by stating a general rule: in Allen's films, less artistic characters tend to have happier endings than artistic ones.\n1.  First, the author provides examples of the artistic characters who end up \"desolate and solitary.\"\n2.  Then, the author uses the transition phrase \"On the other hand,\" signaling a direct contrast.\n3.  Immediately following this transition, the author introduces Zelig as the prime example of the other side of the coin: a \"thoroughly inartistic\" character who has a \"happy, death.\"" },
-        { type: 'paragraph', text: "Zelig's function is therefore to serve as the counterpoint to the miserable artistic characters, providing the evidence needed to complete the author's argument about this inverse correlation." },
+        { type: 'h4', text: "Analysis" },
+        { type: 'paragraph', text: "Concept focus: when a question asks why the author mentions someone, identify that mention's job in the paragraph's structure. In paragraph four, the author first lists artist characters who end \"desolate and solitary,\" then pivots with \"On the other hand\" to Zelig and Danny Rose, who end much better. Zelig is not a random example; he is the contrast case that completes the author's pattern." },
+        { type: 'callout', title: "Text Evidence", variant: "tip", text: "Track the sequence, not just one sentence: unhappy artist endings -> \"On the other hand\" -> happier inartistic endings. That transition phrase signals that Zelig is being used to contrast with the earlier artist examples." },
         { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-          { title: "(A) counter the prevailing critical view of Allen’s films", text: "The passage does not introduce or engage with any \"prevailing critical view.\" The author is presenting their own analysis in isolation.", badge: "Incorrect", badgeColor: "red" },
-          { title: "(B) exemplify a primary preoccupation of Allen’s works", text: "The passage identifies the \"primary preoccupation\" as the neurotic, narcissistic *artist*. Zelig is explicitly described as \"thoroughly inartistic,\" making him the opposite of this preoccupation, not an example of it.", badge: "Incorrect", badgeColor: "red" },
-          { title: "(C) serve as a contrast to the fate of artistic characters in Allen’s films", text: "This accurately describes Zelig's role. The structure of the paragraph, particularly the use of \"On the other hand,\" explicitly sets up Zelig's happy fate as a direct \"contrast\" to the desolate fate of the artistic characters mentioned just before.", badge: "Correct", badgeColor: "green" },
-          { title: "(D) demonstrate that artistic characters have always been important in Allen’s films", text: "Using a non-artistic character like Zelig as an example does not demonstrate the importance of artistic characters. It demonstrates the importance of the *distinction* between the two groups.", badge: "Incorrect", badgeColor: "red" },
-          { title: "(E) illustrate Allen’s obvious affection for the nonartist characters he creates", text: "While the happy ending might imply affection, this is a secondary inference about Allen's personal feelings. The primary, structural function of the character within the author's argument is to provide a clear contrast. Choice (C) is a more direct and accurate description of the character's rhetorical purpose in the passage.", badge: "Incorrect", badgeColor: "red" }
+          { title: "(A) counter the prevailing critical view of Allen’s films", text: "The passage never presents an outside critical view to rebut. Zelig appears in the author's own internal comparison, so this choice assigns the wrong argumentative task.", badge: "Incorrect", badgeColor: "red" },
+          { title: "(B) exemplify a primary preoccupation of Allen’s works", text: "The passage's recurring preoccupation is the troubled artist figure. Zelig is introduced as \"thoroughly inartistic,\" so he functions as a foil to that preoccupation, not as an example of it.", badge: "Incorrect", badgeColor: "red" },
+          { title: "(C) serve as a contrast to the fate of artistic characters in Allen’s films", text: "This is exactly what the paragraph does. The author places Zelig after \"On the other hand\" to contrast his calmer ending with the bleak endings of the artist characters listed immediately before.", badge: "Correct", badgeColor: "green" },
+          { title: "(D) demonstrate that artistic characters have always been important in Allen’s films", text: "This overreaches with \"always\" and misses the point of mentioning Zelig. The paragraph is not proving artist importance; it is drawing a two-part outcome pattern (artists worse, inartistic characters better).", badge: "Incorrect", badgeColor: "red" },
+          { title: "(E) illustrate Allen’s obvious affection for the nonartist characters he creates", text: "You might infer sympathy, but that is not the main job of the Zelig mention. The paragraph's primary function is structural contrast, which choice (C) states directly.", badge: "Incorrect", badgeColor: "red" }
         ]}
       ]
 };

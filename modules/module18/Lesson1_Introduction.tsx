@@ -8,10 +8,9 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h2', text: 'Question Goal' },
     {
       type: 'callout',
-      text: '**Find the one answer choice** that is 100% contradicted by the information in the stimulus.',
+      text: '**Find the one answer choice that is 100% contradicted by the information in the stimulus.** In other words, which statement is logically impossible if the stimulus is true?',
       variant: 'goal',
     },
-    { type: 'paragraph', text: 'This module covers Must Be False.' },
     { type: 'hr' },
     { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: 'Must Be False questions provide a passage containing a set of facts or rules. You must accept everything in that passage as 100% true for the duration of the question. Your task is to examine five answer choices and find the one statement that **cannot possibly be true** if the information in the passage is also true.' },

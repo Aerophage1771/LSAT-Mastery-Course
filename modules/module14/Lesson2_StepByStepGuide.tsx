@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "14-2",
   title: "Step-by-Step Guide",
+  subtitle: "Move from the specific case to the abstract principle efficiently.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Principle-Generalization' },
     { type: 'paragraph', text: 'This section provides a clear, step-by-step process for solving any **Principle-Generalization** question. The goal is to move from the specific case study in the stimulus to the abstract principle in the correct answer efficiently and accurately.' },

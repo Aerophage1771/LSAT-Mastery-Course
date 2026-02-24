@@ -16,28 +16,25 @@ export const Lesson2_Question22: Lesson = {
   id: "46-2",
   title: "Question 22: Passage Purpose",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-141-S-1-P-4-Q-22" },
+    { type: 'accordion', title: 'Read Passage (PT-141-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 22: Passage Purpose Breakdown (PT-141-S-1-P-4-Q-22)" },
     { type: 'blockquote', text: "**Question:** Which one of the following most accurately describes the main purpose for which passage A was written and the main purpose for which passage B was written?" },
     { type: 'options', items: [
-      "(A) Passage A: to propose a solution to a moral problem\nPassage B: to criticize a proposed solution to a moral problem [3.0%]",
-      "(B) Passage A: to sketch a general outline of a branch of moral theory\nPassage B: to give a particular moral analysis of a real case [64.0%] (Correct)",
-      "(C) Passage A: to spell out the details of two fundamental principles\nPassage B: to examine a case that exemplifies a moral ideal [28.0%]",
-      "(D) Passage A: to argue for a particular moral ideal\nPassage B: to question the assumptions of a moral theory [3.0%]",
-      "(E) Passage A: to advocate the use of certain moral principles\nPassage B: to provide a counterexample to some widely held moral principles [2.0%]"
+      "(A) Passage A: to propose a solution to a moral problem\nPassage B: to criticize a proposed solution to a moral problem",
+      "(B) Passage A: to sketch a general outline of a branch of moral theory\nPassage B: to give a particular moral analysis of a real case (Correct)",
+      "(C) Passage A: to spell out the details of two fundamental principles\nPassage B: to examine a case that exemplifies a moral ideal",
+      "(D) Passage A: to argue for a particular moral ideal\nPassage B: to question the assumptions of a moral theory",
+      "(E) Passage A: to advocate the use of certain moral principles\nPassage B: to provide a counterexample to some widely held moral principles"
     ]},
-    { type: 'paragraph', text: "This question asks for the \"main purpose\" of each passage. This requires understanding the overall goal of each text." },
-    { type: 'list', items: [
-      "**Passage A's Purpose:** The passage is abstract, academic, and systematic. It lays out the components of a philosophical framework (\"a branch of moral theory\") for thinking about justice in property. Its tone is explanatory, not argumentative or prescriptive.",
-      "**Passage B's Purpose:** The passage is concrete and focused on a specific historical situation (\"a real case\"). It presents a clear moral argument (\"a particular moral analysis\") about the injustice of land seizure and the need for restoration."
-    ]},
-    { type: 'paragraph', text: "We are looking for an answer choice that captures this distinction between a general, theoretical outline and a specific, applied analysis." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This passage purpose question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'There are two principles that are fundamental to a theory of...' and 'But the original wrong can most easily be righted by returning...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: "Option", text: "Analysis" }, items: [
-      { title: "(A) Passage A: to propose a solution to a moral problem / Passage B: to criticize a proposed solution to a moral problem", text: "This mischaracterizes both passages. Passage A offers a framework, not a solution to a specific problem. Passage B argues *for* a solution (restoration), it does not criticize one.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) Passage A: to sketch a general outline of a branch of moral theory / Passage B: to give a particular moral analysis of a real case", text: "This aligns perfectly with our analysis. Passage A \"sketches a general outline\" of a theory of justice. Passage B gives a \"particular moral analysis\" of the \"real case\" of Native American land claims.", badge: "Correct", badgeColor: "green" },
-      { title: "(C) Passage A: to spell out the details of two fundamental principles / Passage B: to examine a case that exemplifies a moral ideal", text: "The first part is factually incorrect. Passage A discusses *three* principles (acquisition, transfer, and rectification).", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) Passage A: to argue for a particular moral ideal / Passage B: to question the assumptions of a moral theory", text: "This misstates the tone and function of both. Passage A is more descriptive than argumentative. Passage B applies the assumptions of such a moral theory; it does not question them.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) Passage A: to advocate the use of certain moral principles / Passage B: to provide a counterexample to some widely held moral principles", text: "The word \"advocate\" is arguably too strong for Passage A's neutral tone. More importantly, Passage B provides a classic *example* of the principles in action, not a counterexample.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) Passage A: to propose a solution to a moral problem / Passage B: to criticize a proposed solution to a moral problem", text: "This mischaracterizes both passages. Passage A offers a framework, not a solution to a specific problem. Passage B argues *for* a solution (restoration), it does not criticize one. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) Passage A: to sketch a general outline of a branch of moral theory / Passage B: to give a particular moral analysis of a real case", text: "This aligns perfectly with our analysis. Passage A \"sketches a general outline\" of a theory of justice. Passage B gives a \"particular moral analysis\" of the \"real case\" of Native American land claims. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+      { title: "(C) Passage A: to spell out the details of two fundamental principles / Passage B: to examine a case that exemplifies a moral ideal", text: "The first part is factually incorrect. Passage A discusses *three* principles (acquisition, transfer, and rectification). Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) Passage A: to argue for a particular moral ideal / Passage B: to question the assumptions of a moral theory", text: "This misstates the tone and function of both. Passage A is more descriptive than argumentative. Passage B applies the assumptions of such a moral theory; it does not question them. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) Passage A: to advocate the use of certain moral principles / Passage B: to provide a counterexample to some widely held moral principles", text: "The word \"advocate\" is arguably too strong for Passage A's neutral tone. More importantly, Passage B provides a classic *example* of the principles in action, not a counterexample. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

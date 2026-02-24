@@ -9,23 +9,25 @@ export const Lesson7_Question13: Lesson = {
   id: "44-7",
   title: "Question 13: Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-141-S-1-P-2-Q-13" },
+    { type: 'accordion', title: 'Read Passage (PT-141-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 13: Inference Breakdown (PT-141-S-1-P-2-Q-13)" },
     { type: 'blockquote', text: "The passage provides the most support for inferring that in Cameron’s era" },
     { type: 'options', items: [
-      "(A) there was little interest in photographs documenting contemporary life [14.0%]",
-      "(B) photography was practiced mainly by wealthy amateurs [3.0%]",
-      "(C) publicity stills of actors were coming into vogue [5.0%]",
-      "(D) there were no professional artist’s models [8.0%]",
-      "(E) the time required to take a picture was substantial [70.0%] (Correct)"
+      "(A) there was little interest in photographs documenting contemporary life",
+      "(B) photography was practiced mainly by wealthy amateurs",
+      "(C) publicity stills of actors were coming into vogue",
+      "(D) there were no professional artist’s models",
+      "(E) the time required to take a picture was substantial (Correct)"
     ]},
-    { type: 'paragraph', text: "This is an inference question asking what we can conclude about \"Cameron's era\" from the details in the passage. The answer must be a logical conclusion based on specific textual clues.\n\nThe passage provides several clues about the photographic process:\n*   An infant's face is \"blurred because they moved.\"\n*   Sitters are \"trying desperately hard to sit still.\"\n*   The sitting is described as an \"ordeal\" to be \"endured.\"\n\nThese clues all point to a single technological limitation. If slight movement causes blurring and people must struggle to remain motionless for what feels like an \"ordeal,\" it strongly implies that the camera's exposure time was not instantaneous. A substantial amount of time was required for the photographic plate to capture enough light to form an image." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This inference question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'From a critical discussion of the work of Victorian photographer Julia...' and 'While Cameron’s fancy-subject pictures have been compared to poor amateur theatricals,...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) there was little interest in photographs documenting contemporary life", text: "The passage only discusses Cameron's specific artistic project and provides no information about broader public tastes in photography. This is unsupported.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) photography was practiced mainly by wealthy amateurs", text: "The passage uses \"amateurism\" to describe a style, not the socioeconomic status of photographers. We cannot generalize from this to the entire field.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) publicity stills of actors were coming into vogue", text: "The passage mentions \"actors\" in a general sense but provides no information about professional theater or the practice of taking publicity stills.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) there were no professional artist’s models", text: "The passage states that Cameron used her friends and family, but this does not allow us to conclude that professional models did not exist anywhere.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) the time required to take a picture was substantial", text: "This is the most direct and well-supported inference. The blurring from movement, the desperate need to sit still, and the description of the sitting as an \"ordeal\" all logically point to a long exposure time.", badge: "Correct", badgeColor: "green" }
+      { title: "(A) there was little interest in photographs documenting contemporary life", text: "The passage only discusses Cameron's specific artistic project and provides no information about broader public tastes in photography. This is unsupported. Additional check: trap type is too broad, since it extends beyond what the passage actually supports.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) photography was practiced mainly by wealthy amateurs", text: "The passage uses \"amateurism\" to describe a style, not the socioeconomic status of photographers. We cannot generalize from this to the entire field. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) publicity stills of actors were coming into vogue", text: "The passage mentions \"actors\" in a general sense but provides no information about professional theater or the practice of taking publicity stills. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) there were no professional artist’s models", text: "The passage states that Cameron used her friends and family, but this does not allow us to conclude that professional models did not exist anywhere. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) the time required to take a picture was substantial", text: "This is the most direct and well-supported inference. The blurring from movement, the desperate need to sit still, and the description of the sitting as an \"ordeal\" all logically point to a long exposure time. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" }
     ]}
   ]
 };

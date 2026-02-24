@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "11-2",
   title: "Step-by-Step Guide",
+  subtitle: "Spot the missing link and use the Negation Test to confirm it.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Necessary Assumption' },
     { type: 'paragraph', text: 'This guide provides a simple, five-step plan for solving **Necessary Assumption** questions. These questions ask you to find the ""hidden"" fact that the author is counting on to make their argument work. You will learn how to spot the ""missing link"" in an argument and use the **Negation Test** to prove you found the right answer.' },

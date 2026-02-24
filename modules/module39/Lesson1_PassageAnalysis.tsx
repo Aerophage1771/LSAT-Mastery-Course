@@ -10,14 +10,14 @@ export const Lesson1_PassageAnalysis: Lesson = {
   id: "39-1",
   title: "Passage Analysis: Obasan",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Passage Analysis: PT-119-S-1-P-2" },
-    { type: 'paragraph', text: "Alright, everyone, our next text is a deep dive into a novel called *Obasan* by Joy Kogawa. The passage isn't just telling us what the book is about; it's making an argument about *how* the author achieves her goals. This is literary criticism, and our job is to understand the critic's argument." },
-    { type: 'paragraph', text: "So, let's break down the passage and see how this analysis is constructed." },
+    { type: 'accordion', title: 'Read Passage (PT-119-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Passage Analysis: Obasan (PT-119-S-1-P-2)" },
+    { type: 'paragraph', text: "This passage presents a literary-critical argument about *Obasan*. Its thesis is that Kogawa's novel does more than depict wartime suffering: it uses form to construct heroism and symbolism to critique dominant social power." },
+    { type: 'paragraph', text: "Read for function, not just plot summary. Paragraph 1 states the two-part thesis, Paragraph 2 develops the structural argument through the rite-of-passage framework, and Paragraph 3 shows how symbolic language extends the political critique." },
     { type: 'hr' },
-    { type: 'h4', text: "Paragraph 1: The Thesis Statement" },
-    { type: 'paragraph', text: "The first paragraph sets the entire stage. It gives us the basics: *Obasan* is a novel about a Japanese-Canadian family's traumatic experiences during World War II, told from the perspective of a young girl, Naomi. The central experience is one of \"dislocation\" and family disintegration." },
-    { type: 'paragraph', text: "But then, the author of the passage lays out their main argument, their thesis. They claim that even though the story is about suffering, Kogawa uses two specific literary techniques to achieve two specific goals." },
+    { type: 'h4', text: "Paragraph 1: Thesis and Analytical Roadmap" },
+    { type: 'paragraph', text: "The opening paragraph defines the novel's context and quickly moves to an interpretive claim. Instead of treating dislocation as the endpoint, the critic argues that Kogawa uses distinct techniques to produce distinct rhetorical effects." },
+    { type: 'paragraph', text: "This paragraph functions as a roadmap for the rest of the passage by pairing each technique with a specific argumentative purpose." },
     { 
       type: 'breakdown',
       labels: { title: 'Technique', text: 'Goal' },
@@ -26,10 +26,9 @@ export const Lesson1_PassageAnalysis: Lesson = {
         { title: "The Use of Symbols", text: "To **critique** the majority culture that oppressed her family.", badge: "Technique 2", badgeColor: "blue" }
       ]
     },
-    { type: 'paragraph', text: "This first paragraph is essentially a roadmap for the rest of the text. Now we know exactly what the next two paragraphs are going to explain." },
-    
-    { type: 'h4', text: "Paragraph 2: Heroism Through Form (The Rites of Passage)" },
-    { type: 'paragraph', text: "This paragraph is all about the first half of that thesis: how the novel's *structure* creates a hero. The author introduces a concept from anthropology called the \"rites of passage.\" This is a three-stage process that marks a person's transition from one state to another. The passage lays out the three stages very clearly:" },
+    { type: 'h4', text: "Paragraph 2: Heroism Through Narrative Form" },
+    { type: 'paragraph', text: "The second paragraph supports the first branch of the thesis by importing the anthropological rite-of-passage model. The critic argues that *Obasan* deliberately mirrors this sequence to reframe victimhood as transformation." },
+    { type: 'paragraph', text: "The staged movement through separation, alienation, and reintegration is not background detail; it is the structural mechanism that turns Naomi into a heroic figure." },
     { 
       type: 'list', 
       ordered: true,
@@ -39,14 +38,13 @@ export const Lesson1_PassageAnalysis: Lesson = {
         "**Reintegration:** You return to society, but you're not the same. You've been transformed by the ordeal and now have a \"heightened status.\""
       ] 
     },
-    { type: 'paragraph', text: "The key insight here is that this structure has the effect of \"transforming a society’s victim into a hero.\" The author then meticulously maps the plot of *Obasan* onto this three-stage framework, even using chapter numbers to prove the point. Stage 1 is Naomi's happy childhood. Stage 2 is the family's forced relocation and exile. Stage 3 is Naomi as an adult, finally confronting her past and reconciling with her history, emerging as a whole person. The structure of the story *is* the hero's journey." },
+    { type: 'paragraph', text: "The critic then maps Naomi's arc to this model to demonstrate that form itself carries argument. The chapter progression is used as evidence that the text is engineered to depict recovery and moral enlargement, not merely historical injury." },
 
-    { type: 'h4', text: "Paragraph 3: Critique Through Symbolism (Stone into Bread)" },
-    { type: 'paragraph', text: "The final paragraph addresses the second half of the thesis: how Kogawa uses *symbols* to critique the dominant culture. The author points specifically to Kogawa's use of motifs from Christian rituals. This is a subtle but powerful choice, because Kogawa is using the symbols of the very culture that is oppressing her characters to highlight its hypocrisy." },
-    { type: 'paragraph', text: "The passage gives us a perfect example: the biblical story of turning stone into bread. Naomi receives a bundle of old family documents, which are described as \"stone-hard facts.\" These facts are the heavy, painful truth of her family's suffering. They are the \"stone.\"" },
-    { type: 'paragraph', text: "But the passage argues that by confronting this hard reality, Naomi finds spiritual nourishment, or \"bread.\" She finds the strength to affirm her own identity and the resilience of her people." },
-    { type: 'paragraph', text: "This symbol does double duty. It critiques a country that gave its Japanese-Canadian citizens stones instead of bread, while also showing how Naomi heroically transforms that stone *into* bread for herself. The paragraph concludes by neatly tying everything together, restating how structure and symbol work in tandem to achieve the novel's powerful effects." },
+    { type: 'h4', text: "Paragraph 3: Symbolic Critique and Cultural Reversal" },
+    { type: 'paragraph', text: "The final paragraph develops the second branch of the thesis: symbolism as critique. Christian motifs are repurposed to expose the ethical failure of the dominant culture that excluded Naomi's community." },
+    { type: 'paragraph', text: "The stone-to-bread motif carries both historical and interpretive force. \"Stone-hard facts\" represent the weight of abuse, while \"bread\" represents meaning recovered from that history. The critic's point is that Kogawa turns imposed suffering into interpretive agency." },
+    { type: 'paragraph', text: "The passage closes by showing that structure and symbolism are mutually reinforcing: one narrates transformation, the other interprets its political stakes." },
     
-    { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "Let's boil down the argument presented in this passage into its essential parts.\n\n*   **The Central Argument:** The passage argues that Joy Kogawa's novel *Obasan* is not just a story of victimhood. It is a carefully constructed work that uses specific literary devices—form and symbolism—to transform the protagonist into a hero and to offer a sharp critique of the society that persecuted her.\n*   **Form as Heroism:** The novel's structure is deliberately modeled on the anthropological \"rite of passage\" (separation, alienation, reintegration). By taking the main character, Naomi, through this classic three-stage journey, Kogawa shapes a narrative of heroic transformation rather than simple suffering.\n*   **Symbol as Critique:** Kogawa employs symbols drawn from Christianity, the religion of the dominant culture. The key example is turning \"stone\" (the hard facts of historical abuse) into \"bread\" (spiritual sustenance), which simultaneously critiques the oppressive culture and highlights the protagonist's resilience." }
+    { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "The critic argues that *Obasan* advances a two-part strategy: its rite-of-passage form transforms Naomi from victim to agent, and its religious symbolism critiques the society responsible for her community's dispossession. The passage is organized to prove that literary technique itself carries historical and political argument." }
   ]
 };

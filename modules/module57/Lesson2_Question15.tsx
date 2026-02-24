@@ -8,26 +8,28 @@ export const Lesson2_Question15: Lesson = {
   id: "57-2",
   title: "Question 15: Main Idea",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 15 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-114-S-3-P-3)', content: passageText },
+    { type: 'h3', text: "Question 15: Main Idea Breakdown (PT-114-S-3-P-3-Q-15)" },
     { type: 'blockquote', text: "**Question:** Which one of the following most accurately states the central idea of the passage?" },
     { type: 'options', items: [
-      "(A) Abrams argues that historical sociology rejects the claims of sociologists who assert that the sociological concept of structuring cannot be applied to the interactions between individuals and history. [4.0%]",
-      "(B) Abrams argues that historical sociology assumes that, despite the views of sociologists to the contrary, history influences the social contingencies that affect individuals. [5.0%]",
-      "(C) Abrams argues that historical sociology demonstrates that, despite the views of sociologists to the contrary, social structures both influence and are influenced by the events of history. [37.0%]",
-      "(D) Abrams describes historical sociology as a discipline that unites two approaches taken by sociologists to studying the formation of societies and applies the resulting combined approach to the study of history. [52.0%] (Correct)",
-      "(E) Abrams describes historical sociology as an attempt to compensate for the shortcomings of traditional historical methods by applying the methods established in sociology. [3.0%]"
+      "(A) Abrams argues that historical sociology rejects the claims of sociologists who assert that the sociological concept of structuring cannot be applied to the interactions between individuals and history.",
+      "(B) Abrams argues that historical sociology assumes that, despite the views of sociologists to the contrary, history influences the social contingencies that affect individuals.",
+      "(C) Abrams argues that historical sociology demonstrates that, despite the views of sociologists to the contrary, social structures both influence and are influenced by the events of history.",
+      "(D) Abrams describes historical sociology as a discipline that unites two approaches taken by sociologists to studying the formation of societies and applies the resulting combined approach to the study of history. (Correct)",
+      "(E) Abrams describes historical sociology as an attempt to compensate for the shortcomings of traditional historical methods by applying the methods established in sociology."
     ]},
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "The passage explains Abrams's core idea: that sociologists often have a one-sided view of the society-individual relationship. His solution is 'structuring,' a two-way approach. He then applies this combined approach to the study of history. The main idea must capture this entire process." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This main idea question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'In explaining the foundations of the discipline known as historical sociology—the...' and 'In order to capture the various facets of this mutual interaction,...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "This is incorrect. The passage doesn't mention other sociologists arguing that structuring *cannot* be applied to history. Abrams is presented as the one *proposing* this application to solve a different problem.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This misstates the central conflict. The issue Abrams has with other sociologists is their one-sided view of the society-individual dynamic, not a disagreement about history's influence on contingencies.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "This is a distortion. The primary disagreement Abrams identifies is about the relationship between *people and society*, not between *social structures and history*.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "This accurately summarizes the passage. It describes how sociologists usually have 'one-sided approaches.' It then explains that Abrams's concept ('structuring') 'unites' these approaches, and that this 'combined approach' is applied 'to the study of history.'", badge: "Correct", badgeColor: "green" },
-        { title: "(E)", text: "The passage's focus is on fixing a problem *within sociology* and then applying that improved sociological method to history. It doesn't claim its primary purpose is to fix the shortcomings of *traditional historical methods*.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "This is incorrect. The passage doesn't mention other sociologists arguing that structuring *cannot* be applied to history. Abrams is presented as the one *proposing* this application to solve a different problem. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This misstates the central conflict. The issue Abrams has with other sociologists is their one-sided view of the society-individual dynamic, not a disagreement about history's influence on contingencies. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "This is a distortion. The primary disagreement Abrams identifies is about the relationship between *people and society*, not between *social structures and history*. Additional check: trap type is distorted emphasis, because it recasts the claim in a non-equivalent form.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "This accurately summarizes the passage. It describes how sociologists usually have 'one-sided approaches.' It then explains that Abrams's concept ('structuring') 'unites' these approaches, and that this 'combined approach' is applied 'to the study of history.' Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(E)", text: "The passage's focus is on fixing a problem *within sociology* and then applying that improved sociological method to history. It doesn't claim its primary purpose is to fix the shortcomings of *traditional historical methods*. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

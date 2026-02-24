@@ -11,23 +11,25 @@ export const Lesson8_Question26: Lesson = {
   id: "43-8",
   title: "Question 26: Passage Principle",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-4-Q-26" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-4)', content: passageText },
+    { type: 'h3', text: "Question 26: Passage Principle Breakdown (PT-128-S-4-P-4-Q-26)" },
     { type: 'blockquote', text: "**Question:** The discussion in passage A, but not the discussion in passage B, relies on which one of the following principles?" },
     { type: 'options', items: [
-      "(A) One should refrain from action when one lacks complete information. [16.0%]",
-      "(B) Whether a punishment is fair matters less than whether it deters crime. [2.0%]",
-      "(C) Although we should aim at perfect justice, we should recognize that we cannot attain it. [30.0%]",
-      "(D) One should not pass judgment on an action unless one knows all of the factors that influenced it. [7.0%]",
-      "(E) If a goal is known to be impossible, then it should not be attempted. [44.0%] (Correct)"
+      "(A) One should refrain from action when one lacks complete information.",
+      "(B) Whether a punishment is fair matters less than whether it deters crime.",
+      "(C) Although we should aim at perfect justice, we should recognize that we cannot attain it.",
+      "(D) One should not pass judgment on an action unless one knows all of the factors that influenced it.",
+      "(E) If a goal is known to be impossible, then it should not be attempted. (Correct)"
     ]},
-    { type: 'paragraph', text: "This question asks for an unstated rule that Passage A's logic depends on, but Passage B's does not. Passage A's logic is: Cosmic justice is impossible for humans, therefore we should not attempt it. Passage B's logic is: Cosmic justice is a foolish concept with harmful consequences, therefore we should not attempt it." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "Concept focus: this is a comparative bridge-principle question. Passage A argues from impossibility to policy restraint: we cannot achieve cosmic justice, so legal systems should not attempt it. Passage B reaches similar practical skepticism for a different reason, emphasizing process integrity and harmful consequences. The right principle must power A's impossibility -> should-not-attempt move and not be required by B." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "A says cosmic justice is impossible for human law and then concludes law should not try to dispense it. B instead attacks cosmic justice as a fundamentally different model that can reduce deterrence and harm innocents. Distinguish impossibility logic (A) from consequence/process logic (B)." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) One should refrain from action when one lacks complete information.", text: "This is a premise in Passage A's argument, but not the core principle that connects the premise of impossibility to the conclusion of not attempting.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) Whether a punishment is fair matters less than whether it deters crime.", text: "This principle is central to Passage B, not Passage A.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) Although we should aim at perfect justice, we should recognize that we cannot attain it.", text: "This contradicts Passage A's conclusion that we should *not* aim for perfect (cosmic) justice.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) One should not pass judgment on an action unless one knows all of the factors that influenced it.", text: "This describes the standard for cosmic justice itself, a standard Passage A argues against trying to meet.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) If a goal is known to be impossible, then it should not be attempted.", text: "**Passage A:** Yes, this is the precise unstated rule that lets the author move from 'cosmic justice is impossible' to 'we should not attempt it.'\n**Passage B:** No, its argument is about the goal being harmful, not impossible. This principle distinguishes the two arguments perfectly.", badge: "Correct", badgeColor: "green" }
+      { title: "(A) One should refrain from action when one lacks complete information.", text: "This is close but too weak and too generic. A's argument is sharper: not merely incomplete information, but structural impossibility of the required cosmic calculation. The key bridge in A is about impossible goals, not ordinary uncertainty.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) Whether a punishment is fair matters less than whether it deters crime.", text: "This reflects a concern emphasized in B's final sentence, not A's central reasoning. A is built on epistemic impossibility and limits of human judgment, not a deterrence-first ranking principle.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) Although we should aim at perfect justice, we should recognize that we cannot attain it.", text: "A does not endorse aiming at cosmic justice while accepting failure. It explicitly argues legal systems should not try to dispense cosmic justice at all.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) One should not pass judgment on an action unless one knows all of the factors that influenced it.", text: "This states a maximal standard for judgment that would collapse ordinary legal judgment entirely. A instead accepts judging by outputs despite limited knowledge; it rejects attempting full cosmic calculus, not judgment itself.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) If a goal is known to be impossible, then it should not be attempted.", text: "This is the bridge A needs: cosmic justice is impossible for human law, therefore human law should not attempt to dispense it. B can oppose cosmic justice without this impossibility principle because B argues from conceptual mismatch and harmful effects.", badge: "Correct", badgeColor: "green" }
     ]}
   ]
 };

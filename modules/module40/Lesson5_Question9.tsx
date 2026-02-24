@@ -10,19 +10,19 @@ export const Lesson5_Question9: Lesson = {
   id: "40-5",
   title: "Question 9: Primary Purpose",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-2-Q-9" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 9: Primary Purpose Breakdown (PT-128-S-1-P-2-Q-9)" },
     { type: 'blockquote', text: "**Question:** The primary purpose of the passage is to" },
     { type: 'options', items: [
-      "(A) offer a critique of both past and present approaches to insolvency [3.0%]",
-      "(B) compare the practices of bankruptcy courts of the past with those of bankruptcy courts of the present [9.0%]",
-      "(C) criticize those who would change the bankruptcy laws of today [1.0%]",
-      "(D) reexamine today’s bankruptcy laws in an effort to point to further improvements [1.0%]",
-      "(E) explain and defend contemporary bankruptcy laws [85.0%] (Correct)"
+      "(A) offer a critique of both past and present approaches to insolvency",
+      "(B) compare the practices of bankruptcy courts of the past with those of bankruptcy courts of the present",
+      "(C) criticize those who would change the bankruptcy laws of today",
+      "(D) reexamine today’s bankruptcy laws in an effort to point to further improvements",
+      "(E) explain and defend contemporary bankruptcy laws (Correct)"
     ]},
-    { type: 'paragraph', text: "This question asks for the primary purpose of the passage. This requires looking beyond the specific details to understand what the author is trying to achieve with the text as a whole. Is the main goal to inform, persuade, critique, or something else?" },
-    { type: 'paragraph', text: "The passage is structured as a persuasive argument. It begins by introducing a modern trend (the shift away from punishment) and acknowledging that it has faced criticism. The author then dedicates the body of the passage to building a case for why this trend is beneficial. This involves explaining the failures of the old system (paragraph 2) and the practical, economic logic of the new system (paragraph 3). The conclusion reinforces the author's stance that this new approach is superior and should be defended." },
-    { type: 'paragraph', text: "Therefore, the author's purpose is twofold: to explain the rationale behind contemporary bankruptcy laws and to defend them against criticism, arguing for their continuation." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The passage's primary purpose is not neutral comparison; it is advocacy supported by explanation. The author explains how modern bankruptcy works and why it replaced punitive insolvency models, then defends the modern approach as better for debtors, creditors, and broader economic health. So the credited answer must include both functions: explanatory and defensive." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The stance is explicit in paragraph 1: the \"temptation to return to a focus on punishment... must be resisted.\" The final paragraph provides the explanatory defense by detailing reorganization mechanisms and the goal of \"continued engagement in productive economic activity.\""},
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

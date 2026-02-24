@@ -199,10 +199,25 @@ export const LESSON_FORMAT_THEMES: LessonFormatTheme[] = [
       "border-l-4 border-indigo-300 pl-6 py-4 my-8 bg-indigo-50/50 text-slate-700 italic rounded-r-lg shadow-sm",
     hr: "my-12 border-slate-200",
   },
+
+  // 11 – Compact: snippet-style, text-base, even spacing, rounded blockquote (no left bar)
+  {
+    id: 11,
+    name: "Compact",
+    container: "max-w-4xl mx-auto bg-white p-6 lg:p-8 rounded-xl shadow-sm border border-slate-200 min-h-[calc(100vh-4rem)]",
+    title: "text-2xl lg:text-3xl font-bold text-slate-900 mb-6 pb-6 border-b border-slate-200",
+    h2: "text-lg font-bold mt-8 mb-4 text-slate-900",
+    h3: "text-lg font-bold mt-6 mb-4 text-slate-800 tracking-tight",
+    h4: "text-base font-bold mt-6 mb-3 text-slate-800 uppercase tracking-wide",
+    paragraph: "mb-4 leading-relaxed text-slate-700 text-base",
+    list: "mb-6 ml-6 pl-2 marker:text-indigo-500 text-slate-700 space-y-2 text-base list-disc",
+    blockquote: "rounded-xl border border-indigo-100 bg-indigo-50/50 p-5 text-slate-700 my-6 text-base leading-relaxed",
+    hr: "my-10 h-px bg-slate-200",
+  },
 ];
 
 /**
- * Look up theme by format id (1–10). Returns undefined if not found.
+ * Look up theme by format id (1–11). Returns undefined if not found.
  */
 export function getLessonFormatTheme(
   themes: LessonFormatTheme[],

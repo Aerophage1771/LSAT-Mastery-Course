@@ -9,25 +9,25 @@ export const Lesson5_Question10: Lesson = {
       id: "42-5",
       title: "Question 10: Phrase Meaning",
       content: [
-        { type: 'accordion', title: 'Read Passage', content: passageText },
-        { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-2-Q-10" },
+        { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-2)', content: passageText },
+        { type: 'h3', text: "Question 10: Phrase Meaning Breakdown (PT-128-S-4-P-2-Q-10)" },
         { type: 'blockquote', text: "**Question:** The author’s use of the word “peevish” in the first paragraph is intended to suggest which one of the following?" },
         { type: 'options', items: [
-          "(A) offensive [18.0%]",
-          "(B) neurotic [18.0%]",
-          "(C) stubborn [2.0%]",
-          "(D) egocentric [12.0%]",
-          "(E) sour [50.0%] (Correct)"
+          "(A) offensive",
+          "(B) neurotic",
+          "(C) stubborn",
+          "(D) egocentric",
+          "(E) sour (Correct)"
         ]},
-        { type: 'paragraph', text: "This question asks for the meaning of the word \"peevish\" as it is used in the first paragraph. This is a vocabulary-in-context question, and the best clues come from the surrounding text and the author's parallel constructions." },
-        { type: 'paragraph', text: "The key sentence states: \"*Deconstructing Harry* may be the most unequivocally **peevish** of Allen’s depictions of artists...\" To understand what the author means by \"peevish,\" we should look for related descriptive words. The very next paragraph provides the strongest possible clue when describing a different film: \"*Stardust Memories*, Allen’s **sourest** portrait of artists before Harry...\"" },
-        { type: 'paragraph', text: "The author is using \"peevish\" and \"sourest\" in a parallel way to describe the critical, irritable, and cynical tone of Allen's portrayals of artists. *Deconstructing Harry* is the most intensely critical (\"peevish\"), while *Stardust Memories* was the previous record-holder for being critical (\"sourest\"). The words are used as near-synonyms in the context of the author's argument." },
+        { type: 'h4', text: "Analysis" },
+        { type: 'paragraph', text: "Concept focus: in phrase-meaning questions, separate who is being described from the tone of the description. Here, \"peevish\" describes the mood of Allen's portrayal of artists, not the artists themselves. The passage then confirms the same tone later with \"Allen's sourest portrait,\" which gives a direct context clue for the intended meaning." },
+        { type: 'callout', title: "Text Evidence", variant: "tip", text: "Pair these two lines: \"the most unequivocally peevish of Allen's depictions\" and \"Allen's sourest portrait of artists.\" That parallel tells you \"peevish\" means bitter/irritable in tone, so the right choice must be a tone word close to \"sour.\"" },
         { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-          { title: "(A) offensive", text: "While a critique might be offensive, \"peevish\" describes the irritable and ill-tempered nature of the critique itself, not its effect on the audience.", badge: "Incorrect", badgeColor: "red" },
-          { title: "(B) neurotic", text: "\"Neurotic\" is used to describe the characters *in* the films. \"Peevish\" is used to describe the film's *depiction* or tone, which is a critique *of* the neurotic characters.", badge: "Incorrect", badgeColor: "red" },
-          { title: "(C) stubborn", text: "While the theme is persistent, \"stubborn\" does not capture the negative, irritable quality implied by \"peevish.\"", badge: "Incorrect", badgeColor: "red" },
-          { title: "(D) egocentric", text: "Again, this is a trait of the characters being criticized, not the tone of the critique itself.", badge: "Incorrect", badgeColor: "red" },
-          { title: "(E) sour", text: "This is the word the author uses in a parallel construction just one paragraph later, providing a clear contextual synonym. \"Sour\" perfectly captures the sense of a bitter, cynical, and ill-tempered attitude, which aligns with the standard meaning of \"peevish.\"", badge: "Correct", badgeColor: "green" }
+          { title: "(A) offensive", text: "This points to how readers might react, not to the author's tone. In context, \"peevish\" labels the style of the portrayal as cranky and bitter, not its social impact.", badge: "Incorrect", badgeColor: "red" },
+          { title: "(B) neurotic", text: "The passage uses \"neurotic\" for Harry Block and other artist figures. \"Peevish\" is a word about the depiction's attitude, so this choice confuses character trait with narrative tone.", badge: "Incorrect", badgeColor: "red" },
+          { title: "(C) stubborn", text: "\"Stubborn\" means resistant, but \"peevish\" carries an irritable, cross, or sour flavor. The nearby word \"sourest\" confirms the emotional tone the author intends.", badge: "Incorrect", badgeColor: "red" },
+          { title: "(D) egocentric", text: "Like choice (B), this describes the artists being criticized, not the voice of the criticism. The question asks what \"peevish\" suggests about how Allen's portrayal sounds.", badge: "Incorrect", badgeColor: "red" },
+          { title: "(E) sour", text: "This is the best match. The passage itself pairs \"peevish\" with \"sourest portrait,\" showing that both words point to the same bitter, ill-tempered tone.", badge: "Correct", badgeColor: "green" }
         ]}
       ]
 };

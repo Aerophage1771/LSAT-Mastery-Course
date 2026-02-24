@@ -11,24 +11,25 @@ export const Lesson7_Question28: Lesson = {
   id: "51-7",
   title: "Question 28: Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-109-S-2-P-4-Q-28" },
+    { type: 'accordion', title: 'Read Passage (PT-109-S-2-P-4)', content: passageText },
+    { type: 'h3', text: "Question 28: Inference Breakdown (PT-109-S-2-P-4-Q-28)" },
     { type: 'blockquote', text: "**Question:** According to the fourth paragraph of the passage, what specifically does Bentham characterize as preference of ignorance to knowledge?" },
     { type: 'options', items: [
-      "(A) uncritical acceptance of legal conventions [3.0%]",
-      "(B) failure to weigh the advantages of legal reform [2.0%]",
-      "(C) exclusion of sacramental confessions [11.0%]",
-      "(D) refusal to allow the jury to hear and assess relevant testimony [78.0%] (Correct)",
-      "(E) rejection of exceptions to Bentham’s nonexclusion principle [6.0%]"
+      "(A) uncritical acceptance of legal conventions",
+      "(B) failure to weigh the advantages of legal reform",
+      "(C) exclusion of sacramental confessions",
+      "(D) refusal to allow the jury to hear and assess relevant testimony (Correct)",
+      "(E) rejection of exceptions to Bentham’s nonexclusion principle"
     ]},
-    { type: 'h3', text: "Explanation" },
-    { type: 'paragraph', text: "Context:\nThis question asks about Jeremy Bentham's specific phrasing in the fourth paragraph. The passage discusses the argument against Bentham's principle, which was that some evidence is unreliable. Bentham's response to this was that the jury should be allowed to weigh the evidence, and that not doing so was a mistake." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This inference question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'By the time Bentham turned his interest to the subject, late...' and 'This clear-grounds proviso allows more exclusions than Bentham would have liked,...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A)", text: "While Bentham was critical of reverence for tradition, the phrase 'preference of ignorance to knowledge' is specifically used in the context of excluding evidence from a jury, not the general acceptance of legal conventions." },
-      { title: "(B)", text: "This choice is too broad. Bentham's comment was about a specific practice—keeping evidence from a jury—not about the general failure to consider legal reform." },
-      { title: "(C)", text: "This is incorrect because the passage notes that Bentham himself accepted certain exceptions, including sacramental confessions. He would not have called a practice he agreed with a 'preference of ignorance to knowledge.'" },
-      { title: "(D)", text: "The passage explicitly states that Bentham believed the jury should weigh the character of evidence. It then says the 'alternative' to letting the jury do this was 'to prefer ignorance to knowledge.' Therefore, refusing to let the jury hear and evaluate testimony is what Bentham criticized." },
-      { title: "(E)", text: "This choice misrepresents Bentham's position. Bentham argued against excluding evidence, so the 'preference of ignorance to knowledge' was the act of excluding evidence, not the rejection of exceptions to his rule." }
+      { title: "(A)", text: "While Bentham was critical of reverence for tradition, the phrase 'preference of ignorance to knowledge' is specifically used in the context of excluding evidence from a jury, not the general acceptance of legal conventions. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(B)", text: "This choice is too broad. Bentham's comment was about a specific practice—keeping evidence from a jury—not about the general failure to consider legal reform. Additional check: trap type is too broad, since it extends beyond what the passage actually supports." },
+      { title: "(C)", text: "This is incorrect because the passage notes that Bentham himself accepted certain exceptions, including sacramental confessions. He would not have called a practice he agreed with a 'preference of ignorance to knowledge.' Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(D)", text: "The passage explicitly states that Bentham believed the jury should weigh the character of evidence. It then says the 'alternative' to letting the jury do this was 'to prefer ignorance to knowledge.' Therefore, refusing to let the jury hear and evaluate testimony is what Bentham criticized. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(E)", text: "This choice misrepresents Bentham's position. Bentham argued against excluding evidence, so the 'preference of ignorance to knowledge' was the act of excluding evidence, not the rejection of exceptions to his rule. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." }
     ]}
   ]
 };

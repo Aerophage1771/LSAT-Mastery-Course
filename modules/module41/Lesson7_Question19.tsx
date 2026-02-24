@@ -12,19 +12,19 @@ export const Lesson7_Question19: Lesson = {
   id: "41-7",
   title: "Question 19: Application",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-3-Q-19" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-3)', content: passageText },
+    { type: 'h3', text: "Question 19: Application Breakdown (PT-128-S-1-P-3-Q-19)" },
     { type: 'blockquote', text: "**Question:** Which one of the following would most likely be an example of one of the “rituals, ceremonies, and traditions” mentioned in the second sentence of the second paragraph?" },
     { type: 'options', items: [
-      "(A) an annual ceremony held by an institution of the colonizing culture to honor the literary and theatrical achievements of members of the native culture [4.0%]",
-      "(B) a religious service of the colonizing culture that has been adapted to include elements of the native culture in order to gain converts [26.0%]",
-      "(C) a traditional play that is part of a colonized nation’s original culture, but is highly popular among the leaders of the imperial culture [7.0%]",
-      "(D) a ritual dance, traditionally used to commemorate the union of two native deities, that is modified to depict the friendship between the colonial and native cultures [62.0%] (Correct)",
-      "(E) a traditional village oratory competition in which members of the native culture endeavor to outdo one another in allegorical criticisms of the colonizing culture [1.0%]"
+      "(A) an annual ceremony held by an institution of the colonizing culture to honor the literary and theatrical achievements of members of the native culture",
+      "(B) a religious service of the colonizing culture that has been adapted to include elements of the native culture in order to gain converts",
+      "(C) a traditional play that is part of a colonized nation’s original culture, but is highly popular among the leaders of the imperial culture",
+      "(D) a ritual dance, traditionally used to commemorate the union of two native deities, that is modified to depict the friendship between the colonial and native cultures (Correct)",
+      "(E) a traditional village oratory competition in which members of the native culture endeavor to outdo one another in allegorical criticisms of the colonizing culture"
     ]},
-    { type: 'paragraph', text: "This is an application question that asks for a hypothetical example of the phenomenon described in the second paragraph: the \"manufacture and reinterpretation of rituals, ceremonies, and traditions\" by a colonial power to reinforce its authority." },
-    { type: 'paragraph', text: "We need to create a clear template from the paragraph. The key elements are:\n1.  **Action:** A colonial power either invents (\"manufactures\") or modifies (\"reinterprets\") a ritual.\n2.  **Purpose:** The goal is to reinforce the colonizer's authority and create a false sense of historical legitimacy, making its rule seem natural or ancient." },
-    { type: 'paragraph', text: "We must find the answer choice that matches both the action and the purpose." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The target example must mirror the mechanism described in paragraph 2: political authority reshapes or stages cultural ritual so rule appears historically natural and legitimate. A correct application therefore needs reinterpretation of an existing form in service of colonial legitimacy, not simple celebration, passive popularity, or anti-colonial resistance." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The passage explicitly cites the \"manufacture and reinterpretation of rituals, ceremonies, and traditions\" and explains the purpose: to \"project\" power backward in time and gain legitimacy through apparent longevity." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

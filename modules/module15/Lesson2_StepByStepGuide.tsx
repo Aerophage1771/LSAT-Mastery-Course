@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "15-2",
   title: "Step-by-Step Guide",
+  subtitle: "Identify the blank's role, then predict the content that completes the argument.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Fill in the Blank' },
     { type: 'paragraph', text: 'This section provides a clear, step-by-step process for solving any Fill in the Blank question. The goal is to first identify the logical role of the blank space and then predict the content needed to complete the author\'s argument.' },

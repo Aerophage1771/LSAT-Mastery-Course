@@ -9,23 +9,25 @@ export const Lesson3_Question9: Lesson = {
   id: "44-3",
   title: "Question 9: Phrase Function",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-141-S-1-P-2-Q-9" },
+    { type: 'accordion', title: 'Read Passage (PT-141-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 9: Phrase Function Breakdown (PT-141-S-1-P-2-Q-9)" },
     { type: 'blockquote', text: "The author mentions the props employed in The Passing of Arthur as" },
     { type: 'options', items: [
-      "(A) examples of amateurish aspects of the work [85.0%] (Correct)",
-      "(B) evidence of the transformative power of theater [4.0%]",
-      "(C) testimonies to Cameron’s ingenuity [7.0%]",
-      "(D) indications that the work is intended ironically [3.0%]",
-      "(E) support for a negative appraisal of the work [1.0%]"
+      "(A) examples of amateurish aspects of the work (Correct)",
+      "(B) evidence of the transformative power of theater",
+      "(C) testimonies to Cameron’s ingenuity",
+      "(D) indications that the work is intended ironically",
+      "(E) support for a negative appraisal of the work"
     ]},
-    { type: 'paragraph', text: "This question asks for the purpose of mentioning the specific props in the photograph *The Passing of Arthur*. This is a \"purpose in context\" question, requiring us to understand the role this detail plays within the argument of the third paragraph.\n\nThe third paragraph begins by identifying the \"special quality\" of Cameron's pictures as their \"singular combination of **amateurism** and **artistry**.\" The author then uses *The Passing of Arthur* as a specific \"example\" to illustrate this point. The description of the props—\"the mast and oar... are obviously broomsticks and the water is white muslin drapery\"—serves as the direct evidence for the \"amateurism\" part of the author's claim. These makeshift props are the prime example of the \"homely truth\" that coexists with the \"romantic fantasy.\"" },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This phrase function question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'From a critical discussion of the work of Victorian photographer Julia...' and 'While Cameron’s fancy-subject pictures have been compared to poor amateur theatricals,...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) examples of amateurish aspects of the work", text: "This aligns perfectly with the analysis. The author introduces the concept of \"amateurism\" and then immediately points to the broomsticks and drapery as the primary \"examples\" of this quality.", badge: "Correct", badgeColor: "green" },
-      { title: "(B) evidence of the transformative power of theater", text: "This is incorrect. The author argues in the second paragraph that still photography, unlike live theater, *cannot* fully transform its reality. We are always aware of the props and actors.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) testimonies to Cameron’s ingenuity", text: "While one could see the props as ingenious, this is not the point the author is making. The author's focus is on how these props contribute to the \"amateurish\" feel of the work, which is a key component of its unique aesthetic, not on praising Cameron's cleverness.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) indications that the work is intended ironically", text: "The author's tone is one of sincere admiration, calling the picture \"magical and mysterious\" and something to be recalled with \"shameless delight.\" There is no suggestion of irony.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) support for a negative appraisal of the work", text: "This is the opposite of the author's intent. The author explicitly states these amateurish details are \"insignificant\" compared to the overall magical effect. The props are used as part of a highly positive appraisal of the work.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) examples of amateurish aspects of the work", text: "This aligns perfectly with the analysis. The author introduces the concept of \"amateurism\" and then immediately points to the broomsticks and drapery as the primary \"examples\" of this quality. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+      { title: "(B) evidence of the transformative power of theater", text: "This is incorrect. The author argues in the second paragraph that still photography, unlike live theater, *cannot* fully transform its reality. We are always aware of the props and actors. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) testimonies to Cameron’s ingenuity", text: "While one could see the props as ingenious, this is not the point the author is making. The author's focus is on how these props contribute to the \"amateurish\" feel of the work, which is a key component of its unique aesthetic, not on praising Cameron's cleverness. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) indications that the work is intended ironically", text: "The author's tone is one of sincere admiration, calling the picture \"magical and mysterious\" and something to be recalled with \"shameless delight.\" There is no suggestion of irony. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) support for a negative appraisal of the work", text: "This is the opposite of the author's intent. The author explicitly states these amateurish details are \"insignificant\" compared to the overall magical effect. The props are used as part of a highly positive appraisal of the work. Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

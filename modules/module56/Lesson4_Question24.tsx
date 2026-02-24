@@ -8,27 +8,28 @@ export const Lesson4_Question24: Lesson = {
   id: "56-4",
   title: "Question 24: Author Viewpoint",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 24 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-113-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 24: Author Viewpoint Breakdown (PT-113-S-1-P-4-Q-24)" },
     { type: 'blockquote', text: "**Question:** It can most reasonably be inferred from the passage that the author would agree with which one of the following statements?" },
     { type: 'options', items: [
-      "(A) When states try to regain losses through risky conflict, they generally are misled by inadequate or inaccurate information as to the risks that they run in doing so. [5.0%]",
-      "(B) Government decision makers subjectively evaluate the acceptability of risks involving national assets in much the same way that they would evaluate risks involving personal assets. [41.0%] (Correct)",
-      "(C) A new method for predicting and mediating international conflict has emerged from a synthesis of the fields of economics and psychology. [10.0%]",
-      "(D) Truly rational decision making is a rare phenomenon in international crises and can, ironically, lead to severe consequences for those who engage in it. [11.0%]",
-      "(E) Contrary to previous assumptions, people are more likely to take substantial risks when their subjective assessments of expected benefits match or exceed the objectively measured costs. [33.0%]"
+      "(A) When states try to regain losses through risky conflict, they generally are misled by inadequate or inaccurate information as to the risks that they run in doing so.",
+      "(B) Government decision makers subjectively evaluate the acceptability of risks involving national assets in much the same way that they would evaluate risks involving personal assets. (Correct)",
+      "(C) A new method for predicting and mediating international conflict has emerged from a synthesis of the fields of economics and psychology.",
+      "(D) Truly rational decision making is a rare phenomenon in international crises and can, ironically, lead to severe consequences for those who engage in it.",
+      "(E) Contrary to previous assumptions, people are more likely to take substantial risks when their subjective assessments of expected benefits match or exceed the objectively measured costs."
     ]},
-    { type: 'paragraph', text: "This is an Author Viewpoint question. We need to find the statement that is most consistent with the author's overall argument and structure." },
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "The passage's entire structure relies on a parallel between individual psychology and government behavior. The author explains research about how 'people' make decisions (e.g., the $100 gamble) and then applies those exact same principles to explain how 'governments' act in international conflicts. This implies the author believes the underlying decision-making process is the same." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This author viewpoint question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Recent investigations into the psychology of decision making have sparked interest...' and 'In international affairs, it is vital that each actor in such...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "The passage suggests states take these risks because of a psychological desire to avoid loss, not because they have bad information. It says they take risks that 'far outweigh the objectively measurable value,' implying they understand the risks but take them anyway due to the subjective framing.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This is strongly supported. The passage's structure is built on applying general psychological findings about how 'people' make decisions directly to the actions of 'governments.' The author seamlessly moves from individual risk-taking with money to national risk-taking with territory, suggesting the underlying cognitive mechanism is the same.", badge: "Correct", badgeColor: "green" },
-        { title: "(C)", text: "The author states that the psychological findings are 'salient' (relevant) to understanding conflict, but never claims that a new, complete 'method for predicting and mediating' conflict has actually been created from this knowledge. This is too strong.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "The passage describes behavior that isn't purely rational in an economic sense, but it doesn't state that truly rational decisions are rare or discuss their consequences.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "This misstates the core idea. The author argues that people are more likely to take substantial risks to avoid a 'sure loss,' not simply because their assessment of benefits is high. The key motivator is the negative framing of the situation.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "The passage suggests states take these risks because of a psychological desire to avoid loss, not because they have bad information. It says they take risks that 'far outweigh the objectively measurable value,' implying they understand the risks but take them anyway due to the subjective framing. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This is strongly supported. The passage's structure is built on applying general psychological findings about how 'people' make decisions directly to the actions of 'governments.' The author seamlessly moves from individual risk-taking with money to national risk-taking with territory, suggesting the underlying cognitive mechanism is the same. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(C)", text: "The author states that the psychological findings are 'salient' (relevant) to understanding conflict, but never claims that a new, complete 'method for predicting and mediating' conflict has actually been created from this knowledge. This is too strong. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "The passage describes behavior that isn't purely rational in an economic sense, but it doesn't state that truly rational decisions are rare or discuss their consequences. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "This misstates the core idea. The author argues that people are more likely to take substantial risks to avoid a 'sure loss,' not simply because their assessment of benefits is high. The key motivator is the negative framing of the situation. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

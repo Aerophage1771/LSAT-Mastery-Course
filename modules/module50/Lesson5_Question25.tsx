@@ -9,24 +9,25 @@ export const Lesson5_Question25: Lesson = {
   id: "50-5",
   title: "Question 25: Paragraph Function",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-108-S-1-P-4-Q-25" },
+    { type: 'accordion', title: 'Read Passage (PT-108-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 25: Paragraph Function Breakdown (PT-108-S-1-P-4-Q-25)" },
     { type: 'blockquote', text: "**Question:** The primary purpose of the third paragraph is to" },
     { type: 'options', items: [
-      "(A) offer support for the view of linguists who believe that language has an essential correspondence to things [4.0%]",
-      "(B) elaborate the position of linguists who believe that truth is merely a matter of convention [59.0%] (Correct)",
-      "(C) illustrate the differences between the essentialist and conventionalist positions in the linguists’ debate [4.0%]",
-      "(D) demonstrate the similarity of the linguists’ debate to a current debate among scientists about the nature of explanation [27.0%]",
-      "(E) explain the theory that mathematical statements are a kind of language [6.0%]"
+      "(A) offer support for the view of linguists who believe that language has an essential correspondence to things",
+      "(B) elaborate the position of linguists who believe that truth is merely a matter of convention (Correct)",
+      "(C) illustrate the differences between the essentialist and conventionalist positions in the linguists’ debate",
+      "(D) demonstrate the similarity of the linguists’ debate to a current debate among scientists about the nature of explanation",
+      "(E) explain the theory that mathematical statements are a kind of language"
     ]},
-    { type: 'h3', text: "Explanation" },
-    { type: 'paragraph', text: "The question asks for the primary purpose of the third paragraph. This paragraph focuses on a specific theory within a linguistic debate mentioned earlier. It describes the view that language is based on agreed-upon conventions, explains how this view defines 'truth', and then applies this idea to scientific and mathematical explanations." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This paragraph function question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'What it means to “explain” something in science often comes down...' and 'In pursuing the implications of this theory, linguists have reached the...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A)", text: "This is incorrect because the third paragraph discusses the opposite view. It focuses on the theory that language is a matter of convention, not that it has an 'essential correspondence to things.'" },
-      { title: "(B)", text: "This choice accurately describes the function of the third paragraph. The paragraph takes one side of the debate introduced in the second paragraph—the view that language is based on 'agreed-upon conventions'—and explains it in greater detail." },
-      { title: "(C)", text: "The second paragraph is the one that introduces the two different positions in the debate. The third paragraph, in contrast, focuses on elaborating on just one of those positions, not on comparing the two." },
-      { title: "(D)", text: "While the passage applies the linguistic idea to science, it doesn't state that a similar debate is happening among scientists. The final paragraph suggests scientists have 'yet to be significantly addressed' this particular question." },
-      { title: "(E)", text: "This idea is presented in the first paragraph. The third paragraph does not focus on explaining this basic theory but rather on a more complex linguistic view of how language (including mathematical statements) relates to truth." }
+      { title: "(A)", text: "This is incorrect because the third paragraph discusses the opposite view. It focuses on the theory that language is a matter of convention, not that it has an 'essential correspondence to things.' Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion." },
+      { title: "(B)", text: "This choice accurately describes the function of the third paragraph. The paragraph takes one side of the debate introduced in the second paragraph—the view that language is based on 'agreed-upon conventions'—and explains it in greater detail. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(C)", text: "The second paragraph is the one that introduces the two different positions in the debate. The third paragraph, in contrast, focuses on elaborating on just one of those positions, not on comparing the two. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(D)", text: "While the passage applies the linguistic idea to science, it doesn't state that a similar debate is happening among scientists. The final paragraph suggests scientists have 'yet to be significantly addressed' this particular question. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(E)", text: "This idea is presented in the first paragraph. The third paragraph does not focus on explaining this basic theory but rather on a more complex linguistic view of how language (including mathematical statements) relates to truth. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." }
     ]}
   ]
 };

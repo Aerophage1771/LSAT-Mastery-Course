@@ -11,23 +11,25 @@ export const Lesson6_Question24: Lesson = {
   id: "43-6",
   title: "Question 24: Phrase Meaning",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-4-Q-24" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-4)', content: passageText },
+    { type: 'h3', text: "Question 24: Phrase Meaning Breakdown (PT-128-S-4-P-4-Q-24)" },
     { type: 'blockquote', text: "**Question:** In passage B, which one of the following is an example of “inputs” as that term is used in the second paragraph of passage A?" },
     { type: 'options', items: [
-      "(A) fair rules (middle of the first paragraph of passage B) [1.0%]",
-      "(B) unjust trial (near the end of the first paragraph of passage B) [1.0%]",
-      "(C) impartial processes (end of the first paragraph of passage B) [2.0%]",
-      "(D) traumatic childhood (middle of the final paragraph of passage B) [95.0%] (Correct)",
-      "(E) innocent people (end of the final paragraph of passage B) [0.0%]"
+      "(A) fair rules (middle of the first paragraph of passage B)",
+      "(B) unjust trial (near the end of the first paragraph of passage B)",
+      "(C) impartial processes (end of the first paragraph of passage B)",
+      "(D) traumatic childhood (middle of the final paragraph of passage B) (Correct)",
+      "(E) innocent people (end of the final paragraph of passage B)"
     ]},
-    { type: 'paragraph', text: "Passage A defines 'inputs' as the background factors that precede an action, which are contrasted with 'outputs, or consequences.' We need to find something in Passage B that fits this definition." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "Concept focus: this is a transfer-definition question. Passage A defines \"inputs\" as background variables that shape deservedness calculations, while \"outputs\" are observable consequences or outcomes. Your task is to import that definition into Passage B and find the option that names a background condition of the defendant rather than a process feature or downstream result." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "In A, the key contrast is \"judge based upon outputs ... rather than inputs.\" In B, the phrase \"traumatic childhood\" is introduced as a factor considered before sentencing. That is a classic personal-history input, unlike \"fair rules\" or \"impartial process,\" which describe how the system operates." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) fair rules", text: "Describes the legal process, not a personal background factor of the individual being judged.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) unjust trial", text: "Describes the quality of the legal process, not an 'input' related to the defendant.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) impartial processes", text: "Describes the method of traditional justice, not a personal 'input.'", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) traumatic childhood", text: "This is a perfect match. A 'traumatic childhood' is a quintessential 'input'—a complex background factor from a person's history, distinct from the 'output' (the crime).", badge: "Correct", badgeColor: "green" },
-      { title: "(E) innocent people", text: "'Innocent people' in Passage B are the victims of the consequences of the legal system's actions. This is an 'output,' not an 'input.'", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) fair rules", text: "\"Fair rules\" describes the procedural setup of the trial. That is process design, not a personal background variable about the accused person.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) unjust trial", text: "This labels process quality (whether the trial was run properly). It is not an input factor from the defendant's history.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) impartial processes", text: "This is another process term from B's traditional-justice framework. It tells you how judgment is conducted, not what personal causal factors fed into the defendant's conduct.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) traumatic childhood", text: "This is the best match for \"inputs.\" It is a background condition tied to the defendant's life history and is exactly the kind of variable cosmic-justice reasoning tries to weigh before punishment.", badge: "Correct", badgeColor: "green" },
+      { title: "(E) innocent people", text: "In B, innocent people are affected by the consequences of weakened deterrence. That is an outcome-side consequence, not an input variable in the defendant's deservedness calculus.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

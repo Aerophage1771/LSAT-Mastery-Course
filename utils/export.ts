@@ -107,7 +107,8 @@ const lessonToText = (lesson: Lesson): string => {
   } else {
     contentText = lesson.content.map(blockToText).join('');
   }
-  return `=== ${lesson.title} ===\n\n${contentText}`;
+  const subtitleLine = lesson.subtitle != null && lesson.subtitle !== '' ? `${lesson.subtitle}\n\n` : '';
+  return `=== ${lesson.title} ===\n\n${subtitleLine}${contentText}`;
 };
 
 const lessonToRTF = (lesson: Lesson): string => {
@@ -117,7 +118,8 @@ const lessonToRTF = (lesson: Lesson): string => {
   } else {
     contentText = lesson.content.map(blockToRTF).join('');
   }
-  return `\\pard\\sa200\\sl276\\slmult1\\b\\fs32 ${escapeRTF(lesson.title)}\\b0\\fs24\\par\n\\par\n${contentText}\\page\n`;
+  const subtitleRtf = lesson.subtitle != null && lesson.subtitle !== '' ? `\\pard\\sa200\\sl276\\slmult1\\i\\fs24 ${escapeRTF(lesson.subtitle)}\\i0\\par\n\\par\n` : '';
+  return `\\pard\\sa200\\sl276\\slmult1\\b\\fs32 ${escapeRTF(lesson.title)}\\b0\\fs24\\par\n\\par\n${subtitleRtf}${contentText}\\page\n`;
 };
 
 const rtfHeader = `{\\rtf1\\ansi\\deff0{\\fonttbl{\\f0 Arial;}{\\f1 Courier New;}}\\viewkind4\\uc1\\pard\\sa200\\sl276\\slmult1\\f0\\fs24 `;
@@ -358,7 +360,9 @@ const addLessonToPdf = (doc: jsPDF, lesson: Lesson) => {
     }
 
     addWrappedText(doc, lesson.title, { size: 22, style: 'bold', align: 'center', bottomSpacing: 10 });
-    
+    if (lesson.subtitle != null && lesson.subtitle !== '') {
+        addWrappedText(doc, lesson.subtitle, { size: 12, style: 'normal', align: 'center', bottomSpacing: 8 });
+    }
     // Separator line
     doc.setDrawColor(0);
     doc.setLineWidth(0.5);

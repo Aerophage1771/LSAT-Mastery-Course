@@ -12,23 +12,25 @@ export const Lesson6_Question20: Lesson = {
   id: "45-6",
   title: "Question 20: Phrase Meaning",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-141-S-1-P-3-Q-20" },
+    { type: 'accordion', title: 'Read Passage (PT-141-S-1-P-3)', content: passageText },
+    { type: 'h3', text: "Question 20: Phrase Meaning Breakdown (PT-141-S-1-P-3-Q-20)" },
     { type: 'blockquote', text: "By the term “forces of persuasion\" (last sentence of the third paragraph), the author most probably refers to" },
     { type: 'options', items: [
-      "(A) intentionally dishonest claims that some theorists argue are common in advertising [10.0%]",
-      "(B) innate, instinctual drives that some theorists say are fundamental to human behavior [7.0%]",
-      "(C) emotional pressures that some theorists claim are exerted over individuals by society as a whole [16.0%]",
-      "(D) subtle practices of social indoctrination that some theorists say are sponsored by the state [1.0%]",
-      "(E) manipulative influences that some theorists say go unrecognized by those affected by them [65.0%] (Correct)"
+      "(A) intentionally dishonest claims that some theorists argue are common in advertising",
+      "(B) innate, instinctual drives that some theorists say are fundamental to human behavior",
+      "(C) emotional pressures that some theorists claim are exerted over individuals by society as a whole",
+      "(D) subtle practices of social indoctrination that some theorists say are sponsored by the state",
+      "(E) manipulative influences that some theorists say go unrecognized by those affected by them (Correct)"
     ]},
-    { type: 'paragraph', text: "This question asks for the meaning of the phrase \"forces of persuasion\" as it is used at the end of the third paragraph. This is a vocabulary-in-context question, so we must analyze the specific argument in which the phrase is embedded.\n\nThe third paragraph presents the author's philosophical critique of Marcuse's \"real vs. false needs\" distinction. The author argues that if Marcuse were right and advertising's \"manipulation\" were so pervasive that it shaped our \"instinctive judgments,\" then we would be unable to reliably identify our \"real\" needs. The \"forces of persuasion\" are the things that would need to be eliminated to make such a judgment possible.\n\nGiven this context, the \"forces of persuasion\" must refer to the pervasive, manipulative influences of advertising and mass-market culture that, according to the Marcusian theory, shape our desires at a subconscious or \"instinctive\" level. The key idea is that these forces operate without our conscious recognition." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This phrase meaning question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Some critics of advertising have assumed that the creation of false...' and 'This does not mean, however, that consumers do not freely and...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) intentionally dishonest claims that some theorists argue are common in advertising", text: "This is too narrow. The manipulation described by Marcuse is more subtle and psychological than simple dishonest claims. The author even notes later that regulations prohibit outright misinformation.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) innate, instinctual drives that some theorists say are fundamental to human behavior", text: "This confuses the cause with the effect. The \"forces of persuasion\" are what *act upon* our instincts; they are not the instincts themselves.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) emotional pressures that some theorists claim are exerted over individuals by society as a whole", text: "This is too vague. The passage is specific that these forces come from corporate advertising, not \"society as a whole.\"", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) subtle practices of social indoctrination that some theorists say are sponsored by the state", text: "The passage makes no mention of the \"state\" or government. The focus is on corporate power.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) manipulative influences that some theorists say go unrecognized by those affected by them", text: "This choice is a perfect fit. It correctly identifies the influences as \"manipulative\" and captures the crucial idea that they operate at a level that \"goes unrecognized,\" which aligns with the text's reference to \"instinctive judgments.\"", badge: "Correct", badgeColor: "green" }
+      { title: "(A) intentionally dishonest claims that some theorists argue are common in advertising", text: "This is too narrow. The manipulation described by Marcuse is more subtle and psychological than simple dishonest claims. The author even notes later that regulations prohibit outright misinformation. Additional check: trap type is too narrow, since it leaves out a required part of the passage's claim.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) innate, instinctual drives that some theorists say are fundamental to human behavior", text: "This confuses the cause with the effect. The \"forces of persuasion\" are what *act upon* our instincts; they are not the instincts themselves. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) emotional pressures that some theorists claim are exerted over individuals by society as a whole", text: "This is too vague. The passage is specific that these forces come from corporate advertising, not \"society as a whole.\" Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) subtle practices of social indoctrination that some theorists say are sponsored by the state", text: "The passage makes no mention of the \"state\" or government. The focus is on corporate power. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) manipulative influences that some theorists say go unrecognized by those affected by them", text: "This choice is a perfect fit. It correctly identifies the influences as \"manipulative\" and captures the crucial idea that they operate at a level that \"goes unrecognized,\" which aligns with the text's reference to \"instinctive judgments.\" Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" }
     ]}
   ]
 };

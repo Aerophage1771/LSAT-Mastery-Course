@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "19-2",
   title: "Step-by-Step Guide",
+  subtitle: "Find where two facts clash, then the missing piece that makes the story make sense.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Paradox / Explain' },
     { type: 'paragraph', text: 'This guide shows you exactly how to handle Paradox and Explain questions. The trick is to find where two facts clash and then find the missing piece of information that makes the whole story make sense.' },

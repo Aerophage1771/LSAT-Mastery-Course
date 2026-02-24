@@ -8,27 +8,28 @@ export const Lesson6_Question26: Lesson = {
   id: "56-6",
   title: "Question 26: Author Viewpoint",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 26 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-113-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 26: Author Viewpoint Breakdown (PT-113-S-1-P-4-Q-26)" },
     { type: 'blockquote', text: "**Question:** The passage most clearly suggests that the author would agree with which one of the following statements?" },
     { type: 'options', items: [
-      "(A) Researchers have previously been too willing to accept the claims that subjects make about their preferred choices in risk-related decision problems. [6.0%]",
-      "(B) There is inadequate research support for the hypothesis that except when a gamble is the only available means for averting an otherwise certain loss, people typically are averse to risk-taking. [9.0%]",
-      "(C) It can reasonably be argued that the risk that Britain accepted in its 1982 conflict with Argentina outweighed the potential objectively measurable benefit of that venture. [62.0%] (Correct)",
-      "(D) The new findings suggest that because of the subjective elements involved, governmental strategies concerning risks of loss in international crises will remain incomprehensible to outside observers. [9.0%]",
-      "(E) Moderate risks in cases involving unavoidable losses are often taken on the basis of reasoning that diverges markedly from that which was studied in the recent investigations. [14.0%]"
+      "(A) Researchers have previously been too willing to accept the claims that subjects make about their preferred choices in risk-related decision problems.",
+      "(B) There is inadequate research support for the hypothesis that except when a gamble is the only available means for averting an otherwise certain loss, people typically are averse to risk-taking.",
+      "(C) It can reasonably be argued that the risk that Britain accepted in its 1982 conflict with Argentina outweighed the potential objectively measurable benefit of that venture. (Correct)",
+      "(D) The new findings suggest that because of the subjective elements involved, governmental strategies concerning risks of loss in international crises will remain incomprehensible to outside observers.",
+      "(E) Moderate risks in cases involving unavoidable losses are often taken on the basis of reasoning that diverges markedly from that which was studied in the recent investigations."
     ]},
-    { type: 'paragraph', text: "This is an Author Viewpoint question. We must find the statement that is most clearly supported by the author's argument and the evidence they present." },
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "The author uses the Falklands conflict as a prime example of the main principle. The author states that loss aversion can lead states 'to take risks that far outweigh the objectively measurable value of the lost assets.' Immediately after this, the Falklands conflict is presented as an example of this exact behavior. Therefore, the author must believe that the risks taken in that conflict did, in fact, outweigh the objective benefits." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This author viewpoint question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Recent investigations into the psychology of decision making have sparked interest...' and 'In international affairs, it is vital that each actor in such...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "The passage discusses a previous general belief but does not criticize the methods of earlier researchers or claim they were 'too willing' to accept what subjects said.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This claims there is 'inadequate research support' for a certain idea. However, the passage actually provides support for the idea that people are generally risk-averse, except when facing a sure loss. It doesn't suggest the support is inadequate.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "This is strongly supported. The author makes the general claim that nations often take risks that 'far outweigh the objectively measurable value of the lost assets' when trying to regain territory. The passage then immediately presents the Falklands conflict as an example of this behavior, making it reasonable to conclude the author believes Britain's risk outweighed the objective benefit.", badge: "Correct", badgeColor: "green" },
-        { title: "(D)", text: "This is the opposite of the passage's point. The passage uses the new findings to help explain and understand governmental strategies, not to argue that they will remain 'incomprehensible'.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "The passage argues that the recent studies are precisely what explain the reasoning behind taking risks to avoid losses. This choice incorrectly suggests that the reasoning is different from what was studied.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "The passage discusses a previous general belief but does not criticize the methods of earlier researchers or claim they were 'too willing' to accept what subjects said. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This claims there is 'inadequate research support' for a certain idea. However, the passage actually provides support for the idea that people are generally risk-averse, except when facing a sure loss. It doesn't suggest the support is inadequate. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "This is strongly supported. The author makes the general claim that nations often take risks that 'far outweigh the objectively measurable value of the lost assets' when trying to regain territory. The passage then immediately presents the Falklands conflict as an example of this behavior, making it reasonable to conclude the author believes Britain's risk outweighed the objective benefit. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(D)", text: "This is the opposite of the passage's point. The passage uses the new findings to help explain and understand governmental strategies, not to argue that they will remain 'incomprehensible'. Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "The passage argues that the recent studies are precisely what explain the reasoning behind taking risks to avoid losses. This choice incorrectly suggests that the reasoning is different from what was studied. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

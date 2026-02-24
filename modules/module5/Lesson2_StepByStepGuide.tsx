@@ -3,19 +3,20 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "5-2",
   title: "Step-by-Step Guide",
+  subtitle: "Deconstruct the argument, find the logical gap, and match it to common flaw patterns.",
   content: [
-    { type: 'h3', text: "Step-by-Step Guide to Flaw Questions" },
-    { type: 'h4', text: "Step 1: Identify the Conclusion and Premises" },
-    { 
-      type: 'paragraph', 
-      text: "First, deconstruct the argument. Isolate the author's main point (the conclusion) and the evidence they use to support it (the premises). Use conclusion indicators like \"therefore\" and \"thus,\" and premise indicators like \"because\" and \"since.\" Confirm the conclusion by asking, \"What is the one central claim the author is trying to prove?\"" 
+    { type: 'h2', text: "Step-by-Step Guide: Flaw" },
+    {
+      type: 'paragraph',
+      text: "First, deconstruct the argument. Isolate the author's main point (the conclusion) and the evidence they use to support it (the premises). Use conclusion indicators like \"therefore\" and \"thus,\" and premise indicators like \"because\" and \"since.\" Confirm the conclusion by asking, \"What is the one central claim the author is trying to prove?\""
     },
-    { type: 'h4', text: "Step 2: Find the Logical Gap" },
+    { type: 'h3', text: "Step 1: Identify the Conclusion and Premises" },
+    { type: 'h3', text: "Step 2: Find the Logical Gap" },
     { 
       type: 'paragraph', 
       text: "Critically evaluate the connection between the premises and the conclusion. Ask yourself: \"Why doesn't this evidence guarantee this conclusion?\" Identify the questionable assumption the author must be making to bridge the gap. Focus on what the author has overlooked, taken for granted, or improperly inferred." 
     },
-    { type: 'h4', text: "Step 3: Consult Your Mental Flaw Checklist" },
+    { type: 'h3', text: "Step 3: Consult Your Mental Flaw Checklist" },
     { 
       type: 'paragraph', 
       text: "With the logical gap in mind, quickly run through the most common flaw categories to see if the error fits a familiar pattern. Ask yourself:" 
@@ -36,12 +37,12 @@ export const Lesson2_StepByStepGuide: Lesson = {
       type: 'paragraph', 
       text: "Categorizing the flaw helps you anticipate the abstract language the LSAT will use." 
     },
-    { type: 'h4', text: "Step 4: Formulate an Abstract Prediction" },
+    { type: 'h3', text: "Step 4: Formulate an Abstract Prediction" },
     { 
       type: 'paragraph', 
       text: "Before looking at the answer choices, state the flaw in your own words, but in general, abstract terms. Move from the specific content of the argument (e.g., \"The author assumes that because more police are in high-crime areas, the police must be causing the crime\") to a general description of the error (e.g., \"The author mistakes a correlation for causation, possibly reversing cause and effect\")." 
     },
-    { type: 'h4', text: "Step 5: Evaluate the Answer Choices" },
+    { type: 'h3', text: "Step 5: Evaluate the Answer Choices" },
     { 
       type: 'paragraph', 
       text: "Compare your abstract prediction to each answer choice. The correct answer will be a precise and accurate description of the specific reasoning error you identified." 

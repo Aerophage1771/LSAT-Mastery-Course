@@ -9,24 +9,25 @@ export const Lesson4_Question24: Lesson = {
   id: "50-4",
   title: "Question 24: Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-108-S-1-P-4-Q-24" },
+    { type: 'accordion', title: 'Read Passage (PT-108-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 24: Inference Breakdown (PT-108-S-1-P-4-Q-24)" },
     { type: 'blockquote', text: "**Question:** According to the passage, mathematics can be considered a language because it" },
     { type: 'options', items: [
-      "(A) conveys meaning in the same way that metaphors do [5.0%]",
-      "(B) constitutes a systematic collection of signs [65.0%] (Correct)",
-      "(C) corresponds exactly to aspects of physical phenomena [5.0%]",
-      "(D) confers explanatory power on scientific theories [18.0%]",
-      "(E) relies on previously agreed-upon conventions [6.0%]"
+      "(A) conveys meaning in the same way that metaphors do",
+      "(B) constitutes a systematic collection of signs (Correct)",
+      "(C) corresponds exactly to aspects of physical phenomena",
+      "(D) confers explanatory power on scientific theories",
+      "(E) relies on previously agreed-upon conventions"
     ]},
-    { type: 'h3', text: "Explanation" },
-    { type: 'paragraph', text: "The passage begins by explaining how some thinkers view mathematics as a type of language. It provides a specific definition from this perspective. According to these thinkers, mathematics is a constructed system of signs governed by its own internal rules." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This inference question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'What it means to “explain” something in science often comes down...' and 'In pursuing the implications of this theory, linguists have reached the...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A)", text: "The passage mentions that a mathematical statement can be seen as an analogy or metaphor, but this is a description of its function as an explanation, not the core reason it is considered a language." },
-      { title: "(B)", text: "This answer correctly identifies the definition of mathematics as a language that is explicitly stated in the passage. The text says that mathematics is a 'systematic contrivance of signs,' which directly matches the idea of a 'systematic collection of signs.'" },
-      { title: "(C)", text: "The passage presents the idea that mathematics corresponds exactly to the world as one side of a debate. It actually focuses more on the view that this correspondence is not guaranteed." },
-      { title: "(D)", text: "While the passage states that mathematics is used to explain things in science, this describes its application or purpose. The reason it is considered a language is based on its structure as a system of signs." },
-      { title: "(E)", text: "The idea of 'agreed-upon conventions' is introduced later in the passage as part of a linguistic debate. It is not given as the primary definition of why mathematics itself is considered a language." }
+      { title: "(A)", text: "The passage mentions that a mathematical statement can be seen as an analogy or metaphor, but this is a description of its function as an explanation, not the core reason it is considered a language. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(B)", text: "This answer correctly identifies the definition of mathematics as a language that is explicitly stated in the passage. The text says that mathematics is a 'systematic contrivance of signs,' which directly matches the idea of a 'systematic collection of signs.' Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(C)", text: "The passage presents the idea that mathematics corresponds exactly to the world as one side of a debate. It actually focuses more on the view that this correspondence is not guaranteed. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(D)", text: "While the passage states that mathematics is used to explain things in science, this describes its application or purpose. The reason it is considered a language is based on its structure as a system of signs. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(E)", text: "The idea of 'agreed-upon conventions' is introduced later in the passage as part of a linguistic debate. It is not given as the primary definition of why mathematics itself is considered a language. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." }
     ]}
   ]
 };

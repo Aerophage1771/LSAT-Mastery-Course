@@ -12,19 +12,19 @@ export const Lesson4_Question16: Lesson = {
   id: "41-4",
   title: "Question 16: Author Attitude",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-3-Q-16" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-3)', content: passageText },
+    { type: 'h3', text: "Question 16: Author Attitude Breakdown (PT-128-S-1-P-3-Q-16)" },
     { type: 'blockquote', text: "**Question:** The author’s attitude toward the studies mentioned in the second sentence of the passage is most likely" },
     { type: 'options', items: [
-      "(A) overall agreement with their conclusion about influences on cultural identity [92.0%] (Correct)",
-      "(B) reservation over their preoccupation with colonialism [1.0%]",
-      "(C) skepticism toward the relevance of the examples they cite [2.0%]",
-      "(D) concern that they fail to explain ancient Greek culture [2.0%]",
-      "(E) unqualified disagreement with their insistence that cultures are monolithic [3.0%]"
+      "(A) overall agreement with their conclusion about influences on cultural identity (Correct)",
+      "(B) reservation over their preoccupation with colonialism",
+      "(C) skepticism toward the relevance of the examples they cite",
+      "(D) concern that they fail to explain ancient Greek culture",
+      "(E) unqualified disagreement with their insistence that cultures are monolithic"
     ]},
-    { type: 'paragraph', text: "This question asks for the author's attitude toward the \"recent studies\" mentioned in the second sentence. We must determine whether the author agrees with, disagrees with, or is neutral toward the conclusions of these studies." },
-    { type: 'paragraph', text: "The second sentence presents the core idea from these studies: \"the anxieties and agendas of the present exert an extraordinary influence on the national identities we construct from the cultural past.\" To determine the author's attitude, we must look at how the author uses this idea. The author immediately follows this sentence with phrases like \"For example...\" (introducing the revision of Greek history), \"Another example is...\" (introducing manufactured British traditions), and \"Similar constructions have also been made...\" (introducing the Algerian case)." },
-    { type: 'paragraph', text: "The entire structure of the passage is a presentation of evidence that supports and validates the conclusion of these \"recent studies.\" The author is not critiquing or questioning the studies; they are using the rest of the passage to demonstrate that the studies are correct. This indicates a strong sense of agreement." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The author's stance toward the cited studies is supportive, not skeptical. The passage adopts the studies' claim and then spends the rest of the discussion supplying corroborating examples from Greek historiography, imperial tradition-making, and anticolonial identity construction. There is no qualifying language that signals meaningful reservation." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "After introducing the studies, the author immediately develops evidence that present agendas shape identity narratives. The final paragraph remains consistent with that framework by rejecting monolithic cultural claims and emphasizing hybridity across boundaries." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

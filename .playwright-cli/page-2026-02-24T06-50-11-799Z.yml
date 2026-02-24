@@ -1,0 +1,344 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - button "LSAT Mastery" [ref=e6]:
+      - img [ref=e8]
+      - generic [ref=e10]: LSAT Mastery
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - button "Course Dashboard" [ref=e14]:
+          - img [ref=e15]
+          - generic [ref=e20]: Course Dashboard
+        - button "Question Bank" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e24]: Question Bank
+        - button "Templates" [ref=e25]:
+          - img [ref=e26]
+          - generic [ref=e29]: Templates
+      - generic [ref=e31]:
+        - heading "Logical Reasoning" [level=3] [ref=e32]
+        - button "1.Argument Part" [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]: "1."
+            - text: Argument Part
+        - button "2.Main Conclusion" [ref=e38]:
+          - generic [ref=e39]:
+            - generic [ref=e40]: "2."
+            - text: Main Conclusion
+        - button "3.Method of Reasoning" [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]: "3."
+            - text: Method of Reasoning
+        - button "4.Parallel Reasoning" [ref=e46]:
+          - generic [ref=e47]:
+            - generic [ref=e48]: "4."
+            - text: Parallel Reasoning
+        - button "5.Flaw" [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e52]: "5."
+            - text: Flaw
+        - button "6.Parallel Flaw" [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: "6."
+            - text: Parallel Flaw
+        - button "7.Evaluate the Argument" [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: "7."
+            - text: Evaluate the Argument
+        - button "8.Weaken" [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: "8."
+            - text: Weaken
+        - button "9.Strengthen" [ref=e66]:
+          - generic [ref=e67]:
+            - generic [ref=e68]: "9."
+            - text: Strengthen
+        - button "10.Sufficient Assumption" [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: "10."
+            - text: Sufficient Assumption
+        - button "11.Necessary Assumption" [ref=e74]:
+          - generic [ref=e75]:
+            - generic [ref=e76]: "11."
+            - text: Necessary Assumption
+        - button "12.Principle-Strengthen" [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e80]: "12."
+            - text: Principle-Strengthen
+        - button "13.Principle - Apply" [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e84]: "13."
+            - text: Principle - Apply
+        - button "14.Principle - Generalization" [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: "14."
+            - text: Principle - Generalization
+        - button "15.Fill in the Blank" [ref=e90]:
+          - generic [ref=e91]:
+            - generic [ref=e92]: "15."
+            - text: Fill in the Blank
+        - button "16.Most Strongly Supported" [ref=e94]:
+          - generic [ref=e95]:
+            - generic [ref=e96]: "16."
+            - text: Most Strongly Supported
+        - button "17.Must Be True" [ref=e98]:
+          - generic [ref=e99]:
+            - generic [ref=e100]: "17."
+            - text: Must Be True
+        - button "18.Must Be False" [ref=e102]:
+          - generic [ref=e103]:
+            - generic [ref=e104]: "18."
+            - text: Must Be False
+        - button "19.Paradox / Explain" [ref=e106]:
+          - generic [ref=e107]:
+            - generic [ref=e108]: "19."
+            - text: Paradox / Explain
+        - button "20.Agree / Disagree (Point at Issue)" [ref=e110]:
+          - generic [ref=e111]:
+            - generic [ref=e112]: "20."
+            - text: Agree / Disagree (Point at Issue)
+        - button "55.Conditional Reasoning" [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e116]: "55."
+            - text: Conditional Reasoning
+        - button "59.LSAT Math" [ref=e118]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: "59."
+            - text: LSAT Math
+        - heading "Reading Comprehension" [level=3] [ref=e121]
+        - 'button "21.RC: Main Idea" [ref=e123]':
+          - generic [ref=e124]:
+            - generic [ref=e125]: "21."
+            - text: "RC: Main Idea"
+        - 'button "22.RC: Inference" [ref=e127]':
+          - generic [ref=e128]:
+            - generic [ref=e129]: "22."
+            - text: "RC: Inference"
+        - 'button "23.RC: Analogy" [ref=e131]':
+          - generic [ref=e132]:
+            - generic [ref=e133]: "23."
+            - text: "RC: Analogy"
+        - 'button "24.RC: Application" [ref=e135]':
+          - generic [ref=e136]:
+            - generic [ref=e137]: "24."
+            - text: "RC: Application"
+        - 'button "25.RC: Approach" [ref=e139]':
+          - generic [ref=e140]:
+            - generic [ref=e141]: "25."
+            - text: "RC: Approach"
+        - 'button "26.RC: Author Attitude" [ref=e143]':
+          - generic [ref=e144]:
+            - generic [ref=e145]: "26."
+            - text: "RC: Author Attitude"
+        - 'button "27.RC: Author Viewpoint" [ref=e147]':
+          - generic [ref=e148]:
+            - generic [ref=e149]: "27."
+            - text: "RC: Author Viewpoint"
+        - 'button "28.RC: Complete the Passage" [ref=e151]':
+          - generic [ref=e152]:
+            - generic [ref=e153]: "28."
+            - text: "RC: Complete the Passage"
+        - 'button "29.RC: 3rd-Party Viewpoint" [ref=e155]':
+          - generic [ref=e156]:
+            - generic [ref=e157]: "29."
+            - text: "RC: 3rd-Party Viewpoint"
+        - 'button "30.RC: Passage Principle" [ref=e159]':
+          - generic [ref=e160]:
+            - generic [ref=e161]: "30."
+            - text: "RC: Passage Principle"
+        - 'button "31.RC: Phrase Meaning" [ref=e163]':
+          - generic [ref=e164]:
+            - generic [ref=e165]: "31."
+            - text: "RC: Phrase Meaning"
+        - 'button "32.RC: Phrase Function" [ref=e167]':
+          - generic [ref=e168]:
+            - generic [ref=e169]: "32."
+            - text: "RC: Phrase Function"
+        - 'button "33.RC: Paragraph Function" [ref=e171]':
+          - generic [ref=e172]:
+            - generic [ref=e173]: "33."
+            - text: "RC: Paragraph Function"
+        - 'button "34.RC: Passage Function" [ref=e175]':
+          - generic [ref=e176]:
+            - generic [ref=e177]: "34."
+            - text: "RC: Passage Function"
+        - 'button "35.RC: Relationship" [ref=e179]':
+          - generic [ref=e180]:
+            - generic [ref=e181]: "35."
+            - text: "RC: Relationship"
+        - 'button "36.RC: Structure" [ref=e183]':
+          - generic [ref=e184]:
+            - generic [ref=e185]: "36."
+            - text: "RC: Structure"
+        - 'button "37.RC: Title" [ref=e187]':
+          - generic [ref=e188]:
+            - generic [ref=e189]: "37."
+            - text: "RC: Title"
+        - 'button "38.RC: Weaken-Strengthen" [ref=e191]':
+          - generic [ref=e192]:
+            - generic [ref=e193]: "38."
+            - text: "RC: Weaken-Strengthen"
+        - 'button "39.RC: Practice Passage 1" [ref=e195]':
+          - generic [ref=e196]:
+            - generic [ref=e197]: "39."
+            - text: "RC: Practice Passage 1"
+        - 'button "40.RC: Practice Passage 2" [ref=e199]':
+          - generic [ref=e200]:
+            - generic [ref=e201]: "40."
+            - text: "RC: Practice Passage 2"
+        - 'button "41.RC: Practice Passage 3" [ref=e203]':
+          - generic [ref=e204]:
+            - generic [ref=e205]: "41."
+            - text: "RC: Practice Passage 3"
+        - 'button "42.RC: Practice Passage 4" [ref=e207]':
+          - generic [ref=e208]:
+            - generic [ref=e209]: "42."
+            - text: "RC: Practice Passage 4"
+        - 'button "43.RC: Practice Passage 5" [ref=e211]':
+          - generic [ref=e212]:
+            - generic [ref=e213]: "43."
+            - text: "RC: Practice Passage 5"
+        - 'button "44.RC: Practice Passage 6" [ref=e215]':
+          - generic [ref=e216]:
+            - generic [ref=e217]: "44."
+            - text: "RC: Practice Passage 6"
+        - 'button "45.RC: Practice Passage 7" [ref=e219]':
+          - generic [ref=e220]:
+            - generic [ref=e221]: "45."
+            - text: "RC: Practice Passage 7"
+        - generic [ref=e222]:
+          - 'button "46.RC: Practice Passage 8" [active] [ref=e223]':
+            - generic [ref=e224]:
+              - generic [ref=e225]: "46."
+              - text: "RC: Practice Passage 8"
+            - img [ref=e2395]
+          - generic [ref=e2397]:
+            - button "Passage Analysis" [ref=e2398]:
+              - img [ref=e2400]
+              - generic [ref=e2403]: Passage Analysis
+            - 'button "Question 22: Passage Purpose" [ref=e2404]':
+              - img [ref=e2406]
+              - generic [ref=e2408]: "Question 22: Passage Purpose"
+            - 'button "Question 23: Inference" [ref=e2409]':
+              - img [ref=e2411]
+              - generic [ref=e2413]: "Question 23: Inference"
+            - 'button "Question 24: Relationship" [ref=e2414]':
+              - img [ref=e2416]
+              - generic [ref=e2418]: "Question 24: Relationship"
+            - 'button "Question 25: Analogy" [ref=e2419]':
+              - img [ref=e2421]
+              - generic [ref=e2423]: "Question 25: Analogy"
+            - 'button "Question 26: Author Viewpoint" [ref=e2424]':
+              - img [ref=e2426]
+              - generic [ref=e2428]: "Question 26: Author Viewpoint"
+            - 'button "Question 27: Approach" [ref=e2429]':
+              - img [ref=e2431]
+              - generic [ref=e2433]: "Question 27: Approach"
+        - button "47.RC Quick Reference Guide" [ref=e227]:
+          - generic [ref=e228]:
+            - generic [ref=e229]: "47."
+            - text: RC Quick Reference Guide
+        - heading "Advanced Passages" [level=3] [ref=e230]
+        - 'button "50.Advanced Passage 1: Mathematics as Language" [ref=e232]':
+          - generic [ref=e233]:
+            - generic [ref=e234]: "50."
+            - text: "Advanced Passage 1: Mathematics as Language"
+        - 'button "51.Advanced Passage 2: Bentham''s Legal Reforms" [ref=e236]':
+          - generic [ref=e237]:
+            - generic [ref=e238]: "51."
+            - text: "Advanced Passage 2: Bentham's Legal Reforms"
+        - 'button "52.Advanced Passage 3: Critical Legal Studies" [ref=e240]':
+          - generic [ref=e241]:
+            - generic [ref=e242]: "52."
+            - text: "Advanced Passage 3: Critical Legal Studies"
+        - 'button "54.Advanced Passage 4: Dworkin''s Legal Theory" [ref=e244]':
+          - generic [ref=e245]:
+            - generic [ref=e246]: "54."
+            - text: "Advanced Passage 4: Dworkin's Legal Theory"
+        - 'button "56.Advanced Passage 5: Psychology of Risk" [ref=e248]':
+          - generic [ref=e249]:
+            - generic [ref=e250]: "56."
+            - text: "Advanced Passage 5: Psychology of Risk"
+        - 'button "57.Advanced Passage 6: Historical Sociology" [ref=e252]':
+          - generic [ref=e253]:
+            - generic [ref=e254]: "57."
+            - text: "Advanced Passage 6: Historical Sociology"
+        - 'button "58.Advanced Passage 7: Digitalization and Copyright Law" [ref=e256]':
+          - generic [ref=e257]:
+            - generic [ref=e258]: "58."
+            - text: "Advanced Passage 7: Digitalization and Copyright Law"
+        - button "100.Format showcase" [ref=e260]:
+          - generic [ref=e261]:
+            - generic [ref=e262]: "100."
+            - text: Format showcase
+    - generic [ref=e264]: © 2025 LSAT Mastery Course
+  - generic [ref=e265]:
+    - banner [ref=e266]:
+      - generic [ref=e267]:
+        - generic [ref=e268]:
+          - button "Dashboard" [ref=e269]
+          - img [ref=e2434]
+          - generic [ref=e2436]: "Module 46: RC: Practice Passage 8"
+        - generic [ref=e2437]:
+          - generic [ref=e2438]: Previous
+          - button "Next" [ref=e2439]:
+            - generic [ref=e2440]: Next
+            - img [ref=e2441]
+      - button "Full Course Export" [ref=e271]:
+        - img [ref=e272]
+        - generic [ref=e275]: Full Course Export
+    - main [ref=e276]:
+      - generic [ref=e2444]:
+        - generic [ref=e2446]:
+          - generic [ref=e2447]:
+            - generic [ref=e2448]:
+              - img [ref=e2449]
+              - paragraph [ref=e2451]: Lesson
+            - heading "Passage Analysis" [level=1] [ref=e2452]
+          - generic [ref=e2455]:
+            - generic [ref=e2456]: Lesson
+            - button "Copy Text" [ref=e2458]:
+              - img [ref=e2459]
+              - generic [ref=e2462]: Copy Text
+            - button "Export As" [ref=e2464]:
+              - img [ref=e2465]
+              - generic [ref=e2468]: Export As
+              - img [ref=e2469]
+        - main [ref=e2472]:
+          - generic [ref=e2473]:
+            - generic [ref=e2474]:
+              - button "Passage · PT-141-S-1-P-4" [expanded] [ref=e2475]:
+                - generic [ref=e2476]: Passage · PT-141-S-1-P-4
+                - img [ref=e2477]
+              - generic [ref=e2480]:
+                - paragraph [ref=e2481]: There are two principles that are fundamental to a theory of justice regarding property. The principle of justice in acquisition specifies the conditions under which someone can legitimately come to own something that was previously not owned by anyone. The principle of justice in transfer specifies the conditions under which the transfer of property from one person to another is justified.
+                - paragraph [ref=e2482]: "Given such principles, if the world were wholly just, the following definition would exhaustively cover the subject of justice regarding property:"
+                - paragraph [ref=e2483]: 1. A person who acquires property in accordance with the principle of justice in acquisition is entitled to that property.
+                - paragraph [ref=e2484]: 2. A person who acquires property in accordance with the principle of justice in transfer, from someone else who is entitled to the property, is entitled to the property.
+                - paragraph [ref=e2485]: 3. No one is entitled to any property except by (repeated) applications of 1 and 2.
+                - paragraph [ref=e2486]: However, not all actual situations are generated in accordance with the principles of justice in acquisition and justice in transfer. Some people steal from others or defraud them, for example. The existence of past injustice raises the issue of the rectification of injustice. If past injustice has shaped present ownership in various ways, what, if anything, ought to be done to rectify that injustice? A principle of rectification would use historical information about previous situations and injustices done in them, and information about the actual course of events that flowed from these injustices, to produce a description of the property ownership that should have resulted. Actual ownership of property must then be brought into conformity with this description.
+                - paragraph [ref=e2488]: Passage B
+                - paragraph [ref=e2490]: In 1790, the United States Congress passed the Indian Nonintercourse Act, which requires that all transfers of lands from Native Americans to others be approved by the federal government. The law has not been changed in any relevant respect, and it remains in effect today. Its purpose is clear. It was meant to guarantee security to Native Americans against fraudulent acquisition by others of the Native Americans’ land holdings. Several suits have been initiated by Native American tribes for recovery of lands held by them when the Nonintercourse Act took effect.
+                - paragraph [ref=e2491]: "One natural (one might almost say obvious) way of reasoning about Native American claims to land in North America is this: Native Americans were the first human occupants of this land. Before the European invasion of North America, the land belonged to them. In the course of that invasion and its aftermath, the land was illicitly taken from them. The current owners lack a well-founded right to the land, which now lies illicitly in their hands. Ideally, the land should be restored to its rightful owners. This may be impractical; compromises might have to be made. But the original wrong can most easily be righted by returning the land to them—or by returning it wherever that is feasible."
+            - generic [ref=e2492]:
+              - img [ref=e2493]
+              - 'heading "Passage Analysis: Property Justice and Rectification (PT-141-S-1-P-4)" [level=3] [ref=e2497]'
+            - paragraph [ref=e2498]: This comparative pair links abstract political philosophy to a concrete historical dispute. Passage A builds a normative framework for just ownership, and Passage B applies that framework to Native American land claims.
+            - paragraph [ref=e2499]: Approach this set by mapping principles to facts. First isolate the rule structure in Passage A, then test how Passage B's historical narrative satisfies each condition in sequence.
+            - separator [ref=e2500]
+            - 'heading "Passage A: Rule Structure for Property Justice" [level=4] [ref=e2501]'
+            - paragraph [ref=e2502]: "Passage A defines two baseline principles for a just world: just acquisition and just transfer. It then adds a third principle, rectification, to address historical chains that include theft or fraud."
+            - paragraph [ref=e2503]: Its argumentative form is conditional. If current holdings descend from injustice, legitimacy requires historical reconstruction plus corrective action to align present ownership with what should have occurred.
+            - 'heading "Passage B: Historical Application to Land Claims" [level=4] [ref=e2504]'
+            - paragraph [ref=e2505]: Passage B presents a legal and historical case involving the Nonintercourse Act and Native American land transfers. The narrative is organized to establish original entitlement, subsequent illicit transfer, and resulting defect in current title.
+            - paragraph [ref=e2506]: The proposed remedy is restoration where feasible, with practical compromise acknowledged as implementation detail rather than rejection of the principle.
+            - 'heading "Synthesis: Abstract Principle Meets Concrete Injustice" [level=4] [ref=e2507]'
+            - paragraph [ref=e2508]: The passages form a theory-to-case structure. Passage A provides the normative grammar, and Passage B supplies empirical facts that activate the rectification requirement.
+            - list [ref=e2509]:
+              - listitem [ref=e2510]: Original occupancy claim maps to justice in acquisition.
+              - listitem [ref=e2511]: Illicit seizure maps to violation of justice in transfer.
+              - listitem [ref=e2512]: Restoration demand maps to rectification of historical injustice.
+            - generic [ref=e2513]:
+              - generic [ref=e2514]:
+                - img [ref=e2516]
+                - heading "Summary of the Argument" [level=5] [ref=e2518]
+              - paragraph [ref=e2520]: Passage A argues that just property systems require rectification when historical transfers were unjust. Passage B applies that framework to Native American land claims, concluding that current ownership is morally defective where original entitlement was displaced through illicit transfer.

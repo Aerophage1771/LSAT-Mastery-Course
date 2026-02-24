@@ -1,9 +1,10 @@
 import { ModuleData } from '../types';
 import { Lesson1_Introduction } from './module18/Lesson1_Introduction';
 import { Lesson2_StepByStepGuide } from './module18/Lesson2_StepByStepGuide';
-import { Lesson3_Drill_ConditionalBreakers } from './module18/Lesson3_Drill_ConditionalBreakers';
-import { Lesson4_Drill_QuantifierClashes } from './module18/Lesson4_Drill_QuantifierClashes';
-import { Lesson5_Drill_ExclusiveBoundaries } from './module18/Lesson5_Drill_ExclusiveBoundaries';
+import { Lesson3_FieldGuide } from './module18/Lesson3_FieldGuide';
+import { Lesson4_Drill_ConditionalBreakers } from './module18/Lesson4_Drill_ConditionalBreakers';
+import { Lesson5_Drill_QuantifierClashes } from './module18/Lesson5_Drill_QuantifierClashes';
+import { Lesson6_Drill_ExclusiveBoundaries } from './module18/Lesson6_Drill_ExclusiveBoundaries';
 
 export const Module18: ModuleData = {
   id: 18,
@@ -14,8 +15,9 @@ export const Module18: ModuleData = {
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,
-    Lesson3_Drill_ConditionalBreakers,
-    Lesson4_Drill_QuantifierClashes,
-    Lesson5_Drill_ExclusiveBoundaries
+    Lesson3_FieldGuide,
+    Lesson4_Drill_ConditionalBreakers,
+    Lesson5_Drill_QuantifierClashes,
+    Lesson6_Drill_ExclusiveBoundaries
   ]
 };

@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "2-2",
   title: "Step-by-Step Guide",
+  subtitle: "A practical process for identifying the main conclusion with speed and accuracy.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Main Conclusion' },
     { type: 'paragraph', text: "This section provides a clear, step-by-step process for solving any Main Conclusion question. The goal is to move from the stimulus to the correct answer choice efficiently and accurately by focusing on the argument's structure." },

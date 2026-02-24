@@ -10,24 +10,19 @@ export const Lesson7_Question11: Lesson = {
   id: "40-7",
   title: "Question 11: Application",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-2-Q-11" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 11: Application Breakdown (PT-128-S-1-P-2-Q-11)" },
     { type: 'blockquote', text: "**Question:** Which one of the following sentences could most logically be appended to the end of the last paragraph of the passage?" },
     { type: 'options', items: [
-      "(A) Only when today’s bankruptcy laws are ultimately seen as inadequate on a large scale will bankruptcy legislation return to its original intent. [2.0%]",
-      "(B) Punishment is no longer the primary goal of bankruptcy law, even if some of its side effects still function punitively. [86.0%] (Correct)",
-      "(C) Since leniency serves the public interest in bankruptcy law, it is likely to do so in criminal law as well. [1.0%]",
-      "(D) Future bankruptcy legislation could include punitive measures, but only if such measures ultimately benefit creditors. [8.0%]",
-      "(E) Today’s bankruptcy laws place the burden of insolvency squarely on the shoulders of creditors, in marked contrast to the antiquated laws that weighed heavily on debtors. [3.0%]"
+      "(A) Only when today’s bankruptcy laws are ultimately seen as inadequate on a large scale will bankruptcy legislation return to its original intent.",
+      "(B) Punishment is no longer the primary goal of bankruptcy law, even if some of its side effects still function punitively. (Correct)",
+      "(C) Since leniency serves the public interest in bankruptcy law, it is likely to do so in criminal law as well.",
+      "(D) Future bankruptcy legislation could include punitive measures, but only if such measures ultimately benefit creditors.",
+      "(E) Today’s bankruptcy laws place the burden of insolvency squarely on the shoulders of creditors, in marked contrast to the antiquated laws that weighed heavily on debtors."
     ]},
-    { type: 'paragraph', text: "This question asks for the sentence that could most logically be appended to the end of the last paragraph. A fitting concluding sentence should summarize the key ideas of that paragraph and provide a sense of closure for the entire passage." },
-    { type: 'paragraph', text: "The final paragraph makes these key points:" },
-    { type: 'list', items: [
-      "The primary goal of modern bankruptcy law has shifted to serving the \"public good\" by ensuring \"continued engagement in productive economic activity.\"",
-      "However, some \"strictures\" of modern bankruptcy (like public records) \"may still serve a punitive function.\"",
-      "Despite these remnants, the law is \"designed primarily\" to restore economic health and help creditors collect."
-    ]},
-    { type: 'paragraph', text: "The central tension in the paragraph is the shift in the primary goal (from punishment to remedy) while acknowledging that some punitive side effects still exist. A good concluding sentence should capture this summary." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "An appended sentence must function like a final synthesis of the last paragraph, not a new claim. The paragraph's nuance is that modern bankruptcy law is no longer primarily punitive, yet some punitive side effects remain through public records and credit reporting. So the best completion must preserve both sides of that nuance while reaffirming that productive economic continuation is the central design." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The passage concedes residual punishment: some strictures \"may still serve a punitive function,\" but clarifies priority: modern laws are \"designed primarily to assure continued engagement in productive economic activity.\"" },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

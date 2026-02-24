@@ -8,22 +8,21 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h2', text: 'Question Goal' },
     {
       type: 'callout',
-      text: '**Identify the critical piece of information** that would help determine whether an argument\'s conclusion is logically sound.',
+      text: '**Identify the critical piece of information that would help determine whether an argument\'s conclusion is logically sound.** What is the missing link that would either prove the argument works or expose its failure?',
       variant: 'goal',
     },
-    { type: 'paragraph', text: 'This module covers Evaluate the Argument.' },
     { type: 'hr' },
     { type: 'h2', text: 'Introduction' },
-    { type: 'paragraph', text: '**The Bridge to Evaluation**\n\nEvaluate the Argument questions act as a bridge between understanding an argument\'s structure and testing its validity. Most LSAT arguments are not logically airtight; there is usually a ""logical gap"" where the premises stop and the conclusion begins, but the two haven\'t quite met.' },
+    { type: 'paragraph', text: '**The Bridge to Evaluation**\n\nEvaluate the Argument questions act as a bridge between understanding an argument\'s structure and testing its validity. Most LSAT arguments are not logically airtight; there is usually a "logical gap" where the premises stop and the conclusion begins, but the two haven\'t quite met.' },
     { type: 'paragraph', text: 'Your task is to identify the one question whose answer would most effectively help you decide if the reasoning is sound. Think of this as a hybrid between a Strengthen and a Weaken question. You are looking for information that has the power to either bridge the gap or widen it, depending on what the actual answer turns out to be.' },
     { type: 'hr' },
     { type: 'h2', text: 'Common Question Stems' },
-    { type: 'paragraph', text: 'You can recognize these questions by their focus on what would be ""helpful,"" ""useful,"" or ""important"" to know or determine. Typical phrasing includes:' },
+    { type: 'paragraph', text: 'You can recognize these questions by their focus on what would be "helpful," "useful," or "important" to know or determine. Typical phrasing includes:' },
     { type: 'list', items: [
-      '""""The answer to which one of the following questions would contribute most to an evaluation of the argument?""""',
-      '""""Knowing which one of the following would be most useful in evaluating the argument?""""',
-      '""""Which one of the following would be most important to determine in evaluating the argument?""""',
-      '""""The answer to which one of the following questions would be most helpful in order to evaluate the argument?""""'
+      '"The answer to which one of the following questions would contribute most to an evaluation of the argument?"',
+      '"Knowing which one of the following would be most useful in evaluating the argument?"',
+      '"Which one of the following would be most important to determine in evaluating the argument?"',
+      '"The answer to which one of the following questions would be most helpful in order to evaluate the argument?"'
     ]},
     { type: 'hr' },
     { type: 'h2', text: 'Core Concepts' },
@@ -33,7 +32,7 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'paragraph', text: 'The most effective tool for this question type is the **Variance Test**. It allows you to measure how much impact a piece of information would have on the argument. To apply it:' },
     { type: 'list', ordered: true, items: [
       '**Identify the Core Argument:** Isolate the Premises and the Conclusion.',
-      '**Supply Polar Opposites:** Take an answer choice (which is phrased as a question) and provide two extreme, opposite answers (e.g., """"Yes"""" vs. """"No,"""" or """"100%"""" vs. """"0%"""").',
+      '**Supply Polar Opposites:** Take an answer choice (which is phrased as a question) and provide two extreme, opposite answers (e.g., "Yes" vs. "No," or "100%" vs. "0%").',
       '**Check the Impact:** Assess how those opposite answers affect the conclusion.'
     ]},
     { type: 'paragraph', text: "If one answer strongly **strengthens** the conclusion and the other strongly **weakens** it, you have found the **correct** choice.\nIf the conclusion remains essentially the same regardless of the answer, the choice is irrelevant and **incorrect**." },

@@ -9,26 +9,28 @@ export const Lesson8_Question21: Lesson = {
   id: "52-8",
   title: "Question 21: Inference (3rd-Party Viewpoint)",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 21 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-110-S-4-P-3)', content: passageText },
+    { type: 'h3', text: "Question 21: Inference (3rd-Party Viewpoint) Breakdown (PT-110-S-4-P-3-Q-21)" },
     { type: 'blockquote', text: "**Question:** It can be inferred from the passage that proponents of the Critical Legal Studies movement would be most likely to hold which one of the following views about the law?" },
     { type: 'options', items: [
-      "(A) It incorporates moral principles in order to yield definitive solutions to legal problems. [17.0%]",
-      "(B) It does not necessarily imply approval of any policies or values. [10.0%]",
-      "(C) It is insufficient in itself to determine the answer to a legal question. [62.0%] (Correct)",
-      "(D) It is comparable to the application of rules in a game. [4.0%]",
-      "(E) It can be used to determine the best choice between conflicting values. [7.0%]"
+      "(A) It incorporates moral principles in order to yield definitive solutions to legal problems.",
+      "(B) It does not necessarily imply approval of any policies or values.",
+      "(C) It is insufficient in itself to determine the answer to a legal question. (Correct)",
+      "(D) It is comparable to the application of rules in a game.",
+      "(E) It can be used to determine the best choice between conflicting values."
     ]},
-    { type: 'paragraph', text: "This question asks us to infer the view of the CLS proponents. The passage provides several descriptions of their beliefs. Most relevant is the second paragraph: 'CLS proponents hold that the existence of conflicting values in the law implies the absence of any uniquely right solution to legal cases. CLS argues that these conflicting values generate equally plausible but opposing answers... the choice... must necessarily be arbitrary or irrational.' This directly implies that the law itself, with its conflicting values, is not enough to produce a single, definitive answer." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This inference (3rd-party viewpoint) question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Philosopher Denise Meyerson views the Critical Legal Studies (CLS) movement as...' and 'But Meyerson replies that such considerations may be viewed as part...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "This is the opposite of the CLS view. The passage says CLS believes that conflicting values prevent the law from yielding 'uniquely right' or definitive solutions.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This statement reflects Meyerson's position, not the CLS view. The passage notes that a CLS scholar would argue that applying legal rules requires endorsing the policies and values behind them.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "This choice accurately reflects the core belief of the CLS movement as described in the passage. The passage states that CLS argues that conflicting values in the law create equally good but opposing answers, meaning the law by itself cannot provide a single, definitive solution.", badge: "Correct", badgeColor: "green" },
-        { title: "(D)", text: "This is Meyerson's analogy, which the passage explicitly states a CLS scholar would reject. CLS proponents do not see legal cases as being similar to games.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "This is Meyerson’s argument against the CLS position. She believes conflicting values can be ranked to find a resolution, while CLS believes these conflicts make legal choices arbitrary, not a matter of finding the 'best' choice.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "This is the opposite of the CLS view. The passage says CLS believes that conflicting values prevent the law from yielding 'uniquely right' or definitive solutions. Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This statement reflects Meyerson's position, not the CLS view. The passage notes that a CLS scholar would argue that applying legal rules requires endorsing the policies and values behind them. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "This choice accurately reflects the core belief of the CLS movement as described in the passage. The passage states that CLS argues that conflicting values in the law create equally good but opposing answers, meaning the law by itself cannot provide a single, definitive solution. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(D)", text: "This is Meyerson's analogy, which the passage explicitly states a CLS scholar would reject. CLS proponents do not see legal cases as being similar to games. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "This is Meyerson’s argument against the CLS position. She believes conflicting values can be ranked to find a resolution, while CLS believes these conflicts make legal choices arbitrary, not a matter of finding the 'best' choice. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

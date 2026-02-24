@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import { Layout } from './components/Layout';
 import { LessonViewer } from './components/LessonViewer';
 import FormatShowcaseLesson from './components/FormatShowcaseLesson';
+import Module1Lesson1Introduction from './components/customLessons/Module1Lesson1Introduction';
+import Module1Lesson4PremisesVsConclusions from './components/customLessons/Module1Lesson4PremisesVsConclusions';
+import Module2Lesson1Introduction from './components/customLessons/Module2Lesson1Introduction';
 import { Dashboard } from './components/Dashboard';
 import { QuestionBankView } from './components/QuestionBankView';
+import { TemplatesView } from './components/TemplatesView';
 import { ModuleData } from './types';
 
 // Import all modules
@@ -100,7 +104,7 @@ const modules: ModuleData[] = [
 const questionBankSourceModules: ModuleData[] = [Module49, Module52, Module53];
 const allModulesForViewing: ModuleData[] = [...modules, ...questionBankSourceModules];
 
-export type ActiveView = 'dashboard' | 'questionBank' | 'lesson';
+export type ActiveView = 'dashboard' | 'questionBank' | 'templates' | 'lesson';
 
 const App: React.FC = () => {
   const [activeView, setActiveView] = useState<ActiveView>('dashboard');
@@ -143,6 +147,12 @@ const App: React.FC = () => {
     setActiveLessonId(null);
   };
 
+  const handleGoToTemplates = () => {
+    setActiveView('templates');
+    setActiveModuleId(null);
+    setActiveLessonId(null);
+  };
+
   const handleGoToLesson = (moduleId: number, lessonId: string) => {
     setActiveView('lesson');
     setActiveModuleId(moduleId);
@@ -159,6 +169,7 @@ const App: React.FC = () => {
       onSelectLesson={setActiveLessonId}
       onGoHome={handleGoHome}
       onGoToQuestionBank={handleGoToQuestionBank}
+      onGoToTemplates={handleGoToTemplates}
       lessonNav={
         activeView === 'lesson' && activeModuleId !== null && activeLesson
           ? {
@@ -174,6 +185,7 @@ const App: React.FC = () => {
       {activeView === 'dashboard' && (
         <Dashboard modules={modules} onSelectModule={handleModuleSelect} />
       )}
+      {activeView === 'templates' && <TemplatesView />}
       {activeView === 'questionBank' && (
         <QuestionBankView
           onGoToLesson={handleGoToLesson}
@@ -186,11 +198,19 @@ const App: React.FC = () => {
         activeModuleId !== null && activeLesson ? (
           activeModuleId === 100 && activeLesson.id === '100-1' ? (
             <FormatShowcaseLesson key="format-showcase" />
+          ) : activeModuleId === 1 && activeLesson.id === '1-1' ? (
+            <Module1Lesson1Introduction key="module1-lesson1-custom" />
+          ) : activeModuleId === 1 && activeLesson.id === '1-4' ? (
+            <Module1Lesson4PremisesVsConclusions key="module1-lesson4-custom" />
+          ) : activeModuleId === 2 && activeLesson.id === '2-1' ? (
+            <Module2Lesson1Introduction key="module2-lesson1-custom" />
           ) : (
             <LessonViewer
               key={activeLesson.id}
               title={activeLesson.title}
               content={activeLesson.content}
+              subtitle={activeLesson.subtitle}
+              modulePill={activeModule ? `Module ${activeModule.id} · ${activeModule.title}` : undefined}
               formatId={activeLesson.formatId}
             />
           )

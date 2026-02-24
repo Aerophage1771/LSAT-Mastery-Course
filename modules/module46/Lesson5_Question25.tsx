@@ -16,29 +16,25 @@ export const Lesson5_Question25: Lesson = {
   id: "46-5",
   title: "Question 25: Analogy",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-141-S-1-P-4-Q-25" },
+    { type: 'accordion', title: 'Read Passage (PT-141-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 25: Analogy Breakdown (PT-141-S-1-P-4-Q-25)" },
     { type: 'blockquote', text: "**Question:** Based on what can be inferred from their titles, the relationship between which one of the following pairs of documents is most analogous to the relationship between passage A and passage B?" },
     { type: 'options', items: [
-      "(A) “Card Counting for Everyone: A Can’t-Lose System for Beating the Dealer”\n“The Evils of Gambling” [2.0%]",
-      "(B) “Mayor McConnell Is Unfit to Serve”\n“Why Mayor McConnell Should be Reelected” [2.0%]",
-      "(C) “Pruning Fruit Trees: A Guide for the Novice”\n“Easy Recipes for Beginning Cooks” [3.0%]",
-      "(D) “Notable Failures of the STORM Weather Forecasting Model”\n“Meteorologists’ Best Tool Yet: The STORM Forecasting Model” [5.0%]",
-      "(E) “Fundamentals of Building Construction and Repair”\n“Engineering Report: The Repairs Needed by the Thales Building” [88.0%] (Correct)"
+      "(A) “Card Counting for Everyone: A Can’t-Lose System for Beating the Dealer”\n“The Evils of Gambling”",
+      "(B) “Mayor McConnell Is Unfit to Serve”\n“Why Mayor McConnell Should be Reelected”",
+      "(C) “Pruning Fruit Trees: A Guide for the Novice”\n“Easy Recipes for Beginning Cooks”",
+      "(D) “Notable Failures of the STORM Weather Forecasting Model”\n“Meteorologists’ Best Tool Yet: The STORM Forecasting Model”",
+      "(E) “Fundamentals of Building Construction and Repair”\n“Engineering Report: The Repairs Needed by the Thales Building” (Correct)"
     ]},
-    { type: 'paragraph', text: "This is an analogy question. The task is to identify a pair of document titles whose relationship is \"most analogous\" to the relationship between Passage A and Passage B. To solve this, we must first precisely define the relationship between the original passages." },
-    { type: 'list', items: [
-      "**Passage A** presents a general, abstract, philosophical theory. It outlines the \"fundamental principles\" of justice in property, including a principle for how to *fix* past injustices (the \"Principle of Rectification\").",
-      "**Passage B** presents a specific, concrete, real-world case. It applies the *kind* of reasoning from Passage A to a particular problem (Native American land claims) that needs to be *fixed*."
-    ]},
-    { type: 'paragraph', text: "The core relationship is **[General Theory/Fundamental Principles of Repair] → [Specific Application/Analysis of a concrete problem needing repair]**." },
-    { type: 'paragraph', text: "Now we evaluate the answer choices to find a pair that mirrors this abstract-to-concrete, theory-to-application relationship." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This analogy question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'There are two principles that are fundamental to a theory of...' and 'But the original wrong can most easily be righted by returning...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: "Option", text: "Analysis" }, items: [
-      { title: "(A) “Card Counting for Everyone: A Can’t-Lose System for Beating the Dealer” / “The Evils of Gambling”", text: "The relationship here is one of opposition or conflicting values (a how-to guide vs. a moral condemnation). This is not the required relationship.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) “Mayor McConnell Is Unfit to Serve” / “Why Mayor McConnell Should be Reelected”", text: "This is a direct pro/con debate on a specific topic. This is a relationship of point/counterpoint, not theory/application.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) “Pruning Fruit Trees: A Guide for the Novice” / “Easy Recipes for Beginning Cooks”", text: "These are two separate, parallel guides for beginners on different subjects. One is not an application of the other.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) “Notable Failures of the STORM Weather Forecasting Model” / “Meteorologists’ Best Tool Yet: The STORM Forecasting Model”", text: "This is another point/counterpoint relationship, arguing for and against the value of a specific tool.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) “Fundamentals of Building Construction and Repair” / “Engineering Report: The Repairs Needed by the Thales Building”", text: "This pair fits the analogy perfectly.\n*   The first title, \"Fundamentals of Building Construction and Repair,\" represents a **general theory**, including principles for **fixing problems (\"Repair\")**. This is analogous to Passage A.\n*   The second title, \"Engineering Report: The Repairs Needed by the Thales Building,\" represents a **specific application** of those principles to a **concrete problem (\"The Thales Building\")** that needs **fixing (\"Repairs Needed\")**. This is analogous to Passage B.", badge: "Correct", badgeColor: "green" }
+      { title: "(A) “Card Counting for Everyone: A Can’t-Lose System for Beating the Dealer” / “The Evils of Gambling”", text: "The relationship here is one of opposition or conflicting values (a how-to guide vs. a moral condemnation). This is not the required relationship. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) “Mayor McConnell Is Unfit to Serve” / “Why Mayor McConnell Should be Reelected”", text: "This is a direct pro/con debate on a specific topic. This is a relationship of point/counterpoint, not theory/application. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) “Pruning Fruit Trees: A Guide for the Novice” / “Easy Recipes for Beginning Cooks”", text: "These are two separate, parallel guides for beginners on different subjects. One is not an application of the other. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) “Notable Failures of the STORM Weather Forecasting Model” / “Meteorologists’ Best Tool Yet: The STORM Forecasting Model”", text: "This is another point/counterpoint relationship, arguing for and against the value of a specific tool. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) “Fundamentals of Building Construction and Repair” / “Engineering Report: The Repairs Needed by the Thales Building”", text: "This pair fits the analogy perfectly.\n*   The first title, \"Fundamentals of Building Construction and Repair,\" represents a **general theory**, including principles for **fixing problems (\"Repair\")**. This is analogous to Passage A.\n*   The second title, \"Engineering Report: The Repairs Needed by the Thales Building,\" represents a **specific application** of those principles to a **concrete problem (\"The Thales Building\")** that needs **fixing (\"Repairs Needed\")**. This is analogous to Passage B. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" }
     ]}
   ]
 };

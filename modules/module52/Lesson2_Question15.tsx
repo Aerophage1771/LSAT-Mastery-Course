@@ -9,26 +9,28 @@ export const Lesson2_Question15: Lesson = {
   id: "52-2",
   title: "Question 15: Main Idea",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 15 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-110-S-4-P-3)', content: passageText },
+    { type: 'h3', text: "Question 15: Main Idea Breakdown (PT-110-S-4-P-3-Q-15)" },
     { type: 'blockquote', text: "**Question:** Which one of the following best expresses the main idea of the passage?" },
     { type: 'options', items: [
-      "(A) The arguments of the Critical Legal Studies movement are under attack not only by legal theorists, but also by thinkers in related areas such as philosophy. [1.0%]",
-      "(B) In critiquing the Critical Legal Studies movement, Meyerson charges that the positions articulated by the movement’s proponents overlook the complexity of actual legal dilemmas. [11.0%]",
-      "(C) Meyerson objects to the propositions of the Critical Legal Studies movement because she views them as being self-contradictory. [4.0%]",
-      "(D) Meyerson poses several objections to the tenets of the Critical Legal Studies movement, but her most important argument involves constructing a hierarchy of conflicting values. [8.0%]",
-      "(E) Meyerson seeks to counter the claims that are made by proponents of the Critical Legal Studies movement in their effort to challenge conventional legal theory. [76.0%] (Correct)"
+      "(A) The arguments of the Critical Legal Studies movement are under attack not only by legal theorists, but also by thinkers in related areas such as philosophy.",
+      "(B) In critiquing the Critical Legal Studies movement, Meyerson charges that the positions articulated by the movement’s proponents overlook the complexity of actual legal dilemmas.",
+      "(C) Meyerson objects to the propositions of the Critical Legal Studies movement because she views them as being self-contradictory.",
+      "(D) Meyerson poses several objections to the tenets of the Critical Legal Studies movement, but her most important argument involves constructing a hierarchy of conflicting values.",
+      "(E) Meyerson seeks to counter the claims that are made by proponents of the Critical Legal Studies movement in their effort to challenge conventional legal theory. (Correct)"
     ]},
-    { type: 'paragraph', text: "This is a Main Idea question. It asks for the statement that best summarizes the entire passage's purpose and scope. The passage is structured as a point-by-point refutation of the Critical Legal Studies (CLS) movement by a single philosopher, Denise Meyerson. Therefore, the main idea must capture this dynamic of one person countering the claims of a specific school of thought." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This main idea question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Philosopher Denise Meyerson views the Critical Legal Studies (CLS) movement as...' and 'But Meyerson replies that such considerations may be viewed as part...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "This choice is too general. The passage focuses entirely on the arguments of one person, Meyerson, who is a philosopher. It does not discuss a broad attack on CLS from other thinkers or fields.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This misrepresents Meyerson's point. She does not argue that CLS proponents overlook complexity. Instead, she argues that they misunderstand the nature of legal conflicts and exaggerate the problems they cause.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "This reverses the argument presented in the passage. The text says that CLS tries to find contradictions in legal theory, not that Meyerson believes the CLS movement's own ideas are self-contradictory.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "While it is true that Meyerson makes several arguments, this choice incorrectly claims that one of them is the 'most important.' The passage presents her points as a series of objections without ranking their importance.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "This statement accurately describes the main purpose of the entire passage. The text is structured to present Denise Meyerson's objections to the various claims that the Critical Legal Studies movement makes against conventional legal ideas.", badge: "Correct", badgeColor: "green" }
+        { title: "(A)", text: "This choice is too general. The passage focuses entirely on the arguments of one person, Meyerson, who is a philosopher. It does not discuss a broad attack on CLS from other thinkers or fields. Additional check: trap type is too broad, since it extends beyond what the passage actually supports.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This misrepresents Meyerson's point. She does not argue that CLS proponents overlook complexity. Instead, she argues that they misunderstand the nature of legal conflicts and exaggerate the problems they cause. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "This reverses the argument presented in the passage. The text says that CLS tries to find contradictions in legal theory, not that Meyerson believes the CLS movement's own ideas are self-contradictory. Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "While it is true that Meyerson makes several arguments, this choice incorrectly claims that one of them is the 'most important.' The passage presents her points as a series of objections without ranking their importance. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "This statement accurately describes the main purpose of the entire passage. The text is structured to present Denise Meyerson's objections to the various claims that the Critical Legal Studies movement makes against conventional legal ideas. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" }
       ]
     }
   ]

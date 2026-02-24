@@ -10,23 +10,19 @@ export const Lesson3_Question10: Lesson = {
   id: "39-3",
   title: "Question 10: Organization",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 10 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-119-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 10: Organization Breakdown (PT-119-S-1-P-2-Q-10)" },
     { type: 'blockquote', text: "**Question:** Which one of the following most accurately describes the organization of the passage?" },
     { type: 'options', items: [
-      "(A) Two points are made about a novel, the first supported with a brief example, the second reasserted without support. [1.0%]",
-      "(B) Two points are made about a novel, the first supported with an extended analogy, the second reasserted without support. [1.0%]",
-      "(C) Two points are made about a novel, the first reasserted without support, the second supported with an extended analogy. [3.0%]",
-      "(D) Two points are made about a novel, the first supported with a brief example, the second supported with an extended analogy. [22.0%]",
-      "(E) Two points are made about a novel, the first supported with an extended analogy, the second supported with a brief example. [74.0%] (Correct)"
+      "(A) Two points are made about a novel, the first supported with a brief example, the second reasserted without support.",
+      "(B) Two points are made about a novel, the first supported with an extended analogy, the second reasserted without support.",
+      "(C) Two points are made about a novel, the first reasserted without support, the second supported with an extended analogy.",
+      "(D) Two points are made about a novel, the first supported with a brief example, the second supported with an extended analogy.",
+      "(E) Two points are made about a novel, the first supported with an extended analogy, the second supported with a brief example. (Correct)"
     ]},
-    { type: 'paragraph', text: "To answer this, we need to be architects of the text. We need to look at its blueprint. The best way to do this is to break down the author's argument into its component parts and see how they are arranged." },
-    { type: 'list', items: [
-      "**Thesis Statement (Paragraph 1):** The author makes **two points** about the novel *Obasan*: (1) Form creates a hero, and (2) Symbols critique the culture.",
-      "**Support for Point 1 (Paragraph 2):** The author supports the first point by drawing a detailed parallel between the novel's structure and the three-stage \"rites of passage\" from anthropology. This is a very detailed, drawn-out comparison. In rhetorical terms, this is an **extended analogy**.",
-      "**Support for Point 2 (Paragraph 3):** The author supports the second point by providing a specific, self-contained illustration (the stone into bread symbol). This is a concise, focused illustration. In rhetorical terms, this is a **brief example**."
-    ]},
-    { type: 'paragraph', text: "So, the organizational pattern is: **Thesis with two points -> Extended analogy to support the first point -> Brief example to support the second point.**" },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The passage is organized as thesis plus ordered support. Paragraph 1 introduces two claims about Obasan. Paragraph 2 develops the first claim through an extended rites-of-passage analogy. Paragraph 3 develops the second claim with a brief symbolic example (stone into bread). The credited answer is the one that preserves both support type and order." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Paragraph 2 lays out the extended parallel: a rite of passage \"begins... proceeds... concludes.\" Paragraph 3 shifts to a compact illustration: Naomi's experience is compared to \"turning stone into bread.\"" },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

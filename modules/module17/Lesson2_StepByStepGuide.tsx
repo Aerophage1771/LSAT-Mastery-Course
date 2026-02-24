@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "17-2",
   title: "Step-by-Step Guide",
+  subtitle: "Deconstruct the facts, synthesize, and eliminate choices that aren't certain.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Must Be True' },
     { type: 'paragraph', text: 'This section provides a clear, step-by-step process for solving any Must Be True question. The methodology is designed to move from the stimulus to the correct answer choice with precision by deconstructing the facts, synthesizing them, and systematically eliminating choices that fail the test of logical certainty.' },

@@ -10,18 +10,19 @@ export const Lesson2_Question6: Lesson = {
   id: "40-2",
   title: "Question 6: Main Point",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-2-Q-6" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 6: Main Point Breakdown (PT-128-S-1-P-2-Q-6)" },
     { type: 'blockquote', text: "**Question:** Which one of the following most accurately expresses the main point of the passage?" },
     { type: 'options', items: [
-      "(A) The modern trend in bankruptcy law away from punishment and toward the maintenance of economic activity serves the best interests of society and should not be abandoned. [91.0%] (Correct)",
-      "(B) Bankruptcy laws have evolved in order to meet the needs of creditors, who depend on the continued productive activity of private citizens and profit-making enterprises. [2.0%]",
-      "(C) Modern bankruptcy laws are justified on humanitarian grounds, even though the earlier punitive approach was more economically efficient. [0.0%]",
-      "(D) Punishment for debt no longer holds deterrent value for debtors and is therefore a concept that has been largely abandoned as ineffective. [0.0%]",
-      "(E) Greater economic interdependence has triggered the formation of bankruptcy laws that reflect a convergence of the interests of debtors and creditors. [6.0%]"
+      "(A) The modern trend in bankruptcy law away from punishment and toward the maintenance of economic activity serves the best interests of society and should not be abandoned. (Correct)",
+      "(B) Bankruptcy laws have evolved in order to meet the needs of creditors, who depend on the continued productive activity of private citizens and profit-making enterprises.",
+      "(C) Modern bankruptcy laws are justified on humanitarian grounds, even though the earlier punitive approach was more economically efficient.",
+      "(D) Punishment for debt no longer holds deterrent value for debtors and is therefore a concept that has been largely abandoned as ineffective.",
+      "(E) Greater economic interdependence has triggered the formation of bankruptcy laws that reflect a convergence of the interests of debtors and creditors."
     ]},
-    { type: 'paragraph', text: "This is a main point question, asking for the statement that best summarizes the author's entire argument. A correct answer must capture the key components of the passage: the description of the shift in bankruptcy law, the author's reasons for supporting this shift, and the author's conclusion or recommendation." },
-    { type: 'paragraph', text: "The author's argument is that the modern trend in bankruptcy law, which moved from a punitive to a remedial focus, is a positive development. This new approach is justified on pragmatic, economic grounds: it keeps individuals and companies productive, which benefits debtors, creditors, and society as a whole. The author concludes by explicitly warning against abandoning this modern approach." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The main point combines a policy shift and a recommendation: modern bankruptcy law should prioritize continued economic activity over punishment, and that modern approach should be retained. Paragraph 1 states the claim directly, paragraph 2 explains why punitive models fail, and paragraph 3 defends reorganization as the public-good mechanism. So the correct answer must include both the descriptive shift and the prescriptive \"do not return\" stance." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Paragraph 1 sets the thesis and recommendation: the \"temptation to return to a focus on punishment... must be resisted.\" The final paragraph confirms purpose: modern laws are \"designed primarily to assure continued engagement in productive economic activity.\""},
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

@@ -1,0 +1,381 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - button "LSAT Mastery" [ref=e6]:
+      - img [ref=e8]
+      - generic [ref=e10]: LSAT Mastery
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - button "Course Dashboard" [ref=e14]:
+          - img [ref=e15]
+          - generic [ref=e20]: Course Dashboard
+        - button "Question Bank" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e24]: Question Bank
+        - button "Templates" [ref=e25]:
+          - img [ref=e26]
+          - generic [ref=e29]: Templates
+      - generic [ref=e31]:
+        - heading "Logical Reasoning" [level=3] [ref=e32]
+        - button "1.Argument Part" [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]: "1."
+            - text: Argument Part
+        - button "2.Main Conclusion" [ref=e38]:
+          - generic [ref=e39]:
+            - generic [ref=e40]: "2."
+            - text: Main Conclusion
+        - button "3.Method of Reasoning" [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]: "3."
+            - text: Method of Reasoning
+        - button "4.Parallel Reasoning" [ref=e46]:
+          - generic [ref=e47]:
+            - generic [ref=e48]: "4."
+            - text: Parallel Reasoning
+        - button "5.Flaw" [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e52]: "5."
+            - text: Flaw
+        - button "6.Parallel Flaw" [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: "6."
+            - text: Parallel Flaw
+        - button "7.Evaluate the Argument" [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: "7."
+            - text: Evaluate the Argument
+        - button "8.Weaken" [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: "8."
+            - text: Weaken
+        - button "9.Strengthen" [ref=e66]:
+          - generic [ref=e67]:
+            - generic [ref=e68]: "9."
+            - text: Strengthen
+        - button "10.Sufficient Assumption" [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: "10."
+            - text: Sufficient Assumption
+        - button "11.Necessary Assumption" [ref=e74]:
+          - generic [ref=e75]:
+            - generic [ref=e76]: "11."
+            - text: Necessary Assumption
+        - button "12.Principle-Strengthen" [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e80]: "12."
+            - text: Principle-Strengthen
+        - button "13.Principle - Apply" [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e84]: "13."
+            - text: Principle - Apply
+        - button "14.Principle - Generalization" [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: "14."
+            - text: Principle - Generalization
+        - button "15.Fill in the Blank" [ref=e90]:
+          - generic [ref=e91]:
+            - generic [ref=e92]: "15."
+            - text: Fill in the Blank
+        - button "16.Most Strongly Supported" [ref=e94]:
+          - generic [ref=e95]:
+            - generic [ref=e96]: "16."
+            - text: Most Strongly Supported
+        - button "17.Must Be True" [ref=e98]:
+          - generic [ref=e99]:
+            - generic [ref=e100]: "17."
+            - text: Must Be True
+        - button "18.Must Be False" [ref=e102]:
+          - generic [ref=e103]:
+            - generic [ref=e104]: "18."
+            - text: Must Be False
+        - button "19.Paradox / Explain" [ref=e106]:
+          - generic [ref=e107]:
+            - generic [ref=e108]: "19."
+            - text: Paradox / Explain
+        - button "20.Agree / Disagree (Point at Issue)" [ref=e110]:
+          - generic [ref=e111]:
+            - generic [ref=e112]: "20."
+            - text: Agree / Disagree (Point at Issue)
+        - button "55.Conditional Reasoning" [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e116]: "55."
+            - text: Conditional Reasoning
+        - button "59.LSAT Math" [ref=e118]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: "59."
+            - text: LSAT Math
+        - heading "Reading Comprehension" [level=3] [ref=e121]
+        - 'button "21.RC: Main Idea" [ref=e123]':
+          - generic [ref=e124]:
+            - generic [ref=e125]: "21."
+            - text: "RC: Main Idea"
+        - 'button "22.RC: Inference" [ref=e127]':
+          - generic [ref=e128]:
+            - generic [ref=e129]: "22."
+            - text: "RC: Inference"
+        - 'button "23.RC: Analogy" [ref=e131]':
+          - generic [ref=e132]:
+            - generic [ref=e133]: "23."
+            - text: "RC: Analogy"
+        - 'button "24.RC: Application" [ref=e135]':
+          - generic [ref=e136]:
+            - generic [ref=e137]: "24."
+            - text: "RC: Application"
+        - 'button "25.RC: Approach" [ref=e139]':
+          - generic [ref=e140]:
+            - generic [ref=e141]: "25."
+            - text: "RC: Approach"
+        - 'button "26.RC: Author Attitude" [ref=e143]':
+          - generic [ref=e144]:
+            - generic [ref=e145]: "26."
+            - text: "RC: Author Attitude"
+        - 'button "27.RC: Author Viewpoint" [ref=e147]':
+          - generic [ref=e148]:
+            - generic [ref=e149]: "27."
+            - text: "RC: Author Viewpoint"
+        - 'button "28.RC: Complete the Passage" [ref=e151]':
+          - generic [ref=e152]:
+            - generic [ref=e153]: "28."
+            - text: "RC: Complete the Passage"
+        - 'button "29.RC: 3rd-Party Viewpoint" [ref=e155]':
+          - generic [ref=e156]:
+            - generic [ref=e157]: "29."
+            - text: "RC: 3rd-Party Viewpoint"
+        - 'button "30.RC: Passage Principle" [ref=e159]':
+          - generic [ref=e160]:
+            - generic [ref=e161]: "30."
+            - text: "RC: Passage Principle"
+        - 'button "31.RC: Phrase Meaning" [ref=e163]':
+          - generic [ref=e164]:
+            - generic [ref=e165]: "31."
+            - text: "RC: Phrase Meaning"
+        - 'button "32.RC: Phrase Function" [ref=e167]':
+          - generic [ref=e168]:
+            - generic [ref=e169]: "32."
+            - text: "RC: Phrase Function"
+        - 'button "33.RC: Paragraph Function" [ref=e171]':
+          - generic [ref=e172]:
+            - generic [ref=e173]: "33."
+            - text: "RC: Paragraph Function"
+        - 'button "34.RC: Passage Function" [ref=e175]':
+          - generic [ref=e176]:
+            - generic [ref=e177]: "34."
+            - text: "RC: Passage Function"
+        - 'button "35.RC: Relationship" [ref=e179]':
+          - generic [ref=e180]:
+            - generic [ref=e181]: "35."
+            - text: "RC: Relationship"
+        - 'button "36.RC: Structure" [ref=e183]':
+          - generic [ref=e184]:
+            - generic [ref=e185]: "36."
+            - text: "RC: Structure"
+        - 'button "37.RC: Title" [ref=e187]':
+          - generic [ref=e188]:
+            - generic [ref=e189]: "37."
+            - text: "RC: Title"
+        - 'button "38.RC: Weaken-Strengthen" [ref=e191]':
+          - generic [ref=e192]:
+            - generic [ref=e193]: "38."
+            - text: "RC: Weaken-Strengthen"
+        - 'button "39.RC: Practice Passage 1" [ref=e195]':
+          - generic [ref=e196]:
+            - generic [ref=e197]: "39."
+            - text: "RC: Practice Passage 1"
+        - 'button "40.RC: Practice Passage 2" [ref=e199]':
+          - generic [ref=e200]:
+            - generic [ref=e201]: "40."
+            - text: "RC: Practice Passage 2"
+        - 'button "41.RC: Practice Passage 3" [ref=e203]':
+          - generic [ref=e204]:
+            - generic [ref=e205]: "41."
+            - text: "RC: Practice Passage 3"
+        - 'button "42.RC: Practice Passage 4" [ref=e207]':
+          - generic [ref=e208]:
+            - generic [ref=e209]: "42."
+            - text: "RC: Practice Passage 4"
+        - 'button "43.RC: Practice Passage 5" [ref=e211]':
+          - generic [ref=e212]:
+            - generic [ref=e213]: "43."
+            - text: "RC: Practice Passage 5"
+        - 'button "44.RC: Practice Passage 6" [ref=e215]':
+          - generic [ref=e216]:
+            - generic [ref=e217]: "44."
+            - text: "RC: Practice Passage 6"
+        - 'button "45.RC: Practice Passage 7" [ref=e219]':
+          - generic [ref=e220]:
+            - generic [ref=e221]: "45."
+            - text: "RC: Practice Passage 7"
+        - generic [ref=e222]:
+          - 'button "46.RC: Practice Passage 8" [ref=e223]':
+            - generic [ref=e224]:
+              - generic [ref=e225]: "46."
+              - text: "RC: Practice Passage 8"
+            - img [ref=e2395]
+          - generic [ref=e2397]:
+            - button "Passage Analysis" [ref=e2398]:
+              - img [ref=e2521]
+              - generic [ref=e2403]: Passage Analysis
+            - 'button "Question 22: Passage Purpose" [ref=e2404]':
+              - img [ref=e2406]
+              - generic [ref=e2408]: "Question 22: Passage Purpose"
+            - 'button "Question 23: Inference" [ref=e2409]':
+              - img [ref=e2411]
+              - generic [ref=e2413]: "Question 23: Inference"
+            - 'button "Question 24: Relationship" [ref=e2414]':
+              - img [ref=e2416]
+              - generic [ref=e2418]: "Question 24: Relationship"
+            - 'button "Question 25: Analogy" [active] [ref=e2419]':
+              - img [ref=e2523]
+              - generic [ref=e2423]: "Question 25: Analogy"
+            - 'button "Question 26: Author Viewpoint" [ref=e2424]':
+              - img [ref=e2426]
+              - generic [ref=e2428]: "Question 26: Author Viewpoint"
+            - 'button "Question 27: Approach" [ref=e2429]':
+              - img [ref=e2431]
+              - generic [ref=e2433]: "Question 27: Approach"
+        - button "47.RC Quick Reference Guide" [ref=e227]:
+          - generic [ref=e228]:
+            - generic [ref=e229]: "47."
+            - text: RC Quick Reference Guide
+        - heading "Advanced Passages" [level=3] [ref=e230]
+        - 'button "50.Advanced Passage 1: Mathematics as Language" [ref=e232]':
+          - generic [ref=e233]:
+            - generic [ref=e234]: "50."
+            - text: "Advanced Passage 1: Mathematics as Language"
+        - 'button "51.Advanced Passage 2: Bentham''s Legal Reforms" [ref=e236]':
+          - generic [ref=e237]:
+            - generic [ref=e238]: "51."
+            - text: "Advanced Passage 2: Bentham's Legal Reforms"
+        - 'button "52.Advanced Passage 3: Critical Legal Studies" [ref=e240]':
+          - generic [ref=e241]:
+            - generic [ref=e242]: "52."
+            - text: "Advanced Passage 3: Critical Legal Studies"
+        - 'button "54.Advanced Passage 4: Dworkin''s Legal Theory" [ref=e244]':
+          - generic [ref=e245]:
+            - generic [ref=e246]: "54."
+            - text: "Advanced Passage 4: Dworkin's Legal Theory"
+        - 'button "56.Advanced Passage 5: Psychology of Risk" [ref=e248]':
+          - generic [ref=e249]:
+            - generic [ref=e250]: "56."
+            - text: "Advanced Passage 5: Psychology of Risk"
+        - 'button "57.Advanced Passage 6: Historical Sociology" [ref=e252]':
+          - generic [ref=e253]:
+            - generic [ref=e254]: "57."
+            - text: "Advanced Passage 6: Historical Sociology"
+        - 'button "58.Advanced Passage 7: Digitalization and Copyright Law" [ref=e256]':
+          - generic [ref=e257]:
+            - generic [ref=e258]: "58."
+            - text: "Advanced Passage 7: Digitalization and Copyright Law"
+        - button "100.Format showcase" [ref=e260]:
+          - generic [ref=e261]:
+            - generic [ref=e262]: "100."
+            - text: Format showcase
+    - generic [ref=e264]: © 2025 LSAT Mastery Course
+  - generic [ref=e265]:
+    - banner [ref=e266]:
+      - generic [ref=e267]:
+        - generic [ref=e268]:
+          - button "Dashboard" [ref=e269]
+          - img [ref=e2434]
+          - generic [ref=e2436]: "Module 46: RC: Practice Passage 8"
+        - generic [ref=e2437]:
+          - button "Previous" [ref=e2526]:
+            - img [ref=e2527]
+            - generic [ref=e2529]: Previous
+          - button "Next" [ref=e2439]:
+            - generic [ref=e2440]: Next
+            - img [ref=e2441]
+      - button "Full Course Export" [ref=e271]:
+        - img [ref=e272]
+        - generic [ref=e275]: Full Course Export
+    - main [ref=e276]:
+      - generic [ref=e2531]:
+        - generic [ref=e2533]:
+          - generic [ref=e2534]:
+            - generic [ref=e2535]:
+              - img [ref=e2536]
+              - paragraph [ref=e2538]: Lesson
+            - 'heading "Question 25: Analogy" [level=1] [ref=e2539]'
+          - generic [ref=e2542]:
+            - generic [ref=e2543]: Lesson
+            - button "Copy Text" [ref=e2545]:
+              - img [ref=e2546]
+              - generic [ref=e2549]: Copy Text
+            - button "Export As" [ref=e2551]:
+              - img [ref=e2552]
+              - generic [ref=e2555]: Export As
+              - img [ref=e2556]
+        - main [ref=e2559]:
+          - generic [ref=e2561]:
+            - 'heading "Question 25: Analogy Breakdown (PT-141-S-1-P-4-Q-25)" [level=3] [ref=e2563]'
+            - generic [ref=e2564]:
+              - button "Passage · PT-141-S-1-P-4" [ref=e2566]:
+                - generic [ref=e2567]: Passage · PT-141-S-1-P-4
+                - img [ref=e2568]
+              - generic [ref=e2570]:
+                - paragraph [ref=e2571]: Question Stem
+                - paragraph [ref=e2573]:
+                  - strong [ref=e2574]: "Question:"
+                  - text: Based on what can be inferred from their titles, the relationship between which one of the following pairs of documents is most analogous to the relationship between passage A and passage B?
+              - generic [ref=e2575]:
+                - paragraph [ref=e2576]: Answer Choices
+                - button "Check answer" [disabled] [ref=e2579]
+              - generic [ref=e2580]:
+                - heading "Analysis" [level=4] [ref=e2581]
+                - generic [ref=e2582]:
+                  - heading "Analysis" [level=4] [ref=e2583]
+                  - paragraph [ref=e2584]: This analogy question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions.
+                  - generic [ref=e2585]:
+                    - heading "Text Evidence" [level=4] [ref=e2586]
+                    - paragraph [ref=e2587]: Anchor your reading in phrases such as 'There are two principles that are fundamental to a theory of...' and 'But the original wrong can most easily be righted by returning...' when checking whether a choice preserves the passage's emphasis.
+                - generic [ref=e2589]:
+                  - generic [ref=e2590]:
+                    - generic [ref=e2591]:
+                      - paragraph [ref=e2592]: "(A) “Card Counting for Everyone: A Can’t-Lose System for Beating the Dealer” / “The Evils of Gambling”"
+                      - generic [ref=e2593]:
+                        - img [ref=e2594]
+                        - text: Incorrect
+                    - paragraph [ref=e2599]: "The relationship here is one of opposition or conflicting values (a how-to guide vs. a moral condemnation). This is not the required relationship. Additional check: trap type is unsupported inference, because the passage never supplies the missing support."
+                  - generic [ref=e2600]:
+                    - generic [ref=e2601]:
+                      - paragraph [ref=e2602]: (B) “Mayor McConnell Is Unfit to Serve” / “Why Mayor McConnell Should be Reelected”
+                      - generic [ref=e2603]:
+                        - img [ref=e2604]
+                        - text: Incorrect
+                    - paragraph [ref=e2609]: "This is a direct pro/con debate on a specific topic. This is a relationship of point/counterpoint, not theory/application. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support."
+                  - generic [ref=e2610]:
+                    - generic [ref=e2611]:
+                      - paragraph [ref=e2612]: "(C) “Pruning Fruit Trees: A Guide for the Novice” / “Easy Recipes for Beginning Cooks”"
+                      - generic [ref=e2613]:
+                        - img [ref=e2614]
+                        - text: Incorrect
+                    - paragraph [ref=e2619]: "These are two separate, parallel guides for beginners on different subjects. One is not an application of the other. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support."
+                  - generic [ref=e2620]:
+                    - generic [ref=e2621]:
+                      - paragraph [ref=e2622]: "(D) “Notable Failures of the STORM Weather Forecasting Model” / “Meteorologists’ Best Tool Yet: The STORM Forecasting Model”"
+                      - generic [ref=e2623]:
+                        - img [ref=e2624]
+                        - text: Incorrect
+                    - paragraph [ref=e2629]: "This is another point/counterpoint relationship, arguing for and against the value of a specific tool. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support."
+                  - generic [ref=e2630]:
+                    - generic [ref=e2631]:
+                      - paragraph [ref=e2632]: "(E) “Fundamentals of Building Construction and Repair” / “Engineering Report: The Repairs Needed by the Thales Building”"
+                      - generic [ref=e2633]:
+                        - img [ref=e2634]
+                        - text: Correct
+                    - generic [ref=e2637]:
+                      - paragraph [ref=e2638]: This pair fits the analogy perfectly.
+                      - paragraph [ref=e2639]:
+                        - text: "* The first title, \"Fundamentals of Building Construction and Repair,\" represents a"
+                        - strong [ref=e2640]: general theory
+                        - text: ", including principles for"
+                        - strong [ref=e2641]: fixing problems ("Repair")
+                        - text: . This is analogous to Passage A.
+                      - paragraph [ref=e2642]:
+                        - text: "* The second title, \"Engineering Report: The Repairs Needed by the Thales Building,\" represents a"
+                        - strong [ref=e2643]: specific application
+                        - text: of those principles to a
+                        - strong [ref=e2644]: concrete problem ("The Thales Building")
+                        - text: that needs
+                        - strong [ref=e2645]: fixing ("Repairs Needed")
+                        - text: ". This is analogous to Passage B. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis."

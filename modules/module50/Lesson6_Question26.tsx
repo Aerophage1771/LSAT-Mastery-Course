@@ -9,24 +9,25 @@ export const Lesson6_Question26: Lesson = {
   id: "50-6",
   title: "Question 26: 3rd-Party Viewpoint",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-108-S-1-P-4-Q-26" },
+    { type: 'accordion', title: 'Read Passage (PT-108-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 26: 3rd-Party Viewpoint Breakdown (PT-108-S-1-P-4-Q-26)" },
     { type: 'blockquote', text: "**Question:** Based on the passage, linguists who subscribe to the theory that “the relationship between language and things is purely a matter of agreed-upon conventions\" (near the end of the second paragraph) would hold that the statement “The ball is red” is true because" },
     { type: 'options', items: [
-      "(A) speakers of English have accepted that “The ball is red” applies to the particular physical relationship being described [79.0%] (Correct)",
-      "(B) speakers of English do not accept that synonyms for “ball” and “red” express these concepts as elegantly [8.0%]",
-      "(C) “The ball is red” corresponds essentially to every aspect of the particular physical relationship being described [7.0%]",
-      "(D) “ball” and “red” actually refer to an entity and a property respectively [4.0%]",
-      "(E) “ball” and “red” are mathematical concepts that attempt to accurately describe some particular physical relationship in the world [2.0%]"
+      "(A) speakers of English have accepted that “The ball is red” applies to the particular physical relationship being described (Correct)",
+      "(B) speakers of English do not accept that synonyms for “ball” and “red” express these concepts as elegantly",
+      "(C) “The ball is red” corresponds essentially to every aspect of the particular physical relationship being described",
+      "(D) “ball” and “red” actually refer to an entity and a property respectively",
+      "(E) “ball” and “red” are mathematical concepts that attempt to accurately describe some particular physical relationship in the world"
     ]},
-    { type: 'h3', text: "Explanation" },
-    { type: 'paragraph', text: "The passage describes a debate about how language relates to the world. One view is that language is based on \"agreed-upon conventions.\" This means that a statement is considered true because a community accepts it, not because the words have an essential, unchanging connection to the things they describe." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This 3rd-party viewpoint question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'What it means to “explain” something in science often comes down...' and 'In pursuing the implications of this theory, linguists have reached the...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A)", text: "This answer aligns with the theory that truth in language comes from social agreement. The linguists mentioned believe a statement is true because people have agreed to use those words to describe that specific situation. It is the community's acceptance that matters." },
-      { title: "(B)", text: "The passage mentions \"elegance\" in the first paragraph when discussing mathematics. However, it is not presented as the reason why a statement is considered true under the \"agreed-upon conventions\" theory." },
-      { title: "(C)", text: "This choice describes the opposing viewpoint mentioned in the passage. The linguists in the question reject the idea that language \"corresponds essentially\" to the world, arguing instead for a system of conventions." },
-      { title: "(D)", text: "This statement describes a basic function of words but doesn't explain why a particular statement is considered true according to the theory. The theory focuses on social agreement, not the fundamental nature of reference." },
-      { title: "(E)", text: "This choice incorrectly labels \"ball\" and \"red\" as mathematical concepts. While the passage uses mathematics as an example of a scientific language, the specific terms in the question are from everyday language." }
+      { title: "(A)", text: "This answer aligns with the theory that truth in language comes from social agreement. The linguists mentioned believe a statement is true because people have agreed to use those words to describe that specific situation. It is the community's acceptance that matters. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(B)", text: "The passage mentions \"elegance\" in the first paragraph when discussing mathematics. However, it is not presented as the reason why a statement is considered true under the \"agreed-upon conventions\" theory. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(C)", text: "This choice describes the opposing viewpoint mentioned in the passage. The linguists in the question reject the idea that language \"corresponds essentially\" to the world, arguing instead for a system of conventions. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(D)", text: "This statement describes a basic function of words but doesn't explain why a particular statement is considered true according to the theory. The theory focuses on social agreement, not the fundamental nature of reference. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(E)", text: "This choice incorrectly labels \"ball\" and \"red\" as mathematical concepts. While the passage uses mathematics as an example of a scientific language, the specific terms in the question are from everyday language. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." }
     ]}
   ]
 };

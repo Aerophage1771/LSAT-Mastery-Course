@@ -10,24 +10,19 @@ export const Lesson4_Question8: Lesson = {
   id: "40-4",
   title: "Question 8: Author Attitude",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-2-Q-8" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 8: Author Attitude Breakdown (PT-128-S-1-P-2-Q-8)" },
     { type: 'blockquote', text: "**Question:** The author’s attitude toward the evolution of bankruptcy law can most accurately be described as" },
     { type: 'options', items: [
-      "(A) approval of changes that have been made to inefficient laws [93.0%] (Correct)",
-      "(B) confidence that further changes to today’s laws will be unnecessary [6.0%]",
-      "(C) neutrality toward laws that, while helpful to many, remain open to abuse [1.0%]",
-      "(D) skepticism regarding the possibility of solutions to the problem of insolvency [0.0%]",
-      "(E) concern that inefficient laws may have been replaced by legislation too lenient to debtors [0.0%]"
+      "(A) approval of changes that have been made to inefficient laws (Correct)",
+      "(B) confidence that further changes to today’s laws will be unnecessary",
+      "(C) neutrality toward laws that, while helpful to many, remain open to abuse",
+      "(D) skepticism regarding the possibility of solutions to the problem of insolvency",
+      "(E) concern that inefficient laws may have been replaced by legislation too lenient to debtors"
     ]},
-    { type: 'paragraph', text: "This question asks to identify the author's attitude toward the evolution of bankruptcy law. To answer, we must analyze the author's tone and word choices throughout the passage to infer their point of view." },
-    { type: 'paragraph', text: "The author consistently uses positive language to describe the modern approach and negative language to describe the old, punitive system." },
-    { type: 'list', items: [
-      "The old system is described with terms like \"harsh punishment\" and its effects as causing \"significant unemployment and the disruption of much-needed services.\" The author points out its practical failures, such as how \"creditors derive little benefit from imprisoned debtors.\"",
-      "The modern system is framed as a solution that \"address[es] the shortcomings of the punitive approach.\" Its goals are laudable: serving the \"public good\" and \"restoring businesses and individuals to a degree of economic health.\"",
-      "The author's prescriptive statement that the temptation to return to punishment \"must be resisted\" demonstrates a strong, non-neutral stance in favor of the modern system."
-    ]},
-    { type: 'paragraph', text: "The overall attitude is one of clear approval for the change, based on the argument that the modern system is more pragmatic and effective than the inefficient system of the past." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The author takes a clearly favorable stance toward the modern shift away from punishment. The passage frames punitive bankruptcy regimes as socially and economically counterproductive, then defends modern reorganization as better for debtors, creditors, and the public good. So the credited answer should express approval of reforms that replaced an inferior system, not neutrality, skepticism, or fear of over-leniency." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Tone is explicit: the \"temptation to return to a focus on punishment... must be resisted.\" The close is also affirmative: modern laws are \"designed primarily to assure continued engagement in productive economic activity.\""},
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

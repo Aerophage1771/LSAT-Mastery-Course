@@ -9,26 +9,28 @@ export const Lesson6_Question19: Lesson = {
   id: "52-6",
   title: "Question 19: Phrase Meaning",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 19 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-110-S-4-P-3)', content: passageText },
+    { type: 'h3', text: "Question 19: Phrase Meaning Breakdown (PT-110-S-4-P-3-Q-19)" },
     { type: 'blockquote', text: "**Question:** The phrase “far-reaching implications” (last sentence of the third paragraph) refers to the idea that" },
     { type: 'options', items: [
-      "(A) any choice made between conflicting solutions to a legal question will be arbitrary [60.0%] (Correct)",
-      "(B) every legal question will involve the consideration of a set of values [7.0%]",
-      "(C) two or more alternative solutions to a legal question may carry equal moral weight [10.0%]",
-      "(D) no legal question will have a single correct answer [16.0%]",
-      "(E) the most relevant criterion for judging solutions is the degree of rationality they possess [7.0%]"
+      "(A) any choice made between conflicting solutions to a legal question will be arbitrary (Correct)",
+      "(B) every legal question will involve the consideration of a set of values",
+      "(C) two or more alternative solutions to a legal question may carry equal moral weight",
+      "(D) no legal question will have a single correct answer",
+      "(E) the most relevant criterion for judging solutions is the degree of rationality they possess"
     ]},
-    { type: 'paragraph', text: "This question asks for the meaning of 'far-reaching implications' in context. The passage attributes these implications to the CLS movement. We need to identify what major conclusion the CLS movement draws from the existence of conflicting values. The second paragraph lays this out clearly: 'CLS argues that these conflicting values generate equally plausible but opposing answers... and, consequently, that the choice between the conflicting answers must necessarily be arbitrary or irrational.' This is the 'far-reaching implication' that Meyerson spends the third paragraph refuting." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This phrase meaning question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Philosopher Denise Meyerson views the Critical Legal Studies (CLS) movement as...' and 'But Meyerson replies that such considerations may be viewed as part...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "This choice accurately identifies the main conclusion that the CLS movement draws from conflicting values in law. The passage states that CLS argues that when there are equally good but opposing answers, the choice between them 'must necessarily be arbitrary or irrational.' This is the 'far-reaching implication' that the author, Meyerson, argues against in the third paragraph.", badge: "Correct", badgeColor: "green" },
-        { title: "(B)", text: "This statement is too broad and is not the central claim of the CLS movement described in the passage. The passage focuses on what happens when values conflict, not on the idea that every single legal question involves a set of values.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "This is a step in the CLS argument, but not its final conclusion. The CLS movement starts with the idea that solutions can have equal weight, but the 'far-reaching implication' is the consequence of this fact—that the final choice must therefore be arbitrary.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "While related, this is not the most precise answer. The core of the CLS claim is not just that there is no single right answer, but what this means for the judge's decision. The ultimate implication is that the choice becomes arbitrary, which is a stronger and more specific claim.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "This idea is part of Meyerson's argument against the CLS position, not the CLS position itself. Meyerson is the one who suggests that a choice can be reasonable even if it is not the only one, which directly opposes the 'far-reaching implications' attributed to CLS.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "This choice accurately identifies the main conclusion that the CLS movement draws from conflicting values in law. The passage states that CLS argues that when there are equally good but opposing answers, the choice between them 'must necessarily be arbitrary or irrational.' This is the 'far-reaching implication' that the author, Meyerson, argues against in the third paragraph. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(B)", text: "This statement is too broad and is not the central claim of the CLS movement described in the passage. The passage focuses on what happens when values conflict, not on the idea that every single legal question involves a set of values. Additional check: trap type is too broad, since it extends beyond what the passage actually supports.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "This is a step in the CLS argument, but not its final conclusion. The CLS movement starts with the idea that solutions can have equal weight, but the 'far-reaching implication' is the consequence of this fact—that the final choice must therefore be arbitrary. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "While related, this is not the most precise answer. The core of the CLS claim is not just that there is no single right answer, but what this means for the judge's decision. The ultimate implication is that the choice becomes arbitrary, which is a stronger and more specific claim. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "This idea is part of Meyerson's argument against the CLS position, not the CLS position itself. Meyerson is the one who suggests that a choice can be reasonable even if it is not the only one, which directly opposes the 'far-reaching implications' attributed to CLS. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

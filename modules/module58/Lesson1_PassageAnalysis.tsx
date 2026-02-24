@@ -9,14 +9,20 @@ export const Lesson1_PassageAnalysis: Lesson = {
   id: "58-1",
   title: "Passage Analysis: Digitalization and Copyright Law",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Passage Analysis" },
-    { type: 'h4', text: "Paragraph 1: The Problem - Free Info vs. Copyright" },
-    { type: 'paragraph', text: "The passage kicks off by explaining a big conflict: the internet's culture of 'free information for everyone' is clashing with creators' need to protect their work. As more copyrighted material gets shared online, copyright holders are looking for ways to stop it, putting them in direct opposition to the goals of many internet users." },
-    { type: 'h4', text: "Paragraph 2: Why the Law is Outdated" },
-    { type: 'paragraph', text: "This paragraph explains the specific legal loophole. Canadian copyright law was written for the physical world and bans making unauthorized copies in a 'material form,' like a photocopy. But digitalization turns a work into electronic signals, not a physical object. The law isn't clear on whether this counts as 'material reproduction,' so making an unauthorized digital copy isn't technically illegal yet." },
-    { type: 'h4', text: "Paragraph 3: Why Fixing the Law is Hard" },
-    { type: 'paragraph', text: "The final paragraph explores why simply making digitalization a crime isn't an easy fix. The author brings up several major problems: (1) **What's the crime?** Is it just the first digital copy, or every copy made from it? (2) **How do you enforce it?** With millions of users, policing this would be nearly impossible. (3) **Who does it apply to?** The law already has big exceptions for academics, who are a huge group of users. The author concludes that even if the law is updated, the basic philosophical fight between the 'information wants to be free' internet culture and the 'information is a product' publishing world will be very hard to solve." },
-    { type: 'callout', title: "Summary", variant: "summary", text: "The passage argues that current Canadian copyright law is unprepared for the digital age. It highlights a legal loophole that makes it hard to prosecute unauthorized digital copying. While changing the law seems like the obvious answer, the author explains that doing so is full of practical challenges and doesn't solve the deeper philosophical conflict between the internet's open-access culture and the publishing industry's view of information as property." }
+    { type: 'accordion', title: 'Read Passage (PT-115-S-3-P-4)', content: passageText },
+    { type: 'h3', text: "Passage Analysis: Digitalization and Copyright (PT-115-S-3-P-4)" },
+    { type: 'paragraph', text: "The passage analyzes a legal transition problem: copyright doctrine designed for physical reproduction does not map cleanly onto digital transmission. It frames both doctrinal and policy-level friction between open-access norms and ownership claims." },
+    { type: 'paragraph', text: "Read this as problem-solution-complication structure. Paragraph 1 states the normative conflict, Paragraph 2 isolates the statutory gap, and Paragraph 3 evaluates why the proposed legal fix remains difficult to define, enforce, and socially reconcile." },
+    { type: 'hr' },
+    { type: 'h4', text: "Paragraph 1: Normative Conflict in the Early Internet" },
+    { type: 'paragraph', text: "The opening paragraph sets up a clash between two value systems: internet culture's expectation of broad information access and copyright holders' claims to controlled distribution and compensation." },
+    { type: 'paragraph', text: "Its purpose is not to resolve the conflict but to establish that technological adoption has created direct pressure on inherited legal assumptions." },
+    { type: 'h4', text: "Paragraph 2: Statutory Ambiguity Around Digitalization" },
+    { type: 'paragraph', text: "The second paragraph identifies the legal hinge. Existing law targets unauthorized reproduction in material form, but digitalization converts works into signals and memory states that may not fit that statutory language." },
+    { type: 'paragraph', text: "The result is a doctrinal gap: unauthorized digital conversion can evade clear criminal classification under rules built for analog copying." },
+    { type: 'h4', text: "Paragraph 3: Limits of the Proposed Fix" },
+    { type: 'paragraph', text: "The final paragraph reviews a proposed amendment that would explicitly criminalize unauthorized digitalization, then enumerates implementation problems. These include offense definition, derivative-copy attribution, enforceability at internet scale, and preexisting educational exemptions." },
+    { type: 'paragraph', text: "The passage closes by broadening from legal mechanics to political economy: even revised doctrine may not resolve the underlying conflict between information-as-public-resource and information-as-proprietary-good models." },
+    { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "The passage argues that copyright law lags behind digital technology because statutory categories built for material copying do not cleanly capture digital reproduction. It shows that even an explicit criminalization fix would face definitional, enforcement, and normative barriers rooted in competing views of what information is." }
   ]
 };

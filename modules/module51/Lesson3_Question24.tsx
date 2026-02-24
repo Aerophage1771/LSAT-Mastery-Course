@@ -11,24 +11,25 @@ export const Lesson3_Question24: Lesson = {
   id: "51-3",
   title: "Question 24: Author Attitude",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-109-S-2-P-4-Q-24" },
+    { type: 'accordion', title: 'Read Passage (PT-109-S-2-P-4)', content: passageText },
+    { type: 'h3', text: "Question 24: Author Attitude Breakdown (PT-109-S-2-P-4-Q-24)" },
     { type: 'blockquote', text: "**Question:** The author’s attitude toward eighteenth-century lawyers can best be described as" },
     { type: 'options', items: [
-      "(A) sympathetic [7.0%]",
-      "(B) critical [68.0%] (Correct)",
-      "(C) respectful [7.0%]",
-      "(D) scornful [7.0%]",
-      "(E) ambivalent [12.0%]"
+      "(A) sympathetic",
+      "(B) critical (Correct)",
+      "(C) respectful",
+      "(D) scornful",
+      "(E) ambivalent"
     ]},
-    { type: 'h3', text: "Explanation" },
-    { type: 'paragraph', text: "Context:\nThe passage discusses the state of evidence law in the eighteenth century, describing it as a confusing mess of technical rules. It points out that attempts to reform this system were unsuccessful. The author specifically names lawyers as one of the groups responsible for blocking these much-needed changes." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This author attitude question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'By the time Bentham turned his interest to the subject, late...' and 'This clear-grounds proviso allows more exclusions than Bentham would have liked,...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A)", text: "The author is not sympathetic toward the lawyers. The passage portrays them as an obstacle to progress due to their 'vested interests,' which is a negative description, not a sympathetic one." },
-      { title: "(B)", text: "The author's attitude is critical because the passage directly blames lawyers for preventing legal reform. It states that lawyers' self-interest and their excessive respect for tradition stood in the way of creating a fairer system. This is a clear criticism of their role and impact." },
-      { title: "(C)", text: "The author is not respectful of the lawyers' actions. Pointing out that their 'vested interests' blocked reform is a form of criticism, not a statement of respect." },
-      { title: "(D)", text: "This choice is too extreme. While the author is critical, the tone is academic and analytical rather than scornful, which would imply open contempt or disgust." },
-      { title: "(E)", text: "The author's attitude is not ambivalent, which means having mixed feelings. The passage only presents a negative view of the lawyers' role in frustrating reform, without offering any positive counterpoints." }
+      { title: "(A)", text: "The author is not sympathetic toward the lawyers. The passage portrays them as an obstacle to progress due to their 'vested interests,' which is a negative description, not a sympathetic one. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(B)", text: "The author's attitude is critical because the passage directly blames lawyers for preventing legal reform. It states that lawyers' self-interest and their excessive respect for tradition stood in the way of creating a fairer system. This is a clear criticism of their role and impact. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(C)", text: "The author is not respectful of the lawyers' actions. Pointing out that their 'vested interests' blocked reform is a form of criticism, not a statement of respect. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(D)", text: "This choice is too extreme. While the author is critical, the tone is academic and analytical rather than scornful, which would imply open contempt or disgust. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(E)", text: "The author's attitude is not ambivalent, which means having mixed feelings. The passage only presents a negative view of the lawyers' role in frustrating reform, without offering any positive counterpoints. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." }
     ]}
   ]
 };

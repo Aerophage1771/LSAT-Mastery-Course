@@ -10,24 +10,25 @@ export const Lesson4_Question23: Lesson = {
   id: "54-4",
   title: "Question 23: Author Attitude",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 23 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-111-S-2-P-4)', content: passageText },
+    { type: 'h3', text: "Question 23: Author Attitude Breakdown (PT-111-S-2-P-4-Q-23)" },
     { type: 'blockquote', text: "**Question:** Which one of the following most accurately characterizes the author’s attitude toward Dworkin’s theory?" },
     { type: 'options', items: [
-      "(A) confident endorsement of its central assertions [90.0%] (Correct)",
-      "(B) caution about its potential for justifying some forms of judicial activism [2.0%]",
-      "(C) modest expectation that some of its claims will be found to be unwarranted [2.0%]",
-      "(D) quiet conviction that its importance derives only from its originality [2.0%]",
-      "(E) enthusiasm that it will replace legal positivism as the most popular theory of legal interpretation [3.0%]"
+      "(A) confident endorsement of its central assertions (Correct)",
+      "(B) caution about its potential for justifying some forms of judicial activism",
+      "(C) modest expectation that some of its claims will be found to be unwarranted",
+      "(D) quiet conviction that its importance derives only from its originality",
+      "(E) enthusiasm that it will replace legal positivism as the most popular theory of legal interpretation"
     ]},
-    { type: 'paragraph', text: "This is an Author Attitude question. We need to find specific language in the passage that reveals the author's opinion of Dworkin's theory." },
-    { type: 'callout', title: "Evidence Hunt", variant: "tip", text: "The author shows their agreement with Dworkin through specific phrases: 'Dworkin correctly sees as the error...', 'The positivist’s mistake, as Dworkin points out...', and 'Once we realize, as Dworkin does...'. This language indicates that the author is not just reporting on Dworkin's ideas but is also endorsing them as correct." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This author attitude question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Ronald Dworkin argues that judges are in danger of uncritically embracing...' and 'Once we realize, as Dworkin does, that the law has an...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-        { title: "(A)", text: "This choice is correct. The author's use of phrases like 'Dworkin correctly sees' and 'as Dworkin does' shows clear agreement and confidence in Dworkin's central arguments.", badge: "Correct", badgeColor: "green" },
-        { title: "(B)", text: "The passage states Dworkin's theory avoids the error of judicial activism. The author shows no caution about this; it's presented as a strength.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "The author expresses no doubt or modest expectations. The tone is consistently supportive.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "The author supports the theory because it seems correct and useful, not merely because it's original. The author's conviction is stated clearly, not 'quietly.'", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "While the author supports the theory, the passage makes no predictions about its future popularity. The focus is on the theory's merits.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "This choice is correct. The author's use of phrases like 'Dworkin correctly sees' and 'as Dworkin does' shows clear agreement and confidence in Dworkin's central arguments. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(B)", text: "The passage states Dworkin's theory avoids the error of judicial activism. The author shows no caution about this; it's presented as a strength. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "The author expresses no doubt or modest expectations. The tone is consistently supportive. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "The author supports the theory because it seems correct and useful, not merely because it's original. The author's conviction is stated clearly, not 'quietly.' Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "While the author supports the theory, the passage makes no predictions about its future popularity. The focus is on the theory's merits. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

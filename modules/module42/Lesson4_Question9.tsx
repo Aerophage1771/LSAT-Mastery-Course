@@ -9,25 +9,25 @@ export const Lesson4_Question9: Lesson = {
       id: "42-4",
       title: "Question 9: Paragraph Function",
       content: [
-        { type: 'accordion', title: 'Read Passage', content: passageText },
-        { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-2-Q-9" },
+        { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-2)', content: passageText },
+        { type: 'h3', text: "Question 9: Paragraph Function Breakdown (PT-128-S-4-P-2-Q-9)" },
         { type: 'blockquote', text: "**Question:** Which one of the following most accurately describes the main function of the third paragraph?" },
         { type: 'options', items: [
-          "(A) present an exception to the general thesis stated in the first paragraph [0.0%]",
-          "(B) qualify an assertion made in the first paragraph [11.0%]",
-          "(C) provide an illustration that is contrasted to the illustration given in the second paragraph [4.0%]",
-          "(D) provide additional support for a contention made in the second paragraph [84.0%] (Correct)",
-          "(E) present a contention that will be argued for in the final paragraph [2.0%]"
+          "(A) present an exception to the general thesis stated in the first paragraph",
+          "(B) qualify an assertion made in the first paragraph",
+          "(C) provide an illustration that is contrasted to the illustration given in the second paragraph",
+          "(D) provide additional support for a contention made in the second paragraph (Correct)",
+          "(E) present a contention that will be argued for in the final paragraph"
         ]},
-        { type: 'paragraph', text: "This is a structural question asking for the \"main function of the third paragraph.\" The task is to understand the role this paragraph plays in the author's overall argument, specifically how it relates to the paragraphs before and after it." },
-        { type: 'paragraph', text: "Let's trace the argument's flow:\n*   **Paragraph 1:** Establishes the main thesis: The critique of the narcissistic artist is a recurring theme in Allen's work.\n*   **Paragraph 2:** Provides the first major piece of evidence from the film *Stardust Memories*. It ends with a specific contention: the idea of artists \"fobbing it off as art\" appears \"sufficiently often\" in Allen's films.\n*   **Paragraph 3:** Introduces another example from the film *Manhattan*. Crucially, the author explicitly links this example to the previous one, stating that the critique is \"similar to the producer's in *Stardust Memories*.\"" },
-        { type: 'paragraph', text: "The third paragraph does not introduce a new argument but provides another piece of evidence to strengthen the point made in the second paragraph. By showing the theme appears in *Manhattan* as well, the author proves their contention that it \"appears sufficiently often.\"" },
+        { type: 'h4', text: "Analysis" },
+        { type: 'paragraph', text: "Concept focus: paragraph function questions are about role, not topic. Paragraph 3 does not introduce a new idea; it gives another example (*Manhattan*) that works the same way as paragraph 2 (*Stardust Memories*). So its job is to add support to an existing claim, not to qualify it, reverse it, or set up a future argument." },
+        { type: 'callout', title: "Text Evidence", variant: "tip", text: "Follow the structure: paragraph 1 gives the main claim about a recurring theme, paragraph 2 gives one concrete example, paragraph 3 adds a \"similar\" example, and paragraph 4 shifts to ending-pattern evidence. The word \"similar\" in paragraph 3 is the key clue to its function." },
         { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-          { title: "(A) present an exception to the general thesis stated in the first paragraph", text: "This is incorrect. The example from *Manhattan* confirms the thesis; it is not an exception.", badge: "Incorrect", badgeColor: "red" },
-          { title: "(B) qualify an assertion made in the first paragraph", text: "To \"qualify\" is to limit or place conditions on an assertion. The third paragraph strengthens the assertion by adding more evidence; it does not qualify or limit it.", badge: "Incorrect", badgeColor: "red" },
-          { title: "(C) provide an illustration that is contrasted to the illustration given in the second paragraph", text: "This is directly contradicted by the text, which explicitly states the illustration from *Manhattan* is \"similar to\" the one from *Stardust Memories*.", badge: "Incorrect", badgeColor: "red" },
-          { title: "(D) provide additional support for a contention made in the second paragraph", text: "This accurately describes the paragraph's function. It provides \"additional support\" (the *Manhattan* example) for the \"contention made in the second paragraph\" (that this theme appears \"sufficiently often\").", badge: "Correct", badgeColor: "green" },
-          { title: "(E) present a contention that will be argued for in the final paragraph", text: "This is incorrect. The third paragraph is backward-looking, reinforcing the point from paragraph two. The final paragraph shifts to a new type of evidence (narrative outcomes) that is not directly set up by the content of paragraph three.", badge: "Incorrect", badgeColor: "red" }
+          { title: "(A) present an exception to the general thesis stated in the first paragraph", text: "An exception would break the pattern from paragraph 1. Paragraph 3 does the opposite: the *Manhattan* example repeats the same negative view of artistic pretension, so it confirms the thesis.", badge: "Incorrect", badgeColor: "red" },
+          { title: "(B) qualify an assertion made in the first paragraph", text: "To qualify means to add a limit or condition. Paragraph 3 adds no limit; it adds more proof that Allen keeps returning to this theme.", badge: "Incorrect", badgeColor: "red" },
+          { title: "(C) provide an illustration that is contrasted to the illustration given in the second paragraph", text: "The paragraph itself signals the relation as \"similar,\" not opposite. Since the passage explicitly links the two examples as alike, this contrast description is inaccurate.", badge: "Incorrect", badgeColor: "red" },
+          { title: "(D) provide additional support for a contention made in the second paragraph", text: "This matches the structure exactly. Paragraph 2 says the pattern appears often, and paragraph 3 supplies another film example to strengthen that same point.", badge: "Correct", badgeColor: "green" },
+          { title: "(E) present a contention that will be argued for in the final paragraph", text: "Paragraph 3 is not a preview claim waiting for proof; it is already proof. The final paragraph then changes evidence type by comparing outcomes of artistic and inartistic characters.", badge: "Incorrect", badgeColor: "red" }
         ]}
       ]
 };

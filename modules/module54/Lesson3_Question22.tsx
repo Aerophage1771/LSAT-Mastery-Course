@@ -10,24 +10,25 @@ export const Lesson3_Question22: Lesson = {
   id: "54-3",
   title: "Question 22: Paragraph Function",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 22 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-111-S-2-P-4)', content: passageText },
+    { type: 'h3', text: "Question 22: Paragraph Function Breakdown (PT-111-S-2-P-4-Q-22)" },
     { type: 'blockquote', text: "**Question:** What is the main purpose of the second paragraph?" },
     { type: 'options', items: [
-      "(A) to explain why legal positivism is so popular [1.0%]",
-      "(B) to evaluate the theory of legal positivism [24.0%]",
-      "(C) to discuss how judicial consensus is determined [2.0%]",
-      "(D) to identify the basic tenets of legal positivism [72.0%] (Correct)",
-      "(E) to argue in favor of the theory of legal positivism [1.0%]"
+      "(A) to explain why legal positivism is so popular",
+      "(B) to evaluate the theory of legal positivism",
+      "(C) to discuss how judicial consensus is determined",
+      "(D) to identify the basic tenets of legal positivism (Correct)",
+      "(E) to argue in favor of the theory of legal positivism"
     ]},
-    { type: 'paragraph', text: "This is a Paragraph Function question. We need to determine the role the second paragraph plays in the author's overall argument." },
-    { type: 'callout', title: "Prediction", variant: "tip", text: "The passage is structured as a three-part argument: it introduces two flawed theories and then presents Dworkin's alternative. The first paragraph introduces both natural law and legal positivism. The second paragraph is dedicated entirely to explaining the core beliefs of legal positivism (law and morality are distinct; meaning is based on social convention and consensus). This explanation is necessary context for the author to then critique it in the third paragraph. So, the purpose is to describe the theory." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This paragraph function question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Ronald Dworkin argues that judges are in danger of uncritically embracing...' and 'Once we realize, as Dworkin does, that the law has an...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-        { title: "(A)", text: "The paragraph mentions in passing that legal positivism is popular but provides no reasons for its popularity. This is not its main purpose.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "To 'evaluate' means to judge. The second paragraph simply describes the theory neutrally. The author's evaluation and critique begin in the third paragraph.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "The paragraph mentions that consensus is used to resolve disagreements, but it doesn't discuss the specific methods for determining that consensus. This is a minor detail, not the main purpose.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "This is a perfect fit. The paragraph's main function is to explain the core beliefs, or 'tenets,' of legal positivism. This detailed description sets the stage for the critique that follows.", badge: "Correct", badgeColor: "green" },
-        { title: "(E)", text: "The passage as a whole argues *against* legal positivism. The second paragraph explains the theory so that Dworkin's argument against it can be understood; it does not argue in favor of it.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "The paragraph mentions in passing that legal positivism is popular but provides no reasons for its popularity. This is not its main purpose. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "To 'evaluate' means to judge. The second paragraph simply describes the theory neutrally. The author's evaluation and critique begin in the third paragraph. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "The paragraph mentions that consensus is used to resolve disagreements, but it doesn't discuss the specific methods for determining that consensus. This is a minor detail, not the main purpose. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "This is a perfect fit. The paragraph's main function is to explain the core beliefs, or 'tenets,' of legal positivism. This detailed description sets the stage for the critique that follows. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(E)", text: "The passage as a whole argues *against* legal positivism. The second paragraph explains the theory so that Dworkin's argument against it can be understood; it does not argue in favor of it. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

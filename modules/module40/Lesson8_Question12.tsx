@@ -10,23 +10,19 @@ export const Lesson8_Question12: Lesson = {
   id: "40-8",
   title: "Question 12: Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-2-Q-12" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 12: Inference Breakdown (PT-128-S-1-P-2-Q-12)" },
     { type: 'blockquote', text: "**Question:** The information in the passage most strongly suggests which one of the following about changes in bankruptcy laws?" },
     { type: 'options', items: [
-      "(A) Bankruptcy laws always result from gradual changes in philosophy followed by sudden shifts in policy. [0.0%]",
-      "(B) Changes in bankruptcy law were initiated by the courts and only grudgingly adopted by legislators. [0.0%]",
-      "(C) The adjustment of bankruptcy laws away from a punitive focus was at first bitterly opposed by creditors. [3.0%]",
-      "(D) Bankruptcy laws underwent change because the traditional approach proved inadequate and contrary to the needs of society. [93.0%] (Correct)",
-      "(E) The shift away from a punitive approach to insolvency was part of a more general trend in society toward rehabilitation and away from retribution. [4.0%]"
+      "(A) Bankruptcy laws always result from gradual changes in philosophy followed by sudden shifts in policy.",
+      "(B) Changes in bankruptcy law were initiated by the courts and only grudgingly adopted by legislators.",
+      "(C) The adjustment of bankruptcy laws away from a punitive focus was at first bitterly opposed by creditors.",
+      "(D) Bankruptcy laws underwent change because the traditional approach proved inadequate and contrary to the needs of society. (Correct)",
+      "(E) The shift away from a punitive approach to insolvency was part of a more general trend in society toward rehabilitation and away from retribution."
     ]},
-    { type: 'paragraph', text: "This is an inference question asking what the passage most strongly suggests about the reason for the changes in bankruptcy laws. We need to synthesize the information given to arrive at the most logical conclusion." },
-    { type: 'paragraph', text: "The passage is structured as a problem-solution argument." },
-    { type: 'list', items: [
-      "**The Problem (Paragraph 2):** The author details the failures of the \"traditional approach\" (the punitive system). It was \"inadequate\" for creditors, who \"derive little benefit\" from it. It was also \"contrary to the needs of society\" because dissolving large enterprises caused \"significant unemployment and the disruption of much-needed services.\"",
-      "**The Solution (Paragraph 3):** \"Modern bankruptcy law has attempted to address the shortcomings of the punitive approach.\" The new system is designed to serve the \"public good\" and keep the economy functioning."
-    ]},
-    { type: 'paragraph', text: "The clear implication is that the laws were changed precisely because the old system was not working. It was a practical failure on multiple fronts, failing to serve the interests of either creditors or the broader community." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The passage supports a clear problem-to-solution inference: bankruptcy law changed because the punitive model failed economically and socially. The old system punished debtors but reduced creditor recovery, disrupted services, and increased unemployment; the modern system is presented as a public-good correction through reorganization and continued productive activity. So the credited answer must capture inadequacy of the traditional approach and society-level need for reform." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The passage identifies failures of punishment: \"creditors derive little benefit\" from imprisoned debtors, and dissolution can cause \"significant unemployment\" and service disruption. It then frames modern law as addressing \"the shortcomings of the punitive approach.\""},
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

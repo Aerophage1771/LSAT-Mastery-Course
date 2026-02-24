@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "12-2",
   title: "Step-by-Step Guide",
+  subtitle: "Identify the logical leap and find the general rule that justifies it.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Principle-Strengthen' },
     { type: 'paragraph', text: 'This section provides a systematic process for solving any **Principle-Strengthen** question. The goal is to identify the logical leap in the argument and find the general rule that justifies it.' },

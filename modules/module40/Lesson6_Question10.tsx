@@ -10,24 +10,19 @@ export const Lesson6_Question10: Lesson = {
   id: "40-6",
   title: "Question 10: 3rd-Party Viewpoint",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-2-Q-10" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 10: 3rd-Party Viewpoint Breakdown (PT-128-S-1-P-2-Q-10)" },
     { type: 'blockquote', text: "**Question:** Which one of the following claims would a defender of the punitive theory of bankruptcy legislation be most likely to have made?" },
     { type: 'options', items: [
-      "(A) Debt that has become so great that repayment is impossible is ultimately a moral failing and thus a matter for which the law should provide punitive sanctions. [76.0%] (Correct)",
-      "(B) Because insolvency ultimately harms the entire economy, the law should provide a punitive deterrent to insolvency. [19.0%]",
-      "(C) The insolvency of companies or individuals is tolerable if the debt is the result of risk-taking, profit-seeking ventures that might create considerable economic growth in the long run. [1.0%]",
-      "(D) The dissolution of a large enterprise is costly to the economy as a whole and should not be allowed, even when that enterprise’s insolvency is the result of its own fiscal irresponsibility. [2.0%]",
-      "(E) The employees of a large bankrupt enterprise should be considered just as negligent as the owner of a bankrupt sole proprietorship. [2.0%]"
+      "(A) Debt that has become so great that repayment is impossible is ultimately a moral failing and thus a matter for which the law should provide punitive sanctions. (Correct)",
+      "(B) Because insolvency ultimately harms the entire economy, the law should provide a punitive deterrent to insolvency.",
+      "(C) The insolvency of companies or individuals is tolerable if the debt is the result of risk-taking, profit-seeking ventures that might create considerable economic growth in the long run.",
+      "(D) The dissolution of a large enterprise is costly to the economy as a whole and should not be allowed, even when that enterprise’s insolvency is the result of its own fiscal irresponsibility.",
+      "(E) The employees of a large bankrupt enterprise should be considered just as negligent as the owner of a bankrupt sole proprietorship."
     ]},
-    { type: 'paragraph', text: "This question requires adopting the perspective of a \"defender of the punitive theory of bankruptcy\" and identifying a claim they would most likely make. The passage provides a clear description of this viewpoint in the second paragraph." },
-    { type: 'paragraph', text: "According to the passage, defenders of the punitive theory held these core beliefs:" },
-    { type: 'list', items: [
-      "Excessive debt resulted from a debtor's \"unwillingness to meet obligations or from their negligence.\"",
-      "Insolvency was a violation of a \"sacrosanct social contract.\"",
-      "Punishment was necessary to remove violators from society."
-    ]},
-    { type: 'paragraph', text: "The central idea is that debt is a moral failing. The failure to pay is a character flaw, a broken promise that deserves to be punished by law. The justification is ethical and retributive, not economic or pragmatic." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This question asks for the viewpoint of an older punitive framework, not the author's modern recommendation. The punitive theory treats insolvency as a debtor's moral failure and a breach of social obligation, so it justifies sanctions like imprisonment or dissolution. The credited answer must therefore sound moralistic and retributive, not public-good oriented or economically rehabilitative." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The passage says excessive debt was viewed as \"unwillingness\" or \"negligence,\" and insolvent debtors were seen as violating \"sacrosanct social contracts.\" It then describes the punitive response: imprisonment of individuals and dissolution of enterprises." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

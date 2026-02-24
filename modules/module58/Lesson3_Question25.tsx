@@ -9,26 +9,28 @@ export const Lesson3_Question25: Lesson = {
   id: "58-3",
   title: "Question 25: Application",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 25 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-115-S-3-P-4)', content: passageText },
+    { type: 'h3', text: "Question 25: Application Breakdown (PT-115-S-3-P-4-Q-25)" },
     { type: 'blockquote', text: "**Question:** Given the author’s argument, which one of the following additions to current Canadian copyright law would most likely be an agreeable compromise to both the Internet community and the publishing community?" },
     { type: 'options', items: [
-      "(A) Digitalization of copyrighted works is permitted to Internet users who pay a small fee to copyright holders. [65.0%] (Correct)",
-      "(B) Digitalization of copyrighted works is prohibited to Internet users who are not academics. [7.0%]",
-      "(C) Digitalization of copyrighted works is permitted to all Internet users without restriction. [3.0%]",
-      "(D) Digitalization of copyrighted works is prohibited to all Internet users without exception. [2.0%]",
-      "(E) Digitalization of copyrighted works is permitted to Internet users engaged in research. [23.0%]"
+      "(A) Digitalization of copyrighted works is permitted to Internet users who pay a small fee to copyright holders. (Correct)",
+      "(B) Digitalization of copyrighted works is prohibited to Internet users who are not academics.",
+      "(C) Digitalization of copyrighted works is permitted to all Internet users without restriction.",
+      "(D) Digitalization of copyrighted works is prohibited to all Internet users without exception.",
+      "(E) Digitalization of copyrighted works is permitted to Internet users engaged in research."
     ]},
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "A compromise must address the core desire of each group. The internet community wants 'free access to information.' The publishing community wants to protect against 'unauthorized and uncompensated distribution.' A successful compromise would give users access while giving creators compensation." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This stem asks for a law both communities could accept. A true compromise must keep meaningful user access while also protecting creator ownership through compensation. Any option that gives one side everything and the other side nothing fails the \"agreeable to both\" requirement." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The clash is explicit: the Internet community treats information as \"raw material available for everyone to use,\" while the publishing community treats it as \"a commodity owned by its creator.\" The strongest compromise combines access with payment/protection." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "This is a perfect compromise. Users get access to the material ('is permitted'), which satisfies the internet community's goal. Copyright holders get paid ('pay a small fee'), which satisfies the publishing community's need for compensation.", badge: "Correct", badgeColor: "green" },
-        { title: "(B)", text: "This is not a good compromise. It completely shuts out the vast majority of internet users and doesn't address the publishers' issue with the academic users who already have 'generous exemptions.'", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "This is a one-sided solution that completely favors the internet community. It offers nothing to the publishers.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "This is a one-sided solution that completely favors the publishing community. It offers nothing to the internet users.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "This is not a compromise because, as the passage notes, academics already have 'generous exemptions' under current law. This solution doesn't meaningfully change the status quo or resolve the broader conflict.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "This is a perfect compromise. Users get access to the material ('is permitted'), which satisfies the internet community's goal. Copyright holders get paid ('pay a small fee'), which satisfies the publishing community's need for compensation. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(B)", text: "This is not a good compromise. It completely shuts out the vast majority of internet users and doesn't address the publishers' issue with the academic users who already have 'generous exemptions.' Additional check: trap type is one-sided restriction, because it narrows access without creating a balanced access-plus-compensation framework.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "This is a one-sided solution that completely favors the internet community. It offers nothing to the publishers. Additional check: trap type is one-sided permissiveness, because it grants access but ignores creator compensation entirely.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "This is a one-sided solution that completely favors the publishing community. It offers nothing to the internet users. Additional check: trap type is one-sided prohibition, because it protects ownership only by eliminating ordinary user access.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "This is not a compromise because, as the passage notes, academics already have 'generous exemptions' under current law. This solution doesn't meaningfully change the status quo or resolve the broader conflict. Additional check: trap type is too narrow/status quo, because it only extends an existing exemption rather than resolving the broader two-community conflict.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

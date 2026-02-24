@@ -8,19 +8,18 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h2', text: 'Question Goal' },
     {
       type: 'callout',
-      text: '**Take a general rule** from the passage and find the one specific example in the answer choices that correctly applies it.',
+      text: '**Take a general rule from the passage and find the one specific example in the answer choices that correctly applies it.**',
       variant: 'goal',
     },
-    { type: 'paragraph', text: 'This module covers Principle - Apply.' },
     { type: 'hr' },
     { type: 'h2', text: 'Introduction' },
     { type: 'paragraph', text: 'You\'re provided a general rule (the principle). You\'re supposed to take that general rule, identify when it is applicable and the judgment that it tells you to reach, then identify the answer choice that has the same situation and the same judgment you\'re instructed to reach.' },
     { type: 'hr' },
     { type: 'h2', text: 'Common Question Stems' },
     { type: 'list', items: [
-      '""""Which one of the following judgments most closely conforms to the principle stated above?""""',
-      '""""Which one of the following is an application of the principle described?""""',
-      '""""The reasoning in which one of the following is most strongly supported by the guidelines?""""'
+      '"Which one of the following judgments most closely conforms to the principle stated above?"',
+      '"Which one of the following is an application of the principle described?"',
+      '"The reasoning in which one of the following is most strongly supported by the guidelines?"'
     ]},
     { type: 'hr' },
     { type: 'h2', text: 'Core Concepts' },
@@ -28,10 +27,10 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h4', text: '1. Break Down the Rule into Its Parts' },
     { type: 'paragraph', text: 'First, identify the exact conditions that make the rule apply, and the exact result that happens when they are met.' },
     { type: 'list', items: [
-      '**The Conditions (The ""If"" part):** What specific facts must be present for the rule to activate?',
-      '**The Result (The ""Then"" part):** What is the specific outcome that the rule dictates?'
+      '**The Conditions (The "If" part):** What specific facts must be present for the rule to activate?',
+      '**The Result (The "Then" part):** What is the specific outcome that the rule dictates?'
     ]},
-    { type: 'paragraph', text: '*Example Rule:* ""An action is wrong if it violates a societal rule that promotes general welfare.""' },
+    { type: 'paragraph', text: '*Example Rule:* "An action is wrong if it violates a societal rule that promotes general welfare."' },
     { type: 'list', items: [
       '**Condition 1:** An action violates a rule.',
       '**Condition 2:** That rule promotes general welfare.',

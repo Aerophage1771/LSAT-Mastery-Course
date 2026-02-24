@@ -8,22 +8,21 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h2', text: 'Question Goal' },
     {
       type: 'callout',
-      text: '**Identify the specific reasoning error** that makes the argument\'s conclusion unproven by its evidence.',
+      text: '**Identify the specific reasoning error that makes the argument\'s conclusion unproven by its evidence.** In other words, why is the logical connection between the premise and the conclusion broken?',
       variant: 'goal',
     },
-    { type: 'paragraph', text: 'This module covers Flaw.' },
     { type: 'hr' },
     { type: 'h2', text: 'Introduction' },
-    { type: 'paragraph', text: '**From Description to Evaluation**\n\nFlaw questions represent a critical turning point in your Logical Reasoning journey. After learning to *describe* arguments (Method of Reasoning), your task now shifts to **evaluating** them. You must identify the specific logical error—the ""flaw""—that makes the author\'s conclusion suspect.' },
+    { type: 'paragraph', text: '**From Description to Evaluation**\n\nFlaw questions represent a critical turning point in your Logical Reasoning journey. After learning to *describe* arguments (Method of Reasoning), your task now shifts to **evaluating** them. You must identify the specific logical error, the "flaw," that makes the author\'s conclusion suspect.' },
     { type: 'paragraph', text: 'As the most frequently tested question type in the section, mastering flaw detection is essential. Success requires a firm grasp of argument structure because you cannot find the error in a line of reasoning until you first understand what that reasoning is. You are looking for the hole in the argument\'s armor.' },
     { type: 'hr' },
     { type: 'h2', text: 'Common Question Stems' },
     { type: 'paragraph', text: 'You can recognize these questions because they ask about the error, vulnerability, or questionable technique used in the passage. Typical phrasing includes:' },
     { type: 'list', items: [
-      '""""The reasoning in the argument is most vulnerable to criticism on the grounds that the argument...""""',
-      '""""The argument\'s reasoning is flawed in that it...""""',
-      '""""Which one of the following most accurately describes a flaw in the reasoning of the argument?""""',
-      '""""The reasoning in the argument is questionable in that...""""'
+      '"The reasoning in the argument is most vulnerable to criticism on the grounds that the argument..."',
+      '"The argument\'s reasoning is flawed in that it..."',
+      '"Which one of the following most accurately describes a flaw in the reasoning of the argument?"',
+      '"The reasoning in the argument is questionable in that..."'
     ]},
     { type: 'hr' },
     { type: 'h2', text: 'Core Concepts' },
@@ -31,9 +30,9 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'paragraph', text: '**Accepting the Premises**\n\nTo find this gap, you must follow a critical rule: **provisionally accept the premises as true.** Do not waste time arguing with the stated facts. Instead, focus entirely on the *relationship* between those facts and the conclusion.' },
     { type: 'paragraph', text: '**Fact vs. Interpretation**\n\nWhile you accept the *facts*, you must question the *interpretation* of those facts.' },
     { type: 'list', items: [
-      '**What you accept:** The literal statement of the premise. If the author says, """"A recent study showed X,"""" you must accept that such a study exists and its results showed X.',
+      '**What you accept:** The literal statement of the premise. If the author says, "A recent study showed X," you must accept that such a study exists and its results showed X.',
       '**What you question:** The **probative value** of that premise. You are free to ask: Does this study actually prove the author\'s main point? Does the evidence lead to only one possible conclusion, or is there another explanation for the results?'
     ]},
-    { type: 'paragraph', text: 'The key test is always: **""""Even if I accept all these premises as 100% true, is the conclusion guaranteed to be true?""""** If the answer is """"No,"""" the reason *why* is the flaw.' }
+    { type: 'paragraph', text: 'The key test is always: **"Even if I accept all these premises as 100% true, is the conclusion guaranteed to be true?"** If the answer is "No," the reason *why* is the flaw.' }
   ]
 };

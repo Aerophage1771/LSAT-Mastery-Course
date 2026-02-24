@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: '3-2',
   title: 'Step-by-Step Guide',
+  subtitle: 'A process for pre-phrasing Method of Reasoning by isolating logical structure from content.',
   content: [
     { type: 'h2', text: "Step-by-Step Guide: Method of Reasoning" },
     { type: 'paragraph', text: "Use this step-by-step walkthrough to master pre-phrasing for Method of Reasoning questions by isolating the argument’s logical structure from its content." },

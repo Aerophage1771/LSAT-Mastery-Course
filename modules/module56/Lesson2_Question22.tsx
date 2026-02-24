@@ -8,27 +8,28 @@ export const Lesson2_Question22: Lesson = {
   id: "56-2",
   title: "Question 22: Application",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 22 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-113-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 22: Application Breakdown (PT-113-S-1-P-4-Q-22)" },
     { type: 'blockquote', text: "**Question:** Suppose that a country seizes a piece of territory with great mineral wealth that is claimed by a neighboring country, with a concomitant risk of failure involving moderate but easily tolerable harm in the long run. Given the information in the passage, the author would most likely say that" },
     { type: 'options', items: [
-      "(A) the country’s actions are consistent with previously accepted views of the psychology of risk-taking [44.0%] (Correct)",
-      "(B) the new research findings indicate that the country from which the territory has been seized probably weighs the risk factors involved in the situation similarly to the way in which they are weighed by the aggressor nation [11.0%]",
-      "(C) in spite of surface appearances to the contrary, the new research findings suggest that the objective value of the potential gain is overridden by the risks [16.0%]",
-      "(D) the facts of the situation show that the government is motivated by factors other than objective calculation of the measurable risks and probable benefits [17.0%]",
-      "(E) the country’s leaders most likely subjectively perceive the territory as having been taken from their country in the past [12.0%]"
+      "(A) the country’s actions are consistent with previously accepted views of the psychology of risk-taking (Correct)",
+      "(B) the new research findings indicate that the country from which the territory has been seized probably weighs the risk factors involved in the situation similarly to the way in which they are weighed by the aggressor nation",
+      "(C) in spite of surface appearances to the contrary, the new research findings suggest that the objective value of the potential gain is overridden by the risks",
+      "(D) the facts of the situation show that the government is motivated by factors other than objective calculation of the measurable risks and probable benefits",
+      "(E) the country’s leaders most likely subjectively perceive the territory as having been taken from their country in the past"
     ]},
-    { type: 'paragraph', text: "This is an Application question. We need to apply the concepts from the passage to a new hypothetical scenario. The scenario describes a country taking a 'moderate but easily tolerable' risk to gain territory with 'great mineral wealth.' This is an act of gain, not an attempt to avoid a loss." },
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "The scenario fits the 'previously accepted views' of risk-taking described in the second paragraph: a rational actor choosing a risky venture when the potential reward is high enough to compensate for the risk. The 'great mineral wealth' outweighs the 'moderate' risk." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This application question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Recent investigations into the psychology of decision making have sparked interest...' and 'In international affairs, it is vital that each actor in such...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "This is correct. The country is making a calculated gamble where the high potential gain ('great mineral wealth') seems to justify the low risk ('moderate but easily tolerable'). This aligns perfectly with the traditional economic view that 'entrepreneurs and consumers will choose a risky venture... only when the expected measurable value of the outcome is sufficiently high.'", badge: "Correct", badgeColor: "green" },
-        { title: "(B)", text: "The passage suggests the opposite. The new research on loss aversion indicates that the country that lost the territory would feel a much stronger motivation to take risks than the aggressor nation seeking a gain. They would weigh the factors very differently.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "The scenario contradicts this. It implies the potential gain *outweighs* the risk, not the other way around. The gain is 'great' while the risk is 'tolerable.'", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "This is incorrect. The country's actions are actually consistent with an objective calculation of benefits versus risks, which is the hallmark of the older, traditional view.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "The scenario describes a country 'seizing' territory for its wealth, which is an act of gain. The motivation of recapturing a perceived past loss is linked to the *new* research and often involves taking much larger, not 'easily tolerable,' risks.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "This is correct. The country is making a calculated gamble where the high potential gain ('great mineral wealth') seems to justify the low risk ('moderate but easily tolerable'). This aligns perfectly with the traditional economic view that 'entrepreneurs and consumers will choose a risky venture... only when the expected measurable value of the outcome is sufficiently high.' Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(B)", text: "The passage suggests the opposite. The new research on loss aversion indicates that the country that lost the territory would feel a much stronger motivation to take risks than the aggressor nation seeking a gain. They would weigh the factors very differently. Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "The scenario contradicts this. It implies the potential gain *outweighs* the risk, not the other way around. The gain is 'great' while the risk is 'tolerable.' Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "This is incorrect. The country's actions are actually consistent with an objective calculation of benefits versus risks, which is the hallmark of the older, traditional view. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "The scenario describes a country 'seizing' territory for its wealth, which is an act of gain. The motivation of recapturing a perceived past loss is linked to the *new* research and often involves taking much larger, not 'easily tolerable,' risks. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

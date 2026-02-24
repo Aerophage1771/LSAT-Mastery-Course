@@ -8,27 +8,28 @@ export const Lesson5_Question25: Lesson = {
   id: "56-5",
   title: "Question 25: Structure",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 25 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-113-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 25: Structure Breakdown (PT-113-S-1-P-4-Q-25)" },
     { type: 'blockquote', text: "**Question:** The passage can be most accurately described as" },
     { type: 'options', items: [
-      "(A) a psychological analysis of the motives involved in certain types of collective decision making in the presence of conflict [14.0%]",
-      "(B) a presentation of a psychological hypothesis which is then subjected to a political test case [13.0%]",
-      "(C) a suggestion that psychologists should incorporate the findings of political scientists into their research [3.0%]",
-      "(D) an examination of some new psychological considerations regarding risk and their application to another field of inquiry [68.0%] (Correct)",
-      "(E) a summary of two possible avenues for understanding international crises and conflicts [2.0%]"
+      "(A) a psychological analysis of the motives involved in certain types of collective decision making in the presence of conflict",
+      "(B) a presentation of a psychological hypothesis which is then subjected to a political test case",
+      "(C) a suggestion that psychologists should incorporate the findings of political scientists into their research",
+      "(D) an examination of some new psychological considerations regarding risk and their application to another field of inquiry (Correct)",
+      "(E) a summary of two possible avenues for understanding international crises and conflicts"
     ]},
-    { type: 'paragraph', text: "This is a Structure/Organization question. We need to find the description that best captures the overall structure and purpose of the passage." },
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "The passage has a clear two-part structure. It first explains a concept from one field ('new psychological considerations regarding risk') and then shows how that concept can be used to understand a different field ('application to another field of inquiry,' which is international conflict)." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This structure question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Recent investigations into the psychology of decision making have sparked interest...' and 'In international affairs, it is vital that each actor in such...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "This is too narrow. While the passage does analyze motives in collective decision-making, its main point is the broader act of connecting a psychological principle to international relations.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This is close but inaccurate. The Falklands War is used as an *example* to illustrate the theory, not as a formal 'test case' to prove it. A test case implies a more rigorous, scientific validation.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "This gets the relationship backward. The passage shows political scholars using findings from psychology, not the other way around.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "This accurately describes the two-part structure of the passage. It first examines new psychological ideas about risk and loss aversion and then applies these ideas to another area of study, international conflict.", badge: "Correct", badgeColor: "green" },
-        { title: "(E)", text: "The passage focuses on applying one primary psychological theory to international crises. It does not present two separate or competing ways of understanding them.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "This is too narrow. While the passage does analyze motives in collective decision-making, its main point is the broader act of connecting a psychological principle to international relations. Additional check: trap type is too narrow, since it leaves out a required part of the passage's claim.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This is close but inaccurate. The Falklands War is used as an *example* to illustrate the theory, not as a formal 'test case' to prove it. A test case implies a more rigorous, scientific validation. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "This gets the relationship backward. The passage shows political scholars using findings from psychology, not the other way around. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "This accurately describes the two-part structure of the passage. It first examines new psychological ideas about risk and loss aversion and then applies these ideas to another area of study, international conflict. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(E)", text: "The passage focuses on applying one primary psychological theory to international crises. It does not present two separate or competing ways of understanding them. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

@@ -9,26 +9,28 @@ export const Lesson6_Question28: Lesson = {
   id: "58-6",
   title: "Question 28: Other Viewpoint",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 28 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-115-S-3-P-4)', content: passageText },
+    { type: 'h3', text: "Question 28: Other Viewpoint Breakdown (PT-115-S-3-P-4-Q-28)" },
     { type: 'blockquote', text: "**Question:** Which one of the following views can most reasonably be attributed to the experts cited in the first sentence of the third paragraph?" },
     { type: 'options', items: [
-      "(A) Unauthorized digitalization of a copyrighted work should be considered a crime except when it is done for purposes of private study or research. [38.0%] (Correct)",
-      "(B) Unauthorized digitalization of a copyrighted work should be considered a crime even when it is done for purposes of private study or research. [21.0%]",
-      "(C) Making a copy of a copyrighted work from an unauthorized digitalization of the work should not be considered a crime. [5.0%]",
-      "(D) Making a copy of a copyrighted work from an unauthorized digitalization of the work should be punished, but not as severely as making the original digitalization. [6.0%]",
-      "(E) Making a copy of a copyrighted work from an unauthorized digitalization of the work should be punished just as severely as making the original digitalization. [30.0%]"
+      "(A) Unauthorized digitalization of a copyrighted work should be considered a crime except when it is done for purposes of private study or research. (Correct)",
+      "(B) Unauthorized digitalization of a copyrighted work should be considered a crime even when it is done for purposes of private study or research.",
+      "(C) Making a copy of a copyrighted work from an unauthorized digitalization of the work should not be considered a crime.",
+      "(D) Making a copy of a copyrighted work from an unauthorized digitalization of the work should be punished, but not as severely as making the original digitalization.",
+      "(E) Making a copy of a copyrighted work from an unauthorized digitalization of the work should be punished just as severely as making the original digitalization."
     ]},
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "The experts propose 'simply adding unauthorized digitalization to the list of activities proscribed under current law.' This implies they want to fit the new crime into the existing legal framework. The passage later states that 'current copyright law allows generous exemptions for those engaged in private study or research.' Therefore, it's reasonable to infer the experts' proposal would incorporate these existing exemptions." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This other viewpoint question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'The following passage was written in the mid-1990s.' and 'But even if the law is revised to contain a more...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "This is a strong inference. If the proposal is to 'simply add' a new crime to the 'current law,' it follows that the new crime would be subject to the existing rules and exceptions of that law, including the exemptions for academic use.", badge: "Correct", badgeColor: "green" },
-        { title: "(B)", text: "This is unlikely. The proposal is to 'simply add' to the current law, not to fundamentally change it by removing long-standing exemptions. This would be a major revision, not a simple addition.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "The passage presents the issue of secondary copies as an open 'question' raised by the experts' proposal. It does not state that the experts themselves hold a specific view on this issue.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "As with (C), this offers a specific opinion on a matter the passage only presents as an unresolved question. We cannot attribute this view to the experts.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "Similar to (C) and (D), this attributes a specific stance to the experts on an issue the passage frames as a complex, open question.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "This is a strong inference. If the proposal is to 'simply add' a new crime to the 'current law,' it follows that the new crime would be subject to the existing rules and exceptions of that law, including the exemptions for academic use. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(B)", text: "This is unlikely. The proposal is to 'simply add' to the current law, not to fundamentally change it by removing long-standing exemptions. This would be a major revision, not a simple addition. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "The passage presents the issue of secondary copies as an open 'question' raised by the experts' proposal. It does not state that the experts themselves hold a specific view on this issue. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "As with (C), this offers a specific opinion on a matter the passage only presents as an unresolved question. We cannot attribute this view to the experts. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "Similar to (C) and (D), this attributes a specific stance to the experts on an issue the passage frames as a complex, open question. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

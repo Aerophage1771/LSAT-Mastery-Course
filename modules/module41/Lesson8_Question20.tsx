@@ -12,19 +12,19 @@ export const Lesson8_Question20: Lesson = {
   id: "41-8",
   title: "Question 20: Passage Principle",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-3-Q-20" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-3)', content: passageText },
+    { type: 'h3', text: "Question 20: Passage Principle Breakdown (PT-128-S-1-P-3-Q-20)" },
     { type: 'blockquote', text: "**Question:** In the context of the passage, the examples in the second and third paragraphs best exemplify which one of the following generalizations?" },
     { type: 'options', items: [
-      "(A) Apparent traditions may be products of artifice. [72.0%] (Correct)",
-      "(B) National identity generally requires cultural uniformity. [5.0%]",
-      "(C) Most colonial cultures are by nature artificial and contrived. [9.0%]",
-      "(D) Historical and cultural experiences may cross national boundaries. [14.0%]",
-      "(E) Revolutionary cultures are often more authentic than imperial cultures. [1.0%]"
+      "(A) Apparent traditions may be products of artifice. (Correct)",
+      "(B) National identity generally requires cultural uniformity.",
+      "(C) Most colonial cultures are by nature artificial and contrived.",
+      "(D) Historical and cultural experiences may cross national boundaries.",
+      "(E) Revolutionary cultures are often more authentic than imperial cultures."
     ]},
-    { type: 'paragraph', text: "This question asks for a generalization that is exemplified by the examples in *both* the second and third paragraphs. We must find a single abstract principle that connects the case of the British in India and the case of the Algerian revolutionaries." },
-    { type: 'paragraph', text: "Let's review the core of each example:\n*   **Paragraph 2 (British Empire):** The British \"manufactured\" traditions like the jamborees for Queen Victoria to make their recent rule seem like an \"age-old custom.\" What appeared to be a tradition was an invention.\n*   **Paragraph 3 (Algerian Revolution):** The Algerians \"create[d] idealized images\" of their precolonial past. They constructed a version of their history and culture to serve a present need. What was presented as their authentic past was a modern creation." },
-    { type: 'paragraph', text: "The common thread is the act of invention or construction. In both cases, something that is presented as an authentic, old tradition or history is, in fact, a modern creation designed for a specific purpose." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The second and third paragraphs share one principle: what looks like inherited tradition can be consciously constructed for present political needs. The imperial case and the Algerian anticolonial case are presented as structurally similar acts of narrative production, so the best generalization must cover both contexts without favoring one side." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Paragraph 2 names \"manufacture and reinterpretation\" of tradition, and paragraph 3 begins, \"Similar constructions have also been made by native cultures,\" showing the same process across different political actors." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

@@ -16,24 +16,24 @@ export const Lesson1_PassageAnalysis: Lesson = {
   id: "46-1",
   title: "Passage Analysis",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Passage Analysis" },
-    { type: 'h4', text: "Passage A: The Philosophical Framework" },
-    { type: 'paragraph', text: "This passage outlines a three-part philosophical theory of justice regarding property ownership. It is abstract, logical, and structured like a formal proof." },
-    { type: 'paragraph', text: "First, the author establishes two fundamental principles that would govern a perfectly just world:\n1.  **The Principle of Justice in Acquisition:** This principle defines how an individual can legitimately come to own something that was previously unowned. It's the rule for original ownership.\n2.  **The Principle of Justice in Transfer:** This principle defines the conditions under which property can be justly transferred from one owner to another (e.g., through sale, gift, or inheritance)." },
-    { type: 'paragraph', text: "The author then introduces a critical complication: the real world is not perfectly just. Injustices like theft and fraud break the chain of legitimate ownership. This necessitates a third principle to address these historical wrongs:\n3.  **The Principle of Rectification:** This principle is designed to correct for past injustices. It involves a two-step process: first, determining through historical analysis what the distribution of property *should* have been if the injustice had not occurred; and second, taking action to bring the current, actual ownership into alignment with that ideal, rectified state." },
-    { type: 'h4', text: "Passage B: A Real-World Application" },
-    { type: 'paragraph', text: "This passage moves from abstract theory to a concrete historical case: the land claims of Native Americans in the United States." },
-    { type: 'paragraph', text: "It begins by citing a specific law, the Indian Nonintercourse Act of 1790, which was designed to prevent fraudulent land transfers from Native Americans, thereby acknowledging the potential for injustice." },
-    { type: 'paragraph', text: "The author then presents what is described as a \"natural\" and \"obvious\" line of reasoning regarding these claims:\n1.  Native Americans were the original occupants and thus the rightful owners of the land.\n2.  This land was \"illicitly taken from them\" during and after the European invasion.\n3.  Consequently, the current owners lack a legitimate right to the land.\n4.  The ideal moral remedy is to restore the land to its rightful owners wherever this is feasible, acknowledging that compromises may be necessary due to practical difficulties." },
-    { type: 'h4', text: "The Head-to-Head: Theory Meets Practice" },
-    { type: 'paragraph', text: "The relationship between the two passages is that of a general theory and a specific application. Passage A provides the abstract philosophical framework, while Passage B presents a real-world scenario that serves as a perfect case study for that framework." },
+    { type: 'accordion', title: 'Read Passage (PT-141-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Passage Analysis: Property Justice and Rectification (PT-141-S-1-P-4)" },
+    { type: 'paragraph', text: "This comparative pair links abstract political philosophy to a concrete historical dispute. Passage A builds a normative framework for just ownership, and Passage B applies that framework to Native American land claims." },
+    { type: 'paragraph', text: "Approach this set by mapping principles to facts. First isolate the rule structure in Passage A, then test how Passage B's historical narrative satisfies each condition in sequence." },
+    { type: 'hr' },
+    { type: 'h4', text: "Passage A: Rule Structure for Property Justice" },
+    { type: 'paragraph', text: "Passage A defines two baseline principles for a just world: just acquisition and just transfer. It then adds a third principle, rectification, to address historical chains that include theft or fraud." },
+    { type: 'paragraph', text: "Its argumentative form is conditional. If current holdings descend from injustice, legitimacy requires historical reconstruction plus corrective action to align present ownership with what should have occurred." },
+    { type: 'h4', text: "Passage B: Historical Application to Land Claims" },
+    { type: 'paragraph', text: "Passage B presents a legal and historical case involving the Nonintercourse Act and Native American land transfers. The narrative is organized to establish original entitlement, subsequent illicit transfer, and resulting defect in current title." },
+    { type: 'paragraph', text: "The proposed remedy is restoration where feasible, with practical compromise acknowledged as implementation detail rather than rejection of the principle." },
+    { type: 'h4', text: "Synthesis: Abstract Principle Meets Concrete Injustice" },
+    { type: 'paragraph', text: "The passages form a theory-to-case structure. Passage A provides the normative grammar, and Passage B supplies empirical facts that activate the rectification requirement." },
     { type: 'list', items: [
-      "Passage B's argument that Native Americans were the original owners aligns with Passage A's **Principle of Justice in Acquisition**.",
-      "The claim that the land was \"illicitly taken\" is a clear example of a violation of the **Principle of Justice in Transfer**.",
-      "The call to restore the land to its rightful owners is a direct application of what Passage A calls the **Principle of Rectification**."
+      "Original occupancy claim maps to justice in acquisition.",
+      "Illicit seizure maps to violation of justice in transfer.",
+      "Restoration demand maps to rectification of historical injustice."
     ]},
-    { type: 'paragraph', text: "In essence, Passage A provides the blueprint for fixing historical injustices related to property, and Passage B identifies a specific, large-scale historical injustice that demands such rectification." },
-    { type: 'callout', title: "Summary", variant: "summary", text: "• **Passage A (The Theory):** Outlines a three-part philosophical theory for just property ownership: (1) just acquisition, (2) just transfer, and (3) a principle of **rectification** to correct for historical injustices.\n• **Passage B (The Case Study):** Presents the historical case of Native American land claims, arguing that since their land was acquired justly and then transferred unjustly, the proper remedy is restoration.\n• **The Connection:** Passage B serves as a concrete example of the abstract problem that Passage A's \"Principle of Rectification\" is designed to solve." }
+    { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "Passage A argues that just property systems require rectification when historical transfers were unjust. Passage B applies that framework to Native American land claims, concluding that current ownership is morally defective where original entitlement was displaced through illicit transfer." }
   ]
 };

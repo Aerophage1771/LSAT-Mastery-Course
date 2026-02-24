@@ -9,26 +9,28 @@ export const Lesson5_Question27: Lesson = {
   id: "58-5",
   title: "Question 27: Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 27 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-115-S-3-P-4)', content: passageText },
+    { type: 'h3', text: "Question 27: Inference Breakdown (PT-115-S-3-P-4-Q-27)" },
     { type: 'blockquote', text: "**Question:** The passage supports each of the following inferences EXCEPT:" },
     { type: 'options', items: [
-      "(A) It is unlikely that every instance of digitalization could be detected under a copyright law revised to criminalize digitalization. [3.0%]",
-      "(B) Criminalizing unauthorized digitalization appears to be consistent with the publishing community’s treatment of information as an owned commodity. [10.0%]",
-      "(C) When copyright law is revised to cover digitalization, the revised law will include a prohibition on making copies from an unauthorized digitalization of a copyrighted work. [47.0%] (Correct)",
-      "(D) The number of instances of unauthorized digitalization would likely rise if digitalization technology were made even easier to use. [32.0%]",
-      "(E) Under current law, many academics are allowed to make copies of copyrighted works as long as they are used only for private research. [9.0%]"
+      "(A) It is unlikely that every instance of digitalization could be detected under a copyright law revised to criminalize digitalization.",
+      "(B) Criminalizing unauthorized digitalization appears to be consistent with the publishing community’s treatment of information as an owned commodity.",
+      "(C) When copyright law is revised to cover digitalization, the revised law will include a prohibition on making copies from an unauthorized digitalization of a copyrighted work. (Correct)",
+      "(D) The number of instances of unauthorized digitalization would likely rise if digitalization technology were made even easier to use.",
+      "(E) Under current law, many academics are allowed to make copies of copyrighted works as long as they are used only for private research."
     ]},
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "This is an EXCEPT question, meaning four of the statements are supported by the text and one is not. We need to find the unsupported statement. The key is to check each one against the passage for direct evidence." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This inference question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'The following passage was written in the mid-1990s.' and 'But even if the law is revised to contain a more...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "**Supported.** The passage states that laws against digitalization might be 'virtually unenforceable' due to the millions of internet users and the simplicity of copying. This directly supports the inference that not every instance could be detected.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "**Supported.** The publishing community views information as a 'commodity owned by its creator.' Criminalizing unauthorized use is a logical extension of protecting that commodity. This is a reasonable inference.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "**Not Supported.** The passage presents this as an open, unresolved question. It explicitly asks whether 'only the act of digitalization itself be criminal, or should each copy... be considered a separate instance of piracy?' Since the passage frames this as a difficult question without providing an answer, we cannot infer what a future law will include.", badge: "Correct", badgeColor: "green" },
-        { title: "(D)", text: "**Supported.** The passage states that one reason enforcement is difficult is because copying is a 'relatively simple process.' It is a reasonable inference that if the process were made even simpler, the problem would become more widespread.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "**Supported.** The passage explicitly states that 'current copyright law allows generous exemptions for those engaged in private study or research,' which directly supports this inference.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "**Supported.** The passage states that laws against digitalization might be 'virtually unenforceable' due to the millions of internet users and the simplicity of copying. This directly supports the inference that not every instance could be detected. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "**Supported.** The publishing community views information as a 'commodity owned by its creator.' Criminalizing unauthorized use is a logical extension of protecting that commodity. This is a reasonable inference. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "**Not Supported.** The passage presents this as an open, unresolved question. It explicitly asks whether 'only the act of digitalization itself be criminal, or should each copy... be considered a separate instance of piracy?' Since the passage frames this as a difficult question without providing an answer, we cannot infer what a future law will include. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(D)", text: "**Supported.** The passage states that one reason enforcement is difficult is because copying is a 'relatively simple process.' It is a reasonable inference that if the process were made even simpler, the problem would become more widespread. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "**Supported.** The passage explicitly states that 'current copyright law allows generous exemptions for those engaged in private study or research,' which directly supports this inference. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

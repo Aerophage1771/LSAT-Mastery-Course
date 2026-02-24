@@ -12,19 +12,19 @@ export const Lesson5_Question17: Lesson = {
   id: "41-5",
   title: "Question 17: Phrase Meaning",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-3-Q-17" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-3)', content: passageText },
+    { type: 'h3', text: "Question 17: Phrase Meaning Breakdown (PT-128-S-1-P-3-Q-17)" },
     { type: 'blockquote', text: "**Question:** The author’s use of the word “traditional” (last sentence of the second paragraph) is intended to indicate that the jamborees" },
     { type: 'options', items: [
-      "(A) had been revived after centuries of neglect [3.0%]",
-      "(B) were legitimized by their historic use in the native culture [9.0%]",
-      "(C) exemplified the dominance of the imperial culture [8.0%]",
-      "(D) conferred spurious historical legitimacy upon colonial authority [76.0%] (Correct)",
-      "(E) combined historic elements of imperial and native cultures [4.0%]"
+      "(A) had been revived after centuries of neglect",
+      "(B) were legitimized by their historic use in the native culture",
+      "(C) exemplified the dominance of the imperial culture",
+      "(D) conferred spurious historical legitimacy upon colonial authority (Correct)",
+      "(E) combined historic elements of imperial and native cultures"
     ]},
-    { type: 'paragraph', text: "This question asks for the intended meaning behind the author's use of the word \"traditional\" in quotation marks in the second paragraph. Quotation marks used in this way often signal irony, skepticism, or that the word is being used in a special, non-literal sense." },
-    { type: 'paragraph', text: "The context is the celebration of Queen Victoria as empress of India in \"numerous 'traditional' jamborees.\" The entire paragraph is about the **\"manufacture and reinterpretation of rituals, ceremonies, and traditions\"** by European elites to give their power \"a legitimacy that only longevity could impart.\" The point is that these rituals were *not* genuinely traditional or ancient; they were newly created to *appear* traditional." },
-    { type: 'paragraph', text: "The quotation marks serve to highlight this artificiality. The author is communicating to the reader that these events were called traditional, but in fact, they were a fabrication designed to create a false sense of historical legitimacy for a very recent act of colonial power." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The quotation marks around \"traditional\" signal distance and irony, not endorsement. The author is indicating that these jamborees were presented as ancient custom but were politically staged to legitimize recent imperial authority. So the meaning is not genuine tradition; it is fabricated historical aura used for power." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The paragraph explains that elites wanted to \"project their power backward in time,\" granting authority the legitimacy of longevity. Victoria's celebrations are described \"as if\" her rule were age-old rather than a recent edict." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "4-2",
   title: "Step-by-Step Guide",
+  subtitle: "A predictable process for matching logical structure in Parallel Reasoning questions.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Parallel Reasoning' },
     { type: 'paragraph', text: 'Parallel Reasoning questions follow a very predictable pattern. By focusing on the logical structure instead of the specific topic, you can find the right answer every time.' },

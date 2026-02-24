@@ -10,18 +10,19 @@ export const Lesson5_Question12: Lesson = {
   id: "39-5",
   title: "Question 12: Detail Hunt",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 12 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-119-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 12: Detail Hunt Breakdown (PT-119-S-1-P-2-Q-12)" },
     { type: 'blockquote', text: "**Question:** According to the anthropologists cited by the author, rites of passage are best described by which one of the following sequences of stages?" },
     { type: 'options', items: [
-      "(A) alienation, dislocation, integration [1.0%]",
-      "(B) separation, alienation, reintegration [97.0%] (Correct)",
-      "(C) integration, alienation, disintegration [1.0%]",
-      "(D) dislocation, reconciliation, reintegration [1.0%]",
-      "(E) disintegration, transformation, reintegration [1.0%]"
+      "(A) alienation, dislocation, integration",
+      "(B) separation, alienation, reintegration (Correct)",
+      "(C) integration, alienation, disintegration",
+      "(D) dislocation, reconciliation, reintegration",
+      "(E) disintegration, transformation, reintegration"
     ]},
-    { type: 'paragraph', text: "The key here is that we are being asked about the view of the **\"anthropologists cited by the author.\"** Our job is to go back to the text, find the sentence where the author is explaining what these anthropologists believe, and copy down the sequence of stages they list." },
-    { type: 'paragraph', text: "Let's go directly to the second paragraph. The second sentence is our target: \"According to these anthropologists, a rite of passage **begins with separation** from a position of security...; **proceeds to alienation** in a deathlike state...; and **concludes with reintegration** into society...\"" },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This is a direct line-reference question. The answer comes from the sentence that explicitly presents the anthropologists' sequence. The credited option keeps both the exact terms and the exact order; wrong options either reorder stages, swap in story vocabulary, or convert an outcome into a stage name." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The sequence is given verbatim: \"begins with separation... proceeds to alienation... concludes with reintegration.\" The passage separately says transformation is the effect of this process, not a stage label." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

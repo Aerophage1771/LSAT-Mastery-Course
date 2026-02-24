@@ -12,23 +12,25 @@ export const Lesson3_Question17: Lesson = {
   id: "45-3",
   title: "Question 17: Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-141-S-1-P-3-Q-17" },
+    { type: 'accordion', title: 'Read Passage (PT-141-S-1-P-3)', content: passageText },
+    { type: 'h3', text: "Question 17: Inference Breakdown (PT-141-S-1-P-3-Q-17)" },
     { type: 'blockquote', text: "The author states that Marcuse believed that advertisers" },
     { type: 'options', items: [
-      "(A) base many of their manipulative strategies on psychological research findings [3.0%]",
-      "(B) appeal to people’s real needs in order to create false needs [93.0%] (Correct)",
-      "(C) are restricted to a degree by regulations prohibiting misinformation [2.0%]",
-      "(D) exaggerate the consumer’s need for independent decision-making [1.0%]",
-      "(E) deny that the needs they create in people are less real than other needs [2.0%]"
+      "(A) base many of their manipulative strategies on psychological research findings",
+      "(B) appeal to people’s real needs in order to create false needs (Correct)",
+      "(C) are restricted to a degree by regulations prohibiting misinformation",
+      "(D) exaggerate the consumer’s need for independent decision-making",
+      "(E) deny that the needs they create in people are less real than other needs"
     ]},
-    { type: 'paragraph', text: "This is a detail-oriented question asking what the author claims Marcuse believed about advertisers. The answer must be found in the first two paragraphs, where the author is explaining Marcuse's theory.\n\nThe second paragraph is the most direct source. It begins, \"Marcuse supposed that...\" and goes on to explain the mechanism of the critique. The passage states that Marcuse believed we have \"real needs,\" and that advertising \"appropriates these needs for its own purposes, forging psychological associations between them and consumer items... thereby creating a false 'need' for these items.\"\n\nThe core of Marcuse's belief about advertisers is that they work by taking genuine human needs and attaching them to products to create artificial, or \"false,\" needs." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This inference question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Some critics of advertising have assumed that the creation of false...' and 'This does not mean, however, that consumers do not freely and...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) base many of their manipulative strategies on psychological research findings", text: "The passage mentions \"powerful psychological techniques\" but does not state that Marcuse believed these were based on \"research findings.\" This detail is not in the text.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) appeal to people’s real needs in order to create false needs", text: "This is a direct and accurate summary of the process described in the second paragraph. It correctly identifies the two key components of Marcuse's theory: the appropriation of \"real needs\" and the \"creation of false needs.\"", badge: "Correct", badgeColor: "green" },
-      { title: "(C) are restricted to a degree by regulations prohibiting misinformation", text: "Information about regulations appears in the fourth paragraph as part of the *author's* rebuttal to Marcuse. This is a classic misattribution trap; this is not a belief Marcuse held.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) exaggerate the consumer’s need for independent decision-making", text: "This is the opposite of Marcuse's view. Marcuse believed advertising *undermines* and manipulates decision-making, rather than exaggerating the need for it.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) deny that the needs they create in people are less real than other needs", text: "The passage discusses Marcuse's theory about what advertisers *do*, not what advertisers themselves might claim or believe about their own actions. This is outside the scope of the explanation of Marcuse's views.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) base many of their manipulative strategies on psychological research findings", text: "The passage mentions \"powerful psychological techniques\" but does not state that Marcuse believed these were based on \"research findings.\" This detail is not in the text. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) appeal to people’s real needs in order to create false needs", text: "This is a direct and accurate summary of the process described in the second paragraph. It correctly identifies the two key components of Marcuse's theory: the appropriation of \"real needs\" and the \"creation of false needs.\" Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+      { title: "(C) are restricted to a degree by regulations prohibiting misinformation", text: "Information about regulations appears in the fourth paragraph as part of the *author's* rebuttal to Marcuse. This is a classic misattribution trap; this is not a belief Marcuse held. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) exaggerate the consumer’s need for independent decision-making", text: "This is the opposite of Marcuse's view. Marcuse believed advertising *undermines* and manipulates decision-making, rather than exaggerating the need for it. Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) deny that the needs they create in people are less real than other needs", text: "The passage discusses Marcuse's theory about what advertisers *do*, not what advertisers themselves might claim or believe about their own actions. This is outside the scope of the explanation of Marcuse's views. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

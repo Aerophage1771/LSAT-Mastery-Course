@@ -9,26 +9,28 @@ export const Lesson4_Question26: Lesson = {
   id: "58-4",
   title: "Question 26: Purpose of Paragraph",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 26 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-115-S-3-P-4)', content: passageText },
+    { type: 'h3', text: "Question 26: Purpose of Paragraph Breakdown (PT-115-S-3-P-4-Q-26)" },
     { type: 'blockquote', text: "**Question:** The discussion in the second paragraph is intended primarily to explain which one of the following?" },
     { type: 'options', items: [
-      "(A) how copyright infringement of protected works is punished under current Canadian copyright law [3.0%]",
-      "(B) why current Canadian copyright law is not easily applicable to digitalization [83.0%] (Correct)",
-      "(C) how the Internet has caused copyright holders to look for new forms of legal protection [5.0%]",
-      "(D) why copyright experts propose protecting copyrighted works from unauthorized digitalization [4.0%]",
-      "(E) how unauthorized reproductions of copyrighted works are transmitted over the Internet [6.0%]"
+      "(A) how copyright infringement of protected works is punished under current Canadian copyright law",
+      "(B) why current Canadian copyright law is not easily applicable to digitalization (Correct)",
+      "(C) how the Internet has caused copyright holders to look for new forms of legal protection",
+      "(D) why copyright experts propose protecting copyrighted works from unauthorized digitalization",
+      "(E) how unauthorized reproductions of copyrighted works are transmitted over the Internet"
     ]},
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "The second paragraph's job is to explain the specific legal problem. It describes the existing law (which covers 'material form') and the new technology (digitalization) and shows why they don't match up. Its primary function is to detail the legal loophole." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This purpose of paragraph question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'The following passage was written in the mid-1990s.' and 'But even if the law is revised to contain a more...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "The paragraph explains a loophole that prevents something from being a crime; it does not discuss punishments.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "This is a perfect summary of the paragraph's function. It explains that the law is based on 'material reproduction,' a concept that is 'not easily applicable to digitalization,' which creates the legal gray area.", badge: "Correct", badgeColor: "green" },
-        { title: "(C)", text: "The first paragraph sets up the general conflict and the need for protection. The second paragraph focuses specifically on explaining the legal technicality.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "The proposals from experts are the topic of the third paragraph, not the second. The second paragraph explains the problem that these proposals are meant to solve.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "The paragraph briefly defines digitalization but its main purpose is not technical. Its primary goal is to explain the legal implications of that technology.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "The paragraph explains a loophole that prevents something from being a crime; it does not discuss punishments. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "This is a perfect summary of the paragraph's function. It explains that the law is based on 'material reproduction,' a concept that is 'not easily applicable to digitalization,' which creates the legal gray area. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(C)", text: "The first paragraph sets up the general conflict and the need for protection. The second paragraph focuses specifically on explaining the legal technicality. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "The proposals from experts are the topic of the third paragraph, not the second. The second paragraph explains the problem that these proposals are meant to solve. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "The paragraph briefly defines digitalization but its main purpose is not technical. Its primary goal is to explain the legal implications of that technology. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

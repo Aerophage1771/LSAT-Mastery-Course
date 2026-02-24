@@ -16,26 +16,25 @@ export const Lesson6_Question26: Lesson = {
   id: "46-6",
   title: "Question 26: Author Viewpoint",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-141-S-1-P-4-Q-26" },
+    { type: 'accordion', title: 'Read Passage (PT-141-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 26: Author Viewpoint Breakdown (PT-141-S-1-P-4-Q-26)" },
     { type: 'blockquote', text: "**Question:** The author of passage A would be most likely to characterize the purpose of the Indian Nonintercourse Act as which one of the following?" },
     { type: 'options', items: [
-      "(A) legitimization of actual property holdings during the eighteenth century [3.0%]",
-      "(B) clarification of existing laws regarding transfer of property [4.0%]",
-      "(C) assurance of conformity to the principle of justice in acquisition [11.0%]",
-      "(D) prevention of violations of the principle of justice in transfer [61.0%] (Correct)",
-      "(E) implementation of a principle of rectification [21.0%]"
+      "(A) legitimization of actual property holdings during the eighteenth century",
+      "(B) clarification of existing laws regarding transfer of property",
+      "(C) assurance of conformity to the principle of justice in acquisition",
+      "(D) prevention of violations of the principle of justice in transfer (Correct)",
+      "(E) implementation of a principle of rectification"
     ]},
-    { type: 'paragraph', text: "This is a \"crossover\" application question. We must use the philosophical framework from Passage A to categorize the purpose of the Indian Nonintercourse Act described in Passage B." },
-    { type: 'paragraph', text: "First, let's identify the purpose of the Act according to Passage B. The passage states its purpose was \"to guarantee security to Native Americans against fraudulent acquisition by others of the Native Americans’ land holdings.\" In short, the law was designed to **prevent future fraud** in land deals involving land already owned by Native Americans." },
-    { type: 'paragraph', text: "Next, we must match this purpose to one of the principles from Passage A:\n*   **Principle of Justice in Acquisition:** Governs how one comes to own *unowned* property. This is incorrect, as the land was already owned.\n*   **Principle of Justice in Transfer:** Governs the conditions for a *just transfer* of property from one owner to another. Fraud is a violation of a just transfer. A law designed to prevent fraud in transfers is therefore a law designed to ensure conformity with this principle.\n*   **Principle of Rectification:** Governs how to *correct past* injustices. This is incorrect, as the Act was forward-looking, aiming to prevent *future* injustices." },
-    { type: 'paragraph', text: "Therefore, the author of Passage A would classify the Act as a mechanism for upholding the Principle of Justice in Transfer." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This author viewpoint question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'There are two principles that are fundamental to a theory of...' and 'But the original wrong can most easily be righted by returning...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: "Option", text: "Analysis" }, items: [
-      { title: "(A) legitimization of actual property holdings during the eighteenth century", text: "The Act's purpose was to regulate future transfers, not to legitimize existing holdings.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) clarification of existing laws regarding transfer of property", text: "Passage B presents the Act as establishing a new requirement (federal approval), not merely clarifying old ones.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) assurance of conformity to the principle of justice in acquisition", text: "This is incorrect. \"Acquisition\" in Passage A's terms applies to previously unowned property. The Act concerned land already owned by Native Americans.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) prevention of violations of the principle of justice in transfer", text: "This is the correct answer. The Act was intended to prevent fraudulent transfers, which are a clear violation of the \"principle of justice in transfer.\"", badge: "Correct", badgeColor: "green" },
-      { title: "(E) implementation of a principle of rectification", text: "This is incorrect. \"Rectification\" is for fixing past wrongs. The Act was designed to prevent future wrongs.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) legitimization of actual property holdings during the eighteenth century", text: "The Act's purpose was to regulate future transfers, not to legitimize existing holdings. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) clarification of existing laws regarding transfer of property", text: "Passage B presents the Act as establishing a new requirement (federal approval), not merely clarifying old ones. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) assurance of conformity to the principle of justice in acquisition", text: "This is incorrect. \"Acquisition\" in Passage A's terms applies to previously unowned property. The Act concerned land already owned by Native Americans. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) prevention of violations of the principle of justice in transfer", text: "This is the correct answer. The Act was intended to prevent fraudulent transfers, which are a clear violation of the \"principle of justice in transfer.\" Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+      { title: "(E) implementation of a principle of rectification", text: "This is incorrect. \"Rectification\" is for fixing past wrongs. The Act was designed to prevent future wrongs. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

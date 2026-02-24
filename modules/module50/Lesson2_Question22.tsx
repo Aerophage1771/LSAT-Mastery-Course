@@ -9,24 +9,25 @@ export const Lesson2_Question22: Lesson = {
   id: "50-2",
   title: "Question 22: Main Point",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-108-S-1-P-4-Q-22" },
+    { type: 'accordion', title: 'Read Passage (PT-108-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 22: Main Point Breakdown (PT-108-S-1-P-4-Q-22)" },
     { type: 'blockquote', text: "**Question:** Which one of the following statements most accurately expresses the passage’s main point?" },
     { type: 'options', items: [
-      "(A) Although scientists must rely on both language and mathematics in their pursuit of scientific knowledge, each is an imperfect tool for perceiving and interpreting aspects of the physical world. [18.0%]",
-      "(B) The acquisition of scientific knowledge depends on an agreement among scientists to accept some mathematical statements as more precise than others while acknowledging that all mathematics is inexact. [9.0%]",
-      "(C) If science is truly to progress, scientists must temporarily abandon the pursuit of new knowledge in favor of a systematic analysis of how the knowledge they already possess came to be accepted as true. [2.0%]",
-      "(D) In order to better understand the acquisition of scientific knowledge, scientists must investigate mathematical statements’ relationship to the world just as linguists study language’s relationship to the world. [70.0%] (Correct)",
-      "(E) Without the debates among linguists that preceded them, it is unlikely that scientists would ever have begun to explore the essential role played by mathematics in the acquisition of scientific knowledge. [2.0%]"
+      "(A) Although scientists must rely on both language and mathematics in their pursuit of scientific knowledge, each is an imperfect tool for perceiving and interpreting aspects of the physical world.",
+      "(B) The acquisition of scientific knowledge depends on an agreement among scientists to accept some mathematical statements as more precise than others while acknowledging that all mathematics is inexact.",
+      "(C) If science is truly to progress, scientists must temporarily abandon the pursuit of new knowledge in favor of a systematic analysis of how the knowledge they already possess came to be accepted as true.",
+      "(D) In order to better understand the acquisition of scientific knowledge, scientists must investigate mathematical statements’ relationship to the world just as linguists study language’s relationship to the world. (Correct)",
+      "(E) Without the debates among linguists that preceded them, it is unlikely that scientists would ever have begun to explore the essential role played by mathematics in the acquisition of scientific knowledge."
     ]},
-    { type: 'h3', text: "Explanation" },
-    { type: 'paragraph', text: "The passage discusses a debate among linguists about whether language has a true connection to reality or is just a set of agreed-upon rules. It then compares this to science, suggesting that mathematical explanations might also be conventions that scientists accept. The author concludes that scientists, like linguists, need to question how their 'language' of mathematics actually relates to the physical world." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This main point question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'What it means to “explain” something in science often comes down...' and 'In pursuing the implications of this theory, linguists have reached the...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A)", text: "While the passage implies that mathematics may be an imperfect tool, this is a supporting idea, not the main point. The main point is the call for scientists to investigate this relationship, following the example set by linguists." },
-      { title: "(B)", text: "The passage does mention that scientific agreement is important. However, this is part of a larger argument that this process of agreement needs to be questioned and studied, which is the passage's main conclusion." },
-      { title: "(C)", text: "This choice is too extreme. The passage suggests scientists should take up a new line of inquiry, but it never says they must 'abandon the pursuit of new knowledge' to do so." },
-      { title: "(D)", text: "This statement accurately captures the central argument of the passage. The author establishes a parallel between the questions linguists ask about language and the questions scientists should be asking about mathematics, concluding that scientists have not yet properly addressed this important issue." },
-      { title: "(E)", text: "The passage uses the linguistics debate as an analogy to make its point. It does not claim that the linguists' debate caused or is required for scientists to begin their own exploration." }
+      { title: "(A)", text: "While the passage implies that mathematics may be an imperfect tool, this is a supporting idea, not the main point. The main point is the call for scientists to investigate this relationship, following the example set by linguists. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(B)", text: "The passage does mention that scientific agreement is important. However, this is part of a larger argument that this process of agreement needs to be questioned and studied, which is the passage's main conclusion. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(C)", text: "This choice is too extreme. The passage suggests scientists should take up a new line of inquiry, but it never says they must 'abandon the pursuit of new knowledge' to do so. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(D)", text: "This statement accurately captures the central argument of the passage. The author establishes a parallel between the questions linguists ask about language and the questions scientists should be asking about mathematics, concluding that scientists have not yet properly addressed this important issue. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(E)", text: "The passage uses the linguistics debate as an analogy to make its point. It does not claim that the linguists' debate caused or is required for scientists to begin their own exploration. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." }
     ]}
   ]
 };

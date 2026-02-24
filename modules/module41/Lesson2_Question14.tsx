@@ -12,19 +12,19 @@ export const Lesson2_Question14: Lesson = {
   id: "41-2",
   title: "Question 14: Main Point",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-3-Q-14" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-3)', content: passageText },
+    { type: 'h3', text: "Question 14: Main Point Breakdown (PT-128-S-1-P-3-Q-14)" },
     { type: 'blockquote', text: "**Question:** Which one of the following statements most accurately expresses the main point of the passage?" },
     { type: 'options', items: [
-      "(A) Either by ignoring a native culture’s own self-understanding or by substituting fabricated traditions and rituals, imperial societies often obscure the heterogeneous cultures of the peoples they colonize. [11.0%]",
-      "(B) Attempts to reconstruct a native, precolonial culture by members of decolonized societies are essentially no different from European colonial creation of traditions and rituals to validate their authority. [8.0%]",
-      "(C) In attempting to impose a monolithic culture on the peoples they colonize, imperial societies adopt artifices very similar to the tactics employed by revisionist historians of ancient Greek culture. [3.0%]",
-      "(D) While most colonized societies have regained their independence, they retain trappings of imperial culture that will need to be discarded if they are to regain the traditions of their past. [3.0%]",
-      "(E) Despite nationalistic creation of images of cultures as unified and monolithic, we now more clearly understand the extent to which cultures are in fact made up of heterogeneous elements. [76.0%] (Correct)"
+      "(A) Either by ignoring a native culture’s own self-understanding or by substituting fabricated traditions and rituals, imperial societies often obscure the heterogeneous cultures of the peoples they colonize.",
+      "(B) Attempts to reconstruct a native, precolonial culture by members of decolonized societies are essentially no different from European colonial creation of traditions and rituals to validate their authority.",
+      "(C) In attempting to impose a monolithic culture on the peoples they colonize, imperial societies adopt artifices very similar to the tactics employed by revisionist historians of ancient Greek culture.",
+      "(D) While most colonized societies have regained their independence, they retain trappings of imperial culture that will need to be discarded if they are to regain the traditions of their past.",
+      "(E) Despite nationalistic creation of images of cultures as unified and monolithic, we now more clearly understand the extent to which cultures are in fact made up of heterogeneous elements. (Correct)"
     ]},
-    { type: 'paragraph', text: "This is a main point question asking for the statement that best encapsulates the author's entire argument. A strong answer must account for the initial thesis about present-day bias, the various examples provided (both colonial and native), and the final conclusion about the paradoxical nature of cultural identity." },
-    { type: 'paragraph', text: "The author's argument develops from the premise that cultures are defined based on present needs, leading various groups to construct images of a pure, monolithic past. The author provides examples from European imperialists, revisionist historians of Greece, and Algerian revolutionaries to show how widespread this tendency is. The passage culminates in a final, crucial point: despite these nationalistic constructions, we are now more aware that cultures are, in reality, heterogeneous and interconnected." },
-    { type: 'paragraph', text: "A good main point answer must capture both this process of artificial construction and the concluding realization of cultural hybridity." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The main point is broader than any single historical case. The passage argues that national identities are shaped by present-day agendas that manufacture images of cultural purity, while actual cultures are hybrid and cross-boundary. The Greek revision story, imperial pageantry, and anticolonial mythmaking all function as support for that same thesis." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The thesis appears early: present \"anxieties and agendas\" influence identities built from the past. The close states the corrective: cultures are \"far from being unitary, monolithic, or autonomous\" and contain more \"foreign\" elements than they exclude." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

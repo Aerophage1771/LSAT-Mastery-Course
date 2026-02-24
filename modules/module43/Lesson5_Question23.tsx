@@ -11,23 +11,25 @@ export const Lesson5_Question23: Lesson = {
   id: "43-5",
   title: "Question 23: Analogy",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-4-Q-23" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-4)', content: passageText },
+    { type: 'h3', text: "Question 23: Analogy Breakdown (PT-128-S-4-P-4-Q-23)" },
     { type: 'blockquote', text: "**Question:** Which one of the following is most analogous to the kind of approach both authors criticize?" },
     { type: 'options', items: [
-      "(A) A local library charges children lower fines for overdue materials and lost books than it charges adults. [4.0%]",
-      "(B) In assigning grades, a teacher takes into account not only written assignments and class performance, but also background factors unique to individual students. [88.0%] (Correct)",
-      "(C) In assigning employee parking spaces, management takes into account an employee’s rank within, and years of service to, the company. [3.0%]",
-      "(D) An employer with a proven history of age discrimination is forced by a court to hire qualified older employees. [4.0%]",
-      "(E) A university admits students based not just on academic achievement, but also on documented extracurricular activities and community service. [2.0%]"
+      "(A) A local library charges children lower fines for overdue materials and lost books than it charges adults.",
+      "(B) In assigning grades, a teacher takes into account not only written assignments and class performance, but also background factors unique to individual students. (Correct)",
+      "(C) In assigning employee parking spaces, management takes into account an employee’s rank within, and years of service to, the company.",
+      "(D) An employer with a proven history of age discrimination is forced by a court to hire qualified older employees.",
+      "(E) A university admits students based not just on academic achievement, but also on documented extracurricular activities and community service."
     ]},
-    { type: 'paragraph', text: "The approach criticized by both authors is the attempt to implement 'cosmic justice,' which involves going beyond objective criteria ('outputs' or 'process') to factor in an individual's unique background and circumstances ('inputs' or 'unmerited disadvantages'). We need an analogy where a decision-maker does this." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "Concept focus: analogy questions are solved by structure, not topic. Both authors criticize efforts to move beyond process or observable outputs and instead adjust decisions using individualized background factors that are hard to weigh fairly. So the target choice should mirror this pattern: standard criteria are supplemented by personal background considerations in pursuit of deeper fairness." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Map the criticized structure: (1) decision context (law/punishment), (2) normal process or output criteria, (3) extra weighting of background disadvantages (inputs), (4) concern that this introduces unstable or unjustifiable judgment. Pick the option that matches all four steps." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) A local library charges children lower fines...", text: "This is a simple, rule-based policy applied to broad categories, not an individualized 'cosmic' calculation.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) In assigning grades, a teacher takes into account... background factors unique to individual students.", text: "This is a perfect analogy. The 'written assignments' are the objective outputs/process. The 'background factors' are the unmerited disadvantages/inputs. The teacher is attempting the 'complicated calculus' of cosmic justice.", badge: "Correct", badgeColor: "green" },
-      { title: "(C) In assigning employee parking spaces, management takes into account an employee’s rank...", text: "This describes a system based on clear, objective rules (rank, seniority), which is analogous to 'traditional justice,' not cosmic justice.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) An employer... is forced by a court to hire qualified older employees.", text: "This is an example of traditional justice at work—applying a legal process to correct a specific violation of a rule.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) A university admits students based not just on academic achievement, but also on documented extracurricular activities...", text: "Extracurriculars are typically seen as part of a student's record of achievement ('outputs'), not uncontrollable 'inputs' like a traumatic childhood.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) A local library charges children lower fines...", text: "This is a categorical policy rule, not a case-by-case attempt to compute hidden personal causation. It lacks the individualized background-factor calculus both passages criticize.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) In assigning grades, a teacher takes into account... background factors unique to individual students.", text: "This best matches the criticized approach. Grades normally rest on performance outputs, but the decision is adjusted by individual background inputs, mirroring the move from process/output judgment to broader compensatory calibration.", badge: "Correct", badgeColor: "green" },
+      { title: "(C) In assigning employee parking spaces, management takes into account an employee’s rank...", text: "Rank and seniority are explicit, rule-governed criteria. That resembles traditional process-based allocation, not the criticized attempt to correct broad unmerited disadvantages through individualized balancing.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) An employer... is forced by a court to hire qualified older employees.", text: "This describes a legal remedy for a specific discriminatory violation, which aligns with correcting biased acts under ordinary justice procedures. It is not the broader cosmic-style reweighting both authors target.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) A university admits students based not just on academic achievement, but also on documented extracurricular activities...", text: "Extracurriculars and service are still achievement-oriented outputs in most admissions frameworks. The option does not clearly mirror the key criticized move of importing personal disadvantage inputs into a deservedness calculation.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

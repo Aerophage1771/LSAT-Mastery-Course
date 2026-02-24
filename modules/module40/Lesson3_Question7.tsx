@@ -10,19 +10,19 @@ export const Lesson3_Question7: Lesson = {
   id: "40-3",
   title: "Question 7: Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-2-Q-7" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 7: Inference Breakdown (PT-128-S-1-P-2-Q-7)" },
     { type: 'blockquote', text: "**Question:** In stating that bankruptcy laws have evolved “perhaps unexpectedly” (first sentence of the passage) as a remedy for creditors, the author implies that creditors" },
     { type: 'options', items: [
-      "(A) are often surprised to receive compensation in bankruptcy courts [3.0%]",
-      "(B) have unintentionally become the chief beneficiaries of bankruptcy laws [7.0%]",
-      "(C) were a consideration, though not a primary one, in the formulation of bankruptcy laws [8.0%]",
-      "(D) are better served than is immediately apparent by laws designed in the first instance to provide a remedy for debtors [82.0%] (Correct)",
-      "(E) were themselves active in the formulation of modern bankruptcy laws [0.0%]"
+      "(A) are often surprised to receive compensation in bankruptcy courts",
+      "(B) have unintentionally become the chief beneficiaries of bankruptcy laws",
+      "(C) were a consideration, though not a primary one, in the formulation of bankruptcy laws",
+      "(D) are better served than is immediately apparent by laws designed in the first instance to provide a remedy for debtors (Correct)",
+      "(E) were themselves active in the formulation of modern bankruptcy laws"
     ]},
-    { type: 'paragraph', text: "This question asks for the implication of the phrase \"perhaps unexpectedly\" as it is used in the first sentence. The phrase modifies the claim that modern bankruptcy laws are a remedy \"for their creditors.\" The task is to understand why the author considers this benefit to creditors \"unexpected.\"" },
-    { type: 'paragraph', text: "The conventional view of bankruptcy is that it primarily benefits debtors by absolving them of debt, which would seem to be a direct loss for creditors. The author's argument, however, is that this view is superficial. The modern, remedial system, by keeping the debtor economically productive, actually provides the creditor with the \"best hope of collecting\" some portion of the debt, which is a better outcome than the punitive alternative (where an imprisoned debtor can pay nothing)." },
-    { type: 'paragraph', text: "The phrase \"perhaps unexpectedly\" is used to flag this counterintuitive point for the reader. The benefit to creditors is not immediately obvious and runs contrary to a common assumption." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The inference is about what is counterintuitive in \"perhaps unexpectedly.\" The passage treats bankruptcy as a remedy aimed first at debtors, then argues that this same framework also benefits creditors because creditors collect more from reorganized, still-productive debtors than from imprisoned individuals or dissolved firms. So the credited answer must capture that debtors-first design can still better serve creditors than expected." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The passage contrasts punitive failure with practical recovery: \"creditors derive little benefit from imprisoned debtors,\" and modern law aims to provide creditors with the \"best hope of collecting.\" That supports the \"unexpectedly\" inference." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

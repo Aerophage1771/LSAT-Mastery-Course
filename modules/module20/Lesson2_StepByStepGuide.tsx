@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "20-2",
   title: "Step-by-Step Guide",
+  subtitle: "Identify how the speakers' arguments relate, then test the choices against that relationship.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Agree / Disagree' },
     { type: 'paragraph', text: 'This section provides a clear, step-by-step method for solving **Agree/Disagree** questions. It helps you identify how the speakers\' arguments relate and systematically test the answer choices against that relationship.' },

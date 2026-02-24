@@ -348,9 +348,7 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                   <div className="mt-4">
                     <ContentBox variant="question" id={item.id} defaultExpanded>
                       {item.stimulus && (
-                        <blockquote className="border-l-4 border-indigo-300 pl-6 py-3 my-6 bg-indigo-50/50 text-slate-700 italic rounded-r-lg shadow-sm">
-                          {item.stimulus}
-                        </blockquote>
+                        <p className="mb-4 leading-relaxed text-slate-700 text-lg">{item.stimulus}</p>
                       )}
                       {item.question && (
                         <p className="mb-4 leading-relaxed text-slate-700 text-lg">{item.question}</p>

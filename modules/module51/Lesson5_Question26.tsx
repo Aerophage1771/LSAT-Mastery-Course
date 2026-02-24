@@ -11,24 +11,25 @@ export const Lesson5_Question26: Lesson = {
   id: "51-5",
   title: "Question 26: Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-109-S-2-P-4-Q-26" },
+    { type: 'accordion', title: 'Read Passage (PT-109-S-2-P-4)', content: passageText },
+    { type: 'h3', text: "Question 26: Inference Breakdown (PT-109-S-2-P-4-Q-26)" },
     { type: 'blockquote', text: "**Question:** Which one of the following statements concerning the history of the law of evidence is supported by information in the passage?" },
     { type: 'options', items: [
-      "(A) Common-law rules of evidence have been replaced by modern principles. [14.0%]",
-      "(B) Modern evidence law is less rigid than was eighteenth-century evidence law. [46.0%] (Correct)",
-      "(C) Some current laws regarding evidence do not derive from common-law doctrines. [32.0%]",
-      "(D) The late eighteenth century marked the beginning of evidence law. [7.0%]",
-      "(E) Prior to the eighteenth century, rules of evidence were not based on common law. [2.0%]"
+      "(A) Common-law rules of evidence have been replaced by modern principles.",
+      "(B) Modern evidence law is less rigid than was eighteenth-century evidence law. (Correct)",
+      "(C) Some current laws regarding evidence do not derive from common-law doctrines.",
+      "(D) The late eighteenth century marked the beginning of evidence law.",
+      "(E) Prior to the eighteenth century, rules of evidence were not based on common law."
     ]},
-    { type: 'h3', text: "Explanation" },
-    { type: 'paragraph', text: "Context:\nThe passage discusses the history of evidence law, contrasting the rigid rules of the eighteenth century with the more flexible principles of modern law. Eighteenth-century law had strict rules that would 'mechanically' exclude relevant evidence. In contrast, modern law operates on a 'presumption' that evidence should be admitted unless there is a strong policy reason to exclude it." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This inference question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'By the time Bentham turned his interest to the subject, late...' and 'This clear-grounds proviso allows more exclusions than Bentham would have liked,...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A)", text: "The passage suggests that modern principles evolved from and modified common law, rather than completely replacing it. The first sentence states that components of modern law had already been assembled from common-law doctrines." },
-      { title: "(B)", text: "This statement is supported because the passage describes eighteenth-century law as having rigid rules that 'mechanically excluded' evidence. It contrasts this with modern law, which uses a more flexible 'presumption' that allows evidence unless there are 'clear grounds of policy for excluding it.'" },
-      { title: "(C)", text: "The passage does not provide information to support this claim. It states that 'most components' of modern law came from common-law doctrines, but it never mentions whether any laws came from other sources." },
-      { title: "(D)", text: "This statement is directly contradicted by the first sentence of the passage. The text says that by the late eighteenth century, 'most components of modern evidence law had been assembled,' meaning the law existed before this time." },
-      { title: "(E)", text: "The passage does not discuss the basis of evidence rules before the eighteenth century. Its historical account begins in the eighteenth century, so there is no information in the text to support this statement." }
+      { title: "(A)", text: "The passage suggests that modern principles evolved from and modified common law, rather than completely replacing it. The first sentence states that components of modern law had already been assembled from common-law doctrines. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(B)", text: "This statement is supported because the passage describes eighteenth-century law as having rigid rules that 'mechanically excluded' evidence. It contrasts this with modern law, which uses a more flexible 'presumption' that allows evidence unless there are 'clear grounds of policy for excluding it.' Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(C)", text: "The passage does not provide information to support this claim. It states that 'most components' of modern law came from common-law doctrines, but it never mentions whether any laws came from other sources. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(D)", text: "This statement is directly contradicted by the first sentence of the passage. The text says that by the late eighteenth century, 'most components of modern evidence law had been assembled,' meaning the law existed before this time. Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion." },
+      { title: "(E)", text: "The passage does not discuss the basis of evidence rules before the eighteenth century. Its historical account begins in the eighteenth century, so there is no information in the text to support this statement. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." }
     ]}
   ]
 };

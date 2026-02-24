@@ -2,8 +2,10 @@ import { Lesson } from '../../types';
 
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "6-2",
-  title: "Step-by-Step Guide: Parallel Flaw",
+  title: "Step-by-Step Guide",
+  subtitle: "Map the flaw, then find an answer that makes the same mistake.",
   content: [
+    { type: 'h2', text: "Step-by-Step Guide: Parallel Flaw" },
     { type: 'paragraph', text: "Parallel Flaw questions are a mix of two question types: **Flaw** and **Parallel Reasoning**. To solve them, you must first find the specific logical mistake in the argument and then find an answer choice that makes that exact same mistake. This guide will show you how to map out the error so you don't get confused by the answer choices." },
     { type: 'h3', text: "Step 1: Create the Reasoning Map (Flaw-Focused)" },
     { type: 'paragraph', text: "Your primary task is to deconstruct the stimulus argument and identify its **flawed logical structure**. This is the most critical step. Do not proceed to the answer choices until you have a clear map of the error." },

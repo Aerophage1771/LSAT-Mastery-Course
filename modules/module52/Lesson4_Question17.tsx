@@ -9,26 +9,28 @@ export const Lesson4_Question17: Lesson = {
   id: "52-4",
   title: "Question 17: Passage Purpose",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 17 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-110-S-4-P-3)', content: passageText },
+    { type: 'h3', text: "Question 17: Passage Purpose Breakdown (PT-110-S-4-P-3-Q-17)" },
     { type: 'blockquote', text: "**Question:** The author’s primary purpose in the passage is to" },
     { type: 'options', items: [
-      "(A) evaluate divergent legal doctrines [4.0%]",
-      "(B) explain how a controversy arose [2.0%]",
-      "(C) advocate a new interpretation of legal tradition [3.0%]",
-      "(D) describe a challenge to a school of thought [79.0%] (Correct)",
-      "(E) refute claims made by various scholars [12.0%]"
+      "(A) evaluate divergent legal doctrines",
+      "(B) explain how a controversy arose",
+      "(C) advocate a new interpretation of legal tradition",
+      "(D) describe a challenge to a school of thought (Correct)",
+      "(E) refute claims made by various scholars"
     ]},
-    { type: 'paragraph', text: "This is a Passage Purpose question. It asks for the author's main goal in writing the passage. The author's role here is primarily that of a reporter or explainer. They are not advancing their own argument, but are systematically presenting the arguments of one person (Meyerson) as they relate to another group (CLS). The entire passage is structured to detail Meyerson's critique." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This passage purpose question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Philosopher Denise Meyerson views the Critical Legal Studies (CLS) movement as...' and 'But Meyerson replies that such considerations may be viewed as part...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "The passage does not evaluate several different legal doctrines. Instead, it focuses on one philosopher's critique of a single legal theory.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "The passage describes the substance of a disagreement, but it does not explain the historical background or the specific events that led to the controversy.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "The author is not advocating for their own position but is describing someone else's (Meyerson's) critique. Meyerson's arguments are a challenge to CLS, not necessarily a whole new interpretation of legal tradition.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "This choice accurately captures the main goal of the passage. The author's purpose is to present Meyerson's specific arguments, which act as a 'challenge' to the 'school of thought' known as Critical Legal Studies (CLS).", badge: "Correct", badgeColor: "green" },
-        { title: "(E)", text: "While Meyerson refutes claims, the author's primary role is to describe her arguments, not to do the refuting. Also, the passage centers on Meyerson's challenge to one movement (CLS), not on claims from 'various scholars'.", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "The passage does not evaluate several different legal doctrines. Instead, it focuses on one philosopher's critique of a single legal theory. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "The passage describes the substance of a disagreement, but it does not explain the historical background or the specific events that led to the controversy. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "The author is not advocating for their own position but is describing someone else's (Meyerson's) critique. Meyerson's arguments are a challenge to CLS, not necessarily a whole new interpretation of legal tradition. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "This choice accurately captures the main goal of the passage. The author's purpose is to present Meyerson's specific arguments, which act as a 'challenge' to the 'school of thought' known as Critical Legal Studies (CLS). Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(E)", text: "While Meyerson refutes claims, the author's primary role is to describe her arguments, not to do the refuting. Also, the passage centers on Meyerson's challenge to one movement (CLS), not on claims from 'various scholars'. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

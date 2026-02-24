@@ -9,23 +9,25 @@ export const Lesson6_Question12: Lesson = {
   id: "44-6",
   title: "Question 12: Author Viewpoint",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-141-S-1-P-2-Q-12" },
+    { type: 'accordion', title: 'Read Passage (PT-141-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 12: Author Viewpoint Breakdown (PT-141-S-1-P-2-Q-12)" },
     { type: 'blockquote', text: "Based on the passage, the author would agree with each of the following statements except:" },
     { type: 'options', items: [
-      "(A) A less realistic medium can be more conducive to suspension of disbelief than a more realistic medium. [7.0%]",
-      "(B) Amateurishness is a positive quality in some works of art. [2.0%]",
-      "(C) What might appear to be an incongruity in a narrative photograph can actually enhance its aesthetic value. [3.0%]",
-      "(D) We are sometimes aware of both the real and the imaginary persona of an actor in a drama. [5.0%]",
-      "(E) A work of art succeeds only to the extent that it realizes the artist’s intentions. [83.0%] (Correct)"
+      "(A) A less realistic medium can be more conducive to suspension of disbelief than a more realistic medium.",
+      "(B) Amateurishness is a positive quality in some works of art.",
+      "(C) What might appear to be an incongruity in a narrative photograph can actually enhance its aesthetic value.",
+      "(D) We are sometimes aware of both the real and the imaginary persona of an actor in a drama.",
+      "(E) A work of art succeeds only to the extent that it realizes the artist’s intentions. (Correct)"
     ]},
-    { type: 'paragraph', text: "This is an \"EXCEPT\" question asking which statement the author would *disagree* with. We must test each statement against the arguments and evidence in the passage. Four will be consistent with the author's views; one will be inconsistent." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This author viewpoint question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'From a critical discussion of the work of Victorian photographer Julia...' and 'While Cameron’s fancy-subject pictures have been compared to poor amateur theatricals,...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) A less realistic medium can be more conducive to suspension of disbelief than a more realistic medium.", text: "The author would **agree**. This is a direct paraphrase of the argument in the second paragraph, which contrasts painting (less realistic, allows suspension of disbelief) with photography (more realistic, does not).", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) Amateurishness is a positive quality in some works of art.", text: "The author would **agree**. The third paragraph praises Cameron's work for its \"singular combination of amateurism and artistry\" and compares it favorably to \"good amateur theatricals.\"", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) What might appear to be an incongruity in a narrative photograph can actually enhance its aesthetic value.", text: "The author would **agree**. This is the central thesis of the passage. The \"incongruities\" (flaws, traces of reality) are what give the photographs their \"life and charm\" and \"aesthetic value.\"", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) We are sometimes aware of both the real and the imaginary persona of an actor in a drama.", text: "The author would **agree**. The careful phrasing in the second paragraph states that theater can make us believe we are seeing only the character \"*for at least some of the time*.\" This implies that at other times, we are indeed aware of both the actor and the role.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) A work of art succeeds only to the extent that it realizes the artist’s intentions.", text: "The author would **disagree**. This statement is the direct opposite of the passage's entire argument. The author's central claim is that Cameron's work is a \"successful failure.\" Her intention was to create \"seamless works,\" but she failed. The author argues that this failure to realize her intentions is precisely *why* her work is so successful and vital.", badge: "Correct", badgeColor: "green" }
+      { title: "(A) A less realistic medium can be more conducive to suspension of disbelief than a more realistic medium.", text: "The author would **agree**. This is a direct paraphrase of the argument in the second paragraph, which contrasts painting (less realistic, allows suspension of disbelief) with photography (more realistic, does not). Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) Amateurishness is a positive quality in some works of art.", text: "The author would **agree**. The third paragraph praises Cameron's work for its \"singular combination of amateurism and artistry\" and compares it favorably to \"good amateur theatricals.\" Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) What might appear to be an incongruity in a narrative photograph can actually enhance its aesthetic value.", text: "The author would **agree**. This is the central thesis of the passage. The \"incongruities\" (flaws, traces of reality) are what give the photographs their \"life and charm\" and \"aesthetic value.\" Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) We are sometimes aware of both the real and the imaginary persona of an actor in a drama.", text: "The author would **agree**. The careful phrasing in the second paragraph states that theater can make us believe we are seeing only the character \"*for at least some of the time*.\" This implies that at other times, we are indeed aware of both the actor and the role. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) A work of art succeeds only to the extent that it realizes the artist’s intentions.", text: "The author would **disagree**. This statement is the direct opposite of the passage's entire argument. The author's central claim is that Cameron's work is a \"successful failure.\" Her intention was to create \"seamless works,\" but she failed. The author argues that this failure to realize her intentions is precisely *why* her work is so successful and vital. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" }
     ]}
   ]
 };

@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "8-2",
   title: "Step-by-Step Guide",
+  subtitle: "Find the argument's central vulnerability and the answer that exploits it.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Weaken' },
     { type: 'paragraph', text: 'This section provides a clear, step-by-step process for solving any Weaken question. The goal is to identify the argument\'s central vulnerability and find the answer choice that exploits it most effectively.' },

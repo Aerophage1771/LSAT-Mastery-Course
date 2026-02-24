@@ -8,15 +8,20 @@ export const Lesson1_PassageAnalysis: Lesson = {
   id: "56-1",
   title: "Passage Analysis: Psychology of Risk",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Passage Analysis" },
-    { type: 'paragraph', text: "This passage is about the psychology of risk. The big idea is that people (and countries) are wired to hate losing more than they love winning. This simple fact, called 'loss aversion,' explains why we sometimes make big, seemingly irrational gambles to avoid a loss." },
-    { type: 'h4', text: "Paragraph 1: The Main Idea - We Hate Losing" },
-    { type: 'paragraph', text: "The passage kicks off with a core concept from psychology: the fear of losing something you have is a much stronger motivator than the hope of gaining something of equal value. This makes people more willing to take big risks to avoid a loss they see as certain." },
-    { type: 'h4', text: "Paragraph 2: Old Theory vs. New Research" },
-    { type: 'paragraph', text: "This paragraph contrasts the new idea of loss aversion with the old economic view. The old theory said people are generally risk-averse. The new research shows the big exception: when facing a guaranteed loss, people suddenly become risk-takers. They'll risk a bigger loss for even a small chance to lose nothing at all." },
-    { type: 'h4', text: "Paragraph 3: Applying It to Countries" },
-    { type: 'paragraph', text: "The author applies this psychological rule to international politics. While governments are usually cautious, they become huge risk-takers when trying to get back territory they feel was taken from them. The Falklands/Malvinas war is the perfect example: both sides saw the islands as a loss to be recovered, so they were willing to take risks that seemed illogical from a cost-benefit standpoint." },
-    { type: 'callout', title: "Summary", variant: "summary", text: "The passage explains 'loss aversion'—the idea that the fear of losing is a more powerful motivator than the hope of winning. It contrasts this with older economic theories and uses it to explain why countries take huge, seemingly irrational risks in conflicts to get back what they believe they've lost." }
+    { type: 'accordion', title: 'Read Passage (PT-113-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Passage Analysis: Psychology of Risk (PT-113-S-1-P-4)" },
+    { type: 'paragraph', text: "The passage explains why decision-makers often take high risks to avoid perceived losses. Its central claim is that subjective loss framing can outweigh objective cost-benefit analysis." },
+    { type: 'paragraph', text: "Read for model transfer. Paragraph 1 introduces the psychological pattern, Paragraph 2 contrasts it with standard economic expectations, and Paragraph 3 applies the framework to interstate conflict behavior." },
+    { type: 'hr' },
+    { type: 'h4', text: "Paragraph 1: Loss Aversion as Core Premise" },
+    { type: 'paragraph', text: "The opening paragraph presents a discrepancy between objective outcome measurement and subjective valuation. Losses are weighted more heavily than equivalent gains, which shifts risk behavior under perceived threat." },
+    { type: 'paragraph', text: "This paragraph establishes the explanatory variable used throughout the rest of the passage: perception of loss, not absolute expected value." },
+    { type: 'h4', text: "Paragraph 2: Revising the Standard Risk Model" },
+    { type: 'paragraph', text: "The second paragraph contrasts the new findings with older assumptions of generalized risk aversion. The coin-flip example demonstrates asymmetric valuation: avoiding a loss often requires disproportionately large potential gain." },
+    { type: 'paragraph', text: "It then identifies the crucial exception: when a loss is framed as certain, actors may prefer gambles with severe downside if there is even a small chance of escaping loss entirely." },
+    { type: 'h4', text: "Paragraph 3: International-Conflict Application" },
+    { type: 'paragraph', text: "The final paragraph applies the psychology to state behavior. Governments that are usually cautious can become highly risk-acceptant when attempting to recover territory perceived as wrongly taken." },
+    { type: 'paragraph', text: "The Falklands/Malvinas example operationalizes the model: both sides interpreted the dispute through loss recovery, making high-cost conflict behavior intelligible under subjective valuation." },
+    { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "The passage argues that loss aversion can produce risk-seeking behavior when actors face perceived certain losses. It uses this framework to explain why states may pursue high-cost conflicts that appear irrational under purely objective expected-value analysis." }
   ]
 };

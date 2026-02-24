@@ -10,23 +10,25 @@ export const Lesson6_Question25: Lesson = {
   id: "54-6",
   title: "Question 25: Author Viewpoint",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 25 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-111-S-2-P-4)', content: passageText },
+    { type: 'h3', text: "Question 25: Author Viewpoint Breakdown (PT-111-S-2-P-4-Q-25)" },
     { type: 'blockquote', text: "**Question:** The passage suggests that Dworkin would be most likely to agree with which one of the following statements?" },
     { type: 'options', items: [
-      "(A) Judges and lawyers too often act as though there is a fact of the matter in legal cases. [25.0%]",
-      "(B) Judges should not use their moral intuition when it conflicts with the intentions of those legislators who authored the law being interpreted. [24.0%]",
-      "(C) Legal positivism is a more popular theory than natural law theory because legal positivism simplifies the judge’s role. [3.0%]",
-      "(D) If there is consensus about how to interpret a law, then jurists should not examine the internal logic of the law being interpreted. [5.0%]",
-      "(E) Legal positivists misunderstand the role of moral intuition in legal interpretation. [43.0%] (Correct)"
+      "(A) Judges and lawyers too often act as though there is a fact of the matter in legal cases.",
+      "(B) Judges should not use their moral intuition when it conflicts with the intentions of those legislators who authored the law being interpreted.",
+      "(C) Legal positivism is a more popular theory than natural law theory because legal positivism simplifies the judge’s role.",
+      "(D) If there is consensus about how to interpret a law, then jurists should not examine the internal logic of the law being interpreted.",
+      "(E) Legal positivists misunderstand the role of moral intuition in legal interpretation. (Correct)"
     ]},
-    { type: 'paragraph', text: "This is an Author Viewpoint question asking us to infer Dworkin's position on one of the topics. We need to find the statement that aligns with the description of his theory in the passage." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This author viewpoint question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'Ronald Dworkin argues that judges are in danger of uncritically embracing...' and 'Once we realize, as Dworkin does, that the law has an...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-        { title: "(A)", text: "Dworkin supports this practice. The passage says his theory 'seeks to validate' the practice of acting as if there is a correct answer. He doesn't think it happens 'too often.'", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "Dworkin believes the law's internal logic can allow for 'improving upon the interpretations' of the original authors. This implies a judge's interpretation, guided by moral intuition and legal principles, could be superior to the legislators' original intent.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C)", text: "The passage says legal positivism is more popular because judges see it as the only alternative to natural law, not because it simplifies the judge's role.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "Dworkin believes the law's 'internal logic' is the key to a correct interpretation, which can improve upon a consensus view. He would not agree to ignore this logic just because a consensus exists.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "This is correct. Legal positivists believe law and morality are 'wholly distinct.' Dworkin, in contrast, argues that legal principles can involve moral concepts and that judges may need to use their 'moral intuitions' to interpret them. This represents a fundamental disagreement on the role of morality.", badge: "Correct", badgeColor: "green" }
+        { title: "(A)", text: "Dworkin supports this practice. The passage says his theory 'seeks to validate' the practice of acting as if there is a correct answer. He doesn't think it happens 'too often.' Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "Dworkin believes the law's internal logic can allow for 'improving upon the interpretations' of the original authors. This implies a judge's interpretation, guided by moral intuition and legal principles, could be superior to the legislators' original intent. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(C)", text: "The passage says legal positivism is more popular because judges see it as the only alternative to natural law, not because it simplifies the judge's role. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "Dworkin believes the law's 'internal logic' is the key to a correct interpretation, which can improve upon a consensus view. He would not agree to ignore this logic just because a consensus exists. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "This is correct. Legal positivists believe law and morality are 'wholly distinct.' Dworkin, in contrast, argues that legal principles can involve moral concepts and that judges may need to use their 'moral intuitions' to interpret them. This represents a fundamental disagreement on the role of morality. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" }
     ]}
   ]
 };

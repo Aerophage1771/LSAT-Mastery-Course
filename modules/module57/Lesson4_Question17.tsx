@@ -8,26 +8,28 @@ export const Lesson4_Question17: Lesson = {
   id: "57-4",
   title: "Question 17: Except, Inference",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 17 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-114-S-3-P-3)', content: passageText },
+    { type: 'h3', text: "Question 17: Except, Inference Breakdown (PT-114-S-3-P-3-Q-17)" },
     { type: 'blockquote', text: "**Question:** The passage states that a contingency could be each of the following EXCEPT:" },
     { type: 'options', items: [
-      "(A) a social phenomenon [3.0%]",
-      "(B) a form of historical structuring [64.0%] (Correct)",
-      "(C) an accidental circumstance [10.0%]",
-      "(D) a condition controllable to some extent by an individual [16.0%]",
-      "(E) a partial determinant of an individual’s actions [6.0%]"
+      "(A) a social phenomenon",
+      "(B) a form of historical structuring (Correct)",
+      "(C) an accidental circumstance",
+      "(D) a condition controllable to some extent by an individual",
+      "(E) a partial determinant of an individual’s actions"
     ]},
-    { 'type': 'callout', 'title': 'Prediction', 'variant': 'tip', 'text': "This is an EXCEPT question that requires a close reading of the second paragraph, where 'contingencies' are defined. We need to find the one description that does not match the text." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This except, inference question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'In explaining the foundations of the discipline known as historical sociology—the...' and 'In order to capture the various facets of this mutual interaction,...' when checking whether a choice preserves the passage's emphasis." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A)", text: "This is explicitly stated. The passage defines contingencies as 'social phenomena over which we have varying degrees of control.' So, this is a correct description.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B)", text: "The passage describes 'historical structuring' as the broad, continuous process being studied. 'Contingencies' are specific factors or ingredients *within* that larger process, but they are not the process itself. Therefore, a contingency is not a 'form' of historical structuring.", badge: "Correct", badgeColor: "green" },
-        { title: "(C)", text: "This is explicitly stated. The passage gives 'accidental circumstances' as a direct example of a contingency.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D)", text: "This is explicitly stated. The passage says contingencies are phenomena 'over which we have varying degrees of control,' which means they can be controlled to some extent.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E)", text: "This is explicitly stated. The passage says that contingencies create a structure that 'partially determines the sorts of actions we are able to perform.'", badge: "Incorrect", badgeColor: "red" }
+        { title: "(A)", text: "This is explicitly stated. The passage defines contingencies as 'social phenomena over which we have varying degrees of control.' So, this is a correct description. Additional check: trap type is unsupported inference, because the passage never supplies the missing support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(B)", text: "The passage describes 'historical structuring' as the broad, continuous process being studied. 'Contingencies' are specific factors or ingredients *within* that larger process, but they are not the process itself. Therefore, a contingency is not a 'form' of historical structuring. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+        { title: "(C)", text: "This is explicitly stated. The passage gives 'accidental circumstances' as a direct example of a contingency. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(D)", text: "This is explicitly stated. The passage says contingencies are phenomena 'over which we have varying degrees of control,' which means they can be controlled to some extent. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+        { title: "(E)", text: "This is explicitly stated. The passage says that contingencies create a structure that 'partially determines the sorts of actions we are able to perform.' Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" }
       ]
     }
   ]

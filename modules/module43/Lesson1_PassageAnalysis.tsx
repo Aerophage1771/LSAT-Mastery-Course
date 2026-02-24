@@ -11,23 +11,23 @@ export const Lesson1_PassageAnalysis: Lesson = {
   id: "43-1",
   title: "Passage Analysis",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Passage Analysis" },
-    { type: 'h4', text: "Passage A: The Argument from Human Limitation" },
-    { type: 'paragraph', text: "Passage A defines 'cosmic justice' as a perfect justice achievable only by an omniscient being, one who could weigh all relevant factors to determine what is truly deserved. The author's central argument is that humans are incapable of dispensing this kind of justice due to 'inherent human limitations.' The passage identifies three specific limitations: we lack complete knowledge of all relevant facts, we cannot comprehend the complex causal relationships, and we do not even have a definitive understanding of what cosmic justice is." },
-    { type: 'paragraph', text: "The second paragraph elaborates on this theme by focusing on the concept of 'deservedness.' Calculating what a person truly deserves would require a 'complicated calculus' involving countless 'inputs' (a person's history, intentions, disadvantages, etc.), which is beyond human intellectual capacity. The author concludes that since we are not omniscient, the best a human legal system can do is to shift its focus from these unknowable 'inputs' to judging based on observable 'outputs,' or the consequences of actions." },
-    
-    { type: 'h4', text: "Passage B: The Argument from Flawed Concepts and Bad Consequences" },
-    { type: 'paragraph', text: "Passage B argues against cosmic justice by first defining its opposite, 'traditional justice.' Traditional justice is presented as a concept focused on **process**: if fair and impartial rules are followed during a trial, justice is considered done, regardless of the outcome." },
-    { type: 'paragraph', text: "The author then contrasts this with cosmic justice, which is framed as a 'foolishly' different concept. Cosmic justice aims to correct not just specific injustices but all 'unmerited disadvantages,' whatever their source. The passage uses the example of considering a murderer's traumatic childhood during sentencing. From the perspective of traditional justice, this is irrelevant to the crime itself. The author argues that attempting to apply this cosmic perspective has negative real-world **consequences**: mitigating punishment reduces the law's deterrent effect, leading to more crime and harming innocent people." },
-
-    { type: 'h4', text: "The Head-to-Head: Inability vs. Illegitimacy" },
-    { type: 'paragraph', text: "Both passages conclude that human legal systems should not attempt to implement cosmic justice, but they arrive at this conclusion for different reasons." },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-4)', content: passageText },
+    { type: 'h3', text: "Passage Analysis: Cosmic Justice vs. Traditional Justice (PT-128-S-4-P-4)" },
+    { type: 'paragraph', text: "This comparative set asks why two authors reject \"cosmic justice\" in legal decision-making. Both reject the project, but they do so on different grounds and with different conceptual frameworks." },
+    { type: 'paragraph', text: "Use a contrast-first reading strategy. Track each passage's definition of justice, then isolate each author's core objection before comparing their reasoning in the synthesis section." },
+    { type: 'hr' },
+    { type: 'h4', text: "Passage A: Rejection Based on Human Limits" },
+    { type: 'paragraph', text: "Passage A defines cosmic justice as perfect deservedness and then argues humans cannot deliver it. The claim rests on epistemic and cognitive limits: we cannot know all relevant facts, model all causal interactions, or fully determine deservedness itself." },
+    { type: 'paragraph', text: "Its practical conclusion is a shift from inputs to outputs. Because complete desert calculations are unavailable to human institutions, legal judgment should focus on observable consequences." },
+    { type: 'h4', text: "Passage B: Rejection Based on Concept and Consequences" },
+    { type: 'paragraph', text: "Passage B contrasts process-based traditional justice with cosmic justice. Traditional justice evaluates fairness of procedure, while cosmic justice is portrayed as an overreach that tries to redress all unmerited disadvantage." },
+    { type: 'paragraph', text: "The passage then adds a policy objection: bringing broad life-history factors into sentencing can weaken deterrence and increase social harm. The critique is therefore both conceptual and consequential." },
+    { type: 'h4', text: "Synthesis: Shared Conclusion, Distinct Logic" },
+    { type: 'paragraph', text: "Both passages conclude that legal systems should avoid cosmic justice, but they justify that conclusion differently. Passage A says the target is unattainable for finite knowers; Passage B says the target is misguided and damaging when operationalized in law." },
     { type: 'list', items: [
-      "**Passage A's argument is about inability.** It posits that cosmic justice is a theoretically sound concept for a divine being, but one that is practically impossible for humans due to our cognitive and informational limitations. It is an epistemological critique, focused on what we are capable of knowing.",
-      "**Passage B's argument is about illegitimacy and negative consequences.** It argues that cosmic justice is a conceptually flawed and 'foolish' goal that is fundamentally incompatible with the principles of traditional, process-based justice. Furthermore, attempting to implement it is actively harmful to society."
+      "Passage A's emphasis: feasibility and human limitation.",
+      "Passage B's emphasis: proper legal framework and downstream social cost."
     ]},
-    
-    { type: 'callout', title: "Summary", variant: "summary", text: "• **Passage A's Position:** The author argues against pursuing cosmic justice from a standpoint of **human limitation**. Because cosmic justice requires a complete understanding of all 'inputs' and 'deservedness'—a feat only an omniscient being could achieve—it is impossible for humans. Our legal systems should therefore focus on a more practical justice based on observable 'outputs' or consequences.\n• **Passage B's Position:** The author argues against cosmic justice by contrasting it with **traditional, process-based justice**. The author claims that cosmic justice is a 'foolish' and conceptually flawed endeavor that tries to correct all of life's unfairness. Attempting to do so, for example by mitigating punishment for criminals, has dangerous real-world **consequences**, such as reducing deterrence and leading to more crime.\n• **The Core Difference:** While both passages reject the application of cosmic justice in law, Passage A's critique is based on our **inability** to achieve it, whereas Passage B's critique is based on the concept being **fundamentally flawed** and **harmful** to the proper functioning of a legal system." }
+    { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "Both authors reject cosmic justice, but for different reasons. Passage A rejects it as impossible for human institutions to execute, while Passage B rejects it as a category mistake that displaces process justice and produces harmful policy outcomes." }
   ]
 };

@@ -10,18 +10,19 @@ export const Lesson6_Question13: Lesson = {
   id: "39-6",
   title: "Question 13: Detail (Agent)",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 13 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-119-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 13: Detail (Agent) Breakdown (PT-119-S-1-P-2-Q-13)" },
     { type: 'blockquote', text: "**Question:** According to the passage, the agent of Naomi’s reconciliation with her past is" },
     { type: 'options', items: [
-      "(A) her reunion with her parents [0.0%]",
-      "(B) the exile of her parents [0.0%]",
-      "(C) her critique of the majority society [1.0%]",
-      "(D) her separation from her aunt and uncle [0.0%]",
-      "(E) her receipt of documents and letters [98.0%] (Correct)"
+      "(A) her reunion with her parents",
+      "(B) the exile of her parents",
+      "(C) her critique of the majority society",
+      "(D) her separation from her aunt and uncle",
+      "(E) her receipt of documents and letters (Correct)"
     ]},
-    { type: 'paragraph', text: "The word **\"agent\"** here means the cause, the trigger, the thing that makes it happen. So, we're looking for the specific event or object that the passage says directly causes Naomi to reconcile with her history." },
-    { type: 'paragraph', text: "Let's look at the text at the end of Paragraph 2: \"...as an adult, **when she receives a bundle of family documents and letters from her aunt**, Naomi breaks through the personal and cultural screens of silence... and reconciles herself with her history.\"" },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The key term is \"agent,\" meaning the immediate trigger of reconciliation. The passage does not leave this implicit; it gives a specific causal event tied to Naomi's breakthrough. So the right answer identifies that event, while the wrong answers describe background conditions, unstated events, or effects rather than cause." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The sentence is explicit: \"when she receives a bundle of family documents and letters... Naomi... reconciles herself with her history.\" That receipt event is the agent." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

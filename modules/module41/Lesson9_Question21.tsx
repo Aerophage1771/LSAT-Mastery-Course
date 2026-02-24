@@ -12,19 +12,19 @@ export const Lesson9_Question21: Lesson = {
   id: "41-9",
   title: "Question 21: Passage Purpose",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-3-Q-21" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-1-P-3)', content: passageText },
+    { type: 'h3', text: "Question 21: Passage Purpose Breakdown (PT-128-S-1-P-3-Q-21)" },
     { type: 'blockquote', text: "**Question:** The primary purpose of the passage is to" },
     { type: 'options', items: [
-      "(A) argue for the creation of a global culture made up of elements from many national cultures [3.0%]",
-      "(B) explain how the desire for cultural uniformity supports imperialist attitudes [9.0%]",
-      "(C) stress the importance of objectivity in studying the actual sources of cultural identity [13.0%]",
-      "(D) advance the claim that present concerns motivate the shaping of cultural identities [72.0%] (Correct)",
-      "(E) reveal the imperialist motivations of some nineteenth-century scholarship [4.0%]"
+      "(A) argue for the creation of a global culture made up of elements from many national cultures",
+      "(B) explain how the desire for cultural uniformity supports imperialist attitudes",
+      "(C) stress the importance of objectivity in studying the actual sources of cultural identity",
+      "(D) advance the claim that present concerns motivate the shaping of cultural identities (Correct)",
+      "(E) reveal the imperialist motivations of some nineteenth-century scholarship"
     ]},
-    { type: 'paragraph', text: "This question asks for the \"primary purpose.\" It requires a holistic understanding of the author's main goal in writing the text. We must identify the central claim that the entire passage is structured to support." },
-    { type: 'paragraph', text: "The passage begins by stating a clear thesis in the first paragraph: \"the anxieties and agendas of the present exert an extraordinary influence on the national identities we construct from the cultural past.\" The rest of the passage is dedicated to proving this thesis through a series of diverse examples: the revision of Greek history, the manufacturing of British imperial traditions, and the creation of an idealized past by Algerian revolutionaries. The final paragraph reflects on the implications of this phenomenon." },
-    { type: 'paragraph', text: "The entire text functions as a well-supported argument for a single, central idea. The primary purpose is therefore to present and defend this central claim." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "The passage's purpose is argumentative: it advances the claim that present interests and anxieties shape how cultures narrate their past. The multiple examples are evidence for that claim, not separate endpoints. The close then reinforces the thesis by contrasting nationalist monolith stories with actual cultural hybridity." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The core claim appears early: present \"anxieties and agendas\" exert strong influence on national identities. The final paragraph confirms the broader implication that cultures are not autonomous units but include many cross-boundary and \"foreign\" elements." },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

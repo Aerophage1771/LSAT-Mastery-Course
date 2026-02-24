@@ -9,25 +9,25 @@ export const Lesson7_Question12: Lesson = {
       id: "42-7",
       title: "Question 12: Author Viewpoint",
       content: [
-        { type: 'accordion', title: 'Read Passage', content: passageText },
-        { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-2-Q-12" },
+        { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-2)', content: passageText },
+        { type: 'h3', text: "Question 12: Author Viewpoint Breakdown (PT-128-S-4-P-2-Q-12)" },
         { type: 'blockquote', text: "**Question:** The author of the passage would be most likely to agree with which one of the following statements?" },
         { type: 'options', items: [
-          "(A) Most people who consider themselves to be artists are merely documenting their personal suffering and fobbing it off as art. [4.0%]",
-          "(B) The continuing presence of a topic in an artist’s work suggests that the topic is likely an issue in the artist’s personal life. [87.0%] (Correct)",
-          "(C) Allen’s film career is unique in that he regularly features unhappy, narcissistic artists as protagonists. [7.0%]",
-          "(D) An artist must use his or her own experiences as the source of inspiration for a work in order for that work to be considered truly artistic. [1.0%]",
-          "(E) Allen’s films accurately reflect real life in depicting inartistic individuals as happier than artists. [1.0%]"
+          "(A) Most people who consider themselves to be artists are merely documenting their personal suffering and fobbing it off as art.",
+          "(B) The continuing presence of a topic in an artist’s work suggests that the topic is likely an issue in the artist’s personal life. (Correct)",
+          "(C) Allen’s film career is unique in that he regularly features unhappy, narcissistic artists as protagonists.",
+          "(D) An artist must use his or her own experiences as the source of inspiration for a work in order for that work to be considered truly artistic.",
+          "(E) Allen’s films accurately reflect real life in depicting inartistic individuals as happier than artists."
         ]},
-        { type: 'paragraph', text: "This question asks for a view that the \"author most likely holds.\" This is an inference question that requires us to identify a belief or assumption that informs the author's own analysis. We are looking for a principle of criticism that the author's argument relies upon, even if it is not stated explicitly as their own opinion." },
-        { type: 'paragraph', text: "The strongest clue to the author's personal interpretive framework comes at the end of the second paragraph. After detailing how the theme of artists \"fobbing it off as art\" appears in *Stardust Memories*, the author makes a crucial leap from analyzing the art to analyzing the artist: \"...[the theme] appears sufficiently often in Allen’s films to seem an **unresolved personal issue**.\"" },
-        { type: 'paragraph', text: "The logic here is: A recurring theme in an artist's work points to a personal preoccupation in the artist's own life. The author must believe this general principle to be true in order to draw this specific conclusion about Woody Allen." },
+        { type: 'h4', text: "Analysis" },
+        { type: 'paragraph', text: "Concept focus: author-viewpoint questions ask what belief the author is committed to, not just what details appear in the passage. Here, the key move comes when the author says a recurring theme in Allen's films appears often enough to seem like an \"unresolved personal issue.\" That move shows the author accepts a general idea: repeated patterns in an artist's work can reveal personal concerns." },
+        { type: 'callout', title: "Text Evidence", variant: "tip", text: "Center your inference on \"appears sufficiently often ... to seem an unresolved personal issue.\" That is the author's own interpretive step, so the best answer should restate that step in general form without adding stronger claims the passage never makes." },
         { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-          { title: "(A) Most people who consider themselves to be artists are merely documenting their personal suffering and fobbing it off as art.", text: "This is a description of the *theme* within Allen's films, not a view held by the author. The author is analyzing this viewpoint, not endorsing it as a general truth about the real world.", badge: "Incorrect", badgeColor: "red" },
-          { title: "(B) The continuing presence of a topic in an artist’s work suggests that the topic is likely an issue in the artist’s personal life.", text: "This is a perfect generalization of the logic the author uses at the end of the second paragraph. The \"continuing presence\" (\"appears sufficiently often\") of a topic suggests it is a \"personal issue.\" This is the interpretive principle the author demonstrably holds.", badge: "Correct", badgeColor: "green" },
-          { title: "(C) Allen’s film career is unique in that he regularly features unhappy, narcissistic artists as protagonists.", text: "The passage never uses words like \"unique\" or compares Allen's career to that of other filmmakers. Without such a comparison, we cannot infer that the author believes his career is unique in this regard.", badge: "Incorrect", badgeColor: "red" },
-          { title: "(D) An artist must use his or her own experiences as the source of inspiration for a work in order for that work to be considered truly artistic.", text: "The author's analysis is descriptive, not prescriptive. The passage never makes a judgment about what is required for a work to be \"truly artistic.\"", badge: "Incorrect", badgeColor: "red" },
-          { title: "(E) Allen’s films accurately reflect real life in depicting inartistic individuals as happier than artists.", text: "The author identifies this pattern in Allen's films as a way to understand Allen's *views*, but they never make the additional claim that this pattern is an \"accurate reflection of real life.\" The analysis remains focused on the films as a text, not as a sociological document.", badge: "Incorrect", badgeColor: "red" }
+          { title: "(A) Most people who consider themselves to be artists are merely documenting their personal suffering and fobbing it off as art.", text: "This turns a passage-specific film critique into a sweeping claim about \"most people.\" The author analyzes recurring themes in Allen's work; the author does not make a universal claim about artists in general.", badge: "Incorrect", badgeColor: "red" },
+          { title: "(B) The continuing presence of a topic in an artist’s work suggests that the topic is likely an issue in the artist’s personal life.", text: "This directly captures the author's reasoning. The passage links repeated appearance of a theme to a likely personal issue for Allen, and this choice states that same inference rule in general terms.", badge: "Correct", badgeColor: "green" },
+          { title: "(C) Allen’s film career is unique in that he regularly features unhappy, narcissistic artists as protagonists.", text: "The passage says the pattern is frequent in Allen's films, but \"unique\" requires comparison with other filmmakers, and no such comparison is provided.", badge: "Incorrect", badgeColor: "red" },
+          { title: "(D) An artist must use his or her own experiences as the source of inspiration for a work in order for that work to be considered truly artistic.", text: "This adds a strict rule about what art \"must\" do and what counts as \"truly artistic.\" The passage offers interpretation, not a prescriptive theory of art.", badge: "Incorrect", badgeColor: "red" },
+          { title: "(E) Allen’s films accurately reflect real life in depicting inartistic individuals as happier than artists.", text: "The author uses those endings to interpret Allen's stance inside his films, not to prove those endings are realistic depictions of life outside the films.", badge: "Incorrect", badgeColor: "red" }
         ]}
       ]
 };

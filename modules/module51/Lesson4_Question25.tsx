@@ -11,24 +11,25 @@ export const Lesson4_Question25: Lesson = {
   id: "51-4",
   title: "Question 25: Phrase Function",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-109-S-2-P-4-Q-25" },
+    { type: 'accordion', title: 'Read Passage (PT-109-S-2-P-4)', content: passageText },
+    { type: 'h3', text: "Question 25: Phrase Function Breakdown (PT-109-S-2-P-4-Q-25)" },
     { type: 'blockquote', text: "**Question:** The author mentions “conversations between social workers and their clients” (last sentence of the fourth paragraph) most probably in order to" },
     { type: 'options', items: [
-      "(A) suggest a situation in which application of the nonexclusion principle may be questionable [61.0%] (Correct)",
-      "(B) cite an example of objections that were raised to Bentham’s proposed reform [10.0%]",
-      "(C) illustrate the conflict between competing social interests [18.0%]",
-      "(D) demonstrate the difference between social interests and social values [3.0%]",
-      "(E) emphasize that Bentham’s exceptions to the nonexclusion principle covered a wide range of situations [8.0%]"
+      "(A) suggest a situation in which application of the nonexclusion principle may be questionable (Correct)",
+      "(B) cite an example of objections that were raised to Bentham’s proposed reform",
+      "(C) illustrate the conflict between competing social interests",
+      "(D) demonstrate the difference between social interests and social values",
+      "(E) emphasize that Bentham’s exceptions to the nonexclusion principle covered a wide range of situations"
     ]},
-    { type: 'h3', text: "Explanation" },
-    { type: 'paragraph', text: "Context:\nThe fourth paragraph discusses some problems with Bentham's idea that almost all evidence should be allowed in court. The author notes that Bentham made a few exceptions to his rule, such as for confessions to a priest. The author then uses this point to raise further questions about where to draw the line on what evidence should be excluded." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This phrase function question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'By the time Bentham turned his interest to the subject, late...' and 'This clear-grounds proviso allows more exclusions than Bentham would have liked,...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A)", text: "The author raises the issue of social worker-client conversations as a rhetorical question. After noting Bentham made an exception for confessions to priests, the author asks why other confidential relationships shouldn't also be protected. This is done to highlight that applying Bentham's nonexclusion principle isn't simple and leads to questionable outcomes in some situations." },
-      { title: "(B)", text: "The passage does not state that this specific objection was made against Bentham historically. Rather, the author is raising this modern example to explore a weakness in Bentham's argument." },
-      { title: "(C)", text: "While the example does involve a conflict of social interests, its main purpose is more specific. The author's goal is not just to illustrate a conflict, but to use that conflict to challenge the completeness of Bentham's principle." },
-      { title: "(D)", text: "The passage does not use this example to define or explain a difference between social interests and social values. In fact, it groups them together as 'competing social interests or values'." },
-      { title: "(E)", text: "This choice is the opposite of the author's point. The author describes Bentham's exceptions as 'narrow' and uses the social worker example to suggest that his list of exceptions might have been too limited, not that it was wide-ranging." }
+      { title: "(A)", text: "The author raises the issue of social worker-client conversations as a rhetorical question. After noting Bentham made an exception for confessions to priests, the author asks why other confidential relationships shouldn't also be protected. This is done to highlight that applying Bentham's nonexclusion principle isn't simple and leads to questionable outcomes in some situations. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(B)", text: "The passage does not state that this specific objection was made against Bentham historically. Rather, the author is raising this modern example to explore a weakness in Bentham's argument. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(C)", text: "While the example does involve a conflict of social interests, its main purpose is more specific. The author's goal is not just to illustrate a conflict, but to use that conflict to challenge the completeness of Bentham's principle. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(D)", text: "The passage does not use this example to define or explain a difference between social interests and social values. In fact, it groups them together as 'competing social interests or values'. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(E)", text: "This choice is the opposite of the author's point. The author describes Bentham's exceptions as 'narrow' and uses the social worker example to suggest that his list of exceptions might have been too limited, not that it was wide-ranging. Additional check: trap type is too narrow, since it leaves out a required part of the passage's claim." }
     ]}
   ]
 };

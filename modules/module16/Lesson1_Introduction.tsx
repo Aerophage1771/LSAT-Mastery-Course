@@ -8,10 +8,9 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h2', text: 'Question Goal' },
     {
       type: 'callout',
-      text: '**Synthesize the facts** in the stimulus to determine which answer choice is the most logical inference.',
+      text: '**Synthesize the facts provided in the stimulus to determine which answer choice is the most logical inference.** In other words, which statement is made most probable by the information given?',
       variant: 'goal',
     },
-    { type: 'paragraph', text: 'This module covers Most Strongly Supported.' },
     { type: 'hr' },
     { type: 'h2', text: 'Introduction' },
     { type: 'h4', text: 'The Art of Synthesis' },

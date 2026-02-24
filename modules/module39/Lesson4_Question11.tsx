@@ -10,24 +10,19 @@ export const Lesson4_Question11: Lesson = {
   id: "39-4",
   title: "Question 11: Inference (Heroism)",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question 11 Breakdown" },
+    { type: 'accordion', title: 'Read Passage (PT-119-S-1-P-2)', content: passageText },
+    { type: 'h3', text: "Question 11: Inference (Heroism) Breakdown (PT-119-S-1-P-2-Q-11)" },
     { type: 'blockquote', text: "**Question:** It can be inferred that the heroism Naomi gains in the course of Obasan is manifested in her" },
     { type: 'options', items: [
-      "(A) reconciliation with her past [89.0%] (Correct)",
-      "(B) careful deployment of structure and symbol [5.0%]",
-      "(C) relationship with her surrogate family [3.0%]",
-      "(D) renewal of her religious beliefs [0.0%]",
-      "(E) denunciation of the majority culture [2.0%]"
+      "(A) reconciliation with her past (Correct)",
+      "(B) careful deployment of structure and symbol",
+      "(C) relationship with her surrogate family",
+      "(D) renewal of her religious beliefs",
+      "(E) denunciation of the majority culture"
     ]},
-    { type: 'paragraph', text: "In other words, how does Naomi *show* her heroism? What is the ultimate act or state of being that represents her transformation from victim to hero?" },
-    { type: 'paragraph', text: "To answer this, we need to go back to the second paragraph, where the author lays out the \"rites of passage\" structure. The author explicitly says that this three-stage process \"has the effect of transforming a society’s victim into a hero.\" So, to find the manifestation of her heroism, we need to look at the *end* of that process, the final stage." },
-    { type: 'list', items: [
-      "It's called **\"reintegration into society.\"**",
-      "The passage says Naomi develops toward a **\"final integration with the larger society and with herself.\"**",
-      "The climax of this stage happens when, as an adult, she receives the family documents and **\"breaks through the personal and cultural screens of silence and secretiveness that have enshrouded her past, and reconciles herself with her history.\"**"
-    ]},
-    { type: 'paragraph', text: "So, the text directly links her heroic transformation to this final act of breaking the silence and coming to terms with her difficult past. Her heroism is an act of internal courage and reconciliation." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This inference hinges on where the passage says heroism is manifested. The rites-of-passage framework defines heroism as the endpoint of reintegration, and Naomi's endpoint is described as personal reconciliation with her past. So the credited choice must name that final-state outcome, not Kogawa's technique or a side theme." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "The process \"has the effect of transforming a society's victim into a hero,\" and Naomi reaches that culmination when she \"reconciles herself with her history.\"" },
     { 
       type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },

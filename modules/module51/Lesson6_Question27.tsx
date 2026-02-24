@@ -11,24 +11,25 @@ export const Lesson6_Question27: Lesson = {
   id: "51-6",
   title: "Question 27: Passage Purpose",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-109-S-2-P-4-Q-27" },
+    { type: 'accordion', title: 'Read Passage (PT-109-S-2-P-4)', content: passageText },
+    { type: 'h3', text: "Question 27: Passage Purpose Breakdown (PT-109-S-2-P-4-Q-27)" },
     { type: 'blockquote', text: "**Question:** The passage is primarily concerned with which one of the following?" },
     { type: 'options', items: [
-      "(A) suggesting the advantages and limitations of a legal reform [64.0%] (Correct)",
-      "(B) summarizing certain deficiencies of an outmoded legal system [21.0%]",
-      "(C) justifying the apparent inadequacies of current evidence law [5.0%]",
-      "(D) detailing objections to the nonexclusion principle [8.0%]",
-      "(E) advocating reexamination of a proposal that has been dismissed by the legal profession [2.0%]"
+      "(A) suggesting the advantages and limitations of a legal reform (Correct)",
+      "(B) summarizing certain deficiencies of an outmoded legal system",
+      "(C) justifying the apparent inadequacies of current evidence law",
+      "(D) detailing objections to the nonexclusion principle",
+      "(E) advocating reexamination of a proposal that has been dismissed by the legal profession"
     ]},
-    { type: 'h3', text: "Explanation" },
-    { type: 'paragraph', text: "Context:\nThe passage discusses the history of evidence law. It starts by describing the flawed and irrational rules that existed before the late eighteenth century. It then introduces Jeremy Bentham's revolutionary proposal for reform and explores both the problems with his idea and its lasting impact on modern law." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This passage purpose question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'By the time Bentham turned his interest to the subject, late...' and 'This clear-grounds proviso allows more exclusions than Bentham would have liked,...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A)", text: "This choice best describes the passage's overall purpose. The passage presents Bentham's nonexclusion principle as a reform with advantages over the old system, but it also dedicates a full paragraph to discussing its 'difficulty' and limitations, such as how to handle misleading evidence or competing social values." },
-      { title: "(B)", text: "This is too narrow. While the first two paragraphs describe the deficiencies of an old legal system, this answer ignores the main focus of the passage, which is Bentham's proposed reform, its problems, and its eventual adoption." },
-      { title: "(C)", text: "The passage describes current evidence law but does not try to justify its inadequacies. Instead, it explains how modern law is a modified version of Bentham's principle, suggesting it is an improvement over the past, not defending its remaining flaws." },
-      { title: "(D)", text: "This choice is too specific. The fourth paragraph does detail objections to Bentham's principle, but this is only one part of a larger discussion that also includes the old system, the proposal itself, and its modern influence." },
-      { title: "(E)", text: "This is inaccurate because the passage states that Bentham's proposal was not dismissed. The final paragraph clearly says that the 'main thrust of the current outlook is Bentham’s own nonexclusion principle,' meaning it was largely accepted." }
+      { title: "(A)", text: "This choice best describes the passage's overall purpose. The passage presents Bentham's nonexclusion principle as a reform with advantages over the old system, but it also dedicates a full paragraph to discussing its 'difficulty' and limitations, such as how to handle misleading evidence or competing social values. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(B)", text: "This is too narrow. While the first two paragraphs describe the deficiencies of an old legal system, this answer ignores the main focus of the passage, which is Bentham's proposed reform, its problems, and its eventual adoption. Additional check: trap type is too narrow, since it leaves out a required part of the passage's claim." },
+      { title: "(C)", text: "The passage describes current evidence law but does not try to justify its inadequacies. Instead, it explains how modern law is a modified version of Bentham's principle, suggesting it is an improvement over the past, not defending its remaining flaws. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(D)", text: "This choice is too specific. The fourth paragraph does detail objections to Bentham's principle, but this is only one part of a larger discussion that also includes the old system, the proposal itself, and its modern influence. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." },
+      { title: "(E)", text: "This is inaccurate because the passage states that Bentham's proposal was not dismissed. The final paragraph clearly says that the 'main thrust of the current outlook is Bentham’s own nonexclusion principle,' meaning it was largely accepted. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support." }
     ]}
   ]
 };

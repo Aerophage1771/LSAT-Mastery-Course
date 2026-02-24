@@ -11,23 +11,25 @@ export const Lesson4_Question22: Lesson = {
   id: "43-4",
   title: "Question 22: Relationship",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-4-Q-22" },
+    { type: 'accordion', title: 'Read Passage (PT-128-S-4-P-4)', content: passageText },
+    { type: 'h3', text: "Question 22: Relationship Breakdown (PT-128-S-4-P-4-Q-22)" },
     { type: 'blockquote', text: "**Question:** Passage A differs from passage B in that passage A is more" },
     { type: 'options', items: [
-      "(A) abstract [79.0%] (Correct)",
-      "(B) inflammatory [1.0%]",
-      "(C) technical [5.0%]",
-      "(D) narrative [10.0%]",
-      "(E) adversarial [5.0%]"
+      "(A) abstract (Correct)",
+      "(B) inflammatory",
+      "(C) technical",
+      "(D) narrative",
+      "(E) adversarial"
     ]},
-    { type: 'paragraph', text: "This question asks us to compare the styles of the passages. Passage A discusses cosmic justice in a theoretical, philosophical manner without specific examples. Passage B grounds its discussion in a concrete example (a criminal trial) and its real-world consequences." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "Concept focus: relationship questions ask for a distinguishing property, not just any true description. Start by identifying each passage's rhetorical mode. Passage A stays at a high conceptual level (omniscience, deservedness, inputs vs outputs). Passage B grounds its argument in concrete legal scenarios (fair trial, unfair trial, sentencing example). That makes A more abstract than B." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Compare evidence texture: A leans on conceptual vocabulary and general claims; B uses worked examples from criminal procedure and practical consequences. When the stem says \"differs,\" eliminate choices that describe both passages, even if those descriptions are true." },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: "(A) abstract", text: "This perfectly describes Passage A. Its argument uses general principles and concepts. Passage B is much more concrete. Therefore, Passage A is 'more abstract.'", badge: "Correct", badgeColor: "green" },
-      { title: "(B) inflammatory", text: "Passage A's tone is academic and detached. Passage B uses stronger language like 'foolishly' and discusses 'innocent people,' which could be seen as more emotionally charged. If anything, B is more inflammatory.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) technical", text: "Neither passage is overly technical, but Passage A is certainly not *more* technical than B's discussion of legal processes.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) narrative", text: "Neither passage tells a story; they are both argumentative essays.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(E) adversarial", text: "Both passages are adversarial toward the idea of implementing cosmic justice. This is a shared quality, not a point of difference.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) abstract", text: "This is the best fit for the difference the stem asks for. A argues mostly through conceptual framing, while B repeatedly drops into concrete courtroom examples and policy effects.", badge: "Correct", badgeColor: "green" },
+      { title: "(B) inflammatory", text: "If anything, B has the sharper loaded wording (for example, \"foolishly\" and the warning about innocent people). A is comparatively detached, so this cannot describe how A differs from B.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) technical", text: "This does not cleanly separate the passages. Neither is highly technical in a jargon-heavy sense, and B is at least as procedural as A because of its trial-focused detail.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) narrative", text: "A narrative passage would tell events in story sequence. Both passages are argumentative and expository, so this is not a valid difference.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) adversarial", text: "Both passages challenge cosmic justice, so adversarial stance is shared rather than distinguishing. The stem requires a trait that is stronger in A than in B.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

@@ -16,28 +16,25 @@ export const Lesson4_Question24: Lesson = {
   id: "46-4",
   title: "Question 24: Relationship",
   content: [
-    { type: 'accordion', title: 'Read Passage', content: passageText },
-    { type: 'h3', text: "Question Breakdown: PT-141-S-1-P-4-Q-24" },
+    { type: 'accordion', title: 'Read Passage (PT-141-S-1-P-4)', content: passageText },
+    { type: 'h3', text: "Question 24: Relationship Breakdown (PT-141-S-1-P-4-Q-24)" },
     { type: 'blockquote', text: "**Question:** Which one of the following is true of the relationship between passage A and the second paragraph of passage B?" },
     { type: 'options', items: [
-      "(A) The second paragraph of passage B attempts to develop a broader version of the theory presented in passage A. [3.0%]",
-      "(B) The second paragraph of passage B purports to state facts that bolster the argument made in passage A. [7.0%]",
-      "(C) The argument in the second paragraph of passage B is structurally parallel to the argument in passage A, but the subject matter of the two is different. [3.0%]",
-      "(D) Passage A presents a theory that tends to support the argument presented in the second paragraph of passage B. [83.0%] (Correct)",
-      "(E) The second paragraph of passage B attempts to undermine the theory presented in passage A. [3.0%]"
+      "(A) The second paragraph of passage B attempts to develop a broader version of the theory presented in passage A.",
+      "(B) The second paragraph of passage B purports to state facts that bolster the argument made in passage A.",
+      "(C) The argument in the second paragraph of passage B is structurally parallel to the argument in passage A, but the subject matter of the two is different.",
+      "(D) Passage A presents a theory that tends to support the argument presented in the second paragraph of passage B. (Correct)",
+      "(E) The second paragraph of passage B attempts to undermine the theory presented in passage A."
     ]},
-    { type: 'paragraph', text: "This question asks for the relationship between Passage A and the second paragraph of Passage B. This requires connecting the abstract theory of the first passage to the concrete argument of the second." },
-    { type: 'list', items: [
-      "**Passage A** provides a general philosophical theory. The key component is the **Principle of Rectification**, which demands that past injustices in property ownership be corrected.",
-      "**The second paragraph of Passage B** makes a specific argument: Native American land was taken unjustly, and therefore it should be restored."
-    ]},
-    { type: 'paragraph', text: "The relationship is one of support. The philosophical theory in Passage A provides the moral and logical framework that undergirds the specific argument made in Passage B. The call for restoration in Passage B is a direct, real-world application of the Principle of Rectification from Passage A." },
+    { type: 'h4', text: "Analysis" },
+    { type: 'paragraph', text: "This relationship question should be resolved by matching each choice to what the passage actually establishes. Use the opening and closing claims as scope anchors, then select the option that satisfies the stem without unsupported assumptions." },
+    { type: 'callout', title: "Text Evidence", variant: "tip", text: "Anchor your reading in phrases such as 'There are two principles that are fundamental to a theory of...' and 'But the original wrong can most easily be righted by returning...' when checking whether a choice preserves the passage's emphasis." },
     { type: 'breakdown', labels: { title: "Option", text: "Analysis" }, items: [
-      { title: "(A) The second paragraph of passage B attempts to develop a broader version of the theory presented in passage A.", text: "This is the reverse of the actual relationship. Passage A's theory is broad and general; Passage B's argument is a narrow, specific application.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(B) The second paragraph of passage B purports to state facts that bolster the argument made in passage A.", text: "Passage A presents a theory, not an argument that requires factual bolstering. The direction of support is reversed; the theory in A gives a framework for interpreting the facts in B.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(C) The argument in the second paragraph of passage B is structurally parallel to the argument in passage A, but the subject matter of the two is different.", text: "This is incorrect on two counts. The structures are different (a three-part theoretical outline vs. a linear historical argument), and the subject matter (justice in property) is the same.", badge: "Incorrect", badgeColor: "red" },
-      { title: "(D) Passage A presents a theory that tends to support the argument presented in the second paragraph of passage B.", text: "This accurately describes the relationship. The general \"theory\" of rectification in Passage A provides the philosophical justification for (\"tends to support\") the specific \"argument\" for land restoration in Passage B.", badge: "Correct", badgeColor: "green" },
-      { title: "(E) The second paragraph of passage B attempts to undermine the theory presented in passage A.", text: "This is the opposite of the true relationship. Passage B is a perfect illustration of Passage A's theory in action; it reinforces the theory, it does not undermine it.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) The second paragraph of passage B attempts to develop a broader version of the theory presented in passage A.", text: "This is the reverse of the actual relationship. Passage A's theory is broad and general; Passage B's argument is a narrow, specific application. Additional check: trap type is too narrow, since it leaves out a required part of the passage's claim.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) The second paragraph of passage B purports to state facts that bolster the argument made in passage A.", text: "Passage A presents a theory, not an argument that requires factual bolstering. The direction of support is reversed; the theory in A gives a framework for interpreting the facts in B. Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) The argument in the second paragraph of passage B is structurally parallel to the argument in passage A, but the subject matter of the two is different.", text: "This is incorrect on two counts. The structures are different (a three-part theoretical outline vs. a linear historical argument), and the subject matter (justice in property) is the same. Additional check: this option misses the stem by adding assumptions or emphasis that the passage does not support.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) Passage A presents a theory that tends to support the argument presented in the second paragraph of passage B.", text: "This accurately describes the relationship. The general \"theory\" of rectification in Passage A provides the philosophical justification for (\"tends to support\") the specific \"argument\" for land restoration in Passage B. Additional check: this is strongest because it directly satisfies the stem while preserving the passage's scope and emphasis.", badge: "Correct", badgeColor: "green" },
+      { title: "(E) The second paragraph of passage B attempts to undermine the theory presented in passage A.", text: "This is the opposite of the true relationship. Passage B is a perfect illustration of Passage A's theory in action; it reinforces the theory, it does not undermine it. Additional check: trap type is reversal/contradiction, because it flips the passage's direction or conclusion.", badge: "Incorrect", badgeColor: "red" }
     ]}
   ]
 };

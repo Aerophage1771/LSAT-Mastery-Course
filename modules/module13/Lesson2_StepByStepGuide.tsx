@@ -3,6 +3,7 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: "13-2",
   title: "Step-by-Step Guide",
+  subtitle: "Master the rule, then apply it to find the right answer quickly.",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Principle-Apply' },
     { type: 'paragraph', text: 'This guide gives you a simple, clear way to solve any ""Principle-Apply"" question. You will learn how to take a general rule and use it to find the right answer quickly and accurately.' },
