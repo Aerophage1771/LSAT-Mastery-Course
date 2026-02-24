@@ -71,12 +71,12 @@ export const ExportControls: React.FC<ExportControlsProps> = ({
     { id: 'csv', label: 'CSV Table (.csv)', icon: Table, getData: onExportCSV, ext: 'csv' },
   ];
 
-  const handleDownload = (format, e: React.MouseEvent) => {
+  const handleDownload = (format: typeof formats[number], e: React.MouseEvent) => {
     e.stopPropagation();
-    if (format.isDownloadFunc) {
-      format.action();
-    } else {
-      downloadFile(format.getData(), format.ext);
+    if (format.isDownloadFunc && 'action' in format) {
+      (format as { action: () => void }).action();
+    } else if ('getData' in format && 'ext' in format) {
+      downloadFile((format as { getData: () => string; ext: string }).getData(), (format as { getData: () => string; ext: string }).ext);
     }
     setMenuOpen(false);
   };
@@ -111,9 +111,9 @@ export const ExportControls: React.FC<ExportControlsProps> = ({
                   <format.icon size={14} className="text-slate-400" />
                   {format.label}
                 </button>
-                {!format.isDownloadFunc && (
+                {!format.isDownloadFunc && 'getData' in format && (
                   <button
-                    onClick={(e) => handleCopyAction(format.getData(), format.id, e)}
+                    onClick={(e) => handleCopyAction((format as { getData: () => string }).getData(), format.id, e)}
                     className="p-1.5 text-slate-400 hover:text-indigo-600 rounded-md"
                     title="Copy content"
                   >
@@ -165,9 +165,9 @@ export const ExportControls: React.FC<ExportControlsProps> = ({
                   <format.icon size={16} className="text-slate-400 group-hover:text-indigo-500" />
                   {format.label}
                 </button>
-                {!format.isDownloadFunc && (
+                {!format.isDownloadFunc && 'getData' in format && (
                   <button
-                    onClick={(e) => handleCopyAction(format.getData(), format.id, e)}
+                    onClick={(e) => handleCopyAction((format as { getData: () => string }).getData(), format.id, e)}
                     className="p-2 text-slate-400 hover:text-indigo-600 hover:bg-indigo-100 rounded-lg mr-1 transition-all"
                     title="Copy to clipboard"
                   >

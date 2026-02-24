@@ -132,32 +132,6 @@ const OptionsBlock: React.FC<{ items: string[] }> = ({ items }) => {
   );
 };
 
-const AccordionBlock: React.FC<{ title: string; content: string | ContentBlock[] }> = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  
-  return (
-    <div className="my-6 border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-      <button 
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between p-4 bg-slate-50 hover:bg-slate-100 transition-colors text-left"
-      >
-        <span className="font-bold text-slate-800">{title}</span>
-        {isOpen ? <ChevronUp size={20} className="text-slate-500" /> : <ChevronDown size={20} className="text-slate-500" />}
-      </button>
-      {isOpen && (
-        <div className="p-6 bg-white border-t border-slate-200">
-          <div className="prose prose-slate prose-lg max-w-none">
-            {typeof content === 'string' ? (
-               content.split('\n').map((line, i) => <p key={i} className="mb-2" dangerouslySetInnerHTML={{__html: parseInlineStyles(line)}} />)
-            ) : (
-               <div className="text-slate-500 italic">Complex content in accordion not fully rendered in this view.</div>
-            )}
-          </div>
-        </div>
-      )}
-    </div>
-  );
-};
 
 export const LessonViewer: React.FC<LessonViewerProps> = ({
     title,
