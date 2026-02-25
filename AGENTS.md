@@ -61,6 +61,7 @@ The Question Bank is NOT a module. It has its own standalone page at `/question-
 - **Strict TypeScript**: `tsconfig.json` has `strict: true`, `noUnusedLocals`, `noUnusedParameters`, `noImplicitReturns`, `noFallthroughCasesInSwitch`. All new code must comply.
 - **Content files**: Lesson `.tsx` files in `modules/moduleN/` are pure data (TypeScript objects exporting `ContentBlock[]`). They are not React components. The renderer is `LessonViewer.tsx`.
 - **Blockquotes**: Render as clean rounded panels (not italic + left-border). Styled via `LessonViewer.tsx`, not individual files.
+- **Quote escaping in content files (CRITICAL)**: Subagents writing lesson content frequently introduce syntax errors from unescaped quotes. Common culprits: (1) Smart/curly quotes (`"` `"` `'` `'`) must be replaced with straight quotes. (2) Apostrophes in contractions (`it's`, `don't`, `author's`) inside single-quoted strings must be escaped as `\'`. (3) Double quotes inside double-quoted strings must be escaped as `\"`. **Always run `npx tsc --noEmit | grep moduleN` after writing content files to catch these.** If errors appear, fix escaping before committing.
 - **Dev server port**: `npm run dev` targets port 3000 but auto-increments if busy. Check the Vite output for the actual port.
 - **Pre-existing lint errors**: `npm run lint` reports ~630 pre-existing errors (mostly `no-case-declarations` in `LessonViewer.tsx` and `export.ts`). These are not regressions. Verify your changes by filtering lint output to your modified files.
 
