@@ -14,11 +14,11 @@ export const Lesson1_Module1_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'The claim that ambiguity inspires interpretation figures in the argument in which one of the following ways?' },
         { type: 'options', items: [
-          '(A) It is used to support the argument\'s conclusion. [2.0%]',
-          '(B) It is an illustration of the claim that we are the measure of all things. [2.0%]',
-          '(C) It is compatible with either accepting or rejecting the argument\'s conclusion. [3.0%]',
-          '(D) It is a view that other statements in the argument are intended to support. [91.0%] (Correct)',
-          '(E) It sets out a difficulty the argument is intended to solve. [2.0%]'
+          '(A) It is used to support the argument\'s conclusion.',
+          '(B) It is an illustration of the claim that we are the measure of all things.',
+          '(C) It is compatible with either accepting or rejecting the argument\'s conclusion.',
+          '(D) It is a view that other statements in the argument are intended to support. (Correct)',
+          '(E) It sets out a difficulty the argument is intended to solve.'
         ]}
       ]
     },
@@ -31,11 +31,11 @@ export const Lesson1_Module1_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'Joseph\'s statement that "this alleged theorem simply cannot be proved" plays which one of the following roles in his argument?' },
         { type: 'options', items: [
-          '(A) an assumption for which no support is offered [5.0%]',
-          '(B) a subsidiary conclusion on which his argument\'s main conclusion is based [91.0%] (Correct)',
-          '(C) a potential objection that his argument anticipates and attempts to answer before it is raised [1.0%]',
-          '(D) the principal claim that his argument is structured to refute [2.0%]',
-          '(E) background information that neither supports nor undermines his argument\'s conclusion [1.0%]'
+          '(A) an assumption for which no support is offered',
+          '(B) a subsidiary conclusion on which his argument\'s main conclusion is based (Correct)',
+          '(C) a potential objection that his argument anticipates and attempts to answer before it is raised',
+          '(D) the principal claim that his argument is structured to refute',
+          '(E) background information that neither supports nor undermines his argument\'s conclusion'
         ]}
       ]
     },
@@ -48,11 +48,11 @@ export const Lesson1_Module1_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'The statement that the educational use of computers enables schools to teach far more courses with far fewer teachers figures in the argument in which one of the following ways?' },
         { type: 'options', items: [
-          '(A) It is presented as a possible explanation for an observation that follows it. [5.0%]',
-          '(B) It is a statement of the problem the argument sets out to solve. [6.0%]',
-          '(C) It is a statement that the argument is designed to refute. [83.0%] (Correct)',
-          '(D) It is a statement offered in support of the argument\'s main conclusion. [5.0%]',
-          '(E) It is the argument\'s main conclusion. [1.0%]'
+          '(A) It is presented as a possible explanation for an observation that follows it.',
+          '(B) It is a statement of the problem the argument sets out to solve.',
+          '(C) It is a statement that the argument is designed to refute. (Correct)',
+          '(D) It is a statement offered in support of the argument\'s main conclusion.',
+          '(E) It is the argument\'s main conclusion.'
         ]}
       ]
     },
@@ -65,11 +65,11 @@ export const Lesson1_Module1_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'The statement that human food-producing capacity has increased more rapidly than human population plays which one of the following roles in the argument?' },
         { type: 'options', items: [
-          '(A) It is a hypothesis the argument provides reasons for believing to be presently false. [5.0%]',
-          '(B) It is a part of the evidence used in the argument to support the conclusion that a well-known view is misguided. [8.0%]',
-          '(C) It is an observation that the argument suggests actually supports Malthus\'s position. [47.0%]',
-          '(D) It is a general fact that the argument offers reason to believe will eventually change. [39.0%] (Correct)',
-          '(E) It is a hypothesis that, according to the argument, is accepted on the basis of inadequate evidence. [2.0%]'
+          '(A) It is a hypothesis the argument provides reasons for believing to be presently false.',
+          '(B) It is a part of the evidence used in the argument to support the conclusion that a well-known view is misguided.',
+          '(C) It is an observation that the argument suggests actually supports Malthus\'s position.',
+          '(D) It is a general fact that the argument offers reason to believe will eventually change. (Correct)',
+          '(E) It is a hypothesis that, according to the argument, is accepted on the basis of inadequate evidence.'
         ]}
       ]
     },
@@ -82,11 +82,11 @@ export const Lesson1_Module1_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'Which one of the following most accurately expresses the role played in the argument by the observation that attending a live musical performance is a richer experience than is listening to recorded music?' },
         { type: 'options', items: [
-          '(A) It is what the columnist\'s argument purports to show. [2.0%]',
-          '(B) It is the reason given for the claim that the columnist\'s argument is attempting to undermine. [6.0%]',
-          '(C) It is what the columnist\'s argument purports to explain. [33.0%]',
-          '(D) It is what the columnist\'s argument purports to refute. [12.0%]',
-          '(E) It is what the position that the columnist tries to undermine is purported to explain. [47.0%] (Correct)'
+          '(A) It is what the columnist\'s argument purports to show.',
+          '(B) It is the reason given for the claim that the columnist\'s argument is attempting to undermine.',
+          '(C) It is what the columnist\'s argument purports to explain.',
+          '(D) It is what the columnist\'s argument purports to refute.',
+          '(E) It is what the position that the columnist tries to undermine is purported to explain. (Correct)'
         ]}
       ]
     },
@@ -99,11 +99,11 @@ export const Lesson1_Module1_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'Which one of the following most accurately describes the role played in Singletary\'s argument by the statement that mentions driver education?' },
         { type: 'options', items: [
-          '(A) It is cited as evidence for the claim that the city misunderstands the steps necessary for ensuring bicyclists\' safety. [33.0%]',
-          '(B) It is used as partial support for a claim about the motivation of the city. [56.0%] (Correct)',
-          '(C) It is offered as evidence of the total ineffectiveness of the helmet ordinance. [2.0%]',
-          '(D) It is offered as an example of further measures the city will take to ensure bicyclists\' safety. [6.0%]',
-          '(E) It is presented as an illustration of the city\'s overriding interest in its public image. [4.0%]'
+          '(A) It is cited as evidence for the claim that the city misunderstands the steps necessary for ensuring bicyclists\' safety.',
+          '(B) It is used as partial support for a claim about the motivation of the city. (Correct)',
+          '(C) It is offered as evidence of the total ineffectiveness of the helmet ordinance.',
+          '(D) It is offered as an example of further measures the city will take to ensure bicyclists\' safety.',
+          '(E) It is presented as an illustration of the city\'s overriding interest in its public image.'
         ]}
       ]
     },
@@ -116,11 +116,11 @@ export const Lesson1_Module1_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'Which one of the following most accurately describes the relationship between the argument\'s conclusion and its claim that one can be at home without being in one\'s house?' },
         { type: 'options', items: [
-          '(A) The claim is required to establish the conclusion. [35.0%]',
-          '(B) The claim represents the point the conclusion is intended to refute. [4.0%]',
-          '(C) The claim is compatible with the truth or falsity of the conclusion. [38.0%] (Correct)',
-          '(D) The claim points out an ambiguity in the phrase "at home." [21.0%]',
-          '(E) The claim inadvertently contradicts the conclusion. [3.0%]'
+          '(A) The claim is required to establish the conclusion.',
+          '(B) The claim represents the point the conclusion is intended to refute.',
+          '(C) The claim is compatible with the truth or falsity of the conclusion. (Correct)',
+          '(D) The claim points out an ambiguity in the phrase "at home."',
+          '(E) The claim inadvertently contradicts the conclusion.'
         ]}
       ]
     },

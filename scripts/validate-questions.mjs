@@ -7,7 +7,7 @@
  * - PT ID in every accordion title
  * - Exactly 5 answer choices per question
  * - At least one (Correct) marker per question
- * - Percentage stats [XX.0%] on answer choices
+ * - No stale percentage stats
  * - No duplicate PT IDs
  * - No typos in common patterns
  * 
@@ -70,8 +70,8 @@ for (const file of files) {
   // Check (Correct) markers - count how many accordions have one
   const accordionBlocks = content.split(/type:\s*'accordion'/).slice(1);
   let correctCount = 0;
-  let percentFullCount = 0;
   let optionCountIssues = 0;
+  let stalePercentCount = 0;
 
   for (const block of accordionBlocks) {
     const optionsMatch = block.match(/items:\s*\[([\s\S]*?)\]/);
@@ -87,10 +87,8 @@ for (const file of files) {
         correctCount++;
       }
 
-      // Check if ALL 5 options have percentage
-      const percentMatches = (optionsStr.match(PERCENT_REGEX) || []).length;
-      if (percentMatches >= 5) {
-        percentFullCount++;
+      if (PERCENT_REGEX.test(optionsStr)) {
+        stalePercentCount++;
       }
     }
   }
@@ -99,8 +97,8 @@ for (const file of files) {
     issues.push(`Only ${correctCount}/${accordions} questions have (Correct) marker`);
   }
 
-  if (percentFullCount < accordions) {
-    issues.push(`Only ${percentFullCount}/${accordions} questions have full % stats on all options`);
+  if (stalePercentCount > 0) {
+    issues.push(`${stalePercentCount} questions still have percentage stats (should be removed)`);
   }
 
   if (optionCountIssues > 0) {

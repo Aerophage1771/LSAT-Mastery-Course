@@ -14,11 +14,11 @@ export const Lesson5_Module5_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'The argument is most vulnerable to criticism on the grounds that it' },
         { type: 'options', items: [
-          '(A) concludes that a claim must be false because of the mere absence of evidence in its favor [1.0%]',
-          '(B) cites, in support of the conclusion, evidence that is inconsistent with other information that is provided [1.0%]',
-          '(C) fails to establish that the phenomena interpreted as cause and effect are not both direct effects of some other factor [94.0%] (Correct)',
-          '(D) takes a condition that by itself guarantees the occurrence of a certain phenomenon to be a condition that therefore must be met for that phenomenon to occur [3.0%]',
-          '(E) bases a broad claim about the behavior of people in general on a comparison between two groups of people that together include only a small proportion of people overall [1.0%]'
+          '(A) concludes that a claim must be false because of the mere absence of evidence in its favor',
+          '(B) cites, in support of the conclusion, evidence that is inconsistent with other information that is provided',
+          '(C) fails to establish that the phenomena interpreted as cause and effect are not both direct effects of some other factor (Correct)',
+          '(D) takes a condition that by itself guarantees the occurrence of a certain phenomenon to be a condition that therefore must be met for that phenomenon to occur',
+          '(E) bases a broad claim about the behavior of people in general on a comparison between two groups of people that together include only a small proportion of people overall'
         ]}
       ]
     },
@@ -31,11 +31,11 @@ export const Lesson5_Module5_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'The reasoning is flawed because the argument' },
         { type: 'options', items: [
-          '(A) makes a distinction where there is no real difference between the things distinguished [2.0%]',
-          '(B) takes no account of the relative frequency of left-handed people in the population as a whole [86.0%] (Correct)',
-          '(C) uses the word "accidents" in two different senses [7.0%]',
-          '(D) ignores the possibility that some household accidents are caused by more than one person [1.0%]',
-          '(E) gives wholly irrelevant evidence and simply disparages an opposing position by calling it a "myth" [5.0%]'
+          '(A) makes a distinction where there is no real difference between the things distinguished',
+          '(B) takes no account of the relative frequency of left-handed people in the population as a whole (Correct)',
+          '(C) uses the word "accidents" in two different senses',
+          '(D) ignores the possibility that some household accidents are caused by more than one person',
+          '(E) gives wholly irrelevant evidence and simply disparages an opposing position by calling it a "myth"'
         ]}
       ]
     },
@@ -48,11 +48,11 @@ export const Lesson5_Module5_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'The argument is most vulnerable to the criticism that it' },
         { type: 'options', items: [
-          '(A) confuses a result with something that is sufficient for bringing about that result [7.0%]',
-          '(B) mistakes a temporal relationship for a causal relationship [5.0%]',
-          '(C) assumes that because a certain action has a certain result the person taking that action intended that result [1.0%]',
-          '(D) judges only by subjective standards something that can be readily evaluated according to objective standards [2.0%]',
-          '(E) generalizes on the basis of what could be exceptional cases [85.0%] (Correct)'
+          '(A) confuses a result with something that is sufficient for bringing about that result',
+          '(B) mistakes a temporal relationship for a causal relationship',
+          '(C) assumes that because a certain action has a certain result the person taking that action intended that result',
+          '(D) judges only by subjective standards something that can be readily evaluated according to objective standards',
+          '(E) generalizes on the basis of what could be exceptional cases (Correct)'
         ]}
       ]
     },
@@ -65,11 +65,11 @@ export const Lesson5_Module5_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'The argument is most vulnerable to which one of the following criticisms?' },
         { type: 'options', items: [
-          '(A) It contains a shift in the meaning of "unusable" from "permanently unusable" to "temporarily unusable." [0.0%]',
-          '(B) It treats an event that can cause a certain result as though that event is necessary to bring about that result. [98.0%] (Correct)',
-          '(C) It introduces information unrelated to its conclusion as evidence in support of that conclusion. [0.0%]',
-          '(D) It attempts to support its conclusion by citing a generalization that is too broad. [1.0%]',
-          '(E) It overlooks the possibility that some programs do not require a peripheral component such as a mouse. [1.0%]'
+          '(A) It contains a shift in the meaning of "unusable" from "permanently unusable" to "temporarily unusable."',
+          '(B) It treats an event that can cause a certain result as though that event is necessary to bring about that result. (Correct)',
+          '(C) It introduces information unrelated to its conclusion as evidence in support of that conclusion.',
+          '(D) It attempts to support its conclusion by citing a generalization that is too broad.',
+          '(E) It overlooks the possibility that some programs do not require a peripheral component such as a mouse.'
         ]}
       ]
     },
@@ -82,11 +82,11 @@ export const Lesson5_Module5_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'The reasoning in the argument is most vulnerable to criticism on the grounds that the argument' },
         { type: 'options', items: [
-          '(A) confuses a condition\'s being required for a given result to occur in one case with the condition\'s being sufficient for such a result to occur in a similar case [27.0%] (Correct)',
-          '(B) takes for granted that if one species had a characteristic that happened to enable it to survive certain conditions, at least one related extinct species must have had the same characteristic [8.0%]',
-          '(C) generalizes, from the fact that one species with a certain characteristic survived certain conditions, that all related species with the same characteristic must have survived exactly the same conditions [23.0%]',
-          '(D) fails to consider the possibility that Australopithecus afarensis had one or more characteristics that lessened its chances of surviving prehistoric times [27.0%]',
-          '(E) fails to consider the possibility that, even if a condition caused a result to occur in one case, it was not necessary to cause the result to occur in a similar case [14.0%]'
+          '(A) confuses a condition\'s being required for a given result to occur in one case with the condition\'s being sufficient for such a result to occur in a similar case (Correct)',
+          '(B) takes for granted that if one species had a characteristic that happened to enable it to survive certain conditions, at least one related extinct species must have had the same characteristic',
+          '(C) generalizes, from the fact that one species with a certain characteristic survived certain conditions, that all related species with the same characteristic must have survived exactly the same conditions',
+          '(D) fails to consider the possibility that Australopithecus afarensis had one or more characteristics that lessened its chances of surviving prehistoric times',
+          '(E) fails to consider the possibility that, even if a condition caused a result to occur in one case, it was not necessary to cause the result to occur in a similar case'
         ]}
       ]
     },
@@ -99,11 +99,11 @@ export const Lesson5_Module5_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'The editorial\'s argument is most vulnerable to criticism on the grounds that it' },
         { type: 'options', items: [
-          '(A) presumes, without providing justification, that any country that does not have a pure free market economy has a highly controlled economy [5.0%]',
-          '(B) presumes, without providing justification, that the way in which utility is distributed is less important than the total amount of utility [2.0%]',
-          '(C) fails to consider that the way most likely to achieve a particular end may not be the only way to achieve that end [30.0%]',
-          '(D) presumes, without providing justification, that trying to bring about a condition that will ensure the achievement of an end must always be the way most likely to achieve that end [59.0%] (Correct)',
-          '(E) ignores the possibility that a pure free market economy will have serious drawbacks that outweigh the benefits of maximum total utility [3.0%]'
+          '(A) presumes, without providing justification, that any country that does not have a pure free market economy has a highly controlled economy',
+          '(B) presumes, without providing justification, that the way in which utility is distributed is less important than the total amount of utility',
+          '(C) fails to consider that the way most likely to achieve a particular end may not be the only way to achieve that end',
+          '(D) presumes, without providing justification, that trying to bring about a condition that will ensure the achievement of an end must always be the way most likely to achieve that end (Correct)',
+          '(E) ignores the possibility that a pure free market economy will have serious drawbacks that outweigh the benefits of maximum total utility'
         ]}
       ]
     },
@@ -116,11 +116,11 @@ export const Lesson5_Module5_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'The reasoning above is flawed because it' },
         { type: 'options', items: [
-          '(A) draws a conclusion about the population in general based only on a sample of that population [25.0%]',
-          '(B) confuses a sufficient condition with a required condition [42.0%] (Correct)',
-          '(C) is based on an ambiguity of one of its terms [5.0%]',
-          '(D) draws a conclusion about a specific belief based on responses to queries about two different specific beliefs [26.0%]',
-          '(E) contains premises that cannot all be true [2.0%]'
+          '(A) draws a conclusion about the population in general based only on a sample of that population',
+          '(B) confuses a sufficient condition with a required condition (Correct)',
+          '(C) is based on an ambiguity of one of its terms',
+          '(D) draws a conclusion about a specific belief based on responses to queries about two different specific beliefs',
+          '(E) contains premises that cannot all be true'
         ]}
       ]
     },
