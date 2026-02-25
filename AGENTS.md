@@ -6,7 +6,10 @@ This is a **client-side only** React + TypeScript SPA (no backend, no database, 
 
 ### Stack
 
-- React 19, TypeScript, Vite 6, Tailwind CSS 4, PWA (vite-plugin-pwa)
+- React 19, TypeScript (strict mode), Vite 6, Tailwind CSS 4, PWA (vite-plugin-pwa)
+- React Router for URL-based navigation
+- Fuse.js for client-side search
+- DOMPurify for HTML sanitization
 - Package manager: **npm** (lockfile: `package-lock.json`)
 
 ### Running the app
@@ -15,16 +18,26 @@ This is a **client-side only** React + TypeScript SPA (no backend, no database, 
 - `npm run build` produces a production bundle in `dist/`
 - `npm run preview` serves the production build locally
 
-### Lint / Type-check
+### Available scripts
 
-- There is no dedicated ESLint config or lint script in this repo.
-- Run `npx tsc --noEmit` for TypeScript type-checking. Note: 9 pre-existing TS errors exist in `Module55.tsx` (references modules that don't exist yet); these are not regressions.
+See `package.json` for the full list. Key commands:
+- `npm run lint` / `npm run lint:fix` - ESLint
+- `npm run format` / `npm run format:check` - Prettier
+- `npm run typecheck` - TypeScript strict type checking
+- `npm test` - Vitest (unit tests)
+- `npm run test:watch` - Vitest in watch mode
+- `npm run analyze` - Bundle size visualization (outputs `dist/stats.html`)
 
-### Testing
+### Architecture notes
 
-- No automated test framework is configured. Manual browser testing via `npm run dev` is the primary validation method.
+- **Routing**: React Router with paths `/`, `/module/:moduleId`, `/module/:moduleId/lesson/:lessonId`
+- **Code splitting**: Modules are lazy-loaded via `modules/registry.ts`. Each of the 59 modules is a separate chunk.
+- **Progress**: Lesson completion persisted in `localStorage` via `hooks/useProgress.ts` and shared via `contexts/ProgressContext.tsx`.
+- **Search**: Fuse.js-powered search dialog activated by `Ctrl+K`.
 
 ### Gotchas
 
-- The main JS bundle is ~2.9 MB (2,359 modules of course content). Vite build emits a chunk-size warning; this is expected.
+- The main JS bundle is ~775 KB (down from ~2.9 MB after code splitting). Vite build still emits a chunk-size warning; this is expected.
 - PWA service worker is generated at build time only (`npm run build`), not during `npm run dev`.
+- 9 pre-existing TS errors exist in `Module55.tsx` (references modules that don't exist yet); these are not regressions.
+- `tsconfig.json` has `strict: true` enabled. All new code must be strictly typed.
