@@ -7,7 +7,7 @@ export const Lesson9_Drill_ChainOfLogic2: Lesson = {
     { type: 'h2', text: 'Chain of Logic — Complex Chains' },
     { type: 'paragraph', text: "This lesson builds on the Chain of Logic pattern with a more complex variation. Here, the argument describes **two separate groups** using different characteristics and then draws a conclusion that connects them. The logical chain is broken because the author assumes — without proof — that the defining trait of Group A overlaps with or implies the defining trait of Group B." },
     { type: 'paragraph', text: "Your task is to provide the missing **definitional link** between those traits. The correct answer often uses formal logical language — \"Only X are Y\" or \"No X are Y\" — creating a strict bridge that completes the chain." },
-    { type: 'callout', variant: 'tip', title: 'Translating \"Only\" Statements', text: "\"Only X are Y\" translates to **Y → X** (if Y, then X). This reverses the intuitive reading order. \"The only X are Y\" translates to **X → Y** (if X, then Y). Getting this translation right is critical — many wrong answers exploit the confusion between these two forms." },
+    { type: 'callout', variant: 'tip', title: 'Translating "Only" Statements', text: "\"Only X are Y\" translates to **Y → X** (if Y, then X). This reverses the intuitive reading order. \"The only X are Y\" translates to **X → Y** (if X, then Y). Getting this translation right is critical — many wrong answers exploit the confusion between these two forms." },
 
     { type: 'hr' },
 
