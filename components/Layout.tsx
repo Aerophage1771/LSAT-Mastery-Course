@@ -288,15 +288,15 @@ export const Layout: React.FC<LayoutProps> = ({
                 {modules.map((module) => {
                   const isActive = activeModuleId === module.id;
                   const isLRStart = module.id === 1;
-                  const isRCStart = module.id === 21;
+                  const isRCStart = module.id === 23;
                   const isAdvancedStart = module.id === 50;
-                  const isResourceStart = module.id === 48;
+                  const isQuestionBankStart = module.id === 57;
                   return (
                     <React.Fragment key={module.id}>
                       {isLRStart && <h3 className="px-3 mt-2 mb-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Logical Reasoning</h3>}
                       {isRCStart && <h3 className="px-3 mt-6 mb-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Reading Comprehension</h3>}
                       {isAdvancedStart && <h3 className="px-3 mt-6 mb-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Advanced Passages</h3>}
-                      {isResourceStart && <h3 className="px-3 mt-6 mb-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Resources</h3>}
+                      {isQuestionBankStart && <h3 className="px-3 mt-6 mb-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Question Bank</h3>}
                       <div className="mb-1" role="treeitem" aria-expanded={isActive}>
                         <button onClick={() => { onSelectModule(module.id); }} className={`w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 flex items-center justify-between group ${isActive ? 'bg-slate-800 text-white shadow-md' : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'}`} aria-current={isActive ? 'true' : undefined}>
                           <span className="flex-1 truncate pr-2"><span className="opacity-50 mr-2">{module.id}.</span>{module.title}</span>
