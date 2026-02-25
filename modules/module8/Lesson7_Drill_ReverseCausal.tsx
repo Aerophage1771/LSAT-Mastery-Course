@@ -1,26 +1,41 @@
-
 import { Lesson } from '../../types';
 
 export const Lesson7_Drill_ReverseCausal: Lesson = {
   id: "8-7",
   title: "Advanced Causation - The Reverse Causal Weakener (PT-126-S-1-Q-22)",
   content: [
+    { type: 'h3', text: 'Concept: Reverse Causation' },
     { type: 'paragraph', text: 'In many causal arguments, the author observes a correlation between two phenomena, A and B, and concludes that A causes B. The most common way to weaken such an argument is to suggest a third, unmentioned factor, C, that is the true cause of B. However, high-difficulty questions often employ a more sophisticated and devastating type of weakener: **Reverse Causation**.' },
     { type: 'paragraph', text: 'Instead of proposing an external cause, a Reverse Causal weakener argues that the author has the relationship backward. It\'s not that A causes B; it\'s that B actually causes A. This type of answer choice is powerful because it uses the same two elements from the stimulus but completely flips the logical structure, showing that the author has fundamentally misinterpreted the evidence.' },
-    { type: 'hr' },
-    { type: 'h4', text: 'The Problem' },
-    { type: 'blockquote', text: '**Stimulus**\nPsychologist: It is well known that becoming angry often induces temporary incidents of high blood pressure. A recent study further showed, however, that people who are easily angered are significantly more likely to have permanently high blood pressure than are people who have more tranquil personalities. Coupled with the long-established fact that those with permanently high blood pressure are especially likely to have heart disease, the recent findings indicate that heart disease can result from psychological factors.' },
-    { type: 'paragraph', text: '**Question**\nWhich one of the following would, if true, most weaken the psychologist’s argument?' },
-    { type: 'options', items: [
-      "(A) Those who are easily angered are less likely to recover fully from episodes of heart disease than are other people.",
-      "(B) Medication designed to control high blood pressure can greatly affect the moods of those who use it.",
-      "(C) People with permanently high blood pressure who have tranquil personalities virtually never develop heart disease.",
-      "(D) Those who discover that they have heart disease tend to become more easily frustrated by small difficulties.",
-      "(E) The physiological factors that cause permanently high blood pressure generally make people quick to anger."
+
+    { type: 'callout', variant: 'tip', title: 'When to Expect Reverse Causation', text: 'Reverse causation is most likely when the argument links a **psychological state** to a **physiological condition**, or when it connects a **behavior** to an **outcome** that could plausibly influence that behavior. Whenever you see this pattern, actively look for an answer that flips the arrow.' },
+
+    { type: 'table', headers: ['Weakening Method', 'Structure', 'Power Level'], rows: [
+      ['**Alternative Cause**', 'A correlates with B, but actually C causes B', 'Moderate — leaves A\'s role unclear'],
+      ['**Reverse Causation**', 'A correlates with B, but actually B causes A', 'High — directly contradicts the conclusion'],
+      ['**Common Cause**', 'A correlates with B, but C causes both A and B', 'High — eliminates the direct link entirely'],
     ]},
-    { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
-    { type: 'h3', text: 'Analysis & Explanation' },
+
+    { type: 'h3', text: 'Practice: Identify the Reverse Causal Weakener' },
+    {
+      type: 'question-card',
+      id: '8-7-practice',
+      questionType: 'Weaken',
+      difficulty: 'hard',
+      stimulus: 'Psychologist: It is well known that becoming angry often induces temporary incidents of high blood pressure. A recent study further showed, however, that people who are easily angered are significantly more likely to have permanently high blood pressure than are people who have more tranquil personalities. Coupled with the long-established fact that those with permanently high blood pressure are especially likely to have heart disease, the recent findings indicate that heart disease can result from psychological factors.',
+      question: 'Which one of the following would, if true, most weaken the psychologist\'s argument?',
+      options: [
+        '(A) Those who are easily angered are less likely to recover fully from episodes of heart disease than are other people.',
+        '(B) Medication designed to control high blood pressure can greatly affect the moods of those who use it.',
+        '(C) People with permanently high blood pressure who have tranquil personalities virtually never develop heart disease.',
+        '(D) Those who discover that they have heart disease tend to become more easily frustrated by small difficulties.',
+        '(E) The physiological factors that cause permanently high blood pressure generally make people quick to anger. (Correct)'
+      ]
+    },
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Full Analysis' },
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
     { type: 'paragraph', text: "Let's engage with the stimulus sentence by sentence to trace the psychologist's chain of reasoning." },
     { type: 'breakdown', labels: { title: 'Quote', text: 'Analysis' }, items: [
@@ -39,7 +54,7 @@ export const Lesson7_Drill_ReverseCausal: Lesson = {
       '**Provide an Alternative Cause:** Suggest a third factor (e.g., genetics, diet) that causes both an angry personality AND high blood pressure.'
     ]},
     { type: 'h4', text: 'Step 4: Evaluation' },
-    { type: 'paragraph', text: 'You are looking for the answer that breaks the psychologist’s proposed causal chain, ideally by reversing its direction.' },
+    { type: 'paragraph', text: 'You are looking for the answer that breaks the psychologist\'s proposed causal chain, ideally by reversing its direction.' },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis'}, items: [
         { title: '(A) Those who are easily angered are less likely to recover fully from episodes of heart disease than are other people.', text: '**[The Irrelevant Outcome]**\nThis describes what happens *after* someone already has heart disease. The argument is about the *cause* of heart disease, not the prognosis for recovery.', badge: 'Incorrect', badgeColor: 'red'},
         { title: '(B) Medication designed to control high blood pressure can greatly affect the moods of those who use it.', text: '**[The Subgroup Trap]**\nThis only applies to people already taking medication. The argument is about the general population, including those who are not medicated. It doesn\'t explain the initial correlation between anger and high blood pressure among the unmedicated.', badge: 'Incorrect', badgeColor: 'red'},
@@ -48,6 +63,15 @@ export const Lesson7_Drill_ReverseCausal: Lesson = {
         { title: '(E) The physiological factors that cause permanently high blood pressure generally make people quick to anger.', text: '**[The Correct Choice - Reverse Causation]**\nThis directly and powerfully reverses the author\'s central causal claim. The author assumes `Anger → High BP`. This choice states that the underlying `Physiological Factors → High BP` and those same `Physiological Factors → Anger`. In short, the medical condition causes the personality trait, not the other way around. This completely undermines the conclusion that heart disease can result from *psychological* factors, recasting the cause as purely physiological.', badge: 'Correct', badgeColor: 'green'}
     ]},
     { type: 'hr' },
+
+    { type: 'h3', text: 'Why (D) Is the Classic Trap' },
+    { type: 'paragraph', text: 'Choice (D) deserves special attention because it *is* a reversal — just at the wrong link. Many test-takers select (D) because they correctly identify that reverse causation is the strategy, but they fail to target the *correct link* in the causal chain.' },
+    { type: 'table', headers: ['Choice', 'What It Reverses', 'Why It Fails'], rows: [
+      ['**(D)**', 'Heart disease → Anger', 'Attacks the wrong link. The core premise connects anger to *high blood pressure*, not to heart disease directly.'],
+      ['**(E)**', 'Physiological factors → Both high BP and anger', 'Attacks the correct link. Shows the anger-BP correlation is driven by physiology, not psychology.'],
+    ]},
+    { type: 'hr' },
+
     { type: 'h3', text: 'Key Takeaway' },
     { type: 'paragraph', text: 'High-difficulty causal arguments often hinge on the *direction* of the relationship. When you see a correlation between a psychological trait and a physical condition, you should always be on the lookout for a Reverse Causal weakener.'},
     { type: 'list', ordered: true, items: [
