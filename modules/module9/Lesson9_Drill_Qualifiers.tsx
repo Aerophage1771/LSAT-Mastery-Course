@@ -2,50 +2,46 @@ import { Lesson } from '../../types';
 
 export const Lesson9_Drill_Qualifiers: Lesson = {
   id: "9-9",
-  title: "Drill: Strengthening with Qualifiers (PT-125-S-4-Q-20)",
+  title: "Drill: Strengthening Qualified Claims (PT-125-S-4-Q-20)",
   content: [
-    { type: 'h3', text: 'Drill: Strengthening with Qualifiers (PT-125-S-4-Q-20)' },
-    { type: 'paragraph', text: 'This lesson focuses on a subtle but powerful way to strengthen arguments that use statistics or rates. The author will often present a statistic that seems impressive on the surface, but a closer look reveals a potential flaw in how that statistic was generated. The correct answer will often provide a qualifying fact that validates the author\'s use of the statistic and rules out a way the data could be misleading.' },
+    { type: 'h3', text: 'Strengthening Qualified Claims' },
+    { type: 'paragraph', text: 'Some arguments hinge on a narrow statistic that sounds impressive but could be misleading. Words like "most," "usually," "on the occasions when," and "more often" qualify the scope of the evidence. A savvy test-taker asks: *Could the statistic be technically true yet still fail to support the broad conclusion?* The correct strengthener validates the statistic by showing it was generated under fair conditions — not cherry-picked or gamed.' },
+    { type: 'callout', variant: 'tip', title: 'The "Playing It Safe" Flaw', text: 'When someone boasts about accuracy "on the occasions when" they made a prediction, ask how often they actually made that prediction. A station that predicts rain only twice a year can easily be 100% accurate — but it has failed to warn viewers about dozens of other rainy days. The strengthener must show the predictor was not gaming the denominator.' },
     { type: 'hr' },
-    { type: 'h4', text: 'The Problem' },
-    { type: 'blockquote', text: 'TV meteorologist: Our station’s weather forecasts are more useful and reliable than those of the most popular news station in the area. After all, the most important question for viewers in this area is whether it will rain, and on most of the occasions when we have forecast rain for the next day, we have been right. The same cannot be said for either of our competitors.' },
-    { type: 'h4', text: 'The Question' },
-    { type: 'paragraph', text: 'Which one of the following, if true, most strengthens the meteorologist’s argument?' },
-    { type: 'options', items: [
-      '(A) The meteorologist’s station forecast rain more often than did the most popular news station in the area.',
+
+    { type: 'question-card', id: 'PT-125-S-4-Q-20', questionType: 'Strengthen', difficulty: 'hard', stimulus: 'TV meteorologist: Our station\'s weather forecasts are more useful and reliable than those of the most popular news station in the area. After all, the most important question for viewers in this area is whether it will rain, and on most of the occasions when we have forecast rain for the next day, we have been right. The same cannot be said for either of our competitors.', question: 'Which one of the following, if true, most strengthens the meteorologist\'s argument?', options: [
+      '(A) The meteorologist\'s station forecast rain more often than did the most popular news station in the area. (Correct)',
       '(B) The less popular of the competing stations does not employ any full-time meteorologists.',
       '(C) The most popular news station in the area is popular because of its investigative news reports.',
-      '(D) The meteorologist’s station has a policy of not making weather forecasts more than three days in advance.',
-      '(E) On most of the occasions when the meteorologist’s station forecast that it would not rain, at least one of its competitors also forecast that it would not rain.'
+      '(D) The meteorologist\'s station has a policy of not making weather forecasts more than three days in advance.',
+      '(E) On most of the occasions when the meteorologist\'s station forecast that it would not rain, at least one of its competitors also forecast that it would not rain.'
     ]},
-    { type: 'paragraph', text: '<br/><br/><br/>' },
+
     { type: 'hr' },
-    { type: 'h3', text: 'Explanation' },
+    { type: 'h3', text: 'Full Analysis' },
+
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
-    { type: 'paragraph', text: 'Let\'s engage with the text sentence by sentence to see how the meteorologist builds their case.' },
     { type: 'breakdown', labels: { title: 'Quote', text: 'Analysis' }, items: [
-      { title: '"Our station’s weather forecasts are more useful and reliable than those of the most popular news station in the area."', text: 'This is the conclusion. It is a comparative claim of superiority.' },
-      { title: '"After all, the most important question for viewers in this area is whether it will rain, and on most of the occasions when we have forecast rain for the next day, we have been right."', text: 'This is the core evidence. The meteorologist bases their claim of superiority on a specific statistic: a high accuracy rate *when they predict rain*.' },
-      { title: '"The same cannot be said for either of our competitors."', text: 'The meteorologist asserts that their competitors do not have this same high accuracy rate when predicting rain.' }
+      { title: '"Our station\'s weather forecasts are more useful and reliable than those of the most popular news station."', text: 'Conclusion — a broad comparative claim of overall superiority.' },
+      { title: '"On most of the occasions when we have forecast rain for the next day, we have been right."', text: 'Evidence — a narrow accuracy rate conditional on having forecast rain. Notice the qualifier: "on the occasions when we have forecast rain."' },
+      { title: '"The same cannot be said for either of our competitors."', text: 'Supplemental premise asserting competitors lack this accuracy.' }
     ]},
-    { type: 'h4', text: 'Step 2: Analysis' },
-    { type: 'paragraph', text: '**What Method of Reasoning is the argument using?**\nThe argument uses a very specific, narrow statistic (accuracy *on the days rain was forecast*) to support a very broad, general conclusion (overall reliability and usefulness).' },
-    { type: 'paragraph', text: '**What\'s the Problem?**\nThe statistic is cherry-picked and potentially misleading. A station could achieve a near-perfect accuracy rate on rain forecasts by simply never forecasting rain unless they are 100% certain. For example, if it rains 50 times a year, and a station only predicts rain on 2 of those days but gets them right, their accuracy rate *when they predict rain* is 100%. However, they have failed to warn their viewers about the other 48 rainy days, making them not very "useful or reliable." The argument ignores the other side of the coin: how often did it rain when they *failed* to predict it?' },
-    { type: 'h4', text: 'Step 3: How Can We Strengthen?' },
-    { type: 'paragraph', text: 'Since the core problem is the potentially misleading nature of the statistic, you need to find a fact that makes the statistic a more legitimate measure of overall reliability.' },
-    { type: 'list', items: [
-      '**Validate the Statistic\'s Relevance:** The most direct way to strengthen the argument is to show that the meteorologist\'s station is not "gaming the system." You need evidence that they are making a good-faith effort to predict rain, not just avoiding predictions to keep their accuracy high.',
-      '**Rule Out "Playing It Safe":** An effective strengthener would show that the station makes rain forecasts frequently, which means their high accuracy is not just the result of making very few, very safe predictions.'
-    ]},
-    { type: 'h4', text: 'Step 4: Evaluation' },
-    { type: 'paragraph', text: 'You are looking for the answer that defends the statistic as a fair measure of the station\'s overall performance.' },
+
+    { type: 'h4', text: 'Step 2: Identify the Gap' },
+    { type: 'paragraph', text: 'The evidence is narrow (accuracy when rain was predicted) but the conclusion is broad (overall reliability). The statistic could be gamed: if the station rarely predicts rain — only on obvious days — it can achieve high accuracy while missing most rainy days. The gap is between the conditional accuracy rate and the claim of general usefulness.' },
+
+    { type: 'h4', text: 'Step 3: Prephrase the Strengthen' },
+    { type: 'paragraph', text: 'Show the station is not "playing it safe." If it forecasts rain at least as often as (or more often than) competitors, its high accuracy cannot be dismissed as a product of cautious, infrequent predictions.' },
+
+    { type: 'h4', text: 'Step 4: Evaluate Every Choice' },
     { type: 'breakdown', labels: { title: 'Option', text: 'Evaluation' }, items: [
-      { title: '(A) The meteorologist’s station forecast rain more often than did the most popular news station in the area.', text: 'This directly addresses the weakness in the argument. If the meteorologist\'s station predicts rain *more often* than their competitor, it means they are not "playing it safe." Their high accuracy is achieved while making more frequent, and thus riskier, predictions. This makes their high accuracy rate a much more impressive and legitimate indicator of their overall reliability.', badge: 'Correct', badgeColor: 'green' },
-      { title: '(B) The less popular of the competing stations does not employ any full-time meteorologists.', text: 'The argument\'s main comparison is between the meteorologist\'s station and the "most popular news station." Information about a *third*, "less popular" station is irrelevant to this primary comparison.', badge: 'The Wrong Comparison Trap', badgeColor: 'red' },
-      { title: '(C) The most popular news station in the area is popular because of its investigative news reports.', text: 'The reason *why* the competitor is popular has no bearing on the reliability of its weather forecasts. This is a distraction from the core issue of forecast accuracy.', badge: 'The Irrelevant Reason Trap', badgeColor: 'red' },
-      { title: '(D) The meteorologist’s station has a policy of not making weather forecasts more than three days in advance.', text: 'This policy might be a good practice, but it doesn\'t help you compare the reliability of their *next-day* rain forecasts to those of their competitor. It doesn\'t address the core statistical flaw.', badge: 'The Irrelevant Policy Trap', badgeColor: 'red' },
-      { title: '(E) On most of the occasions when the meteorologist’s station forecast that it would not rain, at least one of its competitors also forecast that it would not rain.', text: 'The argument is about what happens when rain *is* forecast, not when it *is not*. Furthermore, agreement with a competitor doesn\'t prove accuracy. Both stations could be wrong together.', badge: 'The Irrelevant Agreement Trap', badgeColor: 'red' }
+      { title: '(A) The station forecast rain more often than the most popular news station.', text: 'This directly closes the gap. The station makes rain predictions frequently — more so than the competitor — so its high accuracy is genuine, not the product of rare, safe forecasts.', badge: 'Correct', badgeColor: 'green' },
+      { title: '(B) The less popular competitor has no full-time meteorologists.', text: 'The argument\'s main comparison is against the most popular station, not the least popular. Wrong comparison target.', badge: 'Wrong Comparison', badgeColor: 'red' },
+      { title: '(C) The most popular station is popular for investigative reporting.', text: 'Why a competitor is popular is irrelevant to the reliability of its weather forecasts.', badge: 'Irrelevant Reason', badgeColor: 'red' },
+      { title: '(D) The station does not forecast more than three days out.', text: 'A shorter forecast horizon is prudent, but it does not address the specific flaw — how often rain was actually predicted.', badge: 'Irrelevant Policy', badgeColor: 'red' },
+      { title: '(E) When the station predicted no rain, a competitor agreed.', text: 'Agreement on non-rain days is irrelevant. The argument concerns accuracy when rain is forecast. Both stations could be wrong together.', badge: 'Irrelevant Agreement', badgeColor: 'red' }
     ]},
-    { type: 'callout', title: 'Key Takeaway', variant: 'summary', text: 'When an argument relies on a specific, narrow statistic to prove a broad conclusion, be skeptical. The most common flaw is that the statistic might be "cherry-picked" to hide a larger weakness. To strengthen such an argument, you must find an answer that validates the statistic by showing it is not being used in a misleading way. Often, this involves providing a qualifier that demonstrates the statistic was generated under conditions that make it a fair and representative measure of overall performance.' }
+
+    { type: 'callout', title: 'Key Takeaway', variant: 'summary', text: 'When an argument bases a broad conclusion on a narrow, qualified statistic, the chief vulnerability is that the statistic may be cherry-picked. To strengthen, show the statistic was earned under conditions that make it representative — typically by demonstrating that the sample was large, the predictions were frequent, or the measurement was not gamed. Here, showing the station predicted rain more often than its competitor validates the accuracy figure as a fair indicator of overall reliability.' }
   ]
 };

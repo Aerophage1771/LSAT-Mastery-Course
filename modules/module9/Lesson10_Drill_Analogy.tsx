@@ -4,48 +4,44 @@ export const Lesson10_Drill_Analogy: Lesson = {
   id: "9-10",
   title: "Drill: Strengthening by Analogy (PT-112-S-4-Q-20)",
   content: [
-    { type: 'h3', text: 'Drill: Strengthening by Analogy (PT-112-S-4-Q-20)' },
-    { type: 'paragraph', text: 'This lesson explores a challenging type of Strengthen question where the argument moves from a specific example to a broad, general recommendation. The author uses one case as a model or a warning for all other cases. To strengthen this analogical leap, you must find an answer that validates the comparison, often by showing that the specific example is actually a *best-case scenario*, making the general problem even worse than it first appears.' },
+    { type: 'h3', text: 'Strengthening by Analogy' },
+    { type: 'paragraph', text: 'An argument by analogy generalizes from a single example to a broad category. The author points to one case and concludes that the same lesson applies to all similar cases. The vulnerability is obvious: the example might be an outlier. To strengthen, you must validate the comparison — ideally by showing the example is actually a **best-case scenario**. If even the best case fails the standard, the rest of the category is in deeper trouble, and the general conclusion follows forcefully.' },
+    { type: 'callout', variant: 'tip', title: 'Best-Case Strengthening', text: 'When an argument says "X failed the standard, so the whole group should be subject to tighter rules," the strongest strengthener shows that X had the best chance of passing. If the strongest candidate failed, every weaker candidate is even less likely to pass — making the broad recommendation airtight.' },
     { type: 'hr' },
-    { type: 'h4', text: 'The Problem' },
-    { type: 'blockquote', text: 'Consumer advocate: The introduction of a new drug into the marketplace should be contingent upon our having a good understanding of its social impact. However, the social impact of the newly marketed antihistamine is far from clear. It is obvious, then, that there should be a general reduction in the pace of bringing to the marketplace new drugs that are now being tested.' },
-    { type: 'h4', text: 'The Question' },
-    { type: 'paragraph', text: 'Which one of ahe following, if true, most strengthens the argument?' },
-    { type: 'options', items: [
-      '(A) The social impact of the new antihistamine is much better understood than that of most new drugs being tested.',
+
+    { type: 'question-card', id: 'PT-112-S-4-Q-20', questionType: 'Strengthen', difficulty: 'hard', stimulus: 'Consumer advocate: The introduction of a new drug into the marketplace should be contingent upon our having a good understanding of its social impact. However, the social impact of the newly marketed antihistamine is far from clear. It is obvious, then, that there should be a general reduction in the pace of bringing to the marketplace new drugs that are now being tested.', question: 'Which one of the following, if true, most strengthens the argument?', options: [
+      '(A) The social impact of the new antihistamine is much better understood than that of most new drugs being tested. (Correct)',
       '(B) The social impact of some of the new drugs being tested is poorly understood.',
       '(C) The economic success of some drugs is inversely proportional to how well we understand their social impact.',
       '(D) The new antihistamine is chemically similar to some of the new drugs being tested.',
       '(E) The new antihistamine should be on the market only if most new drugs being tested should be on the market also.'
     ]},
-    { type: 'paragraph', text: '<br/><br/><br/>' },
+
     { type: 'hr' },
-    { type: 'h3', text: 'Explanation' },
+    { type: 'h3', text: 'Full Analysis' },
+
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
-    { type: 'paragraph', text: 'Let\'s engage with the text sentence by sentence to see how the advocate builds their case.' },
     { type: 'breakdown', labels: { title: 'Quote', text: 'Analysis' }, items: [
-      { title: '"The introduction of a new drug into the marketplace should be contingent upon our having a good understanding of its social impact."', text: 'You start with a principle or rule. The author is stating a general standard for approving new drugs.' },
-      { title: '"However, the social impact of the newly marketed antihistamine is far from clear."', text: 'The author presents a specific example—a newly released antihistamine—that fails to meet this standard.' },
-      { title: '"It is obvious, then, that there should be a general reduction in the pace of bringing to the marketplace new drugs that are now being tested."', text: 'This is the conclusion. The author uses the specific failure of the antihistamine as a reason to apply a broad, general policy (slowing down *all* new drugs).' }
+      { title: '"The introduction of a new drug into the marketplace should be contingent upon our having a good understanding of its social impact."', text: 'A stated principle: drugs should only be released when their social impact is well understood.' },
+      { title: '"However, the social impact of the newly marketed antihistamine is far from clear."', text: 'A specific example that violates the principle — one drug that was released without adequate understanding.' },
+      { title: '"There should be a general reduction in the pace of bringing to the marketplace new drugs that are now being tested."', text: 'The conclusion: the single failure justifies a sweeping policy for all new drugs in the pipeline.' }
     ]},
-    { type: 'h4', text: 'Step 2: Analysis' },
-    { type: 'paragraph', text: '**What Method of Reasoning is the argument using?**\nThe argument uses a single example (the antihistamine) as a representative case to justify a general conclusion about a larger group (all new drugs being tested). This is a form of reasoning by analogy or generalization.' },
-    { type: 'paragraph', text: '**What\'s the Problem?**\nThe argument\'s weakness is the leap from one specific drug to *all* new drugs. How do we know the antihistamine is a typical example? What if it\'s an unusually complex or poorly understood drug, and all the other drugs in the pipeline are much simpler and safer? If the example is an outlier, it cannot be used to justify a general rule.' },
-    { type: 'h4', text: 'Step 3: How Can We Strengthen?' },
-    { type: 'paragraph', text: 'Since the core problem is the potentially unrepresentative nature of the example, you need to find a fact that validates the comparison.' },
-    { type: 'list', items: [
-      '**Show the Example is Representative (or Better):** The most effective way to strengthen the argument is to show that the antihistamine is not a "worst-case scenario." If anything, you want to show it\'s a *best-case scenario*. If even this drug, which is relatively well-understood, fails the test, then the other, less-understood drugs are in even bigger trouble.',
-      '**Rule Out the "Outlier" Possibility:** An effective strengthener will eliminate the chance that the antihistamine is a uniquely problematic drug, thereby making the general conclusion about all drugs more plausible.'
-    ]},
-    { type: 'h4', text: 'Step 4: Evaluation' },
-    { type: 'paragraph', text: 'You are looking for the answer that makes the antihistamine a valid benchmark for all other drugs.' },
+
+    { type: 'h4', text: 'Step 2: Identify the Gap' },
+    { type: 'paragraph', text: 'The argument leaps from one drug to all drugs. The antihistamine could be an outlier — perhaps it was uniquely complex or rushed, while other pipeline drugs are better understood. If the example is a worst case, it cannot anchor a universal policy.' },
+
+    { type: 'h4', text: 'Step 3: Prephrase the Strengthen' },
+    { type: 'paragraph', text: 'Show the antihistamine is representative — or, even better, that it is the most understood drug in the pipeline. If even the best-understood drug fails the standard, the less-understood ones are guaranteed to fail, making the blanket slowdown justified.' },
+
+    { type: 'h4', text: 'Step 4: Evaluate Every Choice' },
     { type: 'breakdown', labels: { title: 'Option', text: 'Evaluation' }, items: [
-      { title: '(A) The social impact of the new antihistamine is much better understood than that of most new drugs being tested.', text: 'If the best of the bunch is already failing the standard, it provides a very strong reason to be worried about the rest of the group, thus justifying the general slowdown.', badge: 'Correct', badgeColor: 'green' },
-      { title: '(B) The social impact of some of the new drugs being tested is poorly understood.', text: 'This provides very weak support. The word "some" could mean just two drugs. The conclusion is a broad recommendation to slow down the pace for *all* new drugs. This answer doesn\'t provide enough evidence to justify such a sweeping policy. The original argument already implies this, so it adds little new support.', badge: 'The "Some" Trap', badgeColor: 'red' },
-      { title: '(C) The economic success of some drugs is inversely proportional to how well we understand their social impact.', text: 'This choice connects "economic success" to "understanding," but the argument is about "safety" and "social impact," not profitability. This is outside the scope of the advocate\'s reasoning.', badge: 'The Irrelevant Correlation', badgeColor: 'red' },
-      { title: '(D) The new antihistamine is chemically similar to some of the new drugs being tested.', text: 'Again, "some" is too weak. If the antihistamine is similar to only a few of the drugs being tested, it doesn\'t justify slowing down the pace for *all* of them.', badge: 'The "Some" Trap, Revisited', badgeColor: 'red' },
-      { title: '(E) The new antihistamine should be on the market only if most new drugs being tested should be on the market also.', text: 'This choice presents a principle that is the reverse of the argument\'s logic. The argument uses the status of the antihistamine to judge the other drugs. This answer tries to use the status of the other drugs to judge the antihistamine.', badge: 'The Reversal Trap', badgeColor: 'red' }
+      { title: '(A) The antihistamine\'s social impact is much better understood than that of most new drugs being tested.', text: 'This makes the antihistamine the best case. If even the most-understood drug still has unclear social impact, every other drug in the pipeline is in worse shape — powerfully justifying the general slowdown.', badge: 'Correct', badgeColor: 'green' },
+      { title: '(B) The social impact of some new drugs is poorly understood.', text: '"Some" is too weak to justify a policy covering all drugs. The conclusion demands broad support, not a handful of cases.', badge: '"Some" Trap', badgeColor: 'red' },
+      { title: '(C) Economic success is inversely proportional to understanding of social impact.', text: 'Profitability is outside the scope of this argument about safety and social understanding.', badge: 'Scope Mismatch', badgeColor: 'red' },
+      { title: '(D) The antihistamine is chemically similar to some drugs being tested.', text: '"Some" again — and chemical similarity does not guarantee similar social impact profiles.', badge: '"Some" Trap', badgeColor: 'red' },
+      { title: '(E) The antihistamine should be on the market only if most new drugs should be too.', text: 'This reverses the argument\'s logic. The argument uses the antihistamine to judge other drugs, not the other way around.', badge: 'Reversal Trap', badgeColor: 'red' }
     ]},
-    { type: 'callout', title: 'Key Takeaway', variant: 'summary', text: 'When an argument generalizes from a single example to a broad category, the strength of the argument depends entirely on how representative that example is. The most powerful way to strengthen such an argument is to show that the example is not a "worst-case scenario" but is, in fact, average or even a "best-case scenario." If even the best example fails to meet a certain standard, it provides a compelling reason to believe that the rest of the category will also fail.' }
+
+    { type: 'callout', title: 'Key Takeaway', variant: 'summary', text: 'When an argument generalizes from one example to a category, the most devastating strengthener shows the example is the best case, not the worst. If the strongest candidate still fails the standard, the rest of the category cannot possibly meet it either. This "best-case-still-fails" pattern is one of the most powerful tools in the Strengthen toolkit.' }
   ]
 };
