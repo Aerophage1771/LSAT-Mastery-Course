@@ -4,55 +4,54 @@ export const Lesson7_Drill_HiddenDistinction: Lesson = {
   id: "19-7",
   title: "Drill: The Hidden Distinction (PT-105-S-1-Q-25)",
   content: [
-    { type: 'h3', text: "Practice Drill: The Hidden Distinction (PT-105-S-1-Q-25)" },
-    { type: 'paragraph', text: "This drill targets one of the most challenging and precise types of paradoxes: the Hidden Distinction. The conflict seems mathematical and absolute, but the resolution lies in a subtle, unstated difference in how the two conflicting numbers are being measured. Success on this question requires you to scrutinize every noun and resist making assumptions." },
+    { type: 'h3', text: 'Practice Drill: The Hidden Distinction' },
+    { type: 'paragraph', text: 'A Hidden Distinction paradox is resolved by noticing that two things which appear identical are actually being measured, defined, or categorized differently. The conflict seems to violate basic math or logic, but the resolution reveals a subtle, unstated difference in units, scope, or definition. Your job is to scrutinize every noun and resist the assumption that two labels refer to the exact same thing.' },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "A clothing manufacturer reports that unsalable garments, those found to be defective by inspectors plus those returned by retailers, total 7 percent of the garments produced. Further, it reports that all of its unsalable garments are recycled as scrap, but the percentage of garments reported as recycled scrap is 9 percent." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "Which one of the following, if true, could contribute most to explaining the discrepancy between the reported percentages?" },
-    {
-      type: 'options', items: [
-        "(A) Garments with minor blemishes are sent to wholesale outlets for sale at discounted prices and are not returned for recycling.",
-        "(B) The percentage of garments returned by retail outlets as unsalable includes, in addition to defective merchandise, garments in unacceptable styles or colors.",
-        "(C) Some inspectors, in order to appear more efficient, tend to overreport defects.",
-        "(D) The total number of garments produced by the manufacturer has increased slightly over the past year.",
-        "(E) Unsalable garments are recorded by count, but recycled garments are recorded by weight."
+
+    { type: 'question-card',
+      id: '19-7-drill',
+      questionType: 'Paradox / Explain',
+      difficulty: 'hard',
+      stimulus: 'A clothing manufacturer reports that unsalable garments, those found to be defective by inspectors plus those returned by retailers, total 7 percent of the garments produced. Further, it reports that all of its unsalable garments are recycled as scrap, but the percentage of garments reported as recycled scrap is 9 percent.',
+      question: 'Which one of the following, if true, could contribute most to explaining the discrepancy between the reported percentages?',
+      options: [
+        '(A) Garments with minor blemishes are sent to wholesale outlets for sale at discounted prices and are not returned for recycling.',
+        '(B) The percentage of garments returned by retail outlets as unsalable includes, in addition to defective merchandise, garments in unacceptable styles or colors.',
+        '(C) Some inspectors, in order to appear more efficient, tend to overreport defects.',
+        '(D) The total number of garments produced by the manufacturer has increased slightly over the past year.',
+        '(E) Unsalable garments are recorded by count, but recycled garments are recorded by weight. (Correct)'
       ]
     },
-    { type: 'paragraph', text: "<br/><br/><br/>" },
+
+    { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
-    { type: 'h3', text: "Analysis & Explanation" },
-    { type: 'h4', text: "Step 1: Deconstruction" },
-    { type: 'paragraph', text: "Isolate the two facts that create the mathematical impossibility." },
-    {
-      type: 'list', items: [
-        "**Fact 1:** The group of \"unsalable garments\" makes up **7%** of total production.",
-        "**Fact 2:** The group of \"recycled scrap\" makes up **9%** of total production.",
-        "**The Bridge Statement:** The stimulus explicitly states that *all* unsalable garments are recycled. This means the two groups—\"unsalable garments\" and \"recycled scrap\"—should be identical.",
-        "**The Conflict:** How can the exact same group of items be both 7% and 9% of the same total? Logic dictates that something about the *measurement* must be different."
-      ]
-    },
-    { type: 'h4', text: "Step 2: Abstraction" },
-    {
-      type: 'list', items: [
-        "**Motto:** \"When two numbers for the same group don't match, check the units.\"",
-        "**Blueprint:** The stimulus equates Group A and Group B. However, the measurement of Group A as a percentage of the total is X%, while the measurement of Group B as a percentage of the same total is Y%. The only way for X and Y to be different is if the method of measurement is different."
-      ]
-    },
-    { type: 'h4', text: "Step 3: Evaluation" },
-    {
-      type: 'breakdown',
+    { type: 'h3', text: 'Analysis & Explanation' },
+
+    { type: 'h4', text: 'Step 1: Deconstruction' },
+    { type: 'paragraph', text: 'Isolate the two facts that create the mathematical impossibility.' },
+    { type: 'list', items: [
+      '**Fact 1:** The group of "unsalable garments" makes up **7%** of total production.',
+      '**Fact 2:** The group of "recycled scrap" makes up **9%** of total production.',
+      '**The Bridge:** The stimulus states that *all* unsalable garments are recycled. The two groups should therefore be identical in size.',
+      '**The Conflict:** How can the exact same group of items be both 7% and 9% of the same total? Something about the *measurement itself* must differ.'
+    ]},
+
+    { type: 'h4', text: 'Step 2: Abstraction' },
+    { type: 'callout', title: 'Hidden Distinction Blueprint', variant: 'tip', text: 'When two numbers for the same group don\'t match, check the units. The stimulus equates Group A and Group B, but their percentages differ. The only explanation is that the method of measurement is different\u2014count vs. weight, volume vs. number, or some other hidden unit mismatch.' },
+
+    { type: 'h4', text: 'Step 3: Evaluation' },
+    { type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A) Garments with minor blemishes are sent to wholesale outlets for sale at discounted prices and are not returned for recycling.", text: "**Distractor Type: Deepens the Paradox.** This states that *some* unsalable garments are *not* recycled. This would mean the recycled scrap pile should be *smaller* than the unsalable garment pile, making the 9% figure even more impossible compared to the 7%.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B) The percentage of garments returned by retail outlets as unsalable includes, in addition to defective merchandise, garments in unacceptable styles or colors.", text: "**Distractor Type: Irrelevant Detail.** This just provides more detail about what counts as \"unsalable.\" It doesn't change the fact that the entire group of unsalable items, whatever they may be, is supposed to equal the recycled group. It doesn't explain the 7% vs. 9% discrepancy.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C) Some inspectors, in order to appear more efficient, tend to overreport defects.", text: "**Distractor Type: Irrelevant Detail.** Overreporting defects might inflate the \"unsalable\" number, but it doesn't explain why that number (7%) is different from the \"recycled\" number (9%). If anything, this suggests the 7% might be artificially high, not that the 9% is somehow also correct.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D) The total number of garments produced by the manufacturer has increased slightly over the past year.", text: "**Distractor Type: Out of Scope.** The paradox is about percentages *at a given time*. A change in the total number of garments produced doesn't explain why two percentages of that same total are different.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E) Unsalable garments are recorded by count, but recycled garments are recorded by weight.", text: "This introduces the hidden distinction in the units of measurement. The 7% is calculated by *counting* individual items. The 9% is calculated by *weighing* the scrap pile. How could this resolve the conflict? If the unsalable garments (e.g., heavy winter coats, denim jeans) are, on average, heavier than the typical garment produced (e.g., t-shirts, socks), then their share of the total *weight* (9%) could easily be higher than their share of the total *count* (7%).", badge: "Correct", badgeColor: "green" }
+        { title: '(A) Minor-blemish garments sold at discount, not returned for recycling.', text: 'Deepens the Paradox. If some unsalable garments skip the recycling pile, the recycled percentage should be *smaller* than 7%, not larger. This makes the 9% figure even harder to explain.', badge: 'Incorrect', badgeColor: 'red' },
+        { title: '(B) Returns include garments in unacceptable styles or colors, not just defects.', text: 'Irrelevant Detail. This clarifies what counts as "unsalable" but doesn\'t change the fact that the entire unsalable group is recycled. It cannot explain the 7% vs. 9% gap.', badge: 'Incorrect', badgeColor: 'red' },
+        { title: '(C) Some inspectors overreport defects to appear efficient.', text: 'Wrong Direction. Overreporting inflates the unsalable count, which would push 7% *higher*\u2014but even then it doesn\'t explain why the recycled figure exceeds the unsalable figure.', badge: 'Incorrect', badgeColor: 'red' },
+        { title: '(D) Total garment production increased slightly over the past year.', text: 'Out of Scope. The paradox concerns percentages at a given time. A slight change in the production total doesn\'t explain why two percentages of that same total disagree.', badge: 'Incorrect', badgeColor: 'red' },
+        { title: '(E) Unsalable garments recorded by count; recycled garments recorded by weight.', text: 'This is the hidden distinction. The 7% is a percentage of total *items counted*; the 9% is a percentage of total *weight*. If unsalable garments are disproportionately heavy (e.g., coats and denim rather than socks and t-shirts), their share of total weight (9%) would naturally exceed their share of total count (7%). Different units, different percentages\u2014paradox resolved.', badge: 'Correct', badgeColor: 'green' }
       ]
     },
+
     { type: 'hr' },
-    { type: 'callout', title: "Key Takeaway", variant: "summary", text: "The hardest paradoxes often hinge on a single, subtle distinction. When a paradox seems to violate basic mathematics or logic (e.g., a single group having two different sizes), do not question the math itself. Instead, question the definitions. The LSAT is testing your ability to notice that the stimulus may be comparing apples and oranges—or in this case, a *count* of garments to a *weight* of garments. Always ask, \"Are we measuring the same thing in the same way?\"" }
+    { type: 'callout', title: 'Key Takeaway', variant: 'summary', text: 'The hardest paradoxes often hinge on a single, subtle distinction. When a paradox seems to violate basic arithmetic\u2014the same group showing two different sizes\u2014do not question the math. Question the definitions. The LSAT is testing whether you can spot that the stimulus compares apples to oranges: a *count* of garments versus a *weight* of garments. Always ask: "Are we measuring the same thing in the same way?"' }
   ]
 };
