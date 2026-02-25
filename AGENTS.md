@@ -59,6 +59,7 @@ Modules are numbered 1–59 sequentially with no gaps:
 - **Strict TypeScript**: `tsconfig.json` has `strict: true`, `noUnusedLocals`, `noUnusedParameters`, `noImplicitReturns`, `noFallthroughCasesInSwitch`. All new code must comply.
 - **Content files**: Lesson `.tsx` files in `modules/moduleN/` are pure data (TypeScript objects exporting `ContentBlock[]`). They are not React components. The renderer is `LessonViewer.tsx`.
 - **Blockquotes**: Render as clean rounded panels (not italic + left-border). Styled via `LessonViewer.tsx`, not individual files.
+- **Dev server port**: `npm run dev` targets port 3000 but auto-increments if busy. Check the Vite output for the actual port.
 
 ### Adding new content
 
