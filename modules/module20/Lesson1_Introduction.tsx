@@ -5,31 +5,34 @@ export const Lesson1_Introduction: Lesson = {
   title: "Introduction",
   content: [
     { type: 'h2', text: 'MODULE 20: Agree / Disagree (Point at Issue)' },
-    { type: 'paragraph', text: '**Question Goal**' },
-    { type: 'paragraph', text: 'Analyze a dialogue between two speakers and identify the specific statement that one speaker would affirm and the other would deny (Point of Disagreement), or that both speakers would affirm (Point of Agreement).' },
-    { type: 'h3', text: 'Introduction' },
-    { type: 'paragraph', text: 'Agree/Disagree questions present a short dialogue and ask you to find the precise statement at the heart of the conversation. This question type is a crucial test of **comparative reasoning**. Instead of deconstructing a single argument in isolation, you must analyze two competing viewpoints and identify the exact fault line (a **Point of Disagreement**) or common ground (a **Point of Agreement**) between them.' },
-    { type: 'paragraph', text: 'Once you can identify the conclusion and premises of a single argument, the next step is to compare two arguments that are in direct conversation. Your task is to track the debate and pinpoint the exact source of conflict or consensus.' },
-    { type: 'h3', text: 'Common Question Stems' },
-    { type: 'paragraph', text: 'You can recognize these questions by their focus on the "point at issue," "disagreement," or "agreement" between two speakers.' },
-    { type: 'h4', text: 'For Disagreement:' },
-    { type: 'list', items: [
-      '"The point at issue between [X] and [Y] is whether..."',
-      '"[X]\'s and [Y]\'s statements provide the most support for holding that they disagree about the truth of which one of the following statements?"',
-      '"On the basis of their statements, [X] and [Y] are committed to disagreeing about..."'
+    { type: 'h3', text: 'Why This Matters' },
+    { type: 'paragraph', text: 'Point at Issue questions are unique on the LSAT because they present **two speakers** with opposing or agreeing views. Instead of analyzing a single argument, you must compare two positions and identify the exact proposition on which they clash or converge. This makes the question type a direct test of comparative reasoning.' },
+    { type: 'h3', text: 'Recognizing Question Stems' },
+    { type: 'table', headers: ['Stem Language', 'Task'], rows: [
+      ['"committed to disagreeing about whether..."', 'Find a proposition one affirms and the other denies'],
+      ['"most strongly supports the claim that X and Y disagree about..."', 'Find the clearest point of opposition'],
+      ['"provides the most support for the claim that they agree..."', 'Find a proposition both would affirm']
     ]},
-    { type: 'h4', text: 'For Agreement:' },
+    { type: 'h3', text: 'Point of Disagreement vs. Point of Agreement' },
+    { type: 'paragraph', text: 'These questions come in two sub-types. **Point of Disagreement** asks for the statement one speaker would affirm and the other would deny. **Point of Agreement** asks for the statement both speakers would affirm. The analytical method is the same; only the target pattern differs.' },
+    { type: 'h3', text: 'The Overlap Test' },
+    { type: 'paragraph', text: 'For every answer choice, ask: what would Speaker A say, and what would Speaker B say? For **disagreement**, Speaker A must say YES and Speaker B must say NO (or vice versa). For **agreement**, both must say YES or both must say NO. Any answer where a speaker\'s position is unknown automatically fails the test.' },
+    { type: 'h3', text: 'Common Dialogue Structures' },
     { type: 'list', items: [
-      '"The dialogue provides the most support for the claim that [X] and [Y] agree that..."',
-      '"[X]\'s and [Y]\'s statements most strongly support the claim that both of them would agree with which one of the following?"'
+      '**Direct Contradiction** -- Speaker B flatly denies Speaker A\'s conclusion.',
+      '**Different Criteria** -- Both evaluate the same thing but apply different standards.',
+      '**Different Explanations** -- Both accept a fact but offer competing causes.',
+      '**Shared Assumption** -- Both rely on the same underlying premise yet reach opposite conclusions.'
     ]},
-    { type: 'h3', text: 'Core Concepts' },
-    { type: 'paragraph', text: 'Your task is to impartially determine what each speaker has committed to based *only* on the text provided. The key is to understand that the correct answer is determined by the relationship between the two speakers\' positions.' },
-    { type: 'h3', text: '1. The Point of Disagreement: The "Yes / No" Test' },
-    { type: 'paragraph', text: 'This is the most common variant. The correct answer is a statement that one speaker would affirm ("Yes") and the other would deny ("No").' },
-    { type: 'paragraph', text: 'To be the correct answer, a statement must meet a critical condition: **both speakers must have a clear opinion on it**. If one speaker\'s view is unstated or cannot be logically inferred, the statement cannot be the point of disagreement, no matter how strongly the other speaker feels. Your task is to find the single statement that forces the two speakers into direct opposition.' },
-    { type: 'h3', text: '2. The Point of Agreement: The "Yes / Yes" Test' },
-    { type: 'paragraph', text: 'This variant asks for the common ground between the speakers. The correct answer is a statement that both speakers would affirm ("Yes").' },
-    { type: 'paragraph', text: 'This common ground can be an explicitly stated point, but more often it is a **shared premise** or an **underlying assumption** that both arguments depend on to make sense. You are looking for the foundational belief that both speakers accept, even if they use it to build arguments that reach opposite conclusions.' }
+    { type: 'h3', text: 'Worked Example' },
+    { type: 'question-card', questionType: 'Point at Issue', stimulus: '**Marta:** Public libraries should prioritize digital lending because physical book circulation has declined steadily for a decade.\n**Niko:** Physical circulation may have dipped, but in-person library visits have increased. Libraries should expand community programming, not shift resources to digital lending.', question: 'Marta and Niko are committed to disagreeing about whether', options: [
+      '(A) Physical book circulation has declined over the past decade',
+      '(B) Libraries should prioritize digital lending (Correct)',
+      '(C) In-person library visits have increased recently',
+      '(D) Community programming is valuable to library patrons',
+      '(E) Digital lending technology has improved significantly'
+    ]},
+    { type: 'h3', text: 'Key Principle' },
+    { type: 'callout', variant: 'tip', text: 'Both speakers must have a committed position on the proposition -- silence or ambiguity means it is NOT the point at issue. If you cannot find clear textual evidence that a speaker would say YES or NO, eliminate that choice.' }
   ]
 };

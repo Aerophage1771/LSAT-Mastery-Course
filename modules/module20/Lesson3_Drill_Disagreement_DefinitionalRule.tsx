@@ -4,72 +4,68 @@ export const Lesson3_Drill_Disagreement_DefinitionalRule: Lesson = {
   id: "20-3",
   title: "Practice Drill: Disagreement (Definitional Rule) (PT-122-S-2-Q-1)",
   content: [
-    { type: 'paragraph', text: "This drill tests your ability to identify a disagreement over an underlying rule or principle. Often, speakers will not disagree on the surface-level facts but on the standard used to judge those facts." },
+    { type: 'h2', text: 'Definitional Rule Disagreement' },
+    { type: 'paragraph', text: 'A Definitional Rule Disagreement occurs when one speaker lays down a categorical rule -- "Any X with property P is automatically bad" -- and the second speaker presents a counterexample that satisfies P yet is claimed to be good. The speakers do not dispute the facts; they dispute the **rule** used to evaluate those facts.' },
+    { type: 'paragraph', text: 'This pattern appears whenever the dialogue hinges on whether a single characteristic is sufficient to determine quality, value, or classification. Recognizing the rule-versus-counterexample structure lets you cut straight to the correct answer.' },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "**Ilana:** Carver’s stories are somber and pessimistic, which is a sure sign of inferior writing. I have never read a single story of his that ends happily.\n**Gustav:** Carver was one of the finest writers of the past 30 years. Granted, his stories are characterized by somberness and pessimism, but they are also wryly humorous, compassionate, and beautifully structured." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "On the basis of their statements, Ilana and Gustav are committed to disagreeing over whether" },
-    { type: 'options', items: [
-      "(A) Carver’s stories are truly compassionate",
-      "(B) Carver’s stories are pessimistic in their vision",
-      "(C) stories that are characterized by somberness and pessimism can appropriately be called humorous",
-      "(D) stories that are well written can be somber and pessimistic",
-      "(E) there are some characteristics of a story that are decisive in determining its aesthetic value"
+    { type: 'h3', text: 'Practice Question' },
+    { type: 'question-card', questionType: 'Point at Issue', stimulus: '**Ilana:** Carver\'s stories are somber and pessimistic, which is a sure sign of inferior writing. I have never read a single story of his that ends happily.\n**Gustav:** Carver was one of the finest writers of the past 30 years. Granted, his stories are characterized by somberness and pessimism, but they are also wryly humorous, compassionate, and beautifully structured.', question: 'On the basis of their statements, Ilana and Gustav are committed to disagreeing over whether', options: [
+      '(A) Carver\'s stories are truly compassionate',
+      '(B) Carver\'s stories are pessimistic in their vision',
+      '(C) stories that are characterized by somberness and pessimism can appropriately be called humorous',
+      '(D) stories that are well written can be somber and pessimistic (Correct)',
+      '(E) there are some characteristics of a story that are decisive in determining its aesthetic value'
     ]},
-    { type: 'paragraph', text: "<br/><br/><br/>" },
+    { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
-    { type: 'h3', text: "Analysis & Explanation" },
-    { type: 'h4', text: "Step 1: Deconstruction" },
-    { type: 'paragraph', text: "First, break down each speaker's argument into its core components." },
-    { 
+    { type: 'h3', text: 'Full Analysis' },
+    { type: 'h4', text: 'Step 1: Map Each Speaker\'s Position' },
+    {
       type: 'breakdown',
-      labels: {title: "Speaker", text: "Argument"},
+      labels: { title: 'Speaker', text: 'Argument' },
       items: [
         {
-            title: "Ilana",
-            text: "*   **Premise:** Carver's stories are somber and pessimistic.\n*   **Rule:** Somberness/pessimism is a \"sure sign of inferior writing.\"\n*   **Conclusion (Implied):** Therefore, Carver's writing is inferior."
+          title: 'Ilana',
+          text: '*   **Premise:** Carver\'s stories are somber and pessimistic.\n*   **Rule:** Somberness and pessimism are a "sure sign of inferior writing."\n*   **Conclusion (Implied):** Carver\'s writing is inferior.'
         },
         {
-            title: "Gustav",
-            text: "*   **Conclusion:** Carver was one of the \"finest writers.\"\n*   **Concession (Agrees with Ilana's Premise):** \"Granted, his stories are characterized by somberness and pessimism.\"\n*   **Counter-Premise:** They also have other positive qualities (humor, compassion, structure)."
-        }
-    ]},
-    { type: 'h4', text: "Step 2: Abstraction" },
-    { type: 'paragraph', text: "The core of the disagreement is not about Carver's stories' tone, but about what that tone *implies*." },
-    { type: 'list', items: [
-      "**Motto:** \"Can a thing have quality X and still be considered good?\"",
-      "**Blueprint:**\n*   Ilana proposes a strict rule: If a story is somber/pessimistic, it is automatically inferior.\n*   Gustav provides a counterexample: Here is a story that is somber/pessimistic, and it is excellent.\n*   Therefore, they fundamentally disagree on the validity of Ilana's rule."
-    ]},
-    { type: 'h4', text: "Step 3: Evaluation" },
-    { type: 'paragraph', text: "Now, apply the \"Truth Test\" to each answer choice. Ask yourself what each speaker would say about the statement." },
-    { 
-      type: 'breakdown',
-      labels: {title: "Option", text: "Analysis"},
-      items: [
-        {
-          title: "(A) Carver’s stories are truly compassionate",
-          text: "*   **Ilana:** Unknown. She only comments on the stories' somber tone. This is the **Silence Trap**.\n*   **Gustav:** True.\n*   *Result:* Incorrect. We need a clear Yes/No split."
-        },
-        {
-          title: "(B) Carver’s stories are pessimistic in their vision",
-          text: "*   **Ilana:** True.\n*   **Gustav:** True (\"Granted...\").\n*   *Result:* Incorrect. This is a point of **agreement**."
-        },
-        {
-          title: "(C) stories that are characterized by somberness and pessimism can appropriately be called humorous",
-          text: "*   **Ilana:** Unknown. She doesn't mention humor. This is the **Silence Trap**.\n*   **Gustav:** True.\n*   *Result:* Incorrect."
-        },
-        {
-          title: "(D) stories that are well written can be somber and pessimistic",
-          text: "*   **Ilana:** **False.** She states that somberness is a \"sure sign of *inferior* writing.\" For her, these two qualities are mutually exclusive.\n*   **Gustav:** **True.** He presents Carver as a \"finest writer\" who is *also* somber and pessimistic. For him, the qualities can coexist.\n*   *Result:* **Correct.** This is the precise point of contention."
-        },
-        {
-          title: "(E) there are some characteristics of a story that are decisive in determining its aesthetic value",
-          text: "*   **Ilana:** True. She believes somberness is a decisive characteristic.\n*   **Gustav:** Unknown. He lists several positive traits, suggesting he takes a more holistic view, but he never explicitly denies that *some* single characteristic *could* be decisive. This is a subtle version of the **Silence Trap**.\n*   *Result:* Incorrect."
+          title: 'Gustav',
+          text: '*   **Conclusion:** Carver was one of the "finest writers."\n*   **Concession:** "Granted, his stories are characterized by somberness and pessimism."\n*   **Counter-Premise:** The stories also have humor, compassion, and beautiful structure.'
         }
       ]
     },
+    { type: 'h4', text: 'Step 2: Identify the Core Conflict' },
+    { type: 'paragraph', text: 'Both speakers accept the same factual premise -- Carver\'s stories are somber and pessimistic. The conflict is over what that premise **means** for quality. Ilana treats it as dispositive proof of inferiority; Gustav treats it as one trait among many that does not preclude excellence.' },
+    { type: 'h4', text: 'Step 3: Apply the Overlap Test' },
+    {
+      type: 'breakdown',
+      labels: { title: 'Option', text: 'Analysis' },
+      items: [
+        {
+          title: '(A) Carver\'s stories are truly compassionate',
+          text: '*   **Ilana:** Unknown -- she mentions only tone, not compassion.\n*   **Gustav:** YES.\n*   **Overlap Test:** FAILS (one speaker uncommitted).'
+        },
+        {
+          title: '(B) Carver\'s stories are pessimistic in their vision',
+          text: '*   **Ilana:** YES.\n*   **Gustav:** YES ("Granted...").\n*   **Overlap Test:** FAILS -- this is a point of **agreement**, not disagreement.'
+        },
+        {
+          title: '(C) stories characterized by somberness and pessimism can be called humorous',
+          text: '*   **Ilana:** Unknown -- she never discusses humor.\n*   **Gustav:** YES.\n*   **Overlap Test:** FAILS (one speaker uncommitted).'
+        },
+        {
+          title: '(D) stories that are well written can be somber and pessimistic',
+          text: '*   **Ilana:** **NO** -- her rule states that somberness is a "sure sign of inferior writing," so well-written and somber are mutually exclusive.\n*   **Gustav:** **YES** -- he calls Carver one of the "finest writers" while conceding somberness.\n*   **Overlap Test:** PASSES -- clear YES/NO split. **This is the answer.**'
+        },
+        {
+          title: '(E) some characteristics are decisive in determining aesthetic value',
+          text: '*   **Ilana:** YES -- she treats somberness as decisive.\n*   **Gustav:** Unknown -- he lists several positive traits but never explicitly denies that a single trait *could* be decisive.\n*   **Overlap Test:** FAILS (one speaker uncommitted).'
+        }
+      ]
+    },
+    { type: 'h4', text: 'Step 4: Verify Both Commit' },
+    { type: 'paragraph', text: 'For choice (D), Ilana\'s commitment is anchored in her phrase "sure sign of inferior writing" -- she cannot accept that somber stories are well written. Gustav\'s commitment is anchored in "one of the finest writers" paired with "Granted, his stories are characterized by somberness." Both speakers have clear, text-supported positions. The answer is confirmed.' },
     { type: 'hr' },
-    { type: 'callout', title: "Key Takeaway", variant: 'summary', text: "When one speaker establishes a rule (e.g., \"Any X is bad\") and the second speaker agrees that something is X but argues that it is good, the fundamental disagreement is over the validity of the rule itself. Look for the answer choice that restates this conflict of principles." }
+    { type: 'callout', title: 'Key Takeaway', variant: 'summary', text: 'When one speaker establishes a categorical rule ("Any X is bad") and the second speaker concedes X but argues the subject is good, the point at issue is the validity of the rule itself. Apply the Overlap Test to the rule-level proposition -- can something be X and still be good? -- and you will find the correct answer.' }
   ]
 };

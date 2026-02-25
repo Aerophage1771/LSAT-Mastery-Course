@@ -5,51 +5,42 @@ export const Lesson2_StepByStepGuide: Lesson = {
   title: "Step-by-Step Guide",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Agree / Disagree' },
-    { type: 'paragraph', text: 'This section provides a clear, step-by-step method for solving **Agree/Disagree** questions. It helps you identify how the speakers\' arguments relate and systematically test the answer choices against that relationship.' },
-    { type: 'h3', text: 'Step 1: Identify the Task' },
-    { type: 'paragraph', text: 'Read the question stem first to determine your objective. The stem will clearly indicate whether you are looking for a **Point of Disagreement** or a **Point of Agreement**.' },
-    { type: 'list', items: [
-      '**If the stem uses words like** *disagree, point at issue, dispute,* or *contention*: Your goal is to find a statement where the speakers hold opposing views (one affirms, one denies).',
-      '**If the stem uses the word** *agree*: Your goal is to find a statement that both speakers would accept as true.'
-    ]},
-    { type: 'paragraph', text: 'This initial step sets the entire framework for your analysis.' },
-    { type: 'h3', text: 'Step 2: Break Down Speaker 1\'s Argument' },
-    { type: 'paragraph', text: 'Read the first speaker\'s statement and isolate their argument\'s core components. Do not move on until you can clearly answer:' },
+    { type: 'paragraph', text: 'This guide provides a reliable four-step method for solving Point at Issue questions. The method works identically for both disagreement and agreement variants; only the target pattern in Step 3 changes.' },
+    { type: 'h3', text: 'Step 1: Map Each Speaker\'s Position' },
+    { type: 'paragraph', text: 'Read the dialogue carefully and separate each speaker\'s argument into its core components. For each speaker, identify:' },
     { type: 'list', ordered: true, items: [
-      '**What is their main point? (Conclusion):** Is it a recommendation, a prediction, a causal claim, or a value judgment?',
-      '**Why do they believe it? (Premise/s):** What evidence or reasoning do they provide?'
+      '**Conclusion** -- What is the speaker\'s main claim?',
+      '**Premises** -- What evidence or reasoning supports it?',
+      '**Concessions** -- Does the speaker grant any of the other speaker\'s points?'
     ]},
-    { type: 'paragraph', text: 'Understanding Speaker 1\'s position in simple terms creates the foundation for the comparison.' },
-    { type: 'h3', text: 'Step 3: Analyze Speaker 2\'s Response in Relation to Speaker 1' },
-    { type: 'paragraph', text: 'Now, read the second speaker\'s argument with a focus on how it **engages with Speaker 1\'s argument**. Speaker 2\'s response is never in a vacuum; it is a direct rebuttal. Determine the exact nature of this rebuttal:' },
-    { type: 'list', items: [
-      'Do they disagree with the **conclusion** but accept the premise?',
-      'Do they disagree with a **key premise**, thereby undermining the conclusion?',
-      'Do they disagree with the **reasoning** by offering an alternative explanation for the evidence?',
-      'Do they disagree with the **definition of a key term** or the validity of a principle Speaker 1 used?'
+    { type: 'paragraph', text: 'Write a one-sentence summary of each speaker\'s position before moving on.' },
+    { type: 'h3', text: 'Step 2: Identify Committed Claims' },
+    { type: 'paragraph', text: 'List every proposition each speaker is committed to -- either explicitly stated or logically entailed by their argument. A speaker is committed to a claim if denying it would undermine their own reasoning. Be strict: if a speaker neither states nor implies a position, mark it as **Unknown**.' },
+    { type: 'h3', text: 'Step 3: Apply the Overlap Test' },
+    { type: 'paragraph', text: 'For each answer choice, determine each speaker\'s stance (YES, NO, or Unknown) on that proposition.' },
+    { type: 'table', headers: ['Question Type', 'Target Pattern', 'Eliminate If'], rows: [
+      ['Disagreement', 'One says YES, the other says NO', 'Either speaker is Unknown'],
+      ['Agreement', 'Both say YES (or both say NO)', 'Either speaker is Unknown']
     ]},
-    { type: 'callout', title: 'Key Insight', text: 'Pinpointing *how* Speaker 2 disagrees is the most critical part of the analysis. It will almost always fall into one of the common patterns: a dispute over causality, the interpretation of evidence, the validity of a principle, or a recommended action.' },
-    { type: 'h3', text: 'Step 4: Pinpoint the Core Issue and Prephrase' },
-    { type: 'paragraph', text: 'Before looking at the answer choices, articulate the central point of contention or agreement in your own words. This prephrase is your anchor and will protect you from tempting distractors.' },
-    { type: 'list', items: [
-      '**For Disagreement:** Frame it as a clear yes/no question.\n    *   *Example Prephrase:* "The real issue is whether X is the true cause of Y."\n    *   *Example Prephrase:* "They disagree on whether Action Z should be taken."',
-      '**For Agreement:** Identify the shared idea.\n    *   *Example Prephrase:* "They both agree that Fact F is true; they just draw different conclusions from it."'
+    { type: 'h3', text: 'Step 4: Verify Both Commit' },
+    { type: 'paragraph', text: 'Before confirming your answer, double-check that **both** speakers have a clear, textually supported position on the proposition. If you cannot point to specific language in the stimulus that commits a speaker, the choice is wrong -- even if it feels intuitively right.' },
+    { type: 'hr' },
+    { type: 'h3', text: 'Worked Example' },
+    { type: 'question-card', questionType: 'Point at Issue', stimulus: '**Chen:** Mandatory recycling programs are the most effective way to reduce landfill waste. Cities that have implemented them report a 40 percent drop in landfill volume.\n**Dara:** Those statistics are misleading. The drop in landfill volume is mostly due to composting initiatives that were introduced at the same time. Voluntary incentive programs would achieve comparable recycling rates without the enforcement costs.', question: 'The point at issue between Chen and Dara is whether', options: [
+      '(A) Cities with mandatory recycling programs have seen reduced landfill volume',
+      '(B) Composting initiatives have contributed to reducing landfill waste',
+      '(C) Mandatory recycling programs are the most effective way to reduce landfill waste (Correct)',
+      '(D) Enforcement of recycling mandates involves significant costs',
+      '(E) Voluntary incentive programs have been tried in some cities'
     ]},
-    { type: 'h3', text: 'Step 5: Apply the Test and Eliminate Traps' },
-    { type: 'paragraph', text: 'Once you have your prephrase, evaluate the answer choices. This process involves two distinct phases: applying the specific logic test and actively filtering out traps.' },
-    { type: 'h4', text: 'Phase 1: Apply the Logic Test' },
-    { type: 'paragraph', text: 'Systematically check each answer choice by asking:\n1.  **What is Speaker 1\'s opinion on this statement?** (Yes, No, or Unknown)\n2.  **What is Speaker 2\'s opinion on this statement?** (Yes, No, or Unknown)' },
+    { type: 'hr' },
+    { type: 'h3', text: 'Wrong Answer Patterns' },
     { type: 'list', items: [
-      '**For Disagreement Questions (The Yes/No Test):** Look for the choice where one speaker says **Yes** and the other says **No**. If one speaker\'s opinion is "Unknown," eliminate it.',
-      '**For Agreement Questions (The Yes/Yes Test):** Look for the choice where **both** speakers say **Yes**.'
+      '**One Speaker Uncommitted** -- The choice captures one speaker\'s view, but the other speaker says nothing about it. This is the most common trap.',
+      '**Both Actually Agree** -- The proposition is something both speakers accept (often a shared premise). Tempting because it is true, but irrelevant to a disagreement question.',
+      '**Neither Addresses It** -- The proposition goes beyond the scope of the dialogue entirely. Neither speaker can be pinned to a position.'
     ]},
-    { type: 'h4', text: 'Phase 2: Remove Wrong Answers' },
-    { type: 'paragraph', text: 'Even if a choice looks tempting, ensure it does not fall into one of these common trap categories:' },
-    { type: 'list', items: [
-      '**Trap: The Unilateral Position Trap.** This is the most frequent wrong answer. The statement correctly identifies one speaker\'s opinion, but the other speaker expresses **no opinion** on the matter. You cannot assume disagreement (or agreement) from silence; both speakers must explicitly address the topic.',
-      '**Trap: The Point of Agreement Trap (for Disagreement questions).** The statement is something both speakers actually agree on (often a shared premise or background fact). It is tempting because it is factually true within the text, but it is incorrect because the prompt asks for a conflict.',
-      '**Trap: The Out of Scope Trap.** The choice relies on information, comparisons, or details that go beyond what either speaker discussed. If the text doesn\'t support it, the answer is incorrect.',
-      '**Trap: The Mischaracterization Trap.** The choice distorts a speaker\'s actual argument. It often uses extreme language (like *all, always, never,* or *only*) to make a moderate claim sound absolute, or it attributes a view to a speaker that they never actually held.'
-    ]}
+    { type: 'h3', text: 'Timing Tip' },
+    { type: 'callout', variant: 'tip', text: 'Point at Issue questions reward a disciplined process more than speed. Spend an extra 15-20 seconds mapping each speaker\'s commitments before touching the answer choices. The upfront investment eliminates second-guessing and prevents you from falling for the one-speaker trap.' }
   ]
 };
