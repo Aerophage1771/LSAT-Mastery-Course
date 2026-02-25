@@ -5,6 +5,7 @@ import { Lesson3_Drill_ExperimentGeneralization } from './module14/Lesson3_Drill
 import { Lesson4_Drill_ContextualValue } from './module14/Lesson4_Drill_ContextualValue';
 import { Lesson5_Drill_UnintendedConsequences } from './module14/Lesson5_Drill_UnintendedConsequences';
 import { Lesson6_Drill_MotivatedBlindness } from './module14/Lesson6_Drill_MotivatedBlindness';
+import { Lesson7_ReferenceGuide } from './module14/Lesson7_ReferenceGuide';
 
 export const Module14: ModuleData = {
   id: 14,
@@ -18,6 +19,7 @@ export const Module14: ModuleData = {
     Lesson3_Drill_ExperimentGeneralization,
     Lesson4_Drill_ContextualValue,
     Lesson5_Drill_UnintendedConsequences,
-    Lesson6_Drill_MotivatedBlindness
+    Lesson6_Drill_MotivatedBlindness,
+    Lesson7_ReferenceGuide
   ]
 };
