@@ -20,6 +20,7 @@ import {
   styleGuideQPContent,
   styleGuideStructureContent,
   styleGuidePromptsContent,
+  styleGuideTechnicalContent,
   serializeAllStyleGuideContent,
 } from './StyleGuideContent';
 
@@ -61,7 +62,7 @@ export const Layout: React.FC<LayoutProps> = ({
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [exportModalOpen, setExportModalOpen] = useState(false);
   const [styleGuideOpen, setStyleGuideOpen] = useState(false);
-  const [styleGuideTab, setStyleGuideTab] = useState<'components' | 'questions' | 'passages' | 'qp' | 'structure' | 'prompts'>('components');
+  const [styleGuideTab, setStyleGuideTab] = useState<'components' | 'questions' | 'passages' | 'qp' | 'structure' | 'prompts' | 'technical'>('components');
   const [roadmapOpen, setRoadmapOpen] = useState(false);
   const [styleGuideCopied, setStyleGuideCopied] = useState(false);
   const [roadmapTab, setRoadmapTab] = useState<'learning' | 'analytics' | 'content' | 'ux' | 'technical' | 'social' | 'accessibility'>('learning');
@@ -319,6 +320,7 @@ export const Layout: React.FC<LayoutProps> = ({
                       <button role="tab" aria-selected={styleGuideTab === 'qp'} onClick={() => setStyleGuideTab('qp')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all whitespace-nowrap ${styleGuideTab === 'qp' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Q+P Card</button>
                       <button role="tab" aria-selected={styleGuideTab === 'structure'} onClick={() => setStyleGuideTab('structure')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all whitespace-nowrap ${styleGuideTab === 'structure' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Structure</button>
                       <button role="tab" aria-selected={styleGuideTab === 'prompts'} onClick={() => setStyleGuideTab('prompts')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all whitespace-nowrap ${styleGuideTab === 'prompts' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Prompts</button>
+                      <button role="tab" aria-selected={styleGuideTab === 'technical'} onClick={() => setStyleGuideTab('technical')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all whitespace-nowrap ${styleGuideTab === 'technical' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Technical</button>
                    </div>
                 </div>
                 <div className="flex items-center gap-2">
@@ -346,6 +348,7 @@ export const Layout: React.FC<LayoutProps> = ({
                      styleGuideTab === 'passages' ? "Passage Card" : 
                      styleGuideTab === 'qp' ? "Question + Passage Card" : 
                      styleGuideTab === 'structure' ? "Structure & Voice" : 
+                     styleGuideTab === 'technical' ? "Technical Reference" :
                      "Content Generation Prompts"
                    } 
                    content={
@@ -354,6 +357,7 @@ export const Layout: React.FC<LayoutProps> = ({
                      styleGuideTab === 'passages' ? styleGuidePassageContent : 
                      styleGuideTab === 'qp' ? styleGuideQPContent : 
                      styleGuideTab === 'structure' ? styleGuideStructureContent : 
+                     styleGuideTab === 'technical' ? styleGuideTechnicalContent :
                      styleGuidePromptsContent
                    } 
                    variant="modal" 
