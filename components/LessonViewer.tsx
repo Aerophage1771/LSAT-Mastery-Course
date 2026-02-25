@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import DOMPurify from 'dompurify';
 import { ContentBlock, Lesson } from '../types';
 import { Lightbulb, Info, CheckCircle2, XCircle, Copy, Check, ChevronDown, ChevronUp } from 'lucide-react';
 import { ExportControls } from './ExportControls';
@@ -11,13 +12,15 @@ interface LessonViewerProps {
   variant?: 'default' | 'modal';
 }
 
+const sanitize = (html: string) => DOMPurify.sanitize(html);
+
 const parseInlineStyles = (text: string) => {
   if (!text) return "";
   let formatted = text;
   formatted = formatted.replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-slate-900">$1</strong>');
   formatted = formatted.replace(/\*(.*?)\*\*/g, '<em class="italic text-slate-800">$1</em>');
   formatted = formatted.replace(/`([^`]+)`/g, '<code class="bg-slate-100 text-pink-600 font-mono px-1 py-0.5 rounded text-sm border border-slate-200">$1</code>');
-  return formatted;
+  return sanitize(formatted);
 };
 
 const CodeBlock: React.FC<{ text: string }> = ({ text }) => {

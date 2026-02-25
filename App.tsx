@@ -1,167 +1,215 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback, Suspense, useMemo } from 'react';
+import { BrowserRouter, Routes, Route, useParams, useNavigate } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { LessonViewer } from './components/LessonViewer';
 import { Dashboard } from './components/Dashboard';
-import { ModuleData } from './types';
+import { ErrorBoundary } from './components/ErrorBoundary';
+import { SearchDialog } from './components/SearchDialog';
+import { ProgressProvider, useProgressContext } from './contexts/ProgressContext';
+import { moduleRegistry, loadModule, getAllModuleMetadata } from './modules/registry';
+import type { ModuleData } from './types';
 
-// Import all modules
-import { Module1 } from './modules/Module1';
-import { Module2 } from './modules/Module2';
-import { Module3 } from './modules/Module3';
-import { Module4 } from './modules/Module4';
-import { Module5 } from './modules/Module5';
-import { Module6 } from './modules/Module6';
-import { Module7 } from './modules/Module7';
-import { Module8 } from './modules/Module8';
-import { Module9 } from './modules/Module9';
-import { Module10 } from './modules/Module10';
-import { Module11 } from './modules/Module11';
-import { Module12 } from './modules/Module12';
-import { Module13 } from './modules/Module13';
-import { Module14 } from './modules/Module14';
-import { Module15 } from './modules/Module15';
-import { Module16 } from './modules/Module16';
-import { Module17 } from './modules/Module17';
-import { Module18 } from './modules/Module18';
-import { Module19 } from './modules/Module19';
-import { Module20 } from './modules/Module20';
-import { Module21 } from './modules/Module21';
-import { Module22 } from './modules/Module22';
-import { Module23 } from './modules/Module23';
-import { Module24 } from './modules/Module24';
-import { Module25 } from './modules/Module25';
-import { Module26 } from './modules/Module26';
-import { Module27 } from './modules/Module27';
-import { Module28 } from './modules/Module28';
-import { Module29 } from './modules/Module29';
-import { Module30 } from './modules/Module30';
-import { Module31 } from './modules/Module31';
-import { Module32 } from './modules/Module32';
-import { Module33 } from './modules/Module33';
-import { Module34 } from './modules/Module34';
-import { Module35 } from './modules/Module35';
-import { Module36 } from './modules/Module36';
-import { Module37 } from './modules/Module37';
-import { Module38 } from './modules/Module38';
-import { Module39 } from './modules/Module39';
-import { Module40 } from './modules/Module40';
-import { Module41 } from './modules/Module41';
-import { Module42 } from './modules/Module42';
-import { Module43 } from './modules/Module43';
-import { Module44 } from './modules/Module44';
-import { Module45 } from './modules/Module45';
-import { Module46 } from './modules/Module46';
-import { Module47 } from './modules/Module47';
-import { Module48 } from './modules/Module48';
-import { Module49 } from './modules/Module49';
-import { Module50 } from './modules/Module50';
-import { Module51 } from './modules/Module51';
-import { Module52 } from './modules/Module52';
-import { Module53 } from './modules/Module53';
-import { Module54 } from './modules/Module54';
-import { Module55 } from './modules/Module55';
-import { Module56 } from './modules/Module56';
-import { Module57 } from './modules/Module57';
-import { Module58 } from './modules/Module58';
-import { Module59 } from './modules/Module59';
+const allMeta = getAllModuleMetadata();
 
-// Registry of modules
-const modules: ModuleData[] = [
-  // Logical Reasoning
-  Module1, Module2, Module3, Module4, Module5,
-  Module6, Module7, Module8, Module9, Module10,
-  Module11, Module12, Module13, Module14, Module15,
-  Module16, Module17, Module18, Module19, Module20,
-  Module55, Module59,
+const modulesFromMeta = allMeta.map((m) => ({
+  id: m.id,
+  title: m.title,
+  category: m.category,
+  description: m.description,
+  unit: m.unit,
+  lessons: [] as ModuleData['lessons'],
+  lessonCount: m.lessonCount,
+}));
 
-  // Reading Comprehension
-  Module21, Module22, Module23, Module24, Module25,
-  Module26, Module27, Module28, Module29, Module30,
-  Module31, Module32, Module33, Module34, Module35,
-  Module36, Module37, Module38, Module39, Module40,
-  Module41, Module42, Module43, Module44, Module45,
-  Module46, Module47,
+function LoadingSpinner() {
+  return (
+    <div className="flex items-center justify-center h-full min-h-[300px]">
+      <div className="flex flex-col items-center gap-4">
+        <div className="w-8 h-8 border-4 border-indigo-200 border-t-indigo-600 rounded-full animate-spin" />
+        <span className="text-slate-500 text-sm font-medium">Loading lesson...</span>
+      </div>
+    </div>
+  );
+}
 
-  // Advanced Passages
-  Module50, Module51, Module52, Module54, Module56,
-  Module57, Module58,
+function ModulePage() {
+  const { moduleId, lessonId } = useParams<{ moduleId: string; lessonId?: string }>();
+  const navigate = useNavigate();
+  const { updateLastPosition, markLessonComplete, isLessonComplete } = useProgressContext();
 
-  // Resources
-  Module48, Module49, Module53
-];
+  const [moduleData, setModuleData] = useState<ModuleData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-const App: React.FC = () => {
-  // activeModuleId is null when on the Dashboard
-  const [activeModuleId, setActiveModuleId] = useState<number | null>(null);
-  const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
+  const numericModuleId = Number(moduleId);
 
-  const activeModule = activeModuleId !== null 
-    ? modules.find(m => m.id === activeModuleId) 
-    : undefined;
-  
-  // Find the specific lesson content if a module is active
-  const activeLesson = activeModule 
-    ? (activeModule.lessons.find(l => l.id === activeLessonId) || activeModule.lessons[0]) 
-    : undefined;
-    
-  // Calculate Previous and Next Lessons
-  const currentLessonIndex = activeModule && activeLesson
-    ? activeModule.lessons.findIndex(l => l.id === activeLesson.id)
-    : -1;
-    
-  const previousLesson = currentLessonIndex > 0 ? activeModule?.lessons[currentLessonIndex - 1] : undefined;
-  const nextLesson = (activeModule && currentLessonIndex < activeModule.lessons.length - 1) ? activeModule.lessons[currentLessonIndex + 1] : undefined;
+  useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    setError(null);
 
-  const handleModuleSelect = (id: number) => {
-    setActiveModuleId(id);
-    const mod = modules.find(m => m.id === id);
-    if (mod && mod.lessons.length > 0) {
-      // Automatically select first lesson when entering a module
-      setActiveLessonId(mod.lessons[0].id);
+    loadModule(numericModuleId)
+      .then((data) => {
+        if (!cancelled) {
+          setModuleData(data);
+          setLoading(false);
+        }
+      })
+      .catch((err: Error) => {
+        if (!cancelled) {
+          setError(err.message);
+          setLoading(false);
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [numericModuleId]);
+
+  const activeLesson = useMemo(() => {
+    if (!moduleData) return undefined;
+    if (lessonId) return moduleData.lessons.find((l) => l.id === lessonId) ?? moduleData.lessons[0];
+    return moduleData.lessons[0];
+  }, [moduleData, lessonId]);
+
+  useEffect(() => {
+    if (moduleData && activeLesson) {
+      if (!lessonId || lessonId !== activeLesson.id) {
+        navigate(`/module/${numericModuleId}/lesson/${activeLesson.id}`, { replace: true });
+      }
+      updateLastPosition(numericModuleId, activeLesson.id);
     }
-  };
+  }, [moduleData, activeLesson, lessonId, numericModuleId, navigate, updateLastPosition]);
 
-  const handleGoHome = () => {
-    setActiveModuleId(null);
-    setActiveLessonId(null);
-  };
+  const currentIndex = moduleData && activeLesson ? moduleData.lessons.findIndex((l) => l.id === activeLesson.id) : -1;
+  const previousLesson = currentIndex > 0 ? moduleData?.lessons[currentIndex - 1] : undefined;
+  const nextLesson = moduleData && currentIndex < moduleData.lessons.length - 1 ? moduleData.lessons[currentIndex + 1] : undefined;
+
+  const handleSelectLesson = useCallback(
+    (id: string) => navigate(`/module/${numericModuleId}/lesson/${id}`),
+    [navigate, numericModuleId],
+  );
+
+  const handleGoHome = useCallback(() => navigate('/'), [navigate]);
+
+  const handleMarkComplete = useCallback(() => {
+    if (activeLesson) markLessonComplete(activeLesson.id);
+  }, [activeLesson, markLessonComplete]);
+
+  if (loading) return <LoadingSpinner />;
+  if (error) return <div className="flex items-center justify-center h-full text-red-500 font-medium">{error}</div>;
+  if (!moduleData || !activeLesson) return <div className="flex items-center justify-center h-full text-slate-400">Module not found</div>;
 
   return (
     <Layout
-      modules={modules}
-      activeModuleId={activeModuleId}
-      activeLessonId={activeLessonId}
-      onSelectModule={handleModuleSelect}
-      onSelectLesson={setActiveLessonId}
+      modules={modulesFromMeta}
+      activeModuleId={numericModuleId}
+      activeLessonId={activeLesson.id}
+      onSelectModule={(id) => navigate(`/module/${id}`)}
+      onSelectLesson={handleSelectLesson}
       onGoHome={handleGoHome}
-      lessonNav={
-        activeModuleId !== null && activeLesson
-          ? {
-              onPrevious: previousLesson ? () => setActiveLessonId(previousLesson.id) : undefined,
-              onNext: nextLesson ? () => setActiveLessonId(nextLesson.id) : undefined,
-              previousLabel: previousLesson?.title,
-              nextLabel: nextLesson?.title,
-              hasNext: !!nextLesson,
+      activeModuleData={moduleData}
+      isLessonComplete={isLessonComplete}
+      lessonNav={{
+        onPrevious: previousLesson ? () => navigate(`/module/${numericModuleId}/lesson/${previousLesson.id}`) : undefined,
+        onNext: nextLesson
+          ? () => {
+              handleMarkComplete();
+              navigate(`/module/${numericModuleId}/lesson/${nextLesson.id}`);
             }
-          : undefined
-      }
+          : undefined,
+        previousLabel: previousLesson?.title,
+        nextLabel: nextLesson?.title,
+        hasNext: !!nextLesson,
+      }}
     >
-      {activeModuleId === null ? (
-        <Dashboard modules={modules} onSelectModule={handleModuleSelect} />
-      ) : (
-        activeLesson ? (
-          <LessonViewer
-            key={activeLesson.id}
-            title={activeLesson.title}
-            content={activeLesson.content}
-          />
-        ) : (
-          <div className="flex items-center justify-center h-full text-slate-400">
-            No lesson selected
-          </div>
-        )
-      )}
+      <ErrorBoundary fallbackTitle="Error loading lesson" key={activeLesson.id}>
+        <Suspense fallback={<LoadingSpinner />}>
+          <LessonViewer key={activeLesson.id} title={activeLesson.title} content={activeLesson.content} />
+        </Suspense>
+      </ErrorBoundary>
     </Layout>
+  );
+}
+
+function DashboardPage() {
+  const navigate = useNavigate();
+  const { getModuleProgress } = useProgressContext();
+
+  const handleModuleSelect = useCallback((id: number) => navigate(`/module/${id}`), [navigate]);
+  const handleGoHome = useCallback(() => navigate('/'), [navigate]);
+
+  return (
+    <Layout
+      modules={modulesFromMeta}
+      activeModuleId={null}
+      activeLessonId={null}
+      onSelectModule={handleModuleSelect}
+      onSelectLesson={() => {}}
+      onGoHome={handleGoHome}
+    >
+      <Dashboard modules={modulesFromMeta} onSelectModule={handleModuleSelect} getModuleProgress={getModuleProgress} />
+    </Layout>
+  );
+}
+
+function AppRoutes() {
+  const navigate = useNavigate();
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  const [loadedModules, setLoadedModules] = useState<ModuleData[]>([]);
+
+  useEffect(() => {
+    Promise.all(moduleRegistry.map((e) => e.load().then((m) => ('default' in m ? m.default : (m as Record<string, ModuleData>)[Object.keys(m).find((k) => k.startsWith('Module'))!])))).then(
+      setLoadedModules,
+    );
+  }, []);
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        setSearchOpen((prev) => !prev);
+      }
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, []);
+
+  const handleSearchNavigate = useCallback(
+    (moduleId: number, lessonId: string) => {
+      navigate(`/module/${moduleId}/lesson/${lessonId}`);
+    },
+    [navigate],
+  );
+
+  return (
+    <>
+      <SearchDialog
+        modules={loadedModules}
+        open={searchOpen}
+        onClose={() => setSearchOpen(false)}
+        onNavigate={handleSearchNavigate}
+      />
+      <Routes>
+        <Route path="/" element={<DashboardPage />} />
+        <Route path="/module/:moduleId" element={<ModulePage />} />
+        <Route path="/module/:moduleId/lesson/:lessonId" element={<ModulePage />} />
+      </Routes>
+    </>
+  );
+}
+
+const App: React.FC = () => {
+  return (
+    <ErrorBoundary fallbackTitle="Application error">
+      <BrowserRouter>
+        <ProgressProvider>
+          <AppRoutes />
+        </ProgressProvider>
+      </BrowserRouter>
+    </ErrorBoundary>
   );
 };
 

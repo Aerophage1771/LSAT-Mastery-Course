@@ -10,19 +10,30 @@ import {
 } from '../utils/export';
 
 interface DashboardProps {
-  modules: ModuleData[];
+  modules: Array<{ id: number; title: string; category: string; description: string; unit: string; lessons?: ModuleData['lessons']; lessonCount?: number }>;
   onSelectModule: (id: number) => void;
+  getModuleProgress?: (lessons: { id: string }[]) => { completed: number; total: number; percent: number };
 }
 
-export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule }) => {
+const asModules = (items: unknown[]): ModuleData[] =>
+  (items as Array<Record<string, unknown>>).map((m) => ({
+    ...m,
+    lessons: (m.lessons as ModuleData['lessons']) ?? [],
+  })) as unknown as ModuleData[];
+
+const asModule = (m: Record<string, unknown>): ModuleData =>
+  ({ ...m, lessons: (m.lessons as ModuleData['lessons']) ?? [] }) as unknown as ModuleData;
+
+export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, getModuleProgress }) => {
   // Group modules by unit
+  type ModuleLike = typeof modules[number];
   const modulesByUnit = modules.reduce((acc, module) => {
     if (!acc[module.unit]) {
       acc[module.unit] = [];
     }
     acc[module.unit].push(module);
     return acc;
-  }, {} as Record<string, ModuleData[]>);
+  }, {} as Record<string, ModuleLike[]>);
 
   // Define sections and unit order with descriptions
   const sections = [
@@ -96,12 +107,12 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
                      <ExportControls 
                         variant="minimal"
                         filename={`LSAT_${section.title.replace(/\s+/g, '_')}`}
-                        onCopy={() => generateSectionText(section.title, sectionModules)}
-                        onExportText={() => generateSectionText(section.title, sectionModules)}
-                        onExportRTF={() => generateSectionRTF(section.title, sectionModules)}
-                        onExportJSON={() => generateSectionJSON(section.title, sectionModules)}
-                        onExportCSV={() => generateSectionCSV(section.title, sectionModules)}
-                        onExportPDF={() => generateSectionPDF(section.title, sectionModules)}
+                        onCopy={() => generateSectionText(section.title, asModules(sectionModules))}
+                        onExportText={() => generateSectionText(section.title, asModules(sectionModules))}
+                        onExportRTF={() => generateSectionRTF(section.title, asModules(sectionModules))}
+                        onExportJSON={() => generateSectionJSON(section.title, asModules(sectionModules))}
+                        onExportCSV={() => generateSectionCSV(section.title, asModules(sectionModules))}
+                        onExportPDF={() => generateSectionPDF(section.title, asModules(sectionModules))}
                      />
                    </div>
                 </div>
@@ -136,12 +147,12 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
                            <ExportControls 
                               variant="minimal"
                               filename={`LSAT_${unitString.replace(/[: ]/g, '_')}`}
-                              onCopy={() => generateUnitText(unitString, unitModules)}
-                              onExportText={() => generateUnitText(unitString, unitModules)}
-                              onExportRTF={() => generateUnitRTF(unitString, unitModules)}
-                              onExportJSON={() => generateUnitJSON(unitString, unitModules)}
-                              onExportCSV={() => generateUnitCSV(unitString, unitModules)}
-                              onExportPDF={() => generateUnitPDF(unitString, unitModules)}
+                              onCopy={() => generateUnitText(unitString, asModules(unitModules))}
+                              onExportText={() => generateUnitText(unitString, asModules(unitModules))}
+                              onExportRTF={() => generateUnitRTF(unitString, asModules(unitModules))}
+                              onExportJSON={() => generateUnitJSON(unitString, asModules(unitModules))}
+                              onExportCSV={() => generateUnitCSV(unitString, asModules(unitModules))}
+                              onExportPDF={() => generateUnitPDF(unitString, asModules(unitModules))}
                            />
                         </div>
                       </div>
@@ -174,12 +185,12 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
                                  <ExportControls 
                                     variant="minimal"
                                     filename={`LSAT_Module_${module.id}_${module.title.replace(/\s+/g, '_')}`}
-                                    onCopy={() => generateModuleText(module)}
-                                    onExportText={() => generateModuleText(module)}
-                                    onExportRTF={() => generateModuleRTF(module)}
-                                    onExportJSON={() => generateModuleJSON(module)}
-                                    onExportCSV={() => generateModuleCSV(module)}
-                                    onExportPDF={() => generateModulePDF(module)}
+                                    onCopy={() => generateModuleText(asModule(module as unknown as Record<string, unknown>))}
+                                    onExportText={() => generateModuleText(asModule(module as unknown as Record<string, unknown>))}
+                                    onExportRTF={() => generateModuleRTF(asModule(module as unknown as Record<string, unknown>))}
+                                    onExportJSON={() => generateModuleJSON(asModule(module as unknown as Record<string, unknown>))}
+                                    onExportCSV={() => generateModuleCSV(asModule(module as unknown as Record<string, unknown>))}
+                                    onExportPDF={() => generateModulePDF(asModule(module as unknown as Record<string, unknown>))}
                                  />
                                  <span className={`text-slate-300 transition-colors transform group-hover:translate-x-1 duration-300 ${
                                      section.title === 'Logical Reasoning' ? 'group-hover:text-indigo-600' : 
@@ -208,17 +219,40 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
                             <div className="flex items-center justify-between text-xs font-medium text-slate-500 mt-auto pt-4 border-t border-slate-100 group-hover:border-indigo-50 transition-colors">
                               <div className="flex items-center">
                                 <Book size={14} className="mr-1.5" />
-                                <span>{module.lessons.length} Lessons</span>
+                                <span>{(module as { lessonCount?: number }).lessonCount ?? module.lessons?.length ?? 0} Lessons</span>
                               </div>
-                              <div className={`flex items-center opacity-0 group-hover:opacity-100 transition-opacity font-bold ${
-                                  section.title === 'Logical Reasoning' ? 'text-indigo-600' : 
-                                  section.title === 'Reading Comprehension' ? 'text-emerald-600' : 
-                                  section.title === 'Advanced Passages' ? 'text-rose-600' : 
-                                  'text-slate-600'
-                              }`}>
-                                <PlayCircle size={14} className="mr-1.5" />
-                                <span>Start</span>
-                              </div>
+                              {getModuleProgress && module.lessons && module.lessons.length > 0 ? (() => {
+                                const prog = getModuleProgress(module.lessons);
+                                if (prog.completed === 0) return (
+                                  <div className={`flex items-center opacity-0 group-hover:opacity-100 transition-opacity font-bold ${
+                                    section.title === 'Logical Reasoning' ? 'text-indigo-600' : 
+                                    section.title === 'Reading Comprehension' ? 'text-emerald-600' : 
+                                    section.title === 'Advanced Passages' ? 'text-rose-600' : 
+                                    'text-slate-600'
+                                  }`}>
+                                    <PlayCircle size={14} className="mr-1.5" />
+                                    <span>Start</span>
+                                  </div>
+                                );
+                                return (
+                                  <div className="flex items-center gap-2">
+                                    <div className="w-16 h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                                      <div className="h-full bg-emerald-500 rounded-full transition-all" style={{ width: `${prog.percent}%` }} />
+                                    </div>
+                                    <span className="text-emerald-600 font-bold">{prog.percent}%</span>
+                                  </div>
+                                );
+                              })() : (
+                                <div className={`flex items-center opacity-0 group-hover:opacity-100 transition-opacity font-bold ${
+                                    section.title === 'Logical Reasoning' ? 'text-indigo-600' : 
+                                    section.title === 'Reading Comprehension' ? 'text-emerald-600' : 
+                                    section.title === 'Advanced Passages' ? 'text-rose-600' : 
+                                    'text-slate-600'
+                                }`}>
+                                  <PlayCircle size={14} className="mr-1.5" />
+                                  <span>Start</span>
+                                </div>
+                              )}
                             </div>
                           </div>
                         ))}
