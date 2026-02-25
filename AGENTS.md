@@ -40,16 +40,18 @@ npm run preview    # Serve production build locally
 - **Content model**: Lessons are arrays of typed `ContentBlock` objects (see `types.ts`). The `LessonViewer` component in `components/LessonViewer.tsx` renders them. There are 17 block types including interactive cards (`question-card`, `passage-card`, `question-passage-card`).
 - **Progress**: Lesson completion stored in `localStorage` via `hooks/useProgress.ts`, shared via `contexts/ProgressContext.tsx`.
 - **Search**: Fuse.js search dialog on `Ctrl+K`, searches all lesson/module titles.
+- **Question Bank**: Standalone page at `/question-bank` with 247 questions (150 LR + 97 RC). Sidebar filtering by type, real-time search, expandable cards with interactive answer feedback. Data in `modules/module48/`, `module49/`, `module53/`. Validation via `npm run validate:questions`.
 - **Style Guide**: 7-tab modal (`Components`, `Question Card`, `Passage Card`, `Q+P Card`, `Structure`, `Prompts`, `Technical`) with live interactive examples. "Copy All" button serializes entire guide to clipboard.
 - **Roadmap**: 7-tab modal with 78 product improvement ideas.
 
 ### Module numbering
 
-Modules are numbered 1–59 sequentially with no gaps:
+Modules are numbered 1–56 sequentially:
 - **1–22**: Logical Reasoning (9 units)
 - **23–49**: Reading Comprehension (6 units)
 - **50–56**: Advanced Passages
-- **57–59**: Question Bank (LR, RC, Advanced RC)
+
+The Question Bank is NOT a module. It has its own standalone page at `/question-bank` with dedicated `QuestionBank.tsx` component. Questions are stored in `modules/module48/` (LR), `modules/module49/` (RC), and `modules/module53/` (Advanced RC).
 
 ### Gotchas
 
