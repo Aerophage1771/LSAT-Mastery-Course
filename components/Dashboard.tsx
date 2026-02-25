@@ -70,13 +70,6 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, g
       units: [
         { name: "Unit 16: Advanced Passages", description: "Explore complex themes in philosophy, science, and law." }
       ]
-    },
-    {
-      title: "Question Bank",
-      description: "All practice questions from the course in one place, organized for review and timed practice.",
-      units: [
-        { name: "Unit 17: Question Bank", description: "Complete collection of LR and RC practice questions with cross-references to their full drill explanations." }
-      ]
     }
   ];
 
@@ -135,7 +128,6 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, g
                                 section.title === 'Logical Reasoning' ? 'bg-indigo-100 text-indigo-700' : 
                                 section.title === 'Reading Comprehension' ? 'bg-emerald-100 text-emerald-700' : 
                                 section.title === 'Advanced Passages' ? 'bg-rose-100 text-rose-700' : 
-                                section.title === 'Question Bank' ? 'bg-amber-100 text-amber-700' :
                                 'bg-slate-100 text-slate-700'
                             }`}>
                               {unitNum}
@@ -170,7 +162,6 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, g
                                 section.title === 'Logical Reasoning' ? 'bg-indigo-500' : 
                                 section.title === 'Reading Comprehension' ? 'bg-emerald-500' : 
                                 section.title === 'Advanced Passages' ? 'bg-rose-500' : 
-                                section.title === 'Question Bank' ? 'bg-amber-500' :
                                 'bg-slate-500'
                             }`} />
 
@@ -179,7 +170,6 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, g
                                   section.title === 'Logical Reasoning' ? 'bg-slate-100 text-slate-600 group-hover:bg-indigo-100 group-hover:text-indigo-700' : 
                                   section.title === 'Reading Comprehension' ? 'bg-slate-100 text-slate-600 group-hover:bg-emerald-100 group-hover:text-emerald-700' : 
                                   section.title === 'Advanced Passages' ? 'bg-slate-100 text-slate-600 group-hover:bg-rose-100 group-hover:text-rose-700' : 
-                                  section.title === 'Question Bank' ? 'bg-slate-100 text-slate-600 group-hover:bg-amber-100 group-hover:text-amber-700' :
                                   'bg-slate-100 text-slate-600'
                               }`}>
                                 MODULE {module.id}
@@ -199,7 +189,6 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, g
                                      section.title === 'Logical Reasoning' ? 'group-hover:text-indigo-600' : 
                                      section.title === 'Reading Comprehension' ? 'group-hover:text-emerald-600' : 
                                      section.title === 'Advanced Passages' ? 'group-hover:text-rose-600' : 
-                                     section.title === 'Question Bank' ? 'group-hover:text-amber-600' :
                                      'group-hover:text-slate-600'
                                  }`}>
                                   <ChevronRight size={20} />
@@ -211,7 +200,6 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, g
                                 section.title === 'Logical Reasoning' ? 'group-hover:text-indigo-600' : 
                                 section.title === 'Reading Comprehension' ? 'group-hover:text-emerald-600' : 
                                 section.title === 'Advanced Passages' ? 'group-hover:text-rose-600' : 
-                                section.title === 'Question Bank' ? 'group-hover:text-amber-600' :
                                 'group-hover:text-slate-600'
                             }`}>
                               {module.title}
@@ -233,7 +221,6 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, g
                                     section.title === 'Logical Reasoning' ? 'text-indigo-600' : 
                                     section.title === 'Reading Comprehension' ? 'text-emerald-600' : 
                                     section.title === 'Advanced Passages' ? 'text-rose-600' : 
-                                    section.title === 'Question Bank' ? 'text-amber-600' :
                                     'text-slate-600'
                                 }`}>
                                   <PlayCircle size={14} className="mr-1.5" />
@@ -253,7 +240,6 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, g
                                     section.title === 'Logical Reasoning' ? 'text-indigo-600' : 
                                     section.title === 'Reading Comprehension' ? 'text-emerald-600' : 
                                     section.title === 'Advanced Passages' ? 'text-rose-600' : 
-                                    section.title === 'Question Bank' ? 'text-amber-600' :
                                     'text-slate-600'
                                 }`}>
                                   <PlayCircle size={14} className="mr-1.5" />

@@ -5,6 +5,7 @@ import { Lesson3_Drill_DirectApplication } from './module13/Lesson3_Drill_Direct
 import { Lesson4_Drill_ContrapositiveApplication } from './module13/Lesson4_Drill_ContrapositiveApplication';
 import { Lesson5_Drill_DefinitionalChecklist } from './module13/Lesson5_Drill_DefinitionalChecklist';
 import { Lesson6_Drill_AdvancedApplication } from './module13/Lesson6_Drill_AdvancedApplication';
+import { Lesson7_ReferenceGuide } from './module13/Lesson7_ReferenceGuide';
 
 
 export const Module13: ModuleData = {
@@ -19,6 +20,7 @@ export const Module13: ModuleData = {
     Lesson3_Drill_DirectApplication,
     Lesson4_Drill_ContrapositiveApplication,
     Lesson5_Drill_DefinitionalChecklist,
-    Lesson6_Drill_AdvancedApplication
+    Lesson6_Drill_AdvancedApplication,
+    Lesson7_ReferenceGuide
   ]
 };

@@ -40,16 +40,18 @@ npm run preview    # Serve production build locally
 - **Content model**: Lessons are arrays of typed `ContentBlock` objects (see `types.ts`). The `LessonViewer` component in `components/LessonViewer.tsx` renders them. There are 17 block types including interactive cards (`question-card`, `passage-card`, `question-passage-card`).
 - **Progress**: Lesson completion stored in `localStorage` via `hooks/useProgress.ts`, shared via `contexts/ProgressContext.tsx`.
 - **Search**: Fuse.js search dialog on `Ctrl+K`, searches all lesson/module titles.
+- **Question Bank**: Standalone page at `/question-bank` with 247 questions (150 LR + 97 RC). Sidebar filtering by type, real-time search, expandable cards with interactive answer feedback. Data in `modules/module48/`, `module49/`, `module53/`. Validation via `npm run validate:questions`.
 - **Style Guide**: 7-tab modal (`Components`, `Question Card`, `Passage Card`, `Q+P Card`, `Structure`, `Prompts`, `Technical`) with live interactive examples. "Copy All" button serializes entire guide to clipboard.
 - **Roadmap**: 7-tab modal with 78 product improvement ideas.
 
 ### Module numbering
 
-Modules are numbered 1–59 sequentially with no gaps:
+Modules are numbered 1–56 sequentially:
 - **1–22**: Logical Reasoning (9 units)
 - **23–49**: Reading Comprehension (6 units)
 - **50–56**: Advanced Passages
-- **57–59**: Question Bank (LR, RC, Advanced RC)
+
+The Question Bank is NOT a module. It has its own standalone page at `/question-bank` with dedicated `QuestionBank.tsx` component. Questions are stored in `modules/module48/` (LR), `modules/module49/` (RC), and `modules/module53/` (Advanced RC).
 
 ### Gotchas
 
@@ -59,6 +61,7 @@ Modules are numbered 1–59 sequentially with no gaps:
 - **Strict TypeScript**: `tsconfig.json` has `strict: true`, `noUnusedLocals`, `noUnusedParameters`, `noImplicitReturns`, `noFallthroughCasesInSwitch`. All new code must comply.
 - **Content files**: Lesson `.tsx` files in `modules/moduleN/` are pure data (TypeScript objects exporting `ContentBlock[]`). They are not React components. The renderer is `LessonViewer.tsx`.
 - **Blockquotes**: Render as clean rounded panels (not italic + left-border). Styled via `LessonViewer.tsx`, not individual files.
+- **Quote escaping in content files (CRITICAL)**: Subagents writing lesson content frequently introduce syntax errors from unescaped quotes. Common culprits: (1) Smart/curly quotes (`"` `"` `'` `'`) must be replaced with straight quotes. (2) Apostrophes in contractions (`it's`, `don't`, `author's`) inside single-quoted strings must be escaped as `\'`. (3) Double quotes inside double-quoted strings must be escaped as `\"`. **Always run `npx tsc --noEmit | grep moduleN` after writing content files to catch these.** If errors appear, fix escaping before committing.
 - **Dev server port**: `npm run dev` targets port 3000 but auto-increments if busy. Check the Vite output for the actual port.
 - **Pre-existing lint errors**: `npm run lint` reports ~630 pre-existing errors (mostly `no-case-declarations` in `LessonViewer.tsx` and `export.ts`). These are not regressions. Verify your changes by filtering lint output to your modified files.
 

@@ -24,13 +24,14 @@ LSAT Mastery is a client-side SPA that delivers a full LSAT prep curriculum thro
 | **Logical Reasoning** | 1–22 | 22 question types across 9 units (Identification, Analysis, Evaluation, Principle, Inference, Resolution, Conflict, Conditional Reasoning, LSAT Math) |
 | **Reading Comprehension** | 23–49 | 12 question types, 10 practice passages, 5 reference guides |
 | **Advanced Passages** | 50–56 | 7 in-depth passage analyses (Philosophy, Science, Law, Art, Social Science, Economics, History) |
-| **Question Bank** | 57–59 | 224 practice questions (112 LR + 65 RC + 47 Advanced RC) with cross-references to drill explanations |
+| **Question Bank** | Standalone | 247 practice questions (150 LR + 65 RC + 47 Advanced RC) — accessible via dedicated `/question-bank` route, not part of module numbering |
 
 ### Key Features
 
 - **Interactive Question Cards** — click-to-reveal answer feedback with difficulty badges and PT identifiers
 - **Passage Cards** — genre-tagged RC passages with word/paragraph counts and expand/collapse
 - **Split-Pane Q+P Cards** — side-by-side passage and question view mirroring the LSAT interface
+- **Standalone Question Bank** — 247 questions (LR + RC) at `/question-bank` with sidebar filtering by type, real-time search, expandable cards, and interactive answer feedback
 - **Client-Side Search** — Ctrl+K fuzzy search across all lessons and modules (Fuse.js)
 - **Progress Tracking** — lesson completion persisted in localStorage with dashboard progress bars
 - **URL Routing** — deep-linkable URLs (`/module/5/lesson/5-4`), browser back/forward support
@@ -69,6 +70,7 @@ npm run dev
 | `npm run test:watch` | Vitest in watch mode |
 | `npm run test:coverage` | Vitest with coverage report |
 | `npm run analyze` | Bundle size visualization → `dist/stats.html` |
+| `npm run validate:questions` | Validate Question Bank data quality |
 | `npm run report:gaps` | Audit missing drill/content IDs |
 
 ## Project Structure
@@ -87,6 +89,7 @@ npm run dev
 │   ├── Layout.tsx             # Shell: sidebar, header, modals (Style Guide, Roadmap, Export)
 │   ├── LessonViewer.tsx       # Content renderer (maps ContentBlock[] → React components)
 │   ├── Dashboard.tsx          # Module grid with progress indicators
+│   ├── QuestionBank.tsx       # Standalone question bank with filtering, search, card UI
 │   ├── SearchDialog.tsx       # Ctrl+K search modal (Fuse.js)
 │   ├── ErrorBoundary.tsx      # Crash recovery wrapper
 │   ├── ExportControls.tsx     # PDF/RTF/JSON/CSV/TXT export

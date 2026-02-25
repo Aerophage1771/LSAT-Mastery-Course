@@ -10,6 +10,7 @@ import { Lesson8_Drill_ChainOfLogic1 } from './module10/Lesson8_Drill_ChainOfLog
 import { Lesson9_Drill_ChainOfLogic2 } from './module10/Lesson9_Drill_ChainOfLogic2';
 import { Lesson10_Drill_EitherOrBridge } from './module10/Lesson10_Drill_EitherOrBridge';
 import { Lesson11_Drill_NormativeBridge } from './module10/Lesson11_Drill_NormativeBridge';
+import { Lesson12_ReferenceGuide } from './module10/Lesson12_ReferenceGuide';
 
 export const Module10: ModuleData = {
   id: 10,
@@ -28,6 +29,7 @@ export const Module10: ModuleData = {
     Lesson8_Drill_ChainOfLogic1,
     Lesson9_Drill_ChainOfLogic2,
     Lesson10_Drill_EitherOrBridge,
-    Lesson11_Drill_NormativeBridge
+    Lesson11_Drill_NormativeBridge,
+    Lesson12_ReferenceGuide
   ]
 };

@@ -65,12 +65,6 @@ export async function loadModule(id: number): Promise<ModuleData> {
 
 // Unit 16: Advanced Passages (Modules 50-56)
 
-// ──────────────────────────────────────────────
-// QUESTION BANK (Modules 57-59)
-// ──────────────────────────────────────────────
-
-// Unit 17: Question Bank (Modules 57-59)
-
 export const moduleRegistry: RegistryEntry[] = [
   // ── LOGICAL REASONING ──────────────────────
 
@@ -166,12 +160,6 @@ export const moduleRegistry: RegistryEntry[] = [
   entry({ id: 55, title: 'Advanced Passage: Economics', category: 'Advanced', description: 'In-depth analysis of a challenging economics passage.', unit: 'Unit 16: Advanced Passages', lessonCount: 8 }, () => import('./Module57')),
   entry({ id: 56, title: 'Advanced Passage: History', category: 'Advanced', description: 'In-depth analysis of a challenging history passage.', unit: 'Unit 16: Advanced Passages', lessonCount: 8 }, () => import('./Module58')),
 
-  // ── QUESTION BANK ──────────────────────────
-
-  // Unit 17: Question Bank
-  entry({ id: 57, title: 'LR Question Bank', category: 'Question Bank', description: 'All 112 Logical Reasoning practice questions organized by question type, with direct links to their full drill explanations.', unit: 'Unit 17: Question Bank', lessonCount: 22 }, () => import('./Module48')),
-  entry({ id: 58, title: 'RC Question Bank', category: 'Question Bank', description: 'All 65 Reading Comprehension practice questions organized by passage, with full stimulus text and answer choices.', unit: 'Unit 17: Question Bank', lessonCount: 1 }, () => import('./Module49')),
-  entry({ id: 59, title: 'Advanced RC Question Bank', category: 'Question Bank', description: 'All 47 advanced Reading Comprehension questions from the most challenging passages in the course.', unit: 'Unit 17: Question Bank', lessonCount: 1 }, () => import('./Module53')),
 ];
 
 export function getAllModuleMetadata(): ModuleMetadata[] {

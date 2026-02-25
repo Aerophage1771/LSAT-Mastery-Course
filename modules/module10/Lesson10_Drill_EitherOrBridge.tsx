@@ -4,45 +4,72 @@ export const Lesson10_Drill_EitherOrBridge: Lesson = {
   id: "10-10",
   title: "Drill: The Either/Or Bridge (PT-119-S-4-Q-19)",
   content: [
-    { type: 'paragraph', text: "A more complex variation of the \"Concept Link\" involves a branching path. The argument will break a situation down into two (or more) possibilities, show that a certain outcome is appropriate for each possibility, and then conclude that an *entirely different* outcome is therefore inappropriate." },
-    { type: 'paragraph', text: "The logical gap is the missing rule that connects the appropriate outcomes to the inappropriate one. To make the argument sufficient, you must find a single, unifying principle that covers both branches of the argument and links them to the conclusion." },
-    { type: 'paragraph', text: "*   **Structure:**\n    1.  Situation X is either A or B.\n    2.  If A, the response should be C.\n    3.  If B, the response should be D.\n    4.  Therefore, response E is unreasonable for Situation X.\n*   **The Gap:** You need a rule that says: If the proper response is C or D, then E is unreasonable." },
-    { type: 'hr' },
-    { type: 'h4', text: "The Problem" },
-    { type: 'blockquote', text: "**Stimulus:** Anger in response to insults is unreasonable, for insults are merely assertions that someone has undesirable characteristics. If such an assertion is false, the insulted party ought to pity the ignorance prompting the insult. If it is true, the insulted party should be grateful for such useful information." },
-    { type: 'paragraph', text: "**Question:** Which one of the following, if assumed, enables the argument’s conclusion to be properly drawn?" },
-    { type: 'options', items: [
-      "(A) Actions prompted by ignorance do not warrant hostile reactions.",
-      "(B) Anger is an unreasonable response to useful information.",
-      "(C) Anger is an unreasonable response to any action that should prompt pity or gratitude.",
-      "(D) Gratitude and pity are reasonable responses to some forms of hostile or insensitive behavior.",
-      "(E) Pity is the only reasonable reaction to people with undesirable characteristics."
+    { type: 'h2', text: 'The Either/Or Bridge Pattern' },
+    { type: 'paragraph', text: "The Either/Or Bridge is a more complex variation of the Concept Link. The argument breaks a situation into **two (or more) mutually exhaustive possibilities**, shows that a certain response is appropriate for each possibility, and then concludes that an *entirely different* response is therefore inappropriate." },
+    { type: 'paragraph', text: "The logical gap is the **missing unifying principle** that connects the appropriate responses to the inappropriate one. To make the argument sufficient, you must find a single rule that covers *both branches* and links their outcomes to the conclusion." },
+
+    { type: 'callout', variant: 'tip', title: 'The Either/Or Structure', text: "Look for arguments that say: \"X is either A or B. If A, the response should be C. If B, the response should be D. Therefore, response E is unreasonable.\" The gap is always: \"If the proper response is C or D, then E is unreasonable.\" Beware of partial bridges that only cover one branch — they are the signature trap for this pattern." },
+
+    { type: 'table', headers: ['Component', 'Role in the Argument'], rows: [
+      ['Premise: X is either A or B', 'Exhaustive division — covers all cases'],
+      ['Premise: If A → response C', 'Branch 1 — establishes appropriate response'],
+      ['Premise: If B → response D', 'Branch 2 — establishes appropriate response'],
+      ['Conclusion: Response E is wrong', 'Judgment about a *different* response'],
+      ['**Gap: If C or D → not E**', '**Unifying principle connecting both branches to the conclusion**']
     ]},
-    { type: 'paragraph', text: "<br/><br/><br/>" },
+
     { type: 'hr' },
-    { type: 'h3', text: "Explanation" },
-    { type: 'h4', text: "Step 1: Break Down the Argument" },
-    { type: 'paragraph', text: "Let's deconstruct the argument to see how the author uses a branching structure to reach the final conclusion." },
+
+    { type: 'h3', text: 'Practice Question' },
+
+    { type: 'question-card',
+      id: 'SA-10-10-001',
+      questionType: 'Sufficient Assumption',
+      difficulty: 'medium',
+      stimulus: "Anger in response to insults is unreasonable, for insults are merely assertions that someone has undesirable characteristics. If such an assertion is false, the insulted party ought to pity the ignorance prompting the insult. If it is true, the insulted party should be grateful for such useful information.",
+      question: "Which one of the following, if assumed, enables the argument's conclusion to be properly drawn?",
+      options: [
+        "(A) Actions prompted by ignorance do not warrant hostile reactions.",
+        "(B) Anger is an unreasonable response to useful information.",
+        "(C) Anger is an unreasonable response to any action that should prompt pity or gratitude. (Correct)",
+        "(D) Gratitude and pity are reasonable responses to some forms of hostile or insensitive behavior.",
+        "(E) Pity is the only reasonable reaction to people with undesirable characteristics."
+      ]
+    },
+
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Step-by-Step Analysis' },
+
+    { type: 'h4', text: 'Step 1: Break Down the Argument' },
+    { type: 'paragraph', text: "Identify the branching structure the author uses to reach the conclusion." },
     { type: 'breakdown', labels: { title: "Statement", text: "Analysis" }, items: [
-      { title: "Anger in response to insults is unreasonable...", text: "This is the main conclusion. It makes a judgment about a specific emotional response (Anger)." },
-      { title: "...for insults are merely assertions that someone has undesirable characteristics.", text: "The author defines an insult. This sets up the two possibilities that will follow." },
-      { title: "If such an assertion is false, the insulted party ought to pity the ignorance prompting the insult.", text: "This is Branch #1. If the insult is false, the correct response is **pity**." },
-      { title: "If it is true, the insulted party should be grateful for such useful information.", text: "This is Branch #2. If the insult is true, the correct response is **gratitude**." }
+      { title: "Anger in response to insults is unreasonable.", text: "**Conclusion.** A judgment that a specific emotional response (anger) is never appropriate for insults." },
+      { title: "Insults are merely assertions that someone has undesirable characteristics.", text: "Definition that sets up the two-branch structure: the assertion is either true or false." },
+      { title: "If such an assertion is false, the insulted party ought to pity the ignorance prompting the insult.", text: "**Branch 1:** False insult → proper response is **pity**." },
+      { title: "If it is true, the insulted party should be grateful for such useful information.", text: "**Branch 2:** True insult → proper response is **gratitude**." }
     ]},
-    { type: 'h4', text: "Step 2: Analysis" },
-    { type: 'paragraph', text: "**What is the Gap?**\nThe argument establishes that in every possible case (the insult is either true or false), the proper response is either **pity** or **gratitude**. From this, it concludes that **anger** is unreasonable. The argument assumes, but never states, that if pity or gratitude is the correct response, then anger must be incorrect.\n\n**The Missing Link:** We need a single rule that connects both \"pity\" and \"gratitude\" to the idea that \"anger is unreasonable.\"" },
-    { type: 'h4', text: "Step 3: How Can We Make It Sufficient?" },
-    { type: 'paragraph', text: "To make the conclusion airtight, we must find a principle that covers both branches of the argument." },
-    { type: 'list', items: ["**Build the Bridge:** We need a statement that says: **If an action should prompt pity OR gratitude, then anger is an unreasonable response to that action.** This single rule takes the outcome of both branches and connects them directly to the conclusion."] },
-    { type: 'h4', text: "Step 4: Evaluation" },
-    { type: 'paragraph', text: "You are looking for the unifying rule that makes anger an inappropriate response in both of the scenarios described." },
+
+    { type: 'h4', text: 'Step 2: Identify the Gap' },
+    { type: 'paragraph', text: "The argument establishes that in every possible case (the insult is either true or false), the proper response is either **pity** or **gratitude**. From this, it concludes that **anger** is unreasonable.\n\nThe unstated assumption: if the correct response is pity or gratitude, then anger must be unreasonable. But why? The fact that one response is appropriate does not automatically make another response inappropriate — unless a rule says so." },
+    { type: 'code', text: "Branch 1:  False insult → Pity is appropriate\nBranch 2:  True insult  → Gratitude is appropriate\nConclusion: Anger is unreasonable for insults\n\nGap: (Pity appropriate OR Gratitude appropriate) → Anger unreasonable" },
+
+    { type: 'h4', text: 'Step 3: Prephrase the Bridge' },
+    { type: 'paragraph', text: "We need a **single, unifying rule** that covers both branches:" },
+    { type: 'list', items: [
+      "**\"If an action should prompt pity or gratitude, then anger is an unreasonable response to that action.\"**",
+      "This one rule takes the outcome of *both* branches and connects them directly to the conclusion."
+    ]},
+
+    { type: 'h4', text: 'Step 4: Evaluate the Choices' },
     { type: 'breakdown', labels: { title: "Option", text: "Analysis" }, items: [
-        { title: "(A) Actions prompted by ignorance do not warrant hostile reactions.", text: "This only covers one branch of the argument—the case where the insult is false (\"prompted by ignorance\"). It does not address the second case, where the insult is true and should prompt gratitude. This assumption is not *sufficient* because it leaves one path to the conclusion unproven.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B) Anger is an unreasonable response to useful information.", text: "This only covers the second branch of the argument—the case where the insult is true (\"useful information\"). It fails to address the first case, where the insult is false and should prompt pity.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C) Anger is an unreasonable response to any action that should prompt pity or gratitude.", text: "This is the perfect unifying principle. It covers both branches of the argument in a single rule.\n\n*Logic Check:* Is an insult either false or true? Yes. If it's false, does it prompt pity? Yes. If it prompts pity, is anger unreasonable? Yes (by this rule). If it's true, does it prompt gratitude? Yes. If it prompts gratitude, is anger unreasonable? Yes (by this rule). Since anger is unreasonable in both cases, it is unreasonable in all cases. The conclusion is now 100% guaranteed.", badge: "Correct", badgeColor: "green" },
-        { title: "(D) Gratitude and pity are reasonable responses to some forms of hostile or insensitive behavior.", text: "This confirms that pity and gratitude *can be* reasonable, but it does not establish that *anger* is therefore unreasonable. The fact that one response is reasonable does not automatically make another response unreasonable.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E) Pity is the only reasonable reaction to people with undesirable characteristics.", text: "This makes a claim that is too strong and narrow. It says pity is the *only* reasonable response, which would actually contradict the argument's own claim that gratitude is also a reasonable response in some cases.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) Actions prompted by ignorance do not warrant hostile reactions.", text: "**Partial bridge.** This only covers Branch 1 (the false insult prompted by ignorance). It says nothing about Branch 2 (the true insult that should prompt gratitude). Since the argument requires coverage of *both* cases, this answer is insufficient.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) Anger is an unreasonable response to useful information.", text: "**Partial bridge.** This only covers Branch 2 (the true insult as \"useful information\"). It does not address Branch 1 (the false insult that should prompt pity). Half the argument remains unproven.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) Anger is an unreasonable response to any action that should prompt pity or gratitude.", text: "This is the perfect unifying principle. It covers both branches in a single rule.\n\n**Logic Check:**\n- Is an insult either false or true? Yes (exhaustive).\n- If false → should prompt pity → anger is unreasonable (by this rule). ✓\n- If true → should prompt gratitude → anger is unreasonable (by this rule). ✓\n- Since anger is unreasonable in both cases, it is unreasonable in *all* cases. The conclusion is 100% guaranteed.", badge: "Correct", badgeColor: "green" },
+      { title: "(D) Gratitude and pity are reasonable responses to some forms of hostile or insensitive behavior.", text: "This confirms that pity and gratitude *can be* reasonable, but it does not establish that anger is therefore *unreasonable*. One response being appropriate does not logically exclude another unless a rule explicitly says so.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) Pity is the only reasonable reaction to people with undesirable characteristics.", text: "This is too strong and too narrow. It contradicts the argument's own claim that gratitude is also reasonable (when the insult is true). It also talks about reactions to *people*, not to *actions*.", badge: "Incorrect", badgeColor: "red" }
     ]},
-    { type: 'callout', title: "Key Takeaway", variant: "summary", text: "When an argument presents an \"either/or\" structure (e.g., \"the insult is either true or false\"), check to see if the conclusion applies to the situation as a whole. If it does, the sufficient assumption must be a single, broad principle that covers *both* branches of the argument and connects their outcomes to the main conclusion. Be wary of \"Partial Bridge\" answers that only address one of the two possibilities." }
+
+    { type: 'callout', title: "Key Takeaway", variant: "summary", text: "**The Either/Or Bridge** requires a single principle that unifies multiple branches. When an argument says \"in case A, do X; in case B, do Y; therefore Z is wrong,\" the missing assumption must connect *both* X and Y to the conclusion about Z.\n\n**The signature trap:** Partial bridges (A and B) that only cover one branch. These are tempting because they address the right topic, but they leave half the argument unsupported.\n\n**How to verify:** Check the candidate answer against *each* branch independently. If it fails for even one branch, it is not sufficient." }
   ]
 };

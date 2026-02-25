@@ -2,49 +2,45 @@ import { Lesson } from '../../types';
 
 export const Lesson11_Drill_DoseResponse: Lesson = {
   id: "9-11",
-  title: "Drill: Strengthening with Dose-Response (PT-120-S-1-Q-26)",
+  title: "Drill: The Dose-Response Pattern (PT-120-S-1-Q-26)",
   content: [
-    { type: 'h3', text: 'Drill: Strengthening with Dose-Response (PT-120-S-1-Q-26)' },
-    { type: 'paragraph', text: 'This lesson focuses on a specific type of causal reasoning known as a "dose-response" relationship. When an author argues that an increase in one thing causes an increase in another, the most effective way to strengthen this is to show that the two things increase *together*, step-by-step. This demonstrates a consistent, dynamic correlation, which is much stronger evidence for causation than a single snapshot in time.' },
+    { type: 'h3', text: 'The Dose-Response Pattern' },
+    { type: 'paragraph', text: 'A dose-response relationship means that **more of the cause produces more of the effect**. When an argument claims A causes B based on a single end-of-study snapshot, the evidence is a static correlation — easily dismissed as coincidence or a product of a third variable. The dose-response strengthener replaces this snapshot with a dynamic, step-by-step correlation: as A increases, B increases in lockstep. This pattern is far harder to explain away and provides powerful support for causation.' },
+    { type: 'callout', variant: 'tip', title: 'Snapshot vs. Trajectory', text: 'A snapshot says "the highest group in A also had the highest B." A trajectory says "as A improved over time, B improved in parallel." The trajectory is stronger because it tracks the same individuals through a process, making coincidence much less likely. Look for language like "over the course of," "as X increased, Y increased," or "greater improvement in X corresponded to greater improvement in Y."' },
     { type: 'hr' },
-    { type: 'h4', text: 'The Problem' },
-    { type: 'blockquote', text: 'Researchers gave 100 first-graders after-school lessons in handwriting. They found that those whose composition skills had improved the most had learned to write letters the most automatically. This suggests that producing characters more automatically frees up mental resources for other activities.' },
-    { type: 'h4', text: 'The Question' },
-    { type: 'paragraph', text: 'Which one of the following, if true, most strengthens the argument?' },
-    { type: 'options', items: [
+
+    { type: 'question-card', id: 'PT-120-S-1-Q-26', questionType: 'Strengthen', difficulty: 'hard', stimulus: 'Researchers gave 100 first-graders after-school lessons in handwriting. They found that those whose composition skills had improved the most had learned to write letters the most automatically. This suggests that producing characters more automatically frees up mental resources for other activities.', question: 'Which one of the following, if true, most strengthens the argument?', options: [
       '(A) Among the first-graders who received the after-school lessons in handwriting, those who practiced the most learned to write letters the most automatically.',
       '(B) The first-graders who wrote letters the most automatically before receiving the after-school lessons in handwriting showed the greatest improvement in their composition skills over the course of the lessons.',
-      '(C) Over the course of the lessons, the first-graders who showed greater improvement in their ability to write letters automatically also generally showed greater improvement in their composition skills.',
+      '(C) Over the course of the lessons, the first-graders who showed greater improvement in their ability to write letters automatically also generally showed greater improvement in their composition skills. (Correct)',
       '(D) Before receiving the after-school lessons in handwriting, the 100 first-graders who received the lessons were representative of first-graders more generally, with respect to their skills in both handwriting and composition.',
       '(E) Among the first-graders who received the lessons in handwriting, those who started out with strong composition skills showed substantial improvement in how automatically they could write letters.'
     ]},
-    { type: 'paragraph', text: '<br/><br/><br/>' },
+
     { type: 'hr' },
-    { type: 'h3', text: 'Explanation' },
+    { type: 'h3', text: 'Full Analysis' },
+
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
-    { type: 'paragraph', text: 'Let\'s engage with the text sentence by sentence to see how the researchers build their case.' },
     { type: 'breakdown', labels: { title: 'Quote', text: 'Analysis' }, items: [
-      { title: '"Researchers gave 100 first-graders after-school lessons in handwriting. They found that those whose composition skills had improved the most had learned to write letters the most automatically."', text: 'You are given the evidence from a study. It establishes a correlation at the end of the study between two outcomes: the biggest improvement in composition and the highest level of automaticity in handwriting.' },
-      { title: '"This suggests that producing characters more automatically frees up mental resources for other activities."', text: 'This is the conclusion. The author proposes a causal mechanism to explain the correlation. The idea is that becoming automatic at handwriting (Cause) leads to better composition (Effect) because the brain is no longer bogged down with the physical act of writing.' }
+      { title: '"They found that those whose composition skills had improved the most had learned to write letters the most automatically."', text: 'Evidence: a static, end-of-study correlation — the top improvers in composition were also the top improvers in automaticity.' },
+      { title: '"This suggests that producing characters more automatically frees up mental resources for other activities."', text: 'Conclusion: a causal mechanism — automaticity in handwriting causes improved composition by freeing cognitive bandwidth.' }
     ]},
-    { type: 'h4', text: 'Step 2: Analysis' },
-    { type: 'paragraph', text: '**What Method of Reasoning is the argument using?**\nThe argument identifies a correlation between two final outcomes (high automaticity and high improvement) and infers a causal relationship where one is the cause of the other.' },
-    { type: 'paragraph', text: '**What\'s the Problem?**\nThe evidence is a single snapshot taken at the end of the study. It compares the "best" group to everyone else. This is a weak form of correlation. What if the students who were already good at composition also happened to be the ones who got good at automatic handwriting? Maybe a third factor, like general intelligence or focus, caused both outcomes. The argument needs to show a more dynamic link between the *process* of improving one skill and the *process* of improving the other.' },
-    { type: 'h4', text: 'Step 3: How Can We Strengthen?' },
-    { type: 'paragraph', text: 'Since the core weakness is the static, "end-of-study" correlation, you can strengthen the argument by showing a more continuous and dynamic relationship.' },
-    { type: 'list', items: [
-      '**Establish a Dose-Response Relationship:** The most powerful way to strengthen this is to show that as the "dose" (improvement in automaticity) increased, the "response" (improvement in composition) also increased. This means that small improvements in handwriting were linked to small improvements in composition, medium to medium, and large to large. This step-by-step correlation is much harder to dismiss as a coincidence.',
-      '**Rule Out Alternative Causes:** You could also strengthen the argument by showing that other factors, like initial skill level, were not responsible for the outcome.'
-    ]},
-    { type: 'h4', text: 'Step 4: Evaluation' },
-    { type: 'paragraph', text: 'You are looking for the answer that shows a dynamic, step-by-step link between the improvement in both skills.' },
+
+    { type: 'h4', text: 'Step 2: Identify the Gap' },
+    { type: 'paragraph', text: 'The evidence is a snapshot comparing final outcomes. It does not show that the improvements happened together over time. A third factor (general intelligence, motivation, parental involvement) could independently produce both outcomes. Reverse causation is also possible: strong composition skills might make handwriting practice more engaging, boosting automaticity.' },
+
+    { type: 'h4', text: 'Step 3: Prephrase the Strengthen' },
+    { type: 'paragraph', text: 'Replace the static snapshot with a dynamic dose-response pattern. Show that as automaticity improved step by step during the course, composition improved in parallel. This continuous co-variation is much harder to attribute to a third factor or reverse causation.' },
+
+    { type: 'h4', text: 'Step 4: Evaluate Every Choice' },
     { type: 'breakdown', labels: { title: 'Option', text: 'Evaluation' }, items: [
-      { title: '(A) Among the first-graders who received the after-school lessons in handwriting, those who practiced the most learned to write letters the most automatically.', text: 'This choice links practice to automaticity. While interesting, it doesn\'t help connect automaticity to the main outcome of interest: *composition skills*. This is a distraction.', badge: 'The Irrelevant Link', badgeColor: 'red' },
-      { title: '(B) The first-graders who wrote letters the most automatically before receiving the after-school lessons in handwriting showed the greatest improvement in their composition skills over the course of the lessons.', text: 'This could weaken the argument. If the students who were *already* good at automatic handwriting showed the most improvement in composition, it might suggest that the *lessons themselves* didn\'t cause the link. It might just be that good writers are good writers.', badge: 'The Reverse Causality Trap', badgeColor: 'red' },
-      { title: '(C) Over the course of the lessons, the first-graders who showed greater improvement in their ability to write letters automatically also generally showed greater improvement in their composition skills.', text: 'This is the "dose-response" strengthener. It doesn\'t just look at the final outcomes; it looks at the *process*. It tells you that as one skill got better, the other skill got better in lockstep. This dynamic correlation makes it much more likely that the improvement in automaticity was the direct cause of the improvement in composition.', badge: 'Correct', badgeColor: 'green' },
-      { title: '(D) Before receiving the after-school lessons in handwriting, the 100 first-graders who received the lessons were representative of first-graders more generally, with respect to their skills in both handwriting and composition.', text: 'This choice is about whether the study\'s results can be generalized to *all* first-graders. This is an issue of "external validity." However, the argument is about the *internal validity* of the conclusion drawn from this specific study. We need to strengthen the link for *these* 100 students first.', badge: 'The External Validity Trap', badgeColor: 'red' },
-      { title: '(E) Among the first-graders who received the lessons in handwriting, those who started out with strong composition skills showed substantial improvement in how automatically they could write letters.', text: 'This suggests that being a good composer might actually cause you to become a more automatic writer, which is the reverse of the argument\'s conclusion. This would weaken the author\'s claim.', badge: 'The Reverse Causality Trap', badgeColor: 'red' }
+      { title: '(A) Those who practiced the most learned to write most automatically.', text: 'This links practice to automaticity but says nothing about composition — the outcome the conclusion is about.', badge: 'Irrelevant Link', badgeColor: 'red' },
+      { title: '(B) Those already automatic before lessons showed the greatest composition improvement.', text: 'This suggests pre-existing automaticity predicted composition gains, which could mean the lessons themselves were irrelevant — a confound, not support.', badge: 'Reverse Causality', badgeColor: 'red' },
+      { title: '(C) Greater improvement in automaticity corresponded to greater improvement in composition over the course of the lessons.', text: 'This is the dose-response strengthener. It tracks the process, not just the endpoint. As automaticity increased incrementally, composition increased in lockstep — directly supporting the causal mechanism.', badge: 'Correct', badgeColor: 'green' },
+      { title: '(D) The 100 students were representative of first-graders generally.', text: 'Representativeness matters for generalizing results to other populations (external validity) but does not strengthen the internal causal claim for these 100 students.', badge: 'External Validity', badgeColor: 'red' },
+      { title: '(E) Those with strong initial composition improved most in automaticity.', text: 'This points toward reverse causation — strong composers became more automatic, not the other way around.', badge: 'Reverse Causality', badgeColor: 'red' }
     ]},
-    { type: 'callout', title: 'Key Takeaway', variant: 'summary', text: 'When an argument claims that an increase in one variable causes an increase in another, a static correlation between the "highest" values is weak evidence. The strongest support comes from establishing a "dose-response" relationship. Look for an answer choice that shows the two variables move together in a continuous, step-by-step fashion. If a little more of the cause leads to a little more of the effect, and a lot more of the cause leads to a lot more of the effect, the causal claim is significantly strengthened.' }
+
+    { type: 'callout', title: 'Key Takeaway', variant: 'summary', text: 'A static correlation (the top group in X was also the top group in Y) is weak evidence for causation. The dose-response pattern upgrades it by showing that the two variables move together continuously: a little more X yields a little more Y, and a lot more X yields a lot more Y. This step-by-step co-variation is the hallmark of a genuine causal relationship and one of the strongest forms of strengthening available.' }
   ]
 };

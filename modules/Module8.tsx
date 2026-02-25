@@ -10,6 +10,7 @@ import { Lesson7_Drill_ReverseCausal } from './module8/Lesson7_Drill_ReverseCaus
 import { Lesson8_Drill_CompositionFlaw } from './module8/Lesson8_Drill_CompositionFlaw';
 import { Lesson9_Drill_ProcessOfElimination } from './module8/Lesson9_Drill_ProcessOfElimination';
 import { Lesson10_Drill_WeakenExcept } from './module8/Lesson10_Drill_WeakenExcept';
+import { Lesson11_ReferenceGuide } from './module8/Lesson11_ReferenceGuide';
 
 export const Module8: ModuleData = {
   id: 8,
@@ -27,6 +28,7 @@ export const Module8: ModuleData = {
     Lesson7_Drill_ReverseCausal,
     Lesson8_Drill_CompositionFlaw,
     Lesson9_Drill_ProcessOfElimination,
-    Lesson10_Drill_WeakenExcept
+    Lesson10_Drill_WeakenExcept,
+    Lesson11_ReferenceGuide
   ]
 };

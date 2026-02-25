@@ -11,6 +11,7 @@ import { Lesson9_Drill_Qualifiers } from './module9/Lesson9_Drill_Qualifiers';
 import { Lesson10_Drill_Analogy } from './module9/Lesson10_Drill_Analogy';
 import { Lesson11_Drill_DoseResponse } from './module9/Lesson11_Drill_DoseResponse';
 import { Lesson12_Drill_StrengthenExcept } from './module9/Lesson12_Drill_StrengthenExcept';
+import { Lesson13_ReferenceGuide } from './module9/Lesson13_ReferenceGuide';
 
 export const Module9: ModuleData = {
   id: 9,
@@ -30,6 +31,7 @@ export const Module9: ModuleData = {
     Lesson9_Drill_Qualifiers,
     Lesson10_Drill_Analogy,
     Lesson11_Drill_DoseResponse,
-    Lesson12_Drill_StrengthenExcept
+    Lesson12_Drill_StrengthenExcept,
+    Lesson13_ReferenceGuide
   ]
 };

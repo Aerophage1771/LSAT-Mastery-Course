@@ -5,6 +5,7 @@ import { Lesson3_Drill_NormativeBridge } from './module12/Lesson3_Drill_Normativ
 import { Lesson4_Drill_EfficiencyPrinciple } from './module12/Lesson4_Drill_EfficiencyPrinciple';
 import { Lesson5_Drill_AccountabilityPrinciple } from './module12/Lesson5_Drill_AccountabilityPrinciple';
 import { Lesson6_Drill_LesserOfTwoEvils } from './module12/Lesson6_Drill_LesserOfTwoEvils';
+import { Lesson7_ReferenceGuide } from './module12/Lesson7_ReferenceGuide';
 
 export const Module12: ModuleData = {
   id: 12,
@@ -19,5 +20,6 @@ export const Module12: ModuleData = {
     Lesson4_Drill_EfficiencyPrinciple,
     Lesson5_Drill_AccountabilityPrinciple,
     Lesson6_Drill_LesserOfTwoEvils,
+    Lesson7_ReferenceGuide,
   ]
 };

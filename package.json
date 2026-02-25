@@ -16,6 +16,7 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "analyze": "vite build --mode analyze",
+    "validate:questions": "node scripts/validate-questions.mjs",
     "report:gaps": "node scripts/repository-gaps.mjs"
   },
   "dependencies": {

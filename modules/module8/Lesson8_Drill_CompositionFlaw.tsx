@@ -1,26 +1,42 @@
-
 import { Lesson } from '../../types';
 
 export const Lesson8_Drill_CompositionFlaw: Lesson = {
   id: "8-8",
   title: "Attacking Averages - The Composition Flaw (PT-103-S-3-Q-24)",
   content: [
-    { type: 'paragraph', text: 'Arguments on the LSAT frequently use statistics like averages, percentages, and rates to support their conclusions. While these numbers seem objective and persuasive, they can be deeply misleading. High-difficulty questions often test your ability to look "under the hood" of a statistic and question what it truly represents. One of the most common statistical traps is the **Composition Flaw**.'},
-    { type: 'paragraph', text: 'This occurs when an argument discusses an "average" for a group but ignores the fact that the *composition* of that group has changed over time. If the mix of components changes, the average can change for reasons that have nothing to do with the author\'s conclusion. This drill will teach you to spot this flaw and weaken arguments that rely on these deceptive averages.'},
-    { type: 'hr' },
-    { type: 'h4', text: 'The Problem' },
-    { type: 'blockquote', text: '**Stimulus**\nOver the last 25 years, the average price paid for a new car has steadily increased in relation to average individual income. This increase indicates that individuals who buy new cars today spend, on average, a larger amount relative to their incomes buying a car than their counterparts did 25 years ago.' },
-    { type: 'paragraph', text: '**Question**\nWhich one of the following, if true, most weakens the argument?' },
-    { type: 'options', items: [
-      "(A) There has been a significant increase over the last 25 years in the proportion of individuals in households with more than one wage earner.",
-      "(B) The number of used cars sold annually is the same as it was 25 years ago.",
-      "(C) Allowing for inflation, average individual income has significantly declined over the last 25 years.",
-      "(D) During the last 25 years, annual new-car sales and the population have both increased, but new-car sales have increased by a greater percentage.",
-      "(E) Sales to individuals make up a smaller proportion of all new-car sales than they did 25 years ago."
+    { type: 'h3', text: 'Concept: The Composition Flaw' },
+    { type: 'paragraph', text: 'Arguments on the LSAT frequently use statistics like averages, percentages, and rates to support their conclusions. While these numbers seem objective and persuasive, they can be deeply misleading. High-difficulty questions often test your ability to look "under the hood" of a statistic and question what it truly represents.' },
+    { type: 'paragraph', text: 'The **Composition Flaw** occurs when an argument discusses an "average" for a group but ignores the fact that the *composition* of that group has changed over time. If the mix of components changes, the average can change for reasons that have nothing to do with the author\'s conclusion.' },
+
+    { type: 'callout', variant: 'tip', title: 'The Core Insight', text: 'Whenever you see the word "average" in a stimulus, immediately ask: **"Average of what group? Has that group changed?"** If the group\'s composition has shifted, the average is unreliable as evidence for a conclusion about any specific subgroup.' },
+
+    { type: 'paragraph', text: 'Here is how the Composition Flaw relates to other statistical weakening strategies:' },
+    { type: 'table', headers: ['Statistical Flaw', 'What Changes', 'Example'], rows: [
+      ['**Composition Flaw**', 'The mix of items within the averaged group', 'Average car price rises because corporate fleet purchases (expensive) grew as a share of total sales'],
+      ['**Denominator Neglect**', 'The base rate or total number being compared', '"More accidents in crosswalks" ignores that far more people cross in crosswalks'],
+      ['**Part-to-Whole**', 'The scope — evidence about a part is applied to the whole', 'Bear population in one preserve grew, but the valley-wide population didn\'t'],
     ]},
-    { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
-    { type: 'h3', text: 'Analysis & Explanation' },
+
+    { type: 'h3', text: 'Practice: Spot the Composition Flaw' },
+    {
+      type: 'question-card',
+      id: '8-8-practice',
+      questionType: 'Weaken',
+      difficulty: 'hard',
+      stimulus: 'Over the last 25 years, the average price paid for a new car has steadily increased in relation to average individual income. This increase indicates that individuals who buy new cars today spend, on average, a larger amount relative to their incomes buying a car than their counterparts did 25 years ago.',
+      question: 'Which one of the following, if true, most weakens the argument?',
+      options: [
+        '(A) There has been a significant increase over the last 25 years in the proportion of individuals in households with more than one wage earner.',
+        '(B) The number of used cars sold annually is the same as it was 25 years ago.',
+        '(C) Allowing for inflation, average individual income has significantly declined over the last 25 years.',
+        '(D) During the last 25 years, annual new-car sales and the population have both increased, but new-car sales have increased by a greater percentage.',
+        '(E) Sales to individuals make up a smaller proportion of all new-car sales than they did 25 years ago. (Correct)'
+      ]
+    },
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Full Analysis' },
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
     { type: 'paragraph', text: 'Let\'s engage with the text sentence by sentence to see how the author builds their statistical case.' },
     { type: 'breakdown', labels: { title: 'Quote', text: 'Analysis'}, items: [
@@ -43,12 +59,22 @@ export const Lesson8_Drill_CompositionFlaw: Lesson = {
         { title: '(E) Sales to individuals make up a smaller proportion of all new-car sales than they did 25 years ago.', text: '**[The Correct Choice - Composition Flaw]**\nThis is the perfect weakener. It shows that the composition of the group used to calculate the "average price" has changed. If individuals are now a smaller slice of the pie, it means that non-individual buyers (like corporations and governments) are a larger slice. If these non-individual buyers purchase more expensive vehicles on average, their increased presence in the market would drive up the *overall average price*, even if the prices paid by *individuals* have not changed at all. This breaks the link between the evidence and the conclusion.', badge: 'Correct', badgeColor: 'green'}
     ]},
     { type: 'hr' },
+
+    { type: 'h3', text: 'Visualizing the Composition Flaw' },
+    { type: 'paragraph', text: 'If you\'re struggling with this concept, concrete numbers make it crystal clear:' },
+    { type: 'table', headers: ['Time Period', 'Individual Sales', 'Corporate Sales', 'Overall Average Price'], rows: [
+      ['**25 years ago**', '90 sales × $20k avg = $1.8M', '10 sales × $50k avg = $0.5M', '$23,000'],
+      ['**Today**', '50 sales × $20k avg = $1.0M', '50 sales × $50k avg = $2.5M', '$35,000'],
+    ]},
+    { type: 'paragraph', text: 'The overall average skyrocketed from $23k to $35k, but the price for individual buyers remained exactly the same at $20k. The entire increase is explained by the changing composition of the buyer pool.' },
+    { type: 'hr' },
+
     { type: 'h3', text: 'Key Takeaway' },
     { type: 'paragraph', text: 'When an LSAT argument uses an "average" to make a point, be a critical consumer of that statistic. Averages can hide more than they reveal.'},
     { type: 'list', ordered: true, items: [
         '**Always Ask: "Average of What?":** The moment you see the word "average," your first question should be, "What is the group being averaged?" In this case, the premise averages *all* new car sales, while the conclusion is only about *individual* sales. This mismatch is the flaw.',
         '**Look for a Changing Mix (The Composition Flaw):** The most effective way to attack a flawed average is to show that the composition of the group has changed over time. If a group is now composed of more of its "expensive" members, the average will go up, but this tells you nothing about the "cheaper" members.',
-        '**Translate Statistics into Concrete Scenarios:** If you\'re struggling, make up numbers.\n*   **Past:** 90 individual sales ($20k) + 10 corporate sales ($50k) = Average of $23k.\n*   **Present:** 50 individual sales ($20k) + 50 corporate sales ($50k) = Average of $35k.\n*   The overall average has skyrocketed, but the price for individuals has remained exactly the same. This proves the author\'s logic is flawed.'
+        '**Translate Statistics into Concrete Scenarios:** When in doubt, make up simple numbers as shown above. If you can construct a scenario where the evidence is true but the conclusion is false, you\'ve found the flaw — and the correct weakener will match that scenario.'
     ]}
   ]
 };

@@ -5,6 +5,7 @@ import { LessonViewer } from './components/LessonViewer';
 import { Dashboard } from './components/Dashboard';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { SearchDialog } from './components/SearchDialog';
+import { QuestionBank } from './components/QuestionBank';
 import { ProgressProvider, useProgressContext } from './contexts/ProgressContext';
 import { moduleRegistry, loadModule, getAllModuleMetadata } from './modules/registry';
 import type { ModuleData } from './types';
@@ -194,6 +195,7 @@ function AppRoutes() {
       />
       <Routes>
         <Route path="/" element={<DashboardPage />} />
+        <Route path="/question-bank" element={<QuestionBank />} />
         <Route path="/module/:moduleId" element={<ModulePage />} />
         <Route path="/module/:moduleId/lesson/:lessonId" element={<ModulePage />} />
       </Routes>
