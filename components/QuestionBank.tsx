@@ -25,8 +25,10 @@ import { Lesson19_Module19_Questions } from '../modules/module48/Lesson19_Module
 import { Lesson20_Module20_Questions } from '../modules/module48/Lesson20_Module20_Questions';
 import { Lesson21_Module55_Questions } from '../modules/module48/Lesson21_Module55_Questions';
 import { Lesson22_Module59_Questions } from '../modules/module48/Lesson22_Module59_Questions';
+import { Lesson1_QuestionRepository } from '../modules/module49/Lesson1_QuestionRepository';
+import { Lesson1_AdvancedRCQuestionRepository } from '../modules/module53/Lesson1_AdvancedRCQuestionRepository';
 
-const ALL_LESSONS = [
+const LR_LESSONS = [
   Lesson1_Module1_Questions,
   Lesson2_Module2_Questions,
   Lesson3_Module3_Questions,
@@ -51,13 +53,20 @@ const ALL_LESSONS = [
   Lesson22_Module59_Questions,
 ];
 
+const RC_LESSONS = [
+  Lesson1_QuestionRepository,
+  Lesson1_AdvancedRCQuestionRepository,
+];
+
 interface ParsedQuestion {
   id: string;
   ptId: string;
   typeName: string;
+  category: 'LR' | 'RC';
   stimulus: string;
   question: string;
   options: string[];
+  passageTitle?: string;
 }
 
 const sanitize = (html: string) => DOMPurify.sanitize(html);
@@ -81,11 +90,10 @@ function extractPtId(accordionTitle: string): string {
   return match ? match[1] : accordionTitle;
 }
 
-function extractQuestions(): ParsedQuestion[] {
+function extractLRQuestions(counter: { value: number }): ParsedQuestion[] {
   const questions: ParsedQuestion[] = [];
-  let counter = 0;
 
-  for (const lesson of ALL_LESSONS) {
+  for (const lesson of LR_LESSONS) {
     const typeName = lesson.title.replace(/^Module\s+\d+:\s*/, '');
     const blocks = lesson.content;
     if (typeof blocks === 'string') continue;
@@ -126,11 +134,12 @@ function extractQuestions(): ParsedQuestion[] {
       }
 
       if (stimulus || question) {
-        counter++;
+        counter.value++;
         questions.push({
-          id: `qb-${counter}`,
+          id: `qb-${counter.value}`,
           ptId,
           typeName,
+          category: 'LR',
           stimulus,
           question,
           options,
@@ -142,7 +151,76 @@ function extractQuestions(): ParsedQuestion[] {
   return questions;
 }
 
-const ALL_QUESTIONS = extractQuestions();
+function extractRCQuestions(counter: { value: number }): ParsedQuestion[] {
+  const questions: ParsedQuestion[] = [];
+
+  for (const lesson of RC_LESSONS) {
+    const blocks = lesson.content;
+    if (typeof blocks === 'string') continue;
+
+    let currentPassageTitle = '';
+    let currentPassageText = '';
+
+    for (const block of blocks) {
+      if (block.type !== 'accordion') continue;
+      const accordion = block as { type: 'accordion'; title: string; content: string | ContentBlock[] };
+
+      if (accordion.title.startsWith('Passage:')) {
+        currentPassageTitle = accordion.title.replace(/^Passage:\s*/, '');
+        currentPassageText = typeof accordion.content === 'string' ? accordion.content : '';
+        continue;
+      }
+
+      const questionMatch = accordion.title.match(/^Question\s+\d+:\s*(.+)$/);
+      if (!questionMatch) continue;
+      if (typeof accordion.content === 'string') continue;
+
+      const typeName = questionMatch[1].trim();
+      const ptId = extractPtId(currentPassageTitle) || currentPassageTitle;
+
+      let questionText = '';
+      let options: string[] = [];
+
+      for (const inner of accordion.content) {
+        if (inner.type === 'blockquote' && !questionText) {
+          questionText = (inner as { type: 'blockquote'; text: string }).text;
+          questionText = questionText.replace(/^\*\*Question:\*\*\s*/, '');
+        } else if (inner.type === 'options') {
+          options = (inner as { type: 'options'; items: string[] }).items;
+        }
+      }
+
+      if (questionText || options.length > 0) {
+        const passageSnippet = currentPassageText.length > 300
+          ? currentPassageText.slice(0, 300) + '…'
+          : currentPassageText;
+
+        counter.value++;
+        questions.push({
+          id: `qb-${counter.value}`,
+          ptId,
+          typeName,
+          category: 'RC',
+          stimulus: passageSnippet,
+          question: questionText,
+          options,
+          passageTitle: currentPassageTitle.replace(/\s*\([^)]*\)\s*$/, ''),
+        });
+      }
+    }
+  }
+
+  return questions;
+}
+
+function extractAllQuestions(): ParsedQuestion[] {
+  const counter = { value: 0 };
+  const lr = extractLRQuestions(counter);
+  const rc = extractRCQuestions(counter);
+  return [...lr, ...rc];
+}
+
+const ALL_QUESTIONS = extractAllQuestions();
 
 const OptionItem: React.FC<{
   item: string;
@@ -233,10 +311,19 @@ const QuestionCardItem: React.FC<{
               <Hash size={10} />
               {q.ptId}
             </span>
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 text-[11px] font-semibold">
+            <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-semibold ${
+              q.category === 'RC'
+                ? 'bg-emerald-50 text-emerald-700'
+                : 'bg-slate-100 text-slate-600'
+            }`}>
               <BookOpen size={10} />
               {q.typeName}
             </span>
+            {q.category === 'RC' && (
+              <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-50 text-amber-700 text-[11px] font-semibold">
+                RC
+              </span>
+            )}
           </div>
           {!isExpanded && (
             <p className="text-[14px] text-slate-500 leading-relaxed line-clamp-2">
@@ -251,9 +338,16 @@ const QuestionCardItem: React.FC<{
 
       {isExpanded && (
         <div className="border-t border-slate-100">
+          {q.passageTitle && (
+            <div className="px-5 py-2.5 bg-amber-50/50 border-b border-amber-100">
+              <span className="text-[11px] font-semibold text-amber-700">
+                Passage: {q.passageTitle}
+              </span>
+            </div>
+          )}
           <div className="px-5 py-4 bg-slate-50/50 border-b border-slate-100">
             <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">
-              Stimulus
+              {q.category === 'RC' ? 'Passage Excerpt' : 'Stimulus'}
             </div>
             <div
               className="text-[15px] text-slate-700 leading-relaxed"
@@ -296,24 +390,48 @@ const QuestionCardItem: React.FC<{
 export const QuestionBank: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<'LR' | 'RC' | null>(null);
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const typeCountMap = useMemo(() => {
+  const lrTypeCountMap = useMemo(() => {
     const map = new Map<string, number>();
     for (const q of ALL_QUESTIONS) {
-      map.set(q.typeName, (map.get(q.typeName) ?? 0) + 1);
+      if (q.category === 'LR') {
+        map.set(q.typeName, (map.get(q.typeName) ?? 0) + 1);
+      }
     }
     return map;
   }, []);
 
-  const sortedTypes = useMemo(
-    () => Array.from(typeCountMap.entries()).sort((a, b) => a[0].localeCompare(b[0])),
-    [typeCountMap],
+  const rcTypeCountMap = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const q of ALL_QUESTIONS) {
+      if (q.category === 'RC') {
+        map.set(q.typeName, (map.get(q.typeName) ?? 0) + 1);
+      }
+    }
+    return map;
+  }, []);
+
+  const totalTypeCount = lrTypeCountMap.size + rcTypeCountMap.size;
+
+  const sortedLRTypes = useMemo(
+    () => Array.from(lrTypeCountMap.entries()).sort((a, b) => a[0].localeCompare(b[0])),
+    [lrTypeCountMap],
+  );
+
+  const sortedRCTypes = useMemo(
+    () => Array.from(rcTypeCountMap.entries()).sort((a, b) => a[0].localeCompare(b[0])),
+    [rcTypeCountMap],
   );
 
   const filteredQuestions = useMemo(() => {
     let result = ALL_QUESTIONS;
+
+    if (selectedCategory) {
+      result = result.filter((q) => q.category === selectedCategory);
+    }
 
     if (selectedType) {
       result = result.filter((q) => q.typeName === selectedType);
@@ -326,12 +444,13 @@ export const QuestionBank: React.FC = () => {
           q.stimulus.toLowerCase().includes(lower) ||
           q.question.toLowerCase().includes(lower) ||
           q.ptId.toLowerCase().includes(lower) ||
-          q.typeName.toLowerCase().includes(lower),
+          q.typeName.toLowerCase().includes(lower) ||
+          (q.passageTitle?.toLowerCase().includes(lower) ?? false),
       );
     }
 
     return result;
-  }, [selectedType, searchQuery]);
+  }, [selectedType, selectedCategory, searchQuery]);
 
   const handleToggle = (id: string) => {
     setExpandedId((prev) => (prev === id ? null : id));
@@ -366,7 +485,7 @@ export const QuestionBank: React.FC = () => {
             </button>
           </div>
           <p className="text-[12px] text-slate-400">
-            {ALL_QUESTIONS.length} questions across {typeCountMap.size} types
+            {ALL_QUESTIONS.length} questions across {totalTypeCount} types
           </p>
         </div>
 
@@ -374,38 +493,69 @@ export const QuestionBank: React.FC = () => {
           <button
             onClick={() => {
               setSelectedType(null);
+              setSelectedCategory(null);
               setSidebarOpen(false);
             }}
             className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
-              selectedType === null
+              selectedType === null && selectedCategory === null
                 ? 'bg-indigo-50 text-indigo-700 font-semibold border-r-2 border-indigo-500'
                 : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
             }`}
           >
             <span>All Questions</span>
             <span
-              className={`text-[11px] font-mono ${selectedType === null ? 'text-indigo-500' : 'text-slate-400'}`}
+              className={`text-[11px] font-mono ${selectedType === null && selectedCategory === null ? 'text-indigo-500' : 'text-slate-400'}`}
             >
               {ALL_QUESTIONS.length}
             </span>
           </button>
 
-          {sortedTypes.map(([name, count]) => (
+          <div className="px-5 pt-4 pb-1">
+            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">LR Questions</span>
+          </div>
+          {sortedLRTypes.map(([name, count]) => (
             <button
-              key={name}
+              key={`lr-${name}`}
               onClick={() => {
                 setSelectedType(name);
+                setSelectedCategory('LR');
                 setSidebarOpen(false);
               }}
               className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
-                selectedType === name
+                selectedType === name && selectedCategory === 'LR'
                   ? 'bg-indigo-50 text-indigo-700 font-semibold border-r-2 border-indigo-500'
                   : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
               }`}
             >
               <span className="truncate pr-2">{name}</span>
               <span
-                className={`text-[11px] font-mono flex-shrink-0 ${selectedType === name ? 'text-indigo-500' : 'text-slate-400'}`}
+                className={`text-[11px] font-mono flex-shrink-0 ${selectedType === name && selectedCategory === 'LR' ? 'text-indigo-500' : 'text-slate-400'}`}
+              >
+                {count}
+              </span>
+            </button>
+          ))}
+
+          <div className="px-5 pt-4 pb-1">
+            <span className="text-[10px] font-bold text-emerald-500 uppercase tracking-widest">RC Questions</span>
+          </div>
+          {sortedRCTypes.map(([name, count]) => (
+            <button
+              key={`rc-${name}`}
+              onClick={() => {
+                setSelectedType(name);
+                setSelectedCategory('RC');
+                setSidebarOpen(false);
+              }}
+              className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
+                selectedType === name && selectedCategory === 'RC'
+                  ? 'bg-emerald-50 text-emerald-700 font-semibold border-r-2 border-emerald-500'
+                  : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+              }`}
+            >
+              <span className="truncate pr-2">{name}</span>
+              <span
+                className={`text-[11px] font-mono flex-shrink-0 ${selectedType === name && selectedCategory === 'RC' ? 'text-emerald-500' : 'text-slate-400'}`}
               >
                 {count}
               </span>
@@ -457,12 +607,21 @@ export const QuestionBank: React.FC = () => {
             {filteredQuestions.length === ALL_QUESTIONS.length
               ? `${ALL_QUESTIONS.length} practice questions`
               : `${filteredQuestions.length} of ${ALL_QUESTIONS.length} questions`}
-            {selectedType && (
+            {(selectedType || selectedCategory) && (
               <span className="ml-2 inline-flex items-center gap-1">
                 <span className="text-slate-300">·</span>
-                <span className="text-indigo-600 font-medium">{selectedType}</span>
+                {selectedCategory && (
+                  <span className={`font-medium ${selectedCategory === 'RC' ? 'text-emerald-600' : 'text-indigo-600'}`}>
+                    {selectedCategory}
+                  </span>
+                )}
+                {selectedType && (
+                  <span className={`font-medium ${selectedCategory === 'RC' ? 'text-emerald-600' : 'text-indigo-600'}`}>
+                    {selectedCategory ? ' · ' : ''}{selectedType}
+                  </span>
+                )}
                 <button
-                  onClick={() => setSelectedType(null)}
+                  onClick={() => { setSelectedType(null); setSelectedCategory(null); }}
                   className="ml-1 text-slate-400 hover:text-slate-600"
                 >
                   <X size={12} />
