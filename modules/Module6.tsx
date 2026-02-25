@@ -8,6 +8,7 @@ import { Lesson6_Advanced_DeconstructingHighDifficulty } from './module6/Lesson6
 import { Lesson7_Drill_DoubleFlaw } from './module6/Lesson7_Drill_DoubleFlaw';
 import { Lesson8_Drill_NetEffectFlaw } from './module6/Lesson8_Drill_NetEffectFlaw';
 import { Lesson9_Drill_OverlapFlaw } from './module6/Lesson9_Drill_OverlapFlaw';
+import { Lesson10_ReferenceGuide } from './module6/Lesson10_ReferenceGuide';
 
 export const Module6: ModuleData = {
   id: 6,
@@ -24,6 +25,7 @@ export const Module6: ModuleData = {
     Lesson6_Advanced_DeconstructingHighDifficulty,
     Lesson7_Drill_DoubleFlaw,
     Lesson8_Drill_NetEffectFlaw,
-    Lesson9_Drill_OverlapFlaw
+    Lesson9_Drill_OverlapFlaw,
+    Lesson10_ReferenceGuide
   ]
 };
