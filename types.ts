@@ -16,14 +16,42 @@ export type ContentBlock =
   | { type: 'table'; headers: string[]; rows: string[][] }
   | { 
       type: 'breakdown'; 
-      labels?: { title?: string; text?: string }; // Custom headers for columns/sections
-      colWidth?: 'equal' | 'narrow'; // 'narrow' sets the first column to roughly 25-30%
+      labels?: { title?: string; text?: string };
+      colWidth?: 'equal' | 'narrow';
       items: { 
         title: string; 
         text: string; 
         badge?: string; 
         badgeColor?: 'green' | 'red' | 'indigo' | 'slate' | 'blue';
       }[] 
+    }
+  | {
+      type: 'question-card';
+      id?: string;
+      questionType?: string;
+      stimulus: string;
+      question: string;
+      options: string[];
+      difficulty?: 'easy' | 'medium' | 'hard';
+    }
+  | {
+      type: 'passage-card';
+      id?: string;
+      title: string;
+      genre?: string;
+      passage: string;
+      paragraphCount?: number;
+      wordCount?: number;
+    }
+  | {
+      type: 'question-passage-card';
+      id?: string;
+      questionType?: string;
+      passageTitle: string;
+      passage: string;
+      question: string;
+      options: string[];
+      difficulty?: 'easy' | 'medium' | 'hard';
     };
 
 export interface Lesson {

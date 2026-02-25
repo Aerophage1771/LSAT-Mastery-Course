@@ -5,6 +5,9 @@ import { ContentBlock, Lesson } from '../types';
 import { Lightbulb, Info, CheckCircle2, XCircle, Copy, Check, ChevronDown, ChevronUp } from 'lucide-react';
 import { ExportControls } from './ExportControls';
 import { generateLessonText, generateLessonRTF, generateLessonJSON, generateLessonCSV, generateLessonPDF } from '../utils/export';
+import { QuestionCard } from './cards/QuestionCard';
+import { PassageCard } from './cards/PassageCard';
+import { QuestionPassageCard } from './cards/QuestionPassageCard';
 
 interface LessonViewerProps {
   title: string;
@@ -328,6 +331,12 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
               })}
             </div>
           );
+        case 'question-card':
+          return <QuestionCard key={index} id={block.id} questionType={block.questionType} stimulus={block.stimulus} question={block.question} options={block.options} difficulty={block.difficulty} />;
+        case 'passage-card':
+          return <PassageCard key={index} id={block.id} title={block.title} genre={block.genre} passage={block.passage} paragraphCount={block.paragraphCount} wordCount={block.wordCount} />;
+        case 'question-passage-card':
+          return <QuestionPassageCard key={index} id={block.id} questionType={block.questionType} passageTitle={block.passageTitle} passage={block.passage} question={block.question} options={block.options} difficulty={block.difficulty} />;
         default: return null;
       }
     });
