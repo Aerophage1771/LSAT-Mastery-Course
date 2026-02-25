@@ -5,52 +5,139 @@ export const Lesson9_Advanced_ConditionalChains: Lesson = {
   title: "Advanced: Conditional Chains",
   content: [
     { type: 'h2', text: 'Advanced Lesson 1: Advanced Conditional Chains (Parallel Reasoning)' },
-    { type: 'h3', text: 'Concept Focus: Chains with "And" / "Or"' },
-    { type: 'paragraph', text: 'Advanced Parallel Reasoning questions often move beyond simple `A → B → C` chains. They test your ability to navigate more complex logical structures that combine different operators, most commonly **"AND"** (a conjunction) and **"OR"** (a disjunction). These arguments require a higher level of precision in your diagramming and blueprinting. The core task remains the same, but the blueprint itself becomes more detailed and sophisticated.' },
+    { type: 'paragraph', text: "Advanced Parallel Reasoning questions often move beyond simple `A → B → C` chains. They test your ability to navigate more complex logical structures that combine different operators — **AND** (conjunction), **OR** (disjunction), **UNLESS**, **UNTIL**, and **nested conditionals** (if-then statements within if-then statements). The core task remains the same: abstract the structure and find its twin. But the blueprint itself becomes substantially more detailed." },
+
+    { type: 'callout', variant: 'tip', title: 'Why This Matters', text: "Conditional chain questions are among the most **precisely testable** Parallel Reasoning patterns. Because every operator (AND, OR, IF-THEN) has an exact logical meaning, there is never ambiguity about whether a match is correct. This makes them predictable — if you can diagram accurately, you will get the right answer every time." },
+
     { type: 'hr' },
-    { type: 'h3', text: 'Worked Example' },
-    { type: 'blockquote', text: '**Stimulus**' },
-    { type: 'paragraph', text: 'To get the free dessert, one must order an entree and a salad. But anyone who orders either an entree or a salad can receive a free soft drink. Thus, anyone who is not eligible for a free soft drink is not eligible for a free dessert.' },
-    { type: 'blockquote', text: '**Question**' },
-    { type: 'paragraph', text: 'The reasoning in the argument above is most similar to the reasoning in which one of the following arguments?' },
-    { type: 'options', items: [
-      '(A) To get an executive position at Teltech, one needs a university diploma and sales experience. But anyone who has worked at Teltech for more than six months who does not have sales experience has a university diploma. Thus, one cannot get an executive position at Teltech unless one has worked there for six months.',
-      '(B) To be elected class president, one must be well liked and well known. Anyone who is well liked or well known has something better to do than run for class president. Therefore, no one who has something better to do will be elected class president.',
-      '(C) To grow good azaleas, one needs soil that is both rich in humus and low in acidity. Anyone who has soil that is rich in humus or low in acidity can grow blueberries. So, anyone who cannot grow blueberries cannot grow good azaleas.',
-      '(D) To drive to Weller, one must take the highway or take Old Mill Road. Anyone who drives to Weller on the highway will miss the beautiful scenery. Thus, one cannot see the beautiful scenery without taking Old Mill Road to Weller.',
-      '(E) To get a discount on ice cream, one must buy frozen raspberries and ice cream together. Anyone who buys ice cream or raspberries will get a coupon for a later purchase. So, anyone who does not get the discount on ice cream will not get a coupon for a later purchase.'
+
+    { type: 'h2', text: 'Advanced Conditional Structures' },
+    { type: 'paragraph', text: "Before tackling worked examples, let's catalog the advanced conditional structures you'll encounter on the LSAT:" },
+
+    { type: 'h3', text: '1. Nested Conditionals (If-Then Within If-Then)' },
+    { type: 'paragraph', text: "A nested conditional places one conditional statement inside another. The outer conditional sets a framework; the inner conditional operates within that framework." },
+    { type: 'table', headers: ['Natural Language', 'Diagram', 'Example'], rows: [
+      ['"If A, then if B, then C"', 'A → (B → C)', '"If you enroll in the program, then if you complete the coursework, you will receive a certificate."'],
+      ['"If A and B, then C"', '(A ∧ B) → C', '"If you have both a degree and three years of experience, you qualify for the position."'],
+      ['"If A, then B and C"', 'A → (B ∧ C)', '"If the proposal is approved, both the timeline and the budget will be updated."'],
     ]},
-    { type: 'h4', text: 'Step 1: Create the Reasoning Skeleton' },
-    { type: 'paragraph', text: 'This argument is dense with conditional logic. Let\'s diagram it precisely.' },
-    { type: 'list', items: [
-      'Let **FD** = Get Free Dessert',
-      'Let **E** = Order an Entree',
-      'Let **S** = Order a Salad',
-      'Let **FSD** = Receive a Free Soft Drink'
+
+    { type: 'h3', text: '2. Biconditionals (If and Only If)' },
+    { type: 'paragraph', text: "A biconditional asserts that two conditions are **mutually necessary**: each one requires the other. This is stronger than a one-way conditional." },
+    { type: 'table', headers: ['Natural Language', 'Diagram', 'Key Feature'], rows: [
+      ['"A if and only if B"', 'A ↔ B (i.e., A → B AND B → A)', 'Both directions are valid — you can infer A from B and B from A'],
+      ['"A is necessary and sufficient for B"', 'A ↔ B', '"Necessary and sufficient" is the classic LSAT phrasing for a biconditional'],
+      ['"A precisely when B"', 'A ↔ B', 'Less common phrasing, but logically identical'],
     ]},
-    { type: 'paragraph', text: 'The argument maps as follows:' },
-    { type: 'list', items: [
-      '**Premise 1:** `FD → E and S`',
-      '**Premise 2:** `E or S → FSD`',
-      'These two premises link to form a longer chain: `FD → (E and S) → (E or S) → FSD`, which simplifies to `FD → FSD`.',
-      '**Conclusion:** The conclusion, "anyone who is not eligible for a free soft drink is not eligible for a free dessert," is the **contrapositive** of this derived chain: `~FSD → ~FD`.'
+
+    { type: 'callout', variant: 'default', title: 'Biconditional vs. One-Way Conditional', text: "\"If A then B\" (A → B) only goes one way: A guarantees B, but B does not guarantee A.\n\n\"A if and only if B\" (A ↔ B) goes both ways: A guarantees B, AND B guarantees A.\n\nThis distinction is critical for matching. A stimulus with a biconditional cannot parallel an answer with a one-way conditional, even if every other feature matches perfectly." },
+
+    { type: 'h3', text: '3. \"Unless\" and \"Until\" Translations' },
+    { type: 'paragraph', text: "\"Unless\" and \"until\" introduce negative conditions that many students find confusing. They have standard logical translations:" },
+    { type: 'table', headers: ['Phrase', 'Translation', 'Diagram', 'Example'], rows: [
+      ['"A unless B"', '"If not B, then A"', '~B → A', '"The concert will be outdoors unless it rains." = "If it doesn\'t rain, the concert will be outdoors."'],
+      ['"Not A unless B"', '"If A, then B"', 'A → B', '"You cannot enter unless you have a ticket." = "If you enter, you have a ticket."'],
+      ['"A until B"', '"If not yet B, then A continues"', '~B → A', '"The store remains open until 9 PM." = "If it\'s not yet 9 PM, the store is open."'],
     ]},
-    { type: 'paragraph', text: '**Blueprint:** A **valid** argument where:\n*   Premise 1 has the form: `A → (B and C)`\n*   Premise 2 has the form: `(B or C) → D`\n*   The conclusion is the **contrapositive** of the derived chain: `~D → ~A`' },
-    { type: 'h4', text: 'Step 2: Evaluate the Answer Choices' },
-    { type: 'paragraph', text: 'We are looking for an answer choice that perfectly replicates this structure.' },
-    { type: 'breakdown', labels: { title: 'Option', text: 'Evaluation'}, items: [
-      { title: '(A)', text: '**Analysis:** The second premise has the structure `(Worked > 6 mo. AND Not Sales Exp.) → Diploma`. This does not match the `(B or C) → D` structure from our blueprint. The argument introduces several new conditions that do not create the clean chain seen in the stimulus.\n**Verdict: Incorrect.** (Structural Mismatch)' },
-      { title: '(B)', text: '**Analysis:** Let\'s diagram this. `Elected → (Liked AND Known)`. `(Liked OR Known) → Something Better`. This creates the chain `Elected → Something Better`. The conclusion is `Something Better → Not Elected`. This is a **Mistaken Reversal** of the derived chain. The stimulus argument is valid, while this one is flawed.\n**Verdict: Incorrect.** (Validity Mismatch)' },
-      { title: '(C)', text: '**Analysis:** Let\'s check this against our blueprint.\n*   **A:** Grow good azaleas. **B:** Rich humus. **C:** Low acidity. **D:** Grow blueberries.\n*   Premise 1: `A → (B and C)`. Check.\n*   Premise 2: `(B or C) → D`. Check.\n*   Conclusion: "cannot grow blueberries (~D) cannot grow good azaleas (~A)." `~D → ~A`. Check.\nThis is a perfect structural match.\n**Verdict: Correct.**' },
-      { title: '(D)', text: '**Analysis:** The first premise is `Drive to Weller → (Highway OR Old Mill Road)`. The necessary condition is an "OR" statement. Our blueprint requires an "AND" statement in the first premise.\n**Verdict: Incorrect.** (Structural Mismatch)' },
-      { title: '(E)', text: '**Analysis:** Let\'s diagram this. `Discount → (Raspberries AND Ice Cream)`. `(Ice Cream OR Raspberries) → Coupon`. This creates the chain `Discount → Coupon`. The conclusion is `Not Discount → Not Coupon`. This is a **Mistaken Negation** of the derived chain. The stimulus is valid, while this one is flawed.\n**Verdict: Incorrect.** (Validity Mismatch)' }
-    ]},
+
+    { type: 'callout', variant: 'tip', title: 'The \"Unless\" Shortcut', text: "For \"unless\" statements, use this reliable shortcut:\n1. The term after \"unless\" becomes the **sufficient condition** (negate it).\n2. The other term is the **necessary condition**.\n\n\"The game will be canceled unless attendance reaches 500.\"\n→ Sufficient: NOT 500 attendance. Necessary: Game canceled.\n→ Diagram: ~500 → Canceled." },
+
     { type: 'hr' },
-    { type: 'h3', text: 'Key Takeaways' },
+
+    { type: 'h2', text: 'How to Diagram Complex Conditionals' },
+    { type: 'paragraph', text: "Accurate diagramming is the foundation of solving advanced conditional chain questions. Follow this systematic approach:" },
+
+    { type: 'process', title: 'The Diagramming Method', steps: [
+      '**Assign variables.** Give each condition a short label (e.g., FD = Free Dessert, E = Entree, S = Salad). Write these in the margin.',
+      '**Identify logical connectors.** Circle every AND, OR, IF-THEN, UNLESS, and NOT in the stimulus. These are the structural bones.',
+      '**Translate each sentence.** Convert each sentence into symbolic form: arrows for conditionals, ∧ for AND, ∨ for OR, ~ for NOT.',
+      '**Link the chain.** Connect the individual diagrams where they share variables. The output of one premise should be the input of another.',
+      '**Derive the conclusion.** Follow the chain to see what conclusion it produces. Check whether the stimulus\'s stated conclusion matches (valid) or deviates (flawed).',
+      '**Write the contrapositive.** If the conclusion is a contrapositive of the derived chain, note this explicitly — many hard questions hinge on contrapositives.',
+    ]},
+
+    { type: 'paragraph', text: "Let's see this method in action with a concrete example:" },
+
+    { type: 'h3', text: 'Diagramming Walkthrough' },
+    { type: 'blockquote', text: '"To get the free dessert, one must order an entree and a salad. But anyone who orders either an entree or a salad can receive a free soft drink. Thus, anyone who is not eligible for a free soft drink is not eligible for a free dessert."' },
+
+    { type: 'paragraph', text: "**Step 1 — Variables:** FD = Free Dessert, E = Entree, S = Salad, FSD = Free Soft Drink" },
+    { type: 'paragraph', text: "**Step 2–3 — Translate:**" },
     { type: 'list', items: [
-      'For complex conditional arguments, **precise diagramming is essential**.',
-      'Pay close attention to logical operators like **AND** and **OR**. They are not interchangeable and are a common way the test-makers create tempting but incorrect answer choices.',
-      'Be ready to link premises to form a longer chain of reasoning and then evaluate the conclusion based on that derived chain (e.g., by checking for a valid contrapositive, as in this case).'
-    ]}
+      'Premise 1: FD → (E **AND** S)',
+      'Premise 2: (E **OR** S) → FSD',
+    ]},
+    { type: 'paragraph', text: "**Step 4 — Link the chain:** Notice that (E AND S) logically guarantees (E OR S) — if you have both, you certainly have at least one. So:" },
+    { type: 'code', text: 'FD → (E AND S) → (E OR S) → FSD\nSimplified: FD → FSD' },
+    { type: 'paragraph', text: "**Step 5–6 — Derive and check the conclusion:** The stimulus concludes ~FSD → ~FD. This is the **contrapositive** of FD → FSD. Valid." },
+    { type: 'paragraph', text: "**Blueprint:** A → (B AND C). (B OR C) → D. Conclusion: ~D → ~A (contrapositive of derived chain)." },
+
+    { type: 'hr' },
+
+    { type: 'h2', text: 'Practice Question' },
+
+    { type: 'question-card',
+      id: 'PR-4-9-001',
+      questionType: 'Parallel Reasoning',
+      difficulty: 'hard',
+      stimulus: "To qualify for the scholarship, a student must have both a high GPA and community service hours. Any student who has either a high GPA or community service hours is eligible for the honor roll. Therefore, any student who is not eligible for the honor roll does not qualify for the scholarship.",
+      question: "The reasoning in the argument above is most similar to the reasoning in which one of the following arguments?",
+      options: [
+        "(A) To be promoted, an employee must complete both a training program and a performance review. Any employee who completes either the training program or the performance review receives a bonus. Therefore, any employee who does not receive a bonus does not get promoted. (Correct)",
+        "(B) To win the award, a project must be both innovative and cost-effective. Any project that is innovative receives public recognition. Therefore, any project that does not receive public recognition is not cost-effective.",
+        "(C) To enter the competition, an athlete must have both a qualifying time and a coach's recommendation. Any athlete who has a qualifying time and a coach's recommendation enters the competition. Therefore, any athlete who does not enter the competition lacks a qualifying time.",
+        "(D) To graduate with honors, a student must complete both a thesis and an oral exam. Any student who completes a thesis is eligible for departmental recognition. Therefore, any student who does not graduate with honors is not eligible for departmental recognition.",
+        "(E) To receive the grant, a researcher must submit both a proposal and a budget. Any researcher who submits either a proposal or a budget is considered an applicant. Therefore, any researcher who is considered an applicant is eligible for the grant.",
+      ],
+    },
+
+    { type: 'h3', text: 'Step-by-Step Solution' },
+
+    { type: 'process', title: 'Solving with the Diagramming Method', steps: [
+      '**Step 1 — Diagram the stimulus:**\n• Scholarship → (High GPA AND Community Service)\n• (High GPA OR Community Service) → Honor Roll\n• Chain: Scholarship → (GPA AND CS) → (GPA OR CS) → Honor Roll\n• Conclusion: ~Honor Roll → ~Scholarship (contrapositive). Valid.',
+      '**Step 2 — Abstract the blueprint:**\nA → (B AND C). (B OR C) → D. Conclusion: ~D → ~A.',
+      '**Step 3 — Quick scan of conclusions:**\n• (A): \"does not receive a bonus → does not get promoted.\" ~D → ~A form. ✓\n• (B): \"does not receive recognition → not cost-effective.\" Concludes about a single property, not the original trigger. Suspicious.\n• (C): \"does not enter → lacks qualifying time.\" Concludes about a single premise element.\n• (D): \"does not graduate with honors → not eligible for recognition.\" ~A → ~D, which is the reverse direction.\n• (E): \"is an applicant → eligible for grant.\" D → A — a Mistaken Reversal.',
+      '**Step 4 — Verify (A):**\n• Promoted → (Training AND Review). ✓ Matches A → (B AND C).\n• (Training OR Review) → Bonus. ✓ Matches (B OR C) → D.\n• Conclusion: ~Bonus → ~Promoted. ✓ Matches ~D → ~A.\nPerfect structural match.',
+    ]},
+
+    { type: 'h3', text: 'Wrong-Answer Analysis' },
+    { type: 'breakdown', labels: { title: 'Option', text: 'Why It Fails' }, items: [
+      { title: '(A) Training AND Review for promotion; Training OR Review for bonus; no bonus → no promotion', text: 'A → (B AND C). (B OR C) → D. ~D → ~A. Identical to the stimulus.', badge: 'Correct', badgeColor: 'green' },
+      { title: '(B) Innovative AND cost-effective for award; innovative → recognition; no recognition → not cost-effective', text: 'Premise 2 uses only ONE of the two conditions (innovative), not \"either…or.\" The conclusion targets the wrong element: it says ~Recognition → ~Cost-effective, but the chain only supports ~Recognition → ~Innovative → possibly ~Award. The conclusion doesn\'t follow from the correct chain.', badge: 'Structural Mismatch', badgeColor: 'red' },
+      { title: '(C) Qualifying time AND recommendation for competition; both → enters; doesn\'t enter → lacks time', text: 'Premise 2 restates Premise 1 (having both = entering) rather than creating a new conditional with OR. There\'s no separate D to contrapositive through. The argument is circular, not a chain.', badge: 'No Chain', badgeColor: 'red' },
+      { title: '(D) Thesis AND oral exam for honors; thesis → departmental recognition; no honors → no recognition', text: 'The conclusion says ~A → ~D (no honors → no recognition), but the valid contrapositive should be ~D → ~Thesis (at most). The direction is reversed: the stimulus concludes ~D → ~A, not ~A → ~D.', badge: 'Direction Reversal', badgeColor: 'red' },
+      { title: '(E) Proposal AND budget for grant; proposal OR budget → applicant; applicant → eligible for grant', text: 'The conclusion commits a **Mistaken Reversal**: it goes from D → A (applicant → grant), when the chain only supports A → D (grant → applicant). The stimulus is valid; this is flawed.', badge: 'Validity Mismatch', badgeColor: 'red' },
+    ]},
+
+    { type: 'hr' },
+
+    { type: 'h2', text: 'Common Conditional Matching Errors' },
+    { type: 'paragraph', text: "When matching complex conditional arguments, these are the specific errors students make most frequently:" },
+
+    { type: 'table', headers: ['Error', 'What Goes Wrong', 'How to Catch It', 'Example'], rows: [
+      ['**AND/OR Swap**', 'The answer uses AND where the stimulus uses OR (or vice versa) in the same structural position', 'Diagram both arguments and compare operators symbol by symbol', 'Stimulus: A → (B AND C). Answer: A → (B OR C). The necessary conditions change from both to either.'],
+      ['**Contrapositive vs. Direct**', 'The stimulus concludes with a contrapositive (~D → ~A) but the answer concludes directly (A → D)', 'Check whether the conclusion negates both terms and reverses the direction', 'Both may be valid, but they are structurally different conclusions.'],
+      ['**Missing Link**', 'The answer\'s chain skips a step that the stimulus includes', 'Count the variables in each chain. If the stimulus has 4 (A, B, C, D) and the answer has 3, a link is missing', 'Stimulus: A → B → C → D. Answer: A → B → D. The B → C step is absent.'],
+      ['**Direction Reversal**', 'The arrow direction is flipped in one premise: the answer says B → A where the stimulus says A → B', 'For each premise, confirm which term is sufficient and which is necessary', 'Stimulus: \"If rain, then wet.\" Answer: \"If wet, then rain.\" Same words, reversed logic.'],
+      ['**Scope Narrowing**', 'The answer uses only one branch of a compound condition', 'If the stimulus says \"B OR C → D,\" check that the answer doesn\'t say \"B → D\" (dropping C)', 'Using one disjunct instead of the full disjunction narrows the scope and changes the logic.'],
+    ]},
+
+    { type: 'hr' },
+
+    { type: 'h2', text: 'Chain Length Comparison Technique' },
+    { type: 'paragraph', text: "On the hardest conditional chain questions, the stimulus may have 4 or 5 links. A quick technique for eliminating answers is **chain length comparison**:" },
+
+    { type: 'process', title: 'Chain Length Comparison', steps: [
+      '**Count the distinct variables** in the stimulus\'s chain. For example, A → (B AND C) → (B OR C) → D has 4 variables (A, B, C, D).',
+      '**Count the links** (arrows) in the chain. The example above has 3 links.',
+      '**Scan each answer choice** for the same number of variables and links. Any answer with fewer variables or fewer links is structurally simpler and cannot be a match.',
+      '**Eliminate mismatches immediately.** An answer with 3 variables cannot parallel a stimulus with 4, even if the surviving variables match perfectly.',
+    ]},
+
+    { type: 'callout', variant: 'tip', title: 'Speed Tip: Count Before You Diagram', text: "Before spending time diagramming every answer choice, quickly count the number of distinct conditions mentioned in each one. If the stimulus discusses 4 conditions (e.g., dessert, entree, salad, soft drink) and an answer only discusses 3, you can eliminate it in seconds without diagramming." },
+
+    { type: 'hr' },
+
+    { type: 'callout', variant: 'summary', title: 'Key Takeaways', text: "• Advanced conditional chains go beyond simple A → B → C. Expect **nested conditionals** (A → (B → C)), **biconditionals** (A ↔ B), and **\"unless/until\" translations** (~B → A).\n• **Precise diagramming is essential.** Assign variables, identify connectors (AND, OR, IF-THEN, UNLESS), translate to symbols, link the chain, and check the conclusion.\n• The AND/OR relationship is the most commonly exploited feature: (B AND C) guarantees (B OR C), which enables chains like A → (B ∧ C) → (B ∨ C) → D.\n• **Contrapositive conclusions** (~D → ~A) are extremely common in advanced conditional questions. Verify the direction and the negations.\n• Use **chain length comparison** to quickly eliminate answers with fewer variables or links than the stimulus.\n• The five most common matching errors are: AND/OR swap, contrapositive vs. direct confusion, missing links, direction reversal, and scope narrowing. Check each one systematically." },
   ]
 };
