@@ -1,7 +1,7 @@
 import { Lesson } from '../../types';
 
-export const Lesson6_ReferenceGuide: Lesson = {
-  id: "18-6",
+export const Lesson8_ReferenceGuide: Lesson = {
+  id: "18-8",
   title: "Reference Guide",
   content: [
     { type: 'h2', text: 'Module 18: Must Be False \u2014 Reference Guide' },
