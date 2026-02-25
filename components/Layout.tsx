@@ -1,9 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ModuleData, ContentBlock } from '../types';
-import { BookOpen, CheckCircle, Circle, Menu, X, ChevronRight, LayoutGrid, Download, Info, Palette, ArrowLeft, ArrowRight, Search } from 'lucide-react';
+import { BookOpen, CheckCircle, Circle, Menu, X, ChevronRight, LayoutGrid, Download, Info, Palette, ArrowLeft, ArrowRight, Search, Rocket } from 'lucide-react';
 import { generateCourseText, generateCourseRTF, generateCourseJSON, generateCourseCSV, generateCoursePDF } from '../utils/export';
 import { ExportControls } from './ExportControls';
 import { LessonViewer } from './LessonViewer';
+import {
+  roadmapLearningContent,
+  roadmapAnalyticsContent,
+  roadmapContentContent,
+  roadmapUXContent,
+  roadmapTechnicalContent,
+  roadmapSocialContent,
+  roadmapAccessibilityContent,
+} from './RoadmapContent';
 
 interface LessonNav {
   onPrevious?: () => void;
@@ -173,10 +182,13 @@ export const Layout: React.FC<LayoutProps> = ({
   const [exportModalOpen, setExportModalOpen] = useState(false);
   const [styleGuideOpen, setStyleGuideOpen] = useState(false);
   const [styleGuideTab, setStyleGuideTab] = useState<'components' | 'structure' | 'drills' | 'passages'>('components');
+  const [roadmapOpen, setRoadmapOpen] = useState(false);
+  const [roadmapTab, setRoadmapTab] = useState<'learning' | 'analytics' | 'content' | 'ux' | 'technical' | 'social' | 'accessibility'>('learning');
   const activeLessonRef = useRef<HTMLButtonElement | null>(null);
   const mainRef = useRef<HTMLElement | null>(null);
   const exportModalRef = useRef<HTMLDivElement | null>(null);
   const styleGuideModalRef = useRef<HTMLDivElement | null>(null);
+  const roadmapModalRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     mainRef.current?.scrollTo({ top: 0, behavior: 'smooth' });
@@ -193,6 +205,7 @@ export const Layout: React.FC<LayoutProps> = ({
       if (event.key === 'Escape') {
         setExportModalOpen(false);
         setStyleGuideOpen(false);
+        setRoadmapOpen(false);
       }
     };
     window.addEventListener('keydown', handleEsc);
@@ -200,12 +213,12 @@ export const Layout: React.FC<LayoutProps> = ({
   }, []);
 
   useEffect(() => {
-    if (exportModalOpen || styleGuideOpen) {
+    if (exportModalOpen || styleGuideOpen || roadmapOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
     }
-  }, [exportModalOpen, styleGuideOpen]);
+  }, [exportModalOpen, styleGuideOpen, roadmapOpen]);
 
   useEffect(() => {
     if (exportModalOpen && exportModalRef.current) {
@@ -218,6 +231,12 @@ export const Layout: React.FC<LayoutProps> = ({
       styleGuideModalRef.current.focus();
     }
   }, [styleGuideOpen]);
+
+  useEffect(() => {
+    if (roadmapOpen && roadmapModalRef.current) {
+      roadmapModalRef.current.focus();
+    }
+  }, [roadmapOpen]);
 
   const sidebarLessons = activeModuleData?.lessons ?? [];
 
@@ -389,6 +408,9 @@ export const Layout: React.FC<LayoutProps> = ({
               <span>Search</span>
               <kbd className="ml-2 px-1.5 py-0.5 bg-slate-100 rounded text-[10px] font-mono text-slate-400">Ctrl+K</kbd>
             </button>
+            <button onClick={() => setRoadmapOpen(true)} className="flex items-center space-x-2 px-4 py-2 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-sm font-bold text-slate-600 transition-all shadow-sm" aria-label="Open roadmap">
+              <Rocket size={16} /><span>Roadmap</span>
+            </button>
             <button onClick={() => setStyleGuideOpen(true)} className="flex items-center space-x-2 px-4 py-2 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-sm font-bold text-slate-600 transition-all shadow-sm" aria-label="Open style guide">
               <Palette size={16} /><span>Style Guide</span>
             </button>
@@ -431,6 +453,53 @@ export const Layout: React.FC<LayoutProps> = ({
                      styleGuideTab === 'structure' ? styleGuideStructureContent : 
                      styleGuideTab === 'drills' ? styleGuideDrillsContent : 
                      styleGuidePassagesContent
+                   } 
+                   variant="modal" 
+                />
+             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Roadmap Modal */}
+      {roadmapOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Product Roadmap">
+          <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-md animate-in fade-in duration-300" onClick={() => setRoadmapOpen(false)} />
+          <div ref={roadmapModalRef} tabIndex={-1} className="relative w-full max-w-6xl max-h-[90vh] flex flex-col bg-slate-50 rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200">
+             <div className="bg-white border-b border-slate-200 px-6 py-4 flex justify-between items-center z-10">
+                <div className="flex items-center gap-6">
+                   <div className="flex items-center gap-2 text-slate-800"><Rocket size={20} className="text-indigo-600" /><h2 className="font-bold text-lg">Product Roadmap</h2><span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full">70+ ideas</span></div>
+                   <div className="flex items-center bg-slate-100 p-1 rounded-lg overflow-x-auto" role="tablist">
+                      <button role="tab" aria-selected={roadmapTab === 'learning'} onClick={() => setRoadmapTab('learning')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all whitespace-nowrap ${roadmapTab === 'learning' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Learning</button>
+                      <button role="tab" aria-selected={roadmapTab === 'analytics'} onClick={() => setRoadmapTab('analytics')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all whitespace-nowrap ${roadmapTab === 'analytics' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Analytics</button>
+                      <button role="tab" aria-selected={roadmapTab === 'content'} onClick={() => setRoadmapTab('content')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all whitespace-nowrap ${roadmapTab === 'content' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Content</button>
+                      <button role="tab" aria-selected={roadmapTab === 'ux'} onClick={() => setRoadmapTab('ux')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all whitespace-nowrap ${roadmapTab === 'ux' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>UI/UX</button>
+                      <button role="tab" aria-selected={roadmapTab === 'technical'} onClick={() => setRoadmapTab('technical')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all whitespace-nowrap ${roadmapTab === 'technical' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Technical</button>
+                      <button role="tab" aria-selected={roadmapTab === 'social'} onClick={() => setRoadmapTab('social')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all whitespace-nowrap ${roadmapTab === 'social' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Social</button>
+                      <button role="tab" aria-selected={roadmapTab === 'accessibility'} onClick={() => setRoadmapTab('accessibility')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all whitespace-nowrap ${roadmapTab === 'accessibility' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Accessibility</button>
+                   </div>
+                </div>
+                <button onClick={() => setRoadmapOpen(false)} className="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-full transition-colors" aria-label="Close roadmap"><X size={20} /></button>
+             </div>
+             <div className="flex-1 overflow-y-auto p-6" role="tabpanel">
+                <LessonViewer 
+                   title={
+                     roadmapTab === 'learning' ? "Learning Experience" : 
+                     roadmapTab === 'analytics' ? "Analytics & Progress" : 
+                     roadmapTab === 'content' ? "Content & Curriculum" : 
+                     roadmapTab === 'ux' ? "UI / UX Improvements" : 
+                     roadmapTab === 'technical' ? "Technical & Infrastructure" : 
+                     roadmapTab === 'social' ? "Social & Gamification" : 
+                     "Accessibility & Inclusion"
+                   } 
+                   content={
+                     roadmapTab === 'learning' ? roadmapLearningContent : 
+                     roadmapTab === 'analytics' ? roadmapAnalyticsContent : 
+                     roadmapTab === 'content' ? roadmapContentContent : 
+                     roadmapTab === 'ux' ? roadmapUXContent : 
+                     roadmapTab === 'technical' ? roadmapTechnicalContent : 
+                     roadmapTab === 'social' ? roadmapSocialContent : 
+                     roadmapAccessibilityContent
                    } 
                    variant="modal" 
                 />
