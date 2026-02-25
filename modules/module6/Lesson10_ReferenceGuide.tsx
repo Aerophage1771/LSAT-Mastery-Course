@@ -42,7 +42,7 @@ export const Lesson10_ReferenceGuide: Lesson = {
     { type: 'breakdown', labels: { title: 'Must Match', text: 'Why It Matters' }, items: [
       { title: 'Flaw Type', text: 'The *category* of error must be identical. A Mistaken Reversal cannot match a Mistaken Negation. Composition cannot match Division. If the stimulus commits a conditional logic error, the answer must too.', badge: 'Non-Negotiable', badgeColor: 'red' },
       { title: 'Logical Direction', text: 'The *direction* of the flawed inference must match. Part → Whole (Composition) ≠ Whole → Part (Division). B→A (Reversal) ≠ ~A→~B (Negation). Same flaw family, wrong direction = wrong answer.', badge: 'Non-Negotiable', badgeColor: 'red' },
-      { title: 'Scope of Conclusion', text: 'The conclusion\'s scope and certainty should align. If the stimulus concludes "must" or "all," the answer should not conclude "might" or "some." If the stimulus concludes about a group, the answer should not conclude about an individual (or vice versa).', badge: 'Strong Signal', badgeColor: 'orange' },
+      { title: 'Scope of Conclusion', text: 'The conclusion\'s scope and certainty should align. If the stimulus concludes "must" or "all," the answer should not conclude "might" or "some." If the stimulus concludes about a group, the answer should not conclude about an individual (or vice versa).', badge: 'Strong Signal', badgeColor: 'blue' },
       { title: 'Argument Must Be Flawed', text: 'The correct answer *must* contain a logical error. Any valid argument is automatically wrong. This is the defining feature of Parallel Flaw vs. Parallel Reasoning.', badge: 'Non-Negotiable', badgeColor: 'red' },
     ]},
     { type: 'hr' },
