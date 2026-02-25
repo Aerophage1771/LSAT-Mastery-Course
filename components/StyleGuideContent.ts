@@ -314,6 +314,393 @@ Structure:
 ];
 
 // ─────────────────────────────────────────────
+// Tab 7: Technical Implementation
+// ─────────────────────────────────────────────
+
+export const styleGuideTechnicalContent: ContentBlock[] = [
+  { type: 'h2', text: 'Technical Implementation Reference' },
+  { type: 'paragraph', text: 'Complete specification for every content block type in the system. Each section shows the TypeScript type definition, a concrete data example, and the live rendered result. Use this page to replicate the component system or generate content programmatically.' },
+  { type: 'hr' },
+
+  // ── DATA MODEL ──
+  { type: 'h2', text: 'Data Model' },
+  { type: 'paragraph', text: 'All content is expressed as an array of `ContentBlock` objects. A lesson is a flat array of these blocks rendered sequentially. The renderer (`LessonViewer`) maps each block type to a React component.' },
+
+  { type: 'h3', text: 'Lesson Structure' },
+  { type: 'code', text: `interface Lesson {
+  id: string;          // Unique ID, format: "{moduleId}-{lessonIndex}" e.g. "1-4"
+  title: string;       // Display title
+  content: ContentBlock[];  // Ordered array of content blocks
+}
+
+interface ModuleData {
+  id: number;          // Sequential module ID (1-59)
+  title: string;       // Module name, e.g. "Argument Part"
+  category: string;    // "LR" | "RC" | "Advanced" | "Question Bank"
+  description: string; // Short description for dashboard card
+  unit: string;        // Unit grouping, e.g. "Unit 1: Identification"
+  lessons: Lesson[];   // Ordered array of lessons
+}` },
+
+  { type: 'h3', text: 'File Convention' },
+  { type: 'paragraph', text: 'Each module lives in `modules/Module{N}.tsx` and exports a named `Module{N}` constant. Lessons live in `modules/module{n}/Lesson{X}_{Name}.tsx`. The registry (`modules/registry.ts`) maps module IDs to dynamic imports for code splitting.' },
+
+  { type: 'hr' },
+
+  // ── TEXT BLOCKS ──
+  { type: 'h2', text: 'Text Blocks' },
+
+  { type: 'h3', text: 'paragraph' },
+  { type: 'paragraph', text: 'Basic body text. Supports inline markdown: `**bold**`, `*italic*`, and `` `code` ``.' },
+  { type: 'code', text: `{ type: 'paragraph', text: 'Argument Part questions ask you to determine what **part** a specific sentence plays within the author\\'s overall *argument*.' }` },
+  { type: 'paragraph', text: 'Argument Part questions ask you to determine what **part** a specific sentence plays within the author\'s overall *argument*.' },
+
+  { type: 'h3', text: 'h2 / h3 / h4' },
+  { type: 'paragraph', text: 'Section headings at three levels. `h2` creates major sections, `h3` sub-sections, `h4` label-style uppercase headers.' },
+  { type: 'code', text: `{ type: 'h2', text: 'Core Concepts' }
+{ type: 'h3', text: 'The Anatomy of an Argument' }
+{ type: 'h4', text: 'Worked Example' }` },
+
+  { type: 'h3', text: 'blockquote (excerpt panel)' },
+  { type: 'paragraph', text: 'Renders as a rounded panel for stimulus text, passage excerpts, or quoted material. No italics, no left border.' },
+  { type: 'code', text: `{ type: 'blockquote', text: '**Economist:** Many analysts predict that the new tariff policy will increase domestic manufacturing jobs. However, this outcome is unlikely.' }` },
+  { type: 'blockquote', text: '**Economist:** Many analysts predict that the new tariff policy will increase domestic manufacturing jobs. However, this outcome is unlikely.' },
+
+  { type: 'h3', text: 'list' },
+  { type: 'paragraph', text: 'Ordered or unordered lists. Set `ordered: true` for numbered lists.' },
+  { type: 'code', text: `{ type: 'list', ordered: false, items: [
+  '**Conclusion Indicators:** Therefore, Thus, So, Hence',
+  '**Premise Indicators:** Because, Since, For, After all',
+  '**Pivot Indicators:** But, However, Yet, Although'
+] }` },
+  { type: 'list', items: [
+    '**Conclusion Indicators:** Therefore, Thus, So, Hence',
+    '**Premise Indicators:** Because, Since, For, After all',
+    '**Pivot Indicators:** But, However, Yet, Although',
+  ]},
+
+  { type: 'h3', text: 'hr' },
+  { type: 'paragraph', text: 'Thin horizontal divider between major content sections.' },
+  { type: 'code', text: `{ type: 'hr' }` },
+
+  { type: 'h3', text: 'code' },
+  { type: 'paragraph', text: 'Dark code block with a header bar, label, and copy button. Used for LLM prompts and technical specifications.' },
+  { type: 'code', text: `{ type: 'code', text: 'Your prompt text here...' }` },
+
+  { type: 'hr' },
+
+  // ── INTERACTIVE BLOCKS ──
+  { type: 'h2', text: 'Interactive Blocks' },
+
+  { type: 'h3', text: 'options' },
+  { type: 'paragraph', text: 'Click-to-reveal answer choices. Mark the correct answer by appending `(Correct)` to the option string. Optionally include solve rates in brackets like `[93.0%]`.' },
+  { type: 'code', text: `{ type: 'options', items: [
+  '(A) It is used to support the argument\\'s conclusion.',
+  '(B) It is offered as background information.',
+  '(C) It is the main conclusion. (Correct)',
+  '(D) It is evidence for a subsidiary claim. [3.0%]',
+  '(E) It sets out a difficulty to solve.'
+] }` },
+  { type: 'options', items: [
+    '(A) It is used to support the argument\'s conclusion.',
+    '(B) It is offered as background information.',
+    '(C) It is the main conclusion. (Correct)',
+    '(D) It is evidence for a subsidiary claim. [3.0%]',
+    '(E) It sets out a difficulty to solve.',
+  ]},
+
+  { type: 'h3', text: 'accordion' },
+  { type: 'paragraph', text: 'Collapsible section. `content` can be a plain string or a nested `ContentBlock[]` array for rich content inside the accordion.' },
+  { type: 'code', text: `{ type: 'accordion', title: 'Show Passage Text', content: 'The full passage text goes here...' }
+
+// Or with nested blocks:
+{ type: 'accordion', title: 'Detailed Analysis', content: [
+  { type: 'h4', text: 'Step 1' },
+  { type: 'paragraph', text: 'Break down the argument...' }
+] }` },
+  { type: 'accordion', title: 'Click to expand this example', content: 'This is the content inside the accordion. It supports **bold** and *italic* markdown.' },
+
+  { type: 'hr' },
+
+  // ── ANALYSIS BLOCKS ──
+  { type: 'h2', text: 'Analysis Blocks' },
+
+  { type: 'h3', text: 'callout' },
+  { type: 'paragraph', text: 'Three variants: `default` (gray accent), `tip` (amber accent), `summary` (indigo accent). Each renders a thin left accent line with an inline icon.' },
+  { type: 'code', text: `{ type: 'callout', variant: 'tip', title: 'Strategy Tip',
+  text: 'When you see "most vulnerable to criticism," the question is asking for a flaw.' }
+
+// Variants: 'default' | 'tip' | 'summary'` },
+  { type: 'callout', variant: 'default', title: 'Note', text: 'This is a default callout with a gray accent line.' },
+  { type: 'callout', variant: 'tip', title: 'Strategy Tip', text: 'When you see "most vulnerable to criticism," the question is asking for a flaw.' },
+  { type: 'callout', variant: 'summary', title: 'Key Takeaway', text: 'The conclusion is always the claim that everything else is designed to support.' },
+
+  { type: 'h3', text: 'process' },
+  { type: 'paragraph', text: 'Numbered step-by-step workflow with a vertical connecting line. Optional `title` renders as an uppercase label above the steps.' },
+  { type: 'code', text: `{ type: 'process', title: 'Solving Method', steps: [
+  'Read the question stem to identify the task.',
+  'Deconstruct the argument into premises and conclusion.',
+  'Pre-phrase your answer before looking at the choices.',
+  'Eliminate choices that don\\'t match your pre-phrase.'
+] }` },
+  { type: 'process', title: 'Solving Method', steps: [
+    'Read the question stem to identify the task.',
+    'Deconstruct the argument into premises and conclusion.',
+    'Pre-phrase your answer before looking at the choices.',
+    'Eliminate choices that don\'t match your pre-phrase.',
+  ]},
+
+  { type: 'h3', text: 'breakdown' },
+  { type: 'paragraph', text: 'Side-by-side analysis cards with labeled columns and optional colored badges. Set `colWidth: "narrow"` for a 25/75 split instead of the default 40/60.' },
+  { type: 'code', text: `{ type: 'breakdown',
+  labels: { title: 'Element', text: 'Analysis' },
+  items: [
+    { title: 'First Sentence', text: 'The author\\'s central thesis.',
+      badge: 'Main Conclusion', badgeColor: 'indigo' },
+    { title: 'Choice (C)', text: 'Matches the structure perfectly.',
+      badge: 'Correct', badgeColor: 'green' },
+    { title: 'Choice (A)', text: 'Reverses the logical direction.',
+      badge: 'Trap', badgeColor: 'red' }
+  ]
+}
+
+// badgeColor: 'green' | 'red' | 'indigo' | 'slate' | 'blue'
+// colWidth: 'equal' (default, 40/60) | 'narrow' (25/75)` },
+  { type: 'breakdown', labels: { title: 'Element', text: 'Analysis' }, items: [
+    { title: 'First Sentence', text: 'The author\'s central thesis. Everything else supports this claim.', badge: 'Main Conclusion', badgeColor: 'indigo' },
+    { title: 'Choice (C)', text: 'Matches the structure perfectly.', badge: 'Correct', badgeColor: 'green' },
+    { title: 'Choice (A)', text: 'Reverses the logical direction.', badge: 'Trap', badgeColor: 'red' },
+  ]},
+
+  { type: 'h3', text: 'table' },
+  { type: 'paragraph', text: 'Data table with headers and rows. Cells support inline markdown.' },
+  { type: 'code', text: `{ type: 'table',
+  headers: ['Type', 'Frequency', 'Key Skill'],
+  rows: [
+    ['Flaw', 'Very High', 'Pattern recognition'],
+    ['Strengthen', 'High', 'Gap analysis'],
+    ['Necessary Assumption', 'High', '**Negation test**']
+  ]
+}` },
+  { type: 'table', headers: ['Type', 'Frequency', 'Key Skill'], rows: [
+    ['Flaw', 'Very High', 'Pattern recognition'],
+    ['Strengthen', 'High', 'Gap analysis'],
+    ['Necessary Assumption', 'High', '**Negation test**'],
+  ]},
+
+  { type: 'hr' },
+
+  // ── CARD BLOCKS ──
+  { type: 'h2', text: 'Card Blocks' },
+  { type: 'paragraph', text: 'Self-contained interactive components for practice questions and reading passages. These are the primary drill interfaces students interact with.' },
+
+  { type: 'h3', text: 'question-card' },
+  { type: 'paragraph', text: 'Standalone LR question with stimulus, question stem, and interactive answer choices. Renders with an indigo gradient header.' },
+  { type: 'code', text: `{ type: 'question-card',
+  id: 'PT-112-S-4-Q-3',              // Optional PT identifier
+  questionType: 'Argument Part',       // Label in header
+  difficulty: 'easy',                  // 'easy' | 'medium' | 'hard'
+  stimulus: '**Legal theorist:** It is unreasonable to incarcerate anyone...',
+  question: 'The claim in the first sentence plays which role?',
+  options: [
+    '(A) It is offered as a premise.',
+    '(B) It is background information.',
+    '(C) It is the main conclusion. (Correct)',  // Mark correct with (Correct)
+    '(D) It is evidence for another claim.',
+    '(E) It sets out a difficulty.'
+  ]
+}` },
+  {
+    type: 'question-card',
+    id: 'PT-112-S-4-Q-3',
+    questionType: 'Argument Part',
+    difficulty: 'easy',
+    stimulus: '**Legal theorist:** It is unreasonable to incarcerate anyone for any other reason than that he or she is a serious threat to the property or lives of other people.',
+    question: 'The claim in the first sentence of the passage plays which one of the following roles in the argument?',
+    options: [
+      '(A) It is offered as a premise that helps to show that no actions are under the control of the agent.',
+      '(B) It is offered as background information necessary to understand the argument.',
+      '(C) It is offered as the main conclusion that the argument is designed to establish. (Correct)',
+      '(D) It is offered as evidence for a stated claim about retribution.',
+      '(E) It is offered as evidence that lawbreaking proceeds from ignorance or free choice.',
+    ],
+  },
+
+  { type: 'h3', text: 'passage-card' },
+  { type: 'paragraph', text: 'Standalone RC passage with genre tag, word/paragraph counts, and expand/collapse. Renders with an emerald gradient header. Separate paragraphs with `\\n\\n` in the passage string.' },
+  { type: 'code', text: `{ type: 'passage-card',
+  id: 'PT-119-S-1-P-2',                    // Optional identifier
+  title: 'Obasan: Structure & Symbolism',   // Passage title
+  genre: 'Literary Criticism',              // Genre badge
+  // Genres: 'Law' | 'Science' | 'Humanities' | 'Social Science'
+  //       | 'Literary Criticism' | 'Philosophy'
+  passage: 'First paragraph text...\\n\\nSecond paragraph text...'
+  // paragraphCount and wordCount are auto-calculated if omitted
+}` },
+  {
+    type: 'passage-card',
+    id: 'PT-119-S-1-P-2',
+    title: 'Obasan: Structure & Symbolism',
+    genre: 'Literary Criticism',
+    passage: 'Joy Kogawa\'s Obasan is an account of a Japanese-Canadian family\'s experiences during World War II. Although the experience depicted is mainly one of dislocation, Kogawa employs subtle techniques that serve to emphasize heroism and critique the majority culture.\n\nThe form of the novel parallels the three-stage structure noted by anthropologists in their studies of rites of passage: separation, alienation, and reintegration.',
+  },
+
+  { type: 'h3', text: 'question-passage-card' },
+  { type: 'paragraph', text: 'Combined split-pane component showing passage on the left and question on the right (stacked on mobile). Renders with a violet gradient header. Includes a toggle to hide/show the passage pane.' },
+  { type: 'code', text: `{ type: 'question-passage-card',
+  id: 'PT-119-S-1-P-2-Q-8',
+  questionType: 'Main Idea',
+  difficulty: 'medium',
+  passageTitle: 'Obasan (PT-119)',
+  passage: 'Paragraph 1...\\n\\nParagraph 2...\\n\\nParagraph 3...',
+  question: 'Which one of the following most accurately states the main idea?',
+  options: [
+    '(A) The correct answer describing both structure and symbolism. (Correct)',
+    '(B) Too narrow: only mentions critique.',
+    '(C) Reverses the primary and secondary purposes.',
+    '(D) Incomplete: only covers structure.',
+    '(E) Reverses the emphasis.'
+  ]
+}` },
+  {
+    type: 'question-passage-card',
+    id: 'PT-119-Q-8',
+    questionType: 'Main Idea',
+    difficulty: 'medium',
+    passageTitle: 'Obasan (PT-119)',
+    passage: 'Joy Kogawa\'s Obasan depicts a Japanese-Canadian family during WWII. Kogawa uses structure to emphasize heroism and symbols to critique the majority culture.\n\nThe novel parallels the three-stage rite of passage: separation, alienation, and reintegration into society with heightened status.',
+    question: 'Which one of the following most accurately states the main idea of the passage?',
+    options: [
+      '(A) Obasan uses structure and symbolism to valorize its protagonist and critique society. (Correct)',
+      '(B) Obasan mounts a harsh critique of a society that disrupts its citizens\' lives.',
+      '(C) Primarily social criticism, but also readable as heroic transformation.',
+      '(D) The three-part structure valorizes the protagonist despite her trauma.',
+      '(E) Primarily a story of transformation, but also readable as social criticism.',
+    ],
+  },
+
+  { type: 'hr' },
+
+  // ── CONTENT GENERATION RULES ──
+  { type: 'h2', text: 'Content Generation Rules' },
+  { type: 'paragraph', text: 'When generating new lesson content (manually or via LLM), follow these constraints to ensure consistency across the course.' },
+
+  { type: 'h3', text: 'Inline Markdown' },
+  { type: 'table', headers: ['Syntax', 'Renders As', 'Use For'], rows: [
+    ['`**text**`', '**Bold text**', 'Key terms, conclusions, important claims'],
+    ['`*text*`', '*Italic text*', 'Emphasis, book titles, technical terms on first use'],
+    ['`` `text` ``', '`Code text`', 'Logical notation, variable names, question types'],
+  ]},
+
+  { type: 'h3', text: 'Correct Answer Marking' },
+  { type: 'paragraph', text: 'In both `options` and `question-card` blocks, append `(Correct)` to the correct answer choice string. This controls the green/red feedback rendering. The marker is stripped before display.' },
+  { type: 'code', text: `// In options or question-card:
+'(C) It is the main conclusion that the argument is designed to establish. (Correct)'
+
+// Optional: add solve rate percentages
+'(A) A plausible distractor. [93.0%] (Correct)'
+// The [93.0%] renders as a small stat label after reveal` },
+
+  { type: 'h3', text: 'Difficulty Levels' },
+  { type: 'breakdown', labels: { title: 'Level', text: 'Criteria' }, colWidth: 'narrow', items: [
+    { title: 'easy', text: 'Foundation-level questions testing a single core concept. Typically straightforward stimuli with clear argument structure. Most students answer correctly on first attempt.', badge: 'Foundation', badgeColor: 'green' },
+    { title: 'medium', text: 'Intermediate questions requiring synthesis of multiple concepts or multi-step reasoning. May contain subtle distractors or require careful reading.', badge: 'Intermediate', badgeColor: 'blue' },
+    { title: 'hard', text: 'Advanced questions with complex argument structures, abstract reasoning, or sophisticated traps. Typically drawn from the hardest PrepTest questions.', badge: 'Advanced', badgeColor: 'red' },
+  ]},
+
+  { type: 'h3', text: 'Passage Formatting' },
+  { type: 'paragraph', text: 'In `passage-card` and `question-passage-card` blocks, separate paragraphs with `\\n\\n` (double newline). The renderer splits on this delimiter and numbers each paragraph automatically. Word count and paragraph count are calculated if not provided.' },
+
+  { type: 'h3', text: 'Genre Tags' },
+  { type: 'table', headers: ['Genre String', 'Color', 'Typical Content'], rows: [
+    ['`Law`', 'Blue', 'Legal theory, jurisprudence, policy debates'],
+    ['`Science`', 'Green', 'Natural science, biology, physics, ecology'],
+    ['`Humanities`', 'Purple', 'Art, music, literature, cultural analysis'],
+    ['`Social Science`', 'Amber', 'Economics, psychology, sociology, political science'],
+    ['`Literary Criticism`', 'Rose', 'Analysis of novels, poetry, literary techniques'],
+    ['`Philosophy`', 'Indigo', 'Ethics, epistemology, logic, metaphysics'],
+  ]},
+
+  { type: 'hr' },
+
+  // ── DRILL LESSON TEMPLATE ──
+  { type: 'h2', text: 'Drill Lesson Template' },
+  { type: 'paragraph', text: 'The standard block sequence for a drill lesson. Copy this template and fill in the values to create a new drill.' },
+  { type: 'code', text: `export const Lesson_Drill_Example: Lesson = {
+  id: "{moduleId}-{lessonIndex}",  // e.g. "5-4"
+  title: "Drill: {Concept} ({PT-ID})",
+  content: [
+    // 1. Context
+    { type: 'h3', text: "Practice Drill: {Full Title} ({PT-ID})" },
+    { type: 'paragraph', text: "{2-3 sentence introduction explaining the skill.}" },
+    { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down." },
+    { type: 'hr' },
+
+    // 2. The Question (use question-card for interactive version)
+    { type: 'question-card',
+      id: '{PT-ID}',
+      questionType: '{Question Type}',
+      difficulty: '{easy|medium|hard}',
+      stimulus: '{Full stimulus text with **bold** for key claims}',
+      question: '{Question stem}',
+      options: [
+        '(A) {Distractor}',
+        '(B) {Distractor}',
+        '(C) {Correct answer} (Correct)',
+        '(D) {Distractor}',
+        '(E) {Distractor}'
+      ]
+    },
+
+    // 3. Analysis
+    { type: 'hr' },
+    { type: 'h3', text: 'Analysis & Explanation' },
+    { type: 'paragraph', text: '{Analysis paragraph}' },
+
+    // 4. Structural breakdown
+    { type: 'breakdown',
+      labels: { title: 'Element', text: 'Logical Role' },
+      items: [
+        { title: '{Key sentence}', text: '{Role explanation}',
+          badge: 'Main Conclusion', badgeColor: 'indigo' },
+        { title: 'Choice ({letter})', text: '{Why correct}',
+          badge: 'Correct', badgeColor: 'green' },
+        { title: 'Choice ({letter})', text: '{Why wrong}',
+          badge: 'Trap', badgeColor: 'red' }
+      ]
+    },
+
+    // 5. Takeaway
+    { type: 'callout', variant: 'summary',
+      title: 'Key Takeaway',
+      text: '{One-sentence lesson to internalize}' }
+  ]
+};` },
+
+  { type: 'h3', text: 'RC Question Lesson Template' },
+  { type: 'paragraph', text: 'For Reading Comprehension lessons, use the `question-passage-card` for the interactive question, with an accordion for the full passage reference.' },
+  { type: 'code', text: `content: [
+  { type: 'h3', text: 'Question {N}: {Question Type}' },
+
+  // Combined card (passage + question)
+  { type: 'question-passage-card',
+    id: '{PT-ID}',
+    questionType: '{Question Type}',
+    difficulty: '{easy|medium|hard}',
+    passageTitle: '{Passage Name} ({PT-Passage-ID})',
+    passage: '{Full passage text with \\\\n\\\\n between paragraphs}',
+    question: '{Question stem}',
+    options: [ ... ]  // Same format as question-card
+  },
+
+  // Analysis follows
+  { type: 'hr' },
+  { type: 'h3', text: 'Analysis & Explanation' },
+  ...
+]` },
+];
+
+// ─────────────────────────────────────────────
 // Plain-text serializer for "Copy All"
 // ─────────────────────────────────────────────
 
@@ -394,6 +781,7 @@ export function serializeAllStyleGuideContent(): string {
     { title: 'QUESTION + PASSAGE CARD', content: styleGuideQPContent },
     { title: 'STRUCTURE & VOICE', content: styleGuideStructureContent },
     { title: 'CONTENT GENERATION PROMPTS', content: styleGuidePromptsContent },
+    { title: 'TECHNICAL IMPLEMENTATION', content: styleGuideTechnicalContent },
   ];
 
   return sections
