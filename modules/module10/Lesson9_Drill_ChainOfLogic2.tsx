@@ -2,45 +2,60 @@ import { Lesson } from '../../types';
 
 export const Lesson9_Drill_ChainOfLogic2: Lesson = {
   id: "10-9",
-  title: "Drill: The Chain of Logic (PT-120-S-4-Q-15)",
+  title: "Drill: The Chain of Logic Part 2 (PT-120-S-4-Q-15)",
   content: [
-    { type: 'paragraph', text: "This lesson focuses on a sufficient assumption pattern that requires you to link two seemingly disconnected groups through a shared characteristic. The argument will describe Group A and Group B separately and then draw a conclusion that connects them. The logic is flawed because the author assumes, without proof, that the characteristic defining Group A is the same as, or required for, the characteristic defining Group B." },
-    { type: 'paragraph', text: "Your task is to provide the missing definitional link. The correct answer will often take the form of an \"Only if\" or a \"No X are Y\" statement, creating a strict logical connection that allows the argument's chain to be completed." },
+    { type: 'h2', text: 'Chain of Logic — Complex Chains' },
+    { type: 'paragraph', text: "This lesson builds on the Chain of Logic pattern with a more complex variation. Here, the argument describes **two separate groups** using different characteristics and then draws a conclusion that connects them. The logical chain is broken because the author assumes — without proof — that the defining trait of Group A overlaps with or implies the defining trait of Group B." },
+    { type: 'paragraph', text: "Your task is to provide the missing **definitional link** between those traits. The correct answer often uses formal logical language — \"Only X are Y\" or \"No X are Y\" — creating a strict bridge that completes the chain." },
+    { type: 'callout', variant: 'tip', title: 'Translating \"Only\" Statements', text: "\"Only X are Y\" translates to **Y → X** (if Y, then X). This reverses the intuitive reading order. \"The only X are Y\" translates to **X → Y** (if X, then Y). Getting this translation right is critical — many wrong answers exploit the confusion between these two forms." },
+
     { type: 'hr' },
-    { type: 'h4', text: "The Problem" },
-    { type: 'blockquote', text: "**Stimulus:** People who have doctorates in the liberal arts are interested in improving their intellects. Companies, however, rarely hire people who are not concerned with the financial gain that can be obtained by hard work in the business world. As a result, companies rarely hire people who have doctorates in the liberal arts." },
-    { type: 'paragraph', text: "**Question:** The conclusion of the argument follows logically if which one of the following is assumed?" },
-    { type: 'options', items: [
-      "(A) Companies would hire people with doctorates in the liberal arts if such people were interested in the money available in the business world.",
-      "(B) Some people who are interested in the liberal arts do not care about money.",
-      "(C) The only people not interested in making money in the business world are people who are interested in improving their intellects.",
-      "(D) People with doctorates in the liberal arts are interested in employment in the business world.",
-      "(E) Only people not concerned with making money in the business world are interested in improving their intellects."
-    ]},
-    { type: 'paragraph', text: "<br/><br/><br/>" },
+
+    { type: 'h3', text: 'Practice Question' },
+
+    { type: 'question-card',
+      id: 'SA-10-9-001',
+      questionType: 'Sufficient Assumption',
+      difficulty: 'hard',
+      stimulus: "People who have doctorates in the liberal arts are interested in improving their intellects. Companies, however, rarely hire people who are not concerned with the financial gain that can be obtained by hard work in the business world. As a result, companies rarely hire people who have doctorates in the liberal arts.",
+      question: "The conclusion of the argument follows logically if which one of the following is assumed?",
+      options: [
+        "(A) Companies would hire people with doctorates in the liberal arts if such people were interested in the money available in the business world.",
+        "(B) Some people who are interested in the liberal arts do not care about money.",
+        "(C) The only people not interested in making money in the business world are people who are interested in improving their intellects.",
+        "(D) People with doctorates in the liberal arts are interested in employment in the business world.",
+        "(E) Only people not concerned with making money in the business world are interested in improving their intellects. (Correct)"
+      ]
+    },
+
     { type: 'hr' },
-    { type: 'h3', text: "Explanation" },
-    { type: 'h4', text: "Step 1: Break Down the Argument" },
-    { type: 'paragraph', text: "Let's deconstruct the argument into its distinct premises and conclusion, mapping out the groups involved." },
+
+    { type: 'h3', text: 'Step-by-Step Analysis' },
+
+    { type: 'h4', text: 'Step 1: Break Down the Argument' },
+    { type: 'paragraph', text: "Map each statement to its conditional form, paying attention to the distinct concepts each premise introduces." },
     { type: 'breakdown', labels: { title: "Statement", text: "Logic" }, items: [
-      { title: "People who have doctorates in the liberal arts are interested in improving their intellects.", text: "If Liberal Arts Doctorate → Interested in Improving Intellect (LA → II)" },
-      { title: "Companies, however, rarely hire people who are not concerned with the financial gain that can be obtained by hard work in the business world.", text: "If Not Concerned with Money → Rarely Hired (NCM → RH)" },
-      { title: "As a result, companies rarely hire people who have doctorates in the liberal arts.", text: "Liberal Arts Doctorate → Rarely Hired (LA → RH)" }
+      { title: "People who have doctorates in the liberal arts are interested in improving their intellects.", text: "**LA Doctorate → Interested in Improving Intellect** (LA → II)" },
+      { title: "Companies, however, rarely hire people who are not concerned with the financial gain that can be obtained by hard work in the business world.", text: "**Not Concerned with Money → Rarely Hired** (NCM → RH)" },
+      { title: "As a result, companies rarely hire people who have doctorates in the liberal arts.", text: "**Conclusion:** LA Doctorate → Rarely Hired (LA → RH)" }
     ]},
-    { type: 'h4', text: "Step 2: Analysis" },
-    { type: 'paragraph', text: "**What is the Gap?**\nThe argument's logical chain is broken.\n*   We know: LA → II\n*   We know: NCM → RH\n*   We want to prove: LA → RH\nThe problem is that the two premises talk about different things. One is about \"improving intellects,\" and the other is about \"not being concerned with money.\" The argument implicitly assumes that these two traits are linked, but it never states this connection." },
-    { type: 'h4', text: "Step 3: How Can We Make It Sufficient?" },
-    { type: 'paragraph', text: "To make the conclusion a certainty, we need to connect the trait of the \"Liberal Arts\" group to the trait of the \"Rarely Hired\" group. We need to build a bridge from \"Interested in Improving Intellect\" to \"Not Concerned with Money.\"" },
-    { type: 'list', items: ["**Build the Bridge:** We need a rule that says: **If you are Interested in Improving your Intellect, then you are Not Concerned with Money.** (II → NCM)\nIf we add this bridge, the full logical chain becomes: LA → II → NCM → RH. This makes the conclusion (LA → RH) 100% valid."] },
-    { type: 'h4', text: "Step 4: Evaluation" },
-    { type: 'paragraph', text: "You are looking for the answer choice that provides the (II → NCM) link, possibly in a disguised or contrapositive form." },
+
+    { type: 'h4', text: 'Step 2: Identify the Gap' },
+    { type: 'paragraph', text: "The argument's chain is broken. The two premises talk about **different traits**:\n\n- Premise 1 connects LA doctorates to \"improving intellects\"\n- Premise 2 connects \"not concerned with money\" to rarely hired\n\nTo prove LA → RH, we need to link the *end* of Premise 1 to the *start* of Premise 2." },
+    { type: 'code', text: "Have:         LA → II        (Premise 1)\nHave:         NCM → RH       (Premise 2)\nNeed:         LA → RH        (Conclusion)\nMissing link: II → NCM\n\nFull chain:   LA → II → NCM → RH  ✓" },
+
+    { type: 'h4', text: 'Step 3: Prephrase the Bridge' },
+    { type: 'paragraph', text: "We need: **\"If you are Interested in Improving your Intellect, then you are Not Concerned with Money.\"** (II → NCM)\n\nThis link may appear in disguised form — particularly as an \"only\" statement, which reverses the apparent order of terms." },
+
+    { type: 'h4', text: 'Step 4: Evaluate the Choices' },
     { type: 'breakdown', labels: { title: "Option", text: "Analysis" }, items: [
-        { title: "(A) Companies would hire people with doctorates in the liberal arts if such people were interested in the money available in the business world.", text: "This describes what would happen under a different set of circumstances. It doesn't help prove the conclusion about what happens now.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B) Some people who are interested in the liberal arts do not care about money.", text: "\"Some\" is too weak for a sufficient assumption. Even if *some* people with LA doctorates don't care about money, we can't conclude that companies *rarely hire the entire group*. The logic must apply to everyone with a doctorate.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C) The only people not interested in making money in the business world are people who are interested in improving their intellects.", text: "\"The only\" introduces a necessary condition. This translates to: If Not Concerned with Money → Interested in Improving Intellect (NCM → II). This is the reverse of the link we need (II → NCM).", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D) People with doctorates in the liberal arts are interested in employment in the business world.", text: "This establishes that people with doctorates want these jobs, but it doesn't help explain why they are rarely hired. It doesn't bridge the logical gap in the argument.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(E) Only people not concerned with making money in the business world are interested in improving their intellects.", text: "This is the link we need, presented in \"only\" form. \"Only X are Y\" translates to \"If Y, then X.\"\n\n*   **Translation:** If you are Interested in Improving your Intellect (Y), then you are Not Concerned with making Money (X).\n*   **Logic:** II → NCM. This is exactly the bridge we predicted. It completes the chain perfectly.", badge: "Correct", badgeColor: "green" }
+      { title: "(A) Companies would hire people with doctorates in the liberal arts if such people were interested in the money available in the business world.", text: "This describes a hypothetical scenario (\"if they were interested in money\"). It does not establish what is actually true about people with LA doctorates. A conditional about a different situation cannot close the gap in the current argument.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) Some people who are interested in the liberal arts do not care about money.", text: "\"Some\" is far too weak for a sufficient assumption. Even if *some* LA-interested people don't care about money, we cannot conclude that companies rarely hire *the entire group*. Sufficiency requires a universal claim, not a partial one.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) The only people not interested in making money in the business world are people who are interested in improving their intellects.", text: "\"The only X are Y\" translates to **X → Y**, so this gives us: NCM → II. That is the **reverse** of the link we need (II → NCM). It tells us that everyone not concerned with money is interested in improving their intellect — but we need the opposite direction.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) People with doctorates in the liberal arts are interested in employment in the business world.", text: "This establishes that LA doctorate holders *want* business jobs, but it does not explain why they are rarely hired. It provides no bridge between \"improving intellects\" and \"not concerned with money.\"", badge: "Incorrect", badgeColor: "red" },
+      { title: "(E) Only people not concerned with making money in the business world are interested in improving their intellects.", text: "\"Only X are Y\" translates to **Y → X**: If you are Interested in Improving your Intellect (Y), then you are Not Concerned with Money (X).\n\n**Translation:** II → NCM — exactly the bridge we predicted.\n\n**Full chain:** LA → II → NCM → RH. The conclusion (LA → RH) follows with certainty.", badge: "Correct", badgeColor: "green" }
     ]},
-    { type: 'callout', title: "Key Takeaway", variant: "summary", text: "For sufficient assumptions involving conditional chains, first map out the logic you have and the logic you need. Pay close attention to subtle shifts in language (\"improving intellects\" vs. \"not concerned with money\"). The correct answer will provide the missing link that connects these seemingly different concepts. Be prepared to translate \"only\" and \"the only\" statements into their correct \"if... then...\" format to spot the correct logical bridge." }
+
+    { type: 'callout', title: "Key Takeaway", variant: "summary", text: "**Complex chains** involve premises that use *different concepts* for their endpoints. The gap is a definitional link that equates or connects those concepts.\n\n**Translation is everything.** \"Only X are Y\" means Y → X. \"The only X are Y\" means X → Y. Many wrong answers exploit this confusion by offering the reversal of the link you need.\n\n**Systematic approach:** (1) Diagram each premise as a conditional. (2) Diagram the conclusion. (3) Identify which link is missing. (4) Translate each answer choice into conditional form and check if it supplies the missing link." }
   ]
 };

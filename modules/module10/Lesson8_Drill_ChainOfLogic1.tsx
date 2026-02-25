@@ -4,42 +4,65 @@ export const Lesson8_Drill_ChainOfLogic1: Lesson = {
   id: "10-8",
   title: "Drill: The Chain of Logic (PT-135-S-2-Q-15)",
   content: [
-    { type: 'paragraph', text: "Some Sufficient Assumption questions require you to complete a chain of conditional logic. The argument will present a series of \"If A then B\" statements but will leave out one crucial link. Your task is to identify the missing step that allows the chain to flow uninterrupted from the start to the finish." },
-    { type: 'paragraph', text: "These questions often involve transitive logic:\n*   Premise 1: A → B\n*   Premise 2: B → C\n*   Conclusion: A → D\n*   **The Gap:** You need to provide the link C → D." },
-    { type: 'hr' },
-    { type: 'h4', text: "The Problem" },
-    { type: 'blockquote', text: "**Stimulus:** **Economist:** A country’s rapid emergence from an economic recession requires substantial new investment in that country’s economy. Since people’s confidence in the economic policies of their country is a precondition for any new investment, countries that put collective goals before individuals’ goals cannot emerge quickly from an economic recession." },
-    { type: 'paragraph', text: "**Question:** Which one of the following, if assumed, enables the economist’s conclusion to be properly drawn?" },
-    { type: 'options', items: [
-      "(A) No new investment occurs in any country that does not emerge quickly from an economic recession.",
-      "(B) Recessions in countries that put collective goals before individuals’ goals tend not to affect the country’s people’s support for their government’s policies.",
-      "(C) If the people in a country that puts individuals’ goals first are willing to make new investments in their country’s economy, their country will emerge quickly from an economic recession.",
-      "(D) People in countries that put collective goals before individuals’ goals lack confidence in the economic policies of their countries.",
-      "(E) A country’s economic policies are the most significant factor determining whether that country’s economy will experience a recession."
+    { type: 'h2', text: 'The Chain of Logic Pattern' },
+    { type: 'paragraph', text: "Chain of Logic sufficient assumptions require you to **complete a broken conditional chain**. The argument presents a series of \"If A then B\" relationships but leaves out one crucial link. Your task is to identify the missing step that allows the chain to flow uninterrupted from the starting condition to the conclusion." },
+    { type: 'paragraph', text: "The underlying structure is transitive logic. If you know A → B and B → C, you can conclude A → C. When an SA argument gives you part of a chain and draws a conclusion that requires the full chain, the correct answer supplies the missing link." },
+    { type: 'callout', variant: 'tip', title: 'The Diagramming Advantage', text: "Chain of Logic questions are the most diagram-friendly SA pattern. Write out each conditional relationship as you read. Then compare your chain to the conclusion. The gap will be visible as a missing arrow in the chain. On contrapositive chains, remember: if the conclusion uses negated terms, you may need to work with the contrapositive of your premises." },
+
+    { type: 'table', headers: ['Structure', 'Example'], rows: [
+      ['Premise 1', 'A → B'],
+      ['Premise 2', 'B → C'],
+      ['Conclusion', 'A → D'],
+      ['**Missing Link**', '**C → D**']
     ]},
-    { type: 'paragraph', text: "<br/><br/><br/>" },
+
     { type: 'hr' },
-    { type: 'h3', text: "Explanation" },
-    { type: 'h4', text: "Step 1: Break Down the Argument" },
-    { type: 'paragraph', text: "This argument is purely structural. Let's map the conditional statements clearly." },
+
+    { type: 'h3', text: 'Practice Question' },
+
+    { type: 'question-card',
+      id: 'SA-10-8-001',
+      questionType: 'Sufficient Assumption',
+      difficulty: 'medium',
+      stimulus: "Economist: A country's rapid emergence from an economic recession requires substantial new investment in that country's economy. Since people's confidence in the economic policies of their country is a precondition for any new investment, countries that put collective goals before individuals' goals cannot emerge quickly from an economic recession.",
+      question: "Which one of the following, if assumed, enables the economist's conclusion to be properly drawn?",
+      options: [
+        "(A) No new investment occurs in any country that does not emerge quickly from an economic recession.",
+        "(B) Recessions in countries that put collective goals before individuals' goals tend not to affect the country's people's support for their government's policies.",
+        "(C) If the people in a country that puts individuals' goals first are willing to make new investments in their country's economy, their country will emerge quickly from an economic recession.",
+        "(D) People in countries that put collective goals before individuals' goals lack confidence in the economic policies of their countries. (Correct)",
+        "(E) A country's economic policies are the most significant factor determining whether that country's economy will experience a recession."
+      ]
+    },
+
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Step-by-Step Analysis' },
+
+    { type: 'h4', text: 'Step 1: Break Down the Argument' },
+    { type: 'paragraph', text: "This argument is purely structural. Map each conditional statement clearly." },
     { type: 'breakdown', labels: { title: "Statement", text: "Logic" }, items: [
-      { title: "A country’s rapid emergence from an economic recession requires substantial new investment in that country’s economy.", text: "Rapid Emergence → New Investment (RE → NI)" },
-      { title: "Since people’s confidence in the economic policies of their country is a precondition for any new investment...", text: "New Investment → Confidence (NI → C)\n*Combined Premise Chain:* Rapid Emergence → New Investment → Confidence (RE → NI → C)\n*Contrapositive:* No Confidence → No Investment → No Rapid Emergence (~C → ~NI → ~RE)" },
-      { title: "...countries that put collective goals before individuals’ goals cannot emerge quickly from an economic recession.", text: "Collective > Individual → NO Rapid Emergence (Coll → ~RE)" }
+      { title: "A country's rapid emergence from an economic recession requires substantial new investment in that country's economy.", text: "**Rapid Emergence → New Investment** (RE → NI)\n\nNew investment is a *necessary* condition for rapid emergence." },
+      { title: "People's confidence in the economic policies of their country is a precondition for any new investment.", text: "**New Investment → Confidence** (NI → C)\n\n*Combined chain so far:* RE → NI → C\n*Contrapositive:* ~C → ~NI → ~RE" },
+      { title: "Countries that put collective goals before individuals' goals cannot emerge quickly from an economic recession.", text: "**Conclusion:** Collective Goals → ~RE\n\nThe conclusion introduces a new subject (\"collective goals\") and links it to the negated end of our chain." }
     ]},
-    { type: 'h4', text: "Step 2: Analysis" },
-    { type: 'paragraph', text: "**What is the Gap?**\nThe conclusion claims that prioritizing \"Collective Goals\" guarantees \"No Rapid Emergence.\"\nLooking at our Contrapositive Chain (~C → ~NI → ~RE), we can already prove \"No Rapid Emergence\" **IF** we can prove \"No Confidence.\"\n*   **The Missing Link:** We need to connect the subject of the conclusion (\"Collective Goals\") to the trigger of our existing chain (\"No Confidence\")." },
-    { type: 'h4', text: "Step 3: How Can We Make It Sufficient?" },
-    { type: 'paragraph', text: "We need a premise that says:\n**If a country puts Collective Goals first → The people lack Confidence.**\n(Coll → ~C)\nIf we add this link, the full chain becomes:\nColl → ~C → ~NI → ~RE.\nThis proves the conclusion perfectly." },
-    { type: 'h4', text: "Step 4: Evaluation" },
-    { type: 'paragraph', text: "You are looking for the answer that connects \"Collective Goals\" to \"Lack of Confidence.\"" },
+
+    { type: 'h4', text: 'Step 2: Identify the Gap' },
+    { type: 'paragraph', text: "The conclusion claims: **Collective Goals → No Rapid Emergence.**\n\nFrom the contrapositive chain, we already know: **~C → ~NI → ~RE.** So if we can establish \"No Confidence,\" we automatically get \"No Rapid Emergence.\"\n\n**The missing link:** We need to connect the new subject in the conclusion (\"Collective Goals\") to the trigger of our existing contrapositive chain (\"No Confidence\")." },
+    { type: 'code', text: "Existing chain (contrapositive):  ~C → ~NI → ~RE\nConclusion needs:                 Coll → ~RE\nMissing link:                     Coll → ~C\n\nFull chain with link:             Coll → ~C → ~NI → ~RE  ✓" },
+
+    { type: 'h4', text: 'Step 3: Prephrase the Bridge' },
+    { type: 'paragraph', text: "We need a premise that says:\n\n**\"If a country puts Collective Goals first → The people lack Confidence in economic policies.\"** (Coll → ~C)\n\nThis single link completes the chain and guarantees the conclusion." },
+
+    { type: 'h4', text: 'Step 4: Evaluate the Choices' },
     { type: 'breakdown', labels: { title: "Option", text: "Analysis" }, items: [
-        { title: "(A) No new investment occurs in any country that does not emerge quickly from an economic recession.", text: "This reverses the logic. The premise said Emergence requires Investment (E → I). This answer says Non-Emergence implies Non-Investment (~E → ~I), which is the mistaken negation of the original premise. It doesn't help us link Collective Goals to anything.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B) Recessions in countries that put collective goals before individuals’ goals tend not to affect the country’s people’s support for their government’s policies.", text: "\"Support\" is not the same concept as \"Confidence\" (the term used in the argument). Furthermore, saying recessions *don't* affect support weakens the idea that there's a problem. We want to prove there *is* a problem (no confidence).", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C) If the people in a country that puts individuals’ goals first are willing to make new investments in their country’s economy, their country will emerge quickly from an economic recession.", text: "This talks about countries that put *individuals'* goals first. The conclusion is about countries that put *collective* goals first. In formal logic, knowing what happens to Group A doesn't prove what happens to Group B unless you assume they are opposites, which we can't do here.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D) People in countries that put collective goals before individuals’ goals lack confidence in the economic policies of their countries.", text: "This is the exact bridge we predicted: Coll → ~C.\n\n- If Collective Goals (Coll) → No Confidence (~C).\n- If No Confidence (~C) → No Investment (~NI) [From Premise 2].\n- If No Investment (~NI) → No Rapid Emergence (~RE) [From Premise 1].\n- Therefore: Coll → ~RE. The argument is valid.", badge: "Correct", badgeColor: "green" },
-        { title: "(E) A country’s economic policies are the most significant factor determining whether that country’s economy will experience a recession.", text: "The argument is about *emerging* from a recession, not entering one. Causes of the recession are irrelevant to the logic about recovery.", badge: "Incorrect", badgeColor: "red" }
+      { title: "(A) No new investment occurs in any country that does not emerge quickly from an economic recession.", text: "This says ~RE → ~NI, which is the **Mistaken Negation** of Premise 1 (RE → NI). It reverses cause and effect and does not connect \"Collective Goals\" to anything in the chain.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(B) Recessions in countries that put collective goals before individuals' goals tend not to affect the country's people's support for their government's policies.", text: "\"Support\" ≠ \"Confidence\" (the term in the argument). Additionally, saying recessions *don't* affect support actually undermines the idea that there is a problem. The word \"tend\" also makes this too weak for sufficiency.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(C) If the people in a country that puts individuals' goals first are willing to make new investments in their country's economy, their country will emerge quickly from an economic recession.", text: "This talks about countries that put *individuals'* goals first — the opposite group. What happens to Group A tells us nothing about Group B unless we know they are logically complementary, which we do not.", badge: "Incorrect", badgeColor: "red" },
+      { title: "(D) People in countries that put collective goals before individuals' goals lack confidence in the economic policies of their countries.", text: "This is the exact bridge we predicted: **Coll → ~C.**\n\n**Full chain:** Coll → ~C → ~NI → ~RE.\n\nCountries that put collective goals first → people lack confidence → no new investment → no rapid emergence. The conclusion follows with certainty.", badge: "Correct", badgeColor: "green" },
+      { title: "(E) A country's economic policies are the most significant factor determining whether that country's economy will experience a recession.", text: "The argument is about *emerging from* a recession, not entering one. Causes of the recession are irrelevant to the recovery logic.", badge: "Incorrect", badgeColor: "red" }
     ]},
-    { type: 'callout', title: "Key Takeaway", variant: "summary", text: "When you see a conditional chain in the premises (A → B → C), sketch it out (mentally or on paper). Then look at the conclusion (X → ~A). The missing assumption is almost always the link that connects the new subject (X) to the negation of the end of the chain (~C).\n*   *Structure:* X → ~C.\n*   *Result:* X → ~C → ~B → ~A. Valid." }
+
+    { type: 'callout', title: "Key Takeaway", variant: "summary", text: "**The Chain of Logic pattern** has a signature structure: premises give you part of a conditional chain, and the conclusion requires the full chain. Diagram every conditional as you read — the missing arrow is your answer.\n\n**The contrapositive shortcut:** When the conclusion uses negated terms (~RE), work with the contrapositive of your premises. The missing link often connects a new subject to the negated end of the chain.\n\n**Formula:** If the premises give you A → B → C and the conclusion is X → ~A, then the missing link is X → ~C (which chains through the contrapositive ~C → ~B → ~A)." }
   ]
 };
