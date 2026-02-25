@@ -9,6 +9,7 @@ import { Lesson7_Drill_InferenceByConstraint } from './module16/Lesson7_Drill_In
 import { Lesson8_Drill_LogicalDensity } from './module16/Lesson8_Drill_LogicalDensity';
 import { Lesson9_Drill_SemanticNuance } from './module16/Lesson9_Drill_SemanticNuance';
 import { Lesson10_Drill_LeastSupported } from './module16/Lesson10_Drill_LeastSupported';
+import { Lesson11_ReferenceGuide } from './module16/Lesson11_ReferenceGuide';
 
 export const Module16: ModuleData = {
   id: 16,
@@ -26,6 +27,7 @@ export const Module16: ModuleData = {
     Lesson7_Drill_InferenceByConstraint,
     Lesson8_Drill_LogicalDensity,
     Lesson9_Drill_SemanticNuance,
-    Lesson10_Drill_LeastSupported
+    Lesson10_Drill_LeastSupported,
+    Lesson11_ReferenceGuide
   ]
 };
