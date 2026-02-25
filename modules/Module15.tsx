@@ -6,6 +6,7 @@ import { Lesson4_Drill_Analogy } from './module15/Lesson4_Drill_Analogy';
 import { Lesson5_Drill_ProblemAndSolution } from './module15/Lesson5_Drill_ProblemAndSolution';
 import { Lesson6_Drill_PhilosophicalRebuttal } from './module15/Lesson6_Drill_PhilosophicalRebuttal';
 import { Lesson7_Drill_ConditionalLogicAndParadox } from './module15/Lesson7_Drill_ConditionalLogicAndParadox';
+import { Lesson8_ReferenceGuide } from './module15/Lesson8_ReferenceGuide';
 
 export const Module15: ModuleData = {
   id: 15,
@@ -20,6 +21,7 @@ export const Module15: ModuleData = {
     Lesson4_Drill_Analogy,
     Lesson5_Drill_ProblemAndSolution,
     Lesson6_Drill_PhilosophicalRebuttal,
-    Lesson7_Drill_ConditionalLogicAndParadox
+    Lesson7_Drill_ConditionalLogicAndParadox,
+    Lesson8_ReferenceGuide
   ]
 };
