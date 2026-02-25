@@ -5,35 +5,44 @@ export const Lesson2_StepByStepGuide: Lesson = {
   title: "Step-by-Step Guide",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Must Be False' },
-    { type: 'paragraph', text: 'This guide gives you a simple, clear way to solve any **Must Be False** question. Your main goal is to look at the facts provided and find the one answer that completely goes against them.' },
-    { type: 'h3', text: 'Step 1: Check the Facts and Find the Rules' },
-    { type: 'paragraph', text: 'Read the stimulus with one goal: pick out the rules. Assume everything in the text is 100% true.' },
-    { type: 'list', items: [
-      '**Focus on Absolute Terms:** Prioritize words that establish strict, unbreakable rules. These "no-wiggle-room" terms are essential because they allow for no exceptions, making them the most effective anchors for proving a contradiction.\n    *   **Quantity words:** *All, every, none, no, always, never.*\n    *   **Relational words:** *If/then, only if, requires, must.*',
-      '**Identify Probabilistic Terms:** Note words that allow for exceptions, such as *most, some, usually, often,* and *likely*. These terms are more difficult to disprove because they do not represent absolute certainties.',
-      '**Sketch it out if it gets confusing:** For long step-by-step connections (e.g., If A happens, then B happens; if B happens, then C happens), quickly note the connection and its **contrapositive** (If C doesn\'t happen, then B didn\'t happen).'
+    { type: 'paragraph', text: 'Follow this four-step method to solve any **Must Be False** question. Your goal is to find the one answer that creates a logical impossibility when combined with the stimulus.' },
+    { type: 'h3', text: 'The 4-Step Method' },
+    { type: 'process', title: 'Solving Must Be False Questions', steps: [
+      '**Diagram the Rules.** Read the stimulus and extract every rule. Pay special attention to absolute terms (*all, every, none, never, no*) and conditional language (*if/then, only if, requires, must*). Sketch chains and contrapositives for complex conditionals.',
+      '**Test Each Answer.** For each answer choice, ask: "Can I build a scenario where this statement AND the stimulus are both true?" If yes, the answer *could be true* and is wrong. Move on.',
+      '**Find the Contradiction.** Identify the one answer where every attempt to make it true forces a violation of at least one stimulus rule. This answer is logically impossible \u2014 it is your pick.',
+      '**Verify Impossibility.** Before confirming, double-check that the answer genuinely contradicts the stimulus rather than merely being unlikely or unsupported. The standard is impossibility, not improbability.'
     ]},
-    { type: 'h3', text: 'Step 2: Combine Rules and Prephrase a Contradiction' },
-    { type: 'paragraph', text: 'Analyze how your identified rules interact to define what is strictly impossible. The goal is to determine what the stimulus forbids.' },
+    { type: 'h3', text: 'The "Could Be True" Elimination Technique' },
+    { type: 'paragraph', text: 'Must Be False questions reward elimination. For each answer, try to imagine a world where both the stimulus facts and the answer choice hold simultaneously. If you succeed \u2014 even with an implausible scenario \u2014 that answer is wrong. Only when no compatible scenario exists have you found the correct answer.' },
     { type: 'list', items: [
-      '**Chain Your Rules:** Connect your "If/Then" statements to find hidden requirements. For example, if "To be a Pilot requires Certification" and "Certification requires Passing the Exam," you can conclude that "To be a Pilot requires Passing the Exam." Any scenario where someone is a Pilot but did not Pass the Exam is now impossible.',
-      '**Check for Conflict:** Determine if the rules prove that two things simply cannot happen at the same time. If "no reptiles have fur" and "all cats have fur," then it is strictly impossible for a cat to be a reptile.',
-      '**Prephrase the "Impossible":** Before moving to the answers, finish this sentence: *"The one thing that absolutely cannot happen is..."* This becomes your **"Anti-Rule."**\n    *   *Example Stimulus:* "All obsidian samples are volcanic glass. No volcanic glass has a crystalline structure."\n    *   *Example Prephrase:* "An obsidian sample that has a crystalline structure."'
+      '**Step A:** Accept all stimulus rules as absolute truths.',
+      '**Step B:** Read the answer choice and attempt to construct a situation where it is true without breaking any stimulus rule.',
+      '**Step C:** If you can construct such a situation, eliminate the answer. If every attempt produces a rule violation, keep it.'
     ]},
-    { type: 'h3', text: 'Step 3: Scan Answers for a Conflict' },
-    { type: 'paragraph', text: 'Now, evaluate each answer choice against the rules and your prephrase. Your goal is to find the one and only statement that is logically impossible.' },
+    { type: 'h3', text: 'Worked Example' },
+    { type: 'question-card',
+      id: '18-2-example',
+      questionType: 'Must Be False',
+      difficulty: 'medium',
+      stimulus: 'All certified instructors at the academy have completed the advanced safety course. No one who has completed the advanced safety course is permitted to lead beginner sessions, because the academy assigns beginner sessions exclusively to uncertified volunteers.',
+      question: 'If the statements above are true, each of the following could be true EXCEPT:',
+      options: [
+        '(A) Some uncertified volunteers have also completed the advanced safety course.',
+        '(B) A certified instructor leads an intermediate session at the academy.',
+        '(C) A certified instructor leads a beginner session at the academy. (Correct)',
+        '(D) The academy has more uncertified volunteers than certified instructors.',
+        '(E) Some certified instructors have never led any session at the academy.'
+      ]
+    },
+    { type: 'paragraph', text: '**Why (C) is correct:** Certified instructors have completed the advanced safety course (Rule 1). No one who has completed that course may lead beginner sessions (Rule 2). Chaining these rules makes it impossible for a certified instructor to lead a beginner session. The other four answers describe situations that are compatible with both rules.' },
+    { type: 'h3', text: 'Wrong-Answer Patterns' },
     { type: 'list', items: [
-      '**Check for Direct Violations:** Ask yourself, "Does this answer choice force a violation of the rules?" You are looking for a statement that cannot coexist with the stimulus. If the rules say "*X never happens*," and the answer choice says "*X happened*," you have found the correct answer.',
-      '**The "Could Be True" Elimination:** For every other choice, ask: "Is there any way this *could* happen?" If you can dream up a scenario—no matter how unlikely—where the statement fits without breaking the rules, it is a wrong answer.'
+      '**The "Could Be True" Trap:** A statement the stimulus doesn\'t address at all. Because the stimulus doesn\'t forbid it, it *could* be true and is therefore wrong.',
+      '**The "Must Be True" Trap:** A statement that actually follows from the stimulus. It is tempting because you recognize the logical connection, but it is a consequence of the rules, not a contradiction.',
+      '**The Reversal Trap:** The stimulus says "If A, then B." The answer suggests "If B, then A." This reversal is not guaranteed, but it is not impossible either \u2014 so it *could* be true.',
+      '**The Qualifier Exploit:** The stimulus uses *most* or *usually*, and the answer describes an exception. Since the stimulus allows exceptions, this statement is possible and wrong.'
     ]},
-    { type: 'paragraph', text: '**Note:** In this specific question type, "possible" means "incorrect."' },
-    { type: 'h3', text: 'Step 4: Eliminate Incorrect Answers and Traps' },
-    { type: 'paragraph', text: 'If you are unsure, use a process of elimination based on common trap types. The four incorrect answers will always be logically possible.' },
-    { type: 'list', items: [
-      '**Trap: The "Could Be True" Statement.** These are statements about things the stimulus doesn\'t forbid. This includes statements that are Out of Scope or introduce New Information.',
-      '**Trap: The "Must Be True" Statement.** These are often the most tempting traps. You correctly identify a strong logical connection, but fail to realize it is a result of the stimulus, not a contradiction of it.',
-      '**Trap: Flawed Inferences.** The stimulus might say "If A, then B." A trap will suggest "If B, then A." While not guaranteed to be true, this reversal *could* be true and does not create a direct contradiction.',
-      '**Trap: Exploiting Qualifiers.** A trap might describe an exception to a "most" or "usually" rule. Since the stimulus allows for exceptions, such a statement is possible and therefore not the answer.'
-    ]}
+    { type: 'callout', title: 'Timing Tip', variant: 'tip', text: 'Spend about 60 percent of your time diagramming the rules and prephrasing what the stimulus forbids. A clear "anti-rule" lets you scan the answers quickly. If two choices look impossible, re-check each against the exact wording \u2014 only one will produce a genuine contradiction.' }
   ]
 };
