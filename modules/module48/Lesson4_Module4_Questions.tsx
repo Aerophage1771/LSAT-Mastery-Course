@@ -90,5 +90,73 @@ export const Lesson4_Module4_Questions: Lesson = {
         ]}
       ]
     },
+    {
+      type: 'accordion',
+      title: 'Drill: Conditional Chain (PT-128-S-3-Q-3)',
+      content: [
+        { type: 'h4', text: 'Stimulus' },
+        { type: 'blockquote', text: 'If Patricia eats a heavy, spicy meal tonight, she will not sleep well. But if Patricia does not eat a heavy, spicy meal tonight, she will feel deprived. So Patricia will either not sleep well tonight or she will feel deprived.' },
+        { type: 'h4', text: 'Question' },
+        { type: 'paragraph', text: 'The pattern of reasoning in which one of the following arguments is most similar to that in the argument above?' },
+        { type: 'options', items: [
+        '**(A)** If Ramón goes to the party tonight, he will enjoy himself. But if Ramón does not go to the party, he will feel regret. So Ramón will either enjoy himself tonight or he will feel regret. [1%]',
+        '**(B)** If Kenji buys the car, he will not be able to afford a vacation. But if Kenji does not buy the car, he will feel envious of friends who have cars. So Kenji will either not be able to afford a vacation or he will feel envious. [0%]',
+        '**(C)** If Tara drinks coffee in the evening, she will stay up past midnight. But if Tara does not drink coffee in the evening, she will fall asleep at her desk. So Tara will either stay up past midnight or she will fall asleep at her desk. [0%]',
+        '**(D)** Li plants an old rose variety in her garden. If she gives it too much water, the rose will develop mildew. If she gives it too little water, the rose will die. So if Li does not give the rose too much water, it will die. [99%] (Correct)',
+        '**(E)** If Anthony goes to bed early tonight, he will miss the late movie on television. But if Anthony watches the late movie, he will feel tired in the morning. So Anthony will either miss the late movie or he will feel tired in the morning. [0%]'
+        ]}
+      ]
+    },
+    {
+      type: 'accordion',
+      title: 'Drill: Reasoning by Elimination (PT-127-S-1-Q-8)',
+      content: [
+        { type: 'h4', text: 'Stimulus' },
+        { type: 'blockquote', text: 'When presented with the evidence against him, Ellison said that the__(missing text)__he was__(missing text)__the__(missing text)__in question was committed, he was not at the__(missing text)__the__(missing text)__was committed and that the__(missing text)__that__(missing text)__was__(missing text)__be__(missing text)__because__(missing text)__was trespassing.' },
+        { type: 'h4', text: 'Question' },
+        { type: 'paragraph', text: 'The pattern of reasoning in which one of the following is most similar to the reasoning in the argument above?' },
+        { type: 'options', items: [
+        '**(A)** A report claims that the food being served in the school cafeteria is unhealthy. But the report was written by a group of students with a known bias. So the report should be disregarded. [4%]',
+        '**(B)** The builder claims that the house has been constructed according to code. But records show that the builder has failed inspections in the past. So the house should be inspected. [4%]',
+        '**(C)** The witness says the defendant was present at the scene. But the witness has been shown to have poor eyesight. So the testimony is unreliable. [4%]',
+        '**(D)** The conservation officer said that Knutson was__(missing text)__trespassing on government land. But__(missing text)__was__(missing text)__the conservation officer__(missing text)__was__(missing text)__trespassing. [88%] (Correct)',
+        '**(E)** The newspaper reported that the factory had been__(missing text)__pollution. But the__(missing text)__was__(missing text)__by a journalist__(missing text)__had no scientific training. [0%]'
+        ]}
+      ]
+    },
+    {
+      type: 'accordion',
+      title: 'Drill: Statistical Reasoning (PT-103-S-2-Q-16)',
+      content: [
+        { type: 'h4', text: 'Stimulus' },
+        { type: 'blockquote', text: 'Every new play that runs for more than three months is profitable. Therefore, some of the new plays that were produced this season are profitable, since some of the new plays produced this season have been running for more than three months.' },
+        { type: 'h4', text: 'Question' },
+        { type: 'paragraph', text: 'Which one of the following arguments is most similar in its pattern of reasoning to the argument above?' },
+        { type: 'options', items: [
+        '**(A)** Every film that wins a major award at the Barville Film Festival is shown at the Roxy Theater. Since the Roxy Theater showed some films from the Barville Film Festival, some of the films shown at the Roxy Theater must have won major awards at the Barville Film Festival. [4%]',
+        '**(B)** Every horse in the Longacre Stables was bred in Ireland. Since some of the horses in the Longacre Stables are racehorses, every racehorse was bred in Ireland. [3%]',
+        '**(C)** Every student at the Freeman School who has a grade point average of 3.0 or higher has been awarded a scholarship. Therefore, some of the students at the Freeman School have been awarded scholarships, since some of the students at the Freeman School have grade point averages of 3.0 or higher. [89%] (Correct)',
+        '**(D)** Every painting on display in the Kellogg Collection is by a twentieth-century artist. Since some of the paintings in the Kellogg Collection were painted by French artists, some twentieth-century artists are French. [2%]',
+        '**(E)** Every employee of the Woodvale Corporation who has worked there for more than five years is eligible for the company retirement plan. Since some of the employees who are eligible for the retirement plan have been hired in the last two years, some of the employees have been working at the Woodvale Corporation for more than five years, and yet they were hired in the last two years. [2%]'
+        ]}
+      ]
+    },
+    {
+      type: 'accordion',
+      title: 'Drill: Conditional Reasoning (PT-125-S-4-Q-25)',
+      content: [
+        { type: 'h4', text: 'Stimulus' },
+        { type: 'blockquote', text: 'To get the free dessert, one must order an entrée and a salad. But anyone who orders either an entrée or a salad can get a free soft drink. So anyone who is eligible for a free dessert is eligible for a free soft drink as well.' },
+        { type: 'h4', text: 'Question' },
+        { type: 'paragraph', text: 'The pattern of reasoning in which one of the following arguments is most similar to the pattern of reasoning in the argument above?' },
+        { type: 'options', items: [
+        '**(A)** To get the corner office, you must be a senior partner or a managing director. Anyone who is a senior partner can get a reserved parking spot. So anyone who gets the corner office can also get a reserved parking spot. [8%]',
+        '**(B)** To get the employee discount, one must be either a full-time employee or a contractor with more than one year of service. But anyone who is a full-time employee gets health benefits. So anyone who gets the employee discount also gets health benefits. [5%]',
+        '**(C)** To grow azaleas, you need acidic soil and partial shade. But any garden that has either acidic soil or partial shade can grow ferns. So any garden in which azaleas can grow can also grow ferns. [80%] (Correct)',
+        '**(D)** To win the grand prize, you need to answer all three questions correctly. But answering the first question correctly earns you a consolation prize. So everyone who wins the grand prize also earns a consolation prize. [5%]',
+        '**(E)** To become class president, you need the support of both the faculty and the student council. But having faculty support earns you a seat on the advisory board. So the class president always has a seat on the advisory board. [2%]'
+        ]}
+      ]
+    },
   ] as ContentBlock[]
 };

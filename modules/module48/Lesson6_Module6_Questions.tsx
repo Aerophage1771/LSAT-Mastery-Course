@@ -41,7 +41,7 @@ export const Lesson6_Module6_Questions: Lesson = {
     },
     {
       type: 'accordion',
-      title: 'Drill: The \\ [Missing ID]',
+      title: 'Drill: The Correlation-to-Causation Flaw (PT-107-S-3-Q-23)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: '**Stimulus:** Several carefully conducted studies showed that 75 percent of strict vegetarians reached age 50 without developing serious heart disease. We can conclude from this that avoiding meat increases one’s chances of avoiding serious heart disease. Therefore, people who want to reduce the risk of serious heart disease should not eat meat.' },

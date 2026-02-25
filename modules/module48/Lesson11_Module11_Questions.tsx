@@ -7,7 +7,7 @@ export const Lesson11_Module11_Questions: Lesson = {
     { type: 'h2', text: 'Module 11: Necessary Assumption' },
     {
       type: 'accordion',
-      title: 'Drill: Advanced  [Missing ID]',
+      title: 'Drill: Advanced Necessary Assumption [Missing ID]',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: '**Stimulus:** **Researcher:** The role of chemicals called pheromones in determining the sexual behavior of some animals is well documented. But, even though humans also produce these chemicals, it is clear that psychological factors have taken over this role in us. Whereas for animals these behaviors are involuntary, which is a clear sign of chemical control, humans, by virtue of their free will, choose how they behave, and thus psychological factors take over. So pheromones are merely a vestige of our evolutionary past.' },
@@ -24,7 +24,7 @@ export const Lesson11_Module11_Questions: Lesson = {
     },
     {
       type: 'accordion',
-      title: 'Drill:  [Missing ID]',
+      title: 'Drill: The Scope Limitation (PT-127-S-1-Q-19)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: '**Stimulus:** **Editorialist:** Some people argue that we have an obligation not to cut down trees. However, there can be no obligation to an entity unless that entity has a corresponding right. So if we have an obligation toward trees, then trees have rights. But trees are not the sort of things that can have rights. Therefore, we have no obligation not to cut down trees.' },
@@ -41,7 +41,7 @@ export const Lesson11_Module11_Questions: Lesson = {
     },
     {
       type: 'accordion',
-      title: 'Drill: The  [Missing ID]',
+      title: 'Drill: The Dissatisfaction Bridge (PT-112-S-3-Q-18)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: '**Stimulus:** It is said that people should accept themselves as they are instead of being dissatisfied with their own abilities. But this is clearly a bad principle if the goal is a society whose citizens are genuinely happy, for no one can be genuinely happy if he or she is not pursuing personal excellence and is unwilling to undergo personal change of any kind.' },
@@ -58,7 +58,7 @@ export const Lesson11_Module11_Questions: Lesson = {
     },
     {
       type: 'accordion',
-      title: 'Drill:  [Missing ID]',
+      title: 'Drill: The Hobby Strategy (PT-114-S-4-Q-20)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: '**Stimulus:** Shy adolescents often devote themselves totally to a hobby to help distract them from the loneliness brought on by their shyness. Sometimes they are able to become friends with others who share their hobby. But if they lose interest in that hobby, their loneliness may be exacerbated. So developing an all-consuming hobby is not a successful strategy for overcoming adolescent loneliness.' },
@@ -75,7 +75,7 @@ export const Lesson11_Module11_Questions: Lesson = {
     },
     {
       type: 'accordion',
-      title: 'Drill: The  [Missing ID]',
+      title: 'Drill: The Morale-Production Link (PT-103-S-1-Q-4)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: '**Stimulus:** In order to increase production, ABC Company should implement a flextime schedule, which would allow individual employees some flexibility in deciding when to begin and end their workday. Studies have shown that working under flextime schedules is associated with increased employee morale.' },
@@ -92,7 +92,7 @@ export const Lesson11_Module11_Questions: Lesson = {
     },
     {
       type: 'accordion',
-      title: 'Drill: The  [Missing ID]',
+      title: 'Drill: The Entertainment Gap (PT-105-S-1-Q-18)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: '**Stimulus:** **Sociologist:** The intended function of news is to give us information on which to act. But in a consumer society, news becomes a product to be manufactured and dispensed to the consumer. An enormous industry for the production and consumption of news has evolved, and we ingest news with an insatiable appetite. Under such circumstances, news is primarily entertaining and cannot, therefore, serve its intended function.' },
@@ -109,7 +109,7 @@ export const Lesson11_Module11_Questions: Lesson = {
     },
     {
       type: 'accordion',
-      title: 'Drill: The  [Missing ID]',
+      title: 'Drill: The Financial Incentive (PT-116-S-3-Q-1)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: '**Stimulus:** The development of new inventions is promoted by the granting of patent rights, which restrict the right of anyone but the patent holders to profit from these inventions for a specified period. Without patent rights, anyone could simply copy another’s invention; consequently, inventors would have no financial incentive for investing the time and energy required to develop new products. Thus, it is important to continue to grant patent rights, or else no one will engage in original development and consequently no new inventions will be forthcoming.' },
@@ -126,7 +126,7 @@ export const Lesson11_Module11_Questions: Lesson = {
     },
     {
       type: 'accordion',
-      title: 'Drill: The  [Missing ID]',
+      title: 'Drill: The Shipping Assignment (PT-118-S-1-Q-3)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: '**Stimulus:** A reason Larson cannot do the assignment is that she has an unavoidable scheduling conflict. On the other hand, a reason Franks cannot do the assignment is that he does not quite have the assertiveness the task requires. So, the task must be assigned to Parker, the only supervisor in the shipping department other than Larson and Franks.' },
@@ -143,7 +143,7 @@ export const Lesson11_Module11_Questions: Lesson = {
     },
     {
       type: 'accordion',
-      title: 'Drill: The  [Missing ID]',
+      title: 'Drill: The Vested Interest (PT-121-S-4-Q-10)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: '**Stimulus:** The proposed coal-burning electric plant should be approved, since no good arguments have been offered against it. After all, all the arguments against it have been presented by competing electricity producers.' },
@@ -160,7 +160,7 @@ export const Lesson11_Module11_Questions: Lesson = {
     },
     {
       type: 'accordion',
-      title: 'Drill: The  [Missing ID]',
+      title: 'Drill: The False Dichotomy (PT-126-S-3-Q-8)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: '**Stimulus:** **Department store manager:** There is absolutely no reason to offer our customers free gift wrapping again this holiday season. If most customers take the offer, it will be expensive and time-consuming for us. On the other hand, if only a few customers want it, there is no advantage in offering it.' },
@@ -177,7 +177,7 @@ export const Lesson11_Module11_Questions: Lesson = {
     },
     {
       type: 'accordion',
-      title: 'Drill: The  [Missing ID]',
+      title: 'Drill: The Brush Style (PT-138-S-3-Q-23)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: '**Stimulus:** **Art historian:** This painting, purportedly by Mary Cassatt, is a forgery. Although the canvas and other materials are consistent with most of Cassatt’s work, and the subject matter is similar to that of Cassatt’s finest paintings, the brush style of this painting is not found in any work known to be Cassatt’s. Hence this painting is definitely not a genuine Cassatt.' },
@@ -189,6 +189,23 @@ export const Lesson11_Module11_Questions: Lesson = {
         '(C) Cassatt’s work generally had a characteristic subject matter that distinguished it from the work of other painters of her era.',
         '(D) The most characteristic feature of Cassatt’s work is her brush style.',
         '(E) No painter other than Cassatt would be able to match Cassatt’s brush style perfectly.'
+        ]}
+      ]
+    },
+    {
+      type: 'accordion',
+      title: 'Drill: The Intention Requirement (PT-117-S-4-Q-16)',
+      content: [
+        { type: 'h4', text: 'Stimulus' },
+        { type: 'blockquote', text: 'Moralist: Immoral actions are those that harm other people. But since those who harm themselves do not intend to harm anyone, they are acting no less morally than those who do no harm at all.' },
+        { type: 'h4', text: 'Question' },
+        { type: 'paragraph', text: 'Which one of the following is an assumption required by the moralist\'s argument?' },
+        { type: 'options', items: [
+        '**(A)** People who do not intend to harm anyone are acting morally.',
+        '**(B)** It is not immoral to harm oneself.',
+        '**(C)** Moral actions are those that benefit other people.',
+        '**(D)** Those who harm themselves do not intend to harm themselves. [63%] (Correct)',
+        '**(E)** People who act morally do not harm themselves.'
         ]}
       ]
     },
