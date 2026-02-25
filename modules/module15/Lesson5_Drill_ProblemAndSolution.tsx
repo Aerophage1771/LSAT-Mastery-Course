@@ -14,7 +14,7 @@ export const Lesson5_Drill_ProblemAndSolution: Lesson = {
     { type: 'list', ordered: true, items: [
       '**Target the specific obstacle.** The argument names one barrier. The answer must neutralize *that exact barrier* \u2014 not a related concern, not a broader category of barriers, and not the underlying problem itself.',
       '**Preserve the argument\'s own framework.** The stimulus defines who the relevant actors are (nations, companies, individuals) and what kind of action is under discussion. The answer must operate within those parameters.',
-      '**Match the logical force of \"unless.\"** The word \"unless\" introduces a necessary condition. The answer must state something that, if it occurred, would be *sufficient* to remove the obstacle. Answers that are too weak (\"might help\") or too strong (\"completely eliminates all problems\") fail this test.',
+      '**Match the logical force of "unless."** The word "unless" introduces a necessary condition. The answer must state something that, if it occurred, would be *sufficient* to remove the obstacle. Answers that are too weak ("might help") or too strong ("completely eliminates all problems") fail this test.',
     ]},
 
     { type: 'callout', variant: 'default', title: 'The Obstacle Reversal Rule', text: "The single most important skill in Problem and Solution completions is precisely identifying the **obstacle** and then finding the answer that **reverses** it. If the obstacle is \"no single nation will act alone,\" the reversal is a mechanism for collective action. If the obstacle is \"the technology does not yet exist,\" the reversal is the development of that technology. The correct answer always mirrors the obstacle \u2014 it does not introduce new considerations." },
@@ -35,7 +35,7 @@ export const Lesson5_Drill_ProblemAndSolution: Lesson = {
     { type: 'hr' },
 
     { type: 'h3', text: 'Drill: Problem and Solution (PT-125-S-2-Q-7)' },
-    { type: 'paragraph', text: "This drill demonstrates the Problem and Solution pattern using a classic collective-action dilemma. Your job is to trace the argument\'s structure, identify the precise obstacle, and find the answer that reverses it." },
+    { type: 'paragraph', text: "This drill demonstrates the Problem and Solution pattern using a classic collective-action dilemma. Your job is to trace the argument's structure, identify the precise obstacle, and find the answer that reverses it." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
 
     { type: 'hr' },
@@ -63,7 +63,7 @@ export const Lesson5_Drill_ProblemAndSolution: Lesson = {
     { type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Decompose the Argument Using the Four-Part Framework' },
-    { type: 'paragraph', text: "Let\'s apply our Problem \u2192 Solution \u2192 Obstacle \u2192 Reversal framework to this stimulus:" },
+    { type: 'paragraph', text: "Let's apply our Problem \u2192 Solution \u2192 Obstacle \u2192 Reversal framework to this stimulus:" },
 
     { type: 'breakdown', labels: { title: 'Component', text: 'Details' }, items: [
       { title: 'The Problem', text: 'Excessive atmospheric buildup of carbon dioxide threatens global welfare. This is the bad outcome the argument wants to prevent.', badge: 'Problem', badgeColor: 'red' },
@@ -80,7 +80,7 @@ export const Lesson5_Drill_ProblemAndSolution: Lesson = {
       '**If** avoid catastrophe \u2192 **Must** reduce fossil fuel burning.',
       '**But** reducing requires costly emission standards.',
       '**And** no single nation will pay alone for a shared benefit.',
-      '**Therefore** catastrophe is unavoidable **unless** [the \"acting alone\" barrier is removed].',
+      '**Therefore** catastrophe is unavoidable **unless** [the "acting alone" barrier is removed].',
     ]},
     { type: 'paragraph', text: "The word \"singlehandedly\" is the fulcrum of the entire argument. The obstacle is not that nations are unwilling to act *at all* \u2014 it is that no nation will act *alone*. This distinction is crucial: the reversal does not need to make nations altruistic or eliminate economic costs. It only needs to ensure that no nation bears the costs by itself." },
 
@@ -94,10 +94,10 @@ export const Lesson5_Drill_ProblemAndSolution: Lesson = {
 
     { type: 'breakdown', labels: { title: 'Option', text: 'Evaluation' }, items: [
       { title: '(A) all nations become less concerned with pollution than with the economic burdens of preventing it', text: "This makes the situation **worse**, not better. If nations care more about economic burdens than pollution, they are even less likely to impose emission standards. This answer moves in the opposite direction from the needed reversal.", badge: 'Opposite Effect', badgeColor: 'red' },
-      { title: '(B) multinational corporations agree to voluntary strict emission standards', text: "Two problems. First, it shifts the agent from **nations** to **corporations** \u2014 but the obstacle is about nations\' GDP calculations, not corporate behavior. Second, the standards are \"voluntary,\" which does not guarantee the binding commitment needed to solve the collective-action problem. A voluntary system still allows free-riding.", badge: 'Agent Shift + Too Weak', badgeColor: 'red' },
+      { title: '(B) multinational corporations agree to voluntary strict emission standards', text: "Two problems. First, it shifts the agent from **nations** to **corporations** \u2014 but the obstacle is about nations' GDP calculations, not corporate behavior. Second, the standards are \"voluntary,\" which does not guarantee the binding commitment needed to solve the collective-action problem. A voluntary system still allows free-riding.", badge: 'Agent Shift + Too Weak', badgeColor: 'red' },
       { title: '(C) international agreements produce industrial emission standards', text: "This directly reverses the obstacle. International **agreements** ensure that multiple nations commit simultaneously, removing the \"singlehandedly\" barrier. The standards are produced through a binding mechanism (agreements), not voluntarily. The agent remains **nations** acting through international channels. The scope matches: the argument requires emission standards, and this answer provides exactly that. **Passes the Obstacle Reversal Test.**", badge: 'Correct', badgeColor: 'green' },
       { title: '(D) distrust among nations is eliminated', text: "The argument never mentions distrust as the obstacle. The barrier is a rational economic calculation: no nation wants to pay alone for a shared benefit. Even if nations trusted each other completely, the free-rider incentive would remain. Eliminating distrust might be a *precondition* for cooperation, but it is not itself the cooperation the argument requires.", badge: 'Wrong Obstacle', badgeColor: 'red' },
-      { title: '(E) a world government is established', text: "This would solve the problem, but it goes far beyond what the argument requires. The obstacle is about coordination, not sovereignty. International agreements can produce emission standards without requiring a world government. This answer is like using a sledgehammer to hang a picture frame \u2014 functionally overkill and not what the argument\'s logic demands.", badge: 'Too Extreme', badgeColor: 'red' },
+      { title: '(E) a world government is established', text: "This would solve the problem, but it goes far beyond what the argument requires. The obstacle is about coordination, not sovereignty. International agreements can produce emission standards without requiring a world government. This answer is like using a sledgehammer to hang a picture frame \u2014 functionally overkill and not what the argument's logic demands.", badge: 'Too Extreme', badgeColor: 'red' },
     ]},
 
     { type: 'hr' },
@@ -106,7 +106,7 @@ export const Lesson5_Drill_ProblemAndSolution: Lesson = {
     { type: 'table', headers: ['Answer', 'What It Targets', 'Matches Obstacle?', 'Verdict'], rows: [
       ['(A) Less concerned with pollution', 'Reverses priorities', '\u2717 \u2014 Makes obstacle worse', 'Opposite Effect'],
       ['(B) Voluntary corporate standards', 'Different agent + voluntary', '\u2717 \u2014 Corporations, not nations', 'Agent Shift'],
-      ['**(C) International agreements**', '**Coordinated national action**', '**\u2713 \u2014 Directly reverses \"singlehandedly\"**', '**Correct \u2713**'],
+      ['**(C) International agreements**', '**Coordinated national action**', '**\u2713 \u2014 Directly reverses "singlehandedly"**', '**Correct \u2713**'],
       ['(D) Eliminate distrust', 'A precondition, not the barrier', '\u2717 \u2014 Obstacle is economic, not trust', 'Wrong Obstacle'],
       ['(E) World government', 'Eliminates national sovereignty', '\u2717 \u2014 Overkill; agreements suffice', 'Too Extreme'],
     ]},
@@ -127,6 +127,6 @@ export const Lesson5_Drill_ProblemAndSolution: Lesson = {
     { type: 'hr' },
 
     { type: 'h3', text: 'Key Lessons from This Drill' },
-    { type: 'callout', variant: 'summary', title: 'Key Takeaways', text: "**1. Trace the full chain: Problem \u2192 Solution \u2192 Obstacle \u2192 Reversal.** Every Problem and Solution completion follows this structure. If you skip a step \u2014 especially if you jump from Problem directly to Reversal \u2014 you will be drawn to answers that bypass the argument\'s own logic.\n\n**2. The obstacle is the anchor.** The correct answer does not fix the problem directly; it removes the barrier to the solution the argument has already identified. Your job is not to propose a new solution but to enable the one the argument provides.\n\n**3. Target the precise language of the obstacle.** In this drill, the word \"singlehandedly\" defined the barrier. The correct answer provided a mechanism for collective action \u2014 a direct reversal of \"singlehandedly.\" When analyzing the stimulus, underline or mentally flag the specific word or phrase that defines the obstacle.\n\n**4. Verify the agent.** The argument specifies who must act (nations, in this case). The correct answer must involve the same actors. Shifting to corporations, individuals, or other entities changes the argument\'s framework.\n\n**5. Reject overkill.** If a simpler mechanism solves the obstacle, prefer it over an extreme one. The LSAT rewards precision, not ambition." },
+    { type: 'callout', variant: 'summary', title: 'Key Takeaways', text: "**1. Trace the full chain: Problem \u2192 Solution \u2192 Obstacle \u2192 Reversal.** Every Problem and Solution completion follows this structure. If you skip a step \u2014 especially if you jump from Problem directly to Reversal \u2014 you will be drawn to answers that bypass the argument's own logic.\n\n**2. The obstacle is the anchor.** The correct answer does not fix the problem directly; it removes the barrier to the solution the argument has already identified. Your job is not to propose a new solution but to enable the one the argument provides.\n\n**3. Target the precise language of the obstacle.** In this drill, the word \"singlehandedly\" defined the barrier. The correct answer provided a mechanism for collective action \u2014 a direct reversal of \"singlehandedly.\" When analyzing the stimulus, underline or mentally flag the specific word or phrase that defines the obstacle.\n\n**4. Verify the agent.** The argument specifies who must act (nations, in this case). The correct answer must involve the same actors. Shifting to corporations, individuals, or other entities changes the argument's framework.\n\n**5. Reject overkill.** If a simpler mechanism solves the obstacle, prefer it over an extreme one. The LSAT rewards precision, not ambition." },
   ]
 };
