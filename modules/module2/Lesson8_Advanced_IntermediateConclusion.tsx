@@ -4,53 +4,102 @@ export const Lesson8_Advanced_IntermediateConclusion: Lesson = {
   id: "2-8",
   title: "Advanced: The Intermediate Conclusion Trap",
   content: [
-    { type: 'h3', text: 'Concept Focus: The Intermediate Conclusion Trap' },
-    { type: 'paragraph', text: 'The questions in this section are designed to be challenging, often featuring complex argument structures and highly tempting incorrect answer choices. This example illustrates one of the most effective traps: the **intermediate conclusion**. On difficult questions, the test-makers will often place a strong intermediate conclusion at the very end of the stimulus, complete with an indicator like "Thus" or "Therefore." This makes it feel like the final point, trapping students who rely on indicator words without fully mapping the argument\'s structure. Your task is to see the entire logical chain and correctly distinguish the final destination from the last stepping-stone.' },
+    { type: 'h2', text: 'The Intermediate Conclusion Trap' },
+    { type: 'paragraph', text: "The intermediate conclusion (IC) trap is the single most effective trap on difficult Main Conclusion questions. It works because ICs look and feel like main conclusions — they are supported by evidence and introduced by words like \"Thus\" or \"Therefore.\" The critical difference is that an IC then goes on to support an even broader claim. Your task is to see the entire chain and identify the *final destination*, not the *last stepping-stone*." },
+
     { type: 'hr' },
-    { type: 'h3', text: 'Worked Example' },
-    { type: 'blockquote', text: 'Each of many different human hormones can by itself raise the concentration of glucose in the blood. The reason for this is probably a metabolic quirk of the brain. To see this, consider that although most human cells can produce energy from fats and proteins, brain cells can use only glucose. Thus, if blood glucose levels fall too low, brain cells will rapidly starve, leading to unconsciousness and death.' },
-    { type: 'paragraph', text: '**Question:** Which one of the following most accurately expresses the main conclusion of the argument above?' },
-    { type: 'options', items: [
-      "(A) Each of many different human hormones can by itself raise blood glucose levels.",
-      "(B) The reason that many different hormones can each independently raise blood glucose levels is probably a metabolic quirk of the brain.",
-      "(C) Although most human cells can produce energy from fats and proteins, brain cells can produce energy only from glucose.",
-      "(D) If blood glucose levels fall too low, then brain cells starve, resulting in loss of consciousness and death.",
-      "(E) The reason brain cells starve if deprived of glucose is that they can produce energy only from glucose."
+
+    { type: 'h3', text: 'The IC Trap Pattern' },
+    { type: 'paragraph', text: "The test-makers construct IC traps using a predictable pattern. Recognizing it in advance is your best defense:" },
+    { type: 'process', title: 'How the IC Trap Is Built', steps: [
+      '**Step 1: Plant the main conclusion early.** The actual main conclusion appears in the first or second sentence, often without a conclusion indicator word.',
+      '**Step 2: Provide evidence.** One or more premises support both the main conclusion and the intermediate conclusion.',
+      '**Step 3: End with a strong indicator + IC.** The final sentence begins with \"Thus,\" \"Therefore,\" or \"Consequently\" — introducing a sub-conclusion that *feels* like the final point.',
+      '**Step 4: Create the trap answer.** One answer choice restates the IC. Because it\'s the last thing you read and has a conclusion indicator, it\'s extremely tempting.',
     ]},
+    { type: 'callout', variant: 'tip', title: 'The Final "Thus" Warning', text: "A conclusion indicator at the *end* of the stimulus does not guarantee you've found the *main* conclusion. On hard questions, the final \"Thus\" frequently introduces an intermediate conclusion that *supports* a broader claim made earlier. Always ask: \"Does this 'Thus' sentence then support something else?\"" },
+
     { type: 'hr' },
-    { type: 'h4', text: 'Step 1: Deconstruct the Argument' },
-    { type: 'list', items: [
-      '*   **Sentence 1 (Phenomenon):** Many different hormones raise blood glucose. This is the observation the argument seeks to explain.',
-      '*   **Sentence 2 (Explanation):** "The reason for this is probably a metabolic quirk of the brain." This causal claim is a strong candidate for the main conclusion.',
-      '*   **Sentence 3 (Premise):** "To see this, consider that..." brain cells can only use glucose. This is the evidence for the explanation in Sentence 2.',
-      '*   **Sentence 4 (Conclusion?):** "Thus," if glucose falls too low, the brain starves. This is a conclusion, but is it the main one?'
+
+    { type: 'h3', text: 'When Final Indicators Are NOT the Main Conclusion' },
+    { type: 'paragraph', text: "Here's a reference for recognizing when a final indicator word is misleading:" },
+    { type: 'table', headers: ['Scenario', 'Final Indicator Marks...', 'How to Detect It'], rows: [
+      ['Explanation arguments', 'IC describing the mechanism', 'The main conclusion (proposed cause) appeared earlier, often in Sentence 1'],
+      ['Multi-step chains', 'IC that is one step in a longer chain', 'The IC supports a broader claim stated before it'],
+      ['Rebuttal arguments', 'IC that elaborates on the rebuttal', 'The main rebuttal (\"However, this is wrong\") appeared earlier after the pivot word'],
+      ['Conditional conclusions', 'IC deriving a specific consequence', 'The main conclusion is the general principle, not the specific consequence'],
     ]},
-    { type: 'h4', text: "Step 2: Map the Argument's Structure" },
-    { type: 'paragraph', text: 'We have two conclusion candidates (Sentences 2 and 4). We must determine their relationship.' },
-    { type: 'list', items: [
-      '*   The final sentence ("Thus, the brain starves...") is a conclusion drawn *only* from the premise in Sentence 3 ("brain cells only use glucose").',
-      '*   The information in Sentences 3 and 4 serves to explain *why* the claim in Sentence 2 is true. The fact that the brain quirk has such severe consequences (starvation, death) explains why the body would evolve so many redundant systems (the hormones) to prevent it.'
+
+    { type: 'hr' },
+
+    { type: 'h3', text: 'IC vs. Main Conclusion: The Checklist' },
+    { type: 'paragraph', text: "When you've identified two candidate conclusions, use this checklist to determine which is the main conclusion and which is the IC:" },
+    { type: 'table', headers: ['Test', 'Main Conclusion', 'Intermediate Conclusion'], rows: [
+      ['Does it receive support from other statements?', '✓ Yes', '✓ Yes'],
+      ['Does it *give* support to another claim?', '✗ No — it\'s the final destination', '✓ Yes — it supports the main conclusion'],
+      ['Why Test: Do premises answer \"Why?\" for it?', '✓ Yes — the whole argument explains it', '✓ Partially — only some premises explain it'],
+      ['Reverse Test: Does it explain another claim?', '✗ No', '✓ Yes — it helps prove the main conclusion'],
+      ['Scope', 'Broader, more general', 'Narrower, more specific'],
+      ['If removed, does the argument lose its main point?', '✓ Yes — the argument collapses', '✗ No — the main point still stands'],
     ]},
-    { type: 'paragraph', text: "The argument's overall goal is to explain the phenomenon from Sentence 1. The main conclusion is the explanation offered in Sentence 2." },
-    { type: 'h4', text: 'Full Structure:' },
-    { type: 'list', items: [
-      '*   **Phenomenon:** Many hormones raise blood glucose.',
-      '*   **Main Conclusion:** This is because of a brain quirk.',
-      '    *   **Supporting Premise:** The quirk is that brain cells only use glucose.',
-      '    *   **Intermediate Conclusion:** *Thus*, the consequences of low glucose are severe. (This intermediate conclusion then supports the Main Conclusion).'
+
+    { type: 'hr' },
+
+    { type: 'h2', text: 'Worked Example 1' },
+    { type: 'question-card', id: 'ic-trap-worked-example', questionType: 'Main Conclusion', difficulty: 'hard',
+      stimulus: "Each of many different human hormones can by itself raise the concentration of glucose in the blood. The reason for this is probably a metabolic quirk of the brain. To see this, consider that although most human cells can produce energy from fats and proteins, brain cells can use only glucose. Thus, if blood glucose levels fall too low, brain cells will rapidly starve, leading to unconsciousness and death.",
+      question: "Which one of the following most accurately expresses the main conclusion of the argument above?",
+      options: [
+        "(A) Each of many different human hormones can by itself raise blood glucose levels.",
+        "(B) The reason that many different hormones can each independently raise blood glucose levels is probably a metabolic quirk of the brain. (Correct)",
+        "(C) Although most human cells can produce energy from fats and proteins, brain cells can produce energy only from glucose.",
+        "(D) If blood glucose levels fall too low, then brain cells starve, resulting in loss of consciousness and death.",
+        "(E) The reason brain cells starve if deprived of glucose is that they can produce energy only from glucose."
+      ]
+    },
+
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Structural Chain Diagram' },
+    { type: 'paragraph', text: "Let's map the full logical chain to see how each piece connects:" },
+    { type: 'process', title: 'The Argument Flow', steps: [
+      '**Phenomenon (S1):** Many hormones each independently raise blood glucose. [The \"what\" — the observation to be explained.]',
+      '**Main Conclusion (S2):** \"The reason for this is probably a metabolic quirk of the brain.\" [The \"why\" — the proposed cause.]',
+      '**Premise (S3):** Brain cells can only use glucose (unlike other cells). [Evidence — introduced by \"consider that.\"]',
+      '**Intermediate Conclusion (S4):** \"Thus, if blood glucose falls too low, brain cells starve.\" [Draws from S3, but then supports S2 by showing why the body needs so many backup glucose systems.]',
     ]},
-    { type: 'h4', text: 'Step 3: Pinpoint the Conclusion and Prephrase' },
-    { type: 'paragraph', text: 'The main point is the explanation for why so many hormones raise blood glucose: it\'s because of the brain\'s unique need for glucose.' },
-    { type: 'paragraph', text: '**Prephrase:** The reason for the many glucose-raising hormones is a metabolic quirk of the brain.' },
-    { type: 'h4', text: 'Step 4: Evaluate the Answer Choices' },
+    { type: 'paragraph', text: "The IC (S4) is derived from the premise (S3), but its purpose is to support the main conclusion (S2). The severe consequences of low glucose (starvation, death) explain *why* the body would evolve redundant hormone systems — which is exactly what S2 claims." },
+
+    { type: 'h3', text: 'Answer Choice Analysis' },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
-      { title: '(A) Each of many different human hormones can by itself raise blood glucose levels.', text: 'This is the **phenomenon** the argument sets out to explain, not the explanation itself.', badge: 'Incorrect (The Phenomenon)', badgeColor: 'red' },
-      { title: '(B) The reason that many different hormones can each independently raise blood glucose levels is probably a metabolic quirk of the brain.', text: 'This is a perfect match for our prephrase and our structural analysis. It correctly identifies the explanatory claim from Sentence 2 as the main conclusion.', badge: 'Correct', badgeColor: 'green' },
-      { title: '(C) Although most human cells can produce energy from fats and proteins, brain cells can produce energy only from glucose.', text: 'This is the core **premise** of the argument.', badge: 'Incorrect (The Premise)', badgeColor: 'red' },
-      { title: '(D) If blood glucose levels fall too low, then brain cells starve...', text: 'This is the **intermediate conclusion**. It is supported by the premise in Sentence 3, but it then serves as support for the main conclusion in Sentence 2. This is the most tempting trap.', badge: 'Incorrect (Intermediate Conclusion)', badgeColor: 'red' },
-      { title: '(E) The reason brain cells starve if deprived of glucose is that they can produce energy only from glucose.', text: 'This choice describes the logic of the sub-argument, not the main point of the entire stimulus.', badge: 'Incorrect', badgeColor: 'red' }
+      { title: '(A) Each of many different human hormones can by itself raise blood glucose levels.', text: 'This is the **phenomenon** — the observation the argument sets out to explain. No one disputes it; the author\'s job is to explain *why* it\'s true.', badge: 'Trap: Phenomenon', badgeColor: 'red' },
+      { title: '(B) The reason that many hormones can each independently raise blood glucose levels is probably a metabolic quirk of the brain.', text: 'Perfect match for Sentence 2 — the explanatory conclusion. \"Probably\" correctly preserves the author\'s certainty level.', badge: 'Correct', badgeColor: 'green' },
+      { title: '(C) Although most human cells can produce energy from fats and proteins, brain cells can produce energy only from glucose.', text: 'This is the core **premise**, introduced by \"consider that.\" It\'s evidence for the IC and indirectly for the main conclusion, but it\'s not the point of the argument.', badge: 'Trap: The Premise', badgeColor: 'red' },
+      { title: '(D) If blood glucose levels fall too low, then brain cells starve...', text: 'This is the **intermediate conclusion** — the sentence introduced by \"Thus\" at the end. It draws from the premise (C) and supports the main conclusion (B). This is the classic IC trap: it appears last, has a conclusion indicator, and feels important.', badge: 'Trap: IC (Final \"Thus\")', badgeColor: 'red' },
+      { title: '(E) The reason brain cells starve if deprived of glucose is that they can produce energy only from glucose.', text: 'This describes the relationship between the premise (S3) and the IC (S4) — a sub-argument. It\'s logically accurate but captures only a supporting detail, not the main point.', badge: 'Trap: Sub-Argument', badgeColor: 'red' },
     ]},
+
     { type: 'hr' },
-    { type: 'callout', title: 'Key Takeaways', variant: 'summary', text: '*   **Beware the Final "Thus":** On difficult questions, a conclusion indicator at the end does not guarantee you\'ve found the *main* conclusion. It often signals an intermediate conclusion.\n*   **Map the Whole Argument:** Ask if a conclusion is then used to support an even broader claim made earlier in the stimulus.\n*   **Distinguish "What it Explains" from "How it Explains It":** The main conclusion is often the overarching explanation. The premises and intermediate conclusions provide the details of the mechanism.'}
+
+    { type: 'h2', text: 'Worked Example 2 (Shorter Stimulus)' },
+    { type: 'question-card', id: 'ic-trap-short-example', questionType: 'Main Conclusion', difficulty: 'medium',
+      stimulus: "Marketing professional: Smartphones have not diminished the need for desktop computers in professional settings. Desktop computers offer superior processing power for complex tasks. Therefore, many offices continue to maintain desktop workstations alongside mobile devices.",
+      question: "Which one of the following most accurately expresses the main conclusion of the argument?",
+      options: [
+        "(A) Smartphones have not diminished the need for desktop computers in professional settings. (Correct)",
+        "(B) Desktop computers offer superior processing power for complex tasks.",
+        "(C) Many offices continue to maintain desktop workstations alongside mobile devices.",
+        "(D) Smartphones are less powerful than desktop computers.",
+        "(E) Professional settings require complex computing tasks."
+      ]
+    },
+
+    { type: 'h3', text: 'Quick Analysis' },
+    { type: 'paragraph', text: "The IC trap appears again: \"Therefore\" in Sentence 3 introduces an intermediate conclusion (offices maintain desktops), but the *main* conclusion is Sentence 1 (smartphones haven't diminished the need). The \"Therefore\" sentence is an observable consequence that supports the broader claim. Why haven't smartphones diminished the need? Because desktops have superior power (premise), so offices maintain both (IC supporting the MC)." },
+    { type: 'paragraph', text: "The correct answer is **(A)** — the broad claim in Sentence 1. Choice (C) is the IC trap. Choice (B) is the premise." },
+
+    { type: 'hr' },
+
+    { type: 'callout', variant: 'summary', title: 'Key Takeaways', text: "**1. Beware the final \"Thus.\"** On hard questions, the last sentence with a conclusion indicator is frequently an intermediate conclusion, not the main conclusion.\n**2. Map the entire chain.** Before selecting an answer, trace the full flow of support. Ask: \"Does this conclusion then support an even broader claim?\"\n**3. Use the IC Checklist.** The main conclusion receives support but doesn't give it. The IC both receives *and* gives support.\n**4. The IC trap works because ICs feel important.** They are supported by evidence and sound conclusory. But importance ≠ main conclusion. The main conclusion is the *final destination*, not the most impressive stepping-stone." }
   ]
 };

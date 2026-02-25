@@ -2,42 +2,68 @@
 
 ## Cursor Cloud specific instructions
 
-This is a **client-side only** React + TypeScript SPA (no backend, no database, no external services). All LSAT course content is statically bundled.
+### What this is
+
+A **client-side only** React + TypeScript SPA delivering an interactive LSAT preparation course. No backend, no database, no external services. All course content (59 modules, ~600 lessons) is statically bundled and code-split per module.
 
 ### Stack
 
-- React 19, TypeScript (strict mode), Vite 6, Tailwind CSS 4, PWA (vite-plugin-pwa)
-- React Router for URL-based navigation
-- Fuse.js for client-side search
-- DOMPurify for HTML sanitization
+- **React 19**, TypeScript 5.8 (strict mode), Vite 6, Tailwind CSS 4
+- **React Router 7** for URL-based navigation
+- **Fuse.js** for client-side search
+- **DOMPurify** for HTML sanitization of rendered content
+- **vite-plugin-pwa** for PWA / service worker
 - Package manager: **npm** (lockfile: `package-lock.json`)
 
 ### Running the app
 
-- `npm run dev` starts Vite on `http://localhost:3000` (binds `0.0.0.0`)
-- `npm run build` produces a production bundle in `dist/`
-- `npm run preview` serves the production build locally
+```
+npm run dev        # Vite dev server → http://localhost:3000 (binds 0.0.0.0)
+npm run build      # Production bundle → dist/
+npm run preview    # Serve production build locally
+```
 
-### Available scripts
+### Key scripts
 
-See `package.json` for the full list. Key commands:
-- `npm run lint` / `npm run lint:fix` - ESLint
-- `npm run format` / `npm run format:check` - Prettier
-- `npm run typecheck` - TypeScript strict type checking
-- `npm test` - Vitest (unit tests)
-- `npm run test:watch` - Vitest in watch mode
-- `npm run analyze` - Bundle size visualization (outputs `dist/stats.html`)
+| Command | What it does |
+|---------|-------------|
+| `npm run lint` | ESLint (flat config, TS + React plugins) |
+| `npm run typecheck` | `tsc --noEmit` with strict mode |
+| `npm test` | Vitest unit tests |
+| `npm run format` | Prettier |
+| `npm run analyze` | Bundle visualizer → `dist/stats.html` |
 
-### Architecture notes
+### Architecture
 
-- **Routing**: React Router with paths `/`, `/module/:moduleId`, `/module/:moduleId/lesson/:lessonId`
-- **Code splitting**: Modules are lazy-loaded via `modules/registry.ts`. Each of the 59 modules is a separate chunk.
-- **Progress**: Lesson completion persisted in `localStorage` via `hooks/useProgress.ts` and shared via `contexts/ProgressContext.tsx`.
-- **Search**: Fuse.js-powered search dialog activated by `Ctrl+K`.
+- **Routing**: `/`, `/module/:moduleId`, `/module/:moduleId/lesson/:lessonId`
+- **Code splitting**: `modules/registry.ts` maps module IDs to `() => import('./ModuleN')`. Each of the 59 modules is a separate chunk (~5–150 KB each). Main bundle is ~800 KB.
+- **Content model**: Lessons are arrays of typed `ContentBlock` objects (see `types.ts`). The `LessonViewer` component in `components/LessonViewer.tsx` renders them. There are 17 block types including interactive cards (`question-card`, `passage-card`, `question-passage-card`).
+- **Progress**: Lesson completion stored in `localStorage` via `hooks/useProgress.ts`, shared via `contexts/ProgressContext.tsx`.
+- **Search**: Fuse.js search dialog on `Ctrl+K`, searches all lesson/module titles.
+- **Style Guide**: 7-tab modal (`Components`, `Question Card`, `Passage Card`, `Q+P Card`, `Structure`, `Prompts`, `Technical`) with live interactive examples. "Copy All" button serializes entire guide to clipboard.
+- **Roadmap**: 7-tab modal with 78 product improvement ideas.
+
+### Module numbering
+
+Modules are numbered 1–59 sequentially with no gaps:
+- **1–22**: Logical Reasoning (9 units)
+- **23–49**: Reading Comprehension (6 units)
+- **50–56**: Advanced Passages
+- **57–59**: Question Bank (LR, RC, Advanced RC)
 
 ### Gotchas
 
-- The main JS bundle is ~775 KB (down from ~2.9 MB after code splitting). Vite build still emits a chunk-size warning; this is expected.
-- PWA service worker is generated at build time only (`npm run build`), not during `npm run dev`.
-- 9 pre-existing TS errors exist in `Module55.tsx` (references modules that don't exist yet); these are not regressions.
-- `tsconfig.json` has `strict: true` enabled. All new code must be strictly typed.
+- **Module55 TS errors**: 9 pre-existing errors in `modules/Module55.tsx` reference lesson files (`module55/Lesson_Intro`, etc.) that don't exist yet. These are not regressions. All other modules compile cleanly.
+- **Chunk size warning**: Vite warns about the main bundle exceeding 500 KB. This is expected; the app shell + routing + search + UI components total ~800 KB.
+- **PWA**: Service worker is only generated during `npm run build`, not in dev mode.
+- **Strict TypeScript**: `tsconfig.json` has `strict: true`, `noUnusedLocals`, `noUnusedParameters`, `noImplicitReturns`, `noFallthroughCasesInSwitch`. All new code must comply.
+- **Content files**: Lesson `.tsx` files in `modules/moduleN/` are pure data (TypeScript objects exporting `ContentBlock[]`). They are not React components. The renderer is `LessonViewer.tsx`.
+- **Blockquotes**: Render as clean rounded panels (not italic + left-border). Styled via `LessonViewer.tsx`, not individual files.
+
+### Adding new content
+
+1. Create lesson file in `modules/moduleN/LessonX_Name.tsx` exporting a `Lesson` object
+2. Import and add to the module's lesson array in `modules/ModuleN.tsx`
+3. If creating a new module: add an entry to `modules/registry.ts` with metadata and dynamic import
+4. Use the Style Guide → Technical tab for the complete `ContentBlock` type reference with examples
+5. Mark correct answers in `options` and `question-card` blocks by appending `(Correct)` to the string
