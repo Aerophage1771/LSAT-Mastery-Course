@@ -237,6 +237,13 @@ export const Layout: React.FC<LayoutProps> = ({
             </div>
           </div>
         </div>
+        <div className="px-4 py-3 border-t border-slate-800">
+          <Link to="/question-bank" onClick={() => setSidebarOpen(false)} className="w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-slate-400 hover:bg-slate-800 hover:text-slate-100 transition-all duration-200">
+            <BookOpen size={18} />
+            <span className="font-medium">Question Bank</span>
+            <span className="ml-auto text-xs bg-slate-800 text-slate-400 px-2 py-0.5 rounded-full">150</span>
+          </Link>
+        </div>
         <div className="p-4 border-t border-slate-800 bg-slate-900/50"><div className="text-xs text-slate-500 text-center">&copy; 2025 LSAT Mastery Course</div></div>
       </nav>
 
@@ -290,7 +297,9 @@ export const Layout: React.FC<LayoutProps> = ({
               <kbd className="ml-2 px-1.5 py-0.5 bg-slate-100 rounded text-[10px] font-mono text-slate-400">Ctrl+K</kbd>
             </button>
             <Link to="/question-bank" className="flex items-center space-x-2 px-4 py-2 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-sm font-bold text-slate-600 transition-all shadow-sm" aria-label="Question Bank">
-              <BookOpen size={16} /><span>Question Bank</span>
+              <BookOpen size={16} />
+              <span>Question Bank</span>
+              <span className="ml-1 text-[10px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded-full font-mono">150</span>
             </Link>
             <button onClick={() => setRoadmapOpen(true)} className="flex items-center space-x-2 px-4 py-2 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-sm font-bold text-slate-600 transition-all shadow-sm" aria-label="Open roadmap">
               <Rocket size={16} /><span>Roadmap</span>

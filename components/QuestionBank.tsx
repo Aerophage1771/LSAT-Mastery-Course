@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import DOMPurify from 'dompurify';
-import { Search, Filter, ChevronDown, ChevronUp, BookOpen, Hash, X } from 'lucide-react';
+import { Search, Filter, ChevronDown, ChevronUp, BookOpen, Hash, X, ArrowLeft } from 'lucide-react';
 import { ContentBlock } from '../types';
 
 import { Lesson1_Module1_Questions } from '../modules/module48/Lesson1_Module1_Questions';
@@ -457,7 +458,16 @@ export const QuestionBank: React.FC = () => {
   };
 
   return (
-    <div className="flex h-full min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="flex flex-col h-full min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      <div className="bg-white border-b border-slate-200 px-6 py-3 flex items-center gap-4">
+        <Link to="/" className="flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-indigo-600 transition-colors">
+          <ArrowLeft size={16} />
+          <span>Dashboard</span>
+        </Link>
+        <span className="text-slate-300">/</span>
+        <span className="text-sm font-semibold text-slate-800">Question Bank</span>
+      </div>
+      <div className="flex flex-1 min-h-0">
       {/* Mobile overlay */}
       {sidebarOpen && (
         <div
@@ -653,6 +663,7 @@ export const QuestionBank: React.FC = () => {
           )}
         </div>
       </main>
+      </div>
     </div>
   );
 };
