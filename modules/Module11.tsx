@@ -12,6 +12,7 @@ import { Lesson10_Drill_ForcedChoiceAdvanced } from './module11/Lesson10_Drill_F
 import { Lesson11_Drill_BlockingThirdParty } from './module11/Lesson11_Drill_BlockingThirdParty';
 import { Lesson12_Drill_BehavioralLink } from './module11/Lesson12_Drill_BehavioralLink';
 import { Lesson13_Drill_DefinitionalStandard } from './module11/Lesson13_Drill_DefinitionalStandard';
+import { Lesson14_ReferenceGuide } from './module11/Lesson14_ReferenceGuide';
 
 export const Module11: ModuleData = {
   id: 11,
@@ -32,6 +33,7 @@ export const Module11: ModuleData = {
     Lesson10_Drill_ForcedChoiceAdvanced,
     Lesson11_Drill_BlockingThirdParty,
     Lesson12_Drill_BehavioralLink,
-    Lesson13_Drill_DefinitionalStandard
+    Lesson13_Drill_DefinitionalStandard,
+    Lesson14_ReferenceGuide
   ]
 };
