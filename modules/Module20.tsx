@@ -8,6 +8,7 @@ import { Lesson6_Advanced_StrategyGuide } from './module20/Lesson6_Advanced_Stra
 import { Lesson7_Drill_Disagreement_ClashOfCriteria } from './module20/Lesson7_Drill_Disagreement_ClashOfCriteria';
 import { Lesson8_Drill_Disagreement_DefinitionalClash } from './module20/Lesson8_Drill_Disagreement_DefinitionalClash';
 import { Lesson9_Drill_PointOfAgreement_SharedDiagnosis } from './module20/Lesson9_Drill_PointOfAgreement_SharedDiagnosis';
+import { Lesson10_ReferenceGuide } from './module20/Lesson10_ReferenceGuide';
 
 export const Module20: ModuleData = {
   id: 20,
@@ -24,6 +25,7 @@ export const Module20: ModuleData = {
     Lesson6_Advanced_StrategyGuide,
     Lesson7_Drill_Disagreement_ClashOfCriteria,
     Lesson8_Drill_Disagreement_DefinitionalClash,
-    Lesson9_Drill_PointOfAgreement_SharedDiagnosis
+    Lesson9_Drill_PointOfAgreement_SharedDiagnosis,
+    Lesson10_ReferenceGuide
   ]
 };
