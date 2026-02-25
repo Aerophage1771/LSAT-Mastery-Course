@@ -7,154 +7,120 @@ export const Lesson4_Module4_Questions: Lesson = {
     { type: 'h2', text: 'Module 4: Parallel Reasoning' },
     {
       type: 'accordion',
-      title: 'Drill: Process of Elimination (PT-101-S-2-Q-13)',
-      content: [
-        { type: 'h4', text: 'Stimulus' },
-        { type: 'blockquote', text: 'Carl’s Coffee Emporium stocks only two decaffeinated coffees: French Roast and Mocha Java. Yusef only serves decaffeinated coffee, and the coffee he served after dinner last night was far too smooth and mellow to have been French Roast. So, if Yusef still gets all his coffee from Carl’s, what he served last night was Mocha Java.' },
-        { type: 'h4', text: 'Question' },
-        { type: 'paragraph', text: 'The argument above is most similar in its logical structure to which one of the following?' },
-        { type: 'options', items: [
-        '**(A)** Samuel wants to take three friends to the beach. His mother owns both a sedan and a convertible. The convertible holds four people so, although the sedan has a more powerful engine, if Samuel borrows a vehicle from his mother, he will borrow the convertible.',
-        '**(B)** If Anna wants to walk from her house to the office where she works, she must either go through the park or take the overpass across the railroad tracks. The park paths are muddy, and Anna does not like using the overpass, so she never walks to work.',
-        '**(C)** Rose can either take a two-week vacation in July or wait until October and take a three-week vacation. The trail she had planned to hike requires three weeks to complete but is closed by October, so if Rose takes a vacation, it will not be the one she had planned.',
-        '**(D)** Werdix, Inc., has offered Arno a choice between a job in sales and a job in research. Arno would like to work at Werdix but he would never take a job in sales when another job is available, so if he accepts one of these jobs, it will be the one in research.',
-        '**(E)** If Teresa does not fire her assistant, her staff will rebel and her department’s efficiency will decline. Losing her assistant would also reduce its efficiency, so, if no alternative solution can be found, Teresa’s department will become less efficient.'
-        ]}
-      ]
-    },
-    {
-      type: 'accordion',
-      title: 'Drill: Proportional Reasoning (PT-101-S-3-Q-21)',
-      content: [
-        { type: 'h4', text: 'Stimulus' },
-        { type: 'blockquote', text: 'The amount of electricity consumed in Millville on any day in August is directly proportional to peak humidity on that day. Since the average peak humidity this August was three points higher than the average peak humidity last August, it follows that more energy was consumed in Millville this August than last August.' },
-        { type: 'h4', text: 'Question' },
-        { type: 'paragraph', text: 'Which one of the following arguments has a pattern of reasoning most similar to the one in the argument above?' },
-        { type: 'options', items: [
-        '**(A)** The amount of art supplies used in any of the Aesthetic Institute’s 25 classes is directly proportional to the number of students in that class. Since in these classes the institute enrolled 20 percent more students overall last year than in the previous year, more art supplies were used in the institute’s classes last year than in the previous year.',
-        '**(B)** The number of courses in painting offered by the Aesthetic Institute in any term is directly proportional to the number of students enrolled in the institute in that term. But the institute offers the same number of courses in sculpture each term. Hence, the institute usually offers more courses in painting than in sculpture.',
-        '**(C)** The number of new students enrolled at the Aesthetic Institute in any given year is directly proportional to the amount of advertising the institute has done in the previous year. Hence, if the institute seeks to increase its student body it must increase the amount it spends on advertising.',
-        '**(D)** The fees paid by a student at the Aesthetic Institute are directly proportional to the number of classes in which that student enrolls. Since the number of students at the Aesthetic Institute is increasing, it follows that the institute is collecting a greater amount in fees paid by students than it used to.',
-        '**(E)** The number of instructors employed by the Aesthetic Institute in any term is directly proportional to the number of classes offered in that term and also directly proportional to the number of students enrolled at the institute. Thus, the number of classes offered by the institute in any term is directly proportional to the number of students enrolled in that term.'
-        ]}
-      ]
-    },
-    {
-      type: 'accordion',
-      title: 'Drill: Causal Reasoning (PT-103-S-1-Q-24)',
-      content: [
-        { type: 'h4', text: 'Stimulus' },
-        { type: 'blockquote', text: 'That wall is supported by several joists. The only thing that can have caused the bulge that the wall now has is a broken joist. Therefore, at least one of the joists is broken.' },
-        { type: 'h4', text: 'Question' },
-        { type: 'paragraph', text: 'Which one of the following arguments is most similar in its logical features to the argument above?' },
-        { type: 'options', items: [
-        '**(A)** At least one of the players in the orchestra must have made a mistake, since nothing else would have made the conductor grimace in the way she just did.',
-        '**(B)** The first piece must have been the easiest, since it was the only piece in the entire concert in which the orchestra did not make many mistakes.',
-        '**(C)** The players play well only when they like the music, since they tend to make mistakes when they play something they do not like.',
-        '**(D)** One of the orchestra’s players must be able to play the harp, since in one of the pieces they are playing at next week’s concert the composer specified that a harp should be played.',
-        '**(E)** The emotion of the music is the only thing that can have caused the conductor to look so angry just then, since the orchestra was playing perfectly.'
-        ]}
-      ]
-    },
-    {
-      type: 'accordion',
-      title: 'Drill: Abstract Patterns (PT-104-S-1-Q-26)',
-      content: [
-        { type: 'h4', text: 'Stimulus' },
-        { type: 'blockquote', text: 'Researcher: The vast majority of a person’s dreams bear no resemblance whatsoever to real events that follow the dreams. Thus, it is unreasonable to believe that one has extrasensory perception solely on the basis of having had several vivid dreams about events that happen after the dreams.' },
-        { type: 'h4', text: 'Question' },
-        { type: 'paragraph', text: 'Which one of the following arguments is most similar in its reasoning to the argument above?' },
-        { type: 'options', items: [
-        '**(A)** It is unreasonable to believe that a new drug cures heart disease when it is tested, albeit successfully, on only a few patients. Most new drugs require testing on large numbers of patients before they are considered effective.',
-        '**(B)** Many people who undergo surgery for ulcers show no long-term improvement. So it is unreasonable to believe that surgery for ulcers is effective, even though ulcer surgery benefits many people as well.',
-        '**(C)** Even though many cancer patients experience remissions without drinking herbal tea, it is unreasonable to believe that not drinking herbal tea causes such remissions. Several factors are known to be relevant to cancer remission.',
-        '**(D)** A number of people who die prematurely take aspirin. But it is unreasonable to conclude that aspirin is dangerous. Most people who take aspirin do not die prematurely.',
-        '**(E)** A significant number of children raised near power lines develop cancer. So it is unreasonable to deny a connection between living near power lines and developing cancer, even though many people living near power lines never develop cancer.'
-        ]}
-      ]
-    },
-    {
-      type: 'accordion',
-      title: 'Drill: Comparative Reasoning (PT-111-S-4-Q-23)',
-      content: [
-        { type: 'h4', text: 'Stimulus' },
-        { type: 'blockquote', text: 'The higher the altitude, the thinner the air. Since Mexico City’s altitude is higher than that of Panama City, the air must be thinner in Mexico City than in Panama City.' },
-        { type: 'h4', text: 'Question' },
-        { type: 'paragraph', text: 'Which one of the following arguments is most similar in its reasoning to the argument above?' },
-        { type: 'options', items: [
-        '**(A)** As one gets older one gets wiser. Since Henrietta is older than her daughter, Henrietta must be wiser than her daughter.',
-        '**(B)** The more egg whites used and the longer they are beaten, the fluffier the meringue. Since Lydia used more egg whites in her meringue than Joseph used in his, Lydia’s meringue must be fluffier than Joseph’s.',
-        '**(C)** The people who run the fastest marathons these days are faster than the people who ran the fastest marathons ten years ago. Charles is a marathon runner. So Charles must run faster marathons these days than he did ten years ago.',
-        '**(D)** The older a tree, the more rings it has. The tree in Lou’s yard is older than the tree in Theresa’s yard. Therefore, the tree in Lou’s yard must have more rings than does the tree in Theresa’s yard.',
-        '**(E)** The bigger the vocabulary a language has, the harder it is to learn. English is harder to learn than Italian. Therefore, English must have a bigger vocabulary than Italian.'
-        ]}
-      ]
-    },
-    {
-      type: 'accordion',
       title: 'Drill: Conditional Chain (PT-128-S-3-Q-3)',
       content: [
         { type: 'h4', text: 'Stimulus' },
-        { type: 'blockquote', text: 'If Patricia eats a heavy, spicy meal tonight, she will not sleep well. But if Patricia does not eat a heavy, spicy meal tonight, she will feel deprived. So Patricia will either not sleep well tonight or she will feel deprived.' },
+        { type: 'blockquote', text: 'If Patricia eats a heavy, spicy meal tonight, she will get a bad case of heartburn later. If Patricia gets a bad case of heartburn later, she will be grouchy tomorrow morning. So if Patricia eats a heavy, spicy meal tonight, she will be grouchy tomorrow morning.' },
+        { type: 'h4', text: 'Question' },
+        { type: 'paragraph', text: 'Which one of the following arguments is most similar in its logical features to the argument above?' },
+        { type: 'options', items: [
+          '(A) If Ruth plants only daffodils, the squirrels will eat the bulbs. If the squirrels eat the bulbs, then no flowers will bloom in Ruth\'s garden. Since no flowers are blooming in Ruth\'s garden, she must have planted only daffodils. [0.0%]',
+          '(B) If Shawn starts gardening in early spring, he can plant tomatoes early. If Shawn can plant tomatoes early, he will have plenty of tomatoes for canning. But he does not have plenty of tomatoes for canning, so either he did not start gardening in early spring or he did not plant tomatoes early. [0.0%]',
+          '(C) Maria plants either petunias or geraniums in her garden. If Maria plants petunias, she plants purple ones. If Maria plants geraniums, she plants red ones. Since both petunias and geraniums are flowers, Maria will have either purple or red flowers in her garden. [0.0%]',
+          '(D) If Li plants old rose varieties, her garden will look beautiful. If Li\'s garden looks beautiful, Li\'s neighbors will be impressed. So if Li plants old rose varieties, her neighbors will be impressed. [99.0%] (Correct)',
+          '(E) If Bryan\'s fruit trees are to produce well, he must either prune them in the fall or fertilize them in the spring. Since Bryan wants his trees to produce well but forgot to prune them last fall, Bryan is sure to fertilize his trees this spring. [0.0%]'
+        ]}
+      ]
+    },
+    {
+      type: 'accordion',
+      title: 'Drill: Process of Elimination (PT-101-S-2-Q-13)',
+      content: [
+        { type: 'h4', text: 'Stimulus' },
+        { type: 'blockquote', text: 'Carl\'s Coffee Emporium stocks only two decaffeinated coffees: French Roast and Mocha Java. Yusef only serves decaffeinated coffee, and the coffee he served after dinner last night was far too smooth and mellow to have been French Roast. So, if Yusef still gets all his coffee from Carl\'s, what he served last night was Mocha Java.' },
+        { type: 'h4', text: 'Question' },
+        { type: 'paragraph', text: 'The argument above is most similar in its logical structure to which one of the following?' },
+        { type: 'options', items: [
+          '(A) Samuel wants to take three friends to the beach. His mother owns both a sedan and a convertible. The convertible holds four people so, although the sedan has a more powerful engine, if Samuel borrows a vehicle from his mother, he will borrow the convertible. [5.0%]',
+          '(B) If Anna wants to walk from her house to the office where she works, she must either go through the park or take the overpass across the railroad tracks. The park paths are muddy, and Anna does not like using the overpass, so she never walks to work. [1.0%]',
+          '(C) Rose can either take a two-week vacation in July or wait until October and take a three-week vacation. The trail she had planned to hike requires three weeks to complete but is closed by October, so if Rose takes a vacation, it will not be the one she had planned. [7.0%]',
+          '(D) Werdix, Inc., has offered Arno a choice between a job in sales and a job in research. Arno would like to work at Werdix but he would never take a job in sales when another job is available, so if he accepts one of these jobs, it will be the one in research. [87.0%] (Correct)',
+          '(E) If Teresa does not fire her assistant, her staff will rebel and her department\'s efficiency will decline. Losing her assistant would also reduce its efficiency, so, if no alternative solution can be found, Teresa\'s department will become less efficient. [0.0%]'
+        ]}
+      ]
+    },
+    {
+      type: 'accordion',
+      title: 'Drill: Principle Illustration (PT-127-S-1-Q-8)',
+      content: [
+        { type: 'h4', text: 'Stimulus' },
+        { type: 'blockquote', text: 'When presented with the evidence against him, Ellison freely admitted to engaging in illegal transactions using company facilities. However, the company obtained the evidence by illegally recording Ellison\'s conversations. Therefore, although the company may demand that he immediately cease, it cannot justifiably take any punitive measures against him.' },
+        { type: 'h4', text: 'Question' },
+        { type: 'paragraph', text: 'Which one of the following judgments best illustrates the principle illustrated by the argument above?' },
+        { type: 'options', items: [
+          '(A) After Price confessed to having stolen money from Long over a period of several years, Long began stealing from Price. Despite Price\'s guilt, Long was not justified in taking illegal action against him. [4.0%]',
+          '(B) Shakila\'s secretary has admitted that he is illegally receiving cable television without paying for it. Shakila would not be justified in reporting him, though, since she once did the same thing. [2.0%]',
+          '(C) After Takashi told Sarah\'s parents that he had seen her at the movies on Tuesday, Sarah confessed to sneaking out that day. On Monday, however, Takashi had violated the local curfew for minors. Hence Sarah\'s parents cannot justifiably punish her in this case. [5.0%]',
+          '(D) After a conservation officer discovered them, Kuttner admitted that he had set the illegal animal traps on his land. But, because she was trespassing at the time, the conservation officer cannot justifiably punish Kuttner in this case. [88.0%] (Correct)',
+          '(E) Ramirez was forced by the discovery of new evidence to admit that she lied about her role in managing the chief of staff\'s financial affairs. Nevertheless, the board of directors cannot justifiably take action against Ramirez, because in past instances it has pardoned others guilty of similar improprieties. [1.0%]'
+        ]}
+      ]
+    },
+    {
+      type: 'accordion',
+      title: 'Drill: Disjunctive Syllogism (PT-103-S-2-Q-16)',
+      content: [
+        { type: 'h4', text: 'Stimulus' },
+        { type: 'blockquote', text: 'Every new play that runs for more than three months is either a commercial or a critical success. Last year, all new plays that were critical successes were also commercial successes. Therefore, every new play that ran for more than three months last year was a commercial success.' },
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'The pattern of reasoning in which one of the following arguments is most similar to that in the argument above?' },
         { type: 'options', items: [
-        '**(A)** If Ramón goes to the party tonight, he will enjoy himself. But if Ramón does not go to the party, he will feel regret. So Ramón will either enjoy himself tonight or he will feel regret. [1%]',
-        '**(B)** If Kenji buys the car, he will not be able to afford a vacation. But if Kenji does not buy the car, he will feel envious of friends who have cars. So Kenji will either not be able to afford a vacation or he will feel envious. [0%]',
-        '**(C)** If Tara drinks coffee in the evening, she will stay up past midnight. But if Tara does not drink coffee in the evening, she will fall asleep at her desk. So Tara will either stay up past midnight or she will fall asleep at her desk. [0%]',
-        '**(D)** Li plants an old rose variety in her garden. If she gives it too much water, the rose will develop mildew. If she gives it too little water, the rose will die. So if Li does not give the rose too much water, it will die. [99%] (Correct)',
-        '**(E)** If Anthony goes to bed early tonight, he will miss the late movie on television. But if Anthony watches the late movie, he will feel tired in the morning. So Anthony will either miss the late movie or he will feel tired in the morning. [0%]'
+          '(A) Most new restaurants require either good publicity or a good location in order to succeed. But most restaurants with a good location also receive good publicity. Hence, a restaurant that has a good location is guaranteed to succeed. [3.0%]',
+          '(B) Every best-selling cookbook published last year is both well written and contains beautiful photographs. The cookbook Cynthia Cleveland published last year is well written and contains beautiful photographs. Therefore, Cleveland\'s cookbook is a best seller. [5.0%]',
+          '(C) All students at the Freeman School of Cooking study either desserts or soups in their second year. This year, all Freeman students studying soups are also studying desserts. Therefore, every second-year student at Freeman is studying desserts this year. [89.0%] (Correct)',
+          '(D) Chefs who become celebrities either open their own restaurants or write books about their craft, but not both. John Endicott is a celebrated chef who opened his own restaurant. Therefore, Endicott does not write books about his craft. [2.0%]',
+          '(E) Every catering service in Woodside Township will accept both residential and business catering assignments. Peggy\'s Fine Foods is a catering service that will not accept business catering assignments. Hence, Peggy\'s Fine Foods is not in Woodside Township. [1.0%]'
         ]}
       ]
     },
     {
       type: 'accordion',
-      title: 'Drill: Reasoning by Elimination (PT-127-S-1-Q-8)',
+      title: 'Drill: Contrapositive Chain (PT-125-S-4-Q-25)',
       content: [
         { type: 'h4', text: 'Stimulus' },
-        { type: 'blockquote', text: 'When presented with the evidence against him, Ellison said that the__(missing text)__he was__(missing text)__the__(missing text)__in question was committed, he was not at the__(missing text)__the__(missing text)__was committed and that the__(missing text)__that__(missing text)__was__(missing text)__be__(missing text)__because__(missing text)__was trespassing.' },
+        { type: 'blockquote', text: 'To get the free dessert, one must order an entree and a salad. But anyone who orders either an entree or a salad can receive a free soft drink. Thus, anyone who is not eligible for a free soft drink is not eligible for a free dessert.' },
         { type: 'h4', text: 'Question' },
-        { type: 'paragraph', text: 'The pattern of reasoning in which one of the following is most similar to the reasoning in the argument above?' },
+        { type: 'paragraph', text: 'The reasoning in the argument above is most similar to the reasoning in which one of the following arguments?' },
         { type: 'options', items: [
-        '**(A)** A report claims that the food being served in the school cafeteria is unhealthy. But the report was written by a group of students with a known bias. So the report should be disregarded. [4%]',
-        '**(B)** The builder claims that the house has been constructed according to code. But records show that the builder has failed inspections in the past. So the house should be inspected. [4%]',
-        '**(C)** The witness says the defendant was present at the scene. But the witness has been shown to have poor eyesight. So the testimony is unreliable. [4%]',
-        '**(D)** The conservation officer said that Knutson was__(missing text)__trespassing on government land. But__(missing text)__was__(missing text)__the conservation officer__(missing text)__was__(missing text)__trespassing. [88%] (Correct)',
-        '**(E)** The newspaper reported that the factory had been__(missing text)__pollution. But the__(missing text)__was__(missing text)__by a journalist__(missing text)__had no scientific training. [0%]'
+          '(A) To get an executive position at Teltech, one needs a university diploma and sales experience. But anyone who has worked at Teltech for more than six months who does not have sales experience has a university diploma. Thus, one cannot get an executive position at Teltech unless one has worked there for six months. [2.0%]',
+          '(B) To be elected class president, one must be well liked and well known. Anyone who is well liked or well known has something better to do than run for class president. Therefore, no one who has something better to do will be elected class president. [8.0%]',
+          '(C) To grow good azaleas, one needs soil that is both rich in humus and low in acidity. Anyone who has soil that is rich in humus or low in acidity can grow blueberries. So, anyone who cannot grow blueberries cannot grow good azaleas. [80.0%] (Correct)',
+          '(D) To drive to Weller, one must take the highway or take Old Mill Road. Anyone who drives to Weller on the highway will miss the beautiful scenery. Thus, one cannot see the beautiful scenery without taking Old Mill Road to Weller. [4.0%]',
+          '(E) To get a discount on ice cream, one must buy frozen raspberries and ice cream together. Anyone who buys ice cream or raspberries will get a coupon for a later purchase. So, anyone who does not get the discount on ice cream will not get a coupon for a later purchase. [6.0%]'
         ]}
       ]
     },
     {
       type: 'accordion',
-      title: 'Drill: Statistical Reasoning (PT-103-S-2-Q-16)',
+      title: 'Drill: Base Rate Reasoning (PT-104-S-1-Q-26)',
       content: [
         { type: 'h4', text: 'Stimulus' },
-        { type: 'blockquote', text: 'Every new play that runs for more than three months is profitable. Therefore, some of the new plays that were produced this season are profitable, since some of the new plays produced this season have been running for more than three months.' },
+        { type: 'blockquote', text: 'Researcher: The vast majority of a person\'s dreams bear no resemblance whatsoever to real events that follow the dreams. Thus, it is unreasonable to believe that one has extrasensory perception solely on the basis of having had several vivid dreams about events that happen after the dreams.' },
         { type: 'h4', text: 'Question' },
-        { type: 'paragraph', text: 'Which one of the following arguments is most similar in its pattern of reasoning to the argument above?' },
+        { type: 'paragraph', text: 'Which one of the following arguments is most similar in its reasoning to the argument above?' },
         { type: 'options', items: [
-        '**(A)** Every film that wins a major award at the Barville Film Festival is shown at the Roxy Theater. Since the Roxy Theater showed some films from the Barville Film Festival, some of the films shown at the Roxy Theater must have won major awards at the Barville Film Festival. [4%]',
-        '**(B)** Every horse in the Longacre Stables was bred in Ireland. Since some of the horses in the Longacre Stables are racehorses, every racehorse was bred in Ireland. [3%]',
-        '**(C)** Every student at the Freeman School who has a grade point average of 3.0 or higher has been awarded a scholarship. Therefore, some of the students at the Freeman School have been awarded scholarships, since some of the students at the Freeman School have grade point averages of 3.0 or higher. [89%] (Correct)',
-        '**(D)** Every painting on display in the Kellogg Collection is by a twentieth-century artist. Since some of the paintings in the Kellogg Collection were painted by French artists, some twentieth-century artists are French. [2%]',
-        '**(E)** Every employee of the Woodvale Corporation who has worked there for more than five years is eligible for the company retirement plan. Since some of the employees who are eligible for the retirement plan have been hired in the last two years, some of the employees have been working at the Woodvale Corporation for more than five years, and yet they were hired in the last two years. [2%]'
+          '(A) It is unreasonable to believe that a new drug cures heart disease when it is tested, albeit successfully, on only a few patients. Most new drugs require testing on large numbers of patients before they are considered effective. [14.0%]',
+          '(B) Many people who undergo surgery for ulcers show no long-term improvement. So it is unreasonable to believe that surgery for ulcers is effective, even though ulcer surgery benefits many people as well. [17.0%]',
+          '(C) Even though many cancer patients experience remissions without drinking herbal tea, it is unreasonable to believe that not drinking herbal tea causes such remissions. Several factors are known to be relevant to cancer remission. [14.0%]',
+          '(D) A number of people who die prematurely take aspirin. But it is unreasonable to conclude that aspirin is dangerous. Most people who take aspirin do not die prematurely. [46.0%] (Correct)',
+          '(E) A significant number of children raised near power lines develop cancer. So it is unreasonable to deny a connection between living near power lines and developing cancer, even though many people living near power lines never develop cancer. [9.0%]'
         ]}
       ]
     },
     {
       type: 'accordion',
-      title: 'Drill: Conditional Reasoning (PT-125-S-4-Q-25)',
+      title: 'Drill: Proportional Reasoning (PT-111-S-4-Q-23)',
       content: [
         { type: 'h4', text: 'Stimulus' },
-        { type: 'blockquote', text: 'To get the free dessert, one must order an entrée and a salad. But anyone who orders either an entrée or a salad can get a free soft drink. So anyone who is eligible for a free dessert is eligible for a free soft drink as well.' },
+        { type: 'blockquote', text: 'The higher the altitude, the thinner the air. Since Mexico City\'s altitude is higher than that of Panama City, the air must be thinner in Mexico City than in Panama City.' },
         { type: 'h4', text: 'Question' },
-        { type: 'paragraph', text: 'The pattern of reasoning in which one of the following arguments is most similar to the pattern of reasoning in the argument above?' },
+        { type: 'paragraph', text: 'Which one of the following arguments is most similar in its reasoning to the argument above?' },
         { type: 'options', items: [
-        '**(A)** To get the corner office, you must be a senior partner or a managing director. Anyone who is a senior partner can get a reserved parking spot. So anyone who gets the corner office can also get a reserved parking spot. [8%]',
-        '**(B)** To get the employee discount, one must be either a full-time employee or a contractor with more than one year of service. But anyone who is a full-time employee gets health benefits. So anyone who gets the employee discount also gets health benefits. [5%]',
-        '**(C)** To grow azaleas, you need acidic soil and partial shade. But any garden that has either acidic soil or partial shade can grow ferns. So any garden in which azaleas can grow can also grow ferns. [80%] (Correct)',
-        '**(D)** To win the grand prize, you need to answer all three questions correctly. But answering the first question correctly earns you a consolation prize. So everyone who wins the grand prize also earns a consolation prize. [5%]',
-        '**(E)** To become class president, you need the support of both the faculty and the student council. But having faculty support earns you a seat on the advisory board. So the class president always has a seat on the advisory board. [2%]'
+          '(A) As one gets older one gets wiser. Since Henrietta is older than her daughter, Henrietta must be wiser than her daughter. [32.0%]',
+          '(B) The more egg whites used and the longer they are beaten, the fluffier the meringue. Since Lydia used more egg whites in her meringue than Joseph used in his, Lydia\'s meringue must be fluffier than Joseph\'s. [2.0%]',
+          '(C) The people who run the fastest marathons these days are faster than the people who ran the fastest marathons ten years ago. Charles is a marathon runner. So Charles must run faster marathons these days than he did ten years ago. [1.0%]',
+          '(D) The older a tree, the more rings it has. The tree in Lou\'s yard is older than the tree in Theresa\'s yard. Therefore, the tree in Lou\'s yard must have more rings than does the tree in Theresa\'s yard. [61.0%] (Correct)',
+          '(E) The bigger the vocabulary a language has, the harder it is to learn. English is harder to learn than Italian. Therefore, English must have a bigger vocabulary than Italian. [2.0%]'
         ]}
       ]
     },
