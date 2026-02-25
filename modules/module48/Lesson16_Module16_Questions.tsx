@@ -7,7 +7,7 @@ export const Lesson16_Module16_Questions: Lesson = {
     { type: 'h2', text: 'Module 16: Most Strongly Supported' },
     {
       type: 'accordion',
-      title: 'Drill: Structural Complexity (\\ [Missing ID]',
+      title: 'Drill: Structural Complexity (PT-103-S-3-Q-20)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: 'Only poetry cannot be translated well, and therefore it is poets who preserve languages, for we would not bother to learn a language if we could get everything written in it from translation. So, since we cannot witness the beauty of poetry except in the language in which it is composed, we have motivation to learn the language.' },
@@ -15,7 +15,7 @@ export const Lesson16_Module16_Questions: Lesson = {
         { type: 'paragraph', text: '**The Question:** The information above provides the LEAST support for which one of the following?' },
         { type: 'options', items: [
         '(A) All nonpoetic literature can be translated well.',
-        '(B) One purpose of writing poetry is to preserve the language in which it is written.',
+        '(B) One purpose of writing poetry is to preserve the language in which it is written. [56%] (Correct)',
         '(C) Some translations do not capture all that was expressed in the original language.',
         '(D) The beauty of poetry is not immediately accessible to people who do not understand the language in which the poetry was written.',
         '(E) Perfect translation from one language to another is sometimes impossible.'

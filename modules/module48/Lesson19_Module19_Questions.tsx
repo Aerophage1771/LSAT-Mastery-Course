@@ -92,7 +92,7 @@ export const Lesson19_Module19_Questions: Lesson = {
     },
     {
       type: 'accordion',
-      title: 'Drill: Flawed Logic in \\ [Missing ID]',
+      title: 'Drill: Survey Paradox (PT-124-S-3-Q-22)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: 'A recent survey indicates that the average number of books read annually per capita has declined in each of the last three years. However, it also found that most bookstores reported increased profits during the same period.' },
@@ -100,7 +100,7 @@ export const Lesson19_Module19_Questions: Lesson = {
         { type: 'paragraph', text: 'Each of the following, if true, helps to resolve the survey’s apparently paradoxical results EXCEPT:' },
         { type: 'options', items: [
         '(A) Recent cutbacks in government spending have forced public libraries to purchase fewer popular contemporary novels.',
-        '(B) Due to the installation of sophisticated new antitheft equipment, the recent increase in shoplifting that has hit most retail businesses has left bookstores largely unaffected.',
+        '(B) Due to the installation of sophisticated new antitheft equipment, the recent increase in shoplifting that has hit most retail businesses has left bookstores largely unaffected. [58%] (Correct)',
         '(C) Over the past few years many bookstores have capitalized on the lucrative coffee industry by installing coffee bars.',
         '(D) Bookstore owners reported a general shift away from the sale of inexpensive paperback novels and toward the sale of lucrative hardback books.',
         '(E) Citing a lack of free time, many survey respondents indicated that they had canceled magazine subscriptions in favor of purchasing individual issues at bookstores when time permits.'
