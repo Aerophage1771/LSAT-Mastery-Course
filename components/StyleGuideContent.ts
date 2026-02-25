@@ -11,7 +11,7 @@ export const styleGuideComponentsContent: ContentBlock[] = [
 
   { type: 'h3', text: 'Typography' },
   { type: 'paragraph', text: 'Content uses a **semantic hierarchy** with consistent sizing: `h2` for major sections, `h3` for sub-sections, `h4` for labels. Inline formatting supports **bold**, *italic*, and `code` styles.' },
-  { type: 'blockquote', text: 'Blockquotes present stimulus text, excerpts, or rules being analyzed. They are styled with an indigo left border and soft background.' },
+  { type: 'blockquote', text: 'Excerpt panels present stimulus text, passages, or rules being analyzed. They use a clean rounded card with subtle borders to separate quoted content from the lesson narrative.' },
 
   { type: 'h3', text: 'Callout Variants' },
   { type: 'paragraph', text: 'Three callout styles provide contextual emphasis throughout lessons.' },

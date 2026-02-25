@@ -176,7 +176,7 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
       }
       if (line.startsWith('---')) return <hr key={index} className="my-10 border-slate-200" />;
       if (line.startsWith('> ')) {
-        return <blockquote key={index} className="border-l-4 border-indigo-300 pl-6 py-3 my-6 bg-indigo-50/50 text-slate-700 italic rounded-r-lg shadow-sm" dangerouslySetInnerHTML={{ __html: parseInlineStyles(line.replace('> ', '')) }} />;
+        return <div key={index} className="my-6 px-6 py-5 bg-slate-50 rounded-xl border border-slate-200 text-slate-700 leading-relaxed shadow-sm" dangerouslySetInnerHTML={{ __html: parseInlineStyles(line.replace('> ', '')) }} />;
       }
       if (trimmedLine.startsWith('* ') || trimmedLine.startsWith('- ')) {
         const itemContent = trimmedLine.replace(/^[\*\-]\s/, '');
@@ -215,7 +215,7 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
         case 'h3': return <h3 key={index} className="text-xl font-bold mt-8 mb-4 text-slate-800 tracking-tight" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
         case 'h4': return <h4 key={index} className="text-lg font-bold mt-8 mb-3 text-slate-800 uppercase tracking-wide" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
         case 'paragraph': return <p key={index} className="mb-4 leading-relaxed text-slate-700 text-lg" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
-        case 'blockquote': return <blockquote key={index} className="border-l-4 border-indigo-300 pl-6 py-3 my-6 bg-indigo-50/50 text-slate-700 italic rounded-r-lg shadow-sm" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
+        case 'blockquote': return <div key={index} className="my-6 px-6 py-5 bg-slate-50 rounded-xl border border-slate-200 text-slate-700 leading-relaxed shadow-sm" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
         case 'list':
           const ListTag = block.ordered ? 'ol' : 'ul';
           return (
