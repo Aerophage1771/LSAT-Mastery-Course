@@ -312,3 +312,91 @@ Structure:
    - Textual evidence needed to answer correctly.
    - Option-by-option evaluation with trap type identification.` },
 ];
+
+// ─────────────────────────────────────────────
+// Plain-text serializer for "Copy All"
+// ─────────────────────────────────────────────
+
+function stripMarkdown(text: string): string {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '$1')
+    .replace(/\*(.*?)\*/g, '$1')
+    .replace(/`([^`]+)`/g, '$1');
+}
+
+function serializeBlocks(blocks: ContentBlock[]): string {
+  const lines: string[] = [];
+  for (const block of blocks) {
+    switch (block.type) {
+      case 'h1': lines.push(`# ${stripMarkdown(block.text)}`); break;
+      case 'h2': lines.push(`\n## ${stripMarkdown(block.text)}`); break;
+      case 'h3': lines.push(`\n### ${stripMarkdown(block.text)}`); break;
+      case 'h4': lines.push(`\n#### ${stripMarkdown(block.text)}`); break;
+      case 'paragraph': lines.push(stripMarkdown(block.text)); break;
+      case 'blockquote': lines.push(`> ${stripMarkdown(block.text)}`); break;
+      case 'hr': lines.push('\n---\n'); break;
+      case 'code': lines.push(`\`\`\`\n${block.text}\n\`\`\``); break;
+      case 'list':
+        for (const item of block.items) {
+          lines.push(`${block.ordered ? '1.' : '-'} ${stripMarkdown(item)}`);
+        }
+        break;
+      case 'callout':
+        if (block.title) lines.push(`[${block.variant?.toUpperCase() ?? 'NOTE'}] ${block.title}`);
+        lines.push(stripMarkdown(block.text));
+        break;
+      case 'process':
+        if (block.title) lines.push(block.title);
+        block.steps.forEach((step, i) => lines.push(`${i + 1}. ${stripMarkdown(step)}`));
+        break;
+      case 'table':
+        lines.push(block.headers.join(' | '));
+        lines.push(block.headers.map(() => '---').join(' | '));
+        for (const row of block.rows) lines.push(row.map(stripMarkdown).join(' | '));
+        break;
+      case 'breakdown':
+        for (const item of block.items) {
+          lines.push(`[${item.badge ?? ''}] ${stripMarkdown(item.title)}: ${stripMarkdown(item.text)}`);
+        }
+        break;
+      case 'question-card':
+        lines.push(`\n[QUESTION: ${block.questionType ?? 'Practice'}${block.id ? ` | ${block.id}` : ''}${block.difficulty ? ` | ${block.difficulty}` : ''}]`);
+        lines.push(`Stimulus: ${stripMarkdown(block.stimulus)}`);
+        lines.push(`Question: ${stripMarkdown(block.question)}`);
+        block.options.forEach(o => lines.push(`  ${stripMarkdown(o)}`));
+        break;
+      case 'passage-card':
+        lines.push(`\n[PASSAGE: ${block.title}${block.id ? ` | ${block.id}` : ''}${block.genre ? ` | ${block.genre}` : ''}]`);
+        lines.push(block.passage);
+        break;
+      case 'question-passage-card':
+        lines.push(`\n[QUESTION+PASSAGE: ${block.questionType ?? 'RC'}${block.id ? ` | ${block.id}` : ''}]`);
+        lines.push(`Passage: ${block.passageTitle}`);
+        lines.push(block.passage);
+        lines.push(`Question: ${stripMarkdown(block.question)}`);
+        block.options.forEach(o => lines.push(`  ${stripMarkdown(o)}`));
+        break;
+      case 'accordion':
+        lines.push(`[${block.title}]`);
+        if (typeof block.content === 'string') lines.push(block.content);
+        break;
+    }
+    lines.push('');
+  }
+  return lines.join('\n');
+}
+
+export function serializeAllStyleGuideContent(): string {
+  const sections = [
+    { title: 'COMPONENT LIBRARY', content: styleGuideComponentsContent },
+    { title: 'QUESTION CARD', content: styleGuideQuestionContent },
+    { title: 'PASSAGE CARD', content: styleGuidePassageContent },
+    { title: 'QUESTION + PASSAGE CARD', content: styleGuideQPContent },
+    { title: 'STRUCTURE & VOICE', content: styleGuideStructureContent },
+    { title: 'CONTENT GENERATION PROMPTS', content: styleGuidePromptsContent },
+  ];
+
+  return sections
+    .map(s => `${'='.repeat(60)}\n${s.title}\n${'='.repeat(60)}\n\n${serializeBlocks(s.content)}`)
+    .join('\n\n');
+}

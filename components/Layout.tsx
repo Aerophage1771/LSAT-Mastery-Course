@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ModuleData } from '../types';
-import { BookOpen, CheckCircle, Circle, Menu, X, ChevronRight, LayoutGrid, Download, Info, Palette, ArrowLeft, ArrowRight, Search, Rocket } from 'lucide-react';
+import { BookOpen, CheckCircle, Circle, Menu, X, ChevronRight, LayoutGrid, Download, Info, Palette, ArrowLeft, ArrowRight, Search, Rocket, Copy, Check } from 'lucide-react';
 import { generateCourseText, generateCourseRTF, generateCourseJSON, generateCourseCSV, generateCoursePDF } from '../utils/export';
 import { ExportControls } from './ExportControls';
 import { LessonViewer } from './LessonViewer';
@@ -20,6 +20,7 @@ import {
   styleGuideQPContent,
   styleGuideStructureContent,
   styleGuidePromptsContent,
+  serializeAllStyleGuideContent,
 } from './StyleGuideContent';
 
 interface LessonNav {
@@ -62,6 +63,7 @@ export const Layout: React.FC<LayoutProps> = ({
   const [styleGuideOpen, setStyleGuideOpen] = useState(false);
   const [styleGuideTab, setStyleGuideTab] = useState<'components' | 'questions' | 'passages' | 'qp' | 'structure' | 'prompts'>('components');
   const [roadmapOpen, setRoadmapOpen] = useState(false);
+  const [styleGuideCopied, setStyleGuideCopied] = useState(false);
   const [roadmapTab, setRoadmapTab] = useState<'learning' | 'analytics' | 'content' | 'ux' | 'technical' | 'social' | 'accessibility'>('learning');
   const activeLessonRef = useRef<HTMLButtonElement | null>(null);
   const mainRef = useRef<HTMLElement | null>(null);
@@ -319,7 +321,22 @@ export const Layout: React.FC<LayoutProps> = ({
                       <button role="tab" aria-selected={styleGuideTab === 'prompts'} onClick={() => setStyleGuideTab('prompts')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all whitespace-nowrap ${styleGuideTab === 'prompts' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>Prompts</button>
                    </div>
                 </div>
-                <button onClick={() => setStyleGuideOpen(false)} className="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-full transition-colors" aria-label="Close style guide"><X size={20} /></button>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={async () => {
+                      try {
+                        await navigator.clipboard.writeText(serializeAllStyleGuideContent());
+                        setStyleGuideCopied(true);
+                        setTimeout(() => setStyleGuideCopied(false), 2000);
+                      } catch (err) { console.error('Copy failed', err); }
+                    }}
+                    className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-500 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-colors"
+                    aria-label="Copy entire style guide to clipboard"
+                  >
+                    {styleGuideCopied ? <><Check size={14} className="text-emerald-500" /><span className="text-emerald-600">Copied!</span></> : <><Copy size={14} /><span>Copy All</span></>}
+                  </button>
+                  <button onClick={() => setStyleGuideOpen(false)} className="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-full transition-colors" aria-label="Close style guide"><X size={20} /></button>
+                </div>
              </div>
              <div className="flex-1 overflow-y-auto p-6" role="tabpanel">
                 <LessonViewer 
