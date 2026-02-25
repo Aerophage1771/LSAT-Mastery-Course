@@ -4,45 +4,80 @@ export const Lesson5_Drill_ExclusiveBoundaries: Lesson = {
   id: "18-5",
   title: "Drill: Exclusive Boundaries (PT-102-S-4-Q-15)",
   content: [
-    { type: 'h3', text: "Practice Drill: Exclusive Boundaries (PT-102-S-4-Q-15)" },
-    { type: 'paragraph', text: "This lesson addresses a more complex type of Must Be False question where the contradiction arises not from a single rule, but from the intersection of several facts. These questions require you to synthesize information about time, geography, and definitions to create a logical \"map\" of what is possible. The correct answer will be a scenario that tries to place an entity in a \"zone\" on this map where it is forbidden to exist." },
-    { type: 'paragraph', text: "Note the question stem: \"each of the following could be true EXCEPT.\" This is simply another way of asking, \"Which one of the following must be false?\" You are still looking for the one statement that is impossible." },
-    { type: 'hr' },
-    { type: 'h4', text: "The Problem" },
-    { type: 'blockquote', text: "The southern half of a certain region of the earth was covered entirely by water during the Cretaceous period, the last 75 million years of the Mesozoic era, the era when dinosaurs roamed the earth. Dinosaurs lived only on land. Thus, plesiosaurs—swimming reptiles that lived during the Cretaceous period exclusively—were not dinosaurs. No single species of dinosaur lived throughout the entire Mesozoic era." },
-    { type: 'paragraph', text: "**The Question:** If the statements in the passage are true, each of the following could be true EXCEPT:" },
-    { type: 'options', items: [
-      "(A) Dinosaurs inhabited the northern half of the region throughout the entire Mesozoic era.",
-      "(B) Plesiosaurs did not inhabit the southern half of the region during the Cretaceous period.",
-      "(C) Plesiosaurs did not inhabit the southern half of the region before the Cretaceous period.",
-      "(D) Dinosaurs did not inhabit the northern half of the region during the Cretaceous period.",
-      "(E) Dinosaurs inhabited the southern half of the region throughout the entire Mesozoic era."
-    ]},
-    { type: 'paragraph', text: "<br/><br/><br/>" },
-    { type: 'hr' },
-    { type: 'h3', text: "Explanation" },
-    { type: 'h4', text: "Step 1: Break Down the Argument" },
-    { type: 'paragraph', text: "Let's extract the key facts that create the logical boundaries." },
+    { type: 'h2', text: 'Exclusive Boundaries' },
+    { type: 'paragraph', text: 'Exclusive Boundaries questions test your ability to synthesize multiple facts into a single compound rule that forbids a particular combination. Unlike Conditional Breakers (which violate one "if/then" rule) or Quantifier Clashes (which contradict one universal statement), Exclusive Boundaries require you to combine constraints about time, geography, definitions, or categories to discover a zone where something is logically impossible.' },
+
+    { type: 'paragraph', text: 'The stimulus will present several independent facts that, taken individually, do not produce a contradiction. Only when you layer them together does the impossible scenario emerge. The correct answer tries to place an entity inside this forbidden zone\u2014violating the mutually exclusive boundary created by the intersection of the rules.' },
+
+    { type: 'h3', text: 'Building the Logical Map' },
+    { type: 'paragraph', text: 'To solve Exclusive Boundaries questions, construct a logical map by combining constraints:' },
     { type: 'list', ordered: true, items: [
-      "**Geography & Time:** During the Cretaceous period, the Southern Half of the region was entirely water.",
-      "**Biology:** Dinosaurs lived only on land.",
-      "**Timeline:** The Cretaceous period is a part of the larger Mesozoic era (it's the last 75 million years of it).",
-      "**Other Facts:** The information about Plesiosaurs and \"no single species\" provides context but is not central to the core contradiction."
+      '**Step 1 \u2014 Extract each constraint independently.** Separate facts about categories, locations, time periods, and definitions.',
+      '**Step 2 \u2014 Layer the constraints.** Ask: what combinations do these facts collectively forbid? Often one constraint defines where something exists, and another defines what can exist there.',
+      '**Step 3 \u2014 Identify the forbidden zone.** The intersection of two or more constraints creates a scenario that is logically impossible. The correct answer describes this exact scenario.',
     ]},
-    { type: 'h4', text: "Step 2: Analysis" },
-    { type: 'paragraph', text: "**What Method of Reasoning is the argument using?**\nThe stimulus presents a set of interlocking facts, not a formal argument. It defines the characteristics of a place (Southern Half), a time (Cretaceous), and a group (Dinosaurs). Your task is to synthesize these facts to derive a new, unstated rule." },
-    { type: 'paragraph', text: "**What is the Unbreakable Rule?**\nBy combining the facts, we can deduce a critical constraint:\n*   Because the Southern Half was water during the Cretaceous, and dinosaurs could only live on land, it is impossible for dinosaurs to have inhabited the Southern Half during the Cretaceous period. This is the core logical deduction." },
-    { type: 'h4', text: "Step 3: How to Find the Contradiction" },
-    { type: 'paragraph', text: "Since this is a \"Could be true EXCEPT\" question, you will test each answer choice by asking if it is possible. Four of the choices will describe scenarios that are possible because the stimulus does not forbid them. The one correct answer will describe a scenario that is impossible because it violates the rule we deduced in Step 2." },
-    { type: 'paragraph', text: "*   You are looking for an answer choice that forces a dinosaur into the Southern Half during the Cretaceous period." },
-    { type: 'h4', text: "Step 4: Evaluation" },
-    { type: 'breakdown', labels: { title: "Option", text: "Evaluation" }, items: [
-      { title: "(A) Dinosaurs inhabited the northern half of the region throughout the entire Mesozoic era.", text: "The stimulus tells us about the *southern* half. It provides zero information about the northern half. Therefore, any statement about the northern half is possible because we cannot prove it false.", badge: "Possible", badgeColor: "blue" },
-      { title: "(B) Plesiosaurs did not inhabit the southern half of the region during the Cretaceous period.", text: "The stimulus says plesiosaurs were swimming reptiles, and the southern half was water. This means they *could* have lived there, but it does not mean they *had* to. They could have lived in other oceans.", badge: "Possible", badgeColor: "blue" },
-      { title: "(C) Plesiosaurs did not inhabit the southern half of the region before the Cretaceous period.", text: "In fact, this statement *must* be true. The stimulus says they lived \"during the Cretaceous period exclusively.\" Since it must be true, it is not false, and therefore \"could be true.\"", badge: "Must Be True", badgeColor: "blue" },
-      { title: "(D) Dinosaurs did not inhabit the northern half of the region during the Cretaceous period.", text: "Again, we have no information about the northern half. It could have been land or water, and dinosaurs may or may not have lived there. We cannot prove this false.", badge: "Possible", badgeColor: "blue" },
-      { title: "(E) Dinosaurs inhabited the southern half of the region throughout the entire Mesozoic era.", text: "This is the direct contradiction. The statement \"throughout the entire Mesozoic era\" includes the Cretaceous period. We proved in Step 2 that dinosaurs could **not** have been in the southern half during the Cretaceous. Therefore, they could not have been there for the \"entire\" era. This statement is impossible.", badge: "Correct", badgeColor: "green" }
+    { type: 'paragraph', text: 'Pay close attention to temporal words ("during," "throughout," "before," "after") and spatial words ("southern," "northern," "only on"). These create the rigid boundaries that make the contradiction possible.' },
+
+    { type: 'callout', variant: 'tip', title: 'Strategy: Combine, Don\'t Isolate', text: 'No single sentence in the stimulus will produce the contradiction on its own. You must combine at least two facts. When you finish reading the stimulus, ask yourself: "What scenario is made impossible by these facts working together?" The answer to that question is what you are looking for in the answer choices.' },
+
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Drill: Exclusive Boundaries (PT-102-S-4-Q-15)' },
+    { type: 'paragraph', text: 'This drill features a stimulus with geographic, temporal, and biological constraints that combine to create one forbidden scenario. Four answers describe possible scenarios; one describes an impossible one.' },
+    { type: 'paragraph', text: '**Instructions:** Read the stimulus and commit to an answer before scrolling down to the analysis.' },
+
+    { type: 'hr' },
+
+    { type: 'h4', text: 'The Problem' },
+
+    { type: 'question-card',
+      id: '18-5-drill',
+      questionType: 'Must Be False',
+      difficulty: 'hard',
+      stimulus: 'The southern half of a certain region of the earth was covered entirely by water during the Cretaceous period, the last 75 million years of the Mesozoic era, the era when dinosaurs roamed the earth. Dinosaurs lived only on land. Thus, plesiosaurs\u2014swimming reptiles that lived during the Cretaceous period exclusively\u2014were not dinosaurs. No single species of dinosaur lived throughout the entire Mesozoic era.',
+      question: 'If the statements in the passage are true, each of the following could be true EXCEPT:',
+      options: [
+        '(A) Dinosaurs inhabited the northern half of the region throughout the entire Mesozoic era.',
+        '(B) Plesiosaurs did not inhabit the southern half of the region during the Cretaceous period.',
+        '(C) Plesiosaurs did not inhabit the southern half of the region before the Cretaceous period.',
+        '(D) Dinosaurs did not inhabit the northern half of the region during the Cretaceous period.',
+        '(E) Dinosaurs inhabited the southern half of the region throughout the entire Mesozoic era. (Correct)',
+      ],
+    },
+
+    { type: 'paragraph', text: '<br/><br/><br/>' },
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Full Analysis' },
+
+    { type: 'h4', text: 'Step 1: Extract the Constraints' },
+    { type: 'paragraph', text: 'Separate the stimulus into its independent factual constraints:' },
+
+    { type: 'breakdown', labels: { title: 'Constraint', text: 'Content' }, items: [
+      { title: 'Geographic Constraint', text: 'The southern half of the region was covered entirely by water during the Cretaceous period. This means no land existed in the southern half during that time.', badge: 'Location + Time', badgeColor: 'blue' },
+      { title: 'Biological Constraint', text: 'Dinosaurs lived only on land. They could not survive in water.', badge: 'Category Rule', badgeColor: 'blue' },
+      { title: 'Temporal Constraint', text: 'The Cretaceous period is a subset of the Mesozoic era\u2014specifically, the last 75 million years of it. "Throughout the entire Mesozoic era" necessarily includes the Cretaceous period.', badge: 'Time Subset', badgeColor: 'indigo' },
+      { title: 'Plesiosaur Facts', text: 'Plesiosaurs were swimming reptiles that lived during the Cretaceous period exclusively. They were not dinosaurs. These facts are context but do not generate the key contradiction.', badge: 'Context', badgeColor: 'slate' },
     ]},
-    { type: 'callout', title: "Key Takeaway", variant: "summary", text: "For Must Be False questions involving multiple constraints, your first step is to synthesize the facts to find the hidden rule or \"impossible zone.\" Pay close attention to timeline words like \"during,\" \"before,\" and \"throughout,\" as they are often the key to the puzzle. Remember that any statement about a topic not mentioned in the stimulus (like the \"northern half\") is almost always a \"Could Be True\" distractor, as the lack of information means you cannot prove it false." }
+
+    { type: 'h4', text: 'Step 2: Layer the Constraints' },
+    { type: 'paragraph', text: 'Combine the geographic and biological constraints: the southern half was entirely water during the Cretaceous, and dinosaurs lived only on land. Therefore, **dinosaurs could not have inhabited the southern half during the Cretaceous period**. This is the forbidden zone\u2014the intersection of the geographic and biological rules.' },
+
+    { type: 'paragraph', text: 'Now add the temporal constraint: the Cretaceous is part of the Mesozoic era. Any claim that dinosaurs were in the southern half "throughout the entire Mesozoic era" necessarily includes the Cretaceous period, which we have just shown is impossible. The word "throughout" is the trigger that forces the answer into the forbidden zone.' },
+
+    { type: 'callout', variant: 'default', title: 'The Forbidden Zone', text: 'Dinosaurs + Southern Half + Cretaceous Period = Impossible. Any answer that forces all three elements together must be false.' },
+
+    { type: 'h4', text: 'Step 3: Evaluate Each Answer' },
+    { type: 'breakdown', labels: { title: 'Option', text: 'Evaluation' }, items: [
+      { title: '(A) Dinosaurs inhabited the northern half of the region throughout the entire Mesozoic era.', text: 'The stimulus provides no information about the northern half\u2014it could have been land the entire time. Without a constraint, we cannot prove this false.', badge: 'Possible', badgeColor: 'blue' },
+      { title: '(B) Plesiosaurs did not inhabit the southern half of the region during the Cretaceous period.', text: 'Plesiosaurs were swimmers and the southern half was water, so they could have lived there\u2014but nothing says they had to. They might have lived in other waters. This is possible.', badge: 'Possible', badgeColor: 'blue' },
+      { title: '(C) Plesiosaurs did not inhabit the southern half of the region before the Cretaceous period.', text: 'In fact, this must be true: plesiosaurs lived "during the Cretaceous period exclusively," so they did not exist before it. A statement that must be true certainly could be true.', badge: 'Must Be True', badgeColor: 'blue' },
+      { title: '(D) Dinosaurs did not inhabit the northern half of the region during the Cretaceous period.', text: 'We have no information about the northern half. It might have been land or water. We cannot prove this false.', badge: 'Possible', badgeColor: 'blue' },
+      { title: '(E) Dinosaurs inhabited the southern half of the region throughout the entire Mesozoic era.', text: '"Throughout the entire Mesozoic era" includes the Cretaceous period. During the Cretaceous, the southern half was water, and dinosaurs lived only on land. This answer forces dinosaurs into the forbidden zone\u2014water territory during the Cretaceous\u2014making it impossible.', badge: 'Correct', badgeColor: 'green' },
+    ]},
+
+    { type: 'hr' },
+
+    { type: 'callout', title: 'Key Takeaway', variant: 'summary', text: 'Exclusive Boundaries questions require you to combine multiple constraints to discover a forbidden scenario. No single fact produces the contradiction; it emerges from layering geographic, temporal, or categorical rules. Pay special attention to words like "throughout," "during," and "only"\u2014they create the rigid boundaries that make certain combinations impossible. Any answer that forces an entity into the intersection of incompatible constraints must be false.' },
   ]
 };
