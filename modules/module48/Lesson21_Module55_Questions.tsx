@@ -209,5 +209,39 @@ export const Lesson21_Module55_Questions: Lesson = {
         ]}
       ] as ContentBlock[]
     },
+    {
+      type: 'accordion',
+      title: 'Drill: Mistaken Negation (PT-106-S-3-Q-21)',
+      content: [
+        { type: 'h4', text: 'Stimulus' },
+        { type: 'blockquote', text: 'If the law punishes littering, then the city has an obligation to provide trash cans. But the law does not punish littering, so the city has no such obligation.' },
+        { type: 'h4', text: 'Question' },
+        { type: 'paragraph', text: 'Which one of the following exhibits a flawed pattern of reasoning most similar to that in the argument above?' },
+        { type: 'options', items: [
+          '(A) If today is a holiday, then the bakery will not be open. The bakery is not open for business. Thus today is a holiday. [6.0%]',
+          '(B) Jenny will have lots of balloons at her birthday party. There are no balloons around yet, so today is not her birthday. [10.0%]',
+          '(C) The new regulations will be successful only if most of the students adhere to them. Since most of the students will adhere to those regulations, the new regulations will be successful. [3.0%]',
+          '(D) In the event that my flight had been late, I would have missed the committee meeting. Fortunately, my flight is on time. Therefore, I will make it to the meeting. [75.0%] (Correct)',
+          '(E) When the law is enforced, some people are jailed. But no one is in jail, so clearly the law is not enforced. [6.0%]'
+        ]}
+      ] as ContentBlock[]
+    },
+    {
+      type: 'accordion',
+      title: 'Drill: Conditional Chain Must Be True (PT-125-S-4-Q-23)',
+      content: [
+        { type: 'h4', text: 'Stimulus' },
+        { type: 'blockquote', text: 'Politician: The current crisis in mathematics education must be overcome if we are to remain competitive in the global economy. Alleviating this crisis requires the employment of successful teaching methods. No method of teaching a subject can succeed that does not get students to spend a significant amount of time outside of class studying that subject.' },
+        { type: 'h4', text: 'Question' },
+        { type: 'paragraph', text: 'Which one of the following statements follows logically from the statements above?' },
+        { type: 'options', items: [
+          '(A) If students spend a significant amount of time outside of class studying mathematics, the current crisis in mathematics education will be overcome. [5.0%]',
+          '(B) The current crisis in mathematics education will not be overcome unless students spend a significant amount of time outside of class studying mathematics. [79.0%] (Correct)',
+          '(C) Few subjects are as important as mathematics to the effort to remain competitive in the global economy. [1.0%]',
+          '(D) Only if we succeed in remaining competitive in the global economy will students spend a significant amount of time outside of class studying mathematics. [2.0%]',
+          '(E) Students\' spending a significant amount of time outside of class studying mathematics would help us to remain competitive in the global economy. [13.0%]'
+        ]}
+      ] as ContentBlock[]
+    },
   ] as ContentBlock[]
 };
