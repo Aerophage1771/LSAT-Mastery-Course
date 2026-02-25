@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { ModuleData } from '../types';
 import { BookOpen, CheckCircle, Circle, Menu, X, ChevronRight, LayoutGrid, Download, Info, Palette, ArrowLeft, ArrowRight, Search, Rocket, Copy, Check } from 'lucide-react';
 import { generateCourseText, generateCourseRTF, generateCourseJSON, generateCourseCSV, generateCoursePDF } from '../utils/export';
@@ -191,13 +192,11 @@ export const Layout: React.FC<LayoutProps> = ({
                   const isLRStart = module.id === 1;
                   const isRCStart = module.id === 23;
                   const isAdvancedStart = module.id === 50;
-                  const isQuestionBankStart = module.id === 57;
                   return (
                     <React.Fragment key={module.id}>
                       {isLRStart && <h3 className="px-3 mt-2 mb-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Logical Reasoning</h3>}
                       {isRCStart && <h3 className="px-3 mt-6 mb-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Reading Comprehension</h3>}
                       {isAdvancedStart && <h3 className="px-3 mt-6 mb-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Advanced Passages</h3>}
-                      {isQuestionBankStart && <h3 className="px-3 mt-6 mb-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Question Bank</h3>}
                       <div className="mb-1" role="treeitem" aria-expanded={isActive}>
                         <button onClick={() => { onSelectModule(module.id); }} className={`w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 flex items-center justify-between group ${isActive ? 'bg-slate-800 text-white shadow-md' : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'}`} aria-current={isActive ? 'true' : undefined}>
                           <span className="flex-1 truncate pr-2"><span className="opacity-50 mr-2">{module.id}.</span>{module.title}</span>
@@ -290,6 +289,9 @@ export const Layout: React.FC<LayoutProps> = ({
               <span>Search</span>
               <kbd className="ml-2 px-1.5 py-0.5 bg-slate-100 rounded text-[10px] font-mono text-slate-400">Ctrl+K</kbd>
             </button>
+            <Link to="/question-bank" className="flex items-center space-x-2 px-4 py-2 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-sm font-bold text-slate-600 transition-all shadow-sm" aria-label="Question Bank">
+              <BookOpen size={16} /><span>Question Bank</span>
+            </Link>
             <button onClick={() => setRoadmapOpen(true)} className="flex items-center space-x-2 px-4 py-2 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-sm font-bold text-slate-600 transition-all shadow-sm" aria-label="Open roadmap">
               <Rocket size={16} /><span>Roadmap</span>
             </button>
