@@ -163,6 +163,12 @@ See the **Style Guide → Technical** tab in the app for complete type definitio
 | Formatting | Prettier |
 | Bundle Analysis | rollup-plugin-visualizer |
 
+## Content Policy
+
+- **Drill and concept lessons** (Lesson 4+) use real LSAT questions sourced from the Question Bank modules. Stimuli, questions, and answer choices in these lessons are authentic PrepTest content.
+- **Introduction, Step-by-Step, and Field Guide lessons** (Lessons 1–3) may use invented illustrative examples for pedagogical clarity. These are always clearly labeled as illustrative and never assigned PT identifiers.
+- The Question Bank (Modules 57–59) is the single source of truth for all practice questions used throughout the course.
+
 ## License
 
 Private — not open source.
