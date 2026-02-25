@@ -7,23 +7,6 @@ export const Lesson11_Module11_Questions: Lesson = {
     { type: 'h2', text: 'Module 11: Necessary Assumption' },
     {
       type: 'accordion',
-      title: 'Drill: Advanced Necessary Assumption [Missing ID]',
-      content: [
-        { type: 'h4', text: 'Stimulus' },
-        { type: 'blockquote', text: '**Stimulus:** **Researcher:** The role of chemicals called pheromones in determining the sexual behavior of some animals is well documented. But, even though humans also produce these chemicals, it is clear that psychological factors have taken over this role in us. Whereas for animals these behaviors are involuntary, which is a clear sign of chemical control, humans, by virtue of their free will, choose how they behave, and thus psychological factors take over. So pheromones are merely a vestige of our evolutionary past.' },
-        { type: 'h4', text: 'Question' },
-        { type: 'paragraph', text: '**Question:** The researcher’s argument requires the assumption that' },
-        { type: 'options', items: [
-        '(A) whatever does not have a chemical explanation must have a purely psychological one',
-        '(B) voluntary action cannot have a chemical explanation',
-        '(C) free will can be found only in humans',
-        '(D) voluntary action cannot have an evolutionary explanation',
-        '(E) there is a psychological explanation for the continuing presence of pheromones in humans'
-        ]}
-      ]
-    },
-    {
-      type: 'accordion',
       title: 'Drill: The Scope Limitation (PT-127-S-1-Q-19)',
       content: [
         { type: 'h4', text: 'Stimulus' },

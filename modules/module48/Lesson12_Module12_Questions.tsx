@@ -58,18 +58,18 @@ export const Lesson12_Module12_Questions: Lesson = {
     },
     {
       type: 'accordion',
-      title: 'Drill: Strengthening a  [Missing ID]',
+      title: 'Drill: Mitigating Punishment (PT-113-S-2-Q-22)',
       content: [
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: 'Political theorist: Many people believe that the punishment of those who commit even the most heinous crimes should be mitigated to some extent if the crime was motivated by a sincere desire to achieve some larger good. Granted, some criminals with admirable motives deserve mitigated punishments. Nonetheless, judges should never mitigate punishment on the basis of motives, since motives are essentially a matter of conjecture and even vicious motives can easily be presented as altruistic.' },
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'Which one of the following principles, if valid, most helps to justify the political theorist’s reasoning?' },
         { type: 'options', items: [
-        '(A) Laws that prohibit or permit actions solely on the basis of psychological states should not be part of a legal system.',
-        '(B) It is better to err on the side of overly severe punishment than to err on the side of overly lenient punishment.',
-        '(C) The legal permissibility of actions should depend on the perceivable consequences of those actions.',
-        '(D) No law that cannot be enforced should be enacted.',
-        '(E) A legal system that, if adopted, would have disastrous consequences ought not be adopted.'
+        '(A) Laws that prohibit or permit actions solely on the basis of psychological states should not be part of a legal system. [30.0%]',
+        '(B) It is better to err on the side of overly severe punishment than to err on the side of overly lenient punishment. [29.0%] (Correct)',
+        '(C) The legal permissibility of actions should depend on the perceivable consequences of those actions. [34.0%]',
+        '(D) No law that cannot be enforced should be enacted. [3.0%]',
+        '(E) A legal system that, if adopted, would have disastrous consequences ought not be adopted. [4.0%]'
         ]}
       ]
     },
