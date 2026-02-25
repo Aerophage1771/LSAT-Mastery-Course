@@ -1,12 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  /* Custom slate shades used by the app (from original CDN config) */
   --color-slate-850: #151f32;
   --color-slate-900: #0f172a;
 }
 
-/* Custom scrollbar for sidebar */
+/* Linear-style font stack */
+html {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }

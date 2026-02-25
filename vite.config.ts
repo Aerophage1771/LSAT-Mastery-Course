@@ -3,8 +3,9 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
+import { visualizer } from 'rollup-plugin-visualizer';
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   server: {
     port: 3000,
     host: '0.0.0.0',
@@ -12,6 +13,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    mode === 'analyze' && visualizer({ open: false, filename: 'dist/stats.html', gzipSize: true }),
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
@@ -28,12 +30,10 @@ export default defineConfig({
         background_color: '#f8fafc',
         theme_color: '#0f172a',
         icons: [
-          {
-            src: '/icon.svg',
-            sizes: 'any',
-            type: 'image/svg+xml',
-            purpose: 'any',
-          },
+          { src: '/icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' },
+          { src: '/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+          { src: '/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+          { src: '/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
       },
     }),
@@ -43,4 +43,4 @@ export default defineConfig({
       '@': path.resolve(__dirname, '.'),
     }
   }
-});
+}));

@@ -10,19 +10,30 @@ import {
 } from '../utils/export';
 
 interface DashboardProps {
-  modules: ModuleData[];
+  modules: Array<{ id: number; title: string; category: string; description: string; unit: string; lessons?: ModuleData['lessons']; lessonCount?: number }>;
   onSelectModule: (id: number) => void;
+  getModuleProgress?: (lessons: { id: string }[]) => { completed: number; total: number; percent: number };
 }
 
-export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule }) => {
+const asModules = (items: unknown[]): ModuleData[] =>
+  (items as Array<Record<string, unknown>>).map((m) => ({
+    ...m,
+    lessons: (m.lessons as ModuleData['lessons']) ?? [],
+  })) as unknown as ModuleData[];
+
+const asModule = (m: Record<string, unknown>): ModuleData =>
+  ({ ...m, lessons: (m.lessons as ModuleData['lessons']) ?? [] }) as unknown as ModuleData;
+
+export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, getModuleProgress }) => {
   // Group modules by unit
+  type ModuleLike = typeof modules[number];
   const modulesByUnit = modules.reduce((acc, module) => {
     if (!acc[module.unit]) {
       acc[module.unit] = [];
     }
     acc[module.unit].push(module);
     return acc;
-  }, {} as Record<string, ModuleData[]>);
+  }, {} as Record<string, ModuleLike[]>);
 
   // Define sections and unit order with descriptions
   const sections = [
@@ -45,26 +56,26 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
       title: "Reading Comprehension",
       description: "Develop strategies for deconstructing complex passages and identifying underlying structures.",
       units: [
-        { name: "Unit 8: Summarizing the Passage", description: "Capture the main idea and primary purpose of complex texts." },
-        { name: "Unit 9: Analyzing the Components", description: "Understand the function and meaning of specific text elements." },
-        { name: "Unit 10: Identifying the Perspectives", description: "Track authorial attitude and distinguish multiple viewpoints." },
-        { name: "Unit 11: Extending the Reasoning", description: "Apply passage logic to new contexts and draw valid inferences." },
-        { name: "Unit 12: Sample Passages", description: "Full breakdowns of sample passages with detailed question analysis." },
-        { name: "Unit 13: Reference", description: "Quick reference guides and cheat sheets for all question types." }
+        { name: "Unit 10: Summarizing the Passage", description: "Capture the main idea and primary purpose of complex texts." },
+        { name: "Unit 11: Analyzing the Components", description: "Understand the function and meaning of specific text elements." },
+        { name: "Unit 12: Identifying the Perspectives", description: "Track authorial attitude and distinguish multiple viewpoints." },
+        { name: "Unit 13: Extending the Reasoning", description: "Apply passage logic to new contexts and draw valid inferences." },
+        { name: "Unit 14: Sample Passages", description: "Full breakdowns of sample passages with detailed question analysis." },
+        { name: "Unit 15: Reference", description: "Quick reference guides and cheat sheets for all question types." }
       ]
     },
     {
       title: "Advanced Passages",
       description: "In-depth analysis of the most challenging passages and question types.",
       units: [
-        { name: "Unit 14: Advanced Passages", description: "Explore complex themes in philosophy, science, and law." }
+        { name: "Unit 16: Advanced Passages", description: "Explore complex themes in philosophy, science, and law." }
       ]
     },
     {
-      title: "Resources",
-      description: "Additional materials for practice and review.",
+      title: "Question Bank",
+      description: "All practice questions from the course in one place, organized for review and timed practice.",
       units: [
-        { name: "Unit 15: Resources", description: "A repository of all Logical Reasoning and Reading Comprehension questions used in the course for practice and review." }
+        { name: "Unit 17: Question Bank", description: "Complete collection of LR and RC practice questions with cross-references to their full drill explanations." }
       ]
     }
   ];
@@ -96,12 +107,12 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
                      <ExportControls 
                         variant="minimal"
                         filename={`LSAT_${section.title.replace(/\s+/g, '_')}`}
-                        onCopy={() => generateSectionText(section.title, sectionModules)}
-                        onExportText={() => generateSectionText(section.title, sectionModules)}
-                        onExportRTF={() => generateSectionRTF(section.title, sectionModules)}
-                        onExportJSON={() => generateSectionJSON(section.title, sectionModules)}
-                        onExportCSV={() => generateSectionCSV(section.title, sectionModules)}
-                        onExportPDF={() => generateSectionPDF(section.title, sectionModules)}
+                        onCopy={() => generateSectionText(section.title, asModules(sectionModules))}
+                        onExportText={() => generateSectionText(section.title, asModules(sectionModules))}
+                        onExportRTF={() => generateSectionRTF(section.title, asModules(sectionModules))}
+                        onExportJSON={() => generateSectionJSON(section.title, asModules(sectionModules))}
+                        onExportCSV={() => generateSectionCSV(section.title, asModules(sectionModules))}
+                        onExportPDF={() => generateSectionPDF(section.title, asModules(sectionModules))}
                      />
                    </div>
                 </div>
@@ -124,6 +135,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
                                 section.title === 'Logical Reasoning' ? 'bg-indigo-100 text-indigo-700' : 
                                 section.title === 'Reading Comprehension' ? 'bg-emerald-100 text-emerald-700' : 
                                 section.title === 'Advanced Passages' ? 'bg-rose-100 text-rose-700' : 
+                                section.title === 'Question Bank' ? 'bg-amber-100 text-amber-700' :
                                 'bg-slate-100 text-slate-700'
                             }`}>
                               {unitNum}
@@ -136,12 +148,12 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
                            <ExportControls 
                               variant="minimal"
                               filename={`LSAT_${unitString.replace(/[: ]/g, '_')}`}
-                              onCopy={() => generateUnitText(unitString, unitModules)}
-                              onExportText={() => generateUnitText(unitString, unitModules)}
-                              onExportRTF={() => generateUnitRTF(unitString, unitModules)}
-                              onExportJSON={() => generateUnitJSON(unitString, unitModules)}
-                              onExportCSV={() => generateUnitCSV(unitString, unitModules)}
-                              onExportPDF={() => generateUnitPDF(unitString, unitModules)}
+                              onCopy={() => generateUnitText(unitString, asModules(unitModules))}
+                              onExportText={() => generateUnitText(unitString, asModules(unitModules))}
+                              onExportRTF={() => generateUnitRTF(unitString, asModules(unitModules))}
+                              onExportJSON={() => generateUnitJSON(unitString, asModules(unitModules))}
+                              onExportCSV={() => generateUnitCSV(unitString, asModules(unitModules))}
+                              onExportPDF={() => generateUnitPDF(unitString, asModules(unitModules))}
                            />
                         </div>
                       </div>
@@ -158,6 +170,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
                                 section.title === 'Logical Reasoning' ? 'bg-indigo-500' : 
                                 section.title === 'Reading Comprehension' ? 'bg-emerald-500' : 
                                 section.title === 'Advanced Passages' ? 'bg-rose-500' : 
+                                section.title === 'Question Bank' ? 'bg-amber-500' :
                                 'bg-slate-500'
                             }`} />
 
@@ -166,6 +179,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
                                   section.title === 'Logical Reasoning' ? 'bg-slate-100 text-slate-600 group-hover:bg-indigo-100 group-hover:text-indigo-700' : 
                                   section.title === 'Reading Comprehension' ? 'bg-slate-100 text-slate-600 group-hover:bg-emerald-100 group-hover:text-emerald-700' : 
                                   section.title === 'Advanced Passages' ? 'bg-slate-100 text-slate-600 group-hover:bg-rose-100 group-hover:text-rose-700' : 
+                                  section.title === 'Question Bank' ? 'bg-slate-100 text-slate-600 group-hover:bg-amber-100 group-hover:text-amber-700' :
                                   'bg-slate-100 text-slate-600'
                               }`}>
                                 MODULE {module.id}
@@ -174,17 +188,18 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
                                  <ExportControls 
                                     variant="minimal"
                                     filename={`LSAT_Module_${module.id}_${module.title.replace(/\s+/g, '_')}`}
-                                    onCopy={() => generateModuleText(module)}
-                                    onExportText={() => generateModuleText(module)}
-                                    onExportRTF={() => generateModuleRTF(module)}
-                                    onExportJSON={() => generateModuleJSON(module)}
-                                    onExportCSV={() => generateModuleCSV(module)}
-                                    onExportPDF={() => generateModulePDF(module)}
+                                    onCopy={() => generateModuleText(asModule(module as unknown as Record<string, unknown>))}
+                                    onExportText={() => generateModuleText(asModule(module as unknown as Record<string, unknown>))}
+                                    onExportRTF={() => generateModuleRTF(asModule(module as unknown as Record<string, unknown>))}
+                                    onExportJSON={() => generateModuleJSON(asModule(module as unknown as Record<string, unknown>))}
+                                    onExportCSV={() => generateModuleCSV(asModule(module as unknown as Record<string, unknown>))}
+                                    onExportPDF={() => generateModulePDF(asModule(module as unknown as Record<string, unknown>))}
                                  />
                                  <span className={`text-slate-300 transition-colors transform group-hover:translate-x-1 duration-300 ${
                                      section.title === 'Logical Reasoning' ? 'group-hover:text-indigo-600' : 
                                      section.title === 'Reading Comprehension' ? 'group-hover:text-emerald-600' : 
                                      section.title === 'Advanced Passages' ? 'group-hover:text-rose-600' : 
+                                     section.title === 'Question Bank' ? 'group-hover:text-amber-600' :
                                      'group-hover:text-slate-600'
                                  }`}>
                                   <ChevronRight size={20} />
@@ -196,6 +211,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
                                 section.title === 'Logical Reasoning' ? 'group-hover:text-indigo-600' : 
                                 section.title === 'Reading Comprehension' ? 'group-hover:text-emerald-600' : 
                                 section.title === 'Advanced Passages' ? 'group-hover:text-rose-600' : 
+                                section.title === 'Question Bank' ? 'group-hover:text-amber-600' :
                                 'group-hover:text-slate-600'
                             }`}>
                               {module.title}
@@ -208,17 +224,42 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule })
                             <div className="flex items-center justify-between text-xs font-medium text-slate-500 mt-auto pt-4 border-t border-slate-100 group-hover:border-indigo-50 transition-colors">
                               <div className="flex items-center">
                                 <Book size={14} className="mr-1.5" />
-                                <span>{module.lessons.length} Lessons</span>
+                                <span>{(module as { lessonCount?: number }).lessonCount ?? module.lessons?.length ?? 0} Lessons</span>
                               </div>
-                              <div className={`flex items-center opacity-0 group-hover:opacity-100 transition-opacity font-bold ${
-                                  section.title === 'Logical Reasoning' ? 'text-indigo-600' : 
-                                  section.title === 'Reading Comprehension' ? 'text-emerald-600' : 
-                                  section.title === 'Advanced Passages' ? 'text-rose-600' : 
-                                  'text-slate-600'
-                              }`}>
-                                <PlayCircle size={14} className="mr-1.5" />
-                                <span>Start</span>
-                              </div>
+                              {getModuleProgress && module.lessons && module.lessons.length > 0 ? (() => {
+                                const prog = getModuleProgress(module.lessons);
+                                if (prog.completed === 0) return (
+                                  <div className={`flex items-center opacity-0 group-hover:opacity-100 transition-opacity font-bold ${
+                                    section.title === 'Logical Reasoning' ? 'text-indigo-600' : 
+                                    section.title === 'Reading Comprehension' ? 'text-emerald-600' : 
+                                    section.title === 'Advanced Passages' ? 'text-rose-600' : 
+                                    section.title === 'Question Bank' ? 'text-amber-600' :
+                                    'text-slate-600'
+                                }`}>
+                                  <PlayCircle size={14} className="mr-1.5" />
+                                  <span>Start</span>
+                                </div>
+                                );
+                                return (
+                                  <div className="flex items-center gap-2">
+                                    <div className="w-16 h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                                      <div className="h-full bg-emerald-500 rounded-full transition-all" style={{ width: `${prog.percent}%` }} />
+                                    </div>
+                                    <span className="text-emerald-600 font-bold">{prog.percent}%</span>
+                                  </div>
+                                );
+                              })() : (
+                                <div className={`flex items-center opacity-0 group-hover:opacity-100 transition-opacity font-bold ${
+                                    section.title === 'Logical Reasoning' ? 'text-indigo-600' : 
+                                    section.title === 'Reading Comprehension' ? 'text-emerald-600' : 
+                                    section.title === 'Advanced Passages' ? 'text-rose-600' : 
+                                    section.title === 'Question Bank' ? 'text-amber-600' :
+                                    'text-slate-600'
+                                }`}>
+                                  <PlayCircle size={14} className="mr-1.5" />
+                                  <span>Start</span>
+                                </div>
+                              )}
                             </div>
                           </div>
                         ))}

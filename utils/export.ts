@@ -550,7 +550,7 @@ export const generateUnitCSV = (unitName: string, modules: ModuleData[]): string
   return rowsToCSV(rows);
 };
 
-export const generateSectionCSV = (sectionName: string, modules: ModuleData[]): string => {
+export const generateSectionCSV = (_sectionName: string, modules: ModuleData[]): string => {
   const rows: CSVRow[] = [];
   for (const module of modules) {
     for (const lesson of module.lessons) {
