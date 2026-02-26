@@ -326,7 +326,7 @@ const QuestionCardItem: React.FC<{
                 RC
               </span>
             )}
-            {drillCrossReferences[q.id] && (
+            {drillCrossReferences[q.ptId] && (
               <span className="text-[10px] text-indigo-500 font-medium">Has drill lesson</span>
             )}
           </div>
@@ -343,15 +343,15 @@ const QuestionCardItem: React.FC<{
 
       {isExpanded && (
         <div className="border-t border-slate-100">
-          {drillCrossReferences[q.id] && (
+          {drillCrossReferences[q.ptId] && (
             <div className="px-5 py-2.5 bg-indigo-50/50 border-b border-indigo-100 flex items-center gap-2">
               <Link
-                to={`/module/${drillCrossReferences[q.id].moduleId}/lesson/${drillCrossReferences[q.id].lessonId}`}
+                to={`/module/${drillCrossReferences[q.ptId].moduleId}/lesson/${drillCrossReferences[q.ptId].lessonId}`}
                 className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition-colors border border-indigo-200"
                 onClick={(e) => e.stopPropagation()}
               >
                 <BookOpen size={12} />
-                <span>Module {drillCrossReferences[q.id].moduleId}: {drillCrossReferences[q.id].lessonTitle}</span>
+                <span>Module {drillCrossReferences[q.ptId].moduleId}: {drillCrossReferences[q.ptId].lessonTitle}</span>
               </Link>
             </div>
           )}
