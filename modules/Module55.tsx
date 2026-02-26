@@ -8,6 +8,7 @@ import { Lesson4_Quantifiers } from './module55/Lesson4_Quantifiers';
 import { Lesson5_ComplexStructures } from './module55/Lesson5_ComplexStructures';
 import { Lesson6_Nuance } from './module55/Lesson6_Nuance';
 import { Lesson_Summary } from './module55/Lesson_ConciseGuide';
+import { Lesson_ReferenceGuide } from './module55/Lesson_ReferenceGuide';
 
 export const Module55: ModuleData = {
   id: 55,
@@ -24,5 +25,6 @@ export const Module55: ModuleData = {
     Lesson5_ComplexStructures,
     Lesson6_Nuance,
     Lesson_Summary,
+    Lesson_ReferenceGuide,
   ]
 };
