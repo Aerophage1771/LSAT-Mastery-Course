@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import DOMPurify from 'dompurify';
 import { Search, Filter, ChevronDown, ChevronUp, BookOpen, Hash, X, ArrowLeft } from 'lucide-react';
 import { ContentBlock } from '../types';
+import { drillCrossReferences } from '../modules/drillCrossReferences';
 
 import { Lesson1_Module1_Questions } from '../modules/module48/Lesson1_Module1_Questions';
 import { Lesson2_Module2_Questions } from '../modules/module48/Lesson2_Module2_Questions';
@@ -325,6 +326,9 @@ const QuestionCardItem: React.FC<{
                 RC
               </span>
             )}
+            {drillCrossReferences[q.id] && (
+              <span className="text-[10px] text-indigo-500 font-medium">Has drill lesson</span>
+            )}
           </div>
           {!isExpanded && (
             <p className="text-[14px] text-slate-500 leading-relaxed line-clamp-2">
@@ -339,6 +343,18 @@ const QuestionCardItem: React.FC<{
 
       {isExpanded && (
         <div className="border-t border-slate-100">
+          {drillCrossReferences[q.id] && (
+            <div className="px-5 py-2.5 bg-indigo-50/50 border-b border-indigo-100 flex items-center gap-2">
+              <Link
+                to={`/module/${drillCrossReferences[q.id].moduleId}/lesson/${drillCrossReferences[q.id].lessonId}`}
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition-colors border border-indigo-200"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <BookOpen size={12} />
+                <span>Module {drillCrossReferences[q.id].moduleId}: {drillCrossReferences[q.id].lessonTitle}</span>
+              </Link>
+            </div>
+          )}
           {q.passageTitle && (
             <div className="px-5 py-2.5 bg-amber-50/50 border-b border-amber-100">
               <span className="text-[11px] font-semibold text-amber-700">
