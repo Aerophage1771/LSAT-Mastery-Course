@@ -5,36 +5,36 @@ export const Lesson2_StepByStepGuide: Lesson = {
   title: "Step-by-Step Guide",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Most Strongly Supported' },
-    { type: 'paragraph', text: 'This guide shows you how to solve "Most Strongly Supported" questions. You will learn how to take the facts you\'re given and find the most logical conclusion while avoiding common mistakes.' },
-    { type: 'h4', text: "Step 1: Identify the Question's Goal" },
-    { type: 'paragraph', text: 'First, look at the question itself (the "stem"). Words like *"most strongly supported,"* *"can be properly inferred,"* or *"most supported by the information"* tell you that your job is to find the most provable conclusion based only on what you\'ve read.' },
-    { type: 'h4', text: "Step 2: Break Down the Information" },
-    { type: 'paragraph', text: 'Read the text provided (the "stimulus") and break it down into clear facts. While these passages are often just a collection of information, they can occasionally contain an argument. Your goal is to understand how each piece of information relates to the others. Pay close attention to:' },
-    { type: 'list', items: [
-      '**Key Terms and Definitions:** Precise meanings matter.',
-      '**Strength of Language:** Words like *most, some, only, unless,* and *probably* define how broad or limited the facts are.',
-      '**Links Between Ideas:** Look for things like cause-and-effect, comparisons, or general rules.'
+    { type: 'paragraph', text: 'Follow this four-step method to solve any MSS question efficiently and accurately.' },
+    { type: 'h3', text: 'The 4-Step Method' },
+    { type: 'process', title: 'Solving MSS Questions', steps: [
+      '**Read for Facts.** Treat every sentence as a premise you must accept. Identify the key terms, quantifiers, and any causal or conditional language.',
+      '**Identify Key Relationships.** Look for links between premises: shared terms, cause-and-effect chains, comparisons, or conditional triggers.',
+      '**Prephrase an Inference.** Before reading the answers, ask yourself: *What follows from combining these facts?* Form a rough prediction.',
+      '**Test Each Answer.** Check every choice against the stimulus. The correct answer is the one the premises most directly support; eliminate anything that requires outside information or an unsupported leap.'
     ]},
-    { type: 'h4', text: "Step 3: Connect the Evidence" },
-    { type: 'paragraph', text: 'Before looking at the answers, take a moment to see how the facts fit together. Ask yourself: *What is the most direct result of combining these points?*' },
+    { type: 'h3', text: 'Wrong-Answer Patterns' },
     { type: 'list', items: [
-      '**Look for Chains:** If Fact A leads to Fact B, and Fact B leads to Fact C, you can often link Fact A directly to Fact C.',
-      '**Explain the Surprise:** If the information seems contradictory or surprising, look for the logical reason why both parts could still be true.',
-      '**Apply Rules:** If there is a general rule, think about how it applies to the specific example described.',
-      '**Find the Overlap:** If the text uses words like "most," look for where different groups might cross over.'
+      '**Too Extreme:** Uses absolutes like *all, never, impossible* when the stimulus uses moderate language.',
+      '**Unsupported Leap:** Introduces a concept or prediction not grounded in the stimulus.',
+      '**Reverses Direction:** Treats the answer as evidence for the stimulus instead of the other way around.',
+      '**Outside Scope:** Brings in real-world knowledge that the passage doesn\'t mention or imply.'
     ]},
-    { type: 'paragraph', text: 'Try to put the conclusion in your own words before reading the choices.' },
-    { type: 'h4', text: "Step 4: Evaluate the Choices" },
-    { type: 'paragraph', text: 'Check each answer choice against the facts. For each one, ask: **"Is this statement made highly likely by the information I just read?"**' },
-    { type: 'paragraph', text: 'The right answer should feel like a natural "next step." It should not require you to make any big guesses or outside assumptions.' },
-    { type: 'h4', text: "Step 5: Avoid Common Mistakes" },
-    { type: 'paragraph', text: 'Watch out for these common "traps." This is the most important part of picking the right answer.' },
-    { type: 'list', items: [
-      '**Trap: Too Strong / Extreme.** Does the choice use words like *all, never, only, must,* or *impossible*? Unless the text is just as strong, this is usually wrong. Look for cautious words like *some, can,* or *may*.',
-      '**Trap: New Information.** Does the choice bring up a new topic, a motive, or a future prediction not mentioned in the text? If it’s not there, it’s not supported.',
-      '**Trap: Broken Logic.** Does the choice flip cause-and-effect or confuse what *might* happen with what *must* happen?',
-      '**Trap: Distortion.** Does the choice use the right keywords but twist the meaning? (e.g., changing "some people" to "most people").'
-    ]},
-    { type: 'paragraph', text: 'By watching for these specific errors, you can confidently cross out the wrong answers and find the one that is truly supported.' }
+    { type: 'h3', text: 'Worked Example' },
+    { type: 'question-card',
+      id: '16-2-example',
+      questionType: 'Most Strongly Supported',
+      difficulty: 'medium',
+      stimulus: 'Studies show that employees who take short breaks every 90 minutes report higher focus than those who work continuously. However, most workplaces discourage frequent breaks because managers equate visible desk time with productivity.',
+      question: 'Which one of the following is most strongly supported by the information above?',
+      options: [
+        '(A) Managers who discourage breaks are intentionally reducing their employees\' focus.',
+        '(B) In most workplaces, policies about breaks may conflict with practices that studies link to higher focus. (Correct)',
+        '(C) Employees who take breaks every 90 minutes are always more productive than those who do not.',
+        '(D) Short breaks are the single most important factor in workplace productivity.',
+        '(E) Studies on workplace focus are not trusted by most managers.'
+      ]
+    },
+    { type: 'callout', title: 'Timing Tip', variant: 'tip', text: 'Spend roughly 60 percent of your time on the stimulus and prephrasing, and 40 percent on the answer choices. A strong prephrase lets you spot the correct answer quickly and resist attractive wrong answers.' }
   ]
 };

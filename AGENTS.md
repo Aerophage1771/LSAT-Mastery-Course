@@ -55,7 +55,7 @@ The Question Bank is NOT a module. It has its own standalone page at `/question-
 
 ### Gotchas
 
-- **Module55 TS errors**: 9 pre-existing errors in `modules/Module55.tsx` reference lesson files (`module55/Lesson_Intro`, etc.) that don't exist yet. These are not regressions. All other modules compile cleanly.
+- **Module55**: All lesson files in `modules/module55/` now exist and compile cleanly. If new lessons are added, ensure they follow the same `import { Lesson } from '../../types'` pattern and are registered in `modules/Module55.tsx`.
 - **Chunk size warning**: Vite warns about the main bundle exceeding 500 KB. This is expected; the app shell + routing + search + UI components total ~800 KB.
 - **PWA**: Service worker is only generated during `npm run build`, not in dev mode.
 - **Strict TypeScript**: `tsconfig.json` has `strict: true`, `noUnusedLocals`, `noUnusedParameters`, `noImplicitReturns`, `noFallthroughCasesInSwitch`. All new code must comply.

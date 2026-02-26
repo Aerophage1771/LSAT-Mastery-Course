@@ -5,41 +5,49 @@ export const Lesson2_StepByStepGuide: Lesson = {
   title: "Step-by-Step Guide",
   content: [
     { type: 'h2', text: 'Step-by-Step Guide: Must Be True' },
-    { type: 'paragraph', text: 'This section provides a clear, step-by-step process for solving any Must Be True question. The methodology is designed to move from the stimulus to the correct answer choice with precision by deconstructing the facts, synthesizing them, and systematically eliminating choices that fail the test of logical certainty.' },
-    { type: 'h3', text: 'Step 1: Identify the Task and Set the Standard of Proof' },
-    { type: 'paragraph', text: 'First, read the question stem. Once you confirm the task is to find what **must be true** or what **logically follows**, adopt the correct mindset:' },
-    { type: 'list', items: [
-      '**The Stimulus is Fact:** Treat every statement in the stimulus as a given, unchangeable truth for the purpose of the question. Your job is not to question or evaluate the premises, but to work with them.',
-      '**The Standard is Certainty:** The correct answer must be 100% proven by the information in the stimulus. It cannot be merely "likely" or "plausible." If you can find any way for the answer choice to be false while the stimulus remains true, it is the wrong answer.'
+    { type: 'paragraph', text: 'This guide gives you a repeatable four-step method for every Must Be True question. Because MBT demands certainty, each step is designed to tighten your reasoning and prevent you from selecting an answer that merely *could* be true.' },
+    { type: 'h3', text: 'The 4-Step Method' },
+    { type: 'process', title: 'Solving Must Be True Questions', steps: [
+      '**Confirm the Task.** Read the stem first. Once you see language like "must be true," "follows logically," or "properly inferred," set your standard: the answer must be 100% guaranteed by the stimulus.',
+      '**Deconstruct the Stimulus.** Break every sentence into its logical skeleton. Diagram conditional statements (If A \u2192 B). Note quantifiers (all, most, some, none). Flag numerical data. Identify causal links.',
+      '**Synthesize and Predict.** Look for a shared term that connects two premises. Chain conditionals (A\u2192B + B\u2192C = A\u2192C). Combine quantifiers (Most X are Y + Most X are Z = Some Y are Z). State your predicted deduction before reading the choices.',
+      '**Evaluate and Eliminate.** Test each choice against the stimulus. If you can imagine ANY scenario where the stimulus is true but the choice is false, cross it out. The surviving choice is your answer.'
     ]},
-    { type: 'h3', text: 'Step 2: Deconstruct the Stimulus into Factual Components' },
-    { type: 'paragraph', text: 'Read the stimulus actively with the goal of breaking it down into its logical components. Do not try to hold it all in your head at once. Instead, create a mental inventory of the rules and facts. Specifically, look for the common structural patterns:' },
-    { type: 'list', items: [
-      '**Conditional Statements:** Identify any "if-then" logic. Look for keywords like `if`, `all`, `every`, `any`, `no`, `none`, `only if`, and `unless`. Mentally note the relationship (e.g., "Okay, so A requires B").',
-      '**Quantifier Statements:** Pinpoint any statements about groups using `some`, `most`, `many`, `several`, or `few`. These establish relationships of overlap or proportion.',
-      '**Causal/Explanatory Links:** Note any statements that explain *why* something is the way it is or describe a specific mechanism.',
-      '**Numerical/Statistical Data:** Identify any facts involving numbers, percentages, or proportions, as these often require simple mathematical reconciliation.'
+    { type: 'h3', text: 'Conditional Diagramming' },
+    { type: 'paragraph', text: 'Conditional logic drives the majority of MBT questions. Translate natural language into arrows and memorize these equivalences:' },
+    { type: 'table', headers: ['Natural Language', 'Diagram'], rows: [
+      ['If A, then B', 'A \u2192 B'],
+      ['All A are B', 'A \u2192 B'],
+      ['A only if B', 'A \u2192 B'],
+      ['No A are B', 'A \u2192 ~B'],
+      ['Unless B, not A', '~B \u2192 ~A (equiv. A \u2192 B)']
     ]},
-    { type: 'h3', text: 'Step 3: Synthesize and Predict the Deduction' },
-    { type: 'paragraph', text: 'This is the most critical step. Look for ways to combine the components you identified in Step 2. The correct answer is almost always a product of synthesis, not a simple restatement.' },
-    { type: 'list', items: [
-      '**Look for the Link:** Find a common term or concept that connects two or more of your factual components.',
-      '    *   Can you form a **conditional chain** (A→B and B→C)?',
-      '    *   Can you apply a **universal rule** ("all" or "none") to a **particular group** ("some" or "most")?',
-      '    *   Can you resolve a **numerical paradox** (e.g., a total went up but a part went down)?',
-      '    *   Can you trace a **causal explanation** to its inevitable consequence?',
-      '**Prephrase the Deduction:** Once you\'ve found a connection, state the resulting conclusion in your own words. This prephrase doesn\'t have to be perfect, but it will be your guide. For example: *"Okay, if all X are Y, and some Y are Z, there\'s no guaranteed link. But if some X are Y, and all Y are Z, then some X must be Z. I\'ll look for that."*'
+    { type: 'paragraph', text: 'Once diagrammed, chain links with shared terms and always consider the **contrapositive** \u2014 it is logically identical to the original and is a favorite source of correct answers.' },
+    { type: 'h3', text: 'Quantifier Tracking' },
+    { type: 'paragraph', text: 'When the stimulus uses "most" or "some," track the overlap carefully. Two "most" claims about the same group guarantee overlap: if most X are Y and most X are Z, then at least some X are both Y and Z. However, two "some" claims about the same group do NOT guarantee overlap \u2014 the two subsets could be entirely separate.' },
+    { type: 'h3', text: 'Wrong-Answer Patterns' },
+    { type: 'breakdown', labels: { title: 'Trap Type', text: 'Description' }, items: [
+      { title: 'Could Be True', text: 'The choice is compatible with the stimulus but not proven by it. It might be true in some scenarios and false in others.', badge: 'Most Common', badgeColor: 'red' },
+      { title: 'Mistaken Reversal', text: 'Reverses a conditional: concludes B\u2192A from A\u2192B. Always check the direction of the arrow.', badge: 'Logic Error', badgeColor: 'red' },
+      { title: 'Mistaken Negation', text: 'Negates both sides without reversing: concludes ~A\u2192~B from A\u2192B. The valid inference is ~B\u2192~A.', badge: 'Logic Error', badgeColor: 'red' },
+      { title: 'Too Strong', text: 'Uses absolutes (all, never, only) when the stimulus supports a weaker claim (some, most).', badge: 'Scope Shift', badgeColor: 'red' },
+      { title: 'Out of Scope', text: 'Introduces concepts, comparisons, or value judgments not mentioned in the stimulus.', badge: 'Irrelevant', badgeColor: 'red' }
     ]},
-    { type: 'callout', title: 'Key Insight: Focus on What is "Locked In"', text: 'The stimulus creates a set of logical constraints. The correct answer is something that is "locked in" by those constraints. If the stimulus says "Most of the 10 people in the room are tall," you don\'t know *exactly* who is tall, but you know for certain that *at least six people are tall*. That locked-in fact is what you should look for.'},
-    { type: 'h3', text: 'Step 4: Systematically Evaluate the Answer Choices' },
-    { type: 'paragraph', text: 'Scan the choices, looking for a match to your prephrase. If you didn\'t form a prephrase, or if none of the choices match, test each one against the stimulus using the strict standard of proof from Step 1. The goal is to eliminate four choices that *could* be false.' },
-    { type: 'paragraph', text: 'Be on high alert for the most common traps:' },
-    { type: 'list', items: [
-      '**Trap: The Mistaken Reversal or Negation.** The choice invalidly reverses or negates a conditional statement from the stimulus (e.g., claiming B→A from a premise that says A→B).',
-      '**Trap: The "Out of Scope" Answer.** The choice introduces a new concept, comparison, or value judgment that the stimulus provides no information about.',
-      '**Trap: The "Too Strong" Answer.** The choice uses absolute language (`all`, `none`, `only`) when the stimulus only supports a weaker claim (`some`, `most`).',
-      '**Trap: The Invalid Quantifier Inference.** The choice makes a flawed deduction based on "some" or "most" (e.g., assuming two "some" groups must overlap).'
-    ]},
-    { type: 'paragraph', text: 'After eliminating the four traps, the remaining choice will be the one that is a logically certain consequence of the stimulus.' }
+    { type: 'h3', text: 'Worked Example' },
+    { type: 'question-card',
+      id: '17-2-example',
+      questionType: 'Must Be True',
+      difficulty: 'medium',
+      stimulus: 'All of the books on the top shelf are hardcovers. Most of the books on the top shelf were published before 1990. No book published before 1990 has a digital edition.',
+      question: 'If the statements above are true, which one of the following must also be true?',
+      options: [
+        '(A) No hardcover book has a digital edition.',
+        '(B) Most books published before 1990 are on the top shelf.',
+        '(C) Some hardcovers do not have a digital edition. (Correct)',
+        '(D) All books without digital editions are hardcovers.',
+        '(E) Every book on the top shelf was published before 1990.'
+      ]
+    },
+    { type: 'callout', title: 'Timing Tip', variant: 'tip', text: 'Spend 60\u201370% of your time deconstructing and synthesizing the stimulus. A strong prephrase lets you identify the correct answer in seconds and resist attractive traps. If no choice matches your prediction, re-read the stimulus \u2014 you likely missed a linkage.' }
   ]
 };

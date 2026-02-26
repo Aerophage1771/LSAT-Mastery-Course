@@ -1,5 +1,5 @@
 
-import { Lesson, ContentBlock } from '../../types';
+import { Lesson } from '../../types';
 
 export const Lesson6_Nuance: Lesson = {
   id: "55-6",
@@ -7,7 +7,7 @@ export const Lesson6_Nuance: Lesson = {
   content: [
     { type: 'h3', text: 'Lesson 6: Real-World Nuance & Probabilistic Logic' },
     { type: 'paragraph', text: '**Objective:** To accurately interpret and make inferences from conditional statements that use quantifiers ("most," "some") and probabilistic language ("likely," "can"), and to distinguish this **soft** language from the absolute language of formal logic.' },
-    { type: 'paragraph', text: 'You have now mastered the architecture of formal logic—the world of "all," "none," and "must." But the LSAT is not just a test of pure logic; it\'s a test of how logic is applied in the messy context of real-world arguments. This final lesson will teach you how to handle the shades of grey: the language of probability, frequency, and possibility.' },
+    { type: 'paragraph', text: 'You have now mastered the architecture of formal logic\u2014the world of "all," "none," and "must." But the LSAT is not just a test of pure logic; it\'s a test of how logic is applied in the messy context of real-world arguments. This final lesson will teach you how to handle the shades of grey: the language of probability, frequency, and possibility.' },
     
     { type: 'h4', text: '6.1 Probabilistic Indicators vs. Absolute Indicators' },
     { type: 'paragraph', text: 'Your first task is to differentiate between **hard** and **soft** language.' },
@@ -25,27 +25,27 @@ export const Lesson6_Nuance: Lesson = {
 
     { type: 'h4', text: 'LSAT in Action: The Modal Fallacy' },
     {
-      type: 'accordion',
-      title: 'PT-103-S-3-Q-17',
-      content: [
-        { type: 'blockquote', text: '**Stimulus:** Parents who wish to provide a strong foundation for the musical ability of their children should provide them with a good musical education. Since formal instruction is often a part of a good musical education, parents who wish to provide this strong foundation need to ensure that their children receive formal instruction.' },
-        { type: 'paragraph', text: '**Question:** The reasoning is most vulnerable to criticism on the grounds that it fails to consider that' },
-        { type: 'options', items: [
-          "(A) parents might not be the only source of a child’s musical education",
-          "(B) some children might not be interested in receiving a strong foundation for their musical ability",
-          "(C) there are many examples of people with formal instruction whose musical ability is poor",
-          "(D) formal instruction might not always be a part of a good musical education",
-          "(E) some children might become good musicians even if they have not had good musical educations"
-        ]}
-      ] as ContentBlock[]
+      type: 'question-card',
+      id: '55-6-q1',
+      questionType: 'Conditional Reasoning',
+      difficulty: 'medium',
+      stimulus: 'Parents who wish to provide a strong foundation for the musical ability of their children should provide them with a good musical education. Since formal instruction is often a part of a good musical education, parents who wish to provide this strong foundation need to ensure that their children receive formal instruction.',
+      question: 'The reasoning is most vulnerable to criticism on the grounds that it fails to consider that',
+      options: [
+        '(A) parents might not be the only source of a child\'s musical education',
+        '(B) some children might not be interested in receiving a strong foundation for their musical ability',
+        '(C) there are many examples of people with formal instruction whose musical ability is poor',
+        '(D) formal instruction might not always be a part of a good musical education (Correct)',
+        '(E) some children might become good musicians even if they have not had good musical educations'
+      ]
     },
     { type: 'h3', text: 'Explanation' },
     { type: 'paragraph', text: '**Goal:** Analyze the logical structure.' },
     { type: 'h4', text: 'Argument Breakdown' },
     { type: 'list', items: [
-      "**Premise 1:** Parents who want to provide a strong foundation for their children's musical ability **should** provide them with a good musical education.",
-      "**Premise 2:** Formal instruction is **often** a part of a good musical education.",
-      "**Conclusion:** Therefore, parents who want to provide this strong foundation **need** to ensure that their children receive formal instruction."
+      '**Premise 1:** Parents who want to provide a strong foundation for their children\'s musical ability **should** provide them with a good musical education.',
+      '**Premise 2:** Formal instruction is **often** a part of a good musical education.',
+      '**Conclusion:** Therefore, parents who want to provide this strong foundation **need** to ensure that their children receive formal instruction.'
     ]},
     { type: 'callout', title: 'The Modal Flaw', text: 'The core error is a **modal shift** between frequency and necessity.\n\n**The Frequency Claim:** The premise uses the soft indicator "**often**." This denotes high frequency but admits exceptions. It is not an absolute rule.\n\n**The Necessity Claim:** The conclusion shifts to the hard indicator "**need**." This creates a necessary condition (a requirement).\n\n**The Gap:** The argument fails to bridge this gap. Just because formal instruction is **frequently** associated with good musical education does not mean it is **necessary** for it. The conclusion collapses the nuance of "**often**" into the rigidity of "**must**."' },
     { type: 'h4', text: 'Answer Explanations' },
@@ -65,27 +65,27 @@ export const Lesson6_Nuance: Lesson = {
     
     { type: 'h4', text: 'LSAT in Action: Possibility vs. Certainty' },
     {
-      type: 'accordion',
-      title: 'Possibility vs. Certainty Example',
-      content: [
-        { type: 'blockquote', text: '**Stimulus:** Studies have shown that consuming large amounts of caffeine CAN cause temporary jitters in some individuals. John just drank a large cup of coffee. Therefore, John WILL definitely experience jitters within the next hour.'},
-        { type: 'paragraph', text: '**Question:** The reasoning in the argument is flawed because it...'},
-        { type: 'options', items: [
-          "(A) fails to consider that John might be accustomed to drinking coffee",
-          "(B) assumes that what is true of a group is true of every individual in that group",
-          "(C) treats a potential effect of a cause as if it were a guaranteed effect",
-          "(D) confuses the cause of the jitters with the effect of the jitters",
-          "(E) relies on ambiguous terminology regarding the amount of caffeine"
-        ]}
-      ] as ContentBlock[]
+      type: 'question-card',
+      id: '55-6-q2',
+      questionType: 'Conditional Reasoning',
+      difficulty: 'medium',
+      stimulus: 'Studies have shown that consuming large amounts of caffeine CAN cause temporary jitters in some individuals. John just drank a large cup of coffee. Therefore, John WILL definitely experience jitters within the next hour.',
+      question: 'The reasoning in the argument is flawed because it...',
+      options: [
+        '(A) fails to consider that John might be accustomed to drinking coffee',
+        '(B) assumes that what is true of a group is true of every individual in that group',
+        '(C) treats a potential effect of a cause as if it were a guaranteed effect (Correct)',
+        '(D) confuses the cause of the jitters with the effect of the jitters',
+        '(E) relies on ambiguous terminology regarding the amount of caffeine'
+      ]
     },
     { type: 'h3', text: 'Explanation' },
     { type: 'paragraph', text: '**Goal:** Identify the flaw in moving from possibility to certainty.'},
     { type: 'h4', text: 'Argument Breakdown' },
     { type: 'list', items: [
-      "**Premise:** Caffeine **can** cause jitters (**possibility**).",
-      "**Fact:** John drank caffeine.",
-      "**Conclusion:** John **will definitely** have jitters (**certainty**)."
+      '**Premise:** Caffeine **can** cause jitters (**possibility**).',
+      '**Fact:** John drank caffeine.',
+      '**Conclusion:** John **will definitely** have jitters (**certainty**).'
     ]},
     { type: 'callout', title: 'The Modal Flaw', text: 'The core error is a **modal shift** between possibility and certainty.\n\n**The Possibility Claim:** The premise uses the soft modal indicator "**can**." This denotes a potential outcome (>0% chance) but not a guaranteed one.\n\n**The Certainty Claim:** The conclusion shifts to the hard modal indicator "**will**." This creates a 100% guaranteed outcome.\n\n**The Gap:** The argument fails to bridge this gap. Just because an effect is **possible** does not mean it is **inevitable**. By treating "**can**" as "**will**," the argument commits a specific variation of the **Modal Fallacy**.' },
     { type: 'h4', text: 'Answer Explanations' },
@@ -97,11 +97,42 @@ export const Lesson6_Nuance: Lesson = {
       { title: '(E)', text: 'There is no ambiguity in the terms used; the error is in the logic, not the definitions.', badge: 'Incorrect', badgeColor: 'red' }
     ]},
 
+    { type: 'h4', text: '6.4 Double Negatives and Litotes' },
+    { type: 'paragraph', text: 'The LSAT frequently disguises meaning behind double negatives\u2014a rhetorical device called **litotes**. The phrase "not unlikely" means "likely," and "not without merit" means "has merit." These constructions are designed to slow you down and create confusion.' },
+    {
+      type: 'table',
+      headers: ['LSAT Phrase', 'Simplified Meaning', 'Logical Strength'],
+      rows: [
+        ['"not unlikely"', 'likely / possible', 'Soft (probabilistic)'],
+        ['"not without merit"', 'has some merit', 'Soft (probabilistic)'],
+        ['"cannot fail to"', 'must / will', 'Hard (absolute)'],
+        ['"not uncommon"', 'fairly common / some', 'Soft (probabilistic)'],
+        ['"never without"', 'always with', 'Hard (absolute)']
+      ]
+    },
+    { type: 'paragraph', text: 'The critical step is to simplify the double negative first, then determine whether the resulting meaning is **hard** or **soft**. A common trap pairs a soft double negative in the premise ("not unlikely") with a hard conclusion ("therefore it will happen"), creating another instance of the Modal Fallacy.' },
+
+    { type: 'h4', text: '6.5 The Spectrum of Certainty on the LSAT' },
+    { type: 'paragraph', text: 'Bringing together every quantifier and modal term from this module, here is a unified spectrum from absolute certainty to bare possibility. Recognizing where a term falls on this spectrum is the single most important skill for avoiding modal and quantifier traps.' },
+    {
+      type: 'table',
+      headers: ['Level', 'Terms', 'Logical Treatment'],
+      rows: [
+        ['**Absolute (100%)**', 'all, every, must, always, never, none, requires', 'Valid conditional: A -> B. Contraposable.'],
+        ['**Strong Majority (>50%)**', 'most, a majority of, predominantly', 'A -m-> B. NOT contraposable. Supports the Overlap Rule.'],
+        ['**Existence (\u22651)**', 'some, at least one, several, a few (partial)', 'A <-s-> B. Reversible. NOT contraposable.'],
+        ['**Probabilistic (variable)**', 'likely, often, usually, tends to, frequently', 'No formal diagram. Cannot ground a conditional chain.'],
+        ['**Possibility (>0%)**', 'can, could, may, might, possible', 'No formal diagram. Only establishes that outcome is not impossible.']
+      ]
+    },
+    { type: 'paragraph', text: 'Any argument that jumps between levels on this spectrum without justification commits a logical error. The larger the jump (e.g., from "possible" to "must"), the more egregious the flaw.' },
+
     { type: 'h3', text: 'Module Conclusion & Final Takeaways' },
     { type: 'list', items: [
         '**Hard vs. Soft Language is Key:** Determine if a premise is **absolute** or **probabilistic** before applying logical rules.',
         '**Beware the Modal Fallacy:** Watch for "**often/usually**" premises leading to "**must/always**" conclusions.',
         '**Possibility is Not Certainty:** Do not assume that because something **is capable** of happening, it **will** happen.',
+        '**Simplify Double Negatives:** Reduce litotes to their core meaning before analyzing the argument\'s logical strength.',
         '**Trace the Logic, Don\'t Assume It:** Conditional reasoning is a mechanical derivation from the premises, not a test of what "sounds" reasonable.'
     ]},
     

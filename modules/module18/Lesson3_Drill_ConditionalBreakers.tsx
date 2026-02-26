@@ -4,45 +4,76 @@ export const Lesson3_Drill_ConditionalBreakers: Lesson = {
   id: "18-3",
   title: "Drill: Conditional Breakers (PT-103-S-1-Q-13)",
   content: [
-    { type: 'h3', text: "Practice Drill: Conditional Breakers (PT-103-S-1-Q-13)" },
-    { type: 'paragraph', text: "The Must Be False question type is a test of rigorous deduction. Your task is to accept every statement in the stimulus as an unbreakable rule and then identify the one answer choice that violates those rules. There is no room for interpretation; if a statement creates a logical impossibility, it is the correct answer." },
-    { type: 'paragraph', text: "One of the most common ways the LSAT creates this impossibility is through a **Conditional Breaker**. The stimulus will establish a clear \"If/Then\" relationship, often using absolute words like \"never,\" \"always,\" or \"no.\" The correct answer will then describe a scenario where the \"If\" condition is met, but the \"Then\" outcome is violated." },
-    { type: 'hr' },
-    { type: 'h4', text: "The Problem" },
-    { type: 'blockquote', text: "**Stimulus:** Some people think that in every barrel of politicians there are only a few rotten ones. But if deceit is a quality of rottenness, I believe all effective politicians are rotten. They must be deceitful in order to do the job properly. Someone who is scrupulously honest about obeying the rules of society will never be an effective politician." },
-    { type: 'paragraph', text: "**Question:** Assuming that the author’s statements are accurate, which one of the following statements CANNOT be true?" },
-    { type: 'options', items: [
-      "(A) Some people think all politicians are rotten.",
-      "(B) Some politicians are scrupulously honest.",
-      "(C) Some people define a politician’s job as obeying the rules of society.",
-      "(D) Some deceitful politicians are ineffective.",
-      "(E) Some scrupulously honest politicians are effective."
-    ]},
-    { type: 'paragraph', text: "<br/><br/><br/>" },
-    { type: 'hr' },
-    { type: 'h3', text: "Explanation" },
-    { type: 'h4', text: "Step 1: Break Down the Argument" },
-    { type: 'paragraph', text: "Let's engage with the text sentence by sentence to identify the absolute rules." },
+    { type: 'h2', text: 'Conditional Breakers' },
+    { type: 'paragraph', text: 'A Conditional Breaker is an answer choice that violates a conditional rule established in the stimulus. Every conditional rule has exactly one way to be broken: the sufficient condition occurs, but the necessary condition does not. In formal terms, if the stimulus says "If A, then B," the only scenario that must be false is "A and not B." Every other combination\u2014A with B, not-A with B, not-A without B\u2014is perfectly consistent with the rule.' },
+
+    { type: 'paragraph', text: 'Must Be False questions test your ability to spot this single forbidden combination. The stimulus will use absolute language\u2014"never," "always," "all," "no"\u2014to create an unbreakable conditional. The correct answer asserts the antecedent while denying the consequent, producing a direct logical impossibility.' },
+
+    { type: 'h3', text: 'How Conditional Rules Break' },
+    { type: 'paragraph', text: 'A conditional statement "If P, then Q" generates exactly one contradiction:' },
     { type: 'list', ordered: true, items: [
-      "**\"Some people think that in every barrel of politicians there are only a few rotten ones.\"**\n*   **Reaction:** This is a viewpoint the author is about to argue against. It sets the stage but is not the author's own belief.",
-      "**\"But if deceit is a quality of rottenness, I believe all effective politicians are rotten.\"**\n*   **Reaction:** This is the author's main conclusion. It establishes a connection between being effective and being \"rotten.\"",
-      "**\"They must be deceitful in order to do the job properly.\"**\n*   **Reaction:** This is a premise that supports the conclusion. It creates a necessary condition: to be effective, a politician *must* be deceitful.",
-      "**\"Someone who is scrupulously honest about obeying the rules of society will never be an effective politician.\"**\n*   **Reaction:** This is the key rule. It is an absolute, unconditional statement. It establishes a mutually exclusive relationship between two traits: scrupulous honesty and being an effective politician."
+      '**Identify the sufficient condition (P):** This is the trigger\u2014the "if" side of the rule.',
+      '**Identify the necessary condition (Q):** This is the guaranteed outcome\u2014the "then" side.',
+      '**The contradiction is P and not-Q:** Any answer choice that describes the trigger occurring without the guaranteed outcome directly violates the rule.',
     ]},
-    { type: 'h4', text: "Step 2: Analysis" },
-    { type: 'paragraph', text: "**What Method of Reasoning is the argument using?**\nThe argument defines a necessary quality for being an \"effective politician\" (deceit) and then uses that definition to create a strict conditional rule. The final sentence is the most powerful statement because of the word \"never.\" It creates a law that cannot be broken." },
-    { type: 'paragraph', text: "**What is the Unbreakable Rule?**\nThe rule is: If a person is \"scrupulously honest,\" then that person is **NOT** an \"effective politician.\"\n*   We can diagram this as: **Scrupulously Honest → NOT Effective Politician**." },
-    { type: 'h4', text: "Step 3: How to Find the Contradiction" },
-    { type: 'paragraph', text: "Your job is to find the one answer choice that presents a scenario where this rule is broken. A conditional rule is only broken in one way: when the sufficient condition occurs, but the necessary condition does not." },
-    { type: 'paragraph', text: "*   In this case, you are looking for a scenario that describes a politician who is **Scrupulously Honest AND an Effective Politician**. This combination is explicitly forbidden by the final sentence of the stimulus." },
-    { type: 'h4', text: "Step 4: Evaluation" },
-    { type: 'breakdown', labels: { title: "Option", text: "Evaluation" }, items: [
-      { title: "(A) Some people think all politicians are rotten.", text: "The author mentions what \"some people\" think at the beginning. This does not prevent other people from holding a different belief. There is no contradiction here.", badge: "Possible", badgeColor: "blue" },
-      { title: "(B) Some politicians are scrupulously honest.", text: "The rule only tells us what happens *if* a politician is scrupulously honest (they are not effective). It does not forbid the existence of such politicians.", badge: "Possible", badgeColor: "blue" },
-      { title: "(C) Some people define a politician’s job as obeying the rules of society.", text: "The author argues against this view, but that does not mean other people cannot hold it. This is consistent with the stimulus.", badge: "Possible", badgeColor: "blue" },
-      { title: "(D) Some deceitful politicians are ineffective.", text: "The stimulus states that being effective *requires* deceit (Effective → Deceitful). This does not mean that being deceitful is enough to *guarantee* effectiveness. It is a necessary condition, not a sufficient one. This is a common reversal trap.", badge: "Possible", badgeColor: "blue" },
-      { title: "(E) Some scrupulously honest politicians are effective.", text: "This is the direct contradiction. The stimulus states that a scrupulously honest person can **never** be an effective politician. This answer choice describes exactly that impossible combination. It presents the sufficient condition (scrupulously honest) occurring with the opposite of the necessary condition (effective).", badge: "Correct", badgeColor: "green" }
+    { type: 'paragraph', text: 'Common distractors present the converse (Q therefore P) or the inverse (not-P therefore not-Q). Neither of these is logically forbidden by the original conditional. Only affirming the antecedent while denying the consequent creates a contradiction.' },
+
+    { type: 'callout', variant: 'tip', title: 'Strategy: Translate Absolutes into Conditionals', text: 'When you see words like "never," "always," or "no," immediately rewrite the statement as a formal conditional. "Someone who is scrupulously honest will never be an effective politician" becomes: Scrupulously Honest \u2192 NOT Effective Politician. Once you have the diagram, the contradiction writes itself.' },
+
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Drill: Conditional Breakers (PT-103-S-1-Q-13)' },
+    { type: 'paragraph', text: 'This drill features a stimulus that buries its key conditional rule in the final sentence. Your task is to extract that rule and find the answer that violates it.' },
+    { type: 'paragraph', text: '**Instructions:** Read the stimulus and commit to an answer before scrolling down to the analysis.' },
+
+    { type: 'hr' },
+
+    { type: 'h4', text: 'The Problem' },
+
+    { type: 'question-card',
+      id: '18-3-drill',
+      questionType: 'Must Be False',
+      difficulty: 'medium',
+      stimulus: 'Some people think that in every barrel of politicians there are only a few rotten ones. But if deceit is a quality of rottenness, I believe all effective politicians are rotten. They must be deceitful in order to do the job properly. Someone who is scrupulously honest about obeying the rules of society will never be an effective politician.',
+      question: 'Assuming that the author\'s statements are accurate, which one of the following statements CANNOT be true?',
+      options: [
+        '(A) Some people think all politicians are rotten.',
+        '(B) Some politicians are scrupulously honest.',
+        '(C) Some people define a politician\'s job as obeying the rules of society.',
+        '(D) Some deceitful politicians are ineffective.',
+        '(E) Some scrupulously honest politicians are effective. (Correct)',
+      ],
+    },
+
+    { type: 'paragraph', text: '<br/><br/><br/>' },
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Full Analysis' },
+
+    { type: 'h4', text: 'Step 1: Extract the Conditional Rules' },
+    { type: 'paragraph', text: 'The stimulus contains several claims, but only the final sentence creates an absolute rule:' },
+
+    { type: 'breakdown', labels: { title: 'Statement', text: 'Analysis' }, items: [
+      { title: '"Some people think... only a few rotten ones."', text: 'This is a third-party opinion the author is about to reject. It establishes no rule of its own.', badge: 'Background', badgeColor: 'slate' },
+      { title: '"All effective politicians are rotten."', text: 'The author\'s conclusion. It tells us Effective \u2192 Rotten, but the question stem asks what CANNOT be true, so we need the strongest absolute statement.', badge: 'Conclusion', badgeColor: 'blue' },
+      { title: '"They must be deceitful to do the job properly."', text: 'A supporting premise: Effective \u2192 Deceitful. This makes deceit a necessary condition for effectiveness, not a sufficient one.', badge: 'Premise', badgeColor: 'blue' },
+      { title: '"Someone who is scrupulously honest... will never be an effective politician."', text: 'The key rule. The word "never" creates an absolute prohibition: Scrupulously Honest \u2192 NOT Effective Politician.', badge: 'Key Rule', badgeColor: 'indigo' },
     ]},
-    { type: 'callout', title: "Key Takeaway", variant: "summary", text: "When you encounter a Must Be False question, your first priority should be to identify the most absolute statement in the stimulus. Look for words like \"never,\" \"all,\" \"always,\" or \"no,\" as these create the strictest rules. The correct answer will almost always be a statement that attempts to create an exception to one of these absolute rules, resulting in a direct logical contradiction." }
+
+    { type: 'h4', text: 'Step 2: Diagram the Key Rule' },
+    { type: 'paragraph', text: 'The final sentence translates to: **Scrupulously Honest \u2192 NOT Effective Politician**. The contrapositive is: **Effective Politician \u2192 NOT Scrupulously Honest**. Both forms tell us the same thing: scrupulous honesty and political effectiveness are mutually exclusive. Any answer that combines these two traits describes an impossible scenario.' },
+
+    { type: 'h4', text: 'Step 3: Evaluate Each Answer' },
+    { type: 'breakdown', labels: { title: 'Option', text: 'Evaluation' }, items: [
+      { title: '(A) Some people think all politicians are rotten.', text: 'The stimulus mentions what "some people" think. Nothing prevents other people from holding a stronger version of that belief. This is consistent with the passage.', badge: 'Possible', badgeColor: 'blue' },
+      { title: '(B) Some politicians are scrupulously honest.', text: 'The rule says honest politicians cannot be effective\u2014it does not say honest politicians cannot exist. They can exist; they just won\'t be effective.', badge: 'Possible', badgeColor: 'blue' },
+      { title: '(C) Some people define a politician\'s job as obeying the rules of society.', text: 'The author argues against this view, but others are free to hold it. The stimulus does not forbid this belief.', badge: 'Possible', badgeColor: 'blue' },
+      { title: '(D) Some deceitful politicians are ineffective.', text: 'Deceit is necessary for effectiveness (Effective \u2192 Deceitful), but it is not sufficient. A politician can be deceitful and still fail. This is the classic necessary-vs-sufficient trap.', badge: 'Possible', badgeColor: 'blue' },
+      { title: '(E) Some scrupulously honest politicians are effective.', text: 'This directly asserts the sufficient condition (scrupulously honest) while denying the necessary condition (not effective). The stimulus says this combination can never occur. This is the Conditional Breaker.', badge: 'Correct', badgeColor: 'green' },
+    ]},
+
+    { type: 'hr' },
+
+    { type: 'callout', title: 'Key Takeaway', variant: 'summary', text: 'A Conditional Breaker is the only way to violate a conditional rule: assert the sufficient condition while denying the necessary condition. When a Must Be False stimulus uses absolute words like "never," "always," or "no," translate the statement into a formal conditional and look for the answer that describes the single forbidden combination.' },
   ]
 };

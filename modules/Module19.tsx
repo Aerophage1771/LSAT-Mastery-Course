@@ -8,6 +8,7 @@ import { Lesson6_Guide_HardestParadox } from './module19/Lesson6_Guide_HardestPa
 import { Lesson7_Drill_HiddenDistinction } from './module19/Lesson7_Drill_HiddenDistinction';
 import { Lesson8_Drill_CounterintuitiveCausalWeb } from './module19/Lesson8_Drill_CounterintuitiveCausalWeb';
 import { Lesson9_Drill_FlawedLogicExcept } from './module19/Lesson9_Drill_FlawedLogicExcept';
+import { Lesson10_ReferenceGuide } from './module19/Lesson10_ReferenceGuide';
 
 export const Module19: ModuleData = {
   id: 19,
@@ -24,6 +25,7 @@ export const Module19: ModuleData = {
     Lesson6_Guide_HardestParadox,
     Lesson7_Drill_HiddenDistinction,
     Lesson8_Drill_CounterintuitiveCausalWeb,
-    Lesson9_Drill_FlawedLogicExcept
+    Lesson9_Drill_FlawedLogicExcept,
+    Lesson10_ReferenceGuide
   ]
 };

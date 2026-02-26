@@ -5,26 +5,49 @@ export const Lesson1_Introduction: Lesson = {
   title: "Introduction",
   content: [
     { type: 'h2', text: 'MODULE 18: Must Be False' },
-    { type: 'paragraph', text: '**Question Goal**\n\n**Find the one answer choice that is 100% contradicted by the information in the stimulus.** In other words, which statement is logically impossible if the stimulus is true?' },
-    { type: 'h3', text: 'Introduction' },
-    { type: 'paragraph', text: 'Must Be False questions provide a passage containing a set of facts or rules. You must accept everything in that passage as 100% true for the duration of the question. Your task is to examine five answer choices and find the one statement that **cannot possibly be true** if the information in the passage is also true.' },
-    { type: 'paragraph', text: 'This question type is a direct test of your ability to understand and apply rules. It trains you to spot direct contradictions, which is essential for evaluating arguments, finding flaws, and understanding what is logically required or forbidden by a set of premises.' },
-    { type: 'h3', text: 'Common Question Stems' },
-    { type: 'paragraph', text: 'You can recognize these questions by their focus on finding a statement that is impossible, inconsistent, or in conflict with the stimulus. Typical phrasing includes:' },
-    { type: 'list', items: [
-      '"If the statements above are true, each of the following could be true EXCEPT:"',
-      '"If the statements above are true, then which one of the following CANNOT be true?"',
-      '"The claims made above are incompatible with which one of the following?"',
-      '"Which one of the following situations violates the principle described?"',
-      '"The facts described above provide the strongest evidence against which one of the following?"'
+    { type: 'paragraph', text: '**Question Goal**\n\nIdentify the one answer choice that is **logically impossible** given the facts in the stimulus. Every other answer *could* be true; the correct answer absolutely *cannot* be true.' },
+    { type: 'h3', text: 'Why This Matters' },
+    { type: 'paragraph', text: 'Must Be False is the rarest inference question type on the LSAT, but it tests the deepest level of logical precision. While most questions ask you to find what is supported or required, Must Be False asks you to find what is **forbidden**. Mastering this skill sharpens your ability to detect contradictions instantly \u2014 a talent that pays dividends across every section of the exam.' },
+    { type: 'h3', text: 'Recognizing the Question Stem' },
+    { type: 'table', headers: ['Stem Language', 'What It Asks'], rows: [
+      ['Which one **CANNOT be true**?', 'Find the impossible statement.'],
+      ['Which one **must be false**?', 'Same task, direct phrasing.'],
+      ['Each of the following **could be true EXCEPT**:', 'Four answers are possible; one is impossible.'],
+      ['The claims above are **incompatible** with which one?', 'Find what clashes with the stimulus.'],
+      ['Which one **violates** the principle described?', 'Find the rule-breaker.']
     ]},
-    { type: 'h3', text: 'Core Concepts' },
-    { type: 'h4', text: '1. The Stimulus is the Rule Book' },
-    { type: 'paragraph', text: 'Think of the passage as a temporary set of rules for a game. For this question only, whatever the passage says is an absolute fact. Your job is not to question the rules or bring in outside knowledge; it is simply to enforce them. If a rule says, "All cars are blue," you must accept it as true.' },
-    { type: 'h4', text: '2. The Contradiction Test' },
-    { type: 'paragraph', text: 'The correct answer is not something that is merely unlikely or unsupported. It must be something that is **logically impossible**. A statement is impossible if it directly contradicts one of the rules in the passage, or a conclusion that follows necessarily from combining those rules.' },
-    { type: 'paragraph', text: '*Example:* If the stimulus states, "All students in the club are over 18," and "Maria is in the club," then the statement "Maria is 17 years old" **must be false.** It creates a direct, unavoidable contradiction.' },
-    { type: 'h4', text: '3. Eliminating Possibilities' },
-    { type: 'paragraph', text: 'The four incorrect answer choices are all statements that are **logically possible**. A statement is possible if it does not break any of the rules in the passage. A possible statement could be something the passage suggests is true, something that must be true, or simply something the passage doesn’t mention at all (and therefore doesn\'t forbid). Your job is to eliminate these four possible statements to find the one and only statement that is impossible.' }
+    { type: 'h3', text: 'Must Be False vs. Must Be True' },
+    { type: 'list', items: [
+      '**Must Be True** finds what is NECESSARY \u2014 the answer that the stimulus guarantees.',
+      '**Must Be False** finds what is IMPOSSIBLE \u2014 the answer that the stimulus forbids.',
+      'They are mirror images: MBT asks "What must happen?" while MBF asks "What can never happen?"'
+    ]},
+    { type: 'h3', text: 'The Impossibility Standard' },
+    { type: 'paragraph', text: 'The bar for "must be false" is absolute. If you can construct **any** scenario \u2014 however unlikely \u2014 where the stimulus facts and the answer choice are **both** true at the same time, that answer is wrong. A correct Must Be False answer leaves zero room for coexistence with the stimulus.' },
+    { type: 'h3', text: 'The EXCEPT Format' },
+    { type: 'paragraph', text: 'Most Must Be False questions appear in the EXCEPT format: *"Each of the following could be true EXCEPT."* This means the four wrong answers are all logically possible, and only the correct answer is impossible. Read carefully \u2014 the EXCEPT flips your usual instinct. You are eliminating statements that *work* and keeping the one that *breaks*.' },
+    { type: 'h3', text: 'Common Reasoning Patterns' },
+    { type: 'list', items: [
+      '**Conditional Violations:** The stimulus says "If A, then B." The correct answer describes A happening without B \u2014 the one combination a conditional forbids.',
+      '**Quantifier Contradictions:** The stimulus says "All X are Y." The correct answer presents an X that is not Y, directly breaking the universal rule.',
+      '**Mutually Exclusive Categories:** The stimulus establishes that two groups cannot overlap. The correct answer places something in both groups at once.',
+      '**Numerical Impossibilities:** The stimulus sets a cap, floor, or total. The correct answer violates that numerical constraint.'
+    ]},
+    { type: 'h3', text: 'Worked Example' },
+    { type: 'question-card',
+      id: '18-1-example',
+      questionType: 'Must Be False',
+      difficulty: 'easy',
+      stimulus: 'Every dog in the shelter has been vaccinated. No vaccinated animal is permitted in the quarantine wing. Rex is a dog in the shelter.',
+      question: 'If the statements above are true, which one of the following CANNOT be true?',
+      options: [
+        '(A) Rex was adopted last week.',
+        '(B) Some cats in the shelter have not been vaccinated.',
+        '(C) Rex is currently housed in the quarantine wing. (Correct)',
+        '(D) The quarantine wing contains animals that are not dogs.',
+        '(E) Rex is the oldest dog in the shelter.'
+      ]
+    },
+    { type: 'callout', title: 'Key Principle', variant: 'summary', text: 'The correct answer CONTRADICTS the stimulus \u2014 it cannot coexist with the stated facts. If combining the stimulus and the answer produces a logical impossibility, you have found your answer.' }
   ]
 };

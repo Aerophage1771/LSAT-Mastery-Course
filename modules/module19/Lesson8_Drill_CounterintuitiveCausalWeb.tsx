@@ -4,54 +4,53 @@ export const Lesson8_Drill_CounterintuitiveCausalWeb: Lesson = {
   id: "19-8",
   title: "Drill: The Counterintuitive Causal Web (PT-103-S-1-Q-23)",
   content: [
-    { type: 'h3', text: "Practice Drill: The Counterintuitive Causal Web (PT-103-S-1-Q-23)" },
-    { type: 'paragraph', text: "This drill tackles a sophisticated paradox involving economic incentives and human behavior. The situation seems to defy logic: the scenario with the *weaker* incentive for bad behavior actually produces *more* of that bad behavior. Resolving this requires you to look beyond the most obvious actor in the system and consider how the incentives change the behavior of *everyone* involved." },
+    { type: 'h3', text: 'Practice Drill: The Counterintuitive Causal Web' },
+    { type: 'paragraph', text: 'A Counterintuitive Causal Web paradox arises when multiple causal factors interact to produce an unexpected net result. The scenario with the *weaker* incentive for bad behavior actually produces *more* of it. Resolving this requires you to look beyond the most obvious actor and consider how incentive structures change the behavior of *everyone* in the system\u2014especially the overlooked second actor.' },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "Construction contractors working on the cutting edge of technology nearly always work on a “cost-plus” basis only. One kind of cost-plus contract stipulates the contractor’s profit as a fixed percentage of the contractor’s costs; the other kind stipulates a fixed amount of profit over and above costs. Under the first kind of contract, higher costs yield higher profits for the contractor, so this is where one might expect final costs in excess of original cost estimates to be more common. Paradoxically, such cost overruns are actually more common if the contract is of the fixed-profit kind." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "Which one of the following, if true, most helps to resolve the apparent paradox in the situation described above?" },
-    {
-      type: 'options', items: [
-        "(A) Clients are much less likely to agree to a fixed-profit type of cost-plus contract when it is understood that under certain conditions the project will be scuttled than they are when there is no such understanding.",
-        "(B) On long-term contracts, cost projections take future inflation into account, but since the figures used are provided by the government, they are usually underestimates.",
-        "(C) On any sizable construction project, the contractor bills the client monthly or quarterly, so any tendency for original cost estimates to be exceeded can be detected early.",
-        "(D) Clients billed under a cost-plus contract are free to review individual billings in order to uncover wasteful expenditures, but they do so only when the contractor’s profit varies with cost.",
-        "(E) The practice of submitting deliberately exaggerated cost estimates is most common in the case of fixed-profit contracts, because it makes the profit, as a percentage of estimated cost, appear modest."
+
+    { type: 'question-card',
+      id: '19-8-drill',
+      questionType: 'Paradox / Explain',
+      difficulty: 'hard',
+      stimulus: 'Construction contractors working on the cutting edge of technology nearly always work on a \u201ccost-plus\u201d basis only. One kind of cost-plus contract stipulates the contractor\u2019s profit as a fixed percentage of the contractor\u2019s costs; the other kind stipulates a fixed amount of profit over and above costs. Under the first kind of contract, higher costs yield higher profits for the contractor, so this is where one might expect final costs in excess of original cost estimates to be more common. Paradoxically, such cost overruns are actually more common if the contract is of the fixed-profit kind.',
+      question: 'Which one of the following, if true, most helps to resolve the apparent paradox in the situation described above?',
+      options: [
+        '(A) Clients are much less likely to agree to a fixed-profit type of cost-plus contract when it is understood that the project may be scuttled under certain conditions.',
+        '(B) On long-term contracts, cost projections take future inflation into account, but since the figures are provided by the government, they are usually underestimates.',
+        '(C) On any sizable construction project, the contractor bills the client monthly or quarterly, so any tendency for cost estimates to be exceeded can be detected early.',
+        '(D) Clients billed under a cost-plus contract are free to review individual billings to uncover wasteful expenditures, but they do so only when the contractor\u2019s profit varies with cost. (Correct)',
+        '(E) The practice of submitting deliberately exaggerated cost estimates is most common in fixed-profit contracts, because it makes the profit, as a percentage of estimated cost, appear modest.'
       ]
     },
-    { type: 'paragraph', text: "<br/><br/><br/>" },
+
+    { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
-    { type: 'h3', text: "Analysis & Explanation" },
-    { type: 'h4', text: "Step 1: Deconstruction" },
-    { type: 'paragraph', text: "First, clearly define the two contract types and the paradox." },
-    {
-      type: 'list', items: [
-        "**Contract Type 1 (Percentage-Profit):** Contractor's Profit = % of Total Costs.\n    *   *Incentive:* The contractor has a direct financial incentive to let costs rise, because higher costs mean higher profits.\n    *   *Expectation:* Cost overruns should be common here.",
-        "**Contract Type 2 (Fixed-Profit):** Contractor's Profit = Fixed $.\n    *   *Incentive:* The contractor has no incentive to increase costs, as their profit is locked in.\n    *   *Surprising Reality:* Cost overruns are *more common* here.",
-        "**The Conflict:** Why do cost overruns happen more frequently in the very situation where the contractor has no incentive to create them? The explanation must come from a factor other than the contractor's direct profit motive."
-      ]
-    },
-    { type: 'h4', text: "Step 2: Abstraction" },
-    {
-      type: 'list', items: [
-        "**Motto:** \"An incentive structure affects the behavior of everyone in the system, not just the person it's aimed at.\"",
-        "**Blueprint:** A situation that should prevent a bad outcome (cost overruns) paradoxically leads to more of it. The resolution will likely introduce a second actor whose behavior changes in response to the incentive structure, creating a counterintuitive net effect. The focus is likely not on the contractor, but on the *client*."
-      ]
-    },
-    { type: 'h4', text: "Step 3: Evaluation" },
-    {
-      type: 'breakdown',
+    { type: 'h3', text: 'Analysis & Explanation' },
+
+    { type: 'h4', text: 'Step 1: Deconstruction' },
+    { type: 'paragraph', text: 'Clearly define the two contract types and the paradox.' },
+    { type: 'list', items: [
+      '**Percentage-Profit Contract:** Profit = fixed % of costs. The contractor profits from higher costs, so cost overruns *should* be common here.',
+      '**Fixed-Profit Contract:** Profit = fixed dollar amount. The contractor has no incentive to inflate costs, so cost overruns should be *rare* here.',
+      '**The Paradox:** Cost overruns are actually *more common* under the fixed-profit contract\u2014the very arrangement where the contractor has zero incentive to inflate costs. The explanation must come from a factor other than the contractor\'s direct profit motive.'
+    ]},
+
+    { type: 'h4', text: 'Step 2: Abstraction' },
+    { type: 'callout', title: 'Causal Web Blueprint', variant: 'tip', text: 'An incentive structure affects everyone in the system, not just the person it targets. When an arrangement that should prevent a bad outcome paradoxically produces more of it, introduce a second actor whose vigilance changes in response to the perceived risk. The net effect of multiple actors\u2019 changing behavior explains the surprise.' },
+
+    { type: 'h4', text: 'Step 3: Evaluation' },
+    { type: 'breakdown',
       labels: { title: 'Option', text: 'Analysis' },
       items: [
-        { title: "(A) Clients are much less likely to agree to a fixed-profit type of cost-plus contract when it is understood that under certain conditions the project will be scuttled...", text: "**Distractor Type: Irrelevant Condition.** This describes when clients might choose one contract type over another. It does not explain why, once a contract is chosen, cost overruns occur more in the fixed-profit type.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(B) On long-term contracts, cost projections take future inflation into account, but since the figures used are provided by the government, they are usually underestimates.", text: "**Distractor Type: Affects Both Equally.** If inflation is underestimated, it would cause cost overruns under *both* types of contracts. It doesn't explain why overruns are *more common* under the fixed-profit type.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(C) On any sizable construction project, the contractor bills the client monthly or quarterly, so any tendency for original cost estimates to be exceeded can be detected early.", text: "**Distractor Type: Deepens the Paradox.** If overruns can be detected early, it should be easier to control them. This makes it even more surprising that they happen so often under the fixed-profit model.", badge: "Incorrect", badgeColor: "red" },
-        { title: "(D) Clients billed under a cost-plus contract are free to review individual billings in order to uncover wasteful expenditures, but they do so only when the contractor’s profit varies with cost.", text: "This introduces the second actor: the client. The client's vigilance changes based on the contract type.\n        *   Under a *percentage-profit* contract, the client knows the contractor is incentivized to cheat, so the client watches the books like a hawk. This oversight *prevents* cost overruns.\n        *   Under a *fixed-profit* contract, the client assumes the contractor has no incentive to inflate costs, so the client gets lazy and doesn't audit the bills. This lack of oversight *allows* for waste and cost overruns. The paradox is solved by the client's changing behavior.", badge: "Correct", badgeColor: "green" },
-        { title: "(E) The practice of submitting deliberately exaggerated cost estimates is most common in the case of fixed-profit contracts, because it makes the profit, as a percentage of estimated cost, appear modest.", text: "**Distractor Type: The \"Close But Wrong\" Trap.** This is a very tempting answer. It correctly identifies a bad behavior associated with fixed-profit contracts. However, the paradox is about *final costs exceeding original estimates* (cost overruns during the project). This answer is about exaggerating the *initial estimate* before the project starts. Inflating the initial estimate would actually make a final cost overrun *less* likely, not more.", badge: "Incorrect", badgeColor: "red" }
+        { title: '(A) Clients less likely to agree to fixed-profit contracts when the project may be scuttled.', text: 'Irrelevant Condition. This describes when clients *choose* a contract type, not why cost overruns occur after the contract is signed. It leaves the paradox untouched.', badge: 'Incorrect', badgeColor: 'red' },
+        { title: '(B) Government inflation figures are usually underestimates.', text: 'Affects Both Equally. Underestimated inflation would cause cost overruns under *both* contract types. It cannot explain why overruns are more common under fixed-profit contracts specifically.', badge: 'Incorrect', badgeColor: 'red' },
+        { title: '(C) Contractors bill monthly or quarterly, so overruns can be detected early.', text: 'Deepens the Paradox. If cost overruns are detectable early, they should be easier to control\u2014making the high rate of overruns under fixed-profit contracts even more puzzling.', badge: 'Incorrect', badgeColor: 'red' },
+        { title: '(D) Clients review billings to uncover waste, but only when the contractor\u2019s profit varies with cost.', text: 'This introduces the overlooked second actor: the client. Under a percentage-profit contract, the client knows the contractor is incentivized to inflate costs, so the client audits every bill\u2014and this vigilance *prevents* overruns. Under a fixed-profit contract, the client assumes the contractor has no motive to waste money, so the client relaxes oversight\u2014and that lack of scrutiny *allows* waste and overruns to go unchecked. The net effect of the contractor\'s incentive *plus* the client\'s changing vigilance resolves the paradox.', badge: 'Correct', badgeColor: 'green' },
+        { title: '(E) Deliberately exaggerated cost estimates are most common in fixed-profit contracts.', text: 'Close But Wrong. This identifies a bad practice linked to fixed-profit contracts, but the paradox concerns *final costs exceeding original estimates* (overruns during the project). Inflating the initial estimate actually makes a subsequent overrun *less* likely, not more.', badge: 'Incorrect', badgeColor: 'red' }
       ]
     },
+
     { type: 'hr' },
-    { type: 'callout', title: "Key Takeaway", variant: "summary", text: "The most difficult paradoxes often require you to shift your focus from the obvious actor (the contractor) to a less obvious one (the client). When an incentive structure produces a counterintuitive result, ask yourself how it affects the behavior of *everyone* involved in the system. The resolution is often found in the actions of the \"watcher\" or \"overseer\" whose vigilance changes depending on the perceived risk." }
+    { type: 'callout', title: 'Key Takeaway', variant: 'summary', text: 'The most difficult paradoxes often require you to shift focus from the obvious actor (the contractor) to a less obvious one (the client). When an incentive structure produces a counterintuitive result, ask how it affects the behavior of *everyone* involved. The resolution is typically found in the actions of the "watcher" whose vigilance changes depending on the perceived risk\u2014creating the surprising net effect.' }
   ]
 };

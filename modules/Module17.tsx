@@ -9,6 +9,7 @@ import { Lesson7_Drill_HighCognitiveLoad } from './module17/Lesson7_Drill_HighCo
 import { Lesson8_Drill_MultiStepInference } from './module17/Lesson8_Drill_MultiStepInference';
 import { Lesson9_Drill_InferencesFromDisparity } from './module17/Lesson9_Drill_InferencesFromDisparity';
 import { Lesson10_Drill_PrecisionInCausality } from './module17/Lesson10_Drill_PrecisionInCausality';
+import { Lesson11_ReferenceGuide } from './module17/Lesson11_ReferenceGuide';
 
 export const Module17: ModuleData = {
   id: 17,
@@ -26,6 +27,7 @@ export const Module17: ModuleData = {
     Lesson7_Drill_HighCognitiveLoad,
     Lesson8_Drill_MultiStepInference,
     Lesson9_Drill_InferencesFromDisparity,
-    Lesson10_Drill_PrecisionInCausality
+    Lesson10_Drill_PrecisionInCausality,
+    Lesson11_ReferenceGuide
   ]
 };

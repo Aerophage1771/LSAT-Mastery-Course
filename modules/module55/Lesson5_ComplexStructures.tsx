@@ -1,5 +1,5 @@
 
-import { Lesson, ContentBlock } from '../../types';
+import { Lesson } from '../../types';
 
 export const Lesson5_ComplexStructures: Lesson = {
   id: "55-5",
@@ -16,22 +16,22 @@ export const Lesson5_ComplexStructures: Lesson = {
 
     { type: 'h4', text: 'LSAT in Action: Building a Multi-Step Chain' },
     { type: 'paragraph', text: 'Difficult "Must Be True" questions often hide a logical chain within a dense paragraph. Your job is to extract and link the rules.' },
-    { 
-        type: 'accordion',
-        title: 'PT-125-S-4-Q-23',
-        content: [
-            { type: 'blockquote', text: '**Stimulus:** Politician: The current crisis in mathematics education must be overcome if we are to remain competitive in the global economy. Alleviating this crisis requires the employment of successful teaching methods. No method of teaching a subject can succeed that does not get students to spend a significant amount of time outside of class studying that subject.' },
-            { type: 'paragraph', text: '**Question:** Which one of the following statements follows logically from the statements above?' },
-            { type: 'options', items: [
-              "(A) If students spend a significant amount of time outside of class studying mathematics, the current crisis in mathematics education will be overcome.",
-              "(B) The current crisis in mathematics education will not be overcome unless students spend a significant amount of time outside of class studying mathematics. (Correct)",
-              "(C) Few subjects are as important as mathematics to the effort to remain competitive in the global economy.",
-              "(D) Only if we succeed in remaining competitive in the global economy will students spend a significant amount of time outside of class studying mathematics.",
-              "(E) Students’ spending a significant amount of time outside of class studying mathematics would help us to remain competitive in the global economy."
-            ]}
-        ] as ContentBlock[]
+    {
+      type: 'question-card',
+      id: '55-5-q1',
+      questionType: 'Conditional Reasoning',
+      difficulty: 'hard',
+      stimulus: 'Politician: The current crisis in mathematics education must be overcome if we are to remain competitive in the global economy. Alleviating this crisis requires the employment of successful teaching methods. No method of teaching a subject can succeed that does not get students to spend a significant amount of time outside of class studying that subject.',
+      question: 'Which one of the following statements follows logically from the statements above?',
+      options: [
+        '(A) If students spend a significant amount of time outside of class studying mathematics, the current crisis in mathematics education will be overcome.',
+        '(B) The current crisis in mathematics education will not be overcome unless students spend a significant amount of time outside of class studying mathematics. (Correct)',
+        '(C) Few subjects are as important as mathematics to the effort to remain competitive in the global economy.',
+        '(D) Only if we succeed in remaining competitive in the global economy will students spend a significant amount of time outside of class studying mathematics.',
+        '(E) Students\' spending a significant amount of time outside of class studying mathematics would help us to remain competitive in the global economy.'
+      ]
     },
-    { type: 'h3', text: "Deep Dive Analysis" },
+    { type: 'h3', text: 'Deep Dive Analysis' },
     { type: 'callout', variant: 'default', title: 'STEP 1 - SYMBOLIZE THE STATEMENTS', text: 
 `**"The current crisis... must be overcome IF we are to remain competitive..."**
 The word IF is a sufficient condition indicator. Whatever immediately follows "if" is the trigger. Here, "we are to remain competitive" is the sufficient condition, making "crisis must be overcome" the necessary result.
@@ -63,7 +63,7 @@ The word NO introduces a global exclusion, often translated as \`A -> ~B\`. Howe
 
 **(C) INCORRECT.** This answer choice is OUT OF SCOPE. The politician claims mathematics is necessary for competitiveness, but never ranks it against other subjects. Logical rules do not imply value judgments or hierarchies unless explicitly stated.
 
-**(D) INCORRECT.** Diagram: \`STS -> RC\`. This choice translates "ONLY IF we succeed... (RC)... will students spend time (STS)" into \`STS -> RC\`. This is a MISTAKEN REVERSAL of the entire chain. While RC guarantees STS, STS does not guarantee RC. Just because students study doesn't mean we automatically become competitive.
+**(D) INCORRECT.** Diagram: \`STS -> RC\`. This choice translates "ONLY IF we succeed... (RC)... will students spend time (STS)" into \`STS -> RC\`. This is a MISTAKEN REVERSAL of the entire chain. While RC guarantees STS, STS does not guarantee RC. Just because students study doesn\'t mean we automatically become competitive.
 
 **(E) INCORRECT.** This relies on CAUSAL/CONTRIBUTORY reasoning. The answer suggests studying "would help" achieve the goal. Conditional logic (\`A -> B\`) is binary: A guarantees B. It does not deal in partial contributions or "helping." The stimulus says studying is a requirement, not just a helpful factor.`
     },
@@ -82,21 +82,21 @@ The word NO introduces a global exclusion, often translated as \`A -> ~B\`. Howe
 
     { type: 'h4', text: 'LSAT in Action: The "Unless" Rule' },
     {
-        type: 'accordion',
-        title: 'PT-124-S-1-Q-7',
-        content: [
-            { type: 'blockquote', text: '**Stimulus:** Superconductors are substances that conduct electricity without resistance at low temperatures. Their use, however, will never be economically feasible, UNLESS there is a substance that superconducts at a temperature above minus 148 degrees Celsius. If there is such a substance, that substance must be an alloy of niobium and germanium. Unfortunately, such alloys superconduct at temperatures no higher than minus 160 degrees Celsius.' },
-            { type: 'paragraph', text: '**Question:** If the statements above are true, which one of the following must also be true?' },
-            { type: 'options', items: [
-              "(A) The use of superconductors will never be economically feasible. (Correct)",
-              "(B) If the alloys of niobium and germanium do not superconduct at temperatures above minus 148 degrees Celsius, then there are other substances that will do so.",
-              "(C) The use of superconductors could be economically feasible if there is a substance that superconducts at temperatures below minus 148 degrees Celsius.",
-              "(D) Alloys of niobium and germanium do not superconduct at temperatures below minus 160 degrees Celsius.",
-              "(E) No use of alloys of niobium and germanium will ever be economically feasible."
-            ]}
-        ] as ContentBlock[]
+      type: 'question-card',
+      id: '55-5-q2',
+      questionType: 'Conditional Reasoning',
+      difficulty: 'hard',
+      stimulus: 'Superconductors are substances that conduct electricity without resistance at low temperatures. Their use, however, will never be economically feasible, UNLESS there is a substance that superconducts at a temperature above minus 148 degrees Celsius. If there is such a substance, that substance must be an alloy of niobium and germanium. Unfortunately, such alloys superconduct at temperatures no higher than minus 160 degrees Celsius.',
+      question: 'If the statements above are true, which one of the following must also be true?',
+      options: [
+        '(A) The use of superconductors will never be economically feasible. (Correct)',
+        '(B) If the alloys of niobium and germanium do not superconduct at temperatures above minus 148 degrees Celsius, then there are other substances that will do so.',
+        '(C) The use of superconductors could be economically feasible if there is a substance that superconducts at temperatures below minus 148 degrees Celsius.',
+        '(D) Alloys of niobium and germanium do not superconduct at temperatures below minus 160 degrees Celsius.',
+        '(E) No use of alloys of niobium and germanium will ever be economically feasible.'
+      ]
     },
-    { type: 'h3', text: "Deep Dive Analysis" },
+    { type: 'h3', text: 'Deep Dive Analysis' },
     { type: 'callout', variant: 'default', title: 'STEP 1 - SYMBOLIZE THE RULES', text: 
 `**The "UNLESS" Rule:** "Use... never feasible (\`~EF\`), UNLESS... substance above -148 (\`S > -148\`)."
 **Strategy:** Identify the clause modified by unless ("there is a substance..."). Take the other clause ("Use... never feasible") and NEGATE IT to form the sufficient condition.
@@ -130,9 +130,9 @@ The word NO introduces a global exclusion, often translated as \`A -> ~B\`. Howe
 
 **(C) INCORRECT.** This is OUT OF SCOPE. The stimulus sets a hard floor for feasibility: the temperature must be ABOVE -148. If a substance superconducts BELOW -148, it fails the necessary condition established in the first sentence. It cannot lead to feasibility.
 
-**(D) INCORRECT.** This is a MATH/LOGIC ERROR. The stimulus says NG alloys superconduct at temperatures "no higher than -160." This means -160 or lower (e.g., -170, -200). It does NOT mean they stop working below -160. They could work perfectly well at -273. We only know they don't work above -160.
+**(D) INCORRECT.** This is a MATH/LOGIC ERROR. The stimulus says NG alloys superconduct at temperatures "no higher than -160." This means -160 or lower (e.g., -170, -200). It does NOT mean they stop working below -160. They could work perfectly well at -273. We only know they don\'t work above -160.
 
-**(E) INCORRECT.** This answer choice is TOO BROAD. The conclusion \`~EF\` applies to "the use of superconductors" defined in the stimulus (which implies general commercial use requiring high temps). Answer (E) claims no use of NG alloys will ever be feasible. Perhaps NG alloys are economically feasible for other specialized uses that don't require temps above -148. The argument is only about the specific feasibility conditioned on temperature.`
+**(E) INCORRECT.** This answer choice is TOO BROAD. The conclusion \`~EF\` applies to "the use of superconductors" defined in the stimulus (which implies general commercial use requiring high temps). Answer (E) claims no use of NG alloys will ever be feasible. Perhaps NG alloys are economically feasible for other specialized uses that don\'t require temps above -148. The argument is only about the specific feasibility conditioned on temperature.`
     },
     
     { type: 'h4', text: '5.3 Compound Statements & De Morgan\'s Laws' },
@@ -147,21 +147,21 @@ The word NO introduces a global exclusion, often translated as \`A -> ~B\`. Howe
 
     { type: 'h4', text: 'LSAT in Action: De Morgan\'s Laws in Practice' },
     {
-        type: 'accordion',
-        title: 'PT-106-S-2-Q-6',
-        content: [
-            { type: 'blockquote', text: '**Stimulus:** The Rienzi, a passenger ship, sank as a result of a hole in its hull, possibly caused by sabotage. Normally, when a holed ship sinks as rapidly as the Rienzi did, water does not enter the ship quickly enough for the ship to be fully flooded when it reaches the ocean floor. Full flooding can be achieved, however, by sabotage. Any ship that sinks deep into the ocean when not fully flooded will implode. Deep-sea photographs, taken of the sunken Rienzi where it rests on the ocean floor, reveal that the Rienzi did not implode.' },
-            { type: 'paragraph', text: '**Question:** Which one of the following must be true on the basis of the information above?' },
-            { type: 'options', items: [
-              "(A) The Rienzi was so constructed as to reduce the risk of sinking by impact.",
-              "(B) If the Rienzi became fully flooded, it did so only after it reached the ocean floor.",
-              "(C) If the Rienzi was not sunk by sabotage, water flooded into it unusually fast. (Correct)",
-              "(D) If the Rienzi had sunk more slowly, it would have imploded.",
-              "(E) The Rienzi was so strongly constructed as to resist imploding under deep-sea pressure."
-            ]}
-        ] as ContentBlock[]
+      type: 'question-card',
+      id: '55-5-q3',
+      questionType: 'Conditional Reasoning',
+      difficulty: 'hard',
+      stimulus: 'The Rienzi, a passenger ship, sank as a result of a hole in its hull, possibly caused by sabotage. Normally, when a holed ship sinks as rapidly as the Rienzi did, water does not enter the ship quickly enough for the ship to be fully flooded when it reaches the ocean floor. Full flooding can be achieved, however, by sabotage. Any ship that sinks deep into the ocean when not fully flooded will implode. Deep-sea photographs, taken of the sunken Rienzi where it rests on the ocean floor, reveal that the Rienzi did not implode.',
+      question: 'Which one of the following must be true on the basis of the information above?',
+      options: [
+        '(A) The Rienzi was so constructed as to reduce the risk of sinking by impact.',
+        '(B) If the Rienzi became fully flooded, it did so only after it reached the ocean floor.',
+        '(C) If the Rienzi was not sunk by sabotage, water flooded into it unusually fast. (Correct)',
+        '(D) If the Rienzi had sunk more slowly, it would have imploded.',
+        '(E) The Rienzi was so strongly constructed as to resist imploding under deep-sea pressure.'
+      ]
     },
-    { type: 'h3', text: "Deep Dive Analysis" },
+    { type: 'h3', text: 'Deep Dive Analysis' },
     { type: 'callout', variant: 'default', title: 'STEP 1 - SYMBOLIZE THE CORE RULE', text:
 `**"ANY ship that sinks deep (SD) WHEN not fully flooded (NFF) will implode (I)."**
 
@@ -177,26 +177,26 @@ The word NO introduces a global exclusion, often translated as \`A -> ~B\`. Howe
 **Contrapositive:** \`~Implode -> (~SD or ~NFF)\`
 (Note: \`~NFF\` (Not Not Fully Flooded) simplifies to Fully Flooded (FF))
 
-**FINAL CONTRAPOSITIVE:** \`~Implode -> (~SD or FF)\` (If it didn't implode, it either didn't sink deep OR it was fully flooded).`
+**FINAL CONTRAPOSITIVE:** \`~Implode -> (~SD or FF)\` (If it didn\'t implode, it either didn\'t sink deep OR it was fully flooded).`
     },
     { type: 'callout', variant: 'default', title: 'STEP 3 - APPLY FACTS AND DERIVE', text:
 `**Fact:** "The Rienzi did not implode." (\`~Implode\`)
-**Implication:** Based on our contrapositive, at least one of the safety conditions must be present: either it didn't sink deep enough, or it was full of water (\`~SD or FF\`).
+**Implication:** Based on our contrapositive, at least one of the safety conditions must be present: either it didn\'t sink deep enough, or it was full of water (\`~SD or FF\`).
 
 **Fact:** "The Rienzi sank deep." (\`SD\`)
 **Logic:** This eliminates the first possibility. Since SD is true, ~SD is false. The "safety" of not sinking deep was not present.
 
-**Deduction:** Logic dictates that in an "OR" statement, if one option is removed, the remaining option becomes a certainty. Since it wasn't \`~SD\`, it MUST be \`FF\`.
+**Deduction:** Logic dictates that in an "OR" statement, if one option is removed, the remaining option becomes a certainty. Since it wasn\'t \`~SD\`, it MUST be \`FF\`.
 **Conclusion:** The Rienzi was Fully Flooded (FF).`
     },
     { type: 'callout', variant: 'default', title: 'STEP 4 - SYNTHESIZE WITH "NORMAL" CONDITIONS', text:
 `**The "Normal" Rule:** The stimulus establishes a general rule for rapid sinkers: "Normally... water does not enter... quickly enough... to be fully flooded."
 
-**The Conflict:** We derived in Step 3 that the Rienzi was fully flooded. Yet, we know it was a "rapidly sinking" ship. This creates a logical friction: The Rienzi achieved a state (Full Flooding) that normally doesn't happen with its speed of descent.
+**The Conflict:** We derived in Step 3 that the Rienzi was fully flooded. Yet, we know it was a "rapidly sinking" ship. This creates a logical friction: The Rienzi achieved a state (Full Flooding) that normally doesn\'t happen with its speed of descent.
 
 **Resolving the Anomaly:** The stimulus allows for exceptions, specifically noting "sabotage" as one way to achieve full flooding.
 
-**Inference:** If we assume the "sabotage" exception didn't apply (as the correct answer choice asks us to do), there must be another explanation for how it defied the "normal" limitation. The only physical way to get that much water in that short of time is if it flooded "unusually fast."`
+**Inference:** If we assume the "sabotage" exception didn\'t apply (as the correct answer choice asks us to do), there must be another explanation for how it defied the "normal" limitation. The only physical way to get that much water in that short of time is if it flooded "unusually fast."`
     },
     { type: 'callout', variant: 'default', title: 'STEP 5 - EVALUATE ANSWERS', text:
 `**(A) INCORRECT.** This is OUT OF SCOPE. The stimulus discusses the physics of implosion and flooding rates. It never mentions the specific construction of the Rienzi regarding impact resistance.
@@ -224,7 +224,7 @@ The most common error in compound logic is forgetting to flip "AND" to "OR" (or 
 
 Wrong: \`~C -> (~A and ~B)\` (for an AND statement).
 
-Right: \`~C -> (~A or ~B)\` (If C didn't happen, we know the combination of A+B didn't happen, but we don't know which one failed).`
+Right: \`~C -> (~A or ~B)\` (If C didn\'t happen, we know the combination of A+B didn\'t happen, but we don\'t know which one failed).`
     },
 
     { type: 'h3', text: 'Lesson 5 Key Takeaways' },
