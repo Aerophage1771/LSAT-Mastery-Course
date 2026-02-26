@@ -5,6 +5,7 @@ import { Lesson3_Averages } from './module59/Lesson3_Averages';
 import { Lesson4_InvalidMath } from './module59/Lesson4_InvalidMath';
 import { Lesson5_GamblersFallacy } from './module59/Lesson5_GamblersFallacy';
 import { Lesson6_Conclusion } from './module59/Lesson6_Conclusion';
+import { Lesson7_ReferenceGuide } from './module59/Lesson7_ReferenceGuide';
 
 export const Module59: ModuleData = {
   id: 59,
@@ -18,6 +19,7 @@ export const Module59: ModuleData = {
     Lesson3_Averages,
     Lesson4_InvalidMath,
     Lesson5_GamblersFallacy,
-    Lesson6_Conclusion
+    Lesson6_Conclusion,
+    Lesson7_ReferenceGuide
   ]
 };
