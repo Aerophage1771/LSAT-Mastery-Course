@@ -432,6 +432,8 @@ export const QuestionBank: React.FC = () => {
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<'real' | 'illustrative'>('real');
+  const [showInUseOnly, setShowInUseOnly] = useState(false);
+  const [showNotInUseOnly, setShowNotInUseOnly] = useState(false);
 
   const lrTypeCountMap = useMemo(() => {
     const map = new Map<string, number>();
@@ -510,6 +512,13 @@ export const QuestionBank: React.FC = () => {
       result = result.filter((q) => q.typeName === selectedType);
     }
 
+    if (showInUseOnly) {
+      result = result.filter(q => drillCrossReferences[q.ptId]);
+    }
+    if (showNotInUseOnly) {
+      result = result.filter(q => !drillCrossReferences[q.ptId]);
+    }
+
     if (searchQuery.trim()) {
       const lower = searchQuery.toLowerCase();
       result = result.filter(
@@ -523,7 +532,7 @@ export const QuestionBank: React.FC = () => {
     }
 
     return result;
-  }, [selectedType, selectedCategory, searchQuery]);
+  }, [selectedType, selectedCategory, searchQuery, showInUseOnly, showNotInUseOnly]);
 
   const handleToggle = (id: string) => {
     setExpandedId((prev) => (prev === id ? null : id));
@@ -742,6 +751,22 @@ export const QuestionBank: React.FC = () => {
                 )}
               </div>
             </div>
+            {activeTab === 'real' && (
+              <div className="flex items-center gap-3 mb-3">
+                <button 
+                  onClick={() => setShowInUseOnly(!showInUseOnly)}
+                  className={`text-xs font-medium px-3 py-1.5 rounded-full border transition-colors ${showInUseOnly ? 'bg-indigo-50 text-indigo-700 border-indigo-200' : 'bg-white text-slate-500 border-slate-200 hover:border-slate-300'}`}
+                >
+                  {showInUseOnly ? '✓ In Use Only' : 'In Use Only'}
+                </button>
+                <button
+                  onClick={() => setShowNotInUseOnly(!showNotInUseOnly)} 
+                  className={`text-xs font-medium px-3 py-1.5 rounded-full border transition-colors ${showNotInUseOnly ? 'bg-amber-50 text-amber-700 border-amber-200' : 'bg-white text-slate-500 border-slate-200 hover:border-slate-300'}`}
+                >
+                  {showNotInUseOnly ? '✓ Not In Use' : 'Not In Use'}
+                </button>
+              </div>
+            )}
           </div>
         </div>
 

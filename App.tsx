@@ -8,6 +8,8 @@ import { SearchDialog } from './components/SearchDialog';
 import { QuestionBank } from './components/QuestionBank';
 import { ProgressProvider, useProgressContext } from './contexts/ProgressContext';
 import { moduleRegistry, loadModule, getAllModuleMetadata } from './modules/registry';
+import { drillCrossReferences } from './modules/drillCrossReferences';
+import inventoryData from './docs/invented-questions-inventory.json';
 import type { ModuleData } from './types';
 
 const allMeta = getAllModuleMetadata();
@@ -98,6 +100,19 @@ function ModulePage() {
     if (activeLesson) markLessonComplete(activeLesson.id);
   }, [activeLesson, markLessonComplete]);
 
+  const questionStatus = useMemo(() => {
+    if (!activeLesson) return null;
+    const hasReal = Object.values(drillCrossReferences).some(ref => ref.lessonId === activeLesson.id);
+    const hasInvented = (inventoryData as Array<{ module: number; file: string }>).some(item => {
+      const lessonNum = activeLesson.id.split('-')[1];
+      return String(item.module) === String(numericModuleId) && item.file.includes(`Lesson${lessonNum}`);
+    });
+    if (hasReal && hasInvented) return 'both' as const;
+    if (hasReal) return 'real' as const;
+    if (hasInvented) return 'illustrative' as const;
+    return null;
+  }, [activeLesson, numericModuleId]);
+
   if (loading) return <LoadingSpinner />;
   if (error) return <div className="flex items-center justify-center h-full text-red-500 font-medium">{error}</div>;
   if (!moduleData || !activeLesson) return <div className="flex items-center justify-center h-full text-slate-400">Module not found</div>;
@@ -127,7 +142,7 @@ function ModulePage() {
     >
       <ErrorBoundary fallbackTitle="Error loading lesson" key={activeLesson.id}>
         <Suspense fallback={<LoadingSpinner />}>
-          <LessonViewer key={activeLesson.id} title={activeLesson.title} content={activeLesson.content} />
+          <LessonViewer key={activeLesson.id} title={activeLesson.title} content={activeLesson.content} questionStatus={questionStatus} />
         </Suspense>
       </ErrorBoundary>
     </Layout>

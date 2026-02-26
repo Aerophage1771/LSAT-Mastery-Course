@@ -5,6 +5,8 @@ import { BookOpen, CheckCircle, Circle, Menu, X, ChevronRight, LayoutGrid, Downl
 import { generateCourseText, generateCourseRTF, generateCourseJSON, generateCourseCSV, generateCoursePDF } from '../utils/export';
 import { ExportControls } from './ExportControls';
 import { LessonViewer } from './LessonViewer';
+import { drillCrossReferences } from '../modules/drillCrossReferences';
+import inventoryData from '../docs/invented-questions-inventory.json';
 import {
   roadmapLearningContent,
   roadmapAnalyticsContent,
@@ -224,6 +226,17 @@ export const Layout: React.FC<LayoutProps> = ({
                                     )}
                                   </div>
                                   <span>{lesson.title}</span>
+                                  {(() => {
+                                    const hasReal = Object.values(drillCrossReferences).some(ref => ref.lessonId === lesson.id);
+                                    const hasInvented = (inventoryData as Array<{ module: number; file: string }>).some(item => {
+                                      const lessonNum = lesson.id.split('-')[1];
+                                      return String(item.module) === String(activeModuleId) && item.file.includes(`Lesson${lessonNum}`);
+                                    });
+                                    if (hasReal && hasInvented) return <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0" title="Contains real + illustrative questions" />;
+                                    if (hasReal) return <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0" title="Contains real PrepTest questions" />;
+                                    if (hasInvented) return <span className="w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0" title="Contains illustrative questions" />;
+                                    return null;
+                                  })()}
                                 </button>
                               );
                             })}

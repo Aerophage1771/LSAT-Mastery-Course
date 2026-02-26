@@ -13,6 +13,7 @@ interface LessonViewerProps {
   title: string;
   content: string | ContentBlock[];
   variant?: 'default' | 'modal';
+  questionStatus?: 'real' | 'illustrative' | 'both' | null;
 }
 
 const sanitize = (html: string) => DOMPurify.sanitize(html);
@@ -111,6 +112,7 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
     title,
     content,
     variant = 'default',
+    questionStatus,
 }) => {
   const currentLesson: Lesson = { id: 'current', title, content };
 
@@ -297,6 +299,17 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
       <div className="mb-8 flex flex-col md:flex-row md:items-start justify-between gap-4">
         <div>
            <span className="text-[11px] font-semibold text-indigo-500 uppercase tracking-wider mb-2 block font-mono">Current Lesson</span>
+           {questionStatus && (
+             <span className={`text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full mb-2 inline-block ${
+               questionStatus === 'real' ? 'bg-emerald-50 text-emerald-600 border border-emerald-200' :
+               questionStatus === 'illustrative' ? 'bg-amber-50 text-amber-600 border border-amber-200' :
+               'bg-blue-50 text-blue-600 border border-blue-200'
+             }`}>
+               {questionStatus === 'real' ? 'Real PrepTest Questions' : 
+                questionStatus === 'illustrative' ? 'Illustrative Questions' : 
+                'Real + Illustrative Questions'}
+             </span>
+           )}
            <h1 className={variant === 'modal'
              ? "text-xl font-semibold text-slate-900 tracking-tight mb-3 pb-3 border-b border-slate-100"
              : "text-2xl lg:text-3xl font-bold text-slate-900 tracking-tight mb-4 pb-4 border-b border-slate-100"
