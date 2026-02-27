@@ -7,17 +7,6 @@ export const Lesson4_Drill_Disagreement_ExplanatoryCause: Lesson = {
     { type: 'paragraph', text: 'This drill focuses on a common and challenging type of disagreement: the **Explanatory Cause Dispute**. In these arguments, both speakers accept the same observed facts but offer competing explanations for *why* those facts are the way they are. The surface-level data isn\'t contested; what\'s contested is the causal story behind it.' },
     { type: 'callout', title: 'Core Concept: Explanatory Cause Disagreement', variant: 'tip', text: 'When two speakers agree on WHAT is happening but disagree about WHY it is happening, you are looking at an explanatory cause dispute. Speaker A says "the cause is X," Speaker B says "no, the cause is Y." The correct answer will frame the conflict as a dispute over the *reason* for the agreed-upon phenomenon.' },
     { type: 'hr' },
-    { type: 'question-card', id: '20-4-drill', questionType: 'Point at Issue', difficulty: 'medium',
-      stimulus: 'Powell: Private waste-removal companies spend 60 percent of what public waste-removal companies spend per customer, yet give their customers at least as good service. Private waste-removal companies, therefore, work more efficiently.\nFreeman: Your conclusion is unwarranted. Different customers have different waste-removal needs. Since private companies, unlike their public counterparts, can select which customers to serve, they choose to exclude the potential customers whom they judge to be the most costly to serve.',
-      question: 'The issue in dispute between Powell and Freeman is the',
-      options: [
-        '(A) accuracy of the figure of 60 percent with regard to the difference in service costs between private and public waste-removal companies',
-        '(B) reason private waste-removal companies are able to offer service comparable to that offered by public ones while spending less money per customer (Correct)',
-        '(C) ability of private versus public waste-removal companies to select which customers to serve',
-        '(D) likelihood of the local authorities\' turning public waste-removal companies into private ones so that the companies can operate with lower service costs than they now incur',
-        '(E) relationship between the needs of a waste-removal customer and the amount of money it takes to serve that customer'
-      ]
-    },
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
     { type: 'h3', text: 'Analysis & Explanation' },

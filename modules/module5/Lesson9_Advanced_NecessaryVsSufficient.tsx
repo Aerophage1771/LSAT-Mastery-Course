@@ -42,17 +42,6 @@ export const Lesson9_Advanced_NecessaryVsSufficient: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
-    { type: 'question-card', id: 'FL-5-9-001', questionType: 'Flaw', difficulty: 'hard',
-      stimulus: "Some anthropologists argue that the human species could not have survived prehistoric times if the species had not evolved the ability to cope with diverse natural environments. However, there is considerable evidence that Australopithecus afarensis, a prehistoric species related to early humans, also thrived in a diverse array of environments, but became extinct. Hence, the anthropologists' claim is false.",
-      question: "The reasoning in the argument is most vulnerable to criticism on the grounds that the argument",
-      options: [
-        "(A) confuses a condition's being required for a given result to occur in one case with the condition's being sufficient for such a result to occur in a similar case (Correct)",
-        "(B) takes for granted that if one species had a characteristic that happened to enable it to survive certain conditions, at least one related extinct species must have had the same characteristic",
-        "(C) generalizes, from the fact that one species with a certain characteristic survived certain conditions, that all related species with the same characteristic must have survived exactly the same conditions",
-        "(D) fails to consider the possibility that Australopithecus afarensis had one or more characteristics that lessened its chances of surviving prehistoric times",
-        "(E) fails to consider the possibility that, even if a condition caused a result to occur in one case, it was not necessary to cause the result to occur in a similar case"
-      ]
-    },
 
     { type: 'hr' },
 
@@ -99,17 +88,6 @@ export const Lesson9_Advanced_NecessaryVsSufficient: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Practice Question' },
-    { type: 'question-card', id: 'FL-5-9-002', questionType: 'Flaw', difficulty: 'hard',
-      stimulus: "Educator: It has been argued that a good teacher must have classroom experience. But consider Dr. Rivera, who has spent 20 years teaching and is widely regarded as an ineffective instructor. Clearly, classroom experience is not what makes a good teacher.",
-      question: "The reasoning in the educator's argument is most vulnerable to criticism because it",
-      options: [
-        "(A) draws a conclusion about what makes all teachers good from a single example of a teacher who is not good",
-        "(B) fails to define what constitutes \"classroom experience\" with sufficient precision",
-        "(C) confuses a condition claimed to be necessary for good teaching with a condition sufficient for good teaching (Correct)",
-        "(D) presumes that Dr. Rivera's teaching methods are representative of all teachers with extensive experience",
-        "(E) overlooks the possibility that good teaching requires qualities in addition to classroom experience"
-      ]
-    },
 
     { type: 'h3', text: 'Analysis' },
     { type: 'paragraph', text: "The original claim is that classroom experience is **necessary** for good teaching — you *need* it. The educator refutes this by showing someone who *has* the experience but is *not* a good teacher. But this only proves that experience is not **sufficient** — it doesn't guarantee good teaching." },

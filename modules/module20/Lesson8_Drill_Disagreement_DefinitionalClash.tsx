@@ -6,16 +6,6 @@ export const Lesson8_Drill_Disagreement_DefinitionalClash: Lesson = {
   content: [
     { type: 'paragraph', text: 'This question tests your ability to navigate a disagreement that is purely abstract and definitional. The entire conflict hinges on the necessary and sufficient conditions for a key term. To solve this, you must translate the speakers\' positions into formal logical rules and then test the answer choices against those rules.' },
     { type: 'hr' },
-    { type: 'question-card', id: '20-8-drill', questionType: 'Point at Issue', difficulty: 'hard',
-      stimulus: 'Mario: The field of cognitive science is not a genuinely autonomous discipline since it addresses issues also addressed by the disciplines of computer science, linguistics, and psychology. A genuinely autonomous discipline has a domain of inquiry all its own.\nLucy: Nonsense. You\'ve always acknowledged that philosophy is a genuinely autonomous discipline and that, like most people, you think of philosophy as addressing issues also addressed by the disciplines of linguistics, mathematics, and psychology. A field of study is a genuinely autonomous discipline by virtue of its having a unique methodology rather than by virtue of its addressing issues that no other field of study addresses.',
-      question: 'On the basis of their statements, Mario and Lucy are committed to disagreeing about the truth of which one of the following?',
-      options: [
-        '(A) If a field of study that has a unique methodology lacks a domain of inquiry all its own, it can nonetheless be a genuinely autonomous discipline. (Correct)',
-        '(B) If a field of study is not a genuinely autonomous discipline, it can still have a unique methodology.',
-        '(C) All fields of study that are characterized by a unique methodology and by a domain of inquiry all their own are genuinely autonomous disciplines.',
-        '(D) Any field of study that is not a genuinely autonomous discipline lacks both a unique domain of inquiry and a unique methodology.',
-        '(E) Any field of study that is not a genuinely autonomous discipline addresses issues also addressed by disciplines that are genuinely autonomous.'
-      ] },
     { type: 'hr' },
     { type: 'h3', text: 'Full Analysis' },
     { type: 'h4', text: 'Step 1: Deconstruction' },

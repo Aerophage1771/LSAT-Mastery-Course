@@ -20,20 +20,6 @@ export const Lesson8_Drill_ChainOfLogic1: Lesson = {
 
     { type: 'h3', text: 'Practice Question' },
 
-    { type: 'question-card',
-      id: 'SA-10-8-001',
-      questionType: 'Sufficient Assumption',
-      difficulty: 'medium',
-      stimulus: "Economist: A country's rapid emergence from an economic recession requires substantial new investment in that country's economy. Since people's confidence in the economic policies of their country is a precondition for any new investment, countries that put collective goals before individuals' goals cannot emerge quickly from an economic recession.",
-      question: "Which one of the following, if assumed, enables the economist's conclusion to be properly drawn?",
-      options: [
-        "(A) No new investment occurs in any country that does not emerge quickly from an economic recession.",
-        "(B) Recessions in countries that put collective goals before individuals' goals tend not to affect the country's people's support for their government's policies.",
-        "(C) If the people in a country that puts individuals' goals first are willing to make new investments in their country's economy, their country will emerge quickly from an economic recession.",
-        "(D) People in countries that put collective goals before individuals' goals lack confidence in the economic policies of their countries. (Correct)",
-        "(E) A country's economic policies are the most significant factor determining whether that country's economy will experience a recession."
-      ]
-    },
 
     { type: 'hr' },
 

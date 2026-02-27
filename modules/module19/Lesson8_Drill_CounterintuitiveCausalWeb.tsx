@@ -8,20 +8,6 @@ export const Lesson8_Drill_CounterintuitiveCausalWeb: Lesson = {
     { type: 'paragraph', text: 'A Counterintuitive Causal Web paradox arises when multiple causal factors interact to produce an unexpected net result. The scenario with the *weaker* incentive for bad behavior actually produces *more* of it. Resolving this requires you to look beyond the most obvious actor and consider how incentive structures change the behavior of *everyone* in the system\u2014especially the overlooked second actor.' },
     { type: 'hr' },
 
-    { type: 'question-card',
-      id: '19-8-drill',
-      questionType: 'Paradox / Explain',
-      difficulty: 'hard',
-      stimulus: 'Construction contractors working on the cutting edge of technology nearly always work on a \u201ccost-plus\u201d basis only. One kind of cost-plus contract stipulates the contractor\u2019s profit as a fixed percentage of the contractor\u2019s costs; the other kind stipulates a fixed amount of profit over and above costs. Under the first kind of contract, higher costs yield higher profits for the contractor, so this is where one might expect final costs in excess of original cost estimates to be more common. Paradoxically, such cost overruns are actually more common if the contract is of the fixed-profit kind.',
-      question: 'Which one of the following, if true, most helps to resolve the apparent paradox in the situation described above?',
-      options: [
-        '(A) Clients are much less likely to agree to a fixed-profit type of cost-plus contract when it is understood that the project may be scuttled under certain conditions.',
-        '(B) On long-term contracts, cost projections take future inflation into account, but since the figures are provided by the government, they are usually underestimates.',
-        '(C) On any sizable construction project, the contractor bills the client monthly or quarterly, so any tendency for cost estimates to be exceeded can be detected early.',
-        '(D) Clients billed under a cost-plus contract are free to review individual billings to uncover wasteful expenditures, but they do so only when the contractor\u2019s profit varies with cost. (Correct)',
-        '(E) The practice of submitting deliberately exaggerated cost estimates is most common in fixed-profit contracts, because it makes the profit, as a percentage of estimated cost, appear modest.'
-      ]
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

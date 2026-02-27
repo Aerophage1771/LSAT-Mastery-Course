@@ -47,17 +47,6 @@ export const Lesson10_Advanced_ProofByContradiction: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
-    { type: 'question-card', id: 'proof-by-contradiction-worked', questionType: 'Method of Reasoning', difficulty: 'hard',
-      stimulus: "Some people have been promoting a new herbal mixture as a remedy for the common cold. The mixture contains, among other things, extracts of the plants purple coneflower and goldenseal. A cold sufferer, skeptical of the claim that the mixture is an effective cold remedy, argued, \"Suppose that the mixture were an effective cold remedy. Since most people with colds wish to recover quickly, it follows that almost everybody with a cold would be using it. Therefore, since there are many people who have colds but do not use the mixture, it is obviously not effective.\"",
-      question: "Which one of the following most accurately describes the method of reasoning the cold sufferer uses to reach the conclusion of the argument?",
-      options: [
-        "(A) finding a claim to be false on the grounds that it would if true have consequences that are false (Correct)",
-        "(B) accepting a claim on the basis of public opinion of the claim",
-        "(C) showing that conditions necessary to establish the truth of a claim are met",
-        "(D) basing a generalization on a representative group of instances",
-        "(E) showing that a measure claimed to be effective in achieving a certain effect would actually make achieving the effect more difficult"
-      ]
-    },
 
     { type: 'hr' },
 

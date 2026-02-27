@@ -70,20 +70,6 @@ export const Lesson6_Advanced_TraitsOfHighDifficulty: Lesson = {
     { type: 'h2', text: 'Practice: High-Difficulty Strengthen Question' },
     { type: 'paragraph', text: "Apply the traits and strategies from this lesson to the following question. Pay attention to the subtle gap, the weakener traps, and the indirect nature of the correct answer." },
 
-    { type: 'question-card',
-      id: '9-6-practice',
-      questionType: 'Strengthen',
-      difficulty: 'hard',
-      stimulus: "Archaeologists discovered that ancient settlements along the Varo River consistently had larger grain storage facilities than settlements of the same period located inland. The archaeologists hypothesized that proximity to the river enabled more productive agriculture, resulting in larger food surpluses that necessitated bigger storage facilities.",
-      question: "Which one of the following, if true, most strengthens the archaeologists' reasoning?",
-      options: [
-        "(A) Some inland settlements had grain storage facilities that were larger than those of the smallest riverside settlements.",
-        "(B) The Varo River basin has exceptionally fertile soil due to regular seasonal flooding that deposits nutrient-rich sediment. (Correct)",
-        "(C) Ancient settlements along other rivers in the region also tended to have large grain storage facilities.",
-        "(D) The riverside settlements were generally larger in population than the inland settlements.",
-        "(E) Grain storage facilities in the ancient world were sometimes used for purposes other than storing food surpluses, such as storing seeds for trade.",
-      ],
-    },
 
     { type: 'hr' },
 

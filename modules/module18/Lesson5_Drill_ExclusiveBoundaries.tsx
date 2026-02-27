@@ -30,20 +30,6 @@ export const Lesson5_Drill_ExclusiveBoundaries: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '18-5-drill',
-      questionType: 'Must Be False',
-      difficulty: 'hard',
-      stimulus: 'The southern half of a certain region of the earth was covered entirely by water during the Cretaceous period, the last 75 million years of the Mesozoic era, the era when dinosaurs roamed the earth. Dinosaurs lived only on land. Thus, plesiosaurs\u2014swimming reptiles that lived during the Cretaceous period exclusively\u2014were not dinosaurs. No single species of dinosaur lived throughout the entire Mesozoic era.',
-      question: 'If the statements in the passage are true, each of the following could be true EXCEPT:',
-      options: [
-        '(A) Dinosaurs inhabited the northern half of the region throughout the entire Mesozoic era.',
-        '(B) Plesiosaurs did not inhabit the southern half of the region during the Cretaceous period.',
-        '(C) Plesiosaurs did not inhabit the southern half of the region before the Cretaceous period.',
-        '(D) Dinosaurs did not inhabit the northern half of the region during the Cretaceous period.',
-        '(E) Dinosaurs inhabited the southern half of the region throughout the entire Mesozoic era. (Correct)',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

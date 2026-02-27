@@ -31,20 +31,6 @@ export const Lesson5_Drill_BinaryAssumption: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '10-5-drill',
-      questionType: 'Sufficient Assumption',
-      difficulty: 'hard',
-      stimulus: "Philosopher: An action is morally right if it would be reasonably expected to increase the aggregate well-being of the people affected by it. An action is morally wrong if and only if it would be reasonably expected to reduce the aggregate well-being of the people affected by it. Thus, actions that would be reasonably expected to leave unchanged the aggregate well-being of the people affected by them are also right.",
-      question: "The philosopher's conclusion follows logically if which one of the following is assumed?",
-      options: [
-        "(A) Only wrong actions would be reasonably expected to reduce the aggregate well-being of the people affected by them.",
-        "(B) No action is both right and wrong.",
-        "(C) Any action that is not morally wrong is morally right. (Correct)",
-        "(D) There are actions that would be reasonably expected to leave unchanged the aggregate well-being of the people affected by them.",
-        "(E) Only right actions have good consequences.",
-      ],
-    },
 
     { type: 'hr' },
 

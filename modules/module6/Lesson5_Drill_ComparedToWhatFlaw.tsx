@@ -48,20 +48,6 @@ export const Lesson5_Drill_ComparedToWhatFlaw: Lesson = {
 
     { type: 'h2', text: 'Practice Question' },
 
-    { type: 'question-card',
-      id: 'PF-6-5-001',
-      questionType: 'Parallel Flaw',
-      difficulty: 'medium',
-      stimulus: "Several carefully conducted studies showed that 75 percent of strict vegetarians reached age 50 without developing serious heart disease. We can conclude from this that avoiding meat increases one's chances of avoiding serious heart disease. Therefore, people who want to reduce the risk of serious heart disease should not eat meat.",
-      question: "The flawed pattern of reasoning exhibited by which one of the following is most similar to that exhibited by the argument above?",
-      options: [
-        "(A) The majority of people who regularly drive over the speed limit will become involved in traffic accidents. To avoid harm to people who do not drive over the speed limit, we should hire more police officers to enforce the speed laws.",
-        "(B) Studies have shown that cigarette smokers have a greater chance of incurring heart disease than people who do not smoke. Since cigarette smoking increases one's chances of incurring heart disease, people who want to try to avoid heart disease should give up cigarette smoking.",
-        "(C) The majority of people who regularly drink coffee experience dental problems in the latter part of their lives. Since there is this correlation between drinking coffee and incurring dental problems, the government should make coffee less accessible to the general public.",
-        "(D) Studies show that people who do not exercise regularly have a shorter life expectancy than those who exercise regularly. To help increase their patients' life expectancy, doctors should recommend regular exercise to their patients.",
-        "(E) Most people who exercise regularly are able to handle stress. This shows that exercising regularly decreases one's chances of being overwhelmed by stress. So people who want to be able to handle stress should regularly engage in exercise. (Correct)",
-      ],
-    },
 
     { type: 'hr' },
 

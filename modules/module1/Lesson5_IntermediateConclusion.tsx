@@ -54,17 +54,6 @@ export const Lesson5_IntermediateConclusion: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example (PT-112-S-4-Q-13)' },
-    { type: 'question-card', id: 'ic-worked-example', questionType: 'Argument Part', difficulty: 'medium',
-      stimulus: "Joseph: My encyclopedia says that the mathematician Pierre de Fermat died in 1665 without leaving behind any written proof for a theorem that he claimed nonetheless to have proved. Probably this alleged theorem simply cannot be proved, since—as the article points out—no one else has been able to prove it. Therefore it is likely that Fermat was either lying or else mistaken when he made his claim.\n\nLaura: Your encyclopedia is out of date. Recently someone has in fact proved Fermat's theorem. And since the theorem is provable, your claim—that Fermat was lying or mistaken—clearly is wrong.",
-      question: "Joseph's statement that \"this alleged theorem simply cannot be proved\" plays which one of the following roles in his argument?",
-      options: [
-        "(A) an assumption for which no support is offered",
-        "(B) a subsidiary conclusion on which his argument's main conclusion is based (Correct)",
-        "(C) a potential objection that his argument anticipates and attempts to answer before it is raised",
-        "(D) the principal claim that his argument is structured to refute",
-        "(E) background information that neither supports nor undermines his argument's conclusion"
-      ]
-    },
 
     { type: 'hr' },
 

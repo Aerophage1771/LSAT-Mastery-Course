@@ -25,20 +25,6 @@ export const Lesson8_Drill_FalseDichotomy: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '11-8-drill',
-      questionType: 'Necessary Assumption',
-      difficulty: 'medium',
-      stimulus: "Department store manager: There is absolutely no reason to offer our customers free gift wrapping again this holiday season. If most customers take the offer, it will be expensive and time-consuming for us. On the other hand, if only a few customers want it, there is no advantage in offering it.",
-      question: "Which one of the following is an assumption required by the department store manager's argument?",
-      options: [
-        "(A) Gift wrapping would cost the store more during this holiday season than in previous holiday seasons.",
-        "(B) Anything that slows down shoppers during the holiday season costs the store money.",
-        "(C) It would be to the store's advantage to charge customers for gift wrapping services.",
-        "(D) It would be expensive to inform customers about the free gift wrapping service.",
-        "(E) Either few customers would want free gift wrapping or most customers would want it. (Correct)",
-      ],
-    },
 
     { type: 'hr' },
 

@@ -29,20 +29,6 @@ export const Lesson5_Drill_DefinitionalChecklist: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '13-5-drill',
-      questionType: 'Principle - Apply',
-      difficulty: 'medium',
-      stimulus: "Ethicist: The most advanced kind of moral motivation is based solely on abstract principles. This form of motivation is in contrast with calculated self-interest or the desire to adhere to societal norms and conventions.",
-      question: "The actions of which one of the following individuals exhibit the most advanced kind of moral motivation, as described by the ethicist?",
-      options: [
-        "(A) Bobby contributed money to a local charity during a charity drive at work because he worried that not doing so would make him look stingy.",
-        "(B) Wes contributed money to a local charity during a charity drive at work because he believed that doing so would improve his employer's opinion of him.",
-        "(C) Donna's employers engaged in an illegal but profitable practice that caused serious damage to the environment. Donna did not report this practice to the authorities, out of fear that her employers would retaliate against her.",
-        "(D) Jadine's employers engaged in an illegal but profitable practice that caused serious damage to the environment. Jadine reported this practice to the authorities out of a belief that protecting the environment is always more important than monetary profit. (Correct)",
-        "(E) Leigh's employers engaged in an illegal but profitable practice that caused serious damage to the environment. Leigh reported this practice to the authorities only because several colleagues had been pressuring her to do so.",
-      ],
-    },
 
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

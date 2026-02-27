@@ -83,20 +83,6 @@ export const Lesson6_ThePrincipleApplication: Lesson = {
     { type: 'h2', text: 'Worked Example' },
     { type: 'paragraph', text: "Let's apply the full method to a principle application question." },
 
-    { type: 'question-card',
-      id: 'PR-4-6-001',
-      questionType: 'Parallel Reasoning',
-      difficulty: 'medium',
-      stimulus: "When presented with the evidence against him, Ellison freely admitted to engaging in illegal transactions using company facilities. However, the company obtained the evidence by illegally recording Ellison's conversations. Therefore, although the company may demand that he immediately cease, it cannot justifiably take any punitive measures against him.",
-      question: "Which one of the following judgments best illustrates the principle illustrated by the argument above?",
-      options: [
-        "(A) After Price confessed to having stolen money from Long over a period of several years, Long began stealing from Price. Despite Price's guilt, Long was not justified in taking illegal action against him.",
-        "(B) Shakila's secretary has admitted that he is illegally receiving cable television without paying for it. Shakila would not be justified in reporting him, though, since she once did the same thing.",
-        "(C) After Takashi told Sarah's parents that he had seen her at the movies on Tuesday, Sarah confessed to sneaking out that day. On Monday, however, Takashi had violated the local curfew for minors. Hence Sarah's parents cannot justifiably punish her in this case.",
-        "(D) After a conservation officer discovered them, Kuttner admitted that he had set the illegal animal traps on his land. But, because she was trespassing at the time, the conservation officer cannot justifiably punish Kuttner in this case. (Correct)",
-        "(E) Ramirez was forced by the discovery of new evidence to admit that she lied about her role in managing the chief of staff's financial affairs. Nevertheless, the board of directors cannot justifiably take action against Ramirez, because in past instances it has pardoned others guilty of similar improprieties.",
-      ],
-    },
 
     { type: 'h3', text: 'Step-by-Step Solution' },
 

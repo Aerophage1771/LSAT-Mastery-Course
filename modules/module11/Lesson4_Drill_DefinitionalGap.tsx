@@ -25,20 +25,6 @@ export const Lesson4_Drill_DefinitionalGap: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '11-4-drill',
-      questionType: 'Necessary Assumption',
-      difficulty: 'medium',
-      stimulus: "Sociologist: The intended function of news is to give us information on which to act. But in a consumer society, news becomes a product to be manufactured and dispensed to the consumer. An enormous industry for the production and consumption of news has evolved, and we ingest news with an insatiable appetite. Under such circumstances, news is primarily entertaining and cannot, therefore, serve its intended function.",
-      question: "Which one of the following is an assumption on which the sociologist's argument depends?",
-      options: [
-        "(A) News that serves its intended function should not be entertaining.",
-        "(B) Most viewers prefer that news be entertaining.",
-        "(C) News has only one important function.",
-        "(D) News that primarily entertains does not give us information on which to act. (Correct)",
-        "(E) A news industry that aims to make a profit inevitably presents news as entertainment.",
-      ],
-    },
 
     { type: 'hr' },
 

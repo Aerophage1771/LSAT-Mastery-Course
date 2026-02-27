@@ -39,20 +39,6 @@ export const Lesson8_Drill_Feasibility: Lesson = {
     { type: 'h2', text: 'Practice Problem' },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
 
-    { type: 'question-card',
-      id: 'DR-7-8-001',
-      questionType: 'Evaluate the Argument',
-      difficulty: 'medium',
-      stimulus: "To reduce overcrowding in its emergency department, Riverside Hospital plans to open an urgent care clinic in a nearby shopping center. Hospital administrators argue that patients with minor ailments will choose the convenient clinic location over the hospital, thereby reducing emergency department wait times by at least 30%.",
-      question: "Which one of the following would it be most useful to know in order to evaluate the argument?",
-      options: [
-        "(A) Whether the shopping center has adequate parking for clinic patients",
-        "(B) Whether most emergency department visits at Riverside Hospital are for conditions that could be treated at an urgent care clinic (Correct)",
-        "(C) Whether other hospitals in the region have also experienced overcrowding in their emergency departments",
-        "(D) Whether the urgent care clinic will be staffed by physicians or by nurse practitioners",
-        "(E) Whether Riverside Hospital has previously attempted other strategies to reduce emergency department overcrowding",
-      ],
-    },
 
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

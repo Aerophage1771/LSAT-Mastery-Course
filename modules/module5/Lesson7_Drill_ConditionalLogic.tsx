@@ -59,17 +59,6 @@ export const Lesson7_Drill_ConditionalLogic: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
-    { type: 'question-card', id: 'FL-5-7-001', questionType: 'Flaw', difficulty: 'medium',
-      stimulus: "Unplugging a peripheral component such as a \"mouse\" from a personal computer renders all of the software programs that require that component unusable on that computer. On Fred's personal computer, a software program that requires a mouse has become unusable. So it must be that the mouse for Fred's computer became unplugged.",
-      question: "The argument is most vulnerable to which one of the following criticisms?",
-      options: [
-        "(A) It contains a shift in the meaning of \"unusable\" from \"permanently unusable\" to \"temporarily unusable.\"",
-        "(B) It treats an event that can cause a certain result as though that event is necessary to bring about that result. (Correct)",
-        "(C) It introduces information unrelated to its conclusion as evidence in support of that conclusion.",
-        "(D) It attempts to support its conclusion by citing a generalization that is too broad.",
-        "(E) It overlooks the possibility that some programs do not require a peripheral component such as a mouse."
-      ]
-    },
 
     { type: 'hr' },
 
@@ -92,17 +81,6 @@ export const Lesson7_Drill_ConditionalLogic: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Practice Question' },
-    { type: 'question-card', id: 'FL-5-7-002', questionType: 'Flaw', difficulty: 'medium',
-      stimulus: "All of the paintings in the Montclair Museum\'s permanent collection are works of genuine artistic merit. The museum\'s committee on acquisitions ensures this, for they only select paintings for the permanent collection that they unanimously consider to be works of genuine artistic merit. Thus, since the committee members are all experts in their respective fields, every painting that has genuine artistic merit will eventually be in the museum\'s permanent collection.",
-      question: "The reasoning in the argument is flawed in that it",
-      options: [
-        "(A) takes for granted that the museum\'s committee members have the same criteria for what constitutes genuine artistic merit",
-        "(B) ignores the possibility that there are more works of genuine artistic merit than the museum can hold",
-        "(C) treats the fact that a condition is sufficient to ensure a result as proof that the condition is necessary for that result (Correct)",
-        "(D) presumes, without providing justification, that the committee\'s selections are not biased toward works in certain artistic styles",
-        "(E) confuses a claim about works currently in the collection with a claim about all works that will ever be in the collection"
-      ]
-    },
 
     { type: 'h3', text: 'Analysis' },
     { type: 'paragraph', text: "Let's diagram the logic:" },

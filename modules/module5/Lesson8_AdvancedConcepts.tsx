@@ -117,17 +117,6 @@ export const Lesson8_AdvancedConcepts: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example: Hard Flaw Question' },
-    { type: 'question-card', id: 'FL-5-8-001', questionType: 'Flaw', difficulty: 'hard',
-      stimulus: "Researcher: Every attempt to show that the high suicide rate in Elkmount is caused by the climate has failed. So the cause of the high suicide rate must lie elsewhere. Since the high suicide rate is correlated with a low level of sunlight in Elkmount, and the low level of sunlight is a consequence of the climate, the high suicide rate must have some cause that is not a consequence of the climate.",
-      question: "The reasoning in the researcher's argument is most vulnerable to criticism on the grounds that the argument",
-      options: [
-        "(A) appeals to the lack of evidence for a claim as grounds for concluding that the claim is false",
-        "(B) infers, from the claim that a certain causal relationship has not been established, that a certain effect has no causes",
-        "(C) fails to consider the possibility that the cause of the high suicide rate might be a consequence of the low level of sunlight (Correct)",
-        "(D) takes for granted that the high suicide rate in Elkmount is abnormal",
-        "(E) illicitly draws a conclusion about the cause of Elkmount's suicide rate from evidence about a correlation"
-      ]
-    },
 
     { type: 'hr' },
 

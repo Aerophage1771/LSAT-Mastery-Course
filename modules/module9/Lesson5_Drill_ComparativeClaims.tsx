@@ -30,20 +30,6 @@ export const Lesson5_Drill_ComparativeClaims: Lesson = {
     { type: 'h4', text: 'The Question' },
     { type: 'paragraph', text: 'Which one of the following, if true, provides the strongest support for the market researchers\' claim?' },
 
-    { type: 'question-card',
-      id: '9-5-drill',
-      questionType: 'Strengthen',
-      difficulty: 'medium',
-      stimulus: 'Market research traditionally entails surveying consumers about why they buy and use particular products and brands. Observational research—actually watching consumers shopping and interacting with products—is now increasingly used by market researchers to supplement surveys. Market researchers claim that observational research yields information about consumer behavior that surveys alone cannot provide.',
-      question: 'Which one of the following, if true, provides the strongest support for the market researchers\' claim?',
-      options: [
-        '(A) Even consumers who are unable to explain their preference for or rejection of particular brands reveal which brands they are considering by picking up and putting down products while they are shopping. (Correct)',
-        '(B) Market researchers find that consumers are almost always willing to participate in observational research for which the consumer is paid by the hour.',
-        '(C) Consumers are becoming increasingly self-conscious about their buying habits, and some consumers have stopped buying some items that they normally used to buy.',
-        '(D) Market researchers say they find data collection more enjoyable in observational research than in survey research, because observational research requires more creative judgment on their part.',
-        '(E) Consumers are more likely to respond to oral surveys than they are to respond to written questionnaires.',
-      ],
-    },
 
     { type: 'hr' },
 

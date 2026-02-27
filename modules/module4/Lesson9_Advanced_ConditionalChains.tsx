@@ -76,20 +76,6 @@ export const Lesson9_Advanced_ConditionalChains: Lesson = {
 
     { type: 'h2', text: 'Practice Question' },
 
-    { type: 'question-card',
-      id: 'PR-4-9-001',
-      questionType: 'Parallel Reasoning',
-      difficulty: 'hard',
-      stimulus: "To qualify for the scholarship, a student must have both a high GPA and community service hours. Any student who has either a high GPA or community service hours is eligible for the honor roll. Therefore, any student who is not eligible for the honor roll does not qualify for the scholarship.",
-      question: "The reasoning in the argument above is most similar to the reasoning in which one of the following arguments?",
-      options: [
-        "(A) To be promoted, an employee must complete both a training program and a performance review. Any employee who completes either the training program or the performance review receives a bonus. Therefore, any employee who does not receive a bonus does not get promoted. (Correct)",
-        "(B) To win the award, a project must be both innovative and cost-effective. Any project that is innovative receives public recognition. Therefore, any project that does not receive public recognition is not cost-effective.",
-        "(C) To enter the competition, an athlete must have both a qualifying time and a coach's recommendation. Any athlete who has a qualifying time and a coach's recommendation enters the competition. Therefore, any athlete who does not enter the competition lacks a qualifying time.",
-        "(D) To graduate with honors, a student must complete both a thesis and an oral exam. Any student who completes a thesis is eligible for departmental recognition. Therefore, any student who does not graduate with honors is not eligible for departmental recognition.",
-        "(E) To receive the grant, a researcher must submit both a proposal and a budget. Any researcher who submits either a proposal or a budget is considered an applicant. Therefore, any researcher who is considered an applicant is eligible for the grant.",
-      ],
-    },
 
     { type: 'h3', text: 'Step-by-Step Solution' },
 

@@ -24,21 +24,6 @@ export const Lesson6_Nuance: Lesson = {
     { type: 'paragraph', text: '**Structure:**\n\n**Premise:** A **often** happens with B.\n\n**Invalid Conclusion:** Therefore, A is **required** for B.'},
 
     { type: 'h4', text: 'LSAT in Action: The Modal Fallacy' },
-    {
-      type: 'question-card',
-      id: '55-6-q1',
-      questionType: 'Conditional Reasoning',
-      difficulty: 'medium',
-      stimulus: 'Parents who wish to provide a strong foundation for the musical ability of their children should provide them with a good musical education. Since formal instruction is often a part of a good musical education, parents who wish to provide this strong foundation need to ensure that their children receive formal instruction.',
-      question: 'The reasoning is most vulnerable to criticism on the grounds that it fails to consider that',
-      options: [
-        '(A) parents might not be the only source of a child\'s musical education',
-        '(B) some children might not be interested in receiving a strong foundation for their musical ability',
-        '(C) there are many examples of people with formal instruction whose musical ability is poor',
-        '(D) formal instruction might not always be a part of a good musical education (Correct)',
-        '(E) some children might become good musicians even if they have not had good musical educations'
-      ]
-    },
     { type: 'h3', text: 'Explanation' },
     { type: 'paragraph', text: '**Goal:** Analyze the logical structure.' },
     { type: 'h4', text: 'Argument Breakdown' },
@@ -64,21 +49,6 @@ export const Lesson6_Nuance: Lesson = {
     { type: 'paragraph', text: '**Structure:**\n\n**Premise:** X **can** cause Y.\n\n**Invalid Conclusion:** X **will** cause Y.'},
     
     { type: 'h4', text: 'LSAT in Action: Possibility vs. Certainty' },
-    {
-      type: 'question-card',
-      id: '55-6-q2',
-      questionType: 'Conditional Reasoning',
-      difficulty: 'medium',
-      stimulus: 'Studies have shown that consuming large amounts of caffeine CAN cause temporary jitters in some individuals. John just drank a large cup of coffee. Therefore, John WILL definitely experience jitters within the next hour.',
-      question: 'The reasoning in the argument is flawed because it...',
-      options: [
-        '(A) fails to consider that John might be accustomed to drinking coffee',
-        '(B) assumes that what is true of a group is true of every individual in that group',
-        '(C) treats a potential effect of a cause as if it were a guaranteed effect (Correct)',
-        '(D) confuses the cause of the jitters with the effect of the jitters',
-        '(E) relies on ambiguous terminology regarding the amount of caffeine'
-      ]
-    },
     { type: 'h3', text: 'Explanation' },
     { type: 'paragraph', text: '**Goal:** Identify the flaw in moving from possibility to certainty.'},
     { type: 'h4', text: 'Argument Breakdown' },

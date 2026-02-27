@@ -12,20 +12,6 @@ export const Lesson4_Drill_SelectionBias: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '19-4-drill',
-      questionType: 'Paradox / Explain',
-      difficulty: 'medium',
-      stimulus: 'There is strong evidence that the cause of migraines (severe recurrent headaches) is not psychological but instead is purely physiological. Yet several studies have found that people being professionally treated for migraines rate higher on a standard psychological scale of anxiety than do people not being professionally treated for migraines.',
-      question: 'Which one of the following, if true, most helps to resolve the apparent discrepancy in the information above?',
-      options: [
-        '(A) People who have migraine headaches tend to have relatives who also have migraine headaches.',
-        '(B) People who have migraine headaches often suffer these headaches when under emotional stress.',
-        '(C) People who rate higher on the standard psychological scale of anxiety are more likely to seek professional treatment than are people who rate lower on the scale. (Correct)',
-        '(D) Of the many studies done on the cause of migraine headaches, most of those that suggest that psychological factors such as anxiety cause migraines have been widely publicized.',
-        '(E) Most people who have migraines and who seek professional treatment remain in treatment until they stop having migraines, whether their doctors consider the cause to be physiological or psychological.'
-      ]
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

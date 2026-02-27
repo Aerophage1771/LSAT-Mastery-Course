@@ -30,20 +30,6 @@ export const Lesson4_Drill_QuantifierClashes: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '18-4-drill',
-      questionType: 'Must Be False',
-      difficulty: 'medium',
-      stimulus: 'For all species of higher animals, reproduction requires the production of eggs but not necessarily the production of sperm. There are some species whose members are all female; the eggs produced by a rare female-only species of salamander hatch without fertilization. This has the drawback that all offspring have genetic codes nearly identical to that of the single parent, making the species less adaptive than species containing both male and female members.',
-      question: 'If the statements above are true, each of the following could be true EXCEPT:',
-      options: [
-        '(A) There are some species of salamanders that have both male and female members.',
-        '(B) There are some species of higher animals none of whose members produce eggs. (Correct)',
-        '(C) There is a significant number of female-only species of higher animals.',
-        '(D) Some species of higher animals containing both female and male members are not very adaptive.',
-        '(E) Some offspring of species of higher animals containing both female and male members have genetic codes more similar to one parent than to the other parent.',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

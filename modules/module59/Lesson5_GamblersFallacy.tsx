@@ -88,20 +88,6 @@ export const Lesson5_GamblersFallacy: Lesson = {
     { type: 'h4', text: 'Practice: Identifying the Fallacy' },
     { type: 'paragraph', text: 'Consider this illustrative example that combines several concepts from this lesson:' },
 
-    { type: 'question-card',
-      id: 'illustrative-59-5-001',
-      questionType: 'LSAT Math',
-      difficulty: 'medium',
-      stimulus: 'A seismologist reports that major earthquakes in a certain region occur on average once every 50 years. The last major earthquake in the region occurred 53 years ago. A local official argues that because the region is "overdue" for a major earthquake, the town should immediately invest in expensive seismic retrofitting for all public buildings, since a major earthquake is virtually certain to occur within the next few years.',
-      question: 'The official\'s reasoning is most vulnerable to criticism on the grounds that it',
-      options: [
-        '(A) relies on the testimony of an authority figure without questioning the seismologist\'s methodology',
-        '(B) assumes that the fact that a certain amount of time has elapsed since the last earthquake makes another earthquake more likely to occur soon (Correct)',
-        '(C) fails to consider whether the cost of seismic retrofitting is justified by the potential damage from an earthquake',
-        '(D) ignores the possibility that smaller earthquakes might occur before a major one',
-        '(E) treats the average frequency of earthquakes in the past as a guarantee of their frequency in the future'
-      ]
-    },
 
     { type: 'accordion', title: 'Full Analysis of Practice Question', content: [
       { type: 'paragraph', text: '**Why (B) is correct:** The official\'s argument hinges on the word "overdue"—the classic signal of the Gambler\'s Fallacy. The argument assumes that because 53 years have passed (slightly more than the 50-year average), a major earthquake is "virtually certain" soon. This treats independent geological events as if probability accumulates over time, like a debt that must be repaid.' },

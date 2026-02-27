@@ -29,20 +29,6 @@ export const Lesson5_Drill_CausalChaining: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '16-5-drill',
-      questionType: 'Most Strongly Supported',
-      difficulty: 'medium',
-      stimulus: 'The chances that tropical storms will develop in a given area increase whenever the temperature of a large body of water in that area exceeds 26 degrees Celsius to a depth of about 60 meters. If the amount of carbon dioxide in the Earth\'s atmosphere continues to increase, the temperatures of all of the Earth\'s waters will rise, with the result that the number of large bodies of water whose temperatures exceed 26 degrees Celsius to a depth of about 60 meters will eventually be greater than it is today.',
-      question: 'The statements above, if true, most strongly support which one of the following conclusions?',
-      options: [
-        '(A) There are likely to be more tropical storms if the amount of carbon dioxide in the Earth\'s atmosphere continues to increase. (Correct)',
-        '(B) Tropical storms can occur only when the air temperature exceeds 26 degrees Celsius.',
-        '(C) The number of large bodies of water whose temperatures exceed 26 degrees Celsius to a depth of about 60 meters is greater today than it ever was.',
-        '(D) The ferocity of tropical storms does not depend on the amount of carbon dioxide in the Earth\'s atmosphere.',
-        '(E) Any increase in the temperatures of the Earth\'s oceans would cause the amount of carbon dioxide in the atmosphere to increase as well.',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

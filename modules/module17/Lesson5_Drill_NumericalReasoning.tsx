@@ -29,20 +29,6 @@ export const Lesson5_Drill_NumericalReasoning: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '17-5-drill',
-      questionType: 'Must Be True',
-      difficulty: 'medium',
-      stimulus: 'In early 1990, Queenston instituted a tax increase that gave its school system a larger operating budget. The school system used the larger budget to increase the total number of teachers in the system by 30 percent between 1990 and 1993. Nevertheless, there was no change in the average number of students per teacher between 1990 and 1993.',
-      question: 'If the statements above are true, then on the basis of them which one of the following must also be true?',
-      options: [
-        '(A) No classes in Queenston\'s school system experienced an increase in enrollment between 1990 and 1993.',
-        '(B) The total number of students enrolled in Queenston\'s school system increased between 1990 and 1993. (Correct)',
-        '(C) The operating budget of Queenston\'s school system increased by exactly 30 percent between 1990 and 1993.',
-        '(D) Most teachers who worked for Queenston\'s school system in 1990 were still working for the system in 1993.',
-        '(E) The quality of education in Queenston\'s school system improved between 1990 and 1993.',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

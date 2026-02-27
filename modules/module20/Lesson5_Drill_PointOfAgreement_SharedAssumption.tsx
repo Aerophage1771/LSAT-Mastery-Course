@@ -7,17 +7,6 @@ export const Lesson5_Drill_PointOfAgreement_SharedAssumption: Lesson = {
     { type: 'paragraph', text: 'This drill focuses on the "Point of Agreement" question type. These questions challenge you to look past the obvious surface disagreement to find a deeper, unstated assumption that both speakers must hold for their respective arguments to make sense.' },
     { type: 'callout', title: 'Core Concept: Shared Assumption Agreement', variant: 'tip', text: 'Even when two speakers propose opposite solutions, their arguments often rest on the same foundational model of how the world works. The shared assumption is the unstated belief that ENABLES their disagreement. Without it, their arguments wouldn\'t be on the same topic at all. When you find what both speakers take for granted, you\'ve found the point of agreement.' },
     { type: 'hr' },
-    { type: 'question-card', id: '20-5-drill', questionType: 'Point at Issue', difficulty: 'medium',
-      stimulus: 'Denise: Crime will be reduced only when punishment is certain and is sufficiently severe to give anyone considering committing a crime reason to decide against doing so.\nReshmi: No, crime will be most effectively reduced if educational opportunities are made readily available to everyone, so that those who once viewed criminal activity as the only means of securing a comfortable lifestyle will choose a different path.',
-      question: 'Their dialogue provides the most support for the claim that Denise and Reshmi agree that',
-      options: [
-        '(A) people are capable of choosing whether or not to commit crimes (Correct)',
-        '(B) crime is the most important issue facing modern society',
-        '(C) reducing crime requires fair and consistent responses to criminal behavior',
-        '(D) crimes are committed in response to economic need',
-        '(E) reducing crime requires focusing on assured punishments'
-      ]
-    },
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
     { type: 'h3', text: 'Analysis & Explanation' },

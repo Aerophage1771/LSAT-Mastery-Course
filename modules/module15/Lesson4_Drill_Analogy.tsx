@@ -41,20 +41,6 @@ export const Lesson4_Drill_Analogy: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '15-4-drill',
-      questionType: 'Fill in the Blank',
-      difficulty: 'medium',
-      stimulus: "A century in certain ways is like a life, and as the end of a century approaches, people behave toward that century much as someone who is nearing the end of life does toward that life. So just as people in their last years spend much time looking back on the events of their life, people at a century's end _______.",
-      question: "Which one of the following most logically completes the argument?",
-      options: [
-        "(A) reminisce about their own lives",
-        "(B) fear that their own lives are about to end",
-        "(C) focus on what the next century will bring",
-        "(D) become very interested in the history of the century just ending (Correct)",
-        "(E) reflect on how certain unfortunate events of the century could have been avoided",
-      ],
-    },
 
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
