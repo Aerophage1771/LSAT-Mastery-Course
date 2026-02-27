@@ -53,20 +53,6 @@ export const Lesson4_TheRebuttal: Lesson = {
 
     { type: 'h2', text: 'Worked Example 1: The Tennyson Argument' },
 
-    { type: 'question-card',
-      id: 'MC-2-4-001',
-      questionType: 'Main Conclusion',
-      difficulty: 'medium',
-      stimulus: "Tennyson's line of poetry \"nature, red in tooth and claw\" is misconstrued by many evolutionists as a reference to Darwin's theory of evolution. The poem in which the line appears was published in 1850, but Darwin kept his theory closely held until publishing it in 1859. In addition, in view of the context provided by the rest of the poem, the line was clearly meant to refer to the dominant biological theory of the early nineteenth century, which was a creationist theory.",
-      question: "Which one of the following most accurately expresses the main point of the argument?",
-      options: [
-        "(A) The line of Tennyson's poetry cannot now be construed as an apt description of Darwin's theory of evolution.",
-        "(B) The dominant biological theory in the early nineteenth century was a creationist theory.",
-        "(C) Tennyson's line of poetry was written well before Darwin had published his theory of evolution.",
-        "(D) Darwin's theory of evolution was not the dominant biological theory in the early nineteenth century.",
-        "(E) Tennyson's line of poetry was not a reference to Darwin's theory of evolution. (Correct)",
-      ],
-    },
 
     { type: 'h3', text: 'Step-by-Step Analysis' },
 
@@ -99,20 +85,6 @@ export const Lesson4_TheRebuttal: Lesson = {
     { type: 'h2', text: 'Worked Example 2: A Simpler Rebuttal' },
     { type: 'paragraph', text: "Here is a simpler example to reinforce the pattern recognition:" },
 
-    { type: 'question-card',
-      id: 'MC-2-4-002',
-      questionType: 'Main Conclusion',
-      difficulty: 'easy',
-      stimulus: "Some economists predict that automation will lead to mass unemployment within the next two decades. But this prediction ignores the historical pattern: every major technological shift has ultimately created more jobs than it has destroyed. The industrial revolution displaced millions of agricultural workers, yet it generated far more factory and service jobs. There is no reason to expect automation to be any different.",
-      question: "Which one of the following most accurately expresses the main conclusion of the argument?",
-      options: [
-        "(A) The industrial revolution created more jobs than it destroyed.",
-        "(B) Automation will create new types of jobs that do not currently exist.",
-        "(C) Some economists are concerned about the employment effects of automation.",
-        "(D) The prediction that automation will cause mass unemployment is unfounded. (Correct)",
-        "(E) Every major technological shift has created more jobs than it has destroyed.",
-      ],
-    },
 
     { type: 'h4', text: 'Quick Analysis' },
     { type: 'breakdown', labels: { title: 'Step', text: 'Application' }, items: [

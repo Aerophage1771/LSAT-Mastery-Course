@@ -51,20 +51,6 @@ export const Lesson6_RefutationByCounterexample: Lesson = {
 
     { type: 'h2', text: 'Worked Example' },
 
-    { type: 'question-card',
-      id: 'MR-3-6-001',
-      questionType: 'Method of Reasoning',
-      difficulty: 'medium',
-      stimulus: "Joanna: The only way for a company to be successful, after emerging from bankruptcy, is to produce the same goods or services that it did before going bankrupt. It is futile for such a company to try to learn a whole new business.\nRuth: Wrong. The Kelton Company was a major mining operation that went into bankruptcy. On emerging from bankruptcy, Kelton turned its mines into landfills and is presently a highly successful waste-management concern.",
-      question: "Ruth uses which one of the following argumentative techniques in countering Joanna's argument?",
-      options: [
-        "(A) She presents a counterexample to a claim. (Correct)",
-        "(B) She offers an alternative explanation for a phenomenon.",
-        "(C) She supports a claim by offering a developed and relevant analogy.",
-        "(D) She undermines a claim by showing that it rests on an ambiguity.",
-        "(E) She establishes a conclusion by excluding the only plausible alternative to that conclusion.",
-      ],
-    },
 
     { type: 'h3', text: 'Step 1: Deconstruct the Argument' },
     { type: 'paragraph', text: "Let's map both speakers' arguments:" },

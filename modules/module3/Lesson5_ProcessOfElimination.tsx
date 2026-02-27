@@ -45,20 +45,6 @@ export const Lesson5_ProcessOfElimination: Lesson = {
 
     { type: 'h2', text: 'Worked Example' },
 
-    { type: 'question-card',
-      id: 'MR-3-5-001',
-      questionType: 'Method of Reasoning',
-      difficulty: 'medium',
-      stimulus: "A group of unusual meteorites was found in Shergotty, India. Their structure indicates that they originated on one of the geologically active planets: Mercury, Venus, or Mars. Because of Mercury's proximity to the Sun, any material dislodged from that planet's surface would have been captured by the Sun, rather than falling to Earth as meteorites. Nor could Venus be the source of the meteorites, because its gravity would have prevented dislodged material from escaping into space. The meteorites, therefore, probably fell to Earth after being dislodged from Mars, perhaps as the result of a collision with a large object.",
-      question: "The argument derives its conclusion by",
-      options: [
-        "(A) offering a counterexample to a theory",
-        "(B) eliminating competing alternative explanations (Correct)",
-        "(C) contrasting present circumstances with past circumstances",
-        "(D) questioning an assumption",
-        "(E) abstracting a general principle from specific data",
-      ],
-    },
 
     { type: 'h3', text: 'Step 1: Deconstruct the Argument' },
     { type: 'paragraph', text: "Let's map the argument's structure onto the elimination pattern:" },

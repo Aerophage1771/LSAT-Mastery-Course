@@ -28,20 +28,6 @@ export const Lesson5_Drill_UnintendedConsequences: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '14-5-drill',
-      questionType: 'Principle - Generalization',
-      difficulty: 'medium',
-      stimulus: 'As a result of modern medicine, more people have been able to enjoy long and pain-free lives. But the resulting increase in life expectancy has contributed to a steady increase in the proportion of the population that is of advanced age. This population shift is creating potentially devastating financial problems for some social welfare programs.',
-      question: 'Which one of the following propositions is most precisely exemplified by the situation presented above?',
-      options: [
-        '(A) Technical or scientific innovation cannot be the solution to all problems.',
-        '(B) Implementing technological innovations should be delayed until the resulting social changes can be managed.',
-        '(C) Every enhancement of the quality of life has unavoidable negative consequences.',
-        '(D) All social institutions are affected by a preoccupation with prolonging life.',
-        '(E) Solving one set of problems can create a different set of problems. (Correct)',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

@@ -66,20 +66,6 @@ export const Lesson8_AdvancedConcepts: Lesson = {
     { type: 'h2', text: 'Practice: A Hard Parallel Reasoning Question' },
     { type: 'paragraph', text: "This question demonstrates all three difficulty factors: multi-step structure, mixed logic types, and a conditional conclusion." },
 
-    { type: 'question-card',
-      id: 'PR-4-8-001',
-      questionType: 'Parallel Reasoning',
-      difficulty: 'hard',
-      stimulus: "Any policy that reduces overall costs is worth adopting unless it also reduces product quality. The proposed automation plan would reduce overall costs. However, automating the assembly line would reduce product quality. Therefore, although the automation plan would reduce costs, it is not clear that it is worth adopting.",
-      question: "Which one of the following arguments is most similar in its pattern of reasoning to the argument above?",
-      options: [
-        "(A) Any investment that yields consistent returns is worth making unless it also carries high risk. The bond fund yields consistent returns. However, the bond fund carries high risk. Therefore, although the bond fund yields consistent returns, it is not clear that it is worth investing in. (Correct)",
-        "(B) Any exercise program that improves cardiovascular health is worth following. Running improves cardiovascular health. Therefore, running is worth following.",
-        "(C) Any medication that reduces symptoms is worth prescribing unless it causes severe side effects. This medication reduces symptoms and does not cause severe side effects. Therefore, it is worth prescribing.",
-        "(D) Any candidate who has relevant experience should be hired unless there are concerns about their references. Jones has relevant experience. Therefore, Jones should definitely be hired.",
-        "(E) Any proposal that increases revenue is worth considering. The marketing initiative would increase revenue but also increase expenses. Therefore, the marketing initiative is not worth considering.",
-      ],
-    },
 
     { type: 'h3', text: 'Step-by-Step Solution' },
 

@@ -40,20 +40,6 @@ export const Lesson6_Drill_UnrepresentativeSample: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
-    { type: 'question-card',
-      id: 'FL-5-6-001',
-      questionType: 'Flaw',
-      difficulty: 'medium',
-      stimulus: "A number of Grandville's wealthiest citizens have been criminals. So, since it is of utmost importance that the Grandville Planning Committee be composed solely of individuals whose personal standards of ethics are beyond reproach, no wealthy person should be appointed to that committee.",
-      question: "The argument is most vulnerable to the criticism that it",
-      options: [
-        "(A) confuses a result with something that is sufficient for bringing about that result",
-        "(B) mistakes a temporal relationship for a causal relationship",
-        "(C) assumes that because a certain action has a certain result the person taking that action intended that result",
-        "(D) judges only by subjective standards something that can be readily evaluated according to objective standards",
-        "(E) generalizes on the basis of what could be exceptional cases (Correct)",
-      ],
-    },
 
     { type: 'h3', text: 'Full Step-by-Step Analysis' },
     { type: 'process', title: 'Applying the 4-Step Method', steps: [
@@ -75,20 +61,6 @@ export const Lesson6_Drill_UnrepresentativeSample: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Practice Question' },
-    { type: 'question-card',
-      id: 'FL-5-6-002',
-      questionType: 'Flaw',
-      difficulty: 'medium',
-      stimulus: "A magazine survey asked its readers whether they prefer to vacation domestically or internationally. Of the 2,000 readers who responded, 78% said they prefer international vacations. The magazine concluded that the vast majority of Americans prefer international vacations over domestic ones.",
-      question: "The reasoning in the argument is most vulnerable to criticism on the grounds that it",
-      options: [
-        "(A) fails to consider that some respondents may have misunderstood the question",
-        "(B) draws a conclusion about all Americans from a sample of magazine readers who chose to respond, a group that may not be representative of Americans as a whole (Correct)",
-        "(C) assumes that vacation preference is the only relevant factor in determining travel trends",
-        "(D) fails to specify the exact number of respondents who preferred international travel",
-        "(E) treats a preference for international vacations as incompatible with also enjoying domestic travel",
-      ],
-    },
 
     { type: 'h3', text: 'Analysis' },
     { type: 'process', title: 'Step-by-Step', steps: [

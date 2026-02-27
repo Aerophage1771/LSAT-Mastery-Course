@@ -37,20 +37,6 @@ export const Lesson5_Drill_NumbersVsPercentages: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
-    { type: 'question-card',
-      id: 'FL-5-5-001',
-      questionType: 'Flaw',
-      difficulty: 'medium',
-      stimulus: "A commonly accepted myth is that left-handed people are more prone to cause accidents than are right-handed people. But this is, in fact, just a myth, as is indicated by the fact that more household accidents are caused by right-handed people than are caused by left-handed people.",
-      question: "The reasoning is flawed because the argument",
-      options: [
-        "(A) makes a distinction where there is no real difference between the things distinguished",
-        "(B) takes no account of the relative frequency of left-handed people in the population as a whole (Correct)",
-        "(C) uses the word \"accidents\" in two different senses",
-        "(D) ignores the possibility that some household accidents are caused by more than one person",
-        "(E) gives wholly irrelevant evidence and simply disparages an opposing position by calling it a \"myth\"",
-      ],
-    },
 
     { type: 'h3', text: 'Full Step-by-Step Analysis' },
     { type: 'process', title: 'Applying the 4-Step Method', steps: [
@@ -72,20 +58,6 @@ export const Lesson5_Drill_NumbersVsPercentages: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Practice Question' },
-    { type: 'question-card',
-      id: 'FL-5-5-002',
-      questionType: 'Flaw',
-      difficulty: 'medium',
-      stimulus: "Safety advocate: Our data shows that the number of workplace injuries at large factories (500+ employees) is three times higher than the number of injuries at small workshops (under 50 employees). This proves that large factories are far more dangerous workplaces than small workshops.",
-      question: "The safety advocate's reasoning is flawed because it",
-      options: [
-        "(A) fails to define what qualifies as a \"workplace injury\" for purposes of the comparison",
-        "(B) assumes that the working conditions at all large factories are identical",
-        "(C) overlooks the possibility that large factories have significantly more workers who could be injured, which could account for the higher total number of injuries (Correct)",
-        "(D) ignores the possibility that some workers at small workshops fail to report their injuries",
-        "(E) relies on data from the safety advocate's own organization, which may be biased",
-      ],
-    },
 
     { type: 'h3', text: 'Analysis' },
     { type: 'process', title: 'Step-by-Step', steps: [

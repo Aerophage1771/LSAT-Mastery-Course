@@ -18,21 +18,6 @@ export const Lesson9_Drill_ProcessOfElimination: Lesson = {
     { type: 'hr' },
 
     { type: 'h3', text: 'Practice: Break the False Dichotomy' },
-    {
-      type: 'question-card',
-      id: '8-9-practice',
-      questionType: 'Weaken',
-      difficulty: 'hard',
-      stimulus: 'Archaeologist: A skeleton of a North American mastodon that became extinct at the peak of the Ice Age was recently discovered. It contains a human-made projectile dissimilar to any found in that part of Eurasia closest to North America. Thus, since Eurasians did not settle in North America until shortly before the peak of the Ice Age, the first Eurasian settlers in North America probably came from a more distant part of Eurasia.',
-      question: 'Which one of the following, if true, most seriously weakens the archaeologist\'s argument?',
-      options: [
-        '(A) The projectile found in the mastodon does not resemble any that were used in Eurasia before or during the Ice Age. (Correct)',
-        '(B) The people who occupied the Eurasian area closest to North America remained nomadic throughout the Ice Age.',
-        '(C) The skeleton of a bear from the same place and time as the mastodon skeleton contains a similar projectile.',
-        '(D) Other North American artifacts from the peak of the Ice Age are similar to ones from the same time found in more distant parts of Eurasia.',
-        '(E) Climatic conditions in North America just before the Ice Age were more conducive to human habitation than were those in the part of Eurasia closest to North America at that time.'
-      ]
-    },
     { type: 'hr' },
 
     { type: 'h3', text: 'Full Analysis' },

@@ -50,20 +50,6 @@ export const Lesson10_Advanced_MultipleGaps: Lesson = {
     { type: 'h2', text: 'Practice Problem' },
     { type: 'paragraph', text: "**Instructions:** This argument has at least two distinct gaps. Identify both before reading the answer choices. Commit to an answer, then scroll down." },
 
-    { type: 'question-card',
-      id: 'ADV-7-10-001',
-      questionType: 'Evaluate the Argument',
-      difficulty: 'hard',
-      stimulus: "A city's transportation department reports that after installing dedicated bicycle lanes on four major roads, bicycle commuting increased by 40% and traffic-related bicycle injuries decreased by 25%. The department concludes that installing bicycle lanes on the city's remaining major roads would further reduce traffic-related bicycle injuries.",
-      question: "The answer to which one of the following questions would be most useful in evaluating the argument?",
-      options: [
-        "(A) Whether the four roads selected for bicycle lanes had higher rates of bicycle injuries than other major roads before the lanes were installed",
-        "(B) Whether the 40% increase in bicycle commuting led to increased congestion for motor vehicles on the four roads",
-        "(C) Whether the decrease in injuries on the four roads was offset by an increase in injuries on other roads where cyclists were diverted (Correct)",
-        "(D) Whether the city's overall rate of traffic injuries, including those not involving bicycles, has changed during the same period",
-        "(E) Whether residents who began bicycle commuting after the lanes were installed were experienced cyclists",
-      ],
-    },
 
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

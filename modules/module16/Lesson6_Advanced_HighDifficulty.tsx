@@ -73,20 +73,6 @@ export const Lesson6_Advanced_HighDifficulty: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '16-6-drill',
-      questionType: 'Most Strongly Supported',
-      difficulty: 'hard',
-      stimulus: 'A pharmaceutical company recently published results of a clinical trial showing that patients taking its new drug for chronic joint pain reported a 40 percent reduction in pain after eight weeks. However, a separate review of the trial data found that patients in the placebo group\u2014who received an inert sugar pill\u2014reported a 30 percent reduction in pain over the same period. The company\'s published summary did not mention the placebo group\'s results.',
-      question: 'Which one of the following is most strongly supported by the information above?',
-      options: [
-        '(A) The pharmaceutical company intentionally misled the public about the drug\'s effectiveness.',
-        '(B) The drug is no more effective at reducing joint pain than a placebo.',
-        '(C) The published summary, considered by itself, could give a misleading impression of how much of the reported pain reduction is attributable to the drug\'s pharmacological properties. (Correct)',
-        '(D) Patients who took the drug would have experienced the same pain reduction without it.',
-        '(E) Clinical trials that do not publicly report placebo group results should not be trusted.',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

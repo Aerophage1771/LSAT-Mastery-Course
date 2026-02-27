@@ -62,17 +62,6 @@ export const Lesson10_Advanced_StrategyVsCertainty: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
-    { type: 'question-card', id: 'FL-5-10-001', questionType: 'Flaw', difficulty: 'hard',
-      stimulus: "Editorial: Given the law of supply and demand, maximum total utility is assured only in a pure free market economy, although other types of economies might be able to achieve it. Obviously, then, a country that has a highly controlled economy, and is not trying to bring about a pure free market economy, is not acting in the way that is most likely to bring about maximum total utility.",
-      question: "The editorial's argument is most vulnerable to criticism on the grounds that it",
-      options: [
-        "(A) presumes, without providing justification, that any country that does not have a pure free market economy has a highly controlled economy",
-        "(B) presumes, without providing justification, that the way in which utility is distributed is less important than the total amount of utility",
-        "(C) fails to consider that the way most likely to achieve a particular end may not be the only way to achieve that end",
-        "(D) presumes, without providing justification, that trying to bring about a condition that will ensure the achievement of an end must always be the way most likely to achieve that end (Correct)",
-        "(E) ignores the possibility that a pure free market economy will have serious drawbacks that outweigh the benefits of maximum total utility"
-      ]
-    },
 
     { type: 'hr' },
 
@@ -95,17 +84,6 @@ export const Lesson10_Advanced_StrategyVsCertainty: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Practice Question' },
-    { type: 'question-card', id: 'FL-5-10-002', questionType: 'Flaw', difficulty: 'medium',
-      stimulus: "Studies have shown that a majority of patients who undergo a new experimental surgery experience significant pain relief within six months. Traditional physical therapy, while less dramatic in its results, has been shown to provide some degree of relief for nearly all patients. The hospital board concluded that the experimental surgery is the more effective treatment option for chronic pain patients.",
-      question: "The reasoning in the hospital board's argument is most vulnerable to criticism on the grounds that it",
-      options: [
-        "(A) fails to consider the possibility that the experimental surgery carries significant risks that physical therapy does not",
-        "(B) draws a conclusion about the general population from studies conducted on a specific group of patients",
-        "(C) treats the fact that a treatment benefits a majority of patients as though it benefits all patients",
-        "(D) overlooks the possibility that a treatment providing some relief to nearly all patients may be more effective overall than one providing significant relief to only a majority (Correct)",
-        "(E) presumes, without providing justification, that pain relief is the only measure of treatment effectiveness"
-      ]
-    },
 
     { type: 'h3', text: 'Analysis' },
     { type: 'paragraph', text: "This question tests a scope-shift variant of the Certainty Flaw. The argument compares two treatments:" },

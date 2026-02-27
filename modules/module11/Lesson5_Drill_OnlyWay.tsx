@@ -25,20 +25,6 @@ export const Lesson5_Drill_OnlyWay: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '11-5-drill',
-      questionType: 'Necessary Assumption',
-      difficulty: 'medium',
-      stimulus: "The development of new inventions is promoted by the granting of patent rights, which restrict the right of anyone but the patent holders to profit from these inventions for a specified period. Without patent rights, anyone could simply copy another's invention; consequently, inventors would have no financial incentive for investing the time and energy required to develop new products. Thus, it is important to continue to grant patent rights, or else no one will engage in original development and consequently no new inventions will be forthcoming.",
-      question: "Which one of the following is an assumption on which the argument depends?",
-      options: [
-        "(A) Financial reward is the only incentive that will be effective in motivating people to develop new inventions. (Correct)",
-        "(B) When an inventor sells patent rights to a manufacturer, the manufacturer makes less total profit on the invention than the inventor does.",
-        "(C) Any costs incurred by a typical inventor in applying for patent rights are insignificant in comparison to the financial benefit of holding the patent rights.",
-        "(D) Patent rights should be granted only if an inventor's product is not similar to another invention already covered by patent rights.",
-        "(E) The length of a patent right is usually proportional to the costs involved in inventing the product.",
-      ],
-    },
 
     { type: 'hr' },
 

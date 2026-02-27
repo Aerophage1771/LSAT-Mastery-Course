@@ -27,20 +27,6 @@ export const Lesson9_Drill_SemanticNuance: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '16-9-drill',
-      questionType: 'Most Strongly Supported',
-      difficulty: 'medium',
-      stimulus: "The difference between manners and morals is that the former are necessarily social in nature whereas the latter are not necessarily social in nature. So the rules of etiquette do not apply when one is alone.",
-      question: "The statements above, if true, most strongly support which one of the following inferences?",
-      options: [
-        "(A) One could be immoral without ever having caused any other person any harm. (Correct)",
-        "(B) No immoral act could be a violation of the rules of etiquette.",
-        "(C) The rules of morality apply only when one is alone.",
-        "(D) It is more important to be moral than to have good manners.",
-        "(E) What is social in nature could not be a matter of morality.",
-      ],
-    },
 
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

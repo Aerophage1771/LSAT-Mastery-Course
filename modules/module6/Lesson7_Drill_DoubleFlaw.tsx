@@ -47,20 +47,6 @@ export const Lesson7_Drill_DoubleFlaw: Lesson = {
 
     { type: 'h2', text: 'Practice Question' },
 
-    { type: 'question-card',
-      id: 'PF-6-7-001',
-      questionType: 'Parallel Flaw',
-      difficulty: 'hard',
-      stimulus: "Bank deposits are credited on the date of the transaction only when they are made before 3 P.M. Alicia knows that the bank deposit was made before 3 P.M. So, Alicia knows that the bank deposit was credited on the date of the transaction.",
-      question: "Which one of the following exhibits both of the logical flaws exhibited by the argument above?",
-      options: [
-        "(A) Journalists are the only ones who will be permitted to ask questions at the press conference. Since Marjorie is a journalist, she will be permitted to ask questions.",
-        "(B) We know that Patrice works only on Thursday. Today is Thursday, so it follows that Patrice is working today.",
-        "(C) It is clear that George knows he will be promoted to shift supervisor, because George will be promoted to shift supervisor only if Helen resigns, and George knows Helen will resign. (Correct)",
-        "(D) John believes that 4 is a prime number and that 4 is divisible by 2. Hence John believes that there is a prime number divisible by 2.",
-        "(E) Pat wants to become a social worker. It is well known that social workers are poorly paid. Pat apparently wants to be poorly paid.",
-      ],
-    },
 
     { type: 'hr' },
 

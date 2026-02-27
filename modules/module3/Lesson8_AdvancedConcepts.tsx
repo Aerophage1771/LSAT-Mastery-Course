@@ -61,17 +61,6 @@ export const Lesson8_AdvancedConcepts: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example: A Hard Method Question' },
-    { type: 'question-card', id: 'advanced-method-hard', questionType: 'Method of Reasoning', difficulty: 'hard',
-      stimulus: "Professor Wexler: Economists predict that the proposed carbon tax will reduce emissions by 15% within a decade. But consider: if a 15% reduction were achievable through taxation alone, then countries with existing carbon taxes would have already achieved comparable reductions. In fact, no country with a carbon tax has reduced emissions by more than 8%. Clearly, the economists' prediction is overly optimistic.",
-      question: "Professor Wexler's argument proceeds by",
-      options: [
-        "(A) providing evidence that taxation is generally ineffective as a policy tool",
-        "(B) challenging the qualifications of those who made the prediction",
-        "(C) showing that a predicted outcome has not occurred in relevantly similar circumstances, thereby casting doubt on the prediction (Correct)",
-        "(D) offering an alternative policy that would be more effective at reducing emissions",
-        "(E) demonstrating that the reasoning underlying the economists' prediction contains a logical contradiction"
-      ]
-    },
 
     { type: 'hr' },
 

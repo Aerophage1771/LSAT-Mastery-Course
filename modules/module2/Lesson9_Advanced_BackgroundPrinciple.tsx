@@ -50,17 +50,6 @@ export const Lesson9_Advanced_BackgroundPrinciple: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
-    { type: 'question-card', id: 'bg-principle-worked-example', questionType: 'Main Conclusion', difficulty: 'hard',
-      stimulus: "It is a given that to be an intriguing person, one must be able to inspire the perpetual curiosity of others. Constantly broadening one's abilities and extending one's intellectual reach will enable one to inspire that curiosity. For such a perpetual expansion of one's mind makes it impossible to be fully comprehended, making one a constant mystery to others.",
-      question: "Which one of the following most accurately expresses the conclusion drawn in the argument above?",
-      options: [
-        "(A) To be an intriguing person, one must be able to inspire the perpetual curiosity of others.",
-        "(B) If one constantly broadens one's abilities and extends one's intellectual reach, one will be able to inspire the perpetual curiosity of others. (Correct)",
-        "(C) If one's mind becomes impossible to fully comprehend, one will always be a mystery to others.",
-        "(D) To inspire the perpetual curiosity of others, one must constantly broaden one's abilities and extend one's intellectual reach.",
-        "(E) If one constantly broadens one's abilities and extends one's intellectual reach, one will always have curiosity."
-      ]
-    },
 
     { type: 'hr' },
 

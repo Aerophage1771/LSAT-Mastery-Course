@@ -61,17 +61,6 @@ export const Lesson7_AdvancedConcepts: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example: Abstract Answer Choices' },
-    { type: 'question-card', id: 'advanced-abstract-example', questionType: 'Argument Part', difficulty: 'hard',
-      stimulus: "Art critic: Biographers sometimes claim that the work of an artist who is unhappy must inevitably reflect that unhappiness. But this claim is false. The biographer of a famous artist recently argued that, because the artist's marriage was unhappy, the artist's painting of a couple in a garden is a depiction of marital discord. However, the painting is obviously a joyful celebration of nature.",
-      question: "The statement that the painting is a joyful celebration of nature plays which one of the following roles in the art critic's argument?",
-      options: [
-        "(A) It is a premise used to support the claim that art cannot reflect an artist's emotional state.",
-        "(B) It is used to support the main conclusion by providing a counterexample to a general claim. (Correct)",
-        "(C) It is the main conclusion that the argument is structured to establish.",
-        "(D) It is cited as a claim made by the biographer that the art critic seeks to undermine.",
-        "(E) It is a concession to the biographer's position before the art critic presents a rebuttal."
-      ]
-    },
 
     { type: 'hr' },
 

@@ -19,21 +19,6 @@ export const Lesson8_Drill_CompositionFlaw: Lesson = {
     { type: 'hr' },
 
     { type: 'h3', text: 'Practice: Spot the Composition Flaw' },
-    {
-      type: 'question-card',
-      id: '8-8-practice',
-      questionType: 'Weaken',
-      difficulty: 'hard',
-      stimulus: 'Over the last 25 years, the average price paid for a new car has steadily increased in relation to average individual income. This increase indicates that individuals who buy new cars today spend, on average, a larger amount relative to their incomes buying a car than their counterparts did 25 years ago.',
-      question: 'Which one of the following, if true, most weakens the argument?',
-      options: [
-        '(A) There has been a significant increase over the last 25 years in the proportion of individuals in households with more than one wage earner.',
-        '(B) The number of used cars sold annually is the same as it was 25 years ago.',
-        '(C) Allowing for inflation, average individual income has significantly declined over the last 25 years.',
-        '(D) During the last 25 years, annual new-car sales and the population have both increased, but new-car sales have increased by a greater percentage.',
-        '(E) Sales to individuals make up a smaller proportion of all new-car sales than they did 25 years ago. (Correct)'
-      ]
-    },
     { type: 'hr' },
 
     { type: 'h3', text: 'Full Analysis' },

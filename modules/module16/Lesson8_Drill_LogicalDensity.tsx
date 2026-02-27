@@ -27,20 +27,6 @@ export const Lesson8_Drill_LogicalDensity: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '16-8-drill',
-      questionType: 'Most Strongly Supported',
-      difficulty: 'hard',
-      stimulus: "On their way from their nest to a food source, ants of most species leave a trail of chemicals called pheromones. The ants use the scent of the pheromones to guide themselves between the food and their nest. All pheromones evaporate without a trace almost immediately when temperatures rise above 45 degrees Celsius (113 degrees Fahrenheit), as is typical during afternoons in places such as the Sahara Desert.",
-      question: "The statements above, if true, most strongly support which one of the following?",
-      options: [
-        "(A) Most ants forage for food either only in the morning or only during the night.",
-        "(B) Most ants that do not use pheromones to mark the paths they take between their nest and food live in the Sahara Desert.",
-        "(C) If any ants live in the Sahara Desert and forage for food at no time but in the afternoon, those ants generally do not use pheromones to guide themselves between food and their nest. (Correct)",
-        "(D) If any ants do not use pheromones to navigate between food and their nest, those ants use a different substance that does not evaporate in temperatures above 45 degrees Celsius.",
-        "(E) If any Saharan ants forage for food in the afternoon, those ants forage for food less efficiently when temperatures are above 45 degrees Celsius than they do when temperatures are lower.",
-      ],
-    },
 
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

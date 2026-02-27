@@ -21,20 +21,6 @@ export const Lesson7_Drill_HighCognitiveLoad: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '17-7-drill',
-      questionType: 'Must Be True',
-      difficulty: 'hard',
-      stimulus: 'Whenever she considers voting in an election to select one candidate for a position and there is at least one issue important to her, Kay uses the following principle in choosing which course of action to take: it is acceptable for me to vote for a candidate whose opinions differ from mine on at least one issue important to me whenever I disagree with each of the other candidates on even more such issues; it is otherwise unacceptable to vote for that candidate. In the upcoming mayoral election, the three candidates are Legrand, Medina, and Norton. There is only one issue important to Kay, and only Medina shares her opinion on that issue.',
-      question: 'Which one of the following must also be true about Kay\'s course of action in any election to select one candidate for a position?',
-      options: [
-        '(A) If there are no issues important to her, it is unacceptable for her to vote for any candidate in the election.',
-        '(B) If she agrees with each of the candidates on most of the issues important to her, it is unacceptable for her to vote for any candidate in the election.',
-        '(C) If she agrees with a particular candidate on only one issue important to her, it is unacceptable for her to vote for that candidate.',
-        '(D) If she disagrees with each of the candidates on exactly three issues important to her, it is unacceptable for her to vote for any candidate in the election. (Correct)',
-        '(E) If there are more issues important to her on which she disagrees with a particular candidate than there are such issues on which she agrees with that candidate, it is unacceptable for her to vote for that candidate.',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

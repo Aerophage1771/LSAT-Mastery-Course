@@ -39,21 +39,6 @@ export const Lesson4_Quantifiers: Lesson = {
     { type: 'paragraph', text: 'This pattern frequently appears on the LSAT as a two-step derivation: first you derive an overlap using the Overlap Rule, then you chain that overlap through an "All" statement to reach a final conclusion.' },
 
     { type: 'h4', text: 'LSAT in Action: Applying the Overlap Rule' },
-    {
-      type: 'question-card',
-      id: '55-4-q1',
-      questionType: 'Conditional Reasoning',
-      difficulty: 'medium',
-      stimulus: 'Most serious students are happy students, and most serious students go to graduate school. Furthermore, all students who go to graduate school are overworked.',
-      question: 'Which one of the following can be properly inferred from the statements above?',
-      options: [
-        '(A) Most overworked students are happy students.',
-        '(B) Some happy students are overworked. (Correct)',
-        '(C) All overworked students are serious students.',
-        '(D) Some unhappy students go to graduate school.',
-        '(E) All serious students are overworked.'
-      ]
-    },
     { type: 'h4', text: 'Analysis:' },
     { type: 'paragraph', text: 'Let\'s break down the stimulus. **Premise 1:** "Most serious students are happy students" translates to `Serious Students -m-> Happy Students`. **Premise 2:** "...and most serious students go to graduate school" translates to `Serious Students -m-> Graduate School`. **Premise 3:** "Furthermore, all students who go to graduate school are overworked" translates to `Graduate School -> Overworked`. Since the first two premises share the same subject (\'Serious Students\') and use the \'Most\' quantifier, this sets up the Overlap Rule.' },
     { type: 'paragraph', text: 'We can combine the \'Most + Most\' statements to make our first inference: because a majority of Serious Students are Happy and a majority go to Grad School, there must be an overlap. Therefore, `Some Happy Students go to Graduate School` (`Happy <-s-> Graduate School`). We can then chain this new \'Some\' inference with the \'All\' statement from Premise 3: `Happy <-s-> Graduate School -> Overworked`. The result is `Happy <-s-> Overworked`, because if some happy students are in the grad school group, and everyone in that group is overworked, then those happy students must also be overworked. Our final conclusion is that **Some Happy Students are Overworked.**' },
@@ -75,21 +60,6 @@ export const Lesson4_Quantifiers: Lesson = {
     { type: 'paragraph', text: 'Just as important as knowing what you can conclude is knowing what you cannot. It is crucial to distinguish a valid double overlap from an invalid chain. The invalid pattern is: **Most A are B + Most B are C -> NO CONCLUSION about A and C.** The difference is that in the valid Overlap Rule, the shared term is the source (B <-m- A -m-> C), while in the invalid chain, the shared term is in the middle (A -m-> B -m-> C). It fails because the group of "A\'s that are B\'s" might be the specific minority of B\'s that are NOT C\'s. There is no guaranteed overlap.' },
 
     { type: 'h4', text: 'LSAT in Action: Spotting the Flaw' },
-    {
-      type: 'question-card',
-      id: '55-4-q2',
-      questionType: 'Conditional Reasoning',
-      difficulty: 'hard',
-      stimulus: 'Most of the employees of the Compujack Corporation are computer programmers. Since most computer programmers receive excellent salaries from their employers, at least one Compujack employee must receive an excellent salary from Compujack.',
-      question: 'Which one of the following arguments exhibits a flawed pattern of reasoning most similar to the flawed pattern of reasoning exhibited by the argument above?',
-      options: [
-        '(A) Most gardeners are people with a great deal of patience. Since most of Molly\'s classmates are gardeners, at least one of Molly\'s classmates must be a person with a great deal of patience. (Correct)',
-        '(B) Most of Molly\'s classmates are gardeners. Since most gardeners are people with a great deal of patience, some of Molly\'s classmates could be people with a great deal of patience.',
-        '(C) Most gardeners are people with a great deal of patience. Since most of Molly\'s classmates are gardeners, at least one of Molly\'s classmates who is a gardener must be a person with a great deal of patience.',
-        '(D) Most gardeners are people with a great deal of patience. Since most of Molly\'s classmates who garden are women, at least one female classmate of Molly\'s must be a person with a great deal of patience.',
-        '(E) Most of Molly\'s classmates are gardeners with a great deal of patience. Since most of Molly\'s classmates are women, at least one female classmate of Molly\'s must be a gardener with a great deal of patience.'
-      ]
-    },
     { type: 'h4', text: 'Analysis:' },
     { type: 'paragraph', text: 'Let\'s diagram the flawed reasoning. **Premise 1:** `Compujack Employees -m-> Programmers`. **Premise 2:** `Programmers -m-> Excellent Salaries`. **Conclusion:** `Compujack Employees <-s-> Excellent Salaries`. This is the classic invalid quantifier chain (Undistributed Middle). The argument tries to bridge two groups (Compujack Employees and High Earners) via a shared middle group (Programmers), but the connection is broken. The Compujack employees could be the specific minority of programmers who are underpaid. Without a guarantee of overlap, the conclusion is invalid.' },
     

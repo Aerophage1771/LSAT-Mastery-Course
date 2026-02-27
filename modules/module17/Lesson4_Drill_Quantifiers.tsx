@@ -38,20 +38,6 @@ export const Lesson4_Drill_Quantifiers: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '17-4-drill',
-      questionType: 'Must Be True',
-      difficulty: 'medium',
-      stimulus: 'Not surprisingly, there are no professors under the age of eighteen. And, as is well known, no one under eighteen can vote legally. Finally, some brilliant people are professors, some are legal voters, and some are under eighteen.',
-      question: 'If the statements above are true, then on the basis of them which one of the following must also be true?',
-      options: [
-        '(A) No professors are eighteen-year-olds.',
-        '(B) All brilliant people are either professors, legal voters, or under eighteen.',
-        '(C) Some legal voters are not professors.',
-        '(D) Some professors are neither legal voters nor brilliant people.',
-        '(E) Some brilliant people are neither professors nor legal voters. (Correct)',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

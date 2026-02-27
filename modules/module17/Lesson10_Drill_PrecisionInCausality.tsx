@@ -28,20 +28,6 @@ export const Lesson10_Drill_PrecisionInCausality: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '17-10-drill',
-      questionType: 'Must Be True',
-      difficulty: 'medium',
-      stimulus: 'Pollen and other allergens can cause cells in the nose to release histamine, a chemical that inflames nasal tissue and causes runny nose, congestion, and sneezing. Antihistamines minimize these allergy symptoms by blocking the action of histamine. In addition, antihistamines have other effects, including drowsiness. However, histamine plays no role in the processes by which colds produce their symptoms.',
-      question: 'If the statements above are true, which one of the following must also be true?',
-      options: [
-        '(A) Pollen and other allergens do not cause colds.',
-        '(B) Colds are more difficult to treat than allergies.',
-        '(C) Antihistamines, when taken alone, are ineffective against congestion caused by colds.',
-        '(D) The sleeplessness that sometimes accompanies allergies can be effectively treated with antihistamines.',
-        '(E) Any effect antihistamines may have in reducing cold symptoms does not result from blocking the action of histamine. (Correct)',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

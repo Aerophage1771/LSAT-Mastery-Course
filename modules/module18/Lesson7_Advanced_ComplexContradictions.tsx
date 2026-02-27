@@ -33,20 +33,6 @@ export const Lesson7_Advanced_ComplexContradictions: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '18-7-drill',
-      questionType: 'Must Be False',
-      difficulty: 'hard',
-      stimulus: 'At Thornfield Academy, every student who receives a merit scholarship maintains a grade point average above 3.5. Students with a grade point average above 3.5 are eligible for the honors seminar. No first-year student is eligible for the honors seminar. The academy awarded merit scholarships to fifteen students this year, and the total enrollment is four hundred students. Some first-year students receive need-based financial aid, which is awarded independently of academic performance.',
-      question: 'If the statements above are true, which one of the following CANNOT be true?',
-      options: [
-        '(A) Some students who are eligible for the honors seminar do not have merit scholarships.',
-        '(B) A second-year student with a 3.6 grade point average does not have a merit scholarship.',
-        '(C) A first-year student who receives need-based financial aid has a grade point average above 3.5.',
-        '(D) A first-year student at Thornfield Academy received a merit scholarship this year. (Correct)',
-        '(E) Fewer than ten percent of Thornfield Academy students are eligible for the honors seminar.'
-      ]
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

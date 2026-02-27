@@ -37,17 +37,6 @@ export const Lesson9_Advanced_ChallengingAssumption: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
-    { type: 'question-card', id: 'challenging-assumption-worked', questionType: 'Method of Reasoning', difficulty: 'medium',
-      stimulus: "Rifka: We do not need to stop and ask for directions. We would not need to do that unless, of course, we were lost.\nCraig: The fact that we are lost is precisely why we need to stop.",
-      question: "In the exchange above, the function of Craig's comment is to",
-      options: [
-        "(A) contradict the conclusion of Rifka's argument without offering any reason to reject any of Rifka's implicit premises",
-        "(B) deny one of Rifka's implicit premises and thereby arrive at a different conclusion (Correct)",
-        "(C) imply that Rifka's argument is invalid by accepting the truth of its premises while rejecting its conclusion",
-        "(D) provide a counterexample to Rifka's generalization",
-        "(E) affirm the truth of the stated premise of Rifka's argument while remaining noncommittal about its conclusion"
-      ]
-    },
 
     { type: 'hr' },
 

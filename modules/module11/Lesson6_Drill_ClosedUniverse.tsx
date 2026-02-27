@@ -26,20 +26,6 @@ export const Lesson6_Drill_ClosedUniverse: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '11-6-drill',
-      questionType: 'Necessary Assumption',
-      difficulty: 'easy',
-      stimulus: "A reason Larson cannot do the assignment is that she has an unavoidable scheduling conflict. On the other hand, a reason Franks cannot do the assignment is that he does not quite have the assertiveness the task requires. So, the task must be assigned to Parker, the only supervisor in the shipping department other than Larson and Franks.",
-      question: "The argument depends on assuming which one of the following?",
-      options: [
-        "(A) Larson has the assertiveness the task requires.",
-        "(B) The task cannot be assigned to anyone other than a supervisor in the shipping department. (Correct)",
-        "(C) Franks would be assigned the task if Franks had the assertiveness the task requires.",
-        "(D) The task cannot be assigned to anyone who has any kind of scheduling conflict.",
-        "(E) No one who is not a supervisor in the shipping department has the assertiveness this task requires.",
-      ],
-    },
 
     { type: 'hr' },
 

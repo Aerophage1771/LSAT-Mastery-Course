@@ -12,20 +12,6 @@ export const Lesson5_Drill_CausalMechanisms: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '19-5-drill',
-      questionType: 'Paradox / Explain',
-      difficulty: 'medium',
-      stimulus: 'Consumer activist: When antilock brakes were first introduced, it was claimed that they would significantly reduce the incidence of multiple-car collisions, thereby saving lives. Indeed, antilock brakes have reduced the incidence of multiple-car collisions. I maintain, however, that to save lives, automobile manufacturers ought to stop equipping cars with them.',
-      question: 'Which one of the following, if true, most helps to resolve the apparent conflict in the consumer activist\'s statements?',
-      options: [
-        '(A) Drivers and passengers in automobiles with antilock brakes feel less vulnerable, and are thus less likely to wear seat belts. (Correct)',
-        '(B) Under some circumstances, automobiles with traditional brakes stop just as quickly as do automobiles with antilock brakes.',
-        '(C) For inexperienced drivers, antilock brakes are easier to use correctly than are traditional brakes.',
-        '(D) Antilock brakes are considerably more expensive to manufacture than are traditional brakes.',
-        '(E) Antilock brakes are no more effective in preventing multiple-car accidents than in preventing other kinds of traffic accidents.'
-      ]
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

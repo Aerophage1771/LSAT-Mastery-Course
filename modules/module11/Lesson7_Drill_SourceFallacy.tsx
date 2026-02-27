@@ -26,20 +26,6 @@ export const Lesson7_Drill_SourceFallacy: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '11-7-drill',
-      questionType: 'Necessary Assumption',
-      difficulty: 'medium',
-      stimulus: "The proposed coal-burning electric plant should be approved, since no good arguments have been offered against it. After all, all the arguments against it have been presented by competing electricity producers.",
-      question: "Which one of the following is an assumption on which the reasoning above depends?",
-      options: [
-        "(A) The competing electricity producers would stand to lose large amounts of revenue from the building of the coal-burning electric plant.",
-        "(B) If a person's arguments against a proposal are defective, then that person has a vested interest in seeing that the proposal is not implemented.",
-        "(C) Approval of the coal-burning electric plant would please coal suppliers more than disapproval would please suppliers of fuel to the competing electricity producers.",
-        "(D) If good arguments are presented for a proposal, then that proposal should be approved.",
-        "(E) Arguments made by those who have a vested interest in the outcome of a proposal are not good arguments. (Correct)",
-      ],
-    },
 
     { type: 'hr' },
 

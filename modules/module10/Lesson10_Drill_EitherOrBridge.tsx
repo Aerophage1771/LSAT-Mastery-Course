@@ -22,20 +22,6 @@ export const Lesson10_Drill_EitherOrBridge: Lesson = {
 
     { type: 'h3', text: 'Practice Question' },
 
-    { type: 'question-card',
-      id: 'SA-10-10-001',
-      questionType: 'Sufficient Assumption',
-      difficulty: 'medium',
-      stimulus: "Anger in response to insults is unreasonable, for insults are merely assertions that someone has undesirable characteristics. If such an assertion is false, the insulted party ought to pity the ignorance prompting the insult. If it is true, the insulted party should be grateful for such useful information.",
-      question: "Which one of the following, if assumed, enables the argument's conclusion to be properly drawn?",
-      options: [
-        "(A) Actions prompted by ignorance do not warrant hostile reactions.",
-        "(B) Anger is an unreasonable response to useful information.",
-        "(C) Anger is an unreasonable response to any action that should prompt pity or gratitude. (Correct)",
-        "(D) Gratitude and pity are reasonable responses to some forms of hostile or insensitive behavior.",
-        "(E) Pity is the only reasonable reaction to people with undesirable characteristics."
-      ]
-    },
 
     { type: 'hr' },
 

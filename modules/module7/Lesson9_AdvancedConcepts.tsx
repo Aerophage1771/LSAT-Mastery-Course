@@ -78,20 +78,6 @@ export const Lesson9_AdvancedConcepts: Lesson = {
     { type: 'h2', text: 'Hard Practice Problem' },
     { type: 'paragraph', text: "**Instructions:** This question combines all three difficulty factors. Commit to an answer before scrolling down." },
 
-    { type: 'question-card',
-      id: 'ADV-7-9-001',
-      questionType: 'Evaluate the Argument',
-      difficulty: 'hard',
-      stimulus: "Researchers studying a remote island ecosystem found that after a non-native predator species was introduced five years ago, the population of a native ground-nesting bird declined by 60%. The researchers concluded that predation by the introduced species is the primary driver of the bird population's decline.",
-      question: "The answer to which one of the following questions would contribute most to an evaluation of the researchers' conclusion?",
-      options: [
-        "(A) Whether the introduced predator species has also affected other native animal populations on the island",
-        "(B) Whether the native bird population had been stable for the decade prior to the introduction of the predator",
-        "(C) Whether the island experienced significant habitat destruction from a separate cause during the same five-year period (Correct)",
-        "(D) Whether the introduced predator species has natural predators of its own on the island",
-        "(E) Whether the native bird species exists on any other islands in the region",
-      ],
-    },
 
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

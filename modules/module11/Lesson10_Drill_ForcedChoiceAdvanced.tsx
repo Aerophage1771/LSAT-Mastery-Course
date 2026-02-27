@@ -26,20 +26,6 @@ export const Lesson10_Drill_ForcedChoiceAdvanced: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '11-10-drill',
-      questionType: 'Necessary Assumption',
-      difficulty: 'hard',
-      stimulus: "Researcher: The role of chemicals called pheromones in determining the sexual behavior of some animals is well documented. But, even though humans also produce these chemicals, it is clear that psychological factors have taken over this role in us. Whereas for animals these behaviors are involuntary, which is a clear sign of chemical control, humans, by virtue of their free will, choose how they behave, and thus psychological factors take over. So pheromones are merely a vestige of our evolutionary past.",
-      question: "The researcher's argument requires the assumption that",
-      options: [
-        "(A) whatever does not have a chemical explanation must have a purely psychological one",
-        "(B) voluntary action cannot have a chemical explanation (Correct)",
-        "(C) free will can be found only in humans",
-        "(D) voluntary action cannot have an evolutionary explanation",
-        "(E) there is a psychological explanation for the continuing presence of pheromones in humans",
-      ],
-    },
 
     { type: 'hr' },
 

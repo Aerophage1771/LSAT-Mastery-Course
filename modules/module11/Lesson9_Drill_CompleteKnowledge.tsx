@@ -26,20 +26,6 @@ export const Lesson9_Drill_CompleteKnowledge: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '11-9-drill',
-      questionType: 'Necessary Assumption',
-      difficulty: 'hard',
-      stimulus: "Art historian: This painting, purportedly by Mary Cassatt, is a forgery. Although the canvas and other materials are consistent with most of Cassatt's work, and the subject matter is similar to that of Cassatt's finest paintings, the brush style of this painting is not found in any work known to be Cassatt's. Hence this painting is definitely not a genuine Cassatt.",
-      question: "The art historian's argument depends on assuming which one of the following?",
-      options: [
-        "(A) The type of canvas and other materials that Cassatt used in most of her work were readily available to others.",
-        "(B) None of Cassatt's works is painted using a brush style that is not exhibited in any of her known works. (Correct)",
-        "(C) Cassatt's work generally had a characteristic subject matter that distinguished it from the work of other painters of her era.",
-        "(D) The most characteristic feature of Cassatt's work is her brush style.",
-        "(E) No painter other than Cassatt would be able to match Cassatt's brush style perfectly.",
-      ],
-    },
 
     { type: 'hr' },
 

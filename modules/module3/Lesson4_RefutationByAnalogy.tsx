@@ -44,20 +44,6 @@ export const Lesson4_RefutationByAnalogy: Lesson = {
 
     { type: 'h2', text: 'Worked Example' },
 
-    { type: 'question-card',
-      id: 'MR-3-4-001',
-      questionType: 'Method of Reasoning',
-      difficulty: 'medium',
-      stimulus: "Land developer: By attempting to preserve endangered species that otherwise would become extinct during our lifetime, we are wasting money on species that will disappear over time regardless of our efforts. Paleontologists have established that extinction is the normal fate of species on the geological time scale of millions of years.\nEnvironmentalist: To claim that we should let species disappear because all species eventually die out makes about as much sense as arguing that we should not spend money to find a cure for cancer because all humans are inevitably mortal.",
-      question: "The method the environmentalist uses to object to the land developer's argument is to",
-      options: [
-        "(A) clarify a dilemma that is embedded in the land developer's argument",
-        "(B) attack the character of the land developer rather than the position the land developer is taking",
-        "(C) show that more evidence is needed to substantiate the land developer's conclusion",
-        "(D) show that the land developer's line of reasoning would lead to an unacceptable conclusion if applied to a different situation (Correct)",
-        "(E) argue that there are problems that money, however judiciously spent, cannot solve",
-      ],
-    },
 
     { type: 'h3', text: 'Step 1: Deconstruct the Argument' },
     { type: 'paragraph', text: "The question asks for the **environmentalist's** method. Let's map both arguments:" },

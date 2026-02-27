@@ -38,20 +38,6 @@ export const Lesson6_Guide_HardestParadox: Lesson = {
     { type: 'h4', text: 'Practice: A Hard Paradox' },
     { type: 'paragraph', text: 'Apply the strategies above to the following question. The tension is deliberately understated, and the correct resolution requires systemic thinking.' },
 
-    { type: 'question-card',
-      id: '19-6-drill',
-      questionType: 'Paradox / Explain',
-      difficulty: 'hard',
-      stimulus: 'A city enacted a law doubling fines for parking violations in its downtown core. In the first year after the law took effect, the city collected 40 percent less total revenue from downtown parking fines than it had the previous year, even though the number of parking enforcement officers and their patrol hours remained unchanged.',
-      question: 'Which one of the following, if true, most helps to explain the finding described above?',
-      options: [
-        '(A) The city simultaneously raised the price of parking meters in the downtown core.',
-        '(B) Most drivers who regularly parked in the downtown core began using public transit or parking in other areas to avoid the higher fines. (Correct)',
-        '(C) The city did not publicize the change in fines widely before it took effect.',
-        '(D) Parking enforcement officers in the downtown core wrote fewer warning citations after the law took effect.',
-        '(E) Some of the revenue collected from downtown parking fines is used to fund public transit improvements.'
-      ]
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

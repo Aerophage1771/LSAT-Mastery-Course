@@ -43,20 +43,6 @@ export const Lesson8_Drill_NetEffectFlaw: Lesson = {
 
     { type: 'h2', text: 'Practice Question' },
 
-    { type: 'question-card',
-      id: 'PF-6-8-001',
-      questionType: 'Parallel Flaw',
-      difficulty: 'medium',
-      stimulus: "The studies showing that increased consumption of fruits and vegetables may help decrease the incidence of some types of cancer do not distinguish between organically grown and nonorganically grown produce; they were conducted with produce at least some of which contained pesticide residues. The studies may also be taken as showing, therefore, that there is no increased health risk associated with eating fruits and vegetables containing pesticide residues.",
-      question: "The pattern of flawed reasoning in which one of the following is most similar to the pattern of flawed reasoning in the argument above?",
-      options: [
-        "(A) Research shows that the incidence of certain major illnesses, including heart disease and cancer, is decreased in communities that have a modern power plant. The fact that this tendency is present whether the power plant is nuclear or not shows that there is no increased health risk associated with living next to a nuclear power plant. (Correct)",
-        "(B) Research has shown that there is no long-term health risk associated with a diet consisting largely of foods high in saturated fat and cholesterol if such a diet is consumed by someone with a physically active lifestyle. So, exercise is a more useful strategy for achieving cardiological health than is dietary restriction.",
-        "(C) Research has shown that young people who drive motorcycles and receive one full year of extensive driving instruction are in fact less likely to become involved in accidents than those who simply pass a driving test and drive cars. This shows that there is not an inherently greater risk associated with driving a motorcycle than with driving a car.",
-        "(D) Research has shown that kitchen cutting boards retain significant numbers of microbes even after careful washing, but that after washing fewer microbes are found on wooden boards than on plastic boards. There is, therefore, no greater risk of contracting microbial illnesses associated with using wooden cutting boards than with using plastic cutting boards.",
-        "(E) Research shows that there is no greater long-term health benefit associated with taking vitamin supplements than with a moderate increase in the intake of fruits and vegetables. Clearly, then, there is no long-term health risk associated with the failure to take vitamin supplements, so long as enough fruits and vegetables are consumed.",
-      ],
-    },
 
     { type: 'hr' },
 

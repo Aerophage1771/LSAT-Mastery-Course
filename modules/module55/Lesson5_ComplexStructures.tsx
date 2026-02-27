@@ -16,21 +16,6 @@ export const Lesson5_ComplexStructures: Lesson = {
 
     { type: 'h4', text: 'LSAT in Action: Building a Multi-Step Chain' },
     { type: 'paragraph', text: 'Difficult "Must Be True" questions often hide a logical chain within a dense paragraph. Your job is to extract and link the rules.' },
-    {
-      type: 'question-card',
-      id: '55-5-q1',
-      questionType: 'Conditional Reasoning',
-      difficulty: 'hard',
-      stimulus: 'Politician: The current crisis in mathematics education must be overcome if we are to remain competitive in the global economy. Alleviating this crisis requires the employment of successful teaching methods. No method of teaching a subject can succeed that does not get students to spend a significant amount of time outside of class studying that subject.',
-      question: 'Which one of the following statements follows logically from the statements above?',
-      options: [
-        '(A) If students spend a significant amount of time outside of class studying mathematics, the current crisis in mathematics education will be overcome.',
-        '(B) The current crisis in mathematics education will not be overcome unless students spend a significant amount of time outside of class studying mathematics. (Correct)',
-        '(C) Few subjects are as important as mathematics to the effort to remain competitive in the global economy.',
-        '(D) Only if we succeed in remaining competitive in the global economy will students spend a significant amount of time outside of class studying mathematics.',
-        '(E) Students\' spending a significant amount of time outside of class studying mathematics would help us to remain competitive in the global economy.'
-      ]
-    },
     { type: 'h3', text: 'Deep Dive Analysis' },
     { type: 'callout', variant: 'default', title: 'STEP 1 - SYMBOLIZE THE STATEMENTS', text: 
 `**"The current crisis... must be overcome IF we are to remain competitive..."**
@@ -81,21 +66,6 @@ The word NO introduces a global exclusion, often translated as \`A -> ~B\`. Howe
     ]},
 
     { type: 'h4', text: 'LSAT in Action: The "Unless" Rule' },
-    {
-      type: 'question-card',
-      id: '55-5-q2',
-      questionType: 'Conditional Reasoning',
-      difficulty: 'hard',
-      stimulus: 'Superconductors are substances that conduct electricity without resistance at low temperatures. Their use, however, will never be economically feasible, UNLESS there is a substance that superconducts at a temperature above minus 148 degrees Celsius. If there is such a substance, that substance must be an alloy of niobium and germanium. Unfortunately, such alloys superconduct at temperatures no higher than minus 160 degrees Celsius.',
-      question: 'If the statements above are true, which one of the following must also be true?',
-      options: [
-        '(A) The use of superconductors will never be economically feasible. (Correct)',
-        '(B) If the alloys of niobium and germanium do not superconduct at temperatures above minus 148 degrees Celsius, then there are other substances that will do so.',
-        '(C) The use of superconductors could be economically feasible if there is a substance that superconducts at temperatures below minus 148 degrees Celsius.',
-        '(D) Alloys of niobium and germanium do not superconduct at temperatures below minus 160 degrees Celsius.',
-        '(E) No use of alloys of niobium and germanium will ever be economically feasible.'
-      ]
-    },
     { type: 'h3', text: 'Deep Dive Analysis' },
     { type: 'callout', variant: 'default', title: 'STEP 1 - SYMBOLIZE THE RULES', text: 
 `**The "UNLESS" Rule:** "Use... never feasible (\`~EF\`), UNLESS... substance above -148 (\`S > -148\`)."
@@ -146,21 +116,6 @@ The word NO introduces a global exclusion, often translated as \`A -> ~B\`. Howe
     ]},
 
     { type: 'h4', text: 'LSAT in Action: De Morgan\'s Laws in Practice' },
-    {
-      type: 'question-card',
-      id: '55-5-q3',
-      questionType: 'Conditional Reasoning',
-      difficulty: 'hard',
-      stimulus: 'The Rienzi, a passenger ship, sank as a result of a hole in its hull, possibly caused by sabotage. Normally, when a holed ship sinks as rapidly as the Rienzi did, water does not enter the ship quickly enough for the ship to be fully flooded when it reaches the ocean floor. Full flooding can be achieved, however, by sabotage. Any ship that sinks deep into the ocean when not fully flooded will implode. Deep-sea photographs, taken of the sunken Rienzi where it rests on the ocean floor, reveal that the Rienzi did not implode.',
-      question: 'Which one of the following must be true on the basis of the information above?',
-      options: [
-        '(A) The Rienzi was so constructed as to reduce the risk of sinking by impact.',
-        '(B) If the Rienzi became fully flooded, it did so only after it reached the ocean floor.',
-        '(C) If the Rienzi was not sunk by sabotage, water flooded into it unusually fast. (Correct)',
-        '(D) If the Rienzi had sunk more slowly, it would have imploded.',
-        '(E) The Rienzi was so strongly constructed as to resist imploding under deep-sea pressure.'
-      ]
-    },
     { type: 'h3', text: 'Deep Dive Analysis' },
     { type: 'callout', variant: 'default', title: 'STEP 1 - SYMBOLIZE THE CORE RULE', text:
 `**"ANY ship that sinks deep (SD) WHEN not fully flooded (NFF) will implode (I)."**
