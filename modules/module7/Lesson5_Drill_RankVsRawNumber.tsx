@@ -45,20 +45,6 @@ export const Lesson5_Drill_RankVsRawNumber: Lesson = {
     { type: 'h2', text: 'Practice Problem' },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. This is a high-difficulty question — only 36% of test-takers answered correctly. Commit to an answer before scrolling down to the step-by-step analysis." },
 
-    { type: 'question-card',
-      id: 'EV-7-5-001',
-      questionType: 'Evaluate the Argument',
-      difficulty: 'hard',
-      stimulus: "Columnist: George Orwell's book 1984 has exercised much influence on a great number of this newspaper's readers. One thousand readers were surveyed and asked to name the one book that had the most influence on their lives. The book chosen most often was the Bible; 1984 was second.",
-      question: "The answer to which one of the following questions would most help in evaluating the columnist's argument?",
-      options: [
-        "(A) How many books had each person surveyed read?",
-        "(B) How many people chose books other than 1984? (Correct)",
-        "(C) How many people read the columnist's newspaper?",
-        "(D) How many books by George Orwell other than 1984 were chosen?",
-        "(E) How many of those surveyed had actually read the books they chose?",
-      ],
-    },
 
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

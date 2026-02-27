@@ -47,17 +47,6 @@ export const Lesson10_Advanced_SpecificJudgment: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
-    { type: 'question-card', id: 'specific-judgment-worked-example', questionType: 'Main Conclusion', difficulty: 'hard',
-      stimulus: "Novel X and Novel Y are both semiautobiographical novels and contain many very similar themes and situations, which might lead one to suspect plagiarism on the part of one of the authors. However, it is more likely that the similarity of themes and situations in the two novels is merely coincidental, since both authors are from very similar backgrounds and have led similar lives.",
-      question: "Which one of the following most accurately expresses the conclusion drawn in the argument?",
-      options: [
-        "(A) Novel X and Novel Y are both semiautobiographical novels, and the two novels contain many very similar themes and situations.",
-        "(B) The fact that Novel X and Novel Y are both semiautobiographical novels and contain many very similar themes and situations might lead one to suspect plagiarism on the part of one of the authors.",
-        "(C) The author of Novel X and the author of Novel Y are from very similar backgrounds and have led very similar lives.",
-        "(D) It is less likely that one of the authors of Novel X or Novel Y is guilty of plagiarism than that the similarity of themes and situations in the two novels is merely coincidental. (Correct)",
-        "(E) If the authors of Novel X and Novel Y are from very similar backgrounds and have led similar lives, suspicions that either of the authors plagiarized are very likely to be unwarranted."
-      ]
-    },
 
     { type: 'hr' },
 

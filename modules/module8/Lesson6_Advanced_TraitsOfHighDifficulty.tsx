@@ -70,21 +70,6 @@ export const Lesson6_Advanced_TraitsOfHighDifficulty: Lesson = {
 
     { type: 'h3', text: 'Practice: High-Difficulty Weaken Question' },
     { type: 'paragraph', text: 'Apply the traits and strategies from this lesson to the following question. Pay attention to multi-step reasoning and abstract language in the answer choices.' },
-    {
-      type: 'question-card',
-      id: '8-6-practice',
-      questionType: 'Weaken',
-      difficulty: 'hard',
-      stimulus: 'Researchers found that cities that implemented congestion pricing — charging drivers a fee to enter downtown areas during peak hours — experienced a 15% reduction in downtown traffic volume within two years. The researchers concluded that congestion pricing is an effective method for reducing urban traffic congestion.',
-      question: 'Which one of the following, if true, most weakens the researchers\' argument?',
-      options: [
-        'Some cities that implemented congestion pricing also invested in expanded public transit during the same period.',
-        'The fees charged under congestion pricing programs are typically too low to affect the driving habits of wealthier commuters.',
-        'In cities with congestion pricing, the total number of vehicle-miles traveled within the metropolitan area increased by 10% over the same two-year period. (Correct)',
-        'Several cities considered implementing congestion pricing but decided the political costs were too high.',
-        'The cities studied were already experiencing a gradual decline in downtown traffic before congestion pricing was implemented.'
-      ]
-    },
     { type: 'hr' },
 
     { type: 'h3', text: 'Answer Explanation' },

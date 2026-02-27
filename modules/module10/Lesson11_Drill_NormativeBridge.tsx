@@ -20,20 +20,6 @@ export const Lesson11_Drill_NormativeBridge: Lesson = {
 
     { type: 'h3', text: 'Practice Question' },
 
-    { type: 'question-card',
-      id: 'SA-10-11-001',
-      questionType: 'Sufficient Assumption',
-      difficulty: 'medium',
-      stimulus: "Some theorists argue that literary critics should strive to be value-neutral in their literary criticism. These theorists maintain that by exposing the meaning of literary works without evaluating them, critics will enable readers to make their own judgments about the works' merits. But literary criticism cannot be completely value-neutral. Thus, some theorists are mistaken about what is an appropriate goal for literary criticism.",
-      question: "The argument's conclusion follows logically if which one of the following is assumed?",
-      options: [
-        "(A) Any critic who is able to help readers make their own judgments about literary works' merits should strive to produce value-neutral criticism.",
-        "(B) If it is impossible to produce completely value-neutral literary criticism, then critics should not even try to be value-neutral. (Correct)",
-        "(C) Critics are more likely to provide criticisms of the works they like than to provide criticisms of the works they dislike.",
-        "(D) The less readers understand the meaning of a literary work, the less capable they will be of evaluating that work's merits.",
-        "(E) Critics who try to avoid rendering value judgments about the works they consider tend to influence readers' judgments less than other critics do."
-      ]
-    },
 
     { type: 'hr' },
 

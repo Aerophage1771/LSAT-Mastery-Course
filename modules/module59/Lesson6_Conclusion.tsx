@@ -54,20 +54,6 @@ export const Lesson6_Conclusion: Lesson = {
     { type: 'h4', text: 'Advanced Practice: The Multi-Flaw Argument' },
     { type: 'paragraph', text: 'Consider this illustrative example that layers multiple quantitative errors—exactly the kind of complex argument you might encounter on the most difficult LSAT questions:' },
 
-    { type: 'question-card',
-      id: 'illustrative-59-6-001',
-      questionType: 'LSAT Math',
-      difficulty: 'hard',
-      stimulus: 'A city health department reports that the average hospital wait time decreased from 4.2 hours to 3.1 hours after a new triage policy was implemented. During the same period, the city opened three new urgent care clinics, and overall emergency room visits dropped by 35%. The department concludes that the new triage policy is responsible for the reduced wait times and recommends that other cities adopt the same policy to achieve similar results.',
-      question: 'The reasoning in the argument is most vulnerable to criticism on the grounds that it',
-      options: [
-        '(A) takes for granted that the average wait time accurately reflects the experience of a typical patient',
-        '(B) fails to account for an alternative explanation that could wholly or partially explain the decrease in wait times (Correct)',
-        '(C) relies on a sample of hospitals that may not be representative of hospitals in other cities',
-        '(D) assumes that a policy that works in one city will necessarily work in other cities with different demographics',
-        '(E) ignores the possibility that wait times might have decreased even further without the new policy'
-      ]
-    },
 
     { type: 'accordion', title: 'Full Analysis of Advanced Practice Question', content: [
       { type: 'paragraph', text: '**Why (B) is correct:** The argument attributes the decreased wait times entirely to the new triage policy, but it provides a glaring alternative explanation in its own premises: three new urgent care clinics opened, and ER visits dropped by 35%. If a third of patients shifted to urgent care clinics, wait times would naturally fall—regardless of any triage changes. The argument fails to disentangle the effect of the policy from the effect of reduced patient volume.' },

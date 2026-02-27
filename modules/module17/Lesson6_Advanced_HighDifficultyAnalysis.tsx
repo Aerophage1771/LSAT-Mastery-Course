@@ -51,20 +51,6 @@ export const Lesson6_Advanced_HighDifficultyAnalysis: Lesson = {
     { type: 'h3', text: 'Hard Drill: High-Difficulty Must Be True' },
     { type: 'paragraph', text: 'This question combines two of the three difficulty factors: high cognitive load (nested conditional rules) and multi-step inference (connecting a conditional chain through a contrapositive). Read slowly, map the rules, and derive the conclusion before looking at the answers.' },
 
-    { type: 'question-card',
-      id: '17-6-drill',
-      questionType: 'Must Be True',
-      difficulty: 'hard',
-      stimulus: 'Every member of the Rocktown school board is also a member of the town council. No member of the town council owns a house within the town limits that was built before 1900. Dorsey is a member of the Rocktown school board and owns two houses within the town limits.',
-      question: 'If the statements above are true, which one of the following must also be true?',
-      options: [
-        '(A) Dorsey\'s houses are both on the town council\'s approved list.',
-        '(B) No member of the Rocktown school board owns a house within the town limits built before 1900. (Correct)',
-        '(C) Dorsey does not own any houses outside the town limits.',
-        '(D) All members of the town council who own houses within the town limits are on the school board.',
-        '(E) Dorsey has been a member of the town council longer than most other members.',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

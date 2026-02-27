@@ -33,20 +33,6 @@ export const Lesson5_Drill_AccountabilityPrinciple: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '12-5-drill',
-      questionType: 'Principle-Strengthen',
-      difficulty: 'medium',
-      stimulus: "A favorable biography of a politician omits certain incriminating facts about the politician that were available to anyone when the book was written. The book\u2019s author claims that, because he was unaware of these facts when he wrote the book, he is not accountable for the fact that readers were misled by this omission. In a biographer, however, ignorance of this kind cannot be used to evade blame for misleading readers.",
-      question: "Which one of the following principles, if established, does most to justify the position advanced by the passage?",
-      options: [
-        "(A) An author of a biography should not be blamed for whether the book is perceived to be favorable or unfavorable by readers of the biography.",
-        "(B) An author of a biography should be blamed for readers\u2019 misperceptions only when facts are omitted deliberately in order to mislead the readers.",
-        "(C) An author of a biography should not be blamed for omitting facts if those facts would have supported the author\u2019s view.",
-        "(D) An author of a biography should be blamed for misleading readers only if facts are omitted to which the author alone had access when the biography was written.",
-        "(E) An author of a biography should be blamed for readers\u2019 misperceptions caused by omitting facts that were widely available when the biography was written. (Correct)",
-      ],
-    },
 
     { type: 'hr' },
 

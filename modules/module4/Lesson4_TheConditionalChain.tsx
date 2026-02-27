@@ -68,20 +68,6 @@ export const Lesson4_TheConditionalChain: Lesson = {
     { type: 'h2', text: 'Worked Example' },
     { type: 'paragraph', text: "Let's apply the full 4-step method to a conditional chain question." },
 
-    { type: 'question-card',
-      id: 'PR-4-4-001',
-      questionType: 'Parallel Reasoning',
-      difficulty: 'medium',
-      stimulus: "If Patricia eats a heavy, spicy meal tonight, she will get a bad case of heartburn later. If Patricia gets a bad case of heartburn later, she will be grouchy tomorrow morning. So if Patricia eats a heavy, spicy meal tonight, she will be grouchy tomorrow morning.",
-      question: "Which one of the following arguments is most similar in its logical features to the argument above?",
-      options: [
-        "(A) If Ruth plants only daffodils in her garden, the garden will have only yellow flowers. Since no flowers are blooming in Ruth's garden, she must not have planted only daffodils.",
-        "(B) If Shawn starts gardening in early spring, he will have plenty of tomatoes for canning. But he does not have plenty of tomatoes for canning, so either he did not start gardening in early spring or he did not plant tomatoes early.",
-        "(C) Maria plants either petunias or geraniums in her garden every year. Since both petunias and geraniums are flowers, Maria will have either purple or red flowers in her garden.",
-        "(D) If Li plants old rose varieties, her garden will look beautiful. If Li's garden looks beautiful, Li's neighbors will be impressed. So if Li plants old rose varieties, her neighbors will be impressed. (Correct)",
-        "(E) If Bryan's fruit trees are to produce well, he must either prune them in the fall or fertilize them in the spring. Since Bryan always prunes his trees in the fall, Bryan is sure to fertilize his trees this spring.",
-      ],
-    },
 
     { type: 'h3', text: 'Step-by-Step Solution' },
 

@@ -29,20 +29,6 @@ export const Lesson4_Drill_ApplyingDefinitions: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '16-4-drill',
-      questionType: 'Most Strongly Supported',
-      difficulty: 'medium',
-      stimulus: 'Jones is selling a house to Smith. The contract between the two specifies that for up to a year after ownership is transferred, Jones will be responsible for repairing any "major structural defects," defined as defects in the roof or roof-supporting components of the house, that might be found. Jones is not responsible for any other repairs. The house has a truss roof, which means that the only walls that support the roof are the exterior walls.',
-      question: 'It can be properly concluded from the information above that',
-      options: [
-        '(A) Jones did not know of any defects in the roof or roof-supporting components of the house at the time the contract was written.',
-        '(B) Although other components of the house may contain defects, the roof and roof-supporting components of the house are currently free from such defects.',
-        '(C) The contract does not oblige Jones to repair any defects in the house\'s nonexterior walls after ownership of the house has been transferred. (Correct)',
-        '(D) Smith will be obliged to repair all structural defects in the house within a year after ownership is transferred, except those for which Jones is responsible.',
-        '(E) In the past Jones has had to make repairs to some of the house\'s exterior walls.',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

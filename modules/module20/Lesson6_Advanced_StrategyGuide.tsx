@@ -50,17 +50,6 @@ export const Lesson6_Advanced_StrategyGuide: Lesson = {
     { type: 'hr' },
     { type: 'h3', text: 'Advanced Practice: Hard Question' },
     { type: 'paragraph', text: 'Apply the strategies above to this challenging dialogue. Pay particular attention to what each speaker is *implicitly committed* to.' },
-    { type: 'question-card', id: '20-6-drill', questionType: 'Point at Issue', difficulty: 'hard',
-      stimulus: 'Martinez: Our city should replace its aging bus fleet with electric buses. Electric buses produce zero tailpipe emissions, which would significantly improve air quality in the neighborhoods along bus routes where respiratory illness rates are highest.\nChandra: Replacing the fleet would be a mistake. Manufacturing electric buses generates substantially more carbon emissions than manufacturing conventional buses. Since the primary goal of any transit policy should be minimizing total carbon output, we should instead invest in extending the service life of our current fleet through retrofitting.',
-      question: 'Martinez and Chandra are committed to disagreeing about which one of the following?',
-      options: [
-        '(A) Whether the city\'s current bus fleet is in need of replacement or repair',
-        '(B) Whether electric buses produce fewer tailpipe emissions than conventional buses',
-        '(C) Whether the environmental impact of manufacturing a vehicle is relevant to evaluating the merits of a transit fleet decision (Correct)',
-        '(D) Whether respiratory illness rates are higher in neighborhoods along bus routes',
-        '(E) Whether reducing carbon emissions is a worthwhile policy objective'
-      ]
-    },
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
     { type: 'h3', text: 'Analysis of Advanced Question' },

@@ -28,20 +28,6 @@ export const Lesson6_Drill_MotivatedBlindness: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '14-6-drill',
-      questionType: 'Principle - Generalization',
-      difficulty: 'hard',
-      stimulus: 'The use of space-based satellites to study environmental conditions on Earth is an important development in the conservation movement\'s history. Environmental problems may now be observed long before they otherwise would be noticed, allowing for intervention before they reach the crisis stage. It is no wonder that environmentalists fail to consider both that spacecraft may damage the ozone layer and that this damage could be serious enough to warrant discontinuing spaceflight.',
-      question: 'The reasoning above most closely conforms to which one of the following principles?',
-      options: [
-        '(A) People tend to ignore possible objectionable consequences of actions that support their activities. (Correct)',
-        '(B) A negative consequence of an activity may be outweighed by its great positive consequences.',
-        '(C) Technology usually has at least some negative impact on the environment, even if it is largely beneficial.',
-        '(D) Even well-intentioned attempts to solve problems sometimes make them worse.',
-        '(E) Attempts to employ technology often have unforeseen consequences that may be negative.',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

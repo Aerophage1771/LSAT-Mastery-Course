@@ -43,20 +43,6 @@ export const Lesson4_Drill_BaselineFlaw: Lesson = {
     { type: 'h2', text: "Practice Problem" },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
 
-    { type: 'question-card',
-      id: 'DR-8-4-001',
-      questionType: 'Weaken',
-      difficulty: 'medium',
-      stimulus: "In defending the Hyperion School of Journalism from charges that its program is of little or no value to its students, the dean of the school pointed to its recent success in placing students: 65 percent of its graduates went on to internships or jobs in print or broadcast journalism.",
-      question: "Which one of the following, if true, most seriously undermines the defense offered by the dean?",
-      options: [
-        "(A) More than half of the school's students came from jobs in journalism to improve their skills. (Correct)",
-        "(B) Some newspaper editors do not regard journalism school as a necessary part of the training of a journalist.",
-        "(C) The number of cities with more than one major newspaper has declined sharply over the last 25 years.",
-        "(D) The program offered by the Hyperion School of Journalism is similar in quality and content to those offered by its peer institutions.",
-        "(E) The proportion of applicants to the Hyperion School of Journalism that are admitted is lower than it was ten years ago."
-      ],
-    },
 
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

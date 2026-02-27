@@ -30,20 +30,6 @@ export const Lesson6_Drill_AdvancedApplication: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '13-6-drill',
-      questionType: 'Principle - Apply',
-      difficulty: 'hard',
-      stimulus: "Ethicist: As a function of one's job and societal role, one has various duties. There are situations where acting in accord with one of these duties has disastrous consequences, and thus the duties are not absolute. However, it is a principle of morality that if one does not have overwhelming evidence that fulfilling such a duty will have disastrous consequences, one ought to fulfill it.",
-      question: "Which one of the following most closely conforms to the principle of morality cited by the ethicist?",
-      options: [
-        "(A) A teacher thinks that a certain student has received the course grade merited by the quality of his work. The teacher should fulfill her duty not to raise the student's grade, even though the lower grade might harm the student's chance of obtaining an internship. (Correct)",
-        "(B) A person should not fulfill his duty to tell his friend the truth about the friend's new haircut, because lying will make the friend happier than the truth would.",
-        "(C) A police investigator discovers that a contractor has slightly overcharged wealthy customers in order to lower rates for a charity. The investigator should not fulfill his duty to report the contractor provided that the contractor stops the practice.",
-        "(D) A psychiatrist's patient tells her about his recurring nightmares of having committed a terrible crime. The psychiatrist should fulfill her duty to report this to the authorities because the patient may have broken the law, even though the psychiatrist also has a duty of confidentiality to her patients.",
-        "(E) A journalist thinks there is a slight chance that a story about a developing crisis will endanger innocent lives. Therefore, the journalist should await further developments before fulfilling his duty to file the story.",
-      ],
-    },
 
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

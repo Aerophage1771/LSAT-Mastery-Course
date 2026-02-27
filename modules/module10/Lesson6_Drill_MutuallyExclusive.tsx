@@ -30,20 +30,6 @@ export const Lesson6_Drill_MutuallyExclusive: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '10-6-drill',
-      questionType: 'Sufficient Assumption',
-      difficulty: 'hard',
-      stimulus: "H. G. Wells's great dramatic novel The Time Machine is classified as science fiction simply because it takes place in the future. But this classification is inappropriate because Wells's book possesses something that great dramatic novels have and science fiction generally lacks — compelling characters that enable the reader to become absorbed in their plight and not just in the author's representation of the future of technology.",
-      question: "The argument's conclusion follows logically if which one of the following is assumed?",
-      options: [
-        "(A) All novels that contain compelling characters are great dramatic novels.",
-        "(B) Novels can always be clearly classified into distinct genres.",
-        "(C) A work of science fiction cannot achieve greatness unless it contains compelling characters.",
-        "(D) The most important determinant of a novel's quality is the strength of its characters.",
-        "(E) A dramatic novel cannot both be great and belong to the genre of science fiction. (Correct)",
-      ],
-    },
 
     { type: 'hr' },
 

@@ -62,20 +62,6 @@ export const Lesson11_Advanced_CorrelationalRule: Lesson = {
     { type: 'h2', text: 'Worked Example' },
     { type: 'paragraph', text: "Let's apply the full method to a correlational rule question." },
 
-    { type: 'question-card',
-      id: 'PR-4-11-001',
-      questionType: 'Parallel Reasoning',
-      difficulty: 'medium',
-      stimulus: "The higher the altitude, the thinner the air. Since Mexico City's altitude is higher than that of Panama City, the air must be thinner in Mexico City than in Panama City.",
-      question: "Which one of the following arguments is most similar in its reasoning to the argument above?",
-      options: [
-        "(A) As one gets older one gets wiser. Since Henrietta is older than her daughter, Henrietta must be wiser than her daughter.",
-        "(B) The more egg whites used and the longer they are beaten, the fluffier the meringue. Since Lydia used more egg whites in her meringue than Joseph used in his, Lydia's meringue must be fluffier than Joseph's.",
-        "(C) The people who run the fastest marathons these days are faster than the people who ran the fastest marathons ten years ago. Charles is a marathon runner. So Charles must run faster marathons these days than he did ten years ago.",
-        "(D) The older a tree, the more rings it has. The tree in Lou's yard is older than the tree in Theresa's yard. Therefore, the tree in Lou's yard must have more rings than does the tree in Theresa's yard. (Correct)",
-        "(E) The bigger the vocabulary a language has, the harder it is to learn. English is harder to learn than Italian. Therefore, English must have a bigger vocabulary than Italian.",
-      ],
-    },
 
     { type: 'h3', text: 'Step-by-Step Solution' },
 
@@ -113,20 +99,6 @@ export const Lesson11_Advanced_CorrelationalRule: Lesson = {
 
     { type: 'h2', text: 'A Second Practice Question' },
 
-    { type: 'question-card',
-      id: 'PR-4-11-002',
-      questionType: 'Parallel Reasoning',
-      difficulty: 'hard',
-      stimulus: "The deeper a mine shaft, the higher the temperature inside it. The Kimberley mine shaft in South Africa is deeper than the TauTona mine shaft. Therefore, the temperature inside the Kimberley shaft must be higher than inside the TauTona shaft.",
-      question: "Which one of the following arguments is most similar in its reasoning to the argument above?",
-      options: [
-        "(A) The more practice a musician gets, the better the musician performs. Since Yuki practices more than Ren, Yuki must perform better than Ren. (Correct)",
-        "(B) The wider a river, the slower it flows. The Amazon is the widest river. Therefore, the Amazon must be the slowest river in the world.",
-        "(C) The more expensive a car, the more reliable it tends to be. Since Dasha's car is more reliable than Ivan's, Dasha's car must have been more expensive.",
-        "(D) The taller a building, the more floors it has. The Empire State Building is one of the tallest buildings in the world. Therefore, it must have many floors.",
-        "(E) The more sunlight a plant receives, the faster it grows. Since both Plant X and Plant Y receive the same amount of sunlight, they must grow at the same rate.",
-      ],
-    },
 
     { type: 'h3', text: 'Solution Walkthrough' },
     { type: 'paragraph', text: "The stimulus applies a direct correlation (More A → More B) to a between-item comparison on the input dimension. The conclusion follows validly on the output dimension." },

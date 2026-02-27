@@ -49,20 +49,6 @@ export const Lesson9_Drill_OverlapFlaw: Lesson = {
 
     { type: 'h2', text: 'Practice Question' },
 
-    { type: 'question-card',
-      id: 'PF-6-9-001',
-      questionType: 'Parallel Flaw',
-      difficulty: 'medium',
-      stimulus: "Not all tenured faculty are full professors. Therefore, although every faculty member in the linguistics department has tenure, it must be the case that not all of the faculty members in the linguistics department are full professors.",
-      question: "The flawed pattern of reasoning exhibited by the argument above is most similar to that exhibited by which one of the following?",
-      options: [
-        "(A) Although all modern office towers are climate-controlled buildings, not all office buildings are climate-controlled. Therefore, it must be the case that not all office buildings are modern office towers.",
-        "(B) All municipal hospital buildings are massive, but not all municipal hospital buildings are forbidding in appearance. Therefore, massive buildings need not present a forbidding appearance.",
-        "(C) Although some buildings designed by famous architects are not well proportioned, all government buildings are designed by famous architects. Therefore, some government buildings are not well proportioned. (Correct)",
-        "(D) Not all public buildings are well designed, but some poorly designed public buildings were originally intended for private use. Therefore, the poorly designed public buildings were all originally designed for private use.",
-        "(E) Although some cathedrals are not built of stone, every cathedral is impressive. Therefore, buildings can be impressive even though they are not built of stone.",
-      ],
-    },
 
     { type: 'hr' },
 

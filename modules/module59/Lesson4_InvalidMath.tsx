@@ -21,17 +21,6 @@ export const Lesson4_InvalidMath: Lesson = {
 
     { type: 'hr' },
     { type: 'h4', text: 'Practice Question' },
-    { type: 'question-card', id: 'illustrative-59-4', questionType: 'LSAT Math', difficulty: 'medium',
-      stimulus: 'A health official reports that the rate of a rare disease among factory workers is triple the rate in the general population. A journalist concludes that most of the people in the city who have the disease must be factory workers.',
-      question: 'The journalist\'s reasoning is most vulnerable to criticism on the grounds that it',
-      options: [
-        '(A) assumes that the disease can only be contracted at the factory',
-        '(B) ignores that factory workers may have been tested more frequently',
-        '(C) overlooks that factory workers are a small fraction of the city\'s population, so even a tripled rate may account for few total cases (Correct)',
-        '(D) fails to consider whether the disease rate has changed over time',
-        '(E) confuses correlation between occupation and disease with causation'
-      ]
-    },
 
     { type: 'callout', variant: 'summary', title: 'Full Analysis', text: '**(C) is correct.** This is base-rate neglect. A rate three times higher sounds significant, but if factory workers are only 2% of the population, their share of total cases is still small. The journalist leaps from a higher *rate* to a claim about *most cases*\u2014ignoring that the general population\'s larger base produces far more absolute cases.\n\n(A) and (E) introduce causation issues the argument doesn\'t raise; (B) is plausible but not the core flaw; (D) is irrelevant to the current comparison.' }
   ]

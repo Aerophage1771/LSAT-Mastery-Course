@@ -57,20 +57,6 @@ export const Lesson10_Advanced_StatisticalRebuttal: Lesson = {
     { type: 'h2', text: 'Worked Example' },
     { type: 'paragraph', text: "Let's apply the full method to a statistical rebuttal question." },
 
-    { type: 'question-card',
-      id: 'PR-4-10-001',
-      questionType: 'Parallel Reasoning',
-      difficulty: 'medium',
-      stimulus: "Researcher: The vast majority of a person's dreams bear no resemblance whatsoever to real events that follow the dreams. Thus, it is unreasonable to believe that one has extrasensory perception solely on the basis of having had several vivid dreams about events that happen after the dreams.",
-      question: "Which one of the following arguments is most similar in its reasoning to the argument above?",
-      options: [
-        "(A) It is unreasonable to believe that a new drug cures heart disease when it is tested, albeit successfully, on only a few patients. Most new drugs require testing on large numbers of patients before they are considered effective.",
-        "(B) Many people who undergo surgery for ulcers show no long-term improvement. So it is unreasonable to believe that surgery for ulcers is effective, even though ulcer surgery benefits many people as well.",
-        "(C) Even though many cancer patients experience remissions without drinking herbal tea, it is unreasonable to believe that not drinking herbal tea causes such remissions. Several factors are known to be relevant to cancer remission.",
-        "(D) A number of people who die prematurely take aspirin. But it is unreasonable to conclude that aspirin is dangerous. Most people who take aspirin do not die prematurely. (Correct)",
-        "(E) A significant number of children raised near power lines develop cancer. So it is unreasonable to deny a connection between living near power lines and developing cancer, even though many people living near power lines never develop cancer.",
-      ],
-    },
 
     { type: 'h3', text: 'Step-by-Step Solution' },
 
@@ -107,20 +93,6 @@ export const Lesson10_Advanced_StatisticalRebuttal: Lesson = {
 
     { type: 'h2', text: 'A Second Practice Question' },
 
-    { type: 'question-card',
-      id: 'PR-4-10-002',
-      questionType: 'Parallel Reasoning',
-      difficulty: 'hard',
-      stimulus: "Although a handful of companies that adopted the open-office layout reported increased collaboration, the overwhelming majority of companies that adopted it reported no change in collaboration rates. Therefore, it is unwarranted to claim that open-office layouts increase collaboration.",
-      question: "Which one of the following arguments is most similar in its pattern of reasoning to the argument above?",
-      options: [
-        "(A) Although a few patients who took the supplement reported feeling more energetic, the vast majority of patients who took it reported no change in energy levels. Therefore, it is unwarranted to claim that the supplement increases energy. (Correct)",
-        "(B) Several studies have linked moderate wine consumption to heart health. However, excessive wine consumption is clearly harmful. Therefore, it is unwarranted to recommend wine for health benefits.",
-        "(C) Most employees who work from home report higher job satisfaction. A small number report lower satisfaction. Therefore, working from home likely increases job satisfaction.",
-        "(D) Although many athletes use visualization techniques, only a few report significant performance improvements. Therefore, visualization is an effective training tool for those few athletes.",
-        "(E) The majority of students who use the new textbook score higher on exams. Therefore, it is reasonable to conclude that the new textbook improves exam performance.",
-      ],
-    },
 
     { type: 'h3', text: 'Solution Walkthrough' },
     { type: 'paragraph', text: "The stimulus follows the base rate dismissal pattern: a handful of positive cases (small sample) vs. the overwhelming majority showing no effect (base rate) → it is unwarranted to claim the effect exists (dismissive conclusion)." },

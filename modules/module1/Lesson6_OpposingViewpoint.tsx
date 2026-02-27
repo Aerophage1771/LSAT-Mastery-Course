@@ -62,17 +62,6 @@ export const Lesson6_OpposingViewpoint: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example (PT-129-S-2-Q-13)' },
-    { type: 'question-card', id: 'ov-worked-example', questionType: 'Argument Part', difficulty: 'medium',
-      stimulus: "Administrators of educational institutions are enthusiastic about the educational use of computers because they believe that it will enable schools to teach far more courses with far fewer teachers than traditional methods allow. Many teachers fear computers for the same reason. But this reason is mistaken. Computerized instruction requires more, not less, time of instructors, which indicates that any reduction in the number of teachers would require an accompanying reduction in courses offered.",
-      question: "The statement that the educational use of computers enables schools to teach far more courses with far fewer teachers figures in the argument in which one of the following ways?",
-      options: [
-        "(A) It is presented as a possible explanation for an observation that follows it.",
-        "(B) It is a statement of the problem the argument sets out to solve.",
-        "(C) It is a statement that the argument is designed to refute. (Correct)",
-        "(D) It is a statement offered in support of the argument's main conclusion.",
-        "(E) It is the argument's main conclusion."
-      ]
-    },
 
     { type: 'hr' },
 

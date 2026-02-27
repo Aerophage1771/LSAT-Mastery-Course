@@ -49,17 +49,6 @@ export const Lesson7_AdvancedConcepts: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example: A Genuinely Hard Question' },
-    { type: 'question-card', id: 'advanced-hard-mc-example', questionType: 'Main Conclusion', difficulty: 'hard',
-      stimulus: "Political theorist: The chief of state combats the premier combats the country's opposition parties. Furthermore, the party that combats the premier combats every party that the chief of state combats. However, no party combats itself. Therefore, the chief of state is not the premier.",
-      question: "Which one of the following most accurately expresses the main conclusion of the political theorist's argument?",
-      options: [
-        "(A) The premier combats every party that the chief of state combats.",
-        "(B) No party combats itself.",
-        "(C) The chief of state is not the premier. (Correct)",
-        "(D) The chief of state combats the premier.",
-        "(E) The party that combats the premier combats every party that the chief of state combats."
-      ]
-    },
 
     { type: 'hr' },
 

@@ -61,20 +61,6 @@ export const Lesson7_TheQuantifierArgument: Lesson = {
     { type: 'h2', text: 'Worked Example' },
     { type: 'paragraph', text: "Let's apply the full method to a quantifier argument question." },
 
-    { type: 'question-card',
-      id: 'PR-4-7-001',
-      questionType: 'Parallel Reasoning',
-      difficulty: 'medium',
-      stimulus: "Every new play that runs for more than three months is either a commercial or a critical success. Last year, all new plays that were critical successes were also commercial successes. Therefore, every new play that ran for more than three months last year was a commercial success.",
-      question: "The pattern of reasoning in which one of the following arguments is most similar to that in the argument above?",
-      options: [
-        "(A) Most new restaurants require either good publicity or a good location in order to succeed. The Vineyard has neither good publicity nor a good location. Hence, The Vineyard is unlikely to succeed.",
-        "(B) Every best-selling cookbook published last year is both well written and contains beautiful photographs. Cleveland's cookbook is well written and contains beautiful photographs. Therefore, Cleveland's cookbook is a best seller.",
-        "(C) All students at the Freeman School of Cooking study either desserts or soups in their second year. This year, all Freeman students studying soups are also studying desserts. Therefore, every second-year student at Freeman is studying desserts this year. (Correct)",
-        "(D) Chefs who become celebrities either open their own restaurants or write books about their craft, but not both. Endicott is a celebrity chef who has opened her own restaurant. Therefore, Endicott does not write books about her craft.",
-        "(E) Every catering service in Woodside Township will accept both residential and business catering assignments. Peggy's Fine Foods does not accept business catering. Hence, Peggy's Fine Foods is not in Woodside Township.",
-      ],
-    },
 
     { type: 'h3', text: 'Step-by-Step Solution' },
 
@@ -114,20 +100,6 @@ export const Lesson7_TheQuantifierArgument: Lesson = {
     { type: 'h2', text: 'A Second Practice Question' },
     { type: 'paragraph', text: "Try this harder example that tests the double-most overlap pattern:" },
 
-    { type: 'question-card',
-      id: 'PR-4-7-002',
-      questionType: 'Parallel Reasoning',
-      difficulty: 'hard',
-      stimulus: "Most of the city council members support the park renovation. Most of the city council members also support the new library. Therefore, at least some supporters of the park renovation also support the new library.",
-      question: "Which one of the following arguments is most similar in its pattern of reasoning to the argument above?",
-      options: [
-        "(A) Most of the employees in the marketing department speak French. Most of the employees in the marketing department also speak Spanish. Therefore, at least some French speakers in the department also speak Spanish. (Correct)",
-        "(B) All of the seniors at Lincoln High play a sport. Most of the seniors also participate in student government. Therefore, most students who play a sport participate in student government.",
-        "(C) Some of the residents on Oak Street own dogs. Some of the residents on Oak Street own cats. Therefore, at least some dog owners on Oak Street also own cats.",
-        "(D) Most of the guests at the party enjoy jazz. All of the guests at the party enjoy classical music. Therefore, most jazz fans at the party also enjoy classical music.",
-        "(E) Most of the patients in the study experienced headaches. A few of the patients in the study also experienced nausea. Therefore, at least some patients who experienced headaches also experienced nausea.",
-      ],
-    },
 
     { type: 'h3', text: 'Solution Walkthrough' },
     { type: 'paragraph', text: "The stimulus uses the **double-most overlap** pattern: Most A are B. Most A are C. Therefore, some B are C. This is valid because if more than half of group A has property B, and more than half of group A has property C, there must be overlap — some members of A have both B and C." },

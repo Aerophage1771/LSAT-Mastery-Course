@@ -31,20 +31,6 @@ export const Lesson6_Drill_NumericalImpossibility: Lesson = {
 
     { type: 'h4', text: "Practice Problem" },
 
-    { type: 'question-card',
-      id: '18-6-drill',
-      questionType: 'Must Be False',
-      difficulty: 'medium',
-      stimulus: 'A recent survey of 200 employees at Delford Industries found that 75 percent of the employees commute by car and 60 percent of the employees work in the headquarters building. Every employee surveyed commutes by exactly one mode of transportation. The headquarters building and the satellite office are the only two Delford facilities, and every surveyed employee works at exactly one of them.',
-      question: 'If the statements above are true, which one of the following CANNOT be true?',
-      options: [
-        '(A) Some employees who work in the headquarters building do not commute by car.',
-        '(B) Forty percent of the employees commute by car and work in the satellite office.',
-        '(C) More employees in the satellite office commute by car than commute by other modes.',
-        '(D) No employee who works in the headquarters building commutes by car. (Correct)',
-        '(E) Thirty percent of the employees both commute by car and work in the headquarters building.'
-      ]
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

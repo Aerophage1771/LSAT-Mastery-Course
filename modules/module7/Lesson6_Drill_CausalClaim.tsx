@@ -40,20 +40,6 @@ export const Lesson6_Drill_CausalClaim: Lesson = {
     { type: 'h2', text: 'Practice Problem' },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
 
-    { type: 'question-card',
-      id: 'DR-7-6-001',
-      questionType: 'Evaluate the Argument',
-      difficulty: 'medium',
-      stimulus: "A factory installed an advanced air filtration system last January. In the twelve months following the installation, the rate of respiratory illness among factory workers dropped by 35%. The factory manager concluded that the new filtration system is responsible for the improvement in worker health.",
-      question: "The answer to which one of the following questions would be most useful in evaluating the argument?",
-      options: [
-        "(A) What is the rate of respiratory illness among workers in factories that do not have advanced filtration systems?",
-        "(B) Did the factory also implement a ban on smoking in the building at approximately the same time the filtration system was installed? (Correct)",
-        "(C) Is the advanced filtration system more expensive to maintain than the factory's previous system?",
-        "(D) Were any of the respiratory illnesses experienced by factory workers before the installation life-threatening?",
-        "(E) Has the manufacturer of the filtration system received positive reviews from other industrial clients?",
-      ],
-    },
 
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

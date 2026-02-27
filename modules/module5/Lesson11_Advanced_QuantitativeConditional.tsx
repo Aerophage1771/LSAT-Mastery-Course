@@ -43,17 +43,6 @@ export const Lesson11_Advanced_QuantitativeConditional: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
-    { type: 'question-card', id: 'FL-5-11-001', questionType: 'Flaw', difficulty: 'hard',
-      stimulus: "A recent survey showed that 50 percent of people polled believe that elected officials should resign if indicted for a crime, whereas 35 percent believe that elected officials should resign only if they are convicted of a crime. Therefore, more people believe that elected officials should resign if indicted than believe that they should resign if convicted.",
-      question: "The reasoning above is flawed because it",
-      options: [
-        "(A) draws a conclusion about the population in general based only on a sample of that population",
-        "(B) confuses a sufficient condition with a required condition (Correct)",
-        "(C) is based on an ambiguity of one of its terms",
-        "(D) draws a conclusion about a specific belief based on responses to queries about two different specific beliefs",
-        "(E) contains premises that cannot all be true"
-      ]
-    },
 
     { type: 'hr' },
 
@@ -87,17 +76,6 @@ export const Lesson11_Advanced_QuantitativeConditional: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Practice Question' },
-    { type: 'question-card', id: 'FL-5-11-002', questionType: 'Flaw', difficulty: 'hard',
-      stimulus: "A consumer survey found that 60 percent of respondents would purchase a product if it were recommended by a friend, while only 25 percent said they would purchase a product only if it had received positive reviews from professional critics. The marketing team concluded that personal recommendations are a more powerful driver of purchasing decisions than professional reviews.",
-      question: "The marketing team's reasoning is most vulnerable to criticism because it",
-      options: [
-        "(A) fails to consider that some respondents may have been influenced by both personal recommendations and professional reviews",
-        "(B) presumes that the survey respondents are representative of consumers in general",
-        "(C) treats the proportion of people for whom professional reviews are a necessary condition for purchase as though it represents the proportion for whom such reviews are a sufficient condition (Correct)",
-        "(D) overlooks the possibility that professional reviews may influence purchase decisions in ways that respondents are not aware of",
-        "(E) ignores the fact that personal recommendations and professional reviews may both be necessary for most purchasing decisions"
-      ]
-    },
 
     { type: 'h3', text: 'Analysis' },
     { type: 'paragraph', text: "This question follows the same pattern as the worked example:" },

@@ -42,20 +42,6 @@ export const Lesson6_Drill_PhilosophicalRebuttal: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '15-6-drill',
-      questionType: 'Fill in the Blank',
-      difficulty: 'hard',
-      stimulus: "Essayist: Only happiness is intrinsically valuable; other things are valuable only insofar as they contribute to happiness. Some philosophers argue that the fact that we do not approve of a bad person's being happy shows that we value happiness only when it is deserved. This supposedly shows that we find something besides happiness to be intrinsically valuable. But the happiness people deserve is determined by the amount of happiness they bring to others. Therefore, _______.",
-      question: "Which one of the following most logically completes the essayist's argument?",
-      options: [
-        "(A) the notion that people can be deserving of happiness is ultimately incoherent",
-        "(B) people do not actually value happiness as much as they think they do",
-        "(C) the judgment that a person deserves to be happy is itself to be understood in terms of happiness (Correct)",
-        "(D) the only way to be assured of happiness is to bring happiness to those who have done something to deserve it",
-        "(E) a truly bad person cannot actually be very happy",
-      ],
-    },
 
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

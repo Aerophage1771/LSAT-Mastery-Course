@@ -90,20 +90,6 @@ export const Lesson5_TheEliminativeArgument: Lesson = {
     { type: 'h2', text: 'Worked Example' },
     { type: 'paragraph', text: "Let's apply the full method to an eliminative argument question." },
 
-    { type: 'question-card',
-      id: 'PR-4-5-001',
-      questionType: 'Parallel Reasoning',
-      difficulty: 'medium',
-      stimulus: "Carl's Coffee Emporium stocks only two decaffeinated coffees: French Roast and Mocha Java. Yusef only serves decaffeinated coffee, and the coffee he served after dinner last night was far too smooth and mellow to have been French Roast. So, if Yusef still gets all his coffee from Carl's, what he served last night was Mocha Java.",
-      question: "The argument above is most similar in its logical structure to which one of the following?",
-      options: [
-        "(A) Samuel wants to take three friends to the beach. His own car holds only two passengers. His mother has a sedan that holds four and a convertible that holds two. Since the sedan can hold Samuel's friends but the convertible cannot, if Samuel borrows a vehicle from his mother, he will borrow the sedan.",
-        "(B) If Anna wants to walk from her house to the office, she must go down either Maple Street or Elm Street. Maple Street has construction that makes it impassable on foot. But Anna drives to work every day, so she never walks to work.",
-        "(C) Rose can either take a two-week vacation in July or wait until October for her three-week vacation. Rose has already committed to a project that runs through July. So if Rose takes a vacation, it will be the October one.",
-        "(D) Werdix, Inc., has offered Arno a choice between a job in sales and a job in research. Arno would never take a job that requires frequent travel, and the sales position requires weekly travel to client sites. So if he accepts one of these jobs, it will be the one in research. (Correct)",
-        "(E) If Teresa does not fire her assistant, her staff will rebel and her department's efficiency will decline. If she does fire him, she will have to hire and train a replacement, which will temporarily reduce efficiency. So if no alternative solution can be found, Teresa's department will become less efficient.",
-      ],
-    },
 
     { type: 'h3', text: 'Step-by-Step Solution' },
 

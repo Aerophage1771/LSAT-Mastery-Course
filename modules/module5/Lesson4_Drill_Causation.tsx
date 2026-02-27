@@ -44,20 +44,6 @@ export const Lesson4_Drill_Causation: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
-    { type: 'question-card',
-      id: 'FL-5-4-001',
-      questionType: 'Flaw',
-      difficulty: 'medium',
-      stimulus: "Videocassette recorders (VCRs) enable people to watch movies at home on videotape. People who own VCRs go to movie theaters more often than do people who do not own VCRs. Contrary to popular belief, therefore, owning a VCR actually stimulates people to go to movie theaters more often than they otherwise would.",
-      question: "The argument is most vulnerable to criticism on the grounds that it",
-      options: [
-        "(A) concludes that a claim must be false because of the mere absence of evidence in its favor",
-        "(B) cites, in support of the conclusion, evidence that is inconsistent with other information that is provided",
-        "(C) fails to establish that the phenomena interpreted as cause and effect are not both direct effects of some other factor (Correct)",
-        "(D) takes a condition that by itself guarantees the occurrence of a certain phenomenon to be a condition that therefore must be met for that phenomenon to occur",
-        "(E) bases a broad claim about the behavior of people in general on a comparison between two groups of people that together include only a small proportion of people overall",
-      ],
-    },
 
     { type: 'h3', text: 'Full Step-by-Step Analysis' },
     { type: 'process', title: 'Applying the 4-Step Method', steps: [
@@ -81,20 +67,6 @@ export const Lesson4_Drill_Causation: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Practice Question' },
-    { type: 'question-card',
-      id: 'FL-5-4-002',
-      questionType: 'Flaw',
-      difficulty: 'medium',
-      stimulus: "Researchers found that children who eat dinner with their families at least five nights per week are significantly less likely to use illegal drugs than children who eat fewer family dinners. The researchers concluded that family dinners play a key role in preventing drug use among young people.",
-      question: "The reasoning in the researchers' argument is most vulnerable to criticism on the grounds that it",
-      options: [
-        "(A) treats a correlation between family dinners and lower drug use as sufficient evidence of a causal relationship (Correct)",
-        "(B) assumes that all families eat dinner together at approximately the same time each evening",
-        "(C) relies on a sample that is too small to support a general conclusion about young people",
-        "(D) fails to define what constitutes an 'illegal drug' for purposes of the study",
-        "(E) overlooks the possibility that some children who eat family dinners do use illegal drugs",
-      ],
-    },
 
     { type: 'h3', text: 'Analysis' },
     { type: 'process', title: 'Step-by-Step', steps: [

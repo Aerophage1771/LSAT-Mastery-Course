@@ -26,20 +26,6 @@ export const Lesson11_Drill_BlockingThirdParty: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '11-11-drill',
-      questionType: 'Necessary Assumption',
-      difficulty: 'hard',
-      stimulus: "Editorialist: Some people argue that we have an obligation not to cut down trees. However, there can be no obligation to an entity unless that entity has a corresponding right. So if we have an obligation toward trees, then trees have rights. But trees are not the sort of things that can have rights. Therefore, we have no obligation not to cut down trees.",
-      question: "The editorialist's argument depends on assuming which one of the following?",
-      options: [
-        "(A) If an entity has a right to certain treatment, we have an obligation to treat it that way.",
-        "(B) Any entity that has rights also has obligations.",
-        "(C) Only conscious entities are the sort of things that can have rights.",
-        "(D) Avoiding cutting down trees is not an obligation owed to some entity other than trees. (Correct)",
-        "(E) One does not always have the right to cut down the trees on one's own property.",
-      ],
-    },
 
     { type: 'hr' },
 

@@ -38,20 +38,6 @@ export const Lesson7_Drill_Analogy: Lesson = {
     { type: 'h2', text: 'Practice Problem' },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
 
-    { type: 'question-card',
-      id: 'DR-7-7-001',
-      questionType: 'Evaluate the Argument',
-      difficulty: 'medium',
-      stimulus: "When the neighboring town of Greenville converted its public bus fleet to electric vehicles, ridership increased by 25% within two years. The town council of Lakewood, which has a similar population size and public transit budget, is therefore justified in expecting that converting its own bus fleet to electric vehicles will produce a comparable increase in ridership.",
-      question: "Which one of the following would be most important to know in evaluating the argument?",
-      options: [
-        "(A) Whether the cost of electricity in Lakewood is higher than in Greenville",
-        "(B) Whether Lakewood's current bus routes cover the same geographic area as Greenville's routes",
-        "(C) Whether Greenville's ridership increase was accompanied by other changes to its transit system, such as expanded routes or reduced fares (Correct)",
-        "(D) Whether electric buses are more environmentally friendly than diesel buses",
-        "(E) Whether Lakewood has previously attempted to increase bus ridership through other means",
-      ],
-    },
 
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

@@ -6,16 +6,6 @@ export const Lesson9_Drill_PointOfAgreement_SharedDiagnosis: Lesson = {
   content: [
     { type: 'paragraph', text: 'This drill focuses on a challenging "Point of Agreement" question. The difficulty lies in the fact that the speakers\' conclusions are directly opposed. Your task is to look past this surface-level conflict to identify a deeper, unstated premise or diagnosis that both speakers must accept for their arguments to be coherent.' },
     { type: 'hr' },
-    { type: 'question-card', id: '20-9-drill', questionType: 'Point at Issue', difficulty: 'medium',
-      stimulus: 'Marc: The fact that the people of our country look back on the past with a great deal of nostalgia demonstrates that they regret the recent revolution.\nRobert: They are not nostalgic for the recent past, but for the distant past, which the prerevolutionary regime despised; this indicates that although they are troubled, they do not regret the revolution.',
-      question: 'Their dialogue provides the most support for the claim that Marc and Robert agree that the people of their country',
-      options: [
-        '(A) tend to underrate past problems when the country faces troubling times',
-        '(B) are looking to the past for solutions to the country\'s current problems',
-        '(C) are likely to repeat former mistakes if they look to the country\'s past for solutions to current problems',
-        '(D) are concerned about the country\'s current situation and this is evidenced by their nostalgia (Correct)',
-        '(E) tend to be most nostalgic for the things that are the farthest in their past'
-      ] },
     { type: 'hr' },
     { type: 'h3', text: 'Full Analysis' },
     { type: 'h4', text: 'Step 1: Deconstruction' },

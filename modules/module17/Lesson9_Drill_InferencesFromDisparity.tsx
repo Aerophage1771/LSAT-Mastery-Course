@@ -28,20 +28,6 @@ export const Lesson9_Drill_InferencesFromDisparity: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '17-9-drill',
-      questionType: 'Must Be True',
-      difficulty: 'medium',
-      stimulus: 'Nearly all mail that is correctly addressed arrives at its destination within two business days of being sent. In fact, correctly addressed mail takes longer than this only when it is damaged in transit. Overall, however, most mail arrives three business days or more after being sent.',
-      question: 'If the statements above are true, which one of the following must be true?',
-      options: [
-        '(A) A large proportion of the mail that is correctly addressed is damaged in transit.',
-        '(B) No incorrectly addressed mail arrives within two business days of being sent.',
-        '(C) Most mail that arrives within two business days of being sent is correctly addressed.',
-        '(D) A large proportion of mail is incorrectly addressed. (Correct)',
-        '(E) More mail arrives within two business days of being sent than arrives between two and three business days after being sent.',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

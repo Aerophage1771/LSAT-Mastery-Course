@@ -46,17 +46,6 @@ export const Lesson8_Advanced_IntermediateConclusion: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example 1' },
-    { type: 'question-card', id: 'ic-trap-worked-example', questionType: 'Main Conclusion', difficulty: 'hard',
-      stimulus: "Each of many different human hormones can by itself raise the concentration of glucose in the blood. The reason for this is probably a metabolic quirk of the brain. To see this, consider that although most human cells can produce energy from fats and proteins, brain cells can use only glucose. Thus, if blood glucose levels fall too low, brain cells will rapidly starve, leading to unconsciousness and death.",
-      question: "Which one of the following most accurately expresses the main conclusion of the argument above?",
-      options: [
-        "(A) Each of many different human hormones can by itself raise blood glucose levels.",
-        "(B) The reason that many different hormones can each independently raise blood glucose levels is probably a metabolic quirk of the brain. (Correct)",
-        "(C) Although most human cells can produce energy from fats and proteins, brain cells can produce energy only from glucose.",
-        "(D) If blood glucose levels fall too low, then brain cells starve, resulting in loss of consciousness and death.",
-        "(E) The reason brain cells starve if deprived of glucose is that they can produce energy only from glucose."
-      ]
-    },
 
     { type: 'hr' },
 
@@ -82,17 +71,6 @@ export const Lesson8_Advanced_IntermediateConclusion: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example 2 (Shorter Stimulus)' },
-    { type: 'question-card', id: 'ic-trap-short-example', questionType: 'Main Conclusion', difficulty: 'medium',
-      stimulus: "Marketing professional: Smartphones have not diminished the need for desktop computers in professional settings. Desktop computers offer superior processing power for complex tasks. Therefore, many offices continue to maintain desktop workstations alongside mobile devices.",
-      question: "Which one of the following most accurately expresses the main conclusion of the argument?",
-      options: [
-        "(A) Smartphones have not diminished the need for desktop computers in professional settings. (Correct)",
-        "(B) Desktop computers offer superior processing power for complex tasks.",
-        "(C) Many offices continue to maintain desktop workstations alongside mobile devices.",
-        "(D) Smartphones are less powerful than desktop computers.",
-        "(E) Professional settings require complex computing tasks."
-      ]
-    },
 
     { type: 'h3', text: 'Quick Analysis' },
     { type: 'paragraph', text: "The IC trap appears again: \"Therefore\" in Sentence 3 introduces an intermediate conclusion (offices maintain desktops), but the *main* conclusion is Sentence 1 (smartphones haven't diminished the need). The \"Therefore\" sentence is an observable consequence that supports the broader claim. Why haven't smartphones diminished the need? Because desktops have superior power (premise), so offices maintain both (IC supporting the MC)." },

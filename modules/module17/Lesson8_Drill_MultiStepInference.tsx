@@ -28,20 +28,6 @@ export const Lesson8_Drill_MultiStepInference: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '17-8-drill',
-      questionType: 'Must Be True',
-      difficulty: 'medium',
-      stimulus: 'If this parking policy is unpopular with the faculty, then we should modify it. If it is unpopular among students, we should adopt a new policy. And, it is bound to be unpopular either with the faculty or among students.',
-      question: 'If the statements above are true, which one of the following must also be true?',
-      options: [
-        '(A) We should attempt to popularize this parking policy among either the faculty or students.',
-        '(B) We should modify this parking policy only if this will not reduce its popularity among students.',
-        '(C) We should modify this parking policy if modification will not reduce its popularity with the faculty.',
-        '(D) If this parking policy is popular among students, then we should adopt a new policy.',
-        '(E) If this parking policy is popular with the faculty, then we should adopt a new policy. (Correct)',
-      ],
-    },
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },

@@ -73,20 +73,6 @@ export const Lesson6_Advanced_DeconstructingHighDifficulty: Lesson = {
 
     { type: 'h2', text: "Practice Question" },
 
-    { type: 'question-card',
-      id: 'PF-6-6-001',
-      questionType: 'Parallel Flaw',
-      difficulty: 'hard',
-      stimulus: "All of the candidates who win endorsements from major newspapers are candidates who have significant campaign funding. Riaz has significant campaign funding. So, since Riaz knows he has significant campaign funding, Riaz knows that he has won endorsements from major newspapers.",
-      question: "The pattern of flawed reasoning in which one of the following is most similar to that in the argument above?",
-      options: [
-        "(A) All award-winning films are distributed by major studios. This film is distributed by a major studio. Therefore, this film has won an award.",
-        "(B) Every certified inspector has passed the advanced safety course. Since Tomás has passed the advanced safety course, Tomás is a certified inspector.",
-        "(C) Every tenured professor has published at least three peer-reviewed articles. Dr. Patel has published at least three peer-reviewed articles. So, because Dr. Patel knows she has published at least three peer-reviewed articles, Dr. Patel knows that she has tenure. (Correct)",
-        "(D) All students who complete the internship receive a letter of recommendation. Kenji knows he will receive a letter of recommendation. Therefore, Kenji knows he has completed the internship.",
-        "(E) If a building meets the new safety code, it will receive an occupancy permit. This building has received an occupancy permit. Therefore, this building meets the new safety code.",
-      ],
-    },
 
     { type: 'hr' },
 

@@ -51,20 +51,6 @@ export const Lesson4_Drill_CompositionFlaw: Lesson = {
 
     { type: 'h2', text: 'Practice Question' },
 
-    { type: 'question-card',
-      id: 'PF-6-4-001',
-      questionType: 'Parallel Flaw',
-      difficulty: 'medium',
-      stimulus: "Historian: The ancient Greeks failed to recognize that, morally, democracy is no improvement over monarchy. It is wrong for an individual to have the power to choose the course of action for a government, so it is no less wrong to grant this power to society, which is just a collection of individuals.",
-      question: "The pattern of flawed reasoning in the argument above is most similar to that in which one of the following?",
-      options: [
-        "(A) There is no point in trying to find someone else to solve that problem. If Robin cannot solve it, then none of Robin's friends would be able to solve it.",
-        "(B) We should not pick Hank for the relay team. He has not won a race all season, so there is no reason to expect him to help the relay team win.",
-        "(C) Laws that contain exemptions for some individuals based on no relevant consideration are fundamentally immoral. If it is wrong for a given person to commit an act, then it is wrong for anyone else in similar circumstances to commit the act.",
-        "(D) There is no point in asking the club to purchase tents and make them available for use by club members. No member of the club can afford one of those tents, so the club is unable to afford any either. (Correct)",
-        "(E) Agreeing with all of the other members of society does not guarantee that one is correct about an issue. With many topics it is possible for society to be mistaken and hence every individual in society to be likewise mistaken.",
-      ],
-    },
 
     { type: 'hr' },
 

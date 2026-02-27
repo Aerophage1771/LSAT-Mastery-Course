@@ -30,20 +30,6 @@ export const Lesson4_Drill_ExclusivityRule: Lesson = {
 
     { type: 'h4', text: 'The Problem' },
 
-    { type: 'question-card',
-      id: '10-4-drill',
-      questionType: 'Sufficient Assumption',
-      difficulty: 'medium',
-      stimulus: "Cecile's association requires public disclosure of an officer's investments in two cases only: when an officer is authorized to disburse association funds, and when an officer sits on the board of a petrochemical company. Cecile, an officer who is not authorized to disburse funds, sits on the board of just one company, a small timber business. Therefore, there is no reason for Cecile to publicly disclose her investments at this time.",
-      question: "The conclusion of the argument follows logically if which one of the following is assumed?",
-      options: [
-        "(A) Cecile will not be appointed to a position in the association that authorizes her to disburse funds.",
-        "(B) Cecile's office and her position on the timber business's board create no conflicts of interest.",
-        "(C) The association's requirements provide the only reasons there might be for Cecile to disclose her investments. (Correct)",
-        "(D) The timber business on whose board Cecile sits is owned by a petrochemical company.",
-        "(E) Cecile owns no investments in the petrochemical industry.",
-      ],
-    },
 
     { type: 'hr' },
 

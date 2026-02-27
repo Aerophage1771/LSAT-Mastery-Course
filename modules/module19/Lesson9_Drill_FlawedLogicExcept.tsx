@@ -14,20 +14,6 @@ export const Lesson9_Drill_FlawedLogicExcept: Lesson = {
     ]},
     { type: 'hr' },
 
-    { type: 'question-card',
-      id: '19-9-drill',
-      questionType: 'Paradox / Explain',
-      difficulty: 'hard',
-      stimulus: 'A recent survey indicates that the average number of books read annually per capita has declined in each of the last three years. However, it also found that most bookstores reported increased profits during the same period.',
-      question: 'Each of the following, if true, helps to resolve the survey\'s apparently paradoxical results EXCEPT:',
-      options: [
-        '(A) Recent cutbacks in government spending have forced public libraries to purchase fewer popular contemporary novels.',
-        '(B) Due to the installation of sophisticated new antitheft equipment, the recent increase in shoplifting that has hit most retail businesses has left bookstores largely unaffected. (Correct)',
-        '(C) Over the past few years many bookstores have capitalized on the lucrative coffee industry by installing coffee bars.',
-        '(D) Bookstore owners reported a general shift away from the sale of inexpensive paperback novels and toward the sale of lucrative hardback books.',
-        '(E) Citing a lack of free time, many survey respondents indicated that they had canceled magazine subscriptions in favor of purchasing individual issues at bookstores when time permits.'
-      ]
-    },
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
     { type: 'h3', text: 'Analysis & Explanation' },
