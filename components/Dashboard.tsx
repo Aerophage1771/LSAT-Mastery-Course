@@ -11,20 +11,15 @@ import {
 
 interface DashboardProps {
   modules: Array<{ id: number; title: string; category: string; description: string; unit: string; lessons?: ModuleData['lessons']; lessonCount?: number }>;
+  fullModules?: ModuleData[];
   onSelectModule: (id: number) => void;
   getModuleProgress?: (lessons: { id: string }[]) => { completed: number; total: number; percent: number };
 }
 
-const asModules = (items: unknown[]): ModuleData[] =>
-  (items as Array<Record<string, unknown>>).map((m) => ({
-    ...m,
-    lessons: (m.lessons as ModuleData['lessons']) ?? [],
-  })) as unknown as ModuleData[];
-
 const asModule = (m: Record<string, unknown>): ModuleData =>
   ({ ...m, lessons: (m.lessons as ModuleData['lessons']) ?? [] }) as unknown as ModuleData;
 
-export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, getModuleProgress }) => {
+export const Dashboard: React.FC<DashboardProps> = ({ modules, fullModules, onSelectModule, getModuleProgress }) => {
   // Group modules by unit
   type ModuleLike = typeof modules[number];
   const modulesByUnit = modules.reduce((acc, module) => {
@@ -73,6 +68,18 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, g
     }
   ];
 
+  const moduleLookup = React.useMemo(
+    () => new Map(fullModules?.map((module) => [module.id, module]) ?? []),
+    [fullModules]
+  );
+
+  const resolveModule = (module: ModuleLike): ModuleData => {
+    const full = moduleLookup.get(module.id);
+    return full ?? asModule(module as Record<string, unknown>);
+  };
+
+  const resolveModules = (items: ModuleLike[]): ModuleData[] => items.map(resolveModule);
+
   return (
     <div className="max-w-7xl mx-auto animate-in fade-in duration-500 pb-20">
       <div className="mb-12 text-center lg:text-left">
@@ -100,12 +107,12 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, g
                      <ExportControls 
                         variant="minimal"
                         filename={`LSAT_${section.title.replace(/\s+/g, '_')}`}
-                        onCopy={() => generateSectionText(section.title, asModules(sectionModules))}
-                        onExportText={() => generateSectionText(section.title, asModules(sectionModules))}
-                        onExportRTF={() => generateSectionRTF(section.title, asModules(sectionModules))}
-                        onExportJSON={() => generateSectionJSON(section.title, asModules(sectionModules))}
-                        onExportCSV={() => generateSectionCSV(section.title, asModules(sectionModules))}
-                        onExportPDF={() => generateSectionPDF(section.title, asModules(sectionModules))}
+                        onCopy={() => generateSectionText(section.title, resolveModules(sectionModules))}
+                        onExportText={() => generateSectionText(section.title, resolveModules(sectionModules))}
+                        onExportRTF={() => generateSectionRTF(section.title, resolveModules(sectionModules))}
+                        onExportJSON={() => generateSectionJSON(section.title, resolveModules(sectionModules))}
+                        onExportCSV={() => generateSectionCSV(section.title, resolveModules(sectionModules))}
+                        onExportPDF={() => generateSectionPDF(section.title, resolveModules(sectionModules))}
                      />
                    </div>
                 </div>
@@ -140,18 +147,20 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, g
                            <ExportControls 
                               variant="minimal"
                               filename={`LSAT_${unitString.replace(/[: ]/g, '_')}`}
-                              onCopy={() => generateUnitText(unitString, asModules(unitModules))}
-                              onExportText={() => generateUnitText(unitString, asModules(unitModules))}
-                              onExportRTF={() => generateUnitRTF(unitString, asModules(unitModules))}
-                              onExportJSON={() => generateUnitJSON(unitString, asModules(unitModules))}
-                              onExportCSV={() => generateUnitCSV(unitString, asModules(unitModules))}
-                              onExportPDF={() => generateUnitPDF(unitString, asModules(unitModules))}
+                              onCopy={() => generateUnitText(unitString, resolveModules(unitModules))}
+                              onExportText={() => generateUnitText(unitString, resolveModules(unitModules))}
+                              onExportRTF={() => generateUnitRTF(unitString, resolveModules(unitModules))}
+                              onExportJSON={() => generateUnitJSON(unitString, resolveModules(unitModules))}
+                              onExportCSV={() => generateUnitCSV(unitString, resolveModules(unitModules))}
+                              onExportPDF={() => generateUnitPDF(unitString, resolveModules(unitModules))}
                            />
                         </div>
                       </div>
                       
                       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                        {unitModules.map((module) => (
+                        {unitModules.map((module) => {
+                          const moduleData = resolveModule(module);
+                          return (
                           <div 
                             key={module.id}
                             onClick={() => onSelectModule(module.id)}
@@ -178,12 +187,12 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, g
                                  <ExportControls 
                                     variant="minimal"
                                     filename={`LSAT_Module_${module.id}_${module.title.replace(/\s+/g, '_')}`}
-                                    onCopy={() => generateModuleText(asModule(module as unknown as Record<string, unknown>))}
-                                    onExportText={() => generateModuleText(asModule(module as unknown as Record<string, unknown>))}
-                                    onExportRTF={() => generateModuleRTF(asModule(module as unknown as Record<string, unknown>))}
-                                    onExportJSON={() => generateModuleJSON(asModule(module as unknown as Record<string, unknown>))}
-                                    onExportCSV={() => generateModuleCSV(asModule(module as unknown as Record<string, unknown>))}
-                                    onExportPDF={() => generateModulePDF(asModule(module as unknown as Record<string, unknown>))}
+                                    onCopy={() => generateModuleText(moduleData)}
+                                    onExportText={() => generateModuleText(moduleData)}
+                                    onExportRTF={() => generateModuleRTF(moduleData)}
+                                    onExportJSON={() => generateModuleJSON(moduleData)}
+                                    onExportCSV={() => generateModuleCSV(moduleData)}
+                                    onExportPDF={() => generateModulePDF(moduleData)}
                                  />
                                  <span className={`text-slate-300 transition-colors transform group-hover:translate-x-1 duration-300 ${
                                      section.title === 'Logical Reasoning' ? 'group-hover:text-indigo-600' : 
@@ -248,7 +257,8 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, onSelectModule, g
                               )}
                             </div>
                           </div>
-                        ))}
+                        );
+                        })}
                       </div>
                     </div>
                   );
