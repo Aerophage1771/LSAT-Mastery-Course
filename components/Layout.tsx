@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ModuleData } from '../types';
-import { BookOpen, CheckCircle, Circle, Menu, X, ChevronRight, LayoutGrid, Download, Info, Palette, ArrowLeft, ArrowRight, Search, Rocket, Copy, Check } from 'lucide-react';
+import { BookOpen, CheckCircle, Circle, Menu, X, ChevronRight, LayoutGrid, Download, Info, Palette, ArrowLeft, ArrowRight, Search, Rocket, Copy, Check, Upload, Database } from 'lucide-react';
 import { generateCourseText, generateCourseRTF, generateCourseJSON, generateCourseCSV, generateCoursePDF } from '../utils/export';
 import { ExportControls } from './ExportControls';
 import { LessonViewer } from './LessonViewer';
+import { useProgressContext } from '../contexts/ProgressContext';
 import { drillCrossReferences } from '../modules/drillCrossReferences';
 import inventoryData from '../docs/invented-questions-inventory.json';
 import {
@@ -74,6 +75,43 @@ export const Layout: React.FC<LayoutProps> = ({
   const exportModalRef = useRef<HTMLDivElement | null>(null);
   const styleGuideModalRef = useRef<HTMLDivElement | null>(null);
   const roadmapModalRef = useRef<HTMLDivElement | null>(null);
+  
+  const { progress, importProgress } = useProgressContext();
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const [importStatus, setImportStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleBackupProgress = () => {
+    const dataStr = JSON.stringify(progress, null, 2);
+    const blob = new Blob([dataStr], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `lsat-progress-${new Date().toISOString().split('T')[0]}.json`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+
+  const handleRestoreProgress = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      try {
+        const json = JSON.parse(event.target?.result as string);
+        const success = importProgress(json);
+        setImportStatus(success ? 'success' : 'error');
+        setTimeout(() => setImportStatus('idle'), 3000);
+      } catch {
+        setImportStatus('error');
+        setTimeout(() => setImportStatus('idle'), 3000);
+      }
+    };
+    reader.readAsText(file);
+    if (fileInputRef.current) fileInputRef.current.value = '';
+  };
 
   useEffect(() => {
     mainRef.current?.scrollTo({ top: 0, behavior: 'smooth' });
@@ -444,16 +482,54 @@ export const Layout: React.FC<LayoutProps> = ({
           <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-md animate-in fade-in duration-300" onClick={() => setExportModalOpen(false)} />
           <div ref={exportModalRef} tabIndex={-1} className="relative bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200">
             <div className="bg-indigo-600 px-6 py-6 text-white flex items-center justify-between">
-              <div><h2 className="text-xl font-bold flex items-center gap-2"><Download size={24} />Export Course Content</h2><p className="text-indigo-100 text-xs mt-1 font-medium">LSAT Logical Reasoning Mastery Curriculum</p></div>
+              <div><h2 className="text-xl font-bold flex items-center gap-2"><Database size={24} />Data & Export</h2><p className="text-indigo-100 text-xs mt-1 font-medium">LSAT Logical Reasoning Mastery Curriculum</p></div>
               <button onClick={() => setExportModalOpen(false)} className="p-2 hover:bg-white/10 rounded-full transition-colors" aria-label="Close export dialog"><X size={20} /></button>
             </div>
-            <div className="p-8">
+            <div className="p-8 max-h-[70vh] overflow-y-auto">
+              
+              {/* Progress Backup Section */}
+              <div className="mb-8 border-b border-slate-100 pb-8">
+                 <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">User Progress</h3>
+                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col gap-4">
+                    <div className="flex items-start gap-3">
+                       <div className="bg-white p-2 rounded-lg text-emerald-600 shadow-sm"><CheckCircle size={20} /></div>
+                       <div>
+                          <h4 className="text-sm font-bold text-slate-900 mb-1">Backup & Restore</h4>
+                          <p className="text-xs text-slate-600 leading-relaxed">Save your progress to a file or restore from a previous backup. Useful if you switch devices or clear your cache.</p>
+                       </div>
+                    </div>
+                    <div className="flex gap-3 mt-2">
+                       <button onClick={handleBackupProgress} className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-sm font-bold text-slate-700 transition-all shadow-sm">
+                          <Download size={16} /> Backup
+                       </button>
+                       <div className="relative flex-1">
+                          <input 
+                             type="file" 
+                             accept=".json" 
+                             ref={fileInputRef}
+                             onChange={handleRestoreProgress}
+                             className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
+                             title="Restore Progress"
+                          />
+                          <button className={`w-full flex items-center justify-center gap-2 px-4 py-2 border rounded-lg text-sm font-bold transition-all shadow-sm pointer-events-none ${
+                             importStatus === 'success' ? 'bg-emerald-50 border-emerald-200 text-emerald-700' :
+                             importStatus === 'error' ? 'bg-rose-50 border-rose-200 text-rose-700' :
+                             'bg-white hover:bg-slate-50 border-slate-200 text-slate-700'
+                          }`}>
+                             {importStatus === 'success' ? <Check size={16} /> : importStatus === 'error' ? <X size={16} /> : <Upload size={16} />}
+                             {importStatus === 'success' ? 'Restored!' : importStatus === 'error' ? 'Failed' : 'Restore'}
+                          </button>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+
               <div className="bg-indigo-50 border border-indigo-100 rounded-xl p-4 mb-8 flex gap-4 items-start">
                 <div className="bg-white p-2 rounded-lg text-indigo-600 shadow-sm"><Info size={20} /></div>
-                <div><h4 className="text-sm font-bold text-indigo-900 mb-1">Export Instructions</h4><p className="text-xs text-indigo-700 leading-relaxed">You can download the entire curriculum including all modules and every individual lesson content.</p></div>
+                <div><h4 className="text-sm font-bold text-indigo-900 mb-1">Export Content</h4><p className="text-xs text-indigo-700 leading-relaxed">You can download the entire curriculum including all modules and every individual lesson content.</p></div>
               </div>
               <div className="space-y-6">
-                <div><h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Select Export Format</h3>
+                <div><h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Select Format</h3>
                 <ExportControls 
                     label="Course" 
                     filename="LSAT_Mastery_Course" 

@@ -32,31 +32,53 @@ const blockToText = (block: ContentBlock): string => {
     case 'blockquote': return `> ${block.text}\n\n`;
     case 'hr': return `---\n\n`;
     case 'code': return `\`\`\`\n${block.text}\n\`\`\`\n\n`;
-    case 'list': 
+    case 'list': {
       return block.items.map((item, i) => 
         block.ordered ? `${i+1}. ${item}` : `- ${item}`
       ).join('\n') + '\n\n';
-    case 'callout':
+    }
+    case 'callout': {
       const calloutTitle = block.title ? `: ${block.title}` : '';
       const variant = (block.variant || 'NOTE').toUpperCase();
       return `[${variant}${calloutTitle}]\n${block.text}\n\n`;
+    }
     case 'options':
       return block.items.join('\n') + '\n\n';
-    case 'process':
+    case 'process': {
       const processTitle = block.title ? `[PROCESS: ${block.title}]\n` : '[PROCESS]\n';
       const steps = block.steps.map((s, i) => `${i+1}. ${s}`).join('\n');
       return `${processTitle}${steps}\n\n`;
-    case 'breakdown':
+    }
+    case 'breakdown': {
       const items = block.items.map(item => {
         const badge = item.badge ? ` [${item.badge}]` : '';
         return `* ${item.title}${badge}\n  ${item.text}`;
       }).join('\n\n');
       return `[BREAKDOWN]\n${items}\n\n`;
+    }
     case 'accordion':
        const accContent = typeof block.content === 'string' ? block.content : '(Complex Content)';
        return `[EXPAND: ${block.title}]\n${accContent}\n\n`;
-    case 'table':
+    case 'table': {
         return `[TABLE: ${block.headers.join(' | ')}]\n\n`;
+    }
+    case 'question-card': {
+        const qTitle = block.id ? `ID: ${block.id}` : 'Question';
+        const qType = block.questionType ? ` | Type: ${block.questionType}` : '';
+        const qDiff = block.difficulty ? ` | Difficulty: ${block.difficulty}` : '';
+        const qOpts = block.options.map((opt, i) => `(${String.fromCharCode(65+i)}) ${opt}`).join('\n');
+        return `[QUESTION CARD: ${qTitle}${qType}${qDiff}]\nSTIMULUS:\n${block.stimulus}\n\nQUESTION:\n${block.question}\n\nOPTIONS:\n${qOpts}\n\n`;
+    }
+    case 'passage-card': {
+        const pTitle = block.title || 'Passage';
+        const pGenre = block.genre ? ` (${block.genre})` : '';
+        return `[PASSAGE CARD: ${pTitle}${pGenre}]\n${block.passage}\n\n`;
+    }
+    case 'question-passage-card': {
+        const qpTitle = block.passageTitle || 'Passage';
+        const qpOpts = block.options.map((opt, i) => `(${String.fromCharCode(65+i)}) ${opt}`).join('\n');
+        return `[RC QUESTION: ${qpTitle}]\nPASSAGE:\n${block.passage}\n\nQUESTION:\n${block.question}\n\nOPTIONS:\n${qpOpts}\n\n`;
+    }
     default:
       return '';
   }
@@ -72,29 +94,51 @@ const blockToRTF = (block: ContentBlock): string => {
     case 'blockquote': return `\\pard\\sa200\\sl276\\slmult1\\li720\\i\\f0\\fs24 ${formatInlineRTF(block.text)}\\i0\\par\n`;
     case 'hr': return `\\pard\\sa200\\sl276\\slmult1\\brdrb\\brdrs\\brdrw10\\brsp20 \\par\n`;
     case 'code': return `\\pard\\sa200\\sl276\\slmult1\\f1\\fs20 ${escapeRTF(block.text)}\\f0\\fs24\\par\n`;
-    case 'list': 
+    case 'list': {
       return block.items.map((item, i) => {
         const prefix = block.ordered ? `${i+1}.` : '\\bullet';
         return `\\pard\\li720\\sa200\\sl276\\slmult1 ${prefix} \\tab ${formatInlineRTF(item)}\\par\n`;
       }).join('');
-    case 'callout':
+    }
+    case 'callout': {
       const calloutTitle = block.title ? `: ${block.title}` : '';
       const variant = (block.variant || 'Note').toUpperCase();
       return `\\pard\\sa200\\sl276\\slmult1\\b [${variant}${escapeRTF(calloutTitle)}]\\b0\\par ${formatInlineRTF(block.text)}\\par\n`;
+    }
     case 'options':
       return block.items.map(item => `\\pard\\sa200\\sl276\\slmult1 [ ] ${formatInlineRTF(item)}\\par\n`).join('');
-    case 'process':
+    case 'process': {
        const rtfProcTitle = block.title ? `\\pard\\sa200\\sl276\\slmult1\\b PROCESS: ${escapeRTF(block.title)}\\b0\\par\n` : '';
        const rtfSteps = block.steps.map((s, i) => `\\pard\\li720\\sa200\\sl276\\slmult1\\b ${i+1}.\\b0 \\tab ${formatInlineRTF(s)}\\par\n`).join('');
        return rtfProcTitle + rtfSteps;
-    case 'breakdown':
+    }
+    case 'breakdown': {
       return block.items.map(item => {
         const badge = item.badge ? ` [${item.badge}]` : '';
         return `\\pard\\sa200\\sl276\\slmult1\\b ${formatInlineRTF(item.title)}${escapeRTF(badge)}\\b0\\par\\li720 ${formatInlineRTF(item.text)}\\par\\li0\n`;
       }).join('');
-    case 'accordion':
+    }
+    case 'accordion': {
        const accText = typeof block.content === 'string' ? block.content : '...';
        return `\\pard\\sa200\\sl276\\slmult1\\b [EXPAND: ${formatInlineRTF(block.title)}]\\b0\\par ${formatInlineRTF(accText)}\\par\n`;
+    }
+    case 'question-card': {
+       const rtfQTitle = block.id ? `ID: ${block.id}` : 'Question';
+       const rtfQType = block.questionType ? ` | Type: ${block.questionType}` : '';
+       const rtfQDiff = block.difficulty ? ` | Difficulty: ${block.difficulty}` : '';
+       const rtfQOpts = block.options.map((opt, i) => `\\pard\\li720\\sa200\\sl276\\slmult1 (${String.fromCharCode(65+i)}) ${formatInlineRTF(opt)}\\par\n`).join('');
+       return `\\pard\\sa200\\sl276\\slmult1\\b [QUESTION CARD: ${escapeRTF(rtfQTitle)}${escapeRTF(rtfQType)}${escapeRTF(rtfQDiff)}]\\b0\\par\\b STIMULUS:\\b0\\par ${formatInlineRTF(block.stimulus)}\\par\\par\\b QUESTION:\\b0\\par ${formatInlineRTF(block.question)}\\par\\par\\b OPTIONS:\\b0\\par\n${rtfQOpts}`;
+    }
+    case 'passage-card': {
+       const rtfPTitle = block.title || 'Passage';
+       const rtfPGenre = block.genre ? ` (${block.genre})` : '';
+       return `\\pard\\sa200\\sl276\\slmult1\\b [PASSAGE CARD: ${escapeRTF(rtfPTitle)}${escapeRTF(rtfPGenre)}]\\b0\\par ${formatInlineRTF(block.passage)}\\par\n`;
+    }
+    case 'question-passage-card': {
+       const rtfQPTitle = block.passageTitle || 'Passage';
+       const rtfQPOpts = block.options.map((opt, i) => `\\pard\\li720\\sa200\\sl276\\slmult1 (${String.fromCharCode(65+i)}) ${formatInlineRTF(opt)}\\par\n`).join('');
+       return `\\pard\\sa200\\sl276\\slmult1\\b [RC QUESTION: ${escapeRTF(rtfQPTitle)}]\\b0\\par\\b PASSAGE:\\b0\\par ${formatInlineRTF(block.passage)}\\par\\par\\b QUESTION:\\b0\\par ${formatInlineRTF(block.question)}\\par\\par\\b OPTIONS:\\b0\\par\n${rtfQPOpts}`;
+    }
     default:
       return '';
   }
@@ -220,7 +264,7 @@ const addBlockToPdf = (doc: jsPDF, block: ContentBlock) => {
         case 'paragraph': 
             addWrappedText(doc, block.text, { size: 11, bottomSpacing: 5 }); 
             break;
-        case 'blockquote':
+        case 'blockquote': {
             doc.setFontSize(11);
             doc.setFont('helvetica', 'italic');
             const quoteLines = doc.splitTextToSize(cleanTextForPDF(block.text), CONTENT_WIDTH - 5);
@@ -235,6 +279,7 @@ const addBlockToPdf = (doc: jsPDF, block: ContentBlock) => {
             
             addWrappedText(doc, block.text, { size: 11, style: 'italic', indent: 4 });
             break;
+        }
         case 'hr':
             checkPageBreak(doc, 10);
             cursorY += 5;
@@ -250,7 +295,7 @@ const addBlockToPdf = (doc: jsPDF, block: ContentBlock) => {
             });
             cursorY += 2;
             break;
-        case 'table':
+        case 'table': {
             // Tables handle their own page breaking logic, but we must
             // make sure we pass the current Y position.
             autoTable(doc, {
@@ -266,7 +311,8 @@ const addBlockToPdf = (doc: jsPDF, block: ContentBlock) => {
             // Update cursorY to end of table
             cursorY = (doc as any).lastAutoTable.finalY + 8;
             break;
-        case 'callout':
+        }
+        case 'callout': {
             doc.setFontSize(11);
             const titleHeight = block.title ? 7 : 0;
             const textLines = doc.splitTextToSize(cleanTextForPDF(block.text), CONTENT_WIDTH - 6);
@@ -300,7 +346,8 @@ const addBlockToPdf = (doc: jsPDF, block: ContentBlock) => {
 
             cursorY += totalH + 5; 
             break;
-        case 'breakdown':
+        }
+        case 'breakdown': {
             // Render as table for alignment
             const tableRows = block.items.map(item => [cleanTextForPDF(item.title), cleanTextForPDF(item.text)]);
             autoTable(doc, {
@@ -315,6 +362,7 @@ const addBlockToPdf = (doc: jsPDF, block: ContentBlock) => {
             });
             cursorY = (doc as any).lastAutoTable.finalY + 8;
             break;
+        }
         case 'code':
             doc.setFont('courier');
             addWrappedText(doc, block.text, { size: 10, bottomSpacing: 6 });
@@ -342,6 +390,66 @@ const addBlockToPdf = (doc: jsPDF, block: ContentBlock) => {
                  block.content.forEach(b => addBlockToPdf(doc, b));
             }
             break;
+        case 'question-card': {
+            checkPageBreak(doc, 60); // Estimate height
+            // Header
+            doc.setFillColor(245, 247, 250);
+            doc.rect(PAGE_MARGIN_X, cursorY, CONTENT_WIDTH, 8, 'F');
+            doc.setFontSize(9);
+            doc.setTextColor(100, 116, 139);
+            const qHeader = `${block.id || 'Question'} | ${block.questionType || 'LSAT'} | ${block.difficulty || 'Medium'}`;
+            doc.text(qHeader.toUpperCase(), PAGE_MARGIN_X + 2, cursorY + 5);
+            cursorY += 12;
+            
+            // Stimulus
+            addWrappedText(doc, block.stimulus, { size: 11, bottomSpacing: 6 });
+            
+            // Question
+            addWrappedText(doc, block.question, { size: 11, style: 'bold', bottomSpacing: 6 });
+            
+            // Options
+            block.options.forEach((opt, i) => {
+                const label = `(${String.fromCharCode(65+i)})`;
+                addWrappedText(doc, `${label} ${opt}`, { size: 11, indent: 8, bottomSpacing: 3 });
+            });
+            cursorY += 6;
+            break;
+        }
+        case 'passage-card': {
+            checkPageBreak(doc, 100);
+            addWrappedText(doc, block.title, { size: 14, style: 'bold', align: 'center', bottomSpacing: 2 });
+            if (block.genre) addWrappedText(doc, block.genre, { size: 10, style: 'italic', align: 'center', bottomSpacing: 6 });
+            
+            // Two columns ideally, but single column for simplicity in this generated PDF
+            doc.setFontSize(10);
+            const pLines = doc.splitTextToSize(cleanTextForPDF(block.passage), CONTENT_WIDTH);
+            doc.text(pLines, PAGE_MARGIN_X, cursorY);
+            cursorY += (pLines.length * 4) + 10;
+            break;
+        }
+        case 'question-passage-card': {
+            checkPageBreak(doc, 120);
+            // Passage Title
+            addWrappedText(doc, block.passageTitle, { size: 12, style: 'bold', bottomSpacing: 4 });
+            
+            // Passage
+            doc.setFillColor(250, 250, 250);
+            const qpLines = doc.splitTextToSize(cleanTextForPDF(block.passage), CONTENT_WIDTH - 4);
+            const qpHeight = qpLines.length * 4;
+            doc.rect(PAGE_MARGIN_X, cursorY, CONTENT_WIDTH, qpHeight + 4, 'F');
+            doc.text(qpLines, PAGE_MARGIN_X + 2, cursorY + 4);
+            cursorY += qpHeight + 10;
+            
+            // Question
+            addWrappedText(doc, block.question, { size: 11, style: 'bold', bottomSpacing: 6 });
+             // Options
+            block.options.forEach((opt, i) => {
+                const label = `(${String.fromCharCode(65+i)})`;
+                addWrappedText(doc, `${label} ${opt}`, { size: 11, indent: 8, bottomSpacing: 3 });
+            });
+            cursorY += 6;
+            break;
+        }
         default: break;
     }
 };

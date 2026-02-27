@@ -33,6 +33,7 @@ export type ContentBlock =
       question: string;
       options: string[];
       difficulty?: 'easy' | 'medium' | 'hard';
+      isIllustrative?: boolean;
     }
   | {
       type: 'passage-card';
@@ -52,6 +53,7 @@ export type ContentBlock =
       question: string;
       options: string[];
       difficulty?: 'easy' | 'medium' | 'hard';
+      isIllustrative?: boolean;
     };
 
 export interface Lesson {

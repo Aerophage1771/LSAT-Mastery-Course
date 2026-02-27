@@ -131,7 +131,7 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
       if (line.startsWith('---')) return <div key={index} className="my-10 border-t border-slate-100" />;
       if (line.startsWith('> ')) return <div key={index} className="my-5 px-5 py-4 bg-slate-50 rounded-lg border border-slate-200/80 text-[15px] text-slate-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: parseInlineStyles(line.replace('> ', '')) }} />;
       if (trimmedLine.startsWith('* ') || trimmedLine.startsWith('- ')) {
-        const itemContent = trimmedLine.replace(/^[\*\-]\s/, '');
+        const itemContent = trimmedLine.replace(/^[*-]\s/, '');
         return <li key={index} className="ml-5 list-disc mb-1.5 pl-1 marker:text-slate-300 text-[15px] text-slate-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: parseInlineStyles(itemContent) }} />;
       }
       if (line.startsWith('```')) return null;
@@ -166,13 +166,14 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
         case 'h4': return <h4 key={index} className="text-sm font-semibold mt-8 mb-3 text-slate-500 uppercase tracking-wider" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
         case 'paragraph': return <p key={index} className="mb-4 leading-[1.75] text-[15px] text-slate-600" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
         case 'blockquote': return <div key={index} className="my-5 px-5 py-4 bg-slate-50 rounded-lg border border-slate-200/80 text-[15px] text-slate-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: parseInlineStyles(block.text) }} />;
-        case 'list':
+        case 'list': {
           const ListTag = block.ordered ? 'ol' : 'ul';
           return (
             <ListTag key={index} className={`mb-5 ml-5 pl-1 marker:text-slate-300 text-[15px] text-slate-600 space-y-1.5 ${block.ordered ? 'list-decimal' : 'list-disc'}`}>
               {block.items?.map((item, i) => <li key={i} className="leading-relaxed" dangerouslySetInnerHTML={{ __html: parseInlineStyles(item) }} />)}
             </ListTag>
           );
+        }
         case 'hr': return <div key={index} className="my-10 border-t border-slate-100" />;
         case 'code': return <CodeBlock key={index} text={block.text} />;
         case 'accordion': return <FullAccordionBlock key={index} title={block.title} content={block.content} />;

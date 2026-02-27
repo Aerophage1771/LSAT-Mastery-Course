@@ -19,6 +19,7 @@ interface QuestionCardProps {
   question: string;
   options: string[];
   difficulty?: 'easy' | 'medium' | 'hard';
+  isIllustrative?: boolean;
 }
 
 const difficultyConfig = {
@@ -27,7 +28,7 @@ const difficultyConfig = {
   hard: { label: 'Advanced', color: 'text-rose-600 bg-rose-50 border-rose-200', icon: AlertTriangle },
 };
 
-export const QuestionCard: React.FC<QuestionCardProps> = ({ id, questionType, stimulus, question, options, difficulty }) => {
+export const QuestionCard: React.FC<QuestionCardProps> = ({ id, questionType, stimulus, question, options, difficulty, isIllustrative }) => {
   const [revealed, setRevealed] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
@@ -48,14 +49,16 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({ id, questionType, st
   return (
     <div className="my-8 rounded-2xl border border-slate-200 shadow-lg overflow-hidden bg-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-indigo-600 to-indigo-700 px-6 py-4 flex items-center justify-between">
+      <div className={`${isIllustrative ? 'bg-gradient-to-r from-slate-700 to-slate-800' : 'bg-gradient-to-r from-indigo-600 to-indigo-700'} px-6 py-4 flex items-center justify-between`}>
         <div className="flex items-center gap-3">
           <div className="bg-white/20 p-2 rounded-lg">
             <HelpCircle size={20} className="text-white" />
           </div>
           <div>
-            <div className="text-white font-bold text-base">{questionType ?? 'Practice Question'}</div>
-            {id && <div className="text-indigo-200 text-xs font-mono">{id}</div>}
+            <div className="text-white font-bold text-base">
+              {isIllustrative ? `Illustrative Example: ${questionType ?? 'Concept'}` : (questionType ?? 'Practice Question')}
+            </div>
+            {id && !isIllustrative && <div className="text-indigo-200 text-xs font-mono">{id}</div>}
           </div>
         </div>
         <div className="flex items-center gap-2">
@@ -103,11 +106,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({ id, questionType, st
 
           return (
             <div key={i} className={cls} onClick={() => handleSelect(i)} role="button" tabIndex={0} aria-label={`Option ${String.fromCharCode(65 + i)}`} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleSelect(i); }}>
-              <div className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold border ${
-                revealed && isCorrect ? 'bg-emerald-500 border-emerald-500 text-white' :
-                revealed && isSelected && !isCorrect ? 'bg-red-500 border-red-500 text-white' :
-                'bg-slate-100 border-slate-300 text-slate-600'
-              }`}>
+              <div className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold border ${revealed && isCorrect ? 'bg-emerald-500 border-emerald-500 text-white' :
+                  revealed && isSelected && !isCorrect ? 'bg-red-500 border-red-500 text-white' :
+                    'bg-slate-100 border-slate-300 text-slate-600'
+                }`}>
                 {revealed && isCorrect ? <CheckCircle2 size={14} /> : revealed && isSelected ? <XCircle size={14} /> : String.fromCharCode(65 + i)}
               </div>
               <span className={`flex-1 text-sm leading-relaxed ${revealed && isCorrect ? 'text-emerald-900 font-medium' : revealed && isSelected ? 'text-red-900' : 'text-slate-700'}`} dangerouslySetInnerHTML={{ __html: parseInline(cleanText) }} />

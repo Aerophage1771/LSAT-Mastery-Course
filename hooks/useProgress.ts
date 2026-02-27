@@ -76,6 +76,19 @@ export function useProgress() {
     setProgress(defaultProgress);
   }, []);
 
+  const importProgress = useCallback((data: ProgressData) => {
+    // Basic validation
+    if (data && Array.isArray(data.completedLessons)) {
+      setProgress({
+        completedLessons: data.completedLessons,
+        lastModuleId: typeof data.lastModuleId === 'number' ? data.lastModuleId : null,
+        lastLessonId: typeof data.lastLessonId === 'string' ? data.lastLessonId : null,
+      });
+      return true;
+    }
+    return false;
+  }, []);
+
   return {
     progress,
     markLessonComplete,
@@ -83,5 +96,6 @@ export function useProgress() {
     isLessonComplete,
     getModuleProgress,
     resetProgress,
+    importProgress,
   };
 }
