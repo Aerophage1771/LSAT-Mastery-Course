@@ -8,18 +8,19 @@ export const Lesson5_Drill_CausalReasoning: Lesson = {
     { type: 'paragraph', text: "This drill focuses on a pattern of **Causal Reasoning**, specifically identifying a unique cause for an observed effect." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "That wall is supported by several joists. The only thing that can have caused the bulge that the wall now has is a broken joist. Therefore, at least one of the joists is broken." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "Which one of the following arguments is most similar in its logical features to the argument above?" },
-    
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-103-S-1-Q-24',
+      stimulus: "That wall is supported by several joists. The only thing that can have caused the bulge that the wall now has is a broken joist. Therefore, at least one of the joists is broken.",
+      question: "Which one of the following arguments is most similar in its logical features to the argument above?",
+      options: [
       "**(A)** At least one of the players in the orchestra must have made a mistake, since nothing else would have made the conductor grimace in the way she just did.",
       "**(B)** The first piece must have been the easiest, since it was the only piece in the entire concert in which the orchestra did not make many mistakes.",
       "**(C)** The players play well only when they like the music, since they tend to make mistakes when they play something they do not like.",
       "**(D)** One of the orchestra’s players must be able to play the harp, since in one of the pieces they are playing at next week’s concert the composer specified that a harp should be played.",
       "**(E)** The emotion of the music is the only thing that can have caused the conductor to look so angry just then, since the orchestra was playing perfectly."
-    ]},
+    ]
+    },
     
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

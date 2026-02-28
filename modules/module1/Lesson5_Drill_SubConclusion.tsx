@@ -8,18 +8,19 @@ export const Lesson5_Drill_SubConclusion: Lesson = {
     { type: 'paragraph', text: "This drill introduces a critical structural element: the **Sub-Conclusion** (also known as an Intermediate Conclusion). These statements function as a bridge, receiving support from one claim while providing support to another." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "**Anders:** The physical structure of the brain plays an important role in thinking. So researchers developing “thinking machines”—computers that can make decisions based on both common sense and factual knowledge—should closely model those machines on the structure of the brain.\n\n**Yang:** Important does not mean essential. After all, no flying machine closely modeled on birds has worked; workable aircraft are structurally very different from birds. **So thinking machines closely modeled on the brain are also likely to fail.** In developing a workable thinking machine, researchers would therefore increase their chances of success if they focus on the brain’s function and simply ignore its physical structure." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "The statement “thinking machines closely modeled on the brain are also likely to fail” serves which one of the following roles in Yang’s argument?" },
-    
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-114-S-4-Q-18',
+      stimulus: "**Anders:** The physical structure of the brain plays an important role in thinking. So researchers developing “thinking machines”—computers that can make decisions based on both common sense and factual knowledge—should closely model those machines on the structure of the brain.\n\n**Yang:** Important does not mean essential. After all, no flying machine closely modeled on birds has worked; workable aircraft are structurally very different from birds. **So thinking machines closely modeled on the brain are also likely to fail.** In developing a workable thinking machine, researchers would therefore increase their chances of success if they focus on the brain’s function and simply ignore its physical structure.",
+      question: "The statement “thinking machines closely modeled on the brain are also likely to fail” serves which one of the following roles in Yang’s argument?",
+      options: [
       "**(A)** the main conclusion of the argument",
       "**(B)** a subsidiary conclusion used in support of the main conclusion",
       "**(C)** a principle of research invoked in support of the conclusion",
       "**(D)** a particular example illustrating a general claim",
       "**(E)** background information providing a context for the argument"
-    ]},
+    ]
+    },
     
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

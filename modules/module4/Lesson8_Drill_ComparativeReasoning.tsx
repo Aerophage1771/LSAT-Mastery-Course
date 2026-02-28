@@ -8,18 +8,19 @@ export const Lesson8_Drill_ComparativeReasoning: Lesson = {
     { type: 'paragraph', text: "This drill focuses on a **Comparative Function** pattern. The logic applies a general rule about a relationship between two variables to a specific comparison between two items." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "The higher the altitude, the thinner the air. Since Mexico City’s altitude is higher than that of Panama City, the air must be thinner in Mexico City than in Panama City." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "Which one of the following arguments is most similar in its reasoning to the argument above?" },
-    
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-111-S-4-Q-23',
+      stimulus: "The higher the altitude, the thinner the air. Since Mexico City’s altitude is higher than that of Panama City, the air must be thinner in Mexico City than in Panama City.",
+      question: "Which one of the following arguments is most similar in its reasoning to the argument above?",
+      options: [
       "**(A)** As one gets older one gets wiser. Since Henrietta is older than her daughter, Henrietta must be wiser than her daughter.",
       "**(B)** The more egg whites used and the longer they are beaten, the fluffier the meringue. Since Lydia used more egg whites in her meringue than Joseph used in his, Lydia’s meringue must be fluffier than Joseph’s.",
       "**(C)** The people who run the fastest marathons these days are faster than the people who ran the fastest marathons ten years ago. Charles is a marathon runner. So Charles must run faster marathons these days than he did ten years ago.",
       "**(D)** The older a tree, the more rings it has. The tree in Lou’s yard is older than the tree in Theresa’s yard. Therefore, the tree in Lou’s yard must have more rings than does the tree in Theresa’s yard.",
       "**(E)** The bigger the vocabulary a language has, the harder it is to learn. English is harder to learn than Italian. Therefore, English must have a bigger vocabulary than Italian."
-    ]},
+    ]
+    },
     
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

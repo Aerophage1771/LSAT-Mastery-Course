@@ -8,18 +8,19 @@ export const Lesson8_Drill_IndependentRoles: Lesson = {
     { type: 'paragraph', text: "This drill tackles a question with an **Unconventional Logical Role**. In harder questions, not every statement fits neatly into a \"Premise supports Conclusion\" box. Some statements act as independent observations or clarifications." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "One can be at home and be in the backyard, that is, not in one’s house at all. One can also be in one’s house but not at home, if one owns the house but rents it out to others, for example. So one’s being at home is not required for one’s being in one’s own house." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "Which one of the following most accurately describes the relationship between the argument’s conclusion and its claim that *one can be at home without being in one’s house*?" },
-    
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-108-S-2-Q-22',
+      stimulus: "One can be at home and be in the backyard, that is, not in one’s house at all. One can also be in one’s house but not at home, if one owns the house but rents it out to others, for example. So one’s being at home is not required for one’s being in one’s own house.",
+      question: "Which one of the following most accurately describes the relationship between the argument’s conclusion and its claim that *one can be at home without being in one’s house*?",
+      options: [
       "**(A)** The claim is required to establish the conclusion.",
       "**(B)** The claim represents the point the conclusion is intended to refute.",
       "**(C)** The claim is compatible with the truth or falsity of the conclusion.",
       "**(D)** The claim points out an ambiguity in the phrase “at home.”",
       "**(E)** The claim inadvertently contradicts the conclusion."
-    ]},
+    ]
+    },
     
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
