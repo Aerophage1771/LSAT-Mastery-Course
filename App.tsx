@@ -149,7 +149,7 @@ function ModulePage() {
   );
 }
 
-function DashboardPage() {
+function DashboardPage({ loadedModules }: { loadedModules: ModuleData[] }) {
   const navigate = useNavigate();
   const { getModuleProgress } = useProgressContext();
 
@@ -165,7 +165,7 @@ function DashboardPage() {
       onSelectLesson={() => {}}
       onGoHome={handleGoHome}
     >
-      <Dashboard modules={modulesFromMeta} onSelectModule={handleModuleSelect} getModuleProgress={getModuleProgress} />
+      <Dashboard modules={modulesFromMeta} fullModules={loadedModules} onSelectModule={handleModuleSelect} getModuleProgress={getModuleProgress} />
     </Layout>
   );
 }
@@ -209,7 +209,7 @@ function AppRoutes() {
         onNavigate={handleSearchNavigate}
       />
       <Routes>
-        <Route path="/" element={<DashboardPage />} />
+        <Route path="/" element={<DashboardPage loadedModules={loadedModules} />} />
         <Route path="/question-bank" element={<QuestionBank />} />
         <Route path="/module/:moduleId" element={<ModulePage />} />
         <Route path="/module/:moduleId/lesson/:lessonId" element={<ModulePage />} />
