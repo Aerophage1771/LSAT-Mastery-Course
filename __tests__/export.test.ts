@@ -87,7 +87,7 @@ describe('Export Utils', () => {
     expect(json).toContain('"id": "PT-123-S-2-Q-05"');
     expect(csv).toContain('id,questionType,isIllustrative,inUse,stimulus,question,options');
     expect(csv).toContain('"Line 1,\n""Quoted"" text"');
-    expect(csv).toContain('"A. Alpha\nB. Beta (Correct)"');
+    expect(csv).toContain('A. Alpha | B. Beta (Correct)');
     expect(ids).toBe('PT-123-S-2-Q-05');
   });
 });

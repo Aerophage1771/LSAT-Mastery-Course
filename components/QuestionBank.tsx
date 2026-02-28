@@ -255,7 +255,7 @@ const ALL_QUESTIONS = extractAllQuestions();
 const cleanOptionText = (item: string): string => {
   return item
     .replace(/\[\d+(\.\d+)?%\]/g, '')
-    .replace('(Correct)', '')
+    .replace(/\(Correct\)/g, '')
     .replace(/^\*\*\([A-E]\)\*\*\s*/, '')
     .trim();
 };
@@ -575,7 +575,7 @@ export const QuestionBank: React.FC = () => {
       isIllustrative: true,
       inUse: false,
       stimulus: '',
-      question: item.lessonTitle,
+      question: '',
       options: [],
     }));
   }, [activeTab, filteredQuestions, filteredIllustrative]);

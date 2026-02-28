@@ -605,7 +605,7 @@ export const generateQuestionBankCSV = (rows: QuestionBankExportRow[]): string =
       escapeCSVCell(String(row.inUse)),
       escapeCSVCell(row.stimulus),
       escapeCSVCell(row.question),
-      escapeCSVCell(row.options.join('\n')),
+      escapeCSVCell(row.options.join(' | ')),
     ].join(','),
   );
 
