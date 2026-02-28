@@ -1,10 +1,17 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import DOMPurify from 'dompurify';
-import { Search, Filter, ChevronDown, ChevronUp, BookOpen, Hash, X, ArrowLeft } from 'lucide-react';
+import { Search, Filter, ChevronDown, ChevronUp, BookOpen, Hash, X, ArrowLeft, Download } from 'lucide-react';
 import { ContentBlock } from '../types';
 import { drillCrossReferences } from '../modules/drillCrossReferences';
 import inventoryData from '../docs/invented-questions-inventory.json';
+import {
+  generateQuestionBankCSV,
+  generateQuestionBankJSON,
+  generateQuestionBankIDsCSV,
+  generateQuestionBankIDsText,
+  QuestionBankExportRow,
+} from '../utils/export';
 
 interface InventoryItem {
   module: number;
@@ -245,6 +252,20 @@ function extractAllQuestions(): ParsedQuestion[] {
 
 const ALL_QUESTIONS = extractAllQuestions();
 
+const cleanOptionText = (item: string): string => {
+  return item
+    .replace(/\[\d+(\.\d+)?%\]/g, '')
+    .replace('(Correct)', '')
+    .replace(/^\*\*\([A-E]\)\*\*\s*/, '')
+    .trim();
+};
+
+const formatOptionForExport = (item: string, index: number): string => {
+  const label = String.fromCharCode(65 + index);
+  const isCorrect = item.includes('(Correct)');
+  return `${label}. ${cleanOptionText(item)}${isCorrect ? ' (Correct)' : ''}`;
+};
+
 const OptionItem: React.FC<{
   item: string;
   index: number;
@@ -434,6 +455,7 @@ export const QuestionBank: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'real' | 'illustrative'>('real');
   const [showInUseOnly, setShowInUseOnly] = useState(false);
   const [showNotInUseOnly, setShowNotInUseOnly] = useState(false);
+  const [exportMenuOpen, setExportMenuOpen] = useState(false);
 
   const lrTypeCountMap = useMemo(() => {
     const map = new Map<string, number>();
@@ -533,6 +555,48 @@ export const QuestionBank: React.FC = () => {
 
     return result;
   }, [selectedType, selectedCategory, searchQuery, showInUseOnly, showNotInUseOnly]);
+
+  const exportRows = useMemo<QuestionBankExportRow[]>(() => {
+    if (activeTab === 'real') {
+      return filteredQuestions.map((q) => ({
+        id: q.ptId,
+        questionType: q.typeName,
+        isIllustrative: false,
+        inUse: Boolean(drillCrossReferences[q.ptId]),
+        stimulus: q.stimulus,
+        question: q.question,
+        options: q.options.map(formatOptionForExport),
+      }));
+    }
+
+    return filteredIllustrative.map((item) => ({
+      id: item.cardId,
+      questionType: item.questionType,
+      isIllustrative: true,
+      inUse: false,
+      stimulus: '',
+      question: item.lessonTitle,
+      options: [],
+    }));
+  }, [activeTab, filteredQuestions, filteredIllustrative]);
+
+  const missingOrIllustrativeRows = useMemo(
+    () => exportRows.filter((row) => row.isIllustrative || !row.inUse),
+    [exportRows],
+  );
+
+  const downloadExport = (content: string, filename: string, extension: string, mime: string) => {
+    const blob = new Blob([content], { type: mime });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${filename}.${extension}`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    setExportMenuOpen(false);
+  };
 
   const handleToggle = (id: string) => {
     setExpandedId((prev) => (prev === id ? null : id));
@@ -772,7 +836,89 @@ export const QuestionBank: React.FC = () => {
 
         {/* Header */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-8 pb-4">
-          <h1 className="text-2xl font-bold text-slate-900 tracking-tight">Question Bank</h1>
+          <div className="flex items-start justify-between gap-4">
+            <h1 className="text-2xl font-bold text-slate-900 tracking-tight">Question Bank</h1>
+            <div className="relative">
+              <button
+                onClick={() => setExportMenuOpen((open) => !open)}
+                className="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-200 text-xs font-semibold text-slate-700 hover:bg-slate-50 transition-colors"
+              >
+                <Download size={14} />
+                Export
+                <ChevronDown size={14} className={`${exportMenuOpen ? 'rotate-180' : ''} transition-transform`} />
+              </button>
+              {exportMenuOpen && (
+                <div className="absolute right-0 mt-2 w-60 rounded-xl border border-slate-200 bg-white shadow-xl z-30 p-1.5">
+                  <button
+                    onClick={() =>
+                      downloadExport(
+                        generateQuestionBankJSON(exportRows),
+                        `question-bank-full-${activeTab}`,
+                        'json',
+                        'application/json',
+                      )
+                    }
+                    className="w-full text-left px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 rounded-md"
+                  >
+                    Export Full Database (JSON)
+                  </button>
+                  <button
+                    onClick={() =>
+                      downloadExport(
+                        generateQuestionBankCSV(exportRows),
+                        `question-bank-full-${activeTab}`,
+                        'csv',
+                        'text/csv;charset=utf-8',
+                      )
+                    }
+                    className="w-full text-left px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 rounded-md"
+                  >
+                    Export Full Database (CSV)
+                  </button>
+                  <div className="my-1 border-t border-slate-100" />
+                  <button
+                    onClick={() =>
+                      downloadExport(
+                        generateQuestionBankIDsText(exportRows),
+                        `question-bank-ids-${activeTab}`,
+                        'txt',
+                        'text/plain;charset=utf-8',
+                      )
+                    }
+                    className="w-full text-left px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 rounded-md"
+                  >
+                    Export IDs Only (TXT)
+                  </button>
+                  <button
+                    onClick={() =>
+                      downloadExport(
+                        generateQuestionBankIDsCSV(exportRows),
+                        `question-bank-ids-${activeTab}`,
+                        'csv',
+                        'text/csv;charset=utf-8',
+                      )
+                    }
+                    className="w-full text-left px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 rounded-md"
+                  >
+                    Export IDs Only (CSV)
+                  </button>
+                  <button
+                    onClick={() =>
+                      downloadExport(
+                        generateQuestionBankIDsText(missingOrIllustrativeRows),
+                        `question-bank-missing-or-illustrative-ids-${activeTab}`,
+                        'txt',
+                        'text/plain;charset=utf-8',
+                      )
+                    }
+                    className="w-full text-left px-3 py-2 text-xs font-medium text-amber-700 hover:bg-amber-50 rounded-md"
+                  >
+                    Export Missing/Illustrative IDs
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
           <p className="mt-1 text-[14px] text-slate-500">
             {activeTab === 'real' ? (
               <>
