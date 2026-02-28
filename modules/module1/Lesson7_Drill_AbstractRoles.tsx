@@ -8,18 +8,19 @@ export const Lesson7_Drill_AbstractRoles: Lesson = {
     { type: 'paragraph', text: "This drill tackles a harder question. The complexity here lies in the multi-layered structure of the argument, which involves an author attacking a group of people who are attacking a third party." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "**Psychologist:** Some psychologists mistakenly argue that because dreams result from electrical discharges in the brain, they must be understood purely in terms of their physiological function. They conclude, against Freud, that dreams reveal nothing about the character of the dreamer. **But since dream content varies enormously,** then even if electrical discharges provide the terms of the physiological explanation of dreams, they cannot completely explain the phenomenon of dreaming." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "The claim that *dream content varies enormously* plays which one of the following roles in the argument?" },
-    
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-117-S-2-Q-24',
+      stimulus: "**Psychologist:** Some psychologists mistakenly argue that because dreams result from electrical discharges in the brain, they must be understood purely in terms of their physiological function. They conclude, against Freud, that dreams reveal nothing about the character of the dreamer. **But since dream content varies enormously,** then even if electrical discharges provide the terms of the physiological explanation of dreams, they cannot completely explain the phenomenon of dreaming.",
+      question: "The claim that *dream content varies enormously* plays which one of the following roles in the argument?",
+      options: [
       "**(A)** It is used to support the anti-Freudian conclusion that some psychologists draw concerning dreams.",
       "**(B)** It is used to support the explicitly stated conclusion that a fully satisfactory account of dreams must allow for the possibility of their revealing significant information about the dreamer.",
       "**(C)** It is used to suggest that neither Freud’s theory nor the theory of anti-Freudian psychologists can completely explain the phenomenon of dreaming.",
       "**(D)** It is used to illustrate the difficulty of providing a complete explanation of the phenomenon of dreaming.",
       "**(E)** It is used to undermine a claim that some psychologists use to argue against a view of Freud’s."
-    ]},
+    ]
+    },
     
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

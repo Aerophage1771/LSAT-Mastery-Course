@@ -8,17 +8,19 @@ export const Lesson10_Advanced_InternalContradiction: Lesson = {
     { type: 'paragraph', text: "This drill focuses on one of the most difficult and infrequent flaw types on the LSAT: the **Internal Contradiction**. The argument essentially eats its own tail." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "To hold criminals responsible for their crimes involves a failure to recognize that criminal actions, like all actions, are ultimately products of the environment that forged the agent’s character. It is not criminals but people in the law-abiding majority who by their actions do most to create and maintain this environment. Therefore, it is law-abiding people whose actions, and nothing else, make them alone truly responsible for crime." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "The reasoning in the argument is most vulnerable to criticism on the grounds that" },
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-105-S-2-Q-22',
+      stimulus: "To hold criminals responsible for their crimes involves a failure to recognize that criminal actions, like all actions, are ultimately products of the environment that forged the agent’s character. It is not criminals but people in the law-abiding majority who by their actions do most to create and maintain this environment. Therefore, it is law-abiding people whose actions, and nothing else, make them alone truly responsible for crime.",
+      question: "The reasoning in the argument is most vulnerable to criticism on the grounds that",
+      options: [
       "**(A)** it exploits an ambiguity in the term “environment” by treating two different meanings of the word as though they were equivalent",
       "**(B)** it fails to distinguish between actions that are socially acceptable and actions that are socially unacceptable",
       "**(C)** the way it distinguishes criminals from crimes implicitly denies that someone becomes a criminal solely in virtue of having committed a crime",
       "**(D)** its conclusion is a generalization of statistical evidence drawn from only a small minority of the population",
       "**(E)** its conclusion contradicts an implicit principle on which an earlier part of the argument is based"
-    ]},
+    ]
+    },
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
     { type: 'h3', text: "Analysis & Explanation" },

@@ -8,18 +8,19 @@ export const Lesson4_Drill_ProportionalReasoning: Lesson = {
     { type: 'paragraph', text: "This drill focuses on a **Mathematical** or **Proportional** pattern of reasoning. The logic relies on how two quantities change in relation to one another." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "The amount of electricity consumed in Millville on any day in August is directly proportional to peak humidity on that day. Since the average peak humidity this August was three points higher than the average peak humidity last August, it follows that more energy was consumed in Millville this August than last August." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "Which one of the following arguments has a pattern of reasoning most similar to the one in the argument above?" },
-    
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-101-S-3-Q-21',
+      stimulus: "The amount of electricity consumed in Millville on any day in August is directly proportional to peak humidity on that day. Since the average peak humidity this August was three points higher than the average peak humidity last August, it follows that more energy was consumed in Millville this August than last August.",
+      question: "Which one of the following arguments has a pattern of reasoning most similar to the one in the argument above?",
+      options: [
       "**(A)** The amount of art supplies used in any of the Aesthetic Institute’s 25 classes is directly proportional to the number of students in that class. Since in these classes the institute enrolled 20 percent more students overall last year than in the previous year, more art supplies were used in the institute’s classes last year than in the previous year.",
       "**(B)** The number of courses in painting offered by the Aesthetic Institute in any term is directly proportional to the number of students enrolled in the institute in that term. But the institute offers the same number of courses in sculpture each term. Hence, the institute usually offers more courses in painting than in sculpture.",
       "**(C)** The number of new students enrolled at the Aesthetic Institute in any given year is directly proportional to the amount of advertising the institute has done in the previous year. Hence, if the institute seeks to increase its student body it must increase the amount it spends on advertising.",
       "**(D)** The fees paid by a student at the Aesthetic Institute are directly proportional to the number of classes in which that student enrolls. Since the number of students at the Aesthetic Institute is increasing, it follows that the institute is collecting a greater amount in fees paid by students than it used to.",
       "**(E)** The number of instructors employed by the Aesthetic Institute in any term is directly proportional to the number of classes offered in that term and also directly proportional to the number of students enrolled at the institute. Thus, the number of classes offered by the institute in any term is directly proportional to the number of students enrolled in that term."
-    ]},
+    ]
+    },
     
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

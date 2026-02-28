@@ -8,17 +8,19 @@ export const Lesson8_Advanced_TheOnlyTrap: Lesson = {
     { type: 'paragraph', text: "This drill focuses on a high-difficulty conditional logic flaw. The challenge comes from the use of the word \"only,\" which requires careful translation, and the need to link multiple conditional statements into a chain." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "Only computer scientists understand the architecture of personal computers, and only those who understand the architecture of personal computers appreciate the advances in technology made in the last decade. It follows that only those who appreciate these advances are computer scientists." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "Which one of the following most accurately describes a flaw in the reasoning in the argument?" },
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-102-S-4-Q-23',
+      stimulus: "Only computer scientists understand the architecture of personal computers, and only those who understand the architecture of personal computers appreciate the advances in technology made in the last decade. It follows that only those who appreciate these advances are computer scientists.",
+      question: "Which one of the following most accurately describes a flaw in the reasoning in the argument?",
+      options: [
       "**(A)** The argument contains no stated or implied relationship between computer scientists and those who appreciate the advances in technology made in the last decade.",
       "**(B)** The argument ignores the fact that some computer scientists may not appreciate the advances in technology made in the last decade.",
       "**(C)** The argument ignores the fact that computer scientists may appreciate other things besides the advances in technology made in the last decade.",
       "**(D)** The premises of the argument are stated in such a way that they exclude the possibility of drawing any logical conclusion.",
       "**(E)** The premises of the argument presuppose that everyone understands the architecture of personal computers."
-    ]},
+    ]
+    },
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
     { type: 'h3', text: "Analysis & Explanation" },

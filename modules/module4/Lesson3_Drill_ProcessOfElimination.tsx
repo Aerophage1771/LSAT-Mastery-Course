@@ -8,18 +8,19 @@ export const Lesson3_Drill_ProcessOfElimination: Lesson = {
     { type: 'paragraph', text: "This drill focuses on a common logical pattern: **Process of Elimination** (also known as Disjunctive Syllogism), where one of two possibilities is ruled out, leaving the other as the necessary conclusion." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "Carl’s Coffee Emporium stocks only two decaffeinated coffees: French Roast and Mocha Java. Yusef only serves decaffeinated coffee, and the coffee he served after dinner last night was far too smooth and mellow to have been French Roast. So, if Yusef still gets all his coffee from Carl’s, what he served last night was Mocha Java." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "The argument above is most similar in its logical structure to which one of the following?" },
-    
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-101-S-2-Q-13',
+      stimulus: "Carl’s Coffee Emporium stocks only two decaffeinated coffees: French Roast and Mocha Java. Yusef only serves decaffeinated coffee, and the coffee he served after dinner last night was far too smooth and mellow to have been French Roast. So, if Yusef still gets all his coffee from Carl’s, what he served last night was Mocha Java.",
+      question: "The argument above is most similar in its logical structure to which one of the following?",
+      options: [
       "**(A)** Samuel wants to take three friends to the beach. His mother owns both a sedan and a convertible. The convertible holds four people so, although the sedan has a more powerful engine, if Samuel borrows a vehicle from his mother, he will borrow the convertible.",
       "**(B)** If Anna wants to walk from her house to the office where she works, she must either go through the park or take the overpass across the railroad tracks. The park paths are muddy, and Anna does not like using the overpass, so she never walks to work.",
       "**(C)** Rose can either take a two-week vacation in July or wait until October and take a three-week vacation. The trail she had planned to hike requires three weeks to complete but is closed by October, so if Rose takes a vacation, it will not be the one she had planned.",
       "**(D)** Werdix, Inc., has offered Arno a choice between a job in sales and a job in research. Arno would like to work at Werdix but he would never take a job in sales when another job is available, so if he accepts one of these jobs, it will be the one in research.",
       "**(E)** If Teresa does not fire her assistant, her staff will rebel and her department’s efficiency will decline. Losing her assistant would also reduce its efficiency, so, if no alternative solution can be found, Teresa’s department will become less efficient."
-    ]},
+    ]
+    },
     
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

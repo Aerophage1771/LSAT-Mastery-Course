@@ -8,19 +8,18 @@ export const Lesson3_Drill_SourceAttack: Lesson = {
     { type: 'paragraph', text: "This drill will walk you through a classic and common flaw type: the **Source Attack**, also known as an **Ad Hominem** fallacy. In this type of flawed argument, the author attacks the person or group making a claim, rather than the claim itself." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "**Herbalist:** Many of my customers find that their physical coordination improves after drinking juice containing certain herbs. A few doctors assert that the herbs are potentially harmful, but doctors are always trying to maintain a monopoly over medical therapies. So there is no reason not to try my herb juice." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "The reasoning in the herbalist’s argument is flawed because the argument" },
-    { 
-      type: 'options', 
-      items: [
+    {
+      type: 'question-card',
+      id: 'PT-102-S-3-Q-14',
+      stimulus: "**Herbalist:** Many of my customers find that their physical coordination improves after drinking juice containing certain herbs. A few doctors assert that the herbs are potentially harmful, but doctors are always trying to maintain a monopoly over medical therapies. So there is no reason not to try my herb juice.",
+      question: "The reasoning in the herbalist’s argument is flawed because the argument",
+      options: [
         "**(A)** attempts to force acceptance of a claim by inducing fear of the consequences of rejecting that claim",
         "**(B)** bases a conclusion on claims that are inconsistent with each other",
         "**(C)** rejects a claim by attacking the proponents of the claim rather than addressing the claim itself",
         "**(D)** relies on evidence presented in terms that presuppose the truth of the claim for which the evidence is offered",
         "**(E)** mistakes the observation that one thing happens after another for proof that the second thing is the result of the first"
-      ] 
+      ]
     },
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

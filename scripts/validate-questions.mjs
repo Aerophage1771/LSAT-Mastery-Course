@@ -14,7 +14,7 @@
  * Run: node scripts/validate-questions.mjs
  */
 
-import { readFileSync, readdirSync } from 'fs';
+import { readFileSync, readdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
 const REPO_DIR = join(import.meta.dirname, '..', 'modules', 'module48');
@@ -22,6 +22,7 @@ const PT_REGEX = /PT-\d+-S-\d+-Q-\d+/g;
 const CORRECT_REGEX = /\(Correct\)/;
 const PERCENT_REGEX = /\[\d+(\.\d+)?%\]/;
 const MISSING_ID_REGEX = /\[Missing ID\]/;
+const QUESTION_ID_REGEX = /PT-\d+-S-\d+-(?:Q|P)-\d+/g;
 const TYPO_PATTERNS = [
   { pattern: /one of ahe following/i, fix: 'one of the following' },
   { pattern: /one of a following/i, fix: 'one of the following' },
@@ -130,3 +131,83 @@ console.log(`Total: ${totalQuestions} questions across ${files.length} files`);
 console.log(`Unique PT IDs: ${allPtIds.size}`);
 console.log(`Issues found: ${totalIssues}`);
 console.log(totalIssues === 0 ? '✅ All checks passed!' : `❌ ${totalIssues} issues need attention`);
+
+function collectQuestionBankIds() {
+  const dbModules = ['module48', 'module49', 'module53'];
+  const ids = new Set();
+
+  for (const moduleName of dbModules) {
+    const dir = join(import.meta.dirname, '..', 'modules', moduleName);
+    const files = readdirSync(dir).filter((f) => f.endsWith('.tsx'));
+    for (const file of files) {
+      const content = readFileSync(join(dir, file), 'utf-8');
+      const matches = content.match(QUESTION_ID_REGEX) || [];
+      for (const id of matches) ids.add(id);
+    }
+  }
+
+  return ids;
+}
+
+function collectLessonQuestionUsage() {
+  const modulesDir = join(import.meta.dirname, '..', 'modules');
+  const usedIds = new Set();
+  let illustrativeInLessons4Plus = 0;
+
+  const moduleDirs = readdirSync(modulesDir).filter((d) => /^module\d+$/.test(d));
+  for (const moduleDir of moduleDirs) {
+    if (['module48', 'module49', 'module53'].includes(moduleDir)) continue;
+
+    const dir = join(modulesDir, moduleDir);
+    const files = readdirSync(dir).filter((f) => /^Lesson.*\.tsx$/.test(f));
+
+    for (const file of files) {
+      const content = readFileSync(join(dir, file), 'utf-8');
+      const lessonNum = Number((file.match(/^Lesson(\d+)_/) || [])[1] || 0);
+
+      const cardBlocks = content.match(/type:\s*'question(?:-passage)?-card'[\s\S]{0,1200}?\}/g) || [];
+      for (const block of cardBlocks) {
+        const idMatch = block.match(/id:\s*['"]([^'"]+)['"]/);
+        if (idMatch) usedIds.add(idMatch[1]);
+
+        if (/isIllustrative:\s*true/.test(block) && lessonNum >= 4) {
+          illustrativeInLessons4Plus += 1;
+        }
+      }
+    }
+  }
+
+  return { usedIds, illustrativeInLessons4Plus };
+}
+
+const databaseIds = collectQuestionBankIds();
+const { usedIds, illustrativeInLessons4Plus } = collectLessonQuestionUsage();
+const usedInDatabase = [...usedIds].filter((id) => databaseIds.has(id));
+const unusedInDatabase = [...databaseIds].filter((id) => !usedIds.has(id));
+const missingDatabaseEntries = [...usedIds].filter((id) => !databaseIds.has(id)).sort();
+
+const auditReport = [
+  '# Question Usage Audit Report',
+  '',
+  `- **Total Questions in Database:** ${databaseIds.size}`,
+  `- **Used Questions (In Use):** ${usedInDatabase.length}`,
+  `- **Unused Questions:** ${unusedInDatabase.length}`,
+  '',
+  '## Missing Database Entries',
+  missingDatabaseEntries.length
+    ? missingDatabaseEntries.map((id) => `- \`${id}\``).join('\n')
+    : '- None',
+  '',
+  `## Invented/Illustrative Count (Lessons 4+)`,
+  `- **${illustrativeInLessons4Plus}**`,
+  '',
+].join('\n');
+
+writeFileSync(
+  join(import.meta.dirname, '..', 'docs', 'question-usage-audit.md'),
+  `${auditReport}\n`,
+  'utf-8'
+);
+
+console.log('\n');
+console.log(auditReport);

@@ -8,18 +8,19 @@ export const Lesson3_Drill_Premise: Lesson = {
     { type: 'paragraph', text: "This drill focuses on identifying the specific structural role a highlighted sentence plays within an argument. We're starting with a question that targets the most fundamental building block of any logical argument." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "**Economist:** Many analysts predict that the new tariff policy will increase domestic manufacturing jobs. However, this outcome is unlikely. **Domestic manufacturers rely heavily on imported raw materials, which will become significantly more expensive under the new policy.** Consequently, production costs will rise, forcing manufacturers to cut labor costs to remain competitive." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "The statement that *domestic manufacturers rely heavily on imported raw materials* figures in the economist's argument in which one of the following ways?" },
-    
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-111-S-4-Q-2',
+      stimulus: "**Economist:** Many analysts predict that the new tariff policy will increase domestic manufacturing jobs. However, this outcome is unlikely. **Domestic manufacturers rely heavily on imported raw materials, which will become significantly more expensive under the new policy.** Consequently, production costs will rise, forcing manufacturers to cut labor costs to remain competitive.",
+      question: "The statement that *domestic manufacturers rely heavily on imported raw materials* figures in the economist's argument in which one of the following ways?",
+      options: [
       "**(A)** It is the main conclusion of the argument.",
       "**(B)** It is a claim that the argument seeks to refute.",
       "**(C)** It is a premise offered in support of the claim that production costs will rise.",
       "**(D)** It is a background fact used to set the context for the debate.",
       "**(E)** It is an intermediate conclusion supported by the claim that labor costs must be cut."
-    ]},
+    ]
+    },
     
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

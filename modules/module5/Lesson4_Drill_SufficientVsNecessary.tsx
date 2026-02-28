@@ -8,19 +8,18 @@ export const Lesson4_Drill_SufficientVsNecessary: Lesson = {
     { type: 'paragraph', text: "This drill will walk you through a foundational flaw involving conditional logic: confusing a **sufficient condition** with a **necessary condition**. This error is extremely common on the LSAT and often appears in arguments that try to explain why a particular event occurred." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "Unplugging a peripheral component such as a “mouse” from a personal computer renders all of the software programs that require that component unusable on that computer. On Fred’s personal computer, a software program that requires a mouse has become unusable. So it must be that the mouse for Fred’s computer became unplugged." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "The argument is most vulnerable to which one of the following criticisms?" },
-    { 
-      type: 'options', 
-      items: [
+    {
+      type: 'question-card',
+      id: 'PT-104-S-4-Q-10',
+      stimulus: "Unplugging a peripheral component such as a “mouse” from a personal computer renders all of the software programs that require that component unusable on that computer. On Fred’s personal computer, a software program that requires a mouse has become unusable. So it must be that the mouse for Fred’s computer became unplugged.",
+      question: "The argument is most vulnerable to which one of the following criticisms?",
+      options: [
         "**(A)** It contains a shift in the meaning of “unusable” from “permanently unusable” to “temporarily unusable.”",
         "**(B)** It treats an event that can cause a certain result as though that event is necessary to bring about that result.",
         "**(C)** It introduces information unrelated to its conclusion as evidence in support of that conclusion.",
         "**(D)** It attempts to support its conclusion by citing a generalization that is too broad.",
         "**(E)** It overlooks the possibility that some programs do not require a peripheral component such as a mouse."
-      ] 
+      ]
     },
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

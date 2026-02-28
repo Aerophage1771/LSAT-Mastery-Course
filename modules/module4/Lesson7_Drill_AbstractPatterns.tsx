@@ -8,18 +8,19 @@ export const Lesson7_Drill_AbstractPatterns: Lesson = {
     { type: 'paragraph', text: "This drill focuses on a difficult abstract pattern: **Dismissing Apparent Causation Due to a Low Base Rate**. The argument claims that a few confirming instances are not good evidence when the vast majority of instances are disconfirming." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "Researcher: The vast majority of a person’s dreams bear no resemblance whatsoever to real events that follow the dreams. Thus, it is unreasonable to believe that one has extrasensory perception solely on the basis of having had several vivid dreams about events that happen after the dreams." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "Which one of the following arguments is most similar in its reasoning to the argument above?" },
-    
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-104-S-1-Q-26',
+      stimulus: "Researcher: The vast majority of a person’s dreams bear no resemblance whatsoever to real events that follow the dreams. Thus, it is unreasonable to believe that one has extrasensory perception solely on the basis of having had several vivid dreams about events that happen after the dreams.",
+      question: "Which one of the following arguments is most similar in its reasoning to the argument above?",
+      options: [
       "**(A)** It is unreasonable to believe that a new drug cures heart disease when it is tested, albeit successfully, on only a few patients. Most new drugs require testing on large numbers of patients before they are considered effective.",
       "**(B)** Many people who undergo surgery for ulcers show no long-term improvement. So it is unreasonable to believe that surgery for ulcers is effective, even though ulcer surgery benefits many people as well.",
       "**(C)** Even though many cancer patients experience remissions without drinking herbal tea, it is unreasonable to believe that not drinking herbal tea causes such remissions. Several factors are known to be relevant to cancer remission.",
       "**(D)** A number of people who die prematurely take aspirin. But it is unreasonable to conclude that aspirin is dangerous. Most people who take aspirin do not die prematurely.",
       "**(E)** A significant number of children raised near power lines develop cancer. So it is unreasonable to deny a connection between living near power lines and developing cancer, even though many people living near power lines never develop cancer."
-    ]},
+    ]
+    },
     
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

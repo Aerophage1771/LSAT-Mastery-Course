@@ -8,18 +8,19 @@ export const Lesson4_Drill_MainConclusion: Lesson = {
     { type: 'paragraph', text: "This drill introduces the second most common role you will encounter: the **Main Conclusion**." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "**Legal theorist:** **It is unreasonable to incarcerate anyone for any other reason than that he or she is a serious threat to the property or lives of other people.** The breaking of a law does not justify incarceration, for lawbreaking proceeds either from ignorance of the law or of the effects of one’s actions, or from the free choice of the lawbreaker. Obviously mere ignorance cannot justify incarcerating a lawbreaker, and even free choice on the part of the lawbreaker fails to justify incarceration, for free choice proceeds from the desires of an agent, and the desires of an agent are products of genetics and environmental conditioning, neither of which is controlled by the agent." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "The claim in the first sentence of the passage plays which one of the following roles in the argument?" },
-    
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-112-S-4-Q-3',
+      stimulus: "**Legal theorist:** **It is unreasonable to incarcerate anyone for any other reason than that he or she is a serious threat to the property or lives of other people.** The breaking of a law does not justify incarceration, for lawbreaking proceeds either from ignorance of the law or of the effects of one’s actions, or from the free choice of the lawbreaker. Obviously mere ignorance cannot justify incarcerating a lawbreaker, and even free choice on the part of the lawbreaker fails to justify incarceration, for free choice proceeds from the desires of an agent, and the desires of an agent are products of genetics and environmental conditioning, neither of which is controlled by the agent.",
+      question: "The claim in the first sentence of the passage plays which one of the following roles in the argument?",
+      options: [
       "**(A)** It is offered as a premise that helps to show that no actions are under the control of the agent.",
       "**(B)** It is offered as background information necessary to understand the argument.",
       "**(C)** It is offered as the main conclusion that the argument is designed to establish.",
       "**(D)** It is offered as evidence for the stated claim that protection of life and property is more important than retribution for past illegal acts.",
       "**(E)** It is offered as evidence for the stated claim that lawbreaking proceeds from either ignorance of the law, or ignorance of the effects of one’s actions, or free choice."
-    ]},
+    ]
+    },
     
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },

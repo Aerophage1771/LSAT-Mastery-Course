@@ -8,17 +8,19 @@ export const Lesson6_Advanced_TheBaseRateFallacy: Lesson = {
     { type: 'paragraph', text: "This drill introduces one of the most common and difficult flaws on the LSAT: the **Base Rate Fallacy**. This is a sophisticated error of statistical reasoning where an argument uses a compelling-sounding percentage about one group to draw a conclusion about a completely different group, ignoring the relative sizes (or \"base rates\") of the groups involved." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "Research indicates that 90 percent of extreme insomniacs consume large amounts of coffee. Since Tom drinks a lot of coffee, it is quite likely that he is an extreme insomniac." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "Which one of the following most accurately describes a flaw in the argument’s reasoning?" },
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-104-S-1-Q-23',
+      stimulus: "Research indicates that 90 percent of extreme insomniacs consume large amounts of coffee. Since Tom drinks a lot of coffee, it is quite likely that he is an extreme insomniac.",
+      question: "Which one of the following most accurately describes a flaw in the argument’s reasoning?",
+      options: [
       "**(A)** It fails to acknowledge the possibility that Tom is among the 10 percent of people who drink large amounts of coffee who are not extreme insomniacs.",
       "**(B)** It fails to consider the possible contribution to extreme insomnia of other causes of insomnia besides coffee.",
       "**(C)** It relies on evidence that does not indicate the frequency of extreme insomnia among people who drink large amounts of coffee.",
       "**(D)** It draws an inference about one specific individual from evidence that describes only the characteristics of a class of individuals.",
       "**(E)** It presumes without warrant that drinking coffee always causes insomnia."
-    ]},
+    ]
+    },
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
     { type: 'h3', text: "Analysis & Explanation" },

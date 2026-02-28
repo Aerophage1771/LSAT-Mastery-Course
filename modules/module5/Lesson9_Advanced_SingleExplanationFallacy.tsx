@@ -8,17 +8,19 @@ export const Lesson9_Advanced_SingleExplanationFallacy: Lesson = {
     { type: 'paragraph', text: "This drill focuses on a subtle but common high-difficulty flaw. The author provides a plausible explanation for a specific phenomenon and then illegitimately extends that single explanation to cover a much broader category of events." },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "**Pundit:** People complain about how ineffectual their legislative representatives are, but this apparent ineffectuality is simply the manifestation of compromises these representatives must make when they do what they were elected to do: compete for the government’s scarce funds. So, when people express dissatisfaction with their legislative representatives, we can be assured that these representatives are simply doing what they were elected to do." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "The pundit’s argument is flawed because it takes for granted that" },
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-113-S-4-Q-12',
+      stimulus: "**Pundit:** People complain about how ineffectual their legislative representatives are, but this apparent ineffectuality is simply the manifestation of compromises these representatives must make when they do what they were elected to do: compete for the government’s scarce funds. So, when people express dissatisfaction with their legislative representatives, we can be assured that these representatives are simply doing what they were elected to do.",
+      question: "The pundit’s argument is flawed because it takes for granted that",
+      options: [
       "**(A)** the apparent ineffectuality of legislative representatives is the only source of popular dissatisfaction with those representatives",
       "**(B)** governmental resources that are currently scarce cannot become more abundant except by the actions of politicians",
       "**(C)** constituents would continue to be dissatisfied with the effectuality of their legislative representatives if constituents were aware of the cause of this apparent ineffectuality",
       "**(D)** legislative compromise inevitably results in popular dissatisfaction with politicians",
       "**(E)** only elected public servants tend to elicit dissatisfaction among the public"
-    ]},
+    ]
+    },
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
     { type: 'h3', text: "Analysis & Explanation" },

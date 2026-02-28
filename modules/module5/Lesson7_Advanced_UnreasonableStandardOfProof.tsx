@@ -8,17 +8,19 @@ export const Lesson7_Advanced_UnreasonableStandardOfProof: Lesson = {
     { type: 'paragraph', text: "This drill explores a sophisticated variation of the \"Argument from Ignorance\" flaw. The author dismisses perfectly relevant circumstantial evidence by setting an impossibly high standard for what counts as \"proof.\"" },
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
     { type: 'hr' },
-    { type: 'h4', text: "The Stimulus" },
-    { type: 'blockquote', text: "**Attorney for Ziegler:** My client continued to do consulting work between the time of his arrest for attempted murder and the start of this trial. But I contend that Ziegler was insane at the time that he fired the shot. This is the only reasonable conclusion to draw from the fact that the accusers have submitted no evidence that he was sane at the time he pulled the trigger, only that he was sane some time after he did so." },
-    { type: 'h4', text: "The Question" },
-    { type: 'paragraph', text: "Which one of the following most accurately describes a flaw in the reasoning of Ziegler’s attorney?" },
-    { type: 'options', items: [
+    {
+      type: 'question-card',
+      id: 'PT-103-S-2-Q-21',
+      stimulus: "**Attorney for Ziegler:** My client continued to do consulting work between the time of his arrest for attempted murder and the start of this trial. But I contend that Ziegler was insane at the time that he fired the shot. This is the only reasonable conclusion to draw from the fact that the accusers have submitted no evidence that he was sane at the time he pulled the trigger, only that he was sane some time after he did so.",
+      question: "Which one of the following most accurately describes a flaw in the reasoning of Ziegler’s attorney?",
+      options: [
       "**(A)** It presumes that being a well-educated professional is relevant to being guilty or innocent.",
       "**(B)** It concludes on the basis of evidence against Ziegler’s being sane that there is a lack of evidence for Ziegler’s being sane.",
       "**(C)** It fails to consider that Ziegler might have been insane when he worked as a consultant.",
       "**(D)** It presumes that whether one is sane is relevant to whether one is morally responsible for one’s actions.",
       "**(E)** It fails to consider the possibility that Ziegler’s being sane after the shooting is an indication that he was sane at the time of the shooting."
-    ]},
+    ]
+    },
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
     { type: 'h3', text: "Analysis & Explanation" },
