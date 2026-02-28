@@ -585,6 +585,45 @@ const escapeCSVCell = (value: string): string => {
   return s;
 };
 
+export interface QuestionBankExportRow {
+  id: string;
+  questionType: string;
+  isIllustrative: boolean;
+  inUse: boolean;
+  stimulus: string;
+  question: string;
+  options: string[];
+}
+
+export const generateQuestionBankCSV = (rows: QuestionBankExportRow[]): string => {
+  const header = 'id,questionType,isIllustrative,inUse,stimulus,question,options';
+  const lines = rows.map((row) =>
+    [
+      escapeCSVCell(row.id),
+      escapeCSVCell(row.questionType),
+      escapeCSVCell(String(row.isIllustrative)),
+      escapeCSVCell(String(row.inUse)),
+      escapeCSVCell(row.stimulus),
+      escapeCSVCell(row.question),
+      escapeCSVCell(row.options.join(' | ')),
+    ].join(','),
+  );
+
+  return [header, ...lines].join('\n');
+};
+
+export const generateQuestionBankJSON = (rows: QuestionBankExportRow[]): string => {
+  return JSON.stringify(rows, null, 2);
+};
+
+export const generateQuestionBankIDsText = (rows: QuestionBankExportRow[]): string => {
+  return rows.map((row) => row.id).join('\n');
+};
+
+export const generateQuestionBankIDsCSV = (rows: QuestionBankExportRow[]): string => {
+  return ['id', ...rows.map((row) => escapeCSVCell(row.id))].join('\n');
+};
+
 const lessonToPlainText = (lesson: Lesson): string => {
   if (typeof lesson.content === 'string') {
     return lesson.content.trim();

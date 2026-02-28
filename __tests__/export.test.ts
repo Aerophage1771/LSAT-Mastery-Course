@@ -1,6 +1,12 @@
 
 import { describe, it, expect } from 'vitest';
-import { generateLessonText, generateLessonRTF } from '../utils/export';
+import {
+  generateLessonText,
+  generateLessonRTF,
+  generateQuestionBankCSV,
+  generateQuestionBankIDsText,
+  generateQuestionBankJSON,
+} from '../utils/export';
 import { Lesson, ContentBlock } from '../types';
 
 describe('Export Utils', () => {
@@ -59,5 +65,29 @@ describe('Export Utils', () => {
     expect(rtf).toContain('PASSAGE CARD: The Passage');
     
     expect(rtf).toContain('RC QUESTION: RC Passage');
+  });
+
+  it('should export question bank rows with escaping and ids', () => {
+    const rows = [
+      {
+        id: 'PT-123-S-2-Q-05',
+        questionType: 'Strengthen',
+        isIllustrative: false,
+        inUse: true,
+        stimulus: 'Line 1,\n"Quoted" text',
+        question: 'Which option is best?',
+        options: ['A. Alpha', 'B. Beta (Correct)'],
+      },
+    ];
+
+    const json = generateQuestionBankJSON(rows);
+    const csv = generateQuestionBankCSV(rows);
+    const ids = generateQuestionBankIDsText(rows);
+
+    expect(json).toContain('"id": "PT-123-S-2-Q-05"');
+    expect(csv).toContain('id,questionType,isIllustrative,inUse,stimulus,question,options');
+    expect(csv).toContain('"Line 1,\n""Quoted"" text"');
+    expect(csv).toContain('A. Alpha | B. Beta (Correct)');
+    expect(ids).toBe('PT-123-S-2-Q-05');
   });
 });
