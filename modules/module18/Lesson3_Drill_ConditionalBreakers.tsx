@@ -31,7 +31,7 @@ export const Lesson3_Drill_ConditionalBreakers: Lesson = {
     { type: 'h4', text: 'The Problem' },
 
     { type: 'question-card',
-      id: '18-3-drill',
+      id: 'PT-103-S-1-Q-13',
       questionType: 'Must Be False',
       difficulty: 'medium',
       stimulus: 'Some people think that in every barrel of politicians there are only a few rotten ones. But if deceit is a quality of rottenness, I believe all effective politicians are rotten. They must be deceitful in order to do the job properly. Someone who is scrupulously honest about obeying the rules of society will never be an effective politician.',

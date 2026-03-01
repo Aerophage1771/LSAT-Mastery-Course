@@ -46,7 +46,7 @@ export const Lesson3_Drill_TheMissingBaseline: Lesson = {
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
 
     { type: 'question-card',
-      id: 'DR-7-3-001',
+      id: 'PT-119-S-3-Q-3',
       questionType: 'Evaluate the Argument',
       difficulty: 'medium',
       stimulus: "A recent study involved feeding a high-salt diet to a rat colony. A few months after the experiment began, standard tests of the rats' blood pressure revealed that about 25 percent of the colony had normal, healthy blood pressure, about 70 percent of the colony had high blood pressure, and 5 percent of the colony had extremely high blood pressure. The conclusion from these results is that high-salt diets are linked to high blood pressure in rats.",

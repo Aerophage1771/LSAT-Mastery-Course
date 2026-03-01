@@ -35,7 +35,7 @@ export const Lesson3_Drill_NormativeBridge: Lesson = {
     { type: 'h4', text: 'The Problem' },
 
     { type: 'question-card',
-      id: '12-3-drill',
+      id: 'PT-117-S-4-Q-2',
       questionType: 'Principle-Strengthen',
       difficulty: 'medium',
       stimulus: "Pacifist: It is immoral to do anything that causes harm to another person. But, since using force causes harm to another person, it is also immoral to threaten to use force, even when such a threat is made in self-defense.",

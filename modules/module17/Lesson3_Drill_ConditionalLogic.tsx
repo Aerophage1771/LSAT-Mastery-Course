@@ -10,7 +10,7 @@ export const Lesson3_Drill_ConditionalLogic: Lesson = {
     { type: 'paragraph', text: 'When a stimulus provides A\u2192B and B\u2192C, the transitive chain A\u2192C is guaranteed. Equally valid is the contrapositive ~C\u2192~A. Correct answers on the LSAT frequently test whether you can build these chains accurately and recognize contrapositives expressed in natural language. The difficulty increases when the stimulus hides conditionals behind words like "unless," "only if," "no...that does not," or double negatives.' },
     { type: 'h3', text: 'Practice Question' },
     { type: 'question-card',
-      id: 'illustrative',
+      id: 'PT-125-S-4-Q-23',
       questionType: 'Must Be True',
       difficulty: 'medium',
       stimulus: 'Politician: The current crisis in mathematics education must be overcome if we are to remain competitive in the global economy. Alleviating this crisis requires the employment of successful teaching methods. No method of teaching a subject can succeed that does not get students to spend a significant amount of time outside of class studying that subject.',

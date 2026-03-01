@@ -52,7 +52,7 @@ export const Lesson3_Drill_MistakenNegation: Lesson = {
     { type: 'h2', text: 'Practice Question' },
 
     { type: 'question-card',
-      id: 'PF-6-3-001',
+      id: 'PT-106-S-3-Q-21',
       questionType: 'Parallel Flaw',
       difficulty: 'medium',
       stimulus: "If the law punishes littering, then the city has an obligation to provide trash cans. But the law does not punish littering, so the city has no such obligation.",

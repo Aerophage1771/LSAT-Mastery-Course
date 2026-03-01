@@ -42,7 +42,7 @@ export const Lesson3_Drill_MechanisticChain: Lesson = {
     { type: 'h4', text: 'The Problem' },
 
     { type: 'question-card',
-      id: '15-3-drill',
+      id: 'PT-102-S-2-Q-3',
       questionType: 'Fill in the Blank',
       difficulty: 'medium',
       stimulus: "Many people limit the intake of calories and cholesterol in their diet in order to lose weight and reduce the level of cholesterol in their blood. When a person loses weight, the fat cells in that person's body decrease in size but not in number. As they decrease in size, fat cells spill the cholesterol they contain into the bloodstream. Therefore, a person who goes on a low-calorie, low-cholesterol diet _______.",

@@ -41,7 +41,7 @@ export const Lesson3_Drill_ExperimentGeneralization: Lesson = {
     { type: 'h4', text: 'The Problem' },
 
     { type: 'question-card',
-      id: '14-3-drill',
+      id: 'PT-116-S-3-Q-3',
       questionType: 'Principle - Generalization',
       difficulty: 'medium',
       stimulus: "In an experiment, tennis players who were told that their performance would be used to assess only the quality of their rackets performed much better than an equally skilled group of tennis players who were told that their tennis-playing talent would be measured.",
