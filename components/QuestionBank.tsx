@@ -1,9 +1,8 @@
-import React, { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useMemo, useState } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import DOMPurify from 'dompurify';
 import { Search, Filter, ChevronDown, ChevronUp, BookOpen, Hash, X, ArrowLeft, Download } from 'lucide-react';
-import { ContentBlock } from '../types';
-import { drillCrossReferences } from '../modules/drillCrossReferences';
+import { ContentBlock, DrillReference } from '../types';
 import inventoryData from '../docs/invented-questions-inventory.json';
 import {
   generateQuestionBankCSV,
@@ -329,7 +328,8 @@ const QuestionCardItem: React.FC<{
   q: ParsedQuestion;
   isExpanded: boolean;
   onToggle: () => void;
-}> = ({ q, isExpanded, onToggle }) => {
+  drillCrossReferences: Record<string, DrillReference>;
+}> = ({ q, isExpanded, onToggle, drillCrossReferences }) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [revealed, setRevealed] = useState(false);
 
@@ -446,7 +446,12 @@ const QuestionCardItem: React.FC<{
   );
 };
 
-export const QuestionBank: React.FC = () => {
+interface QuestionBankProps {
+  drillCrossReferences: Record<string, DrillReference>;
+}
+
+export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences }) => {
+  const [searchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<'LR' | 'RC' | null>(null);
@@ -456,6 +461,19 @@ export const QuestionBank: React.FC = () => {
   const [showInUseOnly, setShowInUseOnly] = useState(false);
   const [showNotInUseOnly, setShowNotInUseOnly] = useState(false);
   const [exportMenuOpen, setExportMenuOpen] = useState(false);
+  const ptParam = searchParams.get('pt')?.trim();
+
+  useEffect(() => {
+    if (!ptParam) return;
+    setActiveTab('real');
+    setSelectedType(null);
+    setSelectedCategory(null);
+    setShowInUseOnly(false);
+    setShowNotInUseOnly(false);
+    setSearchQuery(ptParam);
+    const exactMatch = ALL_QUESTIONS.find((question) => question.ptId === ptParam);
+    setExpandedId(exactMatch?.id ?? null);
+  }, [ptParam]);
 
   const lrTypeCountMap = useMemo(() => {
     const map = new Map<string, number>();
@@ -554,7 +572,7 @@ export const QuestionBank: React.FC = () => {
     }
 
     return result;
-  }, [selectedType, selectedCategory, searchQuery, showInUseOnly, showNotInUseOnly]);
+  }, [selectedType, selectedCategory, searchQuery, showInUseOnly, showNotInUseOnly, drillCrossReferences]);
 
   const exportRows = useMemo<QuestionBankExportRow[]>(() => {
     if (activeTab === 'real') {
@@ -578,7 +596,7 @@ export const QuestionBank: React.FC = () => {
       question: '',
       options: [],
     }));
-  }, [activeTab, filteredQuestions, filteredIllustrative]);
+  }, [activeTab, filteredQuestions, filteredIllustrative, drillCrossReferences]);
 
   const missingOrIllustrativeRows = useMemo(
     () => exportRows.filter((row) => row.isIllustrative || !row.inUse),
@@ -976,6 +994,7 @@ export const QuestionBank: React.FC = () => {
                     q={q}
                     isExpanded={expandedId === q.id}
                     onToggle={() => handleToggle(q.id)}
+                    drillCrossReferences={drillCrossReferences}
                   />
                 ))
               )}

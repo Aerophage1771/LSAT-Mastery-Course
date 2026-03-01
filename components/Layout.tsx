@@ -1,13 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ModuleData } from '../types';
+import { LessonLinkageMeta, ModuleData } from '../types';
 import { BookOpen, CheckCircle, Circle, Menu, X, ChevronRight, LayoutGrid, Download, Info, Palette, ArrowLeft, ArrowRight, Search, Rocket, Copy, Check, Upload, Database } from 'lucide-react';
 import { generateCourseText, generateCourseRTF, generateCourseJSON, generateCourseCSV, generateCoursePDF } from '../utils/export';
 import { ExportControls } from './ExportControls';
 import { LessonViewer } from './LessonViewer';
 import { useProgressContext } from '../contexts/ProgressContext';
-import { drillCrossReferences } from '../modules/drillCrossReferences';
-import inventoryData from '../docs/invented-questions-inventory.json';
 import {
   roadmapLearningContent,
   roadmapAnalyticsContent,
@@ -46,6 +44,7 @@ interface LayoutProps {
   lessonNav?: LessonNav | null;
   children: React.ReactNode;
   activeModuleData?: ModuleData;
+  lessonLinkageMeta?: Record<string, LessonLinkageMeta>;
   isLessonComplete?: (lessonId: string) => boolean;
 }
 
@@ -61,6 +60,7 @@ export const Layout: React.FC<LayoutProps> = ({
   lessonNav,
   children,
   activeModuleData,
+  lessonLinkageMeta,
   isLessonComplete,
 }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -246,6 +246,7 @@ export const Layout: React.FC<LayoutProps> = ({
                           <div className="mt-2 ml-3 pl-3 border-l-2 border-slate-800 space-y-1 my-2 animate-in slide-in-from-left-2 duration-200" role="group" aria-label={`Lessons in ${module.title}`}>
                             {sidebarLessons.map((lesson) => {
                               const completed = isLessonComplete?.(lesson.id) ?? false;
+                              const linkage = lessonLinkageMeta?.[lesson.id];
                               return (
                                 <button
                                   key={lesson.id}
@@ -264,17 +265,14 @@ export const Layout: React.FC<LayoutProps> = ({
                                     )}
                                   </div>
                                   <span>{lesson.title}</span>
-                                  {(() => {
-                                    const hasReal = Object.values(drillCrossReferences).some(ref => ref.lessonId === lesson.id);
-                                    const hasInvented = (inventoryData as Array<{ module: number; file: string }>).some(item => {
-                                      const lessonNum = lesson.id.split('-')[1];
-                                      return String(item.module) === String(activeModuleId) && item.file.includes(`Lesson${lessonNum}`);
-                                    });
-                                    if (hasReal && hasInvented) return <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0" title="Contains real + illustrative questions" />;
-                                    if (hasReal) return <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0" title="Contains real PrepTest questions" />;
-                                    if (hasInvented) return <span className="w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0" title="Contains illustrative questions" />;
-                                    return null;
-                                  })()}
+                                  {linkage?.status !== 'ok' && linkage?.statusLabel && (
+                                    <span
+                                      className="ml-auto inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wide bg-red-500/20 text-red-300 border border-red-500/40"
+                                      title={linkage.statusLabel}
+                                    >
+                                      {linkage.statusLabel}
+                                    </span>
+                                  )}
                                 </button>
                               );
                             })}
