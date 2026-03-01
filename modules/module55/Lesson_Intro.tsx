@@ -60,36 +60,6 @@ export const Lesson_Intro: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h3', text: 'Worked Example' },
-    { type: 'paragraph', text: 'Let\'s apply these concepts to a practice question. This illustrative example tests whether you can identify the valid inference from a conditional rule.' },
-
-    { type: 'question-card',
-      id: 'illustrative-55-intro-001',
-      questionType: 'Conditional Reasoning',
-      difficulty: 'easy',
-      stimulus: 'A company policy states: "Every employee who works remotely must submit a weekly productivity report." David is an employee who works remotely.',
-      question: 'If the statements above are true, which one of the following must also be true?',
-      options: [
-        '(A) David submits a weekly productivity report. (Correct)',
-        '(B) Every employee who submits a weekly productivity report works remotely.',
-        '(C) If David does not work remotely, he does not submit a weekly productivity report.',
-        '(D) Only employees who work remotely submit weekly productivity reports.',
-        '(E) David prefers working remotely to working in the office.',
-      ],
-    },
-
-    { type: 'h4', text: 'Walkthrough' },
-    { type: 'paragraph', text: '**Step 1: Diagram the rule.**\n\nThe policy says "Every employee who works remotely must submit a weekly productivity report." The word "every" signals a sufficient condition.\n\n**Diagram:** `Works Remotely → Submits Report`' },
-    { type: 'paragraph', text: '**Step 2: Apply the rule.**\n\nDavid works remotely. He triggers the sufficient condition. Therefore, the necessary condition must be true: David submits a weekly productivity report.' },
-    { type: 'paragraph', text: '**Step 3: Evaluate the answer choices.**' },
-    { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, colWidth: 'narrow', items: [
-      { title: '(A)', text: 'Correct. David triggers the sufficient condition (works remotely), so the necessary condition (submits report) must be true. This is a valid forward inference through the arrow.', badge: 'Correct', badgeColor: 'green' },
-      { title: '(B)', text: 'Incorrect. This is a **Mistaken Reversal** — it reads the arrow backward. The rule says remote workers must submit reports, not that report submitters must be remote workers. Office employees might also submit reports.', badge: 'Mistaken Reversal', badgeColor: 'red' },
-      { title: '(C)', text: 'Incorrect. This is a **Mistaken Negation** — it negates both sides without reversing. The rule does not tell us what happens when someone does NOT work remotely. David could submit reports even if he switched to in-office work.', badge: 'Mistaken Negation', badgeColor: 'red' },
-      { title: '(D)', text: 'Incorrect. "Only" introduces a necessary condition, which would reverse the arrow: `Submits Report → Works Remotely`. The original rule does not support this. Other employees might submit reports for different reasons.', badge: 'Incorrect', badgeColor: 'red' },
-      { title: '(E)', text: 'Incorrect. The stimulus says nothing about David\'s preferences. This introduces information beyond the scope of the argument.', badge: 'Out of Scope', badgeColor: 'red' },
-    ]},
-
     { type: 'hr' },
 
     { type: 'h3', text: 'What This Module Covers' },

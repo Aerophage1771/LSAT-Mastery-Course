@@ -113,24 +113,6 @@ export const Lesson1_FoundationalToolkit: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h3', text: 'Practice: Spot the Flaw' },
-    {
-      type: 'question-card',
-      id: 'illustrative',
-      questionType: 'LSAT Math',
-      stimulus: 'A safety report shows that the number of workplace injuries at Delton Manufacturing increased from 12 to 18 over the past year. Management concludes that working conditions at the factory have become more dangerous.',
-      question: 'The reasoning in the argument is flawed because the argument',
-      options: [
-        '(A) assumes that all injuries are equally severe',
-        '(B) fails to consider that the total number of workers may have increased significantly (Correct)',
-        '(C) ignores the possibility that safety regulations were tightened',
-        '(D) relies on a sample that is too small to be meaningful',
-        '(E) confuses correlation with causation'
-      ],
-      difficulty: 'easy'
-    },
-    { type: 'paragraph', text: '**Why (B) is correct:** The argument leaps from a rise in the absolute number of injuries to a conclusion about the rate of danger. If the workforce grew from 100 to 300 workers, the injury rate actually dropped from 12% to 6%. Without the denominator, the raw count tells us nothing about whether conditions worsened.' },
-
     { type: 'callout', variant: 'summary', title: 'Lesson Takeaway', text: 'You now have the complete vocabulary for LSAT Math and a roadmap of the six flaw families this module covers. Notice how many of these terms are related\u2014especially absolute numbers, percentages, rates, and totals. The LSAT exploits the subtle differences between them. Your job is to never let a quantitative argument pass without asking: **what type of number is this, and what is the argument hiding?**' }
   ]
 };

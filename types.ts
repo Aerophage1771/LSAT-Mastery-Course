@@ -78,6 +78,8 @@ export interface LessonLinkageMeta {
   status: LessonLinkageStatus;
   displayTitle: string;
   statusLabel?: 'Missing Q#' | 'Missing Card';
+  isExempt?: boolean;
+  exemptionReason?: string;
 }
 
 export interface DrillReference {

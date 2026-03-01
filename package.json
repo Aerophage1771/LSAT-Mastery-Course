@@ -18,6 +18,7 @@
     "analyze": "vite build --mode analyze",
     "validate:questions": "node scripts/validate-questions.mjs && node scripts/validate-lesson-question-linkage.mjs",
     "validate:linkage": "node scripts/validate-lesson-question-linkage.mjs",
+    "audit:lr-cards": "node scripts/audit-lr-card-requirements.mjs",
     "inventory:invented": "node scripts/extract-invented-questions.mjs",
     "report:gaps": "node scripts/repository-gaps.mjs"
   },

@@ -265,7 +265,7 @@ export const Layout: React.FC<LayoutProps> = ({
                                     )}
                                   </div>
                                   <span>{lesson.title}</span>
-                                  {linkage?.status !== 'ok' && linkage?.statusLabel && (
+                                  {linkage?.status !== 'ok' && !linkage?.isExempt && linkage?.statusLabel && (
                                     <span
                                       className="ml-auto inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wide bg-red-500/20 text-red-300 border border-red-500/40"
                                       title={linkage.statusLabel}

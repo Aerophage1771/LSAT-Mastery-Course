@@ -363,11 +363,14 @@ const QuestionCardItem: React.FC<{
               <BookOpen size={10} />
               {q.typeName}
             </span>
-            {q.category === 'RC' && (
-              <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-50 text-amber-700 text-[11px] font-semibold">
-                RC
-              </span>
-            )}
+            <span
+              aria-label={`Category: ${q.category}`}
+              className={`inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-semibold ${
+                q.category === 'RC' ? 'bg-amber-50 text-amber-700' : 'bg-indigo-50 text-indigo-700'
+              }`}
+            >
+              {q.category}
+            </span>
             {drillCrossReferences[q.ptId] && (
               <span className="text-[10px] text-indigo-500 font-medium">Has drill lesson</span>
             )}
