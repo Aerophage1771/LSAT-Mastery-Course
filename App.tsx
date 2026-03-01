@@ -35,7 +35,7 @@ function LoadingSpinner() {
   );
 }
 
-function ModulePage() {
+function ModulePage({ loadedModules }: { loadedModules: ModuleData[] }) {
   const { moduleId, lessonId } = useParams<{ moduleId: string; lessonId?: string }>();
   const navigate = useNavigate();
   const { updateLastPosition, markLessonComplete, isLessonComplete } = useProgressContext();
@@ -134,6 +134,7 @@ function ModulePage() {
   return (
     <Layout
       modules={modulesFromMeta}
+      exportModules={loadedModules}
       activeModuleId={numericModuleId}
       activeLessonId={activeLesson.id}
       onSelectModule={(id) => navigate(`/module/${id}`)}
@@ -180,6 +181,7 @@ function DashboardPage({ loadedModules }: { loadedModules: ModuleData[] }) {
   return (
     <Layout
       modules={modulesFromMeta}
+      exportModules={loadedModules}
       activeModuleId={null}
       activeLessonId={null}
       onSelectModule={handleModuleSelect}
@@ -244,8 +246,8 @@ function AppRoutes() {
       <Routes>
         <Route path="/" element={<DashboardPage loadedModules={loadedModules} />} />
         <Route path="/question-bank" element={<QuestionBank drillCrossReferences={drillCrossReferences} />} />
-        <Route path="/module/:moduleId" element={<ModulePage />} />
-        <Route path="/module/:moduleId/lesson/:lessonId" element={<ModulePage />} />
+        <Route path="/module/:moduleId" element={<ModulePage loadedModules={loadedModules} />} />
+        <Route path="/module/:moduleId/lesson/:lessonId" element={<ModulePage loadedModules={loadedModules} />} />
       </Routes>
     </>
   );

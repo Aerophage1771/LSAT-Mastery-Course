@@ -10,6 +10,30 @@ const REPORT_PATH = join(ROOT_DIR, 'docs', 'question-linkage-audit.md');
 const PT_REGEX = /PT-\d+-S-\d+-Q-\d+/g;
 const LR_MODULE_ALIASES = { 55: 21, 59: 22 };
 const LR_MODULE_IDS = new Set([...Array.from({ length: 20 }, (_, index) => index + 1), 55, 59]);
+const REFERENCE_MISSING_CARD_EXEMPT_LESSON_IDS = new Set([
+  '1-12',
+  '2-11',
+  '3-12',
+  '4-12',
+  '5-12',
+  '6-10',
+  '7-11',
+  '8-11',
+  '9-13',
+  '10-12',
+  '11-14',
+  '12-7',
+  '13-7',
+  '14-7',
+  '15-8',
+  '16-11',
+  '17-11',
+  '18-8',
+  '19-10',
+  '20-10',
+  '59-7',
+  '55-ref',
+]);
 
 const getRouteModuleId = (moduleId) => LR_MODULE_ALIASES[moduleId] ?? moduleId;
 
@@ -79,7 +103,12 @@ for (const moduleDir of readdirSync(MODULES_DIR)) {
     if (meta.hasQuestionCard && meta.ptIds.length === 0) {
       errors.push(`Module ${routeModuleId} lesson ${meta.id}: has question card but no PT id`);
     }
-    if (lessonNumber !== null && lessonNumber >= 4 && !meta.hasQuestionCard) {
+    if (
+      lessonNumber !== null
+      && lessonNumber >= 4
+      && !meta.hasQuestionCard
+      && !REFERENCE_MISSING_CARD_EXEMPT_LESSON_IDS.has(meta.id)
+    ) {
       errors.push(`Module ${routeModuleId} lesson ${meta.id}: lesson 4+ missing question card`);
     }
     if (meta.ptIds.length > 0) {

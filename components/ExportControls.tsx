@@ -28,14 +28,44 @@ export const ExportControls: React.FC<ExportControlsProps> = ({
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
+  const fallbackCopyText = (text: string): boolean => {
+    try {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.setAttribute('readonly', '');
+      textArea.style.position = 'fixed';
+      textArea.style.top = '-9999px';
+      textArea.style.left = '-9999px';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      const copied = document.execCommand('copy');
+      document.body.removeChild(textArea);
+      return copied;
+    } catch {
+      return false;
+    }
+  };
+
   const handleCopyAction = async (text: string, formatId: string, e: React.MouseEvent) => {
     e.stopPropagation();
     try {
-      await navigator.clipboard.writeText(text);
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        const copied = fallbackCopyText(text);
+        if (!copied) throw new Error('Clipboard API unavailable and fallback copy failed');
+      }
       setCopiedFormat(formatId);
       setTimeout(() => setCopiedFormat(null), 2000);
     } catch (err) {
-      console.error('Failed to copy', err);
+      const copied = fallbackCopyText(text);
+      if (copied) {
+        setCopiedFormat(formatId);
+        setTimeout(() => setCopiedFormat(null), 2000);
+      } else {
+        console.error('Failed to copy', err);
+      }
     }
   };
 

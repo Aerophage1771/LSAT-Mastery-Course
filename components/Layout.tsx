@@ -36,6 +36,7 @@ interface LessonNav {
 
 interface LayoutProps {
   modules: Array<{ id: number; title: string; category: string; description: string; unit: string; lessons?: ModuleData['lessons'] }>;
+  exportModules?: ModuleData[];
   activeModuleId: number | null;
   activeLessonId: string | null;
   onSelectModule: (id: number) => void;
@@ -48,10 +49,28 @@ interface LayoutProps {
   isLessonComplete?: (lessonId: string) => boolean;
 }
 
+type ExportTrackKey = 'LR' | 'RC' | 'AP';
+
+const trackLabels: Record<ExportTrackKey, string> = {
+  LR: 'Logical Reasoning',
+  RC: 'Reading Comprehension',
+  AP: 'Advanced Passages',
+};
+
+const getTrackKey = (module: ModuleData): ExportTrackKey => {
+  if (module.category === 'LR') return 'LR';
+  if (module.category === 'RC') return 'RC';
+  return 'AP';
+};
+
+const buildFullLessonSelection = (courseModules: ModuleData[]): Record<number, string[]> =>
+  Object.fromEntries(courseModules.map((module) => [module.id, module.lessons.map((lesson) => lesson.id)]));
+
 
 
 export const Layout: React.FC<LayoutProps> = ({
   modules, 
+  exportModules,
   activeModuleId, 
   activeLessonId, 
   onSelectModule, 
@@ -70,6 +89,7 @@ export const Layout: React.FC<LayoutProps> = ({
   const [roadmapOpen, setRoadmapOpen] = useState(false);
   const [styleGuideCopied, setStyleGuideCopied] = useState(false);
   const [roadmapTab, setRoadmapTab] = useState<'learning' | 'analytics' | 'content' | 'ux' | 'technical' | 'social' | 'accessibility'>('learning');
+  const [selectedLessonIdsByModule, setSelectedLessonIdsByModule] = useState<Record<number, string[]>>({});
   const activeLessonRef = useRef<HTMLButtonElement | null>(null);
   const mainRef = useRef<HTMLElement | null>(null);
   const exportModalRef = useRef<HTMLDivElement | null>(null);
@@ -79,6 +99,7 @@ export const Layout: React.FC<LayoutProps> = ({
   const { progress, importProgress } = useProgressContext();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [importStatus, setImportStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const exportableModules = exportModules ?? [];
 
   const handleBackupProgress = () => {
     const dataStr = JSON.stringify(progress, null, 2);
@@ -150,6 +171,12 @@ export const Layout: React.FC<LayoutProps> = ({
   }, [exportModalOpen]);
 
   useEffect(() => {
+    if (exportModalOpen) {
+      setSelectedLessonIdsByModule(buildFullLessonSelection(exportableModules));
+    }
+  }, [exportModalOpen, exportableModules]);
+
+  useEffect(() => {
     if (styleGuideOpen && styleGuideModalRef.current) {
       styleGuideModalRef.current.focus();
     }
@@ -162,6 +189,95 @@ export const Layout: React.FC<LayoutProps> = ({
   }, [roadmapOpen]);
 
   const sidebarLessons = activeModuleData?.lessons ?? [];
+  const groupedExportModules = React.useMemo(
+    () =>
+      exportableModules.reduce(
+        (acc, module) => {
+          acc[getTrackKey(module)].push(module);
+          return acc;
+        },
+        { LR: [], RC: [], AP: [] } as Record<ExportTrackKey, ModuleData[]>,
+      ),
+    [exportableModules],
+  );
+
+  const selectedModulesForExport = React.useMemo(() => {
+    return exportableModules
+      .map((module) => {
+        const selectedLessonIds = new Set(selectedLessonIdsByModule[module.id] ?? []);
+        return {
+          ...module,
+          lessons: module.lessons.filter((lesson) => selectedLessonIds.has(lesson.id)),
+        };
+      })
+      .filter((module) => module.lessons.length > 0);
+  }, [exportableModules, selectedLessonIdsByModule]);
+
+  const totalLessons = React.useMemo(
+    () => exportableModules.reduce((count, module) => count + module.lessons.length, 0),
+    [exportableModules],
+  );
+
+  const selectedLessons = React.useMemo(
+    () => selectedModulesForExport.reduce((count, module) => count + module.lessons.length, 0),
+    [selectedModulesForExport],
+  );
+
+  const selectedModulesCount = selectedModulesForExport.length;
+
+  const isLessonSelected = (moduleId: number, lessonId: string): boolean =>
+    (selectedLessonIdsByModule[moduleId] ?? []).includes(lessonId);
+
+  const toggleLessonSelection = (moduleId: number, lessonId: string, checked: boolean) => {
+    setSelectedLessonIdsByModule((previous) => {
+      const current = new Set(previous[moduleId] ?? []);
+      if (checked) current.add(lessonId);
+      else current.delete(lessonId);
+      return { ...previous, [moduleId]: Array.from(current) };
+    });
+  };
+
+  const toggleModuleSelection = (module: ModuleData, checked: boolean) => {
+    setSelectedLessonIdsByModule((previous) => ({
+      ...previous,
+      [module.id]: checked ? module.lessons.map((lesson) => lesson.id) : [],
+    }));
+  };
+
+  const toggleTrackSelection = (track: ExportTrackKey, checked: boolean) => {
+    setSelectedLessonIdsByModule((previous) => {
+      const next = { ...previous };
+      for (const module of groupedExportModules[track]) {
+        next[module.id] = checked ? module.lessons.map((lesson) => lesson.id) : [];
+      }
+      return next;
+    });
+  };
+
+  const selectAllLessons = () => setSelectedLessonIdsByModule(buildFullLessonSelection(exportableModules));
+  const clearAllLessons = () =>
+    setSelectedLessonIdsByModule(Object.fromEntries(exportableModules.map((module) => [module.id, []])));
+
+  const trackStats = React.useMemo(() => {
+    return (Object.keys(groupedExportModules) as ExportTrackKey[]).reduce(
+      (acc, track) => {
+        const modulesForTrack = groupedExportModules[track];
+        const lessonTotal = modulesForTrack.reduce((count, module) => count + module.lessons.length, 0);
+        const selectedLessonTotal = modulesForTrack.reduce(
+          (count, module) => count + (selectedLessonIdsByModule[module.id] ?? []).length,
+          0,
+        );
+        acc[track] = {
+          moduleTotal: modulesForTrack.length,
+          lessonTotal,
+          selectedLessonTotal,
+          allSelected: lessonTotal > 0 && selectedLessonTotal === lessonTotal,
+        };
+        return acc;
+      },
+      {} as Record<ExportTrackKey, { moduleTotal: number; lessonTotal: number; selectedLessonTotal: number; allSelected: boolean }>,
+    );
+  }, [groupedExportModules, selectedLessonIdsByModule]);
 
   return (
     <div className="flex h-screen bg-slate-50">
@@ -478,12 +594,12 @@ export const Layout: React.FC<LayoutProps> = ({
       {exportModalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Export Course Content">
           <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-md animate-in fade-in duration-300" onClick={() => setExportModalOpen(false)} />
-          <div ref={exportModalRef} tabIndex={-1} className="relative bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200">
+          <div ref={exportModalRef} tabIndex={-1} className="relative bg-white w-full max-w-5xl max-h-[92vh] rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200">
             <div className="bg-indigo-600 px-6 py-6 text-white flex items-center justify-between">
-              <div><h2 className="text-xl font-bold flex items-center gap-2"><Database size={24} />Data & Export</h2><p className="text-indigo-100 text-xs mt-1 font-medium">LSAT Logical Reasoning Mastery Curriculum</p></div>
+              <div><h2 className="text-xl font-bold flex items-center gap-2"><Database size={24} />Data & Export</h2><p className="text-indigo-100 text-xs mt-1 font-medium">Choose exactly what to include in your export</p></div>
               <button onClick={() => setExportModalOpen(false)} className="p-2 hover:bg-white/10 rounded-full transition-colors" aria-label="Close export dialog"><X size={20} /></button>
             </div>
-            <div className="p-8 max-h-[70vh] overflow-y-auto">
+            <div className="p-8 max-h-[78vh] overflow-y-auto">
               
               {/* Progress Backup Section */}
               <div className="mb-8 border-b border-slate-100 pb-8">
@@ -524,22 +640,112 @@ export const Layout: React.FC<LayoutProps> = ({
 
               <div className="bg-indigo-50 border border-indigo-100 rounded-xl p-4 mb-8 flex gap-4 items-start">
                 <div className="bg-white p-2 rounded-lg text-indigo-600 shadow-sm"><Info size={20} /></div>
-                <div><h4 className="text-sm font-bold text-indigo-900 mb-1">Export Content</h4><p className="text-xs text-indigo-700 leading-relaxed">You can download the entire curriculum including all modules and every individual lesson content.</p></div>
+                <div><h4 className="text-sm font-bold text-indigo-900 mb-1">Export Content</h4><p className="text-xs text-indigo-700 leading-relaxed">Use the checklist to include only the LR/RC tracks, modules, and lessons you want.</p></div>
               </div>
-              <div className="space-y-6">
-                <div><h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Select Format</h3>
-                <ExportControls 
-                    label="Course" 
-                    filename="LSAT_Mastery_Course" 
-                    onCopy={() => generateCourseText(modules as ModuleData[])} 
-                    onExportText={() => generateCourseText(modules as ModuleData[])} 
-                    onExportRTF={() => generateCourseRTF(modules as ModuleData[])} 
-                    onExportJSON={() => generateCourseJSON(modules as ModuleData[])}
-                    onExportCSV={() => generateCourseCSV(modules as ModuleData[])}
-                    onExportPDF={() => generateCoursePDF(modules as ModuleData[])}
-                 />
+              <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,2fr)_minmax(320px,1fr)] gap-6">
+                <div className="bg-white border border-slate-200 rounded-xl">
+                  <div className="px-4 py-3 border-b border-slate-100 flex items-center justify-between">
+                    <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest">Checklist</h3>
+                    <div className="flex items-center gap-2">
+                      <button onClick={selectAllLessons} className="text-xs font-semibold text-indigo-600 hover:text-indigo-700">Select all</button>
+                      <button onClick={clearAllLessons} className="text-xs font-semibold text-slate-500 hover:text-slate-700">Clear</button>
+                    </div>
+                  </div>
+                  <div className="max-h-[52vh] overflow-y-auto p-4 space-y-4">
+                    {(Object.keys(groupedExportModules) as ExportTrackKey[]).map((track) => {
+                      const modulesForTrack = groupedExportModules[track];
+                      if (modulesForTrack.length === 0) return null;
+                      const stats = trackStats[track];
+
+                      return (
+                        <div key={track} className="border border-slate-200 rounded-lg">
+                          <div className="px-3 py-2 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+                            <label className="flex items-center gap-2 text-sm font-bold text-slate-800">
+                              <input
+                                type="checkbox"
+                                checked={stats.allSelected}
+                                onChange={(event) => toggleTrackSelection(track, event.target.checked)}
+                                className="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+                              />
+                              {trackLabels[track]}
+                            </label>
+                            <span className="text-xs font-semibold text-slate-500">
+                              {stats.selectedLessonTotal}/{stats.lessonTotal} lessons
+                            </span>
+                          </div>
+                          <div className="divide-y divide-slate-100">
+                            {modulesForTrack.map((module) => {
+                              const selectedIds = selectedLessonIdsByModule[module.id] ?? [];
+                              const moduleAllSelected = module.lessons.length > 0 && selectedIds.length === module.lessons.length;
+                              return (
+                                <details key={module.id} className="group" open>
+                                  <summary className="list-none cursor-pointer px-3 py-2 flex items-center justify-between hover:bg-slate-50">
+                                    <label className="flex items-center gap-2 text-sm font-semibold text-slate-700" onClick={(event) => event.stopPropagation()}>
+                                      <input
+                                        type="checkbox"
+                                        checked={moduleAllSelected}
+                                        onChange={(event) => toggleModuleSelection(module, event.target.checked)}
+                                        className="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+                                      />
+                                      Module {module.id}: {module.title}
+                                    </label>
+                                    <span className="text-xs font-medium text-slate-500">
+                                      {selectedIds.length}/{module.lessons.length}
+                                    </span>
+                                  </summary>
+                                  <div className="px-5 pb-3 space-y-1">
+                                    {module.lessons.map((lesson) => (
+                                      <label key={lesson.id} className="flex items-start gap-2 py-1 text-sm text-slate-600">
+                                        <input
+                                          type="checkbox"
+                                          checked={isLessonSelected(module.id, lesson.id)}
+                                          onChange={(event) => toggleLessonSelection(module.id, lesson.id, event.target.checked)}
+                                          className="mt-0.5 h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+                                        />
+                                        <span className="leading-snug">{lesson.title}</span>
+                                      </label>
+                                    ))}
+                                  </div>
+                                </details>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-                <div className="pt-6 border-t border-slate-100"><p className="text-[10px] text-slate-400 text-center uppercase font-bold tracking-widest italic">All lessons are generated in real-time</p></div>
+
+                <div className="space-y-4">
+                  <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                    <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Selection Summary</h3>
+                    <div className="space-y-1 text-sm text-slate-700">
+                      <p><span className="font-bold">{selectedModulesCount}</span> modules selected</p>
+                      <p><span className="font-bold">{selectedLessons}</span> lessons selected</p>
+                      <p className="text-xs text-slate-500">Total lessons available: {totalLessons}</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white border border-slate-200 rounded-xl p-4">
+                    <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Select Format</h3>
+                    {selectedLessons > 0 ? (
+                      <ExportControls
+                        label="Selection"
+                        filename="LSAT_Custom_Selection"
+                        onCopy={() => generateCourseText(selectedModulesForExport)}
+                        onExportText={() => generateCourseText(selectedModulesForExport)}
+                        onExportRTF={() => generateCourseRTF(selectedModulesForExport)}
+                        onExportJSON={() => generateCourseJSON(selectedModulesForExport)}
+                        onExportCSV={() => generateCourseCSV(selectedModulesForExport)}
+                        onExportPDF={() => generateCoursePDF(selectedModulesForExport)}
+                      />
+                    ) : (
+                      <p className="text-sm text-slate-500">Select at least one lesson to export.</p>
+                    )}
+                  </div>
+
+                  <p className="text-[10px] text-slate-400 text-center uppercase font-bold tracking-widest italic">Exports are generated from your current selection</p>
+                </div>
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-4 flex justify-end border-t border-slate-100"><button onClick={() => setExportModalOpen(false)} className="px-6 py-2.5 bg-slate-200 hover:bg-slate-300 text-slate-700 text-sm font-bold rounded-xl transition-colors">Close</button></div>
