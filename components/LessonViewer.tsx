@@ -321,8 +321,8 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
             {linkageMeta?.status !== 'ok' && (
               <div className="mb-3 rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
                 {linkageMeta?.status === 'missing_q_number'
-                  ? 'No associated question number'
-                  : 'No attached question card (Lesson 4+ requirement).'}
+                  ? 'No associated question number. Add a PT-style ID to the question-card block.'
+                  : 'No attached question card (Lesson 4+ requirement). Add at least one question-card block.'}
               </div>
             )}
             {linkageMeta?.ptIds.length ? (

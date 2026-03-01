@@ -19,22 +19,20 @@ function getLessonNumber(lessonId) {
 }
 
 function extractLessonMeta(content, filePath) {
-  const idMatch = content.match(/id:\s*['"]([^'"]+)['"]/);
-  const titleMatch = content.match(/title:\s*['"]([^'"]+)['"]/);
-  if (!idMatch || !titleMatch) {
+  const lessonMatch = content.match(
+    /export const\s+\w+\s*:\s*Lesson\s*=\s*\{[\s\S]*?id:\s*['"]([^'"]+)['"][\s\S]*?title:\s*['"]([^'"]+)['"]/,
+  );
+  if (!lessonMatch) {
     return { errors: [`Could not parse lesson id/title in ${filePath}`] };
   }
 
   const hasQuestionCard = /type:\s*'question(?:-passage)?-card'/.test(content);
-  const cardIds = Array.from(
-    content.matchAll(/type:\s*'question(?:-passage)?-card'[\s\S]{0,1400}?id:\s*['"]([^'"]+)['"]/g),
-    (match) => match[1],
-  );
+  const cardIds = Array.from(content.matchAll(/type:\s*'question(?:-passage)?-card'[\s\S]*?id:\s*['"]([^'"]+)['"]/g), (match) => match[1]);
   const ptIds = [...new Set(cardIds.flatMap((id) => id.match(PT_REGEX) ?? []))];
 
   return {
-    id: idMatch[1],
-    title: titleMatch[1],
+    id: lessonMatch[1],
+    title: lessonMatch[2],
     hasQuestionCard,
     ptIds,
     errors: [],
@@ -85,7 +83,8 @@ for (const moduleDir of readdirSync(MODULES_DIR)) {
       errors.push(`Module ${routeModuleId} lesson ${meta.id}: lesson 4+ missing question card`);
     }
     if (meta.ptIds.length > 0) {
-      const missingInTitle = meta.ptIds.filter((ptId) => !meta.title.includes(ptId));
+      const titlePtIds = new Set(meta.title.match(PT_REGEX) ?? []);
+      const missingInTitle = meta.ptIds.filter((ptId) => !titlePtIds.has(ptId));
       if (missingInTitle.length > 0) {
         errors.push(`Module ${routeModuleId} lesson ${meta.id}: title missing PT IDs ${missingInTitle.join(', ')}`);
       }
@@ -114,11 +113,13 @@ for (const moduleDir of readdirSync(MODULES_DIR)) {
   }
 }
 
+const dedupedErrors = [...new Set(errors)];
+
 const summary = {
   totalLessons: lessons.length,
   lessonsWithQuestionCards: lessons.filter((lesson) => lesson.hasQuestionCard).length,
   totalLinkedPtIds: ptIdToLesson.size,
-  errors: errors.length,
+  errors: dedupedErrors.length,
 };
 
 const report = [
@@ -131,7 +132,7 @@ const report = [
   `- errors: ${summary.errors}`,
   '',
   '## Errors',
-  ...(errors.length > 0 ? errors.map((error) => `- ${error}`) : ['- None']),
+  ...(dedupedErrors.length > 0 ? dedupedErrors.map((error) => `- ${error}`) : ['- None']),
   '',
 ].join('\n');
 
@@ -145,9 +146,9 @@ console.log(`Linked PT IDs: ${summary.totalLinkedPtIds}`);
 console.log(`Errors: ${summary.errors}`);
 console.log(`Report: ${REPORT_PATH}`);
 
-if (errors.length > 0) {
+if (dedupedErrors.length > 0) {
   console.error('\nValidation failed:');
-  for (const error of errors) {
+  for (const error of dedupedErrors) {
     console.error(`- ${error}`);
   }
   process.exit(1);

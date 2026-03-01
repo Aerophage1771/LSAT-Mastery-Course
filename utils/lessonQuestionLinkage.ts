@@ -69,7 +69,8 @@ export function getLessonLinkageStatus({
   let displayTitle = lesson.title;
   if (ptIds.length > 0) {
     const ptSuffix = `(${ptIds.join(', ')})`;
-    if (!displayTitle.includes(ptSuffix)) displayTitle = `${displayTitle} ${ptSuffix}`;
+    const hasAllPtIds = ptIds.every((ptId) => new RegExp(`\\b${ptId}\\b`).test(displayTitle));
+    if (!hasAllPtIds) displayTitle = `${displayTitle} ${ptSuffix}`;
   }
   if (missingQuestionNumber && !displayTitle.includes('[Missing Q#]')) {
     displayTitle = `${displayTitle} [Missing Q#]`;

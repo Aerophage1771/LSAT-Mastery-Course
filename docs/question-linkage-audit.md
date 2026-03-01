@@ -4,7 +4,7 @@
 - totalLessons: 263
 - lessonsWithQuestionCards: 85
 - totalLinkedPtIds: 28
-- errors: 238
+- errors: 223
 
 ## Errors
 - Module 1 lesson 1-10: lesson 4+ missing question card
@@ -16,7 +16,6 @@
 - Module 1 lesson 1-4: title missing PT IDs PT-107-S-4-Q-15
 - Module 1 lesson 1-5: PT ID PT-114-S-4-Q-18 not found in module48 repository
 - Module 1 lesson 1-5: lesson 4+ missing question card
-- Module 1 lesson 1-6: lesson 4+ missing question card
 - Module 1 lesson 1-6: lesson 4+ missing question card
 - Module 1 lesson 1-7: lesson 4+ missing question card
 - Module 1 lesson 1-7: PT ID PT-117-S-2-Q-24 not found in module48 repository
@@ -122,16 +121,10 @@
 - Module 2 lesson 2-1: has question card but no PT id
 - Module 2 lesson 2-2: has question card but no PT id
 - Module 2 lesson 2-4: lesson 4+ missing question card
-- Module 2 lesson 2-4: lesson 4+ missing question card
-- Module 2 lesson 2-5: lesson 4+ missing question card
 - Module 2 lesson 2-5: lesson 4+ missing question card
 - Module 2 lesson 2-6: lesson 4+ missing question card
-- Module 2 lesson 2-6: lesson 4+ missing question card
-- Module 2 lesson 2-7: lesson 4+ missing question card
 - Module 2 lesson 2-7: lesson 4+ missing question card
 - Module 2 lesson 2-8: lesson 4+ missing question card
-- Module 2 lesson 2-8: lesson 4+ missing question card
-- Module 2 lesson 2-9: lesson 4+ missing question card
 - Module 2 lesson 2-9: lesson 4+ missing question card
 - Module 20 lesson 20-10: lesson 4+ missing question card
 - Module 20 lesson 20-1: has question card but no PT id
@@ -149,16 +142,10 @@
 - Module 3 lesson 3-1: has question card but no PT id
 - Module 3 lesson 3-2: has question card but no PT id
 - Module 3 lesson 3-4: lesson 4+ missing question card
-- Module 3 lesson 3-4: lesson 4+ missing question card
-- Module 3 lesson 3-5: lesson 4+ missing question card
 - Module 3 lesson 3-5: lesson 4+ missing question card
 - Module 3 lesson 3-6: lesson 4+ missing question card
-- Module 3 lesson 3-6: lesson 4+ missing question card
-- Module 3 lesson 3-7: lesson 4+ missing question card
 - Module 3 lesson 3-7: lesson 4+ missing question card
 - Module 3 lesson 3-8: lesson 4+ missing question card
-- Module 3 lesson 3-8: lesson 4+ missing question card
-- Module 3 lesson 3-9: lesson 4+ missing question card
 - Module 3 lesson 3-9: lesson 4+ missing question card
 - Module 4 lesson 4-10: lesson 4+ missing question card
 - Module 4 lesson 4-11: lesson 4+ missing question card
@@ -169,7 +156,6 @@
 - Module 4 lesson 4-4: lesson 4+ missing question card
 - Module 4 lesson 4-5: PT ID PT-103-S-1-Q-24 not found in module48 repository
 - Module 4 lesson 4-5: lesson 4+ missing question card
-- Module 4 lesson 4-6: lesson 4+ missing question card
 - Module 4 lesson 4-6: lesson 4+ missing question card
 - Module 4 lesson 4-7: lesson 4+ missing question card
 - Module 4 lesson 4-8: lesson 4+ missing question card
@@ -182,7 +168,6 @@
 - Module 5 lesson 5-2: has question card but no PT id
 - Module 5 lesson 5-3: PT ID PT-102-S-3-Q-14 not found in module48 repository
 - Module 5 lesson 5-4: lesson 4+ missing question card
-- Module 5 lesson 5-5: lesson 4+ missing question card
 - Module 5 lesson 5-5: lesson 4+ missing question card
 - Module 5 lesson 5-6: lesson 4+ missing question card
 - Module 5 lesson 5-7: PT ID PT-103-S-2-Q-21 not found in module48 repository

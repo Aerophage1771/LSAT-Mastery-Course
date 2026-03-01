@@ -63,7 +63,9 @@ describe('linkage warning UI', () => {
       </MemoryRouter>,
     );
 
-    expect(screen.getByText('No attached question card (Lesson 4+ requirement).')).toBeInTheDocument();
+    expect(
+      screen.getByText('No attached question card (Lesson 4+ requirement). Add at least one question-card block.'),
+    ).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /View in Question Log: PT-112-S-4-Q-20/i })).toHaveAttribute(
       'href',
       '/question-bank?pt=PT-112-S-4-Q-20',
