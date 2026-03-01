@@ -16,7 +16,8 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "analyze": "vite build --mode analyze",
-    "validate:questions": "node scripts/validate-questions.mjs",
+    "validate:questions": "node scripts/validate-questions.mjs && node scripts/validate-lesson-question-linkage.mjs",
+    "validate:linkage": "node scripts/validate-lesson-question-linkage.mjs",
     "inventory:invented": "node scripts/extract-invented-questions.mjs",
     "report:gaps": "node scripts/repository-gaps.mjs"
   },

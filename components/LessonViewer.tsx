@@ -1,7 +1,8 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import DOMPurify from 'dompurify';
-import { ContentBlock, Lesson } from '../types';
+import { ContentBlock, Lesson, LessonLinkageMeta } from '../types';
 import { Lightbulb, Info, CheckCircle2, XCircle, Copy, Check, ChevronDown, ChevronUp } from 'lucide-react';
 import { ExportControls } from './ExportControls';
 import { generateLessonText, generateLessonRTF, generateLessonJSON, generateLessonCSV, generateLessonPDF } from '../utils/export';
@@ -14,6 +15,7 @@ interface LessonViewerProps {
   content: string | ContentBlock[];
   variant?: 'default' | 'modal';
   questionStatus?: 'real' | 'illustrative' | 'both' | null;
+  linkageMeta?: LessonLinkageMeta;
 }
 
 const sanitize = (html: string) => DOMPurify.sanitize(html);
@@ -113,6 +115,7 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
     content,
     variant = 'default',
     questionStatus,
+    linkageMeta,
 }) => {
   const currentLesson: Lesson = { id: 'current', title, content };
 
@@ -311,11 +314,31 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
                 'Real + Illustrative Questions'}
              </span>
            )}
-           <h1 className={variant === 'modal'
-             ? "text-xl font-semibold text-slate-900 tracking-tight mb-3 pb-3 border-b border-slate-100"
-             : "text-2xl lg:text-3xl font-bold text-slate-900 tracking-tight mb-4 pb-4 border-b border-slate-100"
-           }>{title}</h1>
-        </div>
+            <h1 className={variant === 'modal'
+              ? "text-xl font-semibold text-slate-900 tracking-tight mb-3 pb-3 border-b border-slate-100"
+              : "text-2xl lg:text-3xl font-bold text-slate-900 tracking-tight mb-4 pb-4 border-b border-slate-100"
+            }>{title}</h1>
+            {linkageMeta?.status !== 'ok' && (
+              <div className="mb-3 rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
+                {linkageMeta?.status === 'missing_q_number'
+                  ? 'No associated question number. Add a PT-style ID to the question-card block.'
+                  : 'No attached question card (Lesson 4+ requirement). Add at least one question-card block.'}
+              </div>
+            )}
+            {linkageMeta?.ptIds.length ? (
+              <div className="flex flex-wrap gap-2">
+                {linkageMeta.ptIds.map((ptId) => (
+                  <Link
+                    key={ptId}
+                    to={`/question-bank?pt=${encodeURIComponent(ptId)}`}
+                    className="inline-flex items-center rounded-md border border-indigo-200 bg-indigo-50 px-2.5 py-1 text-xs font-semibold text-indigo-700 hover:bg-indigo-100"
+                  >
+                    View in Question Log: {ptId}
+                  </Link>
+                ))}
+              </div>
+            ) : null}
+         </div>
         <div className="flex-shrink-0">
           <ExportControls 
              label="Lesson"

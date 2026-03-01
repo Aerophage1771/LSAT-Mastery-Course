@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react';
-import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { Dashboard } from '../components/Dashboard';
 import type { ModuleData } from '../types';

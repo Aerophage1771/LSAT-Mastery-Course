@@ -71,6 +71,22 @@ export interface ModuleData {
   lessons: Lesson[];
 }
 
+export type LessonLinkageStatus = 'ok' | 'missing_q_number' | 'missing_card';
+
+export interface LessonLinkageMeta {
+  ptIds: string[];
+  status: LessonLinkageStatus;
+  displayTitle: string;
+  statusLabel?: 'Missing Q#' | 'Missing Card';
+}
+
+export interface DrillReference {
+  moduleId: number;
+  lessonId: string;
+  moduleTitle: string;
+  lessonTitle: string;
+}
+
 export interface CourseState {
   activeModuleId: number;
   activeLessonId: string | null;

@@ -8,9 +8,9 @@ import { SearchDialog } from './components/SearchDialog';
 import { QuestionBank } from './components/QuestionBank';
 import { ProgressProvider, useProgressContext } from './contexts/ProgressContext';
 import { moduleRegistry, loadModule, getAllModuleMetadata } from './modules/registry';
-import { drillCrossReferences } from './modules/drillCrossReferences';
 import inventoryData from './docs/invented-questions-inventory.json';
 import type { ModuleData } from './types';
+import { buildDrillCrossReferences, buildLessonLinkageByLessonId, normalizeLessonsWithLinkage } from './utils/lessonQuestionLinkage';
 
 const allMeta = getAllModuleMetadata();
 
@@ -70,24 +70,38 @@ function ModulePage() {
     };
   }, [numericModuleId]);
 
+  const normalizedModuleData = useMemo(() => {
+    if (!moduleData) return null;
+    const { lessons } = normalizeLessonsWithLinkage(numericModuleId, moduleData.lessons);
+    return { ...moduleData, id: numericModuleId, lessons };
+  }, [moduleData, numericModuleId]);
+
+  const lessonLinkageByLessonId = useMemo(
+    () => (moduleData ? buildLessonLinkageByLessonId(numericModuleId, moduleData.lessons) : {}),
+    [moduleData, numericModuleId],
+  );
+
   const activeLesson = useMemo(() => {
-    if (!moduleData) return undefined;
-    if (lessonId) return moduleData.lessons.find((l) => l.id === lessonId) ?? moduleData.lessons[0];
-    return moduleData.lessons[0];
-  }, [moduleData, lessonId]);
+    if (!normalizedModuleData) return undefined;
+    if (lessonId) return normalizedModuleData.lessons.find((l) => l.id === lessonId) ?? normalizedModuleData.lessons[0];
+    return normalizedModuleData.lessons[0];
+  }, [normalizedModuleData, lessonId]);
 
   useEffect(() => {
-    if (moduleData && activeLesson) {
+    if (normalizedModuleData && activeLesson) {
       if (!lessonId || lessonId !== activeLesson.id) {
         navigate(`/module/${numericModuleId}/lesson/${activeLesson.id}`, { replace: true });
       }
       updateLastPosition(numericModuleId, activeLesson.id);
     }
-  }, [moduleData, activeLesson, lessonId, numericModuleId, navigate, updateLastPosition]);
+  }, [normalizedModuleData, activeLesson, lessonId, numericModuleId, navigate, updateLastPosition]);
 
-  const currentIndex = moduleData && activeLesson ? moduleData.lessons.findIndex((l) => l.id === activeLesson.id) : -1;
-  const previousLesson = currentIndex > 0 ? moduleData?.lessons[currentIndex - 1] : undefined;
-  const nextLesson = moduleData && currentIndex < moduleData.lessons.length - 1 ? moduleData.lessons[currentIndex + 1] : undefined;
+  const currentIndex = normalizedModuleData && activeLesson ? normalizedModuleData.lessons.findIndex((l) => l.id === activeLesson.id) : -1;
+  const previousLesson = currentIndex > 0 ? normalizedModuleData?.lessons[currentIndex - 1] : undefined;
+  const nextLesson =
+    normalizedModuleData && currentIndex < normalizedModuleData.lessons.length - 1
+      ? normalizedModuleData.lessons[currentIndex + 1]
+      : undefined;
 
   const handleSelectLesson = useCallback(
     (id: string) => navigate(`/module/${numericModuleId}/lesson/${id}`),
@@ -102,7 +116,7 @@ function ModulePage() {
 
   const questionStatus = useMemo(() => {
     if (!activeLesson) return null;
-    const hasReal = Object.values(drillCrossReferences).some(ref => ref.lessonId === activeLesson.id);
+    const hasReal = (lessonLinkageByLessonId[activeLesson.id]?.ptIds.length ?? 0) > 0;
     const hasInvented = (inventoryData as Array<{ module: number; file: string }>).some(item => {
       const lessonNum = activeLesson.id.split('-')[1];
       return String(item.module) === String(numericModuleId) && item.file.includes(`Lesson${lessonNum}`);
@@ -111,11 +125,11 @@ function ModulePage() {
     if (hasReal) return 'real' as const;
     if (hasInvented) return 'illustrative' as const;
     return null;
-  }, [activeLesson, numericModuleId]);
+  }, [activeLesson, lessonLinkageByLessonId, numericModuleId]);
 
   if (loading) return <LoadingSpinner />;
   if (error) return <div className="flex items-center justify-center h-full text-red-500 font-medium">{error}</div>;
-  if (!moduleData || !activeLesson) return <div className="flex items-center justify-center h-full text-slate-400">Module not found</div>;
+  if (!normalizedModuleData || !activeLesson) return <div className="flex items-center justify-center h-full text-slate-400">Module not found</div>;
 
   return (
     <Layout
@@ -125,7 +139,8 @@ function ModulePage() {
       onSelectModule={(id) => navigate(`/module/${id}`)}
       onSelectLesson={handleSelectLesson}
       onGoHome={handleGoHome}
-      activeModuleData={moduleData}
+      activeModuleData={normalizedModuleData}
+      lessonLinkageMeta={lessonLinkageByLessonId}
       isLessonComplete={isLessonComplete}
       lessonNav={{
         onPrevious: previousLesson ? () => navigate(`/module/${numericModuleId}/lesson/${previousLesson.id}`) : undefined,
@@ -142,7 +157,13 @@ function ModulePage() {
     >
       <ErrorBoundary fallbackTitle="Error loading lesson" key={activeLesson.id}>
         <Suspense fallback={<LoadingSpinner />}>
-          <LessonViewer key={activeLesson.id} title={activeLesson.title} content={activeLesson.content} questionStatus={questionStatus} />
+          <LessonViewer
+            key={activeLesson.id}
+            title={activeLesson.title}
+            content={activeLesson.content}
+            questionStatus={questionStatus}
+            linkageMeta={lessonLinkageByLessonId[activeLesson.id]}
+          />
         </Suspense>
       </ErrorBoundary>
     </Layout>
@@ -177,10 +198,22 @@ function AppRoutes() {
   const [loadedModules, setLoadedModules] = useState<ModuleData[]>([]);
 
   useEffect(() => {
-    Promise.all(moduleRegistry.map((e) => e.load().then((m) => ('default' in m ? m.default : (m as Record<string, ModuleData>)[Object.keys(m).find((k) => k.startsWith('Module'))!])))).then(
-      setLoadedModules,
-    );
+    Promise.all(
+      moduleRegistry.map(async (entry) => {
+        const loaded = await entry.load();
+        const moduleData =
+          'default' in loaded ? loaded.default : (loaded as Record<string, ModuleData>)[Object.keys(loaded).find((k) => k.startsWith('Module'))!];
+        const { lessons } = normalizeLessonsWithLinkage(entry.meta.id, moduleData.lessons);
+        return {
+          ...moduleData,
+          id: entry.meta.id,
+          lessons,
+        };
+      }),
+    ).then(setLoadedModules);
   }, []);
+
+  const drillCrossReferences = useMemo(() => buildDrillCrossReferences(loadedModules), [loadedModules]);
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
@@ -210,7 +243,7 @@ function AppRoutes() {
       />
       <Routes>
         <Route path="/" element={<DashboardPage loadedModules={loadedModules} />} />
-        <Route path="/question-bank" element={<QuestionBank />} />
+        <Route path="/question-bank" element={<QuestionBank drillCrossReferences={drillCrossReferences} />} />
         <Route path="/module/:moduleId" element={<ModulePage />} />
         <Route path="/module/:moduleId/lesson/:lessonId" element={<ModulePage />} />
       </Routes>
