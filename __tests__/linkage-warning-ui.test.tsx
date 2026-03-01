@@ -117,4 +117,50 @@ describe('linkage warning UI', () => {
     expect(screen.queryByText('Missing Q#')).not.toBeInTheDocument();
     expect(screen.queryByText('No associated question number. Add a PT-style ID to the question-card block.')).not.toBeInTheDocument();
   });
+
+  it('hides missing-card warnings for reference lessons', () => {
+    Element.prototype.scrollTo = vi.fn();
+    Element.prototype.scrollIntoView = vi.fn();
+    const moduleData: ModuleData = {
+      id: 9,
+      title: 'Strengthen',
+      category: 'LR',
+      description: 'desc',
+      unit: 'unit',
+      lessons: [{ id: '9-13', title: 'Reference Guide', content: [] }],
+    };
+
+    render(
+      <MemoryRouter>
+        <Layout
+          modules={[{ id: 9, title: 'Strengthen', category: 'LR', description: 'desc', unit: 'unit' }]}
+          activeModuleId={9}
+          activeLessonId="9-13"
+          onSelectModule={() => {}}
+          onSelectLesson={() => {}}
+          onGoHome={() => {}}
+          activeModuleData={moduleData}
+          lessonLinkageMeta={{
+            '9-13': { ptIds: [], status: 'ok', displayTitle: 'Reference Guide' },
+          }}
+        >
+          <div>content</div>
+        </Layout>
+        <LessonViewer
+          title="Reference Guide"
+          content={[]}
+          linkageMeta={{
+            ptIds: [],
+            status: 'ok',
+            displayTitle: 'Reference Guide',
+          }}
+        />
+      </MemoryRouter>,
+    );
+
+    expect(screen.queryByText('Missing Card')).not.toBeInTheDocument();
+    expect(
+      screen.queryByText('No attached question card (Lesson 4+ requirement). Add at least one question-card block.'),
+    ).not.toBeInTheDocument();
+  });
 });

@@ -27,4 +27,17 @@ describe('QuestionBank deep links', () => {
     expect(searchInput).toHaveValue('PT-112-S-4-Q-20');
     expect(await screen.findByText(/Module 9:/)).toBeInTheDocument();
   });
+
+  it('shows explicit LR and RC category badges on real question rows', async () => {
+    render(
+      <MemoryRouter initialEntries={['/question-bank']}>
+        <Routes>
+          <Route path="/question-bank" element={<QuestionBank drillCrossReferences={{}} />} />
+        </Routes>
+      </MemoryRouter>,
+    );
+
+    expect((await screen.findAllByLabelText('Category: LR')).length).toBeGreaterThan(0);
+    expect((await screen.findAllByLabelText('Category: RC')).length).toBeGreaterThan(0);
+  });
 });
