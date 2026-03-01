@@ -2,7 +2,7 @@ import { Lesson } from '../../types';
 
 export const Lesson5_ThePrescription: Lesson = {
   id: "2-5",
-  title: "Lesson 2: The Prescription",
+  title: "Lesson 2: The Prescription (PT-122-S-4-Q-7)",
   content: [
     { type: 'h2', text: 'The Prescription — Deep Dive' },
     { type: 'paragraph', text: "A prescriptive argument moves beyond describing facts to make a **judgment** or recommend a **course of action**. The author's main conclusion isn't just about what *is* true, but what *should be* true, what is *wise* or *unwise*, or what *must be* done. This conclusion type accounts for approximately 25% of Main Conclusion questions." },
@@ -55,6 +55,19 @@ export const Lesson5_ThePrescription: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example: The Editorialist\'s Argument' },
+    {
+      type: 'question-card',
+      id: 'PT-122-S-4-Q-7',
+      stimulus: 'Editorialist: There would seem to be little hazard for consumers associated with chemicals used in treated lumber because the lumber is used outside where fumes cannot accumulate. However, immediate steps should be taken to determine the safety of these chemicals since consumers could ingest them. If the lumber is used for children\'s playground equipment, youngsters could put their mouths on the wood, and if it is used to contain soil in a vegetable garden, the chemicals could leach into the soil.',
+      question: 'Which one of the following most accurately expresses the main conclusion of the editorialist\'s argument?',
+      options: [
+        '**(A)** The chemicals used in treated lumber are apparently not dangerous to the consumer.',
+        '**(B)** Treated lumber is as dangerous when used outdoors as it is when used indoors.',
+        '**(C)** The effects on humans from the chemicals in treated lumber should be studied. (Correct) [88%]',
+        '**(D)** Parents should not allow children to put their mouths on playground equipment.',
+        '**(E)** Treated lumber is more dangerous than was once believed.',
+      ],
+    },
 
 
     { type: 'h3', text: 'Step-by-Step Analysis' },

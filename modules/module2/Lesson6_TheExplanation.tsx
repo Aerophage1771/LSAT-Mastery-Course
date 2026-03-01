@@ -2,7 +2,7 @@ import { Lesson } from '../../types';
 
 export const Lesson6_TheExplanation: Lesson = {
   id: "2-6",
-  title: "Lesson 3: The Explanation",
+  title: "Lesson 3: The Explanation (PT-128-S-2-Q-13)",
   content: [
     { type: 'h2', text: 'The Explanatory Argument' },
     { type: 'paragraph', text: "Most arguments try to prove *that* something is true. Explanatory arguments are different: they take a phenomenon — an event or observation that everyone already accepts — and try to explain *why* it happened. The main conclusion is the proposed cause, and the premises describe the mechanism that connects the cause to the effect. Recognizing this structure is essential because it reverses the usual relationship between facts and conclusions." },
@@ -48,6 +48,19 @@ export const Lesson6_TheExplanation: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
+    {
+      type: 'question-card',
+      id: 'PT-128-S-2-Q-13',
+      stimulus: 'Scientist: There is little doubt that the ice ages were caused by the unusually rich growth of vegetation worldwide. Since vegetation converts carbon dioxide into oxygen, excessive vegetation would have depleted the carbon dioxide in the atmosphere. Carbon dioxide helps the atmosphere retain the sun\'s heat. Thus, if this carbon dioxide is depleted, the earth cools significantly, thereby causing an ice age.',
+      question: 'Which one of the following most accurately expresses the main conclusion of the scientist\'s argument?',
+      options: [
+        '**(A)** Excessive growth of vegetation worldwide could have caused one or more ice ages by depleting the carbon dioxide in the atmosphere.',
+        '**(B)** If the carbon dioxide in the atmosphere is depleted, the earth cools significantly, thereby causing an ice age.',
+        '**(C)** An excessive growth of vegetation causes the carbon dioxide in the atmosphere to be depleted.',
+        '**(D)** If unusually rich growth of vegetation caused the ice ages, it undoubtedly did so by depleting the carbon dioxide in the atmosphere.',
+        '**(E)** Unusually rich growth of vegetation worldwide was almost certainly the cause of the ice ages. (Correct) [85%]',
+      ],
+    },
 
     { type: 'hr' },
 

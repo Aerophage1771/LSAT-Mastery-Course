@@ -2,7 +2,7 @@ import { Lesson } from '../../types';
 
 export const Lesson11_Advanced_ChallengingAssumption2: Lesson = {
   id: '3-11',
-  title: 'Advanced Lesson 3: Challenging an Assumption (Part 2)',
+  title: 'Advanced Lesson 3: Challenging an Assumption (Part 2) (PT-124-S-2-Q-12)',
   content: [
     { type: 'h2', text: 'Advanced Lesson 3: Challenging an Unstated Assumption (Part 2) (Method of Reasoning)' },
     { type: 'h3', text: 'Concept Focus: Complex Hidden Assumptions' },
@@ -36,6 +36,19 @@ export const Lesson11_Advanced_ChallengingAssumption2: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example: Part-to-Whole Assumption' },
+    {
+      type: 'question-card',
+      id: 'PT-124-S-2-Q-12',
+      stimulus: 'Yang: Yeast has long been known to be a leaven, that is, a substance used in baking to make breads rise. Since biblical evidence ties the use of leavens to events dating back to 1200 B.C., we can infer that yeast was already known to be a leaven at that time.\nCampisi: I find your inference unconvincing; several leavens other than yeast could have been known in 1200 B.C.',
+      question: 'Campisi counters Yang\'s argument by',
+      options: [
+        '**(A)** suggesting that an alternative set of evidence better supports Yang\'s conclusion',
+        '**(B)** questioning the truth of a presumption underlying Yang\'s argument (Correct) [74%]',
+        '**(C)** denying the truth of Yang\'s conclusion without considering the reason given for that conclusion',
+        '**(D)** pointing out that the premises of Yang\'s argument more strongly support a contrary conclusion',
+        '**(E)** calling into question the truth of the evidence presented in Yang\'s argument',
+      ],
+    },
 
     { type: 'hr' },
 

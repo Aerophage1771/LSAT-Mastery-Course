@@ -2,7 +2,7 @@ import { Lesson } from '../../types';
 
 export const Lesson9_Advanced_BackgroundPrinciple: Lesson = {
   id: "2-9",
-  title: "Advanced: The Background Principle Trap",
+  title: "Advanced: The Background Principle Trap (PT-130-S-1-Q-13)",
   content: [
     { type: 'h2', text: 'The Background Principle Trap' },
     { type: 'paragraph', text: "An author sometimes opens an argument with a general rule, a definition, or a widely accepted truth. Because this statement is abstract and seems important, it's easy to mistake it for the main conclusion. But its true role is **foundational premise** — the author isn't trying to *prove* this principle; they're *using* it to prove a more specific point. Your challenge is to distinguish the general rule the author takes as given from the specific application the author is actually arguing for." },
@@ -50,6 +50,19 @@ export const Lesson9_Advanced_BackgroundPrinciple: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
+    {
+      type: 'question-card',
+      id: 'PT-130-S-1-Q-13',
+      stimulus: 'It is a given that to be an intriguing person, one must be able to inspire the perpetual curiosity of others. Constantly broadening one\'s abilities and extending one\'s intellectual reach will enable one to inspire that curiosity. For such a perpetual expansion of one\'s mind makes it impossible to be fully comprehended, making one a constant mystery to others.',
+      question: 'Which one of the following most accurately expresses the conclusion drawn in the argument above?',
+      options: [
+        '**(A)** To be an intriguing person, one must be able to inspire the perpetual curiosity of others.',
+        '**(B)** If one constantly broadens one\'s abilities and extends one\'s intellectual reach, one will be able to inspire the perpetual curiosity of others. (Correct) [49%]',
+        '**(C)** If one\'s mind becomes impossible to fully comprehend, one will always be a mystery to others.',
+        '**(D)** To inspire the perpetual curiosity of others, one must constantly broaden one\'s abilities and extend one\'s intellectual reach.',
+        '**(E)** If one constantly broadens one\'s abilities and extends one\'s intellectual reach, one will always have curiosity.',
+      ],
+    },
 
     { type: 'hr' },
 

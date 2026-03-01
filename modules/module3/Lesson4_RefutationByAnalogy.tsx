@@ -2,7 +2,7 @@ import { Lesson } from '../../types';
 
 export const Lesson4_RefutationByAnalogy: Lesson = {
   id: '3-4',
-  title: 'Lesson 1: Refutation by Analogy',
+  title: 'Lesson 1: Refutation by Analogy (PT-107-S-3-Q-3)',
   content: [
     { type: 'h2', text: 'Lesson 1: Refutation by Analogy (Method of Reasoning)' },
     { type: 'paragraph', text: "Refutation by analogy is one of the most powerful — and most tested — argumentative strategies on the LSAT. This lesson teaches you exactly how it works, how to spot it, and how to distinguish it from closely related methods." },
@@ -43,6 +43,19 @@ export const Lesson4_RefutationByAnalogy: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
+    {
+      type: 'question-card',
+      id: 'PT-107-S-3-Q-3',
+      stimulus: 'Land developer: By attempting to preserve endangered species that otherwise would become extinct during our lifetime, we are wasting money on species that will disappear over time regardless of our efforts. Paleontologists have established that extinction is the normal fate of species on the geological time scale of millions of years.\n\nEnvironmentalist: To claim that we should let species disappear because all species eventually die out makes about as much sense as arguing that we should not spend money to find a cure for cancer because all humans are inevitably mortal.',
+      question: 'The method the environmentalist uses to object to the land developer\'s argument is to',
+      options: [
+        '**(A)** clarify a dilemma that is embedded in the land developer\'s argument',
+        '**(B)** attack the character of the land developer rather than the position the land developer is taking',
+        '**(C)** show that more evidence is needed to substantiate the land developer\'s conclusion',
+        '**(D)** show that the land developer\'s line of reasoning would lead to an unacceptable conclusion if applied to a different situation (Correct) [99%]',
+        '**(E)** argue that there are problems that money, however judiciously spent, cannot solve',
+      ],
+    },
 
 
     { type: 'h3', text: 'Step 1: Deconstruct the Argument' },

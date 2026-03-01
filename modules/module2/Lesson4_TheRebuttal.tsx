@@ -2,7 +2,7 @@ import { Lesson } from '../../types';
 
 export const Lesson4_TheRebuttal: Lesson = {
   id: "2-4",
-  title: "Lesson 1: The Rebuttal",
+  title: "Lesson 1: The Rebuttal (PT-105-S-1-Q-1)",
   content: [
     { type: 'h2', text: 'The Rebuttal — Deep Dive' },
     { type: 'paragraph', text: "The Rebuttal is the most common argument structure in Main Conclusion questions (~45%). The author's primary goal is not to build a new case from scratch, but to **tear down an existing one**. Mastering this pattern gives you an instant advantage on nearly half of all Main Conclusion questions." },
@@ -52,6 +52,19 @@ export const Lesson4_TheRebuttal: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example 1: The Tennyson Argument' },
+    {
+      type: 'question-card',
+      id: 'PT-105-S-1-Q-1',
+      stimulus: 'Tennyson\'s line of poetry "nature, red in tooth and claw" is misconstrued by many evolutionists as a reference to Darwin\'s theory of evolution. The poem in which the line appears was published in 1850, but Darwin kept his theory closely held until publishing it in 1859. In addition, in view of the context provided by the rest of the poem, the line was clearly meant to refer to the dominant biological theory of the early nineteenth century, which was a creationist theory.',
+      question: 'Which one of the following most accurately expresses the main point of the argument?',
+      options: [
+        '**(A)** The line of Tennyson\'s poetry cannot now be construed as an apt description of Darwin\'s theory of evolution.',
+        '**(B)** The dominant biological theory in the early nineteenth century was a creationist theory.',
+        '**(C)** Tennyson\'s line of poetry was written well before Darwin had published his theory of evolution.',
+        '**(D)** Darwin\'s theory of evolution was not the dominant biological theory in the early nineteenth century.',
+        '**(E)** Tennyson\'s line of poetry was not a reference to Darwin\'s theory of evolution. (Correct) [96%]',
+      ],
+    },
 
 
     { type: 'h3', text: 'Step-by-Step Analysis' },

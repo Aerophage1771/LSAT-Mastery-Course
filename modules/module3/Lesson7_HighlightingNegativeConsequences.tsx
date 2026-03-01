@@ -2,7 +2,7 @@ import { Lesson } from '../../types';
 
 export const Lesson7_HighlightingNegativeConsequences: Lesson = {
   id: '3-7',
-  title: 'Lesson 4: Highlighting Negative Consequences',
+  title: 'Lesson 4: Highlighting Negative Consequences (PT-110-S-3-Q-8)',
   content: [
     { type: 'h2', text: 'Lesson 4: Highlighting Negative Consequences (Method of Reasoning)' },
     { type: 'h3', text: 'Concept Focus: Highlighting Negative Consequences' },
@@ -48,6 +48,19 @@ export const Lesson7_HighlightingNegativeConsequences: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
+    {
+      type: 'question-card',
+      id: 'PT-110-S-3-Q-8',
+      stimulus: 'Dr. Jones: The new technology dubbed "telemedicine" will provide sustained improvement in at least rural patient care since it allows rural physicians to televise medical examinations to specialists who live at great distances—specialists who will thus be able to provide advice the rural patient would otherwise not receive.\nDr. Carabella: Not so. Telemedicine might help rural patient care initially. However, small hospitals will soon realize that they can minimize expenses by replacing physicians with technicians who can use telemedicine to transmit examinations to large medical centers, resulting in fewer patients being able to receive traditional, direct medical examinations. Eventually, it will be the rare individual who ever gets truly personal attention. Hence, rural as well as urban patient care will suffer.',
+      question: 'Dr. Carabella uses which one of the following strategies in responding to Dr. Jones?',
+      options: [
+        '**(A)** listing a set of considerations to show that a prescribed treatment that seems to be benefiting a patient in fact harms that patient',
+        '**(B)** describing the application of the technology discussed by Dr. Jones as one step that initiates a process that leads to an undesirable end (Correct) [97%]',
+        '**(C)** citing evidence that Dr. Jones lacks the professional training to judge the case at issue',
+        '**(D)** invoking medical statistics that cast doubt on the premises used in Dr. Jones\'s argument',
+        '**(E)** providing grounds for dismissing Dr. Jones\'s interpretation of a key term in medical technology',
+      ],
+    },
 
     { type: 'hr' },
 

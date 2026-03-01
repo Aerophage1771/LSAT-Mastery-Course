@@ -2,7 +2,7 @@ import { Lesson } from '../../types';
 
 export const Lesson8_Advanced_IntermediateConclusion: Lesson = {
   id: "2-8",
-  title: "Advanced: The Intermediate Conclusion Trap",
+  title: "Advanced: The Intermediate Conclusion Trap (PT-116-S-3-Q-23)",
   content: [
     { type: 'h2', text: 'The Intermediate Conclusion Trap' },
     { type: 'paragraph', text: "The intermediate conclusion (IC) trap is the single most effective trap on difficult Main Conclusion questions. It works because ICs look and feel like main conclusions — they are supported by evidence and introduced by words like \"Thus\" or \"Therefore.\" The critical difference is that an IC then goes on to support an even broader claim. Your task is to see the entire chain and identify the *final destination*, not the *last stepping-stone*." },
@@ -46,6 +46,19 @@ export const Lesson8_Advanced_IntermediateConclusion: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example 1' },
+    {
+      type: 'question-card',
+      id: 'PT-116-S-3-Q-23',
+      stimulus: 'Each of many different human hormones can by itself raise the concentration of glucose in the blood. The reason for this is probably a metabolic quirk of the brain. To see this, consider that although most human cells can produce energy from fats and proteins, brain cells can use only glucose. Thus, if blood glucose levels fall too low, brain cells will rapidly starve, leading to unconsciousness and death.',
+      question: 'Which one of the following most accurately expresses the main conclusion of the argument above?',
+      options: [
+        '**(A)** Each of many different human hormones can by itself raise blood glucose levels.',
+        '**(B)** The reason that many different hormones can each independently raise blood glucose levels is probably a metabolic quirk of the brain. (Correct) [53%]',
+        '**(C)** Although most human cells can produce energy from fats and proteins, brain cells can produce energy only from glucose.',
+        '**(D)** If blood glucose levels fall too low, then brain cells starve, resulting in loss of consciousness and death.',
+        '**(E)** The reason brain cells starve if deprived of glucose is that they can produce energy only from glucose.',
+      ],
+    },
 
     { type: 'hr' },
 

@@ -2,7 +2,7 @@ import { Lesson } from '../../types';
 
 export const Lesson10_Advanced_SpecificJudgment: Lesson = {
   id: "2-10",
-  title: "Advanced: Specific Judgment vs. General Rule",
+  title: "Advanced: Specific Judgment vs. General Rule (PT-123-S-3-Q-12)",
   content: [
     { type: 'h2', text: 'Specific Judgment vs. General Rule' },
     { type: 'paragraph', text: "This lesson tackles one of the most sophisticated traps on Main Conclusion questions. On difficult questions, the author makes a specific judgment about a particular case — a ruling on *this situation* based on *these facts*. A highly tempting wrong answer takes that specific reasoning and generalizes it into a broad \"If... then...\" rule. The trap works because the general rule *accurately describes the logic* the author used, but it overstates the scope of the author's claim. Your task is to be precise: is the author making a ruling about one case, or trying to establish a universal law?" },
@@ -47,6 +47,19 @@ export const Lesson10_Advanced_SpecificJudgment: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
+    {
+      type: 'question-card',
+      id: 'PT-123-S-3-Q-12',
+      stimulus: 'Novel X and Novel Y are both semiautobiographical novels and contain many very similar themes and situations, which might lead one to suspect plagiarism on the part of one of the authors. However, it is more likely that the similarity of themes and situations in the two novels is merely coincidental, since both authors are from very similar backgrounds and have led similar lives.',
+      question: 'Which one of the following most accurately expresses the conclusion drawn in the argument?',
+      options: [
+        '**(A)** Novel X and Novel Y are both semiautobiographical novels, and the two novels contain many very similar themes and situations.',
+        '**(B)** The fact that Novel X and Novel Y are both semiautobiographical novels and contain many very similar themes and situations might lead one to suspect plagiarism on the part of one of the authors.',
+        '**(C)** The author of Novel X and the author of Novel Y are from very similar backgrounds and have led very similar lives.',
+        '**(D)** It is less likely that one of the authors of Novel X or Novel Y is guilty of plagiarism than that the similarity of themes and situations in the two novels is merely coincidental. (Correct) [63%]',
+        '**(E)** If the authors of Novel X and Novel Y are from very similar backgrounds and have led similar lives, suspicions that either of the authors plagiarized are very likely to be unwarranted.',
+      ],
+    },
 
     { type: 'hr' },
 
