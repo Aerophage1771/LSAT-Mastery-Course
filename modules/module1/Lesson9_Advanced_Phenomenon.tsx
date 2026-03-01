@@ -47,6 +47,19 @@ export const Lesson9_Advanced_Phenomenon: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example (PT-131-S-2-Q-7)' },
+    {
+      type: 'question-card',
+      id: 'PT-131-S-2-Q-7',
+      stimulus: 'Columnist: It has been noted that attending a live musical performance is a richer experience than is listening to recorded music. Some say that this is merely because we do not see the performers when we listen to recorded music. However, there must be some other reason, for there is relatively little difference between listening to someone read a story over the radio and listening to someone in the same room read a story.',
+      question: 'Which one of the following most accurately expresses the role played in the argument by the observation that attending a live musical performance is a richer experience than is listening to recorded music?',
+      options: [
+        '(A) It is what the columnist\'s argument purports to show.',
+        '(B) It is the reason given for the claim that the columnist\'s argument is attempting to undermine.',
+        '(C) It is what the columnist\'s argument purports to explain.',
+        '(D) It is what the columnist\'s argument purports to refute.',
+        '(E) It is what the position that the columnist tries to undermine is purported to explain. (Correct)',
+      ],
+    },
 
     { type: 'hr' },
 

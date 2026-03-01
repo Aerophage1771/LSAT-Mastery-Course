@@ -53,6 +53,19 @@ export const Lesson8_Advanced_Concessions: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example (PT-131-S-2-Q-18)' },
+    {
+      type: 'question-card',
+      id: 'PT-131-S-2-Q-18',
+      stimulus: 'Contrary to Malthus\'s arguments, human food-producing capacity has increased more rapidly than human population. Yet, agricultural advances often compromise biological diversity. Therefore, Malthus\'s prediction that insufficient food will doom humanity to war, pestilence, and famine will likely be proven correct in the future, because a lack of biodiversity will eventually erode our capacity to produce food.',
+      question: 'The statement that human food-producing capacity has increased more rapidly than human population plays which one of the following roles in the argument?',
+      options: [
+        '(A) It is a hypothesis the argument provides reasons for believing to be presently false.',
+        '(B) It is a part of the evidence used in the argument to support the conclusion that a well-known view is misguided.',
+        '(C) It is an observation that the argument suggests actually supports Malthus\'s position.',
+        '(D) It is a general fact that the argument offers reason to believe will eventually change. (Correct)',
+        '(E) It is a hypothesis that, according to the argument, is accepted on the basis of inadequate evidence.',
+      ],
+    },
 
     { type: 'hr' },
 

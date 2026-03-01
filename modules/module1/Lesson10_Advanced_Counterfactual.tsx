@@ -50,6 +50,19 @@ export const Lesson10_Advanced_Counterfactual: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example (PT-125-S-4-Q-15)' },
+    {
+      type: 'question-card',
+      id: 'PT-125-S-4-Q-15',
+      stimulus: 'Singletary: We of Citizens for Cycling Freedom object to the city\'s new ordinance requiring bicyclists to wear helmets. If the city wanted to become a safer place for cyclists, it would not require helmets. Instead, it would construct more bicycle lanes and educate drivers about bicycle safety. Thus, passage of the ordinance reveals that the city is more concerned with the appearance of safety than with bicyclists\' actual safety.',
+      question: 'Which one of the following most accurately describes the role played in Singletary\'s argument by the statement that mentions driver education?',
+      options: [
+        '(A) It is cited as evidence for the claim that the city misunderstands the steps necessary for ensuring bicyclists\' safety.',
+        '(B) It is used as partial support for a claim about the motivation of the city. (Correct)',
+        '(C) It is offered as evidence of the total ineffectiveness of the helmet ordinance.',
+        '(D) It is offered as an example of further measures the city will take to ensure bicyclists\' safety.',
+        '(E) It is presented as an illustration of the city\'s overriding interest in its public image.',
+      ],
+    },
 
     { type: 'hr' },
 

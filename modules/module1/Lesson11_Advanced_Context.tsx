@@ -46,6 +46,19 @@ export const Lesson11_Advanced_Context: Lesson = {
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example (PT-108-S-2-Q-22)' },
+    {
+      type: 'question-card',
+      id: 'PT-108-S-2-Q-22',
+      stimulus: 'One can be at home and be in the backyard, that is, not in one\'s house at all. One can also be in one\'s house but not at home, if one owns the house but rents it out to others, for example. So one\'s being at home is not required for one\'s being in one\'s own house.',
+      question: 'Which one of the following most accurately describes the relationship between the argument\'s conclusion and its claim that one can be at home without being in one\'s house?',
+      options: [
+        '(A) The claim is required to establish the conclusion.',
+        '(B) The claim represents the point the conclusion is intended to refute.',
+        '(C) The claim is compatible with the truth or falsity of the conclusion. (Correct)',
+        '(D) The claim points out an ambiguity in the phrase "at home."',
+        '(E) The claim inadvertently contradicts the conclusion.',
+      ],
+    },
 
     { type: 'hr' },
 
