@@ -2,9 +2,9 @@ import { Lesson, ContentBlock } from '../../types';
 
 export const Lesson22_Module59_Questions: Lesson = {
   id: "48-22",
-  title: "Module 59: LSAT Math",
+  title: "Module 22: LSAT Math",
   content: [
-    { type: 'h2', text: 'Module 59: LSAT Math' },
+    { type: 'h2', text: 'Module 22: LSAT Math' },
     {
       type: 'accordion',
       title: 'Drill: Base Rate — Pedestrians (PT-130-S-3-Q-22)',
