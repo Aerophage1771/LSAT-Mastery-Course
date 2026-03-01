@@ -10,7 +10,7 @@ export const Lesson3_Drill_SynthesisCausal: Lesson = {
     { type: 'paragraph', text: 'Many MSS stimuli present Premise A (a cause or condition) and Premise B (a related effect or constraint). Your job is to synthesize: *Given both premises together, what causal conclusion follows?* The correct answer captures the combined force of the evidence without overstating it.' },
     { type: 'h3', text: 'Practice Question' },
     { type: 'question-card',
-      id: '16-3-drill',
+      id: 'PT-128-S-2-Q-2',
       questionType: 'Most Strongly Supported',
       difficulty: 'medium',
       stimulus: 'Book collector: The demand for out-of-print books is increasing. It has been spurred by the rise of the Internet, the search capabilities of which make it much easier to locate the out-of-print books one seeks.',

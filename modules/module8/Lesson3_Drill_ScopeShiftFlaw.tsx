@@ -39,7 +39,7 @@ export const Lesson3_Drill_ScopeShiftFlaw: Lesson = {
     { type: 'paragraph', text: "**Instructions:** Read the stimulus, question, and answer choices below. Commit to an answer before scrolling down to the step-by-step analysis." },
 
     { type: 'question-card',
-      id: 'DR-8-3-001',
+      id: 'PT-101-S-2-Q-1',
       questionType: 'Weaken',
       difficulty: 'medium',
       stimulus: "Press release: A comprehensive review evaluating the medical studies done up to the present time has found no reason to think that drinking coffee in normal amounts harms the coffee-drinker's heart. So coffee drinkers can relax and enjoy their beverage — it is safe to drink coffee.",

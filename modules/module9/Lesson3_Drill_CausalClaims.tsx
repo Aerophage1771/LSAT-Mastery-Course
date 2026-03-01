@@ -31,7 +31,7 @@ export const Lesson3_Drill_CausalClaims: Lesson = {
     { type: 'paragraph', text: 'Which one of the following, if true, most helps to support the argument?' },
 
     { type: 'question-card',
-      id: '9-3-drill',
+      id: 'PT-128-S-3-Q-1',
       questionType: 'Strengthen',
       difficulty: 'medium',
       stimulus: 'In a transportation company, a certain syndrome often attributed to stress by medical experts afflicts a significantly higher percentage of workers in Department F than in any other department. We can conclude, therefore, that the work done in Department F subjects workers to higher stress levels than does the work in the other departments in the company.',

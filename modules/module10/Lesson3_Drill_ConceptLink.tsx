@@ -26,7 +26,7 @@ export const Lesson3_Drill_ConceptLink: Lesson = {
     { type: 'h4', text: 'The Problem' },
 
     { type: 'question-card',
-      id: '10-3-drill',
+      id: 'PT-120-S-1-Q-12',
       questionType: 'Sufficient Assumption',
       difficulty: 'medium',
       stimulus: "All known living things are made of the same basic kinds of matter, are carbon based, and are equipped with genetic codes. So human life has the same origin as all other known life.",

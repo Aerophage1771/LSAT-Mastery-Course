@@ -21,7 +21,7 @@ export const Lesson3_Drill_NumbersVsPercentages: Lesson = {
     ]},
     { type: 'hr' },
     { type: 'h3', text: 'Practice Problem' },
-    { type: 'question-card', id: '19-3-drill', questionType: 'Paradox / Explain', difficulty: 'hard',
+    { type: 'question-card', id: 'PT-107-S-3-Q-21', questionType: 'Paradox / Explain', difficulty: 'hard',
       stimulus: 'A study of the difference in earnings between men and women in the country of Naota found that the average annual earnings of women who are employed full time is 80 percent of the average annual earnings of men who are employed full time. However, other research consistently shows that, in Naota, the average annual earnings of all employed women is 65 percent of the average annual earnings of all employed men.',
       question: 'Which one of the following, if also established by research, most helps explain the apparent discrepancy between the research results described above?',
       options: [
