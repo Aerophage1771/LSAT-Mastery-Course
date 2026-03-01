@@ -72,12 +72,12 @@ function ModulePage() {
 
   const normalizedModuleData = useMemo(() => {
     if (!moduleData) return null;
-    const { lessons } = normalizeLessonsWithLinkage(numericModuleId, moduleData.lessons);
+    const { lessons } = normalizeLessonsWithLinkage(numericModuleId, moduleData.lessons, moduleData.title);
     return { ...moduleData, id: numericModuleId, lessons };
   }, [moduleData, numericModuleId]);
 
   const lessonLinkageByLessonId = useMemo(
-    () => (moduleData ? buildLessonLinkageByLessonId(numericModuleId, moduleData.lessons) : {}),
+    () => (moduleData ? buildLessonLinkageByLessonId(numericModuleId, moduleData.lessons, moduleData.title) : {}),
     [moduleData, numericModuleId],
   );
 
@@ -203,7 +203,7 @@ function AppRoutes() {
         const loaded = await entry.load();
         const moduleData =
           'default' in loaded ? loaded.default : (loaded as Record<string, ModuleData>)[Object.keys(loaded).find((k) => k.startsWith('Module'))!];
-        const { lessons } = normalizeLessonsWithLinkage(entry.meta.id, moduleData.lessons);
+        const { lessons } = normalizeLessonsWithLinkage(entry.meta.id, moduleData.lessons, entry.meta.title);
         return {
           ...moduleData,
           id: entry.meta.id,

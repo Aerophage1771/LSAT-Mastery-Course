@@ -60,4 +60,35 @@ describe('lessonQuestionLinkage', () => {
     expect(linkage.status).toBe('missing_card');
     expect(linkage.displayTitle).toContain('[Missing Card]');
   });
+
+  it('exempts LR lesson order 1 from missing warnings and normalizes title', () => {
+    const linkage = getLessonLinkageStatus({
+      moduleId: 9,
+      lesson: lesson({
+        id: '9-intro',
+        title: 'Old Intro',
+        content: [{ type: 'question-card', id: 'illustrative-9-intro', stimulus: 'S', question: 'Q', options: [] }],
+      }),
+      lessonOrder: 1,
+      moduleTitle: 'Strengthen',
+    });
+
+    expect(linkage.status).toBe('ok');
+    expect(linkage.isExempt).toBe(true);
+    expect(linkage.displayTitle).toBe('Introduction to Strengthen');
+    expect(linkage.displayTitle).not.toContain('[Missing Q#]');
+  });
+
+  it('normalizes LR lesson order 2 title to step-by-step guide', () => {
+    const linkage = getLessonLinkageStatus({
+      moduleId: 9,
+      lesson: lesson({ id: '9-2', title: 'Old Step 2' }),
+      lessonOrder: 2,
+      moduleTitle: 'Strengthen',
+    });
+
+    expect(linkage.status).toBe('ok');
+    expect(linkage.isExempt).toBe(true);
+    expect(linkage.displayTitle).toBe('Step-by-Step Guide: Strengthen');
+  });
 });

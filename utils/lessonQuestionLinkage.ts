@@ -45,16 +45,24 @@ export interface LessonLinkageStatusDetails extends LessonLinkageMeta {
 export function getLessonLinkageStatus({
   moduleId,
   lesson,
+  lessonOrder,
+  moduleTitle,
 }: {
   moduleId: number;
   lesson: Lesson;
+  lessonOrder?: number;
+  moduleTitle?: string;
 }): LessonLinkageStatusDetails {
   const routeModuleId = getRouteModuleId(moduleId);
   const lessonNumber = getLessonNumber(lesson.id);
+  const resolvedLessonOrder = lessonOrder ?? lessonNumber ?? 1;
   const hasQuestionCard = extractQuestionCardIds(lesson.content).length > 0;
   const ptIds = extractPtIds(extractQuestionCardIds(lesson.content));
-  const missingQuestionNumber = hasQuestionCard && ptIds.length === 0;
-  const missingQuestionCard = routeModuleId >= 1 && routeModuleId <= 22 && lessonNumber !== null && lessonNumber >= 4 && !hasQuestionCard;
+  const isLrRouteModule = routeModuleId >= 1 && routeModuleId <= 22;
+  const isExempt = isLrRouteModule && (resolvedLessonOrder === 1 || resolvedLessonOrder === 2);
+  const exemptionReason = isExempt ? (resolvedLessonOrder === 1 ? 'LR intro exemption' : 'LR step-by-step exemption') : undefined;
+  const missingQuestionNumber = hasQuestionCard && ptIds.length === 0 && !isExempt;
+  const missingQuestionCard = isLrRouteModule && lessonNumber !== null && lessonNumber >= 4 && !hasQuestionCard && !isExempt;
 
   let status: LessonLinkageStatus = 'ok';
   let statusLabel: LessonLinkageMeta['statusLabel'];
@@ -67,7 +75,11 @@ export function getLessonLinkageStatus({
   }
 
   let displayTitle = lesson.title;
-  if (ptIds.length > 0) {
+  if (isLrRouteModule && moduleTitle) {
+    if (resolvedLessonOrder === 1) displayTitle = `Introduction to ${moduleTitle}`;
+    if (resolvedLessonOrder === 2) displayTitle = `Step-by-Step Guide: ${moduleTitle}`;
+  }
+  if (!isExempt && ptIds.length > 0) {
     const ptSuffix = `(${ptIds.join(', ')})`;
     const hasAllPtIds = ptIds.every((ptId) => new RegExp(`\\b${ptId}\\b`).test(displayTitle));
     if (!hasAllPtIds) displayTitle = `${displayTitle} ${ptSuffix}`;
@@ -87,18 +99,26 @@ export function getLessonLinkageStatus({
     hasQuestionCard,
     missingQuestionNumber,
     missingQuestionCard,
+    isExempt,
+    exemptionReason,
   };
 }
 
-export function buildLessonLinkageByLessonId(moduleId: number, lessons: Lesson[]): Record<string, LessonLinkageStatusDetails> {
-  return Object.fromEntries(lessons.map((lesson) => [lesson.id, getLessonLinkageStatus({ moduleId, lesson })]));
+export function buildLessonLinkageByLessonId(
+  moduleId: number,
+  lessons: Lesson[],
+  moduleTitle?: string,
+): Record<string, LessonLinkageStatusDetails> {
+  return Object.fromEntries(
+    lessons.map((lesson, index) => [lesson.id, getLessonLinkageStatus({ moduleId, lesson, lessonOrder: index + 1, moduleTitle })]),
+  );
 }
 
-export function normalizeLessonsWithLinkage(moduleId: number, lessons: Lesson[]): {
+export function normalizeLessonsWithLinkage(moduleId: number, lessons: Lesson[], moduleTitle?: string): {
   lessons: Lesson[];
   linkageByLessonId: Record<string, LessonLinkageStatusDetails>;
 } {
-  const linkageByLessonId = buildLessonLinkageByLessonId(moduleId, lessons);
+  const linkageByLessonId = buildLessonLinkageByLessonId(moduleId, lessons, moduleTitle);
   return {
     linkageByLessonId,
     lessons: lessons.map((lesson) => ({
@@ -115,7 +135,7 @@ export function buildDrillCrossReferences(modules: ModuleData[]): Record<string,
     const routeModuleId = getRouteModuleId(moduleData.id);
     if (routeModuleId < 1 || routeModuleId > 22) continue;
 
-    const linkageByLessonId = buildLessonLinkageByLessonId(routeModuleId, moduleData.lessons);
+    const linkageByLessonId = buildLessonLinkageByLessonId(routeModuleId, moduleData.lessons, moduleData.title);
     for (const lesson of moduleData.lessons) {
       const linkage = linkageByLessonId[lesson.id];
       for (const ptId of linkage.ptIds) {

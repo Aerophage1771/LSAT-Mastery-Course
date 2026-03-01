@@ -318,7 +318,7 @@ export const LessonViewer: React.FC<LessonViewerProps> = ({
               ? "text-xl font-semibold text-slate-900 tracking-tight mb-3 pb-3 border-b border-slate-100"
               : "text-2xl lg:text-3xl font-bold text-slate-900 tracking-tight mb-4 pb-4 border-b border-slate-100"
             }>{title}</h1>
-            {linkageMeta?.status !== 'ok' && (
+            {linkageMeta?.status !== 'ok' && !linkageMeta?.isExempt && (
               <div className="mb-3 rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
                 {linkageMeta?.status === 'missing_q_number'
                   ? 'No associated question number. Add a PT-style ID to the question-card block.'
