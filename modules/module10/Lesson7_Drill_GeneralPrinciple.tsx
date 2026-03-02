@@ -16,7 +16,21 @@ export const Lesson7_Drill_GeneralPrinciple: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h3', text: 'Step-by-Step Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-134-S-3-Q-21',
+      stimulus: "**Economics professor:** Marty’s Pizza and Checkers Pizza are the two major pizza parlors in our town. Marty’s sold coupon books including coupons good for one large plain pizza at any local pizza parlor, at Marty’s expense. But Checkers refused to accept these coupons, even though they were redeemed by all other local pizza parlors. Accepting them would have cost Checkers nothing and would have satisfied those of its potential customers who had purchased the coupon books. This shows that Checkers’s motive in refusing to accept the coupons was simply to hurt Marty’s Pizza.",
+      question: "Which one of the following, if assumed, enables the economics professor’s conclusion to be properly drawn?",
+      options: [
+        "(A) Any company that refuses to accept coupons issued by a competitor when doing so would satisfy some of the company’s potential customers is motivated solely by the desire to hurt that competitor. (Correct)",
+        "(B) Any company that wishes to hurt a competitor by refusing to accept coupons issued by that competitor will refuse to accept them even when accepting them would cost nothing and would satisfy its potential customers.",
+        "(C) At least one company has refused to accept coupons issued by its major local competitor simply in order to hurt that competitor, even though those coupons were accepted by all other local competitors.",
+        "(D) Any company that accepts its major competitor’s coupons helps its competitor by doing so, even if it also satisfies its own actual or potential customers.",
+        "(E) If accepting coupons issued by a competitor would not enable a company to satisfy its actual or potential customers, then that company’s refusal to accept the coupons is motivated by the desire to satisfy customers.",
+      ]
+    },
+
+{ type: 'h3', text: 'Step-by-Step Analysis' },
 
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
     { type: 'paragraph', text: "Isolate the specific facts from the final judgment about motive." },

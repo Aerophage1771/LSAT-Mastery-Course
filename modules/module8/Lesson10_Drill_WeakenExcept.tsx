@@ -21,7 +21,21 @@ export const Lesson10_Drill_WeakenExcept: Lesson = {
     { type: 'h3', text: 'Practice: Weaken EXCEPT' },
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-101-S-2-Q-19',
+      stimulus: "**Stimulus**\nIn Australia the population that is of driving age has grown larger over the last five years, but the annual number of traffic fatalities has declined. This leads to the conclusion that, overall, the driving-age population of Australia consists of more skillful drivers now than five years ago.",
+      question: "**Question**\nEach of the statements below, if true, weakens the argument EXCEPT:",
+      options: [
+        "(A) Three years ago, a mandatory seat-belt law went into effect throughout Australia.",
+        "(B) Five years ago, Australia began a major road repair project.",
+        "(C) Because of increases in the price of fuel, Australians on average drive less each year than in the preceding year.",
+        "(D) The number of hospital emergency facilities in Australia has doubled in the last five years.",
+        "(E) In response to an increase in traffic fatalities, Australia instituted a program of mandatory driver education five years ago. (Correct)",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
     { type: 'paragraph', text: 'Let\'s engage with the stimulus sentence by sentence to understand the core causal claim.' },
     { type: 'breakdown', labels: { title: 'Quote', text: 'Analysis'}, items: [

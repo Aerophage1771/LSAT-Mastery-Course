@@ -15,7 +15,7 @@ export const Lesson14_Module14_Questions: Lesson = {
         { type: 'paragraph', text: '**Question:** The situation described above most closely conforms to which one of the following propositions?' },
         { type: 'options', items: [
         '(A) People do less well on a task if they have been told that they will be closely watched while doing it.',
-        '(B) People execute a task more proficiently when they do not believe their abilities are being judged.',
+        '(B) People execute a task more proficiently when they do not believe their abilities are being judged. (Correct)',
         '(C) People perform a task more proficiently when they have confidence in their abilities.',
         '(D) People who assess their talents accurately generally perform near their actual level of proficiency.',
         '(E) People who think that a superior performance will please those who are testing them generally try harder.'
@@ -34,7 +34,7 @@ export const Lesson14_Module14_Questions: Lesson = {
         '(A) The success of a group enterprise depends on the ability of the leader to recognize the weaknesses of others in the group.',
         '(B) The production of any great work requires contributions from those who are unimaginative but technically skilled.',
         '(C) People without forceful personalities cannot become great leaders in a field.',
-        '(D) A trait that is a weakness in some settings can contribute to greatness in other settings.',
+        '(D) A trait that is a weakness in some settings can contribute to greatness in other settings. (Correct)',
         '(E) No one can achieve great success without the help of others who are able to bring one’s ideas to fruition.'
         ]}
       ]
@@ -52,7 +52,7 @@ export const Lesson14_Module14_Questions: Lesson = {
         '(B) Implementing technological innovations should be delayed until the resulting social changes can be managed.',
         '(C) Every enhancement of the quality of life has unavoidable negative consequences.',
         '(D) All social institutions are affected by a preoccupation with prolonging life.',
-        '(E) Solving one set of problems can create a different set of problems.'
+        '(E) Solving one set of problems can create a different set of problems. (Correct)'
         ]}
       ]
     },
@@ -65,7 +65,7 @@ export const Lesson14_Module14_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: '**Question:** The reasoning above most closely conforms to which one of the following principles?' },
         { type: 'options', items: [
-        '(A) People tend to ignore possible objectionable consequences of actions that support their activities.',
+        '(A) People tend to ignore possible objectionable consequences of actions that support their activities. (Correct)',
         '(B) A negative consequence of an activity may be outweighed by its great positive consequences.',
         '(C) Technology usually has at least some negative impact on the environment, even if it is largely beneficial.',
         '(D) Even well-intentioned attempts to solve problems sometimes make them worse.',

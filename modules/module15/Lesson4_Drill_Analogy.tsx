@@ -45,7 +45,21 @@ export const Lesson4_Drill_Analogy: Lesson = {
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-123-S-2-Q-3',
+      stimulus: "A century in certain ways is like a life, and as the end of a century approaches, people behave toward that century much as someone who is nearing the end of life does toward that life. So just as people in their last years spend much time looking back on the events of their life, people at a century’s end _______.",
+      question: "Which one of a following most logically completes the argument?",
+      options: [
+        "(A) reminisce about their own lives",
+        "(B) fear that their own lives are about to end",
+        "(C) focus on what the next century will bring",
+        "(D) become very interested in the history of the century just ending (Correct)",
+        "(E) reflect on how certain unfortunate events of the century could have been avoided",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Build the Source-Target Map' },
     { type: 'paragraph', text: "Let's break the analogy into its structural components using our Build the Map framework:" },

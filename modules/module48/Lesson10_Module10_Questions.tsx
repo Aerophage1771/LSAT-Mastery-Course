@@ -16,7 +16,7 @@ export const Lesson10_Module10_Questions: Lesson = {
         { type: 'options', items: [
         '(A) Actions prompted by ignorance do not warrant hostile reactions.',
         '(B) Anger is an unreasonable response to useful information.',
-        '(C) Anger is an unreasonable response to any action that should prompt pity or gratitude.',
+        '(C) Anger is an unreasonable response to any action that should prompt pity or gratitude. (Correct)',
         '(D) Gratitude and pity are reasonable responses to some forms of hostile or insensitive behavior.',
         '(E) Pity is the only reasonable reaction to people with undesirable characteristics.'
         ]}
@@ -32,7 +32,7 @@ export const Lesson10_Module10_Questions: Lesson = {
         { type: 'paragraph', text: '**Question:** The argument’s conclusion follows logically if which one of the following is assumed?' },
         { type: 'options', items: [
         '(A) Any critic who is able to help readers make their own judgments about literary works’ merits should strive to produce value-neutral criticism.',
-        '(B) If it is impossible to produce completely value-neutral literary criticism, then critics should not even try to be value-neutral.',
+        '(B) If it is impossible to produce completely value-neutral literary criticism, then critics should not even try to be value-neutral. (Correct)',
         '(C) Critics are more likely to provide criticisms of the works they like than to provide criticisms of the works they dislike.',
         '(D) The less readers understand the meaning of a literary work, the less capable they will be of evaluating that work’s merits.',
         '(E) Critics who try to avoid rendering value judgments about the works they consider tend to influence readers’ judgments less than other critics do.'
@@ -52,7 +52,7 @@ export const Lesson10_Module10_Questions: Lesson = {
         '(B) There are not any living beings that have genetic codes but are not carbon based.',
         '(C) There can never be any living thing that does not have a genetic code.',
         '(D) Many yet-to-be-discovered types of living things will also be carbon based.',
-        '(E) Any two living things made of the same basic kinds of matter have the same origin.'
+        '(E) Any two living things made of the same basic kinds of matter have the same origin. (Correct)'
         ]}
       ]
     },
@@ -67,7 +67,7 @@ export const Lesson10_Module10_Questions: Lesson = {
         { type: 'options', items: [
         '(A) Cecile will not be appointed to a position in the association that authorizes her to disburse funds.',
         '(B) Cecile’s office and her position on the timber business’s board create no conflicts of interest.',
-        '(C) The association’s requirements provide the only reasons there might be for Cecile to disclose her investments.',
+        '(C) The association’s requirements provide the only reasons there might be for Cecile to disclose her investments. (Correct)',
         '(D) The timber business on whose board Cecile sits is owned by a petrochemical company.',
         '(E) Cecile owns no investments in the petrochemical industry.'
         ]}
@@ -84,7 +84,7 @@ export const Lesson10_Module10_Questions: Lesson = {
         { type: 'options', items: [
         '(A) Only wrong actions would be reasonably expected to reduce the aggregate well-being of the people affected by them.',
         '(B) No action is both right and wrong.',
-        '(C) Any action that is not morally wrong is morally right.',
+        '(C) Any action that is not morally wrong is morally right. (Correct)',
         '(D) There are actions that would be reasonably expected to leave unchanged the aggregate well-being of the people affected by them.',
         '(E) Only right actions have good consequences.'
         ]}
@@ -103,7 +103,7 @@ export const Lesson10_Module10_Questions: Lesson = {
         '(B) Novels can always be clearly classified into distinct genres.',
         '(C) A work of science fiction cannot achieve greatness unless it contains compelling characters.',
         '(D) The most important determinant of a novel’s quality is the strength of its characters.',
-        '(E) A dramatic novel cannot both be great and belong to the genre of science fiction.'
+        '(E) A dramatic novel cannot both be great and belong to the genre of science fiction. (Correct)'
         ]}
       ]
     },
@@ -116,7 +116,7 @@ export const Lesson10_Module10_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: '**Question:** Which one of the following, if assumed, enables the economics professor’s conclusion to be properly drawn?' },
         { type: 'options', items: [
-        '(A) Any company that refuses to accept coupons issued by a competitor when doing so would satisfy some of the company’s potential customers is motivated solely by the desire to hurt that competitor.',
+        '(A) Any company that refuses to accept coupons issued by a competitor when doing so would satisfy some of the company’s potential customers is motivated solely by the desire to hurt that competitor. (Correct)',
         '(B) Any company that wishes to hurt a competitor by refusing to accept coupons issued by that competitor will refuse to accept them even when accepting them would cost nothing and would satisfy its potential customers.',
         '(C) At least one company has refused to accept coupons issued by its major local competitor simply in order to hurt that competitor, even though those coupons were accepted by all other local competitors.',
         '(D) Any company that accepts its major competitor’s coupons helps its competitor by doing so, even if it also satisfies its own actual or potential customers.',
@@ -136,7 +136,7 @@ export const Lesson10_Module10_Questions: Lesson = {
         '(A) No new investment occurs in any country that does not emerge quickly from an economic recession.',
         '(B) Recessions in countries that put collective goals before individuals’ goals tend not to affect the country’s people’s support for their government’s policies.',
         '(C) If the people in a country that puts individuals’ goals first are willing to make new investments in their country’s economy, their country will emerge quickly from an economic recession.',
-        '(D) People in countries that put collective goals before individuals’ goals lack confidence in the economic policies of their countries.',
+        '(D) People in countries that put collective goals before individuals’ goals lack confidence in the economic policies of their countries. (Correct)',
         '(E) A country’s economic policies are the most significant factor determining whether that country’s economy will experience a recession.'
         ]}
       ]
@@ -154,7 +154,7 @@ export const Lesson10_Module10_Questions: Lesson = {
         '(B) Some people who are interested in the liberal arts do not care about money.',
         '(C) The only people not interested in making money in the business world are people who are interested in improving their intellects.',
         '(D) People with doctorates in the liberal arts are interested in employment in the business world.',
-        '(E) Only people not concerned with making money in the business world are interested in improving their intellects.'
+        '(E) Only people not concerned with making money in the business world are interested in improving their intellects. (Correct)'
         ]}
       ]
     },

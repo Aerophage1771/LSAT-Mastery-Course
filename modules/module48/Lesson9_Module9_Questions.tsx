@@ -14,7 +14,7 @@ export const Lesson9_Module9_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'Which one of ahe following, if true, most strengthens the argument?' },
         { type: 'options', items: [
-        '(A) The social impact of the new antihistamine is much better understood than that of most new drugs being tested.',
+        '(A) The social impact of the new antihistamine is much better understood than that of most new drugs being tested. (Correct)',
         '(B) The social impact of some of the new drugs being tested is poorly understood.',
         '(C) The economic success of some drugs is inversely proportional to how well we understand their social impact.',
         '(D) The new antihistamine is chemically similar to some of the new drugs being tested.',
@@ -33,7 +33,7 @@ export const Lesson9_Module9_Questions: Lesson = {
         { type: 'options', items: [
         '(A) Among the first-graders who received the after-school lessons in handwriting, those who practiced the most learned to write letters the most automatically.',
         '(B) The first-graders who wrote letters the most automatically before receiving the after-school lessons in handwriting showed the greatest improvement in their composition skills over the course of the lessons.',
-        '(C) Over the course of the lessons, the first-graders who showed greater improvement in their ability to write letters automatically also generally showed greater improvement in their composition skills.',
+        '(C) Over the course of the lessons, the first-graders who showed greater improvement in their ability to write letters automatically also generally showed greater improvement in their composition skills. (Correct)',
         '(D) Before receiving the after-school lessons in handwriting, the 100 first-graders who received the lessons were representative of first-graders more generally, with respect to their skills in both handwriting and composition.',
         '(E) Among the first-graders who received the lessons in handwriting, those who started out with strong composition skills showed substantial improvement in how automatically they could write letters.'
         ]}
@@ -49,7 +49,7 @@ export const Lesson9_Module9_Questions: Lesson = {
         { type: 'paragraph', text: 'Each of the following, if true, provides some support for the researchers’ hypothesis EXCEPT:' },
         { type: 'options', items: [
         '(A) Horses are known to store oxygenated blood in their spleens for use during exertion.',
-        '(B) Many species of seal can store oxygen directly in their muscle tissue.',
+        '(B) Many species of seal can store oxygen directly in their muscle tissue. (Correct)',
         '(C) The oxygen contained in the seals’ lungs and bloodstream alone would be inadequate to support the seals during their dives.',
         '(D) The spleen is much larger in the Antarctic seal than in aquatic mammals that do not make long dives.',
         '(E) The spleens of Antarctic seals contain greater concentrations of blood vessels than are contained in most of their other organs.'
@@ -67,7 +67,7 @@ export const Lesson9_Module9_Questions: Lesson = {
         { type: 'options', items: [
         '(A) Department F has more employees than any other department in the company.',
         '(B) Some experts believe that the syndrome can be caused by various factors, only one of which is high stress.',
-        '(C) Many workers who transfer into Department F from elsewhere in the company soon begin to develop the syndrome.',
+        '(C) Many workers who transfer into Department F from elsewhere in the company soon begin to develop the syndrome. (Correct)',
         '(D) It is relatively common for workers in the transportation industry to suffer from the syndrome.',
         '(E) Job-related stress has been the most frequently cited cause for dissatisfaction among workers at the company.'
         ]}
@@ -84,7 +84,7 @@ export const Lesson9_Module9_Questions: Lesson = {
         { type: 'options', items: [
         '(A) The Chefs’ Union has many more members than does the Hotel Managers’ Union.',
         '(B) The Chefs’ Union is a more powerful union than is the Hotel Managers’ Union and is therefore more likely to obtain the salary increases it requests.',
-        '(C) The current salaries of the members of the Chefs’ Union are, on average, higher than the current salaries of the members of the Hotel Managers’ Union.',
+        '(C) The current salaries of the members of the Chefs’ Union are, on average, higher than the current salaries of the members of the Hotel Managers’ Union. (Correct)',
         '(D) The average dollar amount of the raises that the members of the Chefs’ Union received last year was equal to the average dollar amount of the raises that the members of the Hotel Managers’ Union received.',
         '(E) The members of the Chefs’ Union received salary increases of 10 percent in each of the last two years, while the members of the Hotel Managers’ Union received salary increases of only 8 percent in each of the last two years.'
         ]}
@@ -99,7 +99,7 @@ export const Lesson9_Module9_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'Which one of the following, if true, provides the strongest support for the market researchers’ claim?' },
         { type: 'options', items: [
-        '(A) Even consumers who are unable to explain their preference for or rejection of particular brands reveal which brands they are considering by picking up and putting down products while they are shopping.',
+        '(A) Even consumers who are unable to explain their preference for or rejection of particular brands reveal which brands they are considering by picking up and putting down products while they are shopping. (Correct)',
         '(B) Market researchers find that consumers are almost always willing to participate in observational research for which the consumer is paid by the hour.',
         '(C) Consumers are becoming increasingly self-conscious about their buying habits, and some consumers have stopped buying some items that they normally used to buy.',
         '(D) Market researchers say they find data collection more enjoyable in observational research than in survey research, because observational research requires more creative judgment on their part.',
@@ -119,7 +119,7 @@ export const Lesson9_Module9_Questions: Lesson = {
         '(A) The questions asked of the entrepreneurs and business managers included personal, political, and business questions.',
         '(B) At least some of the entrepreneurs surveyed had accurately determined before attempting to start their businesses what the odds were against their attempts being successful.',
         '(C) Another survey showed that degree of confidence was highly correlated with success in business.',
-        '(D) The business managers who were most overconfident were found to have attempted to start businesses in the past.',
+        '(D) The business managers who were most overconfident were found to have attempted to start businesses in the past. (Correct)',
         '(E) How confident each person surveyed was that his or her answers to the questions asked were correct corresponded closely to that person’s confidence in his or her business acumen.'
         ]}
       ]
@@ -134,7 +134,7 @@ export const Lesson9_Module9_Questions: Lesson = {
         { type: 'paragraph', text: 'Which one of the following, if true, most helps to strengthen the historians’ argument?' },
         { type: 'options', items: [
         '(A) More original floorboards have survived from big early nineteenth-century houses than from small early nineteenth-century houses.',
-        '(B) In the early nineteenth century, a piece of narrow floorboard was not significantly less expensive than a piece of wide floorboard of the same length.',
+        '(B) In the early nineteenth century, a piece of narrow floorboard was not significantly less expensive than a piece of wide floorboard of the same length. (Correct)',
         '(C) In the early nineteenth century, smaller houses generally had fewer rooms than did bigger houses.',
         '(D) Some early nineteenth-century houses had wide floorboards near the walls of each room and narrower floorboards in the center, where the floors were usually carpeted.',
         '(E) Many of the biggest early nineteenth-century houses but very few small houses from that period had some floors that were made of materials that were considerably more expensive than wood, such as marble.'
@@ -150,7 +150,7 @@ export const Lesson9_Module9_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'Which one of the following, if true, most strengthens the meteorologist’s argument?' },
         { type: 'options', items: [
-        '(A) The meteorologist’s station forecast rain more often than did the most popular news station in the area.',
+        '(A) The meteorologist’s station forecast rain more often than did the most popular news station in the area. (Correct)',
         '(B) The less popular of the competing stations does not employ any full-time meteorologists.',
         '(C) The most popular news station in the area is popular because of its investigative news reports.',
         '(D) The meteorologist’s station has a policy of not making weather forecasts more than three days in advance.',

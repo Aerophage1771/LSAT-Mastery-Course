@@ -51,7 +51,21 @@ export const Lesson4_Drill_UnrepresentativeSamples: Lesson = {
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
 
-    { type: 'h2', text: 'Step-by-Step Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-101-S-2-Q-16',
+      stimulus: "**Stimulus**\n\nThe authors of a recent article examined warnings of an impending wave of extinctions of animal species within the next 100 years. These authors say that no evidence exists to support the idea that the rate of extinction of animal species is now accelerating. They are wrong, however. Consider only the data on fishes: 40 species and subspecies of North American fishes have vanished in the twentieth century, 13 between 1900 and 1950, and 27 since 1950.",
+      question: "**Question**\n\nThe answer to which one of the following questions would contribute most to an evaluation of the argument?",
+      options: [
+        "(A) Were the fish species and subspecies that became extinct unrepresentative of animal species in general with regard to their pattern of extinction? (Correct)",
+        "(B) How numerous were the populations in 1950 of the species and subspecies of North American fishes that have become extinct since 1950?",
+        "(C) Did any of the species or subspecies of North American fishes that became extinct in the twentieth century originate in regions outside of North America?",
+        "(D) What proportion of North American fish species and subspecies whose populations were endangered in 1950 are now thriving?",
+        "(E) Were any of the species or subspecies of North American fishes that became extinct in the twentieth century commercially important?",
+      ]
+    },
+
+{ type: 'h2', text: 'Step-by-Step Analysis' },
     { type: 'paragraph', text: "*(Scroll down only after committing to an answer.)*" },
     { type: 'hr' },
 

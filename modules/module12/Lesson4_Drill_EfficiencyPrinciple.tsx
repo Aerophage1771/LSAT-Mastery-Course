@@ -36,7 +36,21 @@ export const Lesson4_Drill_EfficiencyPrinciple: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-112-S-1-Q-15',
+      stimulus: "In one study, engineering students who prepared for an exam by using toothpicks and string did no worse than similar students who prepared by using an expensive computer with sophisticated graphics. In another study, military personnel who trained on a costly high-tech simulator performed no better on a practical exam than did similar personnel who trained using an inexpensive cardboard model. So one should not always purchase technologically advanced educational tools.",
+      question: "Which one of the following principles, if valid, most helps to justify the reasoning above?",
+      options: [
+        "(A) One should use different educational tools to teach engineering to civilians than are used to train military personnel.",
+        "(B) High-tech solutions to modern problems are ineffective unless implemented by knowledgeable personnel.",
+        "(C) Spending large sums of money on educational tools is at least as justified for nonmilitary training as it is for military training.",
+        "(D) One should not invest in expensive teaching aids unless there are no other tools that are less expensive and at least as effective. (Correct)",
+        "(E) One should always provide students with a variety of educational materials so that each student can find the materials that best suit that student’s learning style.",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
     { type: 'paragraph', text: "Let's dissect the argument layer by layer, identifying each logical move." },

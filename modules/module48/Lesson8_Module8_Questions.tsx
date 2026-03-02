@@ -18,7 +18,7 @@ export const Lesson8_Module8_Questions: Lesson = {
         '(B) Five years ago, Australia began a major road repair project.',
         '(C) Because of increases in the price of fuel, Australians on average drive less each year than in the preceding year.',
         '(D) The number of hospital emergency facilities in Australia has doubled in the last five years.',
-        '(E) In response to an increase in traffic fatalities, Australia instituted a program of mandatory driver education five years ago.'
+        '(E) In response to an increase in traffic fatalities, Australia instituted a program of mandatory driver education five years ago. (Correct)'
         ]}
       ]
     },
@@ -32,7 +32,7 @@ export const Lesson8_Module8_Questions: Lesson = {
         { type: 'paragraph', text: '**Question:** Which one of the following points to a weakness in the reasoning in the press release’s argument?' },
         { type: 'options', items: [
         '(A) The review was only an evaluation of studies and did not itself undertake to study patients.',
-        '(B) The health of the heart is not identical with the general health of the body.',
+        '(B) The health of the heart is not identical with the general health of the body. (Correct)',
         '(C) Coffee drinkers might choose to eat, along with their coffee, foods containing substances that harm the heart.',
         '(D) Other beverages besides coffee might contain stimulants that have some effect on the heart.',
         '(E) Drinking unusually large amounts of coffee could be caused by stress that itself directly harms the heart.'
@@ -48,7 +48,7 @@ export const Lesson8_Module8_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: '**Question:** Which one of the following, if true, most seriously undermines the defense offered by the dean?' },
         { type: 'options', items: [
-        '(A) More than half of the school’s students came from jobs in journalism to improve their skills.',
+        '(A) More than half of the school’s students came from jobs in journalism to improve their skills. (Correct)',
         '(B) Some newspaper editors do not regard journalism school as a necessary part of the training of a journalist.',
         '(C) The number of cities with more than one major newspaper has declined sharply over the last 25 years.',
         '(D) The program offered by the Hyperion School of Journalism is similar in quality and content to those offered by its peer institutions.',
@@ -68,7 +68,7 @@ export const Lesson8_Module8_Questions: Lesson = {
         '(A) Few of the office workers surveyed participated in regular health programs during the year in question.',
         '(B) In their study the researchers failed to ask the workers to distinguish between severe migraine headaches and mild headaches.',
         '(C) Previous studies have shown that the glare from VDT screens causes some users to suffer eyestrain.',
-        '(D) Office workers who experienced frequent headaches were more likely than other workers to overestimate how much time they spent using VDTs.',
+        '(D) Office workers who experienced frequent headaches were more likely than other workers to overestimate how much time they spent using VDTs. (Correct)',
         '(E) Office workers who regularly used VDTs experienced the same amount of job-related stress as workers who did not use VDTs.'
         ]}
       ]
@@ -86,7 +86,7 @@ export const Lesson8_Module8_Questions: Lesson = {
         '(B) Medication designed to control high blood pressure can greatly affect the moods of those who use it.',
         '(C) People with permanently high blood pressure who have tranquil personalities virtually never develop heart disease.',
         '(D) Those who discover that they have heart disease tend to become more easily frustrated by small difficulties.',
-        '(E) The physiological factors that cause permanently high blood pressure generally make people quick to anger.'
+        '(E) The physiological factors that cause permanently high blood pressure generally make people quick to anger. (Correct)'
         ]}
       ]
     },
@@ -103,7 +103,7 @@ export const Lesson8_Module8_Questions: Lesson = {
         '(B) The number of used cars sold annually is the same as it was 25 years ago.',
         '(C) Allowing for inflation, average individual income has significantly declined over the last 25 years.',
         '(D) During the last 25 years, annual new-car sales and the population have both increased, but new-car sales have increased by a greater percentage.',
-        '(E) Sales to individuals make up a smaller proportion of all new-car sales than they did 25 years ago.'
+        '(E) Sales to individuals make up a smaller proportion of all new-car sales than they did 25 years ago. (Correct)'
         ]}
       ]
     },
@@ -116,7 +116,7 @@ export const Lesson8_Module8_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: '**Question**\nWhich one of the following, if true, most seriously weakens the archaeologist’s argument?' },
         { type: 'options', items: [
-        '(A) The projectile found in the mastodon does not resemble any that were used in Eurasia before or during the Ice Age.',
+        '(A) The projectile found in the mastodon does not resemble any that were used in Eurasia before or during the Ice Age. (Correct)',
         '(B) The people who occupied the Eurasian area closest to North America remained nomadic throughout the Ice Age.',
         '(C) The skeleton of a bear from the same place and time as the mastodon skeleton contains a similar projectile.',
         '(D) Other North American artifacts from the peak of the Ice Age are similar to ones from the same time found in more distant parts of Eurasia.',

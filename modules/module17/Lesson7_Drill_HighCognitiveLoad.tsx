@@ -25,7 +25,21 @@ export const Lesson7_Drill_HighCognitiveLoad: Lesson = {
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-103-S-3-Q-22',
+      stimulus: "Whenever she considers voting in an election to select one candidate for a position and there is at least one issue important to her, Kay uses the following principle in choosing which course of action to take: it is acceptable for me to vote for a candidate whose opinions differ from mine on at least one issue important to me whenever I disagree with each of the other candidates on even more such issues; it is otherwise unacceptable to vote for that candidate. In the upcoming mayoral election, the three candidates are Legrand, Medina, and Norton. There is only one issue important to Kay, and only Medina shares her opinion on that issue.",
+      question: "**The Question:** Which one of the following must also be true about Kay’s course of action in any election to select one candidate for a position?",
+      options: [
+        "(A) If there are no issues important to her, it is unacceptable for her to vote for any candidate in the election.",
+        "(B) If she agrees with each of the candidates on most of the issues important to her, it is unacceptable for her to vote for any candidate in the election.",
+        "(C) If she agrees with a particular candidate on only one issue important to her, it is unacceptable for her to vote for that candidate.",
+        "(D) If she disagrees with each of the candidates on exactly three issues important to her, it is unacceptable for her to vote for any candidate in the election. (Correct)",
+        "(E) If there are more issues important to her on which she disagrees with a particular candidate than there are such issues on which she agrees with that candidate, it is unacceptable for her to vote for that candidate.",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Translate the Rule' },
     { type: 'paragraph', text: 'Strip the rule down to its logical skeleton:' },

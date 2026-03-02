@@ -36,7 +36,21 @@ export const Lesson4_Drill_Numbers: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-111-S-3-Q-4',
+      stimulus: "For next year, the Chefs’ Union has requested a 10 percent salary increase for each of its members, whereas the Hotel Managers’ Union has requested only an 8 percent salary increase for each of its members. These facts demonstrate that the average dollar amount of the raises that the Chefs’ Union has requested for next year is greater than that of the raises requested by the Hotel Managers’ Union.",
+      question: "Which one of the following, if true, most strengthens the argument?",
+      options: [
+        "(A) The Chefs’ Union has many more members than does the Hotel Managers’ Union.",
+        "(B) The Chefs’ Union is a more powerful union than is the Hotel Managers’ Union and is therefore more likely to obtain the salary increases it requests.",
+        "(C) The current salaries of the members of the Chefs’ Union are, on average, higher than the current salaries of the members of the Hotel Managers’ Union. (Correct)",
+        "(D) The average dollar amount of the raises that the members of the Chefs’ Union received last year was equal to the average dollar amount of the raises that the members of the Hotel Managers’ Union received.",
+        "(E) The members of the Chefs’ Union received salary increases of 10 percent in each of the last two years, while the members of the Hotel Managers’ Union received salary increases of only 8 percent in each of the last two years.",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
     { type: 'paragraph', text: "Let's engage with the text sentence by sentence to see how the author builds their mathematical case." },

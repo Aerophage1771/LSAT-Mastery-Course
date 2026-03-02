@@ -33,7 +33,7 @@ export const Lesson16_Module16_Questions: Lesson = {
         { type: 'options', items: [
         '(A) Book collectors are now using the Internet to find book titles that they previously did not know existed.',
         '(B) Fewer people try to find books that are in print than try to find books that are out of print.',
-        '(C) The amount of demand for out-of-print books is affected by the ease of finding such books.',
+        '(C) The amount of demand for out-of-print books is affected by the ease of finding such books. (Correct)',
         '(D) The Internet’s search capabilities make it possible to locate most out-of-print books.',
         '(E) Only people who have access to the Internet can locate out-of-print books.'
         ]}
@@ -50,7 +50,7 @@ export const Lesson16_Module16_Questions: Lesson = {
         { type: 'options', items: [
         '(A) Jones did not know of any defects in the roof or roof-supporting components of the house at the time the contract was written.',
         '(B) although other components of the house may contain defects, the roof and roof-supporting components of the house are currently free from such defects.',
-        '(C) the contract does not oblige Jones to repair any defects in the house’s nonexterior walls after ownership of the house has been transferred.',
+        '(C) the contract does not oblige Jones to repair any defects in the house’s nonexterior walls after ownership of the house has been transferred. (Correct)',
         '(D) Smith will be obliged to repair all structural defects in the house within a year after ownership is transferred, except those for which Jones is responsible.',
         '(E) in the past Jones has had to make repairs to some of the house’s exterior walls.'
         ]}
@@ -65,7 +65,7 @@ export const Lesson16_Module16_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: '**The Question:** The statements above, if true, most strongly support which one of the following conclusions?' },
         { type: 'options', items: [
-        '(A) There are likely to be more tropical storms if the amount of carbon dioxide in the Earth’s atmosphere continues to increase.',
+        '(A) There are likely to be more tropical storms if the amount of carbon dioxide in the Earth’s atmosphere continues to increase. (Correct)',
         '(B) Tropical storms can occur only when the air temperature exceeds 26 degrees Celsius.',
         '(C) The number of large bodies of water whose temperatures exceed 26 degrees Celsius to a depth of about 60 meters is greater today than it ever was.',
         '(D) The ferocity of tropical storms does not depend on the amount of carbon dioxide in the Earth’s atmosphere.',
@@ -83,7 +83,7 @@ export const Lesson16_Module16_Questions: Lesson = {
         { type: 'paragraph', text: '**The Question:** Which one of the following inferences about gold coins minted in medieval Spain is most strongly supported by the information the numismatist gives?' },
         { type: 'options', items: [
         '(A) Coins minted from Senegalese gold all contained the same weight, as well as the same proportion, of gold.',
-        '(B) The source of some refined gold from which coins were minted was unrefined gold with a gold content of less than 92 percent.',
+        '(B) The source of some refined gold from which coins were minted was unrefined gold with a gold content of less than 92 percent. (Correct)',
         '(C) Two coins could have the same monetary value even though they differed from each other in the percentage of gold they contained.',
         '(D) No gold coins were minted that had a gold content of less than 92 percent.',
         '(E) The only unrefined gold from which coins could be minted was Senegalese gold.'
@@ -101,7 +101,7 @@ export const Lesson16_Module16_Questions: Lesson = {
         { type: 'options', items: [
         '(A) Most ants forage for food either only in the morning or only during the night.',
         '(B) Most ants that do not use pheromones to mark the paths they take between their nest and food live in the Sahara Desert.',
-        '(C) If any ants live in the Sahara Desert and forage for food at no time but in the afternoon, those ants generally do not use pheromones to guide themselves between food and their nest.',
+        '(C) If any ants live in the Sahara Desert and forage for food at no time but in the afternoon, those ants generally do not use pheromones to guide themselves between food and their nest. (Correct)',
         '(D) If any ants do not use pheromones to navigate between food and their nest, those ants use a different substance that does not evaporate in temperatures above 45 degrees Celsius.',
         '(E) If any Saharan ants forage for food in the afternoon, those ants forage for food less efficiently when temperatures are above 45 degrees Celsius than they do when temperatures are lower.'
         ]}
@@ -116,7 +116,7 @@ export const Lesson16_Module16_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: '**The Question:** The statements above, if true, most strongly support which one of the following inferences?' },
         { type: 'options', items: [
-        '(A) One could be immoral without ever having caused any other person any harm.',
+        '(A) One could be immoral without ever having caused any other person any harm. (Correct)',
         '(B) No immoral act could be a violation of the rules of etiquette.',
         '(C) The rules of morality apply only when one is alone.',
         '(D) It is more important to be moral than to have good manners.',

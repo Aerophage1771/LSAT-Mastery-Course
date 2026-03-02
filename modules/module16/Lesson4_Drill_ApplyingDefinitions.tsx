@@ -33,7 +33,21 @@ export const Lesson4_Drill_ApplyingDefinitions: Lesson = {
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-101-S-3-Q-8',
+      stimulus: "Jones is selling a house to Smith. The contract between the two specifies that for up to a year after ownership is transferred, Jones will be responsible for repairing any “major structural defects,” defined as defects in the roof or roof-supporting components of the house, that might be found. Jones is not responsible for any other repairs. The house has a truss roof, which means that the only walls that support the roof are the exterior walls.",
+      question: "**The Question:** It can be properly concluded from the information above that",
+      options: [
+        "(A) Jones did not know of any defects in the roof or roof-supporting components of the house at the time the contract was written.",
+        "(B) although other components of the house may contain defects, the roof and roof-supporting components of the house are currently free from such defects.",
+        "(C) the contract does not oblige Jones to repair any defects in the house’s nonexterior walls after ownership of the house has been transferred. (Correct)",
+        "(D) Smith will be obliged to repair all structural defects in the house within a year after ownership is transferred, except those for which Jones is responsible.",
+        "(E) in the past Jones has had to make repairs to some of the house’s exterior walls.",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Identify the Two Layers' },
     { type: 'paragraph', text: 'Separate the stimulus into its Rule Layer and Fact Layer:' },

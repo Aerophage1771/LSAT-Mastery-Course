@@ -38,7 +38,21 @@ export const Lesson4_Drill_ContrapositiveApplication: Lesson = {
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-106-S-1-Q-10',
+      stimulus: "It is a principle of economics that a nation can experience economic growth only when consumer confidence is balanced with a small amount of consumer skepticism.",
+      question: "**The Question:** Which one of the following is an application of the economic principle above?",
+      options: [
+        "(A) Any nation in which consumer confidence is balanced with a small amount of consumer skepticism will experience economic growth.",
+        "(B) Any nation in which the prevailing attitude of consumers is not skepticism will experience economic growth.",
+        "(C) Any nation in which the prevailing attitude of consumers is either exclusively confidence or exclusively skepticism will experience economic growth.",
+        "(D) Any nation in which the prevailing attitude of consumers is exclusively confidence will not experience economic growth. (Correct)",
+        "(E) Any nation in which consumer skepticism is balanced with a small amount of consumer confidence will experience economic growth.",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Diagram the Principle' },
     { type: 'paragraph', text: "The principle uses the phrase \"only when,\" which is the LSAT's signature necessary-condition indicator. Let's translate:" },

@@ -32,7 +32,21 @@ export const Lesson8_Drill_MultiStepInference: Lesson = {
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-102-S-2-Q-21',
+      stimulus: "If this parking policy is unpopular with the faculty, then we should modify it. If it is unpopular among students, we should adopt a new policy. And, it is bound to be unpopular either with the faculty or among students.",
+      question: "**The Question:** If the statements above are true, which one of the following must also be true?",
+      options: [
+        "(A) We should attempt to popularize this parking policy among either the faculty or students.",
+        "(B) We should modify this parking policy only if this will not reduce its popularity among students.",
+        "(C) We should modify this parking policy if modification will not reduce its popularity with the faculty.",
+        "(D) If this parking policy is popular among students, then we should adopt a new policy.",
+        "(E) If this parking policy is popular with the faculty, then we should adopt a new policy. (Correct)",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Formalize the Rules' },
     { type: 'paragraph', text: 'Convert the stimulus into symbolic form:' },

@@ -17,7 +17,7 @@ export const Lesson6_Module6_Questions: Lesson = {
         '(A) If today is a holiday, then the bakery will not be open. The bakery is not open for business. Thus today is a holiday.',
         '(B) Jenny will have lots of balloons at her birthday party. There are no balloons around yet, so today is not her birthday.',
         '(C) The new regulations will be successful only if most of the students adhere to them. Since most of the students will adhere to those regulations, the new regulations will be successful.',
-        '(D) In the event that my flight had been late, I would have missed the committee meeting. Fortunately, my flight is on time. Therefore, I will make it to the meeting.',
+        '(D) In the event that my flight had been late, I would have missed the committee meeting. Fortunately, my flight is on time. Therefore, I will make it to the meeting. (Correct)',
         '(E) When the law is enforced, some people are jailed. But no one is in jail, so clearly the law is not enforced.'
         ]}
       ]
@@ -34,7 +34,7 @@ export const Lesson6_Module6_Questions: Lesson = {
         '(A) There is no point in trying to find someone else to solve that problem. If Robin cannot solve it, then none of Robin’s friends would be able to solve it.',
         '(B) We should not pick Hank for the relay team. He has not won a race all season, so there is no reason to expect him to help the relay team win.',
         '(C) Laws that contain exemptions for some individuals based on no relevant consideration are fundamentally immoral. If it is wrong for a given person to commit an act, then it is wrong for anyone else in similar circumstances to commit the act.',
-        '(D) There is no point in asking the club to purchase tents and make them available for use by club members. No member of the club can afford one of those tents, so the club is unable to afford any either.',
+        '(D) There is no point in asking the club to purchase tents and make them available for use by club members. No member of the club can afford one of those tents, so the club is unable to afford any either. (Correct)',
         '(E) Agreeing with all of the other members of society does not guarantee that one is correct about an issue. With many topics it is possible for society to be mistaken and hence every individual in society to be likewise mistaken.'
         ]}
       ]
@@ -52,7 +52,7 @@ export const Lesson6_Module6_Questions: Lesson = {
         '(B) Studies have shown that cigarette smokers have a greater chance of incurring heart disease than people who do not smoke. Since cigarette smoking increases one’s chances of incurring heart disease, people who want to try to avoid heart disease should give up cigarette smoking.',
         '(C) The majority of people who regularly drink coffee experience dental problems in the latter part of their lives. Since there is this correlation between drinking coffee and incurring dental problems, the government should make coffee less accessible to the general public.',
         '(D) Studies show that people who do not exercise regularly have a shorter life expectancy than those who exercise regularly. To help increase their patients’ life expectancy, doctors should recommend regular exercise to their patients.',
-        '(E) Most people who exercise regularly are able to handle stress. This shows that exercising regularly decreases one’s chances of being overwhelmed by stress. So people who want to be able to handle stress should regularly engage in exercise.'
+        '(E) Most people who exercise regularly are able to handle stress. This shows that exercising regularly decreases one’s chances of being overwhelmed by stress. So people who want to be able to handle stress should regularly engage in exercise. (Correct)'
         ]}
       ]
     },
@@ -67,7 +67,7 @@ export const Lesson6_Module6_Questions: Lesson = {
         { type: 'options', items: [
         '(A) Journalists are the only ones who will be permitted to ask questions at the press conference. Since Marjorie is a journalist, she will be permitted to ask questions.',
         '(B) We know that Patrice works only on Thursday. Today is Thursday, so it follows that Patrice is working today.',
-        '(C) It is clear that George knows he will be promoted to shift supervisor, because George will be promoted to shift supervisor only if Helen resigns, and George knows Helen will resign.',
+        '(C) It is clear that George knows he will be promoted to shift supervisor, because George will be promoted to shift supervisor only if Helen resigns, and George knows Helen will resign. (Correct)',
         '(D) John believes that 4 is a prime number and that 4 is divisible by 2. Hence John believes that there is a prime number divisible by 2.',
         '(E) Pat wants to become a social worker. It is well known that social workers are poorly paid. Pat apparently wants to be poorly paid.'
         ]}
@@ -82,7 +82,7 @@ export const Lesson6_Module6_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: '**Question:** The pattern of flawed reasoning in which one of the following is most similar to the pattern of flawed reasoning in the argument above?' },
         { type: 'options', items: [
-        '(A) Research shows that the incidence of certain major illnesses, including heart disease and cancer, is decreased in communities that have a modern power plant. The fact that this tendency is present whether the power plant is nuclear or not shows that there is no increased health risk associated with living next to a nuclear power plant.',
+        '(A) Research shows that the incidence of certain major illnesses, including heart disease and cancer, is decreased in communities that have a modern power plant. The fact that this tendency is present whether the power plant is nuclear or not shows that there is no increased health risk associated with living next to a nuclear power plant. (Correct)',
         '(B) Research has shown that there is no long-term health risk associated with a diet consisting largely of foods high in saturated fat and cholesterol if such a diet is consumed by someone with a physically active lifestyle. So, exercise is a more useful strategy for achieving cardiological health than is dietary restriction.',
         '(C) Research has shown that young people who drive motorcycles and receive one full year of extensive driving instruction are in fact less likely to become involved in accidents than those who simply pass a driving test and drive cars. This shows that there is not an inherently greater risk associated with driving a motorcycle than with driving a car.',
         '(D) Research has shown that kitchen cutting boards retain significant numbers of microbes even after careful washing, but that after washing fewer microbes are found on wooden boards than on plastic boards. There is, therefore, no greater risk of contracting microbial illnesses associated with using wooden cutting boards than with using plastic cutting boards.',
@@ -101,7 +101,7 @@ export const Lesson6_Module6_Questions: Lesson = {
         { type: 'options', items: [
         '(A) Although all modern office towers are climate-controlled buildings, not all office buildings are climate-controlled. Therefore, it must be the case that not all office buildings are modern office towers.',
         '(B) All municipal hospital buildings are massive, but not all municipal hospital buildings are forbidding in appearance. Therefore, massive buildings need not present a forbidding appearance.',
-        '(C) Although some buildings designed by famous architects are not well proportioned, all government buildings are designed by famous architects. Therefore, some government buildings are not well proportioned.',
+        '(C) Although some buildings designed by famous architects are not well proportioned, all government buildings are designed by famous architects. Therefore, some government buildings are not well proportioned. (Correct)',
         '(D) Not all public buildings are well designed, but some poorly designed public buildings were originally intended for private use. Therefore, the poorly designed public buildings were all originally designed for private use.',
         '(E) Although some cathedrals are not built of stone, every cathedral is impressive. Therefore, buildings can be impressive even though they are not built of stone.'
         ]}

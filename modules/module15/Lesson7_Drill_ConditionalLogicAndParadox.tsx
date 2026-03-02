@@ -46,7 +46,21 @@ export const Lesson7_Drill_ConditionalLogicAndParadox: Lesson = {
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-123-S-3-Q-16',
+      stimulus: "**Philosopher:** Nations are not literally persons; they have no thoughts or feelings, and, literally speaking, they perform no actions. Thus they have no moral rights or responsibilities. But no nation can survive unless many of its citizens attribute such rights and responsibilities to it, for nothing else could prompt people to make the sacrifices national citizenship demands. Obviously, then, a nation _______.",
+      question: "Which one of the following most logically completes the philosopher’s argument?",
+      options: [
+        "(A) cannot continue to exist unless something other than the false belief that the nation has moral rights motivates its citizens to make sacrifices",
+        "(B) cannot survive unless many of its citizens have some beliefs that are literally false (Correct)",
+        "(C) can never be a target of moral praise or blame",
+        "(D) is not worth the sacrifices that its citizens make on its behalf",
+        "(E) should always be thought of in metaphorical rather than literal terms",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Decompose the Argument Using the Four-Part Framework' },
     { type: 'paragraph', text: "Let's apply our Fact \u2192 Condition \u2192 Conflict \u2192 Paradox framework to this stimulus:" },

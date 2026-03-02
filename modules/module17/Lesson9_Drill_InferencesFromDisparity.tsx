@@ -32,7 +32,21 @@ export const Lesson9_Drill_InferencesFromDisparity: Lesson = {
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-106-S-2-Q-19',
+      stimulus: "Nearly all mail that is correctly addressed arrives at its destination within two business days of being sent. In fact, correctly addressed mail takes longer than this only when it is damaged in transit. Overall, however, most mail arrives three business days or more after being sent.",
+      question: "**The Question:** If the statements above are true, which one of the following must be true?",
+      options: [
+        "(A) A large proportion of the mail that is correctly addressed is damaged in transit.",
+        "(B) No incorrectly addressed mail arrives within two business days of being sent.",
+        "(C) Most mail that arrives within two business days of being sent is correctly addressed.",
+        "(D) A large proportion of mail is incorrectly addressed. (Correct)",
+        "(E) More mail arrives within two business days of being sent than arrives between two and three business days after being sent.",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Map the Subgroup and Total Claims' },
     { type: 'paragraph', text: 'Separate the stimulus into its two data points and identify the conflict:' },

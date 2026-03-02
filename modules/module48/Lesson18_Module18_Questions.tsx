@@ -18,7 +18,7 @@ export const Lesson18_Module18_Questions: Lesson = {
         '(B) Some politicians are scrupulously honest.',
         '(C) Some people define a politician’s job as obeying the rules of society.',
         '(D) Some deceitful politicians are ineffective.',
-        '(E) Some scrupulously honest politicians are effective.'
+        '(E) Some scrupulously honest politicians are effective. (Correct)'
         ]}
       ]
     },
@@ -32,7 +32,7 @@ export const Lesson18_Module18_Questions: Lesson = {
         { type: 'paragraph', text: '**The Question:** If the statements above are true, each of the following could be true EXCEPT:' },
         { type: 'options', items: [
         '(A) There are some species of salamanders that have both male and female members.',
-        '(B) There are some species of higher animals none of whose members produce eggs.',
+        '(B) There are some species of higher animals none of whose members produce eggs. (Correct)',
         '(C) There is a significant number of female-only species of higher animals.',
         '(D) Some species of higher animals containing both female and male members are not very adaptive.',
         '(E) Some offspring of species of higher animals containing both female and male members have genetic codes more similar to one parent than to the other parent.'
@@ -52,7 +52,7 @@ export const Lesson18_Module18_Questions: Lesson = {
         '(B) Plesiosaurs did not inhabit the southern half of the region during the Cretaceous period.',
         '(C) Plesiosaurs did not inhabit the southern half of the region before the Cretaceous period.',
         '(D) Dinosaurs did not inhabit the northern half of the region during the Cretaceous period.',
-        '(E) Dinosaurs inhabited the southern half of the region throughout the entire Mesozoic era.'
+        '(E) Dinosaurs inhabited the southern half of the region throughout the entire Mesozoic era. (Correct)'
         ]}
       ]
     },

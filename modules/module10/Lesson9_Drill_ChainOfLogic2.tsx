@@ -16,7 +16,21 @@ export const Lesson9_Drill_ChainOfLogic2: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h3', text: 'Step-by-Step Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-120-S-4-Q-15',
+      stimulus: "People who have doctorates in the liberal arts are interested in improving their intellects. Companies, however, rarely hire people who are not concerned with the financial gain that can be obtained by hard work in the business world. As a result, companies rarely hire people who have doctorates in the liberal arts.",
+      question: "The conclusion of the argument follows logically if which one of the following is assumed?",
+      options: [
+        "(A) Companies would hire people with doctorates in the liberal arts if such people were interested in the money available in the business world.",
+        "(B) Some people who are interested in the liberal arts do not care about money.",
+        "(C) The only people not interested in making money in the business world are people who are interested in improving their intellects.",
+        "(D) People with doctorates in the liberal arts are interested in employment in the business world.",
+        "(E) Only people not concerned with making money in the business world are interested in improving their intellects. (Correct)",
+      ]
+    },
+
+{ type: 'h3', text: 'Step-by-Step Analysis' },
 
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
     { type: 'paragraph', text: "Map each statement to its conditional form, paying attention to the distinct concepts each premise introduces." },

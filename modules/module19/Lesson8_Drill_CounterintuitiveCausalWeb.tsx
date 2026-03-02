@@ -11,7 +11,21 @@ export const Lesson8_Drill_CounterintuitiveCausalWeb: Lesson = {
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
-    { type: 'h3', text: 'Analysis & Explanation' },
+        {
+      type: 'question-card',
+      id: 'PT-103-S-1-Q-23',
+      stimulus: "Construction contractors working on the cutting edge of technology nearly always work on a “cost-plus” basis only. One kind of cost-plus contract stipulates the contractor’s profit as a fixed percentage of the contractor’s costs; the other kind stipulates a fixed amount of profit over and above costs. Under the first kind of contract, higher costs yield higher profits for the contractor, so this is where one might expect final costs in excess of original cost estimates to be more common. Paradoxically, such cost overruns are actually more common if the contract is of the fixed-profit kind.",
+      question: "Which one of the following, if true, most helps to resolve the apparent paradox in the situation described above?",
+      options: [
+        "(A) Clients are much less likely to agree to a fixed-profit type of cost-plus contract when it is understood that under certain conditions the project will be scuttled than they are when there is no such understanding.",
+        "(B) On long-term contracts, cost projections take future inflation into account, but since the figures used are provided by the government, they are usually underestimates.",
+        "(C) On any sizable construction project, the contractor bills the client monthly or quarterly, so any tendency for original cost estimates to be exceeded can be detected early.",
+        "(D) Clients billed under a cost-plus contract are free to review individual billings in order to uncover wasteful expenditures, but they do so only when the contractor’s profit varies with cost. (Correct)",
+        "(E) The practice of submitting deliberately exaggerated cost estimates is most common in the case of fixed-profit contracts, because it makes the profit, as a percentage of estimated cost, appear modest.",
+      ]
+    },
+
+{ type: 'h3', text: 'Analysis & Explanation' },
 
     { type: 'h4', text: 'Step 1: Deconstruction' },
     { type: 'paragraph', text: 'Clearly define the two contract types and the paradox.' },

@@ -7,7 +7,21 @@ export const Lesson7_Drill_Disagreement_ClashOfCriteria: Lesson = {
     { type: 'paragraph', text: 'This advanced question tests your ability to identify a disagreement over principles or criteria. The speakers largely agree on the facts of the situation but clash over the standard that should be used to make a judgment, a common pattern in high-difficulty questions.' },
     { type: 'hr' },
     { type: 'hr' },
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-103-S-2-Q-24',
+      stimulus: "**Monica:** The sculpture commissioned for our town plaza has been scorned by the public ever since it went up. But since the people in our town do not know very much about contemporary art, the unpopularity of the work says nothing about its artistic merit and thus gives no reason for removing it.\n**Hector:** You may be right about what the sculpture’s popularity means about its artistic merit. However, a work of art that was commissioned for a public space ought to benefit the public, and popular opinion is ultimately the only way of determining what the public feels is to its benefit. Thus, if public opinion of this sculpture is what you say, then it certainly ought to be removed.",
+      question: "Monica’s and Hector’s statements commit them to disagreeing about which one of the following principles?",
+      options: [
+        "(A) Public opinion of a work of art is an important consideration in determining the work’s artistic merit.",
+        "(B) Works of art commissioned for public spaces ought at least to have sufficient artistic merit to benefit the public.",
+        "(C) The only reason for removing a work of art commissioned for a public space would be that the balance of public opinion is against the work.",
+        "(D) The sculpture cannot benefit the public by remaining in the town plaza unless the sculpture has artistic merit.",
+        "(E) In determining whether the sculpture should remain in the town plaza, the artistic merit of the sculpture should be a central consideration. (Correct)",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
     { type: 'h4', text: 'Step 1: Deconstruction' },
     { type: 'paragraph', text: 'First, break down each speaker\'s argument to isolate the standard they use for their judgment. Notice that Monica and Hector do not disagree about the facts — they agree the sculpture is unpopular and that popularity does not indicate artistic merit. The clash is about what *criterion* should drive the removal decision.' },
     { type: 'breakdown', labels: { title: 'Speaker', text: 'Argument' }, items: [

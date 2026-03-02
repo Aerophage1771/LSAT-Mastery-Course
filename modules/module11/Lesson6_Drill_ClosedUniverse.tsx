@@ -29,7 +29,21 @@ export const Lesson6_Drill_ClosedUniverse: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-118-S-1-Q-3',
+      stimulus: "A reason Larson cannot do the assignment is that she has an unavoidable scheduling conflict. On the other hand, a reason Franks cannot do the assignment is that he does not quite have the assertiveness the task requires. So, the task must be assigned to Parker, the only supervisor in the shipping department other than Larson and Franks.",
+      question: "The argument depends on assuming which one of the following?",
+      options: [
+        "(A) Larson has the assertiveness the task requires.",
+        "(B) The task cannot be assigned to anyone other than a supervisor in the shipping department. (Correct)",
+        "(C) Franks would be assigned the task if Franks had the assertiveness the task requires.",
+        "(D) The task cannot be assigned to anyone who has any kind of scheduling conflict.",
+        "(E) No one who is not a supervisor in the shipping department has the assertiveness this task requires.",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
     { type: 'paragraph', text: "Let's map the argument's process of elimination." },

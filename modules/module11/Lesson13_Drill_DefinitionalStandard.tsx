@@ -29,7 +29,21 @@ export const Lesson13_Drill_DefinitionalStandard: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-114-S-4-Q-20',
+      stimulus: "Shy adolescents often devote themselves totally to a hobby to help distract them from the loneliness brought on by their shyness. Sometimes they are able to become friends with others who share their hobby. But if they lose interest in that hobby, their loneliness may be exacerbated. So developing an all-consuming hobby is not a successful strategy for overcoming adolescent loneliness.",
+      question: "Which one of the following assumptions does the argument depend on?",
+      options: [
+        "(A) Eventually, shy adolescents are going to want a wider circle of friends than is provided by their hobby.",
+        "(B) No successful strategy for overcoming adolescent loneliness ever intensifies that loneliness. (Correct)",
+        "(C) Shy adolescents will lose interest in their hobbies if they do not make friends through their engagement in those hobbies.",
+        "(D) Some other strategy for overcoming adolescent loneliness is generally more successful than is developing an all-consuming hobby.",
+        "(E) Shy adolescents devote themselves to hobbies mainly because they want to make friends.",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
     { type: 'paragraph', text: "Let's trace the argument's structure, paying attention to the balance of evidence and how the author reaches the final verdict." },

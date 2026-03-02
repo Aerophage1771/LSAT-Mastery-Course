@@ -15,7 +15,7 @@ export const Lesson12_Module12_Questions: Lesson = {
         { type: 'paragraph', text: 'Which one of the following principles, if valid, would most help to justify the pacifist’s reasoning?' },
         { type: 'options', items: [
         '(A) Given the potential harm caused by the use of force, the line between use of force in self-defense and the aggressive use of force is always vague.',
-        '(B) It is immoral to threaten to do what it is immoral to do.',
+        '(B) It is immoral to threaten to do what it is immoral to do. (Correct)',
         '(C) It is immoral to do anything that causes more harm than good.',
         '(D) Whether a threat made in self-defense is immoral depends on the circumstances.',
         '(E) It is immoral to carry out a threat if making the threat is itself immoral.'
@@ -34,7 +34,7 @@ export const Lesson12_Module12_Questions: Lesson = {
         '(A) One should use different educational tools to teach engineering to civilians than are used to train military personnel.',
         '(B) High-tech solutions to modern problems are ineffective unless implemented by knowledgeable personnel.',
         '(C) Spending large sums of money on educational tools is at least as justified for nonmilitary training as it is for military training.',
-        '(D) One should not invest in expensive teaching aids unless there are no other tools that are less expensive and at least as effective.',
+        '(D) One should not invest in expensive teaching aids unless there are no other tools that are less expensive and at least as effective. (Correct)',
         '(E) One should always provide students with a variety of educational materials so that each student can find the materials that best suit that student’s learning style.'
         ]}
       ]
@@ -52,7 +52,7 @@ export const Lesson12_Module12_Questions: Lesson = {
         '(B) An author of a biography should be blamed for readers’ misperceptions only when facts are omitted deliberately in order to mislead the readers.',
         '(C) An author of a biography should not be blamed for omitting facts if those facts would have supported the author’s view.',
         '(D) An author of a biography should be blamed for misleading readers only if facts are omitted to which the author alone had access when the biography was written.',
-        '(E) An author of a biography should be blamed for readers’ misperceptions caused by omitting facts that were widely available when the biography was written.'
+        '(E) An author of a biography should be blamed for readers’ misperceptions caused by omitting facts that were widely available when the biography was written. (Correct)'
         ]}
       ]
     },

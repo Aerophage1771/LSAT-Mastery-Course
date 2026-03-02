@@ -49,7 +49,21 @@ export const Lesson5_Drill_RankVsRawNumber: Lesson = {
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
 
-    { type: 'h2', text: 'Step-by-Step Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-112-S-1-Q-24',
+      stimulus: "**Stimulus**\n\n**Columnist:** George Orwell’s book *1984* has exercised much influence on a great number of this newspaper’s readers. One thousand readers were surveyed and asked to name the one book that had the most influence on their lives. The book chosen most often was the Bible; *1984* was second.",
+      question: "**Question**\n\nThe answer to which one of the following questions would most help in evaluating the columnist’s argument?",
+      options: [
+        "(A) How many books had each person surveyed read?",
+        "(B) How many people chose books other than *1984*? (Correct)",
+        "(C) How many people read the columnist’s newspaper?",
+        "(D) How many books by George Orwell other than *1984* were chosen?",
+        "(E) How many of those surveyed had actually read the books they chose?",
+      ]
+    },
+
+{ type: 'h2', text: 'Step-by-Step Analysis' },
     { type: 'paragraph', text: "*(Scroll down only after committing to an answer.)*" },
     { type: 'hr' },
 

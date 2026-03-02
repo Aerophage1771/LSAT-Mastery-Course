@@ -17,7 +17,7 @@ export const Lesson7_Module7_Questions: Lesson = {
         '(A) How much more salt than is contained in a rat’s normal diet was there in the high-salt diet?',
         '(B) Did the high blood pressure have any adverse health effects on those rats that developed it?',
         '(C) What percentage of naturally occurring rat colonies feed on high-salt diets?',
-        '(D) How many rats in the colony studied had abnormally high blood pressure before the study began?',
+        '(D) How many rats in the colony studied had abnormally high blood pressure before the study began? (Correct)',
         '(E) Have other species of rodents been used in experiments of the same kind?'
         ]}
       ]
@@ -31,7 +31,7 @@ export const Lesson7_Module7_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: '**Question**\n\nThe answer to which one of the following questions would contribute most to an evaluation of the argument?' },
         { type: 'options', items: [
-        '(A) Were the fish species and subspecies that became extinct unrepresentative of animal species in general with regard to their pattern of extinction?',
+        '(A) Were the fish species and subspecies that became extinct unrepresentative of animal species in general with regard to their pattern of extinction? (Correct)',
         '(B) How numerous were the populations in 1950 of the species and subspecies of North American fishes that have become extinct since 1950?',
         '(C) Did any of the species or subspecies of North American fishes that became extinct in the twentieth century originate in regions outside of North America?',
         '(D) What proportion of North American fish species and subspecies whose populations were endangered in 1950 are now thriving?',
@@ -49,7 +49,7 @@ export const Lesson7_Module7_Questions: Lesson = {
         { type: 'paragraph', text: '**Question**\n\nThe answer to which one of the following questions would most help in evaluating the columnist’s argument?' },
         { type: 'options', items: [
         '(A) How many books had each person surveyed read?',
-        '(B) How many people chose books other than *1984*?',
+        '(B) How many people chose books other than *1984*? (Correct)',
         '(C) How many people read the columnist’s newspaper?',
         '(D) How many books by George Orwell other than *1984* were chosen?',
         '(E) How many of those surveyed had actually read the books they chose?'

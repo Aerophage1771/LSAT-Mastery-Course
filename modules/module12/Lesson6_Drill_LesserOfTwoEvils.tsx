@@ -37,7 +37,21 @@ export const Lesson6_Drill_LesserOfTwoEvils: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-113-S-2-Q-22',
+      stimulus: "Political theorist: Many people believe that the punishment of those who commit even the most heinous crimes should be mitigated to some extent if the crime was motivated by a sincere desire to achieve some larger good. Granted, some criminals with admirable motives deserve mitigated punishments. Nonetheless, judges should never mitigate punishment on the basis of motives, since motives are essentially a matter of conjecture and even vicious motives can easily be presented as altruistic.",
+      question: "Which one of the following principles, if valid, most helps to justify the political theorist’s reasoning?",
+      options: [
+        "(A) Laws that prohibit or permit actions solely on the basis of psychological states should not be part of a legal system.",
+        "(B) It is better to err on the side of overly severe punishment than to err on the side of overly lenient punishment. (Correct)",
+        "(C) The legal permissibility of actions should depend on the perceivable consequences of those actions.",
+        "(D) No law that cannot be enforced should be enacted.",
+        "(E) A legal system that, if adopted, would have disastrous consequences ought not be adopted.",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
     { type: 'paragraph', text: "This argument has a sophisticated rhetorical structure: opposing view → concession → conclusion with evidence. Let's dissect each move." },

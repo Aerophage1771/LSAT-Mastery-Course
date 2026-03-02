@@ -2,9 +2,9 @@
 
 ## Summary
 - totalLessons: 263
-- lessonsWithQuestionCards: 102
-- totalLinkedPtIds: 60
-- errors: 190
+- lessonsWithQuestionCards: 166
+- totalLinkedPtIds: 124
+- errors: 138
 
 ## Errors
 - Module 1 lesson 1-10: title missing PT IDs PT-125-S-4-Q-15
@@ -22,84 +22,50 @@
 - Module 1 lesson 1-8: title missing PT IDs PT-131-S-2-Q-18
 - Duplicate PT ID PT-108-S-2-Q-22: module 1 lesson 1-11 and module 1 lesson 1-8
 - Module 1 lesson 1-9: title missing PT IDs PT-131-S-2-Q-7
-- Module 10 lesson 10-10: lesson 4+ missing question card
-- Module 10 lesson 10-11: lesson 4+ missing question card
 - Module 10 lesson 10-1: has question card but no PT id
 - Module 10 lesson 10-2: has question card but no PT id
-- Module 10 lesson 10-4: lesson 4+ missing question card
-- Module 10 lesson 10-5: lesson 4+ missing question card
-- Module 10 lesson 10-6: lesson 4+ missing question card
-- Module 10 lesson 10-7: lesson 4+ missing question card
-- Module 10 lesson 10-8: lesson 4+ missing question card
-- Module 10 lesson 10-9: lesson 4+ missing question card
-- Module 11 lesson 11-10: lesson 4+ missing question card
-- Module 11 lesson 11-11: lesson 4+ missing question card
-- Module 11 lesson 11-12: lesson 4+ missing question card
-- Module 11 lesson 11-13: lesson 4+ missing question card
+- Module 11 lesson 11-10: title missing PT IDs PT-117-S-4-Q-16
+- Module 11 lesson 11-11: title missing PT IDs PT-127-S-1-Q-19
+- Module 11 lesson 11-12: title missing PT IDs PT-112-S-3-Q-18
+- Module 11 lesson 11-13: title missing PT IDs PT-114-S-4-Q-20
 - Module 11 lesson 11-1: has question card but no PT id
 - Module 11 lesson 11-2: has question card but no PT id
 - Module 11 lesson 11-3: title missing PT IDs PT-103-S-1-Q-4
-- Module 11 lesson 11-4: lesson 4+ missing question card
-- Module 11 lesson 11-5: lesson 4+ missing question card
-- Module 11 lesson 11-6: lesson 4+ missing question card
-- Module 11 lesson 11-7: lesson 4+ missing question card
-- Module 11 lesson 11-8: lesson 4+ missing question card
-- Module 11 lesson 11-9: lesson 4+ missing question card
+- Module 11 lesson 11-4: title missing PT IDs PT-105-S-1-Q-18
+- Module 11 lesson 11-5: title missing PT IDs PT-116-S-3-Q-1
+- Module 11 lesson 11-6: title missing PT IDs PT-118-S-1-Q-3
+- Module 11 lesson 11-7: title missing PT IDs PT-121-S-4-Q-10
+- Module 11 lesson 11-8: title missing PT IDs PT-126-S-3-Q-8
+- Module 11 lesson 11-9: title missing PT IDs PT-138-S-3-Q-23
 - Module 12 lesson 12-1: has question card but no PT id
 - Module 12 lesson 12-2: has question card but no PT id
-- Module 12 lesson 12-4: lesson 4+ missing question card
-- Module 12 lesson 12-5: lesson 4+ missing question card
-- Module 12 lesson 12-6: lesson 4+ missing question card
+- Module 12 lesson 12-6: title missing PT IDs PT-113-S-2-Q-22
 - Module 13 lesson 13-1: has question card but no PT id
 - Module 13 lesson 13-2: has question card but no PT id
-- Module 13 lesson 13-4: lesson 4+ missing question card
-- Module 13 lesson 13-5: lesson 4+ missing question card
-- Module 13 lesson 13-6: lesson 4+ missing question card
 - Module 14 lesson 14-1: has question card but no PT id
 - Module 14 lesson 14-2: has question card but no PT id
-- Module 14 lesson 14-4: lesson 4+ missing question card
-- Module 14 lesson 14-5: lesson 4+ missing question card
-- Module 14 lesson 14-6: lesson 4+ missing question card
 - Module 15 lesson 15-1: has question card but no PT id
 - Module 15 lesson 15-2: has question card but no PT id
-- Module 15 lesson 15-4: lesson 4+ missing question card
-- Module 15 lesson 15-5: lesson 4+ missing question card
-- Module 15 lesson 15-6: lesson 4+ missing question card
-- Module 15 lesson 15-7: lesson 4+ missing question card
 - Module 16 lesson 16-10: lesson 4+ missing question card
 - Module 16 lesson 16-1: has question card but no PT id
 - Module 16 lesson 16-2: has question card but no PT id
 - Module 16 lesson 16-3: title missing PT IDs PT-128-S-2-Q-2
-- Module 16 lesson 16-4: lesson 4+ missing question card
-- Module 16 lesson 16-5: lesson 4+ missing question card
 - Module 16 lesson 16-6: lesson 4+ missing question card
 - Module 16 lesson 16-7: lesson 4+ missing question card
 - Module 16 lesson 16-8: lesson 4+ missing question card
 - Module 16 lesson 16-9: lesson 4+ missing question card
-- Module 17 lesson 17-10: lesson 4+ missing question card
 - Module 17 lesson 17-1: has question card but no PT id
 - Module 17 lesson 17-2: has question card but no PT id
-- Module 17 lesson 17-4: lesson 4+ missing question card
-- Module 17 lesson 17-5: lesson 4+ missing question card
 - Module 17 lesson 17-6: lesson 4+ missing question card
-- Module 17 lesson 17-7: lesson 4+ missing question card
-- Module 17 lesson 17-8: lesson 4+ missing question card
-- Module 17 lesson 17-9: lesson 4+ missing question card
 - Module 18 lesson 18-1: has question card but no PT id
 - Module 18 lesson 18-2: has question card but no PT id
-- Module 18 lesson 18-4: lesson 4+ missing question card
-- Module 18 lesson 18-5: lesson 4+ missing question card
 - Module 18 lesson 18-6: lesson 4+ missing question card
 - Module 18 lesson 18-7: lesson 4+ missing question card
 - Module 19 lesson 19-1: has question card but no PT id
 - Module 19 lesson 19-2: has question card but no PT id
 - Module 19 lesson 19-3: title missing PT IDs PT-107-S-3-Q-21
-- Module 19 lesson 19-4: lesson 4+ missing question card
-- Module 19 lesson 19-5: lesson 4+ missing question card
 - Module 19 lesson 19-6: lesson 4+ missing question card
-- Module 19 lesson 19-7: lesson 4+ missing question card
-- Module 19 lesson 19-8: lesson 4+ missing question card
-- Module 19 lesson 19-9: lesson 4+ missing question card
+- Module 19 lesson 19-9: title missing PT IDs PT-124-S-3-Q-22
 - Module 2 lesson 2-1: has question card but no PT id
 - Module 2 lesson 2-2: has question card but no PT id
 - Module 2 lesson 2-4: lesson 4+ missing question card
@@ -110,12 +76,7 @@
 - Module 2 lesson 2-9: lesson 4+ missing question card
 - Module 20 lesson 20-1: has question card but no PT id
 - Module 20 lesson 20-2: has question card but no PT id
-- Module 20 lesson 20-4: lesson 4+ missing question card
-- Module 20 lesson 20-5: lesson 4+ missing question card
 - Module 20 lesson 20-6: lesson 4+ missing question card
-- Module 20 lesson 20-7: lesson 4+ missing question card
-- Module 20 lesson 20-8: lesson 4+ missing question card
-- Module 20 lesson 20-9: lesson 4+ missing question card
 - Module 3 lesson 3-1: has question card but no PT id
 - Module 3 lesson 3-2: has question card but no PT id
 - Module 3 lesson 3-4: lesson 4+ missing question card
@@ -170,31 +131,18 @@
 - Module 6 lesson 6-4: lesson 4+ missing question card
 - Module 6 lesson 6-5: lesson 4+ missing question card
 - Module 6 lesson 6-6: lesson 4+ missing question card
-- Module 6 lesson 6-7: lesson 4+ missing question card
-- Module 6 lesson 6-8: lesson 4+ missing question card
-- Module 6 lesson 6-9: lesson 4+ missing question card
 - Module 7 lesson 7-10: lesson 4+ missing question card
 - Module 7 lesson 7-1: has question card but no PT id
 - Module 7 lesson 7-2: has question card but no PT id
 - Module 7 lesson 7-3: title missing PT IDs PT-119-S-3-Q-3
-- Module 7 lesson 7-4: lesson 4+ missing question card
-- Module 7 lesson 7-5: lesson 4+ missing question card
 - Module 7 lesson 7-6: lesson 4+ missing question card
 - Module 7 lesson 7-7: lesson 4+ missing question card
 - Module 7 lesson 7-8: lesson 4+ missing question card
 - Module 7 lesson 7-9: lesson 4+ missing question card
-- Module 8 lesson 8-10: lesson 4+ missing question card
 - Module 8 lesson 8-1: has question card but no PT id
 - Module 8 lesson 8-2: has question card but no PT id
-- Module 8 lesson 8-4: lesson 4+ missing question card
-- Module 8 lesson 8-5: lesson 4+ missing question card
 - Module 8 lesson 8-6: lesson 4+ missing question card
-- Module 8 lesson 8-7: lesson 4+ missing question card
-- Module 8 lesson 8-8: lesson 4+ missing question card
-- Module 8 lesson 8-9: lesson 4+ missing question card
 - Module 9 lesson 9-1: has question card but no PT id
 - Module 9 lesson 9-2: has question card but no PT id
-- Module 9 lesson 9-4: lesson 4+ missing question card
-- Module 9 lesson 9-5: lesson 4+ missing question card
 - Module 9 lesson 9-6: lesson 4+ missing question card
 

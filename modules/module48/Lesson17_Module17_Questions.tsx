@@ -18,7 +18,7 @@ export const Lesson17_Module17_Questions: Lesson = {
         '(B) Colds are more difficult to treat than allergies.',
         '(C) Antihistamines, when taken alone, are ineffective against congestion caused by colds.',
         '(D) The sleeplessness that sometimes accompanies allergies can be effectively treated with antihistamines.',
-        '(E) Any effect antihistamines may have in reducing cold symptoms does not result from blocking the action of histamine.'
+        '(E) Any effect antihistamines may have in reducing cold symptoms does not result from blocking the action of histamine. (Correct)'
         ]}
       ]
     },
@@ -32,7 +32,7 @@ export const Lesson17_Module17_Questions: Lesson = {
         { type: 'paragraph', text: '**The Question:** Which one of the following statements follows logically from the statements above?' },
         { type: 'options', items: [
         '(A) If students spend a significant amount of time outside of class studying mathematics, the current crisis in mathematics education will be overcome.',
-        '(B) The current crisis in mathematics education will not be overcome unless students spend a significant amount of time outside of class studying mathematics.',
+        '(B) The current crisis in mathematics education will not be overcome unless students spend a significant amount of time outside of class studying mathematics. (Correct)',
         '(C) Few subjects are as important as mathematics to the effort to remain competitive in the global economy.',
         '(D) Only if we succeed in remaining competitive in the global economy will students spend a significant amount of time outside of class studying mathematics.',
         '(E) Students’ spending a significant amount of time outside of class studying mathematics would help us to remain competitive in the global economy.'
@@ -52,7 +52,7 @@ export const Lesson17_Module17_Questions: Lesson = {
         '(B) All brilliant people are either professors, legal voters, or under eighteen.',
         '(C) Some legal voters are not professors.',
         '(D) Some professors are neither legal voters nor brilliant people.',
-        '(E) Some brilliant people are neither professors nor legal voters.'
+        '(E) Some brilliant people are neither professors nor legal voters. (Correct)'
         ]}
       ]
     },
@@ -66,7 +66,7 @@ export const Lesson17_Module17_Questions: Lesson = {
         { type: 'paragraph', text: '**The Question:** If the statements above are true, then on the basis of them which one of the following must also be true?' },
         { type: 'options', items: [
         '(A) No classes in Queenston’s school system experienced an increase in enrollment between 1990 and 1993.',
-        '(B) The total number of students enrolled in Queenston’s school system increased between 1990 and 1993.',
+        '(B) The total number of students enrolled in Queenston’s school system increased between 1990 and 1993. (Correct)',
         '(C) The operating budget of Queenston’s school system increased by exactly 30 percent between 1990 and 1993.',
         '(D) Most teachers who worked for Queenston’s school system in 1990 were still working for the system in 1993.',
         '(E) The quality of education in Queenston’s school system improved between 1990 and 1993.'
@@ -85,7 +85,7 @@ export const Lesson17_Module17_Questions: Lesson = {
         '(A) If there are no issues important to her, it is unacceptable for her to vote for any candidate in the election.',
         '(B) If she agrees with each of the candidates on most of the issues important to her, it is unacceptable for her to vote for any candidate in the election.',
         '(C) If she agrees with a particular candidate on only one issue important to her, it is unacceptable for her to vote for that candidate.',
-        '(D) If she disagrees with each of the candidates on exactly three issues important to her, it is unacceptable for her to vote for any candidate in the election.',
+        '(D) If she disagrees with each of the candidates on exactly three issues important to her, it is unacceptable for her to vote for any candidate in the election. (Correct)',
         '(E) If there are more issues important to her on which she disagrees with a particular candidate than there are such issues on which she agrees with that candidate, it is unacceptable for her to vote for that candidate.'
         ]}
       ]
@@ -103,7 +103,7 @@ export const Lesson17_Module17_Questions: Lesson = {
         '(B) We should modify this parking policy only if this will not reduce its popularity among students.',
         '(C) We should modify this parking policy if modification will not reduce its popularity with the faculty.',
         '(D) If this parking policy is popular among students, then we should adopt a new policy.',
-        '(E) If this parking policy is popular with the faculty, then we should adopt a new policy.'
+        '(E) If this parking policy is popular with the faculty, then we should adopt a new policy. (Correct)'
         ]}
       ]
     },
@@ -119,7 +119,7 @@ export const Lesson17_Module17_Questions: Lesson = {
         '(A) A large proportion of the mail that is correctly addressed is damaged in transit.',
         '(B) No incorrectly addressed mail arrives within two business days of being sent.',
         '(C) Most mail that arrives within two business days of being sent is correctly addressed.',
-        '(D) A large proportion of mail is incorrectly addressed.',
+        '(D) A large proportion of mail is incorrectly addressed. (Correct)',
         '(E) More mail arrives within two business days of being sent than arrives between two and three business days after being sent.'
         ]}
       ]

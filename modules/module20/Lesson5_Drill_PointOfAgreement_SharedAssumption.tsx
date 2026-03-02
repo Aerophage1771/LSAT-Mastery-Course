@@ -9,7 +9,21 @@ export const Lesson5_Drill_PointOfAgreement_SharedAssumption: Lesson = {
     { type: 'hr' },
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
-    { type: 'h3', text: 'Analysis & Explanation' },
+        {
+      type: 'question-card',
+      id: 'PT-127-S-2-Q-2',
+      stimulus: "**Denise:** Crime will be reduced only when punishment is certain and is sufficiently severe to give anyone considering committing a crime reason to decide against doing so.\n**Reshmi:** No, crime will be most effectively reduced if educational opportunities are made readily available to everyone, so that those who once viewed criminal activity as the only means of securing a comfortable lifestyle will choose a different path.",
+      question: "Their dialogue provides the most support for the claim that Denise and Reshmi agree that",
+      options: [
+        "(A) people are capable of choosing whether or not to commit crimes (Correct)",
+        "(B) crime is the most important issue facing modern society",
+        "(C) reducing crime requires fair and consistent responses to criminal behavior",
+        "(D) crimes are committed in response to economic need",
+        "(E) reducing crime requires focusing on assured punishments",
+      ]
+    },
+
+{ type: 'h3', text: 'Analysis & Explanation' },
     { type: 'h4', text: 'Step 1: Deconstruction' },
     { type: 'paragraph', text: 'Break down each speaker\'s argument to its core logic. Pay special attention to the *mechanism* each speaker relies on.' },
     {

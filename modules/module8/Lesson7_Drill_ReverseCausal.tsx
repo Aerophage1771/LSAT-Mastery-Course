@@ -20,7 +20,21 @@ export const Lesson7_Drill_ReverseCausal: Lesson = {
     { type: 'h3', text: 'Practice: Identify the Reverse Causal Weakener' },
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-126-S-1-Q-22',
+      stimulus: "**Stimulus**\nPsychologist: It is well known that becoming angry often induces temporary incidents of high blood pressure. A recent study further showed, however, that people who are easily angered are significantly more likely to have permanently high blood pressure than are people who have more tranquil personalities. Coupled with the long-established fact that those with permanently high blood pressure are especially likely to have heart disease, the recent findings indicate that heart disease can result from psychological factors.",
+      question: "**Question**\nWhich one of the following would, if true, most weaken the psychologist’s argument?",
+      options: [
+        "(A) Those who are easily angered are less likely to recover fully from episodes of heart disease than are other people.",
+        "(B) Medication designed to control high blood pressure can greatly affect the moods of those who use it.",
+        "(C) People with permanently high blood pressure who have tranquil personalities virtually never develop heart disease.",
+        "(D) Those who discover that they have heart disease tend to become more easily frustrated by small difficulties.",
+        "(E) The physiological factors that cause permanently high blood pressure generally make people quick to anger. (Correct)",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
     { type: 'paragraph', text: "Let's engage with the stimulus sentence by sentence to trace the psychologist's chain of reasoning." },
     { type: 'breakdown', labels: { title: 'Quote', text: 'Analysis' }, items: [

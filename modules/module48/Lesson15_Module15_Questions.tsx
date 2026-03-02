@@ -14,7 +14,7 @@ export const Lesson15_Module15_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: '**Question:** Which one of the following most logically completes the argument?' },
         { type: 'options', items: [
-        '(A) might at first have an increased level of cholesterol in his or her blood',
+        '(A) might at first have an increased level of cholesterol in his or her blood (Correct)',
         '(B) will not lose weight any faster than will a person whose diet is high in calories',
         '(C) might lose more weight by going on a low-calorie, high-cholesterol diet than by going on the low-calorie, low-cholesterol diet',
         '(D) will not decrease the size of his or her fat cells',
@@ -34,7 +34,7 @@ export const Lesson15_Module15_Questions: Lesson = {
         '(A) reminisce about their own lives',
         '(B) fear that their own lives are about to end',
         '(C) focus on what the next century will bring',
-        '(D) become very interested in the history of the century just ending',
+        '(D) become very interested in the history of the century just ending (Correct)',
         '(E) reflect on how certain unfortunate events of the century could have been avoided'
         ]}
       ]
@@ -50,7 +50,7 @@ export const Lesson15_Module15_Questions: Lesson = {
         { type: 'options', items: [
         '(A) all nations become less concerned with pollution than with the economic burdens of preventing it',
         '(B) multinational corporations agree to voluntary strict emission standards',
-        '(C) international agreements produce industrial emission standards',
+        '(C) international agreements produce industrial emission standards (Correct)',
         '(D) distrust among nations is eliminated',
         '(E) a world government is established'
         ]}
@@ -67,7 +67,7 @@ export const Lesson15_Module15_Questions: Lesson = {
         { type: 'options', items: [
         '(A) the notion that people can be deserving of happiness is ultimately incoherent',
         '(B) people do not actually value happiness as much as they think they do',
-        '(C) the judgment that a person deserves to be happy is itself to be understood in terms of happiness',
+        '(C) the judgment that a person deserves to be happy is itself to be understood in terms of happiness (Correct)',
         '(D) the only way to be assured of happiness is to bring happiness to those who have done something to deserve it',
         '(E) a truly bad person cannot actually be very happy'
         ]}
@@ -83,7 +83,7 @@ export const Lesson15_Module15_Questions: Lesson = {
         { type: 'paragraph', text: '**Question:** Which one of the following most logically completes the philosopher’s argument?' },
         { type: 'options', items: [
         '(A) cannot continue to exist unless something other than the false belief that the nation has moral rights motivates its citizens to make sacrifices',
-        '(B) cannot survive unless many of its citizens have some beliefs that are literally false',
+        '(B) cannot survive unless many of its citizens have some beliefs that are literally false (Correct)',
         '(C) can never be a target of moral praise or blame',
         '(D) is not worth the sacrifices that its citizens make on its behalf',
         '(E) should always be thought of in metaphorical rather than literal terms'

@@ -9,7 +9,21 @@ export const Lesson4_Drill_Disagreement_ExplanatoryCause: Lesson = {
     { type: 'hr' },
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
-    { type: 'h3', text: 'Analysis & Explanation' },
+        {
+      type: 'question-card',
+      id: 'PT-104-S-1-Q-1',
+      stimulus: "**Powell:** Private waste-removal companies spend 60 percent of what public waste-removal companies spend per customer, yet give their customers at least as good service. Private waste-removal companies, therefore, work more efficiently.\n**Freeman:** Your conclusion is unwarranted. Different customers have different waste-removal needs. Since private companies, unlike their public counterparts, can select which customers to serve, they choose to exclude the potential customers whom they judge to be the most costly to serve.",
+      question: "The issue in dispute between Powell and Freeman is the",
+      options: [
+        "(A) accuracy of the figure of 60 percent with regard to the difference in service costs between private and public waste-removal companies",
+        "(B) reason private waste-removal companies are able to offer service comparable to that offered by public ones while spending less money per customer (Correct)",
+        "(C) ability of private versus public waste-removal companies to select which customers to serve",
+        "(D) likelihood of the local authorities’ turning public waste-removal companies into private ones so that the companies can operate with lower service costs than they now incur",
+        "(E) relationship between the needs of a waste-removal customer and the amount of money it takes to serve that customer",
+      ]
+    },
+
+{ type: 'h3', text: 'Analysis & Explanation' },
     { type: 'h4', text: 'Step 1: Deconstruction' },
     { type: 'paragraph', text: 'Break down each speaker\'s argument into its core components. Notice they share the same factual premise but diverge on the explanation.' },
     {

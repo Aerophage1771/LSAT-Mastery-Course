@@ -29,7 +29,21 @@ export const Lesson10_Drill_ForcedChoiceAdvanced: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-117-S-4-Q-16',
+      stimulus: "Moralist: Immoral actions are those that harm other people. But since those who harm themselves do not intend to harm anyone, they are acting no less morally than those who do no harm at all.",
+      question: "Which one of the following is an assumption required by the moralist's argument?",
+      options: [
+        "**(A)** People who do not intend to harm anyone are acting morally.",
+        "**(B)** It is not immoral to harm oneself.",
+        "**(C)** Moral actions are those that benefit other people.",
+        "**(D)** Those who harm themselves do not intend to harm themselves. [63%] (Correct)",
+        "**(E)** People who act morally do not harm themselves.",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
     { type: 'paragraph', text: "This argument has a complex structure. Let's trace the researcher's reasoning step by step." },

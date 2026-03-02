@@ -29,7 +29,21 @@ export const Lesson12_Drill_BehavioralLink: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-112-S-3-Q-18',
+      stimulus: "It is said that people should accept themselves as they are instead of being dissatisfied with their own abilities. But this is clearly a bad principle if the goal is a society whose citizens are genuinely happy, for no one can be genuinely happy if he or she is not pursuing personal excellence and is unwilling to undergo personal change of any kind.",
+      question: "Which one of the following is an assumption required by the argument?",
+      options: [
+        "(A) Those who are willing to change will probably find genuine happiness.",
+        "(B) People who are not dissatisfied with themselves are less likely than others to pursue personal excellence. (Correct)",
+        "(C) Personal excellence cannot be acquired by those who lack genuine confidence in their own abilities.",
+        "(D) People are justified in feeling content with themselves when they have achieved some degree of personal excellence.",
+        "(E) Happiness is not genuine unless it is based on something that is painful to obtain.",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Break Down the Argument' },
     { type: 'paragraph', text: "This argument attacks a principle by building a chain of reasoning. Let's identify each link in the chain." },

@@ -46,7 +46,21 @@ export const Lesson5_Drill_ProblemAndSolution: Lesson = {
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-125-S-2-Q-7',
+      stimulus: "**Environmentalist:** The excessive atmospheric buildup of carbon dioxide, which threatens the welfare of everyone in the world, can be stopped only by reducing the burning of fossil fuels. Any country imposing the strict emission standards on the industrial burning of such fuels that this reduction requires, however, would thereby reduce its gross national product. No nation will be willing to bear singlehandedly the costs of an action that will benefit everyone. It is obvious, then, that the catastrophic consequences of excessive atmospheric carbon dioxide are unavoidable unless _______.",
+      question: "Which one of the following most logically completes the argument?",
+      options: [
+        "(A) all nations become less concerned with pollution than with the economic burdens of preventing it",
+        "(B) multinational corporations agree to voluntary strict emission standards",
+        "(C) international agreements produce industrial emission standards (Correct)",
+        "(D) distrust among nations is eliminated",
+        "(E) a world government is established",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Decompose the Argument Using the Four-Part Framework' },
     { type: 'paragraph', text: "Let's apply our Problem \u2192 Solution \u2192 Obstacle \u2192 Reversal framework to this stimulus:" },

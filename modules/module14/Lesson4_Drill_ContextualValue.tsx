@@ -32,7 +32,21 @@ export const Lesson4_Drill_ContextualValue: Lesson = {
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-119-S-3-Q-8',
+      stimulus: "In jazz history, there have been gifted pianists who, because they had no striking musical ideas, led no memorable recording sessions. But precisely because they lacked such ideas, they were able to respond quickly to the ideas of imaginative and difficult leaders. Thus, these pianists are often heard adding masterful touches to some of the greatest jazz recordings.",
+      question: "Which one of the following principles is best illustrated by the information above?",
+      options: [
+        "(A) The success of a group enterprise depends on the ability of the leader to recognize the weaknesses of others in the group.",
+        "(B) The production of any great work requires contributions from those who are unimaginative but technically skilled.",
+        "(C) People without forceful personalities cannot become great leaders in a field.",
+        "(D) A trait that is a weakness in some settings can contribute to greatness in other settings. (Correct)",
+        "(E) No one can achieve great success without the help of others who are able to bring one’s ideas to fruition.",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Understand the Situation' },
     { type: 'paragraph', text: 'The stimulus describes gifted jazz pianists who possess a specific trait: they have **no striking musical ideas**. The passage then shows this trait operating in two distinct contexts.' },

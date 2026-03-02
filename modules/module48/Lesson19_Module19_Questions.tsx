@@ -17,7 +17,7 @@ export const Lesson19_Module19_Questions: Lesson = {
         '(A) In Naota, the difference between the average annual earnings of all female workers and the average annual earnings of all male workers has been gradually increasing over the past 30 years.',
         '(B) In Naota, the average annual earnings of women who work full time in exactly the same occupations and under exactly the same conditions as men is almost the same as the men’s average annual earnings.',
         '(C) In Naota, a growing proportion of female workers hold full-time managerial, supervisory, or professional positions, and such positions typically pay more than other types of positions pay.',
-        '(D) In Naota, a larger proportion of female workers than male workers are part-time workers, and part-time workers typically earn less than full-time workers earn.',
+        '(D) In Naota, a larger proportion of female workers than male workers are part-time workers, and part-time workers typically earn less than full-time workers earn. (Correct)',
         '(E) In ten other countries where the proportion of women in the work force is similar to that of Naota, the average annual earnings of women who work full time ranges from a low of 50 percent to a high of 90 percent of the average annual earnings of men who work full time.'
         ]}
       ]
@@ -33,7 +33,7 @@ export const Lesson19_Module19_Questions: Lesson = {
         { type: 'options', items: [
         '(A) People who have migraine headaches tend to have relatives who also have migraine headaches.',
         '(B) People who have migraine headaches often suffer these headaches when under emotional stress.',
-        '(C) People who rate higher on the standard psychological scale of anxiety are more likely to seek professional treatment than are people who rate lower on the scale.',
+        '(C) People who rate higher on the standard psychological scale of anxiety are more likely to seek professional treatment than are people who rate lower on the scale. (Correct)',
         '(D) Of the many studies done on the cause of migraine headaches, most of those that suggest that psychological factors such as anxiety cause migraines have been widely publicized.',
         '(E) Most people who have migraines and who seek professional treatment remain in treatment until they stop having migraines, whether their doctors consider the cause to be physiological or psychological.'
         ]}
@@ -48,7 +48,7 @@ export const Lesson19_Module19_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'Which one of the following, if true, most helps to resolve the apparent conflict in the consumer activist’s statements?' },
         { type: 'options', items: [
-        '(A) Drivers and passengers in automobiles with antilock brakes feel less vulnerable, and are thus less likely to wear seat belts.',
+        '(A) Drivers and passengers in automobiles with antilock brakes feel less vulnerable, and are thus less likely to wear seat belts. (Correct)',
         '(B) Under some circumstances, automobiles with traditional brakes stop just as quickly as do automobiles with antilock brakes.',
         '(C) For inexperienced drivers, antilock brakes are easier to use correctly than are traditional brakes.',
         '(D) Antilock brakes are considerably more expensive to manufacture than are traditional brakes.',
@@ -69,7 +69,7 @@ export const Lesson19_Module19_Questions: Lesson = {
         '(B) The percentage of garments returned by retail outlets as unsalable includes, in addition to defective merchandise, garments in unacceptable styles or colors.',
         '(C) Some inspectors, in order to appear more efficient, tend to overreport defects.',
         '(D) The total number of garments produced by the manufacturer has increased slightly over the past year.',
-        '(E) Unsalable garments are recorded by count, but recycled garments are recorded by weight.'
+        '(E) Unsalable garments are recorded by count, but recycled garments are recorded by weight. (Correct)'
         ]}
       ]
     },
@@ -85,7 +85,7 @@ export const Lesson19_Module19_Questions: Lesson = {
         '(A) Clients are much less likely to agree to a fixed-profit type of cost-plus contract when it is understood that under certain conditions the project will be scuttled than they are when there is no such understanding.',
         '(B) On long-term contracts, cost projections take future inflation into account, but since the figures used are provided by the government, they are usually underestimates.',
         '(C) On any sizable construction project, the contractor bills the client monthly or quarterly, so any tendency for original cost estimates to be exceeded can be detected early.',
-        '(D) Clients billed under a cost-plus contract are free to review individual billings in order to uncover wasteful expenditures, but they do so only when the contractor’s profit varies with cost.',
+        '(D) Clients billed under a cost-plus contract are free to review individual billings in order to uncover wasteful expenditures, but they do so only when the contractor’s profit varies with cost. (Correct)',
         '(E) The practice of submitting deliberately exaggerated cost estimates is most common in the case of fixed-profit contracts, because it makes the profit, as a percentage of estimated cost, appear modest.'
         ]}
       ]

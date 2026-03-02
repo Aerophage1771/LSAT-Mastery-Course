@@ -17,7 +17,7 @@ export const Lesson11_Module11_Questions: Lesson = {
         '(A) If an entity has a right to certain treatment, we have an obligation to treat it that way.',
         '(B) Any entity that has rights also has obligations.',
         '(C) Only conscious entities are the sort of things that can have rights.',
-        '(D) Avoiding cutting down trees is not an obligation owed to some entity other than trees.',
+        '(D) Avoiding cutting down trees is not an obligation owed to some entity other than trees. (Correct)',
         '(E) One does not always have the right to cut down the trees on one’s own property.'
         ]}
       ]
@@ -32,7 +32,7 @@ export const Lesson11_Module11_Questions: Lesson = {
         { type: 'paragraph', text: '**Question:** Which one of the following is an assumption required by the argument?' },
         { type: 'options', items: [
         '(A) Those who are willing to change will probably find genuine happiness.',
-        '(B) People who are not dissatisfied with themselves are less likely than others to pursue personal excellence.',
+        '(B) People who are not dissatisfied with themselves are less likely than others to pursue personal excellence. (Correct)',
         '(C) Personal excellence cannot be acquired by those who lack genuine confidence in their own abilities.',
         '(D) People are justified in feeling content with themselves when they have achieved some degree of personal excellence.',
         '(E) Happiness is not genuine unless it is based on something that is painful to obtain.'
@@ -49,7 +49,7 @@ export const Lesson11_Module11_Questions: Lesson = {
         { type: 'paragraph', text: '**Question:** Which one of the following assumptions does the argument depend on?' },
         { type: 'options', items: [
         '(A) Eventually, shy adolescents are going to want a wider circle of friends than is provided by their hobby.',
-        '(B) No successful strategy for overcoming adolescent loneliness ever intensifies that loneliness.',
+        '(B) No successful strategy for overcoming adolescent loneliness ever intensifies that loneliness. (Correct)',
         '(C) Shy adolescents will lose interest in their hobbies if they do not make friends through their engagement in those hobbies.',
         '(D) Some other strategy for overcoming adolescent loneliness is generally more successful than is developing an all-consuming hobby.',
         '(E) Shy adolescents devote themselves to hobbies mainly because they want to make friends.'
@@ -66,7 +66,7 @@ export const Lesson11_Module11_Questions: Lesson = {
         { type: 'paragraph', text: '**Question:** The argument depends on the assumption that' },
         { type: 'options', items: [
         '(A) the employees who prefer a flextime schedule are the most productive employees at ABC Company',
-        '(B) an increase in the morale of ABC Company’s employees could lead to increased production',
+        '(B) an increase in the morale of ABC Company’s employees could lead to increased production (Correct)',
         '(C) flextime schedules tend to be associated with reduced lateness and absenteeism',
         '(D) employees are most productive during the part of the day when all employees are present',
         '(E) companies that are in competition with ABC Company also use a flextime schedule'
@@ -85,7 +85,7 @@ export const Lesson11_Module11_Questions: Lesson = {
         '(A) News that serves its intended function should not be entertaining.',
         '(B) Most viewers prefer that news be entertaining.',
         '(C) News has only one important function.',
-        '(D) News that primarily entertains does not give us information on which to act.',
+        '(D) News that primarily entertains does not give us information on which to act. (Correct)',
         '(E) A news industry that aims to make a profit inevitably presents news as entertainment.'
         ]}
       ]
@@ -99,7 +99,7 @@ export const Lesson11_Module11_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: '**Question:** Which one of the following is an assumption on which the argument depends?' },
         { type: 'options', items: [
-        '(A) Financial reward is the only incentive that will be effective in motivating people to develop new inventions.',
+        '(A) Financial reward is the only incentive that will be effective in motivating people to develop new inventions. (Correct)',
         '(B) When an inventor sells patent rights to a manufacturer, the manufacturer makes less total profit on the invention than the inventor does.',
         '(C) Any costs incurred by a typical inventor in applying for patent rights are insignificant in comparison to the financial benefit of holding the patent rights.',
         '(D) Patent rights should be granted only if an inventor’s product is not similar to another invention already covered by patent rights.',
@@ -117,7 +117,7 @@ export const Lesson11_Module11_Questions: Lesson = {
         { type: 'paragraph', text: '**Question:** The argument depends on assuming which one of the following?' },
         { type: 'options', items: [
         '(A) Larson has the assertiveness the task requires.',
-        '(B) The task cannot be assigned to anyone other than a supervisor in the shipping department.',
+        '(B) The task cannot be assigned to anyone other than a supervisor in the shipping department. (Correct)',
         '(C) Franks would be assigned the task if Franks had the assertiveness the task requires.',
         '(D) The task cannot be assigned to anyone who has any kind of scheduling conflict.',
         '(E) No one who is not a supervisor in the shipping department has the assertiveness this task requires.'
@@ -137,7 +137,7 @@ export const Lesson11_Module11_Questions: Lesson = {
         '(B) If a person’s arguments against a proposal are defective, then that person has a vested interest in seeing that the proposal is not implemented.',
         '(C) Approval of the coal-burning electric plant would please coal suppliers more than disapproval would please suppliers of fuel to the competing electricity producers.',
         '(D) If good arguments are presented for a proposal, then that proposal should be approved.',
-        '(E) Arguments made by those who have a vested interest in the outcome of a proposal are not good arguments.'
+        '(E) Arguments made by those who have a vested interest in the outcome of a proposal are not good arguments. (Correct)'
         ]}
       ]
     },
@@ -154,7 +154,7 @@ export const Lesson11_Module11_Questions: Lesson = {
         '(B) Anything that slows down shoppers during the holiday season costs the store money.',
         '(C) It would be to the store’s advantage to charge customers for gift wrapping services.',
         '(D) It would be expensive to inform customers about the free gift wrapping service.',
-        '(E) Either few customers would want free gift wrapping or most customers would want it.'
+        '(E) Either few customers would want free gift wrapping or most customers would want it. (Correct)'
         ]}
       ]
     },
@@ -168,7 +168,7 @@ export const Lesson11_Module11_Questions: Lesson = {
         { type: 'paragraph', text: '**Question:** The art historian’s argument depends on assuming which one of the following?' },
         { type: 'options', items: [
         '(A) The type of canvas and other materials that Cassatt used in most of her work were readily available to others.',
-        '(B) None of Cassatt’s works is painted using a brush style that is not exhibited in any of her known works.',
+        '(B) None of Cassatt’s works is painted using a brush style that is not exhibited in any of her known works. (Correct)',
         '(C) Cassatt’s work generally had a characteristic subject matter that distinguished it from the work of other painters of her era.',
         '(D) The most characteristic feature of Cassatt’s work is her brush style.',
         '(E) No painter other than Cassatt would be able to match Cassatt’s brush style perfectly.'

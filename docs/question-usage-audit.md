@@ -1,27 +1,18 @@
 # Question Usage Audit Report
 
 - **Total Questions in Database:** 162
-- **Used Questions (In Use):** 8
-- **Unused Questions:** 154
+- **Used Questions (In Use):** 59
+- **Unused Questions:** 103
 
 ## Missing Database Entries
-- `10-3-drill`
-- `11-3-drill`
-- `12-3-drill`
-- `14-3-drill`
-- `15-3-drill`
 - `16-1-example`
 - `16-2-example`
-- `16-3-drill`
 - `17-1-example`
 - `17-2-example`
 - `18-1-example`
 - `18-2-example`
-- `18-3-drill`
 - `19-1-example`
 - `19-2-example`
-- `9-3-drill`
-- `DR-8-3-001`
 - `FL-5-1-001`
 - `MC-2-1-001`
 - `MR-3-1-001`
@@ -40,7 +31,6 @@
 - `WE-9-2-001`
 - `illustrative`
 - `illustrative-55-1-001`
-- `illustrative-55-intro-001`
 - `illustrative-59-3`
 
 ## Invented/Illustrative Count (Lessons 4+)

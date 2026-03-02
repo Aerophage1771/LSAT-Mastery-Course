@@ -17,7 +17,7 @@ export const Lesson20_Module20_Questions: Lesson = {
         '(A) Carver’s stories are truly compassionate',
         '(B) Carver’s stories are pessimistic in their vision',
         '(C) stories that are characterized by somberness and pessimism can appropriately be called humorous',
-        '(D) stories that are well written can be somber and pessimistic',
+        '(D) stories that are well written can be somber and pessimistic (Correct)',
         '(E) there are some characteristics of a story that are decisive in determining its aesthetic value'
         ]}
       ]
@@ -32,7 +32,7 @@ export const Lesson20_Module20_Questions: Lesson = {
         { type: 'paragraph', text: 'The issue in dispute between Powell and Freeman is the' },
         { type: 'options', items: [
         '(A) accuracy of the figure of 60 percent with regard to the difference in service costs between private and public waste-removal companies',
-        '(B) reason private waste-removal companies are able to offer service comparable to that offered by public ones while spending less money per customer',
+        '(B) reason private waste-removal companies are able to offer service comparable to that offered by public ones while spending less money per customer (Correct)',
         '(C) ability of private versus public waste-removal companies to select which customers to serve',
         '(D) likelihood of the local authorities’ turning public waste-removal companies into private ones so that the companies can operate with lower service costs than they now incur',
         '(E) relationship between the needs of a waste-removal customer and the amount of money it takes to serve that customer'
@@ -48,7 +48,7 @@ export const Lesson20_Module20_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'Their dialogue provides the most support for the claim that Denise and Reshmi agree that' },
         { type: 'options', items: [
-        '(A) people are capable of choosing whether or not to commit crimes',
+        '(A) people are capable of choosing whether or not to commit crimes (Correct)',
         '(B) crime is the most important issue facing modern society',
         '(C) reducing crime requires fair and consistent responses to criminal behavior',
         '(D) crimes are committed in response to economic need',
@@ -69,7 +69,7 @@ export const Lesson20_Module20_Questions: Lesson = {
         '(B) Works of art commissioned for public spaces ought at least to have sufficient artistic merit to benefit the public.',
         '(C) The only reason for removing a work of art commissioned for a public space would be that the balance of public opinion is against the work.',
         '(D) The sculpture cannot benefit the public by remaining in the town plaza unless the sculpture has artistic merit.',
-        '(E) In determining whether the sculpture should remain in the town plaza, the artistic merit of the sculpture should be a central consideration.'
+        '(E) In determining whether the sculpture should remain in the town plaza, the artistic merit of the sculpture should be a central consideration. (Correct)'
         ]}
       ]
     },
@@ -82,7 +82,7 @@ export const Lesson20_Module20_Questions: Lesson = {
         { type: 'h4', text: 'Question' },
         { type: 'paragraph', text: 'On the basis of their statements, Mario and Lucy are committed to disagreeing about the truth of which one of the following?' },
         { type: 'options', items: [
-        '(A) If a field of study that has a unique methodology lacks a domain of inquiry all its own, it can nonetheless be a genuinely autonomous discipline.',
+        '(A) If a field of study that has a unique methodology lacks a domain of inquiry all its own, it can nonetheless be a genuinely autonomous discipline. (Correct)',
         '(B) If a field of study is not a genuinely autonomous discipline, it can still have a unique methodology.',
         '(C) All fields of study that are characterized by a unique methodology and by a domain of inquiry all their own are genuinely autonomous disciplines.',
         '(D) Any field of study that is not a genuinely autonomous discipline lacks both a unique domain of inquiry and a unique methodology.',
@@ -102,7 +102,7 @@ export const Lesson20_Module20_Questions: Lesson = {
         '(A) tend to underrate past problems when the country faces troubling times',
         '(B) are looking to the past for solutions to the country’s current problems',
         '(C) are likely to repeat former mistakes if they look to the country’s past for solutions to current problems',
-        '(D) are concerned about the country’s current situation and this is evidenced by their nostalgia',
+        '(D) are concerned about the country’s current situation and this is evidenced by their nostalgia (Correct)',
         '(E) tend to be most nostalgic for the things that are the farthest in their past'
         ]}
       ]

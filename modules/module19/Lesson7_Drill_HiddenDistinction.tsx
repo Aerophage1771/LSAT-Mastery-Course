@@ -11,7 +11,21 @@ export const Lesson7_Drill_HiddenDistinction: Lesson = {
 
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
-    { type: 'h3', text: 'Analysis & Explanation' },
+        {
+      type: 'question-card',
+      id: 'PT-105-S-1-Q-25',
+      stimulus: "A clothing manufacturer reports that unsalable garments, those found to be defective by inspectors plus those returned by retailers, total 7 percent of the garments produced. Further, it reports that all of its unsalable garments are recycled as scrap, but the percentage of garments reported as recycled scrap is 9 percent.",
+      question: "Which one of the following, if true, could contribute most to explaining the discrepancy between the reported percentages?",
+      options: [
+        "(A) Garments with minor blemishes are sent to wholesale outlets for sale at discounted prices and are not returned for recycling.",
+        "(B) The percentage of garments returned by retail outlets as unsalable includes, in addition to defective merchandise, garments in unacceptable styles or colors.",
+        "(C) Some inspectors, in order to appear more efficient, tend to overreport defects.",
+        "(D) The total number of garments produced by the manufacturer has increased slightly over the past year.",
+        "(E) Unsalable garments are recorded by count, but recycled garments are recorded by weight. (Correct)",
+      ]
+    },
+
+{ type: 'h3', text: 'Analysis & Explanation' },
 
     { type: 'h4', text: 'Step 1: Deconstruction' },
     { type: 'paragraph', text: 'Isolate the two facts that create the mathematical impossibility.' },

@@ -47,7 +47,21 @@ export const Lesson5_Drill_AttackingTheData: Lesson = {
     { type: 'paragraph', text: "<br/><br/><br/>" },
     { type: 'hr' },
 
-    { type: 'h2', text: "Step-by-Step Analysis" },
+        {
+      type: 'question-card',
+      id: 'PT-113-S-2-Q-14',
+      stimulus: "In response to office workers’ worries about the health risks associated with using video display terminals (VDTs), researchers asked office workers to estimate both the amount of time they had spent using VDTs and how often they had suffered headaches over the previous year. According to the survey, frequent VDT users suffered from headaches more often than other office workers did, leading researchers to conclude that VDTs cause headaches.",
+      question: "Which one of the following, if true, most undermines the researchers’ conclusion?",
+      options: [
+        "(A) Few of the office workers surveyed participated in regular health programs during the year in question.",
+        "(B) In their study the researchers failed to ask the workers to distinguish between severe migraine headaches and mild headaches.",
+        "(C) Previous studies have shown that the glare from VDT screens causes some users to suffer eyestrain.",
+        "(D) Office workers who experienced frequent headaches were more likely than other workers to overestimate how much time they spent using VDTs. (Correct)",
+        "(E) Office workers who regularly used VDTs experienced the same amount of job-related stress as workers who did not use VDTs.",
+      ]
+    },
+
+{ type: 'h2', text: "Step-by-Step Analysis" },
     { type: 'paragraph', text: "*(Scroll down only after committing to an answer.)*" },
     { type: 'hr' },
 

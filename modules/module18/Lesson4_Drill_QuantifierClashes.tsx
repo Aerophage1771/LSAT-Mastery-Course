@@ -34,7 +34,21 @@ export const Lesson4_Drill_QuantifierClashes: Lesson = {
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-113-S-3-Q-8',
+      stimulus: "For all species of higher animals, reproduction requires the production of eggs but not necessarily the production of sperm. There are some species whose members are all female; the eggs produced by a rare female-only species of salamander hatch without fertilization. This has the drawback that all offspring have genetic codes nearly identical to that of the single parent, making the species less adaptive than species containing both male and female members.",
+      question: "**The Question:** If the statements above are true, each of the following could be true EXCEPT:",
+      options: [
+        "(A) There are some species of salamanders that have both male and female members.",
+        "(B) There are some species of higher animals none of whose members produce eggs. (Correct)",
+        "(C) There is a significant number of female-only species of higher animals.",
+        "(D) Some species of higher animals containing both female and male members are not very adaptive.",
+        "(E) Some offspring of species of higher animals containing both female and male members have genetic codes more similar to one parent than to the other parent.",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Identify the Universal Rule' },
     { type: 'paragraph', text: 'The first sentence contains the critical universal quantifier:' },

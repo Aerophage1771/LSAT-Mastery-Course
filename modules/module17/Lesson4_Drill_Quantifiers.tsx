@@ -42,7 +42,21 @@ export const Lesson4_Drill_Quantifiers: Lesson = {
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
 
-    { type: 'h3', text: 'Full Analysis' },
+        {
+      type: 'question-card',
+      id: 'PT-101-S-2-Q-11',
+      stimulus: "Not surprisingly, there are no professors under the age of eighteen. And, as is well known, no one under eighteen can vote legally. Finally, some brilliant people are professors, some are legal voters, and some are under eighteen.",
+      question: "**The Question:** If the statements above are true, then on the basis of them which one of the following must also be true?",
+      options: [
+        "(A) No professors are eighteen-year-olds.",
+        "(B) All brilliant people are either professors, legal voters, or under eighteen.",
+        "(C) Some legal voters are not professors.",
+        "(D) Some professors are neither legal voters nor brilliant people.",
+        "(E) Some brilliant people are neither professors nor legal voters. (Correct)",
+      ]
+    },
+
+{ type: 'h3', text: 'Full Analysis' },
 
     { type: 'h4', text: 'Step 1: Map the Quantifier Relationships' },
     { type: 'paragraph', text: 'Break the stimulus into its discrete quantifier claims and classify each one:' },
