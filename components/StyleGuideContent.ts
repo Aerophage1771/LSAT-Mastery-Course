@@ -711,7 +711,7 @@ function stripMarkdown(text: string): string {
     .replace(/`([^`]+)`/g, '$1');
 }
 
-function serializeBlocks(blocks: ContentBlock[]): string {
+export function serializeBlocks(blocks: ContentBlock[]): string {
   const lines: string[] = [];
   for (const block of blocks) {
     switch (block.type) {
@@ -757,15 +757,20 @@ function serializeBlocks(blocks: ContentBlock[]): string {
         lines.push(block.passage);
         break;
       case 'question-passage-card':
-        lines.push(`\n[QUESTION+PASSAGE: ${block.questionType ?? 'RC'}${block.id ? ` | ${block.id}` : ''}]`);
-        lines.push(`Passage: ${block.passageTitle}`);
+        lines.push(`\n[QUESTION+PASSAGE: ${block.questionType ?? 'RC'}${block.id ? ` | ${block.id}` : ''}${block.difficulty ? ` | ${block.difficulty}` : ''}]`);
+        lines.push(`Passage Title: ${block.passageTitle}`);
         lines.push(block.passage);
         lines.push(`Question: ${stripMarkdown(block.question)}`);
         block.options.forEach(o => lines.push(`  ${stripMarkdown(o)}`));
         break;
       case 'accordion':
         lines.push(`[${block.title}]`);
-        if (typeof block.content === 'string') lines.push(block.content);
+        if (typeof block.content === 'string') {
+          lines.push(stripMarkdown(block.content));
+        } else {
+          const nestedContent = serializeBlocks(block.content).trim();
+          if (nestedContent) lines.push(nestedContent);
+        }
         break;
     }
     lines.push('');
