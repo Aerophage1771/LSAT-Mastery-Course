@@ -11,7 +11,7 @@ import { Lesson_Summary } from './module55/Lesson_ConciseGuide';
 import { Lesson_ReferenceGuide } from './module55/Lesson_ReferenceGuide';
 
 export const Module55: ModuleData = {
-  id: 55,
+  id: 21,
   title: "Conditional Reasoning",
   category: "LR",
   unit: "Unit 8: Conditional Reasoning",

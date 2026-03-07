@@ -8,7 +8,7 @@ import { Lesson6_Conclusion } from './module59/Lesson6_Conclusion';
 import { Lesson7_ReferenceGuide } from './module59/Lesson7_ReferenceGuide';
 
 export const Module59: ModuleData = {
-  id: 59,
+  id: 22,
   title: "LSAT Math",
   category: "LR",
   unit: "Unit 9: LSAT Math",

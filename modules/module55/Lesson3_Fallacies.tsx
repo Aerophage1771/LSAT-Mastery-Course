@@ -123,6 +123,17 @@ export const Lesson3_Fallacies: Lesson = {
         '(E) When the law is enforced, some people are jailed. But no one is in jail, so clearly the law is not enforced.'
       ]
     },
+    { type: 'question-card', id: 'PT-103-S-3-Q-13', questionType: 'Parallel Flaw', difficulty: 'easy',
+      stimulus: 'Using rational argument in advertisements does not persuade people to buy the products being advertised. Therefore, advertisers who replace rational argument with nonrational appeals to emotion in advertisements will persuade people to buy the products being advertised.',
+      question: 'Which one of the following contains flawed reasoning most similar to the flawed reasoning in the argument above?',
+      options: [
+        '(A) People who ask others for favors are refused. Therefore, anyone who has not had the experience of being refused has never asked for a favor. [1.0%]',
+        '(B) In the past, people who have tried to solve their problems by discussing them have often failed. Therefore, in the future, people who try to solve their problems by discussing them will often fail. [1.0%]',
+        '(C) Using a computer has not improved students’ writing skills. Thus, students should not try to improve their writing skills by using a computer. [4.0%]',
+        '(D) A person who does not have positive letters of reference cannot get a good job. Therefore, the better the letters of reference a person has, the better the job that person will get. [8.0%]',
+        '(E) People never learn to program a computer by reading poorly written directions. Therefore, if people read well-written directions, they will learn to program a computer. [87.0%] (Correct)'
+      ]
+    },
 
     { type: 'h4', text: 'Step-by-Step Analysis' },
     { type: 'process', title: 'Diagramming the Stimulus', steps: [
