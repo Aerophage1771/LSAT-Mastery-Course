@@ -11,8 +11,9 @@ import { moduleRegistry, loadModule, getAllModuleMetadata } from './modules/regi
 import inventoryData from './docs/invented-questions-inventory.json';
 import type { ModuleData } from './types';
 import { buildDrillCrossReferences, buildLessonLinkageByLessonId, normalizeLessonsWithLinkage } from './utils/lessonQuestionLinkage';
+import { applyCanonicalNamesToModule, getCanonicalModuleMetadata, resolveIllustrativeInventoryItem } from './utils/courseCatalog';
 
-const allMeta = getAllModuleMetadata();
+const allMeta = getAllModuleMetadata().map(getCanonicalModuleMetadata);
 
 const modulesFromMeta = allMeta.map((m) => ({
   id: m.id,
@@ -72,12 +73,17 @@ function ModulePage({ loadedModules }: { loadedModules: ModuleData[] }) {
 
   const normalizedModuleData = useMemo(() => {
     if (!moduleData) return null;
-    const { lessons } = normalizeLessonsWithLinkage(numericModuleId, moduleData.lessons, moduleData.title);
-    return { ...moduleData, id: numericModuleId, lessons };
+    const canonicalModule = applyCanonicalNamesToModule(moduleData, numericModuleId);
+    const { lessons } = normalizeLessonsWithLinkage(numericModuleId, canonicalModule.lessons, canonicalModule.title);
+    return { ...canonicalModule, lessons };
   }, [moduleData, numericModuleId]);
 
   const lessonLinkageByLessonId = useMemo(
-    () => (moduleData ? buildLessonLinkageByLessonId(numericModuleId, moduleData.lessons, moduleData.title) : {}),
+    () => {
+      if (!moduleData) return {};
+      const canonicalModule = applyCanonicalNamesToModule(moduleData, numericModuleId);
+      return buildLessonLinkageByLessonId(numericModuleId, canonicalModule.lessons, canonicalModule.title);
+    },
     [moduleData, numericModuleId],
   );
 
@@ -118,8 +124,13 @@ function ModulePage({ loadedModules }: { loadedModules: ModuleData[] }) {
     if (!activeLesson) return null;
     const hasReal = (lessonLinkageByLessonId[activeLesson.id]?.ptIds.length ?? 0) > 0;
     const hasInvented = (inventoryData as Array<{ module: number; file: string }>).some(item => {
-      const lessonNum = activeLesson.id.split('-')[1];
-      return String(item.module) === String(numericModuleId) && item.file.includes(`Lesson${lessonNum}`);
+      const resolvedItem = resolveIllustrativeInventoryItem({
+        module: item.module,
+        file: item.file,
+        moduleName: '',
+        lessonTitle: '',
+      });
+      return resolvedItem.routeModuleId === numericModuleId && resolvedItem.lessonId === activeLesson.id;
     });
     if (hasReal && hasInvented) return 'both' as const;
     if (hasReal) return 'real' as const;
@@ -205,9 +216,10 @@ function AppRoutes() {
         const loaded = await entry.load();
         const moduleData =
           'default' in loaded ? loaded.default : (loaded as Record<string, ModuleData>)[Object.keys(loaded).find((k) => k.startsWith('Module'))!];
-        const { lessons } = normalizeLessonsWithLinkage(entry.meta.id, moduleData.lessons, entry.meta.title);
+        const canonicalModule = applyCanonicalNamesToModule(moduleData, entry.meta.id);
+        const { lessons } = normalizeLessonsWithLinkage(entry.meta.id, canonicalModule.lessons, canonicalModule.title);
         return {
-          ...moduleData,
+          ...canonicalModule,
           id: entry.meta.id,
           lessons,
         };

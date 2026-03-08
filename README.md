@@ -32,9 +32,10 @@ LSAT Mastery is a client-side SPA that delivers a full LSAT prep curriculum thro
 - **Passage Cards** — genre-tagged RC passages with word/paragraph counts and expand/collapse
 - **Split-Pane Q+P Cards** — side-by-side passage and question view mirroring the LSAT interface
 - **Standalone Question Bank** — 247 questions (LR + RC) at `/question-bank` with sidebar filtering by type, real-time search, expandable cards, and interactive answer feedback
-- **Client-Side Search** — Ctrl+K fuzzy search across all lessons and modules (Fuse.js)
+- **Client-Side Search** — Ctrl+K fuzzy search across all lessons and modules using canonical course naming
 - **Progress Tracking** — lesson completion persisted in localStorage with dashboard progress bars
 - **URL Routing** — deep-linkable URLs (`/module/5/lesson/5-4`), browser back/forward support
+- **Export Center** — separate `Export Curriculum Outline` and `Export Full Course` actions, each supporting TXT, RTF, JSON, CSV, and PDF
 - **Code Splitting** — each module lazy-loaded on demand; main bundle ~800 KB (down from ~2.9 MB)
 - **Product Roadmap** — 78 improvement ideas across 7 categories, accessible from the header
 - **Style Guide** — 7-tab component library with live interactive examples and technical implementation reference
@@ -86,13 +87,13 @@ npm run dev
 ├── vitest.config.ts           # Vitest + jsdom config
 │
 ├── components/
-│   ├── Layout.tsx             # Shell: sidebar, header, modals (Style Guide, Roadmap, Export)
+│   ├── Layout.tsx             # Shell: sidebar, header, modals (Style Guide, Roadmap, Export Center)
 │   ├── LessonViewer.tsx       # Content renderer (maps ContentBlock[] → React components)
 │   ├── Dashboard.tsx          # Module grid with progress indicators
 │   ├── QuestionBank.tsx       # Standalone question bank with filtering, search, card UI
 │   ├── SearchDialog.tsx       # Ctrl+K search modal (Fuse.js)
 │   ├── ErrorBoundary.tsx      # Crash recovery wrapper
-│   ├── ExportControls.tsx     # PDF/RTF/JSON/CSV/TXT export
+│   ├── ExportControls.tsx     # Shared export format picker (PDF/RTF/JSON/CSV/TXT)
 │   ├── StyleGuideContent.ts   # Style guide data (7 tabs + Copy All serializer)
 │   ├── RoadmapContent.ts      # Product roadmap data (7 tabs, 78 ideas)
 │   └── cards/
@@ -100,8 +101,11 @@ npm run dev
 │       ├── PassageCard.tsx    # RC passage viewer with genre tags
 │       └── QuestionPassageCard.tsx  # Split-pane Q+P card
 │
+├── data/
+│   └── courseCatalog.json     # Canonical module and lesson naming source (route modules 1-56)
+│
 ├── modules/
-│   ├── registry.ts            # Module metadata + dynamic imports + cross-references
+│   ├── registry.ts            # Module loaders + baseline metadata
 │   ├── Module1.tsx … Module59.tsx   # Module definitions
 │   └── module1/ … module59/  # Lesson files (ContentBlock arrays)
 │
@@ -112,6 +116,7 @@ npm run dev
 │   └── ProgressContext.tsx     # React Context for shared progress state
 │
 ├── utils/
+│   ├── courseCatalog.ts       # Canonical naming, route/content ID mapping, inventory translation
 │   └── export.ts              # Content serializers (text, RTF, JSON, CSV, PDF)
 │
 ├── public/

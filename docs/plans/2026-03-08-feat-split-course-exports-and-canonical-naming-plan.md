@@ -1,7 +1,7 @@
 ---
 title: feat: Split course exports and canonical naming
 type: feat
-status: active
+status: completed
 date: 2026-03-08
 brainstorm: docs/brainstorms/2026-03-08-full-course-export-brainstorm.md
 ---
@@ -316,38 +316,38 @@ Rejected because the user chose “everywhere,” and the current title inconsis
 
 ### Functional requirements
 
-- [ ] The app exposes two separate export actions: `Export Curriculum Outline` and `Export Full Course`.
-- [ ] Both export actions default to the full 56-module curriculum.
-- [ ] Both export actions support optional filtering.
-- [ ] The Question Bank is not included in “entire course” scope for this feature unless separately selected by a future feature.
-- [ ] Dashboard cards, sidebar navigation, lesson headers, search results, question-bank drill links, and export outputs all use the canonical naming map.
-- [ ] Legacy naming mutations and QA suffixes are not shown as canonical lesson titles in user-facing product copy.
-- [ ] `Export Curriculum Outline` exports structure-only content using canonical names.
-- [ ] `Export Full Course` exports lesson-bearing content using canonical names.
-- [ ] TXT, RTF, JSON, CSV, and PDF remain available for both export actions.
-- [ ] Export filenames reflect the action type and canonical naming.
+- [x] The app exposes two separate export actions: `Export Curriculum Outline` and `Export Full Course`.
+- [x] Both export actions default to the full 56-module curriculum.
+- [x] Both export actions support optional filtering.
+- [x] The Question Bank is not included in “entire course” scope for this feature unless separately selected by a future feature.
+- [x] Dashboard cards, sidebar navigation, lesson headers, search results, question-bank drill links, and export outputs all use the canonical naming map.
+- [x] Legacy naming mutations and QA suffixes are not shown as canonical lesson titles in user-facing product copy.
+- [x] `Export Curriculum Outline` exports structure-only content using canonical names.
+- [x] `Export Full Course` exports lesson-bearing content using canonical names.
+- [x] TXT, RTF, JSON, CSV, and PDF remain available for both export actions.
+- [x] Export filenames reflect the action type and canonical naming.
 
 ### Non-functional requirements
 
-- [ ] The redesign remains fully client-side and does not require a backend export service.
-- [ ] Export filtering state does not reset unexpectedly during normal in-session use.
-- [ ] Alias-module handling for route modules `21` and `22` is explicitly supported.
-- [ ] JSON exports have action-specific, documented shapes rather than raw accidental dumps.
-- [ ] Full-course export does not silently drop scoped rich content such as nested accordions or tables.
-- [ ] TXT and RTF exports preserve the same scoped semantic content as the underlying lesson body, even when presentation differs.
-- [ ] Zero-selection is handled by a clear empty state with a recovery path back to whole-course scope.
+- [x] The redesign remains fully client-side and does not require a backend export service.
+- [x] Export filtering state does not reset unexpectedly during normal in-session use.
+- [x] Alias-module handling for route modules `21` and `22` is explicitly supported.
+- [x] JSON exports have action-specific, documented shapes rather than raw accidental dumps.
+- [x] Full-course export does not silently drop scoped rich content such as nested accordions or tables.
+- [x] TXT and RTF exports preserve the same scoped semantic content as the underlying lesson body, even when presentation differs.
+- [x] Zero-selection is handled by a clear empty state with a recovery path back to whole-course scope.
 
 ### Quality gates
 
-- [ ] Add or update tests for naming parity across all named user-facing surfaces.
-- [ ] Add serializer regression tests for representative mixed-content lessons.
-- [ ] Add alias-module coverage for the `21/55` and `22/59` mapping paths.
-- [ ] Run focused test suites for export UI and serializer behavior.
-- [ ] Run `npm run typecheck`.
-- [ ] Run `npm run build`.
-- [ ] Run `npm run validate:questions` or an equivalent no-regression validation path if the team decides the audit baseline is not yet clean enough for strict zero-error gating.
-- [ ] Add a validation step for canonical naming coverage across modules and lessons.
-- [ ] Add a validation step that fails if any in-use `ContentBlock` type lacks explicit export handling.
+- [x] Add or update tests for naming parity across all named user-facing surfaces.
+- [x] Add serializer regression tests for representative mixed-content lessons.
+- [x] Add alias-module coverage for the `21/55` and `22/59` mapping paths.
+- [x] Run focused test suites for export UI and serializer behavior.
+- [x] Run `npm run typecheck`.
+- [x] Run `npm run build`.
+- [x] Run `npm run validate:questions` or an equivalent no-regression validation path if the team decides the audit baseline is not yet clean enough for strict zero-error gating.
+- [x] Add a validation step for canonical naming coverage across modules and lessons.
+- [x] Add a validation step that fails if any in-use `ContentBlock` type lacks explicit export handling.
 
 ## Success Metrics
 
