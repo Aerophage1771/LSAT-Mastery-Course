@@ -24,6 +24,17 @@ export const Lesson6_Nuance: Lesson = {
     { type: 'paragraph', text: '**Structure:**\n\n**Premise:** A **often** happens with B.\n\n**Invalid Conclusion:** Therefore, A is **required** for B.'},
 
     { type: 'h4', text: 'LSAT in Action: The Modal Fallacy' },
+    { type: 'question-card', id: 'PT-103-S-3-Q-17', questionType: 'Flaw', difficulty: 'medium',
+      stimulus: 'Parents who wish to provide a strong foundation for the musical ability of their children should provide them with a good musical education. Since formal instruction is often a part of a good musical education, parents who wish to provide this strong foundation need to ensure that their children receive formal instruction.',
+      question: 'The reasoning is most vulnerable to criticism on the grounds that it fails to consider that',
+      options: [
+        '(A) parents might not be the only source of a child\'s musical education [1.0%]',
+        '(B) some children might not be interested in receiving a strong foundation for their musical ability [1.0%]',
+        '(C) there are many examples of people with formal instruction whose musical ability is poor [11.0%]',
+        '(D) formal instruction might not always be a part of a good musical education [79.0%] (Correct)',
+        '(E) some children might become good musicians even if they have not had good musical educations [7.0%]'
+      ]
+    },
     { type: 'h3', text: 'Explanation' },
     { type: 'paragraph', text: '**Goal:** Analyze the logical structure.' },
     { type: 'h4', text: 'Argument Breakdown' },

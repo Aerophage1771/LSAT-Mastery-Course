@@ -5,7 +5,7 @@ export const Lesson_ReferenceGuide: Lesson = {
   id: "55-ref",
   title: "Reference Guide",
   content: [
-    { type: 'h2', text: 'MODULE 55: Conditional Reasoning \u2014 Complete Reference' },
+    { type: 'h2', text: 'MODULE 21: Conditional Reasoning \u2014 Complete Reference' },
     { type: 'paragraph', text: 'A comprehensive reference covering every conditional reasoning concept tested on the LSAT: trigger words, translation rules, valid and invalid inference forms, quantifier logic, special structures, and common fallacies. Bookmark this for review before test day.' },
     { type: 'hr' },
 

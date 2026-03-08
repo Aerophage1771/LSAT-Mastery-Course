@@ -2,9 +2,9 @@ import { Lesson, ContentBlock } from '../../types';
 
 export const Lesson21_Module55_Questions: Lesson = {
   id: "48-21",
-  title: "Module 55: Conditional Reasoning",
+  title: "Module 21: Conditional Reasoning",
   content: [
-    { type: 'h2', text: 'Module 55: Conditional Reasoning' },
+    { type: 'h2', text: 'Module 21: Conditional Reasoning' },
     {
       type: 'accordion',
       title: 'Drill: Sufficient Assumption — Moons (PT-109-S-4-Q-5)',
