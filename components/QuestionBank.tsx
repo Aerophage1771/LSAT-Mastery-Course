@@ -4,6 +4,7 @@ import DOMPurify from 'dompurify';
 import { Search, Filter, ChevronDown, ChevronUp, BookOpen, Hash, X, ArrowLeft, Download } from 'lucide-react';
 import { ContentBlock, DrillReference } from '../types';
 import inventoryData from '../docs/invented-questions-inventory.json';
+import { resolveIllustrativeInventoryItem } from '../utils/courseCatalog';
 import {
   generateQuestionBankCSV,
   generateQuestionBankJSON,
@@ -25,12 +26,6 @@ interface InventoryItem {
 }
 
 const typedInventory: InventoryItem[] = inventoryData as InventoryItem[];
-
-function getLessonId(item: InventoryItem): string {
-  const match = item.file.match(/Lesson(\d+)/);
-  if (!match) return `${item.module}-1`;
-  return `${item.module}-${match[1]}`;
-}
 
 import { Lesson1_Module1_Questions } from '../modules/module48/Lesson1_Module1_Questions';
 import { Lesson2_Module2_Questions } from '../modules/module48/Lesson2_Module2_Questions';
@@ -96,6 +91,13 @@ interface ParsedQuestion {
   question: string;
   options: string[];
   passageTitle?: string;
+}
+
+interface ResolvedIllustrativeItem extends InventoryItem {
+  routeModuleId: number;
+  lessonId: string;
+  resolvedModuleTitle: string;
+  resolvedLessonTitle: string;
 }
 
 const sanitize = (html: string) => DOMPurify.sanitize(html);
@@ -396,7 +398,7 @@ const QuestionCardItem: React.FC<{
                 onClick={(e) => e.stopPropagation()}
               >
                 <BookOpen size={12} />
-                <span>Module {drillCrossReferences[q.ptId].moduleId}: {drillCrossReferences[q.ptId].lessonTitle}</span>
+                <span>Module {drillCrossReferences[q.ptId].moduleId}: {drillCrossReferences[q.ptId].moduleTitle} - {drillCrossReferences[q.ptId].lessonTitle}</span>
               </Link>
             </div>
           )}
@@ -466,6 +468,21 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
   const [exportMenuOpen, setExportMenuOpen] = useState(false);
   const ptParam = searchParams.get('pt')?.trim();
 
+  const resolvedIllustrativeInventory = useMemo<ResolvedIllustrativeItem[]>(
+    () =>
+      typedInventory.map((item) => {
+        const resolved = resolveIllustrativeInventoryItem(item);
+        return {
+          ...item,
+          routeModuleId: resolved.routeModuleId,
+          lessonId: resolved.lessonId,
+          resolvedModuleTitle: resolved.moduleTitle,
+          resolvedLessonTitle: resolved.lessonTitle,
+        };
+      }),
+    [],
+  );
+
   useEffect(() => {
     if (!ptParam) return;
     setActiveTab('real');
@@ -500,11 +517,11 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
 
   const illustrativeTypeCountMap = useMemo(() => {
     const map = new Map<string, number>();
-    for (const item of typedInventory) {
+    for (const item of resolvedIllustrativeInventory) {
       map.set(item.questionType, (map.get(item.questionType) ?? 0) + 1);
     }
     return map;
-  }, []);
+  }, [resolvedIllustrativeInventory]);
 
   const sortedIllustrativeTypes = useMemo(
     () => Array.from(illustrativeTypeCountMap.entries()).sort((a, b) => a[0].localeCompare(b[0])),
@@ -512,7 +529,7 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
   );
 
   const filteredIllustrative = useMemo(() => {
-    let result = typedInventory;
+    let result = resolvedIllustrativeInventory;
 
     if (selectedType) {
       result = result.filter((item) => item.questionType === selectedType);
@@ -522,15 +539,15 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
       const lower = searchQuery.toLowerCase();
       result = result.filter(
         (item) =>
-          item.lessonTitle.toLowerCase().includes(lower) ||
-          item.moduleName.toLowerCase().includes(lower) ||
+          item.resolvedLessonTitle.toLowerCase().includes(lower) ||
+          item.resolvedModuleTitle.toLowerCase().includes(lower) ||
           item.cardId.toLowerCase().includes(lower) ||
           item.questionType.toLowerCase().includes(lower),
       );
     }
 
     return result;
-  }, [selectedType, searchQuery]);
+  }, [resolvedIllustrativeInventory, searchQuery, selectedType]);
 
   const totalTypeCount = lrTypeCountMap.size + rcTypeCountMap.size;
 
@@ -663,7 +680,7 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
           <p className="text-[12px] text-slate-400">
             {activeTab === 'real'
               ? `${ALL_QUESTIONS.length} questions across ${totalTypeCount} types`
-              : `${typedInventory.length} illustrative across ${illustrativeTypeCountMap.size} types`}
+              : `${resolvedIllustrativeInventory.length} illustrative across ${illustrativeTypeCountMap.size} types`}
           </p>
         </div>
 
@@ -1021,9 +1038,9 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
                       {item.difficulty !== 'unset' && <span className="text-xs text-slate-400">{item.difficulty}</span>}
                       <span className="text-[10px] font-medium bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded">AI-generated illustrative example</span>
                     </div>
-                    <div className="text-sm text-slate-700 font-medium">{item.lessonTitle}</div>
-                    <div className="text-xs text-slate-500 mt-1">Module {item.module}: {item.moduleName}</div>
-                    <Link to={`/module/${item.module}/lesson/${getLessonId(item)}`} className="text-xs text-indigo-600 hover:text-indigo-800 mt-2 inline-flex items-center gap-1">
+                    <div className="text-sm text-slate-700 font-medium">{item.resolvedLessonTitle}</div>
+                    <div className="text-xs text-slate-500 mt-1">Module {item.routeModuleId}: {item.resolvedModuleTitle}</div>
+                    <Link to={`/module/${item.routeModuleId}/lesson/${item.lessonId}`} className="text-xs text-indigo-600 hover:text-indigo-800 mt-2 inline-flex items-center gap-1">
                       View in Lesson →
                     </Link>
                   </div>

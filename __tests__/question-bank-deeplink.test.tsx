@@ -25,7 +25,7 @@ describe('QuestionBank deep links', () => {
 
     const searchInput = await screen.findByPlaceholderText('Search stimuli, questions, PT IDs…');
     expect(searchInput).toHaveValue('PT-112-S-4-Q-20');
-    expect(await screen.findByText(/Module 9:/)).toBeInTheDocument();
+    expect(await screen.findByRole('link', { name: /Module 9: Strengthen -/i })).toBeInTheDocument();
   });
 
   it('shows explicit LR and RC category badges on real question rows', async () => {

@@ -1,10 +1,7 @@
 import type { ContentBlock, DrillReference, Lesson, LessonLinkageMeta, LessonLinkageStatus, ModuleData } from '../types';
+import { buildCanonicalDrillReference, getRouteModuleIdForContentModuleId } from './courseCatalog';
 
 const PT_ID_REGEX = /PT-\d+-S-\d+-Q-\d+/g;
-const LEGACY_ROUTE_ALIASES: Record<number, number> = {
-  55: 21,
-  59: 22,
-};
 const ADVANCED_EXEMPT_LESSON_IDS = new Set<string>([
   '1-7',
   '2-7',
@@ -47,17 +44,29 @@ const REFERENCE_MISSING_CARD_EXEMPT_LESSON_IDS = new Set<string>([
 ]);
 
 export function getRouteModuleId(moduleId: number): number {
-  return LEGACY_ROUTE_ALIASES[moduleId] ?? moduleId;
+  return getRouteModuleIdForContentModuleId(moduleId);
+}
+
+function extractQuestionCardIdsFromBlocks(blocks: ContentBlock[]): string[] {
+  const ids: string[] = [];
+
+  for (const block of blocks) {
+    if ((block.type === 'question-card' || block.type === 'question-passage-card') && typeof block.id === 'string') {
+      ids.push(block.id);
+      continue;
+    }
+
+    if (block.type === 'accordion' && Array.isArray(block.content)) {
+      ids.push(...extractQuestionCardIdsFromBlocks(block.content));
+    }
+  }
+
+  return ids;
 }
 
 export function extractQuestionCardIds(content: Lesson['content']): string[] {
   if (typeof content === 'string') return [];
-  return content
-    .filter(
-      (block): block is Extract<ContentBlock, { type: 'question-card' | 'question-passage-card' }> =>
-        (block.type === 'question-card' || block.type === 'question-passage-card') && typeof block.id === 'string',
-    )
-    .map((block) => block.id as string);
+  return extractQuestionCardIdsFromBlocks(content);
 }
 
 export function extractPtIds(ids: string[]): string[] {
@@ -86,7 +95,7 @@ export function getLessonLinkageStatus({
   moduleId,
   lesson,
   lessonOrder,
-  moduleTitle,
+  moduleTitle: _moduleTitle,
 }: {
   moduleId: number;
   lesson: Lesson;
@@ -122,25 +131,7 @@ export function getLessonLinkageStatus({
     statusLabel = 'Missing Q#';
   }
 
-  let displayTitle = lesson.title;
-  if (isLrRouteModule && moduleTitle) {
-    if (resolvedLessonOrder === 1) displayTitle = `Introduction to ${moduleTitle}`;
-    if (resolvedLessonOrder === 2) displayTitle = `Step-by-Step Guide: ${moduleTitle}`;
-  }
-  if (isAdvancedAllowlistedExempt && moduleTitle) {
-    displayTitle = `Traits of High-Difficulty: ${moduleTitle}`;
-  }
-  if (!isFullExempt && ptIds.length > 0) {
-    const ptSuffix = `(${ptIds.join(', ')})`;
-    const hasAllPtIds = ptIds.every((ptId) => new RegExp(`\\b${ptId}\\b`).test(displayTitle));
-    if (!hasAllPtIds) displayTitle = `${displayTitle} ${ptSuffix}`;
-  }
-  if (missingQuestionNumber && !displayTitle.includes('[Missing Q#]')) {
-    displayTitle = `${displayTitle} [Missing Q#]`;
-  }
-  if (missingQuestionCard && !displayTitle.includes('[Missing Card]')) {
-    displayTitle = `${displayTitle} [Missing Card]`;
-  }
+  const displayTitle = lesson.title;
 
   return {
     ptIds,
@@ -187,15 +178,16 @@ export function buildDrillCrossReferences(modules: ModuleData[]): Record<string,
     if (routeModuleId < 1 || routeModuleId > 22) continue;
 
     const linkageByLessonId = buildLessonLinkageByLessonId(routeModuleId, moduleData.lessons, moduleData.title);
-    for (const lesson of moduleData.lessons) {
+    for (const [lessonIndex, lesson] of moduleData.lessons.entries()) {
       const linkage = linkageByLessonId[lesson.id];
+      const canonicalReference = buildCanonicalDrillReference(routeModuleId, lesson, lessonIndex);
       for (const ptId of linkage.ptIds) {
         if (!references[ptId]) {
           references[ptId] = {
             moduleId: routeModuleId,
             lessonId: lesson.id,
-            moduleTitle: moduleData.title,
-            lessonTitle: linkage.displayTitle,
+            moduleTitle: canonicalReference.moduleTitle || moduleData.title,
+            lessonTitle: canonicalReference.lessonTitle,
           };
         }
       }

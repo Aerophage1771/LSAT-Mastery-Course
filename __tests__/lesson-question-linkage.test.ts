@@ -21,7 +21,7 @@ describe('lessonQuestionLinkage', () => {
     });
 
     expect(linkage.ptIds).toEqual(['PT-112-S-4-Q-20']);
-    expect(linkage.displayTitle).toBe('Drill Lesson (PT-112-S-4-Q-20)');
+    expect(linkage.displayTitle).toBe('Drill Lesson');
   });
 
   it('appends multiple PT IDs in order', () => {
@@ -36,7 +36,7 @@ describe('lessonQuestionLinkage', () => {
     });
 
     expect(linkage.ptIds).toEqual(['PT-112-S-4-Q-20', 'PT-111-S-3-Q-4']);
-    expect(linkage.displayTitle).toBe('Drill Lesson (PT-112-S-4-Q-20, PT-111-S-3-Q-4)');
+    expect(linkage.displayTitle).toBe('Drill Lesson');
   });
 
   it('marks missing question number when card exists without PT ID', () => {
@@ -48,7 +48,7 @@ describe('lessonQuestionLinkage', () => {
     });
 
     expect(linkage.status).toBe('missing_q_number');
-    expect(linkage.displayTitle).toContain('[Missing Q#]');
+    expect(linkage.displayTitle).toBe('Drill Lesson');
   });
 
   it('marks missing card for LR lesson 4+ with no question card', () => {
@@ -58,15 +58,15 @@ describe('lessonQuestionLinkage', () => {
     });
 
     expect(linkage.status).toBe('missing_card');
-    expect(linkage.displayTitle).toContain('[Missing Card]');
+    expect(linkage.displayTitle).toBe('Drill Lesson');
   });
 
-  it('exempts LR lesson order 1 from missing warnings and normalizes title', () => {
+  it('exempts LR lesson order 1 from missing warnings without rewriting title', () => {
     const linkage = getLessonLinkageStatus({
       moduleId: 9,
       lesson: lesson({
         id: '9-intro',
-        title: 'Old Intro',
+        title: 'Introduction to Strengthen',
         content: [{ type: 'question-card', id: 'illustrative-9-intro', stimulus: 'S', question: 'Q', options: [] }],
       }),
       lessonOrder: 1,
@@ -76,13 +76,12 @@ describe('lessonQuestionLinkage', () => {
     expect(linkage.status).toBe('ok');
     expect(linkage.isExempt).toBe(true);
     expect(linkage.displayTitle).toBe('Introduction to Strengthen');
-    expect(linkage.displayTitle).not.toContain('[Missing Q#]');
   });
 
-  it('normalizes LR lesson order 2 title to step-by-step guide', () => {
+  it('keeps canonical LR lesson order 2 title unchanged', () => {
     const linkage = getLessonLinkageStatus({
       moduleId: 9,
-      lesson: lesson({ id: '9-2', title: 'Old Step 2' }),
+      lesson: lesson({ id: '9-2', title: 'Step-by-Step Guide: Strengthen' }),
       lessonOrder: 2,
       moduleTitle: 'Strengthen',
     });
@@ -92,22 +91,22 @@ describe('lessonQuestionLinkage', () => {
     expect(linkage.displayTitle).toBe('Step-by-Step Guide: Strengthen');
   });
 
-  it('exempts allowlisted advanced lessons and applies high-difficulty title format', () => {
+  it('exempts allowlisted advanced lessons without rewriting canonical titles', () => {
     const allowlistCases = [
-      { id: '1-7', moduleId: 1, moduleTitle: 'Argument Part' },
-      { id: '2-7', moduleId: 2, moduleTitle: 'Main Conclusion' },
-      { id: '3-8', moduleId: 3, moduleTitle: 'Method of Reasoning' },
-      { id: '4-8', moduleId: 4, moduleTitle: 'Parallel Reasoning' },
-      { id: '5-8', moduleId: 5, moduleTitle: 'Flaw' },
-      { id: '6-6', moduleId: 6, moduleTitle: 'Parallel Flaw' },
-      { id: '7-9', moduleId: 7, moduleTitle: 'Evaluate the Argument' },
-      { id: '8-6', moduleId: 8, moduleTitle: 'Weaken' },
-      { id: '9-6', moduleId: 9, moduleTitle: 'Strengthen' },
-      { id: '16-6', moduleId: 16, moduleTitle: 'Most Strongly Supported' },
-      { id: '17-6', moduleId: 17, moduleTitle: 'Must Be True' },
-      { id: '18-7', moduleId: 18, moduleTitle: 'Must Be False' },
-      { id: '19-6', moduleId: 19, moduleTitle: 'Explain / Resolve' },
-      { id: '20-6', moduleId: 20, moduleTitle: 'Point at Issue' },
+      { id: '1-7', moduleId: 1, moduleTitle: 'Argument Part', lessonTitle: 'Traits of High-Difficulty: Argument Part' },
+      { id: '2-7', moduleId: 2, moduleTitle: 'Main Conclusion', lessonTitle: 'Traits of High-Difficulty: Main Conclusion' },
+      { id: '3-8', moduleId: 3, moduleTitle: 'Method of Reasoning', lessonTitle: 'Traits of High-Difficulty: Method of Reasoning' },
+      { id: '4-8', moduleId: 4, moduleTitle: 'Parallel Reasoning', lessonTitle: 'Traits of High-Difficulty: Parallel Reasoning' },
+      { id: '5-8', moduleId: 5, moduleTitle: 'Flaw', lessonTitle: 'Traits of High-Difficulty: Flaw' },
+      { id: '6-6', moduleId: 6, moduleTitle: 'Parallel Flaw', lessonTitle: 'Traits of High-Difficulty: Parallel Flaw' },
+      { id: '7-9', moduleId: 7, moduleTitle: 'Evaluate the Argument', lessonTitle: 'Traits of High-Difficulty: Evaluate the Argument' },
+      { id: '8-6', moduleId: 8, moduleTitle: 'Weaken', lessonTitle: 'Traits of High-Difficulty: Weaken' },
+      { id: '9-6', moduleId: 9, moduleTitle: 'Strengthen', lessonTitle: 'Traits of High-Difficulty: Strengthen' },
+      { id: '16-6', moduleId: 16, moduleTitle: 'Most Strongly Supported', lessonTitle: 'Traits of High-Difficulty: Most Strongly Supported' },
+      { id: '17-6', moduleId: 17, moduleTitle: 'Must Be True', lessonTitle: 'Traits of High-Difficulty: Must Be True' },
+      { id: '18-7', moduleId: 18, moduleTitle: 'Must Be False', lessonTitle: 'Traits of High-Difficulty: Must Be False' },
+      { id: '19-6', moduleId: 19, moduleTitle: 'Explain / Resolve', lessonTitle: 'Traits of High-Difficulty: Explain / Resolve' },
+      { id: '20-6', moduleId: 20, moduleTitle: 'Point at Issue', lessonTitle: 'Traits of High-Difficulty: Point at Issue' },
     ];
 
     for (const allowlistCase of allowlistCases) {
@@ -116,16 +115,14 @@ describe('lessonQuestionLinkage', () => {
         moduleTitle: allowlistCase.moduleTitle,
         lesson: lesson({
           id: allowlistCase.id,
-          title: 'Advanced Concepts',
+          title: allowlistCase.lessonTitle,
           content: [{ type: 'paragraph', text: 'No card by design' }],
         }),
       });
 
       expect(linkage.status).toBe('ok');
       expect(linkage.isExempt).toBe(true);
-      expect(linkage.displayTitle).toBe(`Traits of High-Difficulty: ${allowlistCase.moduleTitle}`);
-      expect(linkage.displayTitle).not.toContain('[Missing Card]');
-      expect(linkage.displayTitle).not.toContain('[Missing Q#]');
+      expect(linkage.displayTitle).toBe(allowlistCase.lessonTitle);
     }
   });
 
@@ -142,7 +139,7 @@ describe('lessonQuestionLinkage', () => {
 
     expect(linkage.status).toBe('missing_card');
     expect(linkage.isExempt).toBe(false);
-    expect(linkage.displayTitle).toContain('[Missing Card]');
+    expect(linkage.displayTitle).toBe('Advanced Concepts');
   });
 
   it('exempts reference lessons from missing-card only', () => {
@@ -159,7 +156,7 @@ describe('lessonQuestionLinkage', () => {
     expect(linkage.status).toBe('ok');
     expect(linkage.missingQuestionCard).toBe(false);
     expect(linkage.isExempt).toBe(false);
-    expect(linkage.displayTitle).not.toContain('[Missing Card]');
+    expect(linkage.displayTitle).toBe('Reference Guide');
   });
 
   it('still flags missing question number for reference lesson cards with no PT id', () => {
@@ -175,6 +172,6 @@ describe('lessonQuestionLinkage', () => {
 
     expect(linkage.status).toBe('missing_q_number');
     expect(linkage.missingQuestionNumber).toBe(true);
-    expect(linkage.displayTitle).toContain('[Missing Q#]');
+    expect(linkage.displayTitle).toBe('Reference Guide');
   });
 });

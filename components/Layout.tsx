@@ -2,7 +2,18 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { LessonLinkageMeta, ModuleData } from '../types';
 import { BookOpen, CheckCircle, Circle, Menu, X, ChevronRight, LayoutGrid, Download, Info, Palette, ArrowLeft, ArrowRight, Search, Rocket, Copy, Check, Upload, Database } from 'lucide-react';
-import { generateCourseText, generateCourseRTF, generateCourseJSON, generateCourseCSV, generateCoursePDF } from '../utils/export';
+import {
+  generateCurriculumOutlineCSV,
+  generateCurriculumOutlineJSON,
+  generateCurriculumOutlinePDF,
+  generateCurriculumOutlineRTF,
+  generateCurriculumOutlineText,
+  generateFullCourseCSV,
+  generateFullCourseJSON,
+  generateFullCoursePDF,
+  generateFullCourseRTF,
+  generateFullCourseText,
+} from '../utils/export';
 import { ExportControls } from './ExportControls';
 import { LessonViewer } from './LessonViewer';
 import { useProgressContext } from '../contexts/ProgressContext';
@@ -50,6 +61,7 @@ interface LayoutProps {
 }
 
 type ExportTrackKey = 'LR' | 'RC' | 'AP';
+type ExportActionKey = 'outline' | 'fullCourse';
 
 const trackLabels: Record<ExportTrackKey, string> = {
   LR: 'Logical Reasoning',
@@ -65,6 +77,55 @@ const getTrackKey = (module: ModuleData): ExportTrackKey => {
 
 const buildFullLessonSelection = (courseModules: ModuleData[]): Record<number, string[]> =>
   Object.fromEntries(courseModules.map((module) => [module.id, module.lessons.map((lesson) => lesson.id)]));
+
+const syncLessonSelection = (
+  previous: Record<number, string[]>,
+  courseModules: ModuleData[],
+): Record<number, string[]> => {
+  if (courseModules.length === 0) return previous;
+
+  const availableLessonIdsByModule = new Map(
+    courseModules.map((module) => [module.id, new Set(module.lessons.map((lesson) => lesson.id))]),
+  );
+
+  const next: Record<number, string[]> = {};
+
+  for (const module of courseModules) {
+    const availableLessonIds = availableLessonIdsByModule.get(module.id) ?? new Set<string>();
+    const existing = previous[module.id];
+
+    if (!existing) {
+      next[module.id] = module.lessons.map((lesson) => lesson.id);
+      continue;
+    }
+
+    const filteredExisting = existing.filter((lessonId) => availableLessonIds.has(lessonId));
+    next[module.id] = filteredExisting;
+  }
+
+  return next;
+};
+
+const getExportFileBaseName = ({
+  action,
+  selectedModules,
+  selectedLessons,
+  totalModules,
+  totalLessons,
+}: {
+  action: ExportActionKey;
+  selectedModules: number;
+  selectedLessons: number;
+  totalModules: number;
+  totalLessons: number;
+}) => {
+  const isAllSelected = selectedModules === totalModules && selectedLessons === totalLessons;
+  const actionLabel = action === 'outline' ? 'curriculum_outline' : 'full_course';
+  const scopeLabel = isAllSelected
+    ? `all_${totalModules}_modules_${totalLessons}_lessons`
+    : `custom_${selectedModules}_modules_${selectedLessons}_lessons`;
+  return `LSAT_Mastery_${actionLabel}_${scopeLabel}`;
+};
 
 
 
@@ -89,7 +150,9 @@ export const Layout: React.FC<LayoutProps> = ({
   const [roadmapOpen, setRoadmapOpen] = useState(false);
   const [styleGuideCopied, setStyleGuideCopied] = useState(false);
   const [roadmapTab, setRoadmapTab] = useState<'learning' | 'analytics' | 'content' | 'ux' | 'technical' | 'social' | 'accessibility'>('learning');
-  const [selectedLessonIdsByModule, setSelectedLessonIdsByModule] = useState<Record<number, string[]>>({});
+  const [activeExportAction, setActiveExportAction] = useState<ExportActionKey>('outline');
+  const [outlineLessonIdsByModule, setOutlineLessonIdsByModule] = useState<Record<number, string[]>>({});
+  const [fullCourseLessonIdsByModule, setFullCourseLessonIdsByModule] = useState<Record<number, string[]>>({});
   const activeLessonRef = useRef<HTMLButtonElement | null>(null);
   const mainRef = useRef<HTMLElement | null>(null);
   const exportModalRef = useRef<HTMLDivElement | null>(null);
@@ -171,10 +234,9 @@ export const Layout: React.FC<LayoutProps> = ({
   }, [exportModalOpen]);
 
   useEffect(() => {
-    if (exportModalOpen) {
-      setSelectedLessonIdsByModule(buildFullLessonSelection(exportableModules));
-    }
-  }, [exportModalOpen, exportableModules]);
+    setOutlineLessonIdsByModule((previous) => syncLessonSelection(previous, exportableModules));
+    setFullCourseLessonIdsByModule((previous) => syncLessonSelection(previous, exportableModules));
+  }, [exportableModules]);
 
   useEffect(() => {
     if (styleGuideOpen && styleGuideModalRef.current) {
@@ -201,6 +263,20 @@ export const Layout: React.FC<LayoutProps> = ({
     [exportableModules],
   );
 
+  const selectedLessonIdsByModule = activeExportAction === 'outline' ? outlineLessonIdsByModule : fullCourseLessonIdsByModule;
+
+  const updateSelectionForAction = (
+    action: ExportActionKey,
+    updater: (previous: Record<number, string[]>) => Record<number, string[]>,
+  ) => {
+    if (action === 'outline') {
+      setOutlineLessonIdsByModule((previous) => updater(previous));
+      return;
+    }
+
+    setFullCourseLessonIdsByModule((previous) => updater(previous));
+  };
+
   const selectedModulesForExport = React.useMemo(() => {
     return exportableModules
       .map((module) => {
@@ -224,12 +300,28 @@ export const Layout: React.FC<LayoutProps> = ({
   );
 
   const selectedModulesCount = selectedModulesForExport.length;
+  const isFullSelection = selectedModulesCount === exportableModules.length && selectedLessons === totalLessons;
+  const exportFileBaseName = getExportFileBaseName({
+    action: activeExportAction,
+    selectedModules: selectedModulesCount,
+    selectedLessons,
+    totalModules: exportableModules.length,
+    totalLessons,
+  });
+  const exportSummaryTitle = activeExportAction === 'outline' ? 'Curriculum Outline' : 'Full Course';
+  const exportSummaryDescription = activeExportAction === 'outline'
+    ? isFullSelection
+      ? 'Exports the full curriculum map: sections, units, modules, and lesson titles.'
+      : `Exports ${selectedModulesCount} modules and ${selectedLessons} lesson titles from your current scope.`
+    : isFullSelection
+      ? 'Exports all lesson content with canonical module and lesson names.'
+      : `Exports ${selectedModulesCount} modules and ${selectedLessons} lesson bodies from your current scope.`;
 
   const isLessonSelected = (moduleId: number, lessonId: string): boolean =>
     (selectedLessonIdsByModule[moduleId] ?? []).includes(lessonId);
 
   const toggleLessonSelection = (moduleId: number, lessonId: string, checked: boolean) => {
-    setSelectedLessonIdsByModule((previous) => {
+    updateSelectionForAction(activeExportAction, (previous) => {
       const current = new Set(previous[moduleId] ?? []);
       if (checked) current.add(lessonId);
       else current.delete(lessonId);
@@ -238,14 +330,14 @@ export const Layout: React.FC<LayoutProps> = ({
   };
 
   const toggleModuleSelection = (module: ModuleData, checked: boolean) => {
-    setSelectedLessonIdsByModule((previous) => ({
+    updateSelectionForAction(activeExportAction, (previous) => ({
       ...previous,
       [module.id]: checked ? module.lessons.map((lesson) => lesson.id) : [],
     }));
   };
 
   const toggleTrackSelection = (track: ExportTrackKey, checked: boolean) => {
-    setSelectedLessonIdsByModule((previous) => {
+    updateSelectionForAction(activeExportAction, (previous) => {
       const next = { ...previous };
       for (const module of groupedExportModules[track]) {
         next[module.id] = checked ? module.lessons.map((lesson) => lesson.id) : [];
@@ -254,9 +346,10 @@ export const Layout: React.FC<LayoutProps> = ({
     });
   };
 
-  const selectAllLessons = () => setSelectedLessonIdsByModule(buildFullLessonSelection(exportableModules));
+  const selectAllLessons = () =>
+    updateSelectionForAction(activeExportAction, () => buildFullLessonSelection(exportableModules));
   const clearAllLessons = () =>
-    setSelectedLessonIdsByModule(Object.fromEntries(exportableModules.map((module) => [module.id, []])));
+    updateSelectionForAction(activeExportAction, () => Object.fromEntries(exportableModules.map((module) => [module.id, []])));
 
   const trackStats = React.useMemo(() => {
     return (Object.keys(groupedExportModules) as ExportTrackKey[]).reduce(
@@ -312,7 +405,7 @@ export const Layout: React.FC<LayoutProps> = ({
           )}
         </div>
         <div className="flex items-center space-x-1 flex-shrink-0">
-          <button onClick={() => setExportModalOpen(true)} className="p-2 text-slate-300 hover:text-white transition-colors" aria-label="Export course">
+          <button onClick={() => setExportModalOpen(true)} className="p-2 text-slate-300 hover:text-white transition-colors" aria-label="Open export center">
             <Download size={20} />
           </button>
           <button onClick={() => setSidebarOpen(true)} className="p-2 text-slate-300 hover:text-white transition-colors" aria-label="Open navigation menu">
@@ -472,8 +565,8 @@ export const Layout: React.FC<LayoutProps> = ({
             <button onClick={() => setStyleGuideOpen(true)} className="flex items-center space-x-2 px-4 py-2 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-sm font-bold text-slate-600 transition-all shadow-sm" aria-label="Open style guide">
               <Palette size={16} /><span>Style Guide</span>
             </button>
-            <button onClick={() => setExportModalOpen(true)} className="flex items-center space-x-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-bold text-white transition-all shadow-lg shadow-indigo-200" aria-label="Export full course">
-              <Download size={16} /><span>Full Course Export</span>
+            <button onClick={() => setExportModalOpen(true)} className="flex items-center space-x-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-bold text-white transition-all shadow-lg shadow-indigo-200" aria-label="Open export center">
+              <Download size={16} /><span>Export</span>
             </button>
           </div>
         </header>
@@ -596,129 +689,120 @@ export const Layout: React.FC<LayoutProps> = ({
           <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-md animate-in fade-in duration-300" onClick={() => setExportModalOpen(false)} />
           <div ref={exportModalRef} tabIndex={-1} className="relative bg-white w-full max-w-5xl max-h-[92vh] rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200">
             <div className="bg-indigo-600 px-6 py-6 text-white flex items-center justify-between">
-              <div><h2 className="text-xl font-bold flex items-center gap-2"><Database size={24} />Data & Export</h2><p className="text-indigo-100 text-xs mt-1 font-medium">Choose exactly what to include in your export</p></div>
+              <div><h2 className="text-xl font-bold flex items-center gap-2"><Database size={24} />Export Center</h2><p className="text-indigo-100 text-xs mt-1 font-medium">Whole course selected by default. Choose an export type, then customize scope if needed.</p></div>
               <button onClick={() => setExportModalOpen(false)} className="p-2 hover:bg-white/10 rounded-full transition-colors" aria-label="Close export dialog"><X size={20} /></button>
             </div>
             <div className="p-8 max-h-[78vh] overflow-y-auto">
-              
-              {/* Progress Backup Section */}
-              <div className="mb-8 border-b border-slate-100 pb-8">
-                 <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">User Progress</h3>
-                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col gap-4">
-                    <div className="flex items-start gap-3">
-                       <div className="bg-white p-2 rounded-lg text-emerald-600 shadow-sm"><CheckCircle size={20} /></div>
-                       <div>
-                          <h4 className="text-sm font-bold text-slate-900 mb-1">Backup & Restore</h4>
-                          <p className="text-xs text-slate-600 leading-relaxed">Save your progress to a file or restore from a previous backup. Useful if you switch devices or clear your cache.</p>
-                       </div>
-                    </div>
-                    <div className="flex gap-3 mt-2">
-                       <button onClick={handleBackupProgress} className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-sm font-bold text-slate-700 transition-all shadow-sm">
-                          <Download size={16} /> Backup
-                       </button>
-                       <div className="relative flex-1">
-                          <input 
-                             type="file" 
-                             accept=".json" 
-                             ref={fileInputRef}
-                             onChange={handleRestoreProgress}
-                             className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
-                             title="Restore Progress"
-                          />
-                          <button className={`w-full flex items-center justify-center gap-2 px-4 py-2 border rounded-lg text-sm font-bold transition-all shadow-sm pointer-events-none ${
-                             importStatus === 'success' ? 'bg-emerald-50 border-emerald-200 text-emerald-700' :
-                             importStatus === 'error' ? 'bg-rose-50 border-rose-200 text-rose-700' :
-                             'bg-white hover:bg-slate-50 border-slate-200 text-slate-700'
-                          }`}>
-                             {importStatus === 'success' ? <Check size={16} /> : importStatus === 'error' ? <X size={16} /> : <Upload size={16} />}
-                             {importStatus === 'success' ? 'Restored!' : importStatus === 'error' ? 'Failed' : 'Restore'}
-                          </button>
-                       </div>
-                    </div>
-                 </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <button
+                  onClick={() => setActiveExportAction('outline')}
+                  className={`text-left rounded-2xl border p-5 transition-all ${activeExportAction === 'outline' ? 'border-indigo-300 bg-indigo-50 shadow-sm' : 'border-slate-200 hover:border-indigo-200 hover:bg-slate-50'}`}
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-base font-bold text-slate-900">Export Curriculum Outline</h3>
+                    {activeExportAction === 'outline' && <Check size={18} className="text-indigo-600" />}
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed">Structure only: sections, units, modules, and lesson titles using canonical naming.</p>
+                </button>
+                <button
+                  onClick={() => setActiveExportAction('fullCourse')}
+                  className={`text-left rounded-2xl border p-5 transition-all ${activeExportAction === 'fullCourse' ? 'border-indigo-300 bg-indigo-50 shadow-sm' : 'border-slate-200 hover:border-indigo-200 hover:bg-slate-50'}`}
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-base font-bold text-slate-900">Export Full Course</h3>
+                    {activeExportAction === 'fullCourse' && <Check size={18} className="text-indigo-600" />}
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed">Lesson content export with canonical module and lesson titles across every selected lesson.</p>
+                </button>
               </div>
 
               <div className="bg-indigo-50 border border-indigo-100 rounded-xl p-4 mb-8 flex gap-4 items-start">
                 <div className="bg-white p-2 rounded-lg text-indigo-600 shadow-sm"><Info size={20} /></div>
-                <div><h4 className="text-sm font-bold text-indigo-900 mb-1">Export Content</h4><p className="text-xs text-indigo-700 leading-relaxed">Use the checklist to include only the LR/RC tracks, modules, and lessons you want.</p></div>
+                <div><h4 className="text-sm font-bold text-indigo-900 mb-1">{exportSummaryTitle}</h4><p className="text-xs text-indigo-700 leading-relaxed">{exportSummaryDescription}</p></div>
               </div>
+
               <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,2fr)_minmax(320px,1fr)] gap-6">
                 <div className="bg-white border border-slate-200 rounded-xl">
                   <div className="px-4 py-3 border-b border-slate-100 flex items-center justify-between">
-                    <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest">Checklist</h3>
+                    <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest">Optional Filters</h3>
                     <div className="flex items-center gap-2">
-                      <button onClick={selectAllLessons} className="text-xs font-semibold text-indigo-600 hover:text-indigo-700">Select all</button>
-                      <button onClick={clearAllLessons} className="text-xs font-semibold text-slate-500 hover:text-slate-700">Clear</button>
+                      <button onClick={selectAllLessons} className="text-xs font-semibold text-indigo-600 hover:text-indigo-700">Reset to whole course</button>
+                      <button onClick={clearAllLessons} className="text-xs font-semibold text-slate-500 hover:text-slate-700">Clear filters</button>
                     </div>
                   </div>
-                  <div className="max-h-[52vh] overflow-y-auto p-4 space-y-4">
-                    {(Object.keys(groupedExportModules) as ExportTrackKey[]).map((track) => {
-                      const modulesForTrack = groupedExportModules[track];
-                      if (modulesForTrack.length === 0) return null;
-                      const stats = trackStats[track];
+                  <details className="group" open={!isFullSelection || selectedLessons === 0}>
+                    <summary className="list-none cursor-pointer px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50">
+                      Filter by track, module, or lesson
+                    </summary>
+                    <div className="max-h-[52vh] overflow-y-auto p-4 space-y-4 border-t border-slate-100">
+                      {(Object.keys(groupedExportModules) as ExportTrackKey[]).map((track) => {
+                        const modulesForTrack = groupedExportModules[track];
+                        if (modulesForTrack.length === 0) return null;
+                        const stats = trackStats[track];
 
-                      return (
-                        <div key={track} className="border border-slate-200 rounded-lg">
-                          <div className="px-3 py-2 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
-                            <label className="flex items-center gap-2 text-sm font-bold text-slate-800">
-                              <input
-                                type="checkbox"
-                                checked={stats.allSelected}
-                                onChange={(event) => toggleTrackSelection(track, event.target.checked)}
-                                className="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
-                              />
-                              {trackLabels[track]}
-                            </label>
-                            <span className="text-xs font-semibold text-slate-500">
-                              {stats.selectedLessonTotal}/{stats.lessonTotal} lessons
-                            </span>
-                          </div>
-                          <div className="divide-y divide-slate-100">
-                            {modulesForTrack.map((module) => {
-                              const selectedIds = selectedLessonIdsByModule[module.id] ?? [];
-                              const moduleAllSelected = module.lessons.length > 0 && selectedIds.length === module.lessons.length;
-                              return (
-                                <details key={module.id} className="group" open>
-                                  <summary className="list-none cursor-pointer px-3 py-2 flex items-center justify-between hover:bg-slate-50">
-                                    <label className="flex items-center gap-2 text-sm font-semibold text-slate-700" onClick={(event) => event.stopPropagation()}>
-                                      <input
-                                        type="checkbox"
-                                        checked={moduleAllSelected}
-                                        onChange={(event) => toggleModuleSelection(module, event.target.checked)}
-                                        className="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
-                                      />
-                                      Module {module.id}: {module.title}
-                                    </label>
-                                    <span className="text-xs font-medium text-slate-500">
-                                      {selectedIds.length}/{module.lessons.length}
-                                    </span>
-                                  </summary>
-                                  <div className="px-5 pb-3 space-y-1">
-                                    {module.lessons.map((lesson) => (
-                                      <label key={lesson.id} className="flex items-start gap-2 py-1 text-sm text-slate-600">
+                        return (
+                          <div key={track} className="border border-slate-200 rounded-lg">
+                            <div className="px-3 py-2 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+                              <label className="flex items-center gap-2 text-sm font-bold text-slate-800">
+                                <input
+                                  type="checkbox"
+                                  checked={stats.allSelected}
+                                  onChange={(event) => toggleTrackSelection(track, event.target.checked)}
+                                  className="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+                                />
+                                {trackLabels[track]}
+                              </label>
+                              <span className="text-xs font-semibold text-slate-500">
+                                {stats.selectedLessonTotal}/{stats.lessonTotal} lessons
+                              </span>
+                            </div>
+                            <div className="divide-y divide-slate-100">
+                              {modulesForTrack.map((module) => {
+                                const selectedIds = selectedLessonIdsByModule[module.id] ?? [];
+                                const moduleAllSelected = module.lessons.length > 0 && selectedIds.length === module.lessons.length;
+                                return (
+                                  <details key={module.id} className="group" open>
+                                    <summary className="list-none cursor-pointer px-3 py-2 flex items-center justify-between hover:bg-slate-50">
+                                      <label className="flex items-center gap-2 text-sm font-semibold text-slate-700" onClick={(event) => event.stopPropagation()}>
                                         <input
                                           type="checkbox"
-                                          checked={isLessonSelected(module.id, lesson.id)}
-                                          onChange={(event) => toggleLessonSelection(module.id, lesson.id, event.target.checked)}
-                                          className="mt-0.5 h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+                                          checked={moduleAllSelected}
+                                          onChange={(event) => toggleModuleSelection(module, event.target.checked)}
+                                          className="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
                                         />
-                                        <span className="leading-snug">{lesson.title}</span>
+                                        Module {module.id}: {module.title}
                                       </label>
-                                    ))}
-                                  </div>
-                                </details>
-                              );
-                            })}
+                                      <span className="text-xs font-medium text-slate-500">
+                                        {selectedIds.length}/{module.lessons.length}
+                                      </span>
+                                    </summary>
+                                    <div className="px-5 pb-3 space-y-1">
+                                      {module.lessons.map((lesson) => (
+                                        <label key={lesson.id} className="flex items-start gap-2 py-1 text-sm text-slate-600">
+                                          <input
+                                            type="checkbox"
+                                            checked={isLessonSelected(module.id, lesson.id)}
+                                            onChange={(event) => toggleLessonSelection(module.id, lesson.id, event.target.checked)}
+                                            className="mt-0.5 h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+                                          />
+                                          <span className="leading-snug">{lesson.title}</span>
+                                        </label>
+                                      ))}
+                                    </div>
+                                  </details>
+                                );
+                              })}
+                            </div>
                           </div>
-                        </div>
-                      );
-                    })}
-                  </div>
+                        );
+                      })}
+                    </div>
+                  </details>
                 </div>
 
                 <div className="space-y-4">
                   <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
-                    <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Selection Summary</h3>
+                    <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Scope Summary</h3>
                     <div className="space-y-1 text-sm text-slate-700">
                       <p><span className="font-bold">{selectedModulesCount}</span> modules selected</p>
                       <p><span className="font-bold">{selectedLessons}</span> lessons selected</p>
@@ -727,24 +811,61 @@ export const Layout: React.FC<LayoutProps> = ({
                   </div>
 
                   <div className="bg-white border border-slate-200 rounded-xl p-4">
-                    <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Select Format</h3>
+                    <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Export Format</h3>
                     {selectedLessons > 0 ? (
                       <ExportControls
-                        label="Selection"
-                        filename="LSAT_Custom_Selection"
-                        onCopy={() => generateCourseText(selectedModulesForExport)}
-                        onExportText={() => generateCourseText(selectedModulesForExport)}
-                        onExportRTF={() => generateCourseRTF(selectedModulesForExport)}
-                        onExportJSON={() => generateCourseJSON(selectedModulesForExport)}
-                        onExportCSV={() => generateCourseCSV(selectedModulesForExport)}
-                        onExportPDF={() => generateCoursePDF(selectedModulesForExport)}
+                        label={activeExportAction === 'outline' ? 'Curriculum Outline' : 'Full Course'}
+                        filename={exportFileBaseName}
+                        onCopy={() => activeExportAction === 'outline' ? generateCurriculumOutlineText(selectedModulesForExport) : generateFullCourseText(selectedModulesForExport)}
+                        onExportText={() => activeExportAction === 'outline' ? generateCurriculumOutlineText(selectedModulesForExport) : generateFullCourseText(selectedModulesForExport)}
+                        onExportRTF={() => activeExportAction === 'outline' ? generateCurriculumOutlineRTF(selectedModulesForExport) : generateFullCourseRTF(selectedModulesForExport)}
+                        onExportJSON={() => activeExportAction === 'outline' ? generateCurriculumOutlineJSON(selectedModulesForExport) : generateFullCourseJSON(selectedModulesForExport)}
+                        onExportCSV={() => activeExportAction === 'outline' ? generateCurriculumOutlineCSV(selectedModulesForExport) : generateFullCourseCSV(selectedModulesForExport)}
+                        onExportPDF={() => activeExportAction === 'outline' ? generateCurriculumOutlinePDF(selectedModulesForExport, `${exportFileBaseName}.pdf`) : generateFullCoursePDF(selectedModulesForExport, `${exportFileBaseName}.pdf`)}
                       />
                     ) : (
-                      <p className="text-sm text-slate-500">Select at least one lesson to export.</p>
+                      <div className="space-y-3">
+                        <p className="text-sm text-slate-500">No lessons are currently in scope. Reset to the whole course or choose at least one lesson.</p>
+                        <button onClick={selectAllLessons} className="px-3 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-lg transition-colors">Reset to whole course</button>
+                      </div>
                     )}
                   </div>
 
-                  <p className="text-[10px] text-slate-400 text-center uppercase font-bold tracking-widest italic">Exports are generated from your current selection</p>
+                  <div className="border border-slate-200 rounded-xl p-4 bg-slate-50">
+                    <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">User Progress</h3>
+                    <div className="bg-white border border-slate-200 rounded-xl p-4 flex flex-col gap-4">
+                      <div className="flex items-start gap-3">
+                        <div className="bg-slate-50 p-2 rounded-lg text-emerald-600 shadow-sm"><CheckCircle size={20} /></div>
+                        <div>
+                          <h4 className="text-sm font-bold text-slate-900 mb-1">Backup & Restore</h4>
+                          <p className="text-xs text-slate-600 leading-relaxed">Save your progress to a file or restore from a previous backup. Useful if you switch devices or clear your cache.</p>
+                        </div>
+                      </div>
+                      <div className="flex gap-3 mt-2">
+                        <button onClick={handleBackupProgress} className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg text-sm font-bold text-slate-700 transition-all shadow-sm">
+                          <Download size={16} /> Backup
+                        </button>
+                        <div className="relative flex-1">
+                          <input
+                            type="file"
+                            accept=".json"
+                            ref={fileInputRef}
+                            onChange={handleRestoreProgress}
+                            className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
+                            title="Restore Progress"
+                          />
+                          <button className={`w-full flex items-center justify-center gap-2 px-4 py-2 border rounded-lg text-sm font-bold transition-all shadow-sm pointer-events-none ${
+                            importStatus === 'success' ? 'bg-emerald-50 border-emerald-200 text-emerald-700' :
+                            importStatus === 'error' ? 'bg-rose-50 border-rose-200 text-rose-700' :
+                            'bg-slate-50 hover:bg-slate-100 border-slate-200 text-slate-700'
+                          }`}>
+                            {importStatus === 'success' ? <Check size={16} /> : importStatus === 'error' ? <X size={16} /> : <Upload size={16} />}
+                            {importStatus === 'success' ? 'Restored!' : importStatus === 'error' ? 'Failed' : 'Restore'}
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
