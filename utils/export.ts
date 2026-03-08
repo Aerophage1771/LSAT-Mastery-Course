@@ -2,6 +2,7 @@
 import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import { ModuleData, ContentBlock, Lesson } from '../types';
+import { getSourceModuleIdForRouteModuleId } from './courseCatalog';
 
 // --- SHARED TEXT HELPERS ---
 
@@ -17,10 +18,14 @@ const formatInlineRTF = (text: string): string => {
   if (!text) return '';
   let formatted = escapeRTF(text);
   formatted = formatted.replace(/\*\*(.*?)\*\*/g, '\\b $1\\b0 ');
-  formatted = formatted.replace(/\*(.*?)\*\*/g, '\\i $1\\i0 ');
+  formatted = formatted.replace(/\*(.*?)\*/g, '\\i $1\\i0 ');
   formatted = formatted.replace(/`(.*?)`/g, '\\f1 $1\\f0 ');
   return formatted;
 };
+
+const blocksToText = (blocks: ContentBlock[]): string => blocks.map(blockToText).join('');
+
+const blocksToRTF = (blocks: ContentBlock[]): string => blocks.map(blockToRTF).join('');
 
 const blockToText = (block: ContentBlock): string => {
   switch (block.type) {
@@ -57,10 +62,13 @@ const blockToText = (block: ContentBlock): string => {
       return `[BREAKDOWN]\n${items}\n\n`;
     }
     case 'accordion':
-       const accContent = typeof block.content === 'string' ? block.content : '(Complex Content)';
+       const accContent = typeof block.content === 'string' ? block.content : blocksToText(block.content).trim();
        return `[EXPAND: ${block.title}]\n${accContent}\n\n`;
     case 'table': {
-        return `[TABLE: ${block.headers.join(' | ')}]\n\n`;
+        const header = block.headers.join(' | ');
+        const divider = block.headers.map(() => '---').join(' | ');
+        const rows = block.rows.map((row) => row.join(' | ')).join('\n');
+        return `[TABLE]\n${header}\n${divider}\n${rows}\n\n`;
     }
     case 'question-card': {
         const qTitle = block.id ? `ID: ${block.id}` : 'Question';
@@ -119,8 +127,17 @@ const blockToRTF = (block: ContentBlock): string => {
       }).join('');
     }
     case 'accordion': {
-       const accText = typeof block.content === 'string' ? block.content : '...';
-       return `\\pard\\sa200\\sl276\\slmult1\\b [EXPAND: ${formatInlineRTF(block.title)}]\\b0\\par ${formatInlineRTF(accText)}\\par\n`;
+       const accText = typeof block.content === 'string'
+         ? `\\pard\\sa200\\sl276\\slmult1 ${formatInlineRTF(block.content)}\\par\n`
+         : blocksToRTF(block.content);
+       return `\\pard\\sa200\\sl276\\slmult1\\b [EXPAND: ${formatInlineRTF(block.title)}]\\b0\\par\n${accText}`;
+    }
+    case 'table': {
+      const header = block.headers.map((item) => formatInlineRTF(item)).join(' | ');
+      const rows = block.rows
+        .map((row) => `\\pard\\sa200\\sl276\\slmult1 ${row.map((cell) => formatInlineRTF(cell)).join(' | ')}\\par\n`)
+        .join('');
+      return `\\pard\\sa200\\sl276\\slmult1\\b ${header}\\b0\\par\n${rows}`;
     }
     case 'question-card': {
        const rtfQTitle = block.id ? `ID: ${block.id}` : 'Question';
@@ -554,7 +571,7 @@ export const generateSectionPDF = (sectionName: string, modules: ModuleData[]) =
     doc.save(`LSAT_Section_${sectionName.replace(/\s+/g, '_')}.pdf`);
 };
 
-export const generateCoursePDF = (modules: ModuleData[]) => {
+export const generateCoursePDF = (modules: ModuleData[], filename = 'LSAT_Mastery_Course.pdf') => {
     const doc = new jsPDF();
     cursorY = PAGE_MARGIN_TOP;
     addWrappedText(doc, 'LSAT Mastery Course', { size: 32, style: 'bold', align: 'center' });
@@ -571,7 +588,7 @@ export const generateCoursePDF = (modules: ModuleData[]) => {
         });
     });
 
-    doc.save('LSAT_Mastery_Course.pdf');
+    doc.save(filename);
 };
 
 
@@ -813,4 +830,278 @@ export const generateSectionJSON = (sectionName: string, modules: ModuleData[]):
 
 export const generateCourseJSON = (modules: ModuleData[]): string => {
   return JSON.stringify(modules, null, 2);
+};
+
+interface ExportScopeSummary {
+  selectedModuleIds: number[];
+  selectedLessonCount: number;
+}
+
+interface OutlineExportLesson {
+  lessonId: string;
+  order: number;
+  title: string;
+  routePath: string;
+}
+
+interface OutlineExportModule {
+  routeModuleId: number;
+  sourceModuleId: number;
+  title: string;
+  category: string;
+  unit: string;
+  description: string;
+  lessons: OutlineExportLesson[];
+}
+
+interface OutlineExportPayload {
+  exportVersion: '1.0';
+  exportType: 'curriculum-outline';
+  generatedAt: string;
+  scope: ExportScopeSummary;
+  modules: OutlineExportModule[];
+}
+
+interface FullCourseExportLesson extends OutlineExportLesson {
+  bodyKind: 'markdown' | 'blocks';
+  content: string | ContentBlock[];
+  plainText: string;
+}
+
+interface FullCourseExportModule extends Omit<OutlineExportModule, 'lessons'> {
+  lessons: FullCourseExportLesson[];
+}
+
+interface FullCourseExportPayload {
+  exportVersion: '1.0';
+  exportType: 'full-course';
+  generatedAt: string;
+  scope: ExportScopeSummary;
+  modules: FullCourseExportModule[];
+}
+
+const getSectionTitleForCategory = (category: string): string => {
+  if (category === 'LR') return 'Logical Reasoning';
+  if (category === 'RC') return 'Reading Comprehension';
+  return 'Advanced Passages';
+};
+
+const buildExportScopeSummary = (modules: ModuleData[]): ExportScopeSummary => ({
+  selectedModuleIds: modules.map((module) => module.id),
+  selectedLessonCount: modules.reduce((count, module) => count + module.lessons.length, 0),
+});
+
+const buildOutlineExportModules = (modules: ModuleData[]): OutlineExportModule[] =>
+  modules.map((module) => ({
+    routeModuleId: module.id,
+    sourceModuleId: getSourceModuleIdForRouteModuleId(module.id),
+    title: module.title,
+    category: module.category,
+    unit: module.unit,
+    description: module.description,
+    lessons: module.lessons.map((lesson, index) => ({
+      lessonId: lesson.id,
+      order: index + 1,
+      title: lesson.title,
+      routePath: `/module/${module.id}/lesson/${lesson.id}`,
+    })),
+  }));
+
+const buildCurriculumOutlinePayload = (modules: ModuleData[]): OutlineExportPayload => ({
+  exportVersion: '1.0',
+  exportType: 'curriculum-outline',
+  generatedAt: new Date().toISOString(),
+  scope: buildExportScopeSummary(modules),
+  modules: buildOutlineExportModules(modules),
+});
+
+const buildFullCourseExportPayload = (modules: ModuleData[]): FullCourseExportPayload => ({
+  exportVersion: '1.0',
+  exportType: 'full-course',
+  generatedAt: new Date().toISOString(),
+  scope: buildExportScopeSummary(modules),
+  modules: buildOutlineExportModules(modules).map((module) => {
+    const sourceModule = modules.find((item) => item.id === module.routeModuleId)!;
+    return {
+      ...module,
+      lessons: sourceModule.lessons.map((lesson, index) => ({
+        lessonId: lesson.id,
+        order: index + 1,
+        title: lesson.title,
+        routePath: `/module/${sourceModule.id}/lesson/${lesson.id}`,
+        bodyKind: typeof lesson.content === 'string' ? 'markdown' : 'blocks',
+        content: lesson.content,
+        plainText: lessonToPlainText(lesson),
+      })),
+    };
+  }),
+});
+
+const groupModulesBySectionAndUnit = <T extends { category: string; unit: string }>(modules: T[]) => {
+  const sectionOrder = ['Logical Reasoning', 'Reading Comprehension', 'Advanced Passages'];
+  const grouped = new Map<string, Map<string, T[]>>();
+
+  for (const module of modules) {
+    const section = getSectionTitleForCategory(module.category);
+    const sectionMap = grouped.get(section) ?? new Map<string, T[]>();
+    sectionMap.set(module.unit, [...(sectionMap.get(module.unit) ?? []), module]);
+    grouped.set(section, sectionMap);
+  }
+
+  return sectionOrder
+    .filter((section) => grouped.has(section))
+    .map((section) => ({
+      section,
+      units: Array.from((grouped.get(section) ?? new Map()).entries()).map(([unit, items]) => ({ unit, modules: items })),
+    }));
+};
+
+const buildOutlineText = (payload: OutlineExportPayload): string => {
+  const lines = ['LSAT MASTERY COURSE CURRICULUM OUTLINE', '='.repeat(40), ''];
+  for (const section of groupModulesBySectionAndUnit(payload.modules)) {
+    lines.push(`SECTION: ${section.section}`, '#'.repeat(50), '');
+    for (const unit of section.units) {
+      lines.push(`UNIT: ${unit.unit}`, '');
+      for (const module of unit.modules) {
+        lines.push(`MODULE ${module.routeModuleId}: ${module.title}`);
+        for (const lesson of module.lessons) {
+          lines.push(`  ${lesson.order}. ${lesson.title}`);
+        }
+        lines.push('');
+      }
+    }
+  }
+  return lines.join('\n').trim();
+};
+
+const buildOutlineRTF = (payload: OutlineExportPayload): string => {
+  const parts = [
+    '\\pard\\sa200\\sl276\\slmult1\\qc\\b\\fs56 LSAT MASTERY COURSE CURRICULUM OUTLINE\\b0\\par\\par\n',
+  ];
+
+  for (const section of groupModulesBySectionAndUnit(payload.modules)) {
+    parts.push(`\\pard\\sa200\\sl276\\slmult1\\b\\fs40 ${escapeRTF(section.section)}\\b0\\par\\par\n`);
+    for (const unit of section.units) {
+      parts.push(`\\pard\\sa200\\sl276\\slmult1\\b\\fs30 ${escapeRTF(unit.unit)}\\b0\\par\n`);
+      for (const module of unit.modules) {
+        parts.push(`\\pard\\sa200\\sl276\\slmult1\\b MODULE ${module.routeModuleId}: ${escapeRTF(module.title)}\\b0\\par\n`);
+        for (const lesson of module.lessons) {
+          parts.push(`\\pard\\li720\\sa200\\sl276\\slmult1 ${lesson.order}. ${escapeRTF(lesson.title)}\\par\n`);
+        }
+        parts.push('\\par\n');
+      }
+    }
+  }
+
+  return rtfHeader + parts.join('') + rtfFooter;
+};
+
+const buildOutlineCSV = (payload: OutlineExportPayload): string => {
+  const header = 'Section,Unit,Route Module ID,Source Module ID,Module Title,Lesson Order,Lesson ID,Lesson Title,Route Path';
+  const lines = [header];
+
+  for (const module of payload.modules) {
+    const section = getSectionTitleForCategory(module.category);
+    for (const lesson of module.lessons) {
+      lines.push([
+        escapeCSVCell(section),
+        escapeCSVCell(module.unit),
+        escapeCSVCell(String(module.routeModuleId)),
+        escapeCSVCell(String(module.sourceModuleId)),
+        escapeCSVCell(module.title),
+        escapeCSVCell(String(lesson.order)),
+        escapeCSVCell(lesson.lessonId),
+        escapeCSVCell(lesson.title),
+        escapeCSVCell(lesson.routePath),
+      ].join(','));
+    }
+  }
+
+  return lines.join('\n');
+};
+
+const generateOutlinePDF = (payload: OutlineExportPayload, filename: string) => {
+  const doc = new jsPDF();
+  cursorY = PAGE_MARGIN_TOP;
+  addWrappedText(doc, 'LSAT Mastery Course Curriculum Outline', { size: 24, style: 'bold', align: 'center', bottomSpacing: 10 });
+
+  for (const section of groupModulesBySectionAndUnit(payload.modules)) {
+    addWrappedText(doc, section.section, { size: 18, style: 'bold', bottomSpacing: 6 });
+    for (const unit of section.units) {
+      addWrappedText(doc, unit.unit, { size: 14, style: 'bold', bottomSpacing: 4 });
+      for (const module of unit.modules) {
+        addWrappedText(doc, `Module ${module.routeModuleId}: ${module.title}`, { size: 12, style: 'bold', bottomSpacing: 3 });
+        for (const lesson of module.lessons) {
+          addWrappedText(doc, `${lesson.order}. ${lesson.title}`, { size: 11, indent: 5, bottomSpacing: 2 });
+        }
+        cursorY += 2;
+      }
+      cursorY += 4;
+    }
+    cursorY += 4;
+  }
+
+  doc.save(filename);
+};
+
+export const generateCurriculumOutlineText = (modules: ModuleData[]): string => {
+  return buildOutlineText(buildCurriculumOutlinePayload(modules));
+};
+
+export const generateCurriculumOutlineRTF = (modules: ModuleData[]): string => {
+  return buildOutlineRTF(buildCurriculumOutlinePayload(modules));
+};
+
+export const generateCurriculumOutlineJSON = (modules: ModuleData[]): string => {
+  return JSON.stringify(buildCurriculumOutlinePayload(modules), null, 2);
+};
+
+export const generateCurriculumOutlineCSV = (modules: ModuleData[]): string => {
+  return buildOutlineCSV(buildCurriculumOutlinePayload(modules));
+};
+
+export const generateCurriculumOutlinePDF = (modules: ModuleData[], filename = 'LSAT_Mastery_curriculum_outline.pdf') => {
+  generateOutlinePDF(buildCurriculumOutlinePayload(modules), filename);
+};
+
+export const generateFullCourseText = (modules: ModuleData[]): string => {
+  return generateCourseText(modules);
+};
+
+export const generateFullCourseRTF = (modules: ModuleData[]): string => {
+  return generateCourseRTF(modules);
+};
+
+export const generateFullCourseJSON = (modules: ModuleData[]): string => {
+  return JSON.stringify(buildFullCourseExportPayload(modules), null, 2);
+};
+
+export const generateFullCourseCSV = (modules: ModuleData[]): string => {
+  const header = 'Section,Unit,Route Module ID,Source Module ID,Module Title,Lesson Order,Lesson ID,Lesson Title,Body Kind,Content';
+  const lines = [header];
+  const payload = buildFullCourseExportPayload(modules);
+
+  for (const module of payload.modules) {
+    const section = getSectionTitleForCategory(module.category);
+    for (const lesson of module.lessons) {
+      lines.push([
+        escapeCSVCell(section),
+        escapeCSVCell(module.unit),
+        escapeCSVCell(String(module.routeModuleId)),
+        escapeCSVCell(String(module.sourceModuleId)),
+        escapeCSVCell(module.title),
+        escapeCSVCell(String(lesson.order)),
+        escapeCSVCell(lesson.lessonId),
+        escapeCSVCell(lesson.title),
+        escapeCSVCell(lesson.bodyKind),
+        escapeCSVCell(lesson.plainText),
+      ].join(','));
+    }
+  }
+
+  return lines.join('\n');
+};
+
+export const generateFullCoursePDF = (modules: ModuleData[], filename = 'LSAT_Mastery_full_course.pdf') => {
+  generateCoursePDF(modules, filename);
 };
