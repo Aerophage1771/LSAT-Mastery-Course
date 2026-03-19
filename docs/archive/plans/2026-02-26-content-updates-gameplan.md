@@ -13,9 +13,11 @@
 ## Current State (2026-02-26)
 
 ### LR Modules 1-22: UPGRADED ✅
+
 All 22 Logical Reasoning modules have deep content with question-cards, reference guides, comparison tables, process steps, and callouts. Total: ~28,000 lines across ~230 lessons.
 
 ### Question Bank: COMPLETE ✅
+
 - 150 real PrepTest questions (LR) + 97 RC questions = 247 total
 - Standalone `/question-bank` page with search, filtering, cross-references
 - Illustrative Questions tab (203 AI-generated)
@@ -23,17 +25,20 @@ All 22 Logical Reasoning modules have deep content with question-cards, referenc
 - Drill lesson cross-reference badges
 
 ### Invented Questions: 203 TRACKED
+
 - 58 in Lessons 1-3 (allowed per content policy)
 - **145 in Lessons 4+ (should be replaced with real questions)**
-- Inventory: `docs/invented-questions-inventory.md`
+- Inventory: `docs/operations/audits/invented-questions-inventory.md`
 - Detection script: `npm run inventory:invented`
 
 ### RC Modules 23-49: NOT YET UPGRADED
+
 - 27 modules, mostly 2-7 lessons each, 69-351 lines
 - Content is thin (original format, no question-cards, no reference guides)
 - These teach RC question types and contain practice passages
 
 ### Advanced Passages 50-56: NOT YET UPGRADED
+
 - 7 modules with passage analysis content
 - Thin (184-370 lines each)
 
@@ -48,6 +53,7 @@ All 22 Logical Reasoning modules have deep content with question-cards, referenc
 ### What's needed from the course owner:
 
 For each module, provide real LSAT questions in this format:
+
 ```
 Question ID: PT-XXX-S-X-Q-X
 Stimulus: [full text]
@@ -59,6 +65,7 @@ Answer Choices:
 ```
 
 ### Priority order for replacements:
+
 1. **Modules 5-6** (Flaw, Parallel Flaw) — 21 invented questions, most critical for student accuracy
 2. **Modules 8-11** (Weaken, Strengthen, SA, NA) — 28 invented questions, evaluation skills
 3. **Modules 3-4** (Method, Parallel Reasoning) — 19 invented questions
@@ -69,23 +76,27 @@ Answer Choices:
 
 **When data is provided:**
 
-**Step 1:** Match each provided PT-ID to the invented question it should replace using `docs/invented-questions-inventory.json`
+**Step 1:** Match each provided PT-ID to the invented question it should replace using `docs/operations/audits/invented-questions-inventory.json`
 
 **Step 2:** For each replacement, update the question-card block in the lesson file:
+
 - Replace `id`, `stimulus`, `question`, `options` fields
 - Remove `id: 'illustrative'` markers
 - Add real PT-ID
 - Mark correct answer with `(Correct)`
 
 **Step 3:** Add the question to the Question Bank repository if not already present:
+
 - Check `modules/module48/LessonN_ModuleN_Questions.tsx`
 - Add accordion block if missing
 
 **Step 4:** Update cross-references:
+
 - Add entry to `modules/drillCrossReferences.ts`
 - Re-run `npm run inventory:invented` to update inventory
 
 **Step 5:** Verify:
+
 ```bash
 npm run typecheck
 npm run build
@@ -105,18 +116,19 @@ npm run inventory:invented
 
 ### RC Module Categories:
 
-| Range | Category | Modules | Lesson Count |
-|-------|----------|---------|-------------|
-| 23-25 | Summarizing the Passage | Main Point, Primary Purpose, Organization | ~6 each |
-| 26-28 | Analyzing Components | In Context, Specific Detail, Function | ~6 each |
-| 29-31 | Identifying Perspectives | Author Agreement, Attitude, Dual Passages | ~6 each |
-| 32-34 | Extending Reasoning | Analogous, Inference, Strengthen/Weaken RC | ~6 each |
-| 35-44 | Practice Passages | 10 full passage breakdowns | 7-9 each |
-| 45-49 | Reference | Question types, strategies, timing, traps, cheat sheet | 1-3 each |
+| Range | Category                 | Modules                                                | Lesson Count |
+| ----- | ------------------------ | ------------------------------------------------------ | ------------ |
+| 23-25 | Summarizing the Passage  | Main Point, Primary Purpose, Organization              | ~6 each      |
+| 26-28 | Analyzing Components     | In Context, Specific Detail, Function                  | ~6 each      |
+| 29-31 | Identifying Perspectives | Author Agreement, Attitude, Dual Passages              | ~6 each      |
+| 32-34 | Extending Reasoning      | Analogous, Inference, Strengthen/Weaken RC             | ~6 each      |
+| 35-44 | Practice Passages        | 10 full passage breakdowns                             | 7-9 each     |
+| 45-49 | Reference                | Question types, strategies, timing, traps, cheat sheet | 1-3 each     |
 
 ### Task 2.1: Upgrade RC question-type modules (23-34)
 
 For each module (deploy 4 parallel agents per module):
+
 - Expand Introduction with "Why This Matters", question stem table, strategy overview
 - Expand Step-by-Step Guide with passage reading technique, worked example
 - Enhance concept lessons with `question-passage-card` components
@@ -129,6 +141,7 @@ For each module (deploy 4 parallel agents per module):
 ### Task 2.2: Upgrade RC Practice Passage modules (35-44)
 
 For each practice passage module:
+
 - Enhance passage analysis lesson with `passage-card` component
 - Enhance each question lesson with `question-passage-card` component
 - Add deeper analysis and takeaways
@@ -153,6 +166,7 @@ For each practice passage module:
 ### Task 3.1: Upgrade Advanced Passages
 
 For each module:
+
 - Enhance passage analysis with `passage-card`
 - Upgrade each question lesson with `question-passage-card`
 - Add deeper structural analysis
@@ -177,12 +191,14 @@ For each module:
 ### Task 4.3: Fix typos in Question Bank
 
 **Status:** 2 known typos
+
 - `modules/module48/Lesson9_...tsx`: "one of ahe following" → "one of the following"
 - `modules/module48/Lesson15_...tsx`: "one of a following" → "one of the following"
 
 ### Task 4.4: Update documentation
 
 After all content work:
+
 - Update README with final module/lesson counts
 - Update AGENTS.md with any new gotchas
 - Re-run all validation scripts
@@ -221,16 +237,25 @@ npm run inventory:invented # Track invented question count
 
 ## Key Files Reference
 
-| File | Purpose |
-|------|---------|
-| `modules/registry.ts` | Module metadata + dynamic imports |
-| `modules/drillCrossReferences.ts` | PT-ID → drill lesson mapping (116 entries) |
-| `docs/invented-questions-inventory.json` | All 203 invented question-cards |
-| `scripts/validate-questions.mjs` | Question Bank validation |
-| `scripts/extract-invented-questions.mjs` | Invented question scanner |
-| `components/QuestionBank.tsx` | Standalone question bank page |
-| `components/LessonViewer.tsx` | Content block renderer |
-| `components/cards/QuestionCard.tsx` | Interactive LR question card |
-| `components/cards/PassageCard.tsx` | RC passage viewer |
-| `components/cards/QuestionPassageCard.tsx` | Split-pane Q+P card |
-| `AGENTS.md` | Developer instructions for future agents |
+| File                                                       | Purpose                                    |
+| ---------------------------------------------------------- | ------------------------------------------ |
+| `modules/registry.ts`                                      | Module metadata + dynamic imports          |
+| `modules/drillCrossReferences.ts`                          | PT-ID → drill lesson mapping (116 entries) |
+| `docs/operations/audits/invented-questions-inventory.json` | All 203 invented question-cards            |
+| `scripts/validate-questions.mjs`                           | Question Bank validation                   |
+| `scripts/extract-invented-questions.mjs`                   | Invented question scanner                  |
+| `components/QuestionBank.tsx`                              | Standalone question bank page              |
+| `components/LessonViewer.tsx`                              | Content block renderer                     |
+| `components/cards/QuestionCard.tsx`                        | Interactive LR question card               |
+| `components/cards/PassageCard.tsx`                         | RC passage viewer                          |
+| `components/cards/QuestionPassageCard.tsx`                 | Split-pane Q+P card                        |
+| `AGENTS.md`                                                | Developer instructions for future agents   |
+
+**Purpose:** Historical content-update plan from February 2026.  
+**Audience:** Contributors who need prior planning context while investigating legacy decisions.  
+**Status:** historical  
+**Source of truth:** no  
+**Last reviewed:** 2026-03-10  
+**Related docs:** [../../archive/README.md](../../archive/README.md), [../../operations/content-operations.md](../../operations/content-operations.md), [../../operations/audits/README.md](../../operations/audits/README.md)
+
+Replaced by the active operations and audit docs under `docs/operations/` plus current source-of-truth guidance in `AGENTS.md`.

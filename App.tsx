@@ -8,10 +8,18 @@ import { SearchDialog } from './components/SearchDialog';
 import { QuestionBank } from './components/QuestionBank';
 import { ProgressProvider, useProgressContext } from './contexts/ProgressContext';
 import { moduleRegistry, loadModule, getAllModuleMetadata } from './modules/registry';
-import inventoryData from './docs/invented-questions-inventory.json';
+import inventoryData from './docs/operations/audits/invented-questions-inventory.json';
 import type { ModuleData } from './types';
-import { buildDrillCrossReferences, buildLessonLinkageByLessonId, normalizeLessonsWithLinkage } from './utils/lessonQuestionLinkage';
-import { applyCanonicalNamesToModule, getCanonicalModuleMetadata, resolveIllustrativeInventoryItem } from './utils/courseCatalog';
+import {
+  buildDrillCrossReferences,
+  buildLessonLinkageByLessonId,
+  normalizeLessonsWithLinkage,
+} from './utils/lessonQuestionLinkage';
+import {
+  applyCanonicalNamesToModule,
+  getCanonicalModuleMetadata,
+  resolveIllustrativeInventoryItem,
+} from './utils/courseCatalog';
 
 const allMeta = getAllModuleMetadata().map(getCanonicalModuleMetadata);
 
@@ -74,18 +82,15 @@ function ModulePage({ loadedModules }: { loadedModules: ModuleData[] }) {
   const normalizedModuleData = useMemo(() => {
     if (!moduleData) return null;
     const canonicalModule = applyCanonicalNamesToModule(moduleData, numericModuleId);
-    const { lessons } = normalizeLessonsWithLinkage(numericModuleId, canonicalModule.lessons, canonicalModule.title);
+    const { lessons } = normalizeLessonsWithLinkage(numericModuleId, canonicalModule.lessons);
     return { ...canonicalModule, lessons };
   }, [moduleData, numericModuleId]);
 
-  const lessonLinkageByLessonId = useMemo(
-    () => {
-      if (!moduleData) return {};
-      const canonicalModule = applyCanonicalNamesToModule(moduleData, numericModuleId);
-      return buildLessonLinkageByLessonId(numericModuleId, canonicalModule.lessons, canonicalModule.title);
-    },
-    [moduleData, numericModuleId],
-  );
+  const lessonLinkageByLessonId = useMemo(() => {
+    if (!moduleData) return {};
+    const canonicalModule = applyCanonicalNamesToModule(moduleData, numericModuleId);
+    return buildLessonLinkageByLessonId(numericModuleId, canonicalModule.lessons);
+  }, [moduleData, numericModuleId]);
 
   const activeLesson = useMemo(() => {
     if (!normalizedModuleData) return undefined;
@@ -102,7 +107,8 @@ function ModulePage({ loadedModules }: { loadedModules: ModuleData[] }) {
     }
   }, [normalizedModuleData, activeLesson, lessonId, numericModuleId, navigate, updateLastPosition]);
 
-  const currentIndex = normalizedModuleData && activeLesson ? normalizedModuleData.lessons.findIndex((l) => l.id === activeLesson.id) : -1;
+  const currentIndex =
+    normalizedModuleData && activeLesson ? normalizedModuleData.lessons.findIndex((l) => l.id === activeLesson.id) : -1;
   const previousLesson = currentIndex > 0 ? normalizedModuleData?.lessons[currentIndex - 1] : undefined;
   const nextLesson =
     normalizedModuleData && currentIndex < normalizedModuleData.lessons.length - 1
@@ -123,7 +129,7 @@ function ModulePage({ loadedModules }: { loadedModules: ModuleData[] }) {
   const questionStatus = useMemo(() => {
     if (!activeLesson) return null;
     const hasReal = (lessonLinkageByLessonId[activeLesson.id]?.ptIds.length ?? 0) > 0;
-    const hasInvented = (inventoryData as Array<{ module: number; file: string }>).some(item => {
+    const hasInvented = (inventoryData as Array<{ module: number; file: string }>).some((item) => {
       const resolvedItem = resolveIllustrativeInventoryItem({
         module: item.module,
         file: item.file,
@@ -140,7 +146,8 @@ function ModulePage({ loadedModules }: { loadedModules: ModuleData[] }) {
 
   if (loading) return <LoadingSpinner />;
   if (error) return <div className="flex items-center justify-center h-full text-red-500 font-medium">{error}</div>;
-  if (!normalizedModuleData || !activeLesson) return <div className="flex items-center justify-center h-full text-slate-400">Module not found</div>;
+  if (!normalizedModuleData || !activeLesson)
+    return <div className="flex items-center justify-center h-full text-slate-400">Module not found</div>;
 
   return (
     <Layout
@@ -155,7 +162,9 @@ function ModulePage({ loadedModules }: { loadedModules: ModuleData[] }) {
       lessonLinkageMeta={lessonLinkageByLessonId}
       isLessonComplete={isLessonComplete}
       lessonNav={{
-        onPrevious: previousLesson ? () => navigate(`/module/${numericModuleId}/lesson/${previousLesson.id}`) : undefined,
+        onPrevious: previousLesson
+          ? () => navigate(`/module/${numericModuleId}/lesson/${previousLesson.id}`)
+          : undefined,
         onNext: nextLesson
           ? () => {
               handleMarkComplete();
@@ -199,7 +208,12 @@ function DashboardPage({ loadedModules }: { loadedModules: ModuleData[] }) {
       onSelectLesson={() => {}}
       onGoHome={handleGoHome}
     >
-      <Dashboard modules={modulesFromMeta} fullModules={loadedModules} onSelectModule={handleModuleSelect} getModuleProgress={getModuleProgress} />
+      <Dashboard
+        modules={modulesFromMeta}
+        fullModules={loadedModules}
+        onSelectModule={handleModuleSelect}
+        getModuleProgress={getModuleProgress}
+      />
     </Layout>
   );
 }
@@ -215,9 +229,11 @@ function AppRoutes() {
       moduleRegistry.map(async (entry) => {
         const loaded = await entry.load();
         const moduleData =
-          'default' in loaded ? loaded.default : (loaded as Record<string, ModuleData>)[Object.keys(loaded).find((k) => k.startsWith('Module'))!];
+          'default' in loaded
+            ? loaded.default
+            : (loaded as Record<string, ModuleData>)[Object.keys(loaded).find((k) => k.startsWith('Module'))!];
         const canonicalModule = applyCanonicalNamesToModule(moduleData, entry.meta.id);
-        const { lessons } = normalizeLessonsWithLinkage(entry.meta.id, canonicalModule.lessons, canonicalModule.title);
+        const { lessons } = normalizeLessonsWithLinkage(entry.meta.id, canonicalModule.lessons);
         return {
           ...canonicalModule,
           id: entry.meta.id,

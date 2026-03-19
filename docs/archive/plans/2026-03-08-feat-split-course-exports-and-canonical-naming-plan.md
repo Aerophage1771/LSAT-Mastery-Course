@@ -3,7 +3,7 @@ title: feat: Split course exports and canonical naming
 type: feat
 status: completed
 date: 2026-03-08
-brainstorm: docs/brainstorms/2026-03-08-full-course-export-brainstorm.md
+brainstorm: docs/archive/brainstorms/2026-03-08-full-course-export-brainstorm.md
 ---
 
 # feat: Split course exports and canonical naming
@@ -451,7 +451,7 @@ Mitigation:
 
 ### Brainstorm input
 
-- `docs/brainstorms/2026-03-08-full-course-export-brainstorm.md`
+- `docs/archive/brainstorms/2026-03-08-full-course-export-brainstorm.md`
 
 ### Internal references
 
@@ -464,10 +464,10 @@ Mitigation:
 - `components/QuestionBank.tsx` — drill cross-reference labels and separate question-bank export system
 - `components/ExportControls.tsx` — reusable five-format export menu
 - `utils/export.ts` — lesson/module/unit/section/course serializers
-- `docs/question-linkage-audit.md` — known naming and PT-ID inconsistencies
-- `docs/question-usage-audit.md` — known repository/data mismatches
-- `docs/invented-questions-inventory.md` — illustrative content inventory
-- `docs/plans/2026-02-26-content-updates-gameplan.md` — adjacent content/linkage workflow assumptions
+- `docs/operations/audits/question-linkage-audit.md` — known naming and PT-ID inconsistencies
+- `docs/operations/audits/question-usage-audit.md` — known repository/data mismatches
+- `docs/operations/audits/invented-questions-inventory.md` — illustrative content inventory
+- `docs/archive/plans/2026-02-26-content-updates-gameplan.md` — adjacent content/linkage workflow assumptions
 - `README.md` and `AGENTS.md` — architecture, content model, and export-related context
 
 ### Related work
@@ -489,3 +489,11 @@ Mitigation:
 - JSON schema / contract-versioning guidance:
   - JSON Schema stable versioning direction: https://json-schema.org/blog/posts/stable-json-schema
   - 2026 JSON schema validation guide: https://qubittool.com/blog/json-schema-validation-guide
+    **Purpose:** Historical implementation plan for export splitting and canonical naming work from March 2026.  
+    **Audience:** Contributors reviewing why the export and naming system evolved the way it did.  
+    **Status:** historical  
+    **Source of truth:** no  
+    **Last reviewed:** 2026-03-10  
+    **Related docs:** [../../archive/README.md](../../archive/README.md), [../../technical/architecture.md](../../technical/architecture.md), [../../operations/audits/README.md](../../operations/audits/README.md)
+
+Replaced by the active docs system under `README.md`, `docs/technical/`, and `docs/operations/`.

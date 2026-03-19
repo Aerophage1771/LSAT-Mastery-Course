@@ -1,0 +1,1130 @@
+- generic [ref=e3]:
+  - navigation "Course navigation" [ref=e4]:
+    - button "LSAT Mastery - Go to Dashboard" [ref=e6]:
+      - img [ref=e8]
+      - generic [ref=e10]: LSAT Mastery
+    - generic [ref=e12]:
+      - button "Course Dashboard" [ref=e14]:
+        - img [ref=e15]
+        - generic [ref=e20]: Course Dashboard
+      - tree "Modules" [ref=e21]:
+        - generic [ref=e22]:
+          - heading "Logical Reasoning" [level=3] [ref=e23]
+          - treeitem "1.Argument Part" [ref=e24]:
+            - button "1.Argument Part" [ref=e25]:
+              - generic [ref=e26]:
+                - generic [ref=e27]: "1."
+                - text: Argument Part
+          - treeitem "2.Main Conclusion" [ref=e28]:
+            - button "2.Main Conclusion" [ref=e29]:
+              - generic [ref=e30]:
+                - generic [ref=e31]: "2."
+                - text: Main Conclusion
+          - treeitem "3.Method of Reasoning" [ref=e32]:
+            - button "3.Method of Reasoning" [ref=e33]:
+              - generic [ref=e34]:
+                - generic [ref=e35]: "3."
+                - text: Method of Reasoning
+          - treeitem "4.Parallel Reasoning" [ref=e36]:
+            - button "4.Parallel Reasoning" [ref=e37]:
+              - generic [ref=e38]:
+                - generic [ref=e39]: "4."
+                - text: Parallel Reasoning
+          - treeitem "5.Flaw" [ref=e40]:
+            - button "5.Flaw" [ref=e41]:
+              - generic [ref=e42]:
+                - generic [ref=e43]: "5."
+                - text: Flaw
+          - treeitem "6.Parallel Flaw" [ref=e44]:
+            - button "6.Parallel Flaw" [ref=e45]:
+              - generic [ref=e46]:
+                - generic [ref=e47]: "6."
+                - text: Parallel Flaw
+          - treeitem "7.Evaluate the Argument" [ref=e48]:
+            - button "7.Evaluate the Argument" [ref=e49]:
+              - generic [ref=e50]:
+                - generic [ref=e51]: "7."
+                - text: Evaluate the Argument
+          - treeitem "8.Weaken" [ref=e52]:
+            - button "8.Weaken" [ref=e53]:
+              - generic [ref=e54]:
+                - generic [ref=e55]: "8."
+                - text: Weaken
+          - treeitem "9.Strengthen" [ref=e56]:
+            - button "9.Strengthen" [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e59]: "9."
+                - text: Strengthen
+          - treeitem "10.Sufficient Assumption" [ref=e60]:
+            - button "10.Sufficient Assumption" [ref=e61]:
+              - generic [ref=e62]:
+                - generic [ref=e63]: "10."
+                - text: Sufficient Assumption
+          - treeitem "11.Necessary Assumption" [ref=e64]:
+            - button "11.Necessary Assumption" [ref=e65]:
+              - generic [ref=e66]:
+                - generic [ref=e67]: "11."
+                - text: Necessary Assumption
+          - treeitem "12.Principle-Strengthen" [ref=e68]:
+            - button "12.Principle-Strengthen" [ref=e69]:
+              - generic [ref=e70]:
+                - generic [ref=e71]: "12."
+                - text: Principle-Strengthen
+          - treeitem "13.Principle - Apply" [ref=e72]:
+            - button "13.Principle - Apply" [ref=e73]:
+              - generic [ref=e74]:
+                - generic [ref=e75]: "13."
+                - text: Principle - Apply
+          - treeitem "14.Principle - Generalization" [ref=e76]:
+            - button "14.Principle - Generalization" [ref=e77]:
+              - generic [ref=e78]:
+                - generic [ref=e79]: "14."
+                - text: Principle - Generalization
+          - treeitem "15.Fill in the Blank" [ref=e80]:
+            - button "15.Fill in the Blank" [ref=e81]:
+              - generic [ref=e82]:
+                - generic [ref=e83]: "15."
+                - text: Fill in the Blank
+          - treeitem "16.Most Strongly Supported" [ref=e84]:
+            - button "16.Most Strongly Supported" [ref=e85]:
+              - generic [ref=e86]:
+                - generic [ref=e87]: "16."
+                - text: Most Strongly Supported
+          - treeitem "17.Must Be True" [ref=e88]:
+            - button "17.Must Be True" [ref=e89]:
+              - generic [ref=e90]:
+                - generic [ref=e91]: "17."
+                - text: Must Be True
+          - treeitem "18.Must Be False" [ref=e92]:
+            - button "18.Must Be False" [ref=e93]:
+              - generic [ref=e94]:
+                - generic [ref=e95]: "18."
+                - text: Must Be False
+          - treeitem "19.Paradox / Explain" [ref=e96]:
+            - button "19.Paradox / Explain" [ref=e97]:
+              - generic [ref=e98]:
+                - generic [ref=e99]: "19."
+                - text: Paradox / Explain
+          - treeitem "20.Agree / Disagree (Point at Issue)" [ref=e100]:
+            - button "20.Agree / Disagree (Point at Issue)" [ref=e101]:
+              - generic [ref=e102]:
+                - generic [ref=e103]: "20."
+                - text: Agree / Disagree (Point at Issue)
+          - treeitem "21.Conditional Reasoning Lessons in Conditional Reasoning" [expanded] [ref=e104]:
+            - button "21.Conditional Reasoning" [ref=e105]:
+              - generic [ref=e106]:
+                - generic [ref=e107]: "21."
+                - text: Conditional Reasoning
+              - img [ref=e108]
+            - group "Lessons in Conditional Reasoning" [ref=e110]:
+              - button "Introduction to Conditional Reasoning" [ref=e111]:
+                - img [ref=e113]
+                - generic [ref=e115]: Introduction to Conditional Reasoning
+              - 'button "Lesson 1: Foundations of the Material Conditional" [ref=e116]':
+                - img [ref=e118]
+                - generic [ref=e120]: "Lesson 1: Foundations of the Material Conditional"
+              - 'button "Lesson 2: The Contrapositive (PT-101-S-2-Q-21, PT-101-S-3-Q-10)" [ref=e121]':
+                - img [ref=e123]
+                - generic [ref=e125]: "Lesson 2: The Contrapositive (PT-101-S-2-Q-21, PT-101-S-3-Q-10)"
+              - 'button "Lesson 3: Two Classic Conditional Reasoning Errors (PT-120-S-4-Q-17, PT-106-S-3-Q-21)" [ref=e126]':
+                - img [ref=e128]
+                - generic [ref=e130]: "Lesson 3: Two Classic Conditional Reasoning Errors (PT-120-S-4-Q-17, PT-106-S-3-Q-21)"
+              - 'button "Lesson 4: Quantifiers - All, Most, Some, and Few" [ref=e131]':
+                - img [ref=e133]
+                - generic [ref=e135]: "Lesson 4: Quantifiers - All, Most, Some, and Few"
+              - 'button "Lesson 5: Complex Structures & Compound Logic" [ref=e136]':
+                - img [ref=e138]
+                - generic [ref=e140]: "Lesson 5: Complex Structures & Compound Logic"
+              - 'button "Lesson 6: Real-World Nuance & Probabilistic Logic" [ref=e141]':
+                - img [ref=e143]
+                - generic [ref=e145]: "Lesson 6: Real-World Nuance & Probabilistic Logic"
+              - 'button "Reference: Concise Guide to Conditional Logic" [ref=e146]':
+                - img [ref=e148]
+                - generic [ref=e150]: "Reference: Concise Guide to Conditional Logic"
+              - button "Reference Guide" [ref=e151]:
+                - img [ref=e153]
+                - generic [ref=e156]: Reference Guide
+          - treeitem "22.LSAT Math" [ref=e157]:
+            - button "22.LSAT Math" [ref=e158]:
+              - generic [ref=e159]:
+                - generic [ref=e160]: "22."
+                - text: LSAT Math
+          - heading "Reading Comprehension" [level=3] [ref=e161]
+          - 'treeitem "23.RC: Main Idea" [ref=e162]':
+            - 'button "23.RC: Main Idea" [ref=e163]':
+              - generic [ref=e164]:
+                - generic [ref=e165]: "23."
+                - text: "RC: Main Idea"
+          - 'treeitem "24.RC: Inference" [ref=e166]':
+            - 'button "24.RC: Inference" [ref=e167]':
+              - generic [ref=e168]:
+                - generic [ref=e169]: "24."
+                - text: "RC: Inference"
+          - 'treeitem "25.RC: Analogy" [ref=e170]':
+            - 'button "25.RC: Analogy" [ref=e171]':
+              - generic [ref=e172]:
+                - generic [ref=e173]: "25."
+                - text: "RC: Analogy"
+          - 'treeitem "26.RC: Application" [ref=e174]':
+            - 'button "26.RC: Application" [ref=e175]':
+              - generic [ref=e176]:
+                - generic [ref=e177]: "26."
+                - text: "RC: Application"
+          - 'treeitem "27.RC: Approach" [ref=e178]':
+            - 'button "27.RC: Approach" [ref=e179]':
+              - generic [ref=e180]:
+                - generic [ref=e181]: "27."
+                - text: "RC: Approach"
+          - 'treeitem "28.RC: Author Attitude" [ref=e182]':
+            - 'button "28.RC: Author Attitude" [ref=e183]':
+              - generic [ref=e184]:
+                - generic [ref=e185]: "28."
+                - text: "RC: Author Attitude"
+          - 'treeitem "29.RC: Author Viewpoint" [ref=e186]':
+            - 'button "29.RC: Author Viewpoint" [ref=e187]':
+              - generic [ref=e188]:
+                - generic [ref=e189]: "29."
+                - text: "RC: Author Viewpoint"
+          - 'treeitem "30.RC: Complete the Passage" [ref=e190]':
+            - 'button "30.RC: Complete the Passage" [ref=e191]':
+              - generic [ref=e192]:
+                - generic [ref=e193]: "30."
+                - text: "RC: Complete the Passage"
+          - 'treeitem "31.RC: 3rd-Party Viewpoint" [ref=e194]':
+            - 'button "31.RC: 3rd-Party Viewpoint" [ref=e195]':
+              - generic [ref=e196]:
+                - generic [ref=e197]: "31."
+                - text: "RC: 3rd-Party Viewpoint"
+          - 'treeitem "32.RC: Passage Principle" [ref=e198]':
+            - 'button "32.RC: Passage Principle" [ref=e199]':
+              - generic [ref=e200]:
+                - generic [ref=e201]: "32."
+                - text: "RC: Passage Principle"
+          - 'treeitem "33.RC: Phrase Meaning" [ref=e202]':
+            - 'button "33.RC: Phrase Meaning" [ref=e203]':
+              - generic [ref=e204]:
+                - generic [ref=e205]: "33."
+                - text: "RC: Phrase Meaning"
+          - 'treeitem "34.RC: Phrase Function" [ref=e206]':
+            - 'button "34.RC: Phrase Function" [ref=e207]':
+              - generic [ref=e208]:
+                - generic [ref=e209]: "34."
+                - text: "RC: Phrase Function"
+          - 'treeitem "35.RC: Paragraph Function" [ref=e210]':
+            - 'button "35.RC: Paragraph Function" [ref=e211]':
+              - generic [ref=e212]:
+                - generic [ref=e213]: "35."
+                - text: "RC: Paragraph Function"
+          - 'treeitem "36.RC: Passage Function" [ref=e214]':
+            - 'button "36.RC: Passage Function" [ref=e215]':
+              - generic [ref=e216]:
+                - generic [ref=e217]: "36."
+                - text: "RC: Passage Function"
+          - 'treeitem "37.RC: Relationship" [ref=e218]':
+            - 'button "37.RC: Relationship" [ref=e219]':
+              - generic [ref=e220]:
+                - generic [ref=e221]: "37."
+                - text: "RC: Relationship"
+          - 'treeitem "38.RC: Structure" [ref=e222]':
+            - 'button "38.RC: Structure" [ref=e223]':
+              - generic [ref=e224]:
+                - generic [ref=e225]: "38."
+                - text: "RC: Structure"
+          - 'treeitem "39.RC: Title" [ref=e226]':
+            - 'button "39.RC: Title" [ref=e227]':
+              - generic [ref=e228]:
+                - generic [ref=e229]: "39."
+                - text: "RC: Title"
+          - 'treeitem "40.RC: Weaken-Strengthen" [ref=e230]':
+            - 'button "40.RC: Weaken-Strengthen" [ref=e231]':
+              - generic [ref=e232]:
+                - generic [ref=e233]: "40."
+                - text: "RC: Weaken-Strengthen"
+          - 'treeitem "41.RC Practice Passage 1: Obasan" [ref=e234]':
+            - 'button "41.RC Practice Passage 1: Obasan" [ref=e235]':
+              - generic [ref=e236]:
+                - generic [ref=e237]: "41."
+                - text: "RC Practice Passage 1: Obasan"
+          - 'treeitem "42.RC Practice Passage 2: Bankruptcy Law" [ref=e238]':
+            - 'button "42.RC Practice Passage 2: Bankruptcy Law" [ref=e239]':
+              - generic [ref=e240]:
+                - generic [ref=e241]: "42."
+                - text: "RC Practice Passage 2: Bankruptcy Law"
+          - 'treeitem "43.RC Practice Passage 3: Cultural Identity" [ref=e242]':
+            - 'button "43.RC Practice Passage 3: Cultural Identity" [ref=e243]':
+              - generic [ref=e244]:
+                - generic [ref=e245]: "43."
+                - text: "RC Practice Passage 3: Cultural Identity"
+          - 'treeitem "44.RC Practice Passage 4: Woody Allen" [ref=e246]':
+            - 'button "44.RC Practice Passage 4: Woody Allen" [ref=e247]':
+              - generic [ref=e248]:
+                - generic [ref=e249]: "44."
+                - text: "RC Practice Passage 4: Woody Allen"
+          - 'treeitem "45.RC Practice Passage 5: Cosmic vs. Traditional Justice" [ref=e250]':
+            - 'button "45.RC Practice Passage 5: Cosmic vs. Traditional Justice" [ref=e251]':
+              - generic [ref=e252]:
+                - generic [ref=e253]: "45."
+                - text: "RC Practice Passage 5: Cosmic vs. Traditional Justice"
+          - 'treeitem "46.RC Practice Passage 6: Julia Margaret Cameron" [ref=e254]':
+            - 'button "46.RC Practice Passage 6: Julia Margaret Cameron" [ref=e255]':
+              - generic [ref=e256]:
+                - generic [ref=e257]: "46."
+                - text: "RC Practice Passage 6: Julia Margaret Cameron"
+          - 'treeitem "47.RC Practice Passage 7: False Needs in Advertising" [ref=e258]':
+            - 'button "47.RC Practice Passage 7: False Needs in Advertising" [ref=e259]':
+              - generic [ref=e260]:
+                - generic [ref=e261]: "47."
+                - text: "RC Practice Passage 7: False Needs in Advertising"
+          - 'treeitem "48.RC Practice Passage 8: Justice in Property" [ref=e262]':
+            - 'button "48.RC Practice Passage 8: Justice in Property" [ref=e263]':
+              - generic [ref=e264]:
+                - generic [ref=e265]: "48."
+                - text: "RC Practice Passage 8: Justice in Property"
+          - treeitem "49.RC Quick Reference Guide" [ref=e266]:
+            - button "49.RC Quick Reference Guide" [ref=e267]:
+              - generic [ref=e268]:
+                - generic [ref=e269]: "49."
+                - text: RC Quick Reference Guide
+          - heading "Advanced Passages" [level=3] [ref=e270]
+          - 'treeitem "50.Advanced Passage 1: Mathematics as Language" [ref=e271]':
+            - 'button "50.Advanced Passage 1: Mathematics as Language" [ref=e272]':
+              - generic [ref=e273]:
+                - generic [ref=e274]: "50."
+                - text: "Advanced Passage 1: Mathematics as Language"
+          - 'treeitem "51.Advanced Passage 2: Bentham''s Legal Reforms" [ref=e275]':
+            - 'button "51.Advanced Passage 2: Bentham''s Legal Reforms" [ref=e276]':
+              - generic [ref=e277]:
+                - generic [ref=e278]: "51."
+                - text: "Advanced Passage 2: Bentham's Legal Reforms"
+          - 'treeitem "52.Advanced Passage 3: Critical Legal Studies" [ref=e279]':
+            - 'button "52.Advanced Passage 3: Critical Legal Studies" [ref=e280]':
+              - generic [ref=e281]:
+                - generic [ref=e282]: "52."
+                - text: "Advanced Passage 3: Critical Legal Studies"
+          - 'treeitem "53.Advanced Passage 4: Dworkin''s Legal Theory" [ref=e283]':
+            - 'button "53.Advanced Passage 4: Dworkin''s Legal Theory" [ref=e284]':
+              - generic [ref=e285]:
+                - generic [ref=e286]: "53."
+                - text: "Advanced Passage 4: Dworkin's Legal Theory"
+          - 'treeitem "54.Advanced Passage 5: Psychology of Risk" [ref=e287]':
+            - 'button "54.Advanced Passage 5: Psychology of Risk" [ref=e288]':
+              - generic [ref=e289]:
+                - generic [ref=e290]: "54."
+                - text: "Advanced Passage 5: Psychology of Risk"
+          - 'treeitem "55.Advanced Passage 6: Historical Sociology" [ref=e291]':
+            - 'button "55.Advanced Passage 6: Historical Sociology" [ref=e292]':
+              - generic [ref=e293]:
+                - generic [ref=e294]: "55."
+                - text: "Advanced Passage 6: Historical Sociology"
+          - 'treeitem "56.Advanced Passage 7: Digitalization and Copyright Law" [ref=e295]':
+            - 'button "56.Advanced Passage 7: Digitalization and Copyright Law" [ref=e296]':
+              - generic [ref=e297]:
+                - generic [ref=e298]: "56."
+                - text: "Advanced Passage 7: Digitalization and Copyright Law"
+    - link "Question Bank 150" [ref=e300] [cursor=pointer]:
+      - /url: /question-bank
+      - img [ref=e301]
+      - generic [ref=e303]: Question Bank
+      - generic [ref=e304]: "150"
+    - generic [ref=e306]: © 2025 LSAT Mastery Course
+  - generic [ref=e307]:
+    - banner [ref=e308]:
+      - generic [ref=e309]:
+        - navigation "Breadcrumb" [ref=e310]:
+          - button "Dashboard" [ref=e311]
+          - img [ref=e312]
+          - generic [ref=e314]: "Module 21: Conditional Reasoning"
+        - navigation "Lesson navigation" [ref=e315]:
+          - 'button "Previous: Reference: Concise Guide to Conditional Logic" [ref=e316]':
+            - img [ref=e317]
+            - generic [ref=e319]: Previous
+          - generic [ref=e320]: Next
+      - generic [ref=e321]:
+        - button "Search lessons (Ctrl+K)" [ref=e322]:
+          - img [ref=e323]
+          - generic [ref=e326]: Search
+          - generic [ref=e327]: Ctrl+K
+        - link "Question Bank" [ref=e328] [cursor=pointer]:
+          - /url: /question-bank
+          - img [ref=e329]
+          - generic [ref=e331]: Question Bank
+          - generic [ref=e332]: "150"
+        - button "Open roadmap" [ref=e333]:
+          - img [ref=e334]
+          - generic [ref=e339]: Roadmap
+        - button "Open style guide" [ref=e340]:
+          - img [ref=e341]
+          - generic [ref=e347]: Style Guide
+        - button "Open export center" [ref=e348]:
+          - img [ref=e349]
+          - generic [ref=e352]: Export
+    - link "Skip to content" [ref=e353] [cursor=pointer]:
+      - /url: "#main-content"
+    - main [ref=e354]:
+      - generic [ref=e355]:
+        - generic [ref=e356]:
+          - generic [ref=e357]:
+            - generic [ref=e358]: Current Lesson
+            - heading "Reference Guide" [level=1] [ref=e359]
+          - generic [ref=e361]:
+            - generic [ref=e362]: Lesson
+            - button "Copy Text" [ref=e364]:
+              - img [ref=e365]
+              - generic [ref=e368]: Copy Text
+            - button "Export As" [ref=e370]:
+              - img [ref=e371]
+              - generic [ref=e374]: Export As
+              - img [ref=e375]
+        - generic [ref=e377]:
+          - 'heading "MODULE 55: Conditional Reasoning — Complete Reference" [level=2] [ref=e378]'
+          - paragraph [ref=e379]: "A comprehensive reference covering every conditional reasoning concept tested on the LSAT: trigger words, translation rules, valid and invalid inference forms, quantifier logic, special structures, and common fallacies. Bookmark this for review before test day."
+          - 'heading "Section 1: Conditional Trigger Words" [level=3] [ref=e381]'
+          - paragraph [ref=e382]:
+            - text: "Conditional statements have two parts: a"
+            - strong [ref=e383]: sufficient condition
+            - text: (the trigger) and a
+            - strong [ref=e384]: necessary condition
+            - text: (the requirement). Identifying trigger words is the first step in diagramming any conditional.
+          - heading "Sufficient Condition Triggers" [level=4] [ref=e385]
+          - paragraph [ref=e386]:
+            - text: These words introduce the sufficient condition. The arrow points
+            - strong [ref=e387]: away
+            - text: from the trigger word toward the necessary condition.
+          - table [ref=e389]:
+            - rowgroup [ref=e390]:
+              - row "Trigger Word Example Statement Diagram" [ref=e391]:
+                - columnheader "Trigger Word" [ref=e392]
+                - columnheader "Example Statement" [ref=e393]
+                - columnheader "Diagram" [ref=e394]
+            - rowgroup [ref=e395]:
+              - row "If If it rains, the ground is wet. Rain → Wet Ground" [ref=e396]:
+                - cell "If" [ref=e397]:
+                  - strong [ref=e398]: If
+                - cell "If it rains, the ground is wet." [ref=e399]
+                - cell "Rain → Wet Ground" [ref=e400]
+              - row "When / Whenever Whenever you study, you improve. Study → Improve" [ref=e401]:
+                - cell "When / Whenever" [ref=e402]:
+                  - strong [ref=e403]: When / Whenever
+                - cell "Whenever you study, you improve." [ref=e404]
+                - cell "Study → Improve" [ref=e405]
+              - row "Every Every lawyer passed the bar. Lawyer → Passed Bar" [ref=e406]:
+                - cell "Every" [ref=e407]:
+                  - strong [ref=e408]: Every
+                - cell "Every lawyer passed the bar." [ref=e409]
+                - cell "Lawyer → Passed Bar" [ref=e410]
+              - row "All All mammals are warm-blooded. Mammal → Warm-Blooded" [ref=e411]:
+                - cell "All" [ref=e412]:
+                  - strong [ref=e413]: All
+                - cell "All mammals are warm-blooded." [ref=e414]
+                - cell "Mammal → Warm-Blooded" [ref=e415]
+              - row "Each Each participant signed a waiver. Participant → Signed Waiver" [ref=e416]:
+                - cell "Each" [ref=e417]:
+                  - strong [ref=e418]: Each
+                - cell "Each participant signed a waiver." [ref=e419]
+                - cell "Participant → Signed Waiver" [ref=e420]
+              - row "Any Any citizen may vote. Citizen → May Vote" [ref=e421]:
+                - cell "Any" [ref=e422]:
+                  - strong [ref=e423]: Any
+                - cell "Any citizen may vote." [ref=e424]
+                - cell "Citizen → May Vote" [ref=e425]
+              - row "Provided that You'll pass provided that you study. Study → Pass" [ref=e426]:
+                - cell "Provided that" [ref=e427]:
+                  - strong [ref=e428]: Provided that
+                - cell "You'll pass provided that you study." [ref=e429]
+                - cell "Study → Pass" [ref=e430]
+              - row "As long as Safe as long as you follow rules. Follow Rules → Safe" [ref=e431]:
+                - cell "As long as" [ref=e432]:
+                  - strong [ref=e433]: As long as
+                - cell "Safe as long as you follow rules." [ref=e434]
+                - cell "Follow Rules → Safe" [ref=e435]
+              - row "Those who Those who cheat are disqualified. Cheat → Disqualified" [ref=e436]:
+                - cell "Those who" [ref=e437]:
+                  - strong [ref=e438]: Those who
+                - cell "Those who cheat are disqualified." [ref=e439]
+                - cell "Cheat → Disqualified" [ref=e440]
+              - row "In order to In order to graduate, complete credits. Graduate → Complete Credits" [ref=e441]:
+                - cell "In order to" [ref=e442]:
+                  - strong [ref=e443]: In order to
+                - cell "In order to graduate, complete credits." [ref=e444]
+                - cell "Graduate → Complete Credits" [ref=e445]
+              - row "To [Verb] To succeed, you must practice. Succeed → Practice" [ref=e446]:
+                - cell "To [Verb]" [ref=e447]:
+                  - strong [ref=e448]: To [Verb]
+                - cell "To succeed, you must practice." [ref=e449]
+                - cell "Succeed → Practice" [ref=e450]
+          - heading "Necessary Condition Triggers" [level=4] [ref=e451]
+          - paragraph [ref=e452]:
+            - text: These words introduce the necessary condition. The arrow points
+            - strong [ref=e453]: toward
+            - text: the trigger word from the sufficient condition.
+          - table [ref=e455]:
+            - rowgroup [ref=e456]:
+              - row "Trigger Word Example Statement Diagram" [ref=e457]:
+                - columnheader "Trigger Word" [ref=e458]
+                - columnheader "Example Statement" [ref=e459]
+                - columnheader "Diagram" [ref=e460]
+            - rowgroup [ref=e461]:
+              - row "Only if You pass only if you study. Pass → Study" [ref=e462]:
+                - cell "Only if" [ref=e463]:
+                  - strong [ref=e464]: Only if
+                - cell "You pass only if you study." [ref=e465]
+                - cell "Pass → Study" [ref=e466]
+              - row "Only Only members may enter. Enter → Member" [ref=e467]:
+                - cell "Only" [ref=e468]:
+                  - strong [ref=e469]: Only
+                - cell "Only members may enter." [ref=e470]
+                - cell "Enter → Member" [ref=e471]
+              - row "Requires / Required Admission requires a transcript. Admission → Transcript" [ref=e472]:
+                - cell "Requires / Required" [ref=e473]:
+                  - strong [ref=e474]: Requires / Required
+                - cell "Admission requires a transcript." [ref=e475]
+                - cell "Admission → Transcript" [ref=e476]
+              - row "Must / Must have You must register to vote. Vote → Register" [ref=e477]:
+                - cell "Must / Must have" [ref=e478]:
+                  - strong [ref=e479]: Must / Must have
+                - cell "You must register to vote." [ref=e480]
+                - cell "Vote → Register" [ref=e481]
+              - 'row "Unless You fail unless you study. ~Study → Fail (equivalently: ~Fail → Study)" [ref=e482]':
+                - cell "Unless" [ref=e483]:
+                  - strong [ref=e484]: Unless
+                - cell "You fail unless you study." [ref=e485]
+                - 'cell "~Study → Fail (equivalently: ~Fail → Study)" [ref=e486]'
+              - row "Until No license until you pass the test. License → Pass Test" [ref=e487]:
+                - cell "Until" [ref=e488]:
+                  - strong [ref=e489]: Until
+                - cell "No license until you pass the test." [ref=e490]
+                - cell "License → Pass Test" [ref=e491]
+              - row "Depends on Success depends on effort. Success → Effort" [ref=e492]:
+                - cell "Depends on" [ref=e493]:
+                  - strong [ref=e494]: Depends on
+                - cell "Success depends on effort." [ref=e495]
+                - cell "Success → Effort" [ref=e496]
+              - row "Necessary for Water is necessary for life. Life → Water" [ref=e497]:
+                - cell "Necessary for" [ref=e498]:
+                  - strong [ref=e499]: Necessary for
+                - cell "Water is necessary for life." [ref=e500]
+                - cell "Life → Water" [ref=e501]
+              - row "Essential / Indispensable Trust is essential to teamwork. Teamwork → Trust" [ref=e502]:
+                - cell "Essential / Indispensable" [ref=e503]:
+                  - strong [ref=e504]: Essential / Indispensable
+                - cell "Trust is essential to teamwork." [ref=e505]
+                - cell "Teamwork → Trust" [ref=e506]
+              - row "Impossible without Victory is impossible without training. Victory → Training" [ref=e507]:
+                - cell "Impossible without" [ref=e508]:
+                  - strong [ref=e509]: Impossible without
+                - cell "Victory is impossible without training." [ref=e510]
+                - cell "Victory → Training" [ref=e511]
+              - row "Precondition for Literacy is a precondition for education. Education → Literacy" [ref=e512]:
+                - cell "Precondition for" [ref=e513]:
+                  - strong [ref=e514]: Precondition for
+                - cell "Literacy is a precondition for education." [ref=e515]
+                - cell "Education → Literacy" [ref=e516]
+          - generic [ref=e517]:
+            - generic [ref=e518]:
+              - img [ref=e519]
+              - generic [ref=e521]: Quick Rule
+            - paragraph [ref=e523]:
+              - text: Sufficient triggers tell you what
+              - strong [ref=e524]: starts
+              - text: the rule. Necessary triggers tell you what is
+              - strong [ref=e525]: required
+              - text: "by the rule. When in doubt, ask: \"Does knowing this guarantee something else?\" If yes, it's the sufficient condition."
+          - 'heading "Section 2: The Contrapositive" [level=3] [ref=e527]'
+          - paragraph [ref=e528]:
+            - text: The contrapositive is the logically equivalent form of any conditional. It is obtained by
+            - strong [ref=e529]: reversing
+            - text: and
+            - strong [ref=e530]: negating
+            - text: both conditions.
+          - table [ref=e532]:
+            - rowgroup [ref=e533]:
+              - row "Original Contrapositive Relationship" [ref=e534]:
+                - columnheader "Original" [ref=e535]
+                - columnheader "Contrapositive" [ref=e536]
+                - columnheader "Relationship" [ref=e537]
+            - rowgroup [ref=e538]:
+              - row "A → B ~B → ~A Logically equivalent — always valid" [ref=e539]:
+                - cell "A → B" [ref=e540]
+                - cell "~B → ~A" [ref=e541]
+                - cell "Logically equivalent — always valid" [ref=e542]
+              - row "Dog → Mammal ~Mammal → ~Dog If not a mammal, then not a dog" [ref=e543]:
+                - cell "Dog → Mammal" [ref=e544]
+                - cell "~Mammal → ~Dog" [ref=e545]
+                - cell "If not a mammal, then not a dog" [ref=e546]
+              - row "Rain → Wet ~Wet → ~Rain If not wet, then it didn't rain" [ref=e547]:
+                - cell "Rain → Wet" [ref=e548]
+                - cell "~Wet → ~Rain" [ref=e549]
+                - cell "If not wet, then it didn't rain" [ref=e550]
+              - row "Study → Pass ~Pass → ~Study If you didn't pass, you didn't study" [ref=e551]:
+                - cell "Study → Pass" [ref=e552]
+                - cell "~Pass → ~Study" [ref=e553]
+                - cell "If you didn't pass, you didn't study" [ref=e554]
+              - row "(A and B) → C ~C → (~A or ~B) AND becomes OR when negated" [ref=e555]:
+                - cell "(A and B) → C" [ref=e556]
+                - cell "~C → (~A or ~B)" [ref=e557]
+                - cell "AND becomes OR when negated" [ref=e558]
+              - row "A → (B and C) (~B or ~C) → ~A AND becomes OR when negated" [ref=e559]:
+                - cell "A → (B and C)" [ref=e560]
+                - cell "(~B or ~C) → ~A" [ref=e561]
+                - cell "AND becomes OR when negated" [ref=e562]
+              - row "(A or B) → C ~C → (~A and ~B) OR becomes AND when negated" [ref=e563]:
+                - cell "(A or B) → C" [ref=e564]
+                - cell "~C → (~A and ~B)" [ref=e565]
+                - cell "OR becomes AND when negated" [ref=e566]
+              - row "A → (B or C) (~B and ~C) → ~A OR becomes AND when negated" [ref=e567]:
+                - cell "A → (B or C)" [ref=e568]
+                - cell "(~B and ~C) → ~A" [ref=e569]
+                - cell "OR becomes AND when negated" [ref=e570]
+          - generic [ref=e571]:
+            - generic [ref=e572]:
+              - img [ref=e573]
+              - generic [ref=e575]: De Morgan's Laws on the LSAT
+            - generic [ref=e576]:
+              - paragraph [ref=e577]: "When you negate a compound condition:"
+              - paragraph [ref=e578]:
+                - text: •
+                - strong [ref=e579]: AND
+                - text: becomes
+                - strong [ref=e580]: OR
+                - text: ": ~(A and B) = ~A or ~B"
+              - paragraph [ref=e581]:
+                - text: •
+                - strong [ref=e582]: OR
+                - text: becomes
+                - strong [ref=e583]: AND
+                - text: ": ~(A or B) = ~A and ~B"
+              - paragraph
+              - paragraph [ref=e584]: This is critical for contrapositives of compound conditionals.
+          - 'heading "Section 3: Valid vs. Invalid Inferences" [level=3] [ref=e586]'
+          - paragraph [ref=e587]:
+            - text: Given the conditional
+            - code [ref=e588]: A → B
+            - text: ", there are exactly four inference patterns. Two are valid; two are classic LSAT fallacies."
+          - table [ref=e590]:
+            - rowgroup [ref=e591]:
+              - row "Inference Name Pattern Conclusion Status" [ref=e592]:
+                - columnheader "Inference Name" [ref=e593]
+                - columnheader "Pattern" [ref=e594]
+                - columnheader "Conclusion" [ref=e595]
+                - columnheader "Status" [ref=e596]
+            - rowgroup [ref=e597]:
+              - row "Affirm Sufficient (Modus Ponens) A → B, A is true B is true ✅ VALID" [ref=e598]:
+                - cell "Affirm Sufficient (Modus Ponens)" [ref=e599]:
+                  - strong [ref=e600]: Affirm Sufficient (Modus Ponens)
+                - cell "A → B, A is true" [ref=e601]
+                - cell "B is true" [ref=e602]
+                - cell "✅ VALID" [ref=e603]
+              - row "Deny Necessary (Modus Tollens) A → B, B is false A is false ✅ VALID" [ref=e604]:
+                - cell "Deny Necessary (Modus Tollens)" [ref=e605]:
+                  - strong [ref=e606]: Deny Necessary (Modus Tollens)
+                - cell "A → B, B is false" [ref=e607]
+                - cell "A is false" [ref=e608]
+                - cell "✅ VALID" [ref=e609]
+              - row "Affirm Necessary (Mistaken Reversal) A → B, B is true A is true ❌ INVALID" [ref=e610]:
+                - cell "Affirm Necessary (Mistaken Reversal)" [ref=e611]:
+                  - strong [ref=e612]: Affirm Necessary (Mistaken Reversal)
+                - cell "A → B, B is true" [ref=e613]
+                - cell "A is true" [ref=e614]
+                - cell "❌ INVALID" [ref=e615]
+              - row "Deny Sufficient (Mistaken Negation) A → B, A is false B is false ❌ INVALID" [ref=e616]:
+                - cell "Deny Sufficient (Mistaken Negation)" [ref=e617]:
+                  - strong [ref=e618]: Deny Sufficient (Mistaken Negation)
+                - cell "A → B, A is false" [ref=e619]
+                - cell "B is false" [ref=e620]
+                - cell "❌ INVALID" [ref=e621]
+          - generic [ref=e622]:
+            - generic [ref=e623]:
+              - generic [ref=e624]:
+                - generic [ref=e625]: Form
+                - generic [ref=e626]: Modus Ponens
+                - generic [ref=e627]:
+                  - img [ref=e628]
+                  - text: Valid
+              - generic [ref=e632]:
+                - generic [ref=e633]: Concrete Example
+                - generic [ref=e634]:
+                  - paragraph [ref=e635]: "Rule: If it's a dog, it's a mammal."
+                  - paragraph [ref=e636]: "Fact: Fido is a dog."
+                  - paragraph [ref=e637]: "Conclusion: Fido is a mammal. ✅"
+            - generic [ref=e638]:
+              - generic [ref=e639]:
+                - generic [ref=e640]: Form
+                - generic [ref=e641]: Modus Tollens
+                - generic [ref=e642]:
+                  - img [ref=e643]
+                  - text: Valid
+              - generic [ref=e647]:
+                - generic [ref=e648]: Concrete Example
+                - generic [ref=e649]:
+                  - paragraph [ref=e650]: "Rule: If it's a dog, it's a mammal."
+                  - paragraph [ref=e651]: "Fact: This creature is not a mammal."
+                  - paragraph [ref=e652]: "Conclusion: This creature is not a dog. ✅"
+            - generic [ref=e653]:
+              - generic [ref=e654]:
+                - generic [ref=e655]: Form
+                - generic [ref=e656]: Mistaken Reversal
+                - generic [ref=e657]:
+                  - img [ref=e658]
+                  - text: INVALID
+              - generic [ref=e663]:
+                - generic [ref=e664]: Concrete Example
+                - generic [ref=e665]:
+                  - paragraph [ref=e666]: "Rule: If it's a dog, it's a mammal."
+                  - paragraph [ref=e667]: "Fact: This creature is a mammal."
+                  - paragraph [ref=e668]: "Conclusion: This creature is a dog. ❌"
+                  - paragraph [ref=e669]: (Cats are mammals too!)
+            - generic [ref=e670]:
+              - generic [ref=e671]:
+                - generic [ref=e672]: Form
+                - generic [ref=e673]: Mistaken Negation
+                - generic [ref=e674]:
+                  - img [ref=e675]
+                  - text: INVALID
+              - generic [ref=e680]:
+                - generic [ref=e681]: Concrete Example
+                - generic [ref=e682]:
+                  - paragraph [ref=e683]: "Rule: If it's a dog, it's a mammal."
+                  - paragraph [ref=e684]: "Fact: This creature is not a dog."
+                  - paragraph [ref=e685]: "Conclusion: This creature is not a mammal. ❌"
+                  - paragraph [ref=e686]: (Non-dogs can still be mammals!)
+          - 'heading "Section 4: Quantifier Logic" [level=3] [ref=e688]'
+          - paragraph [ref=e689]: The LSAT uses four levels of quantity. Each has distinct logical properties that determine which inferences are valid.
+          - table [ref=e691]:
+            - rowgroup [ref=e692]:
+              - row "Quantifier Symbol Range Contraposable? Reversible?" [ref=e693]:
+                - columnheader "Quantifier" [ref=e694]
+                - columnheader "Symbol" [ref=e695]
+                - columnheader "Range" [ref=e696]
+                - columnheader "Contraposable?" [ref=e697]
+                - columnheader "Reversible?" [ref=e698]
+            - rowgroup [ref=e699]:
+              - row "All A → B 100% Yes No (but Some B are A is valid)" [ref=e700]:
+                - cell "All" [ref=e701]:
+                  - strong [ref=e702]: All
+                - cell "A → B" [ref=e703]
+                - cell "100%" [ref=e704]
+                - cell "Yes" [ref=e705]
+                - cell "No (but Some B are A is valid)" [ref=e706]
+              - row "Most A —m→ B 51–99% No No" [ref=e707]:
+                - cell "Most" [ref=e708]:
+                  - strong [ref=e709]: Most
+                - cell "A —m→ B" [ref=e710]
+                - cell "51–99%" [ref=e711]
+                - cell "No" [ref=e712]
+                - cell "No" [ref=e713]
+              - row "Some A ←s→ B 1–100% No Yes (Some B are A)" [ref=e714]:
+                - cell "Some" [ref=e715]:
+                  - strong [ref=e716]: Some
+                - cell "A ←s→ B" [ref=e717]
+                - cell "1–100%" [ref=e718]
+                - cell "No" [ref=e719]
+                - cell "Yes (Some B are A)" [ref=e720]
+              - row "None A → ~B 0% Yes (B → ~A) Yes (No B are A)" [ref=e721]:
+                - cell "None" [ref=e722]:
+                  - strong [ref=e723]: None
+                - cell "A → ~B" [ref=e724]
+                - cell "0%" [ref=e725]
+                - cell "Yes (B → ~A)" [ref=e726]
+                - cell "Yes (No B are A)" [ref=e727]
+          - heading "Quantifier Hierarchy" [level=4] [ref=e728]
+          - paragraph [ref=e729]:
+            - text: "Higher quantifiers entail lower ones:"
+            - strong [ref=e730]: All → Most → Some
+            - text: . You can always "weaken" a stronger claim.
+          - table [ref=e732]:
+            - rowgroup [ref=e733]:
+              - row "If you know... You can infer... You CANNOT infer..." [ref=e734]:
+                - columnheader "If you know..." [ref=e735]
+                - columnheader "You can infer..." [ref=e736]
+                - columnheader "You CANNOT infer..." [ref=e737]
+            - rowgroup [ref=e738]:
+              - row "All A are B Most A are B; Some A are B; Some B are A Most B are A; All B are A" [ref=e739]:
+                - cell "All A are B" [ref=e740]
+                - cell "Most A are B; Some A are B; Some B are A" [ref=e741]
+                - cell "Most B are A; All B are A" [ref=e742]
+              - row "Most A are B Some A are B All A are B; Most B are A; Some B are A (without more info)" [ref=e743]:
+                - cell "Most A are B" [ref=e744]
+                - cell "Some A are B" [ref=e745]
+                - cell "All A are B; Most B are A; Some B are A (without more info)" [ref=e746]
+              - row "Some A are B Some B are A Most A are B; All A are B" [ref=e747]:
+                - cell "Some A are B" [ref=e748]
+                - cell "Some B are A" [ref=e749]
+                - cell "Most A are B; All A are B" [ref=e750]
+              - row "No A are B No B are A; All A are ~B Some A are B" [ref=e751]:
+                - cell "No A are B" [ref=e752]
+                - cell "No B are A; All A are ~B" [ref=e753]
+                - cell "Some A are B" [ref=e754]
+          - heading "Overlap Rules (Combining Quantifiers)" [level=4] [ref=e755]
+          - table [ref=e757]:
+            - rowgroup [ref=e758]:
+              - row "Combination Yields Reason" [ref=e759]:
+                - columnheader "Combination" [ref=e760]
+                - columnheader "Yields" [ref=e761]
+                - columnheader "Reason" [ref=e762]
+            - rowgroup [ref=e763]:
+              - row "All A are B + All B are C All A are C Chain through shared term" [ref=e764]:
+                - cell "All A are B + All B are C" [ref=e765]
+                - cell "All A are C" [ref=e766]
+                - cell "Chain through shared term" [ref=e767]
+              - row "Most A are B + All B are C Most A are C Most-to-All bridge" [ref=e768]:
+                - cell "Most A are B + All B are C" [ref=e769]
+                - cell "Most A are C" [ref=e770]
+                - cell "Most-to-All bridge" [ref=e771]
+              - row "All A are B + Most B are C No valid deduction about A and C Cannot chain into the necessary side of Most" [ref=e772]:
+                - cell "All A are B + Most B are C" [ref=e773]
+                - cell "No valid deduction about A and C" [ref=e774]
+                - cell "Cannot chain into the necessary side of Most" [ref=e775]
+              - 'row "Most A are B + Most A are C Some B are C Overlap rule: two majorities of the same group must share members" [ref=e776]':
+                - cell "Most A are B + Most A are C" [ref=e777]
+                - cell "Some B are C" [ref=e778]
+                - 'cell "Overlap rule: two majorities of the same group must share members" [ref=e779]'
+              - row "Most A are B + Most B are C No valid deduction Different base groups — no guaranteed overlap" [ref=e780]:
+                - cell "Most A are B + Most B are C" [ref=e781]
+                - cell "No valid deduction" [ref=e782]
+                - cell "Different base groups — no guaranteed overlap" [ref=e783]
+          - 'heading "Section 5: The \"Unless\" Translation Rule" [level=3] [ref=e785]'
+          - paragraph [ref=e786]: The word "unless" (and equivalents "until," "except," "without") is one of the most frequently tested conditional triggers. It requires a specific two-step translation.
+          - generic [ref=e790]:
+            - generic [ref=e791]:
+              - generic [ref=e792]: "1"
+              - generic [ref=e794]:
+                - strong [ref=e795]: Negate
+                - text: the term that is NOT next to "unless" — this becomes the sufficient condition.
+            - generic [ref=e796]:
+              - generic [ref=e797]: "2"
+              - generic [ref=e799]:
+                - text: The term
+                - strong [ref=e800]: next to
+                - text: "\"unless\" stays as-is — this becomes the necessary condition."
+          - table [ref=e802]:
+            - rowgroup [ref=e803]:
+              - 'row "Statement Step 1: Sufficient (Negate) Step 2: Necessary (Keep) Diagram" [ref=e804]':
+                - columnheader "Statement" [ref=e805]
+                - 'columnheader "Step 1: Sufficient (Negate)" [ref=e806]'
+                - 'columnheader "Step 2: Necessary (Keep)" [ref=e807]'
+                - columnheader "Diagram" [ref=e808]
+            - rowgroup [ref=e809]:
+              - row "You fail unless you study. ~Study Fail ~Study → Fail" [ref=e810]:
+                - cell "You fail unless you study." [ref=e811]
+                - cell "~Study" [ref=e812]
+                - cell "Fail" [ref=e813]
+                - cell "~Study → Fail" [ref=e814]
+              - row "No parking unless authorized. ~Authorized No Parking ~Authorized → No Parking" [ref=e815]:
+                - cell "No parking unless authorized." [ref=e816]
+                - cell "~Authorized" [ref=e817]
+                - cell "No Parking" [ref=e818]
+                - cell "~Authorized → No Parking" [ref=e819]
+              - row "She won't go without an invitation. ~Invitation ~Go ~Invitation → ~Go" [ref=e820]:
+                - cell "She won't go without an invitation." [ref=e821]
+                - cell "~Invitation" [ref=e822]
+                - cell "~Go" [ref=e823]
+                - cell "~Invitation → ~Go" [ref=e824]
+              - row "The project stalls until funding arrives. ~Funding Stalls ~Funding → Stalls" [ref=e825]:
+                - cell "The project stalls until funding arrives." [ref=e826]
+                - cell "~Funding" [ref=e827]
+                - cell "Stalls" [ref=e828]
+                - cell "~Funding → Stalls" [ref=e829]
+          - generic [ref=e830]:
+            - generic [ref=e831]:
+              - img [ref=e832]
+              - generic [ref=e834]: Alternative Method
+            - generic [ref=e835]:
+              - paragraph [ref=e836]: "You can also read \"unless\" as \"if not.\" Replace \"unless\" with \"if not\" and the sentence reads naturally:"
+              - paragraph [ref=e837]: • "You fail unless you study" = "You fail if you don't study" = ~Study → Fail
+          - 'heading "Section 6: Common Conditional Fallacies" [level=3] [ref=e839]'
+          - paragraph [ref=e840]: The LSAT tests your ability to recognize flawed conditional reasoning. These are the most common fallacies you will encounter.
+          - generic [ref=e841]:
+            - generic [ref=e842]:
+              - generic [ref=e843]:
+                - generic [ref=e844]: Fallacy
+                - generic [ref=e845]: Mistaken Reversal (Affirming the Consequent)
+                - generic [ref=e846]:
+                  - img [ref=e847]
+                  - text: Very Common
+              - generic [ref=e852]:
+                - generic [ref=e853]: Description & How to Identify
+                - generic [ref=e854]:
+                  - paragraph [ref=e855]: Assumes that because B is true, A must be true. Confuses a necessary condition for a sufficient one.
+                  - paragraph
+                  - paragraph [ref=e856]:
+                    - strong [ref=e857]: "Example:"
+                    - text: "\"All dogs are mammals. Whiskers is a mammal. Therefore Whiskers is a dog.\""
+                  - paragraph [ref=e858]:
+                    - strong [ref=e859]: "Pattern:"
+                    - text: A → B, B ∴ A
+            - generic [ref=e860]:
+              - generic [ref=e861]:
+                - generic [ref=e862]: Fallacy
+                - generic [ref=e863]: Mistaken Negation (Denying the Antecedent)
+                - generic [ref=e864]:
+                  - img [ref=e865]
+                  - text: Very Common
+              - generic [ref=e870]:
+                - generic [ref=e871]: Description & How to Identify
+                - generic [ref=e872]:
+                  - paragraph [ref=e873]: Assumes that because A is false, B must be false. Ignores that B could be true for other reasons.
+                  - paragraph
+                  - paragraph [ref=e874]:
+                    - strong [ref=e875]: "Example:"
+                    - text: "\"If it rains, the game is cancelled. It didn't rain. Therefore the game wasn't cancelled.\""
+                  - paragraph [ref=e876]:
+                    - strong [ref=e877]: "Pattern:"
+                    - text: A → B, ~A ∴ ~B
+            - generic [ref=e878]:
+              - generic [ref=e879]:
+                - generic [ref=e880]: Fallacy
+                - generic [ref=e881]: Confusing Sufficient and Necessary
+                - generic [ref=e882]:
+                  - img [ref=e883]
+                  - text: Common
+              - generic [ref=e888]:
+                - generic [ref=e889]: Description & How to Identify
+                - generic [ref=e890]:
+                  - paragraph [ref=e891]: Treats a necessary condition as if it were sufficient, or vice versa.
+                  - paragraph
+                  - paragraph [ref=e892]:
+                    - strong [ref=e893]: "Example:"
+                    - text: "\"Oxygen is necessary for fire. There is oxygen here. Therefore there will be fire.\" (Oxygen is necessary, not sufficient.)"
+            - generic [ref=e894]:
+              - generic [ref=e895]:
+                - generic [ref=e896]: Fallacy
+                - generic [ref=e897]: Illicit Quantifier Shift
+                - generic [ref=e898]:
+                  - img [ref=e899]
+                  - text: Common
+              - generic [ref=e904]:
+                - generic [ref=e905]: Description & How to Identify
+                - generic [ref=e906]:
+                  - paragraph [ref=e907]: "Shifts between quantifier levels without justification: \"Some\" to \"Most,\" or \"Most\" to \"All.\""
+                  - paragraph
+                  - paragraph [ref=e908]:
+                    - strong [ref=e909]: "Example:"
+                    - text: "\"Most lawyers are well-paid. Therefore all lawyers are well-paid.\""
+            - generic [ref=e910]:
+              - generic [ref=e911]:
+                - generic [ref=e912]: Fallacy
+                - generic [ref=e913]: Invalid Chain (Wrong Direction)
+                - generic [ref=e914]: Moderate
+              - generic [ref=e916]:
+                - generic [ref=e917]: Description & How to Identify
+                - generic [ref=e918]:
+                  - paragraph [ref=e919]: Attempts to chain conditionals through the necessary side rather than the sufficient side.
+                  - paragraph
+                  - paragraph [ref=e920]:
+                    - strong [ref=e921]: "Example:"
+                    - text: A → B and C → B does NOT yield A → C. Sharing a necessary condition does not link two sufficient conditions.
+            - generic [ref=e922]:
+              - generic [ref=e923]:
+                - generic [ref=e924]: Fallacy
+                - generic [ref=e925]: Conditional-Causal Confusion
+                - generic [ref=e926]: Moderate
+              - generic [ref=e928]:
+                - generic [ref=e929]: Description & How to Identify
+                - generic [ref=e930]:
+                  - paragraph [ref=e931]: Treats a logical conditional as a causal relationship or vice versa. "If A then B" means A guarantees B, not that A causes B.
+                  - paragraph
+                  - paragraph [ref=e932]:
+                    - strong [ref=e933]: "Example:"
+                    - text: "\"If someone is a senator, they are over 30. Therefore being a senator causes aging.\""
+          - 'heading "Section 7: Complex Structure Patterns" [level=3] [ref=e935]'
+          - heading "Biconditional Statements" [level=4] [ref=e936]
+          - paragraph [ref=e937]:
+            - text: A biconditional means A is
+            - strong [ref=e938]: both sufficient and necessary
+            - text: for B. It yields two conditionals and two contrapositives.
+          - table [ref=e940]:
+            - rowgroup [ref=e941]:
+              - row "Form Diagram Meaning" [ref=e942]:
+                - columnheader "Form" [ref=e943]
+                - columnheader "Diagram" [ref=e944]
+                - columnheader "Meaning" [ref=e945]
+            - rowgroup [ref=e946]:
+              - row "A if and only if B A ↔ B A → B AND B → A" [ref=e947]:
+                - cell "A if and only if B" [ref=e948]
+                - cell "A ↔ B" [ref=e949]
+                - cell "A → B AND B → A" [ref=e950]
+              - row "Contrapositive 1 ~B → ~A If not B, then not A" [ref=e951]:
+                - cell "Contrapositive 1" [ref=e952]
+                - cell "~B → ~A" [ref=e953]
+                - cell "If not B, then not A" [ref=e954]
+              - row "Contrapositive 2 ~A → ~B If not A, then not B" [ref=e955]:
+                - cell "Contrapositive 2" [ref=e956]
+                - cell "~A → ~B" [ref=e957]
+                - cell "If not A, then not B" [ref=e958]
+              - row "Net effect A and B always together Both true or both false" [ref=e959]:
+                - cell "Net effect" [ref=e960]
+                - cell "A and B always together" [ref=e961]
+                - cell "Both true or both false" [ref=e962]
+          - generic [ref=e963]:
+            - generic [ref=e964]:
+              - img [ref=e965]
+              - generic [ref=e967]: Biconditional Triggers
+            - paragraph [ref=e969]: "\"If and only if,\" \"A is required for and guarantees B,\" \"A is both necessary and sufficient for B,\" or when two separate conditionals share the same terms in opposite directions."
+          - heading "Chain Reasoning" [level=4] [ref=e970]
+          - paragraph [ref=e971]: When the necessary condition of one statement is the sufficient condition of another, the statements can be chained.
+          - table [ref=e973]:
+            - rowgroup [ref=e974]:
+              - row "Given Chain Full Contrapositive" [ref=e975]:
+                - columnheader "Given" [ref=e976]
+                - columnheader "Chain" [ref=e977]
+                - columnheader "Full Contrapositive" [ref=e978]
+            - rowgroup [ref=e979]:
+              - row "A → B, B → C A → B → C ~C → ~B → ~A" [ref=e980]:
+                - cell "A → B, B → C" [ref=e981]
+                - cell "A → B → C" [ref=e982]
+                - cell "~C → ~B → ~A" [ref=e983]
+              - row "A → B, B → C, C → D A → B → C → D ~D → ~C → ~B → ~A" [ref=e984]:
+                - cell "A → B, B → C, C → D" [ref=e985]
+                - cell "A → B → C → D" [ref=e986]
+                - cell "~D → ~C → ~B → ~A" [ref=e987]
+              - row "P → Q, Q → R, R → S P → Q → R → S ~S → ~R → ~Q → ~P" [ref=e988]:
+                - cell "P → Q, Q → R, R → S" [ref=e989]
+                - cell "P → Q → R → S" [ref=e990]
+                - cell "~S → ~R → ~Q → ~P" [ref=e991]
+          - heading "Nested Conditionals" [level=4] [ref=e992]
+          - paragraph [ref=e993]: Some LSAT stimuli contain conditionals within conditionals. Break these down layer by layer.
+          - table [ref=e995]:
+            - rowgroup [ref=e996]:
+              - row "Statement Outer Conditional Inner Conditional Combined Diagram" [ref=e997]:
+                - columnheader "Statement" [ref=e998]
+                - columnheader "Outer Conditional" [ref=e999]
+                - columnheader "Inner Conditional" [ref=e1000]
+                - columnheader "Combined Diagram" [ref=e1001]
+            - rowgroup [ref=e1002]:
+              - row "If A, then if B then C A triggers the inner rule B → C (only when A) (A and B) → C" [ref=e1003]:
+                - cell "If A, then if B then C" [ref=e1004]
+                - cell "A triggers the inner rule" [ref=e1005]
+                - cell "B → C (only when A)" [ref=e1006]
+                - cell "(A and B) → C" [ref=e1007]
+              - row "If it rains, then if the roof leaks, the floor gets wet Rain activates the rule Leak → Wet (when raining) (Rain and Leak) → Wet Floor" [ref=e1008]:
+                - cell "If it rains, then if the roof leaks, the floor gets wet" [ref=e1009]
+                - cell "Rain activates the rule" [ref=e1010]
+                - cell "Leak → Wet (when raining)" [ref=e1011]
+                - cell "(Rain and Leak) → Wet Floor" [ref=e1012]
+          - heading "Compound Condition Reference" [level=4] [ref=e1013]
+          - table [ref=e1015]:
+            - rowgroup [ref=e1016]:
+              - row "Structure Diagram Contrapositive Key Rule" [ref=e1017]:
+                - columnheader "Structure" [ref=e1018]
+                - columnheader "Diagram" [ref=e1019]
+                - columnheader "Contrapositive" [ref=e1020]
+                - columnheader "Key Rule" [ref=e1021]
+            - rowgroup [ref=e1022]:
+              - row "AND in Sufficient (A and B) → C ~C → (~A or ~B) Both must be present to trigger" [ref=e1023]:
+                - cell "AND in Sufficient" [ref=e1024]
+                - cell "(A and B) → C" [ref=e1025]
+                - cell "~C → (~A or ~B)" [ref=e1026]
+                - cell "Both must be present to trigger" [ref=e1027]
+              - row "AND in Necessary A → (B and C) (~B or ~C) → ~A Both are required outcomes" [ref=e1028]:
+                - cell "AND in Necessary" [ref=e1029]
+                - cell "A → (B and C)" [ref=e1030]
+                - cell "(~B or ~C) → ~A" [ref=e1031]
+                - cell "Both are required outcomes" [ref=e1032]
+              - row "OR in Sufficient (A or B) → C ~C → (~A and ~B) Either one triggers the rule" [ref=e1033]:
+                - cell "OR in Sufficient" [ref=e1034]
+                - cell "(A or B) → C" [ref=e1035]
+                - cell "~C → (~A and ~B)" [ref=e1036]
+                - cell "Either one triggers the rule" [ref=e1037]
+              - row "OR in Necessary A → (B or C) (~B and ~C) → ~A At least one must follow" [ref=e1038]:
+                - cell "OR in Necessary" [ref=e1039]
+                - cell "A → (B or C)" [ref=e1040]
+                - cell "(~B and ~C) → ~A" [ref=e1041]
+                - cell "At least one must follow" [ref=e1042]
+          - 'heading "Section 8: Negating Quantified Statements" [level=3] [ref=e1044]'
+          - paragraph [ref=e1045]: Negation flips a statement to its logical opposite. This is essential for Weaken, Strengthen, and Must Be True questions involving quantifiers.
+          - table [ref=e1047]:
+            - rowgroup [ref=e1048]:
+              - row "Original Statement Logical Negation What Changes" [ref=e1049]:
+                - columnheader "Original Statement" [ref=e1050]
+                - columnheader "Logical Negation" [ref=e1051]
+                - columnheader "What Changes" [ref=e1052]
+            - rowgroup [ref=e1053]:
+              - row "All A are B Some A are not B All → Some...not" [ref=e1054]:
+                - cell "All A are B" [ref=e1055]
+                - cell "Some A are not B" [ref=e1056]
+                - cell "All → Some...not" [ref=e1057]
+              - row "No A are B Some A are B No → Some" [ref=e1058]:
+                - cell "No A are B" [ref=e1059]
+                - cell "Some A are B" [ref=e1060]
+                - cell "No → Some" [ref=e1061]
+              - row "Some A are B No A are B Some → No" [ref=e1062]:
+                - cell "Some A are B" [ref=e1063]
+                - cell "No A are B" [ref=e1064]
+                - cell "Some → No" [ref=e1065]
+              - row "Some A are not B All A are B Some...not → All" [ref=e1066]:
+                - cell "Some A are not B" [ref=e1067]
+                - cell "All A are B" [ref=e1068]
+                - cell "Some...not → All" [ref=e1069]
+              - row "Most A are B Half or fewer A are B Most → ≤50%" [ref=e1070]:
+                - cell "Most A are B" [ref=e1071]
+                - cell "Half or fewer A are B" [ref=e1072]
+                - cell "Most → ≤50%" [ref=e1073]
+          - generic [ref=e1074]:
+            - generic [ref=e1075]:
+              - img [ref=e1076]
+              - generic [ref=e1078]: Negation Pairs
+            - generic [ref=e1079]:
+              - paragraph [ref=e1080]: "Negation creates symmetric pairs:"
+              - paragraph [ref=e1081]:
+                - text: •
+                - strong [ref=e1082]: All
+                - text: ↔
+                - strong [ref=e1083]: Some...not
+                - text: (contradictories)
+              - paragraph [ref=e1084]:
+                - text: •
+                - strong [ref=e1085]: None
+                - text: ↔
+                - strong [ref=e1086]: Some
+                - text: (contradictories)
+              - paragraph
+              - paragraph [ref=e1087]: To negate a statement, find its contradictory pair. The negation of "All dogs bark" is NOT "No dogs bark" but rather "Some dogs don't bark."
+          - 'heading "Section 9: Quick Diagnostic Flowchart" [level=3] [ref=e1089]'
+          - paragraph [ref=e1090]: "Use this decision tree when you encounter a conditional reasoning question:"
+          - generic [ref=e1094]:
+            - generic [ref=e1095]:
+              - generic [ref=e1096]: "1"
+              - generic [ref=e1098]:
+                - strong [ref=e1099]: Identify all conditional statements
+                - text: in the stimulus. Look for sufficient and necessary trigger words.
+            - generic [ref=e1100]:
+              - generic [ref=e1101]: "2"
+              - generic [ref=e1103]:
+                - strong [ref=e1104]: Diagram each conditional
+                - text: using arrow notation. Write the contrapositive of each.
+            - generic [ref=e1105]:
+              - generic [ref=e1106]: "3"
+              - generic [ref=e1108]:
+                - strong [ref=e1109]: Look for chains.
+                - text: Can any conditionals link together through shared terms?
+            - generic [ref=e1110]:
+              - generic [ref=e1111]: "4"
+              - generic [ref=e1113]:
+                - strong [ref=e1114]: Check the argument's inference.
+                - text: Is the author using Modus Ponens, Modus Tollens, or a fallacy?
+            - generic [ref=e1115]:
+              - generic [ref=e1116]: "5"
+              - generic [ref=e1118]:
+                - strong [ref=e1119]: If quantifiers are present,
+                - text: identify the level (All, Most, Some, None) and apply the correct combination rules.
+            - generic [ref=e1120]:
+              - generic [ref=e1121]: "6"
+              - generic [ref=e1123]:
+                - strong [ref=e1124]: Match to answer choices.
+                - text: The correct answer will align with valid inference rules or correctly identify the flaw.
+          - generic [ref=e1126]:
+            - generic [ref=e1127]:
+              - img [ref=e1128]
+              - generic [ref=e1130]: Test Day Checklist
+            - generic [ref=e1131]:
+              - paragraph [ref=e1132]: "Before selecting your answer on any Conditional Reasoning question:"
+              - paragraph
+              - paragraph [ref=e1133]: ✅ Have you diagrammed every conditional statement in the stimulus?
+              - paragraph [ref=e1134]: ✅ Did you write the contrapositive of each conditional?
+              - paragraph [ref=e1135]: ✅ Have you checked for chain links between conditionals?
+              - paragraph [ref=e1136]: ✅ Is the argument committing a Mistaken Reversal or Mistaken Negation?
+              - paragraph [ref=e1137]: "✅ For quantifier questions: did you verify the quantifier level and apply the correct combination rules?"
+              - paragraph [ref=e1138]: ✅ Did you translate "unless" / "until" / "without" correctly?
+              - paragraph [ref=e1139]: "✅ For compound conditions: did you apply De Morgan's Laws to the contrapositive?"
+              - paragraph [ref=e1140]: ✅ Have you confirmed whether the reasoning is conditional, causal, or probabilistic?
+              - paragraph [ref=e1141]: ✅ Does your selected answer match a valid inference form (not a fallacy)?

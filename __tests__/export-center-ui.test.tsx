@@ -49,6 +49,8 @@ describe('export center UI', () => {
 
     expect(screen.getByText('Export Curriculum Outline')).toBeInTheDocument();
     expect(screen.getByText('Export Full Course')).toBeInTheDocument();
+    expect(screen.getByText('Export Canonical Course')).toBeInTheDocument();
+    expect(screen.getByText('Export Interchange Course')).toBeInTheDocument();
 
     fireEvent.click(screen.getByText('Clear filters'));
     expect(screen.getByText('No lessons are currently in scope. Reset to the whole course or choose at least one lesson.')).toBeInTheDocument();
@@ -56,6 +58,24 @@ describe('export center UI', () => {
     fireEvent.click(screen.getByText('Export Full Course'));
     expect(screen.getByText('Exports all lesson content with canonical module and lesson names.')).toBeInTheDocument();
     expect(screen.getByText((_content, node) => node?.textContent === '1 lessons selected')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByText('Export Canonical Course'));
+    expect(screen.getByText('Exports the lossless canonical-course JSON contract while keeping runtime lesson modules unchanged.')).toBeInTheDocument();
+    expect(screen.getByText('Copy JSON')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByText('Export As'));
+    expect(screen.getByText('Data Model (.json)')).toBeInTheDocument();
+    expect(screen.queryByText('CSV Table (.csv)')).not.toBeInTheDocument();
+    expect(screen.queryByText('PDF Document (.pdf)')).not.toBeInTheDocument();
+
+    fireEvent.click(screen.getByText('Clear filters'));
+    expect(screen.getByText('No lessons are currently in scope. Reset to the whole course or choose at least one lesson.')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByText('Export Interchange Course'));
+    expect(screen.getByText('No lessons are currently in scope. Reset to the whole course or choose at least one lesson.')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByText('Export Full Course'));
+    expect(screen.getByText('No lessons are currently in scope. Reset to the whole course or choose at least one lesson.')).toBeInTheDocument();
 
     fireEvent.click(screen.getByText('Export Curriculum Outline'));
     expect(screen.getByText('No lessons are currently in scope. Reset to the whole course or choose at least one lesson.')).toBeInTheDocument();

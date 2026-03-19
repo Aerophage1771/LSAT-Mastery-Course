@@ -1,0 +1,593 @@
+- generic [ref=e7]:
+  - navigation "Course navigation" [ref=e8]:
+    - button "LSAT Mastery - Go to Dashboard" [ref=e10]:
+      - img [ref=e12]
+      - generic [ref=e14]: LSAT Mastery
+    - generic [ref=e16]:
+      - button "Course Dashboard" [ref=e18]:
+        - img [ref=e19]
+        - generic [ref=e24]: Course Dashboard
+      - tree "Modules" [ref=e25]:
+        - generic [ref=e26]:
+          - heading "Logical Reasoning" [level=3] [ref=e27]
+          - treeitem "1.Argument Part Lessons in Argument Part" [expanded] [ref=e28]:
+            - button "1.Argument Part" [ref=e29]:
+              - generic [ref=e30]:
+                - generic [ref=e31]: "1."
+                - text: Argument Part
+              - img [ref=e32]
+            - group "Lessons in Argument Part" [ref=e34]:
+              - button "Introduction to Argument Part" [ref=e35]:
+                - img [ref=e37]
+                - generic [ref=e40]: Introduction to Argument Part
+              - 'button "Step-by-Step Guide: Argument Part" [ref=e41]':
+                - img [ref=e43]
+                - generic [ref=e45]: "Step-by-Step Guide: Argument Part"
+              - button "Common Roles & Patterns" [ref=e46]:
+                - img [ref=e48]
+                - generic [ref=e50]: Common Roles & Patterns
+              - 'button "Lesson 1: Premises vs. Conclusions" [ref=e51]':
+                - img [ref=e53]
+                - generic [ref=e55]: "Lesson 1: Premises vs. Conclusions"
+              - 'button "Lesson 2: The Intermediate Conclusion" [ref=e56]':
+                - img [ref=e58]
+                - generic [ref=e60]: "Lesson 2: The Intermediate Conclusion"
+              - 'button "Lesson 3: The Opposing Viewpoint" [ref=e61]':
+                - img [ref=e63]
+                - generic [ref=e65]: "Lesson 3: The Opposing Viewpoint"
+              - 'button "Traits of High-Difficulty: Argument Part" [ref=e66]':
+                - img [ref=e68]
+                - generic [ref=e70]: "Traits of High-Difficulty: Argument Part"
+              - 'button "Lesson 4: Advanced: Concessions" [ref=e71]':
+                - img [ref=e73]
+                - generic [ref=e75]: "Lesson 4: Advanced: Concessions"
+              - 'button "Lesson 5: Advanced: The Phenomenon" [ref=e76]':
+                - img [ref=e78]
+                - generic [ref=e80]: "Lesson 5: Advanced: The Phenomenon"
+              - 'button "Lesson 6: Advanced: Counterfactual Rebuttal" [ref=e81]':
+                - img [ref=e83]
+                - generic [ref=e85]: "Lesson 6: Advanced: Counterfactual Rebuttal"
+              - 'button "Lesson 7: Advanced: Context Statements" [ref=e86]':
+                - img [ref=e88]
+                - generic [ref=e90]: "Lesson 7: Advanced: Context Statements"
+              - button "Reference Guide" [ref=e91]:
+                - img [ref=e93]
+                - generic [ref=e95]: Reference Guide
+          - treeitem "2.Main Conclusion" [ref=e96]:
+            - button "2.Main Conclusion" [ref=e97]:
+              - generic [ref=e98]:
+                - generic [ref=e99]: "2."
+                - text: Main Conclusion
+          - treeitem "3.Method of Reasoning" [ref=e100]:
+            - button "3.Method of Reasoning" [ref=e101]:
+              - generic [ref=e102]:
+                - generic [ref=e103]: "3."
+                - text: Method of Reasoning
+          - treeitem "4.Parallel Reasoning" [ref=e104]:
+            - button "4.Parallel Reasoning" [ref=e105]:
+              - generic [ref=e106]:
+                - generic [ref=e107]: "4."
+                - text: Parallel Reasoning
+          - treeitem "5.Flaw" [ref=e108]:
+            - button "5.Flaw" [ref=e109]:
+              - generic [ref=e110]:
+                - generic [ref=e111]: "5."
+                - text: Flaw
+          - treeitem "6.Parallel Flaw" [ref=e112]:
+            - button "6.Parallel Flaw" [ref=e113]:
+              - generic [ref=e114]:
+                - generic [ref=e115]: "6."
+                - text: Parallel Flaw
+          - treeitem "7.Evaluate the Argument" [ref=e116]:
+            - button "7.Evaluate the Argument" [ref=e117]:
+              - generic [ref=e118]:
+                - generic [ref=e119]: "7."
+                - text: Evaluate the Argument
+          - treeitem "8.Weaken" [ref=e120]:
+            - button "8.Weaken" [ref=e121]:
+              - generic [ref=e122]:
+                - generic [ref=e123]: "8."
+                - text: Weaken
+          - treeitem "9.Strengthen" [ref=e124]:
+            - button "9.Strengthen" [ref=e125]:
+              - generic [ref=e126]:
+                - generic [ref=e127]: "9."
+                - text: Strengthen
+          - treeitem "10.Sufficient Assumption" [ref=e128]:
+            - button "10.Sufficient Assumption" [ref=e129]:
+              - generic [ref=e130]:
+                - generic [ref=e131]: "10."
+                - text: Sufficient Assumption
+          - treeitem "11.Necessary Assumption" [ref=e132]:
+            - button "11.Necessary Assumption" [ref=e133]:
+              - generic [ref=e134]:
+                - generic [ref=e135]: "11."
+                - text: Necessary Assumption
+          - treeitem "12.Principle-Strengthen" [ref=e136]:
+            - button "12.Principle-Strengthen" [ref=e137]:
+              - generic [ref=e138]:
+                - generic [ref=e139]: "12."
+                - text: Principle-Strengthen
+          - treeitem "13.Principle - Apply" [ref=e140]:
+            - button "13.Principle - Apply" [ref=e141]:
+              - generic [ref=e142]:
+                - generic [ref=e143]: "13."
+                - text: Principle - Apply
+          - treeitem "14.Principle - Generalization" [ref=e144]:
+            - button "14.Principle - Generalization" [ref=e145]:
+              - generic [ref=e146]:
+                - generic [ref=e147]: "14."
+                - text: Principle - Generalization
+          - treeitem "15.Fill in the Blank" [ref=e148]:
+            - button "15.Fill in the Blank" [ref=e149]:
+              - generic [ref=e150]:
+                - generic [ref=e151]: "15."
+                - text: Fill in the Blank
+          - treeitem "16.Most Strongly Supported" [ref=e152]:
+            - button "16.Most Strongly Supported" [ref=e153]:
+              - generic [ref=e154]:
+                - generic [ref=e155]: "16."
+                - text: Most Strongly Supported
+          - treeitem "17.Must Be True" [ref=e156]:
+            - button "17.Must Be True" [ref=e157]:
+              - generic [ref=e158]:
+                - generic [ref=e159]: "17."
+                - text: Must Be True
+          - treeitem "18.Must Be False" [ref=e160]:
+            - button "18.Must Be False" [ref=e161]:
+              - generic [ref=e162]:
+                - generic [ref=e163]: "18."
+                - text: Must Be False
+          - treeitem "19.Paradox / Explain" [ref=e164]:
+            - button "19.Paradox / Explain" [ref=e165]:
+              - generic [ref=e166]:
+                - generic [ref=e167]: "19."
+                - text: Paradox / Explain
+          - treeitem "20.Agree / Disagree (Point at Issue)" [ref=e168]:
+            - button "20.Agree / Disagree (Point at Issue)" [ref=e169]:
+              - generic [ref=e170]:
+                - generic [ref=e171]: "20."
+                - text: Agree / Disagree (Point at Issue)
+          - treeitem "21.Conditional Reasoning" [ref=e172]:
+            - button "21.Conditional Reasoning" [ref=e173]:
+              - generic [ref=e174]:
+                - generic [ref=e175]: "21."
+                - text: Conditional Reasoning
+          - treeitem "22.LSAT Math" [ref=e176]:
+            - button "22.LSAT Math" [ref=e177]:
+              - generic [ref=e178]:
+                - generic [ref=e179]: "22."
+                - text: LSAT Math
+          - heading "Reading Comprehension" [level=3] [ref=e180]
+          - 'treeitem "23.RC: Main Idea" [ref=e181]':
+            - 'button "23.RC: Main Idea" [ref=e182]':
+              - generic [ref=e183]:
+                - generic [ref=e184]: "23."
+                - text: "RC: Main Idea"
+          - 'treeitem "24.RC: Inference" [ref=e185]':
+            - 'button "24.RC: Inference" [ref=e186]':
+              - generic [ref=e187]:
+                - generic [ref=e188]: "24."
+                - text: "RC: Inference"
+          - 'treeitem "25.RC: Analogy" [ref=e189]':
+            - 'button "25.RC: Analogy" [ref=e190]':
+              - generic [ref=e191]:
+                - generic [ref=e192]: "25."
+                - text: "RC: Analogy"
+          - 'treeitem "26.RC: Application" [ref=e193]':
+            - 'button "26.RC: Application" [ref=e194]':
+              - generic [ref=e195]:
+                - generic [ref=e196]: "26."
+                - text: "RC: Application"
+          - 'treeitem "27.RC: Approach" [ref=e197]':
+            - 'button "27.RC: Approach" [ref=e198]':
+              - generic [ref=e199]:
+                - generic [ref=e200]: "27."
+                - text: "RC: Approach"
+          - 'treeitem "28.RC: Author Attitude" [ref=e201]':
+            - 'button "28.RC: Author Attitude" [ref=e202]':
+              - generic [ref=e203]:
+                - generic [ref=e204]: "28."
+                - text: "RC: Author Attitude"
+          - 'treeitem "29.RC: Author Viewpoint" [ref=e205]':
+            - 'button "29.RC: Author Viewpoint" [ref=e206]':
+              - generic [ref=e207]:
+                - generic [ref=e208]: "29."
+                - text: "RC: Author Viewpoint"
+          - 'treeitem "30.RC: Complete the Passage" [ref=e209]':
+            - 'button "30.RC: Complete the Passage" [ref=e210]':
+              - generic [ref=e211]:
+                - generic [ref=e212]: "30."
+                - text: "RC: Complete the Passage"
+          - 'treeitem "31.RC: 3rd-Party Viewpoint" [ref=e213]':
+            - 'button "31.RC: 3rd-Party Viewpoint" [ref=e214]':
+              - generic [ref=e215]:
+                - generic [ref=e216]: "31."
+                - text: "RC: 3rd-Party Viewpoint"
+          - 'treeitem "32.RC: Passage Principle" [ref=e217]':
+            - 'button "32.RC: Passage Principle" [ref=e218]':
+              - generic [ref=e219]:
+                - generic [ref=e220]: "32."
+                - text: "RC: Passage Principle"
+          - 'treeitem "33.RC: Phrase Meaning" [ref=e221]':
+            - 'button "33.RC: Phrase Meaning" [ref=e222]':
+              - generic [ref=e223]:
+                - generic [ref=e224]: "33."
+                - text: "RC: Phrase Meaning"
+          - 'treeitem "34.RC: Phrase Function" [ref=e225]':
+            - 'button "34.RC: Phrase Function" [ref=e226]':
+              - generic [ref=e227]:
+                - generic [ref=e228]: "34."
+                - text: "RC: Phrase Function"
+          - 'treeitem "35.RC: Paragraph Function" [ref=e229]':
+            - 'button "35.RC: Paragraph Function" [ref=e230]':
+              - generic [ref=e231]:
+                - generic [ref=e232]: "35."
+                - text: "RC: Paragraph Function"
+          - 'treeitem "36.RC: Passage Function" [ref=e233]':
+            - 'button "36.RC: Passage Function" [ref=e234]':
+              - generic [ref=e235]:
+                - generic [ref=e236]: "36."
+                - text: "RC: Passage Function"
+          - 'treeitem "37.RC: Relationship" [ref=e237]':
+            - 'button "37.RC: Relationship" [ref=e238]':
+              - generic [ref=e239]:
+                - generic [ref=e240]: "37."
+                - text: "RC: Relationship"
+          - 'treeitem "38.RC: Structure" [ref=e241]':
+            - 'button "38.RC: Structure" [ref=e242]':
+              - generic [ref=e243]:
+                - generic [ref=e244]: "38."
+                - text: "RC: Structure"
+          - 'treeitem "39.RC: Title" [ref=e245]':
+            - 'button "39.RC: Title" [ref=e246]':
+              - generic [ref=e247]:
+                - generic [ref=e248]: "39."
+                - text: "RC: Title"
+          - 'treeitem "40.RC: Weaken-Strengthen" [ref=e249]':
+            - 'button "40.RC: Weaken-Strengthen" [ref=e250]':
+              - generic [ref=e251]:
+                - generic [ref=e252]: "40."
+                - text: "RC: Weaken-Strengthen"
+          - 'treeitem "41.RC Practice Passage 1: Obasan" [ref=e253]':
+            - 'button "41.RC Practice Passage 1: Obasan" [ref=e254]':
+              - generic [ref=e255]:
+                - generic [ref=e256]: "41."
+                - text: "RC Practice Passage 1: Obasan"
+          - 'treeitem "42.RC Practice Passage 2: Bankruptcy Law" [ref=e257]':
+            - 'button "42.RC Practice Passage 2: Bankruptcy Law" [ref=e258]':
+              - generic [ref=e259]:
+                - generic [ref=e260]: "42."
+                - text: "RC Practice Passage 2: Bankruptcy Law"
+          - 'treeitem "43.RC Practice Passage 3: Cultural Identity" [ref=e261]':
+            - 'button "43.RC Practice Passage 3: Cultural Identity" [ref=e262]':
+              - generic [ref=e263]:
+                - generic [ref=e264]: "43."
+                - text: "RC Practice Passage 3: Cultural Identity"
+          - 'treeitem "44.RC Practice Passage 4: Woody Allen" [ref=e265]':
+            - 'button "44.RC Practice Passage 4: Woody Allen" [ref=e266]':
+              - generic [ref=e267]:
+                - generic [ref=e268]: "44."
+                - text: "RC Practice Passage 4: Woody Allen"
+          - 'treeitem "45.RC Practice Passage 5: Cosmic vs. Traditional Justice" [ref=e269]':
+            - 'button "45.RC Practice Passage 5: Cosmic vs. Traditional Justice" [ref=e270]':
+              - generic [ref=e271]:
+                - generic [ref=e272]: "45."
+                - text: "RC Practice Passage 5: Cosmic vs. Traditional Justice"
+          - 'treeitem "46.RC Practice Passage 6: Julia Margaret Cameron" [ref=e273]':
+            - 'button "46.RC Practice Passage 6: Julia Margaret Cameron" [ref=e274]':
+              - generic [ref=e275]:
+                - generic [ref=e276]: "46."
+                - text: "RC Practice Passage 6: Julia Margaret Cameron"
+          - 'treeitem "47.RC Practice Passage 7: False Needs in Advertising" [ref=e277]':
+            - 'button "47.RC Practice Passage 7: False Needs in Advertising" [ref=e278]':
+              - generic [ref=e279]:
+                - generic [ref=e280]: "47."
+                - text: "RC Practice Passage 7: False Needs in Advertising"
+          - 'treeitem "48.RC Practice Passage 8: Justice in Property" [ref=e281]':
+            - 'button "48.RC Practice Passage 8: Justice in Property" [ref=e282]':
+              - generic [ref=e283]:
+                - generic [ref=e284]: "48."
+                - text: "RC Practice Passage 8: Justice in Property"
+          - treeitem "49.RC Quick Reference Guide" [ref=e285]:
+            - button "49.RC Quick Reference Guide" [ref=e286]:
+              - generic [ref=e287]:
+                - generic [ref=e288]: "49."
+                - text: RC Quick Reference Guide
+          - heading "Advanced Passages" [level=3] [ref=e289]
+          - 'treeitem "50.Advanced Passage 1: Mathematics as Language" [ref=e290]':
+            - 'button "50.Advanced Passage 1: Mathematics as Language" [ref=e291]':
+              - generic [ref=e292]:
+                - generic [ref=e293]: "50."
+                - text: "Advanced Passage 1: Mathematics as Language"
+          - 'treeitem "51.Advanced Passage 2: Bentham''s Legal Reforms" [ref=e294]':
+            - 'button "51.Advanced Passage 2: Bentham''s Legal Reforms" [ref=e295]':
+              - generic [ref=e296]:
+                - generic [ref=e297]: "51."
+                - text: "Advanced Passage 2: Bentham's Legal Reforms"
+          - 'treeitem "52.Advanced Passage 3: Critical Legal Studies" [ref=e298]':
+            - 'button "52.Advanced Passage 3: Critical Legal Studies" [ref=e299]':
+              - generic [ref=e300]:
+                - generic [ref=e301]: "52."
+                - text: "Advanced Passage 3: Critical Legal Studies"
+          - 'treeitem "53.Advanced Passage 4: Dworkin''s Legal Theory" [ref=e302]':
+            - 'button "53.Advanced Passage 4: Dworkin''s Legal Theory" [ref=e303]':
+              - generic [ref=e304]:
+                - generic [ref=e305]: "53."
+                - text: "Advanced Passage 4: Dworkin's Legal Theory"
+          - 'treeitem "54.Advanced Passage 5: Psychology of Risk" [ref=e306]':
+            - 'button "54.Advanced Passage 5: Psychology of Risk" [ref=e307]':
+              - generic [ref=e308]:
+                - generic [ref=e309]: "54."
+                - text: "Advanced Passage 5: Psychology of Risk"
+          - 'treeitem "55.Advanced Passage 6: Historical Sociology" [ref=e310]':
+            - 'button "55.Advanced Passage 6: Historical Sociology" [ref=e311]':
+              - generic [ref=e312]:
+                - generic [ref=e313]: "55."
+                - text: "Advanced Passage 6: Historical Sociology"
+          - 'treeitem "56.Advanced Passage 7: Digitalization and Copyright Law" [ref=e314]':
+            - 'button "56.Advanced Passage 7: Digitalization and Copyright Law" [ref=e315]':
+              - generic [ref=e316]:
+                - generic [ref=e317]: "56."
+                - text: "Advanced Passage 7: Digitalization and Copyright Law"
+    - link "Question Bank 150" [ref=e319] [cursor=pointer]:
+      - /url: /question-bank
+      - img [ref=e320]
+      - generic [ref=e322]: Question Bank
+      - generic [ref=e323]: "150"
+    - generic [ref=e325]: © 2025 LSAT Mastery Course
+  - generic [ref=e326]:
+    - banner [ref=e327]:
+      - generic [ref=e328]:
+        - navigation "Breadcrumb" [ref=e329]:
+          - button "Dashboard" [ref=e330]
+          - img [ref=e331]
+          - generic [ref=e333]: "Module 1: Argument Part"
+        - navigation "Lesson navigation" [ref=e334]:
+          - generic [ref=e335]: Previous
+          - 'button "Next: Step-by-Step Guide: Argument Part" [ref=e336]':
+            - generic [ref=e337]: Next
+            - img [ref=e338]
+      - generic [ref=e340]:
+        - button "Search lessons (Ctrl+K)" [ref=e341]:
+          - img [ref=e342]
+          - generic [ref=e345]: Search
+          - generic [ref=e346]: Ctrl+K
+        - link "Question Bank" [ref=e347] [cursor=pointer]:
+          - /url: /question-bank
+          - img [ref=e348]
+          - generic [ref=e350]: Question Bank
+          - generic [ref=e351]: "150"
+        - button "Open roadmap" [ref=e352]:
+          - img [ref=e353]
+          - generic [ref=e358]: Roadmap
+        - button "Open style guide" [ref=e359]:
+          - img [ref=e360]
+          - generic [ref=e366]: Style Guide
+        - button "Open export center" [ref=e367]:
+          - img [ref=e368]
+          - generic [ref=e371]: Export
+    - link "Skip to content" [ref=e372] [cursor=pointer]:
+      - /url: "#main-content"
+    - main [ref=e373]:
+      - generic [ref=e374]:
+        - generic [ref=e375]:
+          - generic [ref=e376]:
+            - generic [ref=e377]: Current Lesson
+            - heading "Introduction to Argument Part" [level=1] [ref=e378]
+          - generic [ref=e380]:
+            - generic [ref=e381]: Lesson
+            - button "Copy Text" [ref=e383]:
+              - img [ref=e384]
+              - generic [ref=e387]: Copy Text
+            - button "Export As" [ref=e389]:
+              - img [ref=e390]
+              - generic [ref=e393]: Export As
+              - img [ref=e394]
+        - generic [ref=e396]:
+          - 'heading "MODULE 1: Argument Part" [level=2] [ref=e397]'
+          - paragraph [ref=e398]:
+            - strong [ref=e399]: "Question Goal:"
+            - text: Determine the exact job a sentence is doing inside an argument. Is it the author's main point, a supporting reason, a bridge between two ideas, or a statement the author is acknowledging or pushing against?
+          - heading "Why This Matters" [level=3] [ref=e401]
+          - paragraph [ref=e402]: Argument Part is the foundation beneath almost every other LR skill. Before you can weaken an argument, strengthen it, expose its flaw, or identify its assumption, you need to know which sentence is the point and which sentences are doing the support work.
+          - generic [ref=e403]:
+            - generic [ref=e404]:
+              - img [ref=e405]
+              - generic [ref=e407]: Frequency
+            - paragraph [ref=e409]:
+              - text: Argument Part questions appear on virtually every scored Logical Reasoning section. Combined with Main Conclusion (Module 2), identification questions account for roughly
+              - strong [ref=e410]: 15% of all LR questions
+              - text: . More importantly, the skill itself is a prerequisite for the other 85%.
+          - heading "What Makes This Question Type Unique" [level=3] [ref=e411]
+          - paragraph [ref=e412]:
+            - text: Unlike most LR questions, Argument Part does not ask whether the reasoning works. You are not fixing the argument or judging its strength. You are stepping back and
+            - strong [ref=e413]: describing the role each sentence plays
+            - text: inside the argument's structure.
+          - paragraph [ref=e414]: The stem will quote or paraphrase a target sentence, and your task is to place that sentence in the support chain. That means reading the whole stimulus, tracing which claims support which others, and then labeling the highlighted statement in abstract terms.
+          - heading "Recognizing the Question" [level=3] [ref=e415]
+          - paragraph [ref=e416]: "You can identify an Argument Part question because the stem will cite a specific phrase or sentence and ask you to describe its role. Look for these patterns:"
+          - table [ref=e418]:
+            - rowgroup [ref=e419]:
+              - row "Question Stem Pattern Key Signal" [ref=e420]:
+                - columnheader "Question Stem Pattern" [ref=e421]
+                - columnheader "Key Signal" [ref=e422]
+            - rowgroup [ref=e423]:
+              - row "\"The statement that [X] plays which one of the following roles in the argument?\" Asks for the role of a quoted claim" [ref=e424]:
+                - cell "\"The statement that [X] plays which one of the following roles in the argument?\"" [ref=e425]
+                - cell "Asks for the role of a quoted claim" [ref=e426]:
+                  - text: Asks for the
+                  - strong [ref=e427]: role
+                  - text: of a quoted claim
+              - row "\"The claim that [X] figures in the argument in which one of the following ways?\" Asks how a claim figures in the argument" [ref=e428]:
+                - cell "\"The claim that [X] figures in the argument in which one of the following ways?\"" [ref=e429]
+                - cell "Asks how a claim figures in the argument" [ref=e430]:
+                  - text: Asks how a claim
+                  - strong [ref=e431]: figures in
+                  - text: the argument
+              - row "\"Which one of the following most accurately describes the relationship between...\" Asks about the relationship between two claims" [ref=e432]:
+                - cell "\"Which one of the following most accurately describes the relationship between...\"" [ref=e433]
+                - cell "Asks about the relationship between two claims" [ref=e434]:
+                  - text: Asks about the
+                  - strong [ref=e435]: relationship
+                  - text: between two claims
+              - row "\"The statement [X] serves which one of the following functions?\" Asks about the function of a statement" [ref=e436]:
+                - cell "\"The statement [X] serves which one of the following functions?\"" [ref=e437]
+                - cell "Asks about the function of a statement" [ref=e438]:
+                  - text: Asks about the
+                  - strong [ref=e439]: function
+                  - text: of a statement
+          - heading "The Anatomy of an Argument" [level=2] [ref=e441]
+          - paragraph [ref=e442]: An LSAT argument is a structured claim where some statements provide support for other statements. To master Argument Part questions, you need to see every argument as a machine with identifiable moving parts.
+          - paragraph [ref=e443]: "Consider this simple argument:"
+          - generic [ref=e444]: "\"The committee should postpone the outdoor concert. The field will be unsafe, since heavy rain is expected all evening.\""
+          - paragraph [ref=e445]: "This simple argument has three parts working together:"
+          - generic [ref=e446]:
+            - generic [ref=e447]:
+              - generic [ref=e448]:
+                - generic [ref=e449]: Sentence
+                - generic [ref=e450]: "\"The committee should postpone the outdoor concert.\""
+                - generic [ref=e451]: Main Conclusion
+              - generic [ref=e453]:
+                - generic [ref=e454]: Structural Role
+                - paragraph [ref=e456]: This is the final recommendation. It is the claim the argument ultimately wants you to accept, so everything else is working toward it.
+            - generic [ref=e457]:
+              - generic [ref=e458]:
+                - generic [ref=e459]: Sentence
+                - generic [ref=e460]: "\"Heavy rain is expected all evening.\""
+                - generic [ref=e461]: Premise
+              - generic [ref=e463]:
+                - generic [ref=e464]: Structural Role
+                - paragraph [ref=e466]: This is the underlying evidence. The argument treats it as the fact that starts the chain of support.
+            - generic [ref=e467]:
+              - generic [ref=e468]:
+                - generic [ref=e469]: Sentence
+                - generic [ref=e470]: "\"The field will be unsafe.\""
+                - generic [ref=e471]: Intermediate Conclusion
+              - generic [ref=e473]:
+                - generic [ref=e474]: Structural Role
+                - paragraph [ref=e476]: This is the bridge statement. It is supported by the forecasted rain, and it in turn supports the recommendation to postpone the concert.
+          - heading "The Flow of Support" [level=3] [ref=e477]
+          - paragraph [ref=e478]:
+            - text: "Every argument has a direction: evidence flows toward conclusions. The key insight is that support always moves"
+            - strong [ref=e479]: upward
+            - text: toward the main conclusion. Premises support intermediate conclusions, which support the main conclusion.
+          - generic [ref=e480]:
+            - generic [ref=e481]: Support Flow
+            - generic [ref=e484]:
+              - generic [ref=e485]:
+                - generic [ref=e486]: "1"
+                - generic [ref=e488]:
+                  - strong [ref=e489]: Premise
+                  - text: (Heavy rain is expected) supports...
+              - generic [ref=e490]:
+                - generic [ref=e491]: "2"
+                - generic [ref=e493]:
+                  - strong [ref=e494]: Intermediate Conclusion
+                  - text: (The field will be unsafe) which supports...
+              - generic [ref=e495]:
+                - generic [ref=e496]: "3"
+                - generic [ref=e498]:
+                  - strong [ref=e499]: Main Conclusion
+                  - text: (The concert should be postponed)
+          - generic [ref=e500]:
+            - generic [ref=e501]:
+              - img [ref=e502]
+              - generic [ref=e504]: The Why Test
+            - paragraph [ref=e506]:
+              - text: To identify the main conclusion, ask
+              - strong [ref=e507]: "\"Why?\""
+              - text: "of each statement. Ask \"Why postpone the concert?\" and the argument answers: \"Because the field will be unsafe.\" Ask \"Why will the field be unsafe?\" and the argument answers: \"Because heavy rain is expected.\" Ask \"Why is heavy rain expected?\" and the argument gives no further support. That confirms the forecast is the premise, the unsafe-field claim is the intermediate conclusion, and postponing is the main conclusion."
+          - heading "The Six Roles You Must Know" [level=2] [ref=e509]
+          - paragraph [ref=e510]: These are the six role labels you need at the beginning of the module. Later lessons will unpack the harder edge cases, but this vocabulary is the base layer.
+          - heading "1. Main Conclusion" [level=3] [ref=e511]
+          - paragraph [ref=e512]: The ultimate point the argument is trying to prove. It receives support from other statements, but it does not exist to support anything further inside the same argument.
+          - generic [ref=e513]:
+            - generic [ref=e514]:
+              - img [ref=e515]
+              - generic [ref=e517]: Spotting It
+            - paragraph [ref=e519]: Look for recommendations (*should, ought to*), predictions (*will, is likely to*), or judgments (*unreasonable, mistaken*). It is the "Ultimate Therefore" of the argument.
+          - heading "2. Premise" [level=3] [ref=e520]
+          - paragraph [ref=e521]: A fact, finding, or reason offered in support of a conclusion. Premises do the proving. The argument takes them as given and uses them as the foundation for some further claim.
+          - generic [ref=e522]:
+            - generic [ref=e523]:
+              - img [ref=e524]
+              - generic [ref=e526]: Spotting It
+            - paragraph [ref=e528]: "Premises often follow indicator words: *because, since, for, after all, given that, as evidenced by*. They present facts, study results, or generally accepted truths."
+          - heading "3. Intermediate (Subsidiary) Conclusion" [level=3] [ref=e529]
+          - paragraph [ref=e530]: A statement that acts as both a conclusion and a premise. It is supported by evidence (making it a conclusion), and it then serves as evidence for the main conclusion (making it a premise). This dual role is what makes it "intermediate."
+          - generic [ref=e531]:
+            - generic [ref=e532]:
+              - img [ref=e533]
+              - generic [ref=e535]: Spotting It
+            - paragraph [ref=e537]: Find a statement that has a "because" clause supporting it, but is then used to support a further claim. It sits in the middle of the support chain.
+          - heading "4. Opposing Viewpoint" [level=3] [ref=e538]
+          - paragraph [ref=e539]: A claim made by someone other than the author that the author intends to challenge, refute, or cast doubt upon. Many LSAT arguments are structured as rebuttals where the author first presents someone else's position, then argues against it.
+          - generic [ref=e540]:
+            - generic [ref=e541]:
+              - img [ref=e542]
+              - generic [ref=e544]: Spotting It
+            - paragraph [ref=e546]: "Introduced by: *Some people argue that..., It has been claimed that..., Many believe that..., Critics contend that...*. The author will then pivot with *But, However, Yet, Nevertheless*."
+          - heading "5. Concession" [level=3] [ref=e547]
+          - paragraph [ref=e548]: A point the author admits is true, even though it seems to favor the opposing side. The author grants this point to appear reasonable, then explains why it doesn't change their conclusion.
+          - generic [ref=e549]:
+            - generic [ref=e550]:
+              - img [ref=e551]
+              - generic [ref=e553]: Spotting It
+            - paragraph [ref=e555]: "Flagged by: *Although..., While it is true that..., Granted..., Despite..., Admittedly...*. The author acknowledges the point, then pivots to their main argument."
+          - heading "6. Background / Context" [level=3] [ref=e556]
+          - paragraph [ref=e557]: Not every sentence is a logical building block. Some statements simply set the stage by providing undisputed facts, introducing a topic, or describing a phenomenon that the argument will then analyze. Background statements neither support nor are supported by other claims.
+          - generic [ref=e558]:
+            - generic [ref=e559]:
+              - img [ref=e560]
+              - generic [ref=e562]: Spotting It
+            - paragraph [ref=e564]: "These often appear at the very beginning of the stimulus and present general facts without argumentative force: *\"Landfills are generally designed to hold ten years' worth of waste...\"*"
+          - heading "Indicator Words Reference" [level=2] [ref=e566]
+          - paragraph [ref=e567]: Indicator words are often the fastest clue to structure. They do not replace analysis, but they are excellent first signals for whether a statement is offering support, receiving support, or pivoting to a contrasting view.
+          - table [ref=e569]:
+            - rowgroup [ref=e570]:
+              - row "Conclusion Indicators Premise Indicators Contrast/Pivot Indicators" [ref=e571]:
+                - columnheader "Conclusion Indicators" [ref=e572]
+                - columnheader "Premise Indicators" [ref=e573]
+                - columnheader "Contrast/Pivot Indicators" [ref=e574]
+            - rowgroup [ref=e575]:
+              - row "Therefore Because But" [ref=e576]:
+                - cell "Therefore" [ref=e577]
+                - cell "Because" [ref=e578]
+                - cell "But" [ref=e579]
+              - row "Thus Since However" [ref=e580]:
+                - cell "Thus" [ref=e581]
+                - cell "Since" [ref=e582]
+                - cell "However" [ref=e583]
+              - row "So For Yet" [ref=e584]:
+                - cell "So" [ref=e585]
+                - cell "For" [ref=e586]
+                - cell "Yet" [ref=e587]
+              - row "Hence After all Although" [ref=e588]:
+                - cell "Hence" [ref=e589]
+                - cell "After all" [ref=e590]
+                - cell "Although" [ref=e591]
+              - row "Consequently Given that While" [ref=e592]:
+                - cell "Consequently" [ref=e593]
+                - cell "Given that" [ref=e594]
+                - cell "While" [ref=e595]
+              - row "It follows that As evidenced by Nevertheless" [ref=e596]:
+                - cell "It follows that" [ref=e597]
+                - cell "As evidenced by" [ref=e598]
+                - cell "Nevertheless" [ref=e599]
+              - row "This shows that Due to the fact that Despite" [ref=e600]:
+                - cell "This shows that" [ref=e601]
+                - cell "Due to the fact that" [ref=e602]
+                - cell "Despite" [ref=e603]
+              - row "We can conclude that On the grounds that On the other hand" [ref=e604]:
+                - cell "We can conclude that" [ref=e605]
+                - cell "On the grounds that" [ref=e606]
+                - cell "On the other hand" [ref=e607]
+          - generic [ref=e608]:
+            - generic [ref=e609]:
+              - img [ref=e610]
+              - generic [ref=e612]: Key Takeaway
+            - paragraph [ref=e614]:
+              - text: Argument Part is a
+              - strong [ref=e615]: descriptive
+              - text: question type. Your job is to map the support chain, not to judge whether the argument is persuasive. If you can identify the six core roles, notice indicator words, and apply the Why Test, you will have the right mental model for the rest of the module.

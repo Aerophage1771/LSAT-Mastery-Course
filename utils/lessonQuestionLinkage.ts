@@ -1,47 +1,15 @@
-import type { ContentBlock, DrillReference, Lesson, LessonLinkageMeta, LessonLinkageStatus, ModuleData } from '../types';
+import type {
+  ContentBlock,
+  DrillReference,
+  Lesson,
+  LessonLinkageMeta,
+  LessonLinkageStatus,
+  LessonQuestionPolicy,
+  ModuleData,
+} from '../types';
 import { buildCanonicalDrillReference, getRouteModuleIdForContentModuleId } from './courseCatalog';
 
 const PT_ID_REGEX = /PT-\d+-S-\d+-Q-\d+/g;
-const ADVANCED_EXEMPT_LESSON_IDS = new Set<string>([
-  '1-7',
-  '2-7',
-  '3-8',
-  '4-8',
-  '5-8',
-  '6-6',
-  '7-9',
-  '8-6',
-  '9-6',
-  '16-6',
-  '17-6',
-  '18-7',
-  '19-6',
-  '20-6',
-]);
-const REFERENCE_MISSING_CARD_EXEMPT_LESSON_IDS = new Set<string>([
-  '1-12',
-  '2-11',
-  '3-12',
-  '4-12',
-  '5-12',
-  '6-10',
-  '7-11',
-  '8-11',
-  '9-13',
-  '10-12',
-  '11-14',
-  '12-7',
-  '13-7',
-  '14-7',
-  '15-8',
-  '16-11',
-  '17-11',
-  '18-8',
-  '19-10',
-  '20-10',
-  '59-7',
-  '55-ref',
-]);
 
 export function getRouteModuleId(moduleId: number): number {
   return getRouteModuleIdForContentModuleId(moduleId);
@@ -91,35 +59,25 @@ export interface LessonLinkageStatusDetails extends LessonLinkageMeta {
   missingQuestionCard: boolean;
 }
 
+function resolveQuestionPolicy(routeModuleId: number, lesson: Lesson): LessonQuestionPolicy | undefined {
+  const isLrRouteModule = routeModuleId >= 1 && routeModuleId <= 22;
+  if (!isLrRouteModule) return undefined;
+  return lesson.questionPolicy ?? 'none';
+}
+
 export function getLessonLinkageStatus({
   moduleId,
   lesson,
-  lessonOrder,
-  moduleTitle: _moduleTitle,
 }: {
   moduleId: number;
   lesson: Lesson;
-  lessonOrder?: number;
-  moduleTitle?: string;
 }): LessonLinkageStatusDetails {
   const routeModuleId = getRouteModuleId(moduleId);
-  const lessonNumber = getLessonNumber(lesson.id);
-  const resolvedLessonOrder = lessonOrder ?? lessonNumber ?? 1;
   const hasQuestionCard = extractQuestionCardIds(lesson.content).length > 0;
   const ptIds = extractPtIds(extractQuestionCardIds(lesson.content));
-  const isLrRouteModule = routeModuleId >= 1 && routeModuleId <= 22;
-  const isIntroOrStepByStepExempt = isLrRouteModule && (resolvedLessonOrder === 1 || resolvedLessonOrder === 2);
-  const isAdvancedAllowlistedExempt = ADVANCED_EXEMPT_LESSON_IDS.has(lesson.id);
-  const isFullExempt = isIntroOrStepByStepExempt || isAdvancedAllowlistedExempt;
-  const isMissingCardExempt = isFullExempt || REFERENCE_MISSING_CARD_EXEMPT_LESSON_IDS.has(lesson.id);
-  let exemptionReason: string | undefined;
-  if (isIntroOrStepByStepExempt) {
-    exemptionReason = resolvedLessonOrder === 1 ? 'LR intro exemption' : 'LR step-by-step exemption';
-  } else if (isAdvancedAllowlistedExempt) {
-    exemptionReason = 'Advanced lesson allowlist exemption';
-  }
-  const missingQuestionNumber = hasQuestionCard && ptIds.length === 0 && !isFullExempt;
-  const missingQuestionCard = isLrRouteModule && lessonNumber !== null && lessonNumber >= 4 && !hasQuestionCard && !isMissingCardExempt;
+  const questionPolicy = resolveQuestionPolicy(routeModuleId, lesson);
+  const missingQuestionNumber = hasQuestionCard && ptIds.length === 0;
+  const missingQuestionCard = questionPolicy === 'repository_required' && !hasQuestionCard;
 
   let status: LessonLinkageStatus = 'ok';
   let statusLabel: LessonLinkageMeta['statusLabel'];
@@ -137,30 +95,29 @@ export function getLessonLinkageStatus({
     ptIds,
     status,
     displayTitle,
+    questionPolicy,
     statusLabel,
     hasQuestionCard,
     missingQuestionNumber,
     missingQuestionCard,
-    isExempt: isFullExempt,
-    exemptionReason,
   };
 }
 
 export function buildLessonLinkageByLessonId(
   moduleId: number,
   lessons: Lesson[],
-  moduleTitle?: string,
 ): Record<string, LessonLinkageStatusDetails> {
-  return Object.fromEntries(
-    lessons.map((lesson, index) => [lesson.id, getLessonLinkageStatus({ moduleId, lesson, lessonOrder: index + 1, moduleTitle })]),
-  );
+  return Object.fromEntries(lessons.map((lesson) => [lesson.id, getLessonLinkageStatus({ moduleId, lesson })]));
 }
 
-export function normalizeLessonsWithLinkage(moduleId: number, lessons: Lesson[], moduleTitle?: string): {
+export function normalizeLessonsWithLinkage(
+  moduleId: number,
+  lessons: Lesson[],
+): {
   lessons: Lesson[];
   linkageByLessonId: Record<string, LessonLinkageStatusDetails>;
 } {
-  const linkageByLessonId = buildLessonLinkageByLessonId(moduleId, lessons, moduleTitle);
+  const linkageByLessonId = buildLessonLinkageByLessonId(moduleId, lessons);
   return {
     linkageByLessonId,
     lessons: lessons.map((lesson) => ({
@@ -177,7 +134,7 @@ export function buildDrillCrossReferences(modules: ModuleData[]): Record<string,
     const routeModuleId = getRouteModuleId(moduleData.id);
     if (routeModuleId < 1 || routeModuleId > 22) continue;
 
-    const linkageByLessonId = buildLessonLinkageByLessonId(routeModuleId, moduleData.lessons, moduleData.title);
+    const linkageByLessonId = buildLessonLinkageByLessonId(routeModuleId, moduleData.lessons);
     for (const [lessonIndex, lesson] of moduleData.lessons.entries()) {
       const linkage = linkageByLessonId[lesson.id];
       const canonicalReference = buildCanonicalDrillReference(routeModuleId, lesson, lessonIndex);

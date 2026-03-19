@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import DOMPurify from 'dompurify';
 import { Search, Filter, ChevronDown, ChevronUp, BookOpen, Hash, X, ArrowLeft, Download } from 'lucide-react';
 import { ContentBlock, DrillReference } from '../types';
-import inventoryData from '../docs/invented-questions-inventory.json';
+import inventoryData from '../docs/operations/audits/invented-questions-inventory.json';
 import { resolveIllustrativeInventoryItem } from '../utils/courseCatalog';
 import {
   generateQuestionBankCSV,
@@ -77,10 +77,7 @@ const LR_LESSONS = [
   Lesson22_Module59_Questions,
 ];
 
-const RC_LESSONS = [
-  Lesson1_QuestionRepository,
-  Lesson1_AdvancedRCQuestionRepository,
-];
+const RC_LESSONS = [Lesson1_QuestionRepository, Lesson1_AdvancedRCQuestionRepository];
 
 interface ParsedQuestion {
   id: string;
@@ -222,9 +219,8 @@ function extractRCQuestions(counter: { value: number }): ParsedQuestion[] {
       }
 
       if (questionText || options.length > 0) {
-        const passageSnippet = currentPassageText.length > 300
-          ? currentPassageText.slice(0, 300) + '…'
-          : currentPassageText;
+        const passageSnippet =
+          currentPassageText.length > 300 ? currentPassageText.slice(0, 300) + '…' : currentPassageText;
 
         counter.value++;
         questions.push({
@@ -347,21 +343,18 @@ const QuestionCardItem: React.FC<{
 
   return (
     <div className="group rounded-xl border border-slate-200 bg-white hover:border-slate-300 transition-all duration-200 shadow-sm hover:shadow-md overflow-hidden">
-      <button
-        onClick={onToggle}
-        className="w-full text-left px-5 py-4 flex items-start gap-4"
-      >
+      <button onClick={onToggle} className="w-full text-left px-5 py-4 flex items-start gap-4">
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-2 flex-wrap">
             <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-indigo-50 text-indigo-700 text-[11px] font-bold font-mono tracking-tight">
               <Hash size={10} />
               {q.ptId}
             </span>
-            <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-semibold ${
-              q.category === 'RC'
-                ? 'bg-emerald-50 text-emerald-700'
-                : 'bg-slate-100 text-slate-600'
-            }`}>
+            <span
+              className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-semibold ${
+                q.category === 'RC' ? 'bg-emerald-50 text-emerald-700' : 'bg-slate-100 text-slate-600'
+              }`}
+            >
               <BookOpen size={10} />
               {q.typeName}
             </span>
@@ -377,11 +370,7 @@ const QuestionCardItem: React.FC<{
               <span className="text-[10px] text-indigo-500 font-medium">Has drill lesson</span>
             )}
           </div>
-          {!isExpanded && (
-            <p className="text-[14px] text-slate-500 leading-relaxed line-clamp-2">
-              {truncated}
-            </p>
-          )}
+          {!isExpanded && <p className="text-[14px] text-slate-500 leading-relaxed line-clamp-2">{truncated}</p>}
         </div>
         <div className="flex-shrink-0 mt-1 text-slate-400 group-hover:text-slate-600 transition-colors">
           {isExpanded ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
@@ -398,15 +387,16 @@ const QuestionCardItem: React.FC<{
                 onClick={(e) => e.stopPropagation()}
               >
                 <BookOpen size={12} />
-                <span>Module {drillCrossReferences[q.ptId].moduleId}: {drillCrossReferences[q.ptId].moduleTitle} - {drillCrossReferences[q.ptId].lessonTitle}</span>
+                <span>
+                  Module {drillCrossReferences[q.ptId].moduleId}: {drillCrossReferences[q.ptId].moduleTitle} -{' '}
+                  {drillCrossReferences[q.ptId].lessonTitle}
+                </span>
               </Link>
             </div>
           )}
           {q.passageTitle && (
             <div className="px-5 py-2.5 bg-amber-50/50 border-b border-amber-100">
-              <span className="text-[11px] font-semibold text-amber-700">
-                Passage: {q.passageTitle}
-              </span>
+              <span className="text-[11px] font-semibold text-amber-700">Passage: {q.passageTitle}</span>
             </div>
           )}
           <div className="px-5 py-4 bg-slate-50/50 border-b border-slate-100">
@@ -421,9 +411,7 @@ const QuestionCardItem: React.FC<{
 
           {q.question && (
             <div className="px-5 py-3 border-b border-slate-100">
-              <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5">
-                Question
-              </div>
+              <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5">Question</div>
               <div
                 className="text-[15px] text-slate-900 font-medium leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: parseInline(q.question) }}
@@ -573,10 +561,10 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
     }
 
     if (showInUseOnly) {
-      result = result.filter(q => drillCrossReferences[q.ptId]);
+      result = result.filter((q) => drillCrossReferences[q.ptId]);
     }
     if (showNotInUseOnly) {
-      result = result.filter(q => !drillCrossReferences[q.ptId]);
+      result = result.filter((q) => !drillCrossReferences[q.ptId]);
     }
 
     if (searchQuery.trim()) {
@@ -643,7 +631,10 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
   return (
     <div className="flex flex-col h-full min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <div className="bg-white border-b border-slate-200 px-6 py-3 flex items-center gap-4">
-        <Link to="/" className="flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-indigo-600 transition-colors">
+        <Link
+          to="/"
+          className="flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-indigo-600 transition-colors"
+        >
           <ArrowLeft size={16} />
           <span>Dashboard</span>
         </Link>
@@ -651,405 +642,436 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
         <span className="text-sm font-semibold text-slate-800">Question Bank</span>
       </div>
       <div className="flex flex-1 min-h-0">
-      {/* Mobile overlay */}
-      {sidebarOpen && (
-        <div
-          className="fixed inset-0 bg-black/20 z-30 lg:hidden"
-          onClick={() => setSidebarOpen(false)}
-        />
-      )}
+        {/* Mobile overlay */}
+        {sidebarOpen && (
+          <div className="fixed inset-0 bg-black/20 z-30 lg:hidden" onClick={() => setSidebarOpen(false)} />
+        )}
 
-      {/* Sidebar */}
-      <aside
-        className={`fixed lg:sticky top-0 left-0 z-40 lg:z-0 h-full w-72 bg-white border-r border-slate-200 flex flex-col transition-transform duration-200 lg:translate-x-0 ${
-          sidebarOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
-      >
-        <div className="p-5 border-b border-slate-100">
-          <div className="flex items-center justify-between mb-1">
-            <h2 className="text-sm font-bold text-slate-900 uppercase tracking-wider">
-              Question Types
-            </h2>
-            <button
-              className="lg:hidden p-1 rounded text-slate-400 hover:text-slate-600"
-              onClick={() => setSidebarOpen(false)}
-            >
-              <X size={18} />
-            </button>
+        {/* Sidebar */}
+        <aside
+          className={`fixed lg:sticky top-0 left-0 z-40 lg:z-0 h-full w-72 bg-white border-r border-slate-200 flex flex-col transition-transform duration-200 lg:translate-x-0 ${
+            sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
+        >
+          <div className="p-5 border-b border-slate-100">
+            <div className="flex items-center justify-between mb-1">
+              <h2 className="text-sm font-bold text-slate-900 uppercase tracking-wider">Question Types</h2>
+              <button
+                className="lg:hidden p-1 rounded text-slate-400 hover:text-slate-600"
+                onClick={() => setSidebarOpen(false)}
+              >
+                <X size={18} />
+              </button>
+            </div>
+            <p className="text-[12px] text-slate-400">
+              {activeTab === 'real'
+                ? `${ALL_QUESTIONS.length} questions across ${totalTypeCount} types`
+                : `${resolvedIllustrativeInventory.length} illustrative across ${illustrativeTypeCountMap.size} types`}
+            </p>
           </div>
-          <p className="text-[12px] text-slate-400">
-            {activeTab === 'real'
-              ? `${ALL_QUESTIONS.length} questions across ${totalTypeCount} types`
-              : `${resolvedIllustrativeInventory.length} illustrative across ${illustrativeTypeCountMap.size} types`}
-          </p>
-        </div>
 
-        <nav className="flex-1 overflow-y-auto py-2 scrollbar-hide">
-          {activeTab === 'real' ? (
-            <>
-              <button
-                onClick={() => {
-                  setSelectedType(null);
-                  setSelectedCategory(null);
-                  setSidebarOpen(false);
-                }}
-                className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
-                  selectedType === null && selectedCategory === null
-                    ? 'bg-indigo-50 text-indigo-700 font-semibold border-r-2 border-indigo-500'
-                    : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
-                }`}
-              >
-                <span>All Questions</span>
-                <span
-                  className={`text-[11px] font-mono ${selectedType === null && selectedCategory === null ? 'text-indigo-500' : 'text-slate-400'}`}
-                >
-                  {ALL_QUESTIONS.length}
-                </span>
-              </button>
-
-              <div className="px-5 pt-4 pb-1">
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">LR Questions</span>
-              </div>
-              {sortedLRTypes.map(([name, count]) => (
+          <nav className="flex-1 overflow-y-auto py-2 scrollbar-hide">
+            {activeTab === 'real' ? (
+              <>
                 <button
-                  key={`lr-${name}`}
                   onClick={() => {
-                    setSelectedType(name);
-                    setSelectedCategory('LR');
-                    setSidebarOpen(false);
-                  }}
-                  className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
-                    selectedType === name && selectedCategory === 'LR'
-                      ? 'bg-indigo-50 text-indigo-700 font-semibold border-r-2 border-indigo-500'
-                      : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
-                  }`}
-                >
-                  <span className="truncate pr-2">{name}</span>
-                  <span
-                    className={`text-[11px] font-mono flex-shrink-0 ${selectedType === name && selectedCategory === 'LR' ? 'text-indigo-500' : 'text-slate-400'}`}
-                  >
-                    {count}
-                  </span>
-                </button>
-              ))}
-
-              <div className="px-5 pt-4 pb-1">
-                <span className="text-[10px] font-bold text-emerald-500 uppercase tracking-widest">RC Questions</span>
-              </div>
-              {sortedRCTypes.map(([name, count]) => (
-                <button
-                  key={`rc-${name}`}
-                  onClick={() => {
-                    setSelectedType(name);
-                    setSelectedCategory('RC');
-                    setSidebarOpen(false);
-                  }}
-                  className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
-                    selectedType === name && selectedCategory === 'RC'
-                      ? 'bg-emerald-50 text-emerald-700 font-semibold border-r-2 border-emerald-500'
-                      : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
-                  }`}
-                >
-                  <span className="truncate pr-2">{name}</span>
-                  <span
-                    className={`text-[11px] font-mono flex-shrink-0 ${selectedType === name && selectedCategory === 'RC' ? 'text-emerald-500' : 'text-slate-400'}`}
-                  >
-                    {count}
-                  </span>
-                </button>
-              ))}
-            </>
-          ) : (
-            <>
-              <button
-                onClick={() => {
-                  setSelectedType(null);
-                  setSidebarOpen(false);
-                }}
-                className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
-                  selectedType === null
-                    ? 'bg-amber-50 text-amber-700 font-semibold border-r-2 border-amber-500'
-                    : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
-                }`}
-              >
-                <span>All Illustrative</span>
-                <span
-                  className={`text-[11px] font-mono ${selectedType === null ? 'text-amber-500' : 'text-slate-400'}`}
-                >
-                  {typedInventory.length}
-                </span>
-              </button>
-
-              <div className="px-5 pt-4 pb-1">
-                <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest">Question Types</span>
-              </div>
-              {sortedIllustrativeTypes.map(([name, count]) => (
-                <button
-                  key={`ill-${name}`}
-                  onClick={() => {
-                    setSelectedType(name);
+                    setSelectedType(null);
                     setSelectedCategory(null);
                     setSidebarOpen(false);
                   }}
                   className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
-                    selectedType === name
+                    selectedType === null && selectedCategory === null
+                      ? 'bg-indigo-50 text-indigo-700 font-semibold border-r-2 border-indigo-500'
+                      : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+                  }`}
+                >
+                  <span>All Questions</span>
+                  <span
+                    className={`text-[11px] font-mono ${selectedType === null && selectedCategory === null ? 'text-indigo-500' : 'text-slate-400'}`}
+                  >
+                    {ALL_QUESTIONS.length}
+                  </span>
+                </button>
+
+                <div className="px-5 pt-4 pb-1">
+                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">LR Questions</span>
+                </div>
+                {sortedLRTypes.map(([name, count]) => (
+                  <button
+                    key={`lr-${name}`}
+                    onClick={() => {
+                      setSelectedType(name);
+                      setSelectedCategory('LR');
+                      setSidebarOpen(false);
+                    }}
+                    className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
+                      selectedType === name && selectedCategory === 'LR'
+                        ? 'bg-indigo-50 text-indigo-700 font-semibold border-r-2 border-indigo-500'
+                        : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+                    }`}
+                  >
+                    <span className="truncate pr-2">{name}</span>
+                    <span
+                      className={`text-[11px] font-mono flex-shrink-0 ${selectedType === name && selectedCategory === 'LR' ? 'text-indigo-500' : 'text-slate-400'}`}
+                    >
+                      {count}
+                    </span>
+                  </button>
+                ))}
+
+                <div className="px-5 pt-4 pb-1">
+                  <span className="text-[10px] font-bold text-emerald-500 uppercase tracking-widest">RC Questions</span>
+                </div>
+                {sortedRCTypes.map(([name, count]) => (
+                  <button
+                    key={`rc-${name}`}
+                    onClick={() => {
+                      setSelectedType(name);
+                      setSelectedCategory('RC');
+                      setSidebarOpen(false);
+                    }}
+                    className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
+                      selectedType === name && selectedCategory === 'RC'
+                        ? 'bg-emerald-50 text-emerald-700 font-semibold border-r-2 border-emerald-500'
+                        : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+                    }`}
+                  >
+                    <span className="truncate pr-2">{name}</span>
+                    <span
+                      className={`text-[11px] font-mono flex-shrink-0 ${selectedType === name && selectedCategory === 'RC' ? 'text-emerald-500' : 'text-slate-400'}`}
+                    >
+                      {count}
+                    </span>
+                  </button>
+                ))}
+              </>
+            ) : (
+              <>
+                <button
+                  onClick={() => {
+                    setSelectedType(null);
+                    setSidebarOpen(false);
+                  }}
+                  className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
+                    selectedType === null
                       ? 'bg-amber-50 text-amber-700 font-semibold border-r-2 border-amber-500'
                       : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
                   }`}
                 >
-                  <span className="truncate pr-2">{name}</span>
+                  <span>All Illustrative</span>
                   <span
-                    className={`text-[11px] font-mono flex-shrink-0 ${selectedType === name ? 'text-amber-500' : 'text-slate-400'}`}
+                    className={`text-[11px] font-mono ${selectedType === null ? 'text-amber-500' : 'text-slate-400'}`}
                   >
-                    {count}
+                    {typedInventory.length}
                   </span>
                 </button>
-              ))}
-            </>
-          )}
-        </nav>
-      </aside>
 
-      {/* Main content */}
-      <main className="flex-1 min-w-0">
-        {/* Top bar */}
-        <div className="sticky top-0 z-20 bg-white/80 backdrop-blur-lg border-b border-slate-200">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4 space-y-3">
-            <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-lg">
-              <button className={`px-4 py-2 text-sm font-semibold rounded-md transition-all ${activeTab === 'real' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`} onClick={() => { setActiveTab('real'); setSelectedType(null); setSelectedCategory(null); }}>
-                PrepTest Questions <span className="ml-1 text-xs text-slate-400">{ALL_QUESTIONS.length}</span>
-              </button>
-              <button className={`px-4 py-2 text-sm font-semibold rounded-md transition-all ${activeTab === 'illustrative' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`} onClick={() => { setActiveTab('illustrative'); setSelectedType(null); setSelectedCategory(null); }}>
-                Illustrative Questions <span className="ml-1 text-xs text-slate-400">{typedInventory.length}</span>
-              </button>
-            </div>
-            <div className="flex items-center gap-3">
-              <button
-                className="lg:hidden flex-shrink-0 p-2 rounded-lg border border-slate-200 text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors"
-                onClick={() => setSidebarOpen(true)}
-              >
-                <Filter size={18} />
-              </button>
-
-              <div className="relative flex-1">
-                <Search
-                  size={16}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"
-                />
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder={activeTab === 'real' ? 'Search stimuli, questions, PT IDs…' : 'Search by lesson, module, card ID…'}
-                  className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-200 bg-white text-[14px] text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-400 transition-all"
-                />
-                {searchQuery && (
+                <div className="px-5 pt-4 pb-1">
+                  <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest">Question Types</span>
+                </div>
+                {sortedIllustrativeTypes.map(([name, count]) => (
                   <button
-                    onClick={() => setSearchQuery('')}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+                    key={`ill-${name}`}
+                    onClick={() => {
+                      setSelectedType(name);
+                      setSelectedCategory(null);
+                      setSidebarOpen(false);
+                    }}
+                    className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
+                      selectedType === name
+                        ? 'bg-amber-50 text-amber-700 font-semibold border-r-2 border-amber-500'
+                        : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+                    }`}
                   >
-                    <X size={14} />
+                    <span className="truncate pr-2">{name}</span>
+                    <span
+                      className={`text-[11px] font-mono flex-shrink-0 ${selectedType === name ? 'text-amber-500' : 'text-slate-400'}`}
+                    >
+                      {count}
+                    </span>
                   </button>
-                )}
-              </div>
-            </div>
-            {activeTab === 'real' && (
-              <div className="flex items-center gap-3 mb-3">
-                <button 
-                  onClick={() => setShowInUseOnly(!showInUseOnly)}
-                  className={`text-xs font-medium px-3 py-1.5 rounded-full border transition-colors ${showInUseOnly ? 'bg-indigo-50 text-indigo-700 border-indigo-200' : 'bg-white text-slate-500 border-slate-200 hover:border-slate-300'}`}
+                ))}
+              </>
+            )}
+          </nav>
+        </aside>
+
+        {/* Main content */}
+        <main className="flex-1 min-w-0">
+          {/* Top bar */}
+          <div className="sticky top-0 z-20 bg-white/80 backdrop-blur-lg border-b border-slate-200">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4 space-y-3">
+              <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-lg">
+                <button
+                  className={`px-4 py-2 text-sm font-semibold rounded-md transition-all ${activeTab === 'real' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                  onClick={() => {
+                    setActiveTab('real');
+                    setSelectedType(null);
+                    setSelectedCategory(null);
+                  }}
                 >
-                  {showInUseOnly ? '✓ In Use Only' : 'In Use Only'}
+                  PrepTest Questions <span className="ml-1 text-xs text-slate-400">{ALL_QUESTIONS.length}</span>
                 </button>
                 <button
-                  onClick={() => setShowNotInUseOnly(!showNotInUseOnly)} 
-                  className={`text-xs font-medium px-3 py-1.5 rounded-full border transition-colors ${showNotInUseOnly ? 'bg-amber-50 text-amber-700 border-amber-200' : 'bg-white text-slate-500 border-slate-200 hover:border-slate-300'}`}
+                  className={`px-4 py-2 text-sm font-semibold rounded-md transition-all ${activeTab === 'illustrative' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                  onClick={() => {
+                    setActiveTab('illustrative');
+                    setSelectedType(null);
+                    setSelectedCategory(null);
+                  }}
                 >
-                  {showNotInUseOnly ? '✓ Not In Use' : 'Not In Use'}
+                  Illustrative Questions <span className="ml-1 text-xs text-slate-400">{typedInventory.length}</span>
                 </button>
               </div>
-            )}
-          </div>
-        </div>
+              <div className="flex items-center gap-3">
+                <button
+                  className="lg:hidden flex-shrink-0 p-2 rounded-lg border border-slate-200 text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition-colors"
+                  onClick={() => setSidebarOpen(true)}
+                >
+                  <Filter size={18} />
+                </button>
 
-        {/* Header */}
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-8 pb-4">
-          <div className="flex items-start justify-between gap-4">
-            <h1 className="text-2xl font-bold text-slate-900 tracking-tight">Question Bank</h1>
-            <div className="relative">
-              <button
-                onClick={() => setExportMenuOpen((open) => !open)}
-                className="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-200 text-xs font-semibold text-slate-700 hover:bg-slate-50 transition-colors"
-              >
-                <Download size={14} />
-                Export
-                <ChevronDown size={14} className={`${exportMenuOpen ? 'rotate-180' : ''} transition-transform`} />
-              </button>
-              {exportMenuOpen && (
-                <div className="absolute right-0 mt-2 w-60 rounded-xl border border-slate-200 bg-white shadow-xl z-30 p-1.5">
-                  <button
-                    onClick={() =>
-                      downloadExport(
-                        generateQuestionBankJSON(exportRows),
-                        `question-bank-full-${activeTab}`,
-                        'json',
-                        'application/json',
-                      )
+                <div className="relative flex-1">
+                  <Search
+                    size={16}
+                    className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"
+                  />
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder={
+                      activeTab === 'real' ? 'Search stimuli, questions, PT IDs…' : 'Search by lesson, module, card ID…'
                     }
-                    className="w-full text-left px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 rounded-md"
+                    className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-200 bg-white text-[14px] text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-400 transition-all"
+                  />
+                  {searchQuery && (
+                    <button
+                      onClick={() => setSearchQuery('')}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+                    >
+                      <X size={14} />
+                    </button>
+                  )}
+                </div>
+              </div>
+              {activeTab === 'real' && (
+                <div className="flex items-center gap-3 mb-3">
+                  <button
+                    onClick={() => setShowInUseOnly(!showInUseOnly)}
+                    className={`text-xs font-medium px-3 py-1.5 rounded-full border transition-colors ${showInUseOnly ? 'bg-indigo-50 text-indigo-700 border-indigo-200' : 'bg-white text-slate-500 border-slate-200 hover:border-slate-300'}`}
                   >
-                    Export Full Database (JSON)
+                    {showInUseOnly ? '✓ In Use Only' : 'In Use Only'}
                   </button>
                   <button
-                    onClick={() =>
-                      downloadExport(
-                        generateQuestionBankCSV(exportRows),
-                        `question-bank-full-${activeTab}`,
-                        'csv',
-                        'text/csv;charset=utf-8',
-                      )
-                    }
-                    className="w-full text-left px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 rounded-md"
+                    onClick={() => setShowNotInUseOnly(!showNotInUseOnly)}
+                    className={`text-xs font-medium px-3 py-1.5 rounded-full border transition-colors ${showNotInUseOnly ? 'bg-amber-50 text-amber-700 border-amber-200' : 'bg-white text-slate-500 border-slate-200 hover:border-slate-300'}`}
                   >
-                    Export Full Database (CSV)
-                  </button>
-                  <div className="my-1 border-t border-slate-100" />
-                  <button
-                    onClick={() =>
-                      downloadExport(
-                        generateQuestionBankIDsText(exportRows),
-                        `question-bank-ids-${activeTab}`,
-                        'txt',
-                        'text/plain;charset=utf-8',
-                      )
-                    }
-                    className="w-full text-left px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 rounded-md"
-                  >
-                    Export IDs Only (TXT)
-                  </button>
-                  <button
-                    onClick={() =>
-                      downloadExport(
-                        generateQuestionBankIDsCSV(exportRows),
-                        `question-bank-ids-${activeTab}`,
-                        'csv',
-                        'text/csv;charset=utf-8',
-                      )
-                    }
-                    className="w-full text-left px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 rounded-md"
-                  >
-                    Export IDs Only (CSV)
-                  </button>
-                  <button
-                    onClick={() =>
-                      downloadExport(
-                        generateQuestionBankIDsText(missingOrIllustrativeRows),
-                        `question-bank-missing-or-illustrative-ids-${activeTab}`,
-                        'txt',
-                        'text/plain;charset=utf-8',
-                      )
-                    }
-                    className="w-full text-left px-3 py-2 text-xs font-medium text-amber-700 hover:bg-amber-50 rounded-md"
-                  >
-                    Export Missing/Illustrative IDs
+                    {showNotInUseOnly ? '✓ Not In Use' : 'Not In Use'}
                   </button>
                 </div>
               )}
             </div>
           </div>
-          <p className="mt-1 text-[14px] text-slate-500">
+
+          {/* Header */}
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-8 pb-4">
+            <div className="flex items-start justify-between gap-4">
+              <h1 className="text-2xl font-bold text-slate-900 tracking-tight">Question Bank</h1>
+              <div className="relative">
+                <button
+                  onClick={() => setExportMenuOpen((open) => !open)}
+                  className="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-200 text-xs font-semibold text-slate-700 hover:bg-slate-50 transition-colors"
+                >
+                  <Download size={14} />
+                  Export
+                  <ChevronDown size={14} className={`${exportMenuOpen ? 'rotate-180' : ''} transition-transform`} />
+                </button>
+                {exportMenuOpen && (
+                  <div className="absolute right-0 mt-2 w-60 rounded-xl border border-slate-200 bg-white shadow-xl z-30 p-1.5">
+                    <button
+                      onClick={() =>
+                        downloadExport(
+                          generateQuestionBankJSON(exportRows),
+                          `question-bank-full-${activeTab}`,
+                          'json',
+                          'application/json',
+                        )
+                      }
+                      className="w-full text-left px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 rounded-md"
+                    >
+                      Export Full Database (JSON)
+                    </button>
+                    <button
+                      onClick={() =>
+                        downloadExport(
+                          generateQuestionBankCSV(exportRows),
+                          `question-bank-full-${activeTab}`,
+                          'csv',
+                          'text/csv;charset=utf-8',
+                        )
+                      }
+                      className="w-full text-left px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 rounded-md"
+                    >
+                      Export Full Database (CSV)
+                    </button>
+                    <div className="my-1 border-t border-slate-100" />
+                    <button
+                      onClick={() =>
+                        downloadExport(
+                          generateQuestionBankIDsText(exportRows),
+                          `question-bank-ids-${activeTab}`,
+                          'txt',
+                          'text/plain;charset=utf-8',
+                        )
+                      }
+                      className="w-full text-left px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 rounded-md"
+                    >
+                      Export IDs Only (TXT)
+                    </button>
+                    <button
+                      onClick={() =>
+                        downloadExport(
+                          generateQuestionBankIDsCSV(exportRows),
+                          `question-bank-ids-${activeTab}`,
+                          'csv',
+                          'text/csv;charset=utf-8',
+                        )
+                      }
+                      className="w-full text-left px-3 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 rounded-md"
+                    >
+                      Export IDs Only (CSV)
+                    </button>
+                    <button
+                      onClick={() =>
+                        downloadExport(
+                          generateQuestionBankIDsText(missingOrIllustrativeRows),
+                          `question-bank-missing-or-illustrative-ids-${activeTab}`,
+                          'txt',
+                          'text/plain;charset=utf-8',
+                        )
+                      }
+                      className="w-full text-left px-3 py-2 text-xs font-medium text-amber-700 hover:bg-amber-50 rounded-md"
+                    >
+                      Export Missing/Illustrative IDs
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+            <p className="mt-1 text-[14px] text-slate-500">
+              {activeTab === 'real' ? (
+                <>
+                  {filteredQuestions.length === ALL_QUESTIONS.length
+                    ? `${ALL_QUESTIONS.length} practice questions`
+                    : `${filteredQuestions.length} of ${ALL_QUESTIONS.length} questions`}
+                </>
+              ) : (
+                <>
+                  {filteredIllustrative.length === typedInventory.length
+                    ? `${typedInventory.length} illustrative questions`
+                    : `${filteredIllustrative.length} of ${typedInventory.length} illustrative questions`}
+                </>
+              )}
+              {(selectedType || selectedCategory) && (
+                <span className="ml-2 inline-flex items-center gap-1">
+                  <span className="text-slate-300">·</span>
+                  {selectedCategory && (
+                    <span
+                      className={`font-medium ${selectedCategory === 'RC' ? 'text-emerald-600' : 'text-indigo-600'}`}
+                    >
+                      {selectedCategory}
+                    </span>
+                  )}
+                  {selectedType && (
+                    <span
+                      className={`font-medium ${selectedCategory === 'RC' ? 'text-emerald-600' : 'text-indigo-600'}`}
+                    >
+                      {selectedCategory ? ' · ' : ''}
+                      {selectedType}
+                    </span>
+                  )}
+                  <button
+                    onClick={() => {
+                      setSelectedType(null);
+                      setSelectedCategory(null);
+                    }}
+                    className="ml-1 text-slate-400 hover:text-slate-600"
+                  >
+                    <X size={12} />
+                  </button>
+                </span>
+              )}
+            </p>
+          </div>
+
+          {/* Question cards */}
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16 space-y-3">
             {activeTab === 'real' ? (
               <>
-                {filteredQuestions.length === ALL_QUESTIONS.length
-                  ? `${ALL_QUESTIONS.length} practice questions`
-                  : `${filteredQuestions.length} of ${ALL_QUESTIONS.length} questions`}
+                {filteredQuestions.length === 0 ? (
+                  <div className="flex flex-col items-center justify-center py-24 text-center">
+                    <Search size={40} className="text-slate-300 mb-4" />
+                    <p className="text-slate-500 text-[15px] font-medium">No questions found</p>
+                    <p className="text-slate-400 text-[13px] mt-1">Try adjusting your search or filter</p>
+                  </div>
+                ) : (
+                  filteredQuestions.map((q) => (
+                    <QuestionCardItem
+                      key={q.id}
+                      q={q}
+                      isExpanded={expandedId === q.id}
+                      onToggle={() => handleToggle(q.id)}
+                      drillCrossReferences={drillCrossReferences}
+                    />
+                  ))
+                )}
               </>
             ) : (
               <>
-                {filteredIllustrative.length === typedInventory.length
-                  ? `${typedInventory.length} illustrative questions`
-                  : `${filteredIllustrative.length} of ${typedInventory.length} illustrative questions`}
+                {filteredIllustrative.length === 0 ? (
+                  <div className="flex flex-col items-center justify-center py-24 text-center">
+                    <Search size={40} className="text-slate-300 mb-4" />
+                    <p className="text-slate-500 text-[15px] font-medium">No illustrative questions found</p>
+                    <p className="text-slate-400 text-[13px] mt-1">Try adjusting your search or filter</p>
+                  </div>
+                ) : (
+                  filteredIllustrative.map((item) => (
+                    <div
+                      key={`${item.file}-${item.cardId}`}
+                      className="p-4 rounded-lg border border-slate-200 hover:border-amber-300 transition-colors"
+                    >
+                      <div className="flex items-center gap-2 mb-2 flex-wrap">
+                        <span className="text-xs font-mono bg-amber-50 text-amber-700 px-2 py-0.5 rounded border border-amber-200">
+                          {item.cardId}
+                        </span>
+                        <span className="text-xs font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded">
+                          {item.questionType}
+                        </span>
+                        {item.difficulty !== 'unset' && (
+                          <span className="text-xs text-slate-400">{item.difficulty}</span>
+                        )}
+                        <span className="text-[10px] font-medium bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded">
+                          AI-generated illustrative example
+                        </span>
+                      </div>
+                      <div className="text-sm text-slate-700 font-medium">{item.resolvedLessonTitle}</div>
+                      <div className="text-xs text-slate-500 mt-1">
+                        Module {item.routeModuleId}: {item.resolvedModuleTitle}
+                      </div>
+                      <Link
+                        to={`/module/${item.routeModuleId}/lesson/${item.lessonId}`}
+                        className="text-xs text-indigo-600 hover:text-indigo-800 mt-2 inline-flex items-center gap-1"
+                      >
+                        View in Lesson →
+                      </Link>
+                    </div>
+                  ))
+                )}
               </>
             )}
-            {(selectedType || selectedCategory) && (
-              <span className="ml-2 inline-flex items-center gap-1">
-                <span className="text-slate-300">·</span>
-                {selectedCategory && (
-                  <span className={`font-medium ${selectedCategory === 'RC' ? 'text-emerald-600' : 'text-indigo-600'}`}>
-                    {selectedCategory}
-                  </span>
-                )}
-                {selectedType && (
-                  <span className={`font-medium ${selectedCategory === 'RC' ? 'text-emerald-600' : 'text-indigo-600'}`}>
-                    {selectedCategory ? ' · ' : ''}{selectedType}
-                  </span>
-                )}
-                <button
-                  onClick={() => { setSelectedType(null); setSelectedCategory(null); }}
-                  className="ml-1 text-slate-400 hover:text-slate-600"
-                >
-                  <X size={12} />
-                </button>
-              </span>
-            )}
-          </p>
-        </div>
-
-        {/* Question cards */}
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16 space-y-3">
-          {activeTab === 'real' ? (
-            <>
-              {filteredQuestions.length === 0 ? (
-                <div className="flex flex-col items-center justify-center py-24 text-center">
-                  <Search size={40} className="text-slate-300 mb-4" />
-                  <p className="text-slate-500 text-[15px] font-medium">No questions found</p>
-                  <p className="text-slate-400 text-[13px] mt-1">
-                    Try adjusting your search or filter
-                  </p>
-                </div>
-              ) : (
-                filteredQuestions.map((q) => (
-                  <QuestionCardItem
-                    key={q.id}
-                    q={q}
-                    isExpanded={expandedId === q.id}
-                    onToggle={() => handleToggle(q.id)}
-                    drillCrossReferences={drillCrossReferences}
-                  />
-                ))
-              )}
-            </>
-          ) : (
-            <>
-              {filteredIllustrative.length === 0 ? (
-                <div className="flex flex-col items-center justify-center py-24 text-center">
-                  <Search size={40} className="text-slate-300 mb-4" />
-                  <p className="text-slate-500 text-[15px] font-medium">No illustrative questions found</p>
-                  <p className="text-slate-400 text-[13px] mt-1">
-                    Try adjusting your search or filter
-                  </p>
-                </div>
-              ) : (
-                filteredIllustrative.map((item) => (
-                  <div key={`${item.file}-${item.cardId}`} className="p-4 rounded-lg border border-slate-200 hover:border-amber-300 transition-colors">
-                    <div className="flex items-center gap-2 mb-2 flex-wrap">
-                      <span className="text-xs font-mono bg-amber-50 text-amber-700 px-2 py-0.5 rounded border border-amber-200">{item.cardId}</span>
-                      <span className="text-xs font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded">{item.questionType}</span>
-                      {item.difficulty !== 'unset' && <span className="text-xs text-slate-400">{item.difficulty}</span>}
-                      <span className="text-[10px] font-medium bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded">AI-generated illustrative example</span>
-                    </div>
-                    <div className="text-sm text-slate-700 font-medium">{item.resolvedLessonTitle}</div>
-                    <div className="text-xs text-slate-500 mt-1">Module {item.routeModuleId}: {item.resolvedModuleTitle}</div>
-                    <Link to={`/module/${item.routeModuleId}/lesson/${item.lessonId}`} className="text-xs text-indigo-600 hover:text-indigo-800 mt-2 inline-flex items-center gap-1">
-                      View in Lesson →
-                    </Link>
-                  </div>
-                ))
-              )}
-            </>
-          )}
-        </div>
-      </main>
+          </div>
+        </main>
       </div>
     </div>
   );

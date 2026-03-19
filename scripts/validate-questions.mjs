@@ -2,25 +2,31 @@
 
 /**
  * Question Bank Validation Script
- * 
+ *
  * Checks all question repository files for:
  * - PT ID in every accordion title
  * - Exactly 5 answer choices per question
- * - At least one (Correct) marker per question
- * - No stale percentage stats
+ * - Exactly one (Correct) marker per question
  * - No duplicate PT IDs
  * - No typos in common patterns
- * 
+ *
  * Run: node scripts/validate-questions.mjs
  */
 
-import { readFileSync, readdirSync, writeFileSync } from 'fs';
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
+import {
+  getRegisteredContentModuleIds,
+  parseLessonMeta,
+  QUESTION_BANK_MODULE_DIRS,
+  readRegisteredLessons,
+} from './lib/registeredLessons.mjs';
 
 const REPO_DIR = join(import.meta.dirname, '..', 'modules', 'module48');
+const AUDITS_DIR = join(import.meta.dirname, '..', 'docs', 'operations', 'audits');
+const QUESTION_USAGE_AUDIT_PATH = join(AUDITS_DIR, 'question-usage-audit.md');
 const PT_REGEX = /PT-\d+-S-\d+-Q-\d+/g;
 const CORRECT_REGEX = /\(Correct\)/;
-const PERCENT_REGEX = /\[\d+(\.\d+)?%\]/;
 const MISSING_ID_REGEX = /\[Missing ID\]/;
 const QUESTION_ID_REGEX = /PT-\d+-S-\d+-(?:Q|P)-\d+/g;
 const TYPO_PATTERNS = [
@@ -28,11 +34,108 @@ const TYPO_PATTERNS = [
   { pattern: /one of a following/i, fix: 'one of the following' },
 ];
 
+function findMatchingBracket(text, startIndex) {
+  let depth = 0;
+  let quote = null;
+  let escaped = false;
+
+  for (let index = startIndex; index < text.length; index += 1) {
+    const char = text[index];
+
+    if (quote) {
+      if (escaped) {
+        escaped = false;
+        continue;
+      }
+      if (char === '\\') {
+        escaped = true;
+        continue;
+      }
+      if (char === quote) {
+        quote = null;
+      }
+      continue;
+    }
+
+    if (char === "'" || char === '"') {
+      quote = char;
+      continue;
+    }
+
+    if (char === '[') {
+      depth += 1;
+      continue;
+    }
+
+    if (char === ']') {
+      depth -= 1;
+      if (depth === 0) return index;
+    }
+  }
+
+  return -1;
+}
+
+function parseStringArrayLiteral(arrayLiteral) {
+  const items = [];
+  let index = 0;
+
+  while (index < arrayLiteral.length) {
+    while (/\s|,/.test(arrayLiteral[index] ?? '')) index += 1;
+    if (index >= arrayLiteral.length) break;
+
+    const quote = arrayLiteral[index];
+    if (quote !== "'" && quote !== '"') {
+      throw new Error(`Unexpected token "${arrayLiteral[index]}" while parsing options array`);
+    }
+    index += 1;
+
+    let value = '';
+    let escaped = false;
+    while (index < arrayLiteral.length) {
+      const char = arrayLiteral[index];
+      index += 1;
+
+      if (escaped) {
+        value += char;
+        escaped = false;
+        continue;
+      }
+      if (char === '\\') {
+        escaped = true;
+        continue;
+      }
+      if (char === quote) break;
+      value += char;
+    }
+
+    items.push(value);
+    while (/\s|,/.test(arrayLiteral[index] ?? '')) index += 1;
+  }
+
+  return items;
+}
+
+function extractOptionsArray(block) {
+  const itemsIndex = block.indexOf('items:');
+  if (itemsIndex === -1) return null;
+
+  const bracketStart = block.indexOf('[', itemsIndex);
+  if (bracketStart === -1) return null;
+
+  const bracketEnd = findMatchingBracket(block, bracketStart);
+  if (bracketEnd === -1) return null;
+
+  return block.slice(bracketStart + 1, bracketEnd);
+}
+
 let totalQuestions = 0;
 let totalIssues = 0;
 const allPtIds = new Map();
 
-const files = readdirSync(REPO_DIR).filter(f => f.endsWith('.tsx')).sort();
+const files = readdirSync(REPO_DIR)
+  .filter((f) => f.endsWith('.tsx'))
+  .sort();
 
 console.log('Question Bank Validation Report');
 console.log('='.repeat(60));
@@ -70,36 +173,41 @@ for (const file of files) {
 
   // Check (Correct) markers - count how many accordions have one
   const accordionBlocks = content.split(/type:\s*'accordion'/).slice(1);
-  let correctCount = 0;
+  let correctMarkerIssues = 0;
   let optionCountIssues = 0;
-  let stalePercentCount = 0;
+  let parseIssues = 0;
 
   for (const block of accordionBlocks) {
-    const optionsMatch = block.match(/items:\s*\[([\s\S]*?)\]/);
-    if (optionsMatch) {
-      const optionsStr = optionsMatch[1];
-      const options = optionsStr.split(/'\s*,\s*'/).filter(o => o.trim().length > 5);
+    const optionsLiteral = extractOptionsArray(block);
+    if (!optionsLiteral) {
+      parseIssues += 1;
+      continue;
+    }
 
-      if (options.length !== 5) {
-        optionCountIssues++;
-      }
+    let options;
+    try {
+      options = parseStringArrayLiteral(optionsLiteral);
+    } catch {
+      parseIssues += 1;
+      continue;
+    }
 
-      if (CORRECT_REGEX.test(optionsStr)) {
-        correctCount++;
-      }
+    if (options.length !== 5) {
+      optionCountIssues++;
+    }
 
-      if (PERCENT_REGEX.test(optionsStr)) {
-        stalePercentCount++;
-      }
+    const correctMarkers = options.filter((option) => CORRECT_REGEX.test(option)).length;
+    if (correctMarkers !== 1) {
+      correctMarkerIssues++;
     }
   }
 
-  if (correctCount < accordions) {
-    issues.push(`Only ${correctCount}/${accordions} questions have (Correct) marker`);
+  if (parseIssues > 0) {
+    issues.push(`${parseIssues} questions could not be parsed for options`);
   }
 
-  if (stalePercentCount > 0) {
-    issues.push(`${stalePercentCount} questions still have percentage stats (should be removed)`);
+  if (correctMarkerIssues > 0) {
+    issues.push(`${correctMarkerIssues} questions do not have exactly one (Correct) marker`);
   }
 
   if (optionCountIssues > 0) {
@@ -150,30 +258,23 @@ function collectQuestionBankIds() {
 }
 
 function collectLessonQuestionUsage() {
-  const modulesDir = join(import.meta.dirname, '..', 'modules');
   const usedIds = new Set();
   let illustrativeInLessons4Plus = 0;
+  const contentModuleIds = getRegisteredContentModuleIds().filter(
+    (contentModuleId) => !QUESTION_BANK_MODULE_DIRS.has(`module${contentModuleId}`),
+  );
 
-  const moduleDirs = readdirSync(modulesDir).filter((d) => /^module\d+$/.test(d));
-  for (const moduleDir of moduleDirs) {
-    if (['module48', 'module49', 'module53'].includes(moduleDir)) continue;
+  for (const lessonRow of readRegisteredLessons({ contentModuleIds })) {
+    const meta = parseLessonMeta(lessonRow.content, lessonRow.filePath);
+    if (meta.errors.length > 0) continue;
 
-    const dir = join(modulesDir, moduleDir);
-    const files = readdirSync(dir).filter((f) => /^Lesson.*\.tsx$/.test(f));
+    for (const cardId of meta.cardIds) {
+      usedIds.add(cardId);
+    }
 
-    for (const file of files) {
-      const content = readFileSync(join(dir, file), 'utf-8');
-      const lessonNum = Number((file.match(/^Lesson(\d+)_/) || [])[1] || 0);
-
-      const cardBlocks = content.match(/type:\s*'question(?:-passage)?-card'[\s\S]{0,1200}?\}/g) || [];
-      for (const block of cardBlocks) {
-        const idMatch = block.match(/id:\s*['"]([^'"]+)['"]/);
-        if (idMatch) usedIds.add(idMatch[1]);
-
-        if (/isIllustrative:\s*true/.test(block) && lessonNum >= 4) {
-          illustrativeInLessons4Plus += 1;
-        }
-      }
+    const cardBlocks = lessonRow.content.match(/type:\s*'question(?:-passage)?-card'[\s\S]{0,1200}?\}/g) || [];
+    if (lessonRow.lessonOrder >= 4) {
+      illustrativeInLessons4Plus += cardBlocks.filter((block) => /isIllustrative:\s*true/.test(block)).length;
     }
   }
 
@@ -186,28 +287,36 @@ const usedInDatabase = [...usedIds].filter((id) => databaseIds.has(id));
 const unusedInDatabase = [...databaseIds].filter((id) => !usedIds.has(id));
 const missingDatabaseEntries = [...usedIds].filter((id) => !databaseIds.has(id)).sort();
 
+mkdirSync(AUDITS_DIR, { recursive: true });
+
+const reviewedDate = new Date().toISOString().split('T')[0];
 const auditReport = [
   '# Question Usage Audit Report',
+  '',
+  '**Purpose:** Summarize which question-bank IDs are used in lessons and which lesson-linked IDs are missing from the repositories.  ',
+  '**Audience:** Maintainers validating lesson/question-bank alignment before or after content changes.  ',
+  '**Status:** reference  ',
+  '**Source of truth:** yes  ',
+  `**Last reviewed:** ${reviewedDate}  `,
+  '**Related docs:** [README.md](./README.md), [../../technical/content-and-validation.md](../../technical/content-and-validation.md), [question-linkage-audit.md](./question-linkage-audit.md)',
   '',
   `- **Total Questions in Database:** ${databaseIds.size}`,
   `- **Used Questions (In Use):** ${usedInDatabase.length}`,
   `- **Unused Questions:** ${unusedInDatabase.length}`,
   '',
   '## Missing Database Entries',
-  missingDatabaseEntries.length
-    ? missingDatabaseEntries.map((id) => `- \`${id}\``).join('\n')
-    : '- None',
+  missingDatabaseEntries.length ? missingDatabaseEntries.map((id) => `- \`${id}\``).join('\n') : '- None',
   '',
   `## Invented/Illustrative Count (Lessons 4+)`,
   `- **${illustrativeInLessons4Plus}**`,
   '',
 ].join('\n');
 
-writeFileSync(
-  join(import.meta.dirname, '..', 'docs', 'question-usage-audit.md'),
-  `${auditReport}\n`,
-  'utf-8'
-);
+writeFileSync(QUESTION_USAGE_AUDIT_PATH, `${auditReport}\n`, 'utf-8');
 
 console.log('\n');
 console.log(auditReport);
+
+if (totalIssues > 0) {
+  process.exit(1);
+}

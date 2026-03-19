@@ -3,6 +3,15 @@ import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import { ModuleData, ContentBlock, Lesson } from '../types';
 import { getSourceModuleIdForRouteModuleId } from './courseCatalog';
+import { extractPtIds } from './lessonQuestionLinkage';
+import type {
+  CanonicalCourseLesson,
+  CanonicalCourseModule,
+  CanonicalCoursePayload,
+  ExportScopeSummary,
+  InterchangeCourse,
+  InterchangeCourseMaterial,
+} from './courseExportSchemas';
 
 // --- SHARED TEXT HELPERS ---
 
@@ -648,6 +657,248 @@ const lessonToPlainText = (lesson: Lesson): string => {
   return lesson.content.map(blockToText).join('').trim();
 };
 
+const isLrRouteModule = (routeModuleId: number): boolean => routeModuleId >= 1 && routeModuleId <= 22;
+
+const prefixMarkdownLines = (text: string, prefix: string): string =>
+  text
+    .split('\n')
+    .map((line) => (line.length > 0 ? `${prefix}${line}` : prefix.trimEnd()))
+    .join('\n');
+
+const escapeMarkdownTableCell = (text: string): string => text.replace(/\|/g, '\\|').replace(/\n/g, '<br />');
+
+const normalizeMarkdownOutput = (text: string): string => text.replace(/\n{3,}/g, '\n\n').trim();
+
+const formatOptionsAsMarkdownList = (options: string[]): string => options.map((option) => `- ${option}`).join('\n');
+
+const getCanonicalQuestionPolicy = (routeModuleId: number, lesson: Lesson) =>
+  isLrRouteModule(routeModuleId) ? lesson.questionPolicy ?? 'none' : undefined;
+
+const questionCardToMaterialMarkdown = (
+  block: Extract<ContentBlock, { type: 'question-card' }>,
+): string => {
+  const metadata = [
+    block.questionType ? `**Question Type:** ${block.questionType}` : '',
+    block.difficulty ? `**Difficulty:** ${block.difficulty}` : '',
+    block.id ? `**Source ID:** ${block.id}` : '',
+  ].filter(Boolean);
+
+  return normalizeMarkdownOutput([
+    ...metadata,
+    metadata.length > 0 ? '' : '',
+    '### Stimulus',
+    '',
+    block.stimulus,
+    '',
+    '### Question',
+    '',
+    block.question,
+    '',
+    '### Options',
+    '',
+    formatOptionsAsMarkdownList(block.options),
+  ].join('\n'));
+};
+
+const questionPassageCardToMaterialMarkdown = (
+  block: Extract<ContentBlock, { type: 'question-passage-card' }>,
+): string => {
+  const metadata = [
+    block.questionType ? `**Question Type:** ${block.questionType}` : '',
+    block.difficulty ? `**Difficulty:** ${block.difficulty}` : '',
+    block.id ? `**Source ID:** ${block.id}` : '',
+  ].filter(Boolean);
+
+  return normalizeMarkdownOutput([
+    `## ${block.passageTitle}`,
+    '',
+    ...metadata,
+    metadata.length > 0 ? '' : '',
+    '### Passage',
+    '',
+    block.passage,
+    '',
+    '### Question',
+    '',
+    block.question,
+    '',
+    '### Options',
+    '',
+    formatOptionsAsMarkdownList(block.options),
+  ].join('\n'));
+};
+
+const passageCardToMaterialMarkdown = (
+  block: Extract<ContentBlock, { type: 'passage-card' }>,
+): string => {
+  const metadata = [
+    block.genre ? `**Genre:** ${block.genre}` : '',
+    block.id ? `**Source ID:** ${block.id}` : '',
+    typeof block.paragraphCount === 'number' ? `**Paragraph Count:** ${block.paragraphCount}` : '',
+    typeof block.wordCount === 'number' ? `**Word Count:** ${block.wordCount}` : '',
+  ].filter(Boolean);
+
+  return normalizeMarkdownOutput([
+    `## ${block.title}`,
+    '',
+    ...metadata,
+    metadata.length > 0 ? '' : '',
+    block.passage,
+  ].join('\n'));
+};
+
+interface InterchangeLessonBuildState {
+  materials: Array<Omit<InterchangeCourseMaterial, 'id'>>;
+  seenQuestionRefs: Set<string>;
+}
+
+const appendInterchangeMaterial = (
+  state: InterchangeLessonBuildState,
+  material: Omit<InterchangeCourseMaterial, 'id'>,
+  dedupeKey?: string,
+) => {
+  if (dedupeKey) {
+    if (state.seenQuestionRefs.has(dedupeKey)) return;
+    state.seenQuestionRefs.add(dedupeKey);
+  }
+
+  state.materials.push(material);
+};
+
+const addQuestionReferenceMaterials = (
+  block: Extract<ContentBlock, { type: 'question-card' | 'question-passage-card' }>,
+  state: InterchangeLessonBuildState,
+): boolean => {
+  const ptIds = block.id ? extractPtIds([block.id]) : [];
+  if (ptIds.length === 0) return false;
+
+  for (const ptId of ptIds) {
+    appendInterchangeMaterial(
+      state,
+      {
+        title: 'Question Reference',
+        type: 'question_ref',
+        content: ptId,
+      },
+      ptId,
+    );
+  }
+
+  return true;
+};
+
+const blockToMarkdownForInterchange = (block: ContentBlock, state: InterchangeLessonBuildState): string => {
+  switch (block.type) {
+    case 'h1':
+      return `# ${block.text}\n\n`;
+    case 'h2':
+      return `## ${block.text}\n\n`;
+    case 'h3':
+      return `### ${block.text}\n\n`;
+    case 'h4':
+      return `#### ${block.text}\n\n`;
+    case 'paragraph':
+      return `${block.text}\n\n`;
+    case 'blockquote':
+      return `${prefixMarkdownLines(block.text, '> ')}\n\n`;
+    case 'hr':
+      return '---\n\n';
+    case 'code':
+      return `\`\`\`\n${block.text}\n\`\`\`\n\n`;
+    case 'list':
+      return `${block.items.map((item, index) => (block.ordered ? `${index + 1}. ${item}` : `- ${item}`)).join('\n')}\n\n`;
+    case 'callout': {
+      const label =
+        block.variant === 'summary' ? 'Summary' : block.variant === 'tip' ? 'Tip' : 'Note';
+      const heading = block.title ? `${label}: ${block.title}` : label;
+      return `${prefixMarkdownLines(`**${heading}**\n\n${block.text}`, '> ')}\n\n`;
+    }
+    case 'options':
+      return `${formatOptionsAsMarkdownList(block.items)}\n\n`;
+    case 'process': {
+      const title = block.title ? `### ${block.title}\n\n` : '';
+      return `${title}${block.steps.map((step, index) => `${index + 1}. ${step}`).join('\n')}\n\n`;
+    }
+    case 'accordion': {
+      const content =
+        typeof block.content === 'string'
+          ? block.content
+          : block.content.map((child) => blockToMarkdownForInterchange(child, state)).join('');
+      const normalizedContent = normalizeMarkdownOutput(content);
+      if (!normalizedContent) return '';
+      return `#### ${block.title}\n\n${normalizedContent}\n\n`;
+    }
+    case 'table': {
+      const header = `| ${block.headers.map(escapeMarkdownTableCell).join(' | ')} |`;
+      const divider = `| ${block.headers.map(() => '---').join(' | ')} |`;
+      const rows = block.rows.map((row) => `| ${row.map(escapeMarkdownTableCell).join(' | ')} |`).join('\n');
+      return `${header}\n${divider}${rows ? `\n${rows}` : ''}\n\n`;
+    }
+    case 'breakdown':
+      return block.items
+        .map((item) => {
+          const heading = item.badge ? `#### ${item.title} (${item.badge})` : `#### ${item.title}`;
+          return `${heading}\n\n${item.text}\n\n`;
+        })
+        .join('');
+    case 'question-card':
+      if (addQuestionReferenceMaterials(block, state)) return '';
+      appendInterchangeMaterial(state, {
+        title: block.questionType ? `Question Card: ${block.questionType}` : 'Question Card',
+        type: 'text',
+        content: questionCardToMaterialMarkdown(block),
+      });
+      return '';
+    case 'passage-card':
+      appendInterchangeMaterial(state, {
+        title: block.title || 'Passage Card',
+        type: 'text',
+        content: passageCardToMaterialMarkdown(block),
+      });
+      return '';
+    case 'question-passage-card':
+      if (addQuestionReferenceMaterials(block, state)) return '';
+      appendInterchangeMaterial(state, {
+        title: block.passageTitle ? `RC Question: ${block.passageTitle}` : 'RC Question',
+        type: 'text',
+        content: questionPassageCardToMaterialMarkdown(block),
+      });
+      return '';
+    default:
+      return '';
+  }
+};
+
+const buildInterchangeLessonFromCanonicalLesson = (lesson: CanonicalCourseLesson) => {
+  if (lesson.bodyKind === 'markdown' && typeof lesson.content === 'string') {
+    return {
+      id: lesson.lessonId,
+      title: lesson.title,
+      content: lesson.content,
+      materials: [] as InterchangeCourseMaterial[],
+    };
+  }
+
+  const state: InterchangeLessonBuildState = {
+    materials: [],
+    seenQuestionRefs: new Set<string>(),
+  };
+
+  const content = Array.isArray(lesson.content)
+    ? normalizeMarkdownOutput(lesson.content.map((block) => blockToMarkdownForInterchange(block, state)).join(''))
+    : lesson.content;
+
+  return {
+    id: lesson.lessonId,
+    title: lesson.title,
+    content,
+    materials: state.materials.map((material, index) => ({
+      ...material,
+      id: `${lesson.lessonId}--material-${index + 1}`,
+    })),
+  };
+};
+
 interface CSVRow {
   moduleId: string;
   moduleTitle: string;
@@ -832,11 +1083,6 @@ export const generateCourseJSON = (modules: ModuleData[]): string => {
   return JSON.stringify(modules, null, 2);
 };
 
-interface ExportScopeSummary {
-  selectedModuleIds: number[];
-  selectedLessonCount: number;
-}
-
 interface OutlineExportLesson {
   lessonId: string;
   order: number;
@@ -936,6 +1182,40 @@ const buildFullCourseExportPayload = (modules: ModuleData[]): FullCourseExportPa
     };
   }),
 });
+
+export const buildCanonicalCoursePayload = (modules: ModuleData[]): CanonicalCoursePayload => ({
+  exportVersion: '1.0',
+  exportType: 'canonical-course',
+  generatedAt: new Date().toISOString(),
+  scope: buildExportScopeSummary(modules),
+  modules: modules.map<CanonicalCourseModule>((module) => ({
+    routeModuleId: module.id,
+    sourceModuleId: getSourceModuleIdForRouteModuleId(module.id),
+    title: module.title,
+    category: module.category,
+    unit: module.unit,
+    description: module.description,
+    lessons: module.lessons.map((lesson, index) => ({
+      lessonId: lesson.id,
+      order: index + 1,
+      title: lesson.title,
+      routePath: `/module/${module.id}/lesson/${lesson.id}`,
+      bodyKind: typeof lesson.content === 'string' ? 'markdown' : 'blocks',
+      content: lesson.content,
+      ...(getCanonicalQuestionPolicy(module.id, lesson)
+        ? { questionPolicy: getCanonicalQuestionPolicy(module.id, lesson) }
+        : {}),
+    })),
+  })),
+});
+
+export const buildInterchangeCoursePayload = (canonicalPayload: CanonicalCoursePayload): InterchangeCourse =>
+  canonicalPayload.modules.map((module) => ({
+    id: String(module.routeModuleId),
+    title: module.title,
+    description: module.description,
+    lessons: module.lessons.map((lesson) => buildInterchangeLessonFromCanonicalLesson(lesson)),
+  }));
 
 const groupModulesBySectionAndUnit = <T extends { category: string; unit: string }>(modules: T[]) => {
   const sectionOrder = ['Logical Reasoning', 'Reading Comprehension', 'Advanced Passages'];
@@ -1074,6 +1354,14 @@ export const generateFullCourseRTF = (modules: ModuleData[]): string => {
 
 export const generateFullCourseJSON = (modules: ModuleData[]): string => {
   return JSON.stringify(buildFullCourseExportPayload(modules), null, 2);
+};
+
+export const generateCanonicalCourseJSON = (modules: ModuleData[]): string => {
+  return JSON.stringify(buildCanonicalCoursePayload(modules), null, 2);
+};
+
+export const generateInterchangeCourseJSON = (modules: ModuleData[]): string => {
+  return JSON.stringify(buildInterchangeCoursePayload(buildCanonicalCoursePayload(modules)), null, 2);
 };
 
 export const generateFullCourseCSV = (modules: ModuleData[]): string => {

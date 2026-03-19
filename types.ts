@@ -1,5 +1,4 @@
-
-export type ContentBlock = 
+export type ContentBlock =
   | { type: 'paragraph'; text: string }
   | { type: 'h1'; text: string }
   | { type: 'h2'; text: string }
@@ -14,16 +13,16 @@ export type ContentBlock =
   | { type: 'process'; steps: string[]; title?: string }
   | { type: 'accordion'; title: string; content: string | ContentBlock[] }
   | { type: 'table'; headers: string[]; rows: string[][] }
-  | { 
-      type: 'breakdown'; 
+  | {
+      type: 'breakdown';
       labels?: { title?: string; text?: string };
       colWidth?: 'equal' | 'narrow';
-      items: { 
-        title: string; 
-        text: string; 
-        badge?: string; 
+      items: {
+        title: string;
+        text: string;
+        badge?: string;
         badgeColor?: 'green' | 'red' | 'indigo' | 'slate' | 'blue';
-      }[] 
+      }[];
     }
   | {
       type: 'question-card';
@@ -56,9 +55,12 @@ export type ContentBlock =
       isIllustrative?: boolean;
     };
 
+export type LessonQuestionPolicy = 'none' | 'repository_required';
+
 export interface Lesson {
   id: string;
   title: string;
+  questionPolicy?: LessonQuestionPolicy;
   content: string | ContentBlock[]; // Markdown content OR structured blocks
 }
 
@@ -77,6 +79,7 @@ export interface LessonLinkageMeta {
   ptIds: string[];
   status: LessonLinkageStatus;
   displayTitle: string;
+  questionPolicy?: LessonQuestionPolicy;
   statusLabel?: 'Missing Q#' | 'Missing Card';
   isExempt?: boolean;
   exemptionReason?: string;

@@ -1,0 +1,872 @@
+- generic [ref=e3]:
+  - navigation "Course navigation" [ref=e4]:
+    - button "LSAT Mastery - Go to Dashboard" [ref=e6]:
+      - img [ref=e8]
+      - generic [ref=e10]: LSAT Mastery
+    - generic [ref=e12]:
+      - button "Course Dashboard" [ref=e14]:
+        - img [ref=e15]
+        - generic [ref=e20]: Course Dashboard
+      - tree "Modules" [ref=e21]:
+        - generic [ref=e22]:
+          - heading "Logical Reasoning" [level=3] [ref=e23]
+          - treeitem "1.Argument Part" [ref=e24]:
+            - button "1.Argument Part" [ref=e25]:
+              - generic [ref=e26]:
+                - generic [ref=e27]: "1."
+                - text: Argument Part
+          - treeitem "2.Main Conclusion" [ref=e28]:
+            - button "2.Main Conclusion" [ref=e29]:
+              - generic [ref=e30]:
+                - generic [ref=e31]: "2."
+                - text: Main Conclusion
+          - treeitem "3.Method of Reasoning" [ref=e32]:
+            - button "3.Method of Reasoning" [ref=e33]:
+              - generic [ref=e34]:
+                - generic [ref=e35]: "3."
+                - text: Method of Reasoning
+          - treeitem "4.Parallel Reasoning" [ref=e36]:
+            - button "4.Parallel Reasoning" [ref=e37]:
+              - generic [ref=e38]:
+                - generic [ref=e39]: "4."
+                - text: Parallel Reasoning
+          - treeitem "5.Flaw" [ref=e40]:
+            - button "5.Flaw" [ref=e41]:
+              - generic [ref=e42]:
+                - generic [ref=e43]: "5."
+                - text: Flaw
+          - treeitem "6.Parallel Flaw" [ref=e44]:
+            - button "6.Parallel Flaw" [ref=e45]:
+              - generic [ref=e46]:
+                - generic [ref=e47]: "6."
+                - text: Parallel Flaw
+          - treeitem "7.Evaluate the Argument" [ref=e48]:
+            - button "7.Evaluate the Argument" [ref=e49]:
+              - generic [ref=e50]:
+                - generic [ref=e51]: "7."
+                - text: Evaluate the Argument
+          - treeitem "8.Weaken" [ref=e52]:
+            - button "8.Weaken" [ref=e53]:
+              - generic [ref=e54]:
+                - generic [ref=e55]: "8."
+                - text: Weaken
+          - treeitem "9.Strengthen" [ref=e56]:
+            - button "9.Strengthen" [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e59]: "9."
+                - text: Strengthen
+          - treeitem "10.Sufficient Assumption" [ref=e60]:
+            - button "10.Sufficient Assumption" [ref=e61]:
+              - generic [ref=e62]:
+                - generic [ref=e63]: "10."
+                - text: Sufficient Assumption
+          - treeitem "11.Necessary Assumption" [ref=e64]:
+            - button "11.Necessary Assumption" [ref=e65]:
+              - generic [ref=e66]:
+                - generic [ref=e67]: "11."
+                - text: Necessary Assumption
+          - treeitem "12.Principle-Strengthen" [ref=e68]:
+            - button "12.Principle-Strengthen" [ref=e69]:
+              - generic [ref=e70]:
+                - generic [ref=e71]: "12."
+                - text: Principle-Strengthen
+          - treeitem "13.Principle - Apply" [ref=e72]:
+            - button "13.Principle - Apply" [ref=e73]:
+              - generic [ref=e74]:
+                - generic [ref=e75]: "13."
+                - text: Principle - Apply
+          - treeitem "14.Principle - Generalization" [ref=e76]:
+            - button "14.Principle - Generalization" [ref=e77]:
+              - generic [ref=e78]:
+                - generic [ref=e79]: "14."
+                - text: Principle - Generalization
+          - treeitem "15.Fill in the Blank" [ref=e80]:
+            - button "15.Fill in the Blank" [ref=e81]:
+              - generic [ref=e82]:
+                - generic [ref=e83]: "15."
+                - text: Fill in the Blank
+          - treeitem "16.Most Strongly Supported" [ref=e84]:
+            - button "16.Most Strongly Supported" [ref=e85]:
+              - generic [ref=e86]:
+                - generic [ref=e87]: "16."
+                - text: Most Strongly Supported
+          - treeitem "17.Must Be True" [ref=e88]:
+            - button "17.Must Be True" [ref=e89]:
+              - generic [ref=e90]:
+                - generic [ref=e91]: "17."
+                - text: Must Be True
+          - treeitem "18.Must Be False" [ref=e92]:
+            - button "18.Must Be False" [ref=e93]:
+              - generic [ref=e94]:
+                - generic [ref=e95]: "18."
+                - text: Must Be False
+          - treeitem "19.Paradox / Explain" [ref=e96]:
+            - button "19.Paradox / Explain" [ref=e97]:
+              - generic [ref=e98]:
+                - generic [ref=e99]: "19."
+                - text: Paradox / Explain
+          - treeitem "20.Agree / Disagree (Point at Issue)" [ref=e100]:
+            - button "20.Agree / Disagree (Point at Issue)" [ref=e101]:
+              - generic [ref=e102]:
+                - generic [ref=e103]: "20."
+                - text: Agree / Disagree (Point at Issue)
+          - treeitem "21.Conditional Reasoning Lessons in Conditional Reasoning" [expanded] [ref=e104]:
+            - button "21.Conditional Reasoning" [ref=e105]:
+              - generic [ref=e106]:
+                - generic [ref=e107]: "21."
+                - text: Conditional Reasoning
+              - img [ref=e108]
+            - group "Lessons in Conditional Reasoning" [ref=e110]:
+              - button "Introduction to Conditional Reasoning" [ref=e111]:
+                - img [ref=e113]
+                - generic [ref=e115]: Introduction to Conditional Reasoning
+              - 'button "Lesson 1: Foundations of the Material Conditional" [ref=e116]':
+                - img [ref=e118]
+                - generic [ref=e120]: "Lesson 1: Foundations of the Material Conditional"
+              - 'button "Lesson 2: The Contrapositive (PT-101-S-2-Q-21, PT-101-S-3-Q-10)" [ref=e121]':
+                - img [ref=e123]
+                - generic [ref=e125]: "Lesson 2: The Contrapositive (PT-101-S-2-Q-21, PT-101-S-3-Q-10)"
+              - 'button "Lesson 3: Two Classic Conditional Reasoning Errors (PT-120-S-4-Q-17, PT-106-S-3-Q-21)" [ref=e126]':
+                - img [ref=e128]
+                - generic [ref=e131]: "Lesson 3: Two Classic Conditional Reasoning Errors (PT-120-S-4-Q-17, PT-106-S-3-Q-21)"
+              - 'button "Lesson 4: Quantifiers - All, Most, Some, and Few" [ref=e132]':
+                - img [ref=e134]
+                - generic [ref=e136]: "Lesson 4: Quantifiers - All, Most, Some, and Few"
+              - 'button "Lesson 5: Complex Structures & Compound Logic" [ref=e137]':
+                - img [ref=e139]
+                - generic [ref=e141]: "Lesson 5: Complex Structures & Compound Logic"
+              - 'button "Lesson 6: Real-World Nuance & Probabilistic Logic" [ref=e142]':
+                - img [ref=e144]
+                - generic [ref=e146]: "Lesson 6: Real-World Nuance & Probabilistic Logic"
+              - 'button "Reference: Concise Guide to Conditional Logic" [ref=e147]':
+                - img [ref=e149]
+                - generic [ref=e151]: "Reference: Concise Guide to Conditional Logic"
+              - button "Reference Guide" [ref=e152]:
+                - img [ref=e154]
+                - generic [ref=e156]: Reference Guide
+          - treeitem "22.LSAT Math" [ref=e157]:
+            - button "22.LSAT Math" [ref=e158]:
+              - generic [ref=e159]:
+                - generic [ref=e160]: "22."
+                - text: LSAT Math
+          - heading "Reading Comprehension" [level=3] [ref=e161]
+          - 'treeitem "23.RC: Main Idea" [ref=e162]':
+            - 'button "23.RC: Main Idea" [ref=e163]':
+              - generic [ref=e164]:
+                - generic [ref=e165]: "23."
+                - text: "RC: Main Idea"
+          - 'treeitem "24.RC: Inference" [ref=e166]':
+            - 'button "24.RC: Inference" [ref=e167]':
+              - generic [ref=e168]:
+                - generic [ref=e169]: "24."
+                - text: "RC: Inference"
+          - 'treeitem "25.RC: Analogy" [ref=e170]':
+            - 'button "25.RC: Analogy" [ref=e171]':
+              - generic [ref=e172]:
+                - generic [ref=e173]: "25."
+                - text: "RC: Analogy"
+          - 'treeitem "26.RC: Application" [ref=e174]':
+            - 'button "26.RC: Application" [ref=e175]':
+              - generic [ref=e176]:
+                - generic [ref=e177]: "26."
+                - text: "RC: Application"
+          - 'treeitem "27.RC: Approach" [ref=e178]':
+            - 'button "27.RC: Approach" [ref=e179]':
+              - generic [ref=e180]:
+                - generic [ref=e181]: "27."
+                - text: "RC: Approach"
+          - 'treeitem "28.RC: Author Attitude" [ref=e182]':
+            - 'button "28.RC: Author Attitude" [ref=e183]':
+              - generic [ref=e184]:
+                - generic [ref=e185]: "28."
+                - text: "RC: Author Attitude"
+          - 'treeitem "29.RC: Author Viewpoint" [ref=e186]':
+            - 'button "29.RC: Author Viewpoint" [ref=e187]':
+              - generic [ref=e188]:
+                - generic [ref=e189]: "29."
+                - text: "RC: Author Viewpoint"
+          - 'treeitem "30.RC: Complete the Passage" [ref=e190]':
+            - 'button "30.RC: Complete the Passage" [ref=e191]':
+              - generic [ref=e192]:
+                - generic [ref=e193]: "30."
+                - text: "RC: Complete the Passage"
+          - 'treeitem "31.RC: 3rd-Party Viewpoint" [ref=e194]':
+            - 'button "31.RC: 3rd-Party Viewpoint" [ref=e195]':
+              - generic [ref=e196]:
+                - generic [ref=e197]: "31."
+                - text: "RC: 3rd-Party Viewpoint"
+          - 'treeitem "32.RC: Passage Principle" [ref=e198]':
+            - 'button "32.RC: Passage Principle" [ref=e199]':
+              - generic [ref=e200]:
+                - generic [ref=e201]: "32."
+                - text: "RC: Passage Principle"
+          - 'treeitem "33.RC: Phrase Meaning" [ref=e202]':
+            - 'button "33.RC: Phrase Meaning" [ref=e203]':
+              - generic [ref=e204]:
+                - generic [ref=e205]: "33."
+                - text: "RC: Phrase Meaning"
+          - 'treeitem "34.RC: Phrase Function" [ref=e206]':
+            - 'button "34.RC: Phrase Function" [ref=e207]':
+              - generic [ref=e208]:
+                - generic [ref=e209]: "34."
+                - text: "RC: Phrase Function"
+          - 'treeitem "35.RC: Paragraph Function" [ref=e210]':
+            - 'button "35.RC: Paragraph Function" [ref=e211]':
+              - generic [ref=e212]:
+                - generic [ref=e213]: "35."
+                - text: "RC: Paragraph Function"
+          - 'treeitem "36.RC: Passage Function" [ref=e214]':
+            - 'button "36.RC: Passage Function" [ref=e215]':
+              - generic [ref=e216]:
+                - generic [ref=e217]: "36."
+                - text: "RC: Passage Function"
+          - 'treeitem "37.RC: Relationship" [ref=e218]':
+            - 'button "37.RC: Relationship" [ref=e219]':
+              - generic [ref=e220]:
+                - generic [ref=e221]: "37."
+                - text: "RC: Relationship"
+          - 'treeitem "38.RC: Structure" [ref=e222]':
+            - 'button "38.RC: Structure" [ref=e223]':
+              - generic [ref=e224]:
+                - generic [ref=e225]: "38."
+                - text: "RC: Structure"
+          - 'treeitem "39.RC: Title" [ref=e226]':
+            - 'button "39.RC: Title" [ref=e227]':
+              - generic [ref=e228]:
+                - generic [ref=e229]: "39."
+                - text: "RC: Title"
+          - 'treeitem "40.RC: Weaken-Strengthen" [ref=e230]':
+            - 'button "40.RC: Weaken-Strengthen" [ref=e231]':
+              - generic [ref=e232]:
+                - generic [ref=e233]: "40."
+                - text: "RC: Weaken-Strengthen"
+          - 'treeitem "41.RC Practice Passage 1: Obasan" [ref=e234]':
+            - 'button "41.RC Practice Passage 1: Obasan" [ref=e235]':
+              - generic [ref=e236]:
+                - generic [ref=e237]: "41."
+                - text: "RC Practice Passage 1: Obasan"
+          - 'treeitem "42.RC Practice Passage 2: Bankruptcy Law" [ref=e238]':
+            - 'button "42.RC Practice Passage 2: Bankruptcy Law" [ref=e239]':
+              - generic [ref=e240]:
+                - generic [ref=e241]: "42."
+                - text: "RC Practice Passage 2: Bankruptcy Law"
+          - 'treeitem "43.RC Practice Passage 3: Cultural Identity" [ref=e242]':
+            - 'button "43.RC Practice Passage 3: Cultural Identity" [ref=e243]':
+              - generic [ref=e244]:
+                - generic [ref=e245]: "43."
+                - text: "RC Practice Passage 3: Cultural Identity"
+          - 'treeitem "44.RC Practice Passage 4: Woody Allen" [ref=e246]':
+            - 'button "44.RC Practice Passage 4: Woody Allen" [ref=e247]':
+              - generic [ref=e248]:
+                - generic [ref=e249]: "44."
+                - text: "RC Practice Passage 4: Woody Allen"
+          - 'treeitem "45.RC Practice Passage 5: Cosmic vs. Traditional Justice" [ref=e250]':
+            - 'button "45.RC Practice Passage 5: Cosmic vs. Traditional Justice" [ref=e251]':
+              - generic [ref=e252]:
+                - generic [ref=e253]: "45."
+                - text: "RC Practice Passage 5: Cosmic vs. Traditional Justice"
+          - 'treeitem "46.RC Practice Passage 6: Julia Margaret Cameron" [ref=e254]':
+            - 'button "46.RC Practice Passage 6: Julia Margaret Cameron" [ref=e255]':
+              - generic [ref=e256]:
+                - generic [ref=e257]: "46."
+                - text: "RC Practice Passage 6: Julia Margaret Cameron"
+          - 'treeitem "47.RC Practice Passage 7: False Needs in Advertising" [ref=e258]':
+            - 'button "47.RC Practice Passage 7: False Needs in Advertising" [ref=e259]':
+              - generic [ref=e260]:
+                - generic [ref=e261]: "47."
+                - text: "RC Practice Passage 7: False Needs in Advertising"
+          - 'treeitem "48.RC Practice Passage 8: Justice in Property" [ref=e262]':
+            - 'button "48.RC Practice Passage 8: Justice in Property" [ref=e263]':
+              - generic [ref=e264]:
+                - generic [ref=e265]: "48."
+                - text: "RC Practice Passage 8: Justice in Property"
+          - treeitem "49.RC Quick Reference Guide" [ref=e266]:
+            - button "49.RC Quick Reference Guide" [ref=e267]:
+              - generic [ref=e268]:
+                - generic [ref=e269]: "49."
+                - text: RC Quick Reference Guide
+          - heading "Advanced Passages" [level=3] [ref=e270]
+          - 'treeitem "50.Advanced Passage 1: Mathematics as Language" [ref=e271]':
+            - 'button "50.Advanced Passage 1: Mathematics as Language" [ref=e272]':
+              - generic [ref=e273]:
+                - generic [ref=e274]: "50."
+                - text: "Advanced Passage 1: Mathematics as Language"
+          - 'treeitem "51.Advanced Passage 2: Bentham''s Legal Reforms" [ref=e275]':
+            - 'button "51.Advanced Passage 2: Bentham''s Legal Reforms" [ref=e276]':
+              - generic [ref=e277]:
+                - generic [ref=e278]: "51."
+                - text: "Advanced Passage 2: Bentham's Legal Reforms"
+          - 'treeitem "52.Advanced Passage 3: Critical Legal Studies" [ref=e279]':
+            - 'button "52.Advanced Passage 3: Critical Legal Studies" [ref=e280]':
+              - generic [ref=e281]:
+                - generic [ref=e282]: "52."
+                - text: "Advanced Passage 3: Critical Legal Studies"
+          - 'treeitem "53.Advanced Passage 4: Dworkin''s Legal Theory" [ref=e283]':
+            - 'button "53.Advanced Passage 4: Dworkin''s Legal Theory" [ref=e284]':
+              - generic [ref=e285]:
+                - generic [ref=e286]: "53."
+                - text: "Advanced Passage 4: Dworkin's Legal Theory"
+          - 'treeitem "54.Advanced Passage 5: Psychology of Risk" [ref=e287]':
+            - 'button "54.Advanced Passage 5: Psychology of Risk" [ref=e288]':
+              - generic [ref=e289]:
+                - generic [ref=e290]: "54."
+                - text: "Advanced Passage 5: Psychology of Risk"
+          - 'treeitem "55.Advanced Passage 6: Historical Sociology" [ref=e291]':
+            - 'button "55.Advanced Passage 6: Historical Sociology" [ref=e292]':
+              - generic [ref=e293]:
+                - generic [ref=e294]: "55."
+                - text: "Advanced Passage 6: Historical Sociology"
+          - 'treeitem "56.Advanced Passage 7: Digitalization and Copyright Law" [ref=e295]':
+            - 'button "56.Advanced Passage 7: Digitalization and Copyright Law" [ref=e296]':
+              - generic [ref=e297]:
+                - generic [ref=e298]: "56."
+                - text: "Advanced Passage 7: Digitalization and Copyright Law"
+    - link "Question Bank 150" [ref=e300] [cursor=pointer]:
+      - /url: /question-bank
+      - img [ref=e301]
+      - generic [ref=e303]: Question Bank
+      - generic [ref=e304]: "150"
+    - generic [ref=e306]: © 2025 LSAT Mastery Course
+  - generic [ref=e307]:
+    - banner [ref=e308]:
+      - generic [ref=e309]:
+        - navigation "Breadcrumb" [ref=e310]:
+          - button "Dashboard" [ref=e311]
+          - img [ref=e312]
+          - generic [ref=e314]: "Module 21: Conditional Reasoning"
+        - navigation "Lesson navigation" [ref=e315]:
+          - 'button "Previous: Lesson 2: The Contrapositive (PT-101-S-2-Q-21, PT-101-S-3-Q-10)" [ref=e316]':
+            - img [ref=e317]
+            - generic [ref=e319]: Previous
+          - 'button "Next: Lesson 4: Quantifiers - All, Most, Some, and Few" [ref=e320]':
+            - generic [ref=e321]: Next
+            - img [ref=e322]
+      - generic [ref=e324]:
+        - button "Search lessons (Ctrl+K)" [ref=e325]:
+          - img [ref=e326]
+          - generic [ref=e329]: Search
+          - generic [ref=e330]: Ctrl+K
+        - link "Question Bank" [ref=e331] [cursor=pointer]:
+          - /url: /question-bank
+          - img [ref=e332]
+          - generic [ref=e334]: Question Bank
+          - generic [ref=e335]: "150"
+        - button "Open roadmap" [ref=e336]:
+          - img [ref=e337]
+          - generic [ref=e342]: Roadmap
+        - button "Open style guide" [ref=e343]:
+          - img [ref=e344]
+          - generic [ref=e350]: Style Guide
+        - button "Open export center" [ref=e351]:
+          - img [ref=e352]
+          - generic [ref=e355]: Export
+    - link "Skip to content" [ref=e356] [cursor=pointer]:
+      - /url: "#main-content"
+    - main [ref=e357]:
+      - generic [ref=e358]:
+        - generic [ref=e359]:
+          - generic [ref=e360]:
+            - generic [ref=e361]: Current Lesson
+            - generic [ref=e362]: Real PrepTest Questions
+            - 'heading "Lesson 3: Two Classic Conditional Reasoning Errors (PT-120-S-4-Q-17, PT-106-S-3-Q-21)" [level=1] [ref=e363]'
+            - 'link "View in Question Log: PT-120-S-4-Q-17" [ref=e365] [cursor=pointer]':
+              - /url: /question-bank?pt=PT-120-S-4-Q-17
+          - generic [ref=e367]:
+            - generic [ref=e368]: Lesson
+            - button "Copy Text" [ref=e370]:
+              - img [ref=e371]
+              - generic [ref=e374]: Copy Text
+            - button "Export As" [ref=e376]:
+              - img [ref=e377]
+              - generic [ref=e380]: Export As
+              - img [ref=e381]
+        - generic [ref=e383]:
+          - 'heading "Lesson 3: Two Classic Conditional Reasoning Errors" [level=2] [ref=e384]'
+          - paragraph [ref=e385]:
+            - strong [ref=e386]: "Objective:"
+            - text: To identify and understand the two most common errors in conditional reasoning—the
+            - strong [ref=e387]: Mistaken Reversal
+            - text: (Affirming the Consequent) and the
+            - strong [ref=e388]: Mistaken Negation
+            - text: (Denying the Antecedent). These two fallacies account for the majority of conditional reasoning errors on the LSAT, appearing in Flaw, Parallel Flaw, Sufficient Assumption, and Necessary Assumption questions.
+          - paragraph [ref=e389]: In Lessons 1 and 2, we established the valid architecture of a conditional statement (A → B) and its only valid inference, the contrapositive (NOT B → NOT A). Now we examine the two invalid moves—arguments that appear plausible on the surface but are structurally unsound. Your goal is to recognize these patterns instantly, even when they are buried in dense LSAT language.
+          - table [ref=e391]:
+            - rowgroup [ref=e392]:
+              - row "Move Formula Validity Core Error" [ref=e393]:
+                - columnheader "Move" [ref=e394]
+                - columnheader "Formula" [ref=e395]
+                - columnheader "Validity" [ref=e396]
+                - columnheader "Core Error" [ref=e397]
+            - rowgroup [ref=e398]:
+              - row "Original A → B Given N/A" [ref=e399]:
+                - cell "Original" [ref=e400]
+                - cell "A → B" [ref=e401]
+                - cell "Given" [ref=e402]
+                - cell "N/A" [ref=e403]
+              - row "Contrapositive NOT B → NOT A VALID N/A" [ref=e404]:
+                - cell "Contrapositive" [ref=e405]
+                - cell "NOT B → NOT A" [ref=e406]
+                - cell "VALID" [ref=e407]
+                - cell "N/A" [ref=e408]
+              - row "Mistaken Reversal B → A INVALID Treats necessary as sufficient" [ref=e409]:
+                - cell "Mistaken Reversal" [ref=e410]
+                - cell "B → A" [ref=e411]
+                - cell "INVALID" [ref=e412]
+                - cell "Treats necessary as sufficient" [ref=e413]
+              - row "Mistaken Negation NOT A → NOT B INVALID Treats absence of one cause as absence of all causes" [ref=e414]:
+                - cell "Mistaken Negation" [ref=e415]
+                - cell "NOT A → NOT B" [ref=e416]
+                - cell "INVALID" [ref=e417]
+                - cell "Treats absence of one cause as absence of all causes" [ref=e418]
+          - heading "3.1 The Mistaken Reversal (Affirming the Consequent)" [level=3] [ref=e420]
+          - paragraph [ref=e421]: "The Mistaken Reversal is the single most common logical trap on the LSAT. It occurs when an argument observes that the necessary condition is present and concludes that the sufficient condition must therefore be present. In formal terms: the argument treats B → A as valid, when only A → B was established."
+          - generic [ref=e422]:
+            - generic [ref=e423]:
+              - img [ref=e424]
+              - generic [ref=e426]: "The Real-World Analogy: The Wet Sidewalk"
+            - generic [ref=e427]:
+              - paragraph [ref=e428]: "Imagine the rule: \"If it rains, the sidewalk gets wet.\" (Rain → Wet)"
+              - paragraph
+              - paragraph [ref=e429]:
+                - strong [ref=e430]: "Observation:"
+                - text: You look outside and see the sidewalk is wet.
+              - paragraph [ref=e431]:
+                - strong [ref=e432]: "Flawed Conclusion:"
+                - text: "\"Therefore, it must have rained.\""
+              - paragraph
+              - paragraph [ref=e433]:
+                - strong [ref=e434]: "Why it's wrong:"
+                - text: The sidewalk could be wet because of sprinklers, a spilled drink, or a fire hydrant. The presence of the necessary condition (wetness) does not prove that the specific sufficient condition (rain) caused it. There can be multiple sufficient conditions for the same necessary condition.
+          - heading "The Invalid Structure" [level=4] [ref=e435]
+          - table [ref=e437]:
+            - rowgroup [ref=e438]:
+              - row "Component Abstract Form Wet-Sidewalk Example" [ref=e439]:
+                - columnheader "Component" [ref=e440]
+                - columnheader "Abstract Form" [ref=e441]
+                - columnheader "Wet-Sidewalk Example" [ref=e442]
+            - rowgroup [ref=e443]:
+              - row "Rule (Given) A → B Rain → Wet Sidewalk" [ref=e444]:
+                - cell "Rule (Given)" [ref=e445]
+                - cell "A → B" [ref=e446]
+                - cell "Rain → Wet Sidewalk" [ref=e447]
+              - row "Evidence B is true The sidewalk is wet" [ref=e448]:
+                - cell "Evidence" [ref=e449]
+                - cell "B is true" [ref=e450]
+                - cell "The sidewalk is wet" [ref=e451]
+              - row "Invalid Conclusion Therefore, A must be true Therefore, it rained" [ref=e452]:
+                - cell "Invalid Conclusion" [ref=e453]
+                - cell "Therefore, A must be true" [ref=e454]
+                - cell "Therefore, it rained" [ref=e455]
+              - row "Error Necessary treated as sufficient Wetness does not prove rain" [ref=e456]:
+                - cell "Error" [ref=e457]
+                - cell "Necessary treated as sufficient" [ref=e458]
+                - cell "Wetness does not prove rain" [ref=e459]
+          - paragraph [ref=e460]:
+            - strong [ref=e461]: "Why it fails:"
+            - text: "A conditional A → B tells you only one thing: whenever A is present, B must follow. It says absolutely nothing about what happens when B is present on its own. B could exist because of A, or because of some entirely unrelated cause C. The rule only flows in one direction."
+          - 'heading "LSAT in Action: The Mistaken Reversal" [level=4] [ref=e463]'
+          - generic [ref=e464]:
+            - generic [ref=e465]:
+              - generic [ref=e466]:
+                - img [ref=e468]
+                - generic [ref=e471]:
+                  - generic [ref=e472]: Conditional Reasoning
+                  - generic [ref=e473]: PT-120-S-4-Q-17
+              - generic [ref=e475]:
+                - img [ref=e476]
+                - text: Intermediate
+            - generic [ref=e477]:
+              - generic [ref=e478]: Stimulus
+              - generic [ref=e479]: People who have never been asked to do more than they can easily do are people who never do all they can. Alex is someone who has clearly not done all that he is capable of doing, so obviously no one has ever pushed him to do more than what comes to him easily.
+            - generic [ref=e480]:
+              - generic [ref=e481]: Question
+              - generic [ref=e482]: The flawed reasoning in which one of the following is most similar to the flawed reasoning in the argument above?
+            - generic [ref=e483]:
+              - button "Option A" [ref=e484] [cursor=pointer]:
+                - generic [ref=e485]: A
+                - generic [ref=e486]: (A) Anybody who has a dog knows the true value of companionship, and Alicia has demonstrated that she knows the true value of companionship; thus we can safely conclude that Alicia has a dog.
+              - button "Option B" [ref=e487] [cursor=pointer]:
+                - generic [ref=e488]: B
+                - generic [ref=e489]: (B) Anyone who discovers something new is someone who has examined all the possible solutions to a problem. Fran has surely never discovered something new. Therefore, Fran has never explored all the possible solutions to a problem.
+              - button "Option C" [ref=e490] [cursor=pointer]:
+                - generic [ref=e491]: C
+                - generic [ref=e492]: (C) Any person who does not face sufficient challenges is a person who does not accomplish everything he or she can. Jill is a person who accomplishes everything she can, so Jill is a person who faces sufficient challenges.
+              - button "Option D" [ref=e493] [cursor=pointer]:
+                - generic [ref=e494]: D
+                - generic [ref=e495]: (D) By definition, a polygon is any closed plane figure bounded by straight lines. That object pictured on the chalkboard is certainly a closed plane figure bounded by a large number of straight lines, so that object pictured on the chalkboard must be a polygon.
+              - button "Option E" [ref=e496] [cursor=pointer]:
+                - generic [ref=e497]: E
+                - generic [ref=e498]: (E) People who have never lost something that they cannot afford to lose will be lax about keeping their property secure. Jon is lax about keeping property secure when it is something he can afford to lose, so Jon must never have lost anything.
+          - heading "Step-by-Step Analysis" [level=4] [ref=e499]
+          - generic [ref=e500]:
+            - generic [ref=e501]: Diagramming the Stimulus
+            - generic [ref=e504]:
+              - generic [ref=e505]:
+                - generic [ref=e506]: "1"
+                - generic [ref=e508]:
+                  - strong [ref=e509]: "Translate the Rule:"
+                  - text: "\"People who have never been asked to do more... are people who never do all they can.\" →"
+                  - strong [ref=e510]: NOT Asked → NOT Do All
+              - generic [ref=e511]:
+                - generic [ref=e512]: "2"
+                - generic [ref=e514]:
+                  - strong [ref=e515]: "Translate the Evidence:"
+                  - text: "\"Alex has clearly not done all that he is capable of doing.\" →"
+                  - strong [ref=e516]: NOT Do All
+                  - text: (the necessary condition is observed)
+              - generic [ref=e517]:
+                - generic [ref=e518]: "3"
+                - generic [ref=e520]:
+                  - strong [ref=e521]: "Translate the Conclusion:"
+                  - text: "\"No one has ever pushed him to do more.\" →"
+                  - strong [ref=e522]: NOT Asked
+                  - text: (the sufficient condition is asserted)
+              - generic [ref=e523]:
+                - generic [ref=e524]: "4"
+                - generic [ref=e526]:
+                  - strong [ref=e527]: "Identify the Error:"
+                  - text: The argument observes B (NOT Do All) and concludes A (NOT Asked). This is B → A, a Mistaken Reversal. Alex could be underperforming for many reasons—boredom, fatigue, lack of motivation—not just because he was never challenged.
+          - paragraph [ref=e528]: "Now diagram each answer choice to find the one that commits the same structural error:"
+          - generic [ref=e529]:
+            - generic [ref=e530]:
+              - generic [ref=e531]:
+                - generic [ref=e532]: Option
+                - generic [ref=e533]: (A) Correct — Matches the Mistaken Reversal.
+                - generic [ref=e534]:
+                  - img [ref=e535]
+                  - text: Correct
+              - generic [ref=e539]:
+                - generic [ref=e540]: Explanation
+                - generic [ref=e541]:
+                  - paragraph [ref=e542]:
+                    - strong [ref=e543]: "Rule:"
+                    - text: Dog → Companionship
+                  - paragraph [ref=e544]:
+                    - strong [ref=e545]: "Evidence:"
+                    - text: Companionship is present (necessary condition observed)
+                  - paragraph [ref=e546]:
+                    - strong [ref=e547]: "Conclusion:"
+                    - text: Dog must be present (sufficient condition asserted)
+                  - paragraph
+                  - paragraph [ref=e548]: "This is identical to the stimulus: the argument sees B and concludes A. Alicia could know companionship from friends, family, or other relationships—not only from having a dog."
+            - generic [ref=e549]:
+              - generic [ref=e550]:
+                - generic [ref=e551]: Option
+                - generic [ref=e552]: (B) Incorrect — This commits a Mistaken Negation.
+                - generic [ref=e553]:
+                  - img [ref=e554]
+                  - text: Wrong Flaw Type
+              - generic [ref=e559]:
+                - generic [ref=e560]: Explanation
+                - generic [ref=e561]:
+                  - paragraph [ref=e562]:
+                    - strong [ref=e563]: "Rule:"
+                    - text: Discover New → Examined All
+                  - paragraph [ref=e564]:
+                    - strong [ref=e565]: "Evidence:"
+                    - text: NOT Discover New (sufficient condition is absent)
+                  - paragraph [ref=e566]:
+                    - strong [ref=e567]: "Conclusion:"
+                    - text: NOT Examined All (necessary condition is absent)
+                  - paragraph
+                  - paragraph [ref=e568]: This is NOT A → NOT B, a Mistaken Negation. The stimulus commits a Mistaken Reversal (B → A), so the flaw type doesn't match.
+            - generic [ref=e569]:
+              - generic [ref=e570]:
+                - generic [ref=e571]: Option
+                - generic [ref=e572]: (C) Incorrect — This is valid logic (Contrapositive).
+                - generic [ref=e573]:
+                  - img [ref=e574]
+                  - text: Valid Logic
+              - generic [ref=e579]:
+                - generic [ref=e580]: Explanation
+                - generic [ref=e581]:
+                  - paragraph [ref=e582]:
+                    - strong [ref=e583]: "Rule:"
+                    - text: NOT Challenges → NOT Accomplish All
+                  - paragraph [ref=e584]:
+                    - strong [ref=e585]: "Evidence:"
+                    - text: Accomplish All (negation of the necessary condition)
+                  - paragraph [ref=e586]:
+                    - strong [ref=e587]: "Conclusion:"
+                    - text: Challenges (negation of the sufficient condition)
+                  - paragraph
+                  - paragraph [ref=e588]: "This correctly applies the contrapositive: NOT (NOT Accomplish All) → NOT (NOT Challenges), i.e., Accomplish All → Challenges. Valid reasoning cannot parallel a flaw."
+            - generic [ref=e589]:
+              - generic [ref=e590]:
+                - generic [ref=e591]: Option
+                - generic [ref=e592]: (D) Incorrect — This is valid logic (direct application).
+                - generic [ref=e593]:
+                  - img [ref=e594]
+                  - text: Valid Logic
+              - generic [ref=e599]:
+                - generic [ref=e600]: Explanation
+                - generic [ref=e601]:
+                  - paragraph [ref=e602]:
+                    - strong [ref=e603]: "Rule:"
+                    - text: Closed & Straight Lines → Polygon
+                  - paragraph [ref=e604]:
+                    - strong [ref=e605]: "Evidence:"
+                    - text: Closed & Straight Lines (sufficient condition is present)
+                  - paragraph [ref=e606]:
+                    - strong [ref=e607]: "Conclusion:"
+                    - text: Polygon (necessary condition follows)
+                  - paragraph
+                  - paragraph [ref=e608]: "This is a valid application of A → B: A is true, so B is true. No flaw."
+            - generic [ref=e609]:
+              - generic [ref=e610]:
+                - generic [ref=e611]: Option
+                - generic [ref=e612]: (E) Incorrect — Mismatched terms.
+                - generic [ref=e613]:
+                  - img [ref=e614]
+                  - text: Scope Mismatch
+              - generic [ref=e619]:
+                - generic [ref=e620]: Explanation
+                - generic [ref=e621]:
+                  - paragraph [ref=e622]:
+                    - strong [ref=e623]: "Rule:"
+                    - text: NOT Lost (unaffordable) → Lax Security
+                  - paragraph [ref=e624]:
+                    - strong [ref=e625]: "Evidence:"
+                    - text: Lax Security (about affordable property—different scope)
+                  - paragraph [ref=e626]:
+                    - strong [ref=e627]: "Conclusion:"
+                    - text: NOT Lost (anything)
+                  - paragraph
+                  - paragraph [ref=e628]: While this attempts a reversal, the terms in the evidence don't match the terms in the rule. The rule is about things one "cannot afford to lose," but the evidence changes scope to things one "can afford to lose." The structural match to the stimulus is poor.
+          - heading "3.2 The Mistaken Negation (Denying the Antecedent)" [level=3] [ref=e630]
+          - paragraph [ref=e631]: "The Mistaken Negation is the mirror image of the Mistaken Reversal. It occurs when an argument observes that the sufficient condition is absent and concludes that the necessary condition must therefore be absent. In formal terms: the argument treats NOT A → NOT B as valid, when only A → B was established."
+          - generic [ref=e632]:
+            - generic [ref=e633]:
+              - img [ref=e634]
+              - generic [ref=e636]: "The Real-World Analogy: The Dry Sky"
+            - generic [ref=e637]:
+              - paragraph [ref=e638]: "Same rule: \"If it rains, the sidewalk gets wet.\" (Rain → Wet)"
+              - paragraph
+              - paragraph [ref=e639]:
+                - strong [ref=e640]: "Observation:"
+                - text: You look outside and see it is NOT raining.
+              - paragraph [ref=e641]:
+                - strong [ref=e642]: "Flawed Conclusion:"
+                - text: "\"Therefore, the sidewalk is NOT wet.\""
+              - paragraph
+              - paragraph [ref=e643]:
+                - strong [ref=e644]: "Why it's wrong:"
+                - text: The sprinklers could be on. The absence of one specific sufficient condition (rain) does not guarantee the absence of the necessary condition (wetness). Other causes can independently produce the same result.
+          - heading "The Invalid Structure" [level=4] [ref=e645]
+          - table [ref=e647]:
+            - rowgroup [ref=e648]:
+              - row "Component Abstract Form Dry-Sky Example" [ref=e649]:
+                - columnheader "Component" [ref=e650]
+                - columnheader "Abstract Form" [ref=e651]
+                - columnheader "Dry-Sky Example" [ref=e652]
+            - rowgroup [ref=e653]:
+              - row "Rule (Given) A → B Rain → Wet Sidewalk" [ref=e654]:
+                - cell "Rule (Given)" [ref=e655]
+                - cell "A → B" [ref=e656]
+                - cell "Rain → Wet Sidewalk" [ref=e657]
+              - row "Evidence A is false (NOT A) It is not raining" [ref=e658]:
+                - cell "Evidence" [ref=e659]
+                - cell "A is false (NOT A)" [ref=e660]
+                - cell "It is not raining" [ref=e661]
+              - row "Invalid Conclusion Therefore, B must be false (NOT B) Therefore, the sidewalk is not wet" [ref=e662]:
+                - cell "Invalid Conclusion" [ref=e663]
+                - cell "Therefore, B must be false (NOT B)" [ref=e664]
+                - cell "Therefore, the sidewalk is not wet" [ref=e665]
+              - row "Error Absence of one cause treated as absence of all causes No rain does not mean no wetness" [ref=e666]:
+                - cell "Error" [ref=e667]
+                - cell "Absence of one cause treated as absence of all causes" [ref=e668]
+                - cell "No rain does not mean no wetness" [ref=e669]
+          - paragraph [ref=e670]:
+            - strong [ref=e671]: "Why it fails:"
+            - text: A conditional A → B only establishes what happens when A is present. It says nothing about what happens when A is absent. When the sufficient condition is missing, the necessary condition might still be true because of some other independent cause. The absence of one trigger does not eliminate all possible triggers.
+          - 'heading "Worked Pattern Snapshot: The Mistaken Negation" [level=4] [ref=e673]'
+          - generic [ref=e674]:
+            - text: "Consider an argument with this shape:"
+            - strong [ref=e675]: If the law punishes littering, then the city must provide trash cans. The law does not punish littering. Therefore, the city has no obligation to provide trash cans.
+          - paragraph [ref=e676]:
+            - text: "That line of reasoning feels plausible because it keeps the same two ideas in view. But structurally it still commits the exact error: it starts with"
+            - strong [ref=e677]: A → B
+            - text: ", notices"
+            - strong [ref=e678]: NOT A
+            - text: ", and then concludes"
+            - strong [ref=e679]: NOT B
+            - text: . The author treats punishment as the *only* path to the obligation, even though the city could have that obligation for independent reasons such as sanitation, accessibility, or public safety.
+          - heading "Step-by-Step Analysis" [level=4] [ref=e680]
+          - generic [ref=e681]:
+            - generic [ref=e682]: Diagramming the Stimulus
+            - generic [ref=e685]:
+              - generic [ref=e686]:
+                - generic [ref=e687]: "1"
+                - generic [ref=e689]:
+                  - strong [ref=e690]: "Translate the Rule:"
+                  - text: "\"If the law punishes littering, then the city has an obligation to provide trash cans.\" →"
+                  - strong [ref=e691]: Punish Littering → Obligation
+              - generic [ref=e692]:
+                - generic [ref=e693]: "2"
+                - generic [ref=e695]:
+                  - strong [ref=e696]: "Translate the Evidence:"
+                  - text: "\"The law does not punish littering.\" →"
+                  - strong [ref=e697]: NOT Punish Littering
+                  - text: (the sufficient condition is absent)
+              - generic [ref=e698]:
+                - generic [ref=e699]: "3"
+                - generic [ref=e701]:
+                  - strong [ref=e702]: "Translate the Conclusion:"
+                  - text: "\"The city has no such obligation.\" →"
+                  - strong [ref=e703]: NOT Obligation
+                  - text: (the necessary condition is denied)
+              - generic [ref=e704]:
+                - generic [ref=e705]: "4"
+                - generic [ref=e707]:
+                  - strong [ref=e708]: "Identify the Error:"
+                  - text: The argument observes NOT A and concludes NOT B. This is NOT A → NOT B, a Mistaken Negation. The city could have an obligation to provide trash cans for reasons entirely independent of littering laws (e.g., public health, accessibility).
+          - generic [ref=e709]:
+            - generic [ref=e710]:
+              - generic [ref=e711]:
+                - generic [ref=e712]: Checkpoint
+                - generic [ref=e713]: 1. Start with the original rule.
+                - generic [ref=e714]: Rule
+              - generic [ref=e716]:
+                - generic [ref=e717]: What to Notice
+                - paragraph [ref=e719]:
+                  - text: A conditional rule always gives you a one-way relationship. Here,
+                  - strong [ref=e720]: punish littering
+                  - text: is sufficient for
+                  - strong [ref=e721]: obligation
+                  - text: . That does not make punishment the only possible source of the obligation.
+            - generic [ref=e722]:
+              - generic [ref=e723]:
+                - generic [ref=e724]: Checkpoint
+                - generic [ref=e725]: 2. Watch what the argument actually observes.
+                - generic [ref=e726]: Evidence
+              - generic [ref=e728]:
+                - generic [ref=e729]: What to Notice
+                - paragraph [ref=e731]:
+                  - text: "The evidence is about the absence of the sufficient condition:"
+                  - strong [ref=e732]: NOT punish littering
+                  - text: . That is the danger sign. Once the author negates the left side of the arrow, the safe move is usually to stop and ask whether some other route could still produce the result.
+            - generic [ref=e733]:
+              - generic [ref=e734]:
+                - generic [ref=e735]: Checkpoint
+                - generic [ref=e736]: 3. Spot the unsupported leap.
+                - generic [ref=e737]:
+                  - img [ref=e738]
+                  - text: Flaw
+              - generic [ref=e743]:
+                - generic [ref=e744]: What to Notice
+                - paragraph [ref=e746]:
+                  - text: "The conclusion denies the necessary condition:"
+                  - strong [ref=e747]: NOT obligation
+                  - text: . That leap assumes a world in which the city could owe trash cans only if littering were punishable. The original conditional never gave us that exclusivity.
+            - generic [ref=e748]:
+              - generic [ref=e749]:
+                - generic [ref=e750]: Checkpoint
+                - generic [ref=e751]: 4. Separate this from the nearby trap patterns.
+                - generic [ref=e752]:
+                  - img [ref=e753]
+                  - text: Contrast
+              - generic [ref=e757]:
+                - generic [ref=e758]: What to Notice
+                - paragraph [ref=e760]:
+                  - text: If an argument instead observed
+                  - strong [ref=e761]: obligation
+                  - text: and concluded
+                  - strong [ref=e762]: punish littering
+                  - text: ", that would be a Mistaken Reversal. If it observed"
+                  - strong [ref=e763]: NOT obligation
+                  - text: and concluded
+                  - strong [ref=e764]: NOT punish littering
+                  - text: ", that would be the valid contrapositive. The key is to notice exactly which side of the arrow the author is affirming or denying."
+          - heading "3.3 The Relationship Between the Two Fallacies" [level=3] [ref=e766]
+          - paragraph [ref=e767]: The Mistaken Reversal and the Mistaken Negation are not independent errors—they are contrapositives of each other. If you take the Mistaken Reversal (B → A) and form its contrapositive, you get NOT A → NOT B, which is the Mistaken Negation. This means committing one fallacy logically entails the other.
+          - table [ref=e769]:
+            - rowgroup [ref=e770]:
+              - row "Statement Formula Status Contrapositive" [ref=e771]:
+                - columnheader "Statement" [ref=e772]
+                - columnheader "Formula" [ref=e773]
+                - columnheader "Status" [ref=e774]
+                - columnheader "Contrapositive" [ref=e775]
+            - rowgroup [ref=e776]:
+              - row "Original A → B VALID (Given) NOT B → NOT A (Valid)" [ref=e777]:
+                - cell "Original" [ref=e778]
+                - cell "A → B" [ref=e779]
+                - cell "VALID (Given)" [ref=e780]
+                - cell "NOT B → NOT A (Valid)" [ref=e781]
+              - row "Mistaken Reversal B → A INVALID NOT A → NOT B (Also Invalid)" [ref=e782]:
+                - cell "Mistaken Reversal" [ref=e783]
+                - cell "B → A" [ref=e784]
+                - cell "INVALID" [ref=e785]
+                - cell "NOT A → NOT B (Also Invalid)" [ref=e786]
+              - row "Mistaken Negation NOT A → NOT B INVALID B → A (Also Invalid)" [ref=e787]:
+                - cell "Mistaken Negation" [ref=e788]
+                - cell "NOT A → NOT B" [ref=e789]
+                - cell "INVALID" [ref=e790]
+                - cell "B → A (Also Invalid)" [ref=e791]
+          - generic [ref=e792]:
+            - generic [ref=e793]:
+              - img [ref=e794]
+              - generic [ref=e796]: Quick Identification
+            - generic [ref=e797]:
+              - paragraph [ref=e798]: "When you diagram the flaw, ask:"
+              - paragraph
+              - paragraph [ref=e799]:
+                - text: •
+                - strong [ref=e800]: Did the argument observe B and conclude A?
+                - text: → Mistaken Reversal
+              - paragraph [ref=e801]:
+                - text: •
+                - strong [ref=e802]: Did the argument observe NOT A and conclude NOT B?
+                - text: → Mistaken Negation
+              - paragraph
+              - paragraph [ref=e803]: "Both errors stem from the same root mistake: treating a one-directional conditional as if it flows both ways."
+          - heading "3.4 Spotting the Fallacies in LSAT Language" [level=3] [ref=e805]
+          - paragraph [ref=e806]: "The LSAT rarely uses clean \"A therefore B\" language. Instead, conditional errors are embedded in natural-language arguments. Here are the most common disguises:"
+          - table [ref=e808]:
+            - rowgroup [ref=e809]:
+              - row "LSAT Pattern What It Looks Like Fallacy Type" [ref=e810]:
+                - columnheader "LSAT Pattern" [ref=e811]
+                - columnheader "What It Looks Like" [ref=e812]
+                - columnheader "Fallacy Type" [ref=e813]
+            - rowgroup [ref=e814]:
+              - row "\"All X are Y. Z is Y. So Z is X.\" Observes necessary, concludes sufficient Mistaken Reversal" [ref=e815]:
+                - cell "\"All X are Y. Z is Y. So Z is X.\"" [ref=e816]
+                - cell "Observes necessary, concludes sufficient" [ref=e817]
+                - cell "Mistaken Reversal" [ref=e818]
+              - row "\"If X, then Y. Not X. So not Y.\" Observes absence of sufficient, concludes absence of necessary Mistaken Negation" [ref=e819]:
+                - cell "\"If X, then Y. Not X. So not Y.\"" [ref=e820]
+                - cell "Observes absence of sufficient, concludes absence of necessary" [ref=e821]
+                - cell "Mistaken Negation" [ref=e822]
+              - row "\"X is required for Y. X is present. So Y.\" Observes necessary, concludes sufficient Mistaken Reversal" [ref=e823]:
+                - cell "\"X is required for Y. X is present. So Y.\"" [ref=e824]
+                - cell "Observes necessary, concludes sufficient" [ref=e825]
+                - cell "Mistaken Reversal" [ref=e826]
+              - row "\"Only X leads to Y. X didn't happen. So Y won't happen.\" Adds unsupported \"only\" then negates Mistaken Negation" [ref=e827]:
+                - cell "\"Only X leads to Y. X didn't happen. So Y won't happen.\"" [ref=e828]
+                - cell "Adds unsupported \"only\" then negates" [ref=e829]
+                - cell "Mistaken Negation" [ref=e830]
+              - row "\"X guarantees Y. Y happened. So X happened.\" Observes result, concludes cause Mistaken Reversal" [ref=e831]:
+                - cell "\"X guarantees Y. Y happened. So X happened.\"" [ref=e832]
+                - cell "Observes result, concludes cause" [ref=e833]
+                - cell "Mistaken Reversal" [ref=e834]
+          - heading "3.5 Key Takeaways and Practice Focus" [level=3] [ref=e836]
+          - list [ref=e837]:
+            - listitem [ref=e838]:
+              - strong [ref=e839]: "Memorize the Structures:"
+              - text: Know the Mistaken Reversal (B → A) and Mistaken Negation (NOT A → NOT B) by name, by formula, and by their abstract structures.
+            - listitem [ref=e840]:
+              - strong [ref=e841]: "Hunt for the Pattern:"
+              - text: When a stimulus provides a conditional rule (A → B), immediately check whether the conclusion relies on observing B (Reversal risk) or observing NOT A (Negation risk).
+            - listitem [ref=e842]:
+              - strong [ref=e843]: "Diagram First:"
+              - text: On Parallel Flaw questions, sketch the abstract structure of the stimulus (e.g., A → B, B observed, concludes A) before reading the answer choices. This makes pattern-matching far faster.
+            - listitem [ref=e844]:
+              - strong [ref=e845]: "Remember the Mirror:"
+              - text: The two fallacies are contrapositives of each other. If you can identify one, you can identify the other by flipping the structure.
+            - listitem [ref=e846]:
+              - strong [ref=e847]: "Compare to the Contrapositive:"
+              - text: The contrapositive (NOT B → NOT A) is the only legitimate way to reverse the direction of the conditional arrow. Every other reversal attempt is a fallacy.
+          - generic [ref=e848]:
+            - generic [ref=e849]:
+              - img [ref=e850]
+              - generic [ref=e852]: The Bottom Line
+            - paragraph [ref=e854]: "A conditional A → B tells you one thing and one thing only: when A is present, B must follow. It does NOT tell you that B proves A (Mistaken Reversal). It does NOT tell you that the absence of A prevents B (Mistaken Negation). The only valid reverse inference is the contrapositive: NOT B → NOT A. Every other manipulation is a fallacy."

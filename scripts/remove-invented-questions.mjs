@@ -4,17 +4,22 @@
  * Remove invented question-card blocks from Lessons 4+ in LR modules.
  * Preserves all other content (text, tables, callouts, etc.)
  * Only removes the { type: 'question-card', ... } objects.
- * 
+ *
  * Run: node scripts/remove-invented-questions.mjs
  */
 
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
-const inventory = JSON.parse(readFileSync(join(import.meta.dirname, '..', 'docs', 'invented-questions-inventory.json'), 'utf-8'));
+const inventory = JSON.parse(
+  readFileSync(
+    join(import.meta.dirname, '..', 'docs', 'operations', 'audits', 'invented-questions-inventory.json'),
+    'utf-8',
+  ),
+);
 
 // Filter to Lessons 4+ only (LR modules)
-const toRemove = inventory.filter(q => {
+const toRemove = inventory.filter((q) => {
   const lessonMatch = q.file.match(/Lesson(\d+)/);
   if (!lessonMatch) return false;
   const lessonNum = Number(lessonMatch[1]);
@@ -25,7 +30,7 @@ console.log(`Found ${toRemove.length} invented question-cards to remove from Les
 
 // Group by file
 const byFile = {};
-toRemove.forEach(q => {
+toRemove.forEach((q) => {
   const filepath = join(import.meta.dirname, '..', 'modules', q.file);
   if (!byFile[filepath]) byFile[filepath] = [];
   byFile[filepath].push(q);
@@ -42,21 +47,21 @@ for (const [filepath, questions] of Object.entries(byFile)) {
     // Find and remove question-card blocks
     // Pattern: { type: 'question-card', ... }, or the whole object
     // We need to find the start of the question-card object and its closing }
-    
+
     const cardId = q.cardId;
-    
+
     // Strategy: find the line with the card ID or 'question-card' near the reported line
     // Then remove from the opening { to the closing }, including trailing comma
-    
+
     const lines = content.split('\n');
     let startLine = -1;
     let endLine = -1;
     let braceDepth = 0;
     let inCard = false;
-    
+
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
-      
+
       // Find the start of a question-card block
       if (line.includes("type: 'question-card'") && !inCard) {
         // Check if this card has the ID we're looking for, or is near the expected line
@@ -103,23 +108,23 @@ for (const [filepath, questions] of Object.entries(byFile)) {
         }
       }
     }
-    
+
     if (startLine >= 0 && endLine >= 0) {
       // Remove the lines, plus any trailing comma on the next line
       // Also check for a preceding comma
       const removedLines = lines.splice(startLine, endLine - startLine + 1);
-      
+
       // Clean up: if the line after removal starts with a comma, or the previous line ends with comma before another comma
       if (startLine < lines.length && lines[startLine].trim() === ',') {
         lines.splice(startLine, 1);
       }
-      
+
       content = lines.join('\n');
       totalRemoved++;
       modified = true;
     }
   }
-  
+
   if (modified) {
     writeFileSync(filepath, content);
     filesModified++;

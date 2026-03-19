@@ -17,7 +17,7 @@ LSAT Mastery is a client-side Single Page Application (SPA) designed for LSAT pr
 
 ### Core Commands
 *   **Install Dependencies:** `npm install`
-*   **Start Dev Server:** `npm run dev` (Runs on http://localhost:3000)
+*   **Start Dev Server:** `npm run dev` (Runs on http://localhost:8002)
 *   **Build for Production:** `npm run build` (Output to `dist/`)
 *   **Preview Production Build:** `npm run preview`
 
