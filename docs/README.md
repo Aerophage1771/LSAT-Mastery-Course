@@ -4,7 +4,7 @@
 **Audience:** Contributors who need to find the current source of truth quickly.  
 **Status:** active  
 **Source of truth:** yes  
-**Last reviewed:** 2026-03-18  
+**Last reviewed:** 2026-03-20  
 **Related docs:** [../../README.md](../../README.md), [../README.md](../README.md), [../../docs/README.md](../../docs/README.md), [archive/README.md](./archive/README.md)
 
 ## Docs Layers
@@ -17,7 +17,7 @@
 - Product docs
   - [product/README.md](./product/README.md): current product truth and roadmap entrypoints
   - [product/course-experience.md](./product/course-experience.md): live user-facing workflows
-  - [product/roadmap/README.md](./product/roadmap/README.md): planned work only
+  - [product/roadmap/README.md](./product/roadmap/README.md): planned work only, including the 20 numbered `07-26` bet files
 - Technical docs
   - [technical/architecture.md](./technical/architecture.md): runtime architecture, routing, and boundaries
   - [technical/content-and-validation.md](./technical/content-and-validation.md): content sources, validation scripts, and generated audits

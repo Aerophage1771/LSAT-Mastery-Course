@@ -64,7 +64,7 @@ Use the docs layers in this order:
 2. [docs/README.md](./docs/README.md) for the repo docs map and source-of-truth boundaries
 3. [AGENTS.md](./AGENTS.md) for execution rules, repo hazards, and content policy
 4. [docs/product/course-experience.md](./docs/product/course-experience.md) for live product behavior
-5. [docs/product/roadmap/README.md](./docs/product/roadmap/README.md) for planned work only
+5. [docs/product/roadmap/README.md](./docs/product/roadmap/README.md) for planned work only, including the 20 numbered `07-26` bet docs
 6. [docs/technical/architecture.md](./docs/technical/architecture.md) and [docs/operations/content-operations.md](./docs/operations/content-operations.md) for implementation and workflow detail
 
 Generated audits live under [docs/operations/audits/README.md](./docs/operations/audits/README.md). Historical plans and brainstorms live under [docs/archive/README.md](./docs/archive/README.md).

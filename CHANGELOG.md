@@ -4,8 +4,18 @@
 **Audience:** Contributors who need a concise history of important repo changes.  
 **Status:** active  
 **Source of truth:** yes  
-**Last reviewed:** 2026-03-11  
+**Last reviewed:** 2026-03-21  
 **Related docs:** [README.md](./README.md), [docs/README.md](./docs/README.md)
+
+## 2026-03-21
+
+- Archived the stale `01-05` roadmap duplicate draft files under `docs/archive/roadmaps/` so the active mastery roadmap folder now carries only the canonical `07-26` bet set plus its front-door files.
+- Updated the roadmap front door and archive index so historical duplicate drafts are explicitly separated from active roadmap truth.
+
+## 2026-03-20
+
+- Expanded `docs/product/roadmap/` with twenty additional implementation-sized roadmap bets grounded in the current dashboard, question-bank, export, validation, accessibility, backup, and contributor-workflow surfaces.
+- Updated the roadmap front door and repo README so the larger mastery roadmap library is discoverable from the active docs entrypoints.
 
 ## 2026-03-11
 
