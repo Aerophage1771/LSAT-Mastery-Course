@@ -1,80 +1,83 @@
 # AGENTS.md
 
-## Cursor Cloud specific instructions
+**Purpose:** Define execution rules, repo hazards, and content-policy constraints for agents working in this repository.  
+**Audience:** Coding agents and human contributors making product or content changes.  
+**Status:** active  
+**Source of truth:** yes  
+**Last reviewed:** 2026-03-11  
+**Related docs:** [README.md](./README.md), [docs/README.md](./docs/README.md), [docs/operations/content-operations.md](./docs/operations/content-operations.md)
 
-### What this is
+## Repo Identity
 
-A **client-side only** React + TypeScript SPA delivering an interactive LSAT preparation course. No backend, no database, no external services. All course content (59 modules, ~600 lessons) is statically bundled and code-split per module.
+- Client-only React 19 + TypeScript SPA
+- No backend, no database, no external services in runtime
+- Package manager: `npm`
+- Build tool: Vite 6
+- Styling: Tailwind CSS 4
+- Routing: React Router 7
 
-### Stack
+## Product Truth You Must Preserve
 
-- **React 19**, TypeScript 5.8 (strict mode), Vite 6, Tailwind CSS 4
-- **React Router 7** for URL-based navigation
-- **Fuse.js** for client-side search
-- **DOMPurify** for HTML sanitization of rendered content
-- **vite-plugin-pwa** for PWA / service worker
-- Package manager: **npm** (lockfile: `package-lock.json`)
+- Live routes:
+  - `/`
+  - `/module/:moduleId`
+  - `/module/:moduleId/lesson/:lessonId`
+  - `/question-bank`
+- The question bank is standalone, not a numbered module route.
+- Route module ids are canonical. Legacy content module ids are remapped through `utils/courseCatalog.ts`.
+  - route `21` -> content module `55`
+  - route `22` -> content module `59`
+- Lesson files under `modules/moduleN/` are data files exporting lesson objects. They are not React components.
 
-### Running the app
+## Key Constraints
 
+- TypeScript runs in strict mode. Use `npm run typecheck` after content or structural edits.
+- The app shell is intentionally large enough to trigger Vite chunk-size warnings. Treat that warning as expected unless a change clearly worsens it.
+- Service worker generation only happens on `npm run build`, not during dev.
+- Progress data is stored in `localStorage`. Any change to lesson ids or route ids can break saved progress and deep links.
+
+## Content Policy
+
+- Lesson 4+ drill and concept content must use real LSAT material sourced from the question-bank repositories.
+- Lessons 1-3 may use invented examples, but they must be clearly labeled as illustrative and must not use fake PT identifiers.
+- Do not add invented `question-card` blocks for lessons 1-3. If you need an illustrative example, use prose, blockquotes, or clearly marked non-interactive content instead.
+
+## Validation Commands
+
+Run the smallest useful set for the change:
+
+```bash
+npm run typecheck
+npm run inventory:invented
+npm run validate:questions
+npm run audit:lr-cards
 ```
-npm run dev        # Vite dev server → http://localhost:3000 (binds 0.0.0.0)
-npm run build      # Production bundle → dist/
-npm run preview    # Serve production build locally
-```
 
-### Key scripts
+Generated reports live under `docs/operations/audits/`.
 
-| Command | What it does |
-|---------|-------------|
-| `npm run lint` | ESLint (flat config, TS + React plugins) |
-| `npm run typecheck` | `tsc --noEmit` with strict mode |
-| `npm test` | Vitest unit tests |
-| `npm run format` | Prettier |
-| `npm run analyze` | Bundle visualizer → `dist/stats.html` |
+## High-Risk Areas
 
-### Architecture
+- `utils/courseCatalog.ts`: route/content module mapping and canonical naming
+- `data/courseCatalog.json`: canonical lesson titles shown in navigation and exports
+- `App.tsx` and `components/QuestionBank.tsx`: runtime consumers of generated audit data
+- `components/LessonViewer.tsx`: renderer behavior for all lesson block types
+- `modules/Module55.tsx` and `modules/Module59.tsx`: legacy content-module mappings behind routes `21` and `22`
 
-- **Routing**: `/`, `/module/:moduleId`, `/module/:moduleId/lesson/:lessonId`
-- **Code splitting**: `modules/registry.ts` maps module IDs to `() => import('./ModuleN')`. Each of the 59 modules is a separate chunk (~5–150 KB each). Main bundle is ~800 KB.
-- **Content model**: Lessons are arrays of typed `ContentBlock` objects (see `types.ts`). The `LessonViewer` component in `components/LessonViewer.tsx` renders them. There are 17 block types including interactive cards (`question-card`, `passage-card`, `question-passage-card`).
-- **Progress**: Lesson completion stored in `localStorage` via `hooks/useProgress.ts`, shared via `contexts/ProgressContext.tsx`.
-- **Search**: Fuse.js search dialog on `Ctrl+K`, searches all lesson/module titles.
-- **Question Bank**: Standalone page at `/question-bank` with 247 questions (150 LR + 97 RC). Sidebar filtering by type, real-time search, expandable cards with interactive answer feedback. Data in `modules/module48/`, `module49/`, `module53/`. Validation via `npm run validate:questions`.
-- **Style Guide**: 7-tab modal (`Components`, `Question Card`, `Passage Card`, `Q+P Card`, `Structure`, `Prompts`, `Technical`) with live interactive examples. "Copy All" button serializes entire guide to clipboard.
-- **Roadmap**: 7-tab modal with 78 product improvement ideas.
+## Quote Escaping Rule For Content Files
 
-### Module numbering
+Content-file syntax errors are common and usually come from unescaped quotes.
 
-Modules are numbered 1–56 sequentially:
-- **1–22**: Logical Reasoning (9 units)
-- **23–49**: Reading Comprehension (6 units)
-- **50–56**: Advanced Passages
+- Replace smart quotes with straight ASCII quotes.
+- Escape apostrophes inside single-quoted strings as `\'`.
+- Escape double quotes inside double-quoted strings as `\"`.
+- After editing lesson files, run `npm run typecheck` or at minimum `npx tsc --noEmit`.
 
-The Question Bank is NOT a module. It has its own standalone page at `/question-bank` with dedicated `QuestionBank.tsx` component. Questions are stored in `modules/module48/` (LR), `modules/module49/` (RC), and `modules/module53/` (Advanced RC).
+## Docs Expectations
 
-### Gotchas
-
-- **Module55**: All lesson files in `modules/module55/` now exist and compile cleanly. If new lessons are added, ensure they follow the same `import { Lesson } from '../../types'` pattern and are registered in `modules/Module55.tsx`.
-- **Chunk size warning**: Vite warns about the main bundle exceeding 500 KB. This is expected; the app shell + routing + search + UI components total ~800 KB.
-- **PWA**: Service worker is only generated during `npm run build`, not in dev mode.
-- **Strict TypeScript**: `tsconfig.json` has `strict: true`, `noUnusedLocals`, `noUnusedParameters`, `noImplicitReturns`, `noFallthroughCasesInSwitch`. All new code must comply.
-- **Content files**: Lesson `.tsx` files in `modules/moduleN/` are pure data (TypeScript objects exporting `ContentBlock[]`). They are not React components. The renderer is `LessonViewer.tsx`.
-- **Blockquotes**: Render as clean rounded panels (not italic + left-border). Styled via `LessonViewer.tsx`, not individual files.
-- **Quote escaping in content files (CRITICAL)**: Subagents writing lesson content frequently introduce syntax errors from unescaped quotes. Common culprits: (1) Smart/curly quotes (`"` `"` `'` `'`) must be replaced with straight quotes. (2) Apostrophes in contractions (`it's`, `don't`, `author's`) inside single-quoted strings must be escaped as `\'`. (3) Double quotes inside double-quoted strings must be escaped as `\"`. **Always run `npx tsc --noEmit | grep moduleN` after writing content files to catch these.** If errors appear, fix escaping before committing.
-- **Dev server port**: `npm run dev` targets port 3000 but auto-increments if busy. Check the Vite output for the actual port.
-- **Pre-existing lint errors**: `npm run lint` reports ~630 pre-existing errors (mostly `no-case-declarations` in `LessonViewer.tsx` and `export.ts`). These are not regressions. Verify your changes by filtering lint output to your modified files.
-
-### Adding new content
-
-1. Create lesson file in `modules/moduleN/LessonX_Name.tsx` exporting a `Lesson` object
-2. Import and add to the module's lesson array in `modules/ModuleN.tsx`
-3. If creating a new module: add an entry to `modules/registry.ts` with metadata and dynamic import
-4. Use the Style Guide → Technical tab for the complete `ContentBlock` type reference with examples
-5. Mark correct answers in `options` and `question-card` blocks by appending `(Correct)` to the string
-
-### Question content policy (CRITICAL)
-
-- **Drill and concept lessons (Lesson 4+)** MUST use real LSAT questions sourced from the Question Bank (`modules/module48/`, `module49/`, `module53/`). Never invent stimuli, questions, or answer choices for these lessons. If more real questions are needed, request them from the repository owner.
-- **Introduction, Step-by-Step Guide, and Field Guide lessons (Lessons 1-3)** MAY use invented illustrative examples, but these MUST be clearly labeled with `id: 'illustrative'` or similar, and the surrounding text must state "Consider this illustrative example" or equivalent. Never assign a PT identifier to an invented question.
-- The Question Bank repositories (`module48/` for LR, `module49/` for RC, `module53/` for Advanced RC) are the single source of truth for real question content. Cross-reference drill lessons against these repositories to verify authenticity.
+- `README.md` is repo and product orientation.
+- `AGENTS.md` is execution guidance, repo hazards, and content-policy enforcement.
+- `docs/README.md` is the active docs index and source-of-truth map.
+- `docs/product/course-experience.md` is live product truth.
+- `docs/product/roadmap/` is planned work only and must not be written as shipped behavior.
+- `docs/archive/` is historical context only.
+- When changing active docs, keep metadata headers and `Related docs` links accurate. Add a `CHANGELOG.md` entry when the docs structure or source-of-truth boundaries materially change.

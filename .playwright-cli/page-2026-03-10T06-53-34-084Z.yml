@@ -1,0 +1,1706 @@
+- generic [ref=e3]:
+  - navigation "Course navigation" [ref=e4]:
+    - button "LSAT Mastery - Go to Dashboard" [ref=e6]:
+      - img [ref=e8]
+      - generic [ref=e10]: LSAT Mastery
+    - generic [ref=e12]:
+      - button "Course Dashboard" [ref=e14]:
+        - img [ref=e15]
+        - generic [ref=e20]: Course Dashboard
+      - tree "Modules" [ref=e21]:
+        - generic [ref=e22]:
+          - heading "Logical Reasoning" [level=3] [ref=e23]
+          - treeitem "1.Argument Part" [ref=e24]:
+            - button "1.Argument Part" [ref=e25]:
+              - generic [ref=e26]:
+                - generic [ref=e27]: "1."
+                - text: Argument Part
+          - treeitem "2.Main Conclusion" [ref=e28]:
+            - button "2.Main Conclusion" [ref=e29]:
+              - generic [ref=e30]:
+                - generic [ref=e31]: "2."
+                - text: Main Conclusion
+          - treeitem "3.Method of Reasoning" [ref=e32]:
+            - button "3.Method of Reasoning" [ref=e33]:
+              - generic [ref=e34]:
+                - generic [ref=e35]: "3."
+                - text: Method of Reasoning
+          - treeitem "4.Parallel Reasoning" [ref=e36]:
+            - button "4.Parallel Reasoning" [ref=e37]:
+              - generic [ref=e38]:
+                - generic [ref=e39]: "4."
+                - text: Parallel Reasoning
+          - treeitem "5.Flaw" [ref=e40]:
+            - button "5.Flaw" [ref=e41]:
+              - generic [ref=e42]:
+                - generic [ref=e43]: "5."
+                - text: Flaw
+          - treeitem "6.Parallel Flaw" [ref=e44]:
+            - button "6.Parallel Flaw" [ref=e45]:
+              - generic [ref=e46]:
+                - generic [ref=e47]: "6."
+                - text: Parallel Flaw
+          - treeitem "7.Evaluate the Argument" [ref=e48]:
+            - button "7.Evaluate the Argument" [ref=e49]:
+              - generic [ref=e50]:
+                - generic [ref=e51]: "7."
+                - text: Evaluate the Argument
+          - treeitem "8.Weaken" [ref=e52]:
+            - button "8.Weaken" [ref=e53]:
+              - generic [ref=e54]:
+                - generic [ref=e55]: "8."
+                - text: Weaken
+          - treeitem "9.Strengthen" [ref=e56]:
+            - button "9.Strengthen" [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e59]: "9."
+                - text: Strengthen
+          - treeitem "10.Sufficient Assumption" [ref=e60]:
+            - button "10.Sufficient Assumption" [ref=e61]:
+              - generic [ref=e62]:
+                - generic [ref=e63]: "10."
+                - text: Sufficient Assumption
+          - treeitem "11.Necessary Assumption" [ref=e64]:
+            - button "11.Necessary Assumption" [ref=e65]:
+              - generic [ref=e66]:
+                - generic [ref=e67]: "11."
+                - text: Necessary Assumption
+          - treeitem "12.Principle-Strengthen" [ref=e68]:
+            - button "12.Principle-Strengthen" [ref=e69]:
+              - generic [ref=e70]:
+                - generic [ref=e71]: "12."
+                - text: Principle-Strengthen
+          - treeitem "13.Principle - Apply" [ref=e72]:
+            - button "13.Principle - Apply" [ref=e73]:
+              - generic [ref=e74]:
+                - generic [ref=e75]: "13."
+                - text: Principle - Apply
+          - treeitem "14.Principle - Generalization" [ref=e76]:
+            - button "14.Principle - Generalization" [ref=e77]:
+              - generic [ref=e78]:
+                - generic [ref=e79]: "14."
+                - text: Principle - Generalization
+          - treeitem "15.Fill in the Blank" [ref=e80]:
+            - button "15.Fill in the Blank" [ref=e81]:
+              - generic [ref=e82]:
+                - generic [ref=e83]: "15."
+                - text: Fill in the Blank
+          - treeitem "16.Most Strongly Supported" [ref=e84]:
+            - button "16.Most Strongly Supported" [ref=e85]:
+              - generic [ref=e86]:
+                - generic [ref=e87]: "16."
+                - text: Most Strongly Supported
+          - treeitem "17.Must Be True" [ref=e88]:
+            - button "17.Must Be True" [ref=e89]:
+              - generic [ref=e90]:
+                - generic [ref=e91]: "17."
+                - text: Must Be True
+          - treeitem "18.Must Be False" [ref=e92]:
+            - button "18.Must Be False" [ref=e93]:
+              - generic [ref=e94]:
+                - generic [ref=e95]: "18."
+                - text: Must Be False
+          - treeitem "19.Paradox / Explain" [ref=e96]:
+            - button "19.Paradox / Explain" [ref=e97]:
+              - generic [ref=e98]:
+                - generic [ref=e99]: "19."
+                - text: Paradox / Explain
+          - treeitem "20.Agree / Disagree (Point at Issue)" [ref=e100]:
+            - button "20.Agree / Disagree (Point at Issue)" [ref=e101]:
+              - generic [ref=e102]:
+                - generic [ref=e103]: "20."
+                - text: Agree / Disagree (Point at Issue)
+          - treeitem "21.Conditional Reasoning" [ref=e104]:
+            - button "21.Conditional Reasoning" [ref=e105]:
+              - generic [ref=e106]:
+                - generic [ref=e107]: "21."
+                - text: Conditional Reasoning
+          - treeitem "22.LSAT Math" [ref=e108]:
+            - button "22.LSAT Math" [ref=e109]:
+              - generic [ref=e110]:
+                - generic [ref=e111]: "22."
+                - text: LSAT Math
+          - heading "Reading Comprehension" [level=3] [ref=e112]
+          - 'treeitem "23.RC: Main Idea" [ref=e113]':
+            - 'button "23.RC: Main Idea" [ref=e114]':
+              - generic [ref=e115]:
+                - generic [ref=e116]: "23."
+                - text: "RC: Main Idea"
+          - 'treeitem "24.RC: Inference" [ref=e117]':
+            - 'button "24.RC: Inference" [ref=e118]':
+              - generic [ref=e119]:
+                - generic [ref=e120]: "24."
+                - text: "RC: Inference"
+          - 'treeitem "25.RC: Analogy" [ref=e121]':
+            - 'button "25.RC: Analogy" [ref=e122]':
+              - generic [ref=e123]:
+                - generic [ref=e124]: "25."
+                - text: "RC: Analogy"
+          - 'treeitem "26.RC: Application" [ref=e125]':
+            - 'button "26.RC: Application" [ref=e126]':
+              - generic [ref=e127]:
+                - generic [ref=e128]: "26."
+                - text: "RC: Application"
+          - 'treeitem "27.RC: Approach" [ref=e129]':
+            - 'button "27.RC: Approach" [ref=e130]':
+              - generic [ref=e131]:
+                - generic [ref=e132]: "27."
+                - text: "RC: Approach"
+          - 'treeitem "28.RC: Author Attitude" [ref=e133]':
+            - 'button "28.RC: Author Attitude" [ref=e134]':
+              - generic [ref=e135]:
+                - generic [ref=e136]: "28."
+                - text: "RC: Author Attitude"
+          - 'treeitem "29.RC: Author Viewpoint" [ref=e137]':
+            - 'button "29.RC: Author Viewpoint" [ref=e138]':
+              - generic [ref=e139]:
+                - generic [ref=e140]: "29."
+                - text: "RC: Author Viewpoint"
+          - 'treeitem "30.RC: Complete the Passage" [ref=e141]':
+            - 'button "30.RC: Complete the Passage" [ref=e142]':
+              - generic [ref=e143]:
+                - generic [ref=e144]: "30."
+                - text: "RC: Complete the Passage"
+          - 'treeitem "31.RC: 3rd-Party Viewpoint" [ref=e145]':
+            - 'button "31.RC: 3rd-Party Viewpoint" [ref=e146]':
+              - generic [ref=e147]:
+                - generic [ref=e148]: "31."
+                - text: "RC: 3rd-Party Viewpoint"
+          - 'treeitem "32.RC: Passage Principle" [ref=e149]':
+            - 'button "32.RC: Passage Principle" [ref=e150]':
+              - generic [ref=e151]:
+                - generic [ref=e152]: "32."
+                - text: "RC: Passage Principle"
+          - 'treeitem "33.RC: Phrase Meaning" [ref=e153]':
+            - 'button "33.RC: Phrase Meaning" [ref=e154]':
+              - generic [ref=e155]:
+                - generic [ref=e156]: "33."
+                - text: "RC: Phrase Meaning"
+          - 'treeitem "34.RC: Phrase Function" [ref=e157]':
+            - 'button "34.RC: Phrase Function" [ref=e158]':
+              - generic [ref=e159]:
+                - generic [ref=e160]: "34."
+                - text: "RC: Phrase Function"
+          - 'treeitem "35.RC: Paragraph Function" [ref=e161]':
+            - 'button "35.RC: Paragraph Function" [ref=e162]':
+              - generic [ref=e163]:
+                - generic [ref=e164]: "35."
+                - text: "RC: Paragraph Function"
+          - 'treeitem "36.RC: Passage Function" [ref=e165]':
+            - 'button "36.RC: Passage Function" [ref=e166]':
+              - generic [ref=e167]:
+                - generic [ref=e168]: "36."
+                - text: "RC: Passage Function"
+          - 'treeitem "37.RC: Relationship" [ref=e169]':
+            - 'button "37.RC: Relationship" [ref=e170]':
+              - generic [ref=e171]:
+                - generic [ref=e172]: "37."
+                - text: "RC: Relationship"
+          - 'treeitem "38.RC: Structure" [ref=e173]':
+            - 'button "38.RC: Structure" [ref=e174]':
+              - generic [ref=e175]:
+                - generic [ref=e176]: "38."
+                - text: "RC: Structure"
+          - 'treeitem "39.RC: Title" [ref=e177]':
+            - 'button "39.RC: Title" [ref=e178]':
+              - generic [ref=e179]:
+                - generic [ref=e180]: "39."
+                - text: "RC: Title"
+          - 'treeitem "40.RC: Weaken-Strengthen" [ref=e181]':
+            - 'button "40.RC: Weaken-Strengthen" [ref=e182]':
+              - generic [ref=e183]:
+                - generic [ref=e184]: "40."
+                - text: "RC: Weaken-Strengthen"
+          - 'treeitem "41.RC Practice Passage 1: Obasan" [ref=e185]':
+            - 'button "41.RC Practice Passage 1: Obasan" [ref=e186]':
+              - generic [ref=e187]:
+                - generic [ref=e188]: "41."
+                - text: "RC Practice Passage 1: Obasan"
+          - 'treeitem "42.RC Practice Passage 2: Bankruptcy Law" [ref=e189]':
+            - 'button "42.RC Practice Passage 2: Bankruptcy Law" [ref=e190]':
+              - generic [ref=e191]:
+                - generic [ref=e192]: "42."
+                - text: "RC Practice Passage 2: Bankruptcy Law"
+          - 'treeitem "43.RC Practice Passage 3: Cultural Identity" [ref=e193]':
+            - 'button "43.RC Practice Passage 3: Cultural Identity" [ref=e194]':
+              - generic [ref=e195]:
+                - generic [ref=e196]: "43."
+                - text: "RC Practice Passage 3: Cultural Identity"
+          - 'treeitem "44.RC Practice Passage 4: Woody Allen" [ref=e197]':
+            - 'button "44.RC Practice Passage 4: Woody Allen" [ref=e198]':
+              - generic [ref=e199]:
+                - generic [ref=e200]: "44."
+                - text: "RC Practice Passage 4: Woody Allen"
+          - 'treeitem "45.RC Practice Passage 5: Cosmic vs. Traditional Justice" [ref=e201]':
+            - 'button "45.RC Practice Passage 5: Cosmic vs. Traditional Justice" [ref=e202]':
+              - generic [ref=e203]:
+                - generic [ref=e204]: "45."
+                - text: "RC Practice Passage 5: Cosmic vs. Traditional Justice"
+          - 'treeitem "46.RC Practice Passage 6: Julia Margaret Cameron" [ref=e205]':
+            - 'button "46.RC Practice Passage 6: Julia Margaret Cameron" [ref=e206]':
+              - generic [ref=e207]:
+                - generic [ref=e208]: "46."
+                - text: "RC Practice Passage 6: Julia Margaret Cameron"
+          - 'treeitem "47.RC Practice Passage 7: False Needs in Advertising" [ref=e209]':
+            - 'button "47.RC Practice Passage 7: False Needs in Advertising" [ref=e210]':
+              - generic [ref=e211]:
+                - generic [ref=e212]: "47."
+                - text: "RC Practice Passage 7: False Needs in Advertising"
+          - 'treeitem "48.RC Practice Passage 8: Justice in Property" [ref=e213]':
+            - 'button "48.RC Practice Passage 8: Justice in Property" [ref=e214]':
+              - generic [ref=e215]:
+                - generic [ref=e216]: "48."
+                - text: "RC Practice Passage 8: Justice in Property"
+          - treeitem "49.RC Quick Reference Guide" [ref=e217]:
+            - button "49.RC Quick Reference Guide" [ref=e218]:
+              - generic [ref=e219]:
+                - generic [ref=e220]: "49."
+                - text: RC Quick Reference Guide
+          - heading "Advanced Passages" [level=3] [ref=e221]
+          - 'treeitem "50.Advanced Passage 1: Mathematics as Language" [ref=e222]':
+            - 'button "50.Advanced Passage 1: Mathematics as Language" [ref=e223]':
+              - generic [ref=e224]:
+                - generic [ref=e225]: "50."
+                - text: "Advanced Passage 1: Mathematics as Language"
+          - 'treeitem "51.Advanced Passage 2: Bentham''s Legal Reforms" [ref=e226]':
+            - 'button "51.Advanced Passage 2: Bentham''s Legal Reforms" [ref=e227]':
+              - generic [ref=e228]:
+                - generic [ref=e229]: "51."
+                - text: "Advanced Passage 2: Bentham's Legal Reforms"
+          - 'treeitem "52.Advanced Passage 3: Critical Legal Studies" [ref=e230]':
+            - 'button "52.Advanced Passage 3: Critical Legal Studies" [ref=e231]':
+              - generic [ref=e232]:
+                - generic [ref=e233]: "52."
+                - text: "Advanced Passage 3: Critical Legal Studies"
+          - 'treeitem "53.Advanced Passage 4: Dworkin''s Legal Theory" [ref=e234]':
+            - 'button "53.Advanced Passage 4: Dworkin''s Legal Theory" [ref=e235]':
+              - generic [ref=e236]:
+                - generic [ref=e237]: "53."
+                - text: "Advanced Passage 4: Dworkin's Legal Theory"
+          - 'treeitem "54.Advanced Passage 5: Psychology of Risk" [ref=e238]':
+            - 'button "54.Advanced Passage 5: Psychology of Risk" [ref=e239]':
+              - generic [ref=e240]:
+                - generic [ref=e241]: "54."
+                - text: "Advanced Passage 5: Psychology of Risk"
+          - 'treeitem "55.Advanced Passage 6: Historical Sociology" [ref=e242]':
+            - 'button "55.Advanced Passage 6: Historical Sociology" [ref=e243]':
+              - generic [ref=e244]:
+                - generic [ref=e245]: "55."
+                - text: "Advanced Passage 6: Historical Sociology"
+          - 'treeitem "56.Advanced Passage 7: Digitalization and Copyright Law" [ref=e246]':
+            - 'button "56.Advanced Passage 7: Digitalization and Copyright Law" [ref=e247]':
+              - generic [ref=e248]:
+                - generic [ref=e249]: "56."
+                - text: "Advanced Passage 7: Digitalization and Copyright Law"
+    - link "Question Bank 150" [ref=e251] [cursor=pointer]:
+      - /url: /question-bank
+      - img [ref=e252]
+      - generic [ref=e254]: Question Bank
+      - generic [ref=e255]: "150"
+    - generic [ref=e257]: © 2025 LSAT Mastery Course
+  - generic [ref=e258]:
+    - banner [ref=e259]:
+      - navigation "Breadcrumb" [ref=e261]:
+        - button "Dashboard" [ref=e262]
+      - generic [ref=e263]:
+        - button "Search lessons (Ctrl+K)" [ref=e264]:
+          - img [ref=e265]
+          - generic [ref=e268]: Search
+          - generic [ref=e269]: Ctrl+K
+        - link "Question Bank" [ref=e270] [cursor=pointer]:
+          - /url: /question-bank
+          - img [ref=e271]
+          - generic [ref=e273]: Question Bank
+          - generic [ref=e274]: "150"
+        - button "Open roadmap" [ref=e275]:
+          - img [ref=e276]
+          - generic [ref=e281]: Roadmap
+        - button "Open style guide" [ref=e282]:
+          - img [ref=e283]
+          - generic [ref=e289]: Style Guide
+        - button "Open export center" [ref=e290]:
+          - img [ref=e291]
+          - generic [ref=e294]: Export
+    - link "Skip to content" [ref=e295] [cursor=pointer]:
+      - /url: "#main-content"
+    - main [ref=e296]:
+      - generic [ref=e297]:
+        - generic [ref=e298]:
+          - heading "LSAT Mastery Course" [level=1] [ref=e299]
+          - paragraph [ref=e300]: A comprehensive curriculum progressing from foundational logic to advanced reading strategies.
+        - generic [ref=e301]:
+          - generic [ref=e302]:
+            - generic [ref=e304]:
+              - generic [ref=e305]:
+                - heading "Logical Reasoning" [level=2] [ref=e306]
+                - paragraph [ref=e307]: Master the art of argument analysis, evaluation, and manipulation.
+              - generic [ref=e309]:
+                - button "Copy Plain Text" [ref=e310]:
+                  - img [ref=e311]
+                - button "Export Options" [ref=e314]:
+                  - img [ref=e315]
+                  - img [ref=e318]
+            - generic [ref=e320]:
+              - generic [ref=e321]:
+                - generic [ref=e322]:
+                  - generic [ref=e323]:
+                    - generic [ref=e324]:
+                      - generic [ref=e325]: Unit 1
+                      - heading "Identification" [level=3] [ref=e326]
+                    - paragraph [ref=e327]: Recognize the fundamental building blocks of logical arguments.
+                  - generic [ref=e329]:
+                    - button "Copy Plain Text" [ref=e330]:
+                      - img [ref=e331]
+                    - button "Export Options" [ref=e334]:
+                      - img [ref=e335]
+                      - img [ref=e338]
+                - generic [ref=e340]:
+                  - generic [ref=e341] [cursor=pointer]:
+                    - generic [ref=e343]:
+                      - generic [ref=e344]: MODULE 1
+                      - generic [ref=e345]:
+                        - generic [ref=e346]:
+                          - button "Copy Plain Text" [ref=e347]:
+                            - img [ref=e348]
+                          - button "Export Options" [ref=e351]:
+                            - img [ref=e352]
+                            - img [ref=e355]
+                        - img [ref=e358]
+                    - heading "Argument Part" [level=4] [ref=e360]
+                    - paragraph [ref=e361]: Define the specific function a particular sentence serves within the argument (e.g., main conclusion, subsidiary conclusion, premise, counter-premise).
+                    - generic [ref=e362]:
+                      - generic [ref=e363]:
+                        - img [ref=e364]
+                        - generic [ref=e366]: 12 Lessons
+                      - generic [ref=e367]:
+                        - img [ref=e368]
+                        - generic [ref=e371]: Start
+                  - generic [ref=e372] [cursor=pointer]:
+                    - generic [ref=e374]:
+                      - generic [ref=e375]: MODULE 2
+                      - generic [ref=e376]:
+                        - generic [ref=e377]:
+                          - button "Copy Plain Text" [ref=e378]:
+                            - img [ref=e379]
+                          - button "Export Options" [ref=e382]:
+                            - img [ref=e383]
+                            - img [ref=e386]
+                        - img [ref=e389]
+                    - heading "Main Conclusion" [level=4] [ref=e391]
+                    - paragraph [ref=e392]: Identify the single, overarching claim that the entire argument is constructed to prove. In other words, what is the one ultimate point the author wants the reader to accept?
+                    - generic [ref=e393]:
+                      - generic [ref=e394]:
+                        - img [ref=e395]
+                        - generic [ref=e397]: 11 Lessons
+                      - generic [ref=e398]:
+                        - img [ref=e399]
+                        - generic [ref=e402]: Start
+              - generic [ref=e403]:
+                - generic [ref=e404]:
+                  - generic [ref=e405]:
+                    - generic [ref=e406]:
+                      - generic [ref=e407]: Unit 2
+                      - heading "Analysis" [level=3] [ref=e408]
+                    - paragraph [ref=e409]: Deconstruct arguments to identify their structural patterns and flaws.
+                  - generic [ref=e411]:
+                    - button "Copy Plain Text" [ref=e412]:
+                      - img [ref=e413]
+                    - button "Export Options" [ref=e416]:
+                      - img [ref=e417]
+                      - img [ref=e420]
+                - generic [ref=e422]:
+                  - generic [ref=e423] [cursor=pointer]:
+                    - generic [ref=e425]:
+                      - generic [ref=e426]: MODULE 3
+                      - generic [ref=e427]:
+                        - generic [ref=e428]:
+                          - button "Copy Plain Text" [ref=e429]:
+                            - img [ref=e430]
+                          - button "Export Options" [ref=e433]:
+                            - img [ref=e434]
+                            - img [ref=e437]
+                        - img [ref=e440]
+                    - heading "Method of Reasoning" [level=4] [ref=e442]
+                    - paragraph [ref=e443]: Describe the argumentative strategy the author uses to support the conclusion. In other words, what is the logical structure of the argument?
+                    - generic [ref=e444]:
+                      - generic [ref=e445]:
+                        - img [ref=e446]
+                        - generic [ref=e448]: 12 Lessons
+                      - generic [ref=e449]:
+                        - img [ref=e450]
+                        - generic [ref=e453]: Start
+                  - generic [ref=e454] [cursor=pointer]:
+                    - generic [ref=e456]:
+                      - generic [ref=e457]: MODULE 4
+                      - generic [ref=e458]:
+                        - generic [ref=e459]:
+                          - button "Copy Plain Text" [ref=e460]:
+                            - img [ref=e461]
+                          - button "Export Options" [ref=e464]:
+                            - img [ref=e465]
+                            - img [ref=e468]
+                        - img [ref=e471]
+                    - heading "Parallel Reasoning" [level=4] [ref=e473]
+                    - paragraph [ref=e474]: Identify an argument's pattern. Then find an answer choice that follows the exact same logical structure.
+                    - generic [ref=e475]:
+                      - generic [ref=e476]:
+                        - img [ref=e477]
+                        - generic [ref=e479]: 12 Lessons
+                      - generic [ref=e480]:
+                        - img [ref=e481]
+                        - generic [ref=e484]: Start
+                  - generic [ref=e485] [cursor=pointer]:
+                    - generic [ref=e487]:
+                      - generic [ref=e488]: MODULE 5
+                      - generic [ref=e489]:
+                        - generic [ref=e490]:
+                          - button "Copy Plain Text" [ref=e491]:
+                            - img [ref=e492]
+                          - button "Export Options" [ref=e495]:
+                            - img [ref=e496]
+                            - img [ref=e499]
+                        - img [ref=e502]
+                    - heading "Flaw" [level=4] [ref=e504]
+                    - paragraph [ref=e505]: Identify the specific reasoning error that makes the argument's conclusion unproven by its evidence.
+                    - generic [ref=e506]:
+                      - generic [ref=e507]:
+                        - img [ref=e508]
+                        - generic [ref=e510]: 12 Lessons
+                      - generic [ref=e511]:
+                        - img [ref=e512]
+                        - generic [ref=e515]: Start
+                  - generic [ref=e516] [cursor=pointer]:
+                    - generic [ref=e518]:
+                      - generic [ref=e519]: MODULE 6
+                      - generic [ref=e520]:
+                        - generic [ref=e521]:
+                          - button "Copy Plain Text" [ref=e522]:
+                            - img [ref=e523]
+                          - button "Export Options" [ref=e526]:
+                            - img [ref=e527]
+                            - img [ref=e530]
+                        - img [ref=e533]
+                    - heading "Parallel Flaw" [level=4] [ref=e535]
+                    - paragraph [ref=e536]: Identify the argument's specific reasoning error, then find an answer choice that commits the exact same type of error.
+                    - generic [ref=e537]:
+                      - generic [ref=e538]:
+                        - img [ref=e539]
+                        - generic [ref=e541]: 12 Lessons
+                      - generic [ref=e542]:
+                        - img [ref=e543]
+                        - generic [ref=e546]: Start
+              - generic [ref=e547]:
+                - generic [ref=e548]:
+                  - generic [ref=e549]:
+                    - generic [ref=e550]:
+                      - generic [ref=e551]: Unit 3
+                      - heading "Evaluation" [level=3] [ref=e552]
+                    - paragraph [ref=e553]: Assess the strength of arguments by identifying gaps and assumptions.
+                  - generic [ref=e555]:
+                    - button "Copy Plain Text" [ref=e556]:
+                      - img [ref=e557]
+                    - button "Export Options" [ref=e560]:
+                      - img [ref=e561]
+                      - img [ref=e564]
+                - generic [ref=e566]:
+                  - generic [ref=e567] [cursor=pointer]:
+                    - generic [ref=e569]:
+                      - generic [ref=e570]: MODULE 7
+                      - generic [ref=e571]:
+                        - generic [ref=e572]:
+                          - button "Copy Plain Text" [ref=e573]:
+                            - img [ref=e574]
+                          - button "Export Options" [ref=e577]:
+                            - img [ref=e578]
+                            - img [ref=e581]
+                        - img [ref=e584]
+                    - heading "Evaluate the Argument" [level=4] [ref=e586]
+                    - paragraph [ref=e587]: Identify the piece of information that would be most useful in determining whether the argument is strong or weak.
+                    - generic [ref=e588]:
+                      - generic [ref=e589]:
+                        - img [ref=e590]
+                        - generic [ref=e592]: 11 Lessons
+                      - generic [ref=e593]:
+                        - img [ref=e594]
+                        - generic [ref=e597]: Start
+                  - generic [ref=e598] [cursor=pointer]:
+                    - generic [ref=e600]:
+                      - generic [ref=e601]: MODULE 8
+                      - generic [ref=e602]:
+                        - generic [ref=e603]:
+                          - button "Copy Plain Text" [ref=e604]:
+                            - img [ref=e605]
+                          - button "Export Options" [ref=e608]:
+                            - img [ref=e609]
+                            - img [ref=e612]
+                        - img [ref=e615]
+                    - heading "Weaken" [level=4] [ref=e617]
+                    - paragraph [ref=e618]: Find the answer choice that, if true, most undermines the argument's conclusion by attacking the gap between its premises and conclusion.
+                    - generic [ref=e619]:
+                      - generic [ref=e620]:
+                        - img [ref=e621]
+                        - generic [ref=e623]: 11 Lessons
+                      - generic [ref=e624]:
+                        - img [ref=e625]
+                        - generic [ref=e628]: Start
+                  - generic [ref=e629] [cursor=pointer]:
+                    - generic [ref=e631]:
+                      - generic [ref=e632]: MODULE 9
+                      - generic [ref=e633]:
+                        - generic [ref=e634]:
+                          - button "Copy Plain Text" [ref=e635]:
+                            - img [ref=e636]
+                          - button "Export Options" [ref=e639]:
+                            - img [ref=e640]
+                            - img [ref=e643]
+                        - img [ref=e646]
+                    - heading "Strengthen" [level=4] [ref=e648]
+                    - paragraph [ref=e649]: Find the answer choice that, if true, most supports the argument's conclusion by bridging the gap between its premises and conclusion.
+                    - generic [ref=e650]:
+                      - generic [ref=e651]:
+                        - img [ref=e652]
+                        - generic [ref=e654]: 13 Lessons
+                      - generic [ref=e655]:
+                        - img [ref=e656]
+                        - generic [ref=e659]: Start
+                  - generic [ref=e660] [cursor=pointer]:
+                    - generic [ref=e662]:
+                      - generic [ref=e663]: MODULE 10
+                      - generic [ref=e664]:
+                        - generic [ref=e665]:
+                          - button "Copy Plain Text" [ref=e666]:
+                            - img [ref=e667]
+                          - button "Export Options" [ref=e670]:
+                            - img [ref=e671]
+                            - img [ref=e674]
+                        - img [ref=e677]
+                    - heading "Sufficient Assumption" [level=4] [ref=e679]
+                    - paragraph [ref=e680]: Find the answer choice that, if assumed to be true, would make the argument's conclusion follow logically and with certainty.
+                    - generic [ref=e681]:
+                      - generic [ref=e682]:
+                        - img [ref=e683]
+                        - generic [ref=e685]: 12 Lessons
+                      - generic [ref=e686]:
+                        - img [ref=e687]
+                        - generic [ref=e690]: Start
+                  - generic [ref=e691] [cursor=pointer]:
+                    - generic [ref=e693]:
+                      - generic [ref=e694]: MODULE 11
+                      - generic [ref=e695]:
+                        - generic [ref=e696]:
+                          - button "Copy Plain Text" [ref=e697]:
+                            - img [ref=e698]
+                          - button "Export Options" [ref=e701]:
+                            - img [ref=e702]
+                            - img [ref=e705]
+                        - img [ref=e708]
+                    - heading "Necessary Assumption" [level=4] [ref=e710]
+                    - paragraph [ref=e711]: Find the answer choice that the argument requires to be true. If this assumption is false, the argument falls apart.
+                    - generic [ref=e712]:
+                      - generic [ref=e713]:
+                        - img [ref=e714]
+                        - generic [ref=e716]: 14 Lessons
+                      - generic [ref=e717]:
+                        - img [ref=e718]
+                        - generic [ref=e721]: Start
+              - generic [ref=e722]:
+                - generic [ref=e723]:
+                  - generic [ref=e724]:
+                    - generic [ref=e725]:
+                      - generic [ref=e726]: Unit 4
+                      - heading "Principle" [level=3] [ref=e727]
+                    - paragraph [ref=e728]: Apply abstract rules to specific scenarios and justify reasoning.
+                  - generic [ref=e730]:
+                    - button "Copy Plain Text" [ref=e731]:
+                      - img [ref=e732]
+                    - button "Export Options" [ref=e735]:
+                      - img [ref=e736]
+                      - img [ref=e739]
+                - generic [ref=e741]:
+                  - generic [ref=e742] [cursor=pointer]:
+                    - generic [ref=e744]:
+                      - generic [ref=e745]: MODULE 12
+                      - generic [ref=e746]:
+                        - generic [ref=e747]:
+                          - button "Copy Plain Text" [ref=e748]:
+                            - img [ref=e749]
+                          - button "Export Options" [ref=e752]:
+                            - img [ref=e753]
+                            - img [ref=e756]
+                        - img [ref=e759]
+                    - heading "Principle-Strengthen" [level=4] [ref=e761]
+                    - paragraph [ref=e762]: Find a broad, abstract rule that, if true, would justify or support the specific argument presented in the stimulus.
+                    - generic [ref=e763]:
+                      - generic [ref=e764]:
+                        - img [ref=e765]
+                        - generic [ref=e767]: 7 Lessons
+                      - generic [ref=e768]:
+                        - img [ref=e769]
+                        - generic [ref=e772]: Start
+                  - generic [ref=e773] [cursor=pointer]:
+                    - generic [ref=e775]:
+                      - generic [ref=e776]: MODULE 13
+                      - generic [ref=e777]:
+                        - generic [ref=e778]:
+                          - button "Copy Plain Text" [ref=e779]:
+                            - img [ref=e780]
+                          - button "Export Options" [ref=e783]:
+                            - img [ref=e784]
+                            - img [ref=e787]
+                        - img [ref=e790]
+                    - heading "Principle - Apply" [level=4] [ref=e792]
+                    - paragraph [ref=e793]: Apply a given abstract rule or principle to a specific scenario to determine which answer choice conforms to the principle.
+                    - generic [ref=e794]:
+                      - generic [ref=e795]:
+                        - img [ref=e796]
+                        - generic [ref=e798]: 7 Lessons
+                      - generic [ref=e799]:
+                        - img [ref=e800]
+                        - generic [ref=e803]: Start
+                  - generic [ref=e804] [cursor=pointer]:
+                    - generic [ref=e806]:
+                      - generic [ref=e807]: MODULE 14
+                      - generic [ref=e808]:
+                        - generic [ref=e809]:
+                          - button "Copy Plain Text" [ref=e810]:
+                            - img [ref=e811]
+                          - button "Export Options" [ref=e814]:
+                            - img [ref=e815]
+                            - img [ref=e818]
+                        - img [ref=e821]
+                    - heading "Principle - Generalization" [level=4] [ref=e823]
+                    - paragraph [ref=e824]: Identify the general rule or principle that best explains or justifies the specific reasoning in the stimulus.
+                    - generic [ref=e825]:
+                      - generic [ref=e826]:
+                        - img [ref=e827]
+                        - generic [ref=e829]: 7 Lessons
+                      - generic [ref=e830]:
+                        - img [ref=e831]
+                        - generic [ref=e834]: Start
+              - generic [ref=e835]:
+                - generic [ref=e836]:
+                  - generic [ref=e837]:
+                    - generic [ref=e838]:
+                      - generic [ref=e839]: Unit 5
+                      - heading "Inference" [level=3] [ref=e840]
+                    - paragraph [ref=e841]: Derive logical conclusions strictly from the information provided.
+                  - generic [ref=e843]:
+                    - button "Copy Plain Text" [ref=e844]:
+                      - img [ref=e845]
+                    - button "Export Options" [ref=e848]:
+                      - img [ref=e849]
+                      - img [ref=e852]
+                - generic [ref=e854]:
+                  - generic [ref=e855] [cursor=pointer]:
+                    - generic [ref=e857]:
+                      - generic [ref=e858]: MODULE 15
+                      - generic [ref=e859]:
+                        - generic [ref=e860]:
+                          - button "Copy Plain Text" [ref=e861]:
+                            - img [ref=e862]
+                          - button "Export Options" [ref=e865]:
+                            - img [ref=e866]
+                            - img [ref=e869]
+                        - img [ref=e872]
+                    - heading "Fill in the Blank" [level=4] [ref=e874]
+                    - paragraph [ref=e875]: Complete the argument by selecting the answer choice that best fills in the blank, typically representing the argument's conclusion.
+                    - generic [ref=e876]:
+                      - generic [ref=e877]:
+                        - img [ref=e878]
+                        - generic [ref=e880]: 8 Lessons
+                      - generic [ref=e881]:
+                        - img [ref=e882]
+                        - generic [ref=e885]: Start
+                  - generic [ref=e886] [cursor=pointer]:
+                    - generic [ref=e888]:
+                      - generic [ref=e889]: MODULE 16
+                      - generic [ref=e890]:
+                        - generic [ref=e891]:
+                          - button "Copy Plain Text" [ref=e892]:
+                            - img [ref=e893]
+                          - button "Export Options" [ref=e896]:
+                            - img [ref=e897]
+                            - img [ref=e900]
+                        - img [ref=e903]
+                    - heading "Most Strongly Supported" [level=4] [ref=e905]
+                    - paragraph [ref=e906]: Find the answer choice that receives the strongest support from the information in the stimulus.
+                    - generic [ref=e907]:
+                      - generic [ref=e908]:
+                        - img [ref=e909]
+                        - generic [ref=e911]: 11 Lessons
+                      - generic [ref=e912]:
+                        - img [ref=e913]
+                        - generic [ref=e916]: Start
+                  - generic [ref=e917] [cursor=pointer]:
+                    - generic [ref=e919]:
+                      - generic [ref=e920]: MODULE 17
+                      - generic [ref=e921]:
+                        - generic [ref=e922]:
+                          - button "Copy Plain Text" [ref=e923]:
+                            - img [ref=e924]
+                          - button "Export Options" [ref=e927]:
+                            - img [ref=e928]
+                            - img [ref=e931]
+                        - img [ref=e934]
+                    - heading "Must Be True" [level=4] [ref=e936]
+                    - paragraph [ref=e937]: Find the answer choice that must be true based on the statements in the stimulus.
+                    - generic [ref=e938]:
+                      - generic [ref=e939]:
+                        - img [ref=e940]
+                        - generic [ref=e942]: 11 Lessons
+                      - generic [ref=e943]:
+                        - img [ref=e944]
+                        - generic [ref=e947]: Start
+                  - generic [ref=e948] [cursor=pointer]:
+                    - generic [ref=e950]:
+                      - generic [ref=e951]: MODULE 18
+                      - generic [ref=e952]:
+                        - generic [ref=e953]:
+                          - button "Copy Plain Text" [ref=e954]:
+                            - img [ref=e955]
+                          - button "Export Options" [ref=e958]:
+                            - img [ref=e959]
+                            - img [ref=e962]
+                        - img [ref=e965]
+                    - heading "Must Be False" [level=4] [ref=e967]
+                    - paragraph [ref=e968]: Find the answer choice that cannot be true given the information in the stimulus.
+                    - generic [ref=e969]:
+                      - generic [ref=e970]:
+                        - img [ref=e971]
+                        - generic [ref=e973]: 8 Lessons
+                      - generic [ref=e974]:
+                        - img [ref=e975]
+                        - generic [ref=e978]: Start
+              - generic [ref=e979]:
+                - generic [ref=e980]:
+                  - generic [ref=e981]:
+                    - generic [ref=e982]:
+                      - generic [ref=e983]: Unit 6
+                      - heading "Resolution" [level=3] [ref=e984]
+                    - paragraph [ref=e985]: Explain paradoxes and reconcile conflicting information.
+                  - generic [ref=e987]:
+                    - button "Copy Plain Text" [ref=e988]:
+                      - img [ref=e989]
+                    - button "Export Options" [ref=e992]:
+                      - img [ref=e993]
+                      - img [ref=e996]
+                - generic [ref=e999] [cursor=pointer]:
+                  - generic [ref=e1001]:
+                    - generic [ref=e1002]: MODULE 19
+                    - generic [ref=e1003]:
+                      - generic [ref=e1004]:
+                        - button "Copy Plain Text" [ref=e1005]:
+                          - img [ref=e1006]
+                        - button "Export Options" [ref=e1009]:
+                          - img [ref=e1010]
+                          - img [ref=e1013]
+                      - img [ref=e1016]
+                  - heading "Paradox / Explain" [level=4] [ref=e1018]
+                  - paragraph [ref=e1019]: Find the answer choice that best explains a surprising result or resolves an apparent contradiction in the stimulus.
+                  - generic [ref=e1020]:
+                    - generic [ref=e1021]:
+                      - img [ref=e1022]
+                      - generic [ref=e1024]: 10 Lessons
+                    - generic [ref=e1025]:
+                      - img [ref=e1026]
+                      - generic [ref=e1029]: Start
+              - generic [ref=e1030]:
+                - generic [ref=e1031]:
+                  - generic [ref=e1032]:
+                    - generic [ref=e1033]:
+                      - generic [ref=e1034]: Unit 7
+                      - heading "Conflict" [level=3] [ref=e1035]
+                    - paragraph [ref=e1036]: Analyze dialogues to pinpoint agreements and disagreements.
+                  - generic [ref=e1038]:
+                    - button "Copy Plain Text" [ref=e1039]:
+                      - img [ref=e1040]
+                    - button "Export Options" [ref=e1043]:
+                      - img [ref=e1044]
+                      - img [ref=e1047]
+                - generic [ref=e1050] [cursor=pointer]:
+                  - generic [ref=e1052]:
+                    - generic [ref=e1053]: MODULE 20
+                    - generic [ref=e1054]:
+                      - generic [ref=e1055]:
+                        - button "Copy Plain Text" [ref=e1056]:
+                          - img [ref=e1057]
+                        - button "Export Options" [ref=e1060]:
+                          - img [ref=e1061]
+                          - img [ref=e1064]
+                      - img [ref=e1067]
+                  - heading "Agree / Disagree (Point at Issue)" [level=4] [ref=e1069]
+                  - paragraph [ref=e1070]: Identify the specific claim about which two speakers in a dialogue disagree.
+                  - generic [ref=e1071]:
+                    - generic [ref=e1072]:
+                      - img [ref=e1073]
+                      - generic [ref=e1075]: 10 Lessons
+                    - generic [ref=e1076]:
+                      - img [ref=e1077]
+                      - generic [ref=e1080]: Start
+              - generic [ref=e1081]:
+                - generic [ref=e1082]:
+                  - generic [ref=e1083]:
+                    - generic [ref=e1084]:
+                      - generic [ref=e1085]: Unit 8
+                      - heading "Conditional Reasoning" [level=3] [ref=e1086]
+                    - paragraph [ref=e1087]: Master the rigid, mechanical application of formal logic.
+                  - generic [ref=e1089]:
+                    - button "Copy Plain Text" [ref=e1090]:
+                      - img [ref=e1091]
+                    - button "Export Options" [ref=e1094]:
+                      - img [ref=e1095]
+                      - img [ref=e1098]
+                - generic [ref=e1101] [cursor=pointer]:
+                  - generic [ref=e1103]:
+                    - generic [ref=e1104]: MODULE 21
+                    - generic [ref=e1105]:
+                      - generic [ref=e1106]:
+                        - button "Copy Plain Text" [ref=e1107]:
+                          - img [ref=e1108]
+                        - button "Export Options" [ref=e1111]:
+                          - img [ref=e1112]
+                          - img [ref=e1115]
+                      - img [ref=e1118]
+                  - heading "Conditional Reasoning" [level=4] [ref=e1120]
+                  - paragraph [ref=e1121]: Master the rigid, mechanical application of formal logic, including contrapositives, quantifiers, and complex conditional structures.
+                  - generic [ref=e1122]:
+                    - generic [ref=e1123]:
+                      - img [ref=e1124]
+                      - generic [ref=e1126]: 9 Lessons
+                    - generic [ref=e1127]:
+                      - img [ref=e1128]
+                      - generic [ref=e1131]: Start
+              - generic [ref=e1132]:
+                - generic [ref=e1133]:
+                  - generic [ref=e1134]:
+                    - generic [ref=e1135]:
+                      - generic [ref=e1136]: Unit 9
+                      - heading "LSAT Math" [level=3] [ref=e1137]
+                    - paragraph [ref=e1138]: Master the logical flaws hidden in quantitative arguments involving percentages, averages, and probabilities.
+                  - generic [ref=e1140]:
+                    - button "Copy Plain Text" [ref=e1141]:
+                      - img [ref=e1142]
+                    - button "Export Options" [ref=e1145]:
+                      - img [ref=e1146]
+                      - img [ref=e1149]
+                - generic [ref=e1152] [cursor=pointer]:
+                  - generic [ref=e1154]:
+                    - generic [ref=e1155]: MODULE 22
+                    - generic [ref=e1156]:
+                      - generic [ref=e1157]:
+                        - button "Copy Plain Text" [ref=e1158]:
+                          - img [ref=e1159]
+                        - button "Export Options" [ref=e1162]:
+                          - img [ref=e1163]
+                          - img [ref=e1166]
+                      - img [ref=e1169]
+                  - heading "LSAT Math" [level=4] [ref=e1171]
+                  - paragraph [ref=e1172]: Master the logical flaws hidden in quantitative arguments involving percentages, averages, and probabilities.
+                  - generic [ref=e1173]:
+                    - generic [ref=e1174]:
+                      - img [ref=e1175]
+                      - generic [ref=e1177]: 7 Lessons
+                    - generic [ref=e1178]:
+                      - img [ref=e1179]
+                      - generic [ref=e1182]: Start
+          - generic [ref=e1183]:
+            - generic [ref=e1185]:
+              - generic [ref=e1186]:
+                - heading "Reading Comprehension" [level=2] [ref=e1187]
+                - paragraph [ref=e1188]: Develop strategies for deconstructing complex passages and identifying underlying structures.
+              - generic [ref=e1190]:
+                - button "Copy Plain Text" [ref=e1191]:
+                  - img [ref=e1192]
+                - button "Export Options" [ref=e1195]:
+                  - img [ref=e1196]
+                  - img [ref=e1199]
+            - generic [ref=e1201]:
+              - generic [ref=e1202]:
+                - generic [ref=e1203]:
+                  - generic [ref=e1204]:
+                    - generic [ref=e1205]:
+                      - generic [ref=e1206]: Unit 10
+                      - heading "Summarizing the Passage" [level=3] [ref=e1207]
+                    - paragraph [ref=e1208]: Capture the main idea and primary purpose of complex texts.
+                  - generic [ref=e1210]:
+                    - button "Copy Plain Text" [ref=e1211]:
+                      - img [ref=e1212]
+                    - button "Export Options" [ref=e1215]:
+                      - img [ref=e1216]
+                      - img [ref=e1219]
+                - generic [ref=e1221]:
+                  - generic [ref=e1222] [cursor=pointer]:
+                    - generic [ref=e1224]:
+                      - generic [ref=e1225]: MODULE 23
+                      - generic [ref=e1226]:
+                        - generic [ref=e1227]:
+                          - button "Copy Plain Text" [ref=e1228]:
+                            - img [ref=e1229]
+                          - button "Export Options" [ref=e1232]:
+                            - img [ref=e1233]
+                            - img [ref=e1236]
+                        - img [ref=e1239]
+                    - 'heading "RC: Main Idea" [level=4] [ref=e1241]'
+                    - paragraph [ref=e1242]: Identify the central claim or thesis of a reading comprehension passage.
+                    - generic [ref=e1243]:
+                      - generic [ref=e1244]:
+                        - img [ref=e1245]
+                        - generic [ref=e1247]: 4 Lessons
+                      - generic [ref=e1248]:
+                        - img [ref=e1249]
+                        - generic [ref=e1252]: Start
+                  - generic [ref=e1253] [cursor=pointer]:
+                    - generic [ref=e1255]:
+                      - generic [ref=e1256]: MODULE 24
+                      - generic [ref=e1257]:
+                        - generic [ref=e1258]:
+                          - button "Copy Plain Text" [ref=e1259]:
+                            - img [ref=e1260]
+                          - button "Export Options" [ref=e1263]:
+                            - img [ref=e1264]
+                            - img [ref=e1267]
+                        - img [ref=e1270]
+                    - 'heading "RC: Inference" [level=4] [ref=e1272]'
+                    - paragraph [ref=e1273]: Determine the overall goal or function of a reading comprehension passage.
+                    - generic [ref=e1274]:
+                      - generic [ref=e1275]:
+                        - img [ref=e1276]
+                        - generic [ref=e1278]: 4 Lessons
+                      - generic [ref=e1279]:
+                        - img [ref=e1280]
+                        - generic [ref=e1283]: Start
+                  - generic [ref=e1284] [cursor=pointer]:
+                    - generic [ref=e1286]:
+                      - generic [ref=e1287]: MODULE 25
+                      - generic [ref=e1288]:
+                        - generic [ref=e1289]:
+                          - button "Copy Plain Text" [ref=e1290]:
+                            - img [ref=e1291]
+                          - button "Export Options" [ref=e1294]:
+                            - img [ref=e1295]
+                            - img [ref=e1298]
+                        - img [ref=e1301]
+                    - 'heading "RC: Analogy" [level=4] [ref=e1303]'
+                    - paragraph [ref=e1304]: Understand the structural layout and progression of ideas in a passage.
+                    - generic [ref=e1305]:
+                      - generic [ref=e1306]:
+                        - img [ref=e1307]
+                        - generic [ref=e1309]: 2 Lessons
+                      - generic [ref=e1310]:
+                        - img [ref=e1311]
+                        - generic [ref=e1314]: Start
+              - generic [ref=e1315]:
+                - generic [ref=e1316]:
+                  - generic [ref=e1317]:
+                    - generic [ref=e1318]:
+                      - generic [ref=e1319]: Unit 11
+                      - heading "Analyzing the Components" [level=3] [ref=e1320]
+                    - paragraph [ref=e1321]: Understand the function and meaning of specific text elements.
+                  - generic [ref=e1323]:
+                    - button "Copy Plain Text" [ref=e1324]:
+                      - img [ref=e1325]
+                    - button "Export Options" [ref=e1328]:
+                      - img [ref=e1329]
+                      - img [ref=e1332]
+                - generic [ref=e1334]:
+                  - generic [ref=e1335] [cursor=pointer]:
+                    - generic [ref=e1337]:
+                      - generic [ref=e1338]: MODULE 26
+                      - generic [ref=e1339]:
+                        - generic [ref=e1340]:
+                          - button "Copy Plain Text" [ref=e1341]:
+                            - img [ref=e1342]
+                          - button "Export Options" [ref=e1345]:
+                            - img [ref=e1346]
+                            - img [ref=e1349]
+                        - img [ref=e1352]
+                    - 'heading "RC: Application" [level=4] [ref=e1354]'
+                    - paragraph [ref=e1355]: Determine the meaning or function of a word, phrase, or sentence within the passage.
+                    - generic [ref=e1356]:
+                      - generic [ref=e1357]:
+                        - img [ref=e1358]
+                        - generic [ref=e1360]: 2 Lessons
+                      - generic [ref=e1361]:
+                        - img [ref=e1362]
+                        - generic [ref=e1365]: Start
+                  - generic [ref=e1366] [cursor=pointer]:
+                    - generic [ref=e1368]:
+                      - generic [ref=e1369]: MODULE 27
+                      - generic [ref=e1370]:
+                        - generic [ref=e1371]:
+                          - button "Copy Plain Text" [ref=e1372]:
+                            - img [ref=e1373]
+                          - button "Export Options" [ref=e1376]:
+                            - img [ref=e1377]
+                            - img [ref=e1380]
+                        - img [ref=e1383]
+                    - 'heading "RC: Approach" [level=4] [ref=e1385]'
+                    - paragraph [ref=e1386]: Locate and identify specific information stated directly in the passage.
+                    - generic [ref=e1387]:
+                      - generic [ref=e1388]:
+                        - img [ref=e1389]
+                        - generic [ref=e1391]: 2 Lessons
+                      - generic [ref=e1392]:
+                        - img [ref=e1393]
+                        - generic [ref=e1396]: Start
+                  - generic [ref=e1397] [cursor=pointer]:
+                    - generic [ref=e1399]:
+                      - generic [ref=e1400]: MODULE 28
+                      - generic [ref=e1401]:
+                        - generic [ref=e1402]:
+                          - button "Copy Plain Text" [ref=e1403]:
+                            - img [ref=e1404]
+                          - button "Export Options" [ref=e1407]:
+                            - img [ref=e1408]
+                            - img [ref=e1411]
+                        - img [ref=e1414]
+                    - 'heading "RC: Author Attitude" [level=4] [ref=e1416]'
+                    - paragraph [ref=e1417]: Determine the role a specific portion of the passage plays in the overall argument.
+                    - generic [ref=e1418]:
+                      - generic [ref=e1419]:
+                        - img [ref=e1420]
+                        - generic [ref=e1422]: 2 Lessons
+                      - generic [ref=e1423]:
+                        - img [ref=e1424]
+                        - generic [ref=e1427]: Start
+              - generic [ref=e1428]:
+                - generic [ref=e1429]:
+                  - generic [ref=e1430]:
+                    - generic [ref=e1431]:
+                      - generic [ref=e1432]: Unit 12
+                      - heading "Identifying the Perspectives" [level=3] [ref=e1433]
+                    - paragraph [ref=e1434]: Track authorial attitude and distinguish multiple viewpoints.
+                  - generic [ref=e1436]:
+                    - button "Copy Plain Text" [ref=e1437]:
+                      - img [ref=e1438]
+                    - button "Export Options" [ref=e1441]:
+                      - img [ref=e1442]
+                      - img [ref=e1445]
+                - generic [ref=e1447]:
+                  - generic [ref=e1448] [cursor=pointer]:
+                    - generic [ref=e1450]:
+                      - generic [ref=e1451]: MODULE 29
+                      - generic [ref=e1452]:
+                        - generic [ref=e1453]:
+                          - button "Copy Plain Text" [ref=e1454]:
+                            - img [ref=e1455]
+                          - button "Export Options" [ref=e1458]:
+                            - img [ref=e1459]
+                            - img [ref=e1462]
+                        - img [ref=e1465]
+                    - 'heading "RC: Author Viewpoint" [level=4] [ref=e1467]'
+                    - paragraph [ref=e1468]: Identify claims the author would most likely agree with based on the passage's content.
+                    - generic [ref=e1469]:
+                      - generic [ref=e1470]:
+                        - img [ref=e1471]
+                        - generic [ref=e1473]: 2 Lessons
+                      - generic [ref=e1474]:
+                        - img [ref=e1475]
+                        - generic [ref=e1478]: Start
+                  - generic [ref=e1479] [cursor=pointer]:
+                    - generic [ref=e1481]:
+                      - generic [ref=e1482]: MODULE 30
+                      - generic [ref=e1483]:
+                        - generic [ref=e1484]:
+                          - button "Copy Plain Text" [ref=e1485]:
+                            - img [ref=e1486]
+                          - button "Export Options" [ref=e1489]:
+                            - img [ref=e1490]
+                            - img [ref=e1493]
+                        - img [ref=e1496]
+                    - 'heading "RC: Complete the Passage" [level=4] [ref=e1498]'
+                    - paragraph [ref=e1499]: Determine the author's tone or attitude toward a subject discussed in the passage.
+                    - generic [ref=e1500]:
+                      - generic [ref=e1501]:
+                        - img [ref=e1502]
+                        - generic [ref=e1504]: 2 Lessons
+                      - generic [ref=e1505]:
+                        - img [ref=e1506]
+                        - generic [ref=e1509]: Start
+                  - generic [ref=e1510] [cursor=pointer]:
+                    - generic [ref=e1512]:
+                      - generic [ref=e1513]: MODULE 31
+                      - generic [ref=e1514]:
+                        - generic [ref=e1515]:
+                          - button "Copy Plain Text" [ref=e1516]:
+                            - img [ref=e1517]
+                          - button "Export Options" [ref=e1520]:
+                            - img [ref=e1521]
+                            - img [ref=e1524]
+                        - img [ref=e1527]
+                    - 'heading "RC: 3rd-Party Viewpoint" [level=4] [ref=e1529]'
+                    - paragraph [ref=e1530]: Analyze two related passages, comparing and contrasting their arguments and perspectives.
+                    - generic [ref=e1531]:
+                      - generic [ref=e1532]:
+                        - img [ref=e1533]
+                        - generic [ref=e1535]: 2 Lessons
+                      - generic [ref=e1536]:
+                        - img [ref=e1537]
+                        - generic [ref=e1540]: Start
+              - generic [ref=e1541]:
+                - generic [ref=e1542]:
+                  - generic [ref=e1543]:
+                    - generic [ref=e1544]:
+                      - generic [ref=e1545]: Unit 13
+                      - heading "Extending the Reasoning" [level=3] [ref=e1546]
+                    - paragraph [ref=e1547]: Apply passage logic to new contexts and draw valid inferences.
+                  - generic [ref=e1549]:
+                    - button "Copy Plain Text" [ref=e1550]:
+                      - img [ref=e1551]
+                    - button "Export Options" [ref=e1554]:
+                      - img [ref=e1555]
+                      - img [ref=e1558]
+                - generic [ref=e1560]:
+                  - generic [ref=e1561] [cursor=pointer]:
+                    - generic [ref=e1563]:
+                      - generic [ref=e1564]: MODULE 32
+                      - generic [ref=e1565]:
+                        - generic [ref=e1566]:
+                          - button "Copy Plain Text" [ref=e1567]:
+                            - img [ref=e1568]
+                          - button "Export Options" [ref=e1571]:
+                            - img [ref=e1572]
+                            - img [ref=e1575]
+                        - img [ref=e1578]
+                    - 'heading "RC: Passage Principle" [level=4] [ref=e1580]'
+                    - paragraph [ref=e1581]: Identify a situation or argument that parallels the reasoning found in the passage.
+                    - generic [ref=e1582]:
+                      - generic [ref=e1583]:
+                        - img [ref=e1584]
+                        - generic [ref=e1586]: 3 Lessons
+                      - generic [ref=e1587]:
+                        - img [ref=e1588]
+                        - generic [ref=e1591]: Start
+                  - generic [ref=e1592] [cursor=pointer]:
+                    - generic [ref=e1594]:
+                      - generic [ref=e1595]: MODULE 33
+                      - generic [ref=e1596]:
+                        - generic [ref=e1597]:
+                          - button "Copy Plain Text" [ref=e1598]:
+                            - img [ref=e1599]
+                          - button "Export Options" [ref=e1602]:
+                            - img [ref=e1603]
+                            - img [ref=e1606]
+                        - img [ref=e1609]
+                    - 'heading "RC: Phrase Meaning" [level=4] [ref=e1611]'
+                    - paragraph [ref=e1612]: Draw a conclusion that logically follows from the information presented in the passage.
+                    - generic [ref=e1613]:
+                      - generic [ref=e1614]:
+                        - img [ref=e1615]
+                        - generic [ref=e1617]: 2 Lessons
+                      - generic [ref=e1618]:
+                        - img [ref=e1619]
+                        - generic [ref=e1622]: Start
+                  - generic [ref=e1623] [cursor=pointer]:
+                    - generic [ref=e1625]:
+                      - generic [ref=e1626]: MODULE 34
+                      - generic [ref=e1627]:
+                        - generic [ref=e1628]:
+                          - button "Copy Plain Text" [ref=e1629]:
+                            - img [ref=e1630]
+                          - button "Export Options" [ref=e1633]:
+                            - img [ref=e1634]
+                            - img [ref=e1637]
+                        - img [ref=e1640]
+                    - 'heading "RC: Phrase Function" [level=4] [ref=e1642]'
+                    - paragraph [ref=e1643]: Find information that would strengthen or weaken an argument made in the passage.
+                    - generic [ref=e1644]:
+                      - generic [ref=e1645]:
+                        - img [ref=e1646]
+                        - generic [ref=e1648]: 2 Lessons
+                      - generic [ref=e1649]:
+                        - img [ref=e1650]
+                        - generic [ref=e1653]: Start
+              - generic [ref=e1654]:
+                - generic [ref=e1655]:
+                  - generic [ref=e1656]:
+                    - generic [ref=e1657]:
+                      - generic [ref=e1658]: Unit 14
+                      - heading "Sample Passages" [level=3] [ref=e1659]
+                    - paragraph [ref=e1660]: Full breakdowns of sample passages with detailed question analysis.
+                  - generic [ref=e1662]:
+                    - button "Copy Plain Text" [ref=e1663]:
+                      - img [ref=e1664]
+                    - button "Export Options" [ref=e1667]:
+                      - img [ref=e1668]
+                      - img [ref=e1671]
+                - generic [ref=e1673]:
+                  - generic [ref=e1674] [cursor=pointer]:
+                    - generic [ref=e1676]:
+                      - generic [ref=e1677]: MODULE 35
+                      - generic [ref=e1678]:
+                        - generic [ref=e1679]:
+                          - button "Copy Plain Text" [ref=e1680]:
+                            - img [ref=e1681]
+                          - button "Export Options" [ref=e1684]:
+                            - img [ref=e1685]
+                            - img [ref=e1688]
+                        - img [ref=e1691]
+                    - 'heading "RC: Paragraph Function" [level=4] [ref=e1693]'
+                    - paragraph [ref=e1694]: Full breakdown of a law-focused RC passage.
+                    - generic [ref=e1695]:
+                      - generic [ref=e1696]:
+                        - img [ref=e1697]
+                        - generic [ref=e1699]: 2 Lessons
+                      - generic [ref=e1700]:
+                        - img [ref=e1701]
+                        - generic [ref=e1704]: Start
+                  - generic [ref=e1705] [cursor=pointer]:
+                    - generic [ref=e1707]:
+                      - generic [ref=e1708]: MODULE 36
+                      - generic [ref=e1709]:
+                        - generic [ref=e1710]:
+                          - button "Copy Plain Text" [ref=e1711]:
+                            - img [ref=e1712]
+                          - button "Export Options" [ref=e1715]:
+                            - img [ref=e1716]
+                            - img [ref=e1719]
+                        - img [ref=e1722]
+                    - 'heading "RC: Passage Function" [level=4] [ref=e1724]'
+                    - paragraph [ref=e1725]: Full breakdown of a science-focused RC passage.
+                    - generic [ref=e1726]:
+                      - generic [ref=e1727]:
+                        - img [ref=e1728]
+                        - generic [ref=e1730]: 2 Lessons
+                      - generic [ref=e1731]:
+                        - img [ref=e1732]
+                        - generic [ref=e1735]: Start
+                  - generic [ref=e1736] [cursor=pointer]:
+                    - generic [ref=e1738]:
+                      - generic [ref=e1739]: MODULE 37
+                      - generic [ref=e1740]:
+                        - generic [ref=e1741]:
+                          - button "Copy Plain Text" [ref=e1742]:
+                            - img [ref=e1743]
+                          - button "Export Options" [ref=e1746]:
+                            - img [ref=e1747]
+                            - img [ref=e1750]
+                        - img [ref=e1753]
+                    - 'heading "RC: Relationship" [level=4] [ref=e1755]'
+                    - paragraph [ref=e1756]: Full breakdown of a humanities-focused RC passage.
+                    - generic [ref=e1757]:
+                      - generic [ref=e1758]:
+                        - img [ref=e1759]
+                        - generic [ref=e1761]: 2 Lessons
+                      - generic [ref=e1762]:
+                        - img [ref=e1763]
+                        - generic [ref=e1766]: Start
+                  - generic [ref=e1767] [cursor=pointer]:
+                    - generic [ref=e1769]:
+                      - generic [ref=e1770]: MODULE 38
+                      - generic [ref=e1771]:
+                        - generic [ref=e1772]:
+                          - button "Copy Plain Text" [ref=e1773]:
+                            - img [ref=e1774]
+                          - button "Export Options" [ref=e1777]:
+                            - img [ref=e1778]
+                            - img [ref=e1781]
+                        - img [ref=e1784]
+                    - 'heading "RC: Structure" [level=4] [ref=e1786]'
+                    - paragraph [ref=e1787]: Full breakdown of a social-science-focused RC passage.
+                    - generic [ref=e1788]:
+                      - generic [ref=e1789]:
+                        - img [ref=e1790]
+                        - generic [ref=e1792]: 2 Lessons
+                      - generic [ref=e1793]:
+                        - img [ref=e1794]
+                        - generic [ref=e1797]: Start
+                  - generic [ref=e1798] [cursor=pointer]:
+                    - generic [ref=e1800]:
+                      - generic [ref=e1801]: MODULE 39
+                      - generic [ref=e1802]:
+                        - generic [ref=e1803]:
+                          - button "Copy Plain Text" [ref=e1804]:
+                            - img [ref=e1805]
+                          - button "Export Options" [ref=e1808]:
+                            - img [ref=e1809]
+                            - img [ref=e1812]
+                        - img [ref=e1815]
+                    - 'heading "RC: Title" [level=4] [ref=e1817]'
+                    - paragraph [ref=e1818]: Full breakdown of a dual-passage RC section.
+                    - generic [ref=e1819]:
+                      - generic [ref=e1820]:
+                        - img [ref=e1821]
+                        - generic [ref=e1823]: 2 Lessons
+                      - generic [ref=e1824]:
+                        - img [ref=e1825]
+                        - generic [ref=e1828]: Start
+                  - generic [ref=e1829] [cursor=pointer]:
+                    - generic [ref=e1831]:
+                      - generic [ref=e1832]: MODULE 40
+                      - generic [ref=e1833]:
+                        - generic [ref=e1834]:
+                          - button "Copy Plain Text" [ref=e1835]:
+                            - img [ref=e1836]
+                          - button "Export Options" [ref=e1839]:
+                            - img [ref=e1840]
+                            - img [ref=e1843]
+                        - img [ref=e1846]
+                    - 'heading "RC: Weaken-Strengthen" [level=4] [ref=e1848]'
+                    - paragraph [ref=e1849]: Full breakdown of a second law-focused RC passage.
+                    - generic [ref=e1850]:
+                      - generic [ref=e1851]:
+                        - img [ref=e1852]
+                        - generic [ref=e1854]: 2 Lessons
+                      - generic [ref=e1855]:
+                        - img [ref=e1856]
+                        - generic [ref=e1859]: Start
+                  - generic [ref=e1860] [cursor=pointer]:
+                    - generic [ref=e1862]:
+                      - generic [ref=e1863]: MODULE 41
+                      - generic [ref=e1864]:
+                        - generic [ref=e1865]:
+                          - button "Copy Plain Text" [ref=e1866]:
+                            - img [ref=e1867]
+                          - button "Export Options" [ref=e1870]:
+                            - img [ref=e1871]
+                            - img [ref=e1874]
+                        - img [ref=e1877]
+                    - 'heading "RC Practice Passage 1: Obasan" [level=4] [ref=e1879]'
+                    - paragraph [ref=e1880]: Full breakdown of a second science-focused RC passage.
+                    - generic [ref=e1881]:
+                      - generic [ref=e1882]:
+                        - img [ref=e1883]
+                        - generic [ref=e1885]: 8 Lessons
+                      - generic [ref=e1886]:
+                        - img [ref=e1887]
+                        - generic [ref=e1890]: Start
+                  - generic [ref=e1891] [cursor=pointer]:
+                    - generic [ref=e1893]:
+                      - generic [ref=e1894]: MODULE 42
+                      - generic [ref=e1895]:
+                        - generic [ref=e1896]:
+                          - button "Copy Plain Text" [ref=e1897]:
+                            - img [ref=e1898]
+                          - button "Export Options" [ref=e1901]:
+                            - img [ref=e1902]
+                            - img [ref=e1905]
+                        - img [ref=e1908]
+                    - 'heading "RC Practice Passage 2: Bankruptcy Law" [level=4] [ref=e1910]'
+                    - paragraph [ref=e1911]: Full breakdown of a second humanities-focused RC passage.
+                    - generic [ref=e1912]:
+                      - generic [ref=e1913]:
+                        - img [ref=e1914]
+                        - generic [ref=e1916]: 9 Lessons
+                      - generic [ref=e1917]:
+                        - img [ref=e1918]
+                        - generic [ref=e1921]: Start
+                  - generic [ref=e1922] [cursor=pointer]:
+                    - generic [ref=e1924]:
+                      - generic [ref=e1925]: MODULE 43
+                      - generic [ref=e1926]:
+                        - generic [ref=e1927]:
+                          - button "Copy Plain Text" [ref=e1928]:
+                            - img [ref=e1929]
+                          - button "Export Options" [ref=e1932]:
+                            - img [ref=e1933]
+                            - img [ref=e1936]
+                        - img [ref=e1939]
+                    - 'heading "RC Practice Passage 3: Cultural Identity" [level=4] [ref=e1941]'
+                    - paragraph [ref=e1942]: Full breakdown of a second social-science-focused RC passage.
+                    - generic [ref=e1943]:
+                      - generic [ref=e1944]:
+                        - img [ref=e1945]
+                        - generic [ref=e1947]: 9 Lessons
+                      - generic [ref=e1948]:
+                        - img [ref=e1949]
+                        - generic [ref=e1952]: Start
+                  - generic [ref=e1953] [cursor=pointer]:
+                    - generic [ref=e1955]:
+                      - generic [ref=e1956]: MODULE 44
+                      - generic [ref=e1957]:
+                        - generic [ref=e1958]:
+                          - button "Copy Plain Text" [ref=e1959]:
+                            - img [ref=e1960]
+                          - button "Export Options" [ref=e1963]:
+                            - img [ref=e1964]
+                            - img [ref=e1967]
+                        - img [ref=e1970]
+                    - 'heading "RC Practice Passage 4: Woody Allen" [level=4] [ref=e1972]'
+                    - paragraph [ref=e1973]: Full breakdown of a second dual-passage RC section.
+                    - generic [ref=e1974]:
+                      - generic [ref=e1975]:
+                        - img [ref=e1976]
+                        - generic [ref=e1978]: 8 Lessons
+                      - generic [ref=e1979]:
+                        - img [ref=e1980]
+                        - generic [ref=e1983]: Start
+              - generic [ref=e1984]:
+                - generic [ref=e1985]:
+                  - generic [ref=e1986]:
+                    - generic [ref=e1987]:
+                      - generic [ref=e1988]: Unit 15
+                      - heading "Reference" [level=3] [ref=e1989]
+                    - paragraph [ref=e1990]: Quick reference guides and cheat sheets for all question types.
+                  - generic [ref=e1992]:
+                    - button "Copy Plain Text" [ref=e1993]:
+                      - img [ref=e1994]
+                    - button "Export Options" [ref=e1997]:
+                      - img [ref=e1998]
+                      - img [ref=e2001]
+                - generic [ref=e2003]:
+                  - generic [ref=e2004] [cursor=pointer]:
+                    - generic [ref=e2006]:
+                      - generic [ref=e2007]: MODULE 45
+                      - generic [ref=e2008]:
+                        - generic [ref=e2009]:
+                          - button "Copy Plain Text" [ref=e2010]:
+                            - img [ref=e2011]
+                          - button "Export Options" [ref=e2014]:
+                            - img [ref=e2015]
+                            - img [ref=e2018]
+                        - img [ref=e2021]
+                    - 'heading "RC Practice Passage 5: Cosmic vs. Traditional Justice" [level=4] [ref=e2023]'
+                    - paragraph [ref=e2024]: Quick reference guide for all RC question types and strategies.
+                    - generic [ref=e2025]:
+                      - generic [ref=e2026]:
+                        - img [ref=e2027]
+                        - generic [ref=e2029]: 9 Lessons
+                      - generic [ref=e2030]:
+                        - img [ref=e2031]
+                        - generic [ref=e2034]: Start
+                  - generic [ref=e2035] [cursor=pointer]:
+                    - generic [ref=e2037]:
+                      - generic [ref=e2038]: MODULE 46
+                      - generic [ref=e2039]:
+                        - generic [ref=e2040]:
+                          - button "Copy Plain Text" [ref=e2041]:
+                            - img [ref=e2042]
+                          - button "Export Options" [ref=e2045]:
+                            - img [ref=e2046]
+                            - img [ref=e2049]
+                        - img [ref=e2052]
+                    - 'heading "RC Practice Passage 6: Julia Margaret Cameron" [level=4] [ref=e2054]'
+                    - paragraph [ref=e2055]: Comprehensive strategies for reading and annotating RC passages.
+                    - generic [ref=e2056]:
+                      - generic [ref=e2057]:
+                        - img [ref=e2058]
+                        - generic [ref=e2060]: 9 Lessons
+                      - generic [ref=e2061]:
+                        - img [ref=e2062]
+                        - generic [ref=e2065]: Start
+                  - generic [ref=e2066] [cursor=pointer]:
+                    - generic [ref=e2068]:
+                      - generic [ref=e2069]: MODULE 47
+                      - generic [ref=e2070]:
+                        - generic [ref=e2071]:
+                          - button "Copy Plain Text" [ref=e2072]:
+                            - img [ref=e2073]
+                          - button "Export Options" [ref=e2076]:
+                            - img [ref=e2077]
+                            - img [ref=e2080]
+                        - img [ref=e2083]
+                    - 'heading "RC Practice Passage 7: False Needs in Advertising" [level=4] [ref=e2085]'
+                    - paragraph [ref=e2086]: Strategies for managing time and reviewing RC sections.
+                    - generic [ref=e2087]:
+                      - generic [ref=e2088]:
+                        - img [ref=e2089]
+                        - generic [ref=e2091]: 7 Lessons
+                      - generic [ref=e2092]:
+                        - img [ref=e2093]
+                        - generic [ref=e2096]: Start
+                  - generic [ref=e2097] [cursor=pointer]:
+                    - generic [ref=e2099]:
+                      - generic [ref=e2100]: MODULE 48
+                      - generic [ref=e2101]:
+                        - generic [ref=e2102]:
+                          - button "Copy Plain Text" [ref=e2103]:
+                            - img [ref=e2104]
+                          - button "Export Options" [ref=e2107]:
+                            - img [ref=e2108]
+                            - img [ref=e2111]
+                        - img [ref=e2114]
+                    - 'heading "RC Practice Passage 8: Justice in Property" [level=4] [ref=e2116]'
+                    - paragraph [ref=e2117]: Catalog of common RC answer choice traps and how to avoid them.
+                    - generic [ref=e2118]:
+                      - generic [ref=e2119]:
+                        - img [ref=e2120]
+                        - generic [ref=e2122]: 7 Lessons
+                      - generic [ref=e2123]:
+                        - img [ref=e2124]
+                        - generic [ref=e2127]: Start
+                  - generic [ref=e2128] [cursor=pointer]:
+                    - generic [ref=e2130]:
+                      - generic [ref=e2131]: MODULE 49
+                      - generic [ref=e2132]:
+                        - generic [ref=e2133]:
+                          - button "Copy Plain Text" [ref=e2134]:
+                            - img [ref=e2135]
+                          - button "Export Options" [ref=e2138]:
+                            - img [ref=e2139]
+                            - img [ref=e2142]
+                        - img [ref=e2145]
+                    - heading "RC Quick Reference Guide" [level=4] [ref=e2147]
+                    - paragraph [ref=e2148]: One-page cheat sheet with all key RC strategies.
+                    - generic [ref=e2149]:
+                      - generic [ref=e2150]:
+                        - img [ref=e2151]
+                        - generic [ref=e2153]: 1 Lessons
+                      - generic [ref=e2154]:
+                        - img [ref=e2155]
+                        - generic [ref=e2158]: Start
+          - generic [ref=e2159]:
+            - generic [ref=e2161]:
+              - generic [ref=e2162]:
+                - heading "Advanced Passages" [level=2] [ref=e2163]
+                - paragraph [ref=e2164]: In-depth analysis of the most challenging passages and question types.
+              - generic [ref=e2166]:
+                - button "Copy Plain Text" [ref=e2167]:
+                  - img [ref=e2168]
+                - button "Export Options" [ref=e2171]:
+                  - img [ref=e2172]
+                  - img [ref=e2175]
+            - generic [ref=e2178]:
+              - generic [ref=e2179]:
+                - generic [ref=e2180]:
+                  - generic [ref=e2181]:
+                    - generic [ref=e2182]: Unit 16
+                    - heading "Advanced Passages" [level=3] [ref=e2183]
+                  - paragraph [ref=e2184]: Explore complex themes in philosophy, science, and law.
+                - generic [ref=e2186]:
+                  - button "Copy Plain Text" [ref=e2187]:
+                    - img [ref=e2188]
+                  - button "Export Options" [ref=e2191]:
+                    - img [ref=e2192]
+                    - img [ref=e2195]
+              - generic [ref=e2197]:
+                - generic [ref=e2198] [cursor=pointer]:
+                  - generic [ref=e2200]:
+                    - generic [ref=e2201]: MODULE 50
+                    - generic [ref=e2202]:
+                      - generic [ref=e2203]:
+                        - button "Copy Plain Text" [ref=e2204]:
+                          - img [ref=e2205]
+                        - button "Export Options" [ref=e2208]:
+                          - img [ref=e2209]
+                          - img [ref=e2212]
+                      - img [ref=e2215]
+                  - 'heading "Advanced Passage 1: Mathematics as Language" [level=4] [ref=e2217]'
+                  - paragraph [ref=e2218]: In-depth analysis of a challenging philosophy passage.
+                  - generic [ref=e2219]:
+                    - generic [ref=e2220]:
+                      - img [ref=e2221]
+                      - generic [ref=e2223]: 6 Lessons
+                    - generic [ref=e2224]:
+                      - img [ref=e2225]
+                      - generic [ref=e2228]: Start
+                - generic [ref=e2229] [cursor=pointer]:
+                  - generic [ref=e2231]:
+                    - generic [ref=e2232]: MODULE 51
+                    - generic [ref=e2233]:
+                      - generic [ref=e2234]:
+                        - button "Copy Plain Text" [ref=e2235]:
+                          - img [ref=e2236]
+                        - button "Export Options" [ref=e2239]:
+                          - img [ref=e2240]
+                          - img [ref=e2243]
+                      - img [ref=e2246]
+                  - 'heading "Advanced Passage 2: Bentham''s Legal Reforms" [level=4] [ref=e2248]'
+                  - paragraph [ref=e2249]: In-depth analysis of a challenging natural science passage.
+                  - generic [ref=e2250]:
+                    - generic [ref=e2251]:
+                      - img [ref=e2252]
+                      - generic [ref=e2254]: 7 Lessons
+                    - generic [ref=e2255]:
+                      - img [ref=e2256]
+                      - generic [ref=e2259]: Start
+                - generic [ref=e2260] [cursor=pointer]:
+                  - generic [ref=e2262]:
+                    - generic [ref=e2263]: MODULE 52
+                    - generic [ref=e2264]:
+                      - generic [ref=e2265]:
+                        - button "Copy Plain Text" [ref=e2266]:
+                          - img [ref=e2267]
+                        - button "Export Options" [ref=e2270]:
+                          - img [ref=e2271]
+                          - img [ref=e2274]
+                      - img [ref=e2277]
+                  - 'heading "Advanced Passage 3: Critical Legal Studies" [level=4] [ref=e2279]'
+                  - paragraph [ref=e2280]: In-depth analysis of a challenging law & policy passage.
+                  - generic [ref=e2281]:
+                    - generic [ref=e2282]:
+                      - img [ref=e2283]
+                      - generic [ref=e2285]: 8 Lessons
+                    - generic [ref=e2286]:
+                      - img [ref=e2287]
+                      - generic [ref=e2290]: Start
+                - generic [ref=e2291] [cursor=pointer]:
+                  - generic [ref=e2293]:
+                    - generic [ref=e2294]: MODULE 53
+                    - generic [ref=e2295]:
+                      - generic [ref=e2296]:
+                        - button "Copy Plain Text" [ref=e2297]:
+                          - img [ref=e2298]
+                        - button "Export Options" [ref=e2301]:
+                          - img [ref=e2302]
+                          - img [ref=e2305]
+                      - img [ref=e2308]
+                  - 'heading "Advanced Passage 4: Dworkin''s Legal Theory" [level=4] [ref=e2310]'
+                  - paragraph [ref=e2311]: In-depth analysis of a challenging art & literature passage.
+                  - generic [ref=e2312]:
+                    - generic [ref=e2313]:
+                      - img [ref=e2314]
+                      - generic [ref=e2316]: 7 Lessons
+                    - generic [ref=e2317]:
+                      - img [ref=e2318]
+                      - generic [ref=e2321]: Start
+                - generic [ref=e2322] [cursor=pointer]:
+                  - generic [ref=e2324]:
+                    - generic [ref=e2325]: MODULE 54
+                    - generic [ref=e2326]:
+                      - generic [ref=e2327]:
+                        - button "Copy Plain Text" [ref=e2328]:
+                          - img [ref=e2329]
+                        - button "Export Options" [ref=e2332]:
+                          - img [ref=e2333]
+                          - img [ref=e2336]
+                      - img [ref=e2339]
+                  - 'heading "Advanced Passage 5: Psychology of Risk" [level=4] [ref=e2341]'
+                  - paragraph [ref=e2342]: In-depth analysis of a challenging social science passage.
+                  - generic [ref=e2343]:
+                    - generic [ref=e2344]:
+                      - img [ref=e2345]
+                      - generic [ref=e2347]: 6 Lessons
+                    - generic [ref=e2348]:
+                      - img [ref=e2349]
+                      - generic [ref=e2352]: Start
+                - generic [ref=e2353] [cursor=pointer]:
+                  - generic [ref=e2355]:
+                    - generic [ref=e2356]: MODULE 55
+                    - generic [ref=e2357]:
+                      - generic [ref=e2358]:
+                        - button "Copy Plain Text" [ref=e2359]:
+                          - img [ref=e2360]
+                        - button "Export Options" [ref=e2363]:
+                          - img [ref=e2364]
+                          - img [ref=e2367]
+                      - img [ref=e2370]
+                  - 'heading "Advanced Passage 6: Historical Sociology" [level=4] [ref=e2372]'
+                  - paragraph [ref=e2373]: In-depth analysis of a challenging economics passage.
+                  - generic [ref=e2374]:
+                    - generic [ref=e2375]:
+                      - img [ref=e2376]
+                      - generic [ref=e2378]: 7 Lessons
+                    - generic [ref=e2379]:
+                      - img [ref=e2380]
+                      - generic [ref=e2383]: Start
+                - generic [ref=e2384] [cursor=pointer]:
+                  - generic [ref=e2386]:
+                    - generic [ref=e2387]: MODULE 56
+                    - generic [ref=e2388]:
+                      - generic [ref=e2389]:
+                        - button "Copy Plain Text" [ref=e2390]:
+                          - img [ref=e2391]
+                        - button "Export Options" [ref=e2394]:
+                          - img [ref=e2395]
+                          - img [ref=e2398]
+                      - img [ref=e2401]
+                  - 'heading "Advanced Passage 7: Digitalization and Copyright Law" [level=4] [ref=e2403]'
+                  - paragraph [ref=e2404]: In-depth analysis of a challenging history passage.
+                  - generic [ref=e2405]:
+                    - generic [ref=e2406]:
+                      - img [ref=e2407]
+                      - generic [ref=e2409]: 6 Lessons
+                    - generic [ref=e2410]:
+                      - img [ref=e2411]
+                      - generic [ref=e2414]: Start

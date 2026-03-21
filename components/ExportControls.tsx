@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Copy, FileText, FileType, Check, Braces, ChevronDown, Download, FileDigit, Table } from 'lucide-react';
 
+type ExportFormatId = 'pdf' | 'txt' | 'rtf' | 'json' | 'csv';
+
 interface ExportControlsProps {
   onCopy: () => string;
   onExportText: () => string;
@@ -11,6 +13,8 @@ interface ExportControlsProps {
   filename: string;
   label?: string;
   variant?: 'minimal' | 'full';
+  allowedFormats?: ExportFormatId[];
+  copyLabel?: string;
 }
 
 export const ExportControls: React.FC<ExportControlsProps> = ({ 
@@ -22,7 +26,9 @@ export const ExportControls: React.FC<ExportControlsProps> = ({
   onExportPDF,
   filename,
   label = "Export",
-  variant = 'full'
+  variant = 'full',
+  allowedFormats = ['pdf', 'txt', 'rtf', 'json', 'csv'],
+  copyLabel = 'Copy Text',
 }) => {
   const [copiedFormat, setCopiedFormat] = useState<string | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -99,7 +105,7 @@ export const ExportControls: React.FC<ExportControlsProps> = ({
     { id: 'rtf', label: 'Rich Text (.rtf)', icon: FileType, getData: onExportRTF, ext: 'rtf' },
     { id: 'json', label: 'Data Model (.json)', icon: Braces, getData: onExportJSON, ext: 'json' },
     { id: 'csv', label: 'CSV Table (.csv)', icon: Table, getData: onExportCSV, ext: 'csv' },
-  ];
+  ].filter((format) => allowedFormats.includes(format.id as ExportFormatId));
 
   const handleDownload = (format: typeof formats[number], e: React.MouseEvent) => {
     e.stopPropagation();
@@ -117,7 +123,7 @@ export const ExportControls: React.FC<ExportControlsProps> = ({
         <button 
           onClick={(e) => handleCopyAction(onCopy(), 'main', e)} 
           className="p-1.5 text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-colors flex items-center gap-1.5"
-          title="Copy Plain Text"
+          title={copyLabel}
         >
           {copiedFormat === 'main' ? <Check size={16} className="text-emerald-500" /> : <Copy size={16} />}
         </button>
@@ -168,7 +174,7 @@ export const ExportControls: React.FC<ExportControlsProps> = ({
         className="flex items-center space-x-2 px-3 py-1.5 text-xs font-bold text-slate-700 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-all"
       >
         {copiedFormat === 'main' ? <Check size={14} className="text-emerald-500" /> : <Copy size={14} />}
-        <span>{copiedFormat === 'main' ? 'Copied!' : 'Copy Text'}</span>
+        <span>{copiedFormat === 'main' ? 'Copied!' : copyLabel}</span>
       </button>
 
       <div className="relative">

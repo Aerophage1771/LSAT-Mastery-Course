@@ -115,3 +115,11 @@ None currently.
 - Planning should identify the canonical source for the new naming map.
 - Planning should separate product requirements for outline export from full-content export.
 - Planning should audit existing export serializers for fidelity gaps, especially where rich lesson content can be flattened or lost.
+**Purpose:** Historical brainstorm snapshot for the March 2026 export work.  
+**Audience:** Contributors researching the earlier export-planning context.  
+**Status:** historical  
+**Source of truth:** no  
+**Last reviewed:** 2026-03-10  
+**Related docs:** [../../archive/README.md](../../archive/README.md), [../../product/roadmap/README.md](../../product/roadmap/README.md), [../../README.md](../../README.md)
+
+Replaced by the active docs system rooted at `README.md`, `docs/README.md`, and the roadmap docs under `docs/product/roadmap/`.
