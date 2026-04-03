@@ -1,0 +1,52 @@
+Question ID: PT-158-S-1-P-3-Q-18
+PrepTest: 158
+Section: 1 (Reading Comprehension)
+Passage Number: 3
+Question Number: 18.
+Question Category: Author Attitude
+
+Question Stem:
+It can be inferred that the author of passage B regards the historical approach of the author of passage A as
+
+Passage:
+Passage A:
+In her 1996 history of plagiarism in English Renaissance drama, Laura J. Rosenthal tells us that her purpose is to “question differences between plagiarism, imitation, adaptation, repetition, and originality.” But such rhetorical questioning invariably leads to the required postmodern answer: that there is no difference between these things—other than that those in power use the opprobrious term “plagiarism” when the work in question emanates from those whom they dislike.
+
+
+Though the book is animated by a political fervor that is clearly moral, the author writes as if a political approach has to extirpate all moral considerations from any discussion of plagiarism. What in moral terms is a matter of honesty or dishonesty—plagiarism being dishonest—is instead reduced to “the cultural location of the text and the position of the author.”
+
+
+The consequence of a historical approach that seeks to “delegitimize” the distinction between imitation and plagiarism is that it demeans and degrades moral thought. That no moral standard is universal does not of itself entail that moral standards are nothing but expressions of power. Moral conventions, though not universal, may be valuable, indispensable, worthy of respect. The extirpation of moral considerations from political histories such as this one is a sad loss to political history.
+
+Passage B:
+The idea of plagiarism, like all ideas, has a history. To earlier generations it had semantic inflections and resonances different from those we recognize today. The varied impulses behind these varying views—which have themselves evolved in response to commercial circumstances, new theories of artistic creation, and developments in copyright law—have repeatedly complicated judgments of plagiarism. Despite an abiding sense that plagiarism is morally wrong, there has been much fluidity in the way the charge has been applied, and virtually identical acts of illicit appropriation have been sometimes denounced, sometimes excused, and sometimes praised.
+
+
+Christopher Ricks is suspicious of historical approaches to ethical issues; to him, emphasis on change across generations produces an extenuating moral relativism that shields the evil of plagiarism from its due obloquy. But there are historical approaches, and there are historical approaches.
+
+
+Ricks is rightly dismissive of the postmodern reduction of moral standards to expressions of power. And it is also true that there has been some shoddy scholarship that anachronistically projects modern-day ideologies having to do with gender, race, or class onto historically remote controversies. Yet bad history is no argument against history itself. To reconstruct the attitudes of the past is not necessarily to vindicate them. It is merely to acknowledge that whatever we might think is the correct way of apprehending plagiarism—and there is hardly a consensus on the matter even today—our predecessors may not, and often did not, share our perspectives.
+
+Toolkit Context:
+Passage A describes a historical view that reduces plagiarism to a simple matter of power, ignoring its moral aspects. Passage B defends the general idea of a historical approach but criticizes specific types, like the ones that reduce moral standards to expressions of power. The question asks what the author of Passage B would think of the specific historical approach described in Passage A.
+
+Answer Choices:
+A. irresponsible
+B. incomprehensible
+C. deceitful
+D. simplistic [CORRECT]
+E. reprehensible
+
+Credited Answer: D. simplistic
+
+Correct Answer Explanation:
+This choice is correct. Passage A describes an approach that reduces the moral issue of plagiarism to a matter of power. Passage B specifically criticizes this exact type of analysis, calling it a 'postmodern reduction of moral standards.' The word 'reduction' implies that the author of Passage B sees this approach as overly simple.
+
+Corresponding Proof:
+- What in moral terms is a matter of honesty or dishonesty—plagiarism being dishonest—is instead reduced to “the cultural location of the text and the position of the author.”
+- Ricks is rightly dismissive of the postmodern reduction of moral standards to expressions of power.
+- And it is also true that there has been some shoddy scholarship that anachronistically projects modern-day ideologies having to do with gender, race, or class onto historically remote controversies.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

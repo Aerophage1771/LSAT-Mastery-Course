@@ -1,0 +1,107 @@
+--- Module 55: Advanced Passage 5 -- Psychology of Risk
+--- Diff annotations for website lessons rc/55-1 through rc/55-6
+--- Date: 2026-04-01
+
+{ "type": "diff-note", "text": "All five question lessons (55-2 through 55-6) lack a 'try it yourself' prompt before the worked analysis. Each lesson jumps from the options block directly into the full breakdown. Adding an active-practice callout before every analysis section is the highest-priority improvement.", "variant": "comment" }
+
+=== Lesson 55-1: Passage Analysis ===
+
+--- rc/55-1.tsx
++++ rc/55-1.tsx (proposed)
+
+ [After accordion passage block, before "Passage Analysis" h3]
+
+{{+add+}} Add a "Reading Strategy" callout:
+{{+**Approach Tips:** This is a social-science passage built around a contrast between an old theory (people are risk-averse) and a new finding (loss aversion triggers risk-seeking). Track the shift point: paragraph 2 pivots from old to new with "Nevertheless." Paragraph 3 applies the new theory to a real-world case. Expect questions about: the function of the gamble example, the author's view on the Falklands case, and the overall structure.+}}
+
+{ "type": "diff-note", "text": "The passage analysis is a clear summary but does not teach reading strategy. For an advanced module, adding approach tips helps students build transferable skills.", "variant": "comment" }
+
+ [After the Summary callout at end of lesson]
+
+{{+add+}} Add a "What to Expect" section:
+{{+**What to Expect from the Questions:** This passage generates Application questions (applying the theory to new scenarios), Function questions (purpose of the gamble example), and Author Viewpoint questions (what the author believes about the Falklands case). Watch for traps that confuse the old theory with the new theory.+}}
+
+
+=== Lesson 55-2: Question 22 Breakdown ===
+
+--- rc/55-2.tsx
++++ rc/55-2.tsx (proposed)
+
+ [Between the "options" block and the paragraph block starting "This is an Application question"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+{ "type": "diff-note", "text": "This Application question has the highest correct rate in the set (44% for the correct answer). Adding a try-it prompt here lets students build confidence on a more accessible question before hitting harder ones.", "variant": "comment" }
+
+{{!note!}} The "(Correct)" label and percentages in the options list spoil the answer before students can attempt it. Consider moving correctness indicators out of the initial display.
+
+
+=== Lesson 55-3: Question 23 Breakdown ===
+
+--- rc/55-3.tsx
++++ rc/55-3.tsx (proposed)
+
+ [Between the "options" block and the paragraph block starting "This is a Function question"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+{ "type": "diff-note", "text": "Function questions test whether students can identify the role a specific piece of text plays in the argument. The analysis here is strong -- it correctly identifies 'Nevertheless' as the structural pivot.", "variant": "comment" }
+
+
+=== Lesson 55-4: Question 24 Breakdown ===
+
+--- rc/55-4.tsx
++++ rc/55-4.tsx (proposed)
+
+ [Between the "options" block and the paragraph block starting "This is an Author Viewpoint question"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+ [In the accordion passage text, second paragraph]
+
+{{~change~}} "in fact.," -> "in fact,"
+
+{ "type": "diff-note", "text": "Typo: 'in fact.,' appears in the passage text in lessons 55-4, 55-5, and 55-6 but not in 55-1, 55-2, or 55-3. The extraneous period before the comma should be removed.", "variant": "comment" }
+
+ [After the breakdown block, before end of content array]
+
+{{+add+}} Add a "Why This Is Hard" callout:
+{{+**Why This Is Hard:** Answer (E) is the main trap at 33%. It sounds like a restatement of loss aversion but subtly misstates the triggering condition. The passage says people take risks to avoid *certain losses*, not simply when subjective benefits exceed objective costs. Answer (B) at 41% is correct because it captures the structural parallel between individual and government decision-making that the passage relies on throughout.+}}
+
+
+=== Lesson 55-5: Question 25 Breakdown ===
+
+--- rc/55-5.tsx
++++ rc/55-5.tsx (proposed)
+
+ [Between the "options" block and the paragraph block starting "This is a Structure/Organization question"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+ [In the accordion passage text, second paragraph]
+
+{{~change~}} "in fact.," -> "in fact,"
+
+
+=== Lesson 55-6: Question 26 Breakdown ===
+
+--- rc/55-6.tsx
++++ rc/55-6.tsx (proposed)
+
+ [Between the "options" block and the paragraph block starting "This is an Author Viewpoint question"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+ [In the accordion passage text, second paragraph]
+
+{{~change~}} "in fact.," -> "in fact,"
+
+{ "type": "diff-note", "text": "Q26 is the final question in the set. The module would benefit from a brief synthesis section here or a new lesson 55-7 that ties together the five questions and identifies what patterns emerged (e.g., multiple Author Viewpoint questions, the importance of tracking the old-vs-new contrast).", "variant": "comment" }
+
+ [After the breakdown block, at end of content array]
+
+{{+add+}} Optional module wrap-up:
+{{+**Module Takeaways:** This passage generated five questions across four question types. The common thread: understanding the passage's contrast structure (old theory vs. new finding) and the application pattern (individual psychology applied to nations) was the key to every correct answer. Two of the five questions tested the author's viewpoint, and both required recognizing that the author uses the Falklands example as an illustration of loss aversion, not as a standalone argument.+}}
+
+
+--- END OF DIFF ---

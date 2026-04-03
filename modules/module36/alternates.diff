@@ -1,0 +1,39 @@
+# Module 36: Paragraph Function — Diff Annotations
+# Source: website lessons rc/36-1.tsx, rc/36-2.tsx
+
+{ "type": "diff-note", "text": "Module 36 is part of the Function hierarchy (M35 Phrase → M36 Paragraph → M37 Passage). None of the three modules explicitly acknowledges this relationship.", "variant": "comment" }
+
+## Lesson 36-1: Introduction (rc/36-1.tsx)
+
+### After the stem identification breakdown:
+{{+Add a brief note: "Unlike other RC question types, Paragraph Function stems are relatively uniform in phrasing — they almost always ask directly about the 'function,' 'purpose,' or what a paragraph 'does.' This means stem identification is straightforward for this type."+}}
+
+### After the five-item function list:
+{{+Add a "Function Hierarchy" callout: "This module is the middle step in a three-level analytical skill: Phrase Function (Module 35) asks why a specific detail is there. Paragraph Function (this module) asks why an entire paragraph is there. Passage Function (Module 37) asks why the author wrote the entire text. The same core question — 'what is this doing here?' — applies at every level."+}}
+
+### After the Overarching Takeaway:
+{{+Add a "Common Trap" callout: "The most frequent wrong answer on Paragraph Function questions accurately summarizes what the paragraph says rather than describing its role. Always check: does this answer choice describe the paragraph's content, or its job in the argument?"+}}
+
+{ "type": "diff-note", "text": "The five-item function list (problem, evidence, alternative view, evaluation, summary) is strong and covers the most common paragraph roles. Preserve as-is.", "variant": "comment" }
+
+## Lesson 36-2: Step-by-Step Approach (rc/36-2.tsx)
+
+### Before any worked analysis section:
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After Step 1 (Summarize Content):
+{{+Add a warning: "Remember, your content summary is only a starting point. The question asks what the paragraph does, not what it says. Your summary helps you understand the paragraph before you analyze its function."+}}
+
+### The "bridge" metaphor:
+{ "type": "diff-note", "text": "The 'bridge' metaphor — defining the paragraph's job as connecting its neighbors — is the lesson's best teaching moment. Consider promoting this to a callout for visibility.", "variant": "comment" }
+
+### After the tie-breaker section:
+{{+Add a complete question-card with a real PT question.+}}
+
+### After Step 2:
+{{+Add a brief worked example: present a 4-paragraph passage outline (e.g., "P1: Introduces theory. P2: Provides supporting evidence. P3: Presents counterargument. P4: Author responds.") and demonstrate the bridge analysis on paragraph 3.+}}
+
+### Tie-Breaker #2 (Focus on the Verbs):
+{{+Add a concrete example: show the same paragraph described as "elaborating on a theory" vs. "providing an example of a theory" and explain how to tell which is correct by looking at whether the paragraph uses abstract concepts or concrete situations.+}}
+
+{{!note: The Blueprint Check tie-breaker (A→B→C logical sequence) is excellent and transfers directly to Structure questions (M39). Consider adding a cross-reference.!}}

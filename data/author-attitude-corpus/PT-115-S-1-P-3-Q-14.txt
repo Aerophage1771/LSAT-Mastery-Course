@@ -1,0 +1,42 @@
+Question ID: PT-115-S-1-P-3-Q-14
+PrepTest: 115
+Section: 1 (Reading Comprehension)
+Passage Number: 3
+Question Number: 14.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following best describes the attitude of the author of the passage toward Primate Visions?
+
+Passage:
+Passage A:
+Donna Haraway’s Primate Visions is the most ambitious book on the history of science yet written from a feminist perspective, embracing not only the scientific construction of gender but also the interplay of race, class, and colonial and postcolonial culture with the “Western” construction of the very concept of nature itself. Primatology is a particularly apt vehicle for such themes because primates seem so much like ourselves that they provide ready material for scientists’ conscious and unconscious projections of their beliefs about nature and culture.
+Haraway’s most radical departure is to challenge the traditional disjunction between the active knower (scientist/historian) and the passive object (nature/history). In Haraway’s view, the desire to understand nature, whether in order to tame it or to preserve it as a place of wild innocence, is based on a troublingly masculinist and colonialist view of nature as an entity distinct from us and subject to our control. She argues that it is a view that is no longer politically, ecologically, or even scientifically viable. She proposes an approach that not only recognizes diverse human actors (scientists, government officials, laborers, science fiction writers) as contributing to our knowledge of nature, but that also recognizes the creatures usually subsumed under nature (such as primates) as active participants in creating that knowledge as well. Finally, she insists that the perspectives afforded by these different agents cannot be reduced to a single, coherent reality—there are necessarily only multiple, interlinked, partial realities.
+This iconoclastic view is reflected in Haraway’s unorthodox writing style. Haraway does not weave the many different elements of her work into one unified, overarching Story of Primatology; they remain distinct voices that will not succumb to a master narrative. This fragmented approach to historiography is familiar enough in historiographical theorizing but has rarely been put into practice by historians of science. It presents a complex alternative to traditional history, whether strictly narrative or narrative with emphasis on a causal argument.
+Haraway is equally innovative in the way she incorporates broad cultural issues into her analysis. Despite decades of rhetoric from historians of science about the need to unite issues deemed “internal” to science (scientific theory and practice) and those considered “external” to it (social issues, structures, and beliefs), that dichotomy has proven difficult to set aside. Haraway simply ignores it. The many readers in whom this separation is deeply ingrained may find her discussions of such popular sources as science fiction, movies, and television distracting, and her statements concerning such issues as nuclear war bewildering and digressive. To accept her approach one must shed a great many assumptions about what properly belongs to the study of science.
+
+Toolkit Context:
+The author of the passage describes Donna Haraway's book, *Primate Visions*, in very positive terms, calling it ambitious, radical, and innovative. At the same time, the author acknowledges that the book's unconventional approach and style may be difficult for many readers. These readers might find some parts of the book distracting or bewildering because it challenges their basic assumptions about science.
+
+Answer Choices:
+A. The book is highly original and exciting, but will be difficult for many readers to accept. [CORRECT]
+B. The book is admirable primarily because of the extensive research it reflects.
+C. Although far from ground breaking, the book is elegantly and coherently written.
+D. While commendably imaginative, the book is, in the end, less than convincing.
+E. The book’s thesis is promising and provocative but half-heartedly argued.
+
+Credited Answer: A. The book is highly original and exciting, but will be difficult for many readers to accept.
+
+Correct Answer Explanation:
+This choice accurately reflects the author's overall attitude. The author praises the book's originality with words like 'ambitious,' 'radical departure,' and 'innovative,' but also points out that its unorthodox style and challenging ideas will be difficult for many readers to embrace.
+
+Corresponding Proof:
+- Donna Haraway’s Primate Visions is the most ambitious book on the history of science yet written from a feminist perspective...
+- Haraway’s most radical departure is to challenge the traditional disjunction between the active knower (scientist/historian) and the passive object (nature/history).
+- Haraway is equally innovative in the way she incorporates broad cultural issues into her analysis.
+- The many readers in whom this separation is deeply ingrained may find her discussions of such popular sources as science fiction, movies, and television distracting, and her statements concerning such issues as nuclear war bewildering and digressive.
+- To accept her approach one must shed a great many assumptions about what properly belongs to the study of science.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

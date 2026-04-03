@@ -1,0 +1,41 @@
+Question ID: PT-117-S-1-P-4-Q-23
+PrepTest: 117
+Section: 1 (Reading Comprehension)
+Passage Number: 4
+Question Number: 23.
+Question Category: Author Attitude
+
+Question Stem:
+With respect to the proponents of the Modern Movement, the author of the passage can best be described as
+
+Passage:
+Passage A:
+The proponents of the Modern Movement in architecture considered that, compared with the historical styles that it replaced, Modernist architecture more accurately reflected the functional spirit of twentieth-century technology and was better suited to the newest building methods. It is ironic, then, that the Movement fostered an ideology of design that proved to be at odds with the way buildings were really built.
+The tenacious adherence of Modernist architects and critics to this ideology was in part responsible for the Movement’s decline. Originating in the 1920s as a marginal, almost bohemian art movement, the Modern Movement was never very popular with the public, but this very lack of popular support produced in Modernist architects a high-minded sense of mission—not content merely to interpret the needs of the client, these architects now sought to persuade, to educate, and, if necessary, to dictate. By 1945 the tenets of the Movement had come to dominate mainstream architecture, and by the early 1950s, to dominate architectural criticism—architects whose work seemed not to advance the evolution of the Modern Movement tended to be dismissed by proponents of Modernism. On the other hand, when architects were identified as innovators—as was the case with Otto Wagner, or the young Frank Lloyd Wright—attention was drawn to only those features of their work that were “Modern”; other aspects were conveniently ignored.
+The decline of the Modern Movement later in the twentieth century occurred partly as a result of Modernist architects’ ignorance of building methods, and partly because Modernist architects were reluctant to admit that their concerns were chiefly aesthetic. Moreover, the building industry was evolving in a direction Modernists had not anticipated: it was more specialized and the process of construction was much more fragmented than in the past. Up until the twentieth century, construction had been carried out by a relatively small number of tradespeople, but as the building industry evolved, buildings came to be built by many specialized subcontractors working independently. The architect’s design not only had to accommodate a sequence of independent operations, but now had to reflect the allowable degree of inaccuracy of the different trades. However, one of the chief construction ideals of the Modern Movement was to “honestly” expose structural materials such as steel and concrete. To do this and still produce a visually acceptable interior called for an unrealistically high level of craftmanship. Exposure of a building’s internal structural elements, if it could be achieved at all, could only be accomplished at considerable cost—hence the well-founded reputation of Modern architecture as prohibitively expensive.
+As Postmodern architects recognized, the need to expose structural elements imposed unnecessary limitations on building design. The unwillingness of architects of the Modern Movement to abandon their ideals contributed to the decline of interest in the Modern Movement.
+
+Toolkit Context:
+The passage describes the author's view of the Modern Movement's architects. The author points out a major contradiction: their ideals did not match the reality of how buildings were constructed. This critique focuses on their stubbornness, ignorance of building methods, and impractical aesthetic goals, which ultimately led to the movement's decline.
+
+Answer Choices:
+A. forbearing
+B. defensive
+C. unimpressed [CORRECT]
+D. exasperated
+E. indifferent
+
+Credited Answer: C. unimpressed
+
+Correct Answer Explanation:
+This choice is correct because the author consistently points out the flaws and failures of the Modern Movement's proponents. The author describes their ideas as 'ironic,' their architects as having 'ignorance of building methods,' and their ideals as 'unrealistic.' This critical and analytical tone shows a clear lack of admiration or respect, meaning the author is unimpressed.
+
+Corresponding Proof:
+- It is ironic, then, that the Movement fostered an ideology of design that proved to be at odds with the way buildings were really built.
+- The decline of the Modern Movement later in the twentieth century occurred partly as a result of Modernist architects’ ignorance of building methods, and partly because Modernist architects were reluctant to admit that their concerns were chiefly aesthetic.
+- To do this and still produce a visually acceptable interior called for an unrealistically high level of craftmanship.
+- The unwillingness of architects of the Modern Movement to abandon their ideals contributed to the decline of interest in the Modern Movement.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

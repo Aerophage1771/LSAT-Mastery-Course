@@ -1,0 +1,39 @@
+Question ID: PT-123-S-1-P-4-Q-23
+PrepTest: 123
+Section: 1 (Reading Comprehension)
+Passage Number: 4
+Question Number: 23.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following best describes the attitude of the author of the passage toward the “Whig” interpretation of Victorian philanthropy?
+
+Passage:
+Passage A:
+Although philanthropy—the volunteering of private resources for humanitarian purposes—reached its apex in England in the late nineteenth century, modern commentators have articulated two major criticisms of the philanthropy that was a mainstay of England’s middle-class Victorian society. The earlier criticism is that such philanthropy was even by the later nineteenth century obsolete, since industrialism had already created social problems that were beyond the scope of small, private voluntary efforts. Indeed, these problems required substantial legislative action by the state. Unemployment, for example, was not the result of a failure of diligence on the part of workers or a failure of compassion on the part of employers, nor could it be solved by well-wishing philanthropists.
+ The more recent charge holds that Victorian philanthropy was by its very nature a self-serving exercise carried out by philanthropists at the expense of those whom they were ostensibly serving. In this view, philanthropy was a means of flaunting one’s power and position in a society that placed great emphasis on status, or even a means of cultivating social connections that could lead to economic rewards. Further, if philanthropy is seen as serving the interests of individual philanthropists, so it may be seen as serving the interests of their class. According to this “social control” thesis, philanthropists, in professing to help the poor, were encouraging in them such values as prudence, thrift, and temperance, values perhaps worthy in themselves but also designed to create more productive members of the labor force. Philanthropy, in short, was a means of controlling the labor force and ensuring the continued dominance of the management class.
+Modern critics of Victorian philanthropy often use the words “amateurish” or “inadequate” to describe Victorian philanthropy, as though Victorian charity can only be understood as an antecedent to the era of state-sponsored, professionally administered charity. This assumption is typical of the “Whig fallacy”: the tendency to read the past as an inferior prelude to an enlightened present. If most Victorians resisted state control and expended their resources on private, voluntary philanthropies, it could only be, the argument goes, because of their commitment to a vested interest, or because the administrative apparatus of the state was incapable of coping with the economic and social needs of the time.
+This version of history patronizes the Victorians, who were in fact well aware of their vulnerability to charges of condescension and complacency, but were equally well aware of the potential dangers of state-managed charity. They were perhaps condescending to the poor, but—to use an un-Victorian metaphor—they put their money where their mouths were, and gave of their careers and lives as well.
+
+Toolkit Context:
+The passage describes the “Whig fallacy” as the mistake of viewing the past as just a flawed step toward our supposedly better present. The author explains that some modern critics use this thinking to dismiss Victorian charity as simply “amateurish” or “inadequate.” The author then argues against this viewpoint, defending the Victorians' choices and motivations.
+
+Answer Choices:
+A. strong disagreement [CORRECT]
+B. mild skepticism
+C. cynical amusement
+D. bland indifference
+E. unqualified support
+
+Credited Answer: A. strong disagreement
+
+Correct Answer Explanation:
+The author clearly disagrees with the 'Whig' interpretation. This is shown by the use of strong, negative language, calling it a 'fallacy' and stating that this view 'patronizes the Victorians.' These phrases indicate a firm rejection, not just a mild doubt or indifference.
+
+Corresponding Proof:
+- This assumption is typical of the “Whig fallacy”: the tendency to read the past as an inferior prelude to an enlightened present.
+- This version of history patronizes the Victorians, who were in fact well aware of their vulnerability to charges of condescension and complacency, but were equally well aware of the potential dangers of state-managed charity.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

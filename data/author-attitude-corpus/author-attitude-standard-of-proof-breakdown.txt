@@ -1,0 +1,998 @@
+Author Attitude Questions: Complete Listing With Standard of Proof
+
+Total questions: 100
+
+Breakdown:
+- Direct tone proof: 79
+- Supported inference: 19
+- Phrase-level proof: 2
+
+Standard of Proof Rules:
+- Direct tone proof: the stem directly asks for the author's attitude or best description without signaling an extra inference jump.
+- Supported inference: the stem uses language like based on the passage, suggests, implies, can be inferred, or would describe, so the answer still needs close textual support but allows a modest inference.
+- Phrase-level proof: the stem asks which phrase or local wording reveals the attitude, so the proof should come from a specific expression rather than the whole passage tone alone.
+
+Complete Listing:
+
+1. PT-101-S-1-P-3-Q-15
+   File: PT-101-S-1-P-3-Q-15.txt
+   Standard of Proof: Supported inference
+   Stem: It can be inferred from the author’s discussion of traditional legal research that the author is
+   Answer: B. critical because traditional legal research has little relevance to those actually involved in cases
+   Proof:
+   - These scholars have justifiably criticized traditional legal research for its focus on a few cases that may not be representative and its fascination with arcane matters that do not affect real people with real legal problems.
+
+2. PT-101-S-4-P-4-Q-25
+   File: PT-101-S-4-P-4-Q-25.txt
+   Standard of Proof: Supported inference
+   Stem: It can be inferred that the author of the passage views Drescher’s presentation of British traditions concerning liberty as
+   Answer: B. somewhat unrealistic
+   Proof:
+   - Eschewing Drescher’s idealization of British traditions of liberty, Eltis points to continuing use of low wages and Draconian vagrancy laws in the seventeenth and eighteenth centuries to ensure the industriousness of British workers.
+
+3. PT-102-S-1-P-1-Q-4
+   File: PT-102-S-1-P-1-Q-04.txt
+   Standard of Proof: Supported inference
+   Stem: Based on the passage, the author’s attitude toward interception of electronic mail can most accurately be described as
+   Answer: D. intellectual interest in its legal issues
+   Proof:
+   - In fact, the question of how private electronic mail transmissions should be has emerged as one of the more complicated legal issues of the electronic age.
+   - People’s opinions about the degree of privacy that electronic mail should have vary depending on whose electronic mail system is being used and who is reading the messages.
+   - Questions about electronic mail privacy have also arisen in the private sector.
+
+4. PT-102-S-1-P-3-Q-18
+   File: PT-102-S-1-P-3-Q-18.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s attitude toward the theory of Pan-Indianism?
+   Answer: E. skeptical that it is a complete explanation of recent changes in native American society
+   Proof:
+   - However, these sociologists have failed to note the concurrent revitalization of many traditions unique to individual tribes.
+   - Obviously, a more complex societal shift is taking place than the theory of Pan-Indianism can account for.
+
+5. PT-103-S-4-P-1-Q-1
+   File: PT-103-S-4-P-1-Q-01.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s attitude toward the relationship between citizenship and individual rights in a democracy?
+   Answer: E. dissatisfaction at how some citizens cite individual rights as a way of avoiding certain obligations to their government
+   Proof:
+   - Opponents of compulsory national service claim that such a program is not in keeping with the liberal principles upon which Western democracies are founded.
+   - This reasoning is reminiscent of the argument that a tax on one’s income is undemocratic because it violates one’s right to property.
+   - Such conceptions of the liberal state fail to take into account the intricate character of the social agreement that undergirds our liberties.
+   - (+1 more citation lines in the question file)
+
+6. PT-104-S-2-P-1-Q-4
+   File: PT-104-S-2-P-1-Q-04.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following best describes the author’s attitude toward Miles Davis’s music?
+   Answer: E. appreciative advocacy
+   Proof:
+   - The career of trumpeter Miles Davis was one of the most astonishingly productive that jazz music has ever seen.
+   - Yet his genius has never received its due.
+   - The impatience and artistic restlessness that characterized his work spawned one stylistic turn after another and made Davis anathema to many critics, who deplored his abandonment...
+   - (+2 more citation lines in the question file)
+
+7. PT-104-S-2-P-4-Q-25
+   File: PT-104-S-2-P-4-Q-25.txt
+   Standard of Proof: Supported inference
+   Stem: It can be inferred from the passage that the author would describe the method Lowe used to construct a step-by-step chronology of the actual collapse of Classic Mayan civilization as
+   Answer: B. generally accepted but questionable
+   Proof:
+   - Like previous investigators, Lowe relies on dated monuments to construct a step-by-step account of the actual collapse.
+   - Lowe’s assumption about monument construction and the occupation span of a site might well be disproved if further investigations of Classic Mayan sites established that some remained heavily settled long after the custom of carving dynastic monuments had ceased.
+
+8. PT-104-S-3-P-4-Q-26
+   File: PT-104-S-3-P-4-Q-26.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following best describes the author’s attitude toward Bettelheim’s work?
+   Answer: E. appreciative of Bettelheim’s accomplishment and practical insights
+   Proof:
+   - Bettelheim’s book, although written in apparent ignorance of the vast critical traditions of interpreting literary romance, is nevertheless a splendid achievement, brimming with useful ideas and insights into how young children read and understand.
+
+9. PT-105-S-3-P-2-Q-10
+   File: PT-105-S-3-P-2-Q-10.txt
+   Standard of Proof: Supported inference
+   Stem: Based on the passage, the “retributive nature" of the second rationale for punishing criminals (second-to-last sentence of the passage) consists in that rationale’s
+   Answer: B. regarding punishment as justified by the severity of the crime
+   Proof:
+   - The second rationale is that a punishment is justified by the severity of the crime, independent of any benefit to society.
+   - But from the retributivist point of view, the question to be asked about punishment is not whether it is beneficial, but whether it is just—that is, appropriate.
+   - Retributive considerations, on the other hand, allow for proportionality between punishments and crimes.
+
+10. PT-105-S-3-P-3-Q-20
+   File: PT-105-S-3-P-3-Q-20.txt
+   Standard of Proof: Supported inference
+   Stem: Based on the passage, the author’s attitude toward nativism in Hispanic-American literature is most likely
+   Answer: B. general approval
+   Proof:
+   - We have pursued this goal of ever-increasing independence through a twofold movement... endeavoring to describe the nature of the United States and give voice to the Hispanic peoples who live there.
+   - nativism, the return to the private or original culture.
+   - in order not to disappear into the mainstream, one must return to one’s origins.
+   - (+1 more citation lines in the question file)
+
+11. PT-106-S-4-P-1-Q-3
+   File: PT-106-S-4-P-1-Q-03.txt
+   Standard of Proof: Phrase-level proof
+   Stem: The author’s attitude toward the court’s decision in the Mashpee’s lawsuit is most clearly revealed by the author’s use of which one of the following phrases?
+   Answer: E. “failure to accommodate” (last sentence of the passage)
+   Proof:
+   - In this instance, the disjunction between U.S. legal discourse and Mashpee culture—exemplified in the court’s inability to “understand” the Mashpee’s oral testimony as documentary evidence—rendered the suit unsuccessful.
+   - Similar claims have recently met with greater success, however, as U.S. courts have begun to acknowledge that the failure to accommodate differences in discourse between cultures can sometimes stand in the way of guaranteeing the fairness of legal decisions.
+
+12. PT-107-S-2-P-2-Q-14
+   File: PT-107-S-2-P-2-Q-14.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s attitude toward the goal of having a written language exactly match its oral equivalent?
+   Answer: A. conviction that an exact match is all but impossible to achieve
+   Proof:
+   - problems arise because of an insistence that every sound in the language have a unique written equivalent—a desirable but ultimately frustrating condition that no written language has ever fully satisfied.
+
+13. PT-108-S-1-P-1-Q-7
+   File: PT-108-S-1-P-1-Q-07.txt
+   Standard of Proof: Supported inference
+   Stem: The passage implies that Kahlo’s attitude toward the economic development of Mexico was
+   Answer: C. cautious
+   Proof:
+   - she favored planned economic development, but not at the expense of cultural identity.
+
+14. PT-108-S-1-P-2-Q-13
+   File: PT-108-S-1-P-2-Q-13.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s attitude toward proposals to introduce personal stories into legal discourse?
+   Answer: D. strongly supportive
+   Proof:
+   - These legal reformers propose replacing such abstract discourse with powerful personal stories.
+   - The compelling force of personal narrative can create a sense of empathy between legal insiders and people traditionally excluded from legal discourse and, hence, from power.
+   - Thus, the engaging power of narrative might play a crucial, positive role in the process of legal reconstruction by overcoming differences in background and training and forming a new collectivity based on emotional empathy.
+
+15. PT-108-S-4-P-2-Q-11
+   File: PT-108-S-4-P-2-Q-11.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude toward current law enforcement policies dealing with juvenile delinquency can most accurately be described as
+   Answer: D. convinced that these policies should be revised
+   Proof:
+   - The problem of juvenile delinquency certainly ought to be dealt with, but the question is one of approach.
+   - Perhaps a policy that encourages maturation, rather than routinely imposing incarceration, may be the most effective form of rehabilitation for young offenders.
+   - This should be the goal when dealing with juvenile delinquency, and it can be achieved without either inflicting incarceration or allowing young offenders to escape penalty.
+
+16. PT-109-S-2-P-2-Q-8
+   File: PT-109-S-2-P-2-Q-08.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author of the passage displays which one of the following attitudes toward the position of the critics mentioned at the start of the second paragraph?
+   Answer: A. complete rejection
+   Proof:
+   - But the relationship between the two genres is more complex: Jacobs’s attempt to frame her story as a domestic novel creates a tension between the usual portrayal of women in this genre and her actual experience, often calling into question the applicability of the hierarchy of values espoused by the domestic novel to those who are in her situation.
+   - Her narrative thus becomes an antidomestic novel, for Jacobs accepts readily the goals of the genre, but demonstrates that its hierarchy of values does not apply when examined from the perspective of a female slave...
+
+17. PT-109-S-2-P-4-Q-24
+   File: PT-109-S-2-P-4-Q-24.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude toward eighteenth-century lawyers can best be described as
+   Answer: B. critical
+   Proof:
+   - The morass of evidentiary technicalities often made it unlikely that the truth would emerge in a judicial contest, no matter how expensive and protracted.
+   - Reform was frustrated both by the vested interests of lawyers and by the profession’s reverence for tradition and precedent.
+
+18. PT-110-S-1-P-1-Q-2
+   File: PT-110-S-1-P-1-Q-02.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude toward authoritarian regimes is most accurately described as which one of the following?
+   Answer: C. confidence that most authoritarian regimes will eventually be replaced by a more democratic form of government
+   Proof:
+   - Authoritarian rule tends in the long run to generate all three types of changes.
+   - This profound development can radically alter the balance of power in a country, as an authoritarian regime that could once easily dominate and control its citizens is placed on the defensive.
+   - The more astute or calculating of authoritarian rulers will recognize this and realize that their only hope of retaining some power in the future is to match these democratic social changes with democratic political changes.
+
+19. PT-110-S-4-P-4-Q-23
+   File: PT-110-S-4-P-4-Q-23.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most completely and accurately describes the author’s attitude toward Vernon’s study?
+   Answer: B. admiring of its accomplishments and generally receptive to its theories
+   Proof:
+   - While historians once propagated the myth that Africans who were brought to the New World as slaves contributed little of value but their labor, a recent study by Amelia Wallace Vernon helps to dispel this notion...
+   - This discovery is especially compelling because the introduction of rice into what is now the United States had previously been attributed to French Acadians...
+   - She proposes two intriguing answers, depending on whether the time is before or after the end of slavery.
+
+20. PT-111-S-2-P-2-Q-14
+   File: PT-111-S-2-P-2-Q-14.txt
+   Standard of Proof: Supported inference
+   Stem: The passage suggests that the author’s attitude toward Bearden’s innovative painting techniques is one of
+   Answer: A. admiration for how they aided Bearden in communicating his rich vision of African-American life
+   Proof:
+   - The paintings of Romare Bearden (1914–1988) represent a double triumph.
+   - At the same time that Bearden’s work reflects a lifelong commitment to perfecting the innovative painting techniques he pioneered, it also reveals an artist engaged in a search for ways to explore the varieties of African-American experience.
+   - But how did Bearden, so passionately dedicated to solving the more advanced problems of his painting technique, also succeed so well at portraying the realities of African-American life?
+   - (+1 more citation lines in the question file)
+
+21. PT-111-S-2-P-4-Q-23
+   File: PT-111-S-2-P-4-Q-23.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately characterizes the author’s attitude toward Dworkin’s theory?
+   Answer: A. confident endorsement of its central assertions
+   Proof:
+   - The theory he proposes seeks to validate this practice without falling into what Dworkin correctly sees as the error of natural law theory.
+   - The positivist’s mistake, as Dworkin points out, is assuming that the meaning of the law can only consist in what people think it means...
+   - Once we realize, as Dworkin does, that the law has an internal logic of its own that constrains interpretation, we open up the possibility of improving upon the interpretations not only of our contemporaries but of the original authors.
+
+22. PT-112-S-2-P-4-Q-23
+   File: PT-112-S-2-P-4-Q-23.txt
+   Standard of Proof: Supported inference
+   Stem: The passage suggests that the author’s attitude toward the possibility of success for a rights-based legal system in South Africa is most likely one of
+   Answer: D. guarded optimism
+   Proof:
+   - Among lawyers and judges, exhilaration over the legal tools soon to be available is tempered by uncertainty about how to use them.
+   - But some scholars warn that judges, in their rush to fill the constitutional void, may misuse foreign law...
+   - Nonetheless, these scholars are hopeful that, with patience and judicious decisions, South Africa can use international experience in developing a body of precedent that will address the particular needs of its citizens.
+
+23. PT-113-S-1-P-1-Q-2
+   File: PT-113-S-1-P-1-Q-02.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s attitude toward the unanimity requirement?
+   Answer: D. firm support
+   Proof:
+   - But the material costs of hung juries do not warrant losing the benefit to society of the unanimous verdict.
+   - Furthermore, that juries occasionally deadlock does not demonstrate a flaw in the criminal justice system, but rather suggests that jurors are conscientiously doing the job they have been asked to do.
+   - ...a hung jury is certainly preferable to an unjust verdict.
+   - (+1 more citation lines in the question file)
+
+24. PT-114-S-3-P-4-Q-27
+   File: PT-114-S-3-P-4-Q-27.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude regarding the traditional method of teaching ethics in medical school can most accurately be described as
+   Answer: E. partial disapproval of the method and approval of some of its effects
+   Proof:
+   - Although the conceptual clarity provided by a traditional ethics course can be valuable, theorizing about ethics contributes little to the understanding of everyday human experience or to preparing medical students for the multifarious ethical dilemmas they will face as physicians.
+
+25. PT-115-S-1-P-3-Q-14
+   File: PT-115-S-1-P-3-Q-14.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following best describes the attitude of the author of the passage toward Primate Visions?
+   Answer: A. The book is highly original and exciting, but will be difficult for many readers to accept.
+   Proof:
+   - Donna Haraway’s Primate Visions is the most ambitious book on the history of science yet written from a feminist perspective...
+   - Haraway’s most radical departure is to challenge the traditional disjunction between the active knower (scientist/historian) and the passive object (nature/history).
+   - Haraway is equally innovative in the way she incorporates broad cultural issues into her analysis.
+   - (+2 more citation lines in the question file)
+
+26. PT-115-S-3-P-2-Q-11
+   File: PT-115-S-3-P-2-Q-11.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following is the most accurate description of the author’s attitude toward Bettelheim’s view of fairy tales?
+   Answer: C. disapproval of the view’s depiction of children as selfish and adults as innocent
+   Proof:
+   - Bettelheim interprets all fairy tales as driven by children’s fantasies of desire and revenge, and in doing so suppresses the true nature of parental behavior ranging from abuse to indulgence.
+   - Fortunately, these characterizations of selfish children and innocent adults have been discredited to some extent by recent psychoanalytic literature.
+   - The need to deny adult evil has been a pervasive feature of our society, leading us to position children not only as the sole agents of evil but also as the objects of unending moral instruction...
+
+27. PT-115-S-3-P-3-Q-20
+   File: PT-115-S-3-P-3-Q-20.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude toward Planck’s development of a new hypothesis about atomic processes can most aptly be described as
+   Answer: E. scholarly interest in a step that led to a more accurate picture of atomic processes
+   Proof:
+   - Max Planck, a classical physicist who had made important contributions to wave theory, developed a hypothesis about atomic processes taking place in a blackbody object that broke with wave theory and accounted for the observed patterns of blackbody radiation.
+   - Planck discarded the assumption of radiation’s smooth energy continuum and took the then bizarre position that these atomic processes could only involve discrete energies that jump between certain units of value...
+   - So in just a few years, what was considered a catastrophe generated a new vision in physics that led to theories still in place today.
+
+28. PT-116-S-1-P-1-Q-3
+   File: PT-116-S-1-P-1-Q-03.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude regarding oil well drilling regulations can most accurately be described as
+   Answer: C. concerned that regulatory reform will not progress until significant undesirable events occur
+   Proof:
+   - Most attempts to regulate the industry have relied on hindsight: the need for regulation becomes apparent only after undesirable events occur.
+   - ...no thought was given to the possibility that the groundwater itself might need protection until many drinking-water wells near the oil well sites began to produce unpotable, oil-contaminated water.
+   - ...a major disaster recently occurred because a well’s location was based on a poor understanding of the area’s subsurface geology.
+   - (+1 more citation lines in the question file)
+
+29. PT-116-S-1-P-3-Q-14
+   File: PT-116-S-1-P-3-Q-14.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s attitude toward formalism as expressed in the passage?
+   Answer: E. reasoned dismissal
+   Proof:
+   - However, since no theory has a monopoly on divining meaning from a text, the formalists’ view appears unnecessarily narrow.
+   - However, while a literary work is indeed encoded in various signs and symbols that must be translated for the work to be understood and appreciated, it is not a map.
+   - What is needed is a method that enables the critic to discern and make use of the rich stock of meanings created in encounters between texts and readers.
+
+30. PT-116-S-1-P-4-Q-23
+   File: PT-116-S-1-P-4-Q-23.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately characterizes the author’s view regarding the institutional intellectual property policies of most universities?
+   Answer: A. The policies are in keeping with the institution’s financial interests.
+   Proof:
+   - Many institutions have invested heavily in the administrative infrastructure to develop and exploit these discoveries, and they expect to prosper both by an increased level of research support and by the royalties from licensing those discoveries having patentable commercial applications.
+   - Although these issues remain unsettled, and though universities may be overreaching due to faculty’s limited knowledge of their rights, most major institutions behave in the ways that maximize university ownership and profit participation.
+
+31. PT-116-S-4-P-1-Q-2
+   File: PT-116-S-4-P-1-Q-02.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s attitude toward the twofold obligation introduced in the first sentence of the second paragraph?
+   Answer: E. convinced that it does not represent a conflict of interest for defense lawyers
+   Proof:
+   - the defense lawyer’s obligation is twofold: to the defendant, certainly, but no less so to the court and, by extension, to society.
+   - The lawyer’s obligation to the court and to society also ultimately benefits the defendant, because the “best defense” can only truly be provided by an advocate who, after a careful analysis of the facts, is convinced of the merits of the case.
+
+32. PT-116-S-4-P-3-Q-15
+   File: PT-116-S-4-P-3-Q-15.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following phrases best conveys the author’s attitude toward the earlier scholarship on Native American autobiographies that is mentioned in the passage?
+   Answer: A. “failed to address” (last sentence of the first paragraph)
+   Proof:
+   - Limiting their studies to such written documents, these scholars have overlooked traditional, preliterate modes of communicating personal history.
+   - In addition, they have failed to address the cultural constructs of the highly diverse Native American peoples, who prior to contact with nonindigenous cultures did not share with Europeans the same assumptions about self, life, and writing that underlie the concept of an autobiography
+
+33. PT-116-S-4-P-4-Q-25
+   File: PT-116-S-4-P-4-Q-25.txt
+   Standard of Proof: Supported inference
+   Stem: Based on the passage, the author’s attitude toward the scientists discussed in the first paragraph can most accurately be described as
+   Answer: D. overtly critical
+   Proof:
+   - Because of this assumption, these scientists have rarely investigated the effects of wine as distinct from other forms of alcoholic beverages.
+   - Nevertheless, unlike other alcoholic beverages, wine has for centuries been thought to have healthful effects that these scientists—who not only make no distinction among wine, beer, and distilled spirits but also study only the excessive or abusive intake of these beverages—have obscured.
+
+34. PT-117-S-1-P-4-Q-23
+   File: PT-117-S-1-P-4-Q-23.txt
+   Standard of Proof: Direct tone proof
+   Stem: With respect to the proponents of the Modern Movement, the author of the passage can best be described as
+   Answer: C. unimpressed
+   Proof:
+   - It is ironic, then, that the Movement fostered an ideology of design that proved to be at odds with the way buildings were really built.
+   - The decline of the Modern Movement later in the twentieth century occurred partly as a result of Modernist architects’ ignorance of building methods, and partly because Modernist architects were reluctant to admit that their concerns were chiefly aesthetic.
+   - To do this and still produce a visually acceptable interior called for an unrealistically high level of craftmanship.
+   - (+1 more citation lines in the question file)
+
+35. PT-117-S-1-P-4-Q-25
+   File: PT-117-S-1-P-4-Q-25.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following, in its context in the passage, most clearly reveals the attitude of the author toward the proponents of the Modern Movement?
+   Answer: D. “conveniently" (end of the second paragraph)
+   Proof:
+   - On the other hand, when architects were identified as innovators—as was the case with Otto Wagner, or the young Frank Lloyd Wright—attention was drawn to only those features of their work that were “Modern”; other aspects were conveniently ignored.
+
+36. PT-118-S-2-P-2-Q-13
+   File: PT-118-S-2-P-2-Q-13.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following can most accurately be used to describe the author’s attitude toward critics of the Hippocratic oath?
+   Answer: C. reasoned disagreement
+   Proof:
+   - More importantly, even the more substantive, morally based arguments concerning contemporary values and newly relevant issues cannot negate the patients’ need for assurance that physicians will pursue appropriate goals...
+   - To fulfill that need, the core value of beneficence—which does not actually conflict with most reformers’ purposes—should be retained, with adaptations at the oath’s periphery by some combination of revision, supplementation, and modern interpretation.
+
+37. PT-120-S-2-P-1-Q-1
+   File: PT-120-S-2-P-1-Q-01.txt
+   Standard of Proof: Direct tone proof
+   Stem: It can be reasonably inferred from the passage that the author’s attitude is most favorable toward which one of the following?
+   Answer: D. the effects that the Downstate campaign had on public awareness
+   Proof:
+   - Moreover, the Downstate campaign effectively aroused public concern for the previously neglected problem of discrimination in the construction industry.
+   - It also drew public attention, which had hitherto focused on the progress of the civil rights movement primarily in the southern United States, to the additional need to alleviate discrimination in the North.
+
+38. PT-121-S-2-P-1-Q-4
+   File: PT-121-S-2-P-1-Q-04.txt
+   Standard of Proof: Direct tone proof
+   Stem: With respect to the Cold War, the author’s attitude can most accurately be described as
+   Answer: C. convinced that it provides an important example of bipolarity maintaining peace
+   Proof:
+   - This reassessment may also lead us to look at the Cold War in a new light.
+   - In contrast, the principal attributes of bipolar systems—two major members with only one possible axis of conflict locked in a rigid yet usually stable struggle for power—may have created the necessary parameters for general peace in the second half of the twentieth century.
+
+39. PT-121-S-2-P-3-Q-17
+   File: PT-121-S-2-P-3-Q-17.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude toward oscillation can most accurately be characterized as being
+   Answer: A. satisfied that it occurs and that it suggests that neutrinos have mass
+   Proof:
+   - But new evidence suggests that a neutrino does have mass.
+   - This evidence came by way of research findings supporting the existence of a long-theorized but never observed phenomenon called oscillation...
+   - Researchers held that the transformation is possible only if neutrinos also have mass.
+   - (+1 more citation lines in the question file)
+
+40. PT-121-S-3-P-1-Q-1
+   File: PT-121-S-3-P-1-Q-01.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s position regarding the claims attributed to anthropologists in the third paragraph?
+   Answer: A. implicit acceptance
+   Proof:
+   - many anthropologists hypothesize that the paintings were also intended to provide a means of ensuring a steady supply of food.
+   - ...an explanation supported by the fact that many of the pictures show animals with their hearts outlined in red, or with bright, arrow-shaped lines tracing paths to vital organs.
+   - Other paintings clearly show some animals as pregnant, perhaps in an effort to assure plentiful hunting grounds.
+   - (+2 more citation lines in the question file)
+
+41. PT-121-S-3-P-2-Q-12
+   File: PT-121-S-3-P-2-Q-12.txt
+   Standard of Proof: Supported inference
+   Stem: Based on the passage, which one of the following most accurately characterizes the author’s attitude toward Glück’s view of poetry?
+   Answer: D. tacit endorsement
+   Proof:
+   - Glück, however, observes that this ambition, with its insistence on an essentially female perspective, is as limiting as her critics believe the historically male-dominated tradition to be.
+   - She holds that to the extent that there are some gender differences that have been shaped by history, they will emerge in the differing ways that women and men write about the world—indeed, these differences will be revealed with more authority in the absence of conscious intention.
+   - Literature, she maintains, is inescapably historical, and every work, both in what it includes and in what it omits, inevitably speaks of its social and historical context.
+
+42. PT-121-S-3-P-3-Q-15
+   File: PT-121-S-3-P-3-Q-15.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude toward the possibility of courts increasingly assigning ownership rights to native communities is best described as which one of the following?
+   Answer: E. convinced that it will be realized and pleased that it will
+   Proof:
+   - But as their awareness of the inappropriateness of applying the private property concept to all cultural groups grows, Canadian courts will gradually recognize that native Canadians, while they cannot demonstrate ownership as prescribed by the notion of private property, can clearly claim ownership as prescribed by the notion of collective property...
+   - ...and that their claims to movable cultural property should be honored.
+
+43. PT-122-S-3-P-3-Q-18
+   File: PT-122-S-3-P-3-Q-18.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s attitude toward the sources of information mentioned in the first sentence of the passage?
+   Answer: D. confident that they are accurate enough to allow for reliable factual inferences
+   Proof:
+   - Surviving sources of information about women doctors in ancient Greece and Rome are fragmentary...
+   - Yet even from these fragments we can piece together a picture.
+   - The evidence shows that in ancient Greece and Rome there were, in fact, female medical personnel who were the ancient equivalent of what we now call medical doctors.
+   - (+1 more citation lines in the question file)
+
+44. PT-123-S-1-P-3-Q-17
+   File: PT-123-S-1-P-3-Q-17.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude toward the directors of the Brazil project can most accurately be described as
+   Answer: C. critical of their lack of foresight in overemphasizing the importance of reducing short-term costs
+   Proof:
+   - But the project directors rejected the relatively high bids of local Brazilian companies to produce the solar collectors and thus missed an opportunity to stimulate local production.
+   - Consequently, a short-term savings in start-up costs precluded the long-term benefits deriving from the development of local production capacity and technological skill, which eventually would have led to independence from costly foreign expertise.
+   - As a result, participating utilities can generate only enough income to cover operating and maintenance costs, which makes further investment and expansion unlikely.
+
+45. PT-123-S-1-P-4-Q-23
+   File: PT-123-S-1-P-4-Q-23.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following best describes the attitude of the author of the passage toward the “Whig” interpretation of Victorian philanthropy?
+   Answer: A. strong disagreement
+   Proof:
+   - This assumption is typical of the “Whig fallacy”: the tendency to read the past as an inferior prelude to an enlightened present.
+   - This version of history patronizes the Victorians, who were in fact well aware of their vulnerability to charges of condescension and complacency, but were equally well aware of the potential dangers of state-managed charity.
+
+46. PT-123-S-4-P-1-Q-4
+   File: PT-123-S-4-P-1-Q-04.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude toward the deep rift between poetry and fiction in the U.S. can be most accurately described as one of
+   Answer: E. disapproval of attitudes and presuppositions underlying the rift
+   Proof:
+   - Certainly it is true that poetry and fiction are distinct genres, but why have specialized education and literary territoriality resulted from this distinction?
+   - The answer lies perhaps in a widespread attitude in U.S. culture, which often casts a suspicious eye on the generalist.
+   - Fortunately, there are signs that the bias against writers who cross generic boundaries is diminishing;
+   - (+2 more citation lines in the question file)
+
+47. PT-124-S-4-P-2-Q-13
+   File: PT-124-S-4-P-2-Q-13.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following best describes the author’s opinion of most modern academic theories of common law?
+   Answer: B. They lack an essential dimension that would increase their accuracy.
+   Proof:
+   - Yet the academic study of jurisprudence has seldom treated common law as a constantly evolving phenomenon rooted in history; those interpretive theories that do acknowledge the antiquity of common law ignore the practical contemporary significance of its historical forms.
+   - In theoretical terms, modern jurisprudence has consistently treated law as a unified system of rules that can be studied at any given moment in time as a logical whole.
+   - The notion of jurisprudence as a system of norms or principles deemphasizes history in favor of the coherence of a system.
+
+48. PT-125-S-1-P-1-Q-4
+   File: PT-125-S-1-P-1-Q-04.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following words employed by the author in the second paragraph is most indicative of the author’s attitude toward any hypothetical measure a government might enact to deny its citizens access to the Internet?
+   Answer: D. draconian
+   Proof:
+   - In order to deny its citizens access to specific materials, a government would thus have to prevent them from using the Internet altogether.
+   - Such a draconian measure would almost certainly be extremely unpopular, since most affected citizens would probably feel that the benefits of using the Internet decidedly outweigh the risks.
+
+49. PT-125-S-3-P-2-Q-9
+   File: PT-125-S-3-P-2-Q-09.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following best captures the author’s attitude toward Lichtenstein’s work?
+   Answer: E. appreciation for its ability to incorporate both realism and naivete
+   Proof:
+   - Beneath its cartoonish methods, his work displayed an impulse toward realism, an urge to say that what was missing from contemporary painting was the depiction of contemporary life.
+   - But, in contrast to some pop art, Lichtenstein’s work exuded not a jaded cynicism about consumer culture, but a kind of deliberate naivete.
+   - a nostalgia fills his paintings that gives them, for all their surface bravado, an inner sweetness.
+
+50. PT-125-S-3-P-4-Q-22
+   File: PT-125-S-3-P-4-Q-22.txt
+   Standard of Proof: Supported inference
+   Stem: Based on the passage, the author’s attitude toward the discovery presented in the last paragraph is most accurately described as
+   Answer: B. optimism about its potential applications
+   Proof:
+   - This discovery is medically significant because it raises the possibility of the highly selective treatment of certain brain disorders.
+   - pharmacologists may be able to design drugs targeted to specific receptors on defined categories of neurons that will selectively impede or enhance these effects.
+   - Such drugs could potentially help ameliorate any number of debilitating conditions...
+
+51. PT-126-S-2-P-2-Q-10
+   File: PT-126-S-2-P-2-Q-10.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the attitude expressed by the author of passage B toward the overall argument represented by passage A?
+   Answer: E. pointed skepticism
+   Proof:
+   - Consequently, the scientific effort to liberate nature from purple loosestrife has failed to decouple itself from its philosophical origin as an instrument to control nature to the satisfaction of human desires.
+   - However, no bird species other than the canvasback has been identified in the literature as endangered by purple loosestrife.
+   - What is threatened by purple loosestrife is the economics of exploiting such preferred species and the millions of dollars that will be lost to the economies of the United States and Canada from reduced hunting, trapping, and recreation revenues due to a decline in the production of the wetland resource.
+
+52. PT-126-S-2-P-3-Q-21
+   File: PT-126-S-2-P-3-Q-21.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately identifies the attitude shown by the author in the passage toward talk-story?
+   Answer: A. scholarly appreciation for its longstanding artistic sophistication
+   Proof:
+   - But these critics... have overlooked Kingston’s connection to the long Chinese tradition of a highly developed genre of song and spoken narrative known as “talk-story” (gong gu tsai).
+   - The tradition dates back to Sung dynasty (A.D. 970–1279) storytellers in China...
+   - Thus, Chinese immigrants to the U.S. had a fully established, sophisticated oral culture, already ancient and capable of producing masterpieces...
+
+53. PT-127-S-4-P-1-Q-3
+   File: PT-127-S-4-P-1-Q-03.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately characterizes the author’s attitude toward Tutuola’s position in world literature?
+   Answer: A. convinced that Tutuola’s works should be viewed within the context of the African oral tradition
+   Proof:
+   - However, to estimate properly Tutuola’s rightful position in world literature, it is essential to be clear about the genre in which he wrote; literary critics have assumed too facilely that he wrote novels.
+   - Tutuola is not a novelist but a teller of folktales.
+   - The most useful approach to Tutuola’s works, then, is one that regards him as working within the African oral tradition.
+
+54. PT-128-S-1-P-2-Q-8
+   File: PT-128-S-1-P-2-Q-08.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude toward the evolution of bankruptcy law can most accurately be described as
+   Answer: A. approval of changes that have been made to inefficient laws
+   Proof:
+   - It is for this reason that the temptation to return to a focus on punishment of individuals or corporations that become insolvent must be resisted.
+   - Modern bankruptcy laws, in serving the needs of an interdependent society, serve the varied interests of the greatest number of citizens.
+   - But creditors derive little benefit from imprisoned debtors unable to repay even a portion of their debt.
+   - (+1 more citation lines in the question file)
+
+55. PT-128-S-1-P-3-Q-16
+   File: PT-128-S-1-P-3-Q-16.txt
+   Standard of Proof: Supported inference
+   Stem: The author’s attitude toward the studies mentioned in the second sentence of the passage is most likely
+   Answer: A. overall agreement with their conclusion about influences on cultural identity
+   Proof:
+   - A number of recent studies have argued that the anxieties and agendas of the present exert an extraordinary influence on the national identities we construct from the cultural past.
+   - For example, Greek civilization was known originally to have had roots in Egyptian and various other African and Eastern cultures, but some current scholars charge that its identity was revised...
+   - Another example is the use of “tradition” to determine national identity.
+   - (+1 more citation lines in the question file)
+
+56. PT-128-S-1-P-4-Q-25
+   File: PT-128-S-1-P-4-Q-25.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s attitude toward the work of Sommerer and Ott?
+   Answer: E. persuaded of the possibility that numerous unstable systems exist and confident that the existence of numerous unstable systems would call into question one of the foundations of science
+   Proof:
+   - There are presumably other such systems because the equation the physicists used to construct the computer model was literally the first one they attempted, and the likelihood that they chose the only equation that would lead to an unstable system is small.
+   - If other such systems do exist, metaphorical examples of riddled basins of attraction may abound in the failed attempts of scientists to replicate previous experimental results—in which case, scientists would be forced to question one of the basic principles that guide their work.
+
+57. PT-130-S-2-P-1-Q-2
+   File: PT-130-S-2-P-1-Q-02.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude concerning the history of ancient textile production can most accurately be described as
+   Answer: E. satisfied that considerable progress is being made in this field
+   Proof:
+   - Yet despite these obstacles, researchers have learned a great deal about ancient textiles and those who made them, and also about how to piece together a whole picture from many disparate sources of evidence.
+   - Technological advances in the analysis of archaeological remains provide much more information than was previously available, especially about minute remains.
+   - The history of textiles and of the craftswomen who produced them has also advanced on a different front: recreating the actual production of cloth.
+   - (+1 more citation lines in the question file)
+
+58. PT-132-S-1-P-2-Q-13
+   File: PT-132-S-1-P-2-Q-13.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude toward the testimony of medical experts in personal injury cases is most accurately described as
+   Answer: C. acceptance of the accuracy of such testimony accompanied with awareness of the limitations of a presentation that is entirely verbal
+   Proof:
+   - Expert testimony by medical professionals often relies heavily on the use of technical terminology, which those who are not specially trained in the field find difficult to translate mentally into visual imagery.
+   - Since, for most people, adequate understanding of physical data depends on thinking at least partly in visual terms, the clearly presented visual stimulation provided by custom-made illustrations can be quite instructive.
+
+59. PT-132-S-3-P-1-Q-6
+   File: PT-132-S-3-P-1-Q-06.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following aspects of Mphahlele’s work does the author of the passage appear to value most highly?
+   Answer: A. his commitment to communicating social messages
+   Proof:
+   - those who focus on traditional labels inevitably miss the fact that Mphahlele manipulates different prose forms purely in the service of the social message he advances.
+   - But his greater concern is the social vision that pervades his work, though it too is prone to misunderstandings and underappreciation.
+   - As he claims, the whole point of the exercise of writing has nothing to do with classification; in all forms writing is the transmission of ideas, and important ideas at that:
+   - (+1 more citation lines in the question file)
+
+60. PT-132-S-3-P-2-Q-9
+   File: PT-132-S-3-P-2-Q-09.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude toward arguments that might be based on the evidence of the rock mentioned in the passage as being from Mars (second sentence of the last paragraph) can most accurately be described as
+   Answer: B. caution because even if the claims concerning the rock’s origins can be proven, it is unwise to draw general conclusions without copious evidence
+   Proof:
+   - This tiny piece of evidence suggests that at least two planetary systems in the inner solar system experienced bombardment at the same time.
+   - However, to determine the pervasiveness of the LHB, scientists will need to locate many more such rocks and perhaps obtain surface samples from other planets in the inner solar system.
+
+61. PT-135-S-3-P-1-Q-5
+   File: PT-135-S-3-P-1-Q-05.txt
+   Standard of Proof: Supported inference
+   Stem: Based on the passage, the author’s attitude regarding Getting Home Alive, by Aurora Levins Morales and Rosario Morales, can be most accurately described as
+   Answer: B. expectation that readers in general might not readily recognize that there is a clear purpose for its unconventional organization
+   Proof:
+   - While this ordering may seem fragmentary and confusing, it is in fact a fully intentional and carefully designed experiment with literary structure.
+
+62. PT-136-S-1-P-3-Q-20
+   File: PT-136-S-1-P-3-Q-20.txt
+   Standard of Proof: Direct tone proof
+   Stem: Each of the following excerpts from the passage exhibits the author’s attitude toward the novel Jazz EXCEPT:
+   Answer: A. “...whose music is often considered its greatest artistic achievement and one of the greatest contributions to North American art” (third sentence of the first paragraph)
+   Proof:
+   - But while many African American writers have used musicians and music as theme and metaphor in their writing, none had attempted to draw upon a musical genre as the structuring principle for an entire novel until Toni Morrison did so in her 1992 novelJazz...
+   - In Jazz, the connection to music is found not only in the novel’s plot but, more strikingly, in the way in which the story is told.
+   - By simulating the style of a genius of music while exhibiting Morrison’s own linguistic virtuosity, Jazz serves to redefine the very possibilities of narrative point of view.
+
+63. PT-136-S-3-P-4-Q-22
+   File: PT-136-S-3-P-4-Q-22.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s stance regarding the theory of philosophical anarchism can most accurately be described as one of
+   Answer: B. apparent acceptance of some of the basic positions of the theory
+   Proof:
+   - In fact, however, philosophical anarchism does not entail these claims.
+   - In short, it is perfectly consistent with philosophical anarchism to hold that governments vary widely in their moral stature.
+   - Even if governmental laws have no moral force, individuals still have duties to refrain from those actions that constitute crimes in the majority of legal systems (such as murder, assault, theft, and fraud).
+
+64. PT-137-S-1-P-2-Q-9
+   File: PT-137-S-1-P-2-Q-09.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following best expresses the author’s opinion of the way most ethnographic literature deals with women’s views of women?
+   Answer: C. It is unfortunate that most ethnographic literature does not deal with women’s views of women at all.
+   Proof:
+   - It is a salutary shock to realize how much ethnographic literature omits the perspective of women about women.
+
+65. PT-138-S-1-P-3-Q-16
+   File: PT-138-S-1-P-3-Q-16.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude towards the idea that the Pin Factory model should be part of the mainstream of economic thought could most accurately be described as one of
+   Answer: E. receptivity
+   Proof:
+   - Many economists tried repeatedly to bring the Pin Factory into the mainstream of economic thought to reflect the fact that increasing returns obviously characterized many enterprises, such as railroads.
+   - Only since the late 1970s has this “underground river”—a term used to describe the role of increasing returns in economic thought—surfaced into the mainstream of economic thought.
+   - By then, economists had finally found ways to describe the Pin Factory with the rigor needed to make it respectable.
+
+66. PT-139-S-3-P-2-Q-9
+   File: PT-139-S-3-P-2-Q-09.txt
+   Standard of Proof: Supported inference
+   Stem: Based on the passage, which one of the following most accurately describes an attitude displayed by the author toward artists’ uses of old photographic techniques?
+   Answer: B. appreciative understanding of the artists’ aesthetic goals
+   Proof:
+   - ...photographers are...mixing emulsions from nineteenth-century recipes in order to coax new expressive effects from old photographic techniques.
+   - This preoccupation with contingency offers a clue to the deeper motivations of many of the antiquarian avant-gardists.
+   - ...old methods offer the possibility of recovering an intimacy with photographic communication that mass media have all but overwhelmed.
+
+67. PT-139-S-3-P-4-Q-26
+   File: PT-139-S-3-P-4-Q-26.txt
+   Standard of Proof: Direct tone proof
+   Stem: It can be most logically inferred from the passage that the author regards Temple’s hypothesis that the extinction of the dodo was the cause of Calvaria major’s seeming loss of the ability to reproduce as which one of the following?
+   Answer: E. an attempt to explain a state of affairs that did not in fact exist
+   Proof:
+   - Where Temple had found only thirteen specimens of Calvaria major, Wendy Strahm, the foremost expert on the plant ecology of Mauritius, has identified hundreds, many far younger than three centuries.
+   - So Calvaria major seeds have in fact germinated, and the tree’s reproductive cycle has thus continued, since the dodo’s disappearance.
+   - Additional counterevidence comes from horticultural research by Anthony Speke, which shows that while only a minority of unabraded Calvaria major seeds germinate, the number is still probably sufficient to keep this species from becoming extinct.
+
+68. PT-140-S-4-P-1-Q-4
+   File: PT-140-S-4-P-1-Q-04.txt
+   Standard of Proof: Direct tone proof
+   Stem: The passage most strongly suggests that Gilliam’s attitude toward the strictly representational art of his contemporaries is which one of the following?
+   Answer: B. open dissatisfaction
+   Proof:
+   - Gilliam’s participation in the Color Field movement was motivated in part by his reaction to the art of his African American contemporaries...
+   - Gilliam found their approach to be aesthetically conservative: the message was unmistakable, he felt, and there was little room for the expression of subtlety or ambiguity...
+   - Gilliam was impatient with its straightforward, literal approach to representation.
+
+69. PT-140-S-4-P-2-Q-8
+   File: PT-140-S-4-P-2-Q-08.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately expresses how the use of the phrase “skinning animals" in the final sentence of passage A relates to the use of the phrase “fish pulled from the ocean" in the second to last sentence of the third paragraph of passage B?
+   Answer: B. The former refers to an activity in an online game, whereas the latter refers to an analogous activity in the real world.
+   Proof:
+   - since players were killing monsters or skinning animals to sell their pelts, they were, in effect, creating wealth.
+   - Loot acquisitions in game worlds...should be treated like other property that requires effort to obtain, such as fish pulled from the ocean, which is taxed only upon sale.
+
+70. PT-140-S-4-P-2-Q-9
+   File: PT-140-S-4-P-2-Q-09.txt
+   Standard of Proof: Direct tone proof
+   Stem: With regard to their respective attitudes toward commerce in virtual items, passage A differs from passage B in that passage A is more
+   Answer: C. intrigued and excited
+   Proof:
+   - The economist Edward Castronova noticed something curious about the game he played: it had its own economy, a bustling trade in virtual goods.
+   - Things got even more interesting when Castronova learned about the “player auctions.”
+   - As Castronova stared at the auction listings, he recognized with a shock what he was looking at.
+   - (+1 more citation lines in the question file)
+
+71. PT-141-S-1-P-1-Q-5
+   File: PT-141-S-1-P-1-Q-05.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s stance toward the arguments of the strict constructionist Darwinians can most accurately be described as one of
+   Answer: A. emphatic disagreement
+   Proof:
+   - But in fact, nature provides numerous examples of attributes that are not adaptations for reproductive success and of species whose success or failure had little to do with their adaptations.
+   - These alterations often change the attributes of species, but their persistence from one generation to the next is not explainable by natural selection.
+   - Additionally, the study of mass extinctions in paleontology has undermined the strict constructionist claim that natural selection can account for every species’ success or failure.
+
+72. PT-141-S-3-P-3-Q-17
+   File: PT-141-S-3-P-3-Q-17.txt
+   Standard of Proof: Supported inference
+   Stem: The author of passage B would be most likely to regard the conclusion that the Solnick and Hemenway study points to the existence of a “phenomenon of rivalry” (first sentence of the fourth paragraph of passage A) as
+   Answer: A. ungenerous in its view of human nature and mistaken in its interpretation of the evidence
+   Proof:
+   - This theory may sound good and is commonly heard, but it is not the explanation best supported by the evidence.
+   - Rather, the data show that earning more makes people happier because relative prosperity makes them feel that they are successful, that they have created value.
+   - What scholars often portray as an ignoble tendency—wanting to have more than others—is really evidence of a desire to create value.
+
+73. PT-141-S-3-P-4-Q-27
+   File: PT-141-S-3-P-4-Q-27.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s attitude in the passage?
+   Answer: C. skepticism about the reliability of laypeople’s intuitions as a general guide to deciding government risk-management policy
+   Proof:
+   - However, judgments about whether a risk is “involuntary” often stem from confusion and selective attention, and the real reason for such judgments frequently lies in an antecedent judgment of some other kind.
+   - They are thus of little utility in guiding policy decisions.
+   - In short, there is no special magic in notions like “voluntary” and “involuntary.”
+   - (+1 more citation lines in the question file)
+
+74. PT-142-S-3-P-2-Q-13
+   File: PT-142-S-3-P-2-Q-13.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude regarding stealing thunder can most accurately be described as
+   Answer: D. approving of its use on the grounds that its success is experimentally supported and can be psychologically explained
+   Proof:
+   - Although no empirical research has directly tested the effectiveness of stealing thunder in actual trials, studies involving simulated trial situations have suggested that the technique is, in fact, effective, at least within a reasonably broad range of applications.
+   - Lawyers’ commonly held belief in the value of stealing thunder is not only corroborated by those experimental findings; it is also supported by several psychological explanations of why the technique should work.
+
+75. PT-142-S-3-P-3-Q-20
+   File: PT-142-S-3-P-3-Q-20.txt
+   Standard of Proof: Direct tone proof
+   Stem: Passage B differs from passage A in that passage B displays an attitude toward the ideas it discusses that is more
+   Answer: C. detached
+   Proof:
+   - It has long been argued, however, that the concept of free will can coexist with determinism.
+   - In 1954 English philosopher Alfred J. Ayer put forth a theory of “soft determinism.”
+   - He argued, as the philosopher David Hume had two centuries earlier, that even in a deterministic world, a person can still act freely.
+   - (+1 more citation lines in the question file)
+
+76. PT-143-S-2-P-1-Q-2
+   File: PT-143-S-2-P-1-Q-02.txt
+   Standard of Proof: Supported inference
+   Stem: Based on the passage, which one of the following most accurately describes Faye Ginsburg’s stance toward the position attributed to James Weiner?
+   Answer: A. fundamental rejection
+   Proof:
+   - But Weiner’s opponents contend that his views betray a certain nostalgia for the idea of the “noble savage.”
+   - One such opponent, anthropologist Faye Ginsburg...
+   - ...she considers it little more than boilerplate technological determinism to argue that using a video camera makes one unwittingly Western.
+   - (+1 more citation lines in the question file)
+
+77. PT-145-S-1-P-4-Q-22
+   File: PT-145-S-1-P-4-Q-22.txt
+   Standard of Proof: Direct tone proof
+   Stem: The passage most strongly suggests that the author has which one of the following attitudes toward the theory proposed by Steele and his colleagues?
+   Answer: D. doubt concerning its plausibility
+   Proof:
+   - Steele and company believe this is possible, and they have devised an elegant, but speculative, story to describe how it might happen using known biological mechanisms.
+   - But even if the process Steele and his colleagues describe is possible, does it ever actually occur?
+   - Other biologists are not so easily swayed.
+   - (+1 more citation lines in the question file)
+
+78. PT-145-S-3-P-1-Q-3
+   File: PT-145-S-3-P-1-Q-03.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s stance toward the Universal Declaration of Human Rights can best be described as
+   Answer: B. qualified approval
+   Proof:
+   - While the UDHR is in many ways a progressive document, it also has weaknesses, the most regrettable of which is its nonbinding legal status.
+   - Nevertheless, the document has led, even if belatedly, to the creation of legally binding human rights conventions, and it clearly deserves recognition as an international standard-setting piece of work
+
+79. PT-145-S-3-P-3-Q-19
+   File: PT-145-S-3-P-3-Q-19.txt
+   Standard of Proof: Direct tone proof
+   Stem: Passage B differs from passage A in that passage B is more
+   Answer: B. disapproving of the approach taken by others writing on the same general topic
+   Proof:
+   - But these arguments are circular: conscious intention is ruled out a priori and then its absence taken as evidence that animal communication is fundamentally different from human language.
+   - In fact, the narrowing of the perceived gap between animal communication and human language revealed by recent research with chimpanzees and other animals calls into question not only the assumption that the difference between animal and human communication is qualitative rather than merely quantitative, but also the accompanying assumption that animals respond mechanically to stimuli, whereas humans speak with conscious understanding and intent.
+
+80. PT-146-S-4-P-1-Q-2
+   File: PT-146-S-4-P-1-Q-02.txt
+   Standard of Proof: Direct tone proof
+   Stem: The authors of the passages differ in their attitudes towards juries in that the author of passage B is
+   Answer: D. more confident in the ability of juries to exercise the power to nullify in a just manner
+   Proof:
+   - In such cases, the jury can act as a safety valve and use its own discretion to decide, for example, that a case is too trivial or the circumstances too extenuating for the case to result in a conviction.
+   - when a jury nullifies because it believes a law is unjust, it also performs a useful function vis-à-vis the legislature, namely indicating to the legislature that there may be a problem with the law in question.
+   - For a jury to agree to nullify means that the case for nullification must be so compelling that all twelve of the jurors, despite their different backgrounds and perspectives, nevertheless agree that nullification is the appropriate course of action.
+
+81. PT-147-S-2-P-2-Q-12
+   File: PT-147-S-2-P-2-Q-12.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately characterizes the author’s attitude toward Gray’s artistic accomplishments?
+   Answer: A. appreciation of the fact that her aesthetic philosophy, as well as the materials she used and the range of her work, sets her work apart from that of many of her contemporaries
+   Proof:
+   - she became a designer of ornaments, furniture, interiors, and eventually homes.
+   - Gray eschewed the flowing, leafy lines of the Art Nouveau movement that had flourished in Paris, preferring the austere beauty of straight lines and simple forms juxtaposed.
+   - In Paris she studied the Japanese tradition of lacquer...
+   - (+1 more citation lines in the question file)
+
+82. PT-147-S-3-P-2-Q-13
+   File: PT-147-S-3-P-2-Q-13.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following is an element of the author’s attitude toward foreign collectors of terra-cotta sculptures from Djenne-jeno?
+   Answer: B. approval of their aesthetic judgment
+   Proof:
+   - The result was that many fine Djenne-jeno terra-cotta sculptures were illicitly excavated in the 1980s and sold to foreign collectors who rightly admired them.
+
+83. PT-148-S-2-P-1-Q-5
+   File: PT-148-S-2-P-1-Q-05.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s stance toward Rawls’s theory is most accurately described as one of
+   Answer: E. admiration for its ingenuity coupled with misgivings about some of its implications
+   Proof:
+   - Rawls offers an ingenious answer.
+   - Rawls again has a clever approach, beginning with his famous veil of ignorance.
+   - Unfortunately, this is an inherently redistributionist idea, since the primary goods are not natural properties of human beings.
+   - (+1 more citation lines in the question file)
+
+84. PT-148-S-2-P-3-Q-15
+   File: PT-148-S-2-P-3-Q-15.txt
+   Standard of Proof: Direct tone proof
+   Stem: In their attitudes toward stock trades based on inside information, the author of passage A and the author of passage B, respectively, may be most accurately described as
+   Answer: B. positive and negative
+   Proof:
+   - Such actions help ensure that stock prices do reflect a more accurate assessment of all the relevant facts. That’s good for everyone in the stock market.
+   - That unfairly compromises the market: people with inside information can make informed trade decisions far before everyone else, making it difficult or impossible for other people to earn money in the stock market.
+   - This, in turn, causes a loss of investor confidence and could ultimately destroy the market.
+
+85. PT-149-S-2-P-2-Q-11
+   File: PT-149-S-2-P-2-Q-11.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s attitude toward the multiverse hypothesis can best be described as one of
+   Answer: C. open-mindedness
+   Proof:
+   - Do our findings therefore call the concept of the multiverse into question?
+   - I do not think this is necessarily the case for two reasons.
+   - First, certain models of the birth of the universe would lead us to expect the existence of something like the multiverse.
+   - (+1 more citation lines in the question file)
+
+86. PT-150-S-1-P-3-Q-15
+   File: PT-150-S-1-P-3-Q-15.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the stance expressed by the author of passage A toward Borges’s view?
+   Answer: A. complete agreement
+   Proof:
+   - Borges’s interest in this particular genre, of course, inspired a good deal of his own fiction, but his account also draws our attention to an insight into the general nature of literature.
+   - Literature, according to Borges, is “an aesthetic event” that “requires the conjunction of reader and text,” and what the detective story highlights, he suggests, is the way in which the reader forms the conditions of possibility for this “aesthetic event.”
+   - Thus, what unites works belonging to the same genre is the way those works are read, rather than, say, a set of formal elements found within the works.
+
+87. PT-150-S-4-P-4-Q-27
+   File: PT-150-S-4-P-4-Q-27.txt
+   Standard of Proof: Direct tone proof
+   Stem: The stances of the authors of passage A and passage B, respectively, toward independent research on the part of trial judges are most accurately described as
+   Answer: D. qualified approval and explicit noncommitment
+   Proof:
+   - While these concerns have some merit, they do not justify an absolute prohibition of the practice.
+   - Independent research could help judges avoid such errors.
+   - Regardless of what trial courts may do, appellate courts should resist the temptation to conduct their own independent research of scientific literature.
+
+88. PT-151-S-1-P-1-Q-3
+   File: PT-151-S-1-P-1-Q-03.txt
+   Standard of Proof: Phrase-level proof
+   Stem: The author’s attitude towards the reasoning offered in the U.S. Supreme Court’s decision in Shelley v. Kraemer is most accurately reflected in the author’s use of which one of the following phrases?
+   Answer: E. “noxious aspect” (lfirst sentence of the last paragraph)
+   Proof:
+   - ...the stated legal rationale for the Shelley decision has nevertheless proven to be problematic.
+   - Additionally, there is a particularly noxious aspect of the Shelley Court’s analytics—namely, the Court’s conclusion that racially restrictive covenants themselves were perfectly legal.
+   - The legal rationale behind the Shelley decision thus failed to target the genuine problem with racially restrictive covenants: what was troubling was not the covenants’ enforcement but their substantive content.
+
+89. PT-151-S-1-P-2-Q-8
+   File: PT-151-S-1-P-2-Q-08.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s attitude toward the conclusions that Olsen reaches?
+   Answer: B. implicit endorsement
+   Proof:
+   - Through years of excavations and careful analysis of her finds around Krasnyi Yar in Kazakhstan, archaeologist Sandra Olsen has assembled what may be evidence of the earliest known people to have domesticated and ridden horses, a momentous development in human history.
+   - One might suppose, then, that they were wild rather than domesticated animals... However, it is different with horses.
+   - Olsen reasons that if the Botai had indeed begun riding, they would likely have kept males alive to ride.
+   - (+1 more citation lines in the question file)
+
+90. PT-152-S-3-P-1-Q-3
+   File: PT-152-S-3-P-1-Q-03.txt
+   Standard of Proof: Supported inference
+   Stem: Based on the passage, which one of the following most accurately describes the author’s stance regarding Wheeler’s theory?
+   Answer: E. unambiguous rejection of it in light of newly conducted excavations
+   Proof:
+   - But, in addition to a lack of written evidence of such an event in any ancient Indian records, there is no archaeological evidence of battles within the cities.
+   - In fact, new excavations show that Indo-Aryans were not even in the region at the time the massacre was alleged to have taken place.
+
+91. PT-152-S-3-P-3-Q-15
+   File: PT-152-S-3-P-3-Q-15.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the attitude of the author of passage B toward the type of argument presented in passage A?
+   Answer: A. sympathy with the premises, accompanied by doubts about the feasibility of the policy those premises are used to support.
+   Proof:
+   - Criminal behavior may be a matter of biology, not choice, but the public seems unwilling to incorporate this idea into the law.
+   - The blaming urge is deeply rooted in the human psyche, and I have considerable doubt that any amount of scientific evidence can remove it from our criminal justice processes.
+   - My sense is that blaming performs some useful social function, even if it is in some way “false.”
+
+92. PT-152-S-3-P-4-Q-22
+   File: PT-152-S-3-P-4-Q-22.txt
+   Standard of Proof: Direct tone proof
+   Stem: The author’s stance toward Carroll and Chen’s theory is most accurately characterized as that of
+   Answer: D. a sympathetic reporter
+   Proof:
+   - According to physicists Sean Carroll and Jennifer Chen, the Big Bang was not a unique event; events like it happen periodically over an incredibly vast time scale.
+   - Carroll and Chen’s innovation is to argue that the most common initial condition is actually likely to resemble cold, empty space—not an obviously favorable starting point for the onset of inflation.
+   - On this view, while the initial state that produced our universe would appear to be, taken by itself, a highly improbable one, in the vastness of the multiverse the creation of our universe is not that unlikely.
+
+93. PT-153-S-1-P-4-Q-24
+   File: PT-153-S-1-P-4-Q-24.txt
+   Standard of Proof: Direct tone proof
+   Stem: The attitude displayed in passage A toward blues musicians and the attitude displayed in passage B toward griots can both be characterized as
+   Answer: E. respect for the musicians’ artistry
+   Proof:
+   - And here we encounter the fundamental tragedy of the blues and one of the sources of its unparalleled symbolic power.
+   - Blues music reflected this dynamic, gave it powerful poetic expression.
+   - Griots alone specialized in the spoken word.
+   - (+1 more citation lines in the question file)
+
+94. PT-153-S-4-P-4-Q-23
+   File: PT-153-S-4-P-4-Q-23.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately characterizes the author’s attitude toward the “nostalgia for determinism” mentioned in the first sentence of the final paragraph?
+   Answer: C. sympathetic but mindful of its inevitable disappointment
+   Proof:
+   - But while we no longer believe in the deterministic explanations of history offered by grand theories, we still long for the cognitive satisfaction provided by a belief in historical inevitability.
+   - This leaves us in a curious state of intellectual discomfort.
+   - But perhaps this discomfort is no bad thing, for it might finally persuade us to relinquish the vain hope for inevitability and hence restore us to the contemplation of historical contingency...
+
+95. PT-154-S-3-P-1-Q-4
+   File: PT-154-S-3-P-1-Q-04.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s attitude regarding Great Zimbabwe’s cattle economy?
+   Answer: E. appreciation of its complexity and extensive integration into various facets of social life
+   Proof:
+   - The alternative agricultural system that Great Zimbabwe practiced was a complex cattle economy that exploited enormous areas of land for grazing.
+   - Because cattle exchange was an essential element in marriage contracts, the power of the royal class reached deep into everyone’s lives.
+   - It was through its use of cattle as a powerful incentive to laborers that royalty was able to muster the human resources necessary for large-scale gold mining.
+
+96. PT-155-S-3-P-2-Q-14
+   File: PT-155-S-3-P-2-Q-14.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately characterizes the author’s attitude toward the Draft Articles?
+   Answer: E. approval of the general goals that they attempt to accomplish
+   Proof:
+   - Though the Draft Articles are a significant step forward in the formulation of legal principles for the protection and regulation of international rivers, they are inadequate because they do not provide satisfactory ways of dealing with possible future environmental changes.
+   - They prescribe that treaties should uphold several broad precepts: that one nation’s use of a watercourse should not cause appreciable harm to another nation, that every nation’s use of the watercourse should be equitable and reasonable, and that nations should work for the protection of ecosystems.
+
+97. PT-156-S-1-P-1-Q-2
+   File: PT-156-S-1-P-1-Q-02.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes the author’s attitude toward the value of heirloom crops?
+   Answer: C. optimism that the agricultural knowledge associated with these crops will help bolster the genetic base of the continent’s food crops
+   Proof:
+   - As a possible solution, agricultural researchers, development experts, and policy makers are searching for ways to conserve the wealth of genetic information contained in crops known as heirloom varieties...
+   - The store of agricultural knowledge associated with the cultivation of these varieties has only recently been recognized as a valuable resource by crop geneticists...
+   - These recent developments have made clear that immediate steps must be taken to preserve indigenous knowledge systems and integrate them with programs for the conservation of diverse crop genetics, thus bolstering the long-term sustainability of the continent’s agricultural systems.
+
+98. PT-157-S-1-P-4-Q-22
+   File: PT-157-S-1-P-4-Q-22.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately characterizes the author’s attitude toward reductions in domestic spending in response to the need to repay international debt?
+   Answer: E. skepticism about whether their consequences are predominantly negative
+   Proof:
+   - while debt-saddled nations might shift money away from programs designed to enhance quality of life, it is just as likely that they would shift the money from plans that, if implemented, would have a negative impact on the environment.
+   - For example, they might abandon plans to build new dams or roads, or eliminate subsidies that promote fertilizer or pesticide use.
+   - The extent, then, to which a nation’s quality of life is connected to the size of its international debt must be considered unknown.
+
+99. PT-157-S-4-P-1-Q-2
+   File: PT-157-S-4-P-1-Q-02.txt
+   Standard of Proof: Direct tone proof
+   Stem: Which one of the following most accurately describes Gordy’s attitude concerning the potential for Motown’s recordings to have widespread appeal?
+   Answer: D. confidence rooted in firm personal conviction
+   Proof:
+   - Gordy’s entrepreneurial skills and his belief in economic independence played a great role in Motown’s success...
+   - He rejected the practice that was common in the late 1950s and early 1960s of having established recording stars remake songs originally produced within and for limited markets.
+   - Gordy insisted that the musical performances recorded by Motown artists would appeal not just to African American audiences, but to a much wider market...
+   - (+1 more citation lines in the question file)
+
+100. PT-158-S-1-P-3-Q-18
+   File: PT-158-S-1-P-3-Q-18.txt
+   Standard of Proof: Supported inference
+   Stem: It can be inferred that the author of passage B regards the historical approach of the author of passage A as
+   Answer: D. simplistic
+   Proof:
+   - What in moral terms is a matter of honesty or dishonesty—plagiarism being dishonest—is instead reduced to “the cultural location of the text and the position of the author.”
+   - Ricks is rightly dismissive of the postmodern reduction of moral standards to expressions of power.
+   - And it is also true that there has been some shoddy scholarship that anachronistically projects modern-day ideologies having to do with gender, race, or class onto historically remote controversies.

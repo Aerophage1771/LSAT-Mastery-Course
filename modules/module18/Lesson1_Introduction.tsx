@@ -1,0 +1,84 @@
+import { Lesson } from '../../types';
+
+export const Lesson1_Introduction: Lesson = {
+  id: '18-1',
+  title: 'MODULE 18: Must Be False',
+  content: [
+    {
+      "type": "h2",
+      "text": "MODULE 18: Must Be False"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Question Goal**"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Find the one answer choice that is 100% contradicted by the information in the stimulus.** In other words, which statement is logically impossible if the stimulus is true?"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Introduction**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Must Be False questions provide a passage containing a set of facts or rules. You must accept everything in that passage as 100% true for the duration of the question. Your task is to examine five answer choices and find the one statement that **cannot possibly be true** if the information in the passage is also true."
+    },
+    {
+      "type": "paragraph",
+      "text": "This question type is a direct test of your ability to understand and apply rules. It trains you to spot direct contradictions, which is essential for evaluating arguments, finding flaws, and understanding what is logically required or forbidden by a set of premises."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Common Question Stems**"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can recognize these questions by their focus on finding a statement that is impossible, inconsistent, or in conflict with the stimulus. Typical phrasing includes:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "\"If the statements above are true, each of the following could be true EXCEPT:\"",
+        "\"If the statements above are true, then which one of the following CANNOT be true?\"",
+        "\"The claims made above are incompatible with which one of the following?\"",
+        "\"Which one of the following situations violates the principle described?\"",
+        "\"The facts described above provide the strongest evidence against which one of the following?\""
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "**Core Concepts**"
+    },
+    {
+      "type": "paragraph",
+      "text": "**1. The Stimulus is the Rule Book**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Think of the passage as a temporary set of rules for a game. For this question only, whatever the passage says is an absolute fact. Your job is not to question the rules or bring in outside knowledge; it is simply to enforce them. If a rule says, \"All cars are blue,\" you must accept it as true."
+    },
+    {
+      "type": "paragraph",
+      "text": "**2. The Contradiction Test**"
+    },
+    {
+      "type": "paragraph",
+      "text": "The correct answer is not something that is merely unlikely or unsupported. It must be something that is **logically impossible**. A statement is impossible if it directly contradicts one of the rules in the passage, or a conclusion that follows necessarily from combining those rules."
+    },
+    {
+      "type": "list",
+      "items": [
+        "*Example:* If the stimulus states, \"All students in the club are over 18,\" and \"Maria is in the club,\" then the statement \"Maria is 17 years old\" **must be false.** It creates a direct, unavoidable contradiction."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "**3. Eliminating Possibilities**"
+    },
+    {
+      "type": "paragraph",
+      "text": "The four incorrect answer choices are all statements that are **logically possible**. A statement is possible if it does not break any of the rules in the passage. A possible statement could be something the passage suggests is true, something that must be true, or simply something the passage doesn't mention at all (and therefore doesn't forbid). Your job is to eliminate these four possible statements to find the one and only statement that is impossible."
+    }
+  ],
+};

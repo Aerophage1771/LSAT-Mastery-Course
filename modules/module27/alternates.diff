@@ -1,0 +1,50 @@
+--- Module 27: Application -- RC Question Type ---
+--- Website lessons: rc/27-1.tsx through rc/27-2.tsx ---
+
+{ "type": "diff-note", "text": "Module-wide: No practice questions in either lesson. The checklist method in 27-2 is the standout teaching tool but needs a worked example. Significant structural overlap with Module 26 (Analogy) -- the distinction should be made explicit.", "variant": "comment" }
+
+=== Lesson 27-1 (Introduction) ===
+
+ {"type":"h3","text":"Germaine's Guide to RC Application Questions"}
+ {"type":"h4","text":"What's this question asking?"}
+ {"type":"paragraph","text":"Application questions ask you to take a rule, standard, or theory explained in the passage and correctly apply it to a brand new situation..."}
+ {"type":"list","items":["Isolate the specific principle or standard from the text.","Understand the conditions required for the principle to apply.","Find the one hypothetical scenario in the answer choices that meets those exact conditions."]}
++{{+**How This Differs From Analogy:** Analogy questions ask you to find a parallel *structure*. Application questions ask you to correctly *use* a rule. In Analogy, you abstract the logic; in Application, you build a checklist from the rule's conditions and test each scenario against it.+}}
+ {"type":"hr"}
+ {"type":"h3","text":"Stem Identification: How to Spot an Application Question"}
+-{"type":"paragraph","text":"Application questions ask you to take a rule, principle, theory, or standard explained in the passage and use it in a new, hypothetical context..."}
++{{~change~}} This intro paragraph restates the opening verbatim. Cut it.
+ {"type":"breakdown","labels":{"title":"Category","text":"Examples & Keywords"},"items":[
+   {"title":"Applying a Principle or Definition","text":"...","badge":"Standard","badgeColor":"indigo"},
+   {"title":"Predicting Hypothetical Results","text":"...","badge":"Prediction","badgeColor":"blue"}
+ ]}
+ {"type":"callout","title":"Overarching Takeaway","variant":"summary","text":"...You are applying the passage's logic, not your own."}
+ {"type":"h3","text":"The Importance of Application Questions"}
+ {"type":"paragraph","text":"Application questions appear 73 times among the released LSATs, accounting for roughly 3.5%..."}
+
+{ "type": "diff-note", "text": "The two stem categories are clean. The 'Predicting Hypothetical Results' category is especially useful since many students don't recognize these as Application questions.", "variant": "comment" }
+
+=== Lesson 27-2 (Step-by-Step Approach) ===
+
+ {"type":"h3","text":"Step-by-Step Approach"}
+ {"type":"h4","text":"Step 1: Locate the Principle in the Passage"}
+ {"type":"paragraph","text":"The question stem will almost always direct you to a specific idea..."}
+ {"type":"h4","text":"Step 2: Isolate the Principle and Its Conditions"}
+ {"type":"paragraph","text":"Don't just read the principle—dissect it. Your goal is to create a simple checklist..."}
+ {"type":"list","items":["**Example:** If the passage defines a specific type of legal fraud as \"an intentional misrepresentation of a material fact,\" your checklist would be:\n1. Was there a misrepresentation?\n2. Was it intentional?\n3. Was the fact material?"]}
+
+{ "type": "diff-note", "text": "The legal fraud checklist example is the module's best teaching moment. It makes the abstract 'create a checklist' instruction concrete and memorable.", "variant": "comment" }
+
+ {"type":"h4","text":"Step 3: Apply the Checklist to Each Answer Choice"}
+ {"type":"paragraph","text":"Treat each answer choice as a separate case study...If a scenario fails even one condition, eliminate it immediately."}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
++{{+Add a worked example here showing the checklist applied to 3 answer choices: one passing all conditions (correct), one failing one condition, and one that introduces an extra condition not in the principle.+}}
+ {"type":"hr"}
+ {"type":"h3","text":"If You Get Stuck Between Two Choices..."}
+ {"type":"h4","text":"Tie-Breaker #1: The Strict Re-Check"}
+ {"type":"paragraph","text":"...Go back to the passage and re-read the sentence(s) describing the rule, paying extremely close attention to every word..."}
+ {"type":"h4","text":"Tie-Breaker #2: Focus on the Difference"}
+ {"type":"paragraph","text":"...ask, \"What is the single key difference between these two answer choices?\"..."}
++{{!note!}} Tie-Breaker #2 is nearly identical to the same section in Module 26. Consider adding an Application-specific example to differentiate it.
+
+{ "type": "diff-note", "text": "The module is structurally sound. The only significant additions needed are: (1) a question-card with worked example, (2) the Application vs. Analogy distinction callout, and (3) common trap patterns (condition-failure, wrong-principle, sufficient-vs-necessary confusion).", "variant": "comment" }

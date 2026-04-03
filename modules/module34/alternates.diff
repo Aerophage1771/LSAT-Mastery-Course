@@ -1,0 +1,35 @@
+# Module 34: Phrase Meaning — Diff Annotations
+# Source: website lessons rc/34-1.tsx, rc/34-2.tsx
+
+{ "type": "diff-note", "text": "Module 34 has zero practice questions across both lessons. The substitution method (34-2 Step 3) is the module's strongest technique but is never demonstrated on a real question.", "variant": "comment" }
+
+## Lesson 34-1: Introduction (rc/34-1.tsx)
+
+### After the four-item skill list:
+{{+Add a "Common Trap" callout: "The most frequent wrong answer on Phrase Meaning questions is the dictionary definition -- a meaning that is technically correct in everyday usage but ignores the specific way the author uses the word in context. Always prioritize the passage context over general knowledge."+}}
+
+### The "identifying instances where the author uses a common word in a technical, metaphorical, or specialized way" bullet:
+{{~Change: Promote this from a bullet in a list to a standalone callout or example. This is one of the LSAT's favorite testing patterns and deserves more visibility.~}}
+
+### After the stem identification breakdown:
+{{+Add a brief exercise: present 3 question stems and ask students to categorize each as Direct Definition, Contextual Substitution, Rationale, or Exemplification.+}}
+
+{ "type": "diff-note", "text": "The four-category stem breakdown is the richest in the RC modules and should be preserved as-is. At 106 appearances, this question type warrants the depth.", "variant": "comment" }
+
+## Lesson 34-2: Step-by-Step Approach (rc/34-2.tsx)
+
+### Before any worked analysis section:
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the "qualified approval" example in Step 2:
+{{+Extend this example into a complete worked question: show 5 answer choices and demonstrate the substitution technique from Step 3 applied to each one, eliminating wrong answers and confirming the correct one.+}}
+
+### After Step 3:
+{{+Add a brief demonstration: show one wrong answer being eliminated via the substitution test. Example: "Substituting 'absolute' for 'qualified' creates 'The theory was met with absolute approval,' which reverses the author's meaning. Eliminated."+}}
+
+### After the tie-breaker section:
+{{+Add a complete question-card with a real PT question so students can practice the full 3-step method independently.+}}
+
+{ "type": "diff-note", "text": "The 'Why This Word?' tie-breaker is one of the best teaching moments in the RC modules. It teaches authorial intent, which transfers to multiple question types.", "variant": "comment" }
+
+{{!note: The substitution method is concrete and highly teachable -- it should be the centerpiece of any future expansion of this module.!}}

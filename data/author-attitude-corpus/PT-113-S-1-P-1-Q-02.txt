@@ -1,0 +1,40 @@
+Question ID: PT-113-S-1-P-1-Q-2
+PrepTest: 113
+Section: 1 (Reading Comprehension)
+Passage Number: 1
+Question Number: 2.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the author’s attitude toward the unanimity requirement?
+
+Passage:
+Passage A:
+The jury trial is one of the handful of democratic institutions that allow individual citizens, rather than the government, to make important societal decisions. A crucial component of the jury trial, at least in serious criminal cases, is the rule that verdicts be unanimous among the jurors (usually twelve in number). Under this requirement, dissenting jurors must either be convinced of the rightness of the prevailing opinion, or, conversely, persuade the other jurors to change their minds. In either instance, the unanimity requirement compels the jury to deliberate fully and truly before reaching its verdict. Critics of the unanimity requirement, however, see it as a costly relic that extends the deliberation process and sometimes, in a hung (i.e., deadlocked) jury, brings it to a halt at the hands of a single, recalcitrant juror, forcing the judge to order a retrial. Some of these critics recommend reducing verdict requirements to something less than unanimity, so that one or even two dissenting jurors will not be able to force a retrial.
+But the material costs of hung juries do not warrant losing the benefit to society of the unanimous verdict. Statistically, jury trials are relatively rare; the vast majority of defendants do not have the option of a jury trial or elect to have a trial without a jury—or they plead guilty to the original or a reduced charge. And the incidence of hung juries is only a small fraction of the already small fraction of cases that receive a jury trial. Furthermore, that juries occasionally deadlock does not demonstrate a flaw in the criminal justice system, but rather suggests that jurors are conscientiously doing the job they have been asked to do. Hung juries usually occur when the case is very close—that is, when neither side has presented completely convincing evidence—and although the unanimity requirement may sometimes lead to inconclusive outcomes, a hung jury is certainly preferable to an unjust verdict.
+Requiring unanimity provides a better chance that a trial, and thus a verdict, will be fair. Innocent people are already occasionally convicted—perhaps in some cases because jurors presume that anyone who has been brought to trial is probably guilty—and eliminating the unanimity requirement would only increase the opportunity for such mistakes. Furthermore, if a juror’s dissenting opinion can easily be dismissed, an important and necessary part of the deliberation process will be lost, for effective deliberation requires that each juror’s opinion be given a fair hearing. Only then can the verdict reached by the jury be said to represent all of its members, and if even one juror has doubts that are dismissed out of hand, society’s confidence that a proper verdict has been reached would be undermined.
+
+Toolkit Context:
+The author presents a debate about the rule that jury verdicts must be unanimous. After introducing the critics' view that the rule is costly and inefficient, the author spends the rest of the passage defending it. The author argues that the benefits of unanimity, such as ensuring fair trials and full deliberation, far outweigh the costs.
+
+Answer Choices:
+A. cursory appreciation
+B. neutral interest
+C. cautious endorsement
+D. firm support [CORRECT]
+E. unreasoned reverence
+
+Credited Answer: D. firm support
+
+Correct Answer Explanation:
+This choice is correct because the author's arguments consistently and strongly defend the unanimity requirement. The author directly refutes criticisms and builds a powerful case for why the rule is a necessary part of the justice system, using words that show conviction rather than caution or neutrality.
+
+Corresponding Proof:
+- But the material costs of hung juries do not warrant losing the benefit to society of the unanimous verdict.
+- Furthermore, that juries occasionally deadlock does not demonstrate a flaw in the criminal justice system, but rather suggests that jurors are conscientiously doing the job they have been asked to do.
+- ...a hung jury is certainly preferable to an unjust verdict.
+- Requiring unanimity provides a better chance that a trial, and thus a verdict, will be fair.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

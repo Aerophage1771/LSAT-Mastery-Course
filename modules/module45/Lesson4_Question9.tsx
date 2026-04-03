@@ -1,0 +1,127 @@
+import { Lesson } from '../../types';
+
+const passageText = `In filmmaker Woody Allen’s Deconstructing Harry, the writer Harry Block is presented as extremely neurotic and narcissistic. Block uses his experiences as fodder for his work, no matter how embarrassing the result may be for the other people in his life. And while Allen exaggerates Block’s narcissism for comic effect, the effect is not simply comic: the film is emblematic of Allen’s career precisely because of its extravagantly exaggerated censure of a life dedicated to and obsessed with art. Deconstructing Harry may be the most unequivocally peevish of Allen’s depictions of artists, but it is less a new direction for Allen than a concentrated reprise of a theme present throughout his career.
+For instance, a film producer in Stardust Memories, Allen’s sourest portrait of artists before Harry, articulates a particularly cynical view of cinematic art after a screening of a film-in-progress by Stardust Memories’ main character, Sandy Bates. The producer says of Bates, “His insights are shallow and morbid. I’ve seen it all before. They try to document their private suffering and fob it off as art.” The producer, like all the figures in this film, often seems less a distinct individual than a projection of Bates’s personal self-recriminations. This effectively reinforces the charge of solipsism with which Bates, the unstable and demoralized artist, indicts himself. Indeed, the possibility that artists are merely “documenting their private suffering and fobbing it off as art” appears sufficiently often in Allen’s films to seem an unresolved personal issue.
+In Manhattan, the ex-wife of a television writer and aspiring novelist offers a denigratory take on the artistic enterprise that is similar to the producer’s in Stardust Memories. Her book documenting the collapse of her marriage punctures her ex-husband’s artistic pretensions by revealing that he “longed to be an artist but balked at the necessary sacrifices. In his most private moments, he spoke of the fear of death, which he elevated to tragic heights when, in fact, it was mere narcissism.”
+It is also significant that in Allen’s films, the less artistic the characters, the more likely their narrative is to result in a happy ending. Thus, the filmmaker in Crimes and Misdemeanors, the novelist in Husbands and Wives, and the screenwriter in Celebrity all wind up desolate and solitary, largely because of the egocentric and exploitative attitudes embodied in their art and the effects of those attitudes on those around them. On the other hand, the unpretentious, thoroughly inartistic title character in Zelig dies an untroubled, even happy, death, only slightly compromised by his failure to finish reading Moby-Dick. And the title character and talent agent in Broadway Danny Rose is the beneficiary of the most gratifying resolution Allen has scripted, primarily due to altruistic devotion to his utterly talentless nightclub performers.`;
+
+export const Lesson4_Question9: Lesson = {
+      id: "45-4",
+      title: "Question 9: Paragraph Function",
+      content: [
+    { type: 'question-passage-card', id: 'PT-128-S-4-P-2-Q-9', questionType: 'Paragraph Function', passageTitle: 'Woody Allen Films', passage: passageText, question: `Which one of the following most accurately describes the main function of the third paragraph?`, options: [
+          "(A) present an exception to the general thesis stated in the first paragraph [0.0%]",
+          "(B) qualify an assertion made in the first paragraph [11.0%]",
+          "(C) provide an illustration that is contrasted to the illustration given in the second paragraph [4.0%]",
+          "(D) provide additional support for a contention made in the second paragraph [84.0%] (Correct)",
+          "(E) present a contention that will be argued for in the final paragraph [2.0%]"
+        ] },        { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-2-Q-9" },
+    { type: 'callout', variant: 'tip', title: 'Approach: Paragraph Function', text: 'Determine the paragraph\\u0027s position and ask what it accomplishes relative to surrounding paragraphs.' },
+        { type: 'paragraph', text: "This is a structural question asking for the \"main function of the third paragraph.\" The task is to understand the role this paragraph plays in the author's overall argument, not just what it says, but *why* the author includes it and how it relates to the paragraphs around it." },
+        { type: 'paragraph', text: "Let's trace the argument's flow:" },
+        { type: 'list', items: [
+          "**Paragraph 1:** Establishes the main thesis: The critique of the narcissistic artist is a recurring theme in Allen's work.",
+          "**Paragraph 2:** Provides the first major piece of evidence from the film *Stardust Memories*. It ends with a specific contention: the idea of artists \"fobbing it off as art\" appears \"sufficiently often\" in Allen's films.",
+          "**Paragraph 3:** Introduces another example from the film *Manhattan*. Crucially, the author explicitly links this example to the previous one, stating that the critique is \"similar to the producer's in *Stardust Memories*.\""
+        ] },
+        { type: 'callout', title: "Prediction", variant: "tip", text: "The third paragraph does not introduce a new argument or a new thesis. It provides another piece of evidence to strengthen the point established in the second paragraph. The linking phrase \"similar to the producer's in *Stardust Memories*\" is a dead giveaway: the author is building on the same point, not pivoting to a new one. Look for an answer that describes the paragraph as *additional support* for the second paragraph's contention." },
+        { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
+          { title: "(A) present an exception to the general thesis stated in the first paragraph", text: "This is incorrect. The example from *Manhattan* confirms the thesis; it is not an exception.", badge: 'Focus on Detail', badgeColor: "red" },
+          { title: "(B) qualify an assertion made in the first paragraph", text: "To \"qualify\" is to limit or place conditions on an assertion. The third paragraph strengthens the assertion by adding more evidence; it does not qualify or limit it.", badge: 'Wrong Function', badgeColor: "red" },
+          { title: "(C) provide an illustration that is contrasted to the illustration given in the second paragraph", text: "This is directly contradicted by the text, which explicitly states the illustration from *Manhattan* is \"similar to\" the one from *Stardust Memories*.", badge: 'Wrong Paragraph', badgeColor: "red" },
+          { title: "(D) provide additional support for a contention made in the second paragraph", text: "This accurately describes the paragraph's function. It provides \"additional support\" (the *Manhattan* example) for the \"contention made in the second paragraph\" (that this theme appears \"sufficiently often\").", badge: "Correct", badgeColor: "green" },
+          { title: "(E) present a contention that will be argued for in the final paragraph", text: "This is incorrect. The third paragraph is backward-looking, reinforcing the point from paragraph two. The final paragraph shifts to a new type of evidence (narrative outcomes) that is not directly set up by the content of paragraph three.", badge: 'Content Dump', badgeColor: "red" }
+        ]}
+    ],
+  alternates: {
+    diff: {
+      label: 'Diff-Highlighted',
+      content: [
+        {
+          "type": "accordion",
+          "title": "Read Passage",
+          "content": "In filmmaker Woody Allen’s Deconstructing Harry, the writer Harry Block is presented as extremely neurotic and narcissistic. Block uses his experiences as fodder for his work, no matter how embarrassing the result may be for the other people in his life. And while Allen exaggerates Block’s narcissism for comic effect, the effect is not simply comic: the film is emblematic of Allen’s career precisely because of its extravagantly exaggerated censure of a life dedicated to and obsessed with art. Deconstructing Harry may be the most unequivocally peevish of Allen’s depictions of artists, but it is less a new direction for Allen than a concentrated reprise of a theme present throughout his career.\nFor instance, a film producer in Stardust Memories, Allen’s sourest portrait of artists before Harry, articulates a particularly cynical view of cinematic art after a screening of a film-in-progress by Stardust Memories’ main character, Sandy Bates. The producer says of Bates, “His insights are shallow and morbid. I’ve seen it all before. They try to document their private suffering and fob it off as art.” The producer, like all the figures in this film, often seems less a distinct individual than a projection of Bates’s personal self-recriminations. This effectively reinforces the charge of solipsism with which Bates, the unstable and demoralized artist, indicts himself. Indeed, the possibility that artists are merely “documenting their private suffering and fobbing it off as art” appears sufficiently often in Allen’s films to seem an unresolved personal issue.\nIn Manhattan, the ex-wife of a television writer and aspiring novelist offers a denigratory take on the artistic enterprise that is similar to the producer’s in Stardust Memories. Her book documenting the collapse of her marriage punctures her ex-husband’s artistic pretensions by revealing that he “longed to be an artist but balked at the necessary sacrifices. In his most private moments, he spoke of the fear of death, which he elevated to tragic heights when, in fact, it was mere narcissism.”\nIt is also significant that in Allen’s films, the less artistic the characters, the more likely their narrative is to result in a happy ending. Thus, the filmmaker in Crimes and Misdemeanors, the novelist in Husbands and Wives, and the screenwriter in Celebrity all wind up desolate and solitary, largely because of the egocentric and exploitative attitudes embodied in their art and the effects of those attitudes on those around them. On the other hand, the unpretentious, thoroughly inartistic title character in Zelig dies an untroubled, even happy, death, only slightly compromised by his failure to finish reading Moby-Dick. And the title character and talent agent in Broadway Danny Rose is the beneficiary of the most gratifying resolution Allen has scripted, primarily due to altruistic devotion to his utterly talentless nightclub performers."
+        },
+        {
+          "type": "h3",
+          "text": "Question Breakdown: PT-128-S-4-P-2-Q-9"
+        },
+        {
+          "type": "blockquote",
+          "text": "**Question:** Which one of the following most accurately describes the main function of the third paragraph?"
+        },
+        {
+          "type": "options",
+          "items": [
+            "(A) present an exception to the general thesis stated in the first paragraph [0.0%]",
+            "(B) qualify an assertion made in the first paragraph [11.0%]",
+            "(C) provide an illustration that is contrasted to the illustration given in the second paragraph [4.0%]",
+            "(D) provide additional support for a contention made in the second paragraph [84.0%] (Correct)",
+            "(E) present a contention that will be argued for in the final paragraph [2.0%]"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This is a structural question asking for the \"main function of the third paragraph.\" The task is to understand the role this paragraph plays in the author's overall argument, not just what it says, but *why* the author includes it and how it relates to the paragraphs around it."
+        },
+        {
+          "type": "paragraph",
+          "text": "Let's trace the argument's flow:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Paragraph 1:** Establishes the main thesis: The critique of the narcissistic artist is a recurring theme in Allen's work.",
+            "**Paragraph 2:** Provides the first major piece of evidence from the film *Stardust Memories*. It ends with a specific contention: the idea of artists \"fobbing it off as art\" appears \"sufficiently often\" in Allen's films.",
+            "**Paragraph 3:** Introduces another example from the film *Manhattan*. Crucially, the author explicitly links this example to the previous one, stating that the critique is \"similar to the producer's in *Stardust Memories*.\""
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Prediction",
+          "variant": "tip",
+          "text": "The third paragraph does not introduce a new argument or a new thesis. It provides another piece of evidence to strengthen the point established in the second paragraph. The linking phrase \"similar to the producer's in *Stardust Memories*\" is a dead giveaway: the author is building on the same point, not pivoting to a new one. Look for an answer that describes the paragraph as *additional support* for the second paragraph's contention."
+        },
+        {
+          "type": "breakdown",
+          "labels": {
+            "title": "Option",
+            "text": "Analysis"
+          },
+          "items": [
+            {
+              "title": "(A) present an exception to the general thesis stated in the first paragraph",
+              "text": "This is incorrect. The example from *Manhattan* confirms the thesis; it is not an exception.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            },
+            {
+              "title": "(B) qualify an assertion made in the first paragraph",
+              "text": "To \"qualify\" is to limit or place conditions on an assertion. The third paragraph strengthens the assertion by adding more evidence; it does not qualify or limit it.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            },
+            {
+              "title": "(C) provide an illustration that is contrasted to the illustration given in the second paragraph",
+              "text": "This is directly contradicted by the text, which explicitly states the illustration from *Manhattan* is \"similar to\" the one from *Stardust Memories*.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            },
+            {
+              "title": "(D) provide additional support for a contention made in the second paragraph",
+              "text": "This accurately describes the paragraph's function. It provides \"additional support\" (the *Manhattan* example) for the \"contention made in the second paragraph\" (that this theme appears \"sufficiently often\").",
+              "badge": "Correct",
+              "badgeColor": "green"
+            },
+            {
+              "title": "(E) present a contention that will be argued for in the final paragraph",
+              "text": "This is incorrect. The third paragraph is backward-looking, reinforcing the point from paragraph two. The final paragraph shifts to a new type of evidence (narrative outcomes) that is not directly set up by the content of paragraph three.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            }
+          ]
+        }
+      ],
+    },
+  },
+};

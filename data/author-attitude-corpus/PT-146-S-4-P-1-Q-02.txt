@@ -1,0 +1,61 @@
+Question ID: PT-146-S-4-P-1-Q-2
+PrepTest: 146
+Section: 4 (Reading Comprehension)
+Passage Number: 1
+Question Number: 2.
+Question Category: Author Attitude
+
+Question Stem:
+The authors of the passages differ in their attitudes towards juries in that the author of passage B is
+
+Passage:
+Passage A:
+Jury nullification occurs when the jury acquits the defendant in a criminal case in disregard of the judge’s instructions and contrary to the jury’s findings of fact. Sometimes a jury’s nullification decision is based on mercy for the defendant, sometimes on dislike for the victim. Juries have also sometimes nullified when the defendant engaged in civil disobedience and the jurors agreed with the actions. While instances of jury nullification are probably few, the problems created by the jury’s power to nullify are great.
+
+
+First, we do not know how the power is used. Because juries are not required to and typically do not explain their verdicts, it is impossible to say how often nullification occurs. This means that we also do not know how often juries use this power for evil ends rather than for good ones.
+
+
+Second, juries often have insufficient evidence to make a reasoned nullification decision. Evidence that might inform such a decision, such as a defendant’s past brushes with the law, usually is not admitted at trial because it is irrelevant to the technical question of guilt or innocence.
+
+
+Third, jurors are not legislators. We have an elected legislature to pass laws and elected or appointed judges to interpret them. The jury is unelected, is unaccountable, and has no obligation to think through the effect an acquittal will have on others.
+
+
+Reasonable people can disagree on the proper reach of the criminal laws. Nevertheless, the place for them to disagree is in public, where the reasons for revisions of the laws can be scrutinized and debated.
+
+Passage B:
+Police and prosecutors have discretion to decide which violations of the law to pursue and which to overlook. Even with such discretion, however, these officials can sometimes be overzealous. In such cases, the jury can act as a safety valve and use its own discretion to decide, for example, that a case is too trivial or the circumstances too extenuating for the case to result in a conviction.
+
+
+When a jury nullifies because it does not believe a law should be applied to a particular defendant, the jury can also be viewed as assisting the legislature. Legislatures create general laws both because they cannot foresee every variation that may arise, and because legislators often have competing views about what should be included in legislation and so must settle for broad language if any laws are to be passed.
+
+
+Similarly, when a jury nullifies because it believes a law is unjust, it also performs a useful function vis-à-vis the legislature, namely indicating to the legislature that there may be a problem with the law in question.
+
+
+It may happen that a jury will be persuaded to nullify by factors they should ignore, but such instances of nullification are likely to be uncommon. For a jury to agree to nullify means that the case for nullification must be so compelling that all twelve of the jurors, despite their different backgrounds and perspectives, nevertheless agree that nullification is the appropriate course of action.
+
+Toolkit Context:
+This question asks you to compare the attitudes of the two authors toward juries. Passage A is highly critical of jury nullification, highlighting its problems and the unaccountable nature of juries. In contrast, Passage B presents jury nullification in a positive light, describing it as a "safety valve" and a useful check on the legal system.
+
+Answer Choices:
+A. less trusting with regard to the motivations behind juries’ nullification decisions
+B. less skeptical of the capacity of juries to understand the laws they are expected to apply
+C. more concerned about the fact that juries rarely provide the reasoning behind their verdicts
+D. more confident in the ability of juries to exercise the power to nullify in a just manner [CORRECT]
+E. more disappointed in the failure of juries to use the power to nullify to effect social change
+
+Credited Answer: D. more confident in the ability of juries to exercise the power to nullify in a just manner
+
+Correct Answer Explanation:
+This choice accurately describes the difference between the two authors. Passage B's author is more confident in juries, describing their power to nullify as a "safety valve" and trusting that the requirement for a unanimous verdict makes bad decisions "uncommon." This positive view contrasts sharply with Passage A's author, who worries about juries using their power for "evil ends" and making decisions without enough information.
+
+Corresponding Proof:
+- In such cases, the jury can act as a safety valve and use its own discretion to decide, for example, that a case is too trivial or the circumstances too extenuating for the case to result in a conviction.
+- when a jury nullifies because it believes a law is unjust, it also performs a useful function vis-à-vis the legislature, namely indicating to the legislature that there may be a problem with the law in question.
+- For a jury to agree to nullify means that the case for nullification must be so compelling that all twelve of the jurors, despite their different backgrounds and perspectives, nevertheless agree that nullification is the appropriate course of action.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

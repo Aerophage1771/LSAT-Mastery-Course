@@ -1,0 +1,40 @@
+Question ID: PT-123-S-1-P-3-Q-17
+PrepTest: 123
+Section: 1 (Reading Comprehension)
+Passage Number: 3
+Question Number: 17.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude toward the directors of the Brazil project can most accurately be described as
+
+Passage:
+Passage A:
+The following passage was written in the mid-1990s.
+The demand for electricity in certain countries has been projected recently to grow by 50 percent by the year 2010. Unfortunately, the increased use of fossil fuels to generate this electricity may ultimately damage human and environmental health. For example, emissions of air pollutants in these countries are expected to double over the next 25 years, even if energy is used efficiently, so that local urban air quality will likely deteriorate. Renewable sources of electricity, such as solar radiation, wind, and waterpower, are possible solutions to the problems caused by increasing demand for electricity. Unlike fossil fuels, renewable energy sources are available in virtually all geographic regions, and they allow electricity production without dangerous environmental pollutants. Additionally, these sources can usually be located closer to consumers than can plants that use fossil fuels, thus reducing transmission and distribution costs. Technologies for the successful long-term exploitation of these resources, however, are not always implemented successfully.
+In rural Brazil, for example, millions of citizens do not have electricity, and the lack of necessary infrastructure has limited efforts to provide it. In 1992, an energy agency from the United States developed a joint project with two Brazilian states to install 800 household solar electrical systems and train local personnel to service them. Under the project’s terms, local utilities install, maintain, and own the systems, and collect fees from users. Backers hoped the project would attract enough private investment for substantial expansion throughout Brazil. But the project directors rejected the relatively high bids of local Brazilian companies to produce the solar collectors and thus missed an opportunity to stimulate local production. Consequently, a short-term savings in start-up costs precluded the long-term benefits deriving from the development of local production capacity and technological skill, which eventually would have led to independence from costly foreign expertise. As a result, participating utilities can generate only enough income to cover operating and maintenance costs, which makes further investment and expansion unlikely. Thus, the movement toward a sustainable, rural electricity system in Brazil remains stalled.
+But some efforts have avoided these pitfalls. In the mid-1980s, a Danish energy agency helped agencies in India build three modern wind turbine plants and gradually develop local technical capacity. Local participants were trained in planning, operation, maintenance, and construction of turbines. Indian firms subsequently began manufacturing turbines and, as more locally manufactured equipment became available, Indian utilities were able to increase their use of wind energy profitably. The success of these small projects spurred enthusiasm; Indian utilities were soon ordering more equipment and private investment in wind energy surged. Because the Danish agency, unlike its U.S. counterpart, recognized the importance of local involvement at all levels, the project has a good chance of remaining competitive and profitable for the long run.
+
+Toolkit Context:
+The passage discusses a solar energy project in Brazil where directors decided against using local companies to make solar collectors because their bids were too high. This choice was made to save money on initial costs. However, the author explains that this decision prevented the project from achieving long-term success and becoming self-sufficient.
+
+Answer Choices:
+A. disapproving of their heavy dependence on private investment
+B. surprise at their lack of faith in the quality of local technological expertise
+C. critical of their lack of foresight in overemphasizing the importance of reducing short-term costs [CORRECT]
+D. outrage at their favoring profit over humanitarian goals
+E. doubtful of their desire to implement a successful solar electrical system in Brazil
+
+Credited Answer: C. critical of their lack of foresight in overemphasizing the importance of reducing short-term costs
+
+Correct Answer Explanation:
+This choice is correct. The author clearly points out that the directors' focus on 'a short-term savings in start-up costs' prevented 'the long-term benefits' of developing local skills and production. This shows the author is critical of their lack of forward thinking.
+
+Corresponding Proof:
+- But the project directors rejected the relatively high bids of local Brazilian companies to produce the solar collectors and thus missed an opportunity to stimulate local production.
+- Consequently, a short-term savings in start-up costs precluded the long-term benefits deriving from the development of local production capacity and technological skill, which eventually would have led to independence from costly foreign expertise.
+- As a result, participating utilities can generate only enough income to cover operating and maintenance costs, which makes further investment and expansion unlikely.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

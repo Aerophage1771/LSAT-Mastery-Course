@@ -1,0 +1,41 @@
+Question ID: PT-121-S-2-P-3-Q-17
+PrepTest: 121
+Section: 2 (Reading Comprehension)
+Passage Number: 3
+Question Number: 17.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude toward oscillation can most accurately be characterized as being
+
+Passage:
+Passage A:
+According to the theory of gravitation, every particle of matter in the universe attracts every other particle with a force that increases as either the mass of the particles increases, or their proximity to one another increases, or both. Gravitation is believed to shape the structures of stars, galaxies, and the entire universe. But for decades cosmologists (scientists who study the universe) have attempted to account for the finding that at least 90 percent of the universe seems to be missing: that the total amount of observable matter—stars, dust, and miscellaneous debris—does not contain enough mass to explain why the universe is organized in the shape of galaxies and clusters of galaxies. To account for this discrepancy, cosmologists hypothesize that something else, which they call “dark matter,” provides the gravitational force necessary to make the huge structures cohere.
+What is dark matter? Numerous exotic entities have been postulated, but among the more attractive candidates—because they are known actually to exist—are neutrinos, elementary particles created as a by-product of nuclear fusion, radioactive decay, or catastrophic collisions between other particles. Neutrinos, which come in three types, are by far the most numerous kind of particle in the universe; however, they have long been assumed to have no mass. If so, that would disqualify them as dark matter. Without mass, matter cannot exert gravitational force; without such force, it cannot induce other matter to cohere.
+But new evidence suggests that a neutrino does have mass. This evidence came by way of research findings supporting the existence of a long-theorized but never observed phenomenon called oscillation, whereby each of the three neutrino types can change into one of the others as it travels through space. Researchers held that the transformation is possible only if neutrinos also have mass. They obtained experimental confirmation of the theory by generating one neutrino type and then finding evidence that it had oscillated into the predicted neutrino type. In the process, they were able to estimate the mass of a neutrino at from 0.5 to 5 electron volts.
+While slight, even the lowest estimate would yield a lot of mass given that neutrinos are so numerous, especially considering that neutrinos were previously assumed to have no mass. Still, even at the highest estimate, neutrinos could only account for about 20 percent of the universe’s “missing” mass. Nevertheless, that is enough to alter our picture of the universe even if it does not account for all of dark matter. In fact, some cosmologists claim that this new evidence offers the best theoretical solution yet to the dark matter problem. If the evidence holds up, these cosmologists believe, it may add to our understanding of the role elementary particles play in holding the universe together.
+
+Toolkit Context:
+The passage discusses a phenomenon called oscillation, where a neutrino can change into one of its other types. This transformation was confirmed by an experiment, which the author presents as factual. The passage directly links oscillation to the conclusion that neutrinos must have mass.
+
+Answer Choices:
+A. satisfied that it occurs and that it suggests that neutrinos have mass [CORRECT]
+B. hopeful that it will be useful in discovering other forms of dark matter
+C. concerned that it is often misinterpreted to mean that neutrinos account for all of dark matter
+D. skeptical that it occurs until further research can be done
+E. convinced that it cannot occur outside an experimental setting
+
+Credited Answer: A. satisfied that it occurs and that it suggests that neutrinos have mass
+
+Correct Answer Explanation:
+The author presents the experimental proof for oscillation as a factual discovery. The passage states that researchers "obtained experimental confirmation" and that this is "new evidence" for neutrino mass. The author's tone is accepting and informative, which matches the idea of being satisfied that oscillation occurs and proves neutrinos have mass.
+
+Corresponding Proof:
+- But new evidence suggests that a neutrino does have mass.
+- This evidence came by way of research findings supporting the existence of a long-theorized but never observed phenomenon called oscillation...
+- Researchers held that the transformation is possible only if neutrinos also have mass.
+- They obtained experimental confirmation of the theory by generating one neutrino type and then finding evidence that it had oscillated into the predicted neutrino type.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

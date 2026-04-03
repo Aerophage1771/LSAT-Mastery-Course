@@ -1,0 +1,40 @@
+Question ID: PT-139-S-3-P-4-Q-26
+PrepTest: 139
+Section: 3 (Reading Comprehension)
+Passage Number: 4
+Question Number: 26.
+Question Category: Author Attitude
+
+Question Stem:
+It can be most logically inferred from the passage that the author regards Temple’s hypothesis that the extinction of the dodo was the cause of Calvaria major’s seeming loss of the ability to reproduce as which one of the following?
+
+Passage:
+Passage A:
+Calvaria major is a rare but once-abundant tree found on the island of Mauritius, which was also home to the dodo, a large flightless bird that became extinct about three centuries ago. In 1977 Stanley Temple, an ecologist whose investigation of Calvaria major was a sidelight to his research on endangered birds of Mauritius, proposed that the population decline of Calvaria major was linked to the demise of the dodo, a hypothesis that subsequently gained considerable currency. Temple had found only thirteen Calvaria major trees on Mauritius, all overmature and dying, and all estimated by foresters at over 300 years old. These trees produced fruits that appeared fertile but that Temple assumed could no longer germinate, given his failure to find younger trees.
+The temporal coincidence between the extinction of the dodo and what Temple considered the last evidence of natural germination of Calvaria major seeds led him to posit a causal connection. Specifically, he hypothesized that the fruit of Calvaria major had developed its extremely thick-walled pit as an evolutionary response to the dodo’s habitual consumption of those fruits, a trait enabling the pits to withstand the abrasive forces exerted on them in the birds’ digestive tracts. This defensive thickness, though, ultimately prevented the seeds within the pits from germinating without the thinning caused by abrasion in the dodo’s gizzard. What had once been adaptive, Temple maintained, became a lethal imprisonment for the seeds after the dodo vanished.
+Although direct proof was unattainable, Temple did offer some additional findings in support of his hypothesis, which lent his argument a semblance of rigor. From studies of other birds, he estimated the abrasive force generated within a dodo’s gizzard. Based on this estimate and on test results determining the crush-resistant strength of Calvaria major pits, he concluded that the pits could probably have withstood a cycle through a dodo’s gizzard. He also fed Calvaria major pits to turkeys, and though many of the pits were destroyed, ten emerged, abraded yet intact. Three of these sprouted when planted, which he saw as vindicating his hypothesis.
+Though many scientists found this dramatic and intriguing hypothesis plausible, Temple’s proposals have been strongly challenged by leading specialists in the field. Where Temple had found only thirteen specimens of Calvaria major, Wendy Strahm, the foremost expert on the plant ecology of Mauritius, has identified hundreds, many far younger than three centuries. So Calvaria major seeds have in fact germinated, and the tree’s reproductive cycle has thus continued, since the dodo’s disappearance. Additional counterevidence comes from horticultural research by Anthony Speke, which shows that while only a minority of unabraded Calvaria major seeds germinate, the number is still probably sufficient to keep this species from becoming extinct. The population decline, while clearly acute, could easily be due to other factors, including disease and damage done by certain nonindigenous animals introduced onto Mauritius in the past few centuries.
+
+Toolkit Context:
+The passage discusses Stanley Temple's hypothesis that the Calvaria major tree stopped reproducing when the dodo bird went extinct. Temple believed the tree's seeds needed to pass through the dodo's digestive system to germinate. The author then presents evidence from other scientists that challenges Temple's core assumption, showing that the tree has, in fact, continued to reproduce.
+
+Answer Choices:
+A. essentially correct, but containing some inaccurate details
+B. initially implausible, but vindicated by his empirical findings
+C. an example of a valuable scientific achievement outside a researcher’s primary area of expertise
+D. laudable for its precise formulation and its attention to historical detail
+E. an attempt to explain a state of affairs that did not in fact exist [CORRECT]
+
+Credited Answer: E. an attempt to explain a state of affairs that did not in fact exist
+
+Correct Answer Explanation:
+The author shows that the main problem Temple tried to explain—the complete halt of the tree's reproduction—was not actually happening. Later research found many younger trees, proving that the species was still reproducing. Therefore, Temple's hypothesis was an attempt to explain a situation that wasn't real.
+
+Corresponding Proof:
+- Where Temple had found only thirteen specimens of Calvaria major, Wendy Strahm, the foremost expert on the plant ecology of Mauritius, has identified hundreds, many far younger than three centuries.
+- So Calvaria major seeds have in fact germinated, and the tree’s reproductive cycle has thus continued, since the dodo’s disappearance.
+- Additional counterevidence comes from horticultural research by Anthony Speke, which shows that while only a minority of unabraded Calvaria major seeds germinate, the number is still probably sufficient to keep this species from becoming extinct.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

@@ -1,0 +1,42 @@
+# Module 41: Weaken-Strengthen — Diff Annotations
+# Source: website lessons rc/41-1.tsx, rc/41-2.tsx
+
+{ "type": "diff-note", "text": "Module 41 directly imports LR Weaken/Strengthen skills into the RC context. At 78 appearances, it has high skill-transfer value. The module correctly addresses both Weaken and Strengthen in a unified framework.", "variant": "comment" }
+
+## Lesson 41-1: Introduction (rc/41-1.tsx)
+
+### The "assume each answer choice is true" instruction:
+{{~Change: Promote from passing mention to a standalone callout block with emphasis. This is the single most important tactical insight for this question type and should be visually prominent.~}}
+
+### After the Overarching Takeaway:
+{{+Add an "RC vs. LR" comparison callout: "If you've studied Weaken and Strengthen in Logical Reasoning, you already have the core skill. The only difference is context: in LR, the entire stimulus is the argument. In RC, you must first locate the relevant argument within a longer passage, then apply the same logical analysis. The extra step is finding the argument — the evaluation method is identical."+}}
+
+### After the stem identification breakdown:
+{{+Add a "Common Traps" callout: "(1) Wrong argument — the answer weakens/strengthens a different claim than the one targeted by the question. (2) Opposite direction — the answer strengthens when you need weaken, or vice versa. (3) No impact — the answer discusses the topic but has no logical effect on the argument's reasoning."+}}
+
+{ "type": "diff-note", "text": "The Weaken (red badge) vs. Strengthen (green badge) stem contrast is one of the clearest stem identification breakdowns in the RC modules. Preserve the visual differentiation.", "variant": "comment" }
+
+### After the four-item analytical framework:
+{{+Add a brief exercise: present a short argument and two new facts. Ask the student to determine whether each fact weakens, strengthens, or has no impact on the argument.+}}
+
+## Lesson 41-2: Step-by-Step Approach (rc/41-2.tsx)
+
+### Before any worked analysis section:
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Step 2 prediction framework (alternative explanation bullets):
+{{+Expand the alternative-explanation pattern into a dedicated example: show the same argument (e.g., "tool marks on fossils prove early humans were hunters") and demonstrate both directions — a Weaken answer ("The tool marks could have been made by natural geological processes") and a Strengthen answer ("Analysis confirms the marks match known human tool patterns and cannot be produced by natural processes").+}}
+
+### After Step 3:
+{{+Add a "no impact" distractor warning: "Some answer choices discuss the general topic without affecting the specific argument's logic. If a new fact does not change the probability that the conclusion follows from the evidence, it has no impact — eliminate it regardless of how relevant it seems to the topic."+}}
+
+### After Step 1 (Isolate the Argument):
+{{+Add a note about the RC-specific challenge: "Unlike LR, where the entire stimulus is the argument, RC Weaken-Strengthen questions require you to first locate the relevant argument within a multi-paragraph passage. The question stem will usually point you to the right area — pay close attention to line references, author names, or specific claims mentioned in the stem."+}}
+
+### After the tie-breaker section:
+{{+Add a complete question-card with a real PT question, ideally one that requires locating the argument within a passage.+}}
+
+### Tie-Breaker #2 (Scope Match Test):
+{ "type": "diff-note", "text": "The Cretaceous mammals vs. all animals example is concrete and memorable. This is the lesson's best illustration of scope mismatch.", "variant": "comment" }
+
+{{!note: The alternative-explanation pattern is the dominant pattern for both Weaken and Strengthen on the LSAT. Any future expansion should center on this pattern with multiple examples at different difficulty levels.!}}

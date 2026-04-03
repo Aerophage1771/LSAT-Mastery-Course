@@ -1,0 +1,43 @@
+Question ID: PT-104-S-2-P-1-Q-4
+PrepTest: 104
+Section: 2 (Reading Comprehension)
+Passage Number: 1
+Question Number: 4.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following best describes the author’s attitude toward Miles Davis’s music?
+
+Passage:
+Passage A:
+The career of trumpeter Miles Davis was one of the most astonishingly productive that jazz music has ever seen. Yet his genius has never received its due. The impatience and artistic restlessness that characterized his work spawned one stylistic turn after another and made Davis anathema to many critics, who deplored his abandonment first of bebop and then of “cool” acoustic jazz for ever more innovative sounds.
+Having begun his career studying bebop, Davis pulled the first of many stylistic surprises when, in 1948, he became a member of an impromptu musical think tank that gathered in a New York City apartment. The work of this group not only slowed down tempos and featured ensemble playing as much as or even more than solos—in direct reaction to bebop—it also became the seedbed for the “West Coast cool” jazz style.
+In what would become a characteristic zigzag, Davis didn’t follow up on these innovations himself. Instead, in the late 1950s he formed a new band that broke free from jazz’s restrictive pattern of chord changes. Soloists could determine the shapes of their melodies without referring back to the same unvarying repetition of chords. In this period, Davis attempted to join jazz phrasings, harmonies, and tonal qualities with a unified and integrated sound similar to that of a classical orchestral piece: in his recordings the rhythms, no matter how jazzlike, are always understated, and the instrumental voicings seem muted.
+Davis’s recordings from the late 1960s signal that, once again, his direction was changing. On Filles de Kilimanjaro, Davis’s request that keyboardist Herbie Hancock play electric rather than acoustic piano caused consternation among jazz purists of the time. Other albums featured rock-style beats, heavily electronic instrumentation, a loose improvisational attack and a growing use of studio editing to create jagged soundscapes. By 1969 Davis’s typical studio procedure was to have musicians improvise from a base script of material and then to build finished pieces out of tape, like a movie director. Rock groups had pioneered the process; to jazz lovers, raised on the ideal of live improvisation, that approach was a violation of the premise that recordings should simply document the musicians’ thought processes in real time. Davis again became the target of fierce polemics by purist jazz critics, who have continued to belittle his contributions to jazz.
+What probably underlies the intensity of the reactions against Davis is fear of the broadening of possibilities that he exemplified. Ironically, he was simply doing what jazz explorers have always done: reaching for something new that was his own. But because his career endured, because he didn’t die young or record only sporadically, and because he refused to dwell in whatever niche he had previously carved out, critics find it difficult to definitively rank Davis in the aesthetic hierarchy to which they cling.
+
+Toolkit Context:
+The question asks about the author's attitude toward Miles Davis. To answer this, we must look at the descriptive words the author uses and the overall point of the passage. The author describes Davis's career in very positive terms and defends him against critics.
+
+Answer Choices:
+A. uneasy ambivalence
+B. cautious neutrality
+C. grudging respect
+D. moderate commendation
+E. appreciative advocacy [CORRECT]
+
+Credited Answer: E. appreciative advocacy
+
+Correct Answer Explanation:
+This is the best description of the author's attitude. The author shows appreciation by calling Davis a 'genius' with an 'astonishingly productive' career. The author also acts as an advocate by arguing that Davis's genius 'has never received its due' and by defending his innovations against critics.
+
+Corresponding Proof:
+- The career of trumpeter Miles Davis was one of the most astonishingly productive that jazz music has ever seen.
+- Yet his genius has never received its due.
+- The impatience and artistic restlessness that characterized his work spawned one stylistic turn after another and made Davis anathema to many critics, who deplored his abandonment...
+- Ironically, he was simply doing what jazz explorers have always done: reaching for something new that was his own.
+- ...critics find it difficult to definitively rank Davis in the aesthetic hierarchy to which they cling.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

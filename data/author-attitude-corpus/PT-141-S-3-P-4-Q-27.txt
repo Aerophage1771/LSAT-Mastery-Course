@@ -1,0 +1,41 @@
+Question ID: PT-141-S-3-P-4-Q-27
+PrepTest: 141
+Section: 3 (Reading Comprehension)
+Passage Number: 4
+Question Number: 27.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the author’s attitude in the passage?
+
+Passage:
+Passage A:
+It is generally believed that while in some cases government should intervene to protect people from risk—by imposing air safety standards, for example—in other cases, such as mountain climbing, the onus should be on the individual to protect himself or herself. In the eyes of the public at large, the demarcation between the two kinds of cases has mainly to do with whether the risk in question is incurred voluntarily. This distinction between voluntary and involuntary risk may in fact be the chief difference between lay and expert judgments about risk. Policy experts tend to focus on aggregate lives at stake; laypeople care a great deal whether a risk is undertaken voluntarily. However, judgments about whether a risk is “involuntary” often stem from confusion and selective attention, and the real reason for such judgments frequently lies in an antecedent judgment of some other kind. They are thus of little utility in guiding policy decisions.
+First, it is not easy to determine when a risk is voluntarily incurred. Although voluntariness may be entirely absent in the case of an unforeseeable collision with an asteroid, with most environmental, occupational, and other social risks, it is not an all-or-nothing matter, but rather one of degree. Risks incurred by airline passengers are typically thought to be involuntary, since passengers have no control over whether a plane is going to crash. But they can choose airlines on the basis of safety records or choose not to fly. In characterizing the risks as involuntary, people focus on a small part of a complex interaction, not the decision to fly, but the accident when it occurs.
+Second, people often characterize risks as “voluntary” when they do not approve of the purpose for which people run the risks. It is unlikely that people would want to pour enormous taxpayer resources into lowering the risks associated with skydiving, even if the ratio of dollars spent to lives saved were quite good. By contrast, people would probably not object to spending enormous resources on improving the safety of firefighters, even though the decision to become a firefighter is voluntary. In short, there is no special magic in notions like “voluntary” and “involuntary.” Therefore, regulatory policy should be guided by a better understanding of the factors that underlie judgments about voluntariness.
+In general, the government should attempt to save as many lives as it can, subject to the limited public and private resources devoted to risk reduction. Departures from this principle should be justified not by invoking the allegedly voluntary or involuntary nature of a particular risk, but rather by identifying the more specific considerations for which notions of voluntariness serve as proxies.
+
+Toolkit Context:
+The passage discusses the difference between how regular people (laypeople) and experts think about risk. The author focuses on the public's tendency to decide whether the government should step in based on whether a risk is taken voluntarily. The author then argues that this way of thinking is flawed and not a good guide for making policy.
+
+Answer Choices:
+A. chagrin at the rampant misunderstanding of the relative risks associated with various activities
+B. concern that policy guided mainly by laypeople’s emphasis on the voluntariness of risk would lead to excessive government regulation
+C. skepticism about the reliability of laypeople’s intuitions as a general guide to deciding government risk-management policy [CORRECT]
+D. conviction that the sole criterion that can justify government intervention to reduce risk is the saving of human lives
+E. eagerness to persuade the reader that policy experts’ analysis of risk is distorted by subtle biases
+
+Credited Answer: C. skepticism about the reliability of laypeople’s intuitions as a general guide to deciding government risk-management policy
+
+Correct Answer Explanation:
+This answer correctly captures the author's main point. The author shows doubt (skepticism) about using the public's gut feelings—especially about voluntary vs. involuntary risks—to create government policy. The passage explains that these feelings are often based on confusion and are not a reliable way to make important decisions about safety.
+
+Corresponding Proof:
+- However, judgments about whether a risk is “involuntary” often stem from confusion and selective attention, and the real reason for such judgments frequently lies in an antecedent judgment of some other kind.
+- They are thus of little utility in guiding policy decisions.
+- In short, there is no special magic in notions like “voluntary” and “involuntary.”
+- Therefore, regulatory policy should be guided by a better understanding of the factors that underlie judgments about voluntariness.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

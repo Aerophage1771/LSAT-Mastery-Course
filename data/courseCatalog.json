@@ -1,0 +1,710 @@
+{
+  "1": {
+    "title": "Argument Part",
+    "lessons": [
+      "Introduction",
+      "The Method",
+      "Read & Decode",
+      "Map & Prephrase",
+      "Evaluate & Apply",
+      "Lesson 1: Premises vs. Conclusions",
+      "Lesson 2: The Intermediate Conclusion",
+      "Lesson 3: The Opposing Viewpoint",
+      "Advanced Concepts",
+      "The Six Roles",
+      "Reading & Patterns",
+      "Advanced Lesson: Concessions",
+      "Advanced Lesson: The Phenomenon",
+      "Advanced Lesson: Counterfactual Rebuttal",
+      "Advanced Lesson: Context Statements",
+      "Reference Guide"
+    ]
+  },
+  "2": {
+    "title": "Main Conclusion",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Main Conclusion",
+      "Worked Examples",
+      "Common Patterns & Types",
+      "Patterns & Types: Extended",
+      "Lesson 1: The Rebuttal (PT-105-S-1-Q-1)",
+      "Lesson 2: The Prescription (PT-122-S-4-Q-7)",
+      "Lesson 3: The Explanation (PT-128-S-2-Q-13)",
+      "Advanced Concepts",
+      "Advanced: The Intermediate Conclusion Trap (PT-116-S-3-Q-23)",
+      "Advanced: The Background Principle Trap (PT-130-S-1-Q-13)",
+      "Advanced: Specific Judgment vs. General Rule (PT-123-S-3-Q-12)",
+      "Reference Guide"
+    ]
+  },
+  "3": {
+    "title": "Method of Reasoning",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Method of Reasoning",
+      "Worked Examples",
+      "A Field Guide to Common Strategies",
+      "Common Strategies: Extended Guide",
+      "Lesson 1: Refutation by Analogy (PT-107-S-3-Q-3)",
+      "Lesson 2: Process of Elimination (PT-101-S-2-Q-3)",
+      "Lesson 3: Refutation by Counterexample (PT-112-S-1-Q-1)",
+      "Lesson 4: Highlighting Negative Consequences (PT-110-S-3-Q-8)",
+      "Advanced Concepts: Difficult Method Questions",
+      "Advanced Lesson 1: Challenging an Assumption (PT-127-S-2-Q-9)",
+      "Advanced Lesson 2: Proof by Contradiction (PT-105-S-2-Q-21)",
+      "Advanced Lesson 3: Challenging an Assumption (Part 2) (PT-124-S-2-Q-12)",
+      "Reference Guide"
+    ]
+  },
+  "4": {
+    "title": "Parallel Reasoning",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Parallel Reasoning",
+      "Worked Examples",
+      "Common Argument Structures",
+      "Lesson 1: The Conditional Chain",
+      "Lesson 2: The Eliminative Argument",
+      "Lesson 3: The Principle Application",
+      "Lesson 4: The Quantifier Argument",
+      "Advanced Concepts",
+      "Advanced: Conditional Chains",
+      "Advanced: Statistical Rebuttal",
+      "Advanced: Correlational Rule",
+      "Reference Guide"
+    ]
+  },
+  "5": {
+    "title": "Flaw",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Flaw",
+      "Worked Examples",
+      "A Field Guide to Common Flaws",
+      "Common Flaws: Extended Guide",
+      "Drill: Causal Flaw (Correlation vs. Causation)",
+      "Drill: Numbers vs. Percentages Flaw",
+      "Drill: The Unrepresentative Sample Flaw",
+      "Drill: The Conditional Logic Flaw",
+      "Advanced Concepts: Difficult Flaw Questions",
+      "Advanced Drill: Necessary vs. Sufficient",
+      "Advanced Drill: Strategy vs. Certainty",
+      "Advanced Drill: Quantitative-Conditional Flaw",
+      "Reference Guide"
+    ]
+  },
+  "6": {
+    "title": "Parallel Flaw",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Parallel Flaw",
+      "Worked Examples",
+      "Drill: Mistaken Negation",
+      "Drill: The Composition Flaw",
+      "Drill: The ",
+      "Advanced: Deconstructing High-Difficulty Parallel Flaws",
+      "Drill: The Double Flaw (PT-113-S-3-Q-21)",
+      "Drill: The Net Effect Flaw (PT-113-S-2-Q-21)",
+      "Drill: The Overlap Flaw (PT-103-S-1-Q-21)",
+      "Reference Guide"
+    ]
+  },
+  "7": {
+    "title": "Evaluate the Argument",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Evaluate the Argument",
+      "Worked Examples",
+      "Common Evaluation Targets",
+      "Evaluation Targets: Extended Guide",
+      "Drill: The Missing Baseline",
+      "Drill: Unrepresentative Samples (PT-101-S-2-Q-16)",
+      "Drill: Evaluating Causal Claims",
+      "Drill: Evaluating Analogies",
+      "Drill: Evaluating Feasibility Claims",
+      "Drill: Rank vs. Raw Number (PT-112-S-1-Q-24)",
+      "Advanced: Difficult Evaluate Questions",
+      "Advanced: Arguments with Multiple Gaps",
+      "Reference Guide"
+    ]
+  },
+  "8": {
+    "title": "Weaken",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Weaken",
+      "Worked Examples",
+      "Drill: The Scope Shift Flaw (PT-101-S-2-Q-1)",
+      "Drill: The Baseline Flaw (PT-103-S-2-Q-5)",
+      "Drill: Attacking the Data (PT-113-S-2-Q-14)",
+      "Advanced: Traits of High-Difficulty Weaken Questions",
+      "Drill: Reverse Causation (PT-126-S-1-Q-22)",
+      "Drill: The Composition Flaw (PT-103-S-3-Q-24)",
+      "Drill: Process of Elimination (PT-111-S-4-Q-20)",
+      "Drill: Weaken EXCEPT (PT-101-S-2-Q-19)",
+      "Reference Guide"
+    ]
+  },
+  "9": {
+    "title": "Strengthen",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Strengthen",
+      "Worked Examples",
+      "Drill: Strengthening Causal Claims (PT-128-S-3-Q-1)",
+      "Drill: Strengthening Arguments with Numbers (PT-111-S-3-Q-4)",
+      "Drill: Strengthening Comparative Claims (PT-106-S-3-Q-9)",
+      "Advanced: Hallmarks of Difficult Strengthen Questions",
+      "Drill: The Defender (PT-127-S-2-Q-14)",
+      "Drill: Bridging Conceptual Gaps (PT-101-S-3-Q-23)",
+      "Drill: Strengthening Qualified Claims (PT-125-S-4-Q-20)",
+      "Drill: Strengthening by Analogy (PT-112-S-4-Q-20)",
+      "Drill: The Dose-Response Pattern (PT-120-S-1-Q-26)",
+      "Drill: Strengthen EXCEPT (PT-113-S-2-Q-20)",
+      "Reference Guide"
+    ]
+  },
+  "10": {
+    "title": "Causal Reasoning",
+    "lessons": [
+      "Introduction: Causal Reasoning",
+      "Lesson 1: Causal Reasoning in Main Conclusion, Argument Part, and Method",
+      "Lesson 2: Causal Flaw Applications",
+      "Lesson 3: Evaluating Causal Claims and Questions to Ask",
+      "Lesson 4: Causal Reasoning in Strengthen and Weaken",
+      "Lesson 5: Causal Reasoning in Sufficient and Necessary Assumption",
+      "Reference Guide"
+    ]
+  },
+  "11": {
+    "title": "Sufficient Assumption",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Sufficient Assumption",
+      "Drill: The Concept Link (PT-120-S-1-Q-12)",
+      "Drill: The Exclusivity Rule (PT-122-S-2-Q-25)",
+      "Drill: The Binary Assumption (PT-123-S-2-Q-23)",
+      "Drill: Mutually Exclusive Categories (PT-128-S-2-Q-15)",
+      "Drill: The General Principle (PT-134-S-3-Q-21)",
+      "Drill: The Chain of Logic (PT-135-S-2-Q-15)",
+      "Drill: The Chain of Logic Part 2 (PT-120-S-4-Q-15)",
+      "Drill: The Either/Or Bridge (PT-119-S-4-Q-19)",
+      "Drill: The Normative Bridge (PT-140-S-3-Q-14)",
+      "Reference Guide"
+    ]
+  },
+  "12": {
+    "title": "Necessary Assumption",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Necessary Assumption",
+      "Drill: The ",
+      "Drill: The ",
+      "Drill: The ",
+      "Drill: The ",
+      "Drill: The ",
+      "Drill: The ",
+      "Drill: The ",
+      "Drill: Advanced ",
+      "Drill: ",
+      "Drill: The ",
+      "Drill: ",
+      "Reference Guide"
+    ]
+  },
+  "13": {
+    "title": "Principle-Strengthen",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Principle-Strengthen",
+      "Worked Examples",
+      "Drill: Strengthening with a Normative Bridge (PT-117-S-4-Q-2)",
+      "Drill: Strengthening with an Efficiency Principle (PT-112-S-1-Q-15)",
+      "Drill: Strengthening with a Principle of Accountability (PT-114-S-2-Q-4)",
+      "Drill: Strengthening a ",
+      "Reference Guide"
+    ]
+  },
+  "14": {
+    "title": "Principle-Apply",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Principle-Apply",
+      "Drill: Direct Application (PT-104-S-4-Q-1)",
+      "Drill: Contrapositive Application (PT-106-S-1-Q-10)",
+      "Drill: Definitional Checklist (PT-123-S-2-Q-7)",
+      "Drill: Advanced Application (PT-119-S-2-Q-21)",
+      "Reference Guide"
+    ]
+  },
+  "15": {
+    "title": "Principle-Generalization",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Principle-Generalization",
+      "Worked Examples",
+      "Drill: Experiment Generalization (PT-116-S-3-Q-3)",
+      "Drill: Contextual Value (PT-119-S-3-Q-8)",
+      "Drill: Unintended Consequences (PT-124-S-1-Q-5)",
+      "Drill: Motivated Blindness (PT-109-S-1-Q-18)",
+      "Reference Guide"
+    ]
+  },
+  "16": {
+    "title": "Fill in the Blank",
+    "lessons": [
+      "Introduction",
+      "Foundations",
+      "Step-by-Step: Fill in the Blank",
+      "Worked Examples",
+      "Drill: Mechanistic Chain (PT-102-S-2-Q-3)",
+      "Drill: Analogy (PT-123-S-2-Q-3)",
+      "Drill: Problem and Solution (PT-125-S-2-Q-7)",
+      "Drill: Philosophical Rebuttal (PT-114-S-1-Q-19)",
+      "Drill: Conditional Logic and Paradox (PT-123-S-3-Q-16)",
+      "Reference Guide"
+    ]
+  },
+  "17": {
+    "title": "Most Strongly Supported",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Most Strongly Supported",
+      "Drill: Synthesis of Causal Claims",
+      "Drill: Applying Strict Definitions (PT-101-S-3-Q-8)",
+      "Drill: Causal Chaining (PT-107-S-3-Q-5)",
+      "Advanced: High-Difficulty MSS Questions",
+      "Drill: Inference by Constraint",
+      "Drill: Navigating Logical Density",
+      "Drill: Exploiting Semantic Nuance",
+      "Drill: LEAST Supported (EXCEPT-Style)",
+      "Reference Guide"
+    ]
+  },
+  "18": {
+    "title": "Must Be True",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Must Be True",
+      "Drill: Conditional Logic (PT-125-S-4-Q-23)",
+      "Drill: Governed Sets & Domains (PT-101-S-2-Q-11)",
+      "Drill: Numerical Reasoning (PT-119-S-3-Q-11)",
+      "Drill: Policy, Rule, Exception, Purpose, and Effect (PT-103-S-3-Q-22)",
+      "Advanced: High-Difficulty Analysis",
+      "Drill: Multi-Step Inference (PT-102-S-2-Q-21)",
+      "Drill: Inferences from Disparity (PT-106-S-2-Q-19)",
+      "Drill: Precision in Causality (PT-104-S-1-Q-19)",
+      "Governed Sets & Domains",
+      "Policy, Rule, Exception, Purpose, and Effect",
+      "Reference Guide"
+    ]
+  },
+  "19": {
+    "title": "Must Be False",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Must Be False",
+      "Drill: Conditional Breakers (PT-103-S-1-Q-13)",
+      "Drill: Quantifier Clashes (PT-113-S-3-Q-8)",
+      "Drill: Exclusive Boundaries (PT-102-S-4-Q-15)",
+      "Drill: Numerical Impossibility",
+      "Advanced: Complex Contradictions",
+      "Reference Guide"
+    ]
+  },
+  "20": {
+    "title": "Paradox/Explain",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Paradox/Explain",
+      "Drill: Numbers vs. Percentages",
+      "Drill: Selection Bias (PT-103-S-1-Q-20)",
+      "Drill: Causal Mechanisms (PT-122-S-4-Q-11)",
+      "Advanced: Hardest Paradox Questions",
+      "Drill: The Hidden Distinction (PT-105-S-1-Q-25)",
+      "Drill: The Counterintuitive Causal Web (PT-103-S-1-Q-23)",
+      "Drill: Flawed Logic in ",
+      "Reference Guide"
+    ]
+  },
+  "21": {
+    "title": "Agree/Disagree (Point at Issue)",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Agree/Disagree (Point at Issue)",
+      "Drill: Disagreement (Definitional Rule) (PT-122-S-2-Q-1)",
+      "Drill: Disagreement (Explanatory Cause) (PT-104-S-1-Q-1)",
+      "Drill: Point of Agreement (Shared Assumption) (PT-127-S-2-Q-2)",
+      "Advanced: Hardest Agree/Disagree Questions",
+      "Drill: Disagreement (Clash of Criteria) (PT-103-S-2-Q-24)",
+      "Drill: Disagreement (Definitional Clash) (PT-108-S-2-Q-11)",
+      "Drill: Point of Agreement (Shared Diagnosis) (PT-116-S-2-Q-19)",
+      "Reference Guide"
+    ]
+  },
+  "22": {
+    "title": "Conditional Reasoning",
+    "lessons": [
+      "Module Introduction: The Logic of Conditional Reasoning",
+      "Conditional Logic Essentials",
+      "The Foundations of the Material Conditional",
+      "Using the Contrapositive to Unlock New Inferences",
+      "Two Classic Conditional Reasoning Errors",
+      "Quantifiers — All, Most, Some, and Few",
+      "Complex Structures & Compound Logic",
+      "Real-World Nuance & Probabilistic Logic",
+      "Concise Guide: Conditional Logic",
+      "Reference Guide"
+    ]
+  },
+  "23": {
+    "title": "LSAT Math",
+    "lessons": [
+      "The Foundational Toolkit - Your 10 Core Concepts",
+      "Lesson 2: The Part vs. The Whole",
+      "The Averages Fallacy",
+      "Invalid Mathematical Reasoning",
+      "Flawed Predictions - The Gambler",
+      "Conclusion: Your Test Day Strategy",
+      "Reference Guide"
+    ]
+  },
+  "24": {
+    "title": "Main Idea",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Main Idea",
+      "Pattern Recognition",
+      "Trap Answer Types"
+    ]
+  },
+  "25": {
+    "title": "Inference",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Inference",
+      "Pattern Recognition",
+      "Trap Answer Types"
+    ]
+  },
+  "26": {
+    "title": "Analogy",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Analogy"
+    ]
+  },
+  "27": {
+    "title": "Application",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Application"
+    ]
+  },
+  "28": {
+    "title": "Approach",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Approach"
+    ]
+  },
+  "29": {
+    "title": "Author Attitude",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Author Attitude"
+    ]
+  },
+  "30": {
+    "title": "Author Viewpoint",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Author Viewpoint"
+    ]
+  },
+  "31": {
+    "title": "Complete the Passage",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Complete the Passage"
+    ]
+  },
+  "32": {
+    "title": "Third-Party Viewpoint",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Third-Party Viewpoint"
+    ]
+  },
+  "33": {
+    "title": "Passage Principle",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Passage Principle",
+      "Pattern Recognition"
+    ]
+  },
+  "34": {
+    "title": "Phrase Meaning",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Phrase Meaning"
+    ]
+  },
+  "35": {
+    "title": "Phrase Function",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Phrase Function"
+    ]
+  },
+  "36": {
+    "title": "Paragraph Function",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Paragraph Function"
+    ]
+  },
+  "37": {
+    "title": "Passage Function",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Passage Function"
+    ]
+  },
+  "38": {
+    "title": "Relationship",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Relationship"
+    ]
+  },
+  "39": {
+    "title": "Structure",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Structure"
+    ]
+  },
+  "40": {
+    "title": "Title",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Title"
+    ]
+  },
+  "41": {
+    "title": "Weaken-Strengthen",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Weaken-Strengthen"
+    ]
+  },
+  "42": {
+    "title": "Practice Passage 1: Obasan",
+    "lessons": [
+      "Passage Analysis",
+      "Question 8: Main Idea",
+      "Question 10: Organization",
+      "Question 11: Inference (Heroism)",
+      "Question 12: Detail Hunt",
+      "Question 13: Detail (Agent)",
+      "Question 14: Inference (Society)",
+      "Question 15: Author"
+    ]
+  },
+  "43": {
+    "title": "Practice Passage 2: Bankruptcy Laws",
+    "lessons": [
+      "Passage Analysis",
+      "Question 6: Main Point",
+      "Question 7: Inference",
+      "Question 8: Author Attitude",
+      "Question 9: Primary Purpose",
+      "Question 10: Third-Party Viewpoint",
+      "Question 11: Application",
+      "Question 12: Inference",
+      "Question 13: Weaken"
+    ]
+  },
+  "44": {
+    "title": "Practice Passage 3: Cultural Identity",
+    "lessons": [
+      "Passage Analysis",
+      "Question 14: Main Point",
+      "Question 15: Inference (EXCEPT)",
+      "Question 16: Author Attitude",
+      "Question 17: Phrase Meaning",
+      "Question 18: Third-Party Viewpoint",
+      "Question 19: Application",
+      "Question 20: Passage Principle",
+      "Question 21: Passage Purpose"
+    ]
+  },
+  "45": {
+    "title": "Practice Passage 4: Woody Allen Films",
+    "lessons": [
+      "Passage Analysis",
+      "Question 7: Main Idea",
+      "Question 8: Passage Principle",
+      "Question 9: Paragraph Function",
+      "Question 10: Phrase Meaning",
+      "Question 11: Phrase Function",
+      "Question 12: Author Viewpoint"
+    ]
+  },
+  "46": {
+    "title": "Practice Passage 5: Cosmic Justice",
+    "lessons": [
+      "Passage Analysis",
+      "Question 20: Title",
+      "Question 21: Inference",
+      "Question 22: Relationship",
+      "Question 23: Analogy",
+      "Question 24: Phrase Meaning",
+      "Question 25: Application",
+      "Question 26: Passage Principle",
+      "Question 27: Author Viewpoint"
+    ]
+  },
+  "47": {
+    "title": "Practice Passage 6: Julia Margaret Cameron",
+    "lessons": [
+      "Passage Analysis",
+      "Question 8: Main Idea",
+      "Question 9: Phrase Function",
+      "Question 10: Strengthen/Explain",
+      "Question 11: Analogy",
+      "Question 12: Author Viewpoint",
+      "Question 13: Inference",
+      "Question 14: Paragraph Function",
+      "Question 15: Passage Purpose"
+    ]
+  },
+  "48": {
+    "title": "Practice Passage 7: Advertising Critique",
+    "lessons": [
+      "Passage Analysis",
+      "Question 16: Main Idea",
+      "Question 17: Inference",
+      "Question 18: Paragraph Function",
+      "Question 19: Inference",
+      "Question 20: Phrase Meaning",
+      "Question 21: Complete the Passage"
+    ]
+  },
+  "49": {
+    "title": "Practice Passage 8: Property Justice",
+    "lessons": [
+      "Passage Analysis",
+      "Question 22: Passage Purpose",
+      "Question 23: Inference",
+      "Question 24: Relationship",
+      "Question 25: Analogy",
+      "Question 26: Author Viewpoint",
+      "Question 27: Approach"
+    ]
+  },
+  "50": {
+    "title": "RC Quick Reference Guide",
+    "lessons": [
+      "RC Quick Reference Guide"
+    ]
+  },
+  "51": {
+    "title": "Advanced Passage 1: Mathematics as Language",
+    "lessons": [
+      "Passage Analysis",
+      "Question 22: Main Point",
+      "Question 23: Weaken/Strengthen",
+      "Question 24: Inference",
+      "Question 25: Paragraph Function",
+      "Question 26: Third-Party Viewpoint"
+    ]
+  },
+  "52": {
+    "title": "Advanced Passage 2: Bentham",
+    "lessons": [
+      "Passage Analysis",
+      "Question 23: Main Idea",
+      "Question 24: Author Attitude",
+      "Question 25: Phrase Function",
+      "Question 26: Inference",
+      "Question 27: Passage Purpose",
+      "Question 28: Inference"
+    ]
+  },
+  "53": {
+    "title": "Advanced Passage 3: Critical Legal Studies",
+    "lessons": [
+      "Passage Analysis",
+      "Question 15: Main Idea",
+      "Question 16: Phrase Function",
+      "Question 17: Passage Purpose",
+      "Question 18: Inference (Author Viewpoint)",
+      "Question 19: Phrase Meaning",
+      "Question 20: Structure",
+      "Question 21: Inference (Third-Party Viewpoint)"
+    ]
+  },
+  "54": {
+    "title": "Advanced Passage 4: Dworkin",
+    "lessons": [
+      "Passage Analysis",
+      "Question 21: Main Point",
+      "Question 22: Paragraph Function",
+      "Question 23: Author Attitude",
+      "Question 24: Inference",
+      "Question 25: Author Viewpoint",
+      "Question 26: Third-Party Viewpoint"
+    ]
+  },
+  "55": {
+    "title": "Advanced Passage 5: Psychology of Risk",
+    "lessons": [
+      "Passage Analysis",
+      "Question 22: Application",
+      "Question 23: Function",
+      "Question 24: Author Viewpoint",
+      "Question 25: Structure",
+      "Question 26: Author Viewpoint"
+    ]
+  },
+  "56": {
+    "title": "Advanced Passage 6: Historical Sociology",
+    "lessons": [
+      "Passage Analysis",
+      "Question 15: Main Idea",
+      "Question 16: Inference",
+      "Question 17: Except, Inference",
+      "Question 18: Analogy",
+      "Question 19: Purpose of Paragraph",
+      "Question 20: Inference"
+    ]
+  },
+  "57": {
+    "title": "Advanced Passage 7: Digitalization and Copyright Law",
+    "lessons": [
+      "Passage Analysis",
+      "Question 24: Main Idea",
+      "Question 25: Application",
+      "Question 26: Purpose of Paragraph",
+      "Question 27: Inference",
+      "Question 28: Other Viewpoint"
+    ]
+  }
+}

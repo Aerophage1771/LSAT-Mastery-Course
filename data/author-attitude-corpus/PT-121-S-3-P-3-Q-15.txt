@@ -1,0 +1,38 @@
+Question ID: PT-121-S-3-P-3-Q-15
+PrepTest: 121
+Section: 3 (Reading Comprehension)
+Passage Number: 3
+Question Number: 15.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude toward the possibility of courts increasingly assigning ownership rights to native communities is best described as which one of the following?
+
+Passage:
+Passage A:
+Although the rights of native peoples of Canada have yet to be comprehensively defined in Canadian law, most native Canadians assert that their rights include the right not only to govern themselves and their land, but also to exercise ownership rights over movable cultural property—artifacts ranging from domestic implements to ceremonial costumes. Assignment of such rights to native communities has been difficult to achieve, but while traditional Canadian statute and common law has placed ownership of movable property with current custodians such as museums, recent litigation by native Canadians has called such ownership into question.
+Canadian courts usually base decisions about ownership on a concept of private property, under which all forms of property are capable of being owned by individuals or by groups functioning legally as individuals. This system is based on a philosophy that encourages the right of owners to use their property as they see fit without outside interference. But litigation by native Canadians challenges courts to recognize a concept of property ownership that clashes with the private property concept. Although some tribes now recognize the notion of private property in their legal systems, they have traditionally employed a concept of collective ownership—and in all cases in which native Canadians have made legal claim to movable property they have done so by invoking this latter concept, which is based on the philosophy that each member should have an equal say regarding the use of the community’s resources. Under this collective ideology, access to and use of resources is determined by the collective interests of the community. Furthermore, collective ownership casts an individual in the role of guardian or caretaker of property rather than as a titleholder; while every tribe member is an owner of the property, individual members cannot sell this right, nor does it pass to their heirs when they die. Nevertheless, their children will enjoy the same rights, not as heirs but as communal owners.
+Because the concept of collective property assigns ownership to individuals simply because they are members of the community, native Canadians rarely possess the legal documents that the concept of private property requires to demonstrate ownership. Museums, which are likely to possess bills of sale or proof of prior possession to substantiate their claims of ownership, are thus likely to be recognized as legally entitled to the property they hold, even when such property originated with native Canadian communities. But as their awareness of the inappropriateness of applying the private property concept to all cultural groups grows, Canadian courts will gradually recognize that native Canadians, while they cannot demonstrate ownership as prescribed by the notion of private property, can clearly claim ownership as prescribed by the notion of collective property, and that their claims to movable cultural property should be honored.
+
+Toolkit Context:
+The passage discusses a legal conflict between Canadian courts and native Canadian communities over cultural artifacts. The author focuses on the final paragraph, which predicts how courts will change their approach. This prediction reveals the author's own opinion on the matter.
+
+Answer Choices:
+A. certain that it will never be realized and concerned that it should
+B. concerned that it will never be realized but hopeful that it will
+C. uncertain whether it will be realized but hopeful that it will
+D. uncertain whether it will be realized but confident that it should
+E. convinced that it will be realized and pleased that it will [CORRECT]
+
+Credited Answer: E. convinced that it will be realized and pleased that it will
+
+Correct Answer Explanation:
+This choice is correct because the author uses strong, positive language at the end of the passage. The phrase 'courts will gradually recognize' shows the author is convinced this change is going to happen. The phrase 'should be honored' shows the author is pleased with this expected outcome.
+
+Corresponding Proof:
+- But as their awareness of the inappropriateness of applying the private property concept to all cultural groups grows, Canadian courts will gradually recognize that native Canadians, while they cannot demonstrate ownership as prescribed by the notion of private property, can clearly claim ownership as prescribed by the notion of collective property...
+- ...and that their claims to movable cultural property should be honored.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

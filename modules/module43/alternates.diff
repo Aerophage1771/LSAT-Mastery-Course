@@ -1,0 +1,95 @@
+# Module 43 -- Practice Passage 2: Bankruptcy Laws (PT-128-S-1-P-2)
+# Diff annotations for website lessons rc/43-1 through rc/43-9
+
+{ "type": "diff-note", "text": "All 8 question lessons (43-2 through 43-9) lack a 'try it yourself' prompt before the worked analysis. This is the highest-priority addition across the module.", "variant": "comment" }
+
+## Lesson 43-1: Passage Analysis
+
+{ "type": "diff-note", "text": "The passage analysis is the strongest of the four practice passage modules. The paragraph-by-paragraph breakdown correctly identifies the passage as persuasive argumentation, which is critical for the attitude and purpose questions.", "variant": "comment" }
+
+### After the summary callout (end of lesson):
+{{+**Questions Ahead:** The next 8 lessons cover main point, inference, attitude, primary purpose, perspective-taking, completion, suggestion, and weaken question types. This is the most diverse question set in the practice passage sequence. Pay special attention to the author's prescriptive stance ("must be resisted") and the contrast between the old and new systems.+}}
+
+### Before the h4 "Paragraph 1" heading:
+{{+**Before you read the analysis:** Take 3-4 minutes to read the passage. As you read, identify: (1) the author's position, (2) the problem they describe, and (3) their proposed solution.+}}
+
+## Lesson 43-2: Question 6 (Main Point)
+
+### Before "This is a main point question":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Main Point -- The correct answer must capture the author's complete argument, including their prescriptive conclusion.+}}
+
+## Lesson 43-3: Question 7 (Inference/Implication)
+
+### Before "This question asks":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Inference -- Focus on the specific phrase in quotation marks and determine what the author implies by using it.+}}
+
+{ "type": "diff-note", "text": "The analysis of 'perhaps unexpectedly' is well done. It correctly identifies that the author is flagging a counterintuitive point for the reader.", "variant": "comment" }
+
+## Lesson 43-4: Question 8 (Attitude)
+
+### Before "This question asks":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Attitude -- Scan the passage for evaluative language (positive or negative word choices) and any prescriptive statements (should, must, ought).+}}
+
+## Lesson 43-5: Question 9 (Primary Purpose)
+
+### Before "This question asks":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Primary Purpose -- Distinguish between the author's method (what they do) and their goal (why they do it). The answer should capture the "why."+}}
+
+{ "type": "diff-note", "text": "The distinction between 'compare' (method) and 'explain and defend' (purpose) in the analysis of choice (B) vs. (E) is excellent. This is a transferable distinction for all purpose questions.", "variant": "comment" }
+
+## Lesson 43-6: Question 10 (Perspective-Taking)
+
+### Before "This question requires":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Perspective-Taking -- You must adopt a viewpoint that is not the author's. First, identify the beliefs of the group in question from the passage, then find the answer that aligns with those beliefs.+}}
+
+{ "type": "diff-note", "text": "Perspective-taking questions are relatively rare on the LSAT. Consider adding a note flagging this as an unusual question type that requires a mental shift away from the author's viewpoint.", "variant": "comment" }
+
+## Lesson 43-7: Question 11 (Sentence Completion)
+
+### Before "This question asks":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Sentence Completion -- A good concluding sentence summarizes the paragraph's key ideas and provides closure without introducing new topics.+}}
+
+## Lesson 43-8: Question 12 (Suggestion/Inference)
+
+### Before "This is an inference question":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Suggestion/Inference -- Synthesize information from the passage to identify the most strongly supported implication.+}}
+
+## Lesson 43-9: Question 13 (Weaken)
+
+### Before "This is a weaken question":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Weaken -- Identify the author's core premise, then find evidence that contradicts it. The "Author's Equation / Weakening Equation" framework in this analysis is a powerful transferable tool.+}}
+
+{ "type": "diff-note", "text": "This is the pedagogically richest lesson in the module. The 'Author's Equation / Weakening Equation' framework should be highlighted as a reusable approach for all weaken questions. Consider adding a callout box making this explicit.", "variant": "comment" }
+
+### After the breakdown table:
+{{+**Transferable Skill:** The approach used here -- identify the author's core equation, then flip it -- works on nearly every RC weaken question. When you see a weaken question, always start by asking: "What does the author assume causes what?"+}}
+
+## Module-Level Annotations
+
+{{!This module has the most diverse question-type distribution of the four practice passage modules: Main Point, Inference, Attitude, Primary Purpose, Perspective-Taking, Completion, Suggestion, and Weaken. A wrap-up noting this diversity would help students see which skills the passage tests.!}}
+
+{{!The weaken question (43-9) and the perspective-taking question (43-6) are the two most pedagogically distinctive lessons. Consider flagging these as "key lessons" in any module-level navigation.!}}

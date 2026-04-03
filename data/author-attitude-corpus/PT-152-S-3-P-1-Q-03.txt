@@ -1,0 +1,39 @@
+Question ID: PT-152-S-3-P-1-Q-3
+PrepTest: 152
+Section: 3 (Reading Comprehension)
+Passage Number: 1
+Question Number: 3.
+Question Category: Author Attitude
+
+Question Stem:
+Based on the passage, which one of the following most accurately describes the author’s stance regarding Wheeler’s theory?
+
+Passage:
+Passage A:
+Along with Egypt and Sumer, the third major early Bronze Age civilization was the Indus Valley civilization, which flourished from 2600 B.C. to 900 B.C. In geographic size, the Indus Valley civilization was the largest ancient urban civilization, bigger than pharaonic Egypt. Centered on the Indus River and the now dry Ghaggar-Hakra River, it comprised about 1,400 settlements across what is now Pakistan, Afghanistan, and northwestern India. The Indus Valley civilization was long considered archaeologically uninteresting because of its ordinary urban architecture and lack of palaces or citadels, but recent excavations show the civilization to be without parallel in history, displaying characteristics not elsewhere united in a single civilization.
+The Indus Valley people, masters of urban planning, built brick cities on flood-proof terraces with grids of long, straight streets and the first urban sewer systems, made of masonry. No signs of dominant rulers have been found, and the cities’ living quarters show little sign of class distinction, suggesting that their system of government was, at least in part, democratic. The civilization also apparently thrived without armies—there is, for example, no evidence of weapon production.
+The Indus Valley people were the first to cultivate rice and cotton, and they developed a carefully organized agricultural system to produce and distribute food. In addition, the Indus Valley civilization was one of the ancient world’s top traders. Examples of its standardized weights have been found in many harbors around the Arabian Sea, and Sumerian tablets inscribed in 2300 B.C. provide evidence that the Indus Valley people maintained trade with Mesopotamia.
+The causes of the civilization’s decline, however, are not certain, and this has produced the most contention among scholars. A long-standing theory, one that today still inhabits history books, was proposed by British archaeologist Mortimer Wheeler in the 1920s and points to a final massacre by marauding Indo-Aryan invaders. But, in addition to a lack of written evidence of such an event in any ancient Indian records, there is no archaeological evidence of battles within the cities. In fact, new excavations show that Indo-Aryans were not even in the region at the time the massacre was alleged to have taken place. Archaeological evidence also shows a later resurgence of the civilization a substantial distance to the south of its original location. This suggests that the Indus Valley people most likely relocated for catastrophic environmental reasons, with the large empire disintegrating into many regional cultures. Severe drought, of which there is evidence, may have made some lands unfarmable. Without enough grain to feed the large urban populations, many of the Indus Valley civilization’s large cities would probably have been abandoned. Or, a massive earthquake in this seismically volatile region may have changed the course of rivers and disrupted many cities, spurring a migration of refugees to the countryside.
+
+Toolkit Context:
+The final paragraph of the passage discusses why the Indus Valley civilization declined. It introduces a theory by archaeologist Mortimer Wheeler, who suggested that invaders caused the civilization’s collapse. The author then presents several pieces of evidence to show that Wheeler's theory is incorrect.
+
+Answer Choices:
+A. enthusiastic appreciation of its contributions to the field of archaeology
+B. grudging approval of those aspects of the theory that have not been refuted by recent research
+C. slight disagreement with its assumptions, mixed with respect for its venerable status
+D. offhanded dismissal of it as a theory not worthy of scholarly attention
+E. unambiguous rejection of it in light of newly conducted excavations [CORRECT]
+
+Credited Answer: E. unambiguous rejection of it in light of newly conducted excavations
+
+Correct Answer Explanation:
+This is the correct answer because the author clearly and directly rejects Wheeler's theory. The passage lists several specific reasons why the theory is wrong, including a lack of evidence and new findings from excavations that contradict it.
+
+Corresponding Proof:
+- But, in addition to a lack of written evidence of such an event in any ancient Indian records, there is no archaeological evidence of battles within the cities.
+- In fact, new excavations show that Indo-Aryans were not even in the region at the time the massacre was alleged to have taken place.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

@@ -1,0 +1,93 @@
+# Module 54: Advanced Passage 4 -- Dworkin and Legal Interpretation
+# Diff annotations for website lessons rc/54-1 through rc/54-7
+# Source: PT-112-S-4-P-3 (Questions 21-26)
+
+{ "type": "diff-note", "text": "M54 is the most polished module in the RC Advanced Passage sequence. The prediction/evidence-hunt callouts are best-in-class and should be adopted across M51, M52, and M53.", "variant": "comment" }
+
+## Lesson 54-1: Passage Analysis
+
+### Before the paragraph breakdowns
+{{+**How to Approach This Passage:** This passage presents THREE competing theories about how judges should interpret the law. Build a quick mental table as you read:+}}
+{{+| Theory | Core Idea | Dworkin's View |+}}
+{{+| Natural Law | Use personal moral convictions | Rejects (judicial activism) |+}}
+{{+| Legal Positivism | Follow community consensus | Rejects (ignores internal logic) |+}}
+{{+| Dworkin's Middle Ground | Follow the law's internal logic | His own proposal |+}}
+
+### After the accordion passage block
+{{+**Key Terms:** *positivism* = the view that law and morality are completely separate; *natural law* = the view that moral principles should guide legal interpretation; *arrogates* = takes without justification; *internal logic* = the underlying principles and reasoning that connect a society's laws; *quasi-deductive* = resembling formal logical deduction+}}
+
+### After the summary callout
+{{+**Author Alert:** Notice that the author AGREES with Dworkin. Watch for phrases like 'Dworkin correctly sees' and 'Once we realize, as Dworkin does.' These are signals that the author is endorsing, not just reporting, the theory. This will be tested.+}}
+
+{ "type": "diff-note", "text": "The passage analysis is the best of the four modules. The paragraph labels ('A Rock and a Hard Place', 'The Rules are Rules View') are memorable and accurate. The summary callout is strong but does not flag the author's endorsement, which is tested in Q23.", "variant": "comment" }
+
+## Lesson 54-2: Question 21 (Main Point)
+
+### Before the Prediction callout
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the heading
+{{+**Question Type: Main Point.** The correct answer must capture the entire passage: the rejection of two extremes AND the proposal of a middle ground based on the law's internal logic.+}}
+
+{ "type": "diff-note", "text": "The Prediction callout is excellent and unique to M54. It teaches students to form expectations before reviewing options. This pattern should be adopted across M51-M53.", "variant": "comment" }
+
+## Lesson 54-3: Question 22 (Paragraph Function)
+
+### Before the Prediction callout
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the heading
+{{+**Question Type: Paragraph Function.** Look at the verbs in the answer choices. 'Identify' and 'describe' are neutral; 'evaluate,' 'argue,' and 'advocate' imply the author is taking a side. Match the verb to what the paragraph actually does.+}}
+
+### After the (B) analysis
+{{!note!}} Key teaching distinction: "identify the basic tenets" (describe neutrally) vs. "evaluate the theory" (judge its merits). The second paragraph DESCRIBES legal positivism; the THIRD paragraph is where evaluation begins. Students often confuse setup paragraphs with argument paragraphs.
+
+## Lesson 54-4: Question 23 (Author Attitude)
+
+### Before the Evidence Hunt callout
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the heading
+{{+**Question Type: Author Attitude.** Find the specific phrases where the author reveals their opinion. Look for value-laden language: 'correctly,' 'mistakenly,' 'unfortunately,' 'importantly.'+}}
+
+{ "type": "diff-note", "text": "This is the single best teaching moment across all four modules. The Evidence Hunt callout explicitly lists three endorsement phrases: 'Dworkin correctly sees,' 'as Dworkin points out,' 'Once we realize, as Dworkin does.' This pattern should be highlighted as the model for all Attitude question lessons.", "variant": "comment" }
+
+### After the full breakdown
+{{+**Strategy Takeaway:** Author Attitude questions live and die on textual evidence. Find the exact words the author uses, then match them to the answer choice. Don't guess at the author's feelings -- find their words.+}}
+
+## Lesson 54-5: Question 24 (Passage Goal)
+
+### Before the Evidence Hunt callout
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the heading
+{{+**Question Type: Passage Goal (Theory Purpose).** When a passage explicitly states the goal of a theory (look for 'seeks to,' 'aims to,' 'in order to'), the answer is often a close paraphrase of that explicit statement. Go find the statement first.+}}
+
+{ "type": "diff-note", "text": "The passage explicitly says the theory 'seeks to validate this practice.' The correct answer (E) paraphrases this directly. Good teaching opportunity: sometimes the LSAT hands you the answer on a silver platter.", "variant": "comment" }
+
+## Lesson 54-6: Question 25 (Author Viewpoint)
+
+### Before the breakdown
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the heading
+{{+**Question Type: Author Viewpoint (Agreement Inference).** When a question asks what someone would 'agree with,' scan the passage for their position on each answer choice's topic. Eliminate answers that contradict any stated view.+}}
+
+### After the (A) analysis
+{{!note!}} Option (A) is a common viewpoint-reversal trap. The passage says Dworkin's theory "seeks to validate" the practice of acting as if there is a fact of the matter. "Too often" implies criticism of the practice, which is the opposite of Dworkin's position.
+
+### After the (B) analysis
+{{!note!}} Option (B) tests whether students understand Dworkin's relationship to original legislative intent. The passage's final sentence explicitly says Dworkin opens up "improving upon the interpretations... of the original authors." This directly contradicts (B), which says judges should defer to legislators' intent.
+
+## Lesson 54-7: Question 26 (3rd-Party Viewpoint)
+
+### Before the Evidence Hunt callout
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the heading
+{{+**Question Type: 3rd-Party Viewpoint.** This asks what LEGAL POSITIVISTS would agree with, not Dworkin. For each answer, ask: "Is this what positivists believe, or what Dworkin believes?" Eliminate any answer that represents the wrong theory.+}}
+
+### After the full breakdown
+{{+**Strategy Takeaway:** On 3rd-party viewpoint questions, the most common trap is an answer that represents a different viewpoint from the one asked about. In this passage, (C) describes Dworkin's theory, not positivism. Always check: whose view does this answer represent?+}}
+
+{ "type": "diff-note", "text": "The Evidence Hunt callout correctly points students to two specific paragraphs. This navigation guidance is especially valuable for viewpoint questions where the relevant evidence may be scattered.", "variant": "comment" }

@@ -1,0 +1,41 @@
+Question ID: PT-110-S-1-P-1-Q-2
+PrepTest: 110
+Section: 1 (Reading Comprehension)
+Passage Number: 1
+Question Number: 2.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude toward authoritarian regimes is most accurately described as which one of the following?
+
+Passage:
+Passage A:
+Most authoritarian rulers who undertake democratic reforms do so not out of any intrinsic commitment or conversion to democratic ideals, but rather because they foresee or recognize that certain changes and mobilizations in civil society make it impossible for them to hold on indefinitely to absolute power.
+Three major types of changes can contribute to a society’s no longer condoning the continuation of authoritarian rule. First, the values and norms in the society alter over time, reducing citizens’ tolerance for repression and concentration of power and thus stimulating their demands for freedom. In some Latin American countries during the 1970s and 1980s, for example, this change in values came about partly as a result of the experience of repression, which brought in its wake a resurgence of democratic values. As people come to place more value on political freedom and civil liberties they also become more inclined to speak out, protest, and organize for democracy, frequently beginning with the denunciation of human rights abuses.
+In addition to changing norms and values, the alignment of economic interests in a society can shift. As one scholar notes, an important turning point in the transition to democracy comes when privileged people in society—landowners, industrialists, merchants, bankers—who had been part of a regime’s support base come to the conclusion that the authoritarian regime is dispensable and that its continuation might damage their long-term interests. Such a large-scale shift in the economic interests of these elites was crucial in bringing about the transition to democracy in the Philippines and has also begun occurring incrementally in other authoritarian nations.
+A third change derives from the expanding resources, autonomy, and self-confidence of various segments of society and of newly formed organizations both formal and informal. Students march in the streets demanding change; workers paralyze key industries; lawyers refuse to cooperate any longer in legal charades; alternative sources of information pierce and then shatter the veil of secrecy and disinformation; informal networks of production and exchange emerge that circumvent the state’s resources and control. This profound development can radically alter the balance of power in a country, as an authoritarian regime that could once easily dominate and control its citizens is placed on the defensive.
+Authoritarian rule tends in the long run to generate all three types of changes. Ironically, all three types can be accelerated by the authoritarian regime’s initial success at producing economic growth and maintaining social order—success that, by creating a period of stability, gives citizens the opportunity to reflect on the circumstances in which they live. The more astute or calculating of authoritarian rulers will recognize this and realize that their only hope of retaining some power in the future is to match these democratic social changes with democratic political changes.
+
+Toolkit Context:
+The passage describes how authoritarian governments unintentionally create the conditions for their own downfall. It explains that over time, these regimes cause changes in public values, economic interests, and the power of citizen groups. These changes eventually make it impossible for rulers to maintain absolute power, pushing society toward democracy.
+
+Answer Choices:
+A. uncertainty whether the changes in authoritarian regimes represent genuine progress or merely superficial changes
+B. puzzlement about the motives of authoritarian rulers given their tendency to bring about their own demise
+C. confidence that most authoritarian regimes will eventually be replaced by a more democratic form of government [CORRECT]
+D. insistence that authoritarian rule constitutes an intrinsically unjust form of government
+E. concern that authoritarian rulers will discover ways to retain power without instituting democratic reforms
+
+Credited Answer: C. confidence that most authoritarian regimes will eventually be replaced by a more democratic form of government
+
+Correct Answer Explanation:
+This choice accurately reflects the author's perspective. The final paragraph states that authoritarian rule "tends in the long run" to create the very social changes that lead to democracy, suggesting a confident belief in this long-term political trend.
+
+Corresponding Proof:
+- Authoritarian rule tends in the long run to generate all three types of changes.
+- This profound development can radically alter the balance of power in a country, as an authoritarian regime that could once easily dominate and control its citizens is placed on the defensive.
+- The more astute or calculating of authoritarian rulers will recognize this and realize that their only hope of retaining some power in the future is to match these democratic social changes with democratic political changes.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

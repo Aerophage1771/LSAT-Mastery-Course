@@ -1,0 +1,48 @@
+Question ID: PT-145-S-3-P-3-Q-19
+PrepTest: 145
+Section: 3 (Reading Comprehension)
+Passage Number: 3
+Question Number: 19.
+Question Category: Author Attitude
+
+Question Stem:
+Passage B differs from passage A in that passage B is more
+
+Passage:
+Passage A:
+One function of language is to influence others’ behavior by changing what they know, believe, or desire. For humans engaged in conversation, the perception of another’s mental state is perhaps the most common vocalization stimulus.
+
+
+While animal vocalizations may have evolved because they can potentially alter listeners’ behavior to the signaler’s benefit, such communication is—in contrast to human language—inadvertent, because most animals, with the possible exception of chimpanzees, cannot attribute mental states to others. The male Physalaemus frog calls because calling causes females to approach and other males to retreat, but there is no evidence that he does so because he attributes knowledge or desire to other frogs, or because he knows his calls will affect their knowledge and that this knowledge will, in turn, affect their behavior. Research also suggests that, in marked contrast to humans, nonhuman primates do not produce vocalizations in response to perception of another’s need for information. Macaques, for example, give alarm calls when predators approach and coo calls upon finding food, yet experiments reveal no evidence that individuals were more likely to call about these events when they were aware of them but their offspring were clearly ignorant; similarly, chimpanzees do not appear to adjust their calling to inform ignorant individuals of their own location or that of food. Many animal vocalizations whose production initially seems goal-directed are not as purposeful as they first appear.
+
+Passage B:
+Many scientists distinguish animal communication systems from human language on the grounds that the former are rigid responses to stimuli, whereas human language is spontaneous and creative.
+
+
+In this connection, it is commonly stated that no animal can use its communication system to lie. Obviously, a lie requires intention to deceive: to judge whether a particular instance of animal communication is truly prevarication requires knowledge of the animal’s intentions. Language philosopher H. P. Grice explains that for an individual to mean something by uttering x, the individual must intend, in expressing x, to induce an audience to believe something and must also intend the utterance to be recognized as so intended. But conscious intention is a category of mental experience widely believed to be uniquely human. Philosopher Jacques Maritain’s discussion of the honeybee’s elaborate “waggle-dance” exemplifies this view. Although bees returning to the hive communicate to other bees the distance and direction of food sources, such communication is, Maritain asserts, merely a conditioned reflex: animals may use communicative signs but lack conscious intention regarding their use.
+
+
+But these arguments are circular: conscious intention is ruled out a priori and then its absence taken as evidence that animal communication is fundamentally different from human language. In fact, the narrowing of the perceived gap between animal communication and human language revealed by recent research with chimpanzees and other animals calls into question not only the assumption that the difference between animal and human communication is qualitative rather than merely quantitative, but also the accompanying assumption that animals respond mechanically to stimuli, whereas humans speak with conscious understanding and intent.
+
+Toolkit Context:
+This question asks you to identify a key difference in the approaches of the two passages. Passage A presents a scientific view that animal communication is unintentional, stating this as a conclusion from research. Passage B introduces a similar view held by many scientists and philosophers, but then directly criticizes the logic used to support that view.
+
+Answer Choices:
+A. optimistic regarding the ability of science to answer certain fundamental questions
+B. disapproving of the approach taken by others writing on the same general topic [CORRECT]
+C. open-minded in its willingness to accept the validity of apparently conflicting positions
+D. supportive of ongoing research related to the question at hand
+E. circumspect in its refusal to commit itself to any positions with respect to still-unsettled research questions
+
+Credited Answer: B. disapproving of the approach taken by others writing on the same general topic
+
+Correct Answer Explanation:
+Passage B shows disapproval by directly attacking the logic of other thinkers. It calls their arguments "circular" and challenges the assumptions they make. Passage A, on the other hand, simply reports on research findings without criticizing others who have written on the topic.
+
+Corresponding Proof:
+- But these arguments are circular: conscious intention is ruled out a priori and then its absence taken as evidence that animal communication is fundamentally different from human language.
+- In fact, the narrowing of the perceived gap between animal communication and human language revealed by recent research with chimpanzees and other animals calls into question not only the assumption that the difference between animal and human communication is qualitative rather than merely quantitative, but also the accompanying assumption that animals respond mechanically to stimuli, whereas humans speak with conscious understanding and intent.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

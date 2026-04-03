@@ -1,0 +1,40 @@
+Question ID: PT-128-S-1-P-2-Q-8
+PrepTest: 128
+Section: 1 (Reading Comprehension)
+Passage Number: 2
+Question Number: 8.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude toward the evolution of bankruptcy law can most accurately be described as
+
+Passage:
+Passage A:
+In many Western societies, modern bankruptcy laws have undergone a shift away from a focus on punishment and toward a focus on bankruptcy as a remedy for individuals and corporations in financial trouble—and, perhaps unexpectedly, for their creditors. This shift has coincided with an ever-increasing reliance on declarations of bankruptcy by individuals and corporations with excessive debt, a trend that has drawn widespread criticism. However, any measure seeking to make bankruptcy protection less available would run the risk of preventing continued economic activity of financially troubled individuals and institutions. It is for this reason that the temptation to return to a focus on punishment of individuals or corporations that become insolvent must be resisted. Modern bankruptcy laws, in serving the needs of an interdependent society, serve the varied interests of the greatest number of citizens.
+The harsh punishment for insolvency in centuries past included imprisonment of individuals and dissolution of enterprises, and reflected societies’ beliefs that the accumulation of excessive debt resulted either from debtors’ unwillingness to meet obligations or from their negligence. Insolvent debtors were thought to be breaking sacrosanct social contracts; placing debtors in prison was considered necessary in order to remove from society those who would violate such contracts and thereby defraud creditors. But creditors derive little benefit from imprisoned debtors unable to repay even a portion of their debt. And if the entity to be punished is a large enterprise, for example, an auto manufacturer, its dissolution would cause significant unemployment and the disruption of much-needed services.
+Modern bankruptcy law has attempted to address the shortcomings of the punitive approach. Two beliefs underlie this shift: that the public good ought to be paramount in considering the financial insolvency of individuals and corporations; and that the public good is better served by allowing debt-heavy corporations to continue to operate, and indebted individuals to continue to earn wages, than by disabling insolvent economic entities. The mechanism for executing these goals is usually a court-directed reorganization of debtors’ obligations to creditors. Such reorganizations typically comprise debt relief and plans for court-directed transfers of certain assets from debtor to creditor. Certain strictures connected to bankruptcy—such as the fact that bankruptcies become matters of public record and are reported to credit bureaus for a number of years—may still serve a punitive function, but not by denying absolution of debts or financial reorganization. Through these mechanisms, today’s bankruptcy laws are designed primarily to assure continued engagement in productive economic activity, with the ultimate goal of restoring businesses and individuals to a degree of economic health and providing creditors with the best hope of collecting.
+
+Toolkit Context:
+The passage describes how bankruptcy laws have changed over time. The author contrasts older, punitive laws with modern laws that focus on remedy and recovery. The overall tone shows a clear preference for the modern approach, which the author believes serves society better.
+
+Answer Choices:
+A. approval of changes that have been made to inefficient laws [CORRECT]
+B. confidence that further changes to today’s laws will be unnecessary
+C. neutrality toward laws that, while helpful to many, remain open to abuse
+D. skepticism regarding the possibility of solutions to the problem of insolvency
+E. concern that inefficient laws may have been replaced by legislation too lenient to debtors
+
+Credited Answer: A. approval of changes that have been made to inefficient laws
+
+Correct Answer Explanation:
+This choice is correct because the author clearly approves of the shift away from old, punitive bankruptcy laws. The passage portrays the old laws as inefficient, noting that imprisoning debtors did little to help creditors. The author praises the modern laws for serving society's needs and helping the greatest number of people.
+
+Corresponding Proof:
+- It is for this reason that the temptation to return to a focus on punishment of individuals or corporations that become insolvent must be resisted.
+- Modern bankruptcy laws, in serving the needs of an interdependent society, serve the varied interests of the greatest number of citizens.
+- But creditors derive little benefit from imprisoned debtors unable to repay even a portion of their debt.
+- Modern bankruptcy law has attempted to address the shortcomings of the punitive approach.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

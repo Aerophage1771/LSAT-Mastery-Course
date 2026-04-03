@@ -1,0 +1,40 @@
+Question ID: PT-132-S-3-P-1-Q-6
+PrepTest: 132
+Section: 3 (Reading Comprehension)
+Passage Number: 1
+Question Number: 6.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following aspects of Mphahlele’s work does the author of the passage appear to value most highly?
+
+Passage:
+Passage A:
+The work of South African writer Ezekiel Mphahlele has confounded literary critics, especially those who feel compelled to draw a sharp distinction between autobiography and fiction. These critics point to Mphahlele’s best-known works—his 1959 autobiography Down Second Avenue and his 1971 novel The Wanderers—to illustrate the problem of categorizing his work. While his autobiography traces his life from age five until the beginning of his self-imposed 20-year exile at age thirty-eight, The Wanderers appears to pick up at the beginning of his exile and go on from there. Critics have variously decried the former as too fictionalized and the latter as too autobiographical, but those who focus on traditional labels inevitably miss the fact that Mphahlele manipulates different prose forms purely in the service of the social message he advances.
+Even where critics give him a favorable reading, all too often their reviews carry a negative subtext. For example, one critic said of The Wanderers that if anger, firsthand experiences, compassion, and topicality were the sole requirements for great literature, the novel might well be one of the masterpieces of this declining part of the twentieth century. And although this critic may not have meant to question the literary contribution of the novel, there are those who are outright dismissive of The Wanderers because it contains an autobiographical framework and is populated with real-world characters. Mphahlele briefly defends against such charges by pointing out the importance of the fictional father-son relationship that opens and closes the novel. But his greater concern is the social vision that pervades his work, though it too is prone to misunderstandings and underappreciation. Mphahlele is a humanist and an integrationist, and his writings wonderfully articulate his vision of the future; but critics often balk at this vision because Mphahlele provides no road maps for bringing such a future about.
+Mphahlele himself shows little interest in establishing guidelines to distinguish autobiography from fiction. Though he does refer to Down Second Avenue as an autobiography and The Wanderers as a novel, he asserts that no novelist can write complete fiction or absolute fact. It is the nature of writing, at least the writing he cares about, that the details must be drawn from the writer’s experiences, and thus are in some sense fact, but conveyed in such a way as to maximize the effectiveness of the social message contained in the work, and thus inevitably fiction. As he claims, the whole point of the exercise of writing has nothing to do with classification; in all forms writing is the transmission of ideas, and important ideas at that: “Whenever you write prose or poetry or drama you are writing a social criticism of one kind or another. If you don’t, you are completely irrelevant—you don’t count.”
+
+Toolkit Context:
+The passage discusses how critics struggle to categorize the work of Ezekiel Mphahlele, often debating whether his writing is autobiography or fiction. The author argues that these critics miss the point. Instead of focusing on labels, the author highlights that Mphahlele's primary goal is to use his writing to convey a powerful social message.
+
+Answer Choices:
+A. his commitment to communicating social messages [CORRECT]
+B. his blending of the categories of fiction and autobiography
+C. his ability to redefine established literary categories
+D. his emphasis on the importance of details
+E. his plan for bringing about the future he envisions
+
+Credited Answer: A. his commitment to communicating social messages
+
+Correct Answer Explanation:
+The author repeatedly emphasizes that Mphahlele's main purpose is to communicate a social message. The passage states that Mphahlele uses different writing styles 'purely in the service of the social message he advances.' The author also ends with a strong quote from Mphahlele saying that writing without social criticism is 'completely irrelevant,' showing that this is the most valued aspect of his work.
+
+Corresponding Proof:
+- those who focus on traditional labels inevitably miss the fact that Mphahlele manipulates different prose forms purely in the service of the social message he advances.
+- But his greater concern is the social vision that pervades his work, though it too is prone to misunderstandings and underappreciation.
+- As he claims, the whole point of the exercise of writing has nothing to do with classification; in all forms writing is the transmission of ideas, and important ideas at that:
+- “Whenever you write prose or poetry or drama you are writing a social criticism of one kind or another. If you don’t, you are completely irrelevant—you don’t count.”
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

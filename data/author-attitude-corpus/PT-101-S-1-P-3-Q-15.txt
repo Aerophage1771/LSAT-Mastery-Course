@@ -1,0 +1,37 @@
+Question ID: PT-101-S-1-P-3-Q-15
+PrepTest: 101
+Section: 1 (Reading Comprehension)
+Passage Number: 3
+Question Number: 15.
+Question Category: Author Attitude
+
+Question Stem:
+It can be inferred from the author’s discussion of traditional legal research that the author is
+
+Passage:
+Passage A:
+In recent years, scholars have begun to use social science tools to analyze court opinions. These scholars have justifiably criticized traditional legal research for its focus on a few cases that may not be representative and its fascination with arcane matters that do not affect real people with real legal problems. Zirkel and Schoenfeld, for example, have championed the application of social science tools to the analysis of case law surrounding discrimination against women in higher education employment. Their studies have demonstrated how these social science tools may be used to serve the interests of scholars, lawyers, and prospective plaintiffs as well. However, their enthusiasm for the “outcomes analysis” technique seems misguided.
+Of fundamental concern is the outcomes analysts’ assumption that simply counting the number of successful and unsuccessful plaintiffs will be useful to prospective plaintiffs. Although the odds are clearly against the plaintiff in sex discrimination cases, plaintiffs who believe that their cause is just and that they will prevail are not swayed by such evidence. In addition, because lawsuits are so different in the details of the case, in the quality of the evidence the plaintiff presents, and in the attitude of the judge toward academic plaintiffs, giving prospective plaintiffs statistics about overall outcomes without analyzing the reason for these outcomes is of marginal assistance. Outcomes analysis, for example, ignores the fact that in certain academic sex discrimination cases—those involving serious procedural violations or incriminating evidence in the form of written admissions of discriminatory practices—plaintiffs are much more likely to prevail.
+Two different approaches offer more useful applications of social science tools in analyzing sex discrimination cases. One is a process called “policy capturing,” in which the researcher reads each opinion; identifies variables discussed in the opinion, such as the regularity of employer evaluations of the plaintiff’s performance, training of evaluators, and the kind of evaluation instrument used; and then uses multivariate analysis to determine whether these variables predict the outcome of the lawsuit. The advantage of policy-capturing research is that it attempts to explain the reason for the outcome, rather than simply reporting the outcome, and identifies factors that contribute to a plaintiff’s success or failure. Taking a slightly different approach, other scholars have adopted a technique that requires reading complete transcripts of all sex discrimination cases litigated during a certain time period to identify variables such as the nature of the allegedly illegal conduct, the consequences for employers, and the nature of the remedy, as well as the factors that contributed to the verdict and the kind of evidence necessary for the plaintiff to prevail. While the findings of these studies are limited to the period covered, they assist potential plaintiffs and defendants in assessing their cases.
+
+Toolkit Context:
+The beginning of the passage introduces the author's view on traditional legal research. It states that scholars have criticized this type of research for focusing on obscure issues. The author agrees with this criticism, noting that these issues do not affect real people with actual legal problems.
+
+Answer Choices:
+A. frustrated because traditional legal research has not achieved its full potential
+B. critical because traditional legal research has little relevance to those actually involved in cases [CORRECT]
+C. appreciative of the role traditional legal research played in developing later, more efficient approaches
+D. derisive because traditional legal research has outlasted its previously significant role
+E. grateful for the ability of traditional legal research to develop unique types of evidence
+
+Credited Answer: B. critical because traditional legal research has little relevance to those actually involved in cases
+
+Correct Answer Explanation:
+This choice is correct. The author agrees with scholars who criticize traditional legal research for its focus on 'arcane matters that do not affect real people with real legal problems.' This directly supports the idea that the author is critical because the research has little relevance to people actually involved in legal cases.
+
+Corresponding Proof:
+- These scholars have justifiably criticized traditional legal research for its focus on a few cases that may not be representative and its fascination with arcane matters that do not affect real people with real legal problems.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

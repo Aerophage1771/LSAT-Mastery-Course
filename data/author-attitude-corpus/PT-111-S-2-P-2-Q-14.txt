@@ -1,0 +1,41 @@
+Question ID: PT-111-S-2-P-2-Q-14
+PrepTest: 111
+Section: 2 (Reading Comprehension)
+Passage Number: 2
+Question Number: 14.
+Question Category: Author Attitude
+
+Question Stem:
+The passage suggests that the author’s attitude toward Bearden’s innovative painting techniques is one of
+
+Passage:
+Passage A:
+The paintings of Romare Bearden (1914–1988) represent a double triumph. At the same time that Bearden’s work reflects a lifelong commitment to perfecting the innovative painting techniques he pioneered, it also reveals an artist engaged in a search for ways to explore the varieties of African-American experience.
+By presenting scene, character, and atmosphere using a unique layered and fragmented style that combines elements of painting with elements of collage, Bearden suggested some of the ways in which commonplace subjects could be forced to undergo a metamorphosis when filtered through the techniques available to the resourceful artist. Bearden knew that regardless of individual painters’ personal histories, tastes, or points of view, they must pay their craft the respect of approaching it through an acute awareness of the resources and limitations of the form to which they have dedicated their creative energies.
+But how did Bearden, so passionately dedicated to solving the more advanced problems of his painting technique, also succeed so well at portraying the realities of African-American life? During the Great Depression of the 1930s, Bearden painted scenes of the hardships of the period; the work was powerful, the scenes grim and brooding. Through his depiction of the unemployed in New York’s Harlem he was able to move beyond the usual “protest painting” of the period to reveal instances of individual human suffering. His human figures, placed in abstract yet mysteriously familiar urban settings, managed to express the complex social reality lying beyond the borders of the canvas without compromising their integrity as elements in an artistic composition. Another important element of Bearden’s compositions was his use of muted colors, such as dark blues and purples, to suggest moods of melancholy or despair. While functioning as part of the overall design, these colors also served as symbols of the psychological effects of debilitating social processes.
+During the same period, he also painted happier scenes—depictions of religious ceremony, musical performance, and family life—and instilled them with the same vividness that he applied to his scenes of suffering. Bearden sought in his work to reveal in all its fullness a world long hidden by the clichés of sociology and rendered cloudy by the simplifications of journalism and documentary photography. Where any number of painters have tried to project the “prose” of Harlem, Bearden concentrated on releasing its poetry—its family rituals and its ceremonies of affirmation and celebration. His work insists that we truly see the African-American experience in depth, using the fresh light of his creative vision. Through an act of artistic will, he created strange visual harmonies out of the mosaic of the African-American experience, and in doing so reflected the multiple rhythms, textures, and mysteries of life.
+
+Toolkit Context:
+The passage discusses Romare Bearden's art as a "double triumph." It praises both his innovative painting techniques and his ability to explore the African-American experience. The author explains how Bearden's unique style helped him portray the complex realities of life, from hardship to celebration.
+
+Answer Choices:
+A. admiration for how they aided Bearden in communicating his rich vision of African-American life [CORRECT]
+B. appreciation for how they transform complex social realities into simple and direct social critiques
+C. respect for how they are rooted in the rhythms and textures of African-American experience
+D. concern that they draw attention away from Bearden’s social and political message
+E. strong conviction that they should be more widely utilized by African-American artists
+
+Credited Answer: A. admiration for how they aided Bearden in communicating his rich vision of African-American life
+
+Correct Answer Explanation:
+The author's tone throughout the passage is one of high praise. The text repeatedly connects Bearden's technical skill with his success in portraying the 'varieties of African-American experience,' showing how his methods allowed him to communicate a rich and complex vision.
+
+Corresponding Proof:
+- The paintings of Romare Bearden (1914–1988) represent a double triumph.
+- At the same time that Bearden’s work reflects a lifelong commitment to perfecting the innovative painting techniques he pioneered, it also reveals an artist engaged in a search for ways to explore the varieties of African-American experience.
+- But how did Bearden, so passionately dedicated to solving the more advanced problems of his painting technique, also succeed so well at portraying the realities of African-American life?
+- His human figures, placed in abstract yet mysteriously familiar urban settings, managed to express the complex social reality lying beyond the borders of the canvas without compromising their integrity as elements in an artistic composition.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

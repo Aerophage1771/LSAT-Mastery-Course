@@ -1,0 +1,42 @@
+# Module 38: Relationship — Diff Annotations
+# Source: website lessons rc/38-1.tsx, rc/38-2.tsx
+
+{ "type": "diff-note", "text": "Module 38 covers a low-frequency (18 appearances) but high-skill-transfer question type. Most Relationship questions appear in comparative passage sets.", "variant": "comment" }
+
+## Lesson 38-1: Introduction (rc/38-1.tsx)
+
+### The four interaction types (agreement/disagreement, general/specific, critique/counterpoint, expansion):
+{{~Change: Reformat from a bullet list to a diagnostic table with two columns: 'Passage A's Role' and 'Passage B's Role.' Example row: Agreement — 'Presents evidence for Theory X' | 'Provides additional evidence supporting Theory X from a different domain.'~}}
+
+### After each interaction type:
+{{+Add a brief hypothetical example for each. E.g., for Critique/Counterpoint: "Passage A argues that urban sprawl is caused by zoning policy. Passage B argues that economic incentives, not zoning, are the primary driver."+}}
+
+### After the stem identification breakdown:
+{{+Add a directionality warning (currently only in 38-2's tie-breaker): "The most common error on Relationship questions is reversing the direction — saying Passage A critiques Passage B when it is actually B that critiques A. Always verify which component is doing the action described in the answer choice."+}}
+
+### After frequency note:
+{{+Add a brief note: "While most Relationship questions target comparative passage sets, some ask about the relationship between paragraphs or sections within a single passage. The same analytical approach applies: summarize each component, then define the interaction."+}}
+
+{ "type": "diff-note", "text": "The Specific Connection stem category is valuable — it shows that some Relationship questions target specific claims rather than whole passages, requiring more precise analysis.", "variant": "comment" }
+
+## Lesson 38-2: Step-by-Step Approach (rc/38-2.tsx)
+
+### Before any worked analysis section:
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### The running example (law effectiveness: deterrence vs. economic factors):
+{{+Extend this example to include answer-choice evaluation: present 4-5 answer choices describing different relationships and demonstrate elimination of wrong answers.+}}
+
+### Step 2 diagnostic questions (six bullets):
+{{~Change: Consider restructuring as a quick decision flowchart or numbered decision tree rather than a flat bullet list. Start with "Do they agree or disagree?" and branch from there.~}}
+
+### After the tie-breaker section:
+{{+Add a complete question-card with a real PT comparative passage question.+}}
+
+### Tie-Breaker #1 (Directionality Test):
+{ "type": "diff-note", "text": "The Directionality Test is the module's strongest unique contribution. This addresses a real, frequent student error and should be preserved and emphasized.", "variant": "comment" }
+
+### Tie-Breaker #2 (Point of Contact):
+{{+Add a brief example: "If Passages A and B both discuss the effectiveness of a specific law but disagree about its mechanism, the 'point of contact' is the law's effectiveness, not the broader topic of legislation."+}}
+
+{{!note: The synthesis skills taught in this module transfer directly to other comparative passage question types (Author Agreement, Author Attitude). Consider cross-referencing.!}}

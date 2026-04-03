@@ -1,0 +1,45 @@
+# Module 39: Structure — Diff Annotations
+# Source: website lessons rc/39-1.tsx, rc/39-2.tsx
+
+{ "type": "diff-note", "text": "Module 39 covers Structure questions (48 appearances). The 'blueprint' concept is the module's strongest element and the example blueprint in 39-2 is one of the best teaching tools across all RC modules.", "variant": "comment" }
+
+## Lesson 39-1: Introduction (rc/39-1.tsx)
+
+### The four-item organizational pattern list:
+{{~Change: Expand from 4 to 6-8 items. Add: "Compare and contrast two competing theories or approaches," "Present a paradox or puzzle, then propose a resolution," "Trace the historical development of a concept or practice," and "Describe a phenomenon, then evaluate multiple explanatory hypotheses."~}}
+
+### After each organizational pattern:
+{{+Add a brief passage-outline example for each pattern. E.g., for "challenging a view": "P1: Presents the traditional view. P2: Introduces new evidence. P3: Shows the traditional view cannot account for the evidence. P4: Proposes an alternative."+}}
+
+### After the Overarching Takeaway:
+{{+Add a cross-reference: "Structure questions build directly on paragraph-level analysis skills. If you can identify each paragraph's function (Module 36: Paragraph Function), you can construct the passage's overall structure. Structure is also closely related to Passage Function (Module 37) — the structure reveals the author's purpose."+}}
+
+### After the stem identification breakdown:
+{{+Add a brief exercise: present 2-3 passage outlines and ask students to identify which organizational pattern each follows.+}}
+
+{ "type": "diff-note", "text": "The Relational Structure stem category bridges Structure and Paragraph Function questions. This overlap is valuable and should be preserved.", "variant": "comment" }
+
+## Lesson 39-2: Step-by-Step Approach (rc/39-2.tsx)
+
+### Before any worked analysis section:
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Step 1 (Create a Passage Blueprint):
+{{~Change: Break into sub-steps for clarity: (1a) Read the passage and annotate each paragraph's function using a verb (e.g., "introduces," "challenges," "supports"). (1b) Identify key transitions between paragraphs (look for "However," "For example," "Consequently"). (1c) Assemble your annotations into a complete blueprint.~}}
+
+### The example blueprint:
+{ "type": "diff-note", "text": "This example blueprint is one of the best teaching tools in the RC modules. Preserve exactly as-is and use as a model for future expansion.", "variant": "comment" }
+
+### After Step 2:
+{{+Add a worked example: present 4-5 answer choices describing different passage organizations and demonstrate evaluation against the example blueprint, showing why wrong answers fail (misrepresented function, wrong sequence, missing element).+}}
+
+### After the tie-breaker section:
+{{+Add a complete question-card with a real PT question.+}}
+
+### Tie-Breaker #1 (Paragraph Transition Test):
+{{+Add a brief concrete example: "If the transition from P1 to P2 uses 'However,' the structure is likely 'claim followed by challenge' — not 'claim followed by additional support.' Check that your answer choice reflects the contrasting relationship."+}}
+
+### Tie-Breaker #2 (Focus on the Verbs):
+{{!note: This technique also appears in M36 (Paragraph Function). Consider adding a cross-reference: "This same verb-precision technique applies at the paragraph level — see Module 36."!}}
+
+{{!note: The blueprint method teaches a transferable annotation skill. Students who master this will also perform better on Main Point, Passage Function, and Paragraph Function questions.!}}

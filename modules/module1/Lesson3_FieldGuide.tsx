@@ -1,0 +1,131 @@
+import { Lesson } from '../../types';
+
+export const Lesson3_FieldGuide: Lesson = {
+  id: '1-3',
+  title: 'Section 3: Argument Part — Common Roles & Patterns',
+  content: [
+    {
+      "type": "h2",
+      "text": "Section 3: Argument Part — Common Roles & Patterns  While the function of a statement can be unique, most roles tested on Argument Part questions fall into a few common categories. Understanding which roles appear most frequently can help you form a better hypothesis as you analyze a stimulus."
+    },
+    {
+      "type": "h3",
+      "text": "Core Argument Components"
+    },
+    {
+      "type": "h4",
+      "text": "1. Premise / Evidence (53.5% of questions) *"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Description:** A fact, finding, or reason offered in support of a conclusion. Over half of all Argument Part questions target a statement functioning as evidence. *"
+    },
+    {
+      "type": "paragraph",
+      "text": "**How to Spot It:** It often presents a factual claim, the result of a study, a general principle, or a specific example. Its truth is used to justify another statement."
+    },
+    {
+      "type": "h4",
+      "text": "2. Main Conclusion (13.2% of questions) *"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Description:** The ultimate point the author is trying to prove—the central claim that all other evidence is structured to support. It receives support from other statements but does not support any other claim in the argument. *"
+    },
+    {
+      "type": "paragraph",
+      "text": "**How to Spot It:** Look for the final claim that the author wants you to accept. It's often a recommendation, a prediction, or a judgment. It's the \"Ultimate Therefore\" of the stimulus."
+    },
+    {
+      "type": "h4",
+      "text": "3. Intermediate / Subsidiary Conclusion (11.1% of questions) *"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Description:** A claim that acts as both a conclusion and a premise. It is supported by evidence, and it then serves as evidence for the main conclusion, acting as a bridge in a chain of reasoning. *"
+    },
+    {
+      "type": "paragraph",
+      "text": "**How to Spot It:** Find a statement that is supported by a \"because\" or \"since\" clause, but is then used to support a final claim, often introduced by \"thus\" or \"therefore.\""
+    },
+    {
+      "type": "h3",
+      "text": "Contextual and Counter-Argument Roles"
+    },
+    {
+      "type": "h4",
+      "text": "4. Context / Framing (9.0% of questions) *"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Description:** Not every sentence is a piece of logical proof. Some statements simply set the stage by providing undisputed facts that the argument is built upon. This category includes several distinct but related functions."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Role Type",
+        "Function",
+        "Example / How to Spot"
+      ],
+      "rows": [
+        [
+          "**Background Info**",
+          "Provides undisputed facts to frame the argument.",
+          "*\"Landfills are generally designed to hold ten years’ worth of waste...\"* The author doesn't prove this; it's a starting fact."
+        ],
+        [
+          "**Phenomenon**",
+          "Identifies an observation or puzzle the argument seeks to explain.",
+          "*\"The rate of psychological problems is higher among children of divorced parents...\"* The argument then debates the *cause* of this observation."
+        ],
+        [
+          "**Bridge/Connection**",
+          "Establishes the relevance of evidence to the conclusion, often within an analogy.",
+          "*\"Recent scientific research...*also* can be described in esoteric language...\"* This connects the Newton analogy to the modern day."
+        ],
+        [
+          "**Constraint/Limitation**",
+          "Narrows the scope of the argument's conclusion.",
+          "*\"To the extent that homelessness arises from a lack of available housing...\"* The argument that follows only applies to this specific case."
+        ],
+        [
+          "**Common Ground**",
+          "States a point of agreement between two opposing sides.",
+          "*\"The second group grants that there are paintings that are not works of art...\"* The author uses this agreement to analyze the nature of the dispute."
+        ]
+      ]
+    },
+    {
+      "type": "h4",
+      "text": "5. Opposing Viewpoint / Target of Argument (8.3% of questions) *"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Description:** Many arguments are structured as a rebuttal. This is a claim, hypothesis, or belief (often attributed to others) that the author's main conclusion is designed to challenge, refute, or cast doubt upon. *"
+    },
+    {
+      "type": "paragraph",
+      "text": "**How to Spot It:** These are often introduced with phrases like, *\"Some people argue that...\"*, *\"It has been claimed that...\"*, or *\"A common belief is that...\"*. The author will then typically pivot with a word like `But` or `However` to introduce their own argument."
+    },
+    {
+      "type": "h4",
+      "text": "6. Concession (4.9% of questions) *"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Description:** To make their argument seem more reasonable, an author may grant a point that seems to favor an opposing view before showing why it doesn't ultimately change their conclusion. It is an acknowledgment of a fact or a point that runs counter to the author's main argument. *"
+    },
+    {
+      "type": "paragraph",
+      "text": "**How to Spot It:** These are often flagged by words like `Although...`, `While it is true that...`, or `Despite...`. The author admits this point is true but then argues that it is outweighed by other considerations."
+    },
+    {
+      "type": "paragraph",
+      "text": "***"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Key Takeaway:** While you should be flexible and ready for any role, knowing these common patterns is a powerful advantage. The vast majority of the time, you will be identifying a **Premise**, a **Conclusion** (main or intermediate), a piece of **Context**, or an **Opposing Viewpoint**."
+    }
+  ],
+};

@@ -1,0 +1,39 @@
+Question ID: PT-154-S-3-P-1-Q-4
+PrepTest: 154
+Section: 3 (Reading Comprehension)
+Passage Number: 1
+Question Number: 4.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the author’s attitude regarding Great Zimbabwe’s cattle economy?
+
+Passage:
+Passage A:
+Complex societies flourished on the central plateau of southern Africa from the ninth through sixteenth centuries. Their regional political centers, called zimbabwes, were city-states enclosed within stone walls, which still exist as archaeological monuments. Great Zimbabwe, the largest of these, was the product of a highly stratified society whose ruling class wielded political authority over the whole plateau. By the fourteenth century, the inhabitants of Great Zimbabwe enjoyed notable prosperity, obtaining luxury goods such as Chinese glazed pottery and Near Eastern glass from distant trading emporia on Africa’s east coast. Scholars often maintain that this prosperity was primarily attributable to Great Zimbabwe’s control over gold mining on the plateau and the export of gold to the coastal markets. However, it is instead the agricultural basis for the zimbabwe economic system that is actually the most crucial element in understanding Great Zimbabwe’s achievements.
+During the fourteenth century, the population of Great Zimbabwe probably exceeded 10,000. This was an extraordinary size for a city at that time in an environment of typical African savanna woodland, because the only system of crop cultivation these soils could support was one that involved long fallow periods between plantings, a pattern typically resulting in low population densities and considerable mobility. Moreover, there were no carts or draft animals for transporting grain in bulk to large population centers, nor could grain be stored in large quantities for any length of time. The alternative agricultural system that Great Zimbabwe practiced was a complex cattle economy that exploited enormous areas of land for grazing. The population of Great Zimbabwe relied heavily on beef for food. In summer, cattle grazed on grass at higher elevations; in winter, the cattle were moved to lower regions unsuitable for grazing in summer because of the risk to the cattle of disease carried by the tsetse fly. This economy demanded large-scale coordinated efforts to control distant pastures and to move and protect the cattle as large herds. This favored a pattern of centralized control over the society, with cattle becoming the property of a ruling class.
+Ordinary people were given use of individual cattle as an act of royal patronage. Because cattle exchange was an essential element in marriage contracts, the power of the royal class reached deep into everyone’s lives. Similarly, the crucial role of cattle also explains Great Zimbabwe’s successful mining industry. Gold is found in scattered deposits throughout the region. Some gold could simply be washed from the sand and gravel of rivers that cut through the deposits, and its recovery was a relatively undemanding seasonal village industry. However, the actual mining of the gold deposits was dangerous, required considerable labor, and might produce only small yields. It was through its use of cattle as a powerful incentive to laborers that royalty was able to muster the human resources necessary for large-scale gold mining.
+
+Toolkit Context:
+The passage discusses the author's theory that Great Zimbabwe's success was based on its agricultural system, specifically a complex cattle economy. The author details how this system supported a large population and was deeply woven into the society's structure. The cattle economy influenced social control, marriage customs, and even the gold mining industry.
+
+Answer Choices:
+A. condemnation of its role in perpetuating powerful centralized control over the society
+B. surprise at its lack of diversification
+C. skepticism about its effectiveness in sustaining the cohesiveness of the society
+D. respect for the intricacy of its workings, but criticism of its inefficiency
+E. appreciation of its complexity and extensive integration into various facets of social life [CORRECT]
+
+Credited Answer: E. appreciation of its complexity and extensive integration into various facets of social life
+
+Correct Answer Explanation:
+This choice best describes the author's view. The author uses words like 'complex' and explains how the cattle economy was central to social structure, marriage, and mining. This shows an appreciation for how intricate and integrated the system was.
+
+Corresponding Proof:
+- The alternative agricultural system that Great Zimbabwe practiced was a complex cattle economy that exploited enormous areas of land for grazing.
+- Because cattle exchange was an essential element in marriage contracts, the power of the royal class reached deep into everyone’s lives.
+- It was through its use of cattle as a powerful incentive to laborers that royalty was able to muster the human resources necessary for large-scale gold mining.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

@@ -1,0 +1,40 @@
+Question ID: PT-115-S-3-P-2-Q-11
+PrepTest: 115
+Section: 3 (Reading Comprehension)
+Passage Number: 2
+Question Number: 11.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following is the most accurate description of the author’s attitude toward Bettelheim’s view of fairy tales?
+
+Passage:
+Passage A:
+Fairy tales address themselves to two communities, each with its own interests and each in periodic conflict with the other: parents and children. Nearly every study of fairy tales has taken the perspective of the parent, constructing the meaning of the tales by using the reading strategies of an adult bent on identifying universally valid tenets of moral instruction for children.
+For example, the plot of “Hansel and Gretel” is set in motion by hard-hearted parents who abandon their children in the woods, but for psychologist Bruno Bettelheim the tale is really about children who learn to give up their unhealthy dependency on their parents. According to Bettelheim, this story—in which the children ultimately overpower a witch who has taken them prisoner for the crime of attempting to eat the witch’s gingerbread house—forces its young audience to recognize the dangers of unrestrained greed. As dependent children, Bettelheim argues, Hansel and Gretel had been a burden to their parents, but on their return home with the witch’s jewels, they become the family’s support. Thus, says Bettelheim, does the story train its young listeners to become “mature children.”
+There are two ways of interpreting a story: one is a “superficial” reading that focuses on the tale’s manifest content, and the other is a “deeper” reading that looks for latent meanings. Many adults who read fairy tales are drawn to this second kind of interpretation in order to avoid facing the unpleasant truths that can emerge from the tales when adults—even parents—are portrayed as capable of acting out of selfish motives themselves. What makes fairy tales attractive to Bettelheim and other psychologists is that they can be used as scenarios that position the child as a transgressor whose deserved punishment provides a lesson for unruly children. Stories that run counter to such orthodoxies about child-rearing are, to a large extent, suppressed by Bettelheim or “rewritten” through reinterpretation. Once we examine his interpretations closely, we see that his readings produce meanings that are very different from those constructed by readers with different cultural assumptions and expectations, who, unlike Bettelheim, do not find inflexible tenets of moral instruction in the tales.
+Bettelheim interprets all fairy tales as driven by children’s fantasies of desire and revenge, and in doing so suppresses the true nature of parental behavior ranging from abuse to indulgence. Fortunately, these characterizations of selfish children and innocent adults have been discredited to some extent by recent psychoanalytic literature. The need to deny adult evil has been a pervasive feature of our society, leading us to position children not only as the sole agents of evil but also as the objects of unending moral instruction, hence the idea that a literature targeted for them must stand in the service of pragmatic instrumentality rather than foster an unproductive form of playful pleasure.
+
+Toolkit Context:
+The author discusses psychologist Bruno Bettelheim's method of interpreting fairy tales. The author argues that Bettelheim's readings consistently portray children as selfish and flawed, while ignoring or downplaying the negative actions of adults. This approach, according to the author, serves to position children as the ones who always need moral correction.
+
+Answer Choices:
+A. concern that the view will undermine the ability of fairy tales to provide moral instruction
+B. scorn toward the view’s supposition that moral tenets can be universally valid
+C. disapproval of the view’s depiction of children as selfish and adults as innocent [CORRECT]
+D. anger toward the view’s claim that children often improve as a result of deserved punishment
+E. disappointment with the view’s emphasis on the manifest content of a tale
+
+Credited Answer: C. disapproval of the view’s depiction of children as selfish and adults as innocent
+
+Correct Answer Explanation:
+This choice accurately captures the author's main criticism. The passage repeatedly points out that Bettelheim's interpretations cast children as selfish wrongdoers while portraying adults as innocent, a view the author clearly disapproves of and notes has been 'discredited'.
+
+Corresponding Proof:
+- Bettelheim interprets all fairy tales as driven by children’s fantasies of desire and revenge, and in doing so suppresses the true nature of parental behavior ranging from abuse to indulgence.
+- Fortunately, these characterizations of selfish children and innocent adults have been discredited to some extent by recent psychoanalytic literature.
+- The need to deny adult evil has been a pervasive feature of our society, leading us to position children not only as the sole agents of evil but also as the objects of unending moral instruction...
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

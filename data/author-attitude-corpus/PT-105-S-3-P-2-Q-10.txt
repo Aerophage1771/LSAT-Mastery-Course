@@ -1,0 +1,40 @@
+Question ID: PT-105-S-3-P-2-Q-10
+PrepTest: 105
+Section: 3 (Reading Comprehension)
+Passage Number: 2
+Question Number: 10.
+Question Category: Author Attitude
+
+Question Stem:
+Based on the passage, the “retributive nature" of the second rationale for punishing criminals (second-to-last sentence of the passage) consists in that rationale’s
+
+Passage:
+Passage A:
+Many of us can conceive of penalties that seem disproportionate to the crimes they are intended to punish. A sentence of probation for a person convicted of a brutal murder is one example of such an imbalance. At the other extreme is a sentence of twenty years in prison for shoplifting. But what is the source of these commonsense intuitions about the appropriateness of punishments?
+There are two main rationales for punishing criminals. The first rationale justifies a punishment in terms of its benefit to society. Society is said to benefit whenever the fear of punishment deters a person from committing a crime, or when a convicted criminal is removed from contact with society at large. The second rationale is that a punishment is justified by the severity of the crime, independent of any benefit to society. This rationale is controversial because some find it difficult to see how a punishment can be justified if it brings no societal benefit; without such benefit, punishment would appear to be little more than retribution. But from the retributivist point of view, the question to be asked about punishment is not whether it is beneficial, but whether it is just—that is, appropriate.
+One problem with the social-benefit rationale is that it is possible that very harsh penalties even for minor offenses may have great benefit to society. For example, if shoplifters faced twenty-year jail sentences, shoplifting might be deterred. Yet something leads us to say that in such cases the penalty far outweighs the crime. That is, there appears to be something intuitively wrong, or unjust, about these punishments. And it would seem that this intuition can only find support in a retributive conception of punishment, under which certain types of punishments are inherently more appropriate than others. The notion of appropriateness is absent from the first rationale, which could conceivably allow for any sort of punishment as long as it benefits society. Retributive considerations, on the other hand, allow for proportionality between punishments and crimes. This is what fuels our notion of just (as opposed to beneficial) punishment.
+However, it can be argued that our intuition of the injustice of an overly harsh punishment is based on our sense that such a punishment is more harmful to the criminal than beneficial to society; and, similarly, that our intuition that a punishment is just is based on our sense that this punishment fairly balances societal benefit against harm to the criminal. In this way the second rationale can be seen as grounded in the first and its retributive nature disappears. Thus it seems that even our so-called intuitive notions of the appropriateness of punishments have their basis in the concept of benefit.
+
+Toolkit Context:
+The passage discusses two main reasons for punishing criminals. The first reason is that punishment benefits society, for example, by scaring people away from crime. The second reason, called the retributive rationale, states that a punishment is justified simply by how serious the crime was, without considering any benefit to society.
+
+Answer Choices:
+A. equating social benefit with harm to criminals
+B. regarding punishment as justified by the severity of the crime [CORRECT]
+C. support for sentences disproportionate to the crimes they punish
+D. belief that any punishment that benefits society is just
+E. favoring harsher sentences over more lenient ones
+
+Credited Answer: B. regarding punishment as justified by the severity of the crime
+
+Correct Answer Explanation:
+This choice accurately describes the core idea of the second rationale. The passage explicitly defines this view as one where a punishment's justification comes from the severity of the crime itself, separate from any societal benefit.
+
+Corresponding Proof:
+- The second rationale is that a punishment is justified by the severity of the crime, independent of any benefit to society.
+- But from the retributivist point of view, the question to be asked about punishment is not whether it is beneficial, but whether it is just—that is, appropriate.
+- Retributive considerations, on the other hand, allow for proportionality between punishments and crimes.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

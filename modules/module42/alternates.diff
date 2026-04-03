@@ -1,0 +1,86 @@
+# Module 42 -- Practice Passage 1: Obasan (PT-119-S-1-P-2)
+# Diff annotations for website lessons rc/42-1 through rc/42-8
+
+{ "type": "diff-note", "text": "All 7 question lessons (42-2 through 42-8) lack a 'try it yourself' prompt before the worked analysis. This is the highest-priority addition across the module.", "variant": "comment" }
+
+## Lesson 42-1: Passage Analysis
+
+{ "type": "diff-note", "text": "The passage analysis is strong. Consider adding a forward-looking section at the end.", "variant": "comment" }
+
+### After the summary callout (end of lesson):
+{{+**Questions Ahead:** The next 7 lessons cover questions on this passage spanning main idea, organization, inference, detail retrieval, suggestion, and attitude question types. Pay particular attention to the thesis structure (two techniques, two goals) and the three-stage rites of passage framework, as multiple questions target these elements.+}}
+
+### After the passage accordion, before h3:
+{{+**Before you read the analysis:** Take 3-4 minutes to read the passage carefully. As you read, try to identify: (1) the author's main thesis, (2) how each paragraph supports it, and (3) the relationship between structure and symbolism.+}}
+
+## Lesson 42-2: Question 8 (Main Idea)
+
+### Before the prediction callout:
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Main Idea -- Find the answer that captures the author's complete argument without omitting or distorting any major component.+}}
+
+{ "type": "diff-note", "text": "This lesson's prediction callout is a model example of how to approach main idea questions. The four-component checklist (two techniques + two goals) is excellent.", "variant": "comment" }
+
+## Lesson 42-3: Question 10 (Organization)
+
+### Before "To answer this":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Organization -- Map the passage's structure paragraph by paragraph, identifying what type of support is used (example, analogy, contrast, etc.).+}}
+
+## Lesson 42-4: Question 11 (Inference)
+
+### Before "In other words":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Inference -- The answer must be directly supported by specific textual evidence. Look for the passage segment that addresses the question's subject.+}}
+
+{ "type": "diff-note", "text": "The wrong-answer analysis for (B) -- confusing author with character -- is an excellent transferable trap pattern worth highlighting.", "variant": "comment" }
+
+## Lesson 42-5: Question 12 (Detail Retrieval)
+
+### Before "The key here":
+{{+**Try this:** Attempt the question before reading the analysis below. This is a direct lookup question -- go back to the passage and find the exact sentence that lists the three stages.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Detail Retrieval -- The answer is stated almost verbatim in the passage. Find the relevant sentence and match its exact terminology to the answer choices.+}}
+
+{ "type": "diff-note", "text": "At 97% correct rate, this is a freebie. Consider noting that students should spend minimal time on questions like this and bank the saved time for harder questions.", "variant": "comment" }
+
+## Lesson 42-6: Question 13 (Detail Retrieval)
+
+### Before "The word 'agent'":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Detail Retrieval -- Look for the specific event or object the passage names as the direct cause of the outcome in question.+}}
+
+## Lesson 42-7: Question 14 (Suggestion/Inference)
+
+### Before "The passage states":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Suggestion/Inference -- The answer must be a logical inference from specific textual evidence, not a general impression. Trace the reasoning chain from the passage to the answer.+}}
+
+{ "type": "diff-note", "text": "This is the hardest question in the set (54% correct). Consider adding an approach tip about 'suggests' questions: the evidence must be in the text even though the answer is not stated directly.", "variant": "comment" }
+
+## Lesson 42-8: Question 15 (Attitude/Viewpoint)
+
+### Before "In other words":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Attitude/Viewpoint -- Identify the author's tone by examining their word choices and what they spend the most time praising or criticizing.+}}
+
+{ "type": "diff-note", "text": "The 'too narrow' trap analysis for (D) is a transferable pattern students should learn to recognize across all RC questions.", "variant": "comment" }
+
+## Module-Level Annotations
+
+{{!The module would benefit from a brief wrap-up section after the final question, summarizing the question types encountered, the key traps identified, and the passage analysis skills that proved most useful.!}}
+
+{{!Consider adding question-type distribution data: 1 Main Idea, 1 Organization, 2 Inference, 2 Detail Retrieval, 1 Attitude. This helps students see which skills this passage emphasizes.!}}

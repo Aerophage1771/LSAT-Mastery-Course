@@ -1,0 +1,39 @@
+Question ID: PT-112-S-2-P-4-Q-23
+PrepTest: 112
+Section: 2 (Reading Comprehension)
+Passage Number: 4
+Question Number: 23.
+Question Category: Author Attitude
+
+Question Stem:
+The passage suggests that the author’s attitude toward the possibility of success for a rights-based legal system in South Africa is most likely one of
+
+Passage:
+Passage A:
+With the elimination of the apartheid system, South Africa now confronts the transition to a rights-based legal system in a constitutional democracy. Among lawyers and judges, exhilaration over the legal tools soon to be available is tempered by uncertainty about how to use them. The changes in the legal system are significant, not just for human rights lawyers, but for all lawyers—as they will have to learn a less rule-bound and more interpretative way of looking at the law. That is to say, in the past, the parliament was the supreme maker and arbiter of laws; when judges made rulings with which the parliament disagreed, the parliament simply passed new laws to counteract their rulings. Under the new system, however, a constitutional court will hear arguments on all constitutional matters, including questions of whether the laws passed by the parliament are valid in light of the individual liberties set out in the constitution’s bill of rights. This shift will lead to extraordinary changes, for South Africa has never before had a legal system based on individual rights—one in which citizens can challenge any law or administrative decision on the basis of their constitutional rights.
+South African lawyers are concerned about the difficulty of fostering a rights-based culture in a multiracial society containing a wide range of political and personal beliefs simply by including a bill of rights in the constitution and establishing the means for its defense. Because the bill of rights has been drawn in very general terms, the lack of precedents will make the task of determining its precise meaning a bewildering one. With this in mind, the new constitution acknowledges the need to look to other countries for guidance. But some scholars warn that judges, in their rush to fill the constitutional void, may misuse foreign law—they may blindly follow the interpretations given bills of rights in other countries, not taking into account the circumstances in those countries that led to certain decisions. Nonetheless, these scholars are hopeful that, with patience and judicious decisions, South Africa can use international experience in developing a body of precedent that will address the particular needs of its citizens.
+South Africa must also contend with the image of the law held by many of its citizens. Because the law in South Africa has long been a tool of racial oppression, many of its citizens have come to view obeying the law as implicitly sanctioning an illegitimate, brutal government. Among these South Africans the political climate has thus been one of opposition, and many see it as their duty to cheat the government as much as possible, whether by not paying taxes or by disobeying parking laws. If a rights-based culture is to succeed, the government will need to show its citizens that the legal system is no longer a tool of oppression but instead a way to bring about change and help further the cause of justice.
+
+Toolkit Context:
+The author discusses South Africa's transition to a new, rights-based legal system after apartheid. The passage highlights both the excitement about these changes and the serious challenges ahead. These challenges include a lack of legal precedent, the risk of misusing foreign law, and deep public distrust of the legal system.
+
+Answer Choices:
+A. deep skepticism
+B. open pessimism
+C. total indifference
+D. guarded optimism [CORRECT]
+E. complete confidence
+
+Credited Answer: D. guarded optimism
+
+Correct Answer Explanation:
+This choice is correct because the author's attitude is hopeful but cautious. The passage expresses optimism about the new system but also carefully details the significant hurdles South Africa faces, making the optimism 'guarded'.
+
+Corresponding Proof:
+- Among lawyers and judges, exhilaration over the legal tools soon to be available is tempered by uncertainty about how to use them.
+- But some scholars warn that judges, in their rush to fill the constitutional void, may misuse foreign law...
+- Nonetheless, these scholars are hopeful that, with patience and judicious decisions, South Africa can use international experience in developing a body of precedent that will address the particular needs of its citizens.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

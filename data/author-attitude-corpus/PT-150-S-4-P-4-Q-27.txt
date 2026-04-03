@@ -1,0 +1,55 @@
+Question ID: PT-150-S-4-P-4-Q-27
+PrepTest: 150
+Section: 4 (Reading Comprehension)
+Passage Number: 4
+Question Number: 27.
+Question Category: Author Attitude
+
+Question Stem:
+The stances of the authors of passage A and passage B, respectively, toward independent research on the part of trial judges are most accurately described as
+
+Passage:
+Passage A:
+Why do some trial court judges oppose conducting independent research to help them make decisions? One of their objections is that it distorts the adversarial system by requiring an active judicial role and undermining the importance of evidence presented by the opposing parties. Another fear is that judges lack the wherewithal to conduct first-rate research and may wind up using outlier or discredited scientific materials.
+
+
+While these concerns have some merit, they do not justify an absolute prohibition of the practice. First, there are reasons to sacrifice adversarial values in the scientific evidence context. The adversarial system is particularly ill-suited to handling specialized knowledge. The two parties prescreen and compensate expert witnesses, which virtually ensures conflicting and partisan testimony. At the same time, scientific facts are general truths not confined to the immediate cases. Because scientific admissibility decisions can exert considerable influence over future cases, erroneous decisions detract from the legitimacy of the system. Independent research could help judges avoid such errors.
+
+
+Second, a trial provides a structure that guides any potential independent research, reducing the possibility of a judge’s reaching outlandish results. Independent research supplements, rather than replaces, the parties’ presentation of the evidence, so the parties always frame the debate.
+
+Passage B:
+Regardless of what trial courts may do, appellate courts should resist the temptation to conduct their own independent research of scientific literature.
+
+
+As a general rule, appellate courts do not hear live testimony. Thus these courts lack some of the critical tools available at the trial level for arriving at a determination of the facts: live testimony and cross-examination. Experts practicing in the field may have knowledge and experience beyond what is reflected in the available scientific literature. And adverse parties can test the credibility and reliability of proffered literature by subjecting the expert witness to the greatest legal engine ever invented for the discovery of truth—cross-examination.. However, these events can only occur at the trial level.
+
+
+Literature considered for the first time at the appellate level is not subject to live comment by practicing experts and cannot be tested in the crucible of the adversarial system. Thus one of the core criticisms against the use of such sources by appellate courts is that doing so usurps the trial court’s fact-finding function. Internet sources, in particular, have come under criticism for their potential unreliability.
+
+
+When an appellate court goes outside the record to determine case facts, it ignores its function as a court of review, and it substitutes its own questionable research results for evidence that should have been tested in the trial court. This criticism applies with full force to the use of outside-the-record texts and treatises, regardless of the medium in which they are found.
+
+Toolkit Context:
+This question asks you to identify the attitude of each author toward independent research by trial judges. Passage A discusses the pros and cons of this practice for trial judges, ultimately arguing that the benefits outweigh the concerns. Passage B focuses on why appellate courts should not do independent research, and it purposefully avoids taking a position on whether trial courts should do it.
+
+Answer Choices:
+A. resigned acceptance and implicit disapproval
+B. cautious ambivalence and strict neutrality
+C. reasoned skepticism and veiled antipathy
+D. qualified approval and explicit noncommitment [CORRECT]
+E. forceful advocacy and tentative opposition
+
+Credited Answer: D. qualified approval and explicit noncommitment
+
+Correct Answer Explanation:
+This choice is correct. Passage A offers 'qualified approval' by acknowledging concerns but ultimately supporting the practice for trial judges. Passage B shows 'explicit noncommitment' by stating, 'Regardless of what trial courts may do,' making it clear the author is not taking a stance on that specific issue.
+
+Corresponding Proof:
+- While these concerns have some merit, they do not justify an absolute prohibition of the practice.
+- Independent research could help judges avoid such errors.
+- Regardless of what trial courts may do, appellate courts should resist the temptation to conduct their own independent research of scientific literature.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

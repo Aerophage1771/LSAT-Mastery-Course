@@ -1,0 +1,38 @@
+Question ID: PT-120-S-2-P-1-Q-1
+PrepTest: 120
+Section: 2 (Reading Comprehension)
+Passage Number: 1
+Question Number: 1.
+Question Category: Author Attitude
+
+Question Stem:
+It can be reasonably inferred from the passage that the author’s attitude is most favorable toward which one of the following?
+
+Passage:
+Passage A:
+In 1963, a three-week-long demonstration for jobs at the construction site of the Downstate Medical Center in Brooklyn, New York, became one of the most significant and widely publicized campaigns of the civil rights movement in the United States. An interdenominational group made up mostly of locally based African American ministers, who had remained politically moderate until then, organized and led hundreds of people in an aggressive protest. Their efforts relied mainly on the participation and direct financial support of the ministers’ own congregations and other congregations throughout Brooklyn. The goal of this campaign was to build a mass movement that would force changes in government policies as well as in trade union hiring practices, both of which they believed excluded African Americans from construction jobs.
+Inspired by the emergence of African American religious leaders as key figures elsewhere in the civil rights movement, and reasoning that the ministers would be able to mobilize large numbers of people from their congregations and network effectively with other religious leaders throughout the city, the Congress of Racial Equality (CORE), a national civil rights organization, had decided to ask the ministers to lead the Downstate campaign. However, by organizing a civil disobedience campaign, the ministers were jeopardizing one of the very factors that had led CORE to seek their involvement: their positions as politically moderate community leaders. Urban African American ministers and churches had been working for decades with community and government organizations to address the social, political, and economic concerns of their communities, and ministers of African American congregations in Brooklyn had often acted as mediators between their communities and the government. Many of them also worked for major political parties and ran for political office themselves. By endorsing and leading the Downstate protest, the ministers were risking their political careers and their reputations within their communities for effecting change through established political channels.
+The Downstate campaign ended with an agreement between the ministers and both government and union officials. This agreement did not include new legislation or a commitment to a specific numerical increase in jobs for African Americans, as the protestors had demanded. But even though some civil rights activists therefore considered the agreement incomplete, government officials did pledge to enforce existing antidiscrimination legislation. Moreover, the Downstate campaign effectively aroused public concern for the previously neglected problem of discrimination in the construction industry. It also drew public attention, which had hitherto focused on the progress of the civil rights movement primarily in the southern United States, to the additional need to alleviate discrimination in the North. Finally, throughout the campaign, the ministers managed to maintain their moderate political ties. The dual role played by the ministers—activists who nonetheless continued to work through established political channels—served as a model for future ministers who sought to initiate protest actions on behalf of their communities.
+
+Toolkit Context:
+The passage describes the 1963 Downstate campaign, a civil rights protest in Brooklyn led by African American ministers. The author discusses the campaign's goals, the risks involved for its leaders, and its ultimate outcomes. The final paragraph is most relevant, as it weighs the mixed results of the campaign and uses specific language to highlight its successes.
+
+Answer Choices:
+A. the ways in which the Downstate campaign altered the opinions of union leaders
+B. the impact that the Downstate campaign had on the implementation of new antidiscrimination legislation
+C. CORE’s relationship to the demonstrators in the Downstate campaign
+D. the effects that the Downstate campaign had on public awareness [CORRECT]
+E. the way in which the leaders of the Downstate campaign negotiated the agreement that ended the campaign
+
+Credited Answer: D. the effects that the Downstate campaign had on public awareness
+
+Correct Answer Explanation:
+The author uses clearly positive language when describing the campaign's effect on public awareness. Words like 'effectively aroused public concern' and 'drew public attention' show a favorable attitude toward this specific outcome, making it the aspect the author views most positively.
+
+Corresponding Proof:
+- Moreover, the Downstate campaign effectively aroused public concern for the previously neglected problem of discrimination in the construction industry.
+- It also drew public attention, which had hitherto focused on the progress of the civil rights movement primarily in the southern United States, to the additional need to alleviate discrimination in the North.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

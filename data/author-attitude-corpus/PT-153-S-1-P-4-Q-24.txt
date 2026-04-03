@@ -1,0 +1,53 @@
+Question ID: PT-153-S-1-P-4-Q-24
+PrepTest: 153
+Section: 1 (Reading Comprehension)
+Passage Number: 4
+Question Number: 24.
+Question Category: Author Attitude
+
+Question Stem:
+The attitude displayed in passage A toward blues musicians and the attitude displayed in passage B toward griots can both be characterized as
+
+Passage:
+Passage A:
+Many commentators have described the blues musician of the United States as an extension of the griot of West Africa, yet one could hardly find two performers with less in common from a sociological perspective. Griots were the historians of their communities, representatives of time-honored traditions, the preservers of lore and cultural identity. They took these traditions and transformed them into song, and as a result often enjoyed great status in their communities. In societies that lacked libraries and museums, official documents and archives, the griot’s song filled many of the roles that these institutions serve in other societies.
+
+
+The blues musician, in contrast, honed a music of personal expression, often reflecting a lack of connection to the broader streams of society, evoking feelings of alienation and anomie. Slavery caused this terrible disjunction. Slavery destroyed in large part the traditional social fabric, the communal values, the historical continuities that made the griot’s art possible. Blues music was, in many ways, a response to this deprivation.
+
+
+And here we encounter the fundamental tragedy of the blues and one of the sources of its unparalleled symbolic power. For the music sings of small, everyday details of individual lives. But behind this facade always sits a larger reality, invariably unspoken, but no less present for this silence. Separated from the social institutions that gave life its meaning and resonance within their traditional societies, African Americans struggled to find substitutes for what was lost within the smaller cosmos of their personal relationships and daily life. Blues music reflected this dynamic, gave it powerful poetic expression. From this perspective, the perennial themes of blues music—heartache and hardships—capture in a personal dimension the larger social truth.
+
+Passage B:
+Fifteenth-century Portuguese explorers observed a stratified social hierarchy in the Wolof culture of Senegal, with a high-status noble sector (géer) and low-status caste groups (ñeeño). Wolof elites of the day ranked ñeeño in six subcastes, the lowest of which was griot.
+
+
+Griots alone specialized in the spoken word. Raising one’s voice in public was considered inappropriate for socially prominent people, but griots, considered unmarriageable outside their caste, shouted and sang their patrons’ praises to crowds of people, often with a drum, and always with great eloquence.
+
+
+At community gatherings, griots accompanied their patrons, with whom they had usually inherited a close relationship through generations of service. Reciting vivid histories about the brave deeds of their patrons’ family ancestors and singing praises about their exemplary work and daily conduct, griots used their music to sway public opinion in favor of their patrons. Their songs invoked specific public values and described their patrons’ adherence to them, making the griot a blend of community historian, storyteller, spokesperson, and ultimately, guardian of norms and culture. Despite the griots’ public loudness, these performances and the prestige they brought their patrons required griots to be sensitive to Wolof community values and conceptions of correct social conduct.
+
+Toolkit Context:
+This question asks you to find a description that fits the attitude of both passages toward their subjects. Passage A discusses blues musicians, highlighting their music's "unparalleled symbolic power" as an expression of personal struggle. Passage B describes West African griots, noting their "great eloquence" and their essential role in their communities as storytellers and historians.
+
+Answer Choices:
+A. admiration for the musicians’ ability to represent personal struggle symbolically
+B. unease about the musicians’ role in preserving a social structure
+C. envy of the musicians’ artistic contributions
+D. approval of the musicians’ role as community historians
+E. respect for the musicians’ artistry [CORRECT]
+
+Credited Answer: E. respect for the musicians’ artistry
+
+Correct Answer Explanation:
+This choice accurately describes the tone of both passages. Passage A shows respect by calling the blues' expression "powerful" and its symbolism "unparalleled." Passage B shows respect by describing the griots' skill with "great eloquence" and their important cultural function.
+
+Corresponding Proof:
+- And here we encounter the fundamental tragedy of the blues and one of the sources of its unparalleled symbolic power.
+- Blues music reflected this dynamic, gave it powerful poetic expression.
+- Griots alone specialized in the spoken word.
+- ...griots...shouted and sang their patrons’ praises to crowds of people, often with a drum, and always with great eloquence.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

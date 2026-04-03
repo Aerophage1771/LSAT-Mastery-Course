@@ -1,0 +1,123 @@
+--- Module 57: Advanced Passage 7 -- Digitalization and Copyright Law
+--- Diff annotations for website lessons rc/57-1 through rc/57-6
+--- Date: 2026-04-01
+
+{ "type": "diff-note", "text": "All five question lessons (57-2 through 57-6) lack a 'try it yourself' prompt before the worked analysis. This is the same gap found in M55 and M56. Adding an active-practice callout before every analysis section is the highest-priority improvement.", "variant": "comment" }
+
+
+=== Lesson 57-1: Passage Analysis ===
+
+--- rc/57-1.tsx
++++ rc/57-1.tsx (proposed)
+
+ [After accordion passage block, before "Paragraph 1" h4]
+
+{{+add+}} Add an HR separator for visual consistency with M56:
+{{+<hr>+}}
+
+{{+add+}} Add a "Reading Strategy" callout:
+{{+**Approach Tips:** This is a problem-proposal-complications passage about law and technology. As you read: (1) Track the core conflict (free information vs. copyright protection). (2) Mark the legal loophole in P2 -- the gap between "material form" and "electronic signals." (3) Number the three complications in P3: defining the crime, enforcing the law, and the academic exemption. (4) Note the final sentence's "deeper conflict" -- this often becomes an inference or main-point question target.+}}
+
+{ "type": "diff-note", "text": "57-1 is the thinnest passage analysis (6 blocks vs. 8 in M55 and 10 in M56). It needs a reading strategy section, temporal context note, and explicit enumeration of P3 complications.", "variant": "comment" }
+
+{{+add+}} Add a temporal context note:
+{{+**Context Note:** The passage begins with "The following passage was written in the mid-1990s." On the LSAT, temporal context notes signal that the situation described may have changed, but you must answer based solely on what the passage says. Do not import your knowledge of modern copyright law. Treat the passage's claims as current within its own world.+}}
+
+ [In the P3 analysis, expand the complications list]
+
+{{~change~}} Current P3 analysis mentions problems generally.
+Proposed: Enumerate explicitly:
+"The author raises three distinct complications: (1) **Defining the crime:** Is it just the original digitalization, or every copy made from it? (2) **Enforcement:** With 20 million users and simple copying, policing violations is nearly impossible. (3) **Academic exemptions:** Current law already exempts researchers, and academics are a huge share of Internet users."
+
+ [After the Summary callout at end of lesson]
+
+{{+add+}} Add a "What to Expect" section:
+{{+**What to Expect from the Questions:** This passage generates a Main Point question (testing whether you captured the full arc), a Compromise question (requiring synthesis of both parties' interests), a Function question (purpose of a specific paragraph), an EXCEPT question (checking individual inferences), and an Expert Viewpoint question (what can be attributed to named experts). The hardest question tests your ability to distinguish between settled conclusions and open questions.+}}
+
+
+=== Lesson 57-2: Question 24 Breakdown ===
+
+--- rc/57-2.tsx
++++ rc/57-2.tsx (proposed)
+
+ [Between the "options" block and the callout starting "The passage has a problem-solution structure"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+{ "type": "diff-note", "text": "Q24 has an 88% correct rate -- the easiest in the module. Most students can identify the main point if they read the passage carefully. The analysis could be slightly more concise.", "variant": "comment" }
+
+
+=== Lesson 57-3: Question 25 Breakdown ===
+
+--- rc/57-3.tsx
++++ rc/57-3.tsx (proposed)
+
+ [Between the "options" block and the callout starting "A compromise must address"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+{ "type": "diff-note", "text": "Compromise questions are uncommon on the LSAT and test a different skill -- synthesizing two opposing positions and finding a middle ground. This deserves explicit methodology teaching.", "variant": "comment" }
+
+ [After the "Try this" prompt, before the existing Prediction callout]
+
+{{+add+}} Methodology callout:
+{{+**Compromise Question Strategy:** This question asks you to find a solution that gives something to both sides. Strategy: (1) Identify what each party wants. The internet community wants access; the publishing community wants compensation. (2) Eliminate answers that only satisfy one side -- (C) favors users, (D) favors publishers. (3) The correct answer involves a trade-off where one side gets access and the other gets payment or protection.+}}
+
+ [After the breakdown block]
+
+{{+add+}} Add a distractor note:
+{{+**Why (E) is tempting:** It mentions research, which the passage discusses at length. But it is not a compromise -- it merely restates an exemption that already exists under current law. A real compromise must change the status quo for both parties.+}}
+
+
+=== Lesson 57-4: Question 26 Breakdown ===
+
+--- rc/57-4.tsx
++++ rc/57-4.tsx (proposed)
+
+ [Between the "options" block and the callout starting "The second paragraph's job is to explain"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+
+=== Lesson 57-5: Question 27 Breakdown ===
+
+--- rc/57-5.tsx
++++ rc/57-5.tsx (proposed)
+
+ [Between the "options" block and the callout starting "This is an EXCEPT question"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+{ "type": "diff-note", "text": "Q27 has the lowest correct rate in the module at 47%. The main distractor (D) at 32% requires an inferential step that many students miss. A 'Why This Is Hard' note would help.", "variant": "comment" }
+
+ [After the breakdown block]
+
+{{+add+}} Add a "Why This Is Hard" callout:
+{{+**Why This Is Hard:** Answer (D) trips up many students because it requires a hypothetical inference: "if digitalization technology were made even easier to use." The passage supports this -- it says enforcement is hard partly because copying is a "relatively simple process," so making it simpler would logically increase violations. Answer (C) is the correct choice because it treats an open question (whether a revised law will prohibit secondary copies) as a settled fact. The passage explicitly frames this as an unresolved question, not a conclusion.+}}
+
+
+=== Lesson 57-6: Question 28 Breakdown ===
+
+--- rc/57-6.tsx
++++ rc/57-6.tsx (proposed)
+
+ [Between the "options" block and the callout starting "The experts propose"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+{ "type": "diff-note", "text": "Q28 is the hardest question in the module at 38% correct. The key inference depends on a single phrase ('simply adding') and its implications for existing exemptions. This question rewards close reading of proposal language.", "variant": "comment" }
+
+ [After the breakdown block]
+
+{{+add+}} Add a "Why This Is Hard" callout:
+{{+**Why This Is Hard:** The key phrase is "simply adding." If the experts proposed radically overhauling the law, we could not predict which exemptions would survive. But because they propose a simple addition to existing law, we can infer that all existing provisions -- including the academic exemptions for "private study or research" -- would remain. Answer (E) at 30% is the main trap: it sounds reasonable but attributes a specific position on secondary copies to the experts, which the passage only raises as an open question, never as the experts' stated view.+}}
+
+ [After the "Why This Is Hard" callout, at end of content array]
+
+{{+add+}} Optional module wrap-up:
+{{+**Module Takeaways:** This passage tested five questions across five distinct question types. Two key skills emerged: (1) Distinguishing between settled conclusions and open questions. The passage raises several unresolved issues (scope of the crime, enforceability, secondary copies), and the hardest questions (Q27, Q28) tested whether students could tell what the passage concludes from what it merely asks. (2) Reading proposal language carefully. The word "simply" in the experts' proposal was the key to Q28 -- it implied that existing law (including exemptions) would remain intact.+}}
+
+{ "type": "diff-note", "text": "M57 has the hardest overall question set (average correct rates lower than M55 and M56). The two hardest questions (Q27 at 47%, Q28 at 38%) both test the same skill: distinguishing conclusions from open questions. A synthesis note highlighting this pattern would reinforce the lesson across the module.", "variant": "comment" }
+
+
+--- END OF DIFF ---

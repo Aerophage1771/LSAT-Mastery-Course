@@ -1,0 +1,40 @@
+Question ID: PT-126-S-2-P-3-Q-21
+PrepTest: 126
+Section: 2 (Reading Comprehension)
+Passage Number: 3
+Question Number: 21.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately identifies the attitude shown by the author in the passage toward talk-story?
+
+Passage:
+Passage A:
+With their recognition of Maxine Hong Kingston as a major literary figure, some critics have suggested that her works have been produced almost ex nihilo, saying that they lack a large traceable body of direct literary antecedents especially within the Chinese American heritage in which her work is embedded. But these critics, who have examined only the development of written texts, the most visible signs of a culture’s narrative production, have overlooked Kingston’s connection to the long Chinese tradition of a highly developed genre of song and spoken narrative known as “talk-story” (gong gu tsai).
+Traditionally performed in the dialects of various ethnic enclaves, talk-story has been maintained within the confines of the family and has rarely surfaced into print. The tradition dates back to Sung dynasty (A.D. 970–1279) storytellers in China, and in the United States it is continually revitalized by an overlapping sequence of immigration from China. Thus, Chinese immigrants to the U.S. had a fully established, sophisticated oral culture, already ancient and capable of producing masterpieces, by the time they began arriving in the early nineteenth century. This transplanted oral heritage simply embraced new subject matter or new forms of Western discourse, as in the case of Kingston’s adaptations written in English.
+Kingston herself believes that as a literary artist she is one in a long line of performers shaping a recalcitrant history into talk-story form. She distinguishes her “thematic” storytelling memory processes, which sift and reconstruct the essential elements of personally remembered stories, from the memory processes of a print-oriented culture that emphasizes the retention of precise sequences of words. Nor does the entry of print into the storytelling process substantially change her notion of the character of oral tradition. For Kingston, “writer” is synonymous with “singer” or “performer” in the ancient sense of privileged keeper, transmitter, and creator of stories whose current stage of development can be frozen in print, but which continue to grow both around and from that frozen text.
+Kingston’s participation in the tradition of talk-story is evidenced in her book China Men, which utilizes forms typical of that genre and common to most oral cultures including: a fixed “grammar” of repetitive themes; a spectrum of stock characters; symmetrical structures, including balanced oppositions (verbal or physical contests, antithetical characters, dialectical discourse such as question-answer forms and riddles); and repetition. In China Men, Kingston also succeeds in investing idiomatic English with the allusive texture and oral-aural qualities of the Chinese language, a language rich in aural and visual puns, making her work a written form of talk-story.
+
+Toolkit Context:
+The author discusses the Chinese oral tradition called “talk-story” to explain the literary heritage of author Maxine Hong Kingston. The passage describes this tradition as ancient, complex, and sophisticated. The author's specific word choices in describing talk-story reveal a positive and respectful attitude toward it.
+
+Answer Choices:
+A. scholarly appreciation for its longstanding artistic sophistication [CORRECT]
+B. mild disappointment that it has not distinguished itself from other oral traditions
+C. tentative approval of its resistance to critical evaluations
+D. clear respect for the diversity of its ancient sources and cultural derivations
+E. open admiration for the way it uses song to express narrative
+
+Credited Answer: A. scholarly appreciation for its longstanding artistic sophistication
+
+Correct Answer Explanation:
+This answer is correct because the author consistently uses positive, academic language to describe talk-story. The passage highlights its long history, dating back to the Sung dynasty, and its artistic complexity, calling it a 'highly developed genre' and a 'sophisticated oral culture.' This combination of respect for its history and its artistic merit is best described as scholarly appreciation.
+
+Corresponding Proof:
+- But these critics... have overlooked Kingston’s connection to the long Chinese tradition of a highly developed genre of song and spoken narrative known as “talk-story” (gong gu tsai).
+- The tradition dates back to Sung dynasty (A.D. 970–1279) storytellers in China...
+- Thus, Chinese immigrants to the U.S. had a fully established, sophisticated oral culture, already ancient and capable of producing masterpieces...
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

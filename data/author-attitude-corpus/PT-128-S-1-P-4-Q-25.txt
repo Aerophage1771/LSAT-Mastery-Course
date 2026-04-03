@@ -1,0 +1,40 @@
+Question ID: PT-128-S-1-P-4-Q-25
+PrepTest: 128
+Section: 1 (Reading Comprehension)
+Passage Number: 4
+Question Number: 25.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the author’s attitude toward the work of Sommerer and Ott?
+
+Passage:
+Passage A:
+One of the foundations of scientific research is that an experimental result is credible only if it can be replicated—only if performing the experiment a second time leads to the same result. But physicists John Sommerer and Edward Ott have conceived of a physical system in which even the least change in the starting conditions—no matter how small, inadvertent, or undetectable—can alter results radically. The system is represented by a computer model of a mathematical equation describing the motion of a particle placed in a particular type of force field.
+Sommerer and Ott based their system on an analogy with the phenomena known as riddled basins of attraction. If two bodies of water bound a large landmass and water is spilled somewhere on the land, the water will eventually make its way to one or the other body of water, its destination depending on such factors as where the water is spilled and the geographic features that shape the water’s path and velocity. The basin of attraction for a body of water is the area of land that, whenever water is spilled on it, always directs the spilled water to that body.
+In some geographical formations it is sometimes impossible to predict, not only the exact destination of the spilled water, but even which body of water it will end up in. This is because the boundary between one basin of attraction and another is riddled with fractal properties; in other words, the boundary is permeated by an extraordinarily high number of physical irregularities such as notches or zigzags. Along such a boundary, the only way to determine where spilled water will flow at any given point is actually to spill it and observe its motion; spilling the water at any immediately adjacent point could give the water an entirely different path, velocity, or destination.
+In the system posited by the two physicists, this boundary expands to include the whole system: i.e., the entire force field is riddled with fractal properties, and it is impossible to predict even the general destination of the particle given its starting point. Sommerer and Ott make a distinction between this type of uncertainty and that known as “chaos”; under chaos, a particle’s general destination would be predictable but its path and exact destination would not.
+There are presumably other such systems because the equation the physicists used to construct the computer model was literally the first one they attempted, and the likelihood that they chose the only equation that would lead to an unstable system is small. If other such systems do exist, metaphorical examples of riddled basins of attraction may abound in the failed attempts of scientists to replicate previous experimental results—in which case, scientists would be forced to question one of the basic principles that guide their work.
+
+Toolkit Context:
+The final paragraph discusses the wider meaning of Sommerer and Ott's work on unpredictable systems. The author considers the likelihood that other such systems exist. The author also thinks about what this would mean for the scientific principle of repeating experiments to get the same result.
+
+Answer Choices:
+A. skeptical of the possibility that numerous unstable systems exist but confident that the existence of numerous unstable systems would call into question one of the foundations of science
+B. convinced of the existence of numerous unstable systems and unsure if the existence of numerous unstable systems calls into question one of the foundations of science
+C. convinced of the existence of numerous unstable systems and confident that the existence of numerous unstable systems calls into question one of the foundations of science
+D. persuaded of the possibility that numerous unstable systems exist and unsure if the existence of numerous unstable systems would call into question one of the foundations of science
+E. persuaded of the possibility that numerous unstable systems exist and confident that the existence of numerous unstable systems would call into question one of the foundations of science [CORRECT]
+
+Credited Answer: E. persuaded of the possibility that numerous unstable systems exist and confident that the existence of numerous unstable systems would call into question one of the foundations of science
+
+Correct Answer Explanation:
+This answer correctly identifies the author's attitude. The author is 'persuaded of the possibility' that more unstable systems exist, using words like 'presumably.' The author is also 'confident' about the consequences, stating that scientists would be 'forced' to question a basic scientific principle.
+
+Corresponding Proof:
+- There are presumably other such systems because the equation the physicists used to construct the computer model was literally the first one they attempted, and the likelihood that they chose the only equation that would lead to an unstable system is small.
+- If other such systems do exist, metaphorical examples of riddled basins of attraction may abound in the failed attempts of scientists to replicate previous experimental results—in which case, scientists would be forced to question one of the basic principles that guide their work.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

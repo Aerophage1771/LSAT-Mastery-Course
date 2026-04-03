@@ -1,0 +1,39 @@
+Question ID: PT-125-S-3-P-2-Q-9
+PrepTest: 125
+Section: 3 (Reading Comprehension)
+Passage Number: 2
+Question Number: 9.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following best captures the author’s attitude toward Lichtenstein’s work?
+
+Passage:
+Passage A:
+The painter Roy Lichtenstein helped to define pop art—the movement that incorporated commonplace objects and commercial-art techniques into paintings—by paraphrasing the style of comic books in his work. His merger of a popular genre with the forms and intentions of fine art generated a complex result: while poking fun at the pretensions of the art world, Lichtenstein’s work also managed to convey a seriousness of theme that enabled it to transcend mere parody.
+That Lichtenstein’s images were fine art was at first difficult to see, because, with their word balloons and highly stylized figures, they looked like nothing more than the comic book panels from which they were copied. Standard art history holds that pop art emerged as an impersonal alternative to the histrionics of abstract expressionism, a movement in which painters conveyed their private attitudes and emotions using nonrepresentational techniques. The truth is that by the time pop art first appeared in the early 1960s, abstract expressionism had already lost much of its force. Pop art painters weren’t quarreling with the powerful early abstract expressionist work of the late 1940s but with a second generation of abstract expressionists whose work seemed airy, high-minded, and overly lyrical. Pop art paintings were full of simple black lines and large areas of primary color. Lichtenstein’s work was part of a general rebellion against the fading emotional power of abstract expressionism, rather than an aloof attempt to ignore it.
+But if rebellion against previous art by means of the careful imitation of a popular genre were all that characterized Lichtenstein’s work, it would possess only the reflective power that parodies have in relation to their subjects. Beneath its cartoonish methods, his work displayed an impulse toward realism, an urge to say that what was missing from contemporary painting was the depiction of contemporary life. The stilted romances and war stories portrayed in the comic books on which he based his canvases, the stylized automobiles, hot dogs, and table lamps that appeared in his pictures, were reflections of the culture Lichtenstein inhabited. But, in contrast to some pop art, Lichtenstein’s work exuded not a jaded cynicism about consumer culture, but a kind of deliberate naivete, intended as a response to the excess of sophistication he observed not only in the later abstract expressionists but in some other pop artists. With the comics—typically the domain of youth and innocence—as his reference point, a nostalgia fills his paintings that gives them, for all their surface bravado, an inner sweetness. His persistent use of comic-art conventions demonstrates a faith in reconciliation, not only between cartoons and fine art, but between parody and true feeling.
+
+Toolkit Context:
+The author presents a nuanced analysis of Roy Lichtenstein's work, going beyond the simple label of 'parody.' The passage highlights the artist's multiple, complex achievements: rebelling against stale art forms, pushing for realism, and uniquely blending cynicism with a 'deliberate naivete.' The author uses positive and appreciative language throughout, describing Lichtenstein's work as having a 'seriousness of theme,' an 'inner sweetness,' and a 'faith in reconciliation.'
+
+Answer Choices:
+A. enthusiasm for its more rebellious aspects
+B. respect for its successful parody of youth and innocence
+C. pleasure in its blatant rejection of abstract expressionism
+D. admiration for its subtle critique of contemporary culture
+E. appreciation for its ability to incorporate both realism and naivete [CORRECT]
+
+Credited Answer: E. appreciation for its ability to incorporate both realism and naivete
+
+Correct Answer Explanation:
+This choice best captures the author's overall attitude. The author spends the final paragraph detailing how Lichtenstein's work simultaneously displays 'an impulse toward realism' and a 'deliberate naivete.' The author's detailed and positive description of this complex blend indicates a strong sense of appreciation for this sophisticated artistic achievement.
+
+Corresponding Proof:
+- Beneath its cartoonish methods, his work displayed an impulse toward realism, an urge to say that what was missing from contemporary painting was the depiction of contemporary life.
+- But, in contrast to some pop art, Lichtenstein’s work exuded not a jaded cynicism about consumer culture, but a kind of deliberate naivete.
+- a nostalgia fills his paintings that gives them, for all their surface bravado, an inner sweetness.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

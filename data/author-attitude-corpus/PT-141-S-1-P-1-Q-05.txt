@@ -1,0 +1,40 @@
+Question ID: PT-141-S-1-P-1-Q-5
+PrepTest: 141
+Section: 1 (Reading Comprehension)
+Passage Number: 1
+Question Number: 5.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s stance toward the arguments of the strict constructionist Darwinians can most accurately be described as one of
+
+Passage:
+Passage A:
+Charles Darwin objected to all attempts to reduce his theory of evolution to its doctrine of natural selection. “Natural selection has been the main but not the exclusive means of modification,” he declared. Nonetheless, a group of self-proclaimed strict constructionist Darwinians has recently risen to prominence by reducing Darwin’s theory in just this way. These theorists use the mechanism of natural selection to explain all biological phenomena; they assert that natural selection is responsible for every aspect of every species’ form and behavior, and for the success or failure of species in general.
+Natural selection is generally held to result in adaptation, the shaping of an organism’s form and behavior in response to environmental conditions to achieve enhanced reproductive success. If the strict constructionists are right, the persistence of every attribute and the survival of every species are due to such adaptation. But in fact, nature provides numerous examples of attributes that are not adaptations for reproductive success and of species whose success or failure had little to do with their adaptations.
+For example, while it is true that some random mutations of genetic material produce attributes that enhance reproductive success and are thus favored by natural selection, and others produce harmful attributes that are weeded out, we now know from population genetics that most mutations fall into neither category. Research has revealed that neutral, nonadaptive changes account to a large extent for the evolution of DNA. Most substitutions of one unit of DNA for another within a population have no effect on reproductive success. These alterations often change the attributes of species, but their persistence from one generation to the next is not explainable by natural selection.
+Additionally, the study of mass extinctions in paleontology has undermined the strict constructionist claim that natural selection can account for every species’ success or failure. The extinction of the dinosaurs some 65 million years ago was probably caused by the impact of an extraterrestrial body. Smaller animal species are generally better able to survive the catastrophic changes in climate that we would expect to follow from such an impact, and mammals in the Cretaceous period were quite small because they could not compete on the large scale of the dominant dinosaurs. But while this scenario explains why dinosaurs died off and mammals fared relatively well, it does not conform to the strict constructionist view of the adaptive reasons for the success of species. For that view assumes that adaptations are a response to conditions that are already in place at the time the adaptations occur, and mammals could not have adapted in advance to conditions caused by the impact. In a sense, their success was the result of dumb luck.
+
+Toolkit Context:
+This question asks you to identify the author's attitude toward a group called 'strict constructionist Darwinians.' The author first explains this group's belief that natural selection is the only force behind all aspects of evolution. The rest of the passage is then dedicated to presenting evidence to prove that this belief is wrong.
+
+Answer Choices:
+A. emphatic disagreement [CORRECT]
+B. mild disapproval
+C. open-minded neutrality
+D. conditional agreement
+E. unreserved endorsement
+
+Credited Answer: A. emphatic disagreement
+
+Correct Answer Explanation:
+The author strongly disagrees with the strict constructionists. They use forceful language and present two major pieces of scientific evidence (from genetics and paleontology) to directly contradict and 'undermine' the strict constructionist view. This shows a clear and emphatic disagreement, not a mild or neutral one.
+
+Corresponding Proof:
+- But in fact, nature provides numerous examples of attributes that are not adaptations for reproductive success and of species whose success or failure had little to do with their adaptations.
+- These alterations often change the attributes of species, but their persistence from one generation to the next is not explainable by natural selection.
+- Additionally, the study of mass extinctions in paleontology has undermined the strict constructionist claim that natural selection can account for every species’ success or failure.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

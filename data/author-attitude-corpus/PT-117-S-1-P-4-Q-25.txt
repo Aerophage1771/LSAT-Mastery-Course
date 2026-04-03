@@ -1,0 +1,38 @@
+Question ID: PT-117-S-1-P-4-Q-25
+PrepTest: 117
+Section: 1 (Reading Comprehension)
+Passage Number: 4
+Question Number: 25.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following, in its context in the passage, most clearly reveals the attitude of the author toward the proponents of the Modern Movement?
+
+Passage:
+Passage A:
+The proponents of the Modern Movement in architecture considered that, compared with the historical styles that it replaced, Modernist architecture more accurately reflected the functional spirit of twentieth-century technology and was better suited to the newest building methods. It is ironic, then, that the Movement fostered an ideology of design that proved to be at odds with the way buildings were really built.
+The tenacious adherence of Modernist architects and critics to this ideology was in part responsible for the Movement’s decline. Originating in the 1920s as a marginal, almost bohemian art movement, the Modern Movement was never very popular with the public, but this very lack of popular support produced in Modernist architects a high-minded sense of mission—not content merely to interpret the needs of the client, these architects now sought to persuade, to educate, and, if necessary, to dictate. By 1945 the tenets of the Movement had come to dominate mainstream architecture, and by the early 1950s, to dominate architectural criticism—architects whose work seemed not to advance the evolution of the Modern Movement tended to be dismissed by proponents of Modernism. On the other hand, when architects were identified as innovators—as was the case with Otto Wagner, or the young Frank Lloyd Wright—attention was drawn to only those features of their work that were “Modern”; other aspects were conveniently ignored.
+The decline of the Modern Movement later in the twentieth century occurred partly as a result of Modernist architects’ ignorance of building methods, and partly because Modernist architects were reluctant to admit that their concerns were chiefly aesthetic. Moreover, the building industry was evolving in a direction Modernists had not anticipated: it was more specialized and the process of construction was much more fragmented than in the past. Up until the twentieth century, construction had been carried out by a relatively small number of tradespeople, but as the building industry evolved, buildings came to be built by many specialized subcontractors working independently. The architect’s design not only had to accommodate a sequence of independent operations, but now had to reflect the allowable degree of inaccuracy of the different trades. However, one of the chief construction ideals of the Modern Movement was to “honestly” expose structural materials such as steel and concrete. To do this and still produce a visually acceptable interior called for an unrealistically high level of craftmanship. Exposure of a building’s internal structural elements, if it could be achieved at all, could only be accomplished at considerable cost—hence the well-founded reputation of Modern architecture as prohibitively expensive.
+As Postmodern architects recognized, the need to expose structural elements imposed unnecessary limitations on building design. The unwillingness of architects of the Modern Movement to abandon their ideals contributed to the decline of interest in the Modern Movement.
+
+Toolkit Context:
+The question asks you to find the word that best shows the author's attitude towards the supporters of the Modern Movement. The passage is critical of these supporters, suggesting they were rigid and out of touch with the practical side of building. The end of the second paragraph describes how they would selectively praise certain architects to fit their own narrative.
+
+Answer Choices:
+A. “functional spirit" (middle of the first paragraph)
+B. “tended" (near the middle of the second paragraph)
+C. “innovators" (near the end of the second paragraph)
+D. “conveniently" (end of the second paragraph) [CORRECT]
+E. “degree of inaccuracy" (near the middle of the third paragraph)
+
+Credited Answer: D. “conveniently" (end of the second paragraph)
+
+Correct Answer Explanation:
+The word 'conveniently' strongly suggests the author's critical opinion. By saying that certain aspects of an architect's work were 'conveniently ignored,' the author implies that the Modernists deliberately and selfishly overlooked facts that didn't support their ideas. This choice of word reveals a belief that the Modernists were not entirely honest in their assessments.
+
+Corresponding Proof:
+- On the other hand, when architects were identified as innovators—as was the case with Otto Wagner, or the young Frank Lloyd Wright—attention was drawn to only those features of their work that were “Modern”; other aspects were conveniently ignored.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

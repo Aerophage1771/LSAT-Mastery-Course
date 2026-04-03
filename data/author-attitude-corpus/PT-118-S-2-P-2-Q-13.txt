@@ -1,0 +1,37 @@
+Question ID: PT-118-S-2-P-2-Q-13
+PrepTest: 118
+Section: 2 (Reading Comprehension)
+Passage Number: 2
+Question Number: 13.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following can most accurately be used to describe the author’s attitude toward critics of the Hippocratic oath?
+
+Passage:
+Passage A:
+The moral precepts embodied in the Hippocratic oath, which physicians standardly affirm upon beginning medical practice, have long been considered the immutable bedrock of medical ethics, binding physicians in a moral community that reaches across temporal, cultural, and national barriers. Until very recently the promises expressed in that oath—for example to act primarily for the benefit and not the harm of patients and to conform to various standards of professional conduct including the preservation of patients’ confidences—even seemed impervious to the powerful scientific and societal forces challenging it. Critics argue that the oath is outdated; its fixed moral rules, they say, are incompatible with more flexible modern ideas about ethics. It also encourages doctors to adopt an authoritarian stance that depreciates the privacy and autonomy of the patient. Furthermore, its emphasis on the individual patient without regard for the wider social context frustrates the physician’s emerging role as gatekeeper in managed care plans and impedes competitive market forces, which, some critics believe, should determine the quality, price, and distribution of health care as they do those of other commodities. The oath is also faulted for its omissions: its failure to mention such vital contemporary issues as human experimentation and the relationships of physicians to other health professionals. Some respected opponents even cite historical doubts about the oath’s origin and authorship, presenting evidence that it was formulated by a small group of reformist physicians in ancient Greece and that for centuries it was not uniformly accepted by medical practitioners.
+This historical issue may be dismissed at the outset as irrelevant to the oath’s current appropriateness. Regardless of the specific origin of its text—which, admittedly, is at best uncertain—those in each generation who critically appraise its content and judge it to express valid principles of medical ethics become, in a more meaningful sense, its authors. More importantly, even the more substantive, morally based arguments concerning contemporary values and newly relevant issues cannot negate the patients’ need for assurance that physicians will pursue appropriate goals in treatment in accordance with generally acceptable standards of professionalism. To fulfill that need, the core value of beneficence—which does not actually conflict with most reformers’ purposes—should be retained, with adaptations at the oath’s periphery by some combination of revision, supplementation, and modern interpretation. In fact, there is already a tradition of peripheral reinterpretation of traditional wording; for example, the oath’s vaguely and archaically worded proscription against “cutting for the stone” may once have served to forbid surgery, but with today’s safer and more effective surgical techniques it is understood to function as a promise to practice within the confines of one’s expertise, which remains a necessary safeguard for patients’ safety and well-being.
+
+Toolkit Context:
+The passage first outlines several criticisms against the Hippocratic oath, noting that critics find it outdated and authoritarian. The author then responds to these points in the second paragraph. It is this response that reveals the author's attitude toward the critics.
+
+Answer Choices:
+A. enthusiastic support
+B. bemused dismissal
+C. reasoned disagreement [CORRECT]
+D. strict neutrality
+E. guarded agreement
+
+Credited Answer: C. reasoned disagreement
+
+Correct Answer Explanation:
+This choice is correct because the author carefully considers the critics' arguments, even calling some of them 'substantive,' but ultimately disagrees with their conclusion. The author provides a reason for this disagreement, arguing that the oath's core value is still necessary and can be adapted. This thoughtful opposition is best described as 'reasoned disagreement'.
+
+Corresponding Proof:
+- More importantly, even the more substantive, morally based arguments concerning contemporary values and newly relevant issues cannot negate the patients’ need for assurance that physicians will pursue appropriate goals...
+- To fulfill that need, the core value of beneficence—which does not actually conflict with most reformers’ purposes—should be retained, with adaptations at the oath’s periphery by some combination of revision, supplementation, and modern interpretation.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

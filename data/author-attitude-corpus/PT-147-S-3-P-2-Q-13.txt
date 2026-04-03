@@ -1,0 +1,38 @@
+Question ID: PT-147-S-3-P-2-Q-13
+PrepTest: 147
+Section: 3 (Reading Comprehension)
+Passage Number: 2
+Question Number: 13.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following is an element of the author’s attitude toward foreign collectors of terra-cotta sculptures from Djenne-jeno?
+
+Passage:
+Passage A:
+The government of Mali passed a law against excavating and exporting the wonderful terra-cotta sculptures from the old city of Djenne-jeno, but it could not enforce it. And it certainly could not afford to fund thousands of archaeological excavations. The result was that many fine Djenne-jeno terra-cotta sculptures were illicitly excavated in the 1980s and sold to foreign collectors who rightly admired them. Because these sites were looted, much of what we would most like to know about this culture—much that we could have learned had the sites been preserved by careful archaeology—may now never be known.
+It has been natural to condemn such pillaging. And, through a number of declarations from UNESCO and other international bodies, a protective doctrine has evolved concerning the ownership of many forms of cultural property (the “UNESCO doctrine”). Essentially the doctrine provides that cultural artifacts should be regarded as the property of the culture. For an individual belonging to that culture, such works are, using UNESCO’s terminology, part of an “artistic and cultural patrimony.” Further, a number of countries have strengthened the UNESCO doctrine by declaring all antiquities that originate within their borders to be state property that cannot be freely exported.
+Accordingly, it seems reasonable that the government of Mali, within whose borders the Djenne-jeno antiquities are buried, be the one to regulate excavating Djenne-jeno and to decide where the statues should go. Regrettably, and this is a painful irony, regulations prohibiting export and requiring repatriation can discourage recording and preserving information about cultural antiquities, one of the key reasons for the UNESCO regulations. For example, if someone in London sells a figure from Djenne-jeno with documentation that it came out of the ground there after the regulations were implemented, then the authorities committed to the restitution of objects taken illegally out of Mali have the very evidence they need to seize the figure.
+Suppose that from the beginning, Mali had been helped by UNESCO to exercise its trusteeship of the Djenne-jeno terra-cotta sculptures by licensing excavations and educating people to recognize that such artifacts have greater value when they are removed carefully from the earth with accurate records of location. Suppose Mali had required that objects be recorded and registered before leaving the excavation site, and had imposed a tax on exported objects to fund acquisitions of important pieces for the national museum. The excavations encouraged by such a system may have been less well conducted and less informative than proper, professionally administered excavations by accredited archaeologists. Some people would still have avoided the rules. But would this not have been better than what actually happened?
+
+Toolkit Context:
+The question asks about the author's attitude towards foreign collectors of Djenne-jeno sculptures. The first paragraph provides a direct statement about these collectors. It describes how illicitly excavated sculptures were sold to them and includes a specific phrase that reveals the author's opinion of their taste.
+
+Answer Choices:
+A. appreciation of their efforts to preserve cultural artifacts
+B. approval of their aesthetic judgment [CORRECT]
+C. dismay at their failure to take action against illegal exportation of cultural artifacts
+D. frustration with their lack of concern for the people of Mali
+E. sympathy with their motives
+
+Credited Answer: B. approval of their aesthetic judgment
+
+Correct Answer Explanation:
+This choice is correct because the author states that the sculptures were sold to foreign collectors who 'rightly admired them.' The word 'rightly' shows that the author agrees with the collectors' high opinion of the art's beauty, which is an approval of their aesthetic judgment.
+
+Corresponding Proof:
+- The result was that many fine Djenne-jeno terra-cotta sculptures were illicitly excavated in the 1980s and sold to foreign collectors who rightly admired them.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

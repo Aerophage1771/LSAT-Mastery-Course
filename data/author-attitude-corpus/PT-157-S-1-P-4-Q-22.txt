@@ -1,0 +1,38 @@
+Question ID: PT-157-S-1-P-4-Q-22
+PrepTest: 157
+Section: 1 (Reading Comprehension)
+Passage Number: 4
+Question Number: 22.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately characterizes the author’s attitude toward reductions in domestic spending in response to the need to repay international debt?
+
+Passage:
+Passage A:
+Some environmentalists claim that the higher the international debt a nation carries, the more likely it is that the quality of life in that nation will suffer. These environmentalists argue that in a variety of ways the effort a nation must expend to pay its debt hastens the depletion of its natural resources, increases pollution, or hampers domestic spending. The most common reason given by the environmentalists is known as the exports promotion hypothesis. According to this hypothesis, in order to increase foreign trade in a way that better allows it to repay international debt, a nation must divert resources away from sectors generating domestic goods and toward the production of export goods. Partly because of the greater volume involved, this causes more environmental damage than does production of goods for domestic consumption. One possible scenario frequently cited by environmentalists is that a nation might raze its forests for timber or to open up land on which to plant cash crops. Another reason the environmentalists give for their claims is that domestic spending can fall when a nation shifts money toward repayment of its debt. A nation may take funds away from health care, education, or improvements in such public services as water quality or sanitation. It can also adjust its economy in other potentially harmful ways in order to cut costs—for example, through the elimination of government subsidies for practices that reduce pollution or conserve natural resources.
+But the evidence for the environmentalists’ claims is weak. With respect to the exports promotion hypothesis, one recent study does suggest a positive correlation between international debt and deforestation, but also indicates that other factors besides debt may play a stronger role. Another study found only a slight positive correlation between debt and deforestation; in fact, in one nation the correlation was negative, contrary to the environmentalists’ expectations. The impact of debt on environmental indicators such as pollution or depletion of other resources has not yet been studied. Similarly, with respect to the domestic spending argument, while debt-saddled nations might shift money away from programs designed to enhance quality of life, it is just as likely that they would shift the money from plans that, if implemented, would have a negative impact on the environment. For example, they might abandon plans to build new dams or roads, or eliminate subsidies that promote fertilizer or pesticide use. The extent, then, to which a nation’s quality of life is connected to the size of its international debt must be considered unknown. Indeed, a case could be made that at least some of the fiscal discipline or economic restructuring imposed by debt may rein in potentially harmful spending.
+
+Toolkit Context:
+The author discusses the environmentalists' claim that nations cut domestic spending to repay international debt, which harms their quality of life. The author counters this by suggesting that such cuts are not always negative. They argue it's just as likely that nations might cut funding for projects that would have harmed the environment, like building new dams.
+
+Answer Choices:
+A. optimism that they will lead to enhanced quality of life
+B. concern that governments may lack the political will to carry them out
+C. insistence upon restricting them to health care and education
+D. conviction that they need only be short-term measures
+E. skepticism about whether their consequences are predominantly negative [CORRECT]
+
+Credited Answer: E. skepticism about whether their consequences are predominantly negative
+
+Correct Answer Explanation:
+This choice correctly describes the author's attitude. The author questions the idea that spending cuts are always harmful, pointing out that they could also prevent environmentally damaging projects. This balanced view shows skepticism about the claim that the consequences are mainly negative.
+
+Corresponding Proof:
+- while debt-saddled nations might shift money away from programs designed to enhance quality of life, it is just as likely that they would shift the money from plans that, if implemented, would have a negative impact on the environment.
+- For example, they might abandon plans to build new dams or roads, or eliminate subsidies that promote fertilizer or pesticide use.
+- The extent, then, to which a nation’s quality of life is connected to the size of its international debt must be considered unknown.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

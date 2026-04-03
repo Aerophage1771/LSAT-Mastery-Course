@@ -1,0 +1,70 @@
+# Module 51: Advanced Passage 1 -- Mathematics as Language
+# Diff annotations for website lessons rc/51-1 through rc/51-6
+# Source: PT-108-S-1-P-4 (Questions 22-26)
+
+{ "type": "diff-note", "text": "Passage text contains OCR artifact in paragraph 2: 'inexact.g wider acceptance' -- missing content about conventionalist theory gaining wider acceptance. Flag for upstream fix.", "variant": "comment" }
+
+## Lesson 51-1: Passage Analysis
+
+### Before paragraph-by-paragraph breakdown
+{{+**Approach This Passage:** Before diving in, note that this passage presents a debate between two views of language (and by extension, math). Track who believes what: the 'essentialists' think language mirrors reality; the 'conventionalists' think it's all agreed-upon rules. The author sides with the conventionalists and wants scientists to ask harder questions about their math tools.+}}
+
+### After the accordion passage block
+{{+**Key Terms:** *contrivance* = something cleverly designed or invented; *coherence* = logical consistency; *tenuous* = weak, insubstantial; *commodity* = something useful or valuable+}}
+
+### Passage paragraph 2 text
+{{!note!}} The text reads "inexact.g wider acceptance" -- this is a corruption. The original likely reads "inexact. One such theory has been gaining wider acceptance." or similar. This affects all 6 lessons sharing this passage.
+
+## Lesson 51-2: Question 22 (Main Point)
+
+### Before the Explanation heading
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the Question Breakdown heading
+{{+**Question Type: Main Point.** Your job is to find the answer that captures the *entire* passage's central argument -- not just one paragraph or one side of the debate.+}}
+
+{ "type": "diff-note", "text": "The explanation is solid but could benefit from a brief note about why (A) is the strongest distractor -- it captures a supporting idea but misses the passage's call-to-action for scientists.", "variant": "comment" }
+
+## Lesson 51-3: Question 23 (Strengthen)
+
+### Before the Explanation heading
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the Question Breakdown heading
+{{+**Question Type: Strengthen.** This question asks you to support the 'essential correspondence' view -- not the author's view. First identify what the essentialist claim is, then find the answer that provides the best evidence for it.+}}
+
+{ "type": "diff-note", "text": "Good differentiation between (A) and (B). The explanation correctly identifies that independent development is key -- derived languages sharing categories proves nothing about essential correspondence.", "variant": "comment" }
+
+## Lesson 51-4: Question 24 (Detail)
+
+### Before the Explanation heading
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the Question Breakdown heading
+{{+**Question Type: Detail.** This asks what the passage explicitly states. Go back to the text and find the exact sentence. Match it to the closest paraphrase among the answer choices.+}}
+
+{ "type": "diff-note", "text": "Explanation correctly distinguishes between why math IS a language (structure as system of signs) vs. what math DOES as a language (explain, describe). Students commonly conflate these.", "variant": "comment" }
+
+## Lesson 51-5: Question 25 (Purpose)
+
+### Before the Explanation heading
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the Question Breakdown heading
+{{+**Question Type: Paragraph Purpose.** Read the target paragraph and ask: What is it DOING in the argument? Is it introducing, contrasting, elaborating, or concluding?+}}
+
+### After the (D) analysis
+{{!note!}} Option (D) is a strong trap answer. The explanation should flag this: the passage *applies* the linguistic theory to science, but the third paragraph doesn't claim a similar debate *exists* among scientists. In fact, the final paragraph says scientists have NOT yet addressed this question. Common student error: confusing "the author draws a parallel" with "a parallel debate exists."
+
+## Lesson 51-6: Question 26 (Application)
+
+### Before the Explanation heading
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the Question Breakdown heading
+{{+**Question Type: Application.** This asks you to apply a theory from the passage to a new scenario. First, make sure you understand the 'agreed-upon conventions' theory. Then eliminate any answer that describes the opposing (essentialist) view.+}}
+
+{ "type": "diff-note", "text": "Option (C) is the classic viewpoint-confusion trap. Students who mix up 'essential correspondence' with 'agreed-upon conventions' will pick it. The explanation handles this well.", "variant": "comment" }
+
+### After the full breakdown
+{{+**Strategy Takeaway:** On Application questions, the biggest trap is picking an answer that represents the *wrong* theory. Always double-check: does my answer match the specific view the question asks about?+}}

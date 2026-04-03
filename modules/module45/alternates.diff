@@ -1,0 +1,86 @@
+# Module 45 -- Practice Passage 4: Woody Allen Films (PT-128-S-4-P-2)
+# Diff annotations for website lessons rc/45-1 through rc/45-7
+
+{ "type": "diff-note", "text": "All 6 question lessons (45-2 through 45-7) lack a 'try it yourself' prompt before the worked analysis. This is the highest-priority addition across the module.", "variant": "comment" }
+
+## Lesson 45-1: Passage Analysis
+
+{ "type": "diff-note", "text": "This is the strongest passage analysis of the four practice passage modules. Its use of horizontal rules between paragraph sections, explicit thesis identification, and three-category summary callout should be the template for the other three modules' passage analyses.", "variant": "comment" }
+
+### After the summary callout (end of lesson):
+{{+**Questions Ahead:** The next 6 lessons cover main point, underlying principle, structure/function, vocabulary in context, function of a reference, and author agreement question types. The underlying principle question (Q8) is the most conceptually demanding -- it asks you to identify an unstated assumption in the author's reasoning.+}}
+
+### Before the h3 heading:
+{{+**Before you read the analysis:** Take 3-4 minutes to read the passage. As you read, identify: (1) the central thesis stated in paragraph 1, (2) what evidence paragraphs 2-3 provide through dialogue, and (3) what evidence paragraph 4 provides through narrative outcomes.+}}
+
+## Lesson 45-2: Question 7 (Main Point)
+
+### Before the prediction callout:
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Main Point -- The correct answer must capture the thesis (recurring theme of the narcissistic artist) and the specific claim about *Deconstructing Harry* (most intense version of this theme).+}}
+
+## Lesson 45-3: Question 8 (Underlying Principle)
+
+### Before "This question asks":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Underlying Principle -- This is functionally identical to a Necessary Assumption question from Logical Reasoning. Ask yourself: "What must the author believe to be true in order for their evidence to support their conclusion?"+}}
+
+{ "type": "diff-note", "text": "This question type is the RC equivalent of the LR Necessary Assumption question. Making this connection explicit would help students who are stronger in LR transfer their skills. The author's leap from 'artistic characters have unhappy endings' to 'Allen censures the artistic life' requires the assumption that narrative fate reflects authorial judgment.", "variant": "comment" }
+
+### After the breakdown table:
+{{+**Transferable Skill:** This question type appears across many RC passages. It asks for the *unstated bridge* between the author's evidence and their conclusion. If you are comfortable with Necessary Assumption questions in Logical Reasoning, use the same approach here: identify the gap between what the author observes and what they conclude, then find the answer that fills that gap.+}}
+
+## Lesson 45-4: Question 9 (Structure/Function)
+
+### Before "This is a structural question":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Structure/Function -- Trace the logical flow of the passage to determine what role this specific paragraph plays in the author's argument. Look for transition words that signal the relationship.+}}
+
+{ "type": "diff-note", "text": "The 'similar to' transition at the start of paragraph 3 is correctly identified as the key evidence for the paragraph's function. This is a reliable structural clue: 'similar to,' 'likewise,' and 'in the same way' almost always signal additional support for the same point.", "variant": "comment" }
+
+## Lesson 45-5: Question 10 (Vocabulary in Context)
+
+### Before "This question asks":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Vocabulary in Context -- Even if you know the word's dictionary definition, find contextual clues in surrounding sentences. Parallel constructions (where the author uses a similar word in a nearby, structurally equivalent sentence) are the strongest clue.+}}
+
+{ "type": "diff-note", "text": "The parallel construction technique used here -- 'peevish' in paragraph 1 parallels 'sourest' in paragraph 2 -- is an excellent transferable skill for vocabulary-in-context questions. Consider adding a callout flagging this as a reusable technique.", "variant": "comment" }
+
+### After the breakdown table:
+{{+**Transferable Skill:** When tackling vocabulary-in-context questions, look for parallel constructions. If the author uses a similar structure in a nearby sentence with a different but equivalent word, that equivalent word is your best clue to the meaning. Here, "peevish" (paragraph 1) and "sourest" (paragraph 2) appear in parallel positions, confirming they are near-synonyms.+}}
+
+## Lesson 45-6: Question 11 (Function of a Reference)
+
+### Before "This question asks":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Function of a Reference -- Determine why the author mentions this specific example. Look at the transition words immediately before the reference to understand its structural role (contrast, support, illustration, etc.).+}}
+
+## Lesson 45-7: Question 12 (Author Agreement)
+
+### Before "This question asks":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Author Agreement -- Identify the interpretive principles the author relies on throughout the passage. The correct answer will be a generalization of a specific inference the author makes.+}}
+
+{ "type": "diff-note", "text": "The analysis correctly identifies the author's inferential principle (recurring topic = personal issue) and traces it to the exact sentence at the end of paragraph 2. This is model-quality close reading.", "variant": "comment" }
+
+## Module-Level Annotations
+
+{{!This is the shortest module with only 6 questions (vs. 7-8 in the other modules). A brief wrap-up section would help ensure the module feels complete.!}}
+
+{{!The passage analysis (45-1) is the best of the four practice passage modules. Its structural features (horizontal rules between sections, explicit thesis identification, three-category summary) should be adopted as the template for the other three modules' passage analyses.!}}
+
+{{!Question-type distribution: 1 Main Point, 1 Underlying Principle, 1 Structure/Function, 1 Vocabulary in Context, 1 Function of Reference, 1 Author Agreement. Notably, this module does not include any detail-retrieval or inference questions, making it the most analysis-heavy set.!}}
+
+{{~Consider whether the passage analysis in 45-1 (with hr separators and more structured section headers) should be retrofitted to the passage analyses in 42-1, 43-1, and 44-1 for consistency across the practice passage sequence.~}}

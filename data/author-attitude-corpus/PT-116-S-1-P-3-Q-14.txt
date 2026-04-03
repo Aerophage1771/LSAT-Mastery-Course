@@ -1,0 +1,39 @@
+Question ID: PT-116-S-1-P-3-Q-14
+PrepTest: 116
+Section: 1 (Reading Comprehension)
+Passage Number: 3
+Question Number: 14.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the author’s attitude toward formalism as expressed in the passage?
+
+Passage:
+Passage A:
+Reader-response theory, a type of literary theory that arose in reaction to formalist literary criticism, has endeavored to shift the emphasis in the interpretation of literature from the text itself to the contributions of readers to the meaning of a text. According to literary critics who endorse reader-response theory, the literary text alone renders no meaning; it acquires meaning only when encountered by individual readers, who always bring varying presuppositions and ways of reading to bear on the text, giving rise to the possibility—even probability—of varying interpretations. This brand of criticism has met opposition from the formalists, who study the text alone and argue that reader-response theory can encourage and even validate fragmented views of a work, rather than the unified view acquired by examining only the content of the text. However, since no theory has a monopoly on divining meaning from a text, the formalists’ view appears unnecessarily narrow.
+The proponents of formalism argue that their approach is firmly grounded in rational, objective principles, while reader-response theory lacks standards and verges on absolute subjectivity. After all, these proponents argue, no author can create a work that is packed with countless meanings. The meaning of a work of literature, the formalists would argue, may be obscure and somewhat arcane; yet, however hidden it may be, the author’s intended meaning is legible within the work, and it is the critic’s responsibility to search closely for this meaning. However, while a literary work is indeed encoded in various signs and symbols that must be translated for the work to be understood and appreciated, it is not a map. Any complicated literary work will invariably raise more questions than it answers. What is needed is a method that enables the critic to discern and make use of the rich stock of meanings created in encounters between texts and readers.
+Emphasizing the varied presuppositions and perceptions that readers bring to the interpretations of a text can uncover hitherto unnoticed dimensions of the text. In fact, many important works have received varying interpretations throughout their existence, suggesting that reader-based interpretations similar to those described by reader-response theory had been operating long before the theory’s principles were articulated. And while in some cases critics’ textual interpretations based on reader-response theory have unfairly burdened literature of the past with contemporary ideologies, legitimate additional insights and understandings continue to emerge years after an ostensibly definitive interpretation of a major work has been articulated. By regarding a reader’s personal interpretation of literary works as not only valid but also useful in understanding the works, reader-response theory legitimizes a wide range of perspectives on these works and thereby reinforces the notion of them as fluid and lively forms of discourse that can continue to support new interpretations long after their original composition.
+
+Toolkit Context:
+The passage explains formalism as a literary theory focused on finding a single, correct meaning within the text itself. The author presents the formalist viewpoint and then argues against it. Throughout the passage, the author points out the limitations of formalism, especially when compared to reader-response theory.
+
+Answer Choices:
+A. scholarly neutrality
+B. grudging respect
+C. thoughtless disregard
+D. cautious ambivalence
+E. reasoned dismissal [CORRECT]
+
+Credited Answer: E. reasoned dismissal
+
+Correct Answer Explanation:
+This is the correct choice because the author consistently explains the formalist position and then provides clear reasons for rejecting it. The author calls the formalist view 'unnecessarily narrow' and argues that a literary work 'is not a map,' showing a dismissal based on logic and reason.
+
+Corresponding Proof:
+- However, since no theory has a monopoly on divining meaning from a text, the formalists’ view appears unnecessarily narrow.
+- However, while a literary work is indeed encoded in various signs and symbols that must be translated for the work to be understood and appreciated, it is not a map.
+- What is needed is a method that enables the critic to discern and make use of the rich stock of meanings created in encounters between texts and readers.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

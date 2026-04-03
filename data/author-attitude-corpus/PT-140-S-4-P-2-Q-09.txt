@@ -1,0 +1,47 @@
+Question ID: PT-140-S-4-P-2-Q-9
+PrepTest: 140
+Section: 4 (Reading Comprehension)
+Passage Number: 2
+Question Number: 9.
+Question Category: Author Attitude
+
+Question Stem:
+With regard to their respective attitudes toward commerce in virtual items, passage A differs from passage B in that passage A is more
+
+Passage:
+Passage A:
+Millions of people worldwide play multiplayer online games. They each pick, say, a medieval character to play, such as a warrior. Then they might band together in quests to slay magical beasts; their avatars appear as tiny characters striding across a Tolkienesque land.
+The economist Edward Castronova noticed something curious about the game he played: it had its own economy, a bustling trade in virtual goods. Players generate goods as they play, often by killing creatures for their treasure and trading it. The longer they play, the wealthier they get.
+Things got even more interesting when Castronova learned about the “player auctions.” Players would sometimes tire of the game and decide to sell off their virtual possessions at online auction sites.
+As Castronova stared at the auction listings, he recognized with a shock what he was looking at. It was a form of currency trading! Each item had a value in the virtual currency traded in the game; when it was sold on the auction site, someone was paying cold hard cash for it. That meant that the virtual currency was worth something in real currency. Moreover, since players were killing monsters or skinning animals to sell their pelts, they were, in effect, creating wealth.
+
+Passage B:
+Most multiplayer online games prohibit real-world trade in virtual items, but some actually encourage it, for example, by granting participants intellectual property rights in their creations.
+Although it seems intuitively the case that someone who accepts real money for the transfer of a virtual item should be taxed, what about the player who only accumulates items or virtual currency within a virtual world? Is “loot” acquired in a game taxable, as a prize or award is? And is the profit in a purely in-game trade or sale for virtual currency taxable? These are important questions, given the tax revenues at stake, and there is pressure on governments to answer them, given that the economies of some virtual worlds are comparable to those of small countries.
+Most people’s intuition probably would be that accumulation of assets within a game should not be taxed even though income tax applies even to noncash accessions to wealth. This article will argue that income tax law and policy support that result. Loot acquisitions in game worlds should not be treated as taxable prizes and awards, but rather should be treated like other property that requires effort to obtain, such as fish pulled from the ocean, which is taxed only upon sale. Moreover, in-game trades of virtual items should not be treated as taxable barter.
+By contrast, tax doctrine and policy counsel taxation of the sale of virtual items for real currency, and, in games that are intentionally commodified, even of in-world sales for virtual currency, regardless of whether the participant cashes out. This approach would leave entertainment value untaxed without creating a tax shelter for virtual commerce.
+
+Toolkit Context:
+This question asks you to compare the attitudes of the two passages about virtual economies. Passage A tells the story of an economist's surprising discovery of a real economy inside an online game, using words that convey a sense of wonder. Passage B takes a much more formal and analytical tone, discussing the complex legal and tax questions that these economies create.
+
+Answer Choices:
+A. critical and apprehensive
+B. academic and dismissive
+C. intrigued and excited [CORRECT]
+D. undecided but curious
+E. enthusiastic but skeptical
+
+Credited Answer: C. intrigued and excited
+
+Correct Answer Explanation:
+Passage A describes the economist's discovery with words like "curious," "interesting," and "shock." This language clearly shows a tone of fascination and excitement about the new phenomenon, which is a perfect match for "intrigued and excited."
+
+Corresponding Proof:
+- The economist Edward Castronova noticed something curious about the game he played: it had its own economy, a bustling trade in virtual goods.
+- Things got even more interesting when Castronova learned about the “player auctions.”
+- As Castronova stared at the auction listings, he recognized with a shock what he was looking at.
+- It was a form of currency trading!
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

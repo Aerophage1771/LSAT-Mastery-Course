@@ -1,0 +1,40 @@
+Question ID: PT-151-S-1-P-2-Q-8
+PrepTest: 151
+Section: 1 (Reading Comprehension)
+Passage Number: 2
+Question Number: 8.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the author’s attitude toward the conclusions that Olsen reaches?
+
+Passage:
+Passage A:
+Through years of excavations and careful analysis of her finds around Krasnyi Yar in Kazakhstan, archaeologist Sandra Olsen has assembled what may be evidence of the earliest known people to have domesticated and ridden horses, a momentous development in human history. In remains of pit houses of the Botai people, who inhabited this area some 6,000 years ago, are large numbers of bones, 90 percent of them from horses. It is not immediately evident whether the horses were wild or domesticated, because unlike other animals such as dogs and sheep, domestic horses’ bones are not morphologically different from those of their wild counterparts. So Olsen relies heavily on statistical tabulations of the Botai horses by sex and age at death, looking for mortality patterns that might correlate with expectations regarding domesticated herds or wild victims of hunting.
+Herders of domesticated animals used for meat or milk typically kill off all but a few males before they are fully mature, but not the females, and archaeologists have evidence of a similar pattern for prehistoric goat herding. At the Botai sites, however, Olsen has found that most of the male horses were fully grown and slightly outnumber the females. One might suppose, then, that they were wild rather than domesticated animals; with many large animal species, hunters would preferentially target adult males so as to maximize size and meat yield. However, it is different with horses. Wild horses live in two types of groups: families consisting of one stallion, six or so adult females, and their young; and bachelor pods consisting of a few males. The families stick together when attacked, but the male groups tend to scatter, so to maximize success in hunting horses, one would target the families. Thus, if the Botai had merely hunted horses, Olsen argues, the proportion of adult male bones should be lower. But if they were in domesticated herds, why were the young males not culled, as would typically occur with, say, herds of goats? Olsen reasons that if the Botai had indeed begun riding, they would likely have kept males alive to ride.
+Another clue that at least some of the horses may have been domesticated and that some may have even been ridden is in the fact that their remains include full skeletons, entire vertebral columns, and pelvises. It is unreasonable to suppose that hunters dragged whole 1,000-pound carcasses back to their dwellings. Olsen reasons that these were probably domesticated horses, together with, perhaps, some wild ones hunted and transported using the power of domesticated horses. A number of these nearly whole horse skeletons were discovered buried in a carefully arranged pattern with some of the only human remains yet found in the area, which further suggests a relationship to horses beyond that of merely hunting them as a source of meat.
+
+Toolkit Context:
+The passage describes archaeologist Sandra Olsen's theory that the Botai people domesticated and rode horses 6,000 years ago. The author explains the evidence Olsen uses, such as the age and sex of horse bones and the discovery of full skeletons. The author's attitude is revealed through how this evidence and Olsen's reasoning are presented to the reader.
+
+Answer Choices:
+A. forthright advocacy
+B. implicit endorsement [CORRECT]
+C. critical ambivalence
+D. reasoned skepticism
+E. general disagreement
+
+Credited Answer: B. implicit endorsement
+
+Correct Answer Explanation:
+The author supports Olsen’s conclusions without directly saying so. The passage presents Olsen's evidence and arguments in a logical and favorable way, framing her discovery as a 'momentous development.' This shows an attitude of approval and support that is implied rather than stated outright.
+
+Corresponding Proof:
+- Through years of excavations and careful analysis of her finds around Krasnyi Yar in Kazakhstan, archaeologist Sandra Olsen has assembled what may be evidence of the earliest known people to have domesticated and ridden horses, a momentous development in human history.
+- One might suppose, then, that they were wild rather than domesticated animals... However, it is different with horses.
+- Olsen reasons that if the Botai had indeed begun riding, they would likely have kept males alive to ride.
+- Olsen reasons that these were probably domesticated horses, together with, perhaps, some wild ones hunted and transported using the power of domesticated horses.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

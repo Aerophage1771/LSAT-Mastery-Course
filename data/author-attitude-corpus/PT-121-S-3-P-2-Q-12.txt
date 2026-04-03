@@ -1,0 +1,40 @@
+Question ID: PT-121-S-3-P-2-Q-12
+PrepTest: 121
+Section: 3 (Reading Comprehension)
+Passage Number: 2
+Question Number: 12.
+Question Category: Author Attitude
+
+Question Stem:
+Based on the passage, which one of the following most accurately characterizes the author’s attitude toward Glück’s view of poetry?
+
+Passage:
+Passage A:
+The poet Louise Glück has said that she feels comfortable writing within a tradition often characterized as belonging only to male poets. About her own experience reading poetry, Glück notes that her gender did not keep her from appreciating the poems of Shakespeare, Blake, Keats, and other male poets. Rather she believed this was the tradition of her language and that it was for this reason her poetic inheritance. She thus views the canon of poets in English as a literary family to which she clearly belongs. Whereas many contemporary women poets have rejected this tradition as historically exclusionary and rhetorically inadequate for women, Glück embraces it with respect and admiration.
+Glück’s formative encounters with poetry also provided her with the theoretical underpinnings of her respect for this tradition; she notes that in her youth she could sense many of the great themes and subjects of poetry even before experiencing them in her own life. These subjects—loss, the passage of time, desire—are timeless, available to readers of any age, gender, or social background. Glück makes no distinction between these subjects as belonging to female or male poets alone, calling them “the great human subjects.” If the aim of a poem is to explore the issue of human mortality, for example, then issues of gender distinction fade behind the presence of this universal reality.
+Some of Glück’s critics claim that this idea of the universal is suspect and that the idea that gender issues are transcended by addressing certain subjects may attribute to poetry an innocence that it does not have. They maintain that a female poet writing within a historically male-dominated tradition will on some level be unable to avoid accepting certain presuppositions, which, in the critics’ view, are determined by a long-standing history of denigration and exclusion of female artists. Furthermore, they feel that this long-standing history cannot be confronted using tools—in Glück’s case, poetic forms—forged by the traditions of this history. Instead critics insist that women poets should strive to create a uniquely female poetry by using new forms to develop a new voice.
+Glück, however, observes that this ambition, with its insistence on an essentially female perspective, is as limiting as her critics believe the historically male-dominated tradition to be. She holds that to the extent that there are some gender differences that have been shaped by history, they will emerge in the differing ways that women and men write about the world—indeed, these differences will be revealed with more authority in the absence of conscious intention. She points out that the universal subjects of literature do not make literature itself timeless and unchanging. Literature, she maintains, is inescapably historical, and every work, both in what it includes and in what it omits, inevitably speaks of its social and historical context.
+
+Toolkit Context:
+The passage discusses a debate in poetry centered on the views of poet Louise Glück. It explains her perspective that universal human themes transcend gender, allowing her to work within a traditionally male poetic tradition. The passage contrasts this with critics who argue for a separate female poetic tradition and ends with Glück’s response to their views.
+
+Answer Choices:
+A. respectful dismissal
+B. grudging acceptance
+C. detached indifference
+D. tacit endorsement [CORRECT]
+E. enthusiastic acclaim
+
+Credited Answer: D. tacit endorsement
+
+Correct Answer Explanation:
+This choice is correct because the author does not openly state an opinion but implies support for Glück's view. This is shown by the structure of the passage: the author presents Glück's ideas, then the critics' objections, and finally gives Glück the last word with her thoughtful rebuttal. This structure subtly suggests that Glück's argument is the stronger one, which is a form of unstated, or 'tacit,' endorsement.
+
+Corresponding Proof:
+- Glück, however, observes that this ambition, with its insistence on an essentially female perspective, is as limiting as her critics believe the historically male-dominated tradition to be.
+- She holds that to the extent that there are some gender differences that have been shaped by history, they will emerge in the differing ways that women and men write about the world—indeed, these differences will be revealed with more authority in the absence of conscious intention.
+- Literature, she maintains, is inescapably historical, and every work, both in what it includes and in what it omits, inevitably speaks of its social and historical context.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

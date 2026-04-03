@@ -1,0 +1,52 @@
+--- Module 32: Third-Party Viewpoint -- RC Question Type ---
+--- Website lessons: rc/32-1.tsx through rc/32-2.tsx ---
+
+{ "type": "diff-note", "text": "Module-wide: Moderately common type (~5%, 108 appearances). No practice questions. The 4-step attribution-tracking method in 32-2 is pedagogically sound. Should cross-reference Module 30 (Author Viewpoint) since both involve perspective-tracking.", "variant": "comment" }
+
+=== Lesson 32-1 (Introduction) ===
+
+ {"type":"h3","text":"Germaine's Guide to RC 3rd-Party Viewpoint Questions"}
+ {"type":"h4","text":"What's this question asking?"}
+ {"type":"paragraph","text":"3rd-Party Viewpoint questions ask you to identify the specific belief, argument, or perspective of a person or group mentioned in the passage..."}
+ {"type":"list","items":["**Locate the specific party:**...","**Identify attributed claims:**...","**Distinguish between viewpoints:**...","**Check for evidential backing:**..."]}
+ {"type":"hr"}
+ {"type":"h3","text":"Stem Identification: How to Spot a 3rd-Party Viewpoint Question"}
+-{"type":"paragraph","text":"3rd-Party Viewpoint questions ask you to identify the specific belief, argument, or perspective of a person or group mentioned in the passage who is not the author..."}
++{{~change~}} This intro paragraph restates the opening. Cut it.
+ {"type":"breakdown","labels":{"title":"Category","text":"Examples & Keywords"},"items":[
+   {"title":"Specific Individuals or Groups","text":"...Direct reference to names or groups...","badge":"Attribution","badgeColor":"indigo"}
+ ]}
++{{+**Missing stem categories:** Add: (1) "Prediction" category -- "What would [party] most likely predict about...?" (2) "Endorsement/Rejection" category -- "Which approach would [party] most likely endorse/reject?" (3) "Comparative Third-Party" category -- "The two researchers would most likely disagree about..." These variant forms appear on the LSAT and use a different mental approach.+}}
+ {"type":"callout","title":"Overarching Takeaway","variant":"summary","text":"Your task is to act as a neutral reporter, isolating exactly what the passage attributes to the specific person or group..."}
+ {"type":"h3","text":"The Importance of 3rd-Party Viewpoint Questions"}
+ {"type":"paragraph","text":"3rd-Party Viewpoint questions appear 108 times in the dataset, accounting for over 5%..."}
+
+{ "type": "diff-note", "text": "The 'neutral reporter' framing in the Overarching Takeaway is excellent. It gives students a concrete mental model for the objectivity required. The single stem category is too narrow, however -- variant forms (prediction, endorsement, comparative) should be added.", "variant": "comment" }
+
+=== Lesson 32-2 (Step-by-Step Approach) ===
+
+ {"type":"h3","text":"Step-by-Step Approach"}
+ {"type":"h4","text":"Step 1: Identify the Specific Person or Group"}
+ {"type":"paragraph","text":"Read the question stem carefully to identify the exact third party..."}
+ {"type":"h4","text":"Step 2: Locate All Mentions and Attributions"}
+ {"type":"paragraph","text":"Scan the passage for the name or description of the party from Step 1..."}
+ {"type":"list","items":["\"Smith argues that...\"","\"According to the critics...\"","\"Proponents of this view claim...\""]}
+
+{ "type": "diff-note", "text": "The attribution phrase examples are concrete and well-chosen. Students should internalize these as 'search targets' when scanning the passage.", "variant": "comment" }
+
+ {"type":"h4","text":"Step 3: Isolate and Paraphrase Their Viewpoint"}
+ {"type":"paragraph","text":"Focus only on the text directly linked to the third party...Crucially, ignore what the author thinks about their view..."}
++{{+**Missing:** Add an example showing how author commentary around a third-party claim can mislead. E.g., "The passage says: 'Critics argue that digital archives are unreliable. While this concern has some merit, the evidence overwhelmingly supports...' Here, 'this concern has some merit' is the AUTHOR's commentary, not the critics' view. The critics' actual claim is only: 'digital archives are unreliable.'"+}}
+ {"type":"h4","text":"Step 4: Match Your Paraphrase to the Answer Choices"}
+ {"type":"paragraph","text":"Compare your understanding of the third party's viewpoint to each answer choice..."}
++{{+**Cross-reference:** The "Check Ownership" skill in Module 30 (Author Viewpoint) is the flip side of this module's attribution-tracking skill. Module 30 warns against accidentally selecting a third party's view when the question asks for the author's view. This module teaches the reverse: accurately isolating the third party's view from author commentary. Together, these modules build a unified perspective-tracking skill.+}}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
++{{+Add a worked example here showing the 4-step method on a multi-perspective passage excerpt, with one answer reflecting the third party's actual view, one reflecting the author's commentary, and one reflecting a different third party.+}}
+ {"type":"hr"}
+ {"type":"h3","text":"If You Get Stuck Between Two Choices..."}
+ {"type":"h4","text":"Tie-Breaker #1: The Strict Attribution Check"}
+ {"type":"paragraph","text":"The most common trap is confusing the third party's view with the author's commentary on it..."}
+ {"type":"h4","text":"Tie-Breaker #2: The \"Who Said What?\" Test"}
+ {"type":"paragraph","text":"If multiple viewpoints are presented, it's easy to misattribute a claim..."}
+
+{ "type": "diff-note", "text": "The 4-step method is the best-sequenced method in the 2-lesson module group. The progression from identification to isolation to paraphrase to matching is logically clean. Priority additions: (1) question-card, (2) expanded stem categories, (3) Module 30 cross-reference.", "variant": "comment" }

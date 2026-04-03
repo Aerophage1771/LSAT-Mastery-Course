@@ -1,0 +1,41 @@
+Question ID: PT-116-S-1-P-1-Q-3
+PrepTest: 116
+Section: 1 (Reading Comprehension)
+Passage Number: 1
+Question Number: 3.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude regarding oil well drilling regulations can most accurately be described as
+
+Passage:
+Passage A:
+The accumulation of scientific knowledge regarding the environmental impact of oil well drilling in North America has tended to lag behind the actual drilling of oil wells. Most attempts to regulate the industry have relied on hindsight: the need for regulation becomes apparent only after undesirable events occur. The problems associated with oil wells’ potential contamination of groundwater—fresh water within the earth that supplies wells and springs—provide a case in point.
+When commercial drilling for oil began in North America in the mid-nineteenth century, regulations reflected the industry’s concern for the purity of the wells’ oil. In 1893, for example, regulations were enacted specifying well construction requirements to protect oil and gas reserves from contamination by fresh water. Thousands of wells were drilled in such a way as to protect the oil, but no thought was given to the possibility that the groundwater itself might need protection until many drinking-water wells near the oil well sites began to produce unpotable, oil-contaminated water.
+The reason for this contamination was that groundwater is usually found in porous and permeable geologic formations near the earth’s surface, whereas petroleum and unpotable saline water reservoirs are generally found in similar formations but at greater depths. Drilling a well creates a conduit connecting all the formations that it has penetrated. Consequently, without appropriate safeguards, wells that penetrate both groundwater and oil or saline water formations inevitably contaminate the groundwater. Initial attempts to prevent this contamination consisted of sealing off the groundwater formations with some form of protective barrier to prevent the oil flowing up the well from entering or mixing with the natural groundwater reservoir. This method, which is still in use today, initially involved using hollow trees to seal off the groundwater formations; now, however, large metal pipe casings, set in place with cement, are used.
+Regulations currently govern the kinds of casing and cement that can be used in these practices; however, the hazards of insufficient knowledge persist. For example, the long-term stability of this way of protecting groundwater is unknown. The protective barrier may fail due to corrosion of the casing by certain fluids flowing up the well, or because of dissolution of the cement by these fluids. The effects of groundwater bacteria, traffic vibrations, and changing groundwater chemistry are likewise unassessed. Further, there is no guarantee that wells drilled in compliance with existing regulations will not expose a need for research in additional areas: on the west coast of North America, a major disaster recently occurred because a well’s location was based on a poor understanding of the area’s subsurface geology. Because the well was drilled in a channel accessing the ocean, not only was the area’s groundwater completely contaminated, but widespread coastal contamination also occurred, prompting international concern over oil exploration and initiating further attempts to refine regulations.
+
+Toolkit Context:
+The passage discusses the history of oil well drilling regulations. The author explains that these rules are usually created in reaction to problems, rather than to prevent them. This pattern is shown through examples, from early contamination of drinking water to a recent major disaster on the west coast.
+
+Answer Choices:
+A. cynical that future regulatory reform will occur without international concern
+B. satisfied that existing regulations are adequate to prevent unwarranted tradeoffs between resource collection and environmental protection
+C. concerned that regulatory reform will not progress until significant undesirable events occur [CORRECT]
+D. optimistic that current scientific research will spur regulatory reform
+E. confident that regulations will eventually be based on accurate geologic understandings
+
+Credited Answer: C. concerned that regulatory reform will not progress until significant undesirable events occur
+
+Correct Answer Explanation:
+This choice accurately reflects the author's main point. The passage repeatedly shows that regulations are created only after a negative event, like water contamination or a major disaster, makes the need for them obvious.
+
+Corresponding Proof:
+- Most attempts to regulate the industry have relied on hindsight: the need for regulation becomes apparent only after undesirable events occur.
+- ...no thought was given to the possibility that the groundwater itself might need protection until many drinking-water wells near the oil well sites began to produce unpotable, oil-contaminated water.
+- ...a major disaster recently occurred because a well’s location was based on a poor understanding of the area’s subsurface geology.
+- ...widespread coastal contamination also occurred, prompting international concern over oil exploration and initiating further attempts to refine regulations.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

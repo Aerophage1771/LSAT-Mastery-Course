@@ -1,0 +1,41 @@
+Question ID: PT-105-S-3-P-3-Q-20
+PrepTest: 105
+Section: 3 (Reading Comprehension)
+Passage Number: 3
+Question Number: 20.
+Question Category: Author Attitude
+
+Question Stem:
+Based on the passage, the author’s attitude toward nativism in Hispanic-American literature is most likely
+
+Passage:
+Passage A:
+Despite the great differences among the cultures from which we spring, there is a trait shared by many Hispanic-American writers: the use of a European language, Spanish, transplanted to the Western hemisphere. This fact has marked our literature profoundly and radically. We Hispanic Americans who write in Spanish have attempted from the beginning to break the ties of dependency that linked us with the literature of Spain. We have pursued this goal of ever-increasing independence through a twofold movement, seeking to adopt the literary forms and styles in vogue in other European and North American literatures, and endeavoring to describe the nature of the United States and give voice to the Hispanic peoples who live there. These often conflicting tactics can be described as cosmopolitanism and nativism, respectively.
+The opposition between cosmopolitanism and nativism has divided the Hispanic-American literary consciousness for generations. For example, the work of one Mexican-American novelist was praised by some Hispanic-American critics for its skillful adaptation of European literary techniques but criticized for its paucity of specifically Mexican-American settings or characters. On the other hand, a Cuban-American novel was admired by other Hispanic-American critics for the vivid portrayal of its characters’ daily lives but faulted for its “roughness” of form and language.
+Cosmopolitanism is the venturing forth into the public or mainstream culture; nativism, the return to the private or original culture. There are periods in which the outward-oriented sensibility predominates, and others in which tendencies toward self-absorption and introspection prevail. An example of the former was the rich period of the avant-garde between 1918 and 1930. This was a time of searching and experimentation, when successive European movements from expressionism to surrealism—movements that were also inspiring other North American writers—had a profound influence on many Hispanic-American poets and novelists. This phase, which produced a number of outstanding works of exceptional boldness of expression, was followed by another characterized by a return to our peoples and our colloquial dialects, by the creation of works less indebted to current trends in the mainstream culture. Throughout our history, a concern for novelty and experimentation has been followed by a return to origins.
+We contemporary Hispanic-American writers who write in Spanish live somewhere between the European tradition and the reality of the Americas. Our roots may be European, but our horizon is the land and history of the Americas. This is the challenge that we confront each day: in order to appreciate the value of one’s own culture, one must first venture forth into the public sphere; in order not to disappear into the mainstream, one must return to one’s origins. In this way, we attempt to reconcile the opposing tendencies of cosmopolitanism and nativism.
+
+Toolkit Context:
+The author discusses two main trends in Hispanic-American literature: cosmopolitanism (looking outward to other cultures) and nativism (looking inward to one's own culture). The passage explains that nativism involves describing the lives of Hispanic peoples and returning to one's origins. The author concludes by stating that both trends are necessary and must be balanced.
+
+Answer Choices:
+A. enthusiastic support
+B. general approval [CORRECT]
+C. reluctant acceptance
+D. strong skepticism
+E. clear disapproval
+
+Credited Answer: B. general approval
+
+Correct Answer Explanation:
+The author presents nativism as a necessary and positive force. It is described as giving 'voice to the Hispanic peoples' and as something a writer 'must' do to avoid disappearing into the mainstream. This balanced but positive view is best described as general approval.
+
+Corresponding Proof:
+- We have pursued this goal of ever-increasing independence through a twofold movement... endeavoring to describe the nature of the United States and give voice to the Hispanic peoples who live there.
+- nativism, the return to the private or original culture.
+- in order not to disappear into the mainstream, one must return to one’s origins.
+- In this way, we attempt to reconcile the opposing tendencies of cosmopolitanism and nativism.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

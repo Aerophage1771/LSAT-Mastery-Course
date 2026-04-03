@@ -1,0 +1,81 @@
+--- Module 25: Inference -- RC Question Type ---
+--- Website lessons: rc/25-1.tsx through rc/25-4.tsx ---
+
+{ "type": "diff-note", "text": "Module-wide: Inference is ~30% of all RC questions (the largest single type). No practice questions exist in any of the 4 lessons. This is the most critical practice gap across all RC modules.", "variant": "comment" }
+
+=== Lesson 25-1 (Introduction) ===
+
+ {"type":"h3","text":"Germaine's Guide to RC Inference Questions"}
+ {"type":"paragraph","text":"Inference questions ask you to identify a statement that is **very likely to be true**...The most important mental model is to check for evidential backing: **\"Because this text in the passage is true, I know this answer is true.\"**"}
+
+{ "type": "diff-note", "text": "The 'Because this text is true, I know this answer is true' mental model is the best single teaching sentence in the module. Preserve and emphasize it.", "variant": "comment" }
+
+ {"type":"h3","text":"Stem Identification: How to Spot an Inference Question"}
+-{"type":"paragraph","text":"Inference questions ask you to identify a statement that is provably true based on the information given in the passage..."}
++{{~change~}} This intro paragraph restates the opening. Cut it -- the breakdown below covers the same ground more precisely.
+ {"type":"breakdown","labels":{"title":"Category","text":"Examples & Keywords"},"items":[
+   {"title":"Direct Question Phrasing","text":"...","badge":"Literal","badgeColor":"indigo"},
+   {"title":"Classic Inference Phrasing","text":"...","badge":"Implication","badgeColor":"blue"},
+   {"title":"Evidence & Support Phrasing","text":"...","badge":"Support","badgeColor":"green"},
+   {"title":"Negative Inference Phrasing","text":"...","badge":"Negative","badgeColor":"red"}
+ ]}
+ {"type":"callout","title":"Overarching Takeaway","variant":"summary","text":"Don't get distracted by the wide variety of phrasings..."}
+ {"type":"h3","text":"The Importance of Inference Questions"}
+ {"type":"paragraph","text":"Out of 2,098 documented RC questions, around 600 are Inference-based...nearly 30%..."}
+
+{ "type": "diff-note", "text": "The four stem categories are well-chosen. The Negative Inference category (EXCEPT/NOT) is a valuable inclusion that many courses omit.", "variant": "comment" }
+
+=== Lesson 25-2 (Step-by-Step Approach) ===
+
+ {"type":"h3","text":"Step-by-Step Approach"}
+ {"type":"process","steps":["Scan for stated Answer Choices First","Look for Direct Matches","Eliminate Obvious Falsities","Locate & Clarify Uncertain Choices","Validate Indirect Inferences"]}
+ {"type":"h4","text":"Step 1: Scan for stated Answer Choices First"}
+ {"type":"paragraph","text":"Look for an answer that matches a detail you confidently recall..."}
+ {"type":"h4","text":"Step 2: Look for Direct Matches"}
+ {"type":"paragraph","text":"If no immediate answer stands out, scan the choices again for any that are close paraphrases..."}
++{{~change~}} Steps 1 and 2 overlap heavily. Both tell students to find an answer matching recalled text. Consider merging into a single step: "Look for Direct Matches" with a sub-note: "First try from memory; if no confident match, re-scan the choices for close paraphrases."
+ {"type":"h4","text":"Step 3: Eliminate Obvious Falsities"}
+ {"type":"h4","text":"Step 4: Locate & Clarify Uncertain Choices"}
+ {"type":"h4","text":"Step 5: Validate Indirect Inferences"}
+ {"type":"list","items":["**Causality:**...","**Contrasts:**...","**Definitions & Examples:**..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
++{{+Add a worked example and question-card here demonstrating the method end-to-end.+}}
+
+{ "type": "diff-note", "text": "Step 5 (Validate Indirect Inferences) is the lesson's strongest section. The three inference types (Causality, Contrasts, Definitions) with signal words are excellent. Steps 1-2 should be merged to reduce redundancy.", "variant": "comment" }
+
+=== Lesson 25-3 (Pattern Recognition) ===
+
+ {"type":"h3","text":"Pattern Recognition: Correct Answers"}
+ {"type":"list","items":["**The \"Two-Part Proof\" (Combining Facts):**...","**The \"Necessarily Consequenced\":**...","**Cautious Wording Matches Cautious Evidence:**..."]}
+-{{-"Necessarily Consequenced"-}}
++{{~change~}} Rename "Necessarily Consequenced" to "Logical Necessity" or "Must-Be-True Deduction." The current term is not standard LSAT vocabulary and may confuse students.
++{{+**Missing:** Each pattern needs a concrete 1-2 sentence example showing what the pattern looks like in practice.+}}
+ {"type":"hr"}
+ {"type":"h3","text":"Tactics, Do's and Don'ts"}
+ {"type":"breakdown","labels":{"title":"Principle","text":"Guidelines"},"items":[
+   {"title":"Evidence & Proof","text":"...","badge":"Discipline","badgeColor":"indigo"},
+   {"title":"Standard of Proof","text":"...","badge":"Rigor","badgeColor":"blue"},
+   {"title":"Precision & Wording","text":"...","badge":"Focus","badgeColor":"green"},
+   {"title":"Focus & Attribution","text":"...","badge":"Accuracy","badgeColor":"red"}
+ ]}
+
+{ "type": "diff-note", "text": "This lesson conflates two teaching goals: correct-answer patterns and tactical do's/don'ts. Consider moving the Tactics section to Lesson 25-2 (the method lesson) to keep this lesson focused on pattern recognition.", "variant": "comment" }
+
+=== Lesson 25-4 (Trap Answer Types) ===
+
+ {"type":"h3","text":"The Trap Library: Common Distractors"}
+ {"type":"breakdown","labels":{"title":"Trap Type","text":"Analysis"},"items":[
+   {"title":"The \"Too Extreme\" Trap","text":"...Signals: All, every, none, never, only, always...","badge":"Red Flag","badgeColor":"red"},
+   {"title":"The \"Out of Scope\" Trap","text":"...","badge":"Irrelevant","badgeColor":"slate"},
+   {"title":"The \"Reversed Relationship\" Trap","text":"...","badge":"Reversal","badgeColor":"red"},
+   {"title":"The \"Misattributed View\" Trap","text":"...","badge":"Confusion","badgeColor":"indigo"},
+   {"title":"The \"One Word Off\" Trap","text":"...","badge":"Subtle","badgeColor":"red"}
+ ]}
++{{+**Missing:** Each trap type needs a concrete wrong-answer example illustrating the specific flaw.+}}
+ {"type":"hr"}
+ {"type":"h3","text":"Speed and Success Metrics"}
+ {"type":"callout","title":"Speed Tip: Eliminate Traps First","variant":"tip","text":"..."}
+ {"type":"h4","text":"Success Metrics: Gauging Mastery"}
+ {"type":"list","items":["**Accuracy:**...90%...","**Confidence:**...","**Process:**..."]}
+
+{ "type": "diff-note", "text": "The five trap types are well-chosen, especially the 'One Word Off' trap which is uniquely valuable. The Speed Tip and Success Metrics feel like a separate lesson (reference/wrap-up). Consider whether they belong here.", "variant": "comment" }

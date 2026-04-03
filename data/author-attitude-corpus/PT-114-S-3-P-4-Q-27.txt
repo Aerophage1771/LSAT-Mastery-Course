@@ -1,0 +1,38 @@
+Question ID: PT-114-S-3-P-4-Q-27
+PrepTest: 114
+Section: 3 (Reading Comprehension)
+Passage Number: 4
+Question Number: 27.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude regarding the traditional method of teaching ethics in medical school can most accurately be described as
+
+Passage:
+Passage A:
+One of the greatest challenges facing medical students today, apart from absorbing volumes of technical information and learning habits of scientific thought, is that of remaining empathetic to the needs of patients in the face of all this rigorous training. Requiring students to immerse themselves completely in medical coursework risks disconnecting them from the personal and ethical aspects of doctoring, and such strictly scientific thinking is insufficient for grappling with modern ethical dilemmas. For these reasons, aspiring physicians need to develop new ways of thinking about and interacting with patients. Training in ethics that takes narrative literature as its primary subject is one method of accomplishing this.
+Although training in ethics is currently provided by medical schools, this training relies heavily on an abstract, philosophical view of ethics. Although the conceptual clarity provided by a traditional ethics course can be valuable, theorizing about ethics contributes little to the understanding of everyday human experience or to preparing medical students for the multifarious ethical dilemmas they will face as physicians. A true foundation in ethics must be predicated on an understanding of human behavior that reflects a wide array of relationships and readily adapts to various perspectives, for this is what is required to develop empathy. Ethics courses drawing on narrative literature can better help students prepare for ethical dilemmas precisely because such literature attaches its readers so forcefully to the concrete and varied world of human events.
+The act of reading narrative literature is uniquely suited to the development of what might be called flexible ethical thinking. To grasp the development of characters, to tangle with heightening moral crises, and to engage oneself with the story not as one’s own but nevertheless as something recognizable and worthy of attention, readers must use their moral imagination. Giving oneself over to the ethical conflicts in a story requires the abandonment of strictly absolute, inviolate sets of moral principles. Reading literature also demands that the reader adopt another person’s point of view—that of the narrator or a character in a story—and thus requires the ability to depart from one’s personal ethical stance and examine moral issues from new perspectives.
+It does not follow that readers, including medical professionals, must relinquish all moral principles, as is the case with situational ethics, in which decisions about ethical choices are made on the basis of intuition and are entirely relative to the circumstances in which they arise. Such an extremely relativistic stance would have as little benefit for the patient or physician as would a dogmatically absolutist one. Fortunately, the incorporation of narrative literature into the study of ethics, while serving as a corrective to the latter stance, need not lead to the former. But it can give us something that is lacking in the traditional philosophical study of ethics—namely, a deeper understanding of human nature that can serve as a foundation for ethical reasoning and allow greater flexibility in the application of moral principles.
+
+Toolkit Context:
+The author discusses the traditional method of teaching ethics in medical schools, which is based on abstract philosophy. The author believes this method has both a positive side and a negative side. It provides valuable conceptual clarity, but it fails to prepare students for the complex, real-world ethical problems they will face as doctors.
+
+Answer Choices:
+A. unqualified disapproval of the method and disapproval of all of its effects
+B. reserved judgment regarding the method and disapproval of all of its effects
+C. partial disapproval of the method and clinical indifference toward its effects
+D. partial approval of the method and disapproval of all of its effects
+E. partial disapproval of the method and approval of some of its effects [CORRECT]
+
+Credited Answer: E. partial disapproval of the method and approval of some of its effects
+
+Correct Answer Explanation:
+This choice accurately reflects the author's balanced view. The author shows 'partial disapproval' by stating the traditional method is not enough to prepare students for real-life dilemmas. At the same time, the author shows 'approval of some of its effects' by admitting that the 'conceptual clarity' it provides 'can be valuable'.
+
+Corresponding Proof:
+- Although the conceptual clarity provided by a traditional ethics course can be valuable, theorizing about ethics contributes little to the understanding of everyday human experience or to preparing medical students for the multifarious ethical dilemmas they will face as physicians.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

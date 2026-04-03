@@ -1,0 +1,79 @@
+--- Module 49: Practice Passage 8 -- Property Justice (Comparative) ---
+--- Source: PT-141-S-1-P-4 (Q22-Q27) ---
+
+{ "type": "diff-note", "text": "Module-wide: No 'attempt before reading' prompt exists before any of the 6 question analyses. This is the highest-priority addition.", "variant": "comment" }
+
+=== Lesson 49-1 (Passage Analysis) ===
+
+ {"type":"accordion","title":"Read Passage","content":"There are two principles..."}
++{{+**Approach Tip:** For comparative passages, identify the relationship between the passages early. Common relationships include: agreement, disagreement, theory + application, general + specific. This pair is theory (A) + application (B).+}}
+ {"type":"h3","text":"Passage Analysis"}
+ {"type":"h4","text":"Passage A: The Philosophical Framework"}
+ ...
+
+{ "type": "diff-note", "text": "The bulleted mapping of Passage B's claims to Passage A's three principles (acquisition, transfer, rectification) in the 'Head-to-Head' section is the single strongest teaching moment in this module. No changes needed there.", "variant": "comment" }
+
++{{+**Parsing Tip:** Passage A uses a numbered, formal structure with defined terms. Use this structure to your advantage -- treat the numbered definitions as a reference tool when answering questions.+}}
+
+=== Lesson 49-2 (Q22 -- Primary Purpose, Comparative) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-4-Q-22"}
++{{+**Question Type:** Primary Purpose (Comparative)+}}
+ {"type":"blockquote","text":"**Question:** Which one of the following most accurately describes the main purpose for which passage A was written and the main purpose for which passage B was written?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This question asks for the \"main purpose\" of each passage..."}
+
+=== Lesson 49-3 (Q23 -- Detail Finding, Cross-Passage) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-4-Q-23"}
++{{+**Question Type:** Detail Finding (Cross-Passage)+}}
+ {"type":"blockquote","text":"**Question:** Both passages explicitly mention which one of the following?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This is a detail-oriented question..."}
+
+=== Lesson 49-4 (Q24 -- Relationship / Structure) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-4-Q-24"}
++{{+**Question Type:** Structure / Relationship (Cross-Passage)+}}
+ {"type":"blockquote","text":"**Question:** Which one of the following is true of the relationship between passage A and the second paragraph of passage B?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
++{{+**Skill Note:** Cross-passage application questions require you to use the framework from one passage to categorize or analyze the content of the other. This is the defining skill of comparative RC.+}}
+ {"type":"paragraph","text":"This question asks for the relationship between Passage A and the second paragraph of Passage B..."}
+
+=== Lesson 49-5 (Q25 -- Analogy, Cross-Passage) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-4-Q-25"}
++{{+**Question Type:** Analogy (Cross-Passage)+}}
+ {"type":"blockquote","text":"**Question:** Based on what can be inferred from their titles, the relationship between which one of the following pairs of documents is most analogous to the relationship between passage A and passage B?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This is an analogy question..."}
+
+=== Lesson 49-6 (Q26 -- Cross-Passage Application) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-4-Q-26"}
++{{+**Question Type:** Cross-Passage Application+}}
+ {"type":"blockquote","text":"**Question:** The author of passage A would be most likely to characterize the purpose of the Indian Nonintercourse Act as which one of the following?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This is a \"crossover\" application question..."}
+
+{ "type": "diff-note", "text": "The distinction between 'prevention' (justice in transfer) and 'correction' (rectification) is subtle and worth an explicit callout. 21% of test-takers chose the tempting distractor (E) 'implementation of a principle of rectification' -- the analysis handles this well but a callout would make the distinction more memorable.", "variant": "comment" }
+
++{{+**Key Distinction:** The Act was designed to **prevent future fraud** (a transfer issue), not to **correct past injustices** (a rectification issue). This prevention vs. correction distinction is a common LSAT trap in passages about justice and law.+}}
+
+=== Lesson 49-7 (Q27 -- Approach Comparison) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-4-Q-27"}
++{{+**Question Type:** Tone / Approach Comparison+}}
+ {"type":"blockquote","text":"**Question:** Which one of the following most accurately describes the difference in approach taken by passage A as compared to passage B?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+{ "type": "diff-note", "text": "Q27 is the hardest question in this set: only 31% correct, with 34% selecting distractor (C). The analysis is accurate but does not flag the difficulty. Consider adding a note explaining why the correct answer's phrasing ('sketches an argument that it does not necessarily endorse') is supported by the text's 'one natural way of reasoning' framing.", "variant": "comment" }
+
++{{+**Difficulty Alert:** This is a high-difficulty question. Pay close attention to Passage B's framing: the phrase "one natural way of reasoning... is this" creates rhetorical distance, suggesting the author is presenting an argument without necessarily endorsing it as their own final position.+}}
+ {"type":"paragraph","text":"This question asks for the most accurate description of the 'difference in approach'..."}

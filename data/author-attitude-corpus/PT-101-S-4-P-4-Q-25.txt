@@ -1,0 +1,37 @@
+Question ID: PT-101-S-4-P-4-Q-25
+PrepTest: 101
+Section: 4 (Reading Comprehension)
+Passage Number: 4
+Question Number: 25.
+Question Category: Author Attitude
+
+Question Stem:
+It can be inferred that the author of the passage views Drescher’s presentation of British traditions concerning liberty as
+
+Passage:
+Passage A:
+Two impressive studies have reexamined Eric Williams’ conclusion that Britain’s abolition of the slave trade in 1807 and its emancipation of slaves in its colonies in 1834 were driven primarily by economic rather than humanitarian motives. Blighted by depleted soil, indebtedness, and the inefficiency of coerced labor, these colonies, according to Williams, had by 1807 become an impediment to British economic progress.
+Seymour Drescher provides a more balanced view. Rejecting interpretations based either on economic interest or the moral vision of abolitionists, Drescher has reconstructed the populist characteristics of British abolitionism, which appears to have cut across lines of class, party, and religion. Noting that between 1780 and 1830 antislavery petitions outnumbered those on any other issue, including parliamentary reform, Drescher concludes that such support cannot be explained by economic interest alone, especially when much of it came from the unenfranchised masses. Yet, aside from demonstrating that such support must have resulted at least in part from widespread literacy and a tradition of political activism, Drescher does not finally explain how England, a nation deeply divided by class struggles, could mobilize popular support for antislavery measures proposed by otherwise conservative politicians in the House of Lords and approved there with little dissent.
+David Eltis’ answer to that question actually supports some of Williams’ insights. Eschewing Drescher’s idealization of British traditions of liberty, Eltis points to continuing use of low wages and Draconian vagrancy laws in the seventeenth and eighteenth centuries to ensure the industriousness of British workers. Indeed, certain notables even called for the enslavement of unemployed laborers who roamed the British countryside—an acceptance of coerced labor that Eltis attributes to a preindustrial desire to keep labor costs low and exports competitive. By the late eighteenth century, however, a growing home market began to alert capitalists to the importance of “want creation” and to incentives such as higher wages as a means of increasing both worker productivity and the number of consumers. Significantly, it was products grown by slaves, such as sugar, coffee, and tobacco, that stimulated new wants at all levels of British society and were the forerunners of products intended in modern capitalist societies to satisfy what Eltis describes as “nonsubsistence or psychological needs.” Eltis concludes that in an economy that had begun to rely on voluntary labor to satisfy such needs, forced labor necessarily began to appear both inappropriate and counterproductive to employers. Eltis thus concludes that, while Williams may well have underestimated the economic viability of the British colonies employing forced labor in the early 1800s, his insight into the economic motives for abolition was partly accurate. British leaders became committed to colonial labor reform only when they became convinced, for reasons other than those cited by Williams, that free labor was more beneficial to the imperial economy.
+
+Toolkit Context:
+This question asks for the author's opinion on a specific part of historian Seymour Drescher's argument. The passage introduces another historian, David Eltis, whose work directly challenges Drescher's views on British traditions of liberty. The author describes Eltis as avoiding Drescher’s “idealization,” which provides a strong clue about the author's perspective.
+
+Answer Choices:
+A. accurately stated
+B. somewhat unrealistic [CORRECT]
+C. carefully researched
+D. unnecessarily tentative
+E. superficially convincing
+
+Credited Answer: B. somewhat unrealistic
+
+Correct Answer Explanation:
+The passage states that historian David Eltis avoids “Drescher’s idealization of British traditions of liberty.” To idealize something means to present it as perfect or better than it really is. By using this specific word, the author suggests that Drescher's view is overly positive and not entirely based in reality, making it 'somewhat unrealistic.'
+
+Corresponding Proof:
+- Eschewing Drescher’s idealization of British traditions of liberty, Eltis points to continuing use of low wages and Draconian vagrancy laws in the seventeenth and eighteenth centuries to ensure the industriousness of British workers.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

@@ -1,0 +1,39 @@
+Question ID: PT-140-S-4-P-1-Q-4
+PrepTest: 140
+Section: 4 (Reading Comprehension)
+Passage Number: 1
+Question Number: 4.
+Question Category: Author Attitude
+
+Question Stem:
+The passage most strongly suggests that Gilliam’s attitude toward the strictly representational art of his contemporaries is which one of the following?
+
+Passage:
+Passage A:
+African American painter Sam Gilliam (b. 1933) is internationally recognized as one of the foremost painters associated with the Washington Color School, a group of Color Field style painters practicing in Washington, D.C. during the 1950s and 1960s. The Color Field style was an important development in abstract art that emerged after the rise of abstract expressionism. It evolved from complex and minimally representational abstractions in the 1950s to totally nonrepresentational, simplified works of bright colors in the 1960s.
+Gilliam’s participation in the Color Field movement was motivated in part by his reaction to the art of his African American contemporaries, much of which was strictly representational and was intended to convey explicit political statements. Gilliam found their approach to be aesthetically conservative: the message was unmistakable, he felt, and there was little room for the expression of subtlety or ambiguity or, more importantly, the exploration of new artistic territory through experimentation and innovation. For example, one of his contemporaries worked with collage, assembling disparate bits of images from popular magazines into loosely structured compositions that depicted the period’s political issues—themes such as urban life, the rural South, and African American music. Though such art was quite popular with the general public, Gilliam was impatient with its straightforward, literal approach to representation. In its place he sought an artistic form that was more expressive than a painted figure or a political slogan, more evocative of the complexity of human experience in general, and of the African American experience in particular. In this he represented a view that was then rare among African American artists.
+Gilliam’s highly experimental paintings epitomized his refusal to conform to the public’s expectation that African American artists produce explicitly political art. His early experiments included pouring paint onto stained canvases and folding canvases over onto themselves. Then around 1965 Gilliam became the first painter to introduce the idea of the unsupported canvas. Partially inspired by the sight of neighbors hanging laundry on clotheslines, Gilliam began to drape huge pieces of loose canvas along floors and fold them up and down walls, even suspending them from ceilings, giving them a third dimension and therefore a sculptural quality. These efforts demonstrate a sensitivity to the texture of daily experience, as well as the ability to generate tension by juxtaposing conceptual opposites—such as surface and depth or chaos and control—to form a cohesive whole. In this way, Gilliam helped advance the notion that the deepest, hardest-to-capture emotions and tensions of being African American could not be represented directly, but were expressed more effectively through the creation of moods that would allow these emotions and tensions to be felt by all audiences.
+
+Toolkit Context:
+The passage discusses painter Sam Gilliam's reaction to the art created by his African American contemporaries. He found their work, which was representational and political, to be too simple and unoriginal. This dissatisfaction is described as a key motivation for Gilliam to explore a more abstract and experimental style of art.
+
+Answer Choices:
+A. derisive condescension
+B. open dissatisfaction [CORRECT]
+C. whimsical dismissal
+D. careful neutrality
+E. mild approval
+
+Credited Answer: B. open dissatisfaction
+
+Correct Answer Explanation:
+This answer is correct because the passage uses strong words to describe Gilliam's negative view of his contemporaries' art. It states he was 'impatient' with their direct style and found their approach 'aesthetically conservative,' which clearly shows his open dissatisfaction.
+
+Corresponding Proof:
+- Gilliam’s participation in the Color Field movement was motivated in part by his reaction to the art of his African American contemporaries...
+- Gilliam found their approach to be aesthetically conservative: the message was unmistakable, he felt, and there was little room for the expression of subtlety or ambiguity...
+- Gilliam was impatient with its straightforward, literal approach to representation.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

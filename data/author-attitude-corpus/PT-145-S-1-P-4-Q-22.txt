@@ -1,0 +1,41 @@
+Question ID: PT-145-S-1-P-4-Q-22
+PrepTest: 145
+Section: 1 (Reading Comprehension)
+Passage Number: 4
+Question Number: 22.
+Question Category: Author Attitude
+
+Question Stem:
+The passage most strongly suggests that the author has which one of the following attitudes toward the theory proposed by Steele and his colleagues?
+
+Passage:
+Passage A:
+The French biologist Jean-Baptiste de Lamarck (1744–1829) outlined a theory of evolutionary change in 1809, 50 years before Darwin’s On the Origin of Species. Lamarck’s basic idea was that organisms change in adapting to their environment and then pass on to their offspring the new characteristics they have acquired. Since then, Lamarck has been ridiculed for presumably implying, for example, that giraffes developed their long necks by stretching, generation after generation, toward the leaves of trees. Most modern biologists are adamant that nothing of the sort occurs, ever. But the molecular immunologist Edward J. Steele is attempting to revive Lamarckism: he and his colleagues claim to have found evidence for a Lamarckian hereditary mechanism in the immune system.
+The immune system is an evolutionary puzzle in its own right: How is it that our bodies can quickly respond to so many different kinds of attacks? Is all this information in the genes? If so, then how does our immune system defend against new diseases? Part of the answer comes from the fact that some immune system cells contain genes that mutate with unusual frequency. The most common type of mutation is a sort of genetic “typo” that occurs when a cell’s DNA is transcribed into RNA, the molecule that helps to assemble proteins. These mutations allow the immune system to test out different defenses until it finds one that does the job.
+Steele hypothesizes that the altered RNA then reverts back into DNA. Indeed, such “reverse transcription” of RNA back into DNA has been observed frequently in other contexts. But the troublesome question for Lamarckians is this: Could this new DNA then be carried to the reproductive genes (in the sperm and egg cells), replace the original DNA there, and so be passed on to an organism’s offspring? Steele and company believe this is possible, and they have devised an elegant, but speculative, story to describe how it might happen using known biological mechanisms. They believe a virus could carry the altered DNA to the reproductive cells and replace the DNA in those cells.
+But even if the process Steele and his colleagues describe is possible, does it ever actually occur? Evolutionary mechanisms are never observed directly, so we must make do with circumstantial evidence. Steele and his colleagues claim to have found such evidence, namely a “signature” of past events that is “written all over” the genes that carry instructions for immune system responses. They claim that a distinct pattern of mutations concentrated in particular areas of these genes “strongly suggests” that, in the past, information has been transferred into DNA in the reproductive organs. Other biologists are not so easily swayed. They suggest there may be other, less radical explanations for the pattern of mutations that Steele cites.
+
+Toolkit Context:
+The author discusses a theory from scientist Edward J. Steele that attempts to revive Lamarck's ideas about evolution. To reveal their own attitude, the author describes Steele's explanation as an "elegant, but speculative, story." The author also ends the passage by noting that other scientists are not convinced and have other, "less radical explanations" for the evidence.
+
+Answer Choices:
+A. confidence in its truth
+B. indignation at its divergence from Darwinism
+C. distrust of its novelty
+D. doubt concerning its plausibility [CORRECT]
+E. dismay at its lack of rigor
+
+Credited Answer: D. doubt concerning its plausibility
+
+Correct Answer Explanation:
+This choice is correct because the author's language expresses skepticism. By calling Steele's theory a "speculative, story" and highlighting that other scientists have different explanations, the author shows doubt about whether the theory is plausible or believable.
+
+Corresponding Proof:
+- Steele and company believe this is possible, and they have devised an elegant, but speculative, story to describe how it might happen using known biological mechanisms.
+- But even if the process Steele and his colleagues describe is possible, does it ever actually occur?
+- Other biologists are not so easily swayed.
+- They suggest there may be other, less radical explanations for the pattern of mutations that Steele cites.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

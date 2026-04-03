@@ -1,0 +1,39 @@
+Question ID: PT-116-S-1-P-4-Q-23
+PrepTest: 116
+Section: 1 (Reading Comprehension)
+Passage Number: 4
+Question Number: 23.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately characterizes the author’s view regarding the institutional intellectual property policies of most universities?
+
+Passage:
+Passage A:
+Faculty researchers, particularly in scientific, engineering, and medical programs, often produce scientific discoveries and invent products or processes that have potential commercial value. Many institutions have invested heavily in the administrative infrastructure to develop and exploit these discoveries, and they expect to prosper both by an increased level of research support and by the royalties from licensing those discoveries having patentable commercial applications. However, although faculty themselves are unlikely to become entrepreneurs, an increasing number of highly valued researchers will be sought and sponsored by research corporations or have consulting contracts with commercial firms. One study of such entrepreneurship concluded that “if universities do not provide the flexibility needed to venture into business, faculty will be tempted to go to those institutions that are responsive to their commercialized desires.” There is therefore a need to consider the different intellectual property policies that govern the commercial exploitation of faculty inventions in order to determine which would provide the appropriate level of flexibility.
+In a recent study of faculty rights, Patricia Chew has suggested a fourfold classification of institutional policies. A supramaximalist institution stakes out the broadest claim possible, asserting ownership not only of all intellectual property produced by faculty in the course of their employment while using university resources, but also for any inventions or patent rights from faculty activities, even those involving research sponsored by nonuniversity funders. A maximalist institution allows faculty ownership of inventions that do not arise either “in the course of the faculty’s employment [or] from the faculty’s use of university resources.” This approach, although not as all-encompassing as that of the supramaximalist university, can affect virtually all of a faculty member’s intellectual production. A resource-provider institution asserts a claim to faculty’s intellectual product in those cases where “significant use” of university time and facilities is employed. Of course, what constitutes significant use of resources is a matter of institutional judgment.
+As Chew notes, in these policies “faculty rights, including the sharing of royalties, are the result of university benevolence and generosity. [However, this] presumption is contrary to the common law, which provides that faculty own their inventions.” Others have pointed to this anomaly and, indeed, to the uncertain legal and historical basis upon which the ownership of intellectual property rests. Although these issues remain unsettled, and though universities may be overreaching due to faculty’s limited knowledge of their rights, most major institutions behave in the ways that maximize university ownership and profit participation.
+But there is a fourth way, one that seems to be free from these particular issues. Faculty-oriented institutions assume that researchers own their own intellectual products and the rights to exploit them commercially, except in the development of public health inventions or if there is previously specified “substantial university involvement.” At these institutions industry practice is effectively reversed, with the university benefiting in far fewer circumstances.
+
+Toolkit Context:
+The author discusses the intellectual property policies at most universities, noting a conflict between legal tradition and current practice. While common law suggests faculty own their inventions, the author points out that most major universities adopt policies that give the institution maximum ownership and financial benefit. This focus on institutional profit is a key theme.
+
+Answer Choices:
+A. The policies are in keeping with the institution’s financial interests. [CORRECT]
+B. The policies are antithetical to the mission of a university.
+C. The policies do not have a significant impact on the research of faculty.
+D. The policies are invariably harmful to the motivation of faculty attempting to pursue research projects.
+E. The policies are illegal and possibly immoral.
+
+Credited Answer: A. The policies are in keeping with the institution’s financial interests.
+
+Correct Answer Explanation:
+This choice is correct because the passage clearly states that most universities act in ways that serve their own financial goals. The author mentions that institutions 'expect to prosper' from faculty inventions and that most of them 'behave in the ways that maximize university ownership and profit participation.'
+
+Corresponding Proof:
+- Many institutions have invested heavily in the administrative infrastructure to develop and exploit these discoveries, and they expect to prosper both by an increased level of research support and by the royalties from licensing those discoveries having patentable commercial applications.
+- Although these issues remain unsettled, and though universities may be overreaching due to faculty’s limited knowledge of their rights, most major institutions behave in the ways that maximize university ownership and profit participation.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

@@ -1,0 +1,56 @@
+--- Module 31: Complete the Passage -- RC Question Type ---
+--- Website lessons: rc/31-1.tsx through rc/31-2.tsx ---
+
+{ "type": "diff-note", "text": "Module-wide: Rarest RC type (5 appearances total). No practice questions. Two full lessons may be over-structured for 5 questions; consider merging. The 3-step method in 31-2 is well-designed despite the low frequency.", "variant": "comment" }
+
+=== Lesson 31-1 (Introduction) ===
+
+ {"type":"h3","text":"Germaine's Guide to RC Complete the Passage Questions"}
+ {"type":"h4","text":"What's this question asking?"}
+ {"type":"paragraph","text":"Complete the Passage questions ask you to select the sentence that would most logically conclude the passage or a specific paragraph..."}
+ {"type":"list","items":["Synthesize the main point of the final paragraph.","Reinforce the overall argument of the entire passage.","Provide a final, logical implication of the reasoning just presented.","Avoid introducing new, unsupported topics or contradicting earlier points."]}
+ {"type":"hr"}
+ {"type":"h3","text":"Stem Identification: How to Spot a Complete the Passage Question"}
+ {"type":"paragraph","text":"These questions are easily recognizable because their stems explicitly ask you to add a sentence to the end of the text..."}
+ {"type":"breakdown","labels":{"title":"Category","text":"Examples & Keywords"},"items":[
+   {"title":"Logical Continuation Phrasing","text":"...complete, conclude, continuation, appended to the end...","badge":"Continuation","badgeColor":"indigo"}
+ ]}
+ {"type":"callout","title":"Overarching Takeaway","variant":"summary","text":"Your task is to identify the \"next logical thought.\"..."}
+ {"type":"h3","text":"The Importance of Complete the Passage Questions"}
+ {"type":"paragraph","text":"Complete the Passage questions are the rarest type, appearing only 5 times in the dataset..."}
++{{+**Strategic note:** With only 5 appearances across all released LSATs, this is the lowest-priority question type for dedicated study. However, the underlying skill -- understanding how an author's argument builds to a conclusion -- directly strengthens your performance on Structure/Function and Paragraph Function questions, which are far more common.+}}
+
+{ "type": "diff-note", "text": "The single stem category is appropriate -- this question type has an extremely narrow phrasing range. No additional categories needed.", "variant": "comment" }
+
+=== Lesson 31-2 (Step-by-Step Approach) ===
+
+ {"type":"h3","text":"Step-by-Step Approach"}
+ {"type":"h4","text":"Step 1: Identify the Role of the Final Paragraph"}
+ {"type":"paragraph","text":"Before reading the answer choices, re-read the final paragraph and determine its specific function..."}
+ {"type":"list","items":["Providing a final piece of evidence?","Proposing a solution to a problem raised earlier?","Summarizing the main argument?","Discussing the implications or future of the topic?"]}
+
+{ "type": "diff-note", "text": "Step 1's four diagnostic questions are excellent. They give students concrete categories for paragraph function, which is a skill that transfers to other question types.", "variant": "comment" }
+
+ {"type":"h4","text":"Step 2: Predict the Logical Next Thought"}
+ {"type":"paragraph","text":"Based on the paragraph's function, anticipate what the final sentence should accomplish..."}
+ {"type":"h4","text":"Step 3: Test Each Answer Choice Against Your Prediction and the Passage's Scope"}
+ {"type":"list","items":["**Logical Flow:**...","**Paragraph Cohesion:**...","**Passage Scope:**...","**Tone Consistency:**..."]}
++{{~change~}} The four evaluation criteria in Step 3 would be more scannable as a table:
+
+| Criterion | What to Check | Elimination Signal |
+|-----------|---------------|-------------------|
+| Logical Flow | Follows from previous sentence | Abrupt topic shift |
+| Paragraph Cohesion | Concludes the paragraph's point | Doesn't fit the paragraph's role |
+| Passage Scope | Stays within passage topics | Introduces new concepts |
+| Tone Consistency | Matches author's established tone | Sudden shift in register |
+
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
++{{+Add a worked example here showing the 3-step method on a brief passage excerpt with the final sentence removed.+}}
+ {"type":"hr"}
+ {"type":"h3","text":"If You Get Stuck Between Two Choices..."}
+ {"type":"h4","text":"Tie-Breaker #1: The \"Why Is This Here?\" Test"}
+ {"type":"paragraph","text":"...One often serves as a tight, logical conclusion to the immediate paragraph, while the other might make a broader, more general statement..."}
+ {"type":"h4","text":"Tie-Breaker #2: Check for Consistency with the Main Point"}
+ {"type":"paragraph","text":"...The correct concluding sentence will not only wrap up the final paragraph but will also feel consistent with, and often subtly reinforce, the entire passage's central argument..."}
+
+{ "type": "diff-note", "text": "Consider whether two full lessons are warranted for 5 questions. A single merged lesson covering introduction + method + one worked example would be more efficient and still provide complete coverage.", "variant": "comment" }

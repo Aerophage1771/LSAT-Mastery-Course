@@ -1,0 +1,42 @@
+Question ID: PT-123-S-4-P-1-Q-4
+PrepTest: 123
+Section: 4 (Reading Comprehension)
+Passage Number: 1
+Question Number: 4.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude toward the deep rift between poetry and fiction in the U.S. can be most accurately described as one of
+
+Passage:
+Passage A:
+For decades, there has been a deep rift between poetry and fiction in the United States, especially in academic settings; graduate writing programs in universities, for example, train students as poets or as writers of fiction, but almost never as both. Both poets and writers of fiction have tended to support this separation, in large part because the current conventional wisdom holds that poetry should be elliptical and lyrical, reflecting inner states and processes of thought or feeling, whereas character and narrative events are the stock-in-trade of fiction.
+Certainly it is true that poetry and fiction are distinct genres, but why have specialized education and literary territoriality resulted from this distinction? The answer lies perhaps in a widespread attitude in U.S. culture, which often casts a suspicious eye on the generalist. Those with knowledge and expertise in multiple areas risk charges of dilettantism, as if ability in one field is diluted or compromised by accomplishment in another.
+Fortunately, there are signs that the bias against writers who cross generic boundaries is diminishing; several recent writers are known and respected for their work in both genres. One important example of this trend is Rita Dove, an African American writer highly acclaimed for both her poetry and her fiction. A few years ago, speaking at a conference entitled “Poets Who Write Fiction,” Dove expressed gentle incredulity about the habit of segregating the genres. She had grown up reading and loving both fiction and poetry, she said, unaware of any purported danger lurking in attempts to mix the two. She also studied for some time in Germany, where, she observes, “Poets write plays, novelists compose libretti, playwrights write novels—they would not understand our restrictiveness.”
+It makes little sense, Dove believes, to persist in the restrictive approach to poetry and fiction prevalent in the U.S., because each genre shares in the nature of the other. Indeed, her poetry offers example after example of what can only be properly regarded as lyric narrative. Her use of language in these poems is undeniably lyrical—that is, it evokes emotion and inner states without requiring the reader to organize ideas or events in a particular linear structure. Yet this lyric expression simultaneously presents the elements of a plot in such a way that the reader is led repeatedly to take account of clusters of narrative details within the lyric flow. Thus while the language is lyrical, it often comes to constitute, cumulatively, a work of narrative fiction. Similarly, many passages in her fiction, though undeniably prose, achieve the status of lyric narrative through the use of poetic rhythms and elliptical expression. In short, Dove bridges the gap between poetry and fiction not only by writing in both genres, but also by fusing the two genres within individual works.
+
+Toolkit Context:
+The passage discusses a long-standing separation between poetry and fiction in the United States, particularly in universities. The author questions the reason for this split, suggesting it comes from a general American distrust of people who have expertise in multiple fields. The author clearly disagrees with this separation and views it as a negative, restrictive trend.
+
+Answer Choices:
+A. perplexity as to what could have led to the development of such a rift
+B. astonishment that academics have overlooked the existence of the rift
+C. ambivalence toward the effect the rift has had on U.S. literature
+D. pessimism regarding the possibility that the rift can be overcome
+E. disapproval of attitudes and presuppositions underlying the rift [CORRECT]
+
+Credited Answer: E. disapproval of attitudes and presuppositions underlying the rift
+
+Correct Answer Explanation:
+This choice is correct because the author expresses a clear dislike for the ideas that cause the split between poetry and fiction. The author questions the 'literary territoriality,' links the rift to a 'suspicious eye on the generalist,' and agrees with the view that the separation is 'restrictive' and 'makes little sense.'
+
+Corresponding Proof:
+- Certainly it is true that poetry and fiction are distinct genres, but why have specialized education and literary territoriality resulted from this distinction?
+- The answer lies perhaps in a widespread attitude in U.S. culture, which often casts a suspicious eye on the generalist.
+- Fortunately, there are signs that the bias against writers who cross generic boundaries is diminishing;
+- She also studied for some time in Germany, where, she observes, “Poets write plays, novelists compose libretti, playwrights write novels—they would not understand our restrictiveness.”
+- It makes little sense, Dove believes, to persist in the restrictive approach to poetry and fiction prevalent in the U.S.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

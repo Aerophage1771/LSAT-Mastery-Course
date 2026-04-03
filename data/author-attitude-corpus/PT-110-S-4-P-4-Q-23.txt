@@ -1,0 +1,40 @@
+Question ID: PT-110-S-4-P-4-Q-23
+PrepTest: 110
+Section: 4 (Reading Comprehension)
+Passage Number: 4
+Question Number: 23.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most completely and accurately describes the author’s attitude toward Vernon’s study?
+
+Passage:
+Passage A:
+While historians once propagated the myth that Africans who were brought to the New World as slaves contributed little of value but their labor, a recent study by Amelia Wallace Vernon helps to dispel this notion by showing that Africans introduced rice and the methods of cultivating it into what is now the United States in the early eighteenth century. She uncovered, for example, an 1876 document that details that in 1718 starving French settlers instructed the captain of a slave ship bound for Africa to trade for 400 Africans including some “who know how to cultivate rice.” This discovery is especially compelling because the introduction of rice into what is now the United States had previously been attributed to French Acadians, who did not arrive until the 1760s.
+Vernon interviewed elderly African Americans who helped her discover the locations where until about 1920 their forebears had cultivated rice. At the heart of Vernon’s research is the question of why, in an economy dedicated to maximizing cotton production, African Americans grew rice. She proposes two intriguing answers, depending on whether the time is before or after the end of slavery. During the period of slavery, plantation owners also ate rice and therefore tolerated or demanded its “after-hours” cultivation on patches of land not suited to cotton. In addition, growing the rice gave the slaves some relief from a system of regimented labor under a field supervisor, in that they were left alone to work independently.
+After the abolition of slavery, however, rice cultivation is more difficult to explain: African Americans had acquired a preference for eating corn, there was no market for the small amounts of rice they produced, and under the tenant system—in which farmers surrendered a portion of their crops to the owners of the land they farmed—owners wanted only cotton as payment. The labor required to transform unused land to productive ground would thus seem completely out of proportion to the reward—except that, according to Vernon, the transforming of the land itself was the point.
+Vernon suggests that these African Americans did not transform the land as a means to an end, but rather as an end in itself. In other words, they did not transform the land in order to grow rice—for the resulting rice was scarcely worth the effort required to clear the land—but instead transformed the land because they viewed land as an extension of self and home and so wished to nurture it and make it their own. In addition to this cultural explanation, Vernon speculates that rice cultivation might also have been a political act, a next step after the emancipation of the slaves: the symbolic claiming of plantation land that the U.S. government had promised but failed to parcel off and deed to newly freed African Americans.
+
+Toolkit Context:
+The question asks about the author's attitude toward Amelia Wallace Vernon's study. The author uses several positive words to describe Vernon's research and findings. For example, the author states that her study "helps to dispel" a myth, calls one of her discoveries "especially compelling," and refers to her proposed explanations as "intriguing."
+
+Answer Choices:
+A. respectful of its author and skeptical toward its theories
+B. admiring of its accomplishments and generally receptive to its theories [CORRECT]
+C. appreciative of the effort it required and neutral toward its theories
+D. enthusiastic about its goals but skeptical of its theories
+E. accepting of its author’s motives but overtly dismissive of its theories
+
+Credited Answer: B. admiring of its accomplishments and generally receptive to its theories
+
+Correct Answer Explanation:
+This choice accurately reflects the author's positive and supportive tone. The author admires Vernon's work, calling her discovery "especially compelling," and is receptive to her theories, describing them as "intriguing answers." The passage presents Vernon's ideas without any criticism or doubt.
+
+Corresponding Proof:
+- While historians once propagated the myth that Africans who were brought to the New World as slaves contributed little of value but their labor, a recent study by Amelia Wallace Vernon helps to dispel this notion...
+- This discovery is especially compelling because the introduction of rice into what is now the United States had previously been attributed to French Acadians...
+- She proposes two intriguing answers, depending on whether the time is before or after the end of slavery.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

@@ -1,0 +1,524 @@
+import { Lesson } from '../../types';
+
+export const Lesson1_Introduction: Lesson = {
+  id: '9-1',
+  title: 'Introduction',
+  questionPolicy: 'none',
+  content: [
+    { type: 'h2', text: 'MODULE 9: Strengthen' },
+    {
+      type: 'paragraph',
+      text: '**Question Goal**\n\n**Identify a new piece of information that, if true, makes the conclusion more likely to follow from the premises.** You are looking for a "helpful premise" that reinforces the author\'s logical leap.',
+    },
+
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Why This Matters' },
+    {
+      type: 'paragraph',
+      text: 'Strengthen is one of the **most frequently tested** question types on the LSAT Logical Reasoning section. On a typical scored section, you will encounter two to four Strengthen questions — sometimes more. Because of this high frequency, your accuracy on Strengthen questions has a direct, measurable impact on your overall score.',
+    },
+    {
+      type: 'paragraph',
+      text: 'Strengthen is also the **mirror image of Weaken** (Module 8). Both question types require you to find the gap between the premises and the conclusion, then select an answer that acts on that gap. The only difference is direction: a Weaken answer widens the gap; a Strengthen answer fills it. If you mastered the gap-identification skills in Module 8, you already have the foundation for Strengthen — you simply need to push in the opposite direction.',
+    },
+    {
+      type: 'paragraph',
+      text: 'In practice, Strengthen splits into two major branches. The first is the familiar **causal branch**: control for rival causes, defend the causal direction, or improve the experimental setup. The second is the broader **support branch**: recommendations, tradeoffs, conceptual bridges, qualifiers, and analogies where the right answer makes the author\'s position less fragile without proving it outright. This module trains both branches, because many hard Strengthen questions are not neatly labeled for you.',
+    },
+    {
+      type: 'callout',
+      variant: 'tip',
+      title: 'Frequency',
+      text: 'Expect **2–4 Strengthen questions per scored section**. Combined with Weaken (which uses the same core skill in reverse), gap-based questions account for roughly **one-third of all Logical Reasoning questions**. Time invested here pays dividends across the board.',
+    },
+
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Recognizing the Question' },
+    {
+      type: 'paragraph',
+      text: 'You can recognize Strengthen questions by the phrase "if true" combined with language pointing toward support, help, or justification. The stem always asks you to find the answer choice that helps the argument.',
+    },
+    {
+      type: 'table',
+      headers: ['Question Stem Pattern', 'Key Signal'],
+      rows: [
+        ['"Which one of the following, if true, most strengthens the argument?"', 'Asks what **most strengthens**'],
+        [
+          '"Which one of the following, if true, most supports the conclusion drawn above?"',
+          'Asks what **most supports**',
+        ],
+        [
+          '"Which one of the following, if true, provides the strongest support for the argument?"',
+          'Asks for the **strongest support**',
+        ],
+        [
+          '"Which one of the following, if true, most helps to justify the reasoning above?"',
+          'Asks what **helps to justify**',
+        ],
+        [
+          '"Which one of the following principles, if valid, provides the most support for the argument\'s conclusion?"',
+          'Asks for a **principle** that supports',
+        ],
+        [
+          '"Which one of the following, if true, does the most to strengthen the claim made above?"',
+          'Standard **strengthen** phrasing',
+        ],
+      ],
+    },
+    {
+      type: 'callout',
+      variant: 'default',
+      title: 'The "If True" Instruction',
+      text: 'The phrase "if true" is a powerful directive. You must treat every answer choice as a **factual statement**, no matter how unlikely it sounds in the real world. Your only job is to determine which of these five new facts provides the most logical help to the argument\'s conclusion. Never reject an answer choice because it seems implausible — on the LSAT, every answer choice is 100% true.',
+    },
+
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Quick Example' },
+    {
+      type: 'paragraph',
+      text: 'Consider a stimulus that argues: *"A city installed new LED streetlights downtown, and crime fell 20% over the next six months; therefore the improved lighting was a significant factor in reducing crime."* The gap is a correlation-to-causation leap — something else could have caused the drop. A strong strengthener would rule out the leading alternative (e.g., extra police patrols were deployed elsewhere, not downtown), making the lighting explanation more plausible.',
+    },
+
+    { type: 'hr' },
+
+    { type: 'h2', text: 'What You\'ll Learn in This Module' },
+    {
+      type: 'paragraph',
+      text: 'The remaining lessons in this module build on the foundation above:',
+    },
+    {
+      type: 'table',
+      headers: ['Lesson', 'Focus'],
+      rows: [
+        ['**Foundations**', 'The Gap Model, how Strengthen relates to Weaken and Sufficient Assumption, and the menu of common strengthening strategies.'],
+        ['**Step-by-Step Guide**', 'A repeatable four-step method for solving any Strengthen question under timed conditions.'],
+        ['**Drills (Causal, Numbers, Comparative, Defender, Conceptual Gaps, Qualifiers, Analogy, Dose-Response, Strengthen EXCEPT)**', 'Targeted practice on each major argument pattern you will encounter.'],
+        ['**Advanced Traits**', 'What makes the hardest Strengthen questions difficult and how to handle them.'],
+        ['**Reference Guide**', 'A compact cheat sheet you can revisit during practice sets.'],
+      ],
+    },
+
+    {
+      type: 'callout',
+      variant: 'summary',
+      title: 'Key Takeaway',
+      text: 'Every Strengthen question is built on a gap between premises and conclusion. Your job is to find that gap and select the answer choice — accepted as true — that does the most to fill it. You do not need to prove the conclusion; you only need to make it more likely.',
+    },
+  ],
+  alternates: {
+    diff: {
+      label: 'Diff-Highlighted',
+      content: [
+        {
+          "type": "h2",
+          "text": "MODULE 9: Strengthen"
+        },
+        {
+          "type": "paragraph",
+          "text": "**Question Goal**\n\n**Identify a new piece of information that, if true, makes the conclusion more likely to follow from the premises.** You are looking for a \"helpful premise\" that reinforces the author's logical leap."
+        },
+        { "type": "diff-note", "text": "{{+add+}} The Mastery Course version adds a third paragraph here explaining the two major branches (causal branch vs. support branch). The website version jumps straight to frequency, missing this structural preview that helps students anticipate the module's two halves.", "variant": "comment" },
+        {
+          "type": "hr"
+        },
+        {
+          "type": "h3",
+          "text": "Why This Matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "Strengthen is one of the **most frequently tested** question types on the LSAT Logical Reasoning section. On a typical scored section, you will encounter two to four Strengthen questions — sometimes more. Because of this high frequency, your accuracy on Strengthen questions has a direct, measurable impact on your overall score."
+        },
+        {
+          "type": "paragraph",
+          "text": "Strengthen is also the **mirror image of Weaken** (Module 8). Both question types require you to find the gap between the premises and the conclusion, then select an answer that acts on that gap. The only difference is direction: a Weaken answer widens the gap; a Strengthen answer fills it. If you mastered the gap-identification skills in Module 8, you already have the foundation for Strengthen — you simply need to push in the opposite direction."
+        },
+        {
+          "type": "callout",
+          "title": "Frequency",
+          "variant": "tip",
+          "text": "Expect **2–4 Strengthen questions per scored section**. Combined with Weaken (which uses the same core skill in reverse), gap-based questions account for roughly **one-third of all Logical Reasoning questions**. Time invested here pays dividends across the board."
+        },
+        {
+          "type": "hr"
+        },
+        {
+          "type": "h3",
+          "text": "Recognizing the Question"
+        },
+        {
+          "type": "paragraph",
+          "text": "You can recognize Strengthen questions by the phrase \"if true\" combined with language pointing toward support, help, or justification. The stem always asks you to find the answer choice that helps the argument."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Question Stem Pattern",
+            "Key Signal"
+          ],
+          "rows": [
+            [
+              "\"Which one of the following, if true, most strengthens the argument?\"",
+              "Asks what **most strengthens**"
+            ],
+            [
+              "\"Which one of the following, if true, most supports the conclusion drawn above?\"",
+              "Asks what **most supports**"
+            ],
+            [
+              "\"Which one of the following, if true, provides the strongest support for the argument?\"",
+              "Asks for the **strongest support**"
+            ],
+            [
+              "\"Which one of the following, if true, most helps to justify the reasoning above?\"",
+              "Asks what **helps to justify**"
+            ],
+            [
+              "\"Which one of the following principles, if valid, provides the most support for the argument's conclusion?\"",
+              "Asks for a **principle** that supports"
+            ],
+            [
+              "\"Which one of the following, if true, does the most to strengthen the claim made above?\"",
+              "Standard **strengthen** phrasing"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "The \"If True\" Instruction",
+          "variant": "default",
+          "text": "The phrase \"if true\" is a powerful directive. You must treat every answer choice as a **factual statement**, no matter how unlikely it sounds in the real world. Your only job is to determine which of these five new facts provides the most logical help to the argument's conclusion. Never reject an answer choice because it seems implausible — on the LSAT, every answer choice is 100% true."
+        },
+        {
+          "type": "hr"
+        },
+        { "type": "diff-note", "text": "{{~change~}} The website version includes a full Gap Model section, Strengthen vs. Weaken table, and Strengthen vs. Sufficient Assumption table here. The Mastery Course replaces all of that with a compact Quick Example and a 'What You'll Learn in This Module' roadmap table. This is a significant improvement -- the roadmap gives students a navigation aid, while the detailed comparisons move to the Foundations lesson (Lesson1b) where they belong.", "variant": "comment" },
+        {
+          "type": "h2",
+          "text": "The Gap Model"
+        },
+        {
+          "type": "paragraph",
+          "text": "Every Strengthen question is built on the same structural foundation: the **Gap Model**. The author states premises and draws a conclusion, and there is a logical gap between them — an unstated assumption, an unexplored alternative, or a missing piece of evidence. The correct strengthener always targets this gap."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the same Gap Model that drives Weaken and Evaluate questions. The only difference is what the correct answer does to the gap:"
+        },
+        {
+          "type": "breakdown",
+          "labels": {
+            "title": "Question Type",
+            "text": "What the Correct Answer Does to the Gap"
+          },
+          "colWidth": "equal",
+          "items": [
+            {
+              "title": "Strengthen",
+              "text": "Finds the gap and **fills** it — provides information that makes the conclusion more likely to follow from the premises.",
+              "badge": "Bridge the Gap",
+              "badgeColor": "green"
+            },
+            {
+              "title": "Weaken",
+              "text": "Finds the gap and **widens** it — provides information that makes the conclusion less likely to follow from the premises.",
+              "badge": "Widen the Gap",
+              "badgeColor": "red"
+            },
+            {
+              "title": "Evaluate",
+              "text": "Finds the gap and **probes** it — asks a question whose answer could go either way.",
+              "badge": "Probe the Gap",
+              "badgeColor": "blue"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Because all three question types target the same gap, your approach to the stimulus is identical: find the conclusion, identify the premises, and locate the logical leap between them. The only difference is what you look for in the answer choices."
+        },
+        {
+          "type": "hr"
+        },
+        {
+          "type": "h2",
+          "text": "Strengthen vs. Weaken"
+        },
+        {
+          "type": "paragraph",
+          "text": "Strengthen and Weaken are mirror-image question types. They target the same gap in the same argument but ask you to push in opposite directions."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Feature",
+            "Strengthen",
+            "Weaken"
+          ],
+          "rows": [
+            [
+              "Core skill",
+              "Find the conclusion, premises, and gap",
+              "Find the conclusion, premises, and gap"
+            ],
+            [
+              "Direction",
+              "Fill the gap — make the conclusion **more** likely",
+              "Widen the gap — make the conclusion **less** likely"
+            ],
+            [
+              "Correct answer format",
+              "A new fact that supports the author's leap",
+              "A new fact that undermines the author's leap"
+            ],
+            [
+              "Common trap",
+              "Picking a choice that actually **weakens** the argument",
+              "Picking a choice that actually **strengthens** the argument"
+            ],
+            [
+              "Relationship to Necessary Assumption",
+              "The strengthener often resembles a stated version of the assumption",
+              "The weakener often resembles a denial of the assumption"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Flip Drill",
+          "variant": "tip",
+          "text": "When practicing, try this exercise: after solving a Strengthen question, ask yourself what the correct Weaken answer would be for the same argument. This \"flip drill\" deepens your understanding of the gap and reinforces the mirror-image relationship between the two question types."
+        },
+        {
+          "type": "hr"
+        },
+        {
+          "type": "h2",
+          "text": "Strengthen vs. Sufficient Assumption"
+        },
+        {
+          "type": "paragraph",
+          "text": "Students sometimes confuse Strengthen with Sufficient Assumption because both question types ask you to supply missing information that helps the conclusion. The distinction is about **degree of support**:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Feature",
+            "Strengthen",
+            "Sufficient Assumption"
+          ],
+          "rows": [
+            [
+              "What the correct answer does",
+              "Makes the conclusion **more likely**",
+              "Makes the conclusion **certain** (100% guaranteed)"
+            ],
+            [
+              "Degree of support required",
+              "Any amount — even a modest increase in probability qualifies",
+              "Complete — the answer must logically guarantee the conclusion"
+            ],
+            [
+              "Answer strength",
+              "Can be partial or incremental",
+              "Must be airtight and conclusive"
+            ],
+            [
+              "\"If true\" language",
+              "Almost always present",
+              "Almost always present"
+            ],
+            [
+              "How to tell them apart",
+              "Stem says \"strengthens\" / \"supports\"",
+              "Stem says \"the conclusion follows logically\" / \"enables the conclusion to be properly drawn\""
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Think of it this way: a Sufficient Assumption answer is a **steel beam** that fully bridges the gap and makes the conclusion logically airtight. A Strengthen answer is a **support cable** — it does not need to close the gap entirely; it only needs to make the conclusion more plausible than it was before you added the information."
+        },
+        {
+          "type": "hr"
+        },
+        {
+          "type": "h2",
+          "text": "Common Strengthening Strategies"
+        },
+        {
+          "type": "paragraph",
+          "text": "While every argument has a unique gap, the ways to fill that gap tend to fall into a small number of recurring patterns. Learning these strategies gives you a mental toolkit for prephrasing strengtheners before you look at the answer choices."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Strategy",
+            "How It Works",
+            "When to Use It"
+          ],
+          "rows": [
+            [
+              "**Confirm Causation**",
+              "Provide evidence that the alleged cause actually produced the alleged effect — e.g., showing a mechanism, a timeline, or a dose-response relationship.",
+              "The argument concludes that A caused B based on a correlation or sequence."
+            ],
+            [
+              "**Rule Out Alternatives**",
+              "Eliminate a competing explanation that could have produced the observed result, leaving the author's explanation as the most likely candidate.",
+              "The argument makes a causal claim but has not ruled out other potential causes."
+            ],
+            [
+              "**Bridge Concepts**",
+              "Provide a fact that explicitly connects a concept in the premises to a different concept in the conclusion, filling a definitional or categorical gap.",
+              "The premises discuss X but the conclusion is about Y, and the link between X and Y is unstated."
+            ],
+            [
+              "**Support the Analogy**",
+              "Show that two things the argument compares are genuinely similar in the relevant respects, validating the comparison.",
+              "The argument concludes something about X because it is true of the \"similar\" Y."
+            ],
+            [
+              "**Eliminate a Counterexample**",
+              "Rule out a scenario that, if true, would be a direct exception to the argument's conclusion.",
+              "The argument makes a broad or general claim that could be sunk by a single exception."
+            ],
+            [
+              "**Validate the Data**",
+              "Confirm that the evidence the argument relies on is accurate, unbiased, and representative.",
+              "The argument relies on a study, survey, or statistic as its primary evidence."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Strategy ≠ Formula",
+          "variant": "default",
+          "text": "These strategies are not rigid templates. Real LSAT questions often blend multiple patterns or present the gap in unexpected ways. Use these categories as starting points for your prephrase, not as a checklist to mechanically apply. The goal is to train your instinct for where arguments need help."
+        },
+        {
+          "type": "hr"
+        },
+        { "type": "diff-note", "text": "{{-remove-}} The full Worked Example (LED streetlights) with 4-step walkthrough is cut in the Mastery Course version, replaced by a 2-sentence Quick Example. This is correct -- the Introduction should tease the method, not teach it. The full walkthrough belongs in Lesson 2 (Step-by-Step Guide).", "variant": "comment" },
+        {
+          "type": "h2",
+          "text": "Worked Example"
+        },
+        {
+          "type": "paragraph",
+          "text": "Let's apply everything from this lesson to a complete Strengthen question."
+        },
+        {
+          "type": "paragraph",
+          "text": "Consider this illustrative argument:"
+        },
+        {
+          "type": "blockquote",
+          "text": "\"A city recently installed new LED streetlights in its downtown district. In the six months following the installation, reported crime in the downtown district fell by 20%. City officials concluded that the improved lighting was a significant factor in reducing crime downtown.\""
+        },
+        {
+          "type": "paragraph",
+          "text": "The structure should feel familiar from Weaken, just in reverse. We want a new fact that makes the lighting explanation more convincing by squeezing out rival causes."
+        },
+        {
+          "type": "h3",
+          "text": "Walkthrough"
+        },
+        {
+          "type": "h4",
+          "text": "Step 1: Find the Conclusion"
+        },
+        {
+          "type": "paragraph",
+          "text": "The conclusion is: *\"The improved lighting was a significant factor in reducing crime downtown.\"* The evidence is a correlation: new LED streetlights were installed, and crime fell 20% in the following six months."
+        },
+        {
+          "type": "h4",
+          "text": "Step 2: Identify the Gap"
+        },
+        {
+          "type": "paragraph",
+          "text": "The argument makes a classic **correlation-to-causation** leap. The author observes two things happening together (new lights + crime drop) and concludes that one caused the other. The gap is the possibility that something else caused the crime drop — increased police presence, seasonal patterns, economic changes, or other factors. To strengthen, we need to rule out these alternatives or show a tighter connection between the lights and the crime reduction."
+        },
+        {
+          "type": "h4",
+          "text": "Step 3: Prephrase the Strengthener"
+        },
+        {
+          "type": "paragraph",
+          "text": "Prephrase: *\"The argument would be stronger if I found out that no other plausible explanation accounts for the crime drop in downtown, or that the areas without new lights didn't see the same improvement.\"*"
+        },
+        {
+          "type": "h4",
+          "text": "Step 4: Test the Best Strengthener"
+        },
+        {
+          "type": "paragraph",
+          "text": "The most helpful new fact would rule out a leading alternative explanation for the drop in downtown crime. For example, if extra police patrols were deployed somewhere else rather than downtown, that would make the lighting explanation more plausible because the obvious competing cause is no longer available."
+        },
+        {
+          "type": "callout",
+          "title": "Why Other Facts Help Less",
+          "variant": "default",
+          "text": "Energy savings and future plans are irrelevant, and evidence that other cities did not improve actually cuts the wrong way. Facts about nearby unlit neighborhoods are somewhat supportive, but they are still weaker than information that directly eliminates the best alternative cause. Strengthen rewards the answer that does the most work on the core gap."
+        },
+        {
+          "type": "hr"
+        },
+        {
+          "type": "h2",
+          "text": "Key Principles"
+        },
+        { "type": "diff-note", "text": "{{!note!}} The website version ends with a 6-point Key Takeaways callout summarizing the entire lesson. The Mastery Course version replaces this with a single-sentence Key Takeaway that is punchier: 'Every Strengthen question is built on a gap... Your job is to find that gap and select the answer choice that does the most to fill it.' The shorter version is better for an introduction -- the 6-point list is reference-guide material.", "variant": "comment" },
+        {
+          "type": "callout",
+          "title": "Key Takeaways",
+          "variant": "summary",
+          "text": "**1. The strengthener adds NEW information not already in the argument.** The correct answer introduces a fact from outside the stimulus that makes the conclusion more plausible. It does not simply restate a premise.\n\n**2. The strengthener does not have to prove the conclusion.** It only needs to make the conclusion *more likely* — even a modest increase in probability is enough if it is the most helpful option among the five choices.\n\n**3. Every strengthener targets the gap.** Find the conclusion, find the premises, find the leap between them. The correct answer will fill that leap.\n\n**4. Treat every answer as true.** Never reject an answer because it seems unlikely in the real world. Accept it as fact and test its impact on the argument.\n\n**5. Know your strategies.** Confirm causation, rule out alternatives, bridge concepts, support the analogy, eliminate counterexamples, and validate data are the most common tools. Use them to prephrase before reading the answer choices.\n\n**6. Strengthen and Weaken are mirrors.** If you understand one, you understand both. Practice flipping between them to deepen your gap-identification skills."
+        }
+      ],
+    },
+    glance: {
+      label: 'At a Glance',
+      content: [
+        { type: 'h3', text: 'Strengthen — At a Glance' },
+        {
+          type: 'paragraph',
+          text: '**Goal:** Find the answer choice that, if true, most supports the argument\'s conclusion. **Frequency:** ~7% of LR questions (2--4 per scored section).',
+        },
+        {
+          type: 'table',
+          headers: ['Stem Pattern', 'Core Skill', 'Common Trap'],
+          rows: [
+            ['"...most strengthens the argument?"', 'Gap identification', 'Weakener in disguise'],
+            ['"...most supports the conclusion?"', 'Gap identification', 'Irrelevant scope'],
+            ['"...provides the strongest support?"', 'Gap identification', 'Premise repeater'],
+            ['"...most helps to justify the reasoning?"', 'Gap identification', 'Too strong (proves conclusion)'],
+          ],
+        },
+        {
+          type: 'blockquote',
+          text: '"A city installed new LED streetlights downtown, and crime fell 20% over the next six months; therefore the improved lighting was a significant factor in reducing crime."',
+        },
+        {
+          type: 'paragraph',
+          text: 'The gap is correlation-to-causation. A strong strengthener rules out the leading alternative cause, making the lighting explanation more plausible.',
+        },
+        { type: 'h4', text: 'What\'s in This Module' },
+        {
+          type: 'list',
+          items: [
+            'Foundations: Gap Model and key distinctions',
+            'Step-by-Step: four-step method under timed conditions',
+            'Drills: causal, statistical, analogy, and more',
+            'Advanced Traits: what makes hard questions difficult',
+            'Reference Guide: compact cheat sheet for review',
+          ],
+        },
+      ],
+    },
+  },
+};

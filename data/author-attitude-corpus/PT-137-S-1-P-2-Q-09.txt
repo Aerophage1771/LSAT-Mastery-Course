@@ -1,0 +1,38 @@
+Question ID: PT-137-S-1-P-2-Q-9
+PrepTest: 137
+Section: 1 (Reading Comprehension)
+Passage Number: 2
+Question Number: 9.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following best expresses the author’s opinion of the way most ethnographic literature deals with women’s views of women?
+
+Passage:
+Passage A:
+Taking the explication of experience as its object as well as its method, Marjorie Shostak’s Nisa: The Life and Words of a !Kung Woman weaves together three narrative strands, and in doing so challenges the ethnographer’s penchant for the general and the anonymous. The first strand, the autobiographical details of a 50-year-old woman’s life among the seminomadic !Kung hunter-gatherers of Botswana, adds to the ethnographical literature on the !Kung. The second presents Nisa’s story as a metaphor for woman’s experience, a story that reflects many of the experiences and dilemmas addressed in recent feminist writing. The third tells the story of an intercultural encounter in which the distinction between ethnographer and subject becomes blurred.
+Nisa explains Nisa’s personality in terms of !Kung ways and, for the general reader, corrects and qualifies a number of received attitudes about “simple” societies. Michel Leiris’ warning that “We are all too inclined to consider a people happy if considering them makes us happy” applies particularly to the !Kung, whose seemingly uncomplicated way of life, enlightened attitudes toward child rearing, and undeniable charm make them prime candidates for Western appreciation. But Nisa’s answer to Shostak’s question, “What is it to be a !Kung woman?” makes us feel the force of ugly facts we might otherwise skim over. Only 54 percent of !Kung children live to marry; Nisa loses all four of her children and a cherished husband. Nisa’s memories of sibling rivalries, of her terrible rages when denied her mother, of nasty fights over food undermine the idyllic vision Westerners cherish of childhoods lived in such “simple” circumstances.
+Woven into Nisa’s autobiography are allusions to Shostak’s personal engagement with issues of gender. Nisa’s response to “What is it to be a !Kung woman?” also seems to answer another question, “What is it to be a woman?” In fact, Nisa’s answers illuminate not just one woman’s experience, but women’s experience in general. It is a salutary shock to realize how much ethnographic literature omits the perspective of women about women.
+Nisa’s story is interwoven with Shostak’s presentation of their encounter; at times each seems to exist primarily in response to the other. Nisa’s autobiography is a distinct narrative in a particular voice, but it is manifestly the product of a collaboration. Indeed, by casting Nisa in the shape of a “life,” Shostak employs a potent Western literary convention. Real lives, in fact, do not easily arrange themselves as stories that have recognizable shapes: Nisa, for example, often says “We lived in that place, eating things. Then we left and went somewhere else.” It is in the process of the dialogue between Nisa and Shostak that a shaped story emerges from this seemingly featureless background.
+
+Toolkit Context:
+The author praises Marjorie Shostak’s book for including a woman's perspective on women's experiences. This is presented as a sharp contrast to other works in the field. The author notes that Shostak's book fills a significant gap in most ethnographic studies.
+
+Answer Choices:
+A. It is admirable that many ethnographic studies avoid the narrow focus of some recent feminist thought as it deals with women’s views of women.
+B. It is encouraging that most women ethnographers have begun to study and report the views of women in the groups they study.
+C. It is unfortunate that most ethnographic literature does not deal with women’s views of women at all. [CORRECT]
+D. It is surprising that more ethnographic studies of women do not use the information available through individual interviews of women about women.
+E. It is disappointing that most ethnographic studies of women’s views about women fail to connect individual experiences with larger women’s issues.
+
+Credited Answer: C. It is unfortunate that most ethnographic literature does not deal with women’s views of women at all.
+
+Correct Answer Explanation:
+The passage explicitly states that it is a 'salutary shock to realize how much ethnographic literature omits the perspective of women about women.' The word 'omits' means that the literature leaves out or does not deal with this perspective, and calling this realization a 'shock' suggests the author finds this omission unfortunate.
+
+Corresponding Proof:
+- It is a salutary shock to realize how much ethnographic literature omits the perspective of women about women.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

@@ -1,0 +1,39 @@
+Question ID: PT-153-S-4-P-4-Q-23
+PrepTest: 153
+Section: 4 (Reading Comprehension)
+Passage Number: 4
+Question Number: 23.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately characterizes the author’s attitude toward the “nostalgia for determinism” mentioned in the first sentence of the final paragraph?
+
+Passage:
+Passage A:
+Social historians have noted that European social and political thought of the nineteenth and early twentieth centuries was marked by the popularity of “grand theories,” influential intellectual movements such as Freudianism or Marxism that attempted to account for a broad range of historical phenomena with a single, ambitious explanation. Freudianism, for example, views culture, politics, and other forms of social interaction as the products of specific human psychological traits that Sigmund Freud and his followers believed were universal. Similarly, Marxism sees these interactions as arising from universal economic factors. Such theories naturally tend toward historical determinism, the view that history develops according to universal and necessary laws.
+Grand theories were sometimes so influential that, in certain intellectual circles, challenging them was tantamount to denying scientific fact. In recent years, however, the authority wielded by these theories has been tarnished by the occurrence of events that do not fit them. In some cases, they have also been discredited by being linked to political systems that have been seen to fail or that have inflicted injustices on their citizens. It is not that works such as those of Freud and Marx, written in the nineteenth and early twentieth centuries, were implausible explanations of phenomena that preceded them, but that, as history has progressed, they have been revealed as products of their era, possessing inherent explanatory limitations, rather than the universal truths they purported to be.
+Despite the decline of grand theories, people have what one scholar calls “a nostalgia for determinism." The attraction of grand theories was the sense they conveyed that history is logical and proceeds according to certain universal laws; in discarding these theories, we seem to have lost faith in historical determinism. But while we no longer believe in the deterministic explanations of history offered by grand theories, we still long for the cognitive satisfaction provided by a belief in historical inevitability. This leaves us in a curious state of intellectual discomfort. But perhaps this discomfort is no bad thing, for it might finally persuade us to relinquish the vain hope for inevitability and hence restore us to the contemplation of historical contingency, particularity, and novelty, all of which can serve as stimuli to serious thought. Perhaps what is needed is a historical perspective that seeks to include, as grand theories did not and could not, the particular and unrepeatable details of historical events. Rather than forcing these details into an inflexible progression, such a perspective might instead explain history by means of laws that constrain rather than necessitate. In this way it might permit us the kind of narrative satisfaction provided by the arrangement of events in a cogent story. In short, it would allow for the possibility of historical explanation without viewing history as fully determined.
+
+Toolkit Context:
+The final paragraph discusses a "nostalgia for determinism," which is a longing for the comfort that grand theories provided. People miss the feeling that history is logical and follows predictable laws. The author suggests this longing creates an intellectual discomfort that could be a good thing, pushing us toward a better understanding of history.
+
+Answer Choices:
+A. wary of its repressive political implications
+B. disdainful of its sentimentality and lack of originality
+C. sympathetic but mindful of its inevitable disappointment [CORRECT]
+D. fearful of how it may prolong the influence of grand theories
+E. optimistic that it will help to limit the contemplation of contingency
+
+Credited Answer: C. sympathetic but mindful of its inevitable disappointment
+
+Correct Answer Explanation:
+The author shows sympathy by acknowledging the "cognitive satisfaction" people get from believing in determinism. However, the author is also mindful of its disappointment, calling the desire for it a "vain hope" that should be relinquished, suggesting it cannot be fulfilled.
+
+Corresponding Proof:
+- But while we no longer believe in the deterministic explanations of history offered by grand theories, we still long for the cognitive satisfaction provided by a belief in historical inevitability.
+- This leaves us in a curious state of intellectual discomfort.
+- But perhaps this discomfort is no bad thing, for it might finally persuade us to relinquish the vain hope for inevitability and hence restore us to the contemplation of historical contingency...
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

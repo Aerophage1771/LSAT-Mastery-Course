@@ -1,0 +1,43 @@
+Question ID: PT-142-S-3-P-3-Q-20
+PrepTest: 142
+Section: 3 (Reading Comprehension)
+Passage Number: 3
+Question Number: 20.
+Question Category: Author Attitude
+
+Question Stem:
+Passage B differs from passage A in that passage B displays an attitude toward the ideas it discusses that is more
+
+Passage:
+Passage A:
+To a neuroscientist, you are your brain; nothing causes your behavior other than the operations of your brain. This viewpoint, together with recent findings in neuroscience, radically changes the way we think about the law. The official line in the law is that all that matters is whether you are rational, but you can have someone who is totally rational even though their strings are being pulled by something beyond their control. Indeed, people who believe themselves to be making a free and rational moral choice may really be deluding themselves—a brain scan might show that such a choice correlates with activity in emotional centers in the brain rather than in the region of the brain associated with deliberative problem solving. This insight suggests that the criminal-justice system should abandon the idea of retribution—the idea that bad people should be punished because of their freely chosen immoral acts—which is now dominant as a justification of punishment. Instead, the law should focus on deterring future harms. In some cases, this might mean lighter punishments. If it is really true that we do not get any prevention bang from our punishment buck when we punish some person, then it is not worth punishing that person.
+
+Passage B:
+Neuroscience constantly produces new mechanistic descriptions of how the physical brain causes behavior, adding fuel to the deterministic view that all human action is causally necessitated by events that are independent of the will. It has long been argued, however, that the concept of free will can coexist with determinism.
+In 1954 English philosopher Alfred J. Ayer put forth a theory of “soft determinism.” He argued, as the philosopher David Hume had two centuries earlier, that even in a deterministic world, a person can still act freely. Ayer distinguished between free actions and constrained actions. Free actions are those that are caused by internal sources, by one’s own will (unless one is suffering from a disorder). Constrained actions are those that are caused by external sources, for example, by someone or something forcing you physically or mentally to perform an action, as in hypnosis or in mental disorders such as kleptomania. When someone performs a free action to do A, he or she could have done B instead, since no external source precluded doing so. When someone performs a constrained action to do A, he or she could have done only A.
+Ayer argued that actions are free as long as they are not constrained. It is not the existence of a cause but the source of the cause that determines whether an action is free. Although Ayer did not explicitly discuss the brain’s role, one could make the analogy that those actions—and indeed those wills—that originate from a disease-free brain are not constrained, and are therefore free, even though they may be determined.
+
+Toolkit Context:
+This question asks you to compare the attitudes of the two authors. Passage A's author makes a strong argument, stating that neuroscience 'radically changes the way we think about the law' and that the justice system 'should abandon the idea of retribution.' In contrast, Passage B's author does not argue for a specific viewpoint but instead explains a philosophical theory called 'soft determinism' as proposed by Alfred J. Ayer.
+
+Answer Choices:
+A. engaged
+B. dismissive
+C. detached [CORRECT]
+D. ironic
+E. skeptical
+
+Credited Answer: C. detached
+
+Correct Answer Explanation:
+Passage B's author takes a neutral, informative tone, simply explaining the details of a philosophical theory without taking a personal stance. This contrasts with Passage A's author, who is actively arguing for a specific change in the legal system. Because Passage B is explaining an idea rather than arguing for it, its attitude is more detached.
+
+Corresponding Proof:
+- It has long been argued, however, that the concept of free will can coexist with determinism.
+- In 1954 English philosopher Alfred J. Ayer put forth a theory of “soft determinism.”
+- He argued, as the philosopher David Hume had two centuries earlier, that even in a deterministic world, a person can still act freely.
+- Ayer argued that actions are free as long as they are not constrained.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

@@ -1,0 +1,39 @@
+Question ID: PT-108-S-1-P-2-Q-13
+PrepTest: 108
+Section: 1 (Reading Comprehension)
+Passage Number: 2
+Question Number: 13.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the author’s attitude toward proposals to introduce personal stories into legal discourse?
+
+Passage:
+Passage A:
+In recent years, a growing belief that the way society decides what to treat as true is controlled through largely unrecognized discursive practices has led legal reformers to examine the complex interconnections between narrative and law. In many legal systems, legal judgments are based on competing stories about events. Without having witnessed these events, judges and juries must validate some stories as true and reject others as false. This procedure is rooted in objectivism, a philosophical approach that has supported most Western legal and intellectual systems for centuries. Objectivism holds that there is a single neutral description of each event that is unskewed by any particular point of view and that has a privileged position over all other accounts. The law’s quest for truth, therefore, consists of locating this objective description, the one that tells what really happened, as opposed to what those involved thought happened. The serious flaw in objectivism is that there is no such thing as the neutral, objective observer. As psychologists have demonstrated, all observers bring to a situation a set of expectations, values, and beliefs that determine what the observers are able to see and hear. Two individuals listening to the same story will hear different things, because they emphasize those aspects that accord with their learned experiences and ignore those aspects that are dissonant with their view of the world. Hence there is never any escape in life or in law from selective perception, or from subjective judgments based on prior experiences, values, and beliefs.
+The societal harm caused by the assumption of objectivist principles in traditional legal discourse is that, historically, the stories judged to be objectively true are those told by people who are trained in legal discourse, while the stories of those who are not fluent in the language of the law are rejected as false.
+Legal scholars such as Patricia Williams, Derrick Bell, and Mari Matsuda have sought empowerment for the latter group of people through the construction of alternative legal narratives. Objectivist legal discourse systematically disallows the language of emotion and experience by focusing on cognition in its narrowest sense. These legal reformers propose replacing such abstract discourse with powerful personal stories. They argue that the absorbing, nonthreatening structure and tone of personal stories may convince legal insiders for the first time to listen to those not fluent in legal language. The compelling force of personal narrative can create a sense of empathy between legal insiders and people traditionally excluded from legal discourse and, hence, from power. Such alternative narratives can shatter the complacency of the legal establishment and disturb its tranquility. Thus, the engaging power of narrative might play a crucial, positive role in the process of legal reconstruction by overcoming differences in background and training and forming a new collectivity based on emotional empathy.
+
+Toolkit Context:
+The passage first criticizes the traditional legal system, arguing that its goal of 'objectivism' is flawed and favors those who speak the language of the law. It then presents a proposal from legal reformers to use personal stories to create empathy and give power to those who have been excluded. The author's attitude is revealed in how this proposal is described.
+
+Answer Choices:
+A. strongly opposed
+B. somewhat skeptical
+C. ambivalent
+D. strongly supportive [CORRECT]
+E. unreservedly optimistic
+
+Credited Answer: D. strongly supportive
+
+Correct Answer Explanation:
+The author clearly supports the idea of using personal stories in law. The passage uses positive and powerful language to describe the proposal, calling the stories 'powerful' and 'compelling.' The author concludes that these stories could play a 'crucial, positive role,' which shows strong support for the idea.
+
+Corresponding Proof:
+- These legal reformers propose replacing such abstract discourse with powerful personal stories.
+- The compelling force of personal narrative can create a sense of empathy between legal insiders and people traditionally excluded from legal discourse and, hence, from power.
+- Thus, the engaging power of narrative might play a crucial, positive role in the process of legal reconstruction by overcoming differences in background and training and forming a new collectivity based on emotional empathy.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

@@ -1,0 +1,37 @@
+Question ID: PT-109-S-2-P-2-Q-8
+PrepTest: 109
+Section: 2 (Reading Comprehension)
+Passage Number: 2
+Question Number: 8.
+Question Category: Author Attitude
+
+Question Stem:
+The author of the passage displays which one of the following attitudes toward the position of the critics mentioned at the start of the second paragraph?
+
+Passage:
+Passage A:
+The autobiographical narrative Incidents in the Life of a Slave Girl, Written by Herself (1861), by Harriet A. Jacobs, a slave of African descent, not only recounts an individual life but also provides, implicitly and explicitly, a perspective on the larger United States culture from the viewpoint of one denied access to it. Jacobs, as a woman and a slave, faced the stigmas to which those statuses were subject. Jacobs crafted her narrative, in accordance with the mainstream literary genre of the sentimental domestic novel, as an embodiment of cherished cultural values such as the desirability of marriage and the sanctity of personal identity, home, and family. She did so because she was writing to the free women of her day—the principal readers of domestic novels—in the hopes that they would sympathize with and come to understand her unique predicament as a female slave. By applying these conventions of the genre to her situation, Jacobs demonstrates to her readers that family and domesticity are no less prized by those forced into slavery, thus leading her free readers to perceive those values within a broader social context.
+Some critics have argued that, by conforming to convention, Jacobs shortchanged her own experiences; one critic, for example, claims that in Jacobs’s work the purposes of the domestic novel overshadow those of the typical slave narrative. But the relationship between the two genres is more complex: Jacobs’s attempt to frame her story as a domestic novel creates a tension between the usual portrayal of women in this genre and her actual experience, often calling into question the applicability of the hierarchy of values espoused by the domestic novel to those who are in her situation. Unlike the traditional romantic episodes in domestic novels in which a man and woman meet, fall in love, encounter various obstacles but eventually marry, Jacobs’s protagonist must send her lover, a slave, away in order to protect him from the wrath of her jealous master. In addition, by the end of the narrative, Jacobs’s protagonist achieves her freedom by escaping to the north, but she does not achieve the domestic novel’s ideal of a stable home complete with family, as the price she has had to pay for her freedom is separation from most of her family, including one of her own children. Jacobs points out that slave women view certain events and actions from a perspective different from that of free women, and that they must make difficult choices that free women need not. Her narrative thus becomes an antidomestic novel, for Jacobs accepts readily the goals of the genre, but demonstrates that its hierarchy of values does not apply when examined from the perspective of a female slave, suggesting thereby that her experience, and that of any female slave, cannot be fully understood without shedding conventional perspectives.
+
+Toolkit Context:
+The question asks about the author's attitude toward a specific group of critics. These critics are mentioned at the start of the second paragraph, where they argue that Harriet Jacobs's book was weakened by following the rules of a popular literary style. The author immediately responds to this claim, dedicating the rest of the paragraph to explaining why the critics are mistaken.
+
+Answer Choices:
+A. complete rejection [CORRECT]
+B. reluctant rejection
+C. complete neutrality
+D. reluctant agreement
+E. complete agreement
+
+Credited Answer: A. complete rejection
+
+Correct Answer Explanation:
+The author completely rejects the critics' position. After stating their view, the author begins the next sentence with 'But,' signaling a direct disagreement. The entire rest of the paragraph is a detailed counterargument that explains how the critics misunderstood the complexity and purpose of Jacobs's writing style.
+
+Corresponding Proof:
+- But the relationship between the two genres is more complex: Jacobs’s attempt to frame her story as a domestic novel creates a tension between the usual portrayal of women in this genre and her actual experience, often calling into question the applicability of the hierarchy of values espoused by the domestic novel to those who are in her situation.
+- Her narrative thus becomes an antidomestic novel, for Jacobs accepts readily the goals of the genre, but demonstrates that its hierarchy of values does not apply when examined from the perspective of a female slave...
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

@@ -1,0 +1,73 @@
+--- Module 50: RC Quick Reference Guide ---
+--- Single lesson: 50-1 ---
+
+{ "type": "diff-note", "text": "This is a reference-only module with no practice questions. The primary gaps are: (1) no passage-reading strategy, (2) no comparative passage coverage, (3) incomplete Quick Reference at the bottom.", "variant": "comment" }
+
+=== Lesson 50-1 (RC Quick Reference Guide) ===
+
+ {"type":"h3","text":"**Framework for LSAT Reading Comprehension Question Types**"}
+ {"type":"paragraph","text":"This guide provides a systematic framework..."}
+ {"type":"paragraph","text":"Use this document as your primary reference..."}
+
+{ "type": "diff-note", "text": "The guide covers 14 question types across 4 groups, which is comprehensive. However, it entirely omits passage-reading strategy -- arguably the most important RC skill.", "variant": "comment" }
+
++{{+**GROUP 0: PASSAGE READING STRATEGY**+}}
++{{+*Before you can answer any question, you need to read the passage effectively. This section covers the foundational skill.*+}}
+
+{ "type": "diff-note", "text": "Add a new 'Group 0' section covering: (1) Active reading technique (summarize each paragraph in 5-10 words), (2) Time allocation (3-4 minutes reading, 1 minute per question), (3) What to track (thesis, structure, tone, key terms), (4) Passage-type awareness (science, law, humanities, social science).", "variant": "comment" }
+
+ {"type":"hr"}
+ {"type":"h3","text":"**GROUP 1: THE MACRO QUESTIONS (The \"Big Picture\")**"}
+ ...
+
+--- Primary Purpose Section ---
+
+ {"type":"h4","text":"**2. Primary Purpose (Passage Function)**"}
+ {"type":"breakdown","items":[{"title":"Core Task","text":"Identify *why* the author wrote the text..."},{"title":"The Approach","text":"...3.  **Select the Precise Verb:** Choose an abstract verb..."},...]}
+
++{{+**Common Purpose Verbs:** defend, critique, evaluate, explain, propose, compare, describe, advocate, challenge, reconcile, qualify, refute, distinguish, summarize, trace+}}
+
+{ "type": "diff-note", "text": "The approach says 'Select the Precise Verb' but does not provide a verb list. Students need this reference tool.", "variant": "comment" }
+
+--- Tone / Author Attitude Section ---
+
+ {"type":"h4","text":"**4. Tone / Author Attitude**"}
+ {"type":"breakdown","items":[...]}
+
++{{+**Tone Vocabulary Spectrum:** dismissive < skeptical < cautiously critical < neutral/objective < cautiously optimistic < approving < enthusiastic. Also: ambivalent, resigned, bemused, measured, impassioned.+}}
+
+{ "type": "diff-note", "text": "The tone section covers 'hunt for charged language' but does not provide a vocabulary list for characterizing tone. This is the most commonly needed reference for this question type.", "variant": "comment" }
+
+--- Inference Section ---
+
+ {"type":"h4","text":"**8. Standard Inference**"}
+ {"type":"breakdown","items":[...]}
+
++{{+**EXCEPT/LEAST Variants:** Some inference and viewpoint questions use "EXCEPT" or "LEAST" format. This inverts the task: four answers will be supported by the text, and you must find the one that is NOT. Mark each choice as 'supported' or 'unsupported' to stay organized.+}}
+
+{ "type": "diff-note", "text": "EXCEPT questions appear in the practice modules (e.g., Q12 in Module 47) but are not covered in the reference guide.", "variant": "comment" }
+
+--- After Group 4 ---
+
+ {"type":"hr"}
+
++{{+**GROUP 5: COMPARATIVE PASSAGE STRATEGY**+}}
++{{+*Comparative passages appear in every RC section. They require a different reading approach and introduce unique question types.*+}}
+
+{ "type": "diff-note", "text": "Add a section covering: (1) Reading order (read A first, summarize thesis, then read B while noting agreements/disagreements), (2) Relationship types (agree, disagree, theory + application, general + specific), (3) Cross-passage question types (cross-passage application, point of agreement, relationship, detail finding across passages).", "variant": "comment" }
+
+--- Quick Reference Guide ---
+
+ {"type":"h3","text":"**Quick Reference Guide**"}
+ {"type":"breakdown","labels":{"title":"Question Type","text":"Goal & The #1 Trap"},"items":[...]}
+
+{ "type": "diff-note", "text": "The Quick Reference covers 9 types but the main guide defines 14. The 5 missing types are: Structure/Organization, Phrase Meaning, 3rd-Party Viewpoint, Application/Hypothetical, and Passage Principle.", "variant": "comment" }
+
++{{+Add the following 5 missing entries to the Quick Reference:+}}
++{{+**Structure/Organization** -- Goal: Map the passage's logical flow. Trap: One step in the sequence is wrong.+}}
++{{+**Phrase Meaning** -- Goal: Define by context, not dictionary. Trap: Standard definition when author means something different.+}}
++{{+**3rd-Party Viewpoint** -- Goal: Report what THEY believe. Trap: Attributing the author's view to the 3rd party.+}}
++{{+**Application/Hypothetical** -- Goal: Apply the passage's rule to a new case. Trap: Misses one condition of the rule.+}}
++{{+**Passage Principle** -- Goal: Find the general rule behind the specific judgment. Trap: Restates the specific case, not the abstract rule.+}}
+
+{ "type": "diff-note", "text": "Also missing from the guide: (1) Passage Completion question type (rare, functions like main point -- seen in M48 Q21), (2) Cross-passage question variants for comparative passages.", "variant": "comment" }

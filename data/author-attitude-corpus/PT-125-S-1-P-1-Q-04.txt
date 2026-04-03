@@ -1,0 +1,40 @@
+Question ID: PT-125-S-1-P-1-Q-4
+PrepTest: 125
+Section: 1 (Reading Comprehension)
+Passage Number: 1
+Question Number: 4.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following words employed by the author in the second paragraph is most indicative of the author’s attitude toward any hypothetical measure a government might enact to deny its citizens access to the Internet?
+
+Passage:
+Passage A:
+This passage was adapted from an article published in 1996.
+The Internet is a system of computer networks that allows individuals and organizations to communicate freely with other Internet users throughout the world. As a result, an astonishing variety of information is able to flow unimpeded across national and other political borders, presenting serious difficulties for traditional approaches to legislation and law enforcement, to which such borders are crucial.
+Control over physical space and the objects located in it is a defining attribute of sovereignty. Lawmaking presupposes some mechanism for enforcement, i.e., the ability to control violations. But jurisdictions cannot control the information and transactions flowing across their borders via the Internet. For example, a government might seek to intercept transmissions that propagate the kinds of consumer fraud that it regulates within its jurisdiction. But the volume of electronic communications crossing its territorial boundaries is too great to allow for effective control over individual transmissions. In order to deny its citizens access to specific materials, a government would thus have to prevent them from using the Internet altogether. Such a draconian measure would almost certainly be extremely unpopular, since most affected citizens would probably feel that the benefits of using the Internet decidedly outweigh the risks.
+One legal domain that is especially sensitive to geographical considerations is that governing trademarks. There is no global registration of trademarks; international protection requires registration in each country. Moreover, within a country, the same name can sometimes be used proprietarily by businesses of different kinds in the same locality, or by businesses of the same kind in different localities, on the grounds that use of the trademark by one such business does not affect the others. But with the advent of the Internet, a business name can be displayed in such a way as to be accessible from any computer connected to the Internet anywhere in the world. Should such a display advertising a restaurant in Norway be deemed to infringe a trademark in Brazil just because it can be accessed freely from Brazil? It is not clear that any particular country’s trademark authorities possess, or should possess, jurisdiction over such displays. Otherwise, any use of a trademark on the Internet could be subject to the jurisdiction of every country simultaneously.
+The Internet also gives rise to situations in which regulation is needed but cannot be provided within the existing framework. For example, electronic communications, which may pass through many different territorial jurisdictions, pose perplexing new questions about the nature and adequacy of privacy protections. Should French officials have lawful access to messages traveling via the Internet from Canada to Japan? This is just one among many questions that collectively challenge the notion that the Internet can be effectively controlled by the existing system of territorial jurisdictions.
+
+Toolkit Context:
+The second paragraph discusses the challenge governments face in controlling information on the Internet. To stop people from seeing certain things, a government might have to block the Internet completely. The question asks which word best shows the author's opinion about this extreme government action.
+
+Answer Choices:
+A. benefits
+B. decidedly
+C. unpopular
+D. draconian [CORRECT]
+E. risks
+
+Credited Answer: D. draconian
+
+Correct Answer Explanation:
+The word 'draconian' means excessively harsh or severe. By using this word to describe a potential government ban on the Internet, the author is clearly expressing a strong, negative opinion. This word is a direct judgment on the nature of the action, revealing the author's critical attitude.
+
+Corresponding Proof:
+- In order to deny its citizens access to specific materials, a government would thus have to prevent them from using the Internet altogether.
+- Such a draconian measure would almost certainly be extremely unpopular, since most affected citizens would probably feel that the benefits of using the Internet decidedly outweigh the risks.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

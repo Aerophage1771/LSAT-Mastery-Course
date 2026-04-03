@@ -1,0 +1,58 @@
+Question ID: PT-148-S-2-P-3-Q-15
+PrepTest: 148
+Section: 2 (Reading Comprehension)
+Passage Number: 3
+Question Number: 15.
+Question Category: Author Attitude
+
+Question Stem:
+In their attitudes toward stock trades based on inside information, the author of passage A and the author of passage B, respectively, may be most accurately described as
+
+Passage:
+Passage A:
+Insider-trading law makes it a crime to make stock transactions, or help others make stock transactions, based on information you have ahead of the general public because of your special position within a company.
+
+
+However, trading based on information you have that everyone else doesn’t—isn’t this part of the very definition of a functioning stock market? The entire field of stock brokering is based on people gaining knowledge that others don’t have and then using it to profit themselves or their clients. If you analyze a stock, decide that it is overvalued, and sell it, you are taking advantage of knowledge that many others don’t have. That doesn’t make you a criminal; it means you’ve done your homework.
+
+
+Stock markets work best when all the relevant information about a company is spread as widely as possible, as quickly as possible. Stock prices represent a constantly shifting amalgamation of everyone’s information about and evaluations of a company’s value. It helps when those who have accurate information about changing circumstances are permitted to act so that stock prices reflect them.
+
+
+Someone selling a stock because they know something will happen soon that will lower the stock’s value helps spread the knowledge that the price ought to be dropping. Such actions help ensure that stock prices do reflect a more accurate assessment of all the relevant facts. That’s good for everyone in the stock market.
+
+
+When contemplating insider-trading law, it helps to consider a far more widespread practice: “insider nontrading”—stock sales or purchases that would have been made, but aren’t because of inside knowledge. This is certainly happening every day, and rightfully so. No one would think to lock someone up for it.
+
+Passage B:
+One of the basic principles of the stock market is transparency. In a transparent market, information that influences trading decisions is available to all participants at the same time. Success in the market can then be gained only by skill in analyzing the information and making good investing decisions. In a transparent stock market, everyone has the same chance of making a good investment, and success is based on individual merit and skill.
+
+
+In insider-trading situations, some people make investment decisions based on information that other people don’t have. People who don’t have access to the inside information can’t make similarly informed investment decisions. That unfairly compromises the market: people with inside information can make informed trade decisions far before everyone else, making it difficult or impossible for other people to earn money in the stock market.
+
+
+This, in turn, causes a loss of investor confidence and could ultimately destroy the market. People invest in the stock market because they believe they can make money. The whole point of capital investments is to make good investing decisions and make money over time. If investors believe they can’t make money, they won’t invest. Undermining investor confidence would thus deny companies access to the funds they need to grow and be successful, and it could ultimately lead to widespread financial repercussions.
+
+Toolkit Context:
+This question asks you to identify the attitude of each author toward stock trades based on inside information. Passage A argues that such trades are beneficial because they help spread information and make stock prices more accurate. Passage B argues that these trades are harmful because they violate the principle of transparency, creating an unfair market that can lose investor confidence.
+
+Answer Choices:
+A. positive and neutral
+B. positive and negative [CORRECT]
+C. neutral and negative
+D. neutral and neutral
+E. negative and negative
+
+Credited Answer: B. positive and negative
+
+Correct Answer Explanation:
+This choice accurately describes the authors' attitudes. The author of Passage A is positive, stating that acting on inside information is 'good for everyone in the stock market.' The author of Passage B is negative, warning that it 'unfairly compromises the market' and could 'ultimately destroy the market.'
+
+Corresponding Proof:
+- Such actions help ensure that stock prices do reflect a more accurate assessment of all the relevant facts. That’s good for everyone in the stock market.
+- That unfairly compromises the market: people with inside information can make informed trade decisions far before everyone else, making it difficult or impossible for other people to earn money in the stock market.
+- This, in turn, causes a loss of investor confidence and could ultimately destroy the market.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

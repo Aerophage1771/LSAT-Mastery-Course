@@ -1,0 +1,38 @@
+Question ID: PT-106-S-4-P-1-Q-3
+PrepTest: 106
+Section: 4 (Reading Comprehension)
+Passage Number: 1
+Question Number: 3.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude toward the court’s decision in the Mashpee’s lawsuit is most clearly revealed by the author’s use of which one of the following phrases?
+
+Passage:
+Passage A:
+Some Native American tribes have had difficulty establishing their land claims because the United States government did not recognize their status as tribes; therefore during the 1970s some Native Americans attempted to obtain such recognition through the medium of U.S. courts. In presenting these suits, Native Americans had to operate within a particular sphere of U.S. government procedure, that of its legal system, and their arguments were necessarily interpreted by the courts in terms the law could understand: e.g., through application of precedent or review of evidence. This process brought to light some of the differing perceptions and definitions that can exist between cultures whose systems of discourse are sometimes at variance.
+In one instance, the entire legal dispute turned on whether the suing community—a group of Mashpee Wampanoag in the town of Mashpee, Massachusetts—constituted a tribe. The area had long been occupied by the Mashpee, who continued to have control over land use after the town’s incorporation. But in the 1960s, after an influx of non-Mashpee people shifted the balance of political power in the town, the new residents were able to buy Mashpee-controlled land from the town and develop it for commercial or private use. The Mashpee’s 1976 suit claimed that these lands were taken in violation of a statute prohibiting transfers of land from any tribe of Native Americans without federal approval. The town argued that the Mashpee were not a tribe in the sense intended by the statute and so were outside its protection. As a result, the Mashpee were required to demonstrate their status as a tribe according to a definition contained in an earlier ruling: a body of Native Americans “governing themselves under one leadership and inhabiting a particular territory.”
+The town claimed that the Mashpee were not self-governing and that they had no defined territory: the Mashpee could legally be self-governing, the town argued, only if they could show written documentation of such a system, and could legally inhabit territory only if they had precisely delineated its boundaries and possessed a deed to it. The Mashpee marshaled oral testimony against these claims, arguing that what the town perceived as a lack of evidence was simply information that an oral culture such as the Mashpee’s would not have recorded in writing. In this instance, the disjunction between U.S. legal discourse and Mashpee culture—exemplified in the court’s inability to “understand” the Mashpee’s oral testimony as documentary evidence—rendered the suit unsuccessful. Similar claims have recently met with greater success, however, as U.S. courts have begun to acknowledge that the failure to accommodate differences in discourse between cultures can sometimes stand in the way of guaranteeing the fairness of legal decisions.
+
+Toolkit Context:
+The question asks about the author's attitude toward the court's decision in the Mashpee lawsuit. The relevant part of the passage describes why the Mashpee lost their case: the court could not understand their oral testimony as evidence. The author then notes that more recent court decisions have been successful because courts are beginning to recognize that this is a problem.
+
+Answer Choices:
+A. “operate within a particular sphere” (second sentence of the first paragraph)
+B. “continued to have control” (second sentence of the second paragraph)
+C. “required to demonstrate” (last sentence of the second paragraph)
+D. “precisely delineated its boundaries” (first sentence of the third paragraph)
+E. “failure to accommodate” (last sentence of the passage) [CORRECT]
+
+Credited Answer: E. “failure to accommodate” (last sentence of the passage)
+
+Correct Answer Explanation:
+The phrase "failure to accommodate" clearly shows the author's critical attitude. Calling the court's action a "failure" implies a negative judgment, suggesting the court should have adapted to the Mashpee's culture to ensure a fair decision. This wording reveals the author's belief that the court's inflexibility was a shortcoming.
+
+Corresponding Proof:
+- In this instance, the disjunction between U.S. legal discourse and Mashpee culture—exemplified in the court’s inability to “understand” the Mashpee’s oral testimony as documentary evidence—rendered the suit unsuccessful.
+- Similar claims have recently met with greater success, however, as U.S. courts have begun to acknowledge that the failure to accommodate differences in discourse between cultures can sometimes stand in the way of guaranteeing the fairness of legal decisions.
+
+Standard of Proof: Phrase-level proof
+Why:
+The proof standard is local and textual: anchor the attitude to the exact phrase the author uses.

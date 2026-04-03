@@ -1,0 +1,41 @@
+Question ID: PT-122-S-3-P-3-Q-18
+PrepTest: 122
+Section: 3 (Reading Comprehension)
+Passage Number: 3
+Question Number: 18.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the author’s attitude toward the sources of information mentioned in the first sentence of the passage?
+
+Passage:
+Passage A:
+Surviving sources of information about women doctors in ancient Greece and Rome are fragmentary: some passing mentions by classical authors, scattered references in medical works, and about 40 inscriptions on tombs and monuments. Yet even from these fragments we can piece together a picture. The evidence shows that in ancient Greece and Rome there were, in fact, female medical personnel who were the ancient equivalent of what we now call medical doctors. So the history of women in medicine by no means begins in 1849 with Dr. Elizabeth Blackwell, the first woman to earn an M.D. in modern times, or even in 1321 with Francesca de Romana’s licensure to practice general medicine, the earliest known officially recorded occurrence of this sort.
+The very nature of the scant evidence tells us something. There is no list of women doctors in antiquity, no direct comment on the fact that there were such people. Instead, the scattering of references to them indicates that, although their numbers were probably small, women doctors were an unremarkable part of ancient life. For example, in The Republic (421 B.C.), the earliest known source attesting to the existence of women doctors in Greece, Plato argues that, for the good of the state, jobs should be assigned to people on the basis of natural aptitude, regardless of gender. To support his argument he offers the example that some women, as well as some men, are skilled in medicine, while others are not. Here, Plato is not trying to convince people that there ought to be women doctors. Rather, he is arguing for an ideal distribution of roles within the state by pointing to something that everyone could already see—that there were female doctors as well as male.
+Moreover, despite evidence that some of these women doctors treated mainly female patients, their practice was clearly not limited to midwifery. Both Greek and Latin have distinct terms for midwife and doctor, and important texts and inscriptions refer to female practitioners as the latter. Other references provide evidence of a broad scope of practice for women doctors. The epitaph for one named Domnina reads: “You delivered your homeland from disease.” A tribute to another describes her as "savior of all through her knowledge of medicine.”
+Also pointing to a wider medical practice are the references in various classical medical works to a great number of women’s writings on medical subjects. Here, too, the very nature of the evidence tells us something, for Galen, Pliny the elder, and other ancient writers of encyclopedic medical works quote the opinions and prescriptions of male and female doctors indiscriminately, moving from one to the other and back again. As with the male doctors they cite, these works usually simply give excerpts from the female authority’s writing without biographical information or special comment.
+
+Toolkit Context:
+The first sentence of the passage states that the sources of information about ancient women doctors are "fragmentary." However, the author immediately follows this by arguing that "even from these fragments we can piece together a picture." The rest of the passage demonstrates this by using these limited sources to draw firm conclusions about the existence and roles of these doctors.
+
+Answer Choices:
+A. wary that they might be misinterpreted due to their fragmentary nature
+B. optimistic that with a more complete analysis they will yield answers to some crucial lingering questions
+C. hopeful that they will come to be accepted generally by historians as authentic documents
+D. confident that they are accurate enough to allow for reliable factual inferences [CORRECT]
+E. convinced of their appropriateness as test cases for the application of a new historical research methodology
+
+Credited Answer: D. confident that they are accurate enough to allow for reliable factual inferences
+
+Correct Answer Explanation:
+This choice accurately reflects the author's stance. Despite acknowledging the sources are incomplete or "fragmentary," the author proceeds to use them to make strong, factual claims, such as that women doctors were an "unremarkable part of ancient life." This shows confidence that reliable inferences can be drawn from the evidence.
+
+Corresponding Proof:
+- Surviving sources of information about women doctors in ancient Greece and Rome are fragmentary...
+- Yet even from these fragments we can piece together a picture.
+- The evidence shows that in ancient Greece and Rome there were, in fact, female medical personnel who were the ancient equivalent of what we now call medical doctors.
+- The very nature of the scant evidence tells us something.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

@@ -1,0 +1,74 @@
+--- Module 48: Practice Passage 7 -- Advertising Critique (Marcuse) ---
+--- Source: PT-141-S-1-P-3 (Q16-Q21) ---
+
+{ "type": "diff-note", "text": "Module-wide: No 'attempt before reading' prompt exists before any of the 6 question analyses. This is the highest-priority addition.", "variant": "comment" }
+
+=== Lesson 48-1 (Passage Analysis) ===
+
+ {"type":"accordion","title":"Read Passage","content":"Some critics of advertising..."}
++{{+**LSAT Tip:** This passage follows a very common structure: the author presents someone else's theory (Marcuse's), then argues against it. Track carefully which claims belong to the theorist and which belong to the author -- the LSAT will test this distinction.+}}
+ {"type":"h3","text":"Passage Analysis"}
+ {"type":"h4","text":"Paragraphs 1 & 2: The Marcuse Critique of Advertising"}
+ ...
+
+{ "type": "diff-note", "text": "The passage analysis is strong. The 'manipulated victim vs. rational agent' framing in the summary is excellent and correctly captures the central tension.", "variant": "comment" }
+
+=== Lesson 48-2 (Q16 -- Main Point) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-3-Q-16"}
++{{+**Question Type:** Main Idea+}}
+ {"type":"blockquote","text":"Which one of the following most accurately expresses the main point of the passage?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This question asks for the \"main point of the passage.\"..."}
+
+=== Lesson 48-3 (Q17 -- 3rd-Party Viewpoint) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-3-Q-17"}
++{{+**Question Type:** 3rd-Party Viewpoint+}}
+ {"type":"blockquote","text":"The author states that Marcuse believed that advertisers"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This is a detail-oriented question asking what the author claims Marcuse believed..."}
+
+{ "type": "diff-note", "text": "Q17's analysis correctly identifies the misattribution trap in choice (C) -- a claim from the author's rebuttal attributed to Marcuse. This is a strong teaching moment.", "variant": "comment" }
+
+=== Lesson 48-4 (Q18 -- Paragraph Function) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-3-Q-18"}
++{{+**Question Type:** Paragraph Function+}}
+ {"type":"blockquote","text":"The main function of the first paragraph is to"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This is a structural question asking for the \"main function of the first paragraph.\"..."}
+
+=== Lesson 48-5 (Q19 -- 3rd-Party Viewpoint) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-3-Q-19"}
++{{+**Question Type:** 3rd-Party Viewpoint+}}
+ {"type":"blockquote","text":"Which one of the following is a claim that the author attributes to Marcuse?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
++{{+**Pattern Alert:** This is the second question in this set that tests your ability to distinguish Marcuse's views from the author's. The LSAT frequently tests misattribution in passages that present and then critique someone else's theory.+}}
+ {"type":"paragraph","text":"This question asks for a specific claim that the author attributes to Marcuse..."}
+
+{ "type": "diff-note", "text": "The 29% trap on choice (C) is well-explained. The analysis correctly notes that it is the author's critique OF Marcuse, not Marcuse's own claim.", "variant": "comment" }
+
+=== Lesson 48-6 (Q20 -- Phrase Meaning) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-3-Q-20"}
++{{+**Question Type:** Phrase Meaning (Context)+}}
+ {"type":"blockquote","text":"By the term \"forces of persuasion\" (last sentence of the third paragraph), the author most probably refers to"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This question asks for the meaning of the phrase..."}
+
+=== Lesson 48-7 (Q21 -- Passage Completion) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-3-Q-21"}
++{{+**Question Type:** Passage Completion (Rare)+}}
+ {"type":"blockquote","text":"Which one of the following sentences would most logically complete the passage?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
++{{+**Format Note:** Passage completion questions are uncommon on the LSAT, but they always function like main point questions. The correct answer will logically conclude the author's entire argument -- think of it as the "therefore" statement that caps the passage.+}}
+ {"type":"paragraph","text":"This question asks for a sentence that could logically conclude the passage..."}

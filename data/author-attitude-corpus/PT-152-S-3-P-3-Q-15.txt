@@ -1,0 +1,58 @@
+Question ID: PT-152-S-3-P-3-Q-15
+PrepTest: 152
+Section: 3 (Reading Comprehension)
+Passage Number: 3
+Question Number: 15.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the attitude of the author of passage B toward the type of argument presented in passage A?
+
+Passage:
+Passage A:
+The legal system rests on the assumption that people use conscious deliberation when deciding how to act—that is, in the absence of external duress, people freely decide how to act. But behaviors—even high-level behaviors—can take place in the absence of free will. For example, someone with a neurological disorder might form a facial expression without choosing to do so.
+
+
+The crucial legal question is whether all of our actions are fundamentally beyond our control or whether some little bit of you is “free” to choose, independent of the rules of biology. After all, as neurologists tell us, there is no spot in the brain that is not densely interconnected with—and driven by—other brain parts. And that suggests that no part is independent and therefore “free.”
+
+
+One thing seems clear: if free will does exist, it has little room in which to operate. It can at best be a small factor riding on top of vast neural networks shaped by genes and environment. In fact, free will may end up being so small that we eventually think about bad decision-making in the same way we think about any physical affliction.
+
+
+Blameworthiness should thus be removed from the legal argot. It is a backward-looking concept that demands the impossible task of untangling the hopelessly complex web of genetics and environment in order to isolate a factor of free will that may or may not exist. Instead of debating culpability, the legal system has to become forward looking, and address how an accused lawbreaker is likely to behave in the future.
+
+Passage B:
+Here is a paradox: if people lack free will, then how can the law be moved away from what seems to be a deeply entrenched reliance on blame-related concepts? Rational arguments will only get you so far.
+
+
+Clinical research indicates that people will often continue to make moral judgments even when they are conditioned to think that human behavior is determined by physical processes. The blaming urge is deeply rooted in the human psyche, and I have considerable doubt that any amount of scientific evidence can remove it from our criminal justice processes.
+
+
+We have, of course, tried this before. Rehabilitation was widely accepted by criminal justice experts in the mid-twentieth century. But public support waned, and a retributive backlash occurred in the 1970s and 1980s. Criminal behavior may be a matter of biology, not choice, but the public seems unwilling to incorporate this idea into the law.
+
+
+My sense is that blaming performs some useful social function, even if it is in some way “false.” Blaming seems too intrinsically a part of the social life of human beings for me to see it as a worthless appendage that can be harmlessly amputated. As the criminal justice system confronts the challenges of brain science, it should also seek a better understanding of why people blame and try to continue to respect the underlying social needs.
+
+Toolkit Context:
+Passage A argues that because science shows free will is limited, the legal system should stop assigning blame. Instead, it should focus on preventing future bad behavior. Passage B acknowledges the scientific points but argues that removing blame is not practical because the urge to blame is a deep and useful part of human society.
+
+Answer Choices:
+A. sympathy with the premises, accompanied by doubts about the feasibility of the policy those premises are used to support. [CORRECT]
+B. intellectual acceptance, coupled with fear of the consequences if such acceptance becomes widespread
+C. forceful rejection, both of the argument’s conclusion and one or more of the premises on which it is based
+D. studied neutrality, with regard both to the conclusion and to the steps by which it is arrived at
+E. sympathy with the conclusion amid doubt that it follows from the premises
+
+Credited Answer: A. sympathy with the premises, accompanied by doubts about the feasibility of the policy those premises are used to support.
+
+Correct Answer Explanation:
+This choice is correct. The author of passage B agrees with the scientific ideas, or premises, of passage A, stating that behavior may be a matter of biology. However, passage B then expresses strong doubts about the practical ability, or feasibility, of the policy passage A supports, which is to remove blame from the law.
+
+Corresponding Proof:
+- Criminal behavior may be a matter of biology, not choice, but the public seems unwilling to incorporate this idea into the law.
+- The blaming urge is deeply rooted in the human psyche, and I have considerable doubt that any amount of scientific evidence can remove it from our criminal justice processes.
+- My sense is that blaming performs some useful social function, even if it is in some way “false.”
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

@@ -1,0 +1,37 @@
+# Module 37: Passage Function — Diff Annotations
+# Source: website lessons rc/37-1.tsx, rc/37-2.tsx
+
+{ "type": "diff-note", "text": "Module 37 is the capstone of the Function hierarchy (M35 Phrase → M36 Paragraph → M37 Passage). It shares the zero-practice gap with the entire hierarchy.", "variant": "comment" }
+
+## Lesson 37-1: Introduction (rc/37-1.tsx)
+
+### After the five-item purpose vocabulary:
+{{+Add a "Passage Function vs. Main Point" comparison table: "These two question types are closely related and often confused. Main Point asks WHAT the author concludes. Passage Function asks WHY the author wrote the passage. For the same passage, the main point might be 'strict emissions standards are necessary,' while the purpose would be 'to argue for a specific policy change.'"+}}
+
+### After the stem identification breakdown:
+{{+Add a "Function Hierarchy" note: "This module completes a three-level progression. Phrase Function (Module 35) targets a specific detail. Paragraph Function (Module 36) targets an entire paragraph. Passage Function (this module) targets the whole text. Each level uses the same core skill — identifying authorial purpose — at a different scale."+}}
+
+### Comparative Inquiry stem category:
+{{+Expand with a brief note: "Comparative Passage Function questions add an extra layer: you must determine the purpose of each passage independently, then characterize how those purposes relate to each other. This often requires synthesizing two distinct authorial goals into a single comparative statement."+}}
+
+{ "type": "diff-note", "text": "The Question-Based Inquiry stem category is unique and insightful — it reveals that some Passage Function questions are phrased as 'what question does this passage answer?' This reframe is valuable for students who struggle with abstract purpose language.", "variant": "comment" }
+
+## Lesson 37-2: Step-by-Step Approach (rc/37-2.tsx)
+
+### Before any worked analysis section:
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the prediction example ("critique or refute a widely held view"):
+{{+Extend this into a full worked example: present a 4-paragraph passage outline and demonstrate all three steps, including evaluation of 4-5 answer choices with elimination reasoning.+}}
+
+### After Step 3 elimination criteria:
+{{+Add a "too descriptive" trap warning: "Watch for answers that describe the passage's topic rather than the author's purpose. 'Discusses environmental policy' describes what the passage is about. 'Argues for stricter emissions regulations' describes why the author wrote it. The correct answer always captures the author's goal, not just the subject matter."+}}
+
+### Tie-Breaker #1 (Main Point Connection):
+{ "type": "diff-note", "text": "This tie-breaker — 'main point is what the author concludes, purpose is why they wrote' — is the module's most valuable teaching moment. Consider promoting to a standalone callout earlier in the lesson.", "variant": "comment" }
+{{+Add a concrete example: show the same passage generating both a Main Point question (answer: the specific conclusion) and a Passage Function question (answer: the rhetorical goal), and explain why the answers differ.+}}
+
+### After the tie-breaker section:
+{{+Add a complete question-card with a real PT question.+}}
+
+{{!note: The Tone Check tie-breaker (objective/explanatory vs. persuasive/argumentative) is a strong signal students can use quickly. It pairs well with the verb-based approach from the prediction step.!}}

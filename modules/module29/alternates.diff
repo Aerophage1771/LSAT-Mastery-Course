@@ -1,0 +1,53 @@
+--- Module 29: Author Attitude -- RC Question Type ---
+--- Website lessons: rc/29-1.tsx through rc/29-2.tsx ---
+
+{ "type": "diff-note", "text": "Module-wide: No practice questions. The Charged Language detection method in 29-2 is the strongest method in the small-module group. Critical gap: no distinction drawn between Attitude (Module 29) and Viewpoint (Module 30).", "variant": "comment" }
+
+=== Lesson 29-1 (Introduction) ===
+
+ {"type":"h3","text":"Germaine's Guide to RC Author Attitude Questions"}
+ {"type":"h4","text":"What's this question asking?"}
+ {"type":"paragraph","text":"Author Attitude questions ask you to identify the author's opinion or feeling about a specific topic from the passage..."}
+ {"type":"list","items":["**Specific word choice:**...","**Degree of qualification:**...","**Presentation of evidence:**...","**Rhetorical structure:**..."]}
++{{+**Attitude vs. Viewpoint:** Attitude questions (Module 29) ask HOW the author feels -- the tone and emotional register (e.g., "cautious optimism," "mild skepticism"). Viewpoint questions (Module 30) ask WHAT the author believes -- the substantive position they would endorse. Same passage, different lens.+}}
+ {"type":"hr"}
+ {"type":"h3","text":"Stem Identification: How to Spot an Author Attitude Question"}
+ {"type":"breakdown","labels":{"title":"Category","text":"Examples & Keywords"},"items":[
+   {"title":"Direct Inquiry","text":"...attitude, stance, position, opinion, view...","badge":"Opinion","badgeColor":"indigo"},
+   {"title":"Comparative Inquiry","text":"...differs from, more...less, respectively...","badge":"Comparison","badgeColor":"blue"},
+   {"title":"Evidence of Attitude","text":"...revealed by, conveys, indicative of, values most highly...","badge":"Evidence","badgeColor":"green"}
+ ]}
+
+{ "type": "diff-note", "text": "The 'Evidence of Attitude' stem category is particularly valuable. These questions (e.g., 'which phrase reveals the author's attitude?') test a different sub-skill than standard attitude questions and many students don't practice them.", "variant": "comment" }
+
+ {"type":"callout","title":"Overarching Takeaway","variant":"summary","text":"Whether the question uses \"attitude,\" \"stance,\" or \"opinion,\" your goal is to determine the author's tone...and degree..."}
+ {"type":"h3","text":"The Importance of Author Attitude Questions"}
+ {"type":"paragraph","text":"Author Attitude questions appear around 100 times among the released LSATs, making up nearly 5%..."}
++{{!note!}} The stem category "values most highly" overlaps with Author Viewpoint (Module 30). A brief note acknowledging this overlap would help students who encounter ambiguous stems.
+
+=== Lesson 29-2 (Step-by-Step Approach) ===
+
+ {"type":"h3","text":"Step-by-Step Approach"}
+ {"type":"h4","text":"Step 1: Locate the Specific Topic in the Passage"}
+ {"type":"paragraph","text":"First, identify the exact person, theory, or event that the question is asking about..."}
+ {"type":"h4","text":"Step 2: Hunt for \"Charged\" Language"}
+ {"type":"paragraph","text":"Read the relevant text, but this time, look specifically for words that reveal the author's opinion..."}
+ {"type":"list","items":["**Adjectives:** Is the theory \"promising\" or \"flawed\"?...","**Adverbs:** Did the event \"unfortunately\" happen?...","**Verbs:** Does the author \"endorse\" or \"dismiss\" the idea?"]}
+
+{ "type": "diff-note", "text": "Step 2 (Hunt for Charged Language) with the three-target checklist (adjectives, adverbs, verbs) is the clearest and most actionable method in any RC question-type module. This is the module's crown jewel.", "variant": "comment" }
+
+ {"type":"h4","text":"Step 3: Determine the Direction and Intensity"}
+ {"type":"list","items":["**Direction:** Is it positive...negative...or neutral?","**Intensity:** Is it strong...or moderate?"]}
+ {"type":"h4","text":"Step 4: Match Your Assessment to the Answer Choices"}
+ {"type":"paragraph","text":"Compare your assessment of the author's tone to the descriptive words in each answer choice..."}
++{{+**Missing:** Add a tone vocabulary reference. Common answer-choice tone words: cautious optimism, guarded skepticism, qualified approval, mild disapproval, outright dismissal, grudging respect, detached objectivity, wholehearted endorsement. This vocabulary would help students translate their assessment into answer-choice language.+}}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
++{{+Add a worked example here with 2-3 sentences of charged language, a direction/intensity assessment, and matching/non-matching answer choices.+}}
+ {"type":"hr"}
+ {"type":"h3","text":"If You Get Stuck Between Two Choices..."}
+ {"type":"h4","text":"Tie-Breaker #1: The Synonym Test"}
+ {"type":"paragraph","text":"Reread your final two answer choices (e.g., \"skepticism\" vs. \"disapproval\")..."}
+ {"type":"h4","text":"Tie-Breaker #2: Find the Most Extreme Word"}
+ {"type":"paragraph","text":"Look at the most extreme or definitive word in each of your final two answer choices (e.g., \"wholehearted endorsement\" vs. \"qualified approval\")..."}
+
+{ "type": "diff-note", "text": "Both tie-breakers are precise and address real student errors. The Synonym Test is especially strong -- many students cannot distinguish between 'skepticism' and 'disapproval' under time pressure.", "variant": "comment" }

@@ -1,0 +1,91 @@
+--- Module 46: Practice Passage 5 -- Cosmic Justice (Comparative) ---
+--- Source: PT-128-S-4-P-4 (Q20-Q27) ---
+
+{ "type": "diff-note", "text": "Module-wide: No 'attempt before reading' prompt exists before any of the 8 question analyses. This is the highest-priority addition.", "variant": "comment" }
+
+=== Lesson 46-1 (Passage Analysis) ===
+
+ {"type":"accordion","title":"Read Passage","content":"..."}
++{{+**Approach Tip:** For comparative passages, read Passage A first and mentally summarize its main thesis before moving to Passage B. As you read B, actively note where it agrees with, extends, or contradicts A.+}}
+ {"type":"h3","text":"Passage Analysis"}
+ ...
+ {"type":"h4","text":"The Head-to-Head: Inability vs. Illegitimacy"}
+
+{ "type": "diff-note", "text": "The Head-to-Head section is the single most valuable teaching moment in the passage analysis. Consider promoting it with a callout variant for emphasis.", "variant": "comment" }
+
+ {"type":"callout","title":"Summary","variant":"summary","text":"..."}
++{{+**What to Expect:** This question set covers 8 questions including title matching, detail finding, style comparison, analogy, cross-passage vocabulary, cross-passage inference, underlying principle, and point-of-agreement questions.+}}
+
+=== Lesson 46-2 (Q20 -- Title Matching) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-128-S-4-P-4-Q-20"}
++{{+**Question Type:** Main Idea Variant (Title Matching)+}}
+ {"type":"blockquote","text":"**Question:** Which one of the following pairs of titles..."}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This question asks us to select the most appropriate pair of titles..."}
+
+=== Lesson 46-3 (Q21 -- Detail Finding) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-128-S-4-P-4-Q-21"}
++{{+**Question Type:** Detail Finding (Cross-Passage)+}}
+ {"type":"blockquote","text":"**Question:** Which one of the following is mentioned in passage B, but not in passage A?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This is a detail-finding question..."}
+
+=== Lesson 46-4 (Q22 -- Style Comparison) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-128-S-4-P-4-Q-22"}
++{{+**Question Type:** Tone / Style Comparison+}}
+ {"type":"blockquote","text":"**Question:** Passage A differs from passage B in that passage A is more"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This question asks us to compare the styles..."}
+
+=== Lesson 46-5 (Q23 -- Analogy) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-128-S-4-P-4-Q-23"}
++{{+**Question Type:** Analogy / Application+}}
+ {"type":"blockquote","text":"**Question:** Which one of the following is most analogous to the kind of approach both authors criticize?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"The approach criticized by both authors..."}
+
+=== Lesson 46-6 (Q24 -- Cross-Passage Vocabulary) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-128-S-4-P-4-Q-24"}
++{{+**Question Type:** Phrase Meaning (Cross-Passage)+}}
+ {"type":"blockquote","text":"**Question:** In passage B, which one of the following is an example of \"inputs\"..."}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"Passage A defines 'inputs' as the background factors..."}
+
+=== Lesson 46-7 (Q25 -- Cross-Passage Inference) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-128-S-4-P-4-Q-25"}
++{{+**Question Type:** Cross-Passage Inference+}}
+ {"type":"blockquote","text":"**Question:** Passage A most strongly supports which one of the following inferences regarding the example of the murderer in passage B?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"We must apply the core argument of Passage A..."}
+
+=== Lesson 46-8 (Q26 -- Underlying Principle) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-128-S-4-P-4-Q-26"}
++{{+**Question Type:** Passage Principle+}}
+ {"type":"blockquote","text":"**Question:** The discussion in passage A, but not the discussion in passage B, relies on which one of the following principles?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This question asks for an unstated rule..."}
+
+{ "type": "diff-note", "text": "Q26 is a high-difficulty question (only 44% correct rate). Consider adding a callout noting that this is a challenging question and explaining why the 30% trap answer (C) is so tempting.", "variant": "comment" }
+
+=== Lesson 46-9 (Q27 -- Point of Agreement) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-128-S-4-P-4-Q-27"}
++{{+**Question Type:** Author Viewpoint (Point of Agreement)+}}
+ {"type":"blockquote","text":"**Question:** Which one of the following is a view advanced by the author of passage A with which the author of passage B would be most likely to agree?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"We need a point of agreement..."}

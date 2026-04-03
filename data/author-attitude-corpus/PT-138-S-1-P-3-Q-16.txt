@@ -1,0 +1,41 @@
+Question ID: PT-138-S-1-P-3-Q-16
+PrepTest: 138
+Section: 1 (Reading Comprehension)
+Passage Number: 3
+Question Number: 16.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude towards the idea that the Pin Factory model should be part of the mainstream of economic thought could most accurately be described as one of
+
+Passage:
+Passage A:
+David Warsh’s book describes a great contradiction inherent in economic theory since 1776, when Adam Smith published The Wealth of Nations. Warsh calls it the struggle between the Pin Factory and the Invisible Hand.
+Using the example of a pin factory, Smith emphasized the huge increases in efficiency that could be achieved through increased size. The pin factory’s employees, by specializing on narrow tasks, produce far more than they could if each worked independently. Also, Smith was the first to recognize how a market economy can harness self-interest to the common good, leading each individual as though “by an invisible hand to promote an end which was no part of his intention.” For example, businesses sell products that people want, at reasonable prices, not because the business owners inherently want to please people but because doing so enables them to make money in a competitive marketplace.
+These two concepts, however, are opposed to each other. The parable of the pin factory says that there are increasing returns to scale—the bigger the pin factory, the more specialized its workers can be, and therefore the more pins the factory can produce per worker. But increasing returns create a natural tendency toward monopoly, because a large business can achieve larger scale and hence lower costs than a small business. So given increasing returns, bigger firms tend to drive smaller firms out of business, until each industry is dominated by just a few players. But for the invisible hand to work properly, there must be many competitors in each industry, so that nobody can exert monopoly power. Therefore, the idea that free markets always get it right depends on the assumption that returns to scale are diminishing, not increasing.
+For almost two centuries, the assumption of diminishing returns dominated economic theory, with the Pin Factory de-emphasized. Why? As Warsh explains, it wasn’t about ideology; it was about following the line of least mathematical resistance. Economics has always had scientific aspirations; economists have always sought the rigor and clarity that comes from representing their ideas using numbers and equations. And the economics of diminishing returns lend themselves readily to elegant formalism, while those of increasing returns—the Pin Factory—are notoriously hard to represent mathematically.
+Many economists tried repeatedly to bring the Pin Factory into the mainstream of economic thought to reflect the fact that increasing returns obviously characterized many enterprises, such as railroads. Yet they repeatedly failed because they could not state their ideas rigorously enough. Only since the late 1970s has this “underground river”—a term used to describe the role of increasing returns in economic thought—surfaced into the mainstream of economic thought. By then, economists had finally found ways to describe the Pin Factory with the rigor needed to make it respectable.
+
+Toolkit Context:
+The passage explains the history of the "Pin Factory" model in economics, which represents the idea of increasing returns to scale. The author notes that this model was ignored for a long time, not because it was wrong, but because it was difficult to express with math. The author positively frames the model's eventual acceptance into mainstream economic thought.
+
+Answer Choices:
+A. hostility
+B. uncertainty
+C. curiosity
+D. indifference
+E. receptivity [CORRECT]
+
+Credited Answer: E. receptivity
+
+Correct Answer Explanation:
+The author's attitude is best described as receptive. The passage presents the Pin Factory model as an important and accurate idea that was unfairly overlooked. Words like "obviously" and "finally" show that the author welcomes the model's inclusion in mainstream economics.
+
+Corresponding Proof:
+- Many economists tried repeatedly to bring the Pin Factory into the mainstream of economic thought to reflect the fact that increasing returns obviously characterized many enterprises, such as railroads.
+- Only since the late 1970s has this “underground river”—a term used to describe the role of increasing returns in economic thought—surfaced into the mainstream of economic thought.
+- By then, economists had finally found ways to describe the Pin Factory with the rigor needed to make it respectable.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

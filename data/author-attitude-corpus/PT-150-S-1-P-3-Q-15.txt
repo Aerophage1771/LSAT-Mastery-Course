@@ -1,0 +1,46 @@
+Question ID: PT-150-S-1-P-3-Q-15
+PrepTest: 150
+Section: 1 (Reading Comprehension)
+Passage Number: 3
+Question Number: 15.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the stance expressed by the author of passage A toward Borges’s view?
+
+Passage:
+Passage A:
+In a 1978 lecture titled “The Detective Story,” Jorge Luis Borges observes that, “The detective novel has created a special type of reader,” and adds, “If Poe created the detective story, he subsequently created the reader of detective fiction.” For Borges, this “special type of reader” confronts literature with such “incredulity and suspicions” that he or she might read any narrative as a detective story. Borges’s interest in this particular genre, of course, inspired a good deal of his own fiction, but his account also draws our attention to an insight into the general nature of literature.
+
+
+Literature, according to Borges, is “an aesthetic event” that “requires the conjunction of reader and text,” and what the detective story highlights, he suggests, is the way in which the reader forms the conditions of possibility for this “aesthetic event.” Borges imagines that the participation of the reader is not extrinsic to but instead essential to the literary text. Thus, what unites works belonging to the same genre is the way those works are read, rather than, say, a set of formal elements found within the works.
+
+Passage B:
+One can, if one wants, define genres of fiction as sets of texts sharing certain thematic similarities, but the taxonomic difficulties of such an approach are notorious. The problem of “borderline cases”—especially in science fiction—arises so often that the definition fails to demarcate genres entirely. A more fruitful way to characterize the distinction between genres is to view it as a distinction between reading protocols: between ways of reading, responding to sentences, and making various sentences and various texts make sense. We are free to read any text by any reading protocol we wish. But the texts most central to a genre are those texts that were clearly written to exploit a particular protocol—texts that yield a particularly rich reading experience when read according to one protocol rather than another.
+
+
+Our major critical effort must therefore be an exploration of the specific workings of many of the individual rhetorical configurations that contour, exploit, or even create a specific reading protocol. Here—to give an example outside of fiction—is a general description of one aspect of the reading protocols associated with poetry: with poetry, we tend to pay more attention to the sound of the words than we do with prose. Therefore we look for rhetorical figures that exploit, among other things, the phonic aspects of the words making up the text. With science fiction, much of the significance of the story will manifest itself in the alternative workings of the world in which the characters maneuver. Therefore we will pay particular attention to the rhetorical figures by which differences between our world and the world of the story are suggested.
+
+Toolkit Context:
+Passage A discusses the views of writer Jorge Luis Borges on literature, particularly detective fiction. Borges believes that the reader is essential to creating a literary experience. The author presents Borges's idea that genres are defined more by how they are read than by specific elements within the texts themselves.
+
+Answer Choices:
+A. complete agreement [CORRECT]
+B. reluctant acceptance
+C. cautious neutrality
+D. strong skepticism
+E. outright rejection
+
+Credited Answer: A. complete agreement
+
+Correct Answer Explanation:
+The author presents Borges's ideas in a positive and supportive way. The passage refers to Borges's account as an 'insight' and uses his views as the foundation for its main argument. There is no language of doubt or disagreement, indicating the author is in complete agreement.
+
+Corresponding Proof:
+- Borges’s interest in this particular genre, of course, inspired a good deal of his own fiction, but his account also draws our attention to an insight into the general nature of literature.
+- Literature, according to Borges, is “an aesthetic event” that “requires the conjunction of reader and text,” and what the detective story highlights, he suggests, is the way in which the reader forms the conditions of possibility for this “aesthetic event.”
+- Thus, what unites works belonging to the same genre is the way those works are read, rather than, say, a set of formal elements found within the works.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

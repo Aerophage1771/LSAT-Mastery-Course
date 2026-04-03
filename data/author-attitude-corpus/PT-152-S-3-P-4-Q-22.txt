@@ -1,0 +1,42 @@
+Question ID: PT-152-S-3-P-4-Q-22
+PrepTest: 152
+Section: 3 (Reading Comprehension)
+Passage Number: 4
+Question Number: 22.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s stance toward Carroll and Chen’s theory is most accurately characterized as that of
+
+Passage:
+Passage A:
+Physicists posit that at first our universe was infinitesimally small and infinitely hot and dense. It then underwent a period of extremely rapid, massive inflation (the Big Bang), and it has since continued to expand and cool.
+According to physicists Sean Carroll and Jennifer Chen, the Big Bang was not a unique event; events like it happen periodically over an incredibly vast time scale. This is based on the suggestion of some physicists that the Big Bang was the beginning of our universe as we know it, but not the beginning of a larger Universe—or “multiverse”—that encompasses everything, including that which we can never see because it is beyond our “cosmic bubble.”
+Carroll and Chen were initially interested in why time flows in only one direction. In physics the flow of time is captured by the second law of thermodynamics, which implies that entropy—a measure of total disorder—naturally increases with time. Entropy increases because there are more ways for a system to be disordered than for it to be ordered. Therefore, if change occurs, it is more likely to be change toward greater disorder. For example, in a moderately orderly room, if one moves an object in the room randomly, there are many more places one can put it that will make the room less orderly than there are places that will make it more orderly. So if, over time, objects in the room are continually moved randomly, it is most likely that the room will get increasingly disordered.
+While the Big Bang process and what followed obey the second law of thermodynamics, it is a mystery why there should have been a small, hot, and dense universe to begin with. Such a low entropy universe is an extremely unlikely configuration, not what scientists would expect from a randomly occurring initial condition. Carroll and Chen’s innovation is to argue that the most common initial condition is actually likely to resemble cold, empty space—not an obviously favorable starting point for the onset of inflation.
+Recent research has shown that even empty space has faint traces of energy that fluctuate on the subatomic scale. Physicists Jaume Garriga and Alexander Vilenkin have suggested that these fluctuations can generate their own big bangs in tiny areas widely separated in time and space. Carroll and Chen take our universe, and others, to be such fluctuations in a high entropy multiverse.
+On this view, while the initial state that produced our universe would appear to be, taken by itself, a highly improbable one, in the vastness of the multiverse the creation of our universe is not that unlikely. Indeed it is likely not even a unique event.
+
+Toolkit Context:
+The passage explains a scientific theory from physicists Carroll and Chen. It describes their idea that our universe is one of many within a larger 'multiverse'. The author's role is to present this complex theory, its origins, and how it solves a scientific puzzle, without injecting personal opinions or arguments.
+
+Answer Choices:
+A. an ardent adversary
+B. a dismissive critic
+C. a disinterested skeptic
+D. a sympathetic reporter [CORRECT]
+E. a zealous proponent
+
+Credited Answer: D. a sympathetic reporter
+
+Correct Answer Explanation:
+This choice accurately describes the author's tone. The author acts as a 'reporter,' explaining Carroll and Chen's theory in a neutral, informative way. The word 'sympathetic' fits because the author presents the theory in a positive light as a clever 'innovation' that addresses a scientific mystery, but without actively trying to persuade the reader of its truth.
+
+Corresponding Proof:
+- According to physicists Sean Carroll and Jennifer Chen, the Big Bang was not a unique event; events like it happen periodically over an incredibly vast time scale.
+- Carroll and Chen’s innovation is to argue that the most common initial condition is actually likely to resemble cold, empty space—not an obviously favorable starting point for the onset of inflation.
+- On this view, while the initial state that produced our universe would appear to be, taken by itself, a highly improbable one, in the vastness of the multiverse the creation of our universe is not that unlikely.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

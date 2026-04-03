@@ -1,0 +1,40 @@
+Question ID: PT-147-S-2-P-2-Q-12
+PrepTest: 147
+Section: 2 (Reading Comprehension)
+Passage Number: 2
+Question Number: 12.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately characterizes the author’s attitude toward Gray’s artistic accomplishments?
+
+Passage:
+Passage A:
+Best known for her work with lacquer, Eileen Gray (1878–1976) had a fascinating and multifaceted artistic career: she became a designer of ornaments, furniture, interiors, and eventually homes. Though her attention shifted from smaller objects to the very large, she always focused on details, even details that were forever hidden. In Paris she studied the Japanese tradition of lacquer, employing wood surfaces—e.g., bowls, screens, furniture—for the application of the clear, hard-drying liquid. It is a time-consuming craft, then little known in Europe, that superimposes layer upon layer, sometimes involving twenty layers or more. The tradition of lacquer fit well with her artistic sensibilities, as Gray eschewed the flowing, leafy lines of the Art Nouveau movement that had flourished in Paris, preferring the austere beauty of straight lines and simple forms juxtaposed.
+In addition to requiring painstaking layering, the wood used in lacquer work must be lacquered on both sides to prevent warping. This tension between aesthetic demands and structural requirements, which invests Gray’s work in lacquer with an architectural quality, is critical but not always apparent: a folding screen or door panel reveals more of the artist’s work than does a flat panel, which hides one side. In Gray’s early work she produced flat panels; later she made door panels and even unfolded the panels into screens. In a screen she made for the lobby of an apartment, she fully realizes the implications of this expansion from two to three dimensions: the screen juts out from a wall, and that wall visually disintegrates into panels of lacquered bricks on the screen. The screen thus becomes a painting, a piece of furniture, and an architectural element all at once. She subsequently became heavily invested in the design of furniture, often tailoring pieces to fit a particular interior environment. She often used modern materials, such as tubular steel, to create furniture and environments that, though visually austere, meet their occupants’ needs.
+Gray’s work in both lacquer and interior design prefigures her work as an architect. She did not believe that one should divorce the structural design of the exterior from the design of the interior. She designed the interior elements of a house together with the more permanent structures, as an integrated whole. Architecture for her was like work in lacquer: it could only be achieved from the inside out. But in architecture we discover the hidden layers; in fact we inhabit them. We find storage cabinets in the recesses of a staircase, desks that are also cabinets, and tables that are set on pivots to serve different functions in different contexts. One such table can be positioned either outside, on a balcony, or inside the house. Gray placed a carpet underneath it in each location, as though to underscore that there is no important distinction between exterior and interior.
+
+Toolkit Context:
+The author describes Eileen Gray's career in a very positive way. The passage highlights the wide range of her work, from small lacquer objects to entire houses. It also notes her unique artistic style, which was different from the popular Art Nouveau movement, and her use of both traditional and modern materials.
+
+Answer Choices:
+A. appreciation of the fact that her aesthetic philosophy, as well as the materials she used and the range of her work, sets her work apart from that of many of her contemporaries [CORRECT]
+B. admiration for her artistic independence and refusal to conform to contemporary art trends even though such refusal positioned her on the periphery of the art world
+C. appreciation for the interpretation of Japanese tradition in her work, by which she made a unique contribution to modern architectural design while remaining faithful to Japanese architectural traditions
+D. admiration for the rapid development in her career, from the production of smaller works, such as ornaments, to large structures, like houses, that ensured her reputation as an avant-garde artist
+E. appreciation for her help in revolutionizing the field of structural design through her use of traditional materials and modern materials in her furniture creations and architectural work
+
+Credited Answer: A. appreciation of the fact that her aesthetic philosophy, as well as the materials she used and the range of her work, sets her work apart from that of many of her contemporaries
+
+Correct Answer Explanation:
+This choice correctly summarizes the author's positive attitude. The passage mentions Gray's distinct philosophy (preferring simple lines over Art Nouveau), her use of different materials (lacquer and steel), and the broad range of her work (from ornaments to homes), all of which set her apart.
+
+Corresponding Proof:
+- she became a designer of ornaments, furniture, interiors, and eventually homes.
+- Gray eschewed the flowing, leafy lines of the Art Nouveau movement that had flourished in Paris, preferring the austere beauty of straight lines and simple forms juxtaposed.
+- In Paris she studied the Japanese tradition of lacquer...
+- She often used modern materials, such as tubular steel, to create furniture and environments...
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

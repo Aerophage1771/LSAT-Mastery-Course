@@ -1,0 +1,41 @@
+Question ID: PT-157-S-4-P-1-Q-2
+PrepTest: 157
+Section: 4 (Reading Comprehension)
+Passage Number: 1
+Question Number: 2.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes Gordy’s attitude concerning the potential for Motown’s recordings to have widespread appeal?
+
+Passage:
+Passage A:
+In 1959, Hitsville, USA—the company better known as Motown Records—was founded in Detroit, Michigan by Berry Gordy, Jr. Several factors contributed to Motown’s rapidly becoming one of the most successful record companies in the United States. Gordy’s entrepreneurial skills and his belief in economic independence played a great role in Motown’s success, as did the artistic situation in Detroit in the 1960s. Capitalizing on the rich musical talent of Detroit’s African American community, Motown moved quickly into the vanguard of the popular music industry.
+Motown’s status as an independent company allowed Gordy considerable freedom to oppose recording industry convention. He rejected the practice that was common in the late 1950s and early 1960s of having established recording stars remake songs originally produced within and for limited markets. Gordy insisted that the musical performances recorded by Motown artists would appeal not just to African American audiences, but to a much wider market, and that there would thus be no need to engage high-priced major-label artists to produce alternate versions of Motown’s songs. Gordy believed that maintaining the highest possible technical quality in Motown’s recordings was an essential part of this appeal, and he devoted the necessary resources to this endeavor.
+Another crucial factor in Motown’s success was Detroit’s well-developed public school music-education program, which provided the company with a deep and talented pool of artists and technicians. The roots of this program reached back to the turn of the century, when a trained soprano and Detroit native named E. Azalia Hackley adopted the musical education of African American youth as her personal mission. From Hackley’s tutelage to that of locally renowned public school music teachers, Detroit’s African American youth had been educated in a vibrant musical atmosphere. Nearly all of Motown’s session musicians, arrangers, and producers were trained in this program. Moreover, many of the performers who would become famous exemplars of the Motown sound received musical training and exposure to diverse musical styles in Detroit schools. Motown’s three major early groups—the Supremes, the Temptations, and the Miracles—came together and originally rehearsed at their high schools.
+In addition to Gordy’s business acumen and the talent produced by the local school system, the invention and growing popularity of electric instruments also played a noteworthy role in Motown’s rise to prominence. African American musicians were among the first to use the electric bass, for example, crafting a distinctive sound that inspired other musicians to experiment with this new musical technology. This experimentation ultimately led to a revolution in popular music, helping to broaden both its sound and its audience. In this way, too, Motown Records helped to initiate, and simultaneously benefited from, landmark shifts in popular music culture.
+
+Toolkit Context:
+The passage focuses on Berry Gordy's business decisions at Motown Records. Specifically, it describes his rejection of the common industry practice of remaking songs for different audiences. Gordy strongly believed that Motown's music, if produced with high quality, would naturally appeal to a wide market.
+
+Answer Choices:
+A. uncertainty in light of past trends in the music industry
+B. willingness to accept anticipated popular indifference
+C. courage in the face of unpromising statistics
+D. confidence rooted in firm personal conviction [CORRECT]
+E. optimism based on changing economic conditions
+
+Credited Answer: D. confidence rooted in firm personal conviction
+
+Correct Answer Explanation:
+The passage highlights Gordy's strong personal beliefs. Phrases like "Gordy insisted" and "Gordy believed" show that his strategy was driven by a powerful personal vision, not outside factors. This matches the idea of confidence rooted in firm personal conviction.
+
+Corresponding Proof:
+- Gordy’s entrepreneurial skills and his belief in economic independence played a great role in Motown’s success...
+- He rejected the practice that was common in the late 1950s and early 1960s of having established recording stars remake songs originally produced within and for limited markets.
+- Gordy insisted that the musical performances recorded by Motown artists would appeal not just to African American audiences, but to a much wider market...
+- Gordy believed that maintaining the highest possible technical quality in Motown’s recordings was an essential part of this appeal...
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

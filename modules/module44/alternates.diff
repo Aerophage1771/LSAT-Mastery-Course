@@ -1,0 +1,112 @@
+# Module 44 -- Practice Passage 3: Cultural Identity (PT-128-S-1-P-3)
+# Diff annotations for website lessons rc/44-1 through rc/44-9
+
+{ "type": "diff-note", "text": "All 8 question lessons (44-2 through 44-9) lack a 'try it yourself' prompt before the worked analysis. This is the highest-priority addition across the module.", "variant": "comment" }
+
+## Lesson 44-1: Passage Analysis
+
+{ "type": "diff-note", "text": "The passage analysis handles a complex four-paragraph, multi-example passage well. Adding a visual example-to-thesis mapping would significantly improve accessibility.", "variant": "comment" }
+
+### After the paragraph 3 analysis, before paragraph 4 analysis:
+{{+**Example Map:** All three examples support the same thesis -- present concerns shape cultural identity construction.+}}
+
+{{+| Example | Context | Who Constructs | Purpose |+}}
+{{+|---------|---------|----------------|---------|+}}
+{{+| Greek history revision | 19th-century European scholarship | European scholars | Support European cultural dominance |+}}
+{{+| Victoria's jamborees | 19th-century British imperialism | Ruling elites | Project power backward in time |+}}
+{{+| Algerian idealized past | 20th-century decolonization | Revolutionary movement | Create inspiring precolonial heritage |+}}
+
+### After the summary callout (end of lesson):
+{{+**Questions Ahead:** The next 8 lessons cover main point, EXCEPT, attitude, vocabulary in context, viewpoint attribution, application, generalization, and primary purpose question types. The EXCEPT and application questions require distinct strategies that differ from standard question approaches.+}}
+
+### Before the h4 heading:
+{{+**Before you read the analysis:** Take 4-5 minutes to read this passage carefully. It is denser than the previous passages. As you read, try to identify: (1) the author's central thesis, (2) the common thread connecting all three examples, and (3) the paradox introduced in the final paragraph.+}}
+
+## Lesson 44-2: Question 14 (Main Point)
+
+### Before "This is a main point question":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Main Point -- The correct answer must encompass all the evidence and the final conclusion, not just one example.+}}
+
+## Lesson 44-3: Question 15 (EXCEPT)
+
+### Before "This is an 'EXCEPT' question":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** EXCEPT -- This question type requires the opposite of the normal approach. Instead of finding one correct answer, confirm that four answers ARE supported by the passage and eliminate the one that is NOT. Work through each choice systematically.+}}
+
+{ "type": "diff-note", "text": "EXCEPT questions require a fundamentally different mental approach. Consider adding a strategy callout explaining: (1) treat each choice as a yes/no question, (2) four will be yes, (3) the one 'no' is the answer. Students frequently rush EXCEPT questions and make careless errors.", "variant": "comment" }
+
+### After the breakdown table:
+{{+**EXCEPT Question Strategy:** For every EXCEPT question, mentally rephrase each choice as "Does the passage answer this?" Four will be "yes" -- the one "no" is correct. This systematic approach prevents the common error of selecting the first choice that seems interesting rather than the one truly unsupported.+}}
+
+## Lesson 44-4: Question 16 (Attitude)
+
+### Before "This question asks":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Attitude -- Look at how the author uses the material they discuss. If they provide evidence supporting a claim, they likely agree with it.+}}
+
+## Lesson 44-5: Question 17 (Vocabulary in Context)
+
+### Before "This question asks":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Vocabulary in Context -- When a word or phrase appears in quotation marks (scare quotes), the author is signaling that the word is being used ironically or that the thing described is not what it claims to be.+}}
+
+{ "type": "diff-note", "text": "Scare quotes appear frequently in LSAT RC passages. The skill of recognizing them as a rhetorical signal of irony or inauthenticity is transferable across many passages. Consider flagging this as a general RC skill.", "variant": "comment" }
+
+### After the breakdown table:
+{{+**Transferable Skill:** When you see a word in quotation marks (scare quotes) in an LSAT passage, the author is almost always signaling that the term is being used ironically or that the thing described is not genuinely what the label claims. This is a common rhetorical device in RC passages.+}}
+
+## Lesson 44-6: Question 18 (Viewpoint Attribution)
+
+### Before "This question asks":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Viewpoint Attribution -- Identify the group's beliefs from the passage context, then find the answer that matches those beliefs, not the author's beliefs.+}}
+
+{ "type": "diff-note", "text": "The analysis of (E) -- distinguishing between the author's external analysis of nationalists and the nationalists' own self-understanding -- is an excellent transferable insight for viewpoint attribution questions.", "variant": "comment" }
+
+## Lesson 44-7: Question 19 (Application)
+
+### Before "This is an application question":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Application -- Extract the abstract principle or pattern from the passage, then test each answer choice against that template. The correct answer will match both the action described and the purpose behind it.+}}
+
+{ "type": "diff-note", "text": "Application questions are among the hardest RC question types. The template-extraction approach used here (action + purpose) is excellent and should be highlighted as a reusable strategy.", "variant": "comment" }
+
+### After the breakdown table:
+{{+**Application Question Strategy:** For application questions, always extract a clear template from the passage before evaluating the answer choices. Define: (1) What action is being described? (2) What is its purpose? Then test each choice against both criteria.+}}
+
+## Lesson 44-8: Question 20 (Generalization)
+
+### Before "This question asks":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Generalization -- The correct answer must apply to ALL the examples cited, not just one. Eliminate answers that only fit one of the examples.+}}
+
+## Lesson 44-9: Question 21 (Primary Purpose)
+
+### Before "This question asks":
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### Before the h3 heading:
+{{+**Question Type:** Primary Purpose -- Distinguish between describing/explaining (analytical) and advocating/recommending (prescriptive). Check whether the author tells you what IS or what SHOULD BE.+}}
+
+## Module-Level Annotations
+
+{{!This passage is the most complex of the four practice passage modules, with four paragraphs, three distinct historical examples, and a paradoxical conclusion. Students may benefit from a note at the beginning acknowledging this complexity and suggesting they spend slightly more time on the initial passage reading.!}}
+
+{{!The EXCEPT question (44-3) and Application question (44-7) are the two most strategy-dependent question types in this module. Both deserve explicit strategy callouts that go beyond the specific question to teach a reusable approach.!}}
+
+{{!Question-type distribution: 1 Main Point, 1 EXCEPT, 1 Attitude, 1 Vocabulary in Context, 1 Viewpoint Attribution, 1 Application, 1 Generalization, 1 Primary Purpose. This is the most diverse distribution across the four modules.!}}

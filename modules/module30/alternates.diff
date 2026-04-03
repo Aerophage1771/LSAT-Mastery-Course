@@ -1,0 +1,48 @@
+--- Module 30: Author Viewpoint -- RC Question Type ---
+--- Website lessons: rc/30-1.tsx through rc/30-2.tsx ---
+
+{ "type": "diff-note", "text": "Module-wide: Second-most-common RC type (~12%, 252 appearances). No practice questions -- this is the most consequential practice gap by frequency. The hypothesis-testing method in 30-2 is strong. No distinction drawn from Module 29 (Attitude).", "variant": "comment" }
+
+=== Lesson 30-1 (Introduction) ===
+
+ {"type":"h3","text":"Germaine's Guide to RC Author Viewpoint Questions"}
+ {"type":"h4","text":"What's this question asking?"}
+ {"type":"paragraph","text":"Author Viewpoint questions ask you to determine which statement the author would most likely agree with or support..."}
+ {"type":"list","items":["**The central argument:**...","**Tone and degree:**...","**Logical implications:**...","**Evaluative language:**..."]}
++{{+**Viewpoint vs. Attitude:** Viewpoint questions (this module) ask WHAT the author believes -- the position they would endorse. Attitude questions (Module 29) ask HOW the author feels -- the tone and emotional register. A viewpoint answer is a *statement* the author agrees with; an attitude answer is a *description* of the author's emotional stance.+}}
+ {"type":"hr"}
+ {"type":"h3","text":"Stem Identification: How to Spot an Author Viewpoint Question"}
+ {"type":"breakdown","labels":{"title":"Category","text":"Examples & Keywords"},"items":[
+   {"title":"Direct Agreement Phrasing","text":"...agree with, believes, holds view...","badge":"Agreement","badgeColor":"indigo"},
+   {"title":"Disagreement / Negative Phrasing","text":"...disagree with, LEAST likely to believe...","badge":"Disagreement","badgeColor":"red"},
+   {"title":"Comparative Viewpoint Phrasing","text":"...both authors, authors would disagree...","badge":"Comparison","badgeColor":"blue"},
+   {"title":"Judgment and Valuation Phrasing","text":"...values most highly, views...as...","badge":"Valuation","badgeColor":"green"}
+ ]}
++{{!note!}} The "Judgment and Valuation" category overlaps with Author Attitude (Module 29). Stems like "values most highly" could appear in either module. When the answer choices are descriptive adjectives (e.g., "skeptical," "approving"), it's Attitude. When they are statements the author would endorse, it's Viewpoint.
+ {"type":"callout","title":"Overarching Takeaway","variant":"summary","text":"Your goal is to choose the statement that best fits the author's overall perspective..."}
+ {"type":"h3","text":"The Importance of Author Viewpoint Questions"}
+ {"type":"paragraph","text":"Author Viewpoint questions are one of the most common types...252 times...about 12%..."}
+
+{ "type": "diff-note", "text": "Four stem categories are well-structured. The Disagreement/Negative category is valuable since LEAST-likely and disagree-with stems trip up students who are used to positive framing.", "variant": "comment" }
+
+=== Lesson 30-2 (Step-by-Step Approach) ===
+
+ {"type":"h3","text":"Step-by-Step Approach"}
+ {"type":"h4","text":"Step 1: Synthesize the Author's Core Argument and Tone"}
+ {"type":"list","items":["What is their central claim or thesis?","What is their attitude toward the main subject?","What are the main reasons they provide?"]}
+ {"type":"h4","text":"Step 2: Treat Each Answer Choice as a Hypothesis to Be Proven"}
+ {"type":"list","items":["**Find Direct Proof:**...","**Eliminate Unsupported Claims:**...","**Check Ownership:**..."]}
+
+{ "type": "diff-note", "text": "The 'Treat Each Answer as a Hypothesis' framework is the module's best teaching tool. The three sub-instructions (Direct Proof, Eliminate Unsupported, Check Ownership) are precise and actionable.", "variant": "comment" }
+
++{{+**Critical point -- elevate this:** The "Check Ownership" instruction deserves callout-level prominence. Confusing the author's view with a third party's view is the single most common error on viewpoint questions. This connects directly to Module 32 (Third-Party Viewpoint).+}}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
++{{+Add a worked example here showing the hypothesis-testing approach on 3 answer choices: one the author would endorse, one belonging to a third party the author criticizes, and one that is plausible but unsupported.+}}
+ {"type":"hr"}
+ {"type":"h3","text":"If You Get Stuck Between Two Choices..."}
+ {"type":"h4","text":"Tie-Breaker #1: The Scope Test"}
+ {"type":"paragraph","text":"...one of the final two choices will be a narrow, factually correct restatement of a single detail, while the other will be a broader conclusion..."}
+ {"type":"h4","text":"Tie-Breaker #2: The Intensity Check"}
+ {"type":"paragraph","text":"Isolate the most important qualifying or modifying words in your final two answer choices (e.g., \"proves\" vs. \"suggests,\" \"always\" vs. \"likely\")..."}
+
+{ "type": "diff-note", "text": "For a ~12% frequency type, this module critically needs at least one (ideally two) question-cards. The hypothesis-testing framework is strong but undemonstrated.", "variant": "comment" }

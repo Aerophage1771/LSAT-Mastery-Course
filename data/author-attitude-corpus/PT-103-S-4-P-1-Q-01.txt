@@ -1,0 +1,41 @@
+Question ID: PT-103-S-4-P-1-Q-1
+PrepTest: 103
+Section: 4 (Reading Comprehension)
+Passage Number: 1
+Question Number: 1.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the author’s attitude toward the relationship between citizenship and individual rights in a democracy?
+
+Passage:
+Passage A:
+Opponents of compulsory national service claim that such a program is not in keeping with the liberal principles upon which Western democracies are founded. This reasoning is reminiscent of the argument that a tax on one’s income is undemocratic because it violates one’s right to property. Such conceptions of the liberal state fail to take into account the intricate character of the social agreement that undergirds our liberties. It is only in the context of a community that the notion of individual rights has any application; individual rights are meant to define the limits of people’s actions with respect to other people. Implicit in such a context is the concept of shared sacrifice. Were no taxes paid, there could be no law enforcement, and the enforcement of law is of benefit to everyone in society. Thus, each of us must bear a share of the burden to ensure that the community is protected.
+The responsibility to defend one’s nation against outside aggression is surely no less than the responsibility to help pay for law enforcement within the nation. Therefore, the state is certainly within its rights to compel citizens to perform national service when it is needed for the benefit of society.
+It might be objected that the cases of taxation and national service are not analogous: While taxation must be coerced, the military is quite able to find recruits without resorting to conscription. Furthermore, proponents of national service do not limit its scope to only those duties absolutely necessary to the defense of the nation. Therefore, it may be contended, compulsory national service oversteps the acceptable boundaries of governmental interference in the lives of its citizens.
+By responding thus, the opponent of national service has already allowed that it is a right of government to demand service when it is needed. But what is the true scope of the term “need”? If it is granted, say, that present tax policies are legitimate intrusions on the right to property, then it must also be granted that need involves more than just what is necessary for a sound national defense. Even the most conservative of politicians admits that tax money is rightly spent on programs that, while not necessary for the survival of the state, are nevertheless of great benefit to society. Can the opponent of national service truly claim that activities of the military such as quelling civil disorders, rebuilding dams and bridges, or assisting the victims of natural disasters—all extraneous to the defense of society against outside aggression—do not provide a similar benefit to the nation? Upon reflection, opponents of national service must concede that such a broadened conception of what is necessary is in keeping with the ideas of shared sacrifice and community benefit that are essential to the functioning of a liberal democratic state.
+
+Toolkit Context:
+The author discusses the balance between individual rights and a citizen's duties to their community. They argue that rights are part of a social agreement that requires shared sacrifice, like paying taxes or performing national service. The author critiques the idea that individual rights can be used as a reason to avoid these obligations.
+
+Answer Choices:
+A. confidence that individual rights are citizens’ most important guarantees of personal freedom
+B. satisfaction at how individual rights have protected citizens from unwarranted government intrusion
+C. alarm that so many citizens use individual rights as an excuse to take advantage of one another
+D. concern that individual rights represent citizens’ only defense against government interference
+E. dissatisfaction at how some citizens cite individual rights as a way of avoiding certain obligations to their government [CORRECT]
+
+Credited Answer: E. dissatisfaction at how some citizens cite individual rights as a way of avoiding certain obligations to their government
+
+Correct Answer Explanation:
+<p>This choice accurately reflects the author's viewpoint. The author is clearly frustrated with the argument that individual rights excuse citizens from obligations like compulsory national service, which they compare to avoiding taxes. The entire passage is dedicated to refuting this idea, showing the author's dissatisfaction.</p>
+
+Corresponding Proof:
+- Opponents of compulsory national service claim that such a program is not in keeping with the liberal principles upon which Western democracies are founded.
+- This reasoning is reminiscent of the argument that a tax on one’s income is undemocratic because it violates one’s right to property.
+- Such conceptions of the liberal state fail to take into account the intricate character of the social agreement that undergirds our liberties.
+- Implicit in such a context is the concept of shared sacrifice.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

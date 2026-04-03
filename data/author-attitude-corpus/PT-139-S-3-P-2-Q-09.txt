@@ -1,0 +1,41 @@
+Question ID: PT-139-S-3-P-2-Q-9
+PrepTest: 139
+Section: 3 (Reading Comprehension)
+Passage Number: 2
+Question Number: 9.
+Question Category: Author Attitude
+
+Question Stem:
+Based on the passage, which one of the following most accurately describes an attitude displayed by the author toward artists’ uses of old photographic techniques?
+
+Passage:
+Passage A:
+When Jayne Hinds Bidaut saw her first tintype, she was so struck by its rich creamy tones that she could hardly believe this photographic process had been abandoned. She set out to revive it. Bidaut had been searching for a way to photograph insects from her entomological collection, but paper prints simply seemed too flat to her. The tintype, an image captured on a thin, coated piece of iron (there is no tin in it), provided the detail and dimensionality she wanted. The image-containing emulsion can often create a raised surface on the plate.
+For the photographer Dan Estabrook, old albumen prints and tintypes inspired a fantasy. He imagines planting the ones he makes in flea markets and antique shops, to be discovered as “originals” from a bygone time that never existed.
+On the verge of a filmless, digital revolution, photography is moving forward into its past. In addition to reviving the tintype process, photographers are polishing daguerreotype plates, coating paper with egg whites, making pinhole cameras, and mixing emulsions from nineteenth-century recipes in order to coax new expressive effects from old photographic techniques. So diverse are the artists returning to photography’s roots that the movement is more like a groundswell.
+The old techniques are heavily hands-on and idiosyncratic. That is the source of their appeal. It is also the prime reason for their eclipse. Most became obsolete in a few decades, replaced by others that were simpler, cheaper, faster, and more consistent in their results. Only the tintype lasted as a curiosity into the twentieth century. Today’s artists quickly discover that to exploit the past is to court the very uncertainty that early innovators sought to banish. Such unpredictability attracted Estabrook to old processes. His work embraces accident and idiosyncrasy in order to foster the illusion of antiquity. In his view, time leaches meaning from every photograph and renders it a lost object, enabling us to project onto it our sentiments and associations. So while the stains and imperfections of prints made from gum bichromate or albumen coatings would probably have been cropped out by a nineteenth-century photographer, Estabrook retains them to heighten the sense of nostalgia.
+This preoccupation with contingency offers a clue to the deeper motivations of many of the antiquarian avant-gardists. The widely variable outcome of old techniques virtually guarantees that each production is one of a kind and bears, on some level, the indelible mark of the artist’s encounter with a particular set of circumstances. At the same time, old methods offer the possibility of recovering an intimacy with photographic communication that mass media have all but overwhelmed.
+
+Toolkit Context:
+The passage discusses a trend where modern artists are reviving old photographic techniques, such as tintypes. The author explains the specific motivations of these artists. They are drawn to the hands-on, unpredictable nature of these older methods to achieve unique artistic effects and a deeper connection with their work.
+
+Answer Choices:
+A. doubtful hesitation about the artistic value of using old techniques
+B. appreciative understanding of the artists’ aesthetic goals [CORRECT]
+C. ironic amusement at the continued use of techniques that are obsolete
+D. enthusiastic endorsement of their implicit critique of modern photographic technology
+E. whimsical curiosity about the ways in which the processes work
+
+Credited Answer: B. appreciative understanding of the artists’ aesthetic goals
+
+Correct Answer Explanation:
+The author consistently explains the artists' reasons for using old techniques in a positive and understanding way. Phrases like exploring "new expressive effects" and seeking "deeper motivations" show that the author understands and appreciates the artistic goals behind this movement.
+
+Corresponding Proof:
+- ...photographers are...mixing emulsions from nineteenth-century recipes in order to coax new expressive effects from old photographic techniques.
+- This preoccupation with contingency offers a clue to the deeper motivations of many of the antiquarian avant-gardists.
+- ...old methods offer the possibility of recovering an intimacy with photographic communication that mass media have all but overwhelmed.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

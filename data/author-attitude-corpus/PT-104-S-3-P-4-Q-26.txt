@@ -1,0 +1,39 @@
+Question ID: PT-104-S-3-P-4-Q-26
+PrepTest: 104
+Section: 3 (Reading Comprehension)
+Passage Number: 4
+Question Number: 26.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following best describes the author’s attitude toward Bettelheim’s work?
+
+Passage:
+Passage A:
+Freud’s essay on “The Uncanny” can be said to have defined, for our century, what literary criticism once called the Sublime. This apprehension of a beyond or of a dæmonic—a sense of transcendence—appears in literature or life, according to Freud, when we feel that something uncanny is being represented, or conjured up, or at least intimated. Freud locates the source of the uncanny in our tendency to believe in the “omnipotence of thought,” that is, in the power of our own or of others’ minds over the natural world. The uncanny is, thus, a return to animistic conceptions of the universe, and is produced by the psychic defense mechanisms Freud called repression.
+It would have seemed likely for Freud to find his literary instances of the uncanny, or at least some of them, in fairy tales, since as much as any other fictions they seem to be connected with repressed desires and archaic forms of thought. But Freud specifically excluded fairy tales from the realm of the uncanny. “Who would be so bold,” Freud asks, “as to call it an uncanny moment, for instance, when Snow White opens her eyes once more?” Why not? Because, he goes on to say, in those stories everything is possible, so nothing is incredible, and, therefore, no conflicts in the reader’s judgment are provoked. Thus Freud, alas, found fairy tales to be unsuited to his own analysis.
+However, the psychoanalyst Bruno Bettelheim, with a kind of wise innocence, has subjected fairy tales to very close, generally orthodox, and wholly reductive Freudian interpretations. Bettelheim’s book, although written in apparent ignorance of the vast critical traditions of interpreting literary romance, is nevertheless a splendid achievement, brimming with useful ideas and insights into how young children read and understand.
+Bruno Bettelheim’s major therapeutic concern has been with autistic children, so inevitably his interpretive activity is directed against a child’s tendency to withdraw defensively or abnormally. According to Bettelheim, a child’s desperate isolation, loneliness, and inarticulate anxieties are addressed directly by fairy tales. By telling the child such stories themselves, parents strengthen the therapeutic effect of fairy tales, for in the telling, parents impart to the child their approval of the stories.
+But why should fairy tales, in themselves, be therapeutic? Bettelheim’s answer depends on the child’s being an interpreter: “The fairy tale is therapeutic because children find their own solutions, through contemplating what the story seems to imply about their inner conflicts at this moment in their lives.” Bettelheim proceeds on the basis of two complementary assumptions: that children will interpret a story benignly, for their own good; and that Freudian interpretations will yield an accurate account of children’s interpretations. The child, questing for help, and the analyst, attempting to find helpful patterns in the stories, thus read alike, though in different vocabularies.
+
+Toolkit Context:
+The passage discusses the work of psychoanalyst Bruno Bettelheim, who applied Freudian ideas to interpret fairy tales. The author contrasts Bettelheim's approach with Freud's, who excluded fairy tales from his analysis. The author provides a balanced but ultimately positive assessment of Bettelheim's book, acknowledging a flaw while highlighting its major strengths.
+
+Answer Choices:
+A. approving of Bettelheim’s rejection of orthodox and reductive Freudian interpretations of fairy tales
+B. appalled at Bettelheim’s ignorance of the critical traditions of interpreting literary romance
+C. unimpressed with Bettelheim’s research methods
+D. skeptical of Bettelheim’s claim that fairy tales are therapeutic
+E. appreciative of Bettelheim’s accomplishment and practical insights [CORRECT]
+
+Credited Answer: E. appreciative of Bettelheim’s accomplishment and practical insights
+
+Correct Answer Explanation:
+This choice correctly captures the author's overall positive tone. The author explicitly calls Bettelheim's book a "splendid achievement" and says it is "brimming with useful ideas and insights," which demonstrates clear appreciation for both the work and its practical applications.
+
+Corresponding Proof:
+- Bettelheim’s book, although written in apparent ignorance of the vast critical traditions of interpreting literary romance, is nevertheless a splendid achievement, brimming with useful ideas and insights into how young children read and understand.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

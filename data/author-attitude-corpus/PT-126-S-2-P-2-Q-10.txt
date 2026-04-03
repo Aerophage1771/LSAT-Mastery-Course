@@ -1,0 +1,42 @@
+Question ID: PT-126-S-2-P-2-Q-10
+PrepTest: 126
+Section: 2 (Reading Comprehension)
+Passage Number: 2
+Question Number: 10.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the attitude expressed by the author of passage B toward the overall argument represented by passage A?
+
+Passage:
+Passage A:
+Purple loosestrife (Lythrum salicaria), an aggressive and invasive perennial of Eurasian origin, arrived with settlers in eastern North America in the early 1800s and has spread across the continent’s midlatitude wetlands. The impact of purple loosestrife on native vegetation has been disastrous, with more than 50 percent of the biomass of some wetland communities displaced. Monospecific blocks of this weed have maintained themselves for at least 20 years. Impacts on wildlife have not been well studied, but serious reductions in waterfowl and aquatic furbearer productivity have been observed. In addition, several endangered species of vertebrates are threatened with further degradation of their breeding habitats. Although purple loosestrife can invade relatively undisturbed habitats, the spread and dominance of this weed have been greatly accelerated in disturbed habitats. While digging out the plants can temporarily halt their spread, there has been little research on long-term purple loosestrife control. Glyphosate has been used successfully, but no measure of the impact of this herbicide on native plant communities has been made.
+ With the spread of purple loosestrife growing exponentially, some form of integrated control is needed. At present, coping with purple loosestrife hinges on early detection of the weed’s arrival in areas, which allows local eradication to be carried out with minimum damage to the native plant community.
+
+Passage B:
+The war on purple loosestrife is apparently conducted on behalf of nature, an attempt to liberate the biotic community from the tyrannical influence of a life-destroying invasive weed. Indeed, purple loosestrife control is portrayed by its practitioners as an environmental initiative intended to save nature rather than control it. Accordingly, the purple loosestrife literature, scientific and otherwise, dutifully discusses the impacts of the weed on endangered species—and on threatened biodiversity more generally. Purple loosestrife is a pollution, according to the scientific community, and all of nature suffers under its pervasive influence.
+Regardless of the perceived and actual ecological effects of the purple invader, it is apparent that popular pollution ideologies have been extended into the wetlands of North America. Consequently, the scientific effort to liberate nature from purple loosestrife has failed to decouple itself from its philosophical origin as an instrument to control nature to the satisfaction of human desires. Birds, particularly game birds and waterfowl, provide the bulk of the justification for loosestrife management. However, no bird species other than the canvasback has been identified in the literature as endangered by purple loosestrife. The impact of purple loosestrife on furbearing mammals is discussed at great length, though none of the species highlighted (muskrat, mink) can be considered threatened in North America. What is threatened by purple loosestrife is the economics of exploiting such preferred species and the millions of dollars that will be lost to the economies of the United States and Canada from reduced hunting, trapping, and recreation revenues due to a decline in the production of the wetland resource.
+
+Toolkit Context:
+Passage A presents a scientific argument that purple loosestrife is a harmful invasive species that damages wetlands and threatens wildlife. It calls for controlling the plant's spread to protect native communities. Passage B critiques this view, suggesting that the "war" on purple loosestrife is not about saving nature but is instead driven by human economic interests.
+
+Answer Choices:
+A. enthusiastic agreement
+B. cautious agreement
+C. pure neutrality
+D. general ambivalence
+E. pointed skepticism [CORRECT]
+
+Credited Answer: E. pointed skepticism
+
+Correct Answer Explanation:
+This choice is correct because the author of Passage B directly questions the motives and claims presented in arguments like the one in Passage A. The author is doubtful that the effort is about saving nature and points to economic reasons instead. This critical and questioning tone is best described as pointed skepticism.
+
+Corresponding Proof:
+- Consequently, the scientific effort to liberate nature from purple loosestrife has failed to decouple itself from its philosophical origin as an instrument to control nature to the satisfaction of human desires.
+- However, no bird species other than the canvasback has been identified in the literature as endangered by purple loosestrife.
+- What is threatened by purple loosestrife is the economics of exploiting such preferred species and the millions of dollars that will be lost to the economies of the United States and Canada from reduced hunting, trapping, and recreation revenues due to a decline in the production of the wetland resource.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

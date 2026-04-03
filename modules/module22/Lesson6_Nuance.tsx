@@ -1,0 +1,668 @@
+import { Lesson } from '../../types';
+
+export const Lesson6_Nuance: Lesson = {
+  id: '22-6',
+  title: 'Real-World Nuance & Probabilistic Logic',
+  questionPolicy: 'none',
+  content: [
+    { type: 'h3', text: 'Lesson 6: Real-World Nuance & Probabilistic Logic' },
+    {
+      type: 'paragraph',
+      text: '**Objective:** To accurately interpret and make inferences from conditional statements that use quantifiers ("most," "some") and probabilistic language ("likely," "can"), and to distinguish this **soft** language from the absolute language of formal logic.',
+    },
+    {
+      type: 'paragraph',
+      text: 'You have now mastered the architecture of formal logic\u2014the world of "all," "none," and "must." But the LSAT is not just a test of pure logic; it\'s a test of how logic is applied in the messy context of real-world arguments. This final lesson will teach you how to handle the shades of grey: the language of probability, frequency, and possibility.',
+    },
+
+    { type: 'h4', text: '6.1 Probabilistic Indicators vs. Absolute Indicators' },
+    { type: 'paragraph', text: 'Your first task is to differentiate between **hard** and **soft** language.' },
+    {
+      type: 'breakdown',
+      labels: { title: 'Language Type', text: 'Description & Keywords' },
+      items: [
+        {
+          title: '**Hard Language (Absolute)**',
+          text: '**Definition:** The language of formal logic. It creates definite, 100% **guaranteed** rules.\n\n**Keywords:** **all**, **none**, **every**, **always**, **never**, **must**, **requires**.',
+        },
+        {
+          title: '**Soft Language (Probabilistic)**',
+          text: '**Definition:** Introduces uncertainty, likelihood, or possibility. It does not create ironclad rules.\n\n**Keywords:** **likely**, **unlikely**, **can**, **may**, **could**, **possible**, **often**, **usually**, **sometimes**, **tends to**.',
+        },
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: '**Note:** One of the most frequent LSAT traps involves conflating these distinct types of language.',
+    },
+
+    { type: 'h4', text: '6.2 The Modal Fallacy: Confusing Frequency with Necessity' },
+    {
+      type: 'paragraph',
+      text: '**The Flaw:** This error occurs when an argument treats a statement about what is **often** or **usually** true as if it were a statement about what is **always** or **necessarily** true. It confuses **correlation/frequency** with **necessity**.',
+    },
+    {
+      type: 'paragraph',
+      text: '**Structure:**\n\n**Premise:** A **often** happens with B.\n\n**Invalid Conclusion:** Therefore, A is **required** for B.',
+    },
+
+    { type: 'h4', text: 'LSAT in Action: The Modal Fallacy' },
+    { type: 'h4', text: 'Explanation' },
+    { type: 'paragraph', text: '**Goal:** Analyze the logical structure.' },
+    { type: 'h4', text: 'Argument Breakdown' },
+    {
+      type: 'list',
+      items: [
+        "**Premise 1:** Parents who want to provide a strong foundation for their children's musical ability **should** provide them with a good musical education.",
+        '**Premise 2:** Formal instruction is **often** a part of a good musical education.',
+        '**Conclusion:** Therefore, parents who want to provide this strong foundation **need** to ensure that their children receive formal instruction.',
+      ],
+    },
+    {
+      type: 'callout',
+      title: 'The Modal Flaw',
+      text: 'The core error is a **modal shift** between frequency and necessity.\n\n**The Frequency Claim:** The premise uses the soft indicator "**often**." This denotes high frequency but admits exceptions. It is not an absolute rule.\n\n**The Necessity Claim:** The conclusion shifts to the hard indicator "**need**." This creates a necessary condition (a requirement).\n\n**The Gap:** The argument fails to bridge this gap. Just because formal instruction is **frequently** associated with good musical education does not mean it is **necessary** for it. The conclusion collapses the nuance of "**often**" into the rigidity of "**must**."',
+    },
+    { type: 'h4', text: 'Answer Explanations' },
+    {
+      type: 'breakdown',
+      labels: { title: 'Option', text: 'Evaluation' },
+      items: [
+        {
+          title: '(A)',
+          text: "**Irrelevant to the conditional relationship.** The argument concludes what specific parents (those with the wish) **must** do. Whether outside sources exist does not logically exempt the parents from the requirement derived in the conclusion. The argument is about the parents' obligation, not the exclusivity of the source.",
+          badge: 'Incorrect',
+          badgeColor: 'red',
+        },
+        {
+          title: '(B)',
+          text: '**Out of scope.** The argument creates a conditional rule for "Parents who wish to provide a strong foundation." The child\'s interest level is outside the scope of this logical relationship. Even if the child is uninterested, the logic regarding what the PARENTS must do to fulfill THEIR wish remains unchanged.',
+          badge: 'Incorrect',
+          badgeColor: 'red',
+        },
+        {
+          title: '(C)',
+          text: "**Confuses necessity with sufficiency.** The conclusion claims formal instruction is **necessary** (needed). This answer choice attempts to weaken the argument by showing instruction doesn't guarantee success (is not **sufficient**). However, a requirement can be necessary even if it doesn't always work (e.g., you **need** a ticket to win the lottery, even if most tickets lose).",
+          badge: 'Incorrect',
+          badgeColor: 'red',
+        },
+        {
+          title: '(D)',
+          text: '**Identifies the Modal Fallacy.** This choice directly attacks the logical gap. The premise creates a frequency relationship ("**often**"), which allows for exceptions. If formal instruction is not **always** part of a good musical education, then it is not a logical **necessity**. This answer choice points out that the "**need**" in the conclusion is not supported by the "**often**" in the premise.',
+          badge: 'Correct',
+          badgeColor: 'green',
+        },
+        {
+          title: '(E)',
+          text: '**Attacks the wrong link.** This answer choice suggests one can be a good musician without a good musical education. However, the argument takes the first premise (that parents **should** provide a good education) as a given starting point. The specific reasoning flaw occurs in the step moving from "**good education**" to "**formal instruction**" (the **Modal Shift**). Attacking the necessity of the education itself ignores the primary reasoning error regarding the components of that education.',
+          badge: 'Incorrect',
+          badgeColor: 'red',
+        },
+      ],
+    },
+
+    { type: 'h4', text: '6.3 Interpreting "Can," "Could," and "May"' },
+    {
+      type: 'paragraph',
+      text: '**The Rule:** These words denote **possibility**, not certainty. "X **can** cause Y" simply means that Y is a possible outcome of X, not a guaranteed one.',
+    },
+    {
+      type: 'paragraph',
+      text: '**The Trap:** Arguments often present evidence about what **could** happen and conclude something about what **will** or **must** happen.',
+    },
+    {
+      type: 'paragraph',
+      text: '**Example:** "This policy **can** lead to corruption, therefore this policy **will** lead to corruption." (Invalid jump from **possibility to certainty**).',
+    },
+    {
+      type: 'paragraph',
+      text: '**Structure:**\n\n**Premise:** X **can** cause Y.\n\n**Invalid Conclusion:** X **will** cause Y.',
+    },
+
+    { type: 'h4', text: 'LSAT in Action: Possibility vs. Certainty' },
+    { type: 'h4', text: 'Explanation' },
+    { type: 'paragraph', text: '**Goal:** Identify the flaw in moving from possibility to certainty.' },
+    { type: 'h4', text: 'Argument Breakdown' },
+    {
+      type: 'list',
+      items: [
+        '**Premise:** Caffeine **can** cause jitters (**possibility**).',
+        '**Fact:** John drank caffeine.',
+        '**Conclusion:** John **will definitely** have jitters (**certainty**).',
+      ],
+    },
+    {
+      type: 'callout',
+      title: 'The Modal Flaw',
+      text: 'The core error is a **modal shift** between possibility and certainty.\n\n**The Possibility Claim:** The premise uses the soft modal indicator "**can**." This denotes a potential outcome (>0% chance) but not a guaranteed one.\n\n**The Certainty Claim:** The conclusion shifts to the hard modal indicator "**will**." This creates a 100% guaranteed outcome.\n\n**The Gap:** The argument fails to bridge this gap. Just because an effect is **possible** does not mean it is **inevitable**. By treating "**can**" as "**will**," the argument commits a specific variation of the **Modal Fallacy**.',
+    },
+    { type: 'h4', text: 'Answer Explanations' },
+    {
+      type: 'breakdown',
+      labels: { title: 'Option', text: 'Evaluation' },
+      items: [
+        {
+          title: '(A)',
+          text: 'While plausible in the real world, this is a specific instance of the broader logical error. It explains WHY he might not get jitters, but the logical flaw is the jump in certainty itself.',
+          badge: 'Incorrect',
+          badgeColor: 'red',
+        },
+        {
+          title: '(B)',
+          text: 'This describes a Part-to-Whole flaw. While related, the core issue here is the modal shift from "CAN" to "WILL" rather than group properties.',
+          badge: 'Incorrect',
+          badgeColor: 'red',
+        },
+        {
+          title: '(C)',
+          text: 'This perfectly describes the Modal Fallacy here. The argument takes a **potential effect** (can cause) and treats it as **guaranteed** (will definitely).',
+          badge: 'Correct',
+          badgeColor: 'green',
+        },
+        {
+          title: '(D)',
+          text: 'This describes a Causal Reversal (Cause and Effect flaw), which is not happening here.',
+          badge: 'Incorrect',
+          badgeColor: 'red',
+        },
+        {
+          title: '(E)',
+          text: 'There is no ambiguity in the terms used; the error is in the logic, not the definitions.',
+          badge: 'Incorrect',
+          badgeColor: 'red',
+        },
+      ],
+    },
+
+    { type: 'h4', text: '6.4 Double Negatives and Litotes' },
+    {
+      type: 'paragraph',
+      text: 'The LSAT frequently disguises meaning behind double negatives\u2014a rhetorical device called **litotes**. The phrase "not unlikely" means "likely," and "not without merit" means "has merit." These constructions are designed to slow you down and create confusion.',
+    },
+    {
+      type: 'table',
+      headers: ['LSAT Phrase', 'Simplified Meaning', 'Logical Strength'],
+      rows: [
+        ['"not unlikely"', 'likely / possible', 'Soft (probabilistic)'],
+        ['"not without merit"', 'has some merit', 'Soft (probabilistic)'],
+        ['"cannot fail to"', 'must / will', 'Hard (absolute)'],
+        ['"not uncommon"', 'fairly common / some', 'Soft (probabilistic)'],
+        ['"never without"', 'always with', 'Hard (absolute)'],
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'The critical step is to simplify the double negative first, then determine whether the resulting meaning is **hard** or **soft**. A common trap pairs a soft double negative in the premise ("not unlikely") with a hard conclusion ("therefore it will happen"), creating another instance of the Modal Fallacy.',
+    },
+
+    { type: 'h4', text: '6.5 The Spectrum of Certainty on the LSAT' },
+    {
+      type: 'paragraph',
+      text: 'Bringing together every quantifier and modal term from this module, here is a unified spectrum from absolute certainty to bare possibility. Recognizing where a term falls on this spectrum is the single most important skill for avoiding modal and quantifier traps.',
+    },
+    {
+      type: 'table',
+      headers: ['Level', 'Terms', 'Logical Treatment'],
+      rows: [
+        [
+          '**Absolute (100%)**',
+          'all, every, must, always, never, none, requires',
+          'Valid conditional: A -> B. Contraposable.',
+        ],
+        [
+          '**Strong Majority (>50%)**',
+          'most, a majority of, predominantly',
+          'A -m-> B. NOT contraposable. Supports the Overlap Rule.',
+        ],
+        [
+          '**Existence (\u22651)**',
+          'some, at least one, several, a few (partial)',
+          'A <-s-> B. Reversible. NOT contraposable.',
+        ],
+        [
+          '**Probabilistic (variable)**',
+          'likely, often, usually, tends to, frequently',
+          'No formal diagram. Cannot ground a conditional chain.',
+        ],
+        [
+          '**Possibility (>0%)**',
+          'can, could, may, might, possible',
+          'No formal diagram. Only establishes that outcome is not impossible.',
+        ],
+      ],
+    },
+    {
+      type: 'paragraph',
+      text: 'Any argument that jumps between levels on this spectrum without justification commits a logical error. The larger the jump (e.g., from "possible" to "must"), the more egregious the flaw.',
+    },
+
+    { type: 'h3', text: 'Module Conclusion & Final Takeaways' },
+    {
+      type: 'list',
+      items: [
+        '**Hard vs. Soft Language is Key:** Determine if a premise is **absolute** or **probabilistic** before applying logical rules.',
+        '**Beware the Modal Fallacy:** Watch for "**often/usually**" premises leading to "**must/always**" conclusions.',
+        '**Possibility is Not Certainty:** Do not assume that because something **is capable** of happening, it **will** happen.',
+        "**Simplify Double Negatives:** Reduce litotes to their core meaning before analyzing the argument's logical strength.",
+        '**Trace the Logic, Don\'t Assume It:** Conditional reasoning is a mechanical derivation from the premises, not a test of what "sounds" reasonable.',
+      ],
+    },
+
+    { type: 'h4', text: 'Your Assignment' },
+    {
+      type: 'paragraph',
+      text: 'Integrate all six lessons in your practice. When approaching a Logical Reasoning question, you should:',
+    },
+    {
+      type: 'list',
+      items: [
+        '**Scan** for absolute conditional statements and their contrapositives.',
+        '**Identify Quantifiers** like "**most**" or "**some**" and determine what inferences are valid.',
+        '**Watch for Unusual Language**, specifically **double negatives** (e.g., "not unlikely") and "**unless**" statements.',
+        '**Actively look for fallacies**, such as **modal shifts** from soft premises to hard conclusions.',
+      ],
+    },
+
+    { type: 'h4', text: 'Quick Reference: Hard vs. Soft Language' },
+    {
+      type: 'breakdown',
+      labels: { title: 'Type', text: 'Details' },
+      items: [
+        {
+          title: '**Hard Language (Formal Logic)**',
+          text: '**Certainty:** 100% Guaranteed\n**Keywords:** **all**, **none**, **must**, **will**, **always**, **never**, **requires**, **essential**\n**Logic:** Valid Contrapositive exists\n**Common Flaw:** **Mistaken Reversal / Negation**',
+          badge: 'HARD LANGUAGE',
+          badgeColor: 'slate',
+        },
+        {
+          title: '**Soft Language (Probabilistic)**',
+          text: '**Certainty:** < 100% (Varies)\n**Keywords:** **most**, **some**, **often**, **likely**, **usually**, **can**, **could**, **may**, **tends to**\n**Logic:** Contrapositive usually invalid\n**Common Flaw:** **Modal Fallacy** (Treating "**likely**" as "**certain**")',
+          badge: 'SOFT LANGUAGE',
+          badgeColor: 'blue',
+        },
+      ],
+    },
+  ],
+  alternates: {
+    diff: {
+      label: 'Diff-Highlighted',
+      content: [
+        {
+          "type": "h3",
+          "text": "Lesson 6: Real-World Nuance & Probabilistic Logic"
+        },
+        {
+          "type": "paragraph",
+          "text": "**Objective:** To accurately interpret and make inferences from conditional statements that use quantifiers (\"most,\" \"some\") and probabilistic language (\"likely,\" \"can\"), and to distinguish this **soft** language from the absolute language of formal logic."
+        },
+        {
+          "type": "paragraph",
+          "text": "You have now mastered the architecture of formal logic—the world of \"all,\" \"none,\" and \"must.\" But the LSAT is not just a test of pure logic; it's a test of how logic is applied in the messy context of real-world arguments. This final lesson will teach you how to handle the shades of grey: the language of probability, frequency, and possibility."
+        },
+        {
+          "type": "h4",
+          "text": "6.1 Probabilistic Indicators vs. Absolute Indicators"
+        },
+        {
+          "type": "paragraph",
+          "text": "Your first task is to differentiate between **hard** and **soft** language."
+        },
+        {
+          "type": "breakdown",
+          "labels": {
+            "title": "Language Type",
+            "text": "Description & Keywords"
+          },
+          "items": [
+            {
+              "title": "**Hard Language (Absolute)**",
+              "text": "**Definition:** The language of formal logic. It creates definite, 100% **guaranteed** rules.\n\n**Keywords:** **all**, **none**, **every**, **always**, **never**, **must**, **requires**."
+            },
+            {
+              "title": "**Soft Language (Probabilistic)**",
+              "text": "**Definition:** Introduces uncertainty, likelihood, or possibility. It does not create ironclad rules.\n\n**Keywords:** **likely**, **unlikely**, **can**, **may**, **could**, **possible**, **often**, **usually**, **sometimes**, **tends to**."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**Note:** One of the most frequent LSAT traps involves conflating these distinct types of language."
+        },
+        {
+          "type": "h4",
+          "text": "6.2 The Modal Fallacy: Confusing Frequency with Necessity"
+        },
+        {
+          "type": "paragraph",
+          "text": "**The Flaw:** This error occurs when an argument treats a statement about what is **often** or **usually** true as if it were a statement about what is **always** or **necessarily** true. It confuses **correlation/frequency** with **necessity**."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Structure:**\n\n**Premise:** A **often** happens with B.\n\n**Invalid Conclusion:** Therefore, A is **required** for B."
+        },
+        {
+          "type": "h4",
+          "text": "LSAT in Action: The Modal Fallacy"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{+**Try this:** Attempt the question before reading the analysis below.+}}"
+        },
+        {
+          "type": "h3",
+          "text": "Explanation"
+        },
+        {
+          "type": "paragraph",
+          "text": "**Goal:** Analyze the logical structure."
+        },
+        {
+          "type": "h4",
+          "text": "Argument Breakdown"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Premise 1:** Parents who want to provide a strong foundation for their children's musical ability **should** provide them with a good musical education.",
+            "**Premise 2:** Formal instruction is **often** a part of a good musical education.",
+            "**Conclusion:** Therefore, parents who want to provide this strong foundation **need** to ensure that their children receive formal instruction."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "The Modal Flaw",
+          "text": "The core error is a **modal shift** between frequency and necessity.\n\n**The Frequency Claim:** The premise uses the soft indicator \"**often**.\" This denotes high frequency but admits exceptions. It is not an absolute rule.\n\n**The Necessity Claim:** The conclusion shifts to the hard indicator \"**need**.\" This creates a necessary condition (a requirement).\n\n**The Gap:** The argument fails to bridge this gap. Just because formal instruction is **frequently** associated with good musical education does not mean it is **necessary** for it. The conclusion collapses the nuance of \"**often**\" into the rigidity of \"**must**.\""
+        },
+        {
+          "type": "h4",
+          "text": "Answer Explanations"
+        },
+        {
+          "type": "breakdown",
+          "labels": {
+            "title": "Option",
+            "text": "Evaluation"
+          },
+          "items": [
+            {
+              "title": "(A)",
+              "text": "**Irrelevant to the conditional relationship.** The argument concludes what specific parents (those with the wish) **must** do. Whether outside sources exist does not logically exempt the parents from the requirement derived in the conclusion. The argument is about the parents' obligation, not the exclusivity of the source.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            },
+            {
+              "title": "(B)",
+              "text": "**Out of scope.** The argument creates a conditional rule for \"Parents who wish to provide a strong foundation.\" The child's interest level is outside the scope of this logical relationship. Even if the child is uninterested, the logic regarding what the PARENTS must do to fulfill THEIR wish remains unchanged.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            },
+            {
+              "title": "(C)",
+              "text": "**Confuses necessity with sufficiency.** The conclusion claims formal instruction is **necessary** (needed). This answer choice attempts to weaken the argument by showing instruction doesn't guarantee success (is not **sufficient**). However, a requirement can be necessary even if it doesn't always work (e.g., you **need** a ticket to win the lottery, even if most tickets lose).",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            },
+            {
+              "title": "(D)",
+              "text": "**Identifies the Modal Fallacy.** This choice directly attacks the logical gap. The premise creates a frequency relationship (\"**often**\"), which allows for exceptions. If formal instruction is not **always** part of a good musical education, then it is not a logical **necessity**. This answer choice points out that the \"**need**\" in the conclusion is not supported by the \"**often**\" in the premise.",
+              "badge": "Correct",
+              "badgeColor": "green"
+            },
+            {
+              "title": "(E)",
+              "text": "**Attacks the wrong link.** This answer choice suggests one can be a good musician without a good musical education. However, the argument takes the first premise (that parents **should** provide a good education) as a given starting point. The specific reasoning flaw occurs in the step moving from \"**good education**\" to \"**formal instruction**\" (the **Modal Shift**). Attacking the necessity of the education itself ignores the primary reasoning error regarding the components of that education.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            }
+          ]
+        },
+        {
+          "type": "h4",
+          "text": "6.3 Interpreting \"Can,\" \"Could,\" and \"May\""
+        },
+        {
+          "type": "paragraph",
+          "text": "**The Rule:** These words denote **possibility**, not certainty. \"X **can** cause Y\" simply means that Y is a possible outcome of X, not a guaranteed one."
+        },
+        {
+          "type": "paragraph",
+          "text": "**The Trap:** Arguments often present evidence about what **could** happen and conclude something about what **will** or **must** happen."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Example:** \"This policy **can** lead to corruption, therefore this policy **will** lead to corruption.\" (Invalid jump from **possibility to certainty**)."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Structure:**\n\n**Premise:** X **can** cause Y.\n\n**Invalid Conclusion:** X **will** cause Y."
+        },
+        {
+          "type": "h4",
+          "text": "LSAT in Action: Possibility vs. Certainty"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{+**Try this:** Attempt the question before reading the analysis below.+}}"
+        },
+        {
+          "type": "h3",
+          "text": "Explanation"
+        },
+        {
+          "type": "paragraph",
+          "text": "**Goal:** Identify the flaw in moving from possibility to certainty."
+        },
+        {
+          "type": "h4",
+          "text": "Argument Breakdown"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Premise:** Caffeine **can** cause jitters (**possibility**).",
+            "**Fact:** John drank caffeine.",
+            "**Conclusion:** John **will definitely** have jitters (**certainty**)."
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "The Modal Flaw",
+          "text": "The core error is a **modal shift** between possibility and certainty.\n\n**The Possibility Claim:** The premise uses the soft modal indicator \"**can**.\" This denotes a potential outcome (>0% chance) but not a guaranteed one.\n\n**The Certainty Claim:** The conclusion shifts to the hard modal indicator \"**will**.\" This creates a 100% guaranteed outcome.\n\n**The Gap:** The argument fails to bridge this gap. Just because an effect is **possible** does not mean it is **inevitable**. By treating \"**can**\" as \"**will**,\" the argument commits a specific variation of the **Modal Fallacy**."
+        },
+        {
+          "type": "h4",
+          "text": "Answer Explanations"
+        },
+        {
+          "type": "breakdown",
+          "labels": {
+            "title": "Option",
+            "text": "Evaluation"
+          },
+          "items": [
+            {
+              "title": "(A)",
+              "text": "While plausible in the real world, this is a specific instance of the broader logical error. It explains WHY he might not get jitters, but the logical flaw is the jump in certainty itself.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            },
+            {
+              "title": "(B)",
+              "text": "This describes a Part-to-Whole flaw. While related, the core issue here is the modal shift from \"CAN\" to \"WILL\" rather than group properties.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            },
+            {
+              "title": "(C)",
+              "text": "This perfectly describes the Modal Fallacy here. The argument takes a **potential effect** (can cause) and treats it as **guaranteed** (will definitely).",
+              "badge": "Correct",
+              "badgeColor": "green"
+            },
+            {
+              "title": "(D)",
+              "text": "This describes a Causal Reversal (Cause and Effect flaw), which is not happening here.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            },
+            {
+              "title": "(E)",
+              "text": "There is no ambiguity in the terms used; the error is in the logic, not the definitions.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            }
+          ]
+        },
+        {
+          "type": "h4",
+          "text": "6.4 Double Negatives and Litotes"
+        },
+        {
+          "type": "paragraph",
+          "text": "The LSAT frequently disguises meaning behind double negatives—a rhetorical device called **litotes**. The phrase \"not unlikely\" means \"likely,\" and \"not without merit\" means \"has merit.\" These constructions are designed to slow you down and create confusion."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "LSAT Phrase",
+            "Simplified Meaning",
+            "Logical Strength"
+          ],
+          "rows": [
+            [
+              "\"not unlikely\"",
+              "likely / possible",
+              "Soft (probabilistic)"
+            ],
+            [
+              "\"not without merit\"",
+              "has some merit",
+              "Soft (probabilistic)"
+            ],
+            [
+              "\"cannot fail to\"",
+              "must / will",
+              "Hard (absolute)"
+            ],
+            [
+              "\"not uncommon\"",
+              "fairly common / some",
+              "Soft (probabilistic)"
+            ],
+            [
+              "\"never without\"",
+              "always with",
+              "Hard (absolute)"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The critical step is to simplify the double negative first, then determine whether the resulting meaning is **hard** or **soft**. A common trap pairs a soft double negative in the premise (\"not unlikely\") with a hard conclusion (\"therefore it will happen\"), creating another instance of the Modal Fallacy."
+        },
+        {
+          "type": "h4",
+          "text": "6.5 The Spectrum of Certainty on the LSAT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Bringing together every quantifier and modal term from this module, here is a unified spectrum from absolute certainty to bare possibility. Recognizing where a term falls on this spectrum is the single most important skill for avoiding modal and quantifier traps."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Level",
+            "Terms",
+            "Logical Treatment"
+          ],
+          "rows": [
+            [
+              "**Absolute (100%)**",
+              "all, every, must, always, never, none, requires",
+              "Valid conditional: A -> B. Contraposable."
+            ],
+            [
+              "**Strong Majority (>50%)**",
+              "most, a majority of, predominantly",
+              "A -m-> B. NOT contraposable. Supports the Overlap Rule."
+            ],
+            [
+              "**Existence (≥1)**",
+              "some, at least one, several, a few (partial)",
+              "A <-s-> B. Reversible. NOT contraposable."
+            ],
+            [
+              "**Probabilistic (variable)**",
+              "likely, often, usually, tends to, frequently",
+              "No formal diagram. Cannot ground a conditional chain."
+            ],
+            [
+              "**Possibility (>0%)**",
+              "can, could, may, might, possible",
+              "No formal diagram. Only establishes that outcome is not impossible."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Any argument that jumps between levels on this spectrum without justification commits a logical error. The larger the jump (e.g., from \"possible\" to \"must\"), the more egregious the flaw."
+        },
+        {
+          "type": "h3",
+          "text": "Module Conclusion & Final Takeaways"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Hard vs. Soft Language is Key:** Determine if a premise is **absolute** or **probabilistic** before applying logical rules.",
+            "**Beware the Modal Fallacy:** Watch for \"**often/usually**\" premises leading to \"**must/always**\" conclusions.",
+            "**Possibility is Not Certainty:** Do not assume that because something **is capable** of happening, it **will** happen.",
+            "**Simplify Double Negatives:** Reduce litotes to their core meaning before analyzing the argument's logical strength.",
+            "**Trace the Logic, Don't Assume It:** Conditional reasoning is a mechanical derivation from the premises, not a test of what \"sounds\" reasonable."
+          ]
+        },
+        {
+          "type": "h4",
+          "text": "Your Assignment"
+        },
+        {
+          "type": "paragraph",
+          "text": "Integrate all six lessons in your practice. When approaching a Logical Reasoning question, you should:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Scan** for absolute conditional statements and their contrapositives.",
+            "**Identify Quantifiers** like \"**most**\" or \"**some**\" and determine what inferences are valid.",
+            "**Watch for Unusual Language**, specifically **double negatives** (e.g., \"not unlikely\") and \"**unless**\" statements.",
+            "**Actively look for fallacies**, such as **modal shifts** from soft premises to hard conclusions."
+          ]
+        },
+        {
+          "type": "h4",
+          "text": "Quick Reference: Hard vs. Soft Language"
+        },
+        {
+          "type": "breakdown",
+          "labels": {
+            "title": "Type",
+            "text": "Details"
+          },
+          "items": [
+            {
+              "title": "**Hard Language (Formal Logic)**",
+              "text": "**Certainty:** 100% Guaranteed\n**Keywords:** **all**, **none**, **must**, **will**, **always**, **never**, **requires**, **essential**\n**Logic:** Valid Contrapositive exists\n**Common Flaw:** **Mistaken Reversal / Negation**",
+              "badge": "HARD LANGUAGE",
+              "badgeColor": "slate"
+            },
+            {
+              "title": "**Soft Language (Probabilistic)**",
+              "text": "**Certainty:** < 100% (Varies)\n**Keywords:** **most**, **some**, **often**, **likely**, **usually**, **can**, **could**, **may**, **tends to**\n**Logic:** Contrapositive usually invalid\n**Common Flaw:** **Modal Fallacy** (Treating \"**likely**\" as \"**certain**\")",
+              "badge": "SOFT LANGUAGE",
+              "badgeColor": "blue"
+            }
+          ]
+        }
+      ],
+    },
+  },
+};

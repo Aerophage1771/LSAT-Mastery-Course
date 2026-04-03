@@ -1,0 +1,39 @@
+Question ID: PT-107-S-2-P-2-Q-14
+PrepTest: 107
+Section: 2 (Reading Comprehension)
+Passage Number: 2
+Question Number: 14.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the author’s attitude toward the goal of having a written language exactly match its oral equivalent?
+
+Passage:
+Passage A:
+Tribal communities in North America believe that their traditional languages are valuable resources that must be maintained. However, these traditional languages can fall into disuse when some of the effects of the majority culture on tribal life serve as barriers between a community and its traditional forms of social, economic, or spiritual interaction. In some communities the barrier has been overcome because people have recognized that language loss is serious and have taken action to prevent it, primarily through community self-teaching.
+Before any community can systematically and formally teach a traditional language to its younger members, it must first document the language’s grammar; for example, a group of Northern Utes spent two years conducting a thorough analysis and classification of Northern Ute linguistic structures. The grammatical information is then arranged in sequence from the simpler to the more complex types of usage, and methods are devised to present the sequence in ways that will be most useful and appropriate to the culture.
+Certain obstacles can stand in the way of developing these teaching methods. One is the difficulty a community may encounter when it attempts to write down elements (particularly the spellings of words) of a language that has been primarily oral for centuries, as is often the case with traditional languages. Sometimes this difficulty can simply be a matter of the lack of acceptable written equivalents for certain sounds in the traditional language: problems arise because of an insistence that every sound in the language have a unique written equivalent—a desirable but ultimately frustrating condition that no written language has ever fully satisfied.
+Another obstacle is dialect. There may be many language traditions in a particular community; which one is to be written down and taught? The Northern Utes decided not to standardize their language, agreeing that various phonetic spellings of words would be accepted as long as their meanings were clear. Although this troubled some community members who favored Western notions of standard language writing or whose training in Western-style linguistics was especially rigid, the lack of standard orthography made sense in the context of the community’s needs. Within a year after the adoption of instruction in the Northern Ute language, even elementary school children could write and speak it effectively.
+It has been argued that the attempt to write down traditional languages is misguided and unnecessary; after all, in many cases these languages have been transmitted in their oral form since their origins. Defenders of the practice counter that they are writing down their languages precisely because of a general decline in oral traditions, but they concede that languages could be preserved in their oral form if a community made every effort to eschew aspects of the majority culture that make this preservation difficult.
+
+Toolkit Context:
+This question asks about the author's opinion on making a written language a perfect mirror of its spoken version. The third paragraph addresses this by describing the difficulty of finding a unique written symbol for every single sound. The author calls this goal a 'desirable but ultimately frustrating condition' that has never been achieved.
+
+Answer Choices:
+A. conviction that an exact match is all but impossible to achieve [CORRECT]
+B. doubt that an exact match is worthy of consideration even in principle
+C. faith that an exact match is attainable if certain obstacles are eliminated
+D. confidence that an exact match can easily be accomplished in most languages
+E. suspicion that the motives behind the attempts to achieve the goal are not entirely benevolent
+
+Credited Answer: A. conviction that an exact match is all but impossible to achieve
+
+Correct Answer Explanation:
+The author explicitly states that the goal of having a unique written form for every sound is a 'frustrating condition that no written language has ever fully satisfied.' This wording shows the author is convinced that a perfect match is nearly impossible to create.
+
+Corresponding Proof:
+- problems arise because of an insistence that every sound in the language have a unique written equivalent—a desirable but ultimately frustrating condition that no written language has ever fully satisfied.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

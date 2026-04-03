@@ -1,0 +1,39 @@
+Question ID: PT-156-S-1-P-1-Q-2
+PrepTest: 156
+Section: 1 (Reading Comprehension)
+Passage Number: 1
+Question Number: 2.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the author’s attitude toward the value of heirloom crops?
+
+Passage:
+Passage A:
+Because most agricultural practices in North America produce row after row of only a few, genetically identical, varieties of crops, the continent’s food system rests precariously on a rapidly eroding genetic base, increasingly susceptible to pests and disease. As a possible solution, agricultural researchers, development experts, and policy makers are searching for ways to conserve the wealth of genetic information contained in crops known as heirloom varieties, which have been developed and maintained by indigenous farmers for many generations. The store of agricultural knowledge associated with the cultivation of these varieties has only recently been recognized as a valuable resource by crop geneticists, who have tended to base their research and their thinking solely on agricultural methods brought to North America from elsewhere. But given the intensity with which these non–North American methods seek to maximize the land’s output for economic reasons, they are not always suited to preserving a diverse pool of crop genetics.
+A recent study describes how generations of indigenous farmers relied on their understanding of practical genetics to develop hundreds of varieties of each indigenous plant cultivated. For example, long aware of the technique referred to now as hybridization, indigenous farmers frequently used the pollen from one variety of corn to fertilize another variety, thereby creating many varieties of sweet corn, dent or cereal corn, popcorn, and numerous other types. This variation allowed for the exploitation of the crops’ natural ability to resist pests and disease. Furthermore, indigenous farmers maintained those varieties that provided the best yields in their local environment; varieties in the wet areas along the coastal plains, for instance, differed substantially from those grown in the mountains. Thus in addition to being more resistant to pests and disease, heirloom crops are less dependent on intensive irrigation systems because they have been selectively bred for particular environments.
+Many of these heirloom varieties are preserved in household seed stocks by indigenous farmers who obtain seeds through long-standing family, community, and regional exchange networks; similarly, knowledge of the required development and cultivation methods has been maintained through the centuries by intergenerational exchanges within an oral tradition. Over the past century, however, penetration of the world market economy into small agricultural communities, both native and non-native, has discouraged small-scale, internal food production in favor of income-generating work. The result has been a dwindling number of small farmers—with many of those planting nonheirloom, commercial seed varieties—and a breakdown of many community and regional exchange networks. These recent developments have made clear that immediate steps must be taken to preserve indigenous knowledge systems and integrate them with programs for the conservation of diverse crop genetics, thus bolstering the long-term sustainability of the continent’s agricultural systems.
+
+Toolkit Context:
+The passage discusses a major problem: North America's food system is vulnerable because it relies on too few types of crops. It then introduces heirloom varieties, developed by indigenous farmers, as a possible solution. The author argues that the traditional knowledge used to grow these crops is a valuable resource that can help make the food system more sustainable.
+
+Answer Choices:
+A. certainty that these crops will eventually produce the same yields more economically than their commercial counterparts do now
+B. relief that these crops have been used to maintain the genetic base of the continent’s food crops
+C. optimism that the agricultural knowledge associated with these crops will help bolster the genetic base of the continent’s food crops [CORRECT]
+D. pride in the agricultural researchers who have studied for generations the methods used by indigenous farmers in developing and maintaining these crops
+E. confidence that the world market economy will encourage the production of these crops in both native and non-native agricultural communities
+
+Credited Answer: C. optimism that the agricultural knowledge associated with these crops will help bolster the genetic base of the continent’s food crops
+
+Correct Answer Explanation:
+The author is hopeful about the future role of heirloom crops. The final sentence clearly states that preserving and using indigenous knowledge can strengthen, or 'bolster,' the continent's agriculture. This matches the optimistic tone of seeing this knowledge as a solution to a current problem.
+
+Corresponding Proof:
+- As a possible solution, agricultural researchers, development experts, and policy makers are searching for ways to conserve the wealth of genetic information contained in crops known as heirloom varieties...
+- The store of agricultural knowledge associated with the cultivation of these varieties has only recently been recognized as a valuable resource by crop geneticists...
+- These recent developments have made clear that immediate steps must be taken to preserve indigenous knowledge systems and integrate them with programs for the conservation of diverse crop genetics, thus bolstering the long-term sustainability of the continent’s agricultural systems.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

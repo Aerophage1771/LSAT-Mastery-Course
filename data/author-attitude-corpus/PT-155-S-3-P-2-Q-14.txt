@@ -1,0 +1,39 @@
+Question ID: PT-155-S-3-P-2-Q-14
+PrepTest: 155
+Section: 3 (Reading Comprehension)
+Passage Number: 2
+Question Number: 14.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately characterizes the author’s attitude toward the Draft Articles?
+
+Passage:
+Passage A:
+With rapidly expanding populations, growing industrial development, and dwindling water supplies on national and regional levels, water is fast replacing oil as the world’s most valuable resource. Meanwhile, the growing importance of water in geopolitical affairs has increased the potential for international conflict over water resources. Thus as development and other threats to the world’s rivers have continued to mount, nations have become acutely aware of the need for legal and institutional mechanisms to manage and protect resources that traverse their borders. Recognition of the need for international cooperation in efforts to manage and protect rivers has led the United Nations’ International Law Commission (ILC) to develop a treaty structure for the uses of international watercourses.
+The ILC’s Draft Articles on the Law of the Non-Navigational Uses of International Watercourses are an attempt to codify the customary principles of international water law as those principles are manifested in past legal decisions and currently accepted international practice. The Draft Articles are intended as a set of guidelines for the creation of treaties governing the use of specific international watercourses. They prescribe that treaties should uphold several broad precepts: that one nation’s use of a watercourse should not cause appreciable harm to another nation, that every nation’s use of the watercourse should be equitable and reasonable, and that nations should work for the protection of ecosystems.
+Though the Draft Articles are a significant step forward in the formulation of legal principles for the protection and regulation of international rivers, they are inadequate because they do not provide satisfactory ways of dealing with possible future environmental changes. One significant environmental threat to the world’s rivers is the increase of atmospheric carbon dioxide. With its resultant greenhouse effect and warmer temperatures, it is likely to have a number of dramatic effects on water levels in international river systems, arising from increased runoff due to snowmelt or, more importantly, from decreased precipitation in many regions.
+Treaties that allocate fixed amounts of water to various countries based on current usage, as suggested by the Draft Articles, will not be flexible enough to respond to these large fluctuations in river flows. Once specific water rights are allocated along a river in accordance with the Draft Articles, nations would have no mechanism for coping with a drastic reduction in the flow of the river. Adhering rigidly to these fixed allocations would unjustly favor those countries whose water usage is most extensive. One way to circumvent this problem is to devise treaties that apportion water use in more flexible ways—for example, by assigning proportional shares rather than fixed allotments of water. Similarly, treaties might incorporate explicit contingency plans dealing specifically with issues related to possible climate changes, such as how reduced flows will be allocated among the countries sharing a river.
+
+Toolkit Context:
+The passage explains the United Nations' "Draft Articles," which are guidelines for treaties on international rivers. The author acknowledges these articles are a major advancement in managing shared water resources. However, the author also points out a key weakness: the articles are not flexible enough to handle future environmental changes like those caused by global warming.
+
+Answer Choices:
+A. mistrust of the political motivations that shaped them
+B. skepticism regarding their assumption that treaties are the only viable type of water-usage agreement
+C. concern over their failure to prescribe ways of dealing with treaty violations
+D. satisfaction with their initiative in diverging from international customary practice
+E. approval of the general goals that they attempt to accomplish [CORRECT]
+
+Credited Answer: E. approval of the general goals that they attempt to accomplish
+
+Correct Answer Explanation:
+The author shows approval for the main purpose of the Draft Articles. The passage calls them a "significant step forward" and describes their positive goals, such as ensuring fair use and protecting ecosystems. While the author criticizes the specific method of fixed water allocations, the general intent behind the articles is viewed favorably.
+
+Corresponding Proof:
+- Though the Draft Articles are a significant step forward in the formulation of legal principles for the protection and regulation of international rivers, they are inadequate because they do not provide satisfactory ways of dealing with possible future environmental changes.
+- They prescribe that treaties should uphold several broad precepts: that one nation’s use of a watercourse should not cause appreciable harm to another nation, that every nation’s use of the watercourse should be equitable and reasonable, and that nations should work for the protection of ecosystems.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

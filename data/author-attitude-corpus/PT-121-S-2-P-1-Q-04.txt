@@ -1,0 +1,39 @@
+Question ID: PT-121-S-2-P-1-Q-4
+PrepTest: 121
+Section: 2 (Reading Comprehension)
+Passage Number: 1
+Question Number: 4.
+Question Category: Author Attitude
+
+Question Stem:
+With respect to the Cold War, the author’s attitude can most accurately be described as
+
+Passage:
+Passage A:
+Social scientists have traditionally defined multipolar international systems as consisting of three or more nations, each of roughly equal military and economic strength. Theoretically, the members of such systems create shifting, temporary alliances in response to changing circumstances in the international environment. Such systems are, thus, fluid and flexible. Frequent, small confrontations are one attribute of multipolar systems and are usually the result of less powerful members grouping together to counter threats from larger, more aggressive members seeking hegemony. Yet the constant and inevitable counterbalancing typical of such systems usually results in stability. The best-known example of a multipolar system is the Concert of Europe, which coincided with general peace on that continent lasting roughly 100 years beginning around 1815.
+Bipolar systems, on the other hand, involve two major members of roughly equal military and economic strength vying for power and advantage. Other members of lesser strength tend to coalesce around one or the other pole. Such systems tend to be rigid and fixed, in part due to the existence of only one axis of power. Zero-sum political and military maneuverings, in which a gain for one side results in an equivalent loss for the other, are a salient feature of bipolar systems. Overall superiority is sought by both major members, which can lead to frequent confrontations, debilitating armed conflict, and, eventually, to the capitulation of one or the other side. Athens and Sparta of ancient Greece had a bipolar relationship, as did the United States and the USSR during the Cold War.
+However, the shift in the geopolitical landscape following the end of the Cold War calls for a reassessment of the assumptions underlying these two theoretical concepts. The emerging but still vague multipolar system in Europe today brings with it the unsettling prospect of new conflicts and shifting alliances that may lead to a diminution, rather than an enhancement, of security. The frequent, small confrontations that are thought to have kept the Concert of Europe in a state of equilibrium would today, as nations arm themselves with modern weapons, create instability that could destroy the system. And the larger number of members and shifting alliance patterns peculiar to multipolar systems would create a bewildering tangle of conflicts.
+This reassessment may also lead us to look at the Cold War in a new light. In 1914 smaller members of the multipolar system in Europe brought the larger members into a war that engulfed the continent. The aftermath—a crippled system in which certain members were dismantled, punished, or voluntarily withdrew—created the conditions that led to World War II. In contrast, the principal attributes of bipolar systems—two major members with only one possible axis of conflict locked in a rigid yet usually stable struggle for power—may have created the necessary parameters for general peace in the second half of the twentieth century.
+
+Toolkit Context:
+The question asks about the author's attitude toward the Cold War. The final paragraph of the passage presents a new way of looking at this period. The author contrasts the multipolar system that led to World War I with the bipolar system of the Cold War, suggesting the Cold War's structure may have actually kept the peace.
+
+Answer Choices:
+A. fearful that European geopolitics may bring about a similar bipolar system
+B. surprised that it did not end with a major war
+C. convinced that it provides an important example of bipolarity maintaining peace [CORRECT]
+D. regretful that the major European countries were so ambivalent about it
+E. confident it will mark only a brief hiatus between long periods of European multipolarity
+
+Credited Answer: C. convinced that it provides an important example of bipolarity maintaining peace
+
+Correct Answer Explanation:
+This choice accurately reflects the author's conclusion in the final paragraph. The author suggests that the rigid, two-sided nature of the bipolar Cold War system, in contrast to more chaotic multipolar systems, might have been responsible for maintaining 'general peace' during that time.
+
+Corresponding Proof:
+- This reassessment may also lead us to look at the Cold War in a new light.
+- In contrast, the principal attributes of bipolar systems—two major members with only one possible axis of conflict locked in a rigid yet usually stable struggle for power—may have created the necessary parameters for general peace in the second half of the twentieth century.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

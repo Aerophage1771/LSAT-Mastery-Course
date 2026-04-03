@@ -1,0 +1,38 @@
+Question ID: PT-116-S-4-P-1-Q-2
+PrepTest: 116
+Section: 4 (Reading Comprehension)
+Passage Number: 1
+Question Number: 2.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the author’s attitude toward the twofold obligation introduced in the first sentence of the second paragraph?
+
+Passage:
+Passage A:
+Is it necessary for defense lawyers to believe that the clients they defend are innocent of the charges against them? Some legal scholars hold that lawyers’ sole obligation is to provide the best defense they are capable of, claiming that in democratic societies all people accused of crimes are entitled to the best possible legal representation. They argue that lawyers have no right to judge defendants because it is the job of the courts to determine guilt or innocence and the job of the lawyer to represent the defendant before the court. They believe that the lawyer’s responsibility is to state those facts that will assist each client’s case, construct sound arguments based on these facts, and identify flaws in the arguments of opposing counsel. According to these scholars, the lawyer’s role is not to express or act on personal opinions but to act as an advocate, saying only what defendants would say if they possessed the proper training or resources with which to represent themselves.
+But such a position overlooks the fact that the defense lawyer’s obligation is twofold: to the defendant, certainly, but no less so to the court and, by extension, to society. For this reason, lawyers, great as their obligation to defendants is, should not, as officers of the court, present to the court assertions that they know to be false. But by the same principle, lawyers who are convinced that their clients are guilty should not undertake to demonstrate their innocence. Guilty defendants should not be entitled to false or insincere representation. When lawyers know with certainty that a defendant is guilty, it is their duty not to deny this. Rather, they should appraise the case as much as possible in their client’s favor, after giving due consideration to the facts on the other side, and then present any extenuating circumstances and argue for whatever degree of leniency in sentencing they sincerely believe is warranted. In cases where it is uncertain whether the client is guilty but the lawyer sincerely believes the client may well be innocent, the lawyer should of course try to prove that the client is innocent.
+The lawyer’s obligation to the court and to society also ultimately benefits the defendant, because the “best defense” can only truly be provided by an advocate who, after a careful analysis of the facts, is convinced of the merits of the case. The fact that every client is entitled to a defense does not mean that defense lawyers should take every case they are offered. Lawyers should not be mere mouthpieces for a defendant but instead advocates for the rights of the defendant given the facts of the case.
+
+Toolkit Context:
+This question asks about the author's opinion on a lawyer's "twofold obligation." This concept, introduced in the second paragraph, says a lawyer has a duty to both their client and to the court and society. The author spends the rest of the passage explaining why these two duties are not contradictory and can work together.
+
+Answer Choices:
+A. confident that it enables defense lawyers to balance their competing responsibilities to the court and to society
+B. certain that it prevents defense lawyers from representing clients whom they know to be guilty
+C. satisfied that it helps defense lawyers to uncover the relevant facts of a case
+D. pleased that it does not interfere with common defense strategies used by defense lawyers
+E. convinced that it does not represent a conflict of interest for defense lawyers [CORRECT]
+
+Credited Answer: E. convinced that it does not represent a conflict of interest for defense lawyers
+
+Correct Answer Explanation:
+This is the correct answer because the author argues that the two duties—to the client and to the court—are not in conflict. The final paragraph explicitly states that the duty to the court and society "ultimately benefits the defendant," which directly addresses the idea that there is no conflict of interest.
+
+Corresponding Proof:
+- the defense lawyer’s obligation is twofold: to the defendant, certainly, but no less so to the court and, by extension, to society.
+- The lawyer’s obligation to the court and to society also ultimately benefits the defendant, because the “best defense” can only truly be provided by an advocate who, after a careful analysis of the facts, is convinced of the merits of the case.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

@@ -1,0 +1,38 @@
+Question ID: PT-135-S-3-P-1-Q-5
+PrepTest: 135
+Section: 3 (Reading Comprehension)
+Passage Number: 1
+Question Number: 5.
+Question Category: Author Attitude
+
+Question Stem:
+Based on the passage, the author’s attitude regarding Getting Home Alive, by Aurora Levins Morales and Rosario Morales, can be most accurately described as
+
+Passage:
+Passage A:
+In the 1980s there was a proliferation of poetry collections, short stories, and novels published by women of Latin American descent in the United States. By the end of the decade, another genre of U.S. Latina writing, the autobiography, also came into prominence with the publication of three notable autobiographical collections: Loving in the War Years: Lo Que Nunca Pasó Por Sus Labios, by Cherríe Moraga; Getting Home Alive, by Aurora Levins Morales and Rosario Morales; and Borderlands/La Frontera, by Gloria Anzaldúa.
+These collections are innovative at many levels. They confront traditional linguistic boundaries by using a mix of English and Spanish, and they each address the politics of multiple cultural identities by exploring the interrelationships among such factors as ethnicity, gender, and language. This effort manifests itself in the generically mixed structure of these works, which combine essays, sketches, short stories, poems, and journal entries without, for the most part, giving preference to any of these modes of presentation.
+In Borderlands/La Frontera, Anzaldúa presents her personal history and the history of the Mexican American community to which she belongs by juxtaposing narrative sequences and poetry. Moraga’s Loving in the War Years is likewise characterized by a mixture of genres, and, as she states in her introduction, the events in her life story are not arranged chronologically, but rather in terms of her political development. According to one literary critic who specializes in the genre of autobiography, this departure from chronological ordering represents an important difference between autobiographies written by women and those traditionally written by men. Getting Home Alive departs even further from the conventions typical of autobiography by bringing together the voices of two people, a mother and her daughter, each of whom authors a portion of the text. The narratives and poems of each author are not assigned to separate sections of the text, but rather are woven together, with a piece by one sometimes commenting on a piece by the other. While this ordering may seem fragmentary and confusing, it is in fact a fully intentional and carefully designed experiment with literary structure. In a sense, this mixing of structures parallels the content of these autobiographies: the writers employ multigeneric and multivocal forms to express the complexities inherent in the formation of their identities.
+Rather than forcing their personal histories to conform to existing generic parameters, these writers have revolutionized the genre of autobiography, redrawing the boundaries of this literary form to make it more amenable to the expression of their own experiences.termination to speak for themselves in a world that they feel has for too long taken their silence for granted.
+
+Toolkit Context:
+The passage describes the autobiography *Getting Home Alive* as a highly innovative work. It explains that the book mixes the writing of two authors, a mother and daughter, weaving their pieces together. The author notes that this structure might appear confusing to readers but is actually a deliberate and carefully planned literary experiment.
+
+Answer Choices:
+A. disappointment in scholars’ failure to recognize it as an appropriate sequel to its authors’ purely fictional and poetic works
+B. expectation that readers in general might not readily recognize that there is a clear purpose for its unconventional organization [CORRECT]
+C. surprise that academic commentators have treated it as having significance as a historical document
+D. confidence that it will be widely recognized by scholars as a work of both history and literary criticism
+E. insistence that it should be credited with having helped to broaden critics’ understanding of what counts as autobiography
+
+Credited Answer: B. expectation that readers in general might not readily recognize that there is a clear purpose for its unconventional organization
+
+Correct Answer Explanation:
+The author directly addresses how readers might perceive the book's structure by stating, 'this ordering may seem fragmentary and confusing.' The author then clarifies that this structure is 'in fact a fully intentional and carefully designed experiment,' showing there is a clear purpose. This perfectly matches the idea that the author expects readers might not immediately understand the reason for the book's unconventional organization.
+
+Corresponding Proof:
+- While this ordering may seem fragmentary and confusing, it is in fact a fully intentional and carefully designed experiment with literary structure.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

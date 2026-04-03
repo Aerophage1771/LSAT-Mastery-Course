@@ -1,0 +1,40 @@
+Question ID: PT-127-S-4-P-1-Q-3
+PrepTest: 127
+Section: 4 (Reading Comprehension)
+Passage Number: 1
+Question Number: 3.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately characterizes the author’s attitude toward Tutuola’s position in world literature?
+
+Passage:
+Passage A:
+With his first published works in the 1950s, Amos Tutuola became the first Nigerian writer to receive wide international recognition. Written in a mix of standard English, idiomatic Nigerian English, and literal translation of his native language, Yoruba, Tutuola’s works were quick to be praised by many literary critics as fresh, inventive approaches to the form of the novel. Others, however, dismissed his works as simple retellings of local tales, full of unwelcome liberties taken with the details of the well-known story lines. However, to estimate properly Tutuola’s rightful position in world literature, it is essential to be clear about the genre in which he wrote; literary critics have assumed too facilely that he wrote novels.
+No matter how flexible a definition of the novel one uses, establishing a set of criteria that enable Tutuola’s works to be described as such applies to his works a body of assumptions the works are not designed to satisfy. Tutuola is not a novelist but a teller of folktales. Many of his critics are right to suggest that Tutuola’s subjects are not strikingly original, but it is important to bear in mind that whereas realism and originality are expected of the novel, the teller of folktales is expected to derive subjects and frameworks from the corpus of traditional lore. The most useful approach to Tutuola’s works, then, is one that regards him as working within the African oral tradition.
+Within this tradition, a folktale is common property, an expression of a people’s culture and social circumstances. The teller of folktales knows that the basic story is already known to most listeners and, equally, that the teller’s reputation depends on the inventiveness with which the tale is modified and embellished, for what the audience anticipates is not an accurate retelling of the story but effective improvisation and delivery. Thus, within the framework of the basic story, the teller is allowed considerable room to maneuver—in fact, the most brilliant tellers of folktales transform them into unique works.
+Tutuola’s adherence to this tradition is clear: specific episodes, for example, are often repeated for emphasis, and he embellishes familiar tales with personal interpretations or by transferring them to modern settings. The blend of English with local idiom and Yoruba grammatical constructs, in which adjectives and verbs are often interchangeable, re-creates the folktales in singular ways. And, perhaps most revealingly, in the majority of Tutuola’s works, the traditional accents and techniques of the teller of folktales are clearly discernible, for example in the adoption of an omniscient, summarizing voice at the end of his narratives, a device that is generally recognized as being employed to conclude most folktales.
+
+Toolkit Context:
+The author argues that literary critics have misjudged Amos Tutuola’s work by treating it as if it were part of the novel tradition. To properly understand Tutuola's place in world literature, the author insists that his writing must be viewed through the lens of the African oral tradition of folktales. The passage explains the rules of this tradition and shows how Tutuola's work fits within it.
+
+Answer Choices:
+A. convinced that Tutuola’s works should be viewed within the context of the African oral tradition [CORRECT]
+B. certain that Tutuola’s works will generate a renewed interest in the study of oral traditions
+C. pleased at the reception that Tutuola’s works have received from literary critics
+D. confident that the original integrity of Tutuola’s works will be preserved despite numerous translations
+E. optimistic that Tutuola’s works reflect what will become a growing new trend in literature
+
+Credited Answer: A. convinced that Tutuola’s works should be viewed within the context of the African oral tradition
+
+Correct Answer Explanation:
+This choice accurately reflects the author's main argument. The entire passage is dedicated to convincing the reader that the best way to evaluate Tutuola's work is to place it within the context of the African oral tradition, rather than judging it by the standards of the novel.
+
+Corresponding Proof:
+- However, to estimate properly Tutuola’s rightful position in world literature, it is essential to be clear about the genre in which he wrote; literary critics have assumed too facilely that he wrote novels.
+- Tutuola is not a novelist but a teller of folktales.
+- The most useful approach to Tutuola’s works, then, is one that regards him as working within the African oral tradition.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

@@ -1,0 +1,39 @@
+Question ID: PT-136-S-3-P-4-Q-22
+PrepTest: 136
+Section: 3 (Reading Comprehension)
+Passage Number: 4
+Question Number: 22.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s stance regarding the theory of philosophical anarchism can most accurately be described as one of
+
+Passage:
+Passage A:
+Most people acknowledge that not all governments have a moral right to govern and that there are sometimes morally legitimate reasons for disobeying the law, as when a particular law prescribes behavior that is clearly immoral. It is also commonly supposed that such cases are special exceptions and that, in general, the fact that something is against the law counts as a moral, as well as legal, ground for not doing it; i.e., we generally have a moral duty to obey a law simply because it is the law. But the theory known as philosophical anarchism denies this view, arguing instead that people who live under the jurisdiction of governments have no moral duty to those governments to obey their laws. Some commentators have rejected this position because of what they take to be its highly counterintuitive implications: (1) that no existing government is morally better than any other (since all are, in a sense, equally illegitimate), and (2) that, lacking any moral obligation to obey any laws, people may do as they please without scruple. In fact, however, philosophical anarchism does not entail these claims.
+First, the conclusion that no government is morally better than any other does not follow from the claim that nobody owes moral obedience to any government. Even if one denies that there is a moral obligation to follow the laws of any government, one can still evaluate the morality of the policies and actions of various governments. Some governments do more good than harm, and others more harm than good, to their subjects. Some violate the moral rights of individuals more regularly, systematically, and seriously than others. In short, it is perfectly consistent with philosophical anarchism to hold that governments vary widely in their moral stature.
+Second, philosophical anarchists maintain that all individuals have basic, nonlegal moral duties to one another—duties not to harm others in their lives, liberty, health, or goods. Even if governmental laws have no moral force, individuals still have duties to refrain from those actions that constitute crimes in the majority of legal systems (such as murder, assault, theft, and fraud).  Moreover, philosophical anarchists hold that people have a positive moral obligation to care for one another, a moral obligation that they might even choose to discharge by supporting cooperative efforts by governments to help those in need. And where others are abiding by established laws, even those laws derived from mere conventions, individuals are morally bound not to violate those laws when doing so would endanger others. Thus, if others obey the law and drive their vehicles on the right, one must not endanger them by driving on the left, for, even though driving on the left is not inherently immoral, it is morally wrong to deliberately harm the innocent.
+
+Toolkit Context:
+The passage introduces a theory called philosophical anarchism, which claims people have no moral duty to obey laws just because they are laws. The author then points out two common criticisms of this theory. The rest of the passage is a detailed defense of philosophical anarchism against these specific criticisms, which reveals the author's view of the theory.
+
+Answer Choices:
+A. ardent approval of most aspects of the theory
+B. apparent acceptance of some of the basic positions of the theory [CORRECT]
+C. concerned pessimism about the theory’s ability to avoid certain extreme views
+D. hesitant rejection of some of the central features of the theory
+E. resolute antipathy toward both the theory and certain of its logical consequences
+
+Credited Answer: B. apparent acceptance of some of the basic positions of the theory
+
+Correct Answer Explanation:
+This choice is correct because the author spends most of the passage defending philosophical anarchism from common misunderstandings. By showing that the theory does not lead to negative consequences, the author shows an acceptance of its main ideas. The word 'apparent' fits the author's academic and non-emotional tone.
+
+Corresponding Proof:
+- In fact, however, philosophical anarchism does not entail these claims.
+- In short, it is perfectly consistent with philosophical anarchism to hold that governments vary widely in their moral stature.
+- Even if governmental laws have no moral force, individuals still have duties to refrain from those actions that constitute crimes in the majority of legal systems (such as murder, assault, theft, and fraud).
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

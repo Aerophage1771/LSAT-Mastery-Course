@@ -1,0 +1,38 @@
+Question ID: PT-108-S-1-P-1-Q-7
+PrepTest: 108
+Section: 1 (Reading Comprehension)
+Passage Number: 1
+Question Number: 7.
+Question Category: Author Attitude
+
+Question Stem:
+The passage implies that Kahlo’s attitude toward the economic development of Mexico was
+
+Passage:
+Passage A:
+Painter Frida Kahlo (1910–1954) often used harrowing images derived from her Mexican heritage to express suffering caused by a disabling accident and a stormy marriage. Suggesting much personal and emotional content, her works—many of them self-portraits—have been exhaustively psychoanalyzed, while their political content has been less studied. Yet Kahlo was an ardent political activist who in her art sought not only to explore her own roots, but also to champion Mexico’s struggle for an independent political and cultural identity.
+Kahlo was influenced by Marxism, which appealed to many intellectuals in the 1920s and 1930s, and by Mexican nationalism. Interest in Mexico’s culture and history had revived in the nineteenth century, and by the early 1900s, Mexican indigenista tendencies ranged from a violently anti-Spanish idealization of Aztec Mexico to an emphasis on contemporary Mexican Indians as the key to authentic Mexican culture. Mexican nationalism, reacting against contemporary United States political intervention in labor disputes as well as against past domination by Spain, identified the Aztecs as the last independent rulers of an indigenous political unit. Kahlo’s form of Mexicanidad, a romantic nationalism that focused upon traditional art uniting all indigenistas, revered the Aztecs as a powerful pre-Columbian society that had united a large area of the Middle Americas and that was thought to have been based on communal labor, the Marxist ideal.
+In her paintings, Kahlo repeatedly employed Aztec symbols, such as skeletons or bleeding hearts, that were traditionally related to the emanation of life from death and light from darkness. These images of destruction coupled with creation speak not only to Kahlo’s personal battle for life, but also to the Mexican struggle to emerge as a nation—by implication, to emerge with the political and cultural strength admired in the Aztec civilization. Self-Portrait on the Border between Mexico and the United States (1932), for example, shows Kahlo wearing a bone necklace, holding a Mexican flag, and standing between a highly industrialized United States and an agricultural, preindustrial Mexico. On the United States side are mechanistic and modern images such as smokestacks, light bulbs, and robots. In contrast, the organic and ancient symbols on the Mexican side—a blood-drenched Sun, lush vegetation, an Aztec sculpture, a pre-Columbian temple, and a skull alluding to those that lined the walls of Aztec temples—emphasize the interrelation of life, death, the earth, and the cosmos.
+Kahlo portrayed Aztec images in the folkloric style of traditional Mexican paintings, thereby heightening the clash between modern materialism and indigenous tradition; similarly, she favored planned economic development, but not at the expense of cultural identity. Her use of familiar symbols in a readily accessible style also served her goal of being popularly understood; in turn, Kahlo is viewed by some Mexicans as a mythic figure representative of nationalism itself.
+
+Toolkit Context:
+The question asks about Frida Kahlo's view on Mexico's economic development. The final paragraph of the passage is most relevant to this question. It directly states that Kahlo supported development, but with a very important condition attached.
+
+Answer Choices:
+A. enthusiastic
+B. condemnatory
+C. cautious [CORRECT]
+D. noncommittal
+E. uncertain
+
+Credited Answer: C. cautious
+
+Correct Answer Explanation:
+This answer is correct because the passage states Kahlo 'favored planned economic development, but not at the expense of cultural identity.' This conditional support—wanting progress while worrying about its potential harm to culture—is best described as a cautious attitude.
+
+Corresponding Proof:
+- she favored planned economic development, but not at the expense of cultural identity.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

@@ -1,0 +1,38 @@
+Question ID: PT-142-S-3-P-2-Q-13
+PrepTest: 142
+Section: 3 (Reading Comprehension)
+Passage Number: 2
+Question Number: 13.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude regarding stealing thunder can most accurately be described as
+
+Passage:
+Passage A:
+“Stealing thunder” is a courtroom strategy that consists in a lawyer’s revealing negative information about a client before that information is revealed or elicited by an opposing lawyer. While there is no point in revealing a weakness that is unknown to one’s opponents or that would not be exploited by them, many lawyers believe that if the weakness is likely to be revealed in opposing testimony, it should be volunteered; otherwise, the hostile revelation would be more damaging.
+Although no empirical research has directly tested the effectiveness of stealing thunder in actual trials, studies involving simulated trial situations have suggested that the technique is, in fact, effective, at least within a reasonably broad range of applications. Lawyers’ commonly held belief in the value of stealing thunder is not only corroborated by those experimental findings; it is also supported by several psychological explanations of why the technique should work. For one thing, volunteering damaging information early may create an image of credibility. Psychological research suggests that people who reveal information that appears to be against their own best interest are likely to be perceived as more credible and thus may be more persuasive. Stealing thunder may also provide juries with an impetus for critical assessment by previewing, and thus alerting them to, testimony that the opposition plans to present. In psychological experiments, audiences that were previously warned of an upcoming attempt at persuasion became more resistant to the persuasive attempt, forming counterarguments based on the warning. Also, the value placed on a persuasive message is probably much like the value placed on any commodity; the scarcer the commodity, the more valuable it is. A persuasive message will thus increase in value and effectiveness to the extent that it is seen as scarce. In the courtroom, a piece of evidence brought by both the prosecution and the defense, as when thunder is stolen, may be seen as less scarce—becoming “old news.” Thus, unless that evidence is of overriding consequence, it should carry less weight than if it had been included only in hostile testimony.
+Finally, stealing thunder may work because the lawyer can frame the evidence in his or her own terms and downplay its significance, just as politicians sometimes seek to put their “spin” on potentially damaging information. However, it may therefore be effective only when the negative information can be framed positively. Jurors, who often initially have little information about a case, are usually eager to solidify their position regarding the case. They can therefore be expected to use the early positive framing to guide their subsequent analysis of the trial information. But this also suggests limitations on the use of the technique: when information is very damaging, stealing thunder may create an early negative impression that forms a cognitive framework for jurors, who then filter subsequent information through this schema.
+
+Toolkit Context:
+The passage describes a courtroom strategy called "stealing thunder," where a lawyer reveals negative information about their own client. The author explains that while there isn't research from actual trials, studies in simulated trials suggest the technique works. The passage then details several psychological reasons that support its effectiveness.
+
+Answer Choices:
+A. concerned that the technique may become so common that lawyers will fail to recognize its drawbacks
+B. favorable toward its use by lawyers during the opening statements of a case but skeptical of its value otherwise
+C. concerned that research results supporting it may omit crucial anecdotal evidence indicating pitfalls in its use
+D. approving of its use on the grounds that its success is experimentally supported and can be psychologically explained [CORRECT]
+E. skeptical of its suitability for use by lawyers without lengthy experience in courtroom strategies
+
+Credited Answer: D. approving of its use on the grounds that its success is experimentally supported and can be psychologically explained
+
+Correct Answer Explanation:
+This answer is correct because the author's tone is generally positive or 'approving.' The author backs up this view by referencing two key things: experimental studies that found the technique effective and several psychological theories that explain why it works.
+
+Corresponding Proof:
+- Although no empirical research has directly tested the effectiveness of stealing thunder in actual trials, studies involving simulated trial situations have suggested that the technique is, in fact, effective, at least within a reasonably broad range of applications.
+- Lawyers’ commonly held belief in the value of stealing thunder is not only corroborated by those experimental findings; it is also supported by several psychological explanations of why the technique should work.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

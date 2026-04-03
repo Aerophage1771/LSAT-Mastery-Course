@@ -1,0 +1,38 @@
+Question ID: PT-132-S-3-P-2-Q-9
+PrepTest: 132
+Section: 3 (Reading Comprehension)
+Passage Number: 2
+Question Number: 9.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude toward arguments that might be based on the evidence of the rock mentioned in the passage as being from Mars (second sentence of the last paragraph) can most accurately be described as
+
+Passage:
+Passage A:
+A vigorous debate in astronomy centers on an epoch in planetary history that was first identified by analysis of rock samples obtained in lunar missions. Scientists discovered that the major craters on the Moon were created by a vigorous bombardment of debris approximately four billion years ago—the so-called late heavy bombardment (LHB). Projectiles from this bombardment that affected the Moon should also have struck Earth, a likelihood with profound consequences for the history of Earth since, until the LHB ended, life could not have survived here.
+Various theoretical approaches have been developed to account for both the evidence gleaned from samples of Moon rock collected during lunar explorations and the size and distribution of craters on the Moon. Since the sizes of LHB craters suggest they were formed by large bodies, some astronomers believe that the LHB was linked to the disintegration of an asteroid or comet orbiting the Sun. In this view, a large body broke apart and peppered the inner solar system with debris. Other scientists disagree and believe that the label “LHB” is in itself a misnomer. These researchers claim that a cataclysm is not necessary to explain the LHB evidence. They claim that the Moon’s evidence merely provides a view of the period concluding billions of years of a continuous, declining heavy bombardment throughout the inner solar system. According to them, the impacts from the latter part of the bombardment were so intense that they obliterated evidence of earlier impacts. A third group contends that the Moon’s evidence supports the view that the LHB was a sharply defined cataclysmic cratering period, but these scientists believe that because of its relatively brief duration, this cataclysm did not extend throughout the inner solar system. They hold that the LHB involved only the disintegration of a body within the Earth-Moon system, because the debris from such an event would have been swept up relatively quickly.
+New support for the hypothesis that a late bombardment extended throughout the inner solar system has been found in evidence from the textural features and chemical makeup of a meteorite that has been found on Earth. It seems to be a rare example of a Mars rock that made its way to Earth after being knocked from the surface of Mars. The rock has recently been experimentally dated at about four billion years old, which means that, if the rock is indeed from Mars, it was knocked from the planet at about the same time that the Moon was experiencing the LHB. This tiny piece of evidence suggests that at least two planetary systems in the inner solar system experienced bombardment at the same time. However, to determine the pervasiveness of the LHB, scientists will need to locate many more such rocks and perhaps obtain surface samples from other planets in the inner solar system.
+
+Toolkit Context:
+The question asks about the author's attitude toward the evidence from a specific rock mentioned in the last paragraph. This rock, believed to be from Mars, is dated to the same time as the Moon's late heavy bombardment (LHB). The author notes this is a "tiny piece of evidence" and concludes by stating what more is needed to draw a firm conclusion.
+
+Answer Choices:
+A. ambivalence because the theory of the rock’s migration to Earth is at once both appealing and difficult to believe
+B. caution because even if the claims concerning the rock’s origins can be proven, it is unwise to draw general conclusions without copious evidence [CORRECT]
+C. skepticism because it seems unlikely that a rock could somehow make its way from Mars to Earth after being dislodged
+D. curiosity because many details of the rock’s interplanetary travel, its chemical analysis, and its dating analysis have not yet been published
+E. outright acceptance because the origins of the rock have been sufficiently corroborated
+
+Credited Answer: B. caution because even if the claims concerning the rock’s origins can be proven, it is unwise to draw general conclusions without copious evidence
+
+Correct Answer Explanation:
+This answer is correct because the author's final sentence shows a cautious view. The author states that this one rock is not enough evidence, and that scientists need "many more such rocks" to make a general conclusion about the LHB, showing it is unwise to generalize without more proof.
+
+Corresponding Proof:
+- This tiny piece of evidence suggests that at least two planetary systems in the inner solar system experienced bombardment at the same time.
+- However, to determine the pervasiveness of the LHB, scientists will need to locate many more such rocks and perhaps obtain surface samples from other planets in the inner solar system.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

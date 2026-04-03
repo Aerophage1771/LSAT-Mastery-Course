@@ -1,0 +1,39 @@
+Question ID: PT-108-S-4-P-2-Q-11
+PrepTest: 108
+Section: 4 (Reading Comprehension)
+Passage Number: 2
+Question Number: 11.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude toward current law enforcement policies dealing with juvenile delinquency can most accurately be described as
+
+Passage:
+Passage A:
+Much of mainstream thinking concerning juvenile delinquency in Canada and the United States is based on the assumption that if uncorrected it automatically leads to adult crime and should thus be severely punished, usually by some form of incarceration, before it becomes an ingrained behavior pattern. While there is some connection between juvenile delinquency and adult criminality, some criminologists argue that this can actually be explained by the actions of the justice system itself: research by these criminologists suggests that incarceration may have the perverse effect of ensuring that the young offenders will continue to perform delinquent acts. This is an interesting point, but a difficult one to translate into policy—and the criminologists do not make an attempt to do so, in part because taken to its extreme their research suggests that the best form of law enforcement intervention might be none.
+The criminologists’ unwillingness to attempt to articulate a policy also stems from their failure—perhaps mirroring that of law enforcement—to distinguish sufficiently between what the young adults themselves think of as criminal behavior and what they consider merely “fun” even while acknowledging that it is illegal. Many of the subjects of the criminologists’ research used just this word to explain why they indulged in delinquent behavior as juveniles. This suggests that while young adults who engage in occasional delinquent activity think of that activity as illegal, they do not think of themselves as criminals—and that once they become officially recognized by law enforcement as criminals deserving incarceration the young adults may change their opinion of themselves. The strongest support for this view is that most youthful offenders who escape detection by law enforcement stop their delinquent behavior by age 18, and that only 8 percent of these report that they did so out of the fear of getting caught. Perhaps a policy that encourages maturation, rather than routinely imposing incarceration, may be the most effective form of rehabilitation for young offenders.
+The problem of juvenile delinquency certainly ought to be dealt with, but the question is one of approach. The conventional wisdom has held that it is essential to make youthful offenders understand that their actions are absolutely impermissible, even if this requires incarceration. However, we do not need to remove delinquents from the community, but rather rehabilitate them when they do wrong. Might it not make a difference, for instance, if a young adult caught stealing from a store is made to return the merchandise and apologize to the store owner rather than being incarcerated as a thief? We should be trying to ensure that youthful offenders learn the values of the larger society by the time they reach maturity. This should be the goal when dealing with juvenile delinquency, and it can be achieved without either inflicting incarceration or allowing young offenders to escape penalty.
+
+Toolkit Context:
+The passage discusses the common belief that juvenile offenders should be punished harshly, usually with jail time. It contrasts this with the view of some experts who think jailing young people might actually cause more crime. The author uses this debate to suggest a different approach based on rehabilitation and teaching societal values.
+
+Answer Choices:
+A. optimistic that these policies result in high detection rates
+B. certain that these policies cause further juvenile delinquent acts
+C. confident that these policies promote the good of society
+D. convinced that these policies should be revised [CORRECT]
+E. confident that these policies have no effect on juvenile delinquency
+
+Credited Answer: D. convinced that these policies should be revised
+
+Correct Answer Explanation:
+This choice is correct because the entire passage is a critique of the current approach to juvenile delinquency. The author questions the effectiveness of incarceration and proposes alternative solutions, showing a clear conviction that the policies need to be changed or revised.
+
+Corresponding Proof:
+- The problem of juvenile delinquency certainly ought to be dealt with, but the question is one of approach.
+- Perhaps a policy that encourages maturation, rather than routinely imposing incarceration, may be the most effective form of rehabilitation for young offenders.
+- This should be the goal when dealing with juvenile delinquency, and it can be achieved without either inflicting incarceration or allowing young offenders to escape penalty.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

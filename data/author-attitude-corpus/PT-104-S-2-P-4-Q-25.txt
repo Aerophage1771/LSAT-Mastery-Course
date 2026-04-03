@@ -1,0 +1,38 @@
+Question ID: PT-104-S-2-P-4-Q-25
+PrepTest: 104
+Section: 2 (Reading Comprehension)
+Passage Number: 4
+Question Number: 25.
+Question Category: Author Attitude
+
+Question Stem:
+It can be inferred from the passage that the author would describe the method Lowe used to construct a step-by-step chronology of the actual collapse of Classic Mayan civilization as
+
+Passage:
+Passage A:
+In The Dynamics of Apocalypse, John Lowe attempts to solve the mystery of the collapse of the Classic Mayan civilization. Lowe bases his study on a detailed examination of the known archaeological record. Like previous investigators, Lowe relies on dated monuments to construct a step-by-step account of the actual collapse. Using the erection of new monuments as a means to determine a site’s occupation span, Lowe assumes that once new monuments ceased to be built, a site had been abandoned. Lowe’s analysis of the evidence suggests that construction of new monuments continued to increase between A.D. 672 and 751, but that the civilization stopped expanding geographically; new construction took place almost exclusively in established settlements. The first signs of trouble followed. Monument inscriptions indicate that between 751 and 790, long-standing alliances started to break down. Evidence also indicates that between 790 and 830, the death rate in Classic Mayan cities outstripped the birthrate. After approximately 830, construction stopped throughout the area, and within a hundred years, the Classic Mayan civilization all but vanished.
+Having established this chronology, Lowe sets forth a plausible explanation of the collapse that accommodates the available archaeological evidence. He theorizes that Classic Mayan civilization was brought down by the interaction of several factors, set in motion by population growth. An increase in population, particularly within the elite segment of society, necessitated ever more intense farming. Agricultural intensification exerted stress on the soil and led to a decline in productivity (the amount of food produced through each unit of labor invested). At the same time, the growth of the elite class created increasing demands for ceremonial monuments and luxuries, diverting needed labor from the fields. The theory holds that these stresses were communicated—and amplified—throughout the area as Mayan states engaged in warfare to acquire laborers and food, and refugees fled impoverished areas. The most vulnerable states thus began to break down, and each downfall triggered others, until the entire civilization collapsed.
+If there is a central flaw in Lowe’s explanation, it is that the entire edifice rests on the assumption that the available evidence paints a true picture of how the collapse proceeded. However, it is difficult to know how accurately the archaeological record reflects historic activity, especially of a complex civilization such as the Mayans’, and a hypothesis can be tested only against the best available data. It is quite possible that our understanding of the collapse might be radically altered by better data. For example, Lowe’s assumption about monument construction and the occupation span of a site might well be disproved if further investigations of Classic Mayan sites established that some remained heavily settled long after the custom of carving dynastic monuments had ceased.
+
+Toolkit Context:
+The passage describes the method John Lowe used to create a timeline for the collapse of the Classic Mayan civilization. It notes that he followed the work of earlier researchers by using dated monuments to determine when a site was occupied. The author later questions this method, suggesting its key assumption could be wrong.
+
+Answer Choices:
+A. daringly innovative but flawed
+B. generally accepted but questionable [CORRECT]
+C. very reliable but outdated
+D. unscientific but effective
+E. unconventional but brilliant
+
+Credited Answer: B. generally accepted but questionable
+
+Correct Answer Explanation:
+The passage shows the method is 'generally accepted' by stating Lowe was 'like previous investigators.' It shows the method is 'questionable' in the last paragraph, where the author points out its main assumption 'might well be disproved.'
+
+Corresponding Proof:
+- Like previous investigators, Lowe relies on dated monuments to construct a step-by-step account of the actual collapse.
+- Lowe’s assumption about monument construction and the occupation span of a site might well be disproved if further investigations of Classic Mayan sites established that some remained heavily settled long after the custom of carving dynastic monuments had ceased.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

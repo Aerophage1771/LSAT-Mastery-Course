@@ -1,0 +1,39 @@
+Question ID: PT-132-S-1-P-2-Q-13
+PrepTest: 132
+Section: 1 (Reading Comprehension)
+Passage Number: 2
+Question Number: 13.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude toward the testimony of medical experts in personal injury cases is most accurately described as
+
+Passage:
+Passage A:
+While courts have long allowed custom-made medical illustrations depicting personal injury to be presented as evidence in legal cases, the issue of whether they have a legitimate place in the courtroom is surrounded by ongoing debate and misinformation. Some opponents of their general use argue that while illustrations are sometimes invaluable in presenting the physical details of a personal injury, in all cases except those involving the most unusual injuries, illustrations from medical textbooks can be adequate. Most injuries, such as fractures and whiplash, they say, are rather generic in nature—certain commonly encountered forces act on particular areas of the body in standard ways—so they can be represented by generic illustrations.
+Another line of complaint stems from the belief that custom-made illustrations often misrepresent the facts in order to comply with the partisan interests of litigants. Even some lawyers appear to share a version of this view, believing that such illustrations can be used to bolster a weak case. Illustrators are sometimes approached by lawyers who, unable to find medical experts to support their clients’ claims, think that they can replace expert testimony with such deceptive professional illustrations. But this is mistaken. Even if an unscrupulous illustrator could be found, such illustrations would be inadmissible as evidence in the courtroom unless a medical expert were present to testify to their accuracy.
+It has also been maintained that custom-made illustrations may subtly distort the issues through the use of emphasis, coloration, and other means, even if they are technically accurate. But professional medical illustrators strive for objective accuracy and avoid devices that have inflammatory potential, sometimes even eschewing the use of color. Unlike illustrations in medical textbooks, which are designed to include the extensive detail required by medical students, custom-made medical illustrations are designed to include only the information that is relevant for those deciding a case. The end user is typically a jury or a judge, for whose benefit the depiction is reduced to the details that are crucial to determining the legally relevant facts. The more complex details often found in textbooks can be deleted so as not to confuse the issue. For example, illustrations of such things as veins and arteries would only get in the way when an illustration is supposed to be used to explain the nature of a bone fracture.
+Custom-made medical illustrations, which are based on a plaintiff’s X rays, computerized tomography scans, and medical records and reports, are especially valuable in that they provide visual representations of data whose verbal description would be very complex. Expert testimony by medical professionals often relies heavily on the use of technical terminology, which those who are not specially trained in the field find difficult to translate mentally into visual imagery. Since, for most people, adequate understanding of physical data depends on thinking at least partly in visual terms, the clearly presented visual stimulation provided by custom-made illustrations can be quite instructive.
+
+Toolkit Context:
+The passage discusses the testimony of medical experts, particularly in the final paragraph. It notes that this testimony often uses highly technical language. While the information is accurate, it is difficult for people without medical training, such as judges or jurors, to understand and picture in their minds.
+
+Answer Choices:
+A. appreciation of the difficulty involved in explaining medical data to judges and jurors together with skepticism concerning the effectiveness of such testimony
+B. admiration for the experts’ technical knowledge coupled with disdain for the communications skills of medical professionals
+C. acceptance of the accuracy of such testimony accompanied with awareness of the limitations of a presentation that is entirely verbal [CORRECT]
+D. respect for the medical profession tempered by apprehension concerning the tendency of medical professionals to try to overwhelm judges and jurors with technical details
+E. respect for expert witnesses combined with intolerance of the use of technical terminology
+
+Credited Answer: C. acceptance of the accuracy of such testimony accompanied with awareness of the limitations of a presentation that is entirely verbal
+
+Correct Answer Explanation:
+This choice is correct because it perfectly captures the author's view. The author does not question the factual accuracy of the expert testimony but points out its weakness: being purely verbal and technical makes it hard for a non-expert audience to understand. The passage then presents custom illustrations as a way to overcome this limitation.
+
+Corresponding Proof:
+- Expert testimony by medical professionals often relies heavily on the use of technical terminology, which those who are not specially trained in the field find difficult to translate mentally into visual imagery.
+- Since, for most people, adequate understanding of physical data depends on thinking at least partly in visual terms, the clearly presented visual stimulation provided by custom-made illustrations can be quite instructive.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

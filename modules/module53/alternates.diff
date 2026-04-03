@@ -1,0 +1,93 @@
+# Module 53: Advanced Passage 3 -- Critical Legal Studies
+# Diff annotations for website lessons rc/53-1 through rc/53-8
+# Source: PT-110-S-2-P-2 (Questions 15-21)
+
+{ "type": "diff-note", "text": "M53 is the strongest RC Advanced Passage unit reviewed so far. Badge annotations on answer breakdowns are a significant visual improvement over M51/M52. This formatting should be standardized across all modules.", "variant": "comment" }
+
+## Lesson 53-1: Passage Analysis
+
+### Before the paragraph breakdowns
+{{+**How to Approach This Passage:** This passage is a structured debate. One side (CLS) makes three claims about contradictions in the law; the other side (Meyerson) refutes each one. As you read, track two columns in your head: CLS says X, Meyerson says Y. Do this for each paragraph and you will own this passage.+}}
+
+### After the accordion passage block
+{{+**Key Terms:** *debunk* = expose as false; *orthodox* = conventional, widely accepted; *arbitrary* = based on random choice, not reason; *legal formalism* = the belief that legal rules can produce definitive answers through logical deduction; *objectivism* (in this context) = the belief that the legal process has genuine moral authority; *quasi-deductive* = resembling logical deduction+}}
+
+{ "type": "diff-note", "text": "The summary callout effectively distills Meyerson's three points. Consider formatting as a numbered list for quicker reference during question work.", "variant": "comment" }
+
+## Lesson 53-2: Question 15 (Main Idea)
+
+### Before the paragraph explanation
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the heading "Question 15 Breakdown"
+{{+**Question Type: Main Idea.** For a debate passage like this, the main idea must capture the overall dynamic (one person challenging another's claims), not just one side's position.+}}
+
+{ "type": "diff-note", "text": "Excellent elimination of (D) -- the passage presents Meyerson's points as a series of objections without ranking their importance. This catches a common student error of over-reading the text.", "variant": "comment" }
+
+## Lesson 53-3: Question 16 (Function/Purpose)
+
+### Before the paragraph explanation
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the heading "Question 16 Breakdown"
+{{+**Question Type: Function/Purpose.** This asks WHAT ROLE the game reference plays in the argument. Common roles include: analogy, example, counterexample, concession, objection, and illustration. Identify the role before looking at the answers.+}}
+
+### After the (E) analysis
+{{!note!}} The game analogy is deliberately provocative (stealing). Students sometimes think Meyerson is dismissing the law by comparing it to a crime. The explanation correctly notes the opposite: the immoral game is used to show that rules can be applied *without* endorsing their moral content, which strengthens Meyerson's defense of legal formalism.
+
+## Lesson 53-4: Question 17 (Author's Purpose)
+
+### Before the paragraph explanation
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the heading "Question 17 Breakdown"
+{{+**Question Type: Author's Purpose.** This asks what the AUTHOR (the person writing the passage) is doing -- not what Meyerson is doing. The author's role here is to describe and present Meyerson's challenge, not to personally refute CLS.+}}
+
+{ "type": "diff-note", "text": "Key distinction: 'describe a challenge to a school of thought' vs. 'refute claims made by various scholars.' The author describes; Meyerson refutes. Students conflate the author with the subject.", "variant": "comment" }
+
+## Lesson 53-5: Question 18 (Inference)
+
+### Before the paragraph explanation
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the heading "Question 18 Breakdown"
+{{+**Question Type: Inference.** This asks what Meyerson would AGREE with. Find the specific passage text that supports each answer, and eliminate any answer that represents the CLS view rather than Meyerson's view.+}}
+
+### Before the explanation paragraph
+{{+**Where to Look:** The last two sentences of the passage are directly relevant. Meyerson says 'external considerations may be viewed as part of, not separate from, the rules of the game.' A CLS scholar disagrees. This disagreement shows it is a matter of debate.+}}
+
+{ "type": "diff-note", "text": "Option (D) is the CLS position disguised as Meyerson's. Explicitly flag this viewpoint-swap trap in the explanation.", "variant": "comment" }
+
+## Lesson 53-6: Question 19 (Vocabulary-in-Context)
+
+### Before the paragraph explanation
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the heading "Question 19 Breakdown"
+{{+**Question Type: Vocabulary-in-Context.** The phrase 'far-reaching implications' refers to a specific idea described elsewhere in the passage. Re-read the surrounding sentences to identify what idea the author is pointing to.+}}
+
+### After the (C) analysis
+{{!note!}} Key teaching point: (C) is an intermediate step in the CLS argument, not its conclusion. "Two solutions carry equal weight" is a premise; "the choice is arbitrary" is the conclusion. The "far-reaching implication" is the conclusion, not the premise. Teach students to trace the argument chain to its endpoint.
+
+## Lesson 53-7: Question 20 (Organization)
+
+### Before the paragraph explanation
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the heading "Question 20 Breakdown"
+{{+**Question Type: Organization.** This asks you to describe the STRUCTURE of the final paragraph using abstract terms. Before looking at the answers, map the logical moves: What comes first? What responds to it? Is there a counter-response?+}}
+
+{ "type": "diff-note", "text": "The paragraph structure is: (1) CLS criticism identified, (2) Meyerson responds with game analogy, (3) Hypothetical CLS objection, (4) Meyerson replies. This maps to 'A criticism is identified and its plausibility is investigated.'", "variant": "comment" }
+
+## Lesson 53-8: Question 21 (3rd-Party Viewpoint)
+
+### Before the paragraph explanation
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the heading "Question 21 Breakdown"
+{{+**Question Type: 3rd-Party Viewpoint.** This asks what CLS PROPONENTS would agree with -- not Meyerson, not the author. First identify whose position each answer describes. Eliminate any answer that represents the wrong person's view.+}}
+
+### After the full breakdown
+{{+**Strategy Takeaway:** On 3rd-party viewpoint questions, the most common trap is picking an answer that represents the OPPOSING viewpoint. Before selecting your answer, ask: "Is this what CLS would say, or what Meyerson would say?" If it's Meyerson's position, it's wrong.+}}
+
+{{-remove-}} {{~change~}} No content removed or changed in M53 lessons -- only additions recommended.

@@ -1,0 +1,42 @@
+# Module 35: Phrase Function — Diff Annotations
+# Source: website lessons rc/35-1.tsx, rc/35-2.tsx
+
+{ "type": "diff-note", "text": "Module 35 covers the second-most-common RC question type (152 appearances) but has zero practice questions. High priority for question-card addition.", "variant": "comment" }
+
+## Lesson 35-1: Introduction (rc/35-1.tsx)
+
+### After the introductory skill list:
+{{+Add a "Phrase Function vs. Phrase Meaning" comparison table showing how the same passage detail could generate both question types. Example: For a phrase like 'cultural cross-fertilization,' a Meaning question asks what the phrase refers to; a Function question asks why the author uses this specific example at this point.+}}
+
+### After the Overarching Takeaway callout:
+{{+Add a "Common Trap" callout: "The #1 wrong answer on Phrase Function questions accurately describes what the detail says but fails to explain why the author included it. Always check: does this answer choice describe the content, or the purpose?"+}}
+
+### Stem categories (Purpose-Driven vs. Functional):
+{{!note: These two categories overlap significantly ("in order to" vs. "serves to"). Add a brief note explaining that the distinction is in phrasing only -- the solving approach is identical for both.!}}
+
+### After the stem identification breakdown:
+{{+Add a brief exercise: present 2-3 stems and ask students to determine whether each is a Phrase Function or Phrase Meaning question.+}}
+
+{ "type": "diff-note", "text": "The cross-references to Paragraph Function, Structure, and Main Point are valuable -- they show the student how Function skills transfer up the hierarchy.", "variant": "comment" }
+
+## Lesson 35-2: Step-by-Step Approach (rc/35-2.tsx)
+
+### Before any worked analysis section:
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the five-item functional role list:
+{{+Add a brief note: "When stuck, this list is your diagnostic tool. Match the phrase to one of these roles, and you have your prediction."+}}
+
+### The elimination note ("Eliminate answer choices that accurately describe what the phrase says but fail to describe why it's there"):
+{ "type": "diff-note", "text": "This is the lesson's strongest teaching moment. Preserve and consider promoting to a callout block for visibility.", "variant": "comment" }
+
+### After the tie-breaker section:
+{{+Add a complete question-card with a real PT question.+}}
+
+### After Step 3:
+{{+Add a "too global" trap warning: "Watch for answers that describe the function of the entire paragraph rather than the specific phrase. Function questions target a precise detail, and the correct answer must match that scope."+}}
+
+### Tie-Breaker #1 (The "In Order To" Test):
+{{+Add a brief demonstration: show two competing answer choices rephrased using the "in order to" structure, then explain which one fits the passage context better.+}}
+
+{{!note: The local-to-global analysis progression (Step 2 anchors locally, Tie-Breaker #2 zooms out) is a strong pedagogical structure. Future expansion should maintain this hierarchy.!}}

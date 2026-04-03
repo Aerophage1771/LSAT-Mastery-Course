@@ -1,0 +1,49 @@
+--- Module 28: Approach -- RC Question Type ---
+--- Website lessons: rc/28-1.tsx through rc/28-2.tsx ---
+
+{ "type": "diff-note", "text": "Module-wide: Rarest RC type (~0.5%, 11 appearances). No practice questions. The Passage Blueprint method in 28-2 is excellent and deserves demonstration. Stems lean too heavily on comparative passages.", "variant": "comment" }
+
+=== Lesson 28-1 (Introduction) ===
+
+ {"type":"h3","text":"Germaine's Guide to RC Approach Questions"}
+ {"type":"h4","text":"What's this question asking?"}
+ {"type":"paragraph","text":"Approach questions ask you to identify the author's argumentative strategy or the overall structure of the passage..."}
+ {"type":"list","items":["Presenting a theory and then providing evidence to support it.","Introducing a problem and then evaluating several potential solutions.","Contrasting two different perspectives on a single topic.","Refuting a commonly held belief by pointing out a flaw in its reasoning."]}
+ {"type":"hr"}
+ {"type":"h3","text":"Stem Identification: How to Spot an Approach Question"}
+-{"type":"paragraph","text":"Approach questions ask you to describe how an author makes an argument or how two authors' methods compare..."}
++{{~change~}} Intro paragraph restates the opening. Cut it.
+ {"type":"breakdown","labels":{"title":"Category","text":"Examples & Keywords"},"items":[
+   {"title":"Comparative Approach (Similarity)","text":"...","badge":"Similarity","badgeColor":"indigo"},
+   {"title":"Comparative Approach (Difference)","text":"...","badge":"Difference","badgeColor":"blue"},
+   {"title":"General Description","text":"...","badge":"Structure","badgeColor":"green"}
+ ]}
++{{+**Missing stem category:** Single-Passage Approach questions deserve their own category with examples like: "Which one of the following most accurately describes the organization of the passage?" / "The passage proceeds by..." Two of three current categories are comparative-passage-specific, which may skew student expectations.+}}
+ {"type":"callout","title":"Overarching Takeaway","variant":"summary","text":"...Look for answer choices that use abstract, functional language..."}
+ {"type":"h3","text":"The Importance of Approach Questions"}
+ {"type":"paragraph","text":"Approach questions are rare, appearing only 11 times among the released LSATs (about 0.5%)..."}
+
+{ "type": "diff-note", "text": "The importance section makes a smart connection to Structure/Function and LR Method of Reasoning. The framing of this as a transferable skill rather than a high-frequency target is correct.", "variant": "comment" }
+
+=== Lesson 28-2 (Step-by-Step Approach) ===
+
+ {"type":"h3","text":"Step-by-Step Approach"}
+ {"type":"h4","text":"Step 1: Create a Passage Blueprint"}
+ {"type":"paragraph","text":"After reading, create a quick, high-level map of the passage's structure..."}
+ {"type":"list","items":["**Example Blueprint:**","Para 1: Introduces a common theory.","Para 2: Presents evidence that challenges this theory.","Para 3: Proposes an alternative theory.","Para 4: Discusses the implications of the alternative theory."]}
+
+{ "type": "diff-note", "text": "The Passage Blueprint method is the best structural teaching tool in any of the small RC modules. The example blueprint is concrete and demonstrates exactly what 'functional summary' means.", "variant": "comment" }
+
+ {"type":"h4","text":"Step 2: Match Your Blueprint to the Answer Choices"}
+ {"type":"paragraph","text":"Systematically compare the structural description in each answer choice to the blueprint you created..."}
++{{+**Missing:** Add a matching checklist: (1) Does the answer match the number of structural parts? (2) Does it correctly identify each part's function? (3) Does it use accurate verbs for each part's role?+}}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
++{{+Add a question-card here demonstrating the blueprint method end-to-end.+}}
+ {"type":"hr"}
+ {"type":"h3","text":"If You Get Stuck Between Two Choices..."}
+ {"type":"h4","text":"Tie-Breaker #1: Focus on the Verbs"}
+ {"type":"paragraph","text":"Isolate the primary action verbs in your final two choices (e.g., \"refuting\" vs. \"qualifying,\" \"contrasting\" vs. \"evaluating\")..."}
+ {"type":"h4","text":"Tie-Breaker #2: Check the Scope and Emphasis"}
+ {"type":"paragraph","text":"Re-read your two final choices. Does one of them describe a minor, supporting part of the passage as if it were a main structural component?..."}
+
+{ "type": "diff-note", "text": "Both tie-breakers are precise and target real error sources. 'Focus on the Verbs' is especially valuable -- verb precision is the deciding factor on most Approach questions.", "variant": "comment" }

@@ -1,0 +1,41 @@
+Question ID: PT-121-S-3-P-1-Q-1
+PrepTest: 121
+Section: 3 (Reading Comprehension)
+Passage Number: 1
+Question Number: 1.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately describes the author’s position regarding the claims attributed to anthropologists in the third paragraph?
+
+Passage:
+Passage A:
+One of the intriguing questions considered by anthropologists concerns the purpose our early ancestors had in first creating images of the world around them. Among these images are 25,000-year-old cave paintings made by the Aurignacians, a people who supplanted the Neanderthals in Europe and who produced the earliest known examples of representational art. Some anthropologists see these paintings as evidence that the Aurignacians had a more secure life than the Neanderthals. No one under constant threat of starvation, the reasoning goes, could afford time for luxuries such as art; moreover, the art is, in its latter stages at least, so astonishingly well-executed by almost any standard of excellence that it is highly unlikely it was produced by people who had not spent a great deal of time perfecting their skills. In other words, the high level of quality suggests that Aurignacian art was created by a distinct group of artists, who would likely have spent most of their time practicing and passing on their skills while being supported by other members of their community.
+Curiously, however, the paintings were usually placed in areas accessible only with extreme effort and completely unilluminated by natural light. This makes it unlikely that these representational cave paintings arose simply out of a love of beauty or pride in artistry—had aesthetic enjoyment been the sole purpose of the paintings, they would presumably have been located where they could have been easily seen and appreciated.
+Given that the Aurignacians were hunter-gatherers and had to cope with the practical problems of extracting a living from a difficult environment, many anthropologists hypothesize that the paintings were also intended to provide a means of ensuring a steady supply of food. Since it was common among pretechnological societies to believe that one can gain power over an animal by making an image of it, these anthropologists maintain that the Aurignacian paintings were meant to grant magical power over the Aurignacians’ prey—typically large, dangerous animals such as mammoths and bison. The images were probably intended to make these animals vulnerable to the weapons of the hunters, an explanation supported by the fact that many of the pictures show animals with their hearts outlined in red, or with bright, arrow-shaped lines tracing paths to vital organs. Other paintings clearly show some animals as pregnant, perhaps in an effort to assure plentiful hunting grounds. There is also evidence that ceremonies of some sort were performed before these images. Well-worn footprints of dancers can still be discerned in the clay floors of some caves, and pictures of what appear to be shamans, or religious leaders, garbed in fantastic costumes, are found among the painted animals.
+
+Toolkit Context:
+The third paragraph introduces a theory from anthropologists about why early humans made cave paintings. The theory suggests the paintings were part of a magical ritual to help with hunting. The author then provides several pieces of evidence that support this idea, such as details within the paintings and clues found in the caves.
+
+Answer Choices:
+A. implicit acceptance [CORRECT]
+B. hesitant agreement
+C. noncommittal curiosity
+D. detached skepticism
+E. broad disagreement
+
+Credited Answer: A. implicit acceptance
+
+Correct Answer Explanation:
+The author shows 'implicit acceptance' by presenting the anthropologists' theory and then listing several pieces of evidence that support it. The author doesn't say 'I agree,' but the one-sided presentation of positive evidence implies they find the theory convincing.
+
+Corresponding Proof:
+- many anthropologists hypothesize that the paintings were also intended to provide a means of ensuring a steady supply of food.
+- ...an explanation supported by the fact that many of the pictures show animals with their hearts outlined in red, or with bright, arrow-shaped lines tracing paths to vital organs.
+- Other paintings clearly show some animals as pregnant, perhaps in an effort to assure plentiful hunting grounds.
+- There is also evidence that ceremonies of some sort were performed before these images.
+- Well-worn footprints of dancers can still be discerned in the clay floors of some caves...
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

@@ -1,0 +1,40 @@
+Question ID: PT-151-S-1-P-1-Q-3
+PrepTest: 151
+Section: 1 (Reading Comprehension)
+Passage Number: 1
+Question Number: 3.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude towards the reasoning offered in the U.S. Supreme Court’s decision in Shelley v. Kraemer is most accurately reflected in the author’s use of which one of the following phrases?
+
+Passage:
+Passage A:
+The United States Supreme Court’s 1948 ruling in Shelley v. Kraemer famously disallowed state courts from enforcing racially restrictive covenants. Such covenants are, in essence, private legal obligations included in the deed to a property requiring that only members of a certain race be allowed to occupy the property. Because it prohibited the enforcement of these covenants, the Court’s decision in Shelley v. Kraemer is justly celebrated for overturning a key instrument of housing discrimination. However, while few would deny that racially restrictive covenants are unjust, the stated legal rationale for the Shelley decision has nevertheless proven to be problematic.
+The Shelley Court relied on the Fourteenth Amendment to the U.S. Constitution, which grants equal protection under the law to all U.S. citizens. This amendment had long been held to apply to state actors but not individuals. Shelley did not purport to alter this. But where, then, was the state action that is necessary for invoking the Fourteenth Amendment, given that the restrictive covenants were private contracts? restrictive covenants themselves were perfectly legal, judicial enforcement of the covenants violated the Fourteenth Amendment because responsibility for a contract’s substantive provisions should be attributed to the state when a court enforces it. According to this “attribution” rationale, courts could enforce only those contractual provisions that could have been enacted into general law. Because the Fourteenth Amendment would not have allowed a law that banned members of a certain race from purchasing property, it followed from Shelley’s analysis that judicial enforcement of racially restrictive covenants also was unconstitutional.
+Shelley’s attribution logic threatened to dissolve the distinction between state action, to which Fourteenth Amendment limitations apply, and private action, which falls outside of the Fourteenth Amendment’s purview. After all, Shelley’s approach, consistently applied, would require individuals to conform their private agreements to constitutional standards whenever, as is almost always the case, the individuals want the option of later seeking judicial enforcement. Primarily for this reason, neither the Supreme Court nor lower courts later applied Shelley’s approach. Courts routinely enforce contracts whose substantive provisions could not have been constitutionally enacted by government. For instance, courts regularly enforce settlement agreements that limit the settling party’s ability to speak publicly in various respects, despite the fact that statutory limitations on the identical speech would represent an unconstitutional violation of free speech.
+Additionally, there is a particularly noxious aspect of the Shelley Court’s analytics—namely, the Court’s conclusion that racially restrictive covenants themselves were perfectly legal. The legal rationale behind the Shelley decision thus failed to target the genuine problem with racially restrictive covenants: what was troubling was not the covenants’ enforcement but their substantive content.
+
+Toolkit Context:
+The passage discusses the Supreme Court case Shelley v. Kraemer, which stopped courts from enforcing discriminatory housing agreements. The author agrees with the outcome of the case but strongly criticizes the legal reasoning the court used to reach its decision. The author describes this reasoning as "problematic" and ultimately harmful.
+
+Answer Choices:
+A. “famously disallowed” (first sentence of the passage)
+B. “justly celebrated” (third sentence of the passage)
+C. “perfectly legal” (fifth sentence of the second paragraph)
+D. “consistently applied” (second sentence of the third paragraph)
+E. “noxious aspect” (lfirst sentence of the last paragraph) [CORRECT]
+
+Credited Answer: E. “noxious aspect” (lfirst sentence of the last paragraph)
+
+Correct Answer Explanation:
+This phrase directly shows the author's strong disapproval of the court's legal thinking. The word "noxious" means harmful or very unpleasant, which perfectly captures the author's critical view of the Shelley court's rationale.
+
+Corresponding Proof:
+- ...the stated legal rationale for the Shelley decision has nevertheless proven to be problematic.
+- Additionally, there is a particularly noxious aspect of the Shelley Court’s analytics—namely, the Court’s conclusion that racially restrictive covenants themselves were perfectly legal.
+- The legal rationale behind the Shelley decision thus failed to target the genuine problem with racially restrictive covenants: what was troubling was not the covenants’ enforcement but their substantive content.
+
+Standard of Proof: Phrase-level proof
+Why:
+The proof standard is local and textual: anchor the attitude to the exact phrase the author uses.

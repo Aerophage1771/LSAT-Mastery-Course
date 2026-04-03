@@ -1,0 +1,52 @@
+--- Module 26: Analogy -- RC Question Type ---
+--- Website lessons: rc/26-1.tsx through rc/26-2.tsx ---
+
+{ "type": "diff-note", "text": "Module-wide: No practice questions in either lesson. No trap/distractor lesson exists (unlike M24 and M25 which have 4 lessons). The abstract-then-match skill would benefit enormously from a worked example.", "variant": "comment" }
+
+=== Lesson 26-1 (Introduction) ===
+
+ {"type":"h3","text":"Germaine's Guide to RC Analogy Questions"}
+ {"type":"h4","text":"What's this question asking?"}
+ {"type":"paragraph","text":"Analogy questions ask you to identify the underlying structure of a relationship..."}
+ {"type":"list","items":["**Identify the original relationship:**...","**State the relationship abstractly:**...","**Test the choices:**..."]}
+
+{ "type": "diff-note", "text": "The three-step framework in the opening is the module's strongest teaching content. This progression (identify, abstract, test) should be preserved as-is.", "variant": "comment" }
+
+ {"type":"h3","text":"Stem Identification: How to Spot an Analogy Question"}
+-{"type":"paragraph","text":"Analogy questions require you to identify the fundamental structure, principle, or relationship within a scenario from the passage and then find a completely different scenario in the answer choices that operates on the exact same underlying logic..."}
++{{~change~}} This intro paragraph restates the opening "What's this question asking?" section almost verbatim. Cut it.
+ {"type":"breakdown","labels":{"title":"Category","text":"Examples & Keywords"},"items":[
+   {"title":"Direct Comparison Phrasing","text":"...","badge":"Comparison","badgeColor":"indigo"},
+   {"title":"Relational Parallel Phrasing","text":"...","badge":"Relation","badgeColor":"blue"},
+   {"title":"Exemplification Phrasing","text":"...","badge":"Example","badgeColor":"green"}
+ ]}
+ {"type":"callout","title":"Overarching Takeaway","variant":"summary","text":"Don't get fooled by answer choices that share a topic with the passage..."}
+ {"type":"h3","text":"The Importance of Analogy Questions"}
+ {"type":"paragraph","text":"Analogy questions appear 83 times among the released LSATs, making up about 4%..."}
+ {"type":"paragraph","text":"So, dedicate time to understanding the method, but do not let this question type become a major stumbling block..."}
+
+{ "type": "diff-note", "text": "The importance section's strategic framing is good: practice it but don't over-invest. The note about transferability to LR Parallel Reasoning is accurate and motivating.", "variant": "comment" }
+
+=== Lesson 26-2 (Step-by-Step Approach) ===
+
+ {"type":"h3","text":"Step-by-Step Approach"}
+ {"type":"h4","text":"Step 1: Isolate the Original Relationship & State It Abstractly"}
+ {"type":"paragraph","text":"Go to the specific scenario in the passage. Identify its key components..."}
+ {"type":"list","items":["**Example:** If the passage describes a tool created for scientific research that becomes popular as a children's toy, your abstract rule is: \"X is designed for a serious purpose but becomes widely used for an unintended, recreational one.\""]}
+
+{ "type": "diff-note", "text": "The scientific-tool-to-toy example is concrete and well-chosen. It cleanly demonstrates the abstraction process.", "variant": "comment" }
+
+ {"type":"h4","text":"Step 2: Test Each Answer Choice Against Your Abstract Rule"}
+ {"type":"paragraph","text":"...Be ruthless—eliminate any choice that has extra components, missing pieces, or a different sequence of events..."}
++{{+**Missing:** Add a concrete elimination example. E.g., "If a choice describes a tool created for fun that is later used for research, the direction is reversed -- eliminate it."+}}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
++{{+Add a question-card here demonstrating the full abstract-and-match method.+}}
+ {"type":"hr"}
+ {"type":"h3","text":"If You Get Stuck Between Two Choices..."}
+ {"type":"h4","text":"Tie-Breaker #1: The Reverse Test"}
+ {"type":"paragraph","text":"Take one of your strong contenders and treat it as the original scenario..."}
+ {"type":"h4","text":"Tie-Breaker #2: Focus on the Difference"}
+ {"type":"paragraph","text":"Stop looking at how your final two choices are similar to the original..."}
++{{+**Missing:** This module lacks a trap/distractor section. Common analogy traps include: (1) Topic-matching -- same subject matter but different structural logic; (2) Partial match -- some components match but others are missing or altered; (3) Reversed direction -- same components but causal direction is flipped. Consider adding a brief section here or a separate Lesson 26-3.+}}
+
+{ "type": "diff-note", "text": "The two tie-breaker strategies are genuinely useful. The Reverse Test (checking if the answer and original are interchangeable blueprints) is an especially elegant heuristic.", "variant": "comment" }

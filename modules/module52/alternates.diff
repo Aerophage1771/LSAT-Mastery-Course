@@ -1,0 +1,81 @@
+# Module 52: Advanced Passage 2 -- Bentham and Evidence Law
+# Diff annotations for website lessons rc/52-1 through rc/52-7
+# Source: PT-109-S-2-P-4 (Questions 23-28)
+
+## Lesson 52-1: Passage Analysis
+
+### Before the paragraph breakdowns
+{{+**How to Approach This Passage:** This passage follows a clear timeline. Track four things as you read: (1) What was wrong with the old evidence system, (2) What Bentham proposed, (3) The problems critics found with his proposal, (4) How modern law adapted his idea. The author's view is balanced: Bentham was brilliant, but his solution was not perfect.+}}
+
+### After the passage accordion
+{{+**Key Terms:** *proscription* = a formal prohibition or ban; *morass* = a complicated or confused situation; *evidentiary* = relating to evidence in court; *sacramental confessions* = confidential confessions made to a Catholic priest; *nonexclusion principle* = Bentham's idea that virtually all evidence should be admissible+}}
+
+{ "type": "diff-note", "text": "The passage analysis is one of the strongest in the RC sequence. The conversational tone ('hero of the story', 'plays devil's advocate') makes dense legal material accessible without sacrificing accuracy.", "variant": "comment" }
+
+## Lesson 52-2: Question 23 (Main Idea)
+
+### Before the Explanation heading
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the Question Breakdown heading
+{{+**Question Type: Main Idea.** The correct answer must capture the ENTIRE passage -- not just one paragraph. Look for an answer that accounts for both Bentham's reform AND its imperfections.+}}
+
+{ "type": "diff-note", "text": "Option (A) contains a timeline error: Bentham questioned the OLD rules, not 'modern' rules. The explanation mentions this but could be more explicit about the trap.", "variant": "comment" }
+
+## Lesson 52-3: Question 24 (Author Attitude)
+
+### Before the Explanation heading
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the Question Breakdown heading
+{{+**Question Type: Author Attitude.** Find the specific words the author uses to describe 18th-century lawyers. Are they neutral, positive, or negative? How strong is the language? Calibrate between mild criticism and outright contempt.+}}
+
+### After the (D) analysis
+{{!note!}} The (B) vs. (D) distinction is the key teaching moment here. Both are negative, but "critical" (measured, academic disapproval) is milder than "scornful" (open contempt). LSAT Attitude questions almost always avoid the extreme end of the scale. Teach students to default to the moderate option unless the passage uses openly hostile language.
+
+## Lesson 52-4: Question 25 (Reference/Purpose)
+
+### Before the Explanation heading
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the Question Breakdown heading
+{{+**Question Type: Reference/Purpose.** The question asks WHY the author mentions something, not what it means. Read the sentence before and after the reference to understand its function in the argument.+}}
+
+### After the (E) analysis
+{{!note!}} Option (E) reverses the scope: the passage describes Bentham's exceptions as "narrow," and the social worker example is used to suggest they were too limited, not wide-ranging. This is a classic reversal trap.
+
+## Lesson 52-5: Question 26 (Detail/Support)
+
+### Before the Explanation heading
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the Question Breakdown heading
+{{+**Question Type: Supported Detail.** This asks what the passage explicitly supports. Go back to the text and verify that the answer choice has direct textual backing -- not just plausibility.+}}
+
+{ "type": "diff-note", "text": "Option (C) is a subtle trap. The passage says 'most components' of modern law came from common law, which leaves room for the inference that some did not. But the passage never states this directly, making (C) unsupported. The explanation handles this well.", "variant": "comment" }
+
+### After the (C) analysis
+{{!note!}} Watch the difference between "the passage leaves room for this inference" and "the passage supports this statement." On Supported Detail questions, you need explicit textual evidence, not logical possibility.
+
+## Lesson 52-6: Question 27 (Primary Concern)
+
+### Before the Explanation heading
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the Question Breakdown heading
+{{+**Question Type: Primary Concern.** This is different from Main Idea. Main Idea asks WHAT the passage says. Primary Concern asks WHY the author wrote it -- what is the passage's purpose or function? Think about the author's goal, not just the content.+}}
+
+{ "type": "diff-note", "text": "Strong elimination of (B) as too narrow. The explanation correctly notes that (B) only covers the setup (paragraphs 1-2) and ignores the main event (Bentham's reform and its legacy).", "variant": "comment" }
+
+## Lesson 52-7: Question 28 (Detail)
+
+### Before the Explanation heading
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the Question Breakdown heading
+{{+**Question Type: Detail ('According to the passage').** Go back to the text and read the specific sentence referenced. Read the full sentence plus the sentences before and after it. The answer is almost always a close paraphrase of what the text says.+}}
+
+### After the full breakdown
+{{+**Strategy Takeaway:** For 'According to the passage' questions, resist the urge to answer from memory. Return to the text, find the exact reference, and match it to the closest paraphrase. Wrong answers often use words from the passage in misleading ways.+}}
+
+{ "type": "diff-note", "text": "Good elimination of (C): Bentham himself accepted the sacramental confession exception, so he would not have called it a 'preference of ignorance.' This is a nice logical check.", "variant": "comment" }

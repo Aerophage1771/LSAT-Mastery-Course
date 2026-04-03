@@ -1,0 +1,48 @@
+# Module 33: Passage Principle — Diff Annotations
+# Source: website lessons rc/33-1.tsx, rc/33-2.tsx, rc/33-3.tsx
+
+{ "type": "diff-note", "text": "Module 33 has zero practice questions across all 3 lessons. This is the highest-priority gap.", "variant": "comment" }
+
+## Lesson 33-1: Introduction (rc/33-1.tsx)
+
+### After the three-step framework (Identify / Isolate / Generalize):
+{{+**Try this:** Before reading on, take 30 seconds to apply these three steps to this scenario: "A museum declined to display a photograph because, while technically well-composed, it was created entirely by AI software." What general principle governs this decision?+}}
+
+### After the stem identification breakdown:
+{{+Add a mini-exercise: present 2-3 question stems and ask the student to categorize each as Direct Principle, Generalization/Criterion, or Comparative Principle.+}}
+
+### After the Overarching Takeaway callout:
+{{+Add a "Common Traps" callout covering: (1) Principles that are too narrow — just restating the specific facts, (2) Principles that are too broad — losing the core logic, (3) Principles with reversed direction — getting the cause-effect relationship backwards.+}}
+
+{ "type": "diff-note", "text": "The stem identification breakdown (3 categories with badges) is the strongest element in the lesson. Preserve as-is.", "variant": "comment" }
+
+## Lesson 33-2: Step-by-Step Approach (rc/33-2.tsx)
+
+### Before any worked analysis section:
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After Step 3 (Test Each Answer Choice):
+{{+The elimination criteria (Too Specific, Too Broad, Mismatch) are listed abstractly. Add a concrete demonstration showing 3 answer choices being eliminated using these criteria against the court-ruling example.+}}
+
+### After the tie-breaker section:
+{{+Add a complete question-card with a real PT question. The method lesson is the natural home for the module's first practice question.+}}
+
+{ "type": "diff-note", "text": "The running court-ruling example is good but incomplete — it stops at Step 2 without showing Step 3 applied to actual answer choices.", "variant": "comment" }
+
+### Running example continuity:
+{{~Change: The court ruling example should carry through all 3 steps including elimination of wrong answers, not just Steps 1-2.~}}
+
+## Lesson 33-3: Pattern Recognition (rc/33-3.tsx)
+
+{ "type": "diff-note", "text": "At ~4 blocks, this is too thin to be a standalone lesson. Consider merging into 33-2 or expanding significantly.", "variant": "comment" }
+
+### After each pattern description:
+{{+Add a short worked example for each pattern (Standard of Evaluation, Justification for Action, Underlying Logical Rule) showing a brief passage excerpt and the matching principle.+}}
+
+### After the breakdown block:
+{{+Add a categorization exercise: present 3 short scenarios and ask students to identify which pattern applies.+}}
+
+### At the top of the lesson:
+{{+Add a transition sentence linking these patterns to Step 2 of the method from Lesson 33-2: "Recognizing these patterns will help you formulate your underlying rule more quickly in Step 2."+}}
+
+{{!note: No "attempt before reading" prompts are needed yet because there are no worked analyses in the module. This annotation should be added once question-cards are introduced.!}}

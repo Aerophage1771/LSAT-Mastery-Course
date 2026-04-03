@@ -1,0 +1,40 @@
+Question ID: PT-130-S-2-P-1-Q-2
+PrepTest: 130
+Section: 2 (Reading Comprehension)
+Passage Number: 1
+Question Number: 2.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude concerning the history of ancient textile production can most accurately be described as
+
+Passage:
+Passage A:
+Traditional sources of evidence about ancient history are archaeological remains and surviving texts. Those investigating the crafts practiced by women in ancient times, however, often derive little information from these sources, and the archaeological record is particularly unavailing for the study of ancient textile production, as researchers are thwarted by the perishable nature of cloth. What shreds persisted through millennia were, until recently, often discarded by excavators as useless, as were loom weights, which appeared to be nothing more than blobs of clay. Ancient texts, meanwhile, rarely mention the creation of textiles; moreover, those references that do exist use archaic, unrevealing terminology. Yet despite these obstacles, researchers have learned a great deal about ancient textiles and those who made them, and also about how to piece together a whole picture from many disparate sources of evidence.
+Technological advances in the analysis of archaeological remains provide much more information than was previously available, especially about minute remains. Successful modern methods include radiocarbon dating, infrared photography for seeing through dirt without removing it, isotope “fingerprinting” for tracing sources of raw materials, and thin-layer chromatography for analyzing dyes. As if in preparation for such advances, the field of archaeology has also undergone an important philosophical revolution in the past century. Once little more than a self-serving quest for artifacts to stock museums and private collections, the field has transformed itself into a scientific pursuit of knowledge about past cultures. As part of this process, archaeologists adopted the fundamental precept of preserving all objects, even those that have no immediately discernible value. Thus in the 1970s two researchers found the oldest known complete garment, a 5,000-year-old linen shirt, among a tumbled heap of dirty linens that had been preserved as part of the well-known Petrie collection decades before anyone began to study the history of textiles.
+The history of textiles and of the craftswomen who produced them has also advanced on a different front: recreating the actual production of cloth. Reconstructing and implementing ancient production methods provides a valuable way of generating and checking hypotheses. For example, these techniques made it possible to confirm that the excavated pieces of clay once considered useless in fact functioned as loom weights. Similarly, scholars have until recently been obliged to speculate as to which one of two statues of Athena, one large and one small, was adorned with a dress created by a group of Athenian women for a festival, as described in surviving texts. Because records show that it took nine months to produce the dress, scholars assumed it must have adorned the large statue. But by investigating the methods of production and the size of the looms used, researchers have ascertained that in fact a dress for the small statue would have taken nine months to produce.
+
+Toolkit Context:
+The passage first explains the difficulties researchers face when studying ancient textiles, such as the decay of cloth and the lack of useful written records. It then shifts focus to show how new technologies and research methods are overcoming these challenges. This contrast between past problems and recent successes highlights the author's positive view of the field's development.
+
+Answer Choices:
+A. skeptical regarding the validity of some of the new hypotheses proposed by researchers
+B. doubtful that any additional useful knowledge can be generated given the nature of the evidence available
+C. impatient about the pace of research in light of the resources available
+D. optimistic that recent scholarly advances will attract increasing numbers of researchers
+E. satisfied that considerable progress is being made in this field [CORRECT]
+
+Credited Answer: E. satisfied that considerable progress is being made in this field
+
+Correct Answer Explanation:
+This choice accurately reflects the author's tone. The passage consistently details how, despite historical difficulties, researchers are making significant advances through new technology and methods, indicating the author is pleased with the field's progress.
+
+Corresponding Proof:
+- Yet despite these obstacles, researchers have learned a great deal about ancient textiles and those who made them, and also about how to piece together a whole picture from many disparate sources of evidence.
+- Technological advances in the analysis of archaeological remains provide much more information than was previously available, especially about minute remains.
+- The history of textiles and of the craftswomen who produced them has also advanced on a different front: recreating the actual production of cloth.
+- Reconstructing and implementing ancient production methods provides a valuable way of generating and checking hypotheses.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

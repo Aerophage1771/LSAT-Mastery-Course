@@ -1,0 +1,92 @@
+--- Module 47: Practice Passage 6 -- Julia Margaret Cameron ---
+--- Source: PT-141-S-1-P-2 (Q8-Q15) ---
+
+{ "type": "diff-note", "text": "Module-wide: No 'attempt before reading' prompt exists before any of the 8 question analyses. This is the highest-priority addition.", "variant": "comment" }
+
+=== Lesson 47-1 (Passage Analysis) ===
+
+ {"type":"accordion","title":"Read Passage","content":"From a critical discussion of the work of Victorian photographer Julia Margaret Cameron..."}
++{{+**LSAT Tip:** Art criticism passages appear frequently on the LSAT. You do not need to know the artists, photographers, or works referenced. Focus entirely on the author's argument about them.+}}
+ {"type":"h3","text":"Passage Analysis"}
+ {"type":"h4","text":"Paragraph 1: The Central Paradox - A Successful Failure"}
+ ...
+
+{ "type": "diff-note", "text": "The passage analysis is among the strongest in the RC section. The paragraph labels ('Successful Failure', 'Doubleness', 'Good Amateurism') are clear and memorable. No structural changes needed.", "variant": "comment" }
+
+=== Lesson 47-2 (Q8 -- Main Point) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-2-Q-8"}
++{{+**Question Type:** Main Idea+}}
+ {"type":"blockquote","text":"Which one of the following most accurately expresses the main point of the passage?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This question asks for the main point of the passage..."}
+
+{ "type": "diff-note", "text": "Q8 and Q15 are both 'main point/purpose' questions. Consider adding a teaching note here or in 47-9 distinguishing 'main point' (what the author argues) from 'main purpose' (why the author wrote the passage).", "variant": "comment" }
+
+=== Lesson 47-3 (Q9 -- Statement Function) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-2-Q-9"}
++{{+**Question Type:** Statement Function+}}
+ {"type":"blockquote","text":"The author mentions the props employed in The Passing of Arthur as"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This question asks for the purpose of mentioning the specific props..."}
+
+=== Lesson 47-4 (Q10 -- Strengthen/Explain) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-2-Q-10"}
++{{+**Question Type:** Strengthen / Explain+}}
+ {"type":"blockquote","text":"Which one of the following, if true, would most help to explain the claim about suspension of disbelief..."}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
++{{+**Approach Tip:** For "help to explain" questions, identify the specific claim being referenced and look for an answer that fills the gap in its reasoning.+}}
+ {"type":"paragraph","text":"This question asks for a new piece of information..."}
+
+=== Lesson 47-5 (Q11 -- Analogy) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-2-Q-11"}
++{{+**Question Type:** Analogy+}}
+ {"type":"blockquote","text":"Based on the passage, Cameron is most like which one of the following..."}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This is an analogy question..."}
+
+=== Lesson 47-6 (Q12 -- EXCEPT) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-2-Q-12"}
++{{+**Question Type:** Author Viewpoint (EXCEPT)+}}
+ {"type":"blockquote","text":"Based on the passage, the author would agree with each of the following statements except:"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
++{{+**Approach Tip:** For EXCEPT questions, test each choice against the passage. Four will be supported; one will contradict or be unsupported. Mark each choice as 'agree' or 'disagree' to stay organized.+}}
+ {"type":"paragraph","text":"This is an \"EXCEPT\" question..."}
+
+=== Lesson 47-7 (Q13 -- Inference) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-2-Q-13"}
++{{+**Question Type:** Standard Inference+}}
+ {"type":"blockquote","text":"The passage provides the most support for inferring that in Cameron's era"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This is an inference question..."}
+
+=== Lesson 47-8 (Q14 -- Structure/Function) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-2-Q-14"}
++{{+**Question Type:** Statement Function (Structural)+}}
+ {"type":"blockquote","text":"The discussion of suspension of disbelief in the second paragraph serves which one of the following purposes?"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This question asks for the purpose of the discussion..."}
+
+=== Lesson 47-9 (Q15 -- Main Purpose) ===
+
+ {"type":"h3","text":"Question Breakdown: PT-141-S-1-P-2-Q-15"}
++{{+**Question Type:** Primary Purpose+}}
+ {"type":"blockquote","text":"The main purpose of the passage is"}
+ {"type":"options","items":["..."]}
++{{+**Try this:** Attempt the question before reading the analysis below.+}}
+ {"type":"paragraph","text":"This is a main purpose question..."}
+
+{ "type": "diff-note", "text": "Consider adding a brief note here: 'Notice that Q8 asked for the main POINT (what the author argues) while this question asks for the main PURPOSE (why the author wrote the passage). These are related but distinct: the point is the thesis, while the purpose is the author's goal.'", "variant": "comment" }

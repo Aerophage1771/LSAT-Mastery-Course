@@ -1,0 +1,45 @@
+Question ID: PT-140-S-4-P-2-Q-8
+PrepTest: 140
+Section: 4 (Reading Comprehension)
+Passage Number: 2
+Question Number: 8.
+Question Category: Author Attitude
+
+Question Stem:
+Which one of the following most accurately expresses how the use of the phrase “skinning animals" in the final sentence of passage A relates to the use of the phrase “fish pulled from the ocean" in the second to last sentence of the third paragraph of passage B?
+
+Passage:
+Passage A:
+Millions of people worldwide play multiplayer online games. They each pick, say, a medieval character to play, such as a warrior. Then they might band together in quests to slay magical beasts; their avatars appear as tiny characters striding across a Tolkienesque land.
+The economist Edward Castronova noticed something curious about the game he played: it had its own economy, a bustling trade in virtual goods. Players generate goods as they play, often by killing creatures for their treasure and trading it. The longer they play, the wealthier they get.
+Things got even more interesting when Castronova learned about the “player auctions.” Players would sometimes tire of the game and decide to sell off their virtual possessions at online auction sites.
+As Castronova stared at the auction listings, he recognized with a shock what he was looking at. It was a form of currency trading! Each item had a value in the virtual currency traded in the game; when it was sold on the auction site, someone was paying cold hard cash for it. That meant that the virtual currency was worth something in real currency. Moreover, since players were killing monsters or skinning animals to sell their pelts, they were, in effect, creating wealth.
+
+Passage B:
+Most multiplayer online games prohibit real-world trade in virtual items, but some actually encourage it, for example, by granting participants intellectual property rights in their creations.
+Although it seems intuitively the case that someone who accepts real money for the transfer of a virtual item should be taxed, what about the player who only accumulates items or virtual currency within a virtual world? Is “loot” acquired in a game taxable, as a prize or award is? And is the profit in a purely in-game trade or sale for virtual currency taxable? These are important questions, given the tax revenues at stake, and there is pressure on governments to answer them, given that the economies of some virtual worlds are comparable to those of small countries.
+Most people’s intuition probably would be that accumulation of assets within a game should not be taxed even though income tax applies even to noncash accessions to wealth. This article will argue that income tax law and policy support that result. Loot acquisitions in game worlds should not be treated as taxable prizes and awards, but rather should be treated like other property that requires effort to obtain, such as fish pulled from the ocean, which is taxed only upon sale. Moreover, in-game trades of virtual items should not be treated as taxable barter.
+By contrast, tax doctrine and policy counsel taxation of the sale of virtual items for real currency, and, in games that are intentionally commodified, even of in-world sales for virtual currency, regardless of whether the participant cashes out. This approach would leave entertainment value untaxed without creating a tax shelter for virtual commerce.
+
+Toolkit Context:
+Passage A describes activities that take place inside online games, such as "skinning animals," and notes that these actions create wealth. Passage B makes an argument about how this in-game wealth should be taxed, using a real-world example, "fish pulled from the ocean," to support its point. The question asks you to compare the roles these two specific phrases play in their respective passages.
+
+Answer Choices:
+A. The former refers to an activity that generates wealth, whereas the latter refers to an activity that does not generate wealth.
+B. The former refers to an activity in an online game, whereas the latter refers to an analogous activity in the real world. [CORRECT]
+C. The former, unlike the latter, refers to the production of a commodity that the author of passage B thinks should be taxed.
+D. The latter, unlike the former, refers to the production of a commodity that the author of passage B thinks should be taxed.
+E. Both are used as examples of activities by which game players generate wealth.
+
+Credited Answer: B. The former refers to an activity in an online game, whereas the latter refers to an analogous activity in the real world.
+
+Correct Answer Explanation:
+This choice accurately identifies the relationship between the two phrases. Passage A uses "skinning animals" as a direct example of something a player does within an online game. Passage B then uses "fish pulled from the ocean" as a real-world analogy to explain how the in-game activity should be treated for tax purposes.
+
+Corresponding Proof:
+- since players were killing monsters or skinning animals to sell their pelts, they were, in effect, creating wealth.
+- Loot acquisitions in game worlds...should be treated like other property that requires effort to obtain, such as fish pulled from the ocean, which is taxed only upon sale.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

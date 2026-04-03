@@ -1,0 +1,40 @@
+Question ID: PT-115-S-3-P-3-Q-20
+PrepTest: 115
+Section: 3 (Reading Comprehension)
+Passage Number: 3
+Question Number: 20.
+Question Category: Author Attitude
+
+Question Stem:
+The author’s attitude toward Planck’s development of a new hypothesis about atomic processes can most aptly be described as
+
+Passage:
+Passage A:
+With the approach of the twentieth century, the classical wave theory of radiation—a widely accepted theory in physics—began to encounter obstacles. This theory held that all electromagnetic radiation—the entire spectrum from gamma and X rays to radio frequencies, including heat and light—exists in the form of waves. One fundamental assumption of wave theory was that as the length of a wave of radiation shortens, its energy increases smoothly—like a volume dial on a radio that adjusts smoothly to any setting—and that any conceivable energy value could thus occur in nature.
+The major challenge to wave theory was the behavior of thermal radiation, the radiation emitted by an object due to the object’s temperature, commonly called “blackbody” radiation because experiments aimed at measuring it require objects, such as black velvet or soot, with little or no reflective capability. Physicists can monitor the radiation coming from a blackbody object and be confident that they are observing its thermal radiation and not simply reflected radiation that has originated elsewhere. Employing the principles of wave theory, physicists originally predicted that blackbody objects radiated much more at short wavelengths, such as ultraviolet, than at long wavelengths. However, physicists using advanced experimental techniques near the turn of the century did not find the predicted amount of radiation at short wavelengths—in fact, they found almost none, a result that became known among wave theorists as the “ultraviolet catastrophe.”
+Max Planck, a classical physicist who had made important contributions to wave theory, developed a hypothesis about atomic processes taking place in a blackbody object that broke with wave theory and accounted for the observed patterns of blackbody radiation. Planck discarded the assumption of radiation’s smooth energy continuum and took the then bizarre position that these atomic processes could only involve discrete energies that jump between certain units of value—like a volume dial that “clicks” between incremental settings—and he thereby obtained numbers that perfectly fit the earlier experimental result. This directly opposed wave theory’s picture of atomic processes, and the physics community was at first quite critical of Planck’s hypothesis, in part because he presented it without physical explanation.
+Soon thereafter, however, Albert Einstein and other physicists provided theoretical justification for Planck’s hypothesis. They found that upon being hit with part of the radiation spectrum, metal surfaces give off energy at values that are discontinuous. Further, they noted a threshold along the spectrum beyond which no energy is emitted by the metal. Einstein theorized, and later found evidence to confirm, that radiation is composed of particles, now called photons, which can be emitted only in discrete units and at certain wavelengths, in accordance with Planck’s speculations. So in just a few years, what was considered a catastrophe generated a new vision in physics that led to theories still in place today.
+
+Toolkit Context:
+The passage discusses a major problem in physics known as the “ultraviolet catastrophe,” which the classical wave theory of radiation could not explain. Physicist Max Planck proposed a new hypothesis to solve this problem. His idea was that energy exists in discrete units, which was a radical departure from the accepted wave theory at the time.
+
+Answer Choices:
+A. strong admiration for the intuitive leap that led to a restored confidence in wave theory’s picture of atomic processes
+B. mild surprise at the bizarre position Planck took regarding atomic processes
+C. reasoned skepticism of Planck’s lack of scientific justification for his hypothesis
+D. legitimate concern that the hypothesis would have been abandoned without the further studies of Einstein and others
+E. scholarly interest in a step that led to a more accurate picture of atomic processes [CORRECT]
+
+Credited Answer: E. scholarly interest in a step that led to a more accurate picture of atomic processes
+
+Correct Answer Explanation:
+The author's tone is neutral and informative, much like a historian or scholar explaining a significant event. The passage presents Planck's hypothesis as a crucial development that solved a major scientific problem and paved the way for modern physics. This objective yet engaged tone is best described as 'scholarly interest' in a pivotal moment in science.
+
+Corresponding Proof:
+- Max Planck, a classical physicist who had made important contributions to wave theory, developed a hypothesis about atomic processes taking place in a blackbody object that broke with wave theory and accounted for the observed patterns of blackbody radiation.
+- Planck discarded the assumption of radiation’s smooth energy continuum and took the then bizarre position that these atomic processes could only involve discrete energies that jump between certain units of value...
+- So in just a few years, what was considered a catastrophe generated a new vision in physics that led to theories still in place today.
+
+Standard of Proof: Direct tone proof
+Why:
+The proof standard is direct: match the author's evaluative language and overall tone without over-inferring.

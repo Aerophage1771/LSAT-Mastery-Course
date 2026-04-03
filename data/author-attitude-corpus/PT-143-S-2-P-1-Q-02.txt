@@ -1,0 +1,41 @@
+Question ID: PT-143-S-2-P-1-Q-2
+PrepTest: 143
+Section: 2 (Reading Comprehension)
+Passage Number: 1
+Question Number: 2.
+Question Category: Author Attitude
+
+Question Stem:
+Based on the passage, which one of the following most accurately describes Faye Ginsburg’s stance toward the position attributed to James Weiner?
+
+Passage:
+Passage A:
+Having spent several decades trying to eliminate the unself-conscious “colonial gaze” characteristic of so many early ethnographic films, visual anthropologists from the industrialized West who study indigenous cultures are presently struggling with an even more profound transformation of their discipline. Because inexpensive video equipment is now available throughout the world, many indigenous peoples who were once examined by the Western ethnographer’s camera have begun to document their own cultures. Reaction to this phenomenon within Western anthropological circles is sharply divided.
+One faction, led by anthropologist James Weiner, sees the proliferation of video and television as the final assault of Western values on indigenous cultures. Weiner argues that the spread of video represents “a devaluation of the different,” culminating in the replacement of genuine historical, linguistic, social, and cultural difference with superficial difference among electronic images. He believes that video technologies inevitably purvey a Western ontology, one based on realism, immediacy, and self-expression. Thus, Weiner concludes, using video technology costs indigenous peoples the very cultural identity they seek to record. Moreover, he maintains that anthropologists who attribute a paramount truth value to these films simply because they are made by indigenous peoples are theoretically naive.
+But Weiner’s opponents contend that his views betray a certain nostalgia for the idea of the “noble savage.” One such opponent, anthropologist Faye Ginsburg, concedes that no Western object that has entered cultural circulation since the fifteenth century has been neutral, but she considers it little more than boilerplate technological determinism to argue that using a video camera makes one unwittingly Western. Unlike Weiner, Ginsburg maintains that non-Western indigenous peoples can use Western media without adopting the conventions of Western culture. In fact, Ginsburg and many other anthropologists believe that video affords societies—especially oral ones—an invaluable opportunity to strengthen native languages and traditions threatened by Western exposure.
+The Brazilian fieldwork of anthropologist Terence Turner, who studies the relationship between traditional Kayapo culture and Kayapo videotapes, lends credence to Ginsburg’s position. Primarily an oral society, the Kayapo use video to document both ceremonial performances and transactions with representatives of the Brazilian government (this latter use is intended to provide legally binding records of the transactions). In contrast to Weiner’s argument that video foists a Western ontology onto its users, Turner has found that the representations of Kayapo ceremonies, including everything from the camerawork to the editing, conform to the same principle of beauty embodied in the ceremonies themselves, one rooted in a complex pattern of repetition and sequential organization. The videos aesthetically mirror the ceremonies. The camera is not so at odds with Kayapo culture, it seems, that it transforms any Kayapo who uses it into a Westerner.
+
+Toolkit Context:
+The passage describes a debate between two anthropologists, James Weiner and Faye Ginsburg. Weiner believes that when indigenous peoples use Western video technology, they lose their unique cultural identity. Ginsburg is presented as one of Weiner's opponents who strongly disagrees with this idea.
+
+Answer Choices:
+A. fundamental rejection [CORRECT]
+B. reluctant censure
+C. mild disapproval
+D. diplomatic neutrality
+E. supportive interest
+
+Credited Answer: A. fundamental rejection
+
+Correct Answer Explanation:
+This is the best description because the passage shows a deep and direct disagreement between Ginsburg and Weiner. Ginsburg is called an 'opponent' who believes Weiner's argument is 'boilerplate technological determinism' and based on a 'nostalgia for the idea of the “noble savage.”' This shows she rejects the very foundation of his position.
+
+Corresponding Proof:
+- But Weiner’s opponents contend that his views betray a certain nostalgia for the idea of the “noble savage.”
+- One such opponent, anthropologist Faye Ginsburg...
+- ...she considers it little more than boilerplate technological determinism to argue that using a video camera makes one unwittingly Western.
+- Unlike Weiner, Ginsburg maintains that non-Western indigenous peoples can use Western media without adopting the conventions of Western culture.
+
+Standard of Proof: Supported inference
+Why:
+The proof standard allows a small inference, but the answer still has to stay tightly moored to explicit textual support.

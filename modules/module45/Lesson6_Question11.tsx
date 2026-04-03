@@ -1,0 +1,114 @@
+import { Lesson } from '../../types';
+
+const passageText = `In filmmaker Woody Allen's Deconstructing Harry, the writer Harry Block is presented as extremely neurotic and narcissistic. Block uses his experiences as fodder for his work, no matter how embarrassing the result may be for the other people in his life. And while Allen exaggerates Block's narcissism for comic effect, the effect is not simply comic: the film is emblematic of Allen's career precisely because of its extravagantly exaggerated censure of a life dedicated to and obsessed with art. Deconstructing Harry may be the most unequivocally peevish of Allen's depictions of artists, but it is less a new direction for Allen than a concentrated reprise of a theme present throughout his career.
+For instance, a film producer in Stardust Memories, Allen's sourest portrait of artists before Harry, articulates a particularly cynical view of cinematic art after a screening of a film-in-progress by Stardust Memories' main character, Sandy Bates. The producer says of Bates, \u201cHis insights are shallow and morbid. I've seen it all before. They try to document their private suffering and fob it off as art.\u201d The producer, like all the figures in this film, often seems less a distinct individual than a projection of Bates's personal self-recriminations. This effectively reinforces the charge of solipsism with which Bates, the unstable and demoralized artist, indicts himself. Indeed, the possibility that artists are merely \u201cdocumenting their private suffering and fobbing it off as art\u201d appears sufficiently often in Allen's films to seem an unresolved personal issue.
+In Manhattan, the ex-wife of a television writer and aspiring novelist offers a denigratory take on the artistic enterprise that is similar to the producer's in Stardust Memories. Her book documenting the collapse of her marriage punctures her ex-husband's artistic pretensions by revealing that he \u201clonged to be an artist but balked at the necessary sacrifices. In his most private moments, he spoke of the fear of death, which he elevated to tragic heights when, in fact, it was mere narcissism.\u201d
+It is also significant that in Allen's films, the less artistic the characters, the more likely their narrative is to result in a happy ending. Thus, the filmmaker in Crimes and Misdemeanors, the novelist in Husbands and Wives, and the screenwriter in Celebrity all wind up desolate and solitary, largely because of the egocentric and exploitative attitudes embodied in their art and the effects of those attitudes on those around them. On the other hand, the unpretentious, thoroughly inartistic title character in Zelig dies an untroubled, even happy, death, only slightly compromised by his failure to finish reading Moby-Dick. And the title character and talent agent in Broadway Danny Rose is the beneficiary of the most gratifying resolution Allen has scripted, primarily due to altruistic devotion to his utterly talentless nightclub performers.`;
+
+export const Lesson6_Question11: Lesson = {
+      id: "45-6",
+      title: "Question 11: Phrase Function",
+      content: [
+    { type: 'question-passage-card', id: 'PT-128-S-4-P-2-Q-11', questionType: 'Phrase Function', passageTitle: 'Woody Allen Films', passage: passageText, question: `The author mentions the character Zelig primarily in order to`, options: [
+          "(A) counter the prevailing critical view of Allen's films [1.0%]",
+          "(B) exemplify a primary preoccupation of Allen's works [4.0%]",
+          "(C) serve as a contrast to the fate of artistic characters in Allen's films [91.0%] (Correct)",
+          "(D) demonstrate that artistic characters have always been important in Allen's films [1.0%]",
+          "(E) illustrate Allen's obvious affection for the nonartist characters he creates [4.0%]"
+        ] },        { type: 'h3', text: "Question Breakdown: PT-128-S-4-P-2-Q-11" },
+    { type: 'callout', variant: 'tip', title: 'Approach: Phrase Function', text: 'Identify the local argument. Ask: what job does this phrase do for that point? Is it evidence, example, concession, or clarification?' },
+        { type: 'paragraph', text: "This question asks for the primary reason the author mentions the character Zelig. This is a rhetorical function question, requiring an understanding of Zelig's role within the structure of the author's argument, not just what the passage says about him." },
+        { type: 'paragraph', text: "The final paragraph is built on a contrast. It begins by stating a general rule: in Allen's films, less artistic characters tend to have happier endings than artistic ones. The author first lists the artistic characters who end up \"desolate and solitary,\" then uses the transition phrase \"On the other hand\" to introduce the counterexamples. Immediately following this transition, Zelig appears as the prime example: a \"thoroughly inartistic\" character who has a happy death." },
+        { type: 'callout', title: "Prediction", variant: "tip", text: "The transition \"On the other hand\" is a dead giveaway. Zelig's function is to serve as the *counterpoint* to the miserable artistic characters. He is evidence for the other side of the author's inverse correlation. Look for an answer that describes his role as a contrast or counterexample to the fate of artistic characters." },
+        { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
+          { title: "(A) counter the prevailing critical view of Allen's films", text: "The passage does not introduce or engage with any \"prevailing critical view.\" The author is presenting their own original analysis, not responding to other critics.", badge: 'Content Dump', badgeColor: "red" },
+          { title: "(B) exemplify a primary preoccupation of Allen's works", text: "The passage identifies the \"primary preoccupation\" as the neurotic, narcissistic *artist*. Zelig is explicitly described as \"thoroughly inartistic,\" making him the opposite of this preoccupation, not an example of it.", badge: 'Wrong Function', badgeColor: "red" },
+          { title: "(C) serve as a contrast to the fate of artistic characters in Allen's films", text: "This accurately describes Zelig's role. The structure of the paragraph, particularly the use of \"On the other hand,\" explicitly sets up Zelig's happy fate as a direct \"contrast\" to the desolate fate of the artistic characters mentioned just before him.", badge: "Correct", badgeColor: "green" },
+          { title: "(D) demonstrate that artistic characters have always been important in Allen's films", text: "Using a non-artistic character as an example cannot demonstrate the importance of artistic characters. Zelig demonstrates the importance of the *distinction* between the two groups, not the importance of one group alone.", badge: 'Wrong Scope', badgeColor: "red" },
+          { title: "(E) illustrate Allen's obvious affection for the nonartist characters he creates", text: "While the happy ending might imply affection, this is a secondary inference about Allen's personal feelings. The primary, structural function of Zelig within the author's argument is to provide a clear contrast. Choice (C) is a more direct and accurate description of the character's rhetorical purpose in the passage.", badge: 'Partial Role', badgeColor: "red" }
+        ]}
+    ],
+  alternates: {
+    diff: {
+      label: 'Diff-Highlighted',
+      content: [
+        {
+          "type": "accordion",
+          "title": "Read Passage",
+          "content": "In filmmaker Woody Allen's Deconstructing Harry, the writer Harry Block is presented as extremely neurotic and narcissistic. Block uses his experiences as fodder for his work, no matter how embarrassing the result may be for the other people in his life. And while Allen exaggerates Block's narcissism for comic effect, the effect is not simply comic: the film is emblematic of Allen's career precisely because of its extravagantly exaggerated censure of a life dedicated to and obsessed with art. Deconstructing Harry may be the most unequivocally peevish of Allen's depictions of artists, but it is less a new direction for Allen than a concentrated reprise of a theme present throughout his career.\nFor instance, a film producer in Stardust Memories, Allen's sourest portrait of artists before Harry, articulates a particularly cynical view of cinematic art after a screening of a film-in-progress by Stardust Memories' main character, Sandy Bates. The producer says of Bates, “His insights are shallow and morbid. I've seen it all before. They try to document their private suffering and fob it off as art.” The producer, like all the figures in this film, often seems less a distinct individual than a projection of Bates's personal self-recriminations. This effectively reinforces the charge of solipsism with which Bates, the unstable and demoralized artist, indicts himself. Indeed, the possibility that artists are merely “documenting their private suffering and fobbing it off as art” appears sufficiently often in Allen's films to seem an unresolved personal issue.\nIn Manhattan, the ex-wife of a television writer and aspiring novelist offers a denigratory take on the artistic enterprise that is similar to the producer's in Stardust Memories. Her book documenting the collapse of her marriage punctures her ex-husband's artistic pretensions by revealing that he “longed to be an artist but balked at the necessary sacrifices. In his most private moments, he spoke of the fear of death, which he elevated to tragic heights when, in fact, it was mere narcissism.”\nIt is also significant that in Allen's films, the less artistic the characters, the more likely their narrative is to result in a happy ending. Thus, the filmmaker in Crimes and Misdemeanors, the novelist in Husbands and Wives, and the screenwriter in Celebrity all wind up desolate and solitary, largely because of the egocentric and exploitative attitudes embodied in their art and the effects of those attitudes on those around them. On the other hand, the unpretentious, thoroughly inartistic title character in Zelig dies an untroubled, even happy, death, only slightly compromised by his failure to finish reading Moby-Dick. And the title character and talent agent in Broadway Danny Rose is the beneficiary of the most gratifying resolution Allen has scripted, primarily due to altruistic devotion to his utterly talentless nightclub performers."
+        },
+        {
+          "type": "h3",
+          "text": "Question Breakdown: PT-128-S-4-P-2-Q-11"
+        },
+        {
+          "type": "blockquote",
+          "text": "**Question:** The author mentions the character Zelig primarily in order to"
+        },
+        {
+          "type": "options",
+          "items": [
+            "(A) counter the prevailing critical view of Allen's films [1.0%]",
+            "(B) exemplify a primary preoccupation of Allen's works [4.0%]",
+            "(C) serve as a contrast to the fate of artistic characters in Allen's films [91.0%] (Correct)",
+            "(D) demonstrate that artistic characters have always been important in Allen's films [1.0%]",
+            "(E) illustrate Allen's obvious affection for the nonartist characters he creates [4.0%]"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This question asks for the primary reason the author mentions the character Zelig. This is a rhetorical function question, requiring an understanding of Zelig's role within the structure of the author's argument, not just what the passage says about him."
+        },
+        {
+          "type": "paragraph",
+          "text": "The final paragraph is built on a contrast. It begins by stating a general rule: in Allen's films, less artistic characters tend to have happier endings than artistic ones. The author first lists the artistic characters who end up \"desolate and solitary,\" then uses the transition phrase \"On the other hand\" to introduce the counterexamples. Immediately following this transition, Zelig appears as the prime example: a \"thoroughly inartistic\" character who has a happy death."
+        },
+        {
+          "type": "callout",
+          "title": "Prediction",
+          "variant": "tip",
+          "text": "The transition \"On the other hand\" is a dead giveaway. Zelig's function is to serve as the *counterpoint* to the miserable artistic characters. He is evidence for the other side of the author's inverse correlation. Look for an answer that describes his role as a contrast or counterexample to the fate of artistic characters."
+        },
+        {
+          "type": "breakdown",
+          "labels": {
+            "title": "Option",
+            "text": "Analysis"
+          },
+          "items": [
+            {
+              "title": "(A) counter the prevailing critical view of Allen's films",
+              "text": "The passage does not introduce or engage with any \"prevailing critical view.\" The author is presenting their own original analysis, not responding to other critics.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            },
+            {
+              "title": "(B) exemplify a primary preoccupation of Allen's works",
+              "text": "The passage identifies the \"primary preoccupation\" as the neurotic, narcissistic *artist*. Zelig is explicitly described as \"thoroughly inartistic,\" making him the opposite of this preoccupation, not an example of it.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            },
+            {
+              "title": "(C) serve as a contrast to the fate of artistic characters in Allen's films",
+              "text": "This accurately describes Zelig's role. The structure of the paragraph, particularly the use of \"On the other hand,\" explicitly sets up Zelig's happy fate as a direct \"contrast\" to the desolate fate of the artistic characters mentioned just before him.",
+              "badge": "Correct",
+              "badgeColor": "green"
+            },
+            {
+              "title": "(D) demonstrate that artistic characters have always been important in Allen's films",
+              "text": "Using a non-artistic character as an example cannot demonstrate the importance of artistic characters. Zelig demonstrates the importance of the *distinction* between the two groups, not the importance of one group alone.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            },
+            {
+              "title": "(E) illustrate Allen's obvious affection for the nonartist characters he creates",
+              "text": "While the happy ending might imply affection, this is a secondary inference about Allen's personal feelings. The primary, structural function of Zelig within the author's argument is to provide a clear contrast. Choice (C) is a more direct and accurate description of the character's rhetorical purpose in the passage.",
+              "badge": "Incorrect",
+              "badgeColor": "red"
+            }
+          ]
+        }
+      ],
+    },
+  },
+};

@@ -1,0 +1,133 @@
+--- Module 56: Advanced Passage 6 -- Historical Sociology
+--- Diff annotations for website lessons rc/56-1 through rc/56-7
+--- Date: 2026-04-01
+
+{ "type": "diff-note", "text": "All six question lessons (56-2 through 56-7) lack a 'try it yourself' prompt before the worked analysis. This is the same gap found in M55. Adding an active-practice callout before every analysis section is the highest-priority improvement.", "variant": "comment" }
+
+
+=== Lesson 56-1: Passage Breakdown ===
+
+--- rc/56-1.tsx
++++ rc/56-1.tsx (proposed)
+
+ [H3 heading]
+
+{{~change~}} "Passage Breakdown" -> "Passage Analysis"
+
+{ "type": "diff-note", "text": "Standardize H3 heading across advanced passage modules. M55 and M57 use 'Passage Analysis'; M56 uses 'Passage Breakdown'. All should match.", "variant": "comment" }
+
+ [After accordion passage block, before the HR separator]
+
+{{+add+}} Add a "Reading Strategy" callout:
+{{+**Approach Tips:** This is a "scholar's theory" passage -- the entire passage explains Philip Abrams's framework. Your job is to track his argument, not evaluate it. As you read: (1) Mark each named concept ("structuring," "contingencies," "events") -- these will be tested. (2) Notice the three-paragraph progression: problem in sociology, application to history, practical method. (3) The four-step method in P3 is high-value detail -- expect at least one question targeting it.+}}
+
+ [In the P3 analysis paragraph, after "he lays out a four-step method"]
+
+{{+add+}} Enumerate the four steps explicitly:
+{{+The four steps are: (1) describe the event itself, (2) discuss the social context that caused it, (3) summarize the life history of the individual agent, and (4) analyze the consequences for both history and the individual.+}}
+
+{ "type": "diff-note", "text": "The four-step method is the passage's most concrete, testable detail. The passage analysis mentions it but does not list the steps. Students who mark these four steps while reading will be better prepared for Q18 (the analogy question).", "variant": "comment" }
+
+
+=== Lesson 56-2: Question 15 Breakdown ===
+
+--- rc/56-2.tsx
++++ rc/56-2.tsx (proposed)
+
+ [Between the "options" block and the callout starting "The passage explains Abrams's core idea"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+{ "type": "diff-note", "text": "Main Point questions should be the first thing students attempt independently, since the passage analysis lesson already prepares them with a summary. The 52% correct rate for (D) vs. 37% for the (C) distractor suggests this is moderately hard.", "variant": "comment" }
+
+ [After the breakdown block]
+
+{{+add+}} Add a distractor analysis note:
+{{+**Why (C) is tempting:** It uses correct-sounding language about social structures and history, but it misidentifies the central conflict. Abrams's critique targets the one-sided views of the people-society relationship, not the relationship between social structures and historical events. Always check: does the answer match the actual scope of the argument?+}}
+
+
+=== Lesson 56-3: Question 16 Breakdown ===
+
+--- rc/56-3.tsx
++++ rc/56-3.tsx (proposed)
+
+ [Between the "options" block and the callout starting "The last paragraph outlines Abrams's four-part method"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+{ "type": "diff-note", "text": "Completion questions are uncommon on the LSAT. A brief methodology note would help students approach this question type with a clear strategy.", "variant": "comment" }
+
+ [After the "Try this" prompt, before the existing Prediction callout]
+
+{{+add+}} Optional methodology callout:
+{{+**Question Type Note:** Completion questions ask you to identify the logical conclusion of a paragraph. Strategy: (1) Re-read the last sentence before the gap. (2) Identify the paragraph's thesis. (3) Predict a sentence that summarizes or fulfills the purpose stated earlier in the paragraph.+}}
+
+
+=== Lesson 56-4: Question 17 Breakdown ===
+
+--- rc/56-4.tsx
++++ rc/56-4.tsx (proposed)
+
+ [Between the "options" block and the callout starting "This is an EXCEPT question"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+
+=== Lesson 56-5: Question 18 Breakdown ===
+
+--- rc/56-5.tsx
++++ rc/56-5.tsx (proposed)
+
+ [Between the "options" block and the callout starting "This is an analogy question"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+{ "type": "diff-note", "text": "Analogy questions are among the hardest RC question types. Adding a methodology note here would teach a transferable skill.", "variant": "comment" }
+
+ [After the "Try this" prompt, before the existing Prediction callout]
+
+{{+add+}} Methodology callout:
+{{+**Analogy Question Strategy:** Analogy questions ask you to find a scenario that mirrors a principle or method from the passage. Strategy: (1) Break the passage's method into its component parts -- here, Abrams's four steps. (2) Use those parts as a checklist. (3) Test each answer choice against ALL parts of the checklist, not just one or two.+}}
+
+ [In the existing Prediction callout]
+
+{{~change~}} Reformat the prediction to include a numbered checklist:
+Current: "We must find a scenario that mirrors Abrams's four-part method: (1) describe the event, (2) explain the social context, (3) summarize the individual agent's history, and (4) analyze the consequences for both the larger system and the individual."
+Proposed: Keep the same text but format as a numbered list for scanability.
+
+
+=== Lesson 56-6: Question 19 Breakdown ===
+
+--- rc/56-6.tsx
++++ rc/56-6.tsx (proposed)
+
+ [Between the "options" block and the callout starting "The first paragraph introduces a problem"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+{ "type": "diff-note", "text": "Q19 has a 77% correct rate -- the easiest in the set. Students who completed the passage analysis lesson should find this straightforward.", "variant": "comment" }
+
+
+=== Lesson 56-7: Question 20 Breakdown ===
+
+--- rc/56-7.tsx
++++ rc/56-7.tsx (proposed)
+
+ [Between the "options" block and the callout starting "The passage defines 'contingencies'"]
+
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+{ "type": "diff-note", "text": "This LEAST question has an 86% correct rate. The trivial nature of (C) makes it the clear outlier. A brief note about LEAST/EXCEPT strategy would still be useful for students who struggle with this question type.", "variant": "comment" }
+
+ [After the "Try this" prompt, before the existing Prediction callout]
+
+{{+add+}} Optional strategy callout:
+{{+**LEAST/EXCEPT Strategy:** In LEAST/EXCEPT questions, four answers will clearly match the passage's concept. One will not. Strategy: test each option individually against the passage's definition and look for the one that is a weak or trivial match rather than a direct illustration.+}}
+
+ [After the breakdown block, at end of content array]
+
+{{+add+}} Optional module wrap-up:
+{{+**Module Takeaways:** This passage generated six questions across six different question types -- the widest variety in the advanced passage set. The common thread: Abrams's framework has multiple testable layers (the problem, the concept of structuring, the definition of contingencies, the four-step method). Students who marked these layers during reading were prepared for every question type. The analogy question (Q18) was the hardest because it required holding all four steps in mind simultaneously.+}}
+
+
+--- END OF DIFF ---

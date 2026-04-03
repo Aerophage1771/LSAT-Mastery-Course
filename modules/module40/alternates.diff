@@ -1,0 +1,41 @@
+# Module 40: Title — Diff Annotations
+# Source: website lessons rc/40-1.tsx, rc/40-2.tsx
+
+{ "type": "diff-note", "text": "Module 40 covers Title questions (17 appearances). The Analogous Relationship sub-type is the most complex variant in the RC taxonomy and needs more space than it currently receives.", "variant": "comment" }
+
+## Lesson 40-1: Introduction (rc/40-1.tsx)
+
+### After the two-item sub-type list (Standard vs. Analogous):
+{{+Add 2-3 example titles for a hypothetical passage about environmental policy: one correct ("Arguing for Emissions Regulation Reform"), one too narrow ("The Carbon Tax Debate in the European Union"), one too broad ("Environmental Policy Issues"). This concretizes the scope-judgment framework students need.+}}
+
+### After the Analogous Relationship stem category:
+{{+Expand with a brief worked walkthrough: "Step 1: Define the relationship between the passages (e.g., 'A proposes a theory, B provides a specific test of that theory'). Step 2: Find the pair of titles whose relationship mirrors this structure (e.g., 'The Case for Universal Testing' / 'Evaluating Standardized Testing in Three School Districts')."+}}
+
+### After the frequency note:
+{{+Add a "Title vs. Main Point vs. Passage Function" comparison: "Title questions are closely related to two other question types: Main Point asks for the author's central claim, Passage Function asks for the author's primary goal, and Title asks for the best headline. A good title captures both the main point's content and the passage function's scope."+}}
+
+{ "type": "diff-note", "text": "The three stem categories are well-differentiated. The Analogous Relationship category is unique to Title questions and represents the hardest RC sub-type.", "variant": "comment" }
+
+## Lesson 40-2: Step-by-Step Approach (rc/40-2.tsx)
+
+### Before any worked analysis section:
+{{+**Try this:** Attempt the question before reading the analysis below.+}}
+
+### After the Standard Title method (Steps 1-2):
+{{+Add a worked example: present a brief passage outline and 4-5 title options, demonstrating elimination using Too Narrow, Too Broad, and Wrong Focus criteria.+}}
+
+### After the Paired/Analogous method:
+{{+Add a separate worked example for Analogous Titles: define a passage relationship, present 4-5 title pairs, and demonstrate how to match the abstract relationship structure.+}}
+
+### After Tie-Breaker #2 (Precision Check):
+{{+Add a concrete example: "Instead of 'A and B disagree,' try 'B uses historical evidence to challenge the theoretical claim made in A.' Now evaluate which title pair mirrors the structure: general claim vs. evidence-based critique."+}}
+
+### After the tie-breaker section:
+{{+Add a question-card, ideally covering the Analogous variant since it is the hardest and least-practiced sub-type.+}}
+
+### After Step 2 elimination criteria (Standard):
+{{+Add a title-specific trap callout: "Watch for titles that borrow a key word from the passage but misrepresent the scope. A passage about 'the limitations of carbon dating in marine environments' might have a wrong-answer title like 'Carbon Dating: A Comprehensive Overview' — it uses the right terminology but describes a much broader scope."+}}
+
+{ "type": "diff-note", "text": "The split method (Standard track vs. Paired/Analogous track) is the right structure. The Analogous track deserves either expansion here or a dedicated Lesson 40-3.", "variant": "comment" }
+
+{{!note: Title questions are rare (17 appearances) but appear without warning on some tests. Students who encounter the Analogous variant unprepared will lose significant time. Prioritize this sub-type in any future expansion.!}}
