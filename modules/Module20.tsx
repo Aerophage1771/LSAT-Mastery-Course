@@ -1,33 +1,31 @@
 import { ModuleData } from '../types';
 import { Lesson1_Introduction } from './module20/Lesson1_Introduction';
 import { Lesson2_StepByStepGuide } from './module20/Lesson2_StepByStepGuide';
-import { Lesson3_FieldGuide } from './module20/Lesson3_FieldGuide';
-import { Lesson4 } from './module20/Lesson4';
-import { Lesson5 } from './module20/Lesson5';
-import { Lesson6 } from './module20/Lesson6';
-import { Lesson7 } from './module20/Lesson7';
-import { Lesson_AdvancedConcepts } from './module20/Lesson_AdvancedConcepts';
-import { Lesson_Advanced1 } from './module20/Lesson_Advanced1';
-import { Lesson_Advanced2 } from './module20/Lesson_Advanced2';
-import { Lesson_Advanced3 } from './module20/Lesson_Advanced3';
+import { Lesson3_Drill_Disagreement_DefinitionalRule } from './module20/Lesson3_Drill_Disagreement_DefinitionalRule';
+import { Lesson4_Drill_Disagreement_ExplanatoryCause } from './module20/Lesson4_Drill_Disagreement_ExplanatoryCause';
+import { Lesson5_Drill_PointOfAgreement_SharedAssumption } from './module20/Lesson5_Drill_PointOfAgreement_SharedAssumption';
+import { Lesson6_Advanced_StrategyGuide } from './module20/Lesson6_Advanced_StrategyGuide';
+import { Lesson7_Drill_Disagreement_ClashOfCriteria } from './module20/Lesson7_Drill_Disagreement_ClashOfCriteria';
+import { Lesson8_Drill_Disagreement_DefinitionalClash } from './module20/Lesson8_Drill_Disagreement_DefinitionalClash';
+import { Lesson9_Drill_PointOfAgreement_SharedDiagnosis } from './module20/Lesson9_Drill_PointOfAgreement_SharedDiagnosis';
+import { Lesson10_ReferenceGuide } from './module20/Lesson10_ReferenceGuide';
 
 export const Module20: ModuleData = {
   id: 20,
-  title: 'Agree / Disagree',
-  category: 'LR',
-  description: '',
-  unit: '',
+  title: "Agree / Disagree (Point at Issue)",
+  category: "LR",
+  unit: "Unit 7: Conflict",
+  description: "Identify the specific proposition on which two speakers hold opposing views (Point at Issue) or shared views (Point of Agreement).",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,
-    Lesson3_FieldGuide,
-    Lesson4,
-    Lesson5,
-    Lesson6,
-    Lesson7,
-    Lesson_AdvancedConcepts,
-    Lesson_Advanced1,
-    Lesson_Advanced2,
-    Lesson_Advanced3,
-  ],
+    Lesson3_Drill_Disagreement_DefinitionalRule,
+    Lesson4_Drill_Disagreement_ExplanatoryCause,
+    Lesson5_Drill_PointOfAgreement_SharedAssumption,
+    Lesson6_Advanced_StrategyGuide,
+    Lesson7_Drill_Disagreement_ClashOfCriteria,
+    Lesson8_Drill_Disagreement_DefinitionalClash,
+    Lesson9_Drill_PointOfAgreement_SharedDiagnosis,
+    Lesson10_ReferenceGuide
+  ]
 };

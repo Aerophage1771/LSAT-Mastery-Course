@@ -20,7 +20,6 @@ import {
   Check,
   Upload,
   Database,
-  BarChart3,
 } from 'lucide-react';
 import {
   generateCanonicalCourseJSON,
@@ -36,13 +35,9 @@ import {
   generateFullCourseText,
   generateInterchangeCourseJSON,
 } from '../utils/export';
-import { getDisplayModuleId, getDisplayModuleLabel } from '../utils/courseCatalog';
 import { ExportControls } from './ExportControls';
-import { ViewSettingsPopover } from './ViewSettingsPopover';
-import { useViewSettings } from '../contexts/ViewSettingsContext';
 import { LessonViewer } from './LessonViewer';
 import { useProgressContext } from '../contexts/ProgressContext';
-import { websiteLessonCatalog } from '../data/websiteLessonCatalog';
 import {
   roadmapLearningContent,
   roadmapAnalyticsContent,
@@ -93,18 +88,20 @@ interface LayoutProps {
   isLessonComplete?: (lessonId: string) => boolean;
 }
 
-type ExportTrackKey = 'LR' | 'RC';
+type ExportTrackKey = 'LR' | 'RC' | 'AP';
 type ExportActionKey = 'outline' | 'fullCourse' | 'canonicalCourse' | 'interchangeCourse';
 type ExportSelectionStateKey = 'outline' | 'courseContent';
 
 const trackLabels: Record<ExportTrackKey, string> = {
   LR: 'Logical Reasoning',
   RC: 'Reading Comprehension',
+  AP: 'Advanced Passages',
 };
 
 const getTrackKey = (module: ModuleData): ExportTrackKey => {
   if (module.category === 'LR') return 'LR';
-  return 'RC';
+  if (module.category === 'RC') return 'RC';
+  return 'AP';
 };
 
 const getSelectionStateKey = (action: ExportActionKey): ExportSelectionStateKey =>
@@ -175,9 +172,6 @@ const getExportFileBaseName = ({
   return `LSAT_Mastery_${actionLabel}_${scopeLabel}`;
 };
 
-
-
-
 export const Layout: React.FC<LayoutProps> = ({
   modules,
   exportModules,
@@ -189,10 +183,9 @@ export const Layout: React.FC<LayoutProps> = ({
   lessonNav,
   children,
   activeModuleData,
-  lessonLinkageMeta: _lessonLinkageMeta,
+  lessonLinkageMeta,
   isLessonComplete,
 }) => {
-  const { websiteViewerMode, trueStudentView } = useViewSettings();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [exportModalOpen, setExportModalOpen] = useState(false);
   const [styleGuideOpen, setStyleGuideOpen] = useState(false);
@@ -304,14 +297,7 @@ export const Layout: React.FC<LayoutProps> = ({
     }
   }, [roadmapOpen]);
 
-  const allSidebarLessons = activeModuleData?.lessons ?? [];
-
-  // In website view, look up the module's internal ID to find the website catalog entry
-  const websiteModuleId = activeModuleData?.id;
-  const websiteLessonsForModule = websiteModuleId != null ? websiteLessonCatalog[websiteModuleId] ?? [] : [];
-  const hasWebsiteLessons = websiteLessonsForModule.length > 0;
-
-  const sidebarLessons = allSidebarLessons;
+  const sidebarLessons = activeModuleData?.lessons ?? [];
   const groupedExportModules = React.useMemo(
     () =>
       exportableModules.reduce(
@@ -475,7 +461,7 @@ export const Layout: React.FC<LayoutProps> = ({
         role="banner"
       >
         <div className="flex items-center gap-2 min-w-0">
-          {!trueStudentView && lessonNav && (
+          {lessonNav && (
             <>
               {lessonNav.onPrevious ? (
                 <button
@@ -495,22 +481,20 @@ export const Layout: React.FC<LayoutProps> = ({
               )}
             </>
           )}
-          {!trueStudentView && !websiteViewerMode && (
-            <div
-              className="flex items-center space-x-2 min-w-0"
-              onClick={onGoHome}
-              role="button"
-              tabIndex={0}
-              aria-label="Go to dashboard"
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') onGoHome();
-              }}
-            >
-              <BookOpen className="text-indigo-400 flex-shrink-0" size={20} />
-              <span className="font-bold text-lg tracking-tight truncate">LSAT Mastery</span>
-            </div>
-          )}
-          {!trueStudentView && lessonNav && (
+          <div
+            className="flex items-center space-x-2 min-w-0"
+            onClick={onGoHome}
+            role="button"
+            tabIndex={0}
+            aria-label="Go to dashboard"
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') onGoHome();
+            }}
+          >
+            <BookOpen className="text-indigo-400 flex-shrink-0" size={20} />
+            <span className="font-bold text-lg tracking-tight truncate">LSAT Mastery</span>
+          </div>
+          {lessonNav && (
             <>
               {lessonNav.onNext ? (
                 <button
@@ -532,33 +516,26 @@ export const Layout: React.FC<LayoutProps> = ({
           )}
         </div>
         <div className="flex items-center space-x-1 flex-shrink-0">
-          <div className="[&_button]:text-slate-300 [&_button]:hover:text-white">
-            <ViewSettingsPopover />
-          </div>
-          {!trueStudentView && !websiteViewerMode && (
-            <>
-              <button
-                onClick={() => setExportModalOpen(true)}
-                className="p-2 text-slate-300 hover:text-white transition-colors"
-                aria-label="Open export center"
-              >
-                <Download size={20} />
-              </button>
-              <button
-                onClick={() => setSidebarOpen(true)}
-                className="p-2 text-slate-300 hover:text-white transition-colors"
-                aria-label="Open navigation menu"
-              >
-                <Menu size={24} />
-              </button>
-            </>
-          )}
+          <button
+            onClick={() => setExportModalOpen(true)}
+            className="p-2 text-slate-300 hover:text-white transition-colors"
+            aria-label="Open export center"
+          >
+            <Download size={20} />
+          </button>
+          <button
+            onClick={() => setSidebarOpen(true)}
+            className="p-2 text-slate-300 hover:text-white transition-colors"
+            aria-label="Open navigation menu"
+          >
+            <Menu size={24} />
+          </button>
         </div>
       </div>
 
       {sidebarOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-40 backdrop-blur-sm"
+          className="fixed inset-0 bg-black/50 z-40 lg:hidden backdrop-blur-sm"
           onClick={() => setSidebarOpen(false)}
           aria-hidden="true"
         />
@@ -566,7 +543,7 @@ export const Layout: React.FC<LayoutProps> = ({
 
       {/* Sidebar */}
       <nav
-        className={`fixed inset-y-0 left-0 z-50 w-80 bg-slate-900 text-slate-300 transform transition-transform duration-300 ease-in-out flex flex-col flex-shrink-0 shadow-2xl ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
+        className={`fixed inset-y-0 left-0 z-50 w-80 bg-slate-900 text-slate-300 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static flex flex-col shadow-2xl ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
         aria-label="Course navigation"
       >
         <div className="flex items-center justify-between p-6 border-b border-slate-800">
@@ -611,8 +588,8 @@ export const Layout: React.FC<LayoutProps> = ({
                 {modules.map((module) => {
                   const isActive = activeModuleId === module.id;
                   const isLRStart = module.id === 1;
-                  const isRCStart = module.id === 24;
-                  const isAdvancedStart = module.id === 51;
+                  const isRCStart = module.id === 23;
+                  const isAdvancedStart = module.id === 50;
                   return (
                     <React.Fragment key={module.id}>
                       {isLRStart && (
@@ -639,7 +616,7 @@ export const Layout: React.FC<LayoutProps> = ({
                           aria-current={isActive ? 'true' : undefined}
                         >
                           <span className="flex-1 truncate pr-2">
-                            <span className="opacity-50 mr-2">{getDisplayModuleId(module.id)}.</span>
+                            <span className="opacity-50 mr-2">{module.id}.</span>
                             {module.title}
                           </span>
                           {isActive && <ChevronRight size={14} className="text-indigo-400" />}
@@ -650,40 +627,38 @@ export const Layout: React.FC<LayoutProps> = ({
                             role="group"
                             aria-label={`Lessons in ${module.title}`}
                           >
-                            {(hasWebsiteLessons ? websiteLessonsForModule : []).map((wl) => {
-                              const matchingLesson = allSidebarLessons.find((l) => l.id === wl.id);
-                              const isActive = activeLessonId === wl.id;
-                              const completed = matchingLesson ? (isLessonComplete?.(wl.id) ?? false) : false;
+                            {sidebarLessons.map((lesson) => {
+                              const completed = isLessonComplete?.(lesson.id) ?? false;
+                              const linkage = lessonLinkageMeta?.[lesson.id];
                               return (
                                 <button
-                                  key={wl.id}
-                                  ref={isActive ? activeLessonRef : undefined}
+                                  key={lesson.id}
+                                  ref={activeLessonId === lesson.id ? activeLessonRef : undefined}
                                   onClick={() => {
-                                    if (matchingLesson) {
-                                      onSelectLesson(wl.id);
-                                    }
+                                    onSelectLesson(lesson.id);
                                     setSidebarOpen(false);
                                   }}
-                                  disabled={!matchingLesson}
-                                  className={`w-full text-left px-3 py-2 rounded-md text-xs font-medium transition-colors flex items-start space-x-2.5 leading-relaxed ${
-                                    isActive
-                                      ? 'bg-indigo-500/10 text-indigo-300'
-                                      : !matchingLesson
-                                        ? 'text-slate-700 cursor-not-allowed opacity-50'
-                                        : 'text-slate-500 hover:text-slate-300 hover:bg-slate-800/30'
-                                  }`}
-                                  aria-current={isActive ? 'page' : undefined}
+                                  className={`w-full text-left px-3 py-2 rounded-md text-xs font-medium transition-colors flex items-start space-x-2.5 leading-relaxed ${activeLessonId === lesson.id ? 'bg-indigo-500/10 text-indigo-300' : 'text-slate-500 hover:text-slate-300 hover:bg-slate-800/30'}`}
+                                  aria-current={activeLessonId === lesson.id ? 'page' : undefined}
                                 >
                                   <div className="mt-0.5 flex-shrink-0">
                                     {completed ? (
                                       <CheckCircle size={12} className="text-emerald-400" />
-                                    ) : isActive ? (
+                                    ) : activeLessonId === lesson.id ? (
                                       <CheckCircle size={12} />
                                     ) : (
                                       <Circle size={12} />
                                     )}
                                   </div>
-                                  <span>{wl.title}</span>
+                                  <span>{lesson.title}</span>
+                                  {linkage?.status !== 'ok' && linkage?.statusLabel && (
+                                    <span
+                                      className="ml-auto inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wide bg-red-500/20 text-red-300 border border-red-500/40"
+                                      title={linkage.statusLabel}
+                                    >
+                                      {linkage.statusLabel}
+                                    </span>
+                                  )}
                                 </button>
                               );
                             })}
@@ -705,15 +680,7 @@ export const Layout: React.FC<LayoutProps> = ({
           >
             <BookOpen size={18} />
             <span className="font-medium">Question Bank</span>
-            <span className="ml-auto text-xs bg-slate-800 text-slate-400 px-2 py-0.5 rounded-full">208</span>
-          </Link>
-          <Link
-            to="/analytics"
-            onClick={() => setSidebarOpen(false)}
-            className="w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-slate-400 hover:bg-slate-800 hover:text-slate-100 transition-all duration-200 mt-1"
-          >
-            <BarChart3 size={18} />
-            <span className="font-medium">Analytics</span>
+            <span className="ml-auto text-xs bg-slate-800 text-slate-400 px-2 py-0.5 rounded-full">150</span>
           </Link>
         </div>
         <div className="p-4 border-t border-slate-800 bg-slate-900/50">
@@ -724,77 +691,60 @@ export const Layout: React.FC<LayoutProps> = ({
       {/* Main content */}
       <div className="flex-1 flex flex-col min-h-0 pt-14 lg:pt-0">
         <header
-          className={`hidden lg:flex flex-shrink-0 items-center justify-between px-8 py-4 border-b shadow-sm z-10 ${trueStudentView ? 'bg-slate-50 border-slate-200' : 'bg-white border-slate-200'}`}
+          className="hidden lg:flex flex-shrink-0 items-center justify-between px-8 py-4 bg-white border-b border-slate-200 shadow-sm z-10"
           role="banner"
         >
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-1">
-              <button
-                onClick={() => setSidebarOpen(true)}
-                className="p-2 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors"
-                aria-label="Open navigation menu"
-              >
-                <Menu size={18} />
+            <nav className="flex items-center text-sm breadcrumbs text-slate-500" aria-label="Breadcrumb">
+              <button onClick={onGoHome} className="hover:text-indigo-600 transition-colors font-medium">
+                Dashboard
               </button>
-              <div className="[&_button]:text-slate-400 [&_button]:hover:text-slate-600">
-                <ViewSettingsPopover />
-              </div>
-            </div>
-            {trueStudentView || websiteViewerMode ? null : (
-              <>
-                <nav className="flex items-center text-sm breadcrumbs text-slate-500" aria-label="Breadcrumb">
-                  <button onClick={onGoHome} className="hover:text-indigo-600 transition-colors font-medium">
-                    Dashboard
-                  </button>
-                  {activeModuleData && (
-                    <>
-                      <ChevronRight size={14} className="mx-2 text-slate-300" aria-hidden="true" />
-                      <span className="font-semibold text-slate-800" aria-current="page">
-                        Module {activeModuleData.id}: {activeModuleData.title}
-                      </span>
-                    </>
-                  )}
-                </nav>
-                {lessonNav && (
-                  <div
-                    className="flex items-center gap-1 border-l border-slate-200 pl-4"
-                    role="navigation"
-                    aria-label="Lesson navigation"
+              {activeModuleData && (
+                <>
+                  <ChevronRight size={14} className="mx-2 text-slate-300" aria-hidden="true" />
+                  <span className="font-semibold text-slate-800" aria-current="page">
+                    Module {activeModuleData.id}: {activeModuleData.title}
+                  </span>
+                </>
+              )}
+            </nav>
+            {lessonNav && (
+              <div
+                className="flex items-center gap-1 border-l border-slate-200 pl-4"
+                role="navigation"
+                aria-label="Lesson navigation"
+              >
+                {lessonNav.onPrevious ? (
+                  <button
+                    onClick={lessonNav.onPrevious}
+                    aria-label={lessonNav.previousLabel ? `Previous: ${lessonNav.previousLabel}` : 'Previous lesson'}
+                    className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-slate-500 hover:text-indigo-600 hover:bg-slate-100 transition-colors text-sm font-medium"
                   >
-                    {lessonNav.onPrevious ? (
-                      <button
-                        onClick={lessonNav.onPrevious}
-                        aria-label={lessonNav.previousLabel ? `Previous: ${lessonNav.previousLabel}` : 'Previous lesson'}
-                        className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-slate-500 hover:text-indigo-600 hover:bg-slate-100 transition-colors text-sm font-medium"
-                      >
-                        <ArrowLeft size={18} />
-                        <span>Previous</span>
-                      </button>
-                    ) : (
-                      <span className="px-3 py-2 text-slate-300 text-sm font-medium cursor-default" aria-disabled="true">
-                        Previous
-                      </span>
-                    )}
-                    {lessonNav.onNext ? (
-                      <button
-                        onClick={lessonNav.onNext}
-                        aria-label={lessonNav.nextLabel ? `Next: ${lessonNav.nextLabel}` : 'Next lesson'}
-                        className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-slate-500 hover:text-indigo-600 hover:bg-slate-100 transition-colors text-sm font-medium"
-                      >
-                        <span>Next</span>
-                        <ArrowRight size={18} />
-                      </button>
-                    ) : (
-                      <span className="px-3 py-2 text-slate-300 text-sm font-medium cursor-default" aria-disabled="true">
-                        Next
-                      </span>
-                    )}
-                  </div>
+                    <ArrowLeft size={18} />
+                    <span>Previous</span>
+                  </button>
+                ) : (
+                  <span className="px-3 py-2 text-slate-300 text-sm font-medium cursor-default" aria-disabled="true">
+                    Previous
+                  </span>
                 )}
-              </>
+                {lessonNav.onNext ? (
+                  <button
+                    onClick={lessonNav.onNext}
+                    aria-label={lessonNav.nextLabel ? `Next: ${lessonNav.nextLabel}` : 'Next lesson'}
+                    className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-slate-500 hover:text-indigo-600 hover:bg-slate-100 transition-colors text-sm font-medium"
+                  >
+                    <span>Next</span>
+                    <ArrowRight size={18} />
+                  </button>
+                ) : (
+                  <span className="px-3 py-2 text-slate-300 text-sm font-medium cursor-default" aria-disabled="true">
+                    Next
+                  </span>
+                )}
+              </div>
             )}
           </div>
-          {!trueStudentView && !websiteViewerMode && (
           <div className="flex items-center gap-3">
             <button
               onClick={() => window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', ctrlKey: true }))}
@@ -813,16 +763,8 @@ export const Layout: React.FC<LayoutProps> = ({
               <BookOpen size={16} />
               <span>Question Bank</span>
               <span className="ml-1 text-[10px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded-full font-mono">
-                208
+                150
               </span>
-            </Link>
-            <Link
-              to="/analytics"
-              className="flex items-center space-x-2 px-4 py-2 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-sm font-bold text-slate-600 transition-all shadow-sm"
-              aria-label="Analytics"
-            >
-              <BarChart3 size={16} />
-              <span>Analytics</span>
             </Link>
             <button
               onClick={() => setRoadmapOpen(true)}
@@ -849,7 +791,6 @@ export const Layout: React.FC<LayoutProps> = ({
               <span>Export</span>
             </button>
           </div>
-          )}
         </header>
         <a
           href="#main-content"
@@ -860,62 +801,11 @@ export const Layout: React.FC<LayoutProps> = ({
         <main
           ref={mainRef}
           id="main-content"
-          className={`flex-1 min-h-0 overflow-y-auto p-4 lg:p-8 scroll-smooth ${websiteViewerMode ? 'bg-slate-50' : 'bg-slate-50/50'}`}
+          className="flex-1 min-h-0 overflow-y-auto p-4 lg:p-8 scroll-smooth bg-slate-50/50"
           role="main"
           tabIndex={-1}
         >
-          {websiteViewerMode && activeLessonId && activeModuleData ? (
-            <div className="max-w-[1200px] mx-auto flex gap-6 items-start">
-              <div className="flex-1 min-w-0">{children}</div>
-              <aside className="hidden xl:block w-[280px] flex-shrink-0 sticky top-6 self-start">
-                <section className="rounded-[28px] border-[1.5px] border-slate-300 bg-white p-4 shadow-[0_4px_16px_rgba(15,23,42,0.06)]">
-                  <div className="mb-1">
-                    <span className="text-[11px] font-bold uppercase tracking-[2.64px] text-slate-400">
-                      Module Lessons
-                    </span>
-                  </div>
-                  <div className="text-sm font-semibold text-slate-800 mb-1">
-                    {activeModuleData.title}
-                  </div>
-                  <p className="text-xs text-slate-400 mb-4">
-                    Move between lesson pages inside this module.
-                  </p>
-                  <div className="space-y-1.5">
-                    {(hasWebsiteLessons ? websiteLessonsForModule : sidebarLessons).map((item, idx) => {
-                      const id = 'id' in item ? item.id : '';
-                      const title = 'title' in item ? item.title : '';
-                      const isActive = activeLessonId === id;
-                      return (
-                        <button
-                          key={id}
-                          onClick={() => {
-                            const matchingLesson = allSidebarLessons.find((l) => l.id === id);
-                            if (matchingLesson) onSelectLesson(id);
-                          }}
-                          className={`w-full text-left rounded-2xl p-3 transition-colors ${
-                            isActive
-                              ? 'bg-slate-900 text-white'
-                              : 'bg-[#fbfaf7] hover:bg-slate-100 text-slate-600'
-                          }`}
-                        >
-                          <span className={`text-[11px] font-bold uppercase tracking-[1.98px] block mb-0.5 ${
-                            isActive ? 'text-white/70' : 'text-slate-400'
-                          }`}>
-                            Lesson {idx + 1}
-                          </span>
-                          <span className={`text-sm font-medium ${isActive ? 'text-white' : 'text-slate-700'}`}>
-                            {title}
-                          </span>
-                        </button>
-                      );
-                    })}
-                  </div>
-                </section>
-              </aside>
-            </div>
-          ) : (
-            children
-          )}
+          {children}
         </main>
       </div>
 
@@ -1305,7 +1195,7 @@ export const Layout: React.FC<LayoutProps> = ({
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,2fr)_minmax(320px,1fr)] gap-6">
-                <div className="bg-white border-[1.5px] border-slate-300 rounded-xl">
+                <div className="bg-white border border-slate-200 rounded-xl">
                   <div className="px-4 py-3 border-b border-slate-100 flex items-center justify-between">
                     <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest">Optional Filters</h3>
                     <div className="flex items-center gap-2">
@@ -1334,7 +1224,7 @@ export const Layout: React.FC<LayoutProps> = ({
                         const stats = trackStats[track];
 
                         return (
-                          <div key={track} className="border-[1.5px] border-slate-300 rounded-lg">
+                          <div key={track} className="border border-slate-200 rounded-lg">
                             <div className="px-3 py-2 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
                               <label className="flex items-center gap-2 text-sm font-bold text-slate-800">
                                 <input
@@ -1367,7 +1257,7 @@ export const Layout: React.FC<LayoutProps> = ({
                                           onChange={(event) => toggleModuleSelection(module, event.target.checked)}
                                           className="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
                                         />
-                                        {getDisplayModuleLabel(module.id)}: {module.title}
+                                        Module {module.id}: {module.title}
                                       </label>
                                       <span className="text-xs font-medium text-slate-500">
                                         {selectedIds.length}/{module.lessons.length}
@@ -1403,7 +1293,7 @@ export const Layout: React.FC<LayoutProps> = ({
                 </div>
 
                 <div className="space-y-4">
-                  <div className="bg-slate-50 border-[1.5px] border-slate-300 rounded-xl p-4">
+                  <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
                     <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Scope Summary</h3>
                     <div className="space-y-1 text-sm text-slate-700">
                       <p>
@@ -1416,7 +1306,7 @@ export const Layout: React.FC<LayoutProps> = ({
                     </div>
                   </div>
 
-                  <div className="bg-white border-[1.5px] border-slate-300 rounded-xl p-4">
+                  <div className="bg-white border border-slate-200 rounded-xl p-4">
                     <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Export Format</h3>
                     {selectedLessons > 0 ? (
                       <ExportControls
@@ -1494,9 +1384,9 @@ export const Layout: React.FC<LayoutProps> = ({
                     )}
                   </div>
 
-                  <div className="border-[1.5px] border-slate-300 rounded-xl p-4 bg-slate-50">
+                  <div className="border border-slate-200 rounded-xl p-4 bg-slate-50">
                     <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">User Progress</h3>
-                    <div className="bg-white border-[1.5px] border-slate-300 rounded-xl p-4 flex flex-col gap-4">
+                    <div className="bg-white border border-slate-200 rounded-xl p-4 flex flex-col gap-4">
                       <div className="flex items-start gap-3">
                         <div className="bg-slate-50 p-2 rounded-lg text-emerald-600 shadow-sm">
                           <CheckCircle size={20} />

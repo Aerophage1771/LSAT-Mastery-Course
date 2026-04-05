@@ -2,115 +2,66 @@ import { Lesson } from '../../types';
 
 export const Lesson1_Introduction: Lesson = {
   id: '16-1',
-  title: 'MODULE 16: Most Strongly Supported',
+  title: 'Introduction',
+  questionPolicy: 'none',
   content: [
+    { type: 'h2', text: 'MODULE 16: Most Strongly Supported' },
     {
-      "type": "h2",
-      "text": "MODULE 16: Most Strongly Supported"
+      type: 'paragraph',
+      text: '**Question Goal**\n\nSynthesize the facts in the stimulus to determine which answer choice receives the strongest logical support. The evidence flows FROM the stimulus TO the correct answer.',
+    },
+    { type: 'h3', text: 'Why This Matters' },
+    {
+      type: 'paragraph',
+      text: 'Most Strongly Supported (MSS) is an inference question: the stimulus hands you evidence and asks *What does this prove?* Unlike Strengthen questions, you never add information \u2014 you read what the premises already establish.',
+    },
+    { type: 'h3', text: 'Recognizing the Question Stem' },
+    {
+      type: 'table',
+      headers: ['Stem Language', 'Meaning'],
+      rows: [
+        ['Which one is **most strongly supported**?', 'Find the best-supported inference.'],
+        ['Which one can be **most reasonably inferred**?', 'Same task, different wording.'],
+        ['The statements **best support** which one?', 'Stimulus supports the answer.'],
+      ],
+    },
+    { type: 'h3', text: 'MSS vs. Must Be True' },
+    {
+      type: 'list',
+      items: [
+        '**Must Be True** requires **certainty** \u2014 the answer is logically guaranteed.',
+        '**Most Strongly Supported** requires **strong support** \u2014 the most probable answer wins, even if not 100% certain.',
+      ],
+    },
+    { type: 'h3', text: 'MSS vs. Strengthen (Direction of Support)' },
+    {
+      type: 'list',
+      items: [
+        '**MSS:** Stimulus evidence supports the answer choice. Evidence \u2192 Answer.',
+        "**Strengthen:** The answer choice supports the stimulus's conclusion. Answer \u2192 Conclusion.",
+        'Confusing the direction is the most common error. Always ask: *Who is helping whom?*',
+      ],
+    },
+    { type: 'h3', text: 'Common Inference Patterns' },
+    {
+      type: 'list',
+      items: [
+        '**Causal:** Stimulus describes a cause; the answer predicts the effect.',
+        '**Definitional:** Stimulus defines a term; the answer applies that definition.',
+        '**Comparative:** Stimulus compares two things; the answer draws a relative conclusion.',
+        '**Conditional:** Stimulus states if-then rules; the answer chains or contraposes them.',
+      ],
+    },
+    { type: 'h3', text: 'Concept Snapshot' },
+    {
+      type: 'paragraph',
+      text: 'Suppose you are told that every item in the clearance section has been marked down at least 40 percent, and that the blue sweater Rina is considering is in that section. The strongest supported inference is immediate: the sweater has been marked down at least 40 percent. Nothing in the stimulus tells you it is the cheapest item, that Rina will buy it, or that the whole store is discounted. MSS rewards the disciplined move of carrying the stated rule only as far as the text allows.',
     },
     {
-      "type": "paragraph",
-      "text": "**Question Goal**"
+      type: 'callout',
+      title: 'Key Principle',
+      variant: 'summary',
+      text: 'The correct answer is PROVEN by the stimulus, not just consistent with it. Many wrong answers could be true in the real world but lack direct textual support.',
     },
-    {
-      "type": "paragraph",
-      "text": "**Synthesize the facts provided in the stimulus to determine which answer choice is the most logical inference.** In other words, which statement is made most probable by the information given?"
-    },
-    {
-      "type": "paragraph",
-      "text": "**Introduction**"
-    },
-    {
-      "type": "paragraph",
-      "text": "**The Art of Synthesis**"
-    },
-    {
-      "type": "paragraph",
-      "text": "Most Strongly Supported (MSS) questions present you with a stimulus that is usually a collection of facts without a main conclusion. Your job is to act as the logician: you must read the facts, accept them as true, and determine what consequence naturally follows from them."
-    },
-    {
-      "type": "paragraph",
-      "text": "The primary skill tested here is **synthesis**. The correct answer rarely comes from simply restating a single sentence. Instead, the answer usually emerges when you combine two or more facts from the stimulus to create a new thought."
-    },
-    {
-      "type": "paragraph",
-      "text": "**MSS vs. Must Be True**"
-    },
-    {
-      "type": "paragraph",
-      "text": "These two question types are \"cousins,\" but they have a slightly different standard of proof:"
-    },
-    {
-      "type": "paragraph",
-      "text": "**Must Be True:** Requires 100% logical certainty. The answer must be mathematically proven by the text."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Most Strongly Supported:** Requires a high degree of probability (99%). The correct answer is the one that requires the smallest, most reasonable logical step. While it is often mathematically provable, the standard is slightly more flexible, allowing for highly probable conclusions based on the weight of the evidence."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Common Question Stems**"
-    },
-    {
-      "type": "paragraph",
-      "text": "You can recognize these questions because they ask what is \"supported\" by the stimulus or what can be \"inferred.\""
-    },
-    {
-      "type": "list",
-      "items": [
-        "\"Which one of the following is **most strongly supported** by the information above?\"",
-        "\"The statements above, if true, **provide the most support** for which one of the following?\"",
-        "\"Which one of the following can be properly **inferred** from the passage?\""
-      ]
-    },
-    {
-      "type": "paragraph",
-      "text": "**Core Concepts**"
-    },
-    {
-      "type": "paragraph",
-      "text": "**1. The Chain Reaction (Fact A + Fact B = Conclusion)**"
-    },
-    {
-      "type": "paragraph",
-      "text": "Most valid inferences come from linking two separate premises."
-    },
-    {
-      "type": "list",
-      "items": [
-        "*Fact A:* All squares are rectangles.",
-        "*Fact B:* Shape X is a square.",
-        "*Inference:* Shape X is a rectangle."
-      ]
-    },
-    {
-      "type": "paragraph",
-      "text": "If you read the stimulus and think, \"So what?\" try to find two sentences that share a common term or concept. Linking them usually reveals the answer."
-    },
-    {
-      "type": "paragraph",
-      "text": "**2. The Standard of Probability**"
-    },
-    {
-      "type": "paragraph",
-      "text": "Pay close attention to the strength of the language (quantifiers and probability indicators)."
-    },
-    {
-      "type": "list",
-      "items": [
-        "If the stimulus says something happens in **\"a few\"** cases, the answer cannot claim it happens in **\"most\"** cases.",
-        "If the stimulus says something is **\"unlikely,\"** the answer cannot claim it is **\"impossible.\"**",
-        "*Strategy:* The correct answer usually matches the \"volume\" of the stimulus. Weak evidence supports weak conclusions; strong evidence supports strong conclusions."
-      ]
-    },
-    {
-      "type": "paragraph",
-      "text": "**3. Causal Connections**"
-    },
-    {
-      "type": "paragraph",
-      "text": "Many MSS questions present a cause-and-effect relationship. If the stimulus explains *why* something happens, the correct answer often applies that causal principle to a specific situation or predicts a result based on that cause."
-    }
   ],
 };

@@ -50,7 +50,7 @@ export const QuestionPassageCard: React.FC<QuestionPassageCardProps> = ({ id, qu
   const paragraphs = passage.split('\n\n').filter(Boolean);
 
   return (
-    <div className="my-8 rounded-2xl border-[1.5px] border-slate-300 shadow-lg overflow-hidden bg-white">
+    <div className="my-8 rounded-2xl border border-slate-200 shadow-lg overflow-hidden bg-white">
       {/* Header */}
       <div className={`${isIllustrative ? 'bg-gradient-to-r from-teal-700 to-teal-800' : 'bg-gradient-to-r from-violet-600 to-purple-700'} px-6 py-4 flex items-center justify-between`}>
         <div className="flex items-center gap-3">
@@ -100,7 +100,7 @@ export const QuestionPassageCard: React.FC<QuestionPassageCardProps> = ({ id, qu
                 <ChevronUp size={12} /> Hide
               </button>
             </div>
-            <div className="p-5">
+            <div className="p-5 max-h-[400px] lg:max-h-[500px] overflow-y-auto scrollbar-hide">
               <div className="space-y-3">
                 {paragraphs.map((p, i) => (
                   <p key={i} className="text-slate-700 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: parseInline(p) }} />

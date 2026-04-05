@@ -4,10 +4,10 @@ import { Lesson2_StepByStepApproach } from './module35/Lesson2_StepByStepApproac
 
 export const Module35: ModuleData = {
   id: 35,
-  title: "Phrase Function",
+  title: "RC: Relationship",
   category: "RC",
-  unit: "Unit 9: Analyzing the Components",
-  description: "Determine the rhetorical purpose of a specific word, phrase, or example within the author's argument.",
+  unit: "Unit 10: Identifying the Perspectives",
+  description: "Define the logical connection between two passages, paragraphs, or specific claims.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepApproach

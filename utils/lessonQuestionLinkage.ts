@@ -7,7 +7,7 @@ import type {
   LessonQuestionPolicy,
   ModuleData,
 } from '../types';
-import { buildCanonicalDrillReference, getRouteModuleIdForContentModuleId, isLrRouteModuleId } from './courseCatalog';
+import { buildCanonicalDrillReference, getRouteModuleIdForContentModuleId } from './courseCatalog';
 
 const PT_ID_REGEX = /PT-\d+-S-\d+-Q-\d+/g;
 
@@ -60,7 +60,8 @@ export interface LessonLinkageStatusDetails extends LessonLinkageMeta {
 }
 
 function resolveQuestionPolicy(routeModuleId: number, lesson: Lesson): LessonQuestionPolicy | undefined {
-  if (!isLrRouteModuleId(routeModuleId)) return undefined;
+  const isLrRouteModule = routeModuleId >= 1 && routeModuleId <= 22;
+  if (!isLrRouteModule) return undefined;
   return lesson.questionPolicy ?? 'none';
 }
 
@@ -131,7 +132,7 @@ export function buildDrillCrossReferences(modules: ModuleData[]): Record<string,
 
   for (const moduleData of modules) {
     const routeModuleId = getRouteModuleId(moduleData.id);
-    if (!isLrRouteModuleId(routeModuleId)) continue;
+    if (routeModuleId < 1 || routeModuleId > 22) continue;
 
     const linkageByLessonId = buildLessonLinkageByLessonId(routeModuleId, moduleData.lessons);
     for (const [lessonIndex, lesson] of moduleData.lessons.entries()) {

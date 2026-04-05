@@ -47,7 +47,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({ id, questionType, st
   const diff = difficulty ? difficultyConfig[difficulty] : null;
 
   return (
-    <div className="my-8 rounded-2xl border-[1.5px] border-slate-300 shadow-lg overflow-hidden bg-white">
+    <div className="my-8 rounded-2xl border border-slate-200 shadow-lg overflow-hidden bg-white">
       {/* Header */}
       <div className={`${isIllustrative ? 'bg-gradient-to-r from-slate-700 to-slate-800' : 'bg-gradient-to-r from-indigo-600 to-indigo-700'} px-6 py-4 flex items-center justify-between`}>
         <div className="flex items-center gap-3">

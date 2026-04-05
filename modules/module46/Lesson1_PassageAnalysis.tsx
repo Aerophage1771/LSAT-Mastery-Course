@@ -1,94 +1,39 @@
 import { Lesson } from '../../types';
 
-const passageText = `“Cosmic justice,” as Sowell uses the term, refers to the perfect justice that only an omniscient being could render—rewards and punishments that are truly deserved when all relevant things are properly taken into consideration. Inherent human limitations, however, make it impossible to achieve this type of justice through human law, even though many times it seems that people are arguing for such justice and promote policies they think will render it through our human laws. But our human legal systems should not try to dispense cosmic justice since we do not know all the critical relevant facts or understand all the complex causal interrelationships involved or even know definitively what cosmic justice really is.
-Whether somebody truly deserves something is a very difficult thing for us to determine. For one thing, we are not knowledgeable enough about the person and situation, or smart enough, even if we knew what all the critical factors were, to perform the complicated calculus necessary to understand how the complex interrelationships among the various variables should affect our ultimate conclusions. Deservedness necessarily focuses on a consideration of inputs. An omniscient being is capable of perfectly considering all these things, but we are not. With all the limitations that we face as mere humans, the best we can reasonably do is judge primarily based upon outputs, or consequences, rather than inputs.
+const passageText = `There are two principles that are fundamental to a theory of justice regarding property. The principle of justice in acquisition specifies the conditions under which someone can legitimately come to own something that was previously not owned by anyone. The principle of justice in transfer specifies the conditions under which the transfer of property from one person to another is justified.
+Given such principles, if the world were wholly just, the following definition would exhaustively cover the subject of justice regarding property:
+1. A person who acquires property in accordance with the principle of justice in acquisition is entitled to that property.
+2. A person who acquires property in accordance with the principle of justice in transfer, from someone else who is entitled to the property, is entitled to the property.
+3. No one is entitled to any property except by (repeated) applications of 1 and 2.
+However, not all actual situations are generated in accordance with the principles of justice in acquisition and justice in transfer. Some people steal from others or defraud them, for example. The existence of past injustice raises the issue of the rectification of injustice. If past injustice has shaped present ownership in various ways, what, if anything, ought to be done to rectify that injustice? A principle of rectification would use historical information about previous situations and injustices done in them, and information about the actual course of events that flowed from these injustices, to produce a description of the property ownership that should have resulted. Actual ownership of property must then be brought into conformity with this description.
 
 Passage B
-Cosmic justice is not simply a higher degree of traditional justice; it is a fundamentally different concept. Traditionally, justice or injustice is characteristic of a process. A defendant in a criminal case would be said to have received justice if the trial were conducted as it should be, under fair rules and with an impartial judge and jury. After such a trial, it could be said that “justice was done”—regardless of the outcome. Conversely, if the trial were conducted in violation of the rules and with a judge or jury showing prejudice against the defendant, this would be considered an unfair or unjust trial—even if the prosecutor failed to convince the jury to convict an innocent person. In short, traditional justice is about impartial processes rather than either results or prospects.
-On the other hand, cosmic justice foolishly seeks to correct, not only biased or discriminatory acts by individuals or social institutions, but unmerited disadvantages in general, from whatever source they may arise. In criminal trials, for example, before a murderer is sentenced, the law permits his traumatic childhood to be taken into account. Seldom is there any claim that the person murdered had anything to do with that traumatic childhood. It is only from a cosmic perspective that it could have any bearing on the crime. If punishment is meant to deter crime, then mitigating that punishment in pursuit of cosmic justice presumably reduces that deterrence and allows more crime to take place at the expense of innocent people.`;
+
+In 1790, the United States Congress passed the Indian Nonintercourse Act, which requires that all transfers of lands from Native Americans to others be approved by the federal government. The law has not been changed in any relevant respect, and it remains in effect today. Its purpose is clear. It was meant to guarantee security to Native Americans against fraudulent acquisition by others of the Native Americans’ land holdings. Several suits have been initiated by Native American tribes for recovery of lands held by them when the Nonintercourse Act took effect.
+One natural (one might almost say obvious) way of reasoning about Native American claims to land in North America is this: Native Americans were the first human occupants of this land. Before the European invasion of North America, the land belonged to them. In the course of that invasion and its aftermath, the land was illicitly taken from them. The current owners lack a well-founded right to the land, which now lies illicitly in their hands. Ideally, the land should be restored to its rightful owners. This may be impractical; compromises might have to be made. But the original wrong can most easily be righted by returning the land to them—or by returning it wherever that is feasible.`;
 
 export const Lesson1_PassageAnalysis: Lesson = {
   id: "46-1",
   title: "Passage Analysis",
   content: [
-    { type: 'passage-card', title: 'Cosmic Justice', passage: passageText, paragraphCount: 2, wordCount: 477 },    { type: 'h3', text: "Passage Analysis" },
-    { type: 'h4', text: "Passage A: The Argument from Human Limitation" },
-    { type: 'paragraph', text: "Passage A defines 'cosmic justice' as a perfect justice achievable only by an omniscient being, one who could weigh all relevant factors to determine what is truly deserved. The author's central argument is that humans are incapable of dispensing this kind of justice due to 'inherent human limitations.' The passage identifies three specific limitations: we lack complete knowledge of all relevant facts, we cannot comprehend the complex causal relationships, and we do not even have a definitive understanding of what cosmic justice is." },
-    { type: 'paragraph', text: "The second paragraph elaborates on this theme by focusing on the concept of 'deservedness.' Calculating what a person truly deserves would require a 'complicated calculus' involving countless 'inputs' (a person's history, intentions, disadvantages, etc.), which is beyond human intellectual capacity. The author concludes that since we are not omniscient, the best a human legal system can do is to shift its focus from these unknowable 'inputs' to judging based on observable 'outputs,' or the consequences of actions." },
-    
-    { type: 'h4', text: "Passage B: The Argument from Flawed Concepts and Bad Consequences" },
-    { type: 'paragraph', text: "Passage B argues against cosmic justice by first defining its opposite, 'traditional justice.' Traditional justice is presented as a concept focused on **process**: if fair and impartial rules are followed during a trial, justice is considered done, regardless of the outcome." },
-    { type: 'paragraph', text: "The author then contrasts this with cosmic justice, which is framed as a 'foolishly' different concept. Cosmic justice aims to correct not just specific injustices but all 'unmerited disadvantages,' whatever their source. The passage uses the example of considering a murderer's traumatic childhood during sentencing. From the perspective of traditional justice, this is irrelevant to the crime itself. The author argues that attempting to apply this cosmic perspective has negative real-world **consequences**: mitigating punishment reduces the law's deterrent effect, leading to more crime and harming innocent people." },
-
-    { type: 'h4', text: "The Head-to-Head: Inability vs. Illegitimacy" },
-    { type: 'paragraph', text: "Both passages conclude that human legal systems should not attempt to implement cosmic justice, but they arrive at this conclusion for different reasons." },
+    { type: 'accordion', title: 'Read Passage', content: passageText },
+    { type: 'h3', text: "Passage Analysis" },
+    { type: 'h4', text: "Passage A: The Philosophical Framework" },
+    { type: 'paragraph', text: "This passage outlines a three-part philosophical theory of justice regarding property ownership. It is abstract, logical, and structured like a formal proof." },
+    { type: 'paragraph', text: "First, the author establishes two fundamental principles that would govern a perfectly just world:\n1.  **The Principle of Justice in Acquisition:** This principle defines how an individual can legitimately come to own something that was previously unowned. It's the rule for original ownership.\n2.  **The Principle of Justice in Transfer:** This principle defines the conditions under which property can be justly transferred from one owner to another (e.g., through sale, gift, or inheritance)." },
+    { type: 'paragraph', text: "The author then introduces a critical complication: the real world is not perfectly just. Injustices like theft and fraud break the chain of legitimate ownership. This necessitates a third principle to address these historical wrongs:\n3.  **The Principle of Rectification:** This principle is designed to correct for past injustices. It involves a two-step process: first, determining through historical analysis what the distribution of property *should* have been if the injustice had not occurred; and second, taking action to bring the current, actual ownership into alignment with that ideal, rectified state." },
+    { type: 'h4', text: "Passage B: A Real-World Application" },
+    { type: 'paragraph', text: "This passage moves from abstract theory to a concrete historical case: the land claims of Native Americans in the United States." },
+    { type: 'paragraph', text: "It begins by citing a specific law, the Indian Nonintercourse Act of 1790, which was designed to prevent fraudulent land transfers from Native Americans, thereby acknowledging the potential for injustice." },
+    { type: 'paragraph', text: "The author then presents what is described as a \"natural\" and \"obvious\" line of reasoning regarding these claims:\n1.  Native Americans were the original occupants and thus the rightful owners of the land.\n2.  This land was \"illicitly taken from them\" during and after the European invasion.\n3.  Consequently, the current owners lack a legitimate right to the land.\n4.  The ideal moral remedy is to restore the land to its rightful owners wherever this is feasible, acknowledging that compromises may be necessary due to practical difficulties." },
+    { type: 'h4', text: "The Head-to-Head: Theory Meets Practice" },
+    { type: 'paragraph', text: "The relationship between the two passages is that of a general theory and a specific application. Passage A provides the abstract philosophical framework, while Passage B presents a real-world scenario that serves as a perfect case study for that framework." },
     { type: 'list', items: [
-      "**Passage A's argument is about inability.** It posits that cosmic justice is a theoretically sound concept for a divine being, but one that is practically impossible for humans due to our cognitive and informational limitations. It is an epistemological critique, focused on what we are capable of knowing.",
-      "**Passage B's argument is about illegitimacy and negative consequences.** It argues that cosmic justice is a conceptually flawed and 'foolish' goal that is fundamentally incompatible with the principles of traditional, process-based justice. Furthermore, attempting to implement it is actively harmful to society."
+      "Passage B's argument that Native Americans were the original owners aligns with Passage A's **Principle of Justice in Acquisition**.",
+      "The claim that the land was \"illicitly taken\" is a clear example of a violation of the **Principle of Justice in Transfer**.",
+      "The call to restore the land to its rightful owners is a direct application of what Passage A calls the **Principle of Rectification**."
     ]},
-    { type: 'callout', title: "Comparative Workflow Anchor", variant: "summary", text: "Use the sequential comparative method here: read Passage A on its own terms, read Passage B while tracking the differences, then state the relationship before touching the answer choices. The relationship is **not** simple disagreement about the conclusion. Both passages reject cosmic justice, but Passage A does so from **human inability**, while Passage B does so from **conceptual illegitimacy and harmful consequences**." },
-    
-    { type: 'callout', title: "Summary", variant: "summary", text: "• **Passage A's Position:** The author argues against pursuing cosmic justice from a standpoint of **human limitation**. Because cosmic justice requires a complete understanding of all 'inputs' and 'deservedness'—a feat only an omniscient being could achieve—it is impossible for humans. Our legal systems should therefore focus on a more practical justice based on observable 'outputs' or consequences.\n• **Passage B's Position:** The author argues against cosmic justice by contrasting it with **traditional, process-based justice**. The author claims that cosmic justice is a 'foolish' and conceptually flawed endeavor that tries to correct all of life's unfairness. Attempting to do so, for example by mitigating punishment for criminals, has dangerous real-world **consequences**, such as reducing deterrence and leading to more crime.\n• **The Core Difference:** While both passages reject the application of cosmic justice in law, Passage A's critique is based on our **inability** to achieve it, whereas Passage B's critique is based on the concept being **fundamentally flawed** and **harmful** to the proper functioning of a legal system." }
-  ],
-  alternates: {
-    diff: {
-      label: 'Diff-Highlighted',
-      content: [
-        {
-          "type": "accordion",
-          "title": "Read Passage",
-          "content": "“Cosmic justice,” as Sowell uses the term, refers to the perfect justice that only an omniscient being could render—rewards and punishments that are truly deserved when all relevant things are properly taken into consideration. Inherent human limitations, however, make it impossible to achieve this type of justice through human law, even though many times it seems that people are arguing for such justice and promote policies they think will render it through our human laws. But our human legal systems should not try to dispense cosmic justice since we do not know all the critical relevant facts or understand all the complex causal interrelationships involved or even know definitively what cosmic justice really is.\nWhether somebody truly deserves something is a very difficult thing for us to determine. For one thing, we are not knowledgeable enough about the person and situation, or smart enough, even if we knew what all the critical factors were, to perform the complicated calculus necessary to understand how the complex interrelationships among the various variables should affect our ultimate conclusions. Deservedness necessarily focuses on a consideration of inputs. An omniscient being is capable of perfectly considering all these things, but we are not. With all the limitations that we face as mere humans, the best we can reasonably do is judge primarily based upon outputs, or consequences, rather than inputs.\n\nPassage B\nCosmic justice is not simply a higher degree of traditional justice; it is a fundamentally different concept. Traditionally, justice or injustice is characteristic of a process. A defendant in a criminal case would be said to have received justice if the trial were conducted as it should be, under fair rules and with an impartial judge and jury. After such a trial, it could be said that “justice was done”—regardless of the outcome. Conversely, if the trial were conducted in violation of the rules and with a judge or jury showing prejudice against the defendant, this would be considered an unfair or unjust trial—even if the prosecutor failed to convince the jury to convict an innocent person. In short, traditional justice is about impartial processes rather than either results or prospects.\nOn the other hand, cosmic justice foolishly seeks to correct, not only biased or discriminatory acts by individuals or social institutions, but unmerited disadvantages in general, from whatever source they may arise. In criminal trials, for example, before a murderer is sentenced, the law permits his traumatic childhood to be taken into account. Seldom is there any claim that the person murdered had anything to do with that traumatic childhood. It is only from a cosmic perspective that it could have any bearing on the crime. If punishment is meant to deter crime, then mitigating that punishment in pursuit of cosmic justice presumably reduces that deterrence and allows more crime to take place at the expense of innocent people."
-        },
-        {
-          "type": "h3",
-          "text": "Passage Analysis"
-        },
-        {
-          "type": "h4",
-          "text": "Passage A: The Argument from Human Limitation"
-        },
-        {
-          "type": "paragraph",
-          "text": "Passage A defines 'cosmic justice' as a perfect justice achievable only by an omniscient being, one who could weigh all relevant factors to determine what is truly deserved. The author's central argument is that humans are incapable of dispensing this kind of justice due to 'inherent human limitations.' The passage identifies three specific limitations: we lack complete knowledge of all relevant facts, we cannot comprehend the complex causal relationships, and we do not even have a definitive understanding of what cosmic justice is."
-        },
-        {
-          "type": "paragraph",
-          "text": "The second paragraph elaborates on this theme by focusing on the concept of 'deservedness.' Calculating what a person truly deserves would require a 'complicated calculus' involving countless 'inputs' (a person's history, intentions, disadvantages, etc.), which is beyond human intellectual capacity. The author concludes that since we are not omniscient, the best a human legal system can do is to shift its focus from these unknowable 'inputs' to judging based on observable 'outputs,' or the consequences of actions."
-        },
-        {
-          "type": "h4",
-          "text": "Passage B: The Argument from Flawed Concepts and Bad Consequences"
-        },
-        {
-          "type": "paragraph",
-          "text": "Passage B argues against cosmic justice by first defining its opposite, 'traditional justice.' Traditional justice is presented as a concept focused on **process**: if fair and impartial rules are followed during a trial, justice is considered done, regardless of the outcome."
-        },
-        {
-          "type": "paragraph",
-          "text": "The author then contrasts this with cosmic justice, which is framed as a 'foolishly' different concept. Cosmic justice aims to correct not just specific injustices but all 'unmerited disadvantages,' whatever their source. The passage uses the example of considering a murderer's traumatic childhood during sentencing. From the perspective of traditional justice, this is irrelevant to the crime itself. The author argues that attempting to apply this cosmic perspective has negative real-world **consequences**: mitigating punishment reduces the law's deterrent effect, leading to more crime and harming innocent people."
-        },
-        {
-          "type": "h4",
-          "text": "The Head-to-Head: Inability vs. Illegitimacy"
-        },
-        {
-          "type": "paragraph",
-          "text": "Both passages conclude that human legal systems should not attempt to implement cosmic justice, but they arrive at this conclusion for different reasons."
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Passage A's argument is about inability.** It posits that cosmic justice is a theoretically sound concept for a divine being, but one that is practically impossible for humans due to our cognitive and informational limitations. It is an epistemological critique, focused on what we are capable of knowing.",
-            "**Passage B's argument is about illegitimacy and negative consequences.** It argues that cosmic justice is a conceptually flawed and 'foolish' goal that is fundamentally incompatible with the principles of traditional, process-based justice. Furthermore, attempting to implement it is actively harmful to society."
-          ]
-        },
-        {
-          "type": "callout",
-          "title": "Summary",
-          "variant": "summary",
-          "text": "• **Passage A's Position:** The author argues against pursuing cosmic justice from a standpoint of **human limitation**. Because cosmic justice requires a complete understanding of all 'inputs' and 'deservedness'—a feat only an omniscient being could achieve—it is impossible for humans. Our legal systems should therefore focus on a more practical justice based on observable 'outputs' or consequences.\n• **Passage B's Position:** The author argues against cosmic justice by contrasting it with **traditional, process-based justice**. The author claims that cosmic justice is a 'foolish' and conceptually flawed endeavor that tries to correct all of life's unfairness. Attempting to do so, for example by mitigating punishment for criminals, has dangerous real-world **consequences**, such as reducing deterrence and leading to more crime.\n• **The Core Difference:** While both passages reject the application of cosmic justice in law, Passage A's critique is based on our **inability** to achieve it, whereas Passage B's critique is based on the concept being **fundamentally flawed** and **harmful** to the proper functioning of a legal system."
-        }
-      ],
-    },
-  },
+    { type: 'paragraph', text: "In essence, Passage A provides the blueprint for fixing historical injustices related to property, and Passage B identifies a specific, large-scale historical injustice that demands such rectification." },
+    { type: 'callout', title: "Summary", variant: "summary", text: "• **Passage A (The Theory):** Outlines a three-part philosophical theory for just property ownership: (1) just acquisition, (2) just transfer, and (3) a principle of **rectification** to correct for historical injustices.\n• **Passage B (The Case Study):** Presents the historical case of Native American land claims, arguing that since their land was acquired justly and then transferred unjustly, the proper remedy is restoration.\n• **The Connection:** Passage B serves as a concrete example of the abstract problem that Passage A's \"Principle of Rectification\" is designed to solve." }
+  ]
 };

@@ -1,33 +1,27 @@
 import { ModuleData } from '../types';
 import { Lesson1_Introduction } from './module15/Lesson1_Introduction';
 import { Lesson2_StepByStepGuide } from './module15/Lesson2_StepByStepGuide';
-import { Lesson3_FieldGuide } from './module15/Lesson3_FieldGuide';
-import { Lesson4 } from './module15/Lesson4';
-import { Lesson5 } from './module15/Lesson5';
-import { Lesson6 } from './module15/Lesson6';
-import { Lesson7 } from './module15/Lesson7';
-import { Lesson_AdvancedConcepts } from './module15/Lesson_AdvancedConcepts';
-import { Lesson_Advanced1 } from './module15/Lesson_Advanced1';
-import { Lesson_Advanced2 } from './module15/Lesson_Advanced2';
-import { Lesson_Advanced3 } from './module15/Lesson_Advanced3';
+import { Lesson3_Drill_MechanisticChain } from './module15/Lesson3_Drill_MechanisticChain';
+import { Lesson4_Drill_Analogy } from './module15/Lesson4_Drill_Analogy';
+import { Lesson5_Drill_ProblemAndSolution } from './module15/Lesson5_Drill_ProblemAndSolution';
+import { Lesson6_Drill_PhilosophicalRebuttal } from './module15/Lesson6_Drill_PhilosophicalRebuttal';
+import { Lesson7_Drill_ConditionalLogicAndParadox } from './module15/Lesson7_Drill_ConditionalLogicAndParadox';
+import { Lesson8_ReferenceGuide } from './module15/Lesson8_ReferenceGuide';
 
 export const Module15: ModuleData = {
   id: 15,
-  title: 'Fill in the Blank',
-  category: 'LR',
-  description: '',
-  unit: '',
+  title: "Fill in the Blank",
+  category: "LR",
+  unit: "Unit 5: Inference",
+  description: "Identify the missing conclusion or premise required to complete an argument's logical structure.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,
-    Lesson3_FieldGuide,
-    Lesson4,
-    Lesson5,
-    Lesson6,
-    Lesson7,
-    Lesson_AdvancedConcepts,
-    Lesson_Advanced1,
-    Lesson_Advanced2,
-    Lesson_Advanced3,
-  ],
+    Lesson3_Drill_MechanisticChain,
+    Lesson4_Drill_Analogy,
+    Lesson5_Drill_ProblemAndSolution,
+    Lesson6_Drill_PhilosophicalRebuttal,
+    Lesson7_Drill_ConditionalLogicAndParadox,
+    Lesson8_ReferenceGuide
+  ]
 };

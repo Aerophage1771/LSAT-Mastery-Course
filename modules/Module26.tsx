@@ -4,10 +4,10 @@ import { Lesson2_StepByStepApproach } from './module26/Lesson2_StepByStepApproac
 
 export const Module26: ModuleData = {
   id: 26,
-  title: "Analogy",
+  title: "RC: Author Attitude",
   category: "RC",
-  unit: "Unit 11: Extending the Reasoning",
-  description: "Identify a scenario in the answer choices that mirrors the logic or structure of a situation in the passage.",
+  unit: "Unit 10: Identifying the Perspectives",
+  description: "Identify the author's opinion, tone, or perspective regarding a specific subject.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepApproach

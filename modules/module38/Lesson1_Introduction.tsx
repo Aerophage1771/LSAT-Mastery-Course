@@ -4,159 +4,39 @@ export const Lesson1_Introduction: Lesson = {
   id: "38-1",
   title: "Introduction",
   content: [
-    { type: 'h3', text: "Germaine's Guide to RC Relationship Questions" },
+    { type: 'h3', text: "Germaine's Guide to RC Weaken-Strengthen Questions" },
     { type: 'h4', text: "What's this question asking?" },
-    { type: 'paragraph', text: "Relationship questions ask you to define the logical connection between two passages, paragraphs, or specific claims. Your goal is to move beyond the individual content of each section and articulate exactly how they interact with one another." },
-    { type: 'paragraph', text: "This often involves identifying the specific nature of the interaction, such as:" },
+    { type: 'paragraph', text: "Weaken-Strengthen questions ask you to evaluate how a new piece of information would affect an argument or hypothesis from the passage. Your goal is to assume each answer choice is true and then determine which one most logically helps (strengthens) or hurts (weakens) the specified claim." },
+    { type: 'paragraph', text: "This requires you to analyze the underlying logic of an argument. To do this effectively:" },
     { type: 'list', items: [
-      "**Points of agreement or disagreement:** Determining where two different perspectives overlap or diverge.",
-      "**General theory vs. specific example:** Recognizing when one text provides a case study that illustrates a principle discussed in another.",
-      "**Critique and counterpoint:** Identifying when one section offers a direct challenge or refinement to an argument made elsewhere.",
-      "**Expansion of scope:** Evaluating how a second passage adds new information or implications to the findings of the first."
+      "**Isolate the specific argument:** Pinpoint the exact conclusion and the evidence used to support it.",
+      "**For Weaken questions:** Look for a statement that exploits a flaw in the reasoning, introduces an alternative explanation, or presents a counterexample.",
+      "**For Strengthen questions:** Look for a statement that provides new supporting evidence, closes a logical gap, or rules out a potential alternative explanation.",
+      "**Focus on logical impact:** The correct answer will directly affect the quality of the argument, not just discuss the general topic."
     ]},
-    { type: 'paragraph', text: "In debate-heavy comparative sets, add one more layer: track which **reasons** belong to which side. The relationship between two passages is often not just that they disagree, but that one passage attacks the *reasoning* used by the other or narrows the conditions under which the other passage is persuasive." },
     { type: 'hr' },
-    { type: 'h3', text: "Stem Identification: How to Spot a Relationship Question" },
-    { type: 'paragraph', text: "Relationship questions, common in comparative passage sets, ask you to define the logical connection between two passages, paragraphs, or specific claims. The chart below breaks down the common phrasing patterns used to ask about this interaction." },
+    { type: 'h3', text: "Stem Identification: How to Spot a Weaken-Strengthen Question" },
+    { type: 'paragraph', text: "Weaken-Strengthen questions ask you to evaluate the impact of new piece of information on an argument from the passage. You must assume each answer choice is true and then determine which one most supports or undermines the argument in question. The chart below breaks down the common phrasing for these two opposite but related tasks." },
     { 
       type: 'breakdown', 
       labels: { title: 'Category', text: 'Examples & Keywords' }, 
       items: [
         { 
-          title: "Direct Inquiry", 
-          text: "**Keywords:** relationship, relates to, how... are related, is true about the relationship\n\n• \"Which one of the following most accurately characterizes a **relationship between the two passages**?\" <br>• \"**Passage B relates to passage A** in which one of the following ways?\" <br>• \"Which one of the following is **true about the relationship** between the two passages?\"", 
-          badge: "Connection", 
-          badgeColor: "indigo" 
+          title: "Weaken Questions", 
+          text: "**Keywords:** weaken, undermine, challenge, cast doubt on, call into question, counterexample\n\n• \"Which one of the following, if true, most clearly **weakens** the... hypothesis...?\"<br>• \"Which one of the following, if true, would most seriously **undermine** the validity of the results...?\"<br>• \"Which one of the following, if true, would most **cast doubt on** the author's interpretation...?\"", 
+          badge: "Attack", 
+          badgeColor: "red" 
         },
         { 
-          title: "Comparative Inquiry (Difference)", 
-          text: "**Keywords:** differs from, difference between\n\n• \"**Passage A differs from passage B** in that passage A is more...\" <br>• \"Which one of the following statements most accurately characterizes a **difference between** the two passages?\"", 
-          badge: "Contrast", 
-          badgeColor: "blue" 
-        },
-        { 
-          title: "Specific Connection", 
-          text: "**Keywords:** evidence... relates to generalization, purpose... relates to content, B... relates to A\n\n• \"**The evidence from Ban Chiang discussed in passage B relates to the generalization... in passage A** in which one of the following ways?\" <br>• \"How does the **purpose of passage B relate to the content of passage A**?\"", 
-          badge: "Specific", 
+          title: "Strengthen Questions", 
+          text: "**Keywords:** strengthen, support, lend credence to, bolster, most relevant to\n\n• \"Which one of the following, if true, would most **strengthen** the passage's position concerning...?\"<br>• \"Which one of the following, if true, lends the most **support to** the view that...?\"<br>• \"Which one of the following, if true, would **lend the most credence to** the author's statement...?\"", 
+          badge: "Support", 
           badgeColor: "green" 
         }
       ] 
     },
-    { type: 'callout', title: "Overarching Takeaway", variant: "summary", text: "Your goal is to move beyond the content of each passage and define the structure of the relationship between them. Are they in agreement or disagreement? Does one provide an example of the other's theory? The correct answer will accurately describe this logical interaction." },
-    { type: 'h3', text: "The Importance of Relationship Questions" },
-    { type: 'paragraph', text: "Relationship questions are uncommon, appearing only 18 times, but they are a staple of comparative passage sets. This question type explicitly tests your ability to synthesize and compare the core arguments, assumptions, or tones of two different texts. This skill is crucial for succeeding on the most complex passages the LSAT presents." }
-  ],
-  alternates: {
-    diff: {
-      label: 'Diff-Highlighted',
-      content: [
-        {
-          "type": "h3",
-          "text": "Germaine's Guide to RC Relationship Questions"
-        },
-        {
-          "type": "h4",
-          "text": "What's this question asking?"
-        },
-        {
-          "type": "paragraph",
-          "text": "Relationship questions ask you to define the logical connection between two passages, paragraphs, or specific claims. Your goal is to move beyond the individual content of each section and articulate exactly how they interact with one another."
-        },
-        {
-          "type": "paragraph",
-          "text": "This often involves identifying the specific nature of the interaction, such as:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Points of agreement or disagreement:** Determining where two different perspectives overlap or diverge.",
-            "**General theory vs. specific example:** Recognizing when one text provides a case study that illustrates a principle discussed in another.",
-            "**Critique and counterpoint:** Identifying when one section offers a direct challenge or refinement to an argument made elsewhere.",
-            "**Expansion of scope:** Evaluating how a second passage adds new information or implications to the findings of the first."
-          ]
-        },
-        {
-          "type": "hr"
-        },
-        {
-          "type": "h3",
-          "text": "Stem Identification: How to Spot a Relationship Question"
-        },
-        {
-          "type": "paragraph",
-          "text": "Relationship questions, common in comparative passage sets, ask you to define the logical connection between two passages, paragraphs, or specific claims. The chart below breaks down the common phrasing patterns used to ask about this interaction."
-        },
-        {
-          "type": "breakdown",
-          "labels": {
-            "title": "Category",
-            "text": "Examples & Keywords"
-          },
-          "items": [
-            {
-              "title": "Direct Inquiry",
-              "text": "**Keywords:** relationship, relates to, how... are related, is true about the relationship\n\n• \"Which one of the following most accurately characterizes a **relationship between the two passages**?\" <br>• \"**Passage B relates to passage A** in which one of the following ways?\" <br>• \"Which one of the following is **true about the relationship** between the two passages?\"",
-              "badge": "Connection",
-              "badgeColor": "indigo"
-            },
-            {
-              "title": "Comparative Inquiry (Difference)",
-              "text": "**Keywords:** differs from, difference between\n\n• \"**Passage A differs from passage B** in that passage A is more...\" <br>• \"Which one of the following statements most accurately characterizes a **difference between** the two passages?\"",
-              "badge": "Contrast",
-              "badgeColor": "blue"
-            },
-            {
-              "title": "Specific Connection",
-              "text": "**Keywords:** evidence... relates to generalization, purpose... relates to content, B... relates to A\n\n• \"**The evidence from Ban Chiang discussed in passage B relates to the generalization... in passage A** in which one of the following ways?\" <br>• \"How does the **purpose of passage B relate to the content of passage A**?\"",
-              "badge": "Specific",
-              "badgeColor": "green"
-            }
-          ]
-        },
-        {
-          "type": "callout",
-          "title": "Overarching Takeaway",
-          "variant": "summary",
-          "text": "Your goal is to move beyond the content of each passage and define the structure of the relationship between them. Are they in agreement or disagreement? Does one provide an example of the other's theory? The correct answer will accurately describe this logical interaction."
-        },
-        {
-          "type": "h3",
-          "text": "The Importance of Relationship Questions"
-        },
-        {
-          "type": "paragraph",
-          "text": "Relationship questions are uncommon, appearing only 18 times, but they are a staple of comparative passage sets. This question type explicitly tests your ability to synthesize and compare the core arguments, assumptions, or tones of two different texts. This skill is crucial for succeeding on the most complex passages the LSAT presents."
-        }
-      ],
-    },
-    glance: {
-      label: "At a Glance",
-      content: [
-        { type: 'h2', text: "Relationship Questions -- At a Glance" },
-        { type: 'paragraph', text: "Your goal is to define the logical connection between two passages, paragraphs, or claims. Relationship questions appear **18 times** in the released pool and are a staple of comparative passage sets." },
-        {
-          type: 'table',
-          headers: ['Element', 'What to Look For', 'Core Skill', 'Common Trap'],
-          rows: [
-            ['Stem language', '"Relationship between," "relates to," "differs from"', 'Spotting the comparative framing', 'Treating it as a simple Main Point question for one passage'],
-            ['Component summaries', 'One-sentence distillation of each passage or section', 'Isolating each side before comparing', 'Blending the two summaries into a single muddled view'],
-            ['Interaction type', 'Agreement, critique, expansion, example-of-theory, alternative explanation', 'Naming the abstract connection', 'Settling for "different perspectives" when the link is more specific'],
-            ['Directionality', 'Which component is general vs. specific, or which attacks the other', 'Getting the direction right', 'Reversing who critiques whom or who provides the example']
-          ]
-        },
-        { type: 'paragraph', text: "For example, if Passage A argues a law was effective and Passage B argues economic factors caused the change instead, the relationship is not merely \"different views on a law\" but \"Passage B offers an alternative explanation that challenges Passage A's causal claim.\"" },
-        {
-          type: 'list',
-          items: [
-            "Summarize each component in one sentence before comparing",
-            "Define the interaction in a single abstract sentence",
-            "Identify whether the relationship involves agreement, disagreement, expansion, or example",
-            "Check directionality: which side is general and which is specific",
-            "For debate passages, track which reasons belong to which side"
-          ]
-        },
-        { type: 'callout', variant: 'tip', title: 'Key Principle', text: "Do not start serious answer sorting until you can say in one sentence how one component relates to the other. If you cannot name the interaction yet, you are still too early in your analysis." }
-      ]
-    }
-  }
+    { type: 'callout', title: "Overarching Takeaway", variant: "summary", text: "Your goal is to function as a logical critic. First, isolate the specific argument (conclusion + evidence) targeted by the question. Then, identify what information is missing from that argument. Lastly, pick an answer that clears up that missing information in the requested manner." },
+    { type: 'h3', text: "The Importance of Weaken-Strengthen Questions" },
+    { type: 'paragraph', text: "Weaken-Strengthen questions appear 78 times in the RC section, making up nearly 4% of the total. This question type directly imports a core Logical Reasoning skill into the Reading Comprehension context. Mastering these questions will not only earn you points here but will also significantly strengthen your ability to analyze argumentative flaws and support, paying huge dividends in the LR sections." }
+  ]
 };

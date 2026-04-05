@@ -4,10 +4,10 @@ import { Lesson2_StepByStepApproach } from './module28/Lesson2_StepByStepApproac
 
 export const Module28: ModuleData = {
   id: 28,
-  title: "Approach",
+  title: "RC: Complete the Passage",
   category: "RC",
-  unit: "Unit 9: Analyzing the Components",
-  description: "Describe the author's argumentative strategy or the overall structure of the passage.",
+  unit: "Unit 11: Extending the Reasoning",
+  description: "Select the sentence that would most logically conclude the passage or a specific paragraph.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepApproach

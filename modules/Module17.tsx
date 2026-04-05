@@ -1,33 +1,33 @@
 import { ModuleData } from '../types';
 import { Lesson1_Introduction } from './module17/Lesson1_Introduction';
 import { Lesson2_StepByStepGuide } from './module17/Lesson2_StepByStepGuide';
-import { Lesson3_FieldGuide } from './module17/Lesson3_FieldGuide';
-import { Lesson4 } from './module17/Lesson4';
-import { Lesson5 } from './module17/Lesson5';
-import { Lesson6 } from './module17/Lesson6';
-import { Lesson7 } from './module17/Lesson7';
-import { Lesson_AdvancedConcepts } from './module17/Lesson_AdvancedConcepts';
-import { Lesson_Advanced1 } from './module17/Lesson_Advanced1';
-import { Lesson_Advanced2 } from './module17/Lesson_Advanced2';
-import { Lesson_Advanced3 } from './module17/Lesson_Advanced3';
+import { Lesson3_Drill_ConditionalLogic } from './module17/Lesson3_Drill_ConditionalLogic';
+import { Lesson4_Drill_Quantifiers } from './module17/Lesson4_Drill_Quantifiers';
+import { Lesson5_Drill_NumericalReasoning } from './module17/Lesson5_Drill_NumericalReasoning';
+import { Lesson6_Advanced_HighDifficultyAnalysis } from './module17/Lesson6_Advanced_HighDifficultyAnalysis';
+import { Lesson7_Drill_HighCognitiveLoad } from './module17/Lesson7_Drill_HighCognitiveLoad';
+import { Lesson8_Drill_MultiStepInference } from './module17/Lesson8_Drill_MultiStepInference';
+import { Lesson9_Drill_InferencesFromDisparity } from './module17/Lesson9_Drill_InferencesFromDisparity';
+import { Lesson10_Drill_PrecisionInCausality } from './module17/Lesson10_Drill_PrecisionInCausality';
+import { Lesson11_ReferenceGuide } from './module17/Lesson11_ReferenceGuide';
 
 export const Module17: ModuleData = {
   id: 17,
-  title: 'Must Be True',
-  category: 'LR',
-  description: '',
-  unit: '',
+  title: "Must Be True",
+  category: "LR",
+  unit: "Unit 5: Inference",
+  description: "Find the statement that the facts in the passage definitely prove.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,
-    Lesson3_FieldGuide,
-    Lesson4,
-    Lesson5,
-    Lesson6,
-    Lesson7,
-    Lesson_AdvancedConcepts,
-    Lesson_Advanced1,
-    Lesson_Advanced2,
-    Lesson_Advanced3,
-  ],
+    Lesson3_Drill_ConditionalLogic,
+    Lesson4_Drill_Quantifiers,
+    Lesson5_Drill_NumericalReasoning,
+    Lesson6_Advanced_HighDifficultyAnalysis,
+    Lesson7_Drill_HighCognitiveLoad,
+    Lesson8_Drill_MultiStepInference,
+    Lesson9_Drill_InferencesFromDisparity,
+    Lesson10_Drill_PrecisionInCausality,
+    Lesson11_ReferenceGuide
+  ]
 };

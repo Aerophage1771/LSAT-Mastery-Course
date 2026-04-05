@@ -3,150 +3,336 @@ import { Lesson } from '../../types';
 export const Lesson2_StepByStepGuide: Lesson = {
   id: '6-2',
   title: 'Step-by-Step Guide: Parallel Flaw',
+  questionPolicy: 'none',
   content: [
+    { type: 'h2', text: 'The 3-Step Method for Parallel Flaw Questions' },
     {
-      "type": "h2",
-      "text": "Step-by-Step Guide: Parallel Flaw  Parallel Flaw questions are a mix of two question types: Flaw and Parallel Reasoning. To solve them, you must first find the specific logical mistake in the argument and then find an answer choice that makes that exact same mistake. This guide will show you how to map out the error so you don't get confused by the answer choices."
+      type: 'paragraph',
+      text: 'Parallel Flaw questions ask you to do three things at once: diagnose a logical error, abstract that error into a structural blueprint, and find a matching error in a completely different context. This lesson gives you a repeatable, systematic method for handling all three tasks efficiently.',
+    },
+
+    {
+      type: 'callout',
+      variant: 'tip',
+      title: 'Timing',
+      text: 'Parallel Flaw questions are among the **most time-consuming** on the LR section. You are reading the equivalent of **six full arguments** (one stimulus + five answer choices). Budget **2:00–2:30 per question.** The 3-step method helps you spend that time wisely: roughly 40 seconds diagnosing the flaw, 10 seconds building your blueprint, and 60–90 seconds scanning and confirming the match.',
+    },
+
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Overview' },
+    {
+      type: 'process',
+      title: 'The 3-Step Method',
+      steps: [
+        '**Step 1 — Identify the Flaw:** Read the stimulus. Find the conclusion and premises. Diagnose the specific logical error. Name it.',
+        '**Step 2 — Abstract the Pattern:** Strip away the topic and translate the flawed reasoning into an abstract blueprint (e.g., "If A → B. Not A. Therefore Not B.").',
+        '**Step 3 — Match the Error:** Scan the answer choices using your blueprint as a filter. Eliminate valid arguments and arguments with different flaws. Confirm the final match.',
+      ],
+    },
+
+    { type: 'hr' },
+
+    { type: 'h2', text: 'Step 1: Identify the Flaw' },
+    {
+      type: 'paragraph',
+      text: 'Before you look at a single answer choice, you must understand exactly *how* the stimulus argument fails. This is the most critical step. A vague diagnosis — "the logic seems off" — will leave you vulnerable to every trap answer. A precise diagnosis — "this is a Mistaken Negation" — turns the rest of the question into a pattern-matching exercise.',
+    },
+
+    { type: 'h4', text: 'A. Find the Conclusion and Premises' },
+    {
+      type: 'paragraph',
+      text: 'Start by identifying the structural components of the argument, just as you would for any Flaw question:',
     },
     {
-      "type": "paragraph",
-      "text": "**Step 1: Create the Reasoning Map (Flaw-Focused)**"
+      type: 'list',
+      items: [
+        '**Find the Conclusion:** What is the author trying to prove? Use conclusion indicator words (*therefore*, *thus*, *so*, *hence*, *it follows that*) or the Why Test from Module 2.',
+        '**Find the Premises:** What evidence does the author provide? Identify every stated reason that supports the conclusion.',
+        '**Determine the Method:** What is the author *attempting* to do? Are they applying a conditional rule? Drawing a causal inference? Generalizing from a sample?',
+      ],
+    },
+
+    { type: 'h4', text: 'B. Diagnose the Specific Error' },
+    {
+      type: 'paragraph',
+      text: 'Now find the gap. Provisionally accept the premises as true and ask: **"Even if all of this evidence is true, does the conclusion follow?"** If not, identify *why* not. Use the flaw categories from Module 5 to put a precise name on the error.',
     },
     {
-      "type": "paragraph",
-      "text": "Your primary task is to deconstruct the stimulus argument and identify its **flawed logical structure**. This is the most critical step. Do not proceed to the answer choices until you have a clear map of the error."
+      type: 'paragraph',
+      text: 'The most reliable technique is to ask: **"What unwarranted assumption is the author making?"** The flaw is the reason that assumption is unwarranted.',
+    },
+
+    {
+      type: 'breakdown',
+      labels: { title: 'If the Stimulus Does This...', text: 'The Flaw Is Likely...' },
+      items: [
+        {
+          title: 'States "If A → B" and then observes B to conclude A',
+          text: '**Mistaken Reversal** (affirming the consequent). The argument confuses a necessary condition for a sufficient one.',
+          badge: 'Conditional',
+          badgeColor: 'indigo',
+        },
+        {
+          title: 'States "If A → B" and then observes Not A to conclude Not B',
+          text: '**Mistaken Negation** (denying the antecedent). The argument assumes the stated trigger is the only way to produce the result.',
+          badge: 'Conditional',
+          badgeColor: 'indigo',
+        },
+        {
+          title: 'Observes that X and Y co-occur and concludes X causes Y',
+          text: '**Causal Confusion** (correlation → causation). The argument ignores reverse causation, third-factor explanations, and coincidence.',
+          badge: 'Causal',
+          badgeColor: 'blue',
+        },
+        {
+          title:
+            'Reports a statistic for one group and concludes that group is better/worse — without a comparison group',
+          text: '**Missing Comparison / Compared-to-What**. The argument draws a comparative conclusion from non-comparative data.',
+          badge: 'Statistical',
+          badgeColor: 'blue',
+        },
+        {
+          title: 'Argues that because each part has property P, the whole must have P',
+          text: '**Composition Flaw** (Part → Whole). The argument ignores emergent properties.',
+          badge: 'Part/Whole',
+          badgeColor: 'slate',
+        },
+        {
+          title: 'Argues that because the whole has property P, each part must have P',
+          text: '**Division Flaw** (Whole → Part). The argument ignores that groups may have properties individuals lack.',
+          badge: 'Part/Whole',
+          badgeColor: 'slate',
+        },
+        {
+          title: 'Uses "some" or "most" in the premise but "all" or "none" in the conclusion',
+          text: '**Scope Shift / Hasty Generalization**. The conclusion exceeds what the evidence supports.',
+          badge: 'Scope',
+          badgeColor: 'red',
+        },
+        {
+          title: 'Attacks the person making the argument rather than addressing the argument itself',
+          text: "**Ad Hominem / Source Attack**. The argument is irrelevant to the claim's truth.",
+          badge: 'Relevance',
+          badgeColor: 'red',
+        },
+      ],
+    },
+
+    { type: 'hr' },
+
+    { type: 'h2', text: 'Step 2: Abstract the Pattern' },
+    {
+      type: 'paragraph',
+      text: 'Once you have named the flaw, strip away the topic and write a concise **Reasoning Blueprint** — an abstract description of the flawed logical move. This blueprint is your matching tool.',
     },
     {
-      "type": "paragraph",
-      "text": "**A. Identify the Components** Before looking for the mistake, you must understand how the argument is built. *"
+      type: 'paragraph',
+      text: 'Think of the blueprint as a template with blanks: the specific nouns and topics are removed, but the logical connectors, quantifiers, and the nature of the error remain.',
+    },
+
+    { type: 'h4', text: 'Blueprint Examples' },
+    {
+      type: 'table',
+      headers: ['Flaw Type', 'Abstract Blueprint'],
+      rows: [
+        ['**Mistaken Reversal**', 'If A → B. B is true. Therefore A is true.'],
+        ['**Mistaken Negation**', 'If A → B. A is false. Therefore B is false.'],
+        [
+          '**Composition**',
+          'Each part has property P. The whole is made of those parts. Therefore the whole has property P.',
+        ],
+        ['**Division**', 'The whole has property P. X is part of the whole. Therefore X has property P.'],
+        ['**Causal Confusion**', 'X and Y co-occur. Therefore X causes Y. (Ignores alternative explanations.)'],
+        [
+          '**Missing Comparison**',
+          'Group A has a high rate of outcome Y. Therefore being in Group A causes Y. (No baseline for non-A group.)',
+        ],
+        ['**Scope Shift**', 'Some/most X are Y. Therefore all X are Y.'],
+      ],
+    },
+
+    {
+      type: 'callout',
+      variant: 'tip',
+      title: 'The Flaw-First Strategy',
+      text: '**Why naming the flaw before scanning choices saves time:**\n\nWithout a blueprint, you must independently analyze all five answer choices — effectively solving five mini-Flaw questions. With a blueprint, you can rapidly scan for the one argument that matches your template and eliminate the rest.\n\nThis is the difference between:\n• **Without blueprint:** ~30 seconds per answer choice × 5 = 2.5 minutes on choices alone.\n• **With blueprint:** ~15 seconds per answer choice × 5 = 1.25 minutes on choices.\n\nThe 40 seconds you invest in diagnosis saves you 75+ seconds on the back end.',
+    },
+
+    { type: 'hr' },
+
+    { type: 'h2', text: 'Step 3: Match the Error' },
+    {
+      type: 'paragraph',
+      text: "With your blueprint in hand, scan the answer choices systematically. You are looking for the one argument that replicates the **exact logical mechanism** of the stimulus's failure.",
+    },
+
+    { type: 'h4', text: 'The Flaw Matching Checklist' },
+    { type: 'paragraph', text: 'For each answer choice, run through this checklist:' },
+    {
+      type: 'table',
+      headers: ['Check', 'Question to Ask', 'If "No" →'],
+      rows: [
+        [
+          '**1. Is it flawed?**',
+          'Does this argument contain a logical error?',
+          'Eliminate — valid arguments can never be the correct answer.',
+        ],
+        [
+          '**2. Same flaw type?**',
+          'Does this argument commit the *same category* of error as the stimulus?',
+          'Eliminate — a Mistaken Reversal cannot match a Causal Confusion.',
+        ],
+        [
+          '**3. Same direction?**',
+          'Does the flaw move in the same logical direction (e.g., Part → Whole, not Whole → Part)?',
+          'Eliminate — Composition ≠ Division, even though both involve parts and wholes.',
+        ],
+        [
+          '**4. Same conclusion force?**',
+          'Does the conclusion match the stimulus in certainty (must/probably) and polarity (positive/negative)?',
+          'Weak match — use as a tiebreaker if two choices survive.',
+        ],
+      ],
+    },
+
+    { type: 'h4', text: 'First Pass: Quick Elimination' },
+    { type: 'paragraph', text: 'Start by eliminating the easiest mismatches:' },
+    {
+      type: 'list',
+      ordered: true,
+      items: [
+        "**Eliminate valid arguments.** If an answer choice's conclusion follows logically from its premises, it cannot be correct. This single check often removes 1–2 choices instantly.",
+        '**Eliminate wrong flaw categories.** If the stimulus commits a conditional logic error, eliminate any choice committing a causal or statistical error.',
+        '**Eliminate wrong directions.** If the stimulus goes Part → Whole (Composition), eliminate any choice going Whole → Part (Division).',
+      ],
+    },
+
+    { type: 'h4', text: 'Second Pass: Confirm the Match' },
+    {
+      type: 'paragraph',
+      text: 'For the remaining 1–2 contenders, perform a detailed structural comparison. Map your abstract blueprint onto each remaining choice:',
     },
     {
-      "type": "paragraph",
-      "text": "**Find the Conclusion and Premises:** Clearly separate what the author is trying to prove (conclusion) from the evidence provided (premises). *"
+      type: 'list',
+      items: [
+        '**Side-by-Side Comparison:** Read the stimulus and your contender back-to-back. Ignore the topics. Focus on the movement from evidence to conclusion.',
+        '**Blueprint Verification:** Confirm that the same abstract blueprint fits both arguments. The "logical jump" should be identical.',
+        '**Conclusion Match:** Verify that the conclusions have the same type (factual, recommendation, prediction), same force (must, probably, might), and same polarity (positive, negative).',
+      ],
+    },
+
+    { type: 'hr' },
+
+    { type: 'h2', text: 'Common Wrong Answer Patterns' },
+    {
+      type: 'paragraph',
+      text: 'The LSAT uses predictable trap answer designs in Parallel Flaw questions. Learning to recognize these patterns helps you eliminate quickly:',
     },
     {
-      "type": "paragraph",
-      "text": "**Determine the Method of Reasoning:** What is the author *attempting* to do? Are they making a comparison, identifying a cause, or applying a conditional rule?"
+      type: 'table',
+      headers: ['Wrong Answer Pattern', "Why It's Wrong", 'How to Spot It'],
+      rows: [
+        [
+          '**Valid Argument**',
+          'Contains no flaw at all — the conclusion follows from the premises',
+          'Test the logic: if the premises are true, must the conclusion be true? If yes, eliminate.',
+        ],
+        [
+          '**Adjacent Flaw**',
+          'Commits a *similar* but distinct error (e.g., Mistaken Negation instead of Mistaken Reversal)',
+          'Apply your blueprint precisely. Both are conditional errors, but the direction of the error differs.',
+        ],
+        [
+          '**Topic Match**',
+          'Shares the same subject matter as the stimulus but uses different (or valid) logic',
+          'Ignore the topic entirely. Two arguments about "law" can have completely different logical structures.',
+        ],
+        [
+          '**Reversed Direction**',
+          'Commits the mirror image of the flaw (e.g., Division instead of Composition)',
+          'Track the direction: Small → Big or Big → Small? The direction must match.',
+        ],
+        [
+          '**Partial Flaw Match**',
+          'Contains one flaw that matches but also contains a second, different flaw',
+          'If the stimulus has one flaw, the correct answer should have exactly one matching flaw.',
+        ],
+      ],
     },
+
+    { type: 'hr' },
+
+    { type: 'h2', text: 'Worked Method Snapshot' },
     {
-      "type": "paragraph",
-      "text": "**B. Diagnose and Abstract the Flaw** Pinpoint the exact logical error and immediately translate it into an abstract \"Reasoning Map.\" This map describes the invalid move from premises to conclusion without using the original topic. *"
+      type: 'paragraph',
+      text: 'Here is what the method looks like when you apply it to a typical correlation-to-causation Parallel Flaw stimulus, without needing a full standalone practice question in this lesson.',
     },
+
+    { type: 'h3', text: 'Applying the 3-Step Method' },
     {
-      "type": "paragraph",
-      "text": "**Mistaken Reversal (If A → B, B, therefore A):** \"The argument observes that a necessary condition has been met and incorrectly concludes that the sufficient condition must also be true.\" *"
+      type: 'process',
+      title: 'Step-by-Step Walkthrough',
+      steps: [
+        '**Step 1 — Identify the Flaw:**\nSuppose an argument says that cities with more public parks tend to have lower crime rates, then concludes that adding parks will reduce crime. The flaw is a **causal confusion**: the author treats a correlation as proof of causation and ignores alternative explanations such as wealth, tax base, policing, or population density.',
+        '**Step 2 — Abstract the Pattern:**\n**Blueprint:** X and Y tend to appear together. Therefore X causes Y. Therefore, we should do more X to get more Y. Once written this way, the content drops out and the flawed move becomes much easier to recognize.',
+        '**Step 3 — Match the Error:**\nWhen you go to the answer choices, ignore topic overlap and ask only whether the choice repeats the same sequence: correlation first, causal leap second, recommendation last. Eliminate choices that merely discuss the issue, supply an alternative explanation, or treat the causal link as already established.',
+      ],
     },
+
+    { type: 'h3', text: 'What the Right Match Must Do' },
     {
-      "type": "paragraph",
-      "text": "**Fallacy of Division (Whole → Part):** \"The argument concludes that a specific part must have a certain property simply because the whole entity possesses that property.\" *"
+      type: 'breakdown',
+      labels: { title: 'Requirement', text: 'What You Need to See' },
+      items: [
+        {
+          title: 'Same flaw category',
+          text: 'The answer must commit the same **correlation → causation** error, not a nearby flaw like mistaken negation, composition, or a missing comparison argument.',
+          badge: 'Required',
+          badgeColor: 'green',
+        },
+        {
+          title: 'Same logical direction',
+          text: 'The choice must move from evidence about co-occurrence to a causal conclusion, not from a causal claim to criticism or from a recommendation to evidence.',
+          badge: 'Required',
+          badgeColor: 'green',
+        },
+        {
+          title: 'Same argumentative role',
+          text: 'The choice must **commit** the flaw. If it explains why the causal inference is weak, it is not parallel even if it mentions the same concepts.',
+          badge: 'Required',
+          badgeColor: 'green',
+        },
+      ],
     },
+
     {
-      "type": "paragraph",
-      "text": "**Causal Error (Correlation → Causation):** \"The argument assumes that because two events happen together, one must be the cause of the other.\" *"
+      type: 'callout',
+      variant: 'default',
+      title: 'Trap Pattern to Watch',
+      text: 'A common wrong answer talks about the same type of evidence but then **critiques** the causal move instead of making it. Another common trap states the causal link as an accepted fact rather than inferring it from the correlation. Both miss the structure you are trying to match.',
     },
+
+    { type: 'hr' },
+
+    { type: 'h3', text: 'Quick Reference: The Steps' },
     {
-      "type": "paragraph",
-      "text": "**Ad Hominem (Source Attack):** \"The argument rejects a claim by attacking the character of the person making it rather than addressing the logic of the claim itself.\""
+      type: 'process',
+      title: 'The 3-Step Method Summary',
+      steps: [
+        '**Diagnose:** Find the conclusion and premises. Name the specific flaw. Be precise — "Mistaken Negation" beats "bad logic."',
+        '**Abstract:** Build a blueprint that captures the flawed move in variable form. Strip away the topic.',
+        '**Match:** Scan choices using the Flaw Matching Checklist. Eliminate valid arguments first. Eliminate wrong flaw types second. Confirm the final match by blueprint verification.',
+      ],
     },
+
+    { type: 'hr' },
+
     {
-      "type": "paragraph",
-      "text": "**C. Characterize the Conclusion (for filtering)** Quickly note the type and certainty of the conclusion. This helps with rapid elimination. *"
+      type: 'callout',
+      variant: 'summary',
+      title: 'Key Takeaways',
+      text: '• The **3-Step Method** gives you a repeatable process: **Identify the Flaw → Abstract the Pattern → Match the Error.**\n• **Step 1 is the most important step.** A precise flaw diagnosis turns the entire question into pattern matching. A vague diagnosis leaves you guessing.\n• **The Flaw-First Strategy** saves time: invest 40 seconds diagnosing, save 75+ seconds scanning.\n• Use the **Flaw Matching Checklist**: Is it flawed? Same flaw type? Same direction? Same conclusion force?\n• **Common traps** include valid arguments, adjacent flaws (similar but distinct errors), topic matches, reversed directions, and arguments that critique the flaw rather than commit it.\n• Budget **2:00–2:30** per question. These are long and complex, but a systematic method makes them manageable.',
     },
-    {
-      "type": "paragraph",
-      "text": "**Certainty:** Is it definitive (*must, will*) or probabilistic (*probably, likely*)? *"
-    },
-    {
-      "type": "paragraph",
-      "text": "**Polarity:** Is it positive (*will succeed*) or negative (*will not happen*)? *"
-    },
-    {
-      "type": "paragraph",
-      "text": "**Type:** Is it a factual claim, a prediction, or a recommendation (*should*)?"
-    },
-    {
-      "type": "paragraph",
-      "text": "**Step 2: Apply the Map to Eliminate Choices**"
-    },
-    {
-      "type": "paragraph",
-      "text": "With your Reasoning Map in hand, scan the answer choices to find the one argument that is flawed in the **exact same way**."
-    },
-    {
-      "type": "paragraph",
-      "text": "**First Pass: Filter by Conclusion** Quickly check if the conclusion of each answer choice matches the characteristics you noted in Step 1C. Because the correct answer must replicate the logical force of the original, matching the conclusion's strength and tone can often eliminate 1–2 choices immediately. *"
-    },
-    {
-      "type": "paragraph",
-      "text": "**Match the Certainty:** The degree of justification must be identical. If the stimulus concludes that something \"will\" happen (100%), an answer choice concluding it \"might\" or \"should\" happen (probabilistic) is an automatic mismatch. (e.g., Stimulus: *must*, Choice: *probably* → **Eliminate**). *"
-    },
-    {
-      "type": "paragraph",
-      "text": "**Match the Polarity:** Ensure the conclusion is moving in the same direction. If the original argument concludes that a plan \"will fail,\" look for a choice that also concludes a negative outcome rather than one that concludes a plan \"will succeed.\" (e.g., Stimulus: *will happen*, Choice: *will not happen* → **Eliminate**). *"
-    },
-    {
-      "type": "paragraph",
-      "text": "**Match the Scope:** Pay attention to whether the conclusion is a broad generalization or a specific instance. If the stimulus makes a claim about \"all politicians,\" a choice that only makes a claim about \"some politicians\" is likely incorrect."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Second Pass: Filter by Flaw** Analyze the reasoning of the remaining contenders with high precision. Your goal is to identify the underlying structural mechanics of each argument. 1."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Is the choice valid?** If an answer choice is logically sound, it cannot be the correct answer, regardless of how similar the topic or conclusion might be. Test the logic: if the premises are true, must the conclusion be true? If the answer is yes, eliminate it. This is a common high-level trap designed to lure students who are only looking for topical similarities. 2."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Does it commit the same flaw?** Apply your Reasoning Map from Step 1B. The correct answer must replicate the precise \"logical leap\" made in the stimulus. If the stimulus committed a Mistaken Reversal (confusing necessity for sufficiency), the correct choice must also move from the fulfillment of a necessary condition to the claim that the sufficient condition is met. The relationship between the terms must be identical in its failure. 3."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Are there multiple flaws?** While rarer, some stimuli contain more than one logical issue—for example, a Mistaken Reversal paired with a Causal error. If the stimulus contains two distinct flaws, the correct answer choice must also contain those same two flaws. Wrong answer choices will often feature one of the flaws but not the other, or swap one out for a \"decoy\" error. This highlights the importance of attempting to eliminate every wrong choice rather than simply picking the first one that \"looks\" right; if you find a choice with only partial overlap, keep searching for the full structural match unless you can determine why each other choice is even worse."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Step 3: Confirm the Perfect Match**"
-    },
-    {
-      "type": "paragraph",
-      "text": "At this point, you should have only one answer choice left. Before finalizing your selection, perform a final structural audit to ensure the logic holds. *"
-    },
-    {
-      "type": "paragraph",
-      "text": "**Side-by-Side Comparison:** Read the stimulus and your final contender back-to-back. Ignore the specific topics (e.g., \"cats\" vs. \"corporations\") and focus entirely on the movement from evidence to conclusion. *"
-    },
-    {
-      "type": "paragraph",
-      "text": "**Blueprint Verification:** Confirm that your abstract **Reasoning Map** fits the contender as perfectly as it fits the original stimulus. The faulty logical \"jump\" should be identical in both."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Pro Tip:** Your greatest enemy is topical distraction. By anchoring your search to an abstract map of the error, you protect yourself against \"good-sounding\" answers that share the same subject matter but use different (or even valid) logic."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Quick Overview of the Steps** 1."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Deconstruct:** Find the conclusion and premises to see how the argument is built. 2."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Map the Error:** Diagnose the specific flaw and strip away the topic to create an abstract blueprint. 3."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Check the Conclusion:** Filter out answer choices that don't match the original's certainty or tone. 4."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Match the Logic:** Find the choice that fails for the *exact* same reasons. Be sure to **eliminate every other choice** by identifying why their logic is either valid or flawed in a different way. 5."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Audit:** Confirm the final choice is a perfect structural mirror of the original mistake."
-    }
   ],
 };

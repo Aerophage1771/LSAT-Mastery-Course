@@ -2,34 +2,35 @@ import { ModuleData } from '../types';
 import { Lesson1_Introduction } from './module3/Lesson1_Introduction';
 import { Lesson2_StepByStepGuide } from './module3/Lesson2_StepByStepGuide';
 import { Lesson3_FieldGuide } from './module3/Lesson3_FieldGuide';
-import { Lesson4 } from './module3/Lesson4';
-import { Lesson5 } from './module3/Lesson5';
-import { Lesson6 } from './module3/Lesson6';
-import { Lesson7 } from './module3/Lesson7';
-import { Lesson_AdvancedConcepts } from './module3/Lesson_AdvancedConcepts';
-import { Lesson_Advanced1 } from './module3/Lesson_Advanced1';
-import { Lesson_Advanced2 } from './module3/Lesson_Advanced2';
-import { Lesson_Advanced3 } from './module3/Lesson_Advanced3';
-import { Lesson_ReferenceGuide } from './module3/Lesson_ReferenceGuide';
+import { Lesson4_RefutationByAnalogy } from './module3/Lesson4_RefutationByAnalogy';
+import { Lesson5_ProcessOfElimination } from './module3/Lesson5_ProcessOfElimination';
+import { Lesson6_RefutationByCounterexample } from './module3/Lesson6_RefutationByCounterexample';
+import { Lesson7_HighlightingNegativeConsequences } from './module3/Lesson7_HighlightingNegativeConsequences';
+import { Lesson8_AdvancedConcepts } from './module3/Lesson8_AdvancedConcepts';
+import { Lesson9_Advanced_ChallengingAssumption } from './module3/Lesson9_Advanced_ChallengingAssumption';
+import { Lesson10_Advanced_ProofByContradiction } from './module3/Lesson10_Advanced_ProofByContradiction';
+import { Lesson11_Advanced_ChallengingAssumption2 } from './module3/Lesson11_Advanced_ChallengingAssumption2';
+import { Lesson12_ReferenceGuide } from './module3/Lesson12_ReferenceGuide';
+
 
 export const Module3: ModuleData = {
   id: 3,
-  title: 'Method of Reasoning',
-  category: 'LR',
-  description: '',
-  unit: '',
+  title: "Method of Reasoning",
+  category: "LR",
+  unit: "Unit 2: Analysis",
+  description: "Describe the argumentative strategy the author uses to support the conclusion. In other words, what is the logical structure of the argument?",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,
     Lesson3_FieldGuide,
-    Lesson4,
-    Lesson5,
-    Lesson6,
-    Lesson7,
-    Lesson_AdvancedConcepts,
-    Lesson_Advanced1,
-    Lesson_Advanced2,
-    Lesson_Advanced3,
-    Lesson_ReferenceGuide,
-  ],
+    Lesson4_RefutationByAnalogy,
+    Lesson5_ProcessOfElimination,
+    Lesson6_RefutationByCounterexample,
+    Lesson7_HighlightingNegativeConsequences,
+    Lesson8_AdvancedConcepts,
+    Lesson9_Advanced_ChallengingAssumption,
+    Lesson10_Advanced_ProofByContradiction,
+    Lesson11_Advanced_ChallengingAssumption2,
+    Lesson12_ReferenceGuide,
+  ]
 };

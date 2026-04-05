@@ -2,143 +2,30 @@ import { Lesson } from '../../types';
 
 export const Lesson2_StepByStepApproach: Lesson = {
   id: "31-2",
-  title: "Step-by-Step: Complete the Passage",
+  title: "Step-by-Step Approach",
   content: [
-    { type: 'h3', text: "Step-by-Step: Complete the Passage" },
-    { type: 'h4', text: "Step 1: Identify the Role of the Final Paragraph" },
-    { type: 'paragraph', text: "Before reading the answer choices, re-read the final paragraph and determine its specific function in the passage. Is it:" },
-    { type: 'list', items: [
-      "Providing a final piece of evidence?",
-      "Proposing a solution to a problem raised earlier?",
-      "Summarizing the main argument?",
-      "Discussing the implications or future of the topic?"
-    ]},
+    { type: 'h3', text: "Step-by-Step Approach" },
+    { type: 'h4', text: "Step 1: Locate the Phrase and Read the Surrounding Context" },
+    { type: 'paragraph', text: "Find the specific word or phrase in the passage. Read the sentence it's in, as well as the sentences immediately before and after it. This context is the primary clue to the phrase's specific, intended meaning. Do not rely on your outside knowledge or a dictionary definition." },
     
-    { type: 'h4', text: "Step 2: Predict the Logical Next Thought" },
-    { type: 'paragraph', text: "Based on the paragraph's function, anticipate what the final sentence should accomplish. The concluding sentence should bring the paragraph's specific point to a close in a way that feels natural and final. For example, if the paragraph introduced a solution, the last sentence might describe the expected outcome or a remaining challenge." },
-    { type: 'table', headers: ["If the final paragraph is doing this...", "The next logical thought often does this..."], rows: [
-      ["Phenomenon-hypothesis evaluation", "Clarifies which explanation the author favors or why a rival explanation falls short."],
-      ["Problem -> endorsed solution", "States the benefit, implication, or rationale for the endorsed solution."],
-      ["Problem -> criticized or competing solutions", "Explains why the visible solution set is inadequate or conflicted."],
-      ["Problem -> no endorsed solution", "Returns to the significance, persistence, or difficulty of the problem instead of forcing a fake resolution."]
-    ]},
-    
-    { type: 'h4', text: "Step 3: Test Each Answer Choice Against Your Prediction and the Passage's Scope" },
-    { type: 'paragraph', text: "Evaluate each answer choice based on the following criteria:" },
+    { type: 'h4', text: "Step 2: Predict the Meaning Based on its Role" },
+    { type: 'paragraph', text: "Before looking at the answer choices, try to define the phrase's function in the sentence. Ask yourself, \"What job is this word or phrase doing here?\" Is it supporting a point? Describing an attitude? Introducing a contrast? Formulate a rough prediction of the meaning based on this role." },
     { type: 'list', items: [
-      "**Logical Flow:** Does it follow naturally from the sentence immediately preceding it?",
-      "**Paragraph Cohesion:** Does it provide a fitting conclusion to the specific point being made in the final paragraph?",
-      "**Passage Scope:** Does it stay within the scope of the passage, or does it introduce new, unsupported topics or claims?",
-      "**Tone Consistency:** Does it match the author's established tone (e.g., critical, objective, optimistic)?"
+      "**Example:** If the sentence is, \"The theory was met with qualified approval,\" you can predict that \"qualified\" means something like \"limited\" or \"not total,\" because it's modifying the word \"approval.\""
     ]},
-    { type: 'paragraph', text: "Eliminate any choice that introduces an outside idea, contradicts an earlier point, or abruptly changes the subject." },
+
+    { type: 'h4', text: "Step 3: Test the Answer Choices by Substitution" },
+    { type: 'paragraph', text: "Go through each answer choice and mentally substitute it into the original sentence where the phrase appeared. The correct answer will be the one that fits seamlessly into the sentence, preserving its original logic and meaning without creating an awkward or nonsensical statement." },
+    { type: 'list', items: [
+      "**Eliminate Mismatches:** If a substitution changes the sentence's meaning or makes it illogical, eliminate that choice."
+    ]},
     
     { type: 'hr' },
     { type: 'h3', text: "If You Get Stuck Between Two Choices..." },
-    { type: 'h4', text: "Tie-Breaker #1: The \"Why Is This Here?\" Test" },
-    { type: 'paragraph', text: "Look at your final two choices. One often serves as a tight, logical conclusion to the immediate paragraph, while the other might make a broader, more general statement that could fit elsewhere. The best answer will almost always be the one that most directly and logically concludes the specific line of reasoning developed in that final paragraph." },
+    { type: 'h4', text: "Tie-Breaker #1: The Tone and Scope Check" },
+    { type: 'paragraph', text: "Reread the paragraph where the phrase appears and consider the author's overall tone and the specific topic being discussed. One of your final choices might be a plausible synonym in a general sense, but it might not fit the specific, sometimes technical or metaphorical, way the author is using the language. The correct answer will align perfectly with the tone (e.g., critical, neutral) and scope of the immediate discussion." },
     
-    { type: 'h4', text: "Tie-Breaker #2: Check for Consistency with the Main Point" },
-    { type: 'paragraph', text: "Re-read your final two options and compare them to the passage's overall main point. The correct concluding sentence will not only wrap up the final paragraph but will also feel consistent with, and often subtly reinforce, the entire passage's central argument. If one choice feels slightly disconnected from the \"big picture,\" it's likely incorrect." }
-  ],
-  alternates: {
-    diff: {
-      label: 'Diff-Highlighted',
-      content: [
-        {
-          "type": "h3",
-          "text": "Step-by-Step Approach"
-        },
-        {
-          "type": "h4",
-          "text": "Step 1: Identify the Role of the Final Paragraph"
-        },
-        {
-          "type": "paragraph",
-          "text": "Before reading the answer choices, re-read the final paragraph and determine its specific function in the passage. Is it:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Providing a final piece of evidence?",
-            "Proposing a solution to a problem raised earlier?",
-            "Summarizing the main argument?",
-            "Discussing the implications or future of the topic?"
-          ]
-        },
-        {
-          "type": "h4",
-          "text": "Step 2: Predict the Logical Next Thought"
-        },
-        {
-          "type": "paragraph",
-          "text": "Based on the paragraph's function, anticipate what the final sentence should accomplish. The concluding sentence should bring the paragraph's specific point to a close in a way that feels natural and final. For example, if the paragraph introduced a solution, the last sentence might describe the expected outcome or a remaining challenge."
-        },
-        {
-          "type": "h4",
-          "text": "Step 3: Test Each Answer Choice Against Your Prediction and the Passage's Scope"
-        },
-        {
-          "type": "paragraph",
-          "text": "Evaluate each answer choice based on the following criteria:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Logical Flow:** Does it follow naturally from the sentence immediately preceding it?",
-            "**Paragraph Cohesion:** Does it provide a fitting conclusion to the specific point being made in the final paragraph?",
-            "**Passage Scope:** Does it stay within the scope of the passage, or does it introduce new, unsupported topics or claims?",
-            "**Tone Consistency:** Does it match the author's established tone (e.g., critical, objective, optimistic)?"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Eliminate any choice that introduces an outside idea, contradicts an earlier point, or abruptly changes the subject."
-        },
-        {
-          "type": "hr"
-        },
-        {
-          "type": "h3",
-          "text": "If You Get Stuck Between Two Choices..."
-        },
-        {
-          "type": "h4",
-          "text": "Tie-Breaker #1: The \"Why Is This Here?\" Test"
-        },
-        {
-          "type": "paragraph",
-          "text": "Look at your final two choices. One often serves as a tight, logical conclusion to the immediate paragraph, while the other might make a broader, more general statement that could fit elsewhere. The best answer will almost always be the one that most directly and logically concludes the specific line of reasoning developed in that final paragraph."
-        },
-        {
-          "type": "h4",
-          "text": "Tie-Breaker #2: Check for Consistency with the Main Point"
-        },
-        {
-          "type": "paragraph",
-          "text": "Re-read your final two options and compare them to the passage's overall main point. The correct concluding sentence will not only wrap up the final paragraph but will also feel consistent with, and often subtly reinforce, the entire passage's central argument. If one choice feels slightly disconnected from the \"big picture,\" it's likely incorrect."
-        }
-      ],
-    },
-    playbook: {
-      label: "Playbook",
-      content: [
-        { type: 'h2', text: "RC Complete the Passage — Playbook" },
-        { type: 'callout', variant: 'tip', title: "Timing Target", text: "Complete the Passage questions are rare (only 5 in the pool) but methodical. Spend ~20 seconds re-reading the final paragraph and predicting what the last sentence should accomplish before looking at any choices. This prediction step prevents you from being pulled toward attractive but off-scope answers." },
-        { type: 'process', title: "Complete the Passage Method", steps: [
-          "Identify the final paragraph's role: Re-read the final paragraph and classify its function — is it providing evidence, proposing a solution, summarizing the argument, evaluating implications, or explaining why a problem persists?",
-          "Predict the logical next thought: Based on the paragraph's function, anticipate what the concluding sentence should accomplish. If the paragraph introduced a solution, the last sentence might address the expected outcome or a remaining challenge.",
-          "Test each answer against four criteria: (1) Does it follow naturally from the immediately preceding sentence? (2) Does it close the paragraph's specific point? (3) Does it stay within the passage's established scope? (4) Does it match the author's tone?",
-        ]},
-        { type: 'table', headers: ["If the final paragraph does this...", "The concluding sentence should do this"], rows: [
-          ["Evaluates competing explanations for a phenomenon", "Clarify which explanation the author favors or why a rival falls short"],
-          ["Proposes or endorses a solution to a problem", "State the benefit, implication, or rationale for the endorsed solution"],
-          ["Criticizes existing solutions or shows they conflict", "Explain why the visible solution set is inadequate or conflicted"],
-          ["Presents a problem without endorsing any solution", "Return to the significance, persistence, or difficulty of the problem — do not force a fake resolution"],
-          ["Discusses future implications of a development", "Close with the most important consequence or the condition that determines the outcome"],
-        ]},
-        { type: 'callout', variant: 'summary', title: "Method Chain", text: "Classify the final paragraph's function --> Predict what the concluding sentence should accomplish --> Test each answer for logical flow, paragraph cohesion, scope, and tone --> Eliminate anything that introduces a new topic or contradicts an earlier point --> Confirm the winner reinforces the passage's central argument." },
-      ],
-    },
-  },
+    { type: 'h4', text: "Tie-Breaker #2: The \"Why This Word?\" Test" },
+    { type: 'paragraph', text: "Ask yourself why the author chose this specific word instead of a more common synonym. Often, the author uses a particular word to convey a very precise shade of meaning. Look at your final two choices. One is often a generic, common meaning, while the other is a more specific, nuanced meaning. The correct answer is usually the one that best captures the specific nuance the author intended." }
+  ]
 };

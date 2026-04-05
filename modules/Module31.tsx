@@ -4,10 +4,10 @@ import { Lesson2_StepByStepApproach } from './module31/Lesson2_StepByStepApproac
 
 export const Module31: ModuleData = {
   id: 31,
-  title: "Complete the Passage",
+  title: "RC: Phrase Meaning",
   category: "RC",
-  unit: "Unit 11: Extending the Reasoning",
-  description: "Select the sentence that would most logically conclude the passage or a specific paragraph.",
+  unit: "Unit 9: Analyzing the Components",
+  description: "Identify the specific definition of a word or phrase based on its immediate context.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepApproach

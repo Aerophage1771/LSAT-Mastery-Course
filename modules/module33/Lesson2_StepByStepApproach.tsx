@@ -2,140 +2,33 @@ import { Lesson } from '../../types';
 
 export const Lesson2_StepByStepApproach: Lesson = {
   id: "33-2",
-  title: "Step-by-Step: Passage Principle",
+  title: "Step-by-Step Approach",
   content: [
-    { type: 'h3', text: "Step-by-Step: Passage Principle" },
-    { type: 'h4', text: "Step 1: Isolate the Specific Argument or Action" },
-    { type: 'paragraph', text: "Go to the part of the passage that the question directs you to. Identify the specific judgment, conclusion, or action being taken by the author or a subject in the text. Your goal is to understand the precise, concrete situation you need to generalize." },
-    { type: 'list', items: [
-      "**Example:** If the passage states, \"The court ruled against the company because its advertisement, while not technically false, was clearly designed to mislead consumers,\" you've isolated the specific situation."
-    ]},
+    { type: 'h3', text: "Step-by-Step Approach" },
+    { type: 'h4', text: "Step 1: Read and Summarize the Target Paragraph's Content" },
+    { type: 'paragraph', text: "First, read the paragraph in question and create a quick, content-based summary. In one sentence, answer the question: \"What is this paragraph about?\" This ensures you understand what the paragraph says before you analyze what it does." },
     
-    { type: 'h4', text: "Step 2: Formulate the Underlying Rule" },
-    { type: 'paragraph', text: "Ask yourself, \"What general rule or belief would justify this specific argument or action?\" You are moving from the specific to the general. Your goal is to create an abstract principle that the person or group in the passage is logically applying." },
+    { type: 'h4', text: "Step 2: Analyze the Paragraph's Relationship to its Neighbors" },
+    { type: 'paragraph', text: "Now, focus on the paragraph's role in the passage's structure. Ask yourself two key questions:" },
     { type: 'list', items: [
-      "**Example (cont.):** The underlying rule would be something like, \"An action's ethical value should be judged by its intended effect, not just its literal truthfulness.\""
+      "**How does it relate to the paragraph before it?** Does it provide evidence for a claim made in the previous paragraph? Does it introduce a counterargument? Does it shift to a new topic?",
+      "**How does it set up the paragraph after it?** Does it pose a question that the next paragraph answers? Does it present a problem that the next paragraph solves?"
     ]},
+    { type: 'paragraph', text: "Your goal is to define its job as a \"bridge\" in the author's argument." },
 
-    { type: 'h4', text: "Step 3: Test Each Answer Choice Against Your Rule" },
-    { type: 'paragraph', text: "Evaluate each answer choice, which will be phrased as a general principle. The correct answer will be the one that is a perfect abstract match for the rule you formulated in Step 2." },
+    { type: 'h4', text: "Step 3: Test Each Answer Choice Against Your Analysis" },
+    { type: 'paragraph', text: "Evaluate each answer choice, which will be phrased in abstract, functional language. The correct answer will be the one that accurately describes the paragraph's role in the overall flow of the passage, as you determined in Step 2." },
     { type: 'list', items: [
-      "**Too Specific:** Eliminate any choice that is just a restatement of the specific facts.",
-      "**Too Broad:** Eliminate any choice that is so general it loses the core logic of the situation.",
-      "**Mismatch:** Eliminate any choice that introduces an element not present in the original reasoning."
+      "**Too Narrow:** Eliminate choices that only describe one detail within the paragraph, not its overall function.",
+      "**Inaccurate Function:** Eliminate choices that misidentify the paragraph's role (e.g., calling it \"providing evidence\" when it is actually \"presenting a counterargument\")."
     ]},
     
     { type: 'hr' },
     { type: 'h3', text: "If You Get Stuck Between Two Choices..." },
-    { type: 'h4', text: "Tie-Breaker #1: The Justification Test" },
-    { type: 'paragraph', text: "Take each of your final two answer choices and use them as a premise. Ask for each one: \"If I assume this principle is true, does it force me to accept the specific conclusion or action from the passage?\" The correct principle will provide the strongest and most direct logical justification for the specific scenario in the text. The incorrect one might be related, but it won't be the necessary and sufficient reason for the outcome." },
+    { type: 'h4', text: "Tie-Breaker #1: The Blueprint Check" },
+    { type: 'paragraph', text: "Imagine the passage is a short speech. The paragraph before the target paragraph is Point A, and the paragraph after is Point C. What is the most logical way to get from A to C? The target paragraph is Point B, the necessary logical step. Reread your final two choices. Which one describes the more essential step in the author's overall argument? The correct answer will be the one that best fits into the logical \"blueprint\" of the passage." },
     
-    { type: 'h4', text: "Tie-Breaker #2: Focus on the Difference" },
-    { type: 'paragraph', text: "Stop looking at how your final contenders are similar. Instead, isolate the single key difference between the two principles. Is one about intentions while the other is about outcomes? Is one about individual rights and the other about societal good? Once you've identified this core contrast, go back to the specific situation in the passage one last time and determine which of these abstract concepts is the true driving force behind the reasoning." }
-  ],
-  alternates: {
-    diff: {
-      label: 'Diff-Highlighted',
-      content: [
-        {
-          "type": "h3",
-          "text": "Step-by-Step Approach"
-        },
-        {
-          "type": "h4",
-          "text": "Step 1: Isolate the Specific Argument or Action"
-        },
-        {
-          "type": "paragraph",
-          "text": "Go to the part of the passage that the question directs you to. Identify the specific judgment, conclusion, or action being taken by the author or a subject in the text. Your goal is to understand the precise, concrete situation you need to generalize."
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Example:** If the passage states, \"The court ruled against the company because its advertisement, while not technically false, was clearly designed to mislead consumers,\" you've isolated the specific situation."
-          ]
-        },
-        {
-          "type": "h4",
-          "text": "Step 2: Formulate the Underlying Rule"
-        },
-        {
-          "type": "paragraph",
-          "text": "Ask yourself, \"What general rule or belief would justify this specific argument or action?\" You are moving from the specific to the general. Your goal is to create an abstract principle that the person or group in the passage is logically applying."
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Example (cont.):** The underlying rule would be something like, \"An action's ethical value should be judged by its intended effect, not just its literal truthfulness.\""
-          ]
-        },
-        {
-          "type": "h4",
-          "text": "Step 3: Test Each Answer Choice Against Your Rule"
-        },
-        {
-          "type": "paragraph",
-          "text": "Evaluate each answer choice, which will be phrased as a general principle. The correct answer will be the one that is a perfect abstract match for the rule you formulated in Step 2."
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Too Specific:** Eliminate any choice that is just a restatement of the specific facts.",
-            "**Too Broad:** Eliminate any choice that is so general it loses the core logic of the situation.",
-            "**Mismatch:** Eliminate any choice that introduces an element not present in the original reasoning."
-          ]
-        },
-        {
-          "type": "hr"
-        },
-        {
-          "type": "h3",
-          "text": "If You Get Stuck Between Two Choices..."
-        },
-        {
-          "type": "h4",
-          "text": "Tie-Breaker #1: The Justification Test"
-        },
-        {
-          "type": "paragraph",
-          "text": "Take each of your final two answer choices and use them as a premise. Ask for each one: \"If I assume this principle is true, does it force me to accept the specific conclusion or action from the passage?\" The correct principle will provide the strongest and most direct logical justification for the specific scenario in the text. The incorrect one might be related, but it won't be the necessary and sufficient reason for the outcome."
-        },
-        {
-          "type": "h4",
-          "text": "Tie-Breaker #2: Focus on the Difference"
-        },
-        {
-          "type": "paragraph",
-          "text": "Stop looking at how your final contenders are similar. Instead, isolate the single key difference between the two principles. Is one about intentions while the other is about outcomes? Is one about individual rights and the other about societal good? Once you've identified this core contrast, go back to the specific situation in the passage one last time and determine which of these abstract concepts is the true driving force behind the reasoning."
-        }
-      ],
-    },
-    playbook: {
-      label: 'Playbook',
-      content: [
-        { type: 'h2', text: 'Passage Principle — Playbook' },
-        { type: 'callout', variant: 'tip', title: 'Timing Target', text: 'Budget about 90 seconds per Passage Principle question. Spend 30 seconds isolating the specific argument and formulating the underlying rule, 40 seconds testing answer choices against your rule, and 20 seconds on the tie-breaker if needed.' },
-        {
-          type: 'process',
-          steps: [
-            'Go to the part of the passage the stem directs you to. Identify the specific judgment, conclusion, or action being taken.',
-            'Ask: "What general rule would justify this specific scenario?" Formulate a one-sentence abstract principle before looking at the answers.',
-            'Test each answer choice against your rule. The correct answer is the abstract statement that, if true, would force the passage\'s specific conclusion.'
-          ]
-        },
-        {
-          type: 'table',
-          headers: ['If You See...', 'Do This'],
-          rows: [
-            ['An answer that restates the passage\'s specific facts', 'Reject it -- it is too specific. The correct answer must be a general rule, not a factual summary.'],
-            ['An answer that sounds philosophically true but is extremely broad', 'Check whether it actually forces the passage\'s conclusion. If it could justify many unrelated conclusions, it is too broad.'],
-            ['An answer that introduces an element not present in the passage\'s reasoning', 'Reject it -- it is a mismatch. The principle must connect to the actual logic being used.'],
-            ['A comparative stem asking about "both passages" or "Passage A but not B"', 'Test the principle against each passage\'s argument independently. The correct answer must fit the stem\'s scope exactly.'],
-            ['Two finalists that both seem plausible', 'Use the Justification Test: assume each principle is true and ask which one directly forces the passage\'s outcome. Pick the stronger logical fit.']
-          ]
-        },
-        { type: 'callout', variant: 'summary', title: 'Method Chain', text: 'Isolate specific scenario --> Formulate underlying rule --> Eliminate too-specific, too-broad, and mismatched answers --> Justification Test on finalists. The key move is building your own principle before you look at the answer choices.' }
-      ]
-    }
-  }
+    { type: 'h4', text: "Tie-Breaker #2: Focus on the Verbs" },
+    { type: 'paragraph', text: "Isolate the primary action verbs in your final two choices (e.g., \"elaborating on a theory\" vs. \"providing an example of a theory\"). Go back to the target paragraph. Is it filled with abstract, conceptual language (elaboration), or does it describe a specific, concrete situation (example)? This focus on the paragraph's actual content can help you decide which functional description is more precise." }
+  ]
 };

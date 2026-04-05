@@ -1,4 +1,4 @@
-import { moduleRegistry, type ModuleMetadata } from '../modules/registry';
+import type { ModuleMetadata } from '../modules/registry';
 import type { Lesson, ModuleData } from '../types';
 import catalogData from '../data/courseCatalog.json';
 
@@ -11,13 +11,48 @@ type CourseCatalog = Record<string, CourseCatalogModule>;
 
 const courseCatalog = catalogData as CourseCatalog;
 
-const LR_ROUTE_MODULE_IDS = new Set<number>(Array.from({ length: 23 }, (_, index) => index + 1));
+const ROUTE_TO_CONTENT_MODULE_ID: Record<number, number> = {
+  21: 55,
+  22: 59,
+  23: 21,
+  24: 22,
+  25: 23,
+  26: 24,
+  27: 25,
+  28: 26,
+  29: 27,
+  30: 28,
+  31: 29,
+  32: 30,
+  33: 31,
+  34: 32,
+  35: 33,
+  36: 34,
+  37: 35,
+  38: 36,
+  39: 37,
+  40: 38,
+  41: 39,
+  42: 40,
+  43: 41,
+  44: 42,
+  45: 43,
+  46: 44,
+  47: 45,
+  48: 46,
+  49: 47,
+  50: 50,
+  51: 51,
+  52: 52,
+  53: 54,
+  54: 56,
+  55: 57,
+  56: 58,
+};
 
-// After the full module renumbering, directory numbers === display IDs.
-// The mapping is now identity — kept as an empty object for backward compatibility.
-const ROUTE_TO_CONTENT_MODULE_ID: Record<number, number> = {};
-
-const CONTENT_TO_ROUTE_MODULE_ID: Record<number, number> = {};
+const CONTENT_TO_ROUTE_MODULE_ID = Object.fromEntries(
+  Object.entries(ROUTE_TO_CONTENT_MODULE_ID).map(([routeId, contentId]) => [contentId, Number(routeId)]),
+) as Record<number, number>;
 
 const FILE_NAME_TO_SPECIAL_LESSON_ID: Record<string, string> = {
   'Lesson_Intro.tsx': 'intro',
@@ -40,18 +75,6 @@ export function getRouteModuleIdForContentModuleId(moduleId: number): number {
 
 export function getSourceModuleIdForRouteModuleId(routeModuleId: number): number {
   return ROUTE_TO_CONTENT_MODULE_ID[routeModuleId] ?? routeModuleId;
-}
-
-export function getDisplayModuleId(routeModuleId: number): string {
-  return String(routeModuleId);
-}
-
-export function getDisplayModuleLabel(routeModuleId: number): string {
-  return `Module ${getDisplayModuleId(routeModuleId)}`;
-}
-
-export function isLrRouteModuleId(routeModuleId: number): boolean {
-  return LR_ROUTE_MODULE_IDS.has(routeModuleId);
 }
 
 export function getCanonicalModuleTitle(routeModuleId: number, fallbackTitle: string): string {
@@ -80,7 +103,6 @@ export function getCanonicalModuleMetadata(meta: ModuleMetadata): ModuleMetadata
 
 export function applyCanonicalNamesToModule(moduleData: ModuleData, routeModuleId: number): ModuleData {
   const canonicalModuleTitle = getCanonicalModuleTitle(routeModuleId, moduleData.title);
-  const registryEntry = moduleRegistry.find((e) => e.meta.id === routeModuleId);
   const lessons = moduleData.lessons.map((lesson, index) => ({
     ...lesson,
     title: getCanonicalLessonTitle(routeModuleId, index, lesson.title),
@@ -90,9 +112,6 @@ export function applyCanonicalNamesToModule(moduleData: ModuleData, routeModuleI
     ...moduleData,
     id: routeModuleId,
     title: canonicalModuleTitle,
-    category: registryEntry?.meta.category ?? moduleData.category,
-    unit: registryEntry?.meta.unit ?? moduleData.unit,
-    description: registryEntry?.meta.description ?? moduleData.description,
     lessons,
   };
 }
@@ -151,12 +170,6 @@ function applyCanonicalLessonId(sourceModuleId: number, lessonIndex: number): st
     if (lessonIndex === 7) return '55-summary';
     if (lessonIndex === 8) return '55-ref';
     return `55-${lessonIndex}`;
-  }
-
-  if (sourceModuleId === 60) {
-    if (lessonIndex === 0) return '60-intro';
-    if (lessonIndex === 6) return '60-ref';
-    return `60-${lessonIndex}`;
   }
 
   return `${sourceModuleId}-${lessonIndex + 1}`;

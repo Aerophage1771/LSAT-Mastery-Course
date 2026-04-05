@@ -1,23 +1,30 @@
+
 import { ModuleData } from '../types';
-import { Lesson1_PassageAnalysis } from './module55/Lesson1_PassageAnalysis';
-import { Lesson2_Question22 } from './module55/Lesson2_Question22';
-import { Lesson3_Question23 } from './module55/Lesson3_Question23';
-import { Lesson4_Question24 } from './module55/Lesson4_Question24';
-import { Lesson5_Question25 } from './module55/Lesson5_Question25';
-import { Lesson6_Question26 } from './module55/Lesson6_Question26';
+import { Lesson_Intro } from './module55/Lesson_Intro';
+import { Lesson1_Foundations } from './module55/Lesson1_Foundations';
+import { Lesson2_Contrapositive } from './module55/Lesson2_Contrapositive';
+import { Lesson3_Fallacies } from './module55/Lesson3_Fallacies';
+import { Lesson4_Quantifiers } from './module55/Lesson4_Quantifiers';
+import { Lesson5_ComplexStructures } from './module55/Lesson5_ComplexStructures';
+import { Lesson6_Nuance } from './module55/Lesson6_Nuance';
+import { Lesson_Summary } from './module55/Lesson_ConciseGuide';
+import { Lesson_ReferenceGuide } from './module55/Lesson_ReferenceGuide';
 
 export const Module55: ModuleData = {
   id: 55,
-  title: "Advanced Passage 5: Psychology of Risk",
-  category: "RC",
-  unit: "Unit 14: Advanced Passages",
-  description: "An advanced passage analyzing the psychology of decision making and loss aversion, with an application to international relations.",
+  title: "Conditional Reasoning",
+  category: "LR",
+  unit: "Unit 8: Conditional Reasoning",
+  description: "This module strengthens the essential LSAT reasoning skills: translating complex statements into diagrams, deriving sound conclusions, and recognizing flawed arguments.",
   lessons: [
-    Lesson1_PassageAnalysis,
-    Lesson2_Question22,
-    Lesson3_Question23,
-    Lesson4_Question24,
-    Lesson5_Question25,
-    Lesson6_Question26,
+    Lesson_Intro,
+    Lesson1_Foundations,
+    Lesson2_Contrapositive,
+    Lesson3_Fallacies,
+    Lesson4_Quantifiers,
+    Lesson5_ComplexStructures,
+    Lesson6_Nuance,
+    Lesson_Summary,
+    Lesson_ReferenceGuide,
   ]
 };

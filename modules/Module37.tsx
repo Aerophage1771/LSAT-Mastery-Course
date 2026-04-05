@@ -4,10 +4,10 @@ import { Lesson2_StepByStepApproach } from './module37/Lesson2_StepByStepApproac
 
 export const Module37: ModuleData = {
   id: 37,
-  title: "Passage Function",
+  title: "RC: Title",
   category: "RC",
   unit: "Unit 8: Summarizing the Passage",
-  description: "Identify the author's primary reason for writing the text—their overarching intent and central task.",
+  description: "Select the phrase that best summarizes the passage or the relationship between two passages.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepApproach

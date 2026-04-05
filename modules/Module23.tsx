@@ -1,25 +1,15 @@
 import { ModuleData } from '../types';
-import { Lesson1_FoundationalToolkit } from './module23/Lesson1_FoundationalToolkit';
-import { Lesson2_PartVsWhole } from './module23/Lesson2_PartVsWhole';
-import { Lesson3_Averages } from './module23/Lesson3_Averages';
-import { Lesson4_InvalidMath } from './module23/Lesson4_InvalidMath';
-import { Lesson5_GamblersFallacy } from './module23/Lesson5_GamblersFallacy';
-import { Lesson6_Conclusion } from './module23/Lesson6_Conclusion';
-import { Lesson7_ReferenceGuide } from './module23/Lesson7_ReferenceGuide';
+import { Lesson1_Introduction } from './module23/Lesson1_Introduction';
+import { Lesson2_StepByStepApproach } from './module23/Lesson2_StepByStepApproach';
 
 export const Module23: ModuleData = {
   id: 23,
-  title: "LSAT Math",
-  category: "LR",
-  unit: "Unit 9: LSAT Math",
-  description: "A comprehensive framework for mastering quantitative questions within the LSAT Logical Reasoning section. Learn to identify and dismantle the most common logical fallacies involving numbers, percentages, and statistics.",
+  title: "RC: Analogy",
+  category: "RC",
+  unit: "Unit 11: Extending the Reasoning",
+  description: "Identify a scenario in the answer choices that mirrors the logic or structure of a situation in the passage.",
   lessons: [
-    Lesson1_FoundationalToolkit,
-    Lesson2_PartVsWhole,
-    Lesson3_Averages,
-    Lesson4_InvalidMath,
-    Lesson5_GamblersFallacy,
-    Lesson6_Conclusion,
-    Lesson7_ReferenceGuide
+    Lesson1_Introduction,
+    Lesson2_StepByStepApproach
   ]
 };

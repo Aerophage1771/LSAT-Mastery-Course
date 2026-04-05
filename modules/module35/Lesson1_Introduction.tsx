@@ -4,159 +4,45 @@ export const Lesson1_Introduction: Lesson = {
   id: "35-1",
   title: "Introduction",
   content: [
-    { type: 'h3', text: "Germaine's Guide to RC Phrase Function Questions" },
+    { type: 'h3', text: "Germaine's Guide to RC Relationship Questions" },
     { type: 'h4', text: "What's this question asking?" },
-    { type: 'paragraph', text: "Phrase Function questions ask you to determine the purpose of a specific word, phrase, or example within the author's argument. Your goal is to identify why the author included that detail and how it contributes to the logic of the paragraph or the passage as a whole." },
-    { type: 'paragraph', text: "This involves analyzing the author's rhetorical strategy to understand how the specific detail helps build their case. To do this effectively:" },
+    { type: 'paragraph', text: "Relationship questions ask you to define the logical connection between two passages, paragraphs, or specific claims. Your goal is to move beyond the individual content of each section and articulate exactly how they interact with one another." },
+    { type: 'paragraph', text: "This often involves identifying the specific nature of the interaction, such as:" },
     { type: 'list', items: [
-      "**Identify the rhetorical role:** Determine if the detail is used to support a claim, illustrate a concept, or acknowledge a counterargument.",
-      "**Look at the surrounding context:** Analyze the sentences immediately before and after the phrase to see what point the author is currently developing.",
-      "**Connect to the main argument:** Link the specific detail back to the broader purpose of the passage.",
-      "**Focus on the intent:** Select the answer choice that explains why the author included the information rather than just what the information says."
+      "**Points of agreement or disagreement:** Determining where two different perspectives overlap or diverge.",
+      "**General theory vs. specific example:** Recognizing when one text provides a case study that illustrates a principle discussed in another.",
+      "**Critique and counterpoint:** Identifying when one section offers a direct challenge or refinement to an argument made elsewhere.",
+      "**Expansion of scope:** Evaluating how a second passage adds new information or implications to the findings of the first."
     ]},
-    { type: 'callout', title: "Content vs. Function", variant: "summary", text: "The right answer must describe **why** the author put the phrase there, not just **what** the phrase says. Many trap answers paraphrase the detail accurately but miss the author's motivation for including it." },
     { type: 'hr' },
-    { type: 'h3', text: "Stem Identification: How to Spot a Phrase Function Question" },
-    { type: 'paragraph', text: "Phrase Function questions ask you to determine the purpose of a specific word, phrase, or example within the author's argument. The chart below breaks down the common phrasing patterns used to ask about the rhetorical role of a specific detail." },
+    { type: 'h3', text: "Stem Identification: How to Spot a Relationship Question" },
+    { type: 'paragraph', text: "Relationship questions, common in comparative passage sets, ask you to define the logical connection between two passages, paragraphs, or specific claims. The chart below breaks down the common phrasing patterns used to ask about this interaction." },
     { 
       type: 'breakdown', 
       labels: { title: 'Category', text: 'Examples & Keywords' }, 
       items: [
         { 
-          title: "Purpose-Driven Phrasing", 
-          text: "**Keywords:** in order to, primarily to, purpose in, most likely in order to\n\n• \"The author refers to... **most probably in order to**...\" <br>• \"The author mentions... **primarily to**...\" <br>• \"Which one of the following most accurately describes the author's main **purpose in** mentioning...?\"", 
-          badge: "Purpose", 
+          title: "Direct Inquiry", 
+          text: "**Keywords:** relationship, relates to, how... are related, is true about the relationship\n\n• \"Which one of the following most accurately characterizes a **relationship between the two passages**?\" <br>• \"**Passage B relates to passage A** in which one of the following ways?\" <br>• \"Which one of the following is **true about the relationship** between the two passages?\"", 
+          badge: "Connection", 
           badgeColor: "indigo" 
         },
         { 
-          title: "Functional Phrasing", 
-          text: "**Keywords:** function, role, serves to, intended to\n\n• \"The discussion of... is **intended primarily to**...\" <br>• \"The reference to... primarily **serves to**...\" <br>• \"The author's reference to... **plays which one of the following roles** in the passage?\"", 
-          badge: "Function", 
+          title: "Comparative Inquiry (Difference)", 
+          text: "**Keywords:** differs from, difference between\n\n• \"**Passage A differs from passage B** in that passage A is more...\" <br>• \"Which one of the following statements most accurately characterizes a **difference between** the two passages?\"", 
+          badge: "Contrast", 
           badgeColor: "blue" 
         },
         { 
-          title: "Exemplification Phrasing", 
-          text: "**Keywords:** illustrate, example of\n\n• \"The author presents the example of Delacroix in order to **illustrate which one of the following claims**?\" <br>• \"The author...most likely cites Shakespeare, Marlowe, and Sidney... **as examples of** writers whose...\"", 
-          badge: "Example", 
+          title: "Specific Connection", 
+          text: "**Keywords:** evidence... relates to generalization, purpose... relates to content, B... relates to A\n\n• \"**The evidence from Ban Chiang discussed in passage B relates to the generalization... in passage A** in which one of the following ways?\" <br>• \"How does the **purpose of passage B relate to the content of passage A**?\"", 
+          badge: "Specific", 
           badgeColor: "green" 
         }
       ] 
     },
-    { type: 'callout', title: "Overarching Takeaway", variant: "summary", text: "Your goal is not to understand what the detail says, but why the author included it at that particular point in the passage. You are analyzing the logical role the detail plays in building the argument. Look for answer choices that describe the detail's function (e.g., \"to support a claim,\" \"to provide a counterexample,\" \"to illustrate a concept\")." },
-    { type: 'h3', text: "The Importance of Phrase Function Questions" },
-    { type: 'paragraph', text: "Phrase Function questions are very common, appearing 152 times and making up over 7% of all RC questions. These questions ask why an author included a specific detail. Answering them correctly is a direct measure of your ability to understand the logical structure of an argument. This skill is foundational and will directly help you answer Paragraph Function, Structure, and Main Point questions." }
-  ],
-  alternates: {
-    diff: {
-      label: 'Diff-Highlighted',
-      content: [
-        {
-          "type": "h3",
-          "text": "Germaine's Guide to RC Phrase Function Questions"
-        },
-        {
-          "type": "h4",
-          "text": "What's this question asking?"
-        },
-        {
-          "type": "paragraph",
-          "text": "Phrase Function questions ask you to determine the purpose of a specific word, phrase, or example within the author's argument. Your goal is to identify why the author included that detail and how it contributes to the logic of the paragraph or the passage as a whole."
-        },
-        {
-          "type": "paragraph",
-          "text": "This involves analyzing the author's rhetorical strategy to understand how the specific detail helps build their case. To do this effectively:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Identify the rhetorical role:** Determine if the detail is used to support a claim, illustrate a concept, or acknowledge a counterargument.",
-            "**Look at the surrounding context:** Analyze the sentences immediately before and after the phrase to see what point the author is currently developing.",
-            "**Connect to the main argument:** Link the specific detail back to the broader purpose of the passage.",
-            "**Focus on the intent:** Select the answer choice that explains why the author included the information rather than just what the information says."
-          ]
-        },
-        {
-          "type": "hr"
-        },
-        {
-          "type": "h3",
-          "text": "Stem Identification: How to Spot a Phrase Function Question"
-        },
-        {
-          "type": "paragraph",
-          "text": "Phrase Function questions ask you to determine the purpose of a specific word, phrase, or example within the author's argument. The chart below breaks down the common phrasing patterns used to ask about the rhetorical role of a specific detail."
-        },
-        {
-          "type": "breakdown",
-          "labels": {
-            "title": "Category",
-            "text": "Examples & Keywords"
-          },
-          "items": [
-            {
-              "title": "Purpose-Driven Phrasing",
-              "text": "**Keywords:** in order to, primarily to, purpose in, most likely in order to\n\n• \"The author refers to... **most probably in order to**...\" <br>• \"The author mentions... **primarily to**...\" <br>• \"Which one of the following most accurately describes the author's main **purpose in** mentioning...?\"",
-              "badge": "Purpose",
-              "badgeColor": "indigo"
-            },
-            {
-              "title": "Functional Phrasing",
-              "text": "**Keywords:** function, role, serves to, intended to\n\n• \"The discussion of... is **intended primarily to**...\" <br>• \"The reference to... primarily **serves to**...\" <br>• \"The author's reference to... **plays which one of the following roles** in the passage?\"",
-              "badge": "Function",
-              "badgeColor": "blue"
-            },
-            {
-              "title": "Exemplification Phrasing",
-              "text": "**Keywords:** illustrate, example of\n\n• \"The author presents the example of Delacroix in order to **illustrate which one of the following claims**?\" <br>• \"The author...most likely cites Shakespeare, Marlowe, and Sidney... **as examples of** writers whose...\"",
-              "badge": "Example",
-              "badgeColor": "green"
-            }
-          ]
-        },
-        {
-          "type": "callout",
-          "title": "Overarching Takeaway",
-          "variant": "summary",
-          "text": "Your goal is not to understand what the detail says, but why the author included it at that particular point in the passage. You are analyzing the logical role the detail plays in building the argument. Look for answer choices that describe the detail's function (e.g., \"to support a claim,\" \"to provide a counterexample,\" \"to illustrate a concept\")."
-        },
-        {
-          "type": "h3",
-          "text": "The Importance of Phrase Function Questions"
-        },
-        {
-          "type": "paragraph",
-          "text": "Phrase Function questions are very common, appearing 152 times and making up over 7% of all RC questions. These questions ask why an author included a specific detail. Answering them correctly is a direct measure of your ability to understand the logical structure of an argument. This skill is foundational and will directly help you answer Paragraph Function, Structure, and Main Point questions."
-        }
-      ],
-    },
-    glance: {
-      label: 'At a Glance',
-      content: [
-        { type: 'h2', text: 'Phrase Function Questions — At a Glance' },
-        { type: 'paragraph', text: 'These questions ask why the author included a specific word, phrase, or example. With **152 appearances** (over 7% of all RC questions), Phrase Function questions test whether you can identify the rhetorical job a detail performs inside the argument.' },
-        {
-          type: 'table',
-          headers: ['Element', 'What to Look For', 'Core Skill', 'Common Trap'],
-          rows: [
-            ['Target detail', 'A phrase, reference, or example the stem highlights', 'Locating the detail and reading the sentence before and after it', 'Describing what the detail says instead of why the author put it there'],
-            ['Local point', 'The claim or idea the surrounding sentences are developing', 'Connecting the detail to the immediately adjacent argument', 'Linking the detail to the wrong paragraph\'s thesis'],
-            ['Rhetorical role', '"In order to," "primarily to," "serves to," "function of"', 'Classifying the role: evidence, example, counterargument, definition, or concession', 'Choosing an answer that names a plausible role the detail does not actually play'],
-            ['Paragraph purpose', 'The broader goal of the paragraph containing the detail', 'Verifying the local function serves the paragraph\'s larger mission', 'Picking a function that fits the passage\'s main point but not the specific paragraph']
-          ]
-        },
-        { type: 'paragraph', text: 'Quick example: If the author mentions Delacroix right after claiming that Romantic painters valued emotion over technique, the function of that reference is to illustrate the claim — not to introduce a new argument or concede a counterpoint.' },
-        {
-          type: 'list',
-          items: [
-            'Find the detail and read one sentence before and one sentence after it.',
-            'Determine what local point the author is building in that immediate context.',
-            'Classify the detail\'s role: evidence, example, counterargument, definition, or concession.',
-            'Eliminate answers that describe what the detail says rather than why it is there.',
-            'If stuck, zoom out and check whether the function you chose fits the paragraph\'s overall goal.'
-          ]
-        },
-        { type: 'callout', variant: 'tip', title: 'Key Principle', text: 'Content is what happens; function is why the author put it there. The right answer always describes the "why."' }
-      ]
-    }
-  }
+    { type: 'callout', title: "Overarching Takeaway", variant: "summary", text: "Your goal is to move beyond the content of each passage and define the structure of the relationship between them. Are they in agreement or disagreement? Does one provide an example of the other's theory? The correct answer will accurately describe this logical interaction." },
+    { type: 'h3', text: "The Importance of Relationship Questions" },
+    { type: 'paragraph', text: "Relationship questions are uncommon, appearing only 18 times, but they are a staple of comparative passage sets. This question type explicitly tests your ability to synthesize and compare the core arguments, assumptions, or tones of two different texts. This skill is crucial for succeeding on the most complex passages the LSAT presents." }
+  ]
 };

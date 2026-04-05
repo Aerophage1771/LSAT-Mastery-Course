@@ -38,7 +38,7 @@ export const PassageCard: React.FC<PassageCardProps> = ({ id, title, genre, pass
   const computedParagraphCount = paragraphCount ?? paragraphs.length;
 
   return (
-    <div className="my-8 rounded-2xl border-[1.5px] border-slate-300 shadow-lg overflow-hidden bg-white">
+    <div className="my-8 rounded-2xl border border-slate-200 shadow-lg overflow-hidden bg-white">
       {/* Header */}
       <div className="bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">

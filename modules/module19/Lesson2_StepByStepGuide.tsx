@@ -2,93 +2,44 @@ import { Lesson } from '../../types';
 
 export const Lesson2_StepByStepGuide: Lesson = {
   id: '19-2',
-  title: 'Step-by-Step Guide: Paradox / Explain',
+  title: 'Step-by-Step Guide',
+  questionPolicy: 'none',
   content: [
+    { type: 'h2', text: 'Step-by-Step Guide: Paradox / Explain' },
+    { type: 'paragraph', text: 'Follow this four-step method to solve any Paradox question quickly and accurately.' },
     {
-      "type": "h2",
-      "text": "Step-by-Step Guide: Paradox / Explain"
+      type: 'process',
+      title: 'The 4-Step Method',
+      steps: [
+        'Identify Both Facts — Read the stimulus and isolate Fact 1 (the expected situation) and Fact 2 (the surprising outcome). Look for pivot words like "however," "yet," or "surprisingly."',
+        'Articulate the Tension — State the paradox in your own words: "Why did X happen even though Y is also true?" If you can\'t phrase the conflict, re-read until you can.',
+        "Prephrase a Bridge — Before looking at the choices, predict the KIND of information that would let both facts coexist. You don't need the exact answer, just the category (a hidden cause, a definitional difference, a numerical trick).",
+        'Match Answer — Test each choice against one question: "Does this new fact explain how BOTH Fact 1 and Fact 2 can be true at the same time?" Select the choice that does.',
+      ],
+    },
+    { type: 'h3', text: 'Wrong Answer Patterns' },
+    {
+      type: 'list',
+      items: [
+        '**Explains Only One Fact** — Validates one side of the conflict without connecting it to the other side. It might explain WHY Fact 1 is true but never addresses why Fact 2 also holds.',
+        '**Deepens the Paradox** — Adds another reason to expect the opposite of what happened, making the conflict harder to resolve rather than easier.',
+        '**Irrelevant** — Introduces information about a different group, time period, or context that has no bearing on the specific two-fact tension.',
+      ],
+    },
+    { type: 'h3', text: 'Worked Method Snapshot' },
+    {
+      type: 'paragraph',
+      text: '**Fact 1:** Employees were highly motivated by the bonus program. **Fact 2:** Productivity still declined. The paradox is not whether the incentives were appealing; it is how motivation and lower output managed to coexist.',
     },
     {
-      "type": "paragraph",
-      "text": "This guide shows you exactly how to handle Paradox and Explain questions. The trick is to find where two facts clash and then find the missing piece of information that makes the whole story make sense."
+      type: 'paragraph',
+      text: 'A strong resolution would show that the bonus program changed employee behavior in a way that consumed productive time, for example by forcing employees to spend hours tracking, documenting, or optimizing for quotas instead of doing the underlying work. That kind of answer bridges both facts at once.',
     },
     {
-      "type": "h3",
-      "text": "Step 1: Identify the Conflict"
+      type: 'callout',
+      variant: 'tip',
+      title: 'Timing Tip',
+      text: 'Spend most of your time on Steps 1-2. If you correctly identify both facts and articulate the tension, the right answer usually jumps out. Rushing past the stimulus to the choices is the most common timing trap on Paradox questions.',
     },
-    {
-      "type": "paragraph",
-      "text": "Read the stimulus with one goal: find the two statements that are in tension with each other. Look for the pivot words (*but, yet, however, surprisingly*) that signal the turn from the expected to the unexpected."
-    },
-    {
-      "type": "paragraph",
-      "text": "**Fact 1 (The Expected):** What is the initial fact or expectation? (e.g., \"A soda company lowered its prices to boost sales.\")"
-    },
-    {
-      "type": "paragraph",
-      "text": "**Fact 2 (The Unexpected):** What is the surprising or contradictory outcome? (e.g., \"However, its sales dropped.\")"
-    },
-    {
-      "type": "paragraph",
-      "text": "Clearly articulate the paradox in your own words before moving on. For example: *\"Why did sales drop even though prices were lowered?\"*"
-    },
-    {
-      "type": "h3",
-      "text": "Step 2: Pre-phrase the Resolution"
-    },
-    {
-      "type": "paragraph",
-      "text": "Your goal is to find a new fact that allows both of the conflicting statements to be true. The correct answer will **not** deny or weaken either fact. Instead, it provides a new piece of information that shows how both facts can actually be true at the same time."
-    },
-    {
-      "type": "paragraph",
-      "text": "Before looking at the choices, try to anticipate the *kind* of information that would resolve the conflict. This prephrase doesn't have to be perfect, but it orients you toward the logical task: you're looking for an explanation."
-    },
-    {
-      "type": "list",
-      "items": [
-        "\"I need a reason why lower prices would lead to lower sales.\"",
-        "\"Maybe a competitor did something?\"",
-        "\"Maybe something else made the soda undesirable?\"",
-        "\"Maybe there was a supply problem?\""
-      ]
-    },
-    {
-      "type": "h3",
-      "text": "Step 3: Evaluate the Answer Choices"
-    },
-    {
-      "type": "paragraph",
-      "text": "Test each answer choice by asking one simple question: **\"If this is true, does it explain how both Fact 1 and Fact 2 can be true at the same time?\"**"
-    },
-    {
-      "type": "paragraph",
-      "text": "**First, look for your pre-phrase.** If one of the choices matches the explanation you predicted in Step 2, it is almost certainly the right answer."
-    },
-    {
-      "type": "paragraph",
-      "text": "**If your pre-phrase isn't there, stay flexible.** Look for *any* piece of new information that provides a logical link. The correct answer will introduce a new cause, a hidden downside, or a crucial distinction that makes the whole story make sense."
-    },
-    {
-      "type": "h3",
-      "text": "Step 4: Systematically Eliminate Traps"
-    },
-    {
-      "type": "paragraph",
-      "text": "Be on the lookout for common incorrect answer patterns that are designed to tempt you but fail to resolve the paradox."
-    },
-    {
-      "type": "list",
-      "items": [
-        "**Trap: The Half-Explanation.** This trap only addresses one of the two conflicting facts in isolation. It validates that fact (e.g., confirming why the first event happened) but fails to explain how it led to the contradictory outcome.",
-        "**Trap: The Worsener.** This trap introduces information that makes the conflict even harder to understand. Instead of resolving the mystery, it adds a new reason why the *expected* outcome should have occurred, rendering the actual result even more illogical.",
-        "**Trap: The Irrelevant Distraction.** This trap provides information that is technically true but completely unrelated to the specific conflict at hand. It often shifts focus to different groups, comparable situations, or other time periods that have no bearing on the relationship between Fact 1 and Fact 2.",
-        "**Trap: The Opposite.** This trap explains the wrong direction. It gives a logical reason for the *expected* result to happen, rather than providing the necessary cause for the *unexpected* result that actually occurred."
-      ]
-    },
-    {
-      "type": "paragraph",
-      "text": "By precisely identifying the conflict and testing each choice against the goal of resolution, you can navigate these traps and find the answer that successfully explains the situation."
-    }
   ],
 };

@@ -1,25 +1,23 @@
 import { ModuleData } from '../types';
 import { Lesson1_PassageAnalysis } from './module56/Lesson1_PassageAnalysis';
-import { Lesson2_Question15 } from './module56/Lesson2_Question15';
-import { Lesson3_Question16 } from './module56/Lesson3_Question16';
-import { Lesson4_Question17 } from './module56/Lesson4_Question17';
-import { Lesson5_Question18 } from './module56/Lesson5_Question18';
-import { Lesson6_Question19 } from './module56/Lesson6_Question19';
-import { Lesson7_Question20 } from './module56/Lesson7_Question20';
+import { Lesson2_Question22 } from './module56/Lesson2_Question22';
+import { Lesson3_Question23 } from './module56/Lesson3_Question23';
+import { Lesson4_Question24 } from './module56/Lesson4_Question24';
+import { Lesson5_Question25 } from './module56/Lesson5_Question25';
+import { Lesson6_Question26 } from './module56/Lesson6_Question26';
 
 export const Module56: ModuleData = {
   id: 56,
-  title: "Advanced Passage 6: Historical Sociology",
+  title: "Advanced Passage 5: Psychology of Risk",
   category: "RC",
   unit: "Unit 14: Advanced Passages",
-  description: "An advanced passage analyzing Philip Abrams's theory of 'structuring' and its application to historical sociology.",
+  description: "An advanced passage analyzing the psychology of decision making and loss aversion, with an application to international relations.",
   lessons: [
     Lesson1_PassageAnalysis,
-    Lesson2_Question15,
-    Lesson3_Question16,
-    Lesson4_Question17,
-    Lesson5_Question18,
-    Lesson6_Question19,
-    Lesson7_Question20,
+    Lesson2_Question22,
+    Lesson3_Question23,
+    Lesson4_Question24,
+    Lesson5_Question25,
+    Lesson6_Question26,
   ]
 };

@@ -1,90 +1,27 @@
 import { Lesson } from '../../types';
 
-const passageText = `What it means to “explain” something in science often comes down to the application of mathematics. Some thinkers hold that mathematics is a kind of language—a systematic contrivance of signs, the criteria for the authority of which are internal coherence, elegance, and depth. The application of such a highly artificial system to the physical world, they claim, results in the creation of a kind of statement about the world. Accordingly, what matters in the sciences is finding a mathematical concept that attempts, as other language does, to accurately describe the functioning of some aspect of the world.
-At the center of the issue of scientific knowledge can thus be found questions about the relationship between language and what it refers to. A discussion about the role played by language in the pursuit of knowledge has been going on among linguists for several decades. The debate centers around whether language corresponds in some essential way to objects and behaviors, making knowledge a solid and reliable commodity; or, on the other hand, whether the relationship between language and things is purely a matter of agreed-upon conventions, making knowledge tenuous, relative, and inexact.g wider acceptance. According to linguists who support this theory, the way language is used varies depending upon changes in accepted practices and theories among those who work in a particular discipline. These linguists argue that, in the pursuit of knowledge, a statement is true only when there are no promising alternatives that might lead one to question it. Certainly this characterization would seem to be applicable to the sciences. In science, a mathematical statement may be taken to account for every aspect of a phenomenon it is applied to, but, some would argue, there is nothing inherent in mathematical language that guarantees such a correspondence. Under this view, acceptance of a mathematical statement by the scientific community—by virtue of the statement’s predictive power or methodological efficiency—transforms what is basically an analogy or metaphor into an explanation of the physical process in question, to be held as true until another, more compelling analogy takes its place.
-In pursuing the implications of this theory, linguists have reached the point at which they must ask: If words or sentences do not correspond in an essential way to life or to our ideas about life, then just what are they capable of telling us about the world? In science and mathematics, then, it would seem equally necessary to ask: If models of electrolytes or E = mc2, say, do not correspond essentially to the physical world, then just what functions do they perform in the acquisition of scientific knowledge? But this question has yet to be significantly addressed in the sciences.`;
+const passageText = `By the time Bentham turned his interest to the subject, late in the eighteenth century, most components of modern evidence law had been assembled. Among common-law doctrines regarding evidence there were, however, principles that today are regarded as bizarre; thus, a well-established (but now abandoned) rule forbade the parties to a case from testifying. Well into the nineteenth century, even defendants in criminal cases were denied the right to testify to facts that would prove their innocence.
+Although extreme in its irrationality, this proscription was in other respects quite typical of the law of evidence. Much of that law consisted of rules excluding relevant evidence, usually on some rational grounds. Hearsay evidence was generally excluded because absent persons could not be cross-examined. Yet such evidence was mechanically excluded even where out-of-court statements were both relevant and reliable, but the absent persons could not appear in court (for example, because they were dead).
+The morass of evidentiary technicalities often made it unlikely that the truth would emerge in a judicial contest, no matter how expensive and protracted. Reform was frustrated both by the vested interests of lawyers and by the profession’s reverence for tradition and precedent. Bentham’s prescription was revolutionary: virtually all evidence tending to prove or disprove the issue in dispute should be admissible. Narrow exceptions were envisioned: instances in which the trouble or expense of presenting or considering proof outweighed its value, confessions to a Catholic priest, and a few other instances.
+One difficulty with Bentham’s nonexclusion principle is that some kinds of evidence are inherently unreliable or misleading. Such was the argument underlying the exclusions of interested-party testimony and hearsay evidence. Bentham argued that the character of evidence should be weighed by the jury: the alternative was to prefer ignorance to knowledge. Yet some evidence, although relevant, is actually more likely to produce a false jury verdict than a true one. To use a modern example, evidence of a defendant’s past bank robberies is excluded, since the prejudicial character of the evidence substantially outweighs its value in helping the jury decide correctly. Further, in granting exclusions such as sacramental confessions, Bentham conceded that competing social interests or values might override the desire for relevant evidence. But then, why not protect conversations between social workers and their clients, or parents and children?
+Despite concerns such as these, the approach underlying modern evidence law began to prevail soon after Bentham’s death: relevant evidence should be admitted unless there are clear grounds of policy for excluding it. This clear-grounds proviso allows more exclusions than Bentham would have liked, but the main thrust of the current outlook is Bentham’s own nonexclusion principle, demoted from a rule to a presumption.`;
 
 export const Lesson1_PassageAnalysis: Lesson = {
   id: "51-1",
   title: "Passage Analysis",
   content: [
-    { type: 'passage-card', title: 'Mathematics as Language', passage: passageText, paragraphCount: 1, wordCount: 447 },    { type: 'h3', text: "Passage Analysis" },
-    { type: 'paragraph', text: "This passage is about how science uses math to explain things. The author uses an idea from language studies to suggest that maybe math isn't a perfect picture of reality, but more like a powerful tool we've all agreed to use. The main point is that scientists should be asking the same tough questions about their 'math-language' that language experts ask about words." },
-    { type: 'hr' },
-    { type: 'h4', text: "Paragraph 1: Math as a Language" },
-    { type: 'paragraph', text: "The passage starts with the main idea: in science, 'explaining' usually means using math. Some people think of math as its own special language made of signs and rules. The goal for a scientist, then, is to find the right math 'sentence' to describe how something in the world works." },
-    { type: 'h4', text: "Paragraph 2: The Big Debate in Language" },
-    { type: 'paragraph', text: "The author brings in a big debate from language studies to make a comparison. The debate is about whether words have a real, direct connection to the things they describe, or if they're just rules we all agree on." },
-    { type: 'list', items: ["**Direct Connection:** Language is a true mirror of reality.", "**Agreed-Upon Rules:** Language is just a system of social conventions."] },
-    { type: 'h4', text: "Paragraph 3: Applying the 'Rules' View to Science" },
-    { type: 'paragraph', text: "The author applies the 'agreed-upon rules' idea to science. In this view, a statement is 'true' just because it's the best explanation we have right now. This is how science works, the author says. A math equation is accepted because it works—it can predict things and is efficient. It's not a perfect picture of reality, but a powerful metaphor that we use until a better one comes along." },
-    { type: 'h4', text: "Paragraph 4: The Unanswered Question for Scientists" },
-    { type: 'paragraph', text: "The passage wraps up by bringing the argument back to the scientists. The language experts who believe in the 'rules' view have to ask a big question: If words don't have a direct link to reality, what are they really telling us? The author argues that scientists need to ask the same thing about their math models (like E=mc²). The passage ends by criticizing scientists for not having seriously tackled this fundamental question yet." },
-    { type: 'callout', title: "Summary", variant: "summary", text: "The author argues that scientists should be more self-critical, just like some language experts. The main idea is that mathematical explanations might not be a direct mirror of reality, but are powerful, agreed-upon tools (or metaphors). The author's final point is a challenge to scientists: it's time to figure out what these mathematical tools are really doing." }
-  ],
-  alternates: {
-    diff: {
-      label: 'Diff-Highlighted',
-      content: [
-        {
-          "type": "accordion",
-          "title": "Read Passage",
-          "content": "What it means to “explain” something in science often comes down to the application of mathematics. Some thinkers hold that mathematics is a kind of language—a systematic contrivance of signs, the criteria for the authority of which are internal coherence, elegance, and depth. The application of such a highly artificial system to the physical world, they claim, results in the creation of a kind of statement about the world. Accordingly, what matters in the sciences is finding a mathematical concept that attempts, as other language does, to accurately describe the functioning of some aspect of the world.\nAt the center of the issue of scientific knowledge can thus be found questions about the relationship between language and what it refers to. A discussion about the role played by language in the pursuit of knowledge has been going on among linguists for several decades. The debate centers around whether language corresponds in some essential way to objects and behaviors, making knowledge a solid and reliable commodity; or, on the other hand, whether the relationship between language and things is purely a matter of agreed-upon conventions, making knowledge tenuous, relative, and inexact.g wider acceptance. According to linguists who support this theory, the way language is used varies depending upon changes in accepted practices and theories among those who work in a particular discipline. These linguists argue that, in the pursuit of knowledge, a statement is true only when there are no promising alternatives that might lead one to question it. Certainly this characterization would seem to be applicable to the sciences. In science, a mathematical statement may be taken to account for every aspect of a phenomenon it is applied to, but, some would argue, there is nothing inherent in mathematical language that guarantees such a correspondence. Under this view, acceptance of a mathematical statement by the scientific community—by virtue of the statement’s predictive power or methodological efficiency—transforms what is basically an analogy or metaphor into an explanation of the physical process in question, to be held as true until another, more compelling analogy takes its place.\nIn pursuing the implications of this theory, linguists have reached the point at which they must ask: If words or sentences do not correspond in an essential way to life or to our ideas about life, then just what are they capable of telling us about the world? In science and mathematics, then, it would seem equally necessary to ask: If models of electrolytes or E = mc2, say, do not correspond essentially to the physical world, then just what functions do they perform in the acquisition of scientific knowledge? But this question has yet to be significantly addressed in the sciences."
-        },
-        {
-          "type": "h3",
-          "text": "Passage Analysis: Mathematics as Language"
-        },
-        {
-          "type": "paragraph",
-          "text": "This passage is about how science uses math to explain things. The author uses an idea from language studies to suggest that maybe math isn't a perfect picture of reality, but more like a powerful tool we've all agreed to use. The main point is that scientists should be asking the same tough questions about their 'math-language' that language experts ask about words."
-        },
-        {
-          "type": "hr"
-        },
-        {
-          "type": "h4",
-          "text": "Paragraph 1: Math as a Language"
-        },
-        {
-          "type": "paragraph",
-          "text": "The passage starts with the main idea: in science, 'explaining' usually means using math. Some people think of math as its own special language made of signs and rules. The goal for a scientist, then, is to find the right math 'sentence' to describe how something in the world works."
-        },
-        {
-          "type": "h4",
-          "text": "Paragraph 2: The Big Debate in Language"
-        },
-        {
-          "type": "paragraph",
-          "text": "The author brings in a big debate from language studies to make a comparison. The debate is about whether words have a real, direct connection to the things they describe, or if they're just rules we all agree on."
-        },
-        {
-          "type": "list",
-          "items": ["**Direct Connection:** Language is a true mirror of reality.", "**Agreed-Upon Rules:** Language is just a system of social conventions."]
-        },
-        {
-          "type": "h4",
-          "text": "Paragraph 3: Applying the 'Rules' View to Science"
-        },
-        {
-          "type": "paragraph",
-          "text": "The author applies the 'agreed-upon rules' idea to science. In this view, a statement is 'true' just because it's the best explanation we have right now. This is how science works, the author says. A math equation is accepted because it works—it can predict things and is efficient. It's not a perfect picture of reality, but a powerful metaphor that we use until a better one comes along."
-        },
-        {
-          "type": "h4",
-          "text": "Paragraph 4: The Unanswered Question for Scientists"
-        },
-        {
-          "type": "paragraph",
-          "text": "The passage wraps up by bringing the argument back to the scientists. The language experts who believe in the 'rules' view have to ask a big question: If words don't have a direct link to reality, what are they really telling us? The author argues that scientists need to ask the same thing about their math models (like E=mc²). The passage ends by criticizing scientists for not having seriously tackled this fundamental question yet."
-        },
-        {
-          "type": "callout",
-          "title": "Summary",
-          "variant": "summary",
-          "text": "The author argues that scientists should be more self-critical, just like some language experts. The main idea is that mathematical explanations might not be a direct mirror of reality, but are powerful, agreed-upon tools (or metaphors). The author's final point is a challenge to scientists: it's time to figure out what these mathematical tools are really doing."
-        }
-      ],
-    },
-  },
+    { type: 'accordion', title: 'Read Passage', content: passageText },
+    { type: 'h3', text: "Passage Analysis" },
+    { type: 'paragraph', text: "The passage is a balanced look at Jeremy Bentham's big idea for legal reform. It argues his 'nonexclusion principle'—the idea that almost all evidence should be allowed in court—was brilliant and shaped modern law, but also had some serious flaws. His idea was a game-changer, even if we don't follow it perfectly today." },
+    { type: 'h4', text: "Paragraph 1: The Old, Irrational System" },
+    { type: 'paragraph', text: "The author starts by painting a picture of how bizarre the law was in the 18th century. The rules were so strange that people involved in a case weren't even allowed to speak to prove their own innocence." },
+    { type: 'h4', text: "Paragraph 2: Rules That Hid the Truth" },
+    { type: 'paragraph', text: "The second paragraph explains that the old system was full of rules that blocked good evidence. For example, hearsay was automatically excluded, even if it was reliable and the speaker was dead. These rigid rules often made it impossible to find out what really happened." },
+    { type: 'h4', text: "Paragraph 3: Bentham's Radical Solution" },
+    { type: 'paragraph', text: "This is where we meet the hero of the story, Jeremy Bentham. He proposed a radical fix for the broken system: his 'nonexclusion principle.' The idea was simple: let in *all* the evidence, unless there's a very good, practical reason to exclude it." },
+    { type: 'h4', text: "Paragraph 4: Problems with the Solution" },
+    { type: 'paragraph', text: "The author then plays devil's advocate, pointing out the weak spots in Bentham's idea. What about evidence that's really misleading, like a defendant's past crimes? Also, if you make one exception for social values (like priest confessions), where do you draw the line? The author shows Bentham's rule wasn't a perfect fix." },
+    { type: 'h4', text: "Paragraph 5: Bentham's Enduring Legacy" },
+    { type: 'paragraph', text: "The passage wraps up by showing that despite the problems, Bentham's core idea won. Modern evidence law starts from his basic principle: evidence should be allowed unless there's a strong reason to exclude it. It's not the absolute rule he wanted, but his thinking changed everything." }
+  ]
 };

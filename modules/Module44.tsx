@@ -1,29 +1,29 @@
 import { ModuleData } from '../types';
 import { Lesson1_PassageAnalysis } from './module44/Lesson1_PassageAnalysis';
-import { Lesson2_Question14 } from './module44/Lesson2_Question14';
-import { Lesson3_Question15 } from './module44/Lesson3_Question15';
-import { Lesson4_Question16 } from './module44/Lesson4_Question16';
-import { Lesson5_Question17 } from './module44/Lesson5_Question17';
-import { Lesson6_Question18 } from './module44/Lesson6_Question18';
-import { Lesson7_Question19 } from './module44/Lesson7_Question19';
-import { Lesson8_Question20 } from './module44/Lesson8_Question20';
-import { Lesson9_Question21 } from './module44/Lesson9_Question21';
+import { Lesson2_Question8 } from './module44/Lesson2_Question8';
+import { Lesson3_Question9 } from './module44/Lesson3_Question9';
+import { Lesson4_Question10 } from './module44/Lesson4_Question10';
+import { Lesson5_Question11 } from './module44/Lesson5_Question11';
+import { Lesson6_Question12 } from './module44/Lesson6_Question12';
+import { Lesson7_Question13 } from './module44/Lesson7_Question13';
+import { Lesson8_Question14 } from './module44/Lesson8_Question14';
+import { Lesson9_Question15 } from './module44/Lesson9_Question15';
 
 export const Module44: ModuleData = {
   id: 44,
-  title: "Practice Passage 3: Cultural Identity",
+  title: "RC: Practice Passage 6",
   category: "RC",
   unit: "Unit 12: Sample Passages",
-  description: "A breakdown of a humanities passage exploring how cultural identities are constructed, featuring analysis of main idea, inference, and author attitude.",
+  description: "A breakdown of an art criticism passage on Julia Margaret Cameron's photography, exploring the paradox that the work's artistic success stems from its technical failures and amateurish qualities.",
   lessons: [
     Lesson1_PassageAnalysis,
-    Lesson2_Question14,
-    Lesson3_Question15,
-    Lesson4_Question16,
-    Lesson5_Question17,
-    Lesson6_Question18,
-    Lesson7_Question19,
-    Lesson8_Question20,
-    Lesson9_Question21,
+    Lesson2_Question8,
+    Lesson3_Question9,
+    Lesson4_Question10,
+    Lesson5_Question11,
+    Lesson6_Question12,
+    Lesson7_Question13,
+    Lesson8_Question14,
+    Lesson9_Question15,
   ]
 };

@@ -4,7 +4,7 @@ import DOMPurify from 'dompurify';
 import { Search, Filter, ChevronDown, ChevronUp, BookOpen, Hash, X, ArrowLeft, Download } from 'lucide-react';
 import { ContentBlock, DrillReference } from '../types';
 import inventoryData from '../docs/operations/audits/invented-questions-inventory.json';
-import { getDisplayModuleLabel, resolveIllustrativeInventoryItem } from '../utils/courseCatalog';
+import { resolveIllustrativeInventoryItem } from '../utils/courseCatalog';
 import {
   generateQuestionBankCSV,
   generateQuestionBankJSON,
@@ -27,31 +27,30 @@ interface InventoryItem {
 
 const typedInventory: InventoryItem[] = inventoryData as InventoryItem[];
 
-import { Lesson1_Module1_Questions } from '../modules/_orphaned/module48_legacy/Lesson1_Module1_Questions';
-import { Lesson2_Module2_Questions } from '../modules/_orphaned/module48_legacy/Lesson2_Module2_Questions';
-import { Lesson3_Module3_Questions } from '../modules/_orphaned/module48_legacy/Lesson3_Module3_Questions';
-import { Lesson4_Module4_Questions } from '../modules/_orphaned/module48_legacy/Lesson4_Module4_Questions';
-import { Lesson5_Module5_Questions } from '../modules/_orphaned/module48_legacy/Lesson5_Module5_Questions';
-import { Lesson6_Module6_Questions } from '../modules/_orphaned/module48_legacy/Lesson6_Module6_Questions';
-import { Lesson7_Module7_Questions } from '../modules/_orphaned/module48_legacy/Lesson7_Module7_Questions';
-import { Lesson8_Module8_Questions } from '../modules/_orphaned/module48_legacy/Lesson8_Module8_Questions';
-import { Lesson9_Module9_Questions } from '../modules/_orphaned/module48_legacy/Lesson9_Module9_Questions';
-import { Lesson10_Module60_Questions } from '../modules/_orphaned/module48_legacy/Lesson10_Module60_Questions';
-import { Lesson11_Module10_Questions } from '../modules/_orphaned/module48_legacy/Lesson11_Module10_Questions';
-import { Lesson12_Module11_Questions } from '../modules/_orphaned/module48_legacy/Lesson12_Module11_Questions';
-import { Lesson13_Module12_Questions } from '../modules/_orphaned/module48_legacy/Lesson13_Module12_Questions';
-import { Lesson14_Module13_Questions } from '../modules/_orphaned/module48_legacy/Lesson14_Module13_Questions';
-import { Lesson15_Module14_Questions } from '../modules/_orphaned/module48_legacy/Lesson15_Module14_Questions';
-import { Lesson16_Module15_Questions } from '../modules/_orphaned/module48_legacy/Lesson16_Module15_Questions';
-import { Lesson17_Module16_Questions } from '../modules/_orphaned/module48_legacy/Lesson17_Module16_Questions';
-import { Lesson18_Module17_Questions } from '../modules/_orphaned/module48_legacy/Lesson18_Module17_Questions';
-import { Lesson19_Module18_Questions } from '../modules/_orphaned/module48_legacy/Lesson19_Module18_Questions';
-import { Lesson20_Module19_Questions } from '../modules/_orphaned/module48_legacy/Lesson20_Module19_Questions';
-import { Lesson21_Module20_Questions } from '../modules/_orphaned/module48_legacy/Lesson21_Module20_Questions';
-import { Lesson22_Module55_Questions } from '../modules/_orphaned/module48_legacy/Lesson22_Module55_Questions';
-import { Lesson23_Module59_Questions } from '../modules/_orphaned/module48_legacy/Lesson23_Module59_Questions';
-import { Lesson1_QuestionRepository } from '../modules/_orphaned/module49_legacy/Lesson1_QuestionRepository';
-import { Lesson1_AdvancedRCQuestionRepository } from '../modules/_orphaned/module53_legacy/Lesson1_AdvancedRCQuestionRepository';
+import { Lesson1_Module1_Questions } from '../modules/module48/Lesson1_Module1_Questions';
+import { Lesson2_Module2_Questions } from '../modules/module48/Lesson2_Module2_Questions';
+import { Lesson3_Module3_Questions } from '../modules/module48/Lesson3_Module3_Questions';
+import { Lesson4_Module4_Questions } from '../modules/module48/Lesson4_Module4_Questions';
+import { Lesson5_Module5_Questions } from '../modules/module48/Lesson5_Module5_Questions';
+import { Lesson6_Module6_Questions } from '../modules/module48/Lesson6_Module6_Questions';
+import { Lesson7_Module7_Questions } from '../modules/module48/Lesson7_Module7_Questions';
+import { Lesson8_Module8_Questions } from '../modules/module48/Lesson8_Module8_Questions';
+import { Lesson9_Module9_Questions } from '../modules/module48/Lesson9_Module9_Questions';
+import { Lesson10_Module10_Questions } from '../modules/module48/Lesson10_Module10_Questions';
+import { Lesson11_Module11_Questions } from '../modules/module48/Lesson11_Module11_Questions';
+import { Lesson12_Module12_Questions } from '../modules/module48/Lesson12_Module12_Questions';
+import { Lesson13_Module13_Questions } from '../modules/module48/Lesson13_Module13_Questions';
+import { Lesson14_Module14_Questions } from '../modules/module48/Lesson14_Module14_Questions';
+import { Lesson15_Module15_Questions } from '../modules/module48/Lesson15_Module15_Questions';
+import { Lesson16_Module16_Questions } from '../modules/module48/Lesson16_Module16_Questions';
+import { Lesson17_Module17_Questions } from '../modules/module48/Lesson17_Module17_Questions';
+import { Lesson18_Module18_Questions } from '../modules/module48/Lesson18_Module18_Questions';
+import { Lesson19_Module19_Questions } from '../modules/module48/Lesson19_Module19_Questions';
+import { Lesson20_Module20_Questions } from '../modules/module48/Lesson20_Module20_Questions';
+import { Lesson21_Module55_Questions } from '../modules/module48/Lesson21_Module55_Questions';
+import { Lesson22_Module59_Questions } from '../modules/module48/Lesson22_Module59_Questions';
+import { Lesson1_QuestionRepository } from '../modules/module49/Lesson1_QuestionRepository';
+import { Lesson1_AdvancedRCQuestionRepository } from '../modules/module53/Lesson1_AdvancedRCQuestionRepository';
 
 const LR_LESSONS = [
   Lesson1_Module1_Questions,
@@ -63,69 +62,22 @@ const LR_LESSONS = [
   Lesson7_Module7_Questions,
   Lesson8_Module8_Questions,
   Lesson9_Module9_Questions,
-  Lesson10_Module60_Questions,
-  Lesson11_Module10_Questions,
-  Lesson12_Module11_Questions,
-  Lesson13_Module12_Questions,
-  Lesson14_Module13_Questions,
-  Lesson15_Module14_Questions,
-  Lesson16_Module15_Questions,
-  Lesson17_Module16_Questions,
-  Lesson18_Module17_Questions,
-  Lesson19_Module18_Questions,
-  Lesson20_Module19_Questions,
-  Lesson21_Module20_Questions,
-  Lesson22_Module55_Questions,
-  Lesson23_Module59_Questions,
+  Lesson10_Module10_Questions,
+  Lesson11_Module11_Questions,
+  Lesson12_Module12_Questions,
+  Lesson13_Module13_Questions,
+  Lesson14_Module14_Questions,
+  Lesson15_Module15_Questions,
+  Lesson16_Module16_Questions,
+  Lesson17_Module17_Questions,
+  Lesson18_Module18_Questions,
+  Lesson19_Module19_Questions,
+  Lesson20_Module20_Questions,
+  Lesson21_Module55_Questions,
+  Lesson22_Module59_Questions,
 ];
 
 const RC_LESSONS = [Lesson1_QuestionRepository, Lesson1_AdvancedRCQuestionRepository];
-
-interface ReviewBundle {
-  id: string;
-  label: string;
-  description: string;
-  typeNames: string[];
-}
-
-const LR_REVIEW_BUNDLES: ReviewBundle[] = [
-  {
-    id: 'lr-foundations',
-    label: 'LR Foundations',
-    description: 'Argument structure, method, and core flaw diagnosis.',
-    typeNames: ['Argument Part', 'Main Conclusion', 'Method of Reasoning', 'Flaw'],
-  },
-  {
-    id: 'lr-matchups',
-    label: 'Matchups And Causal',
-    description: 'Parallel work, evaluation, and causal reasoning families.',
-    typeNames: ['Parallel Reasoning', 'Parallel Flaw', 'Evaluate the Argument', 'Causal Reasoning'],
-  },
-  {
-    id: 'lr-support',
-    label: 'Support And Assumptions',
-    description: 'Weaken, strengthen, and assumption-heavy review.',
-    typeNames: ['Weaken', 'Strengthen', 'Sufficient Assumption', 'Necessary Assumption'],
-  },
-  {
-    id: 'lr-principles',
-    label: 'Principles And Debate',
-    description: 'Principle questions plus point-at-issue tracking.',
-    typeNames: ['Principle-Strengthen', 'Principle-Apply', 'Principle-Generalization', 'Agree/Disagree (Point at Issue)'],
-  },
-  {
-    id: 'lr-inference',
-    label: 'Inference And Resolution',
-    description: 'Inference-heavy and discrepancy-style review.',
-    typeNames: ['Fill in the Blank', 'Most Strongly Supported', 'Must Be True', 'Must Be False', 'Paradox/Explain'],
-  },
-  {
-    id: 'lr-formal',
-    label: 'Formal And Quantitative',
-    description: 'Conditional and math-intensive reasoning review.',
-    typeNames: ['Conditional Reasoning', 'LSAT Math'],
-  },
-];
 
 interface ParsedQuestion {
   id: string;
@@ -170,7 +122,7 @@ function extractLRQuestions(counter: { value: number }): ParsedQuestion[] {
   const questions: ParsedQuestion[] = [];
 
   for (const lesson of LR_LESSONS) {
-    const typeName = lesson.title.replace(/^Module\s+[0-9A-Za-z.]+:\s*/, '');
+    const typeName = lesson.title.replace(/^Module\s+\d+:\s*/, '');
     const blocks = lesson.content;
     if (typeof blocks === 'string') continue;
 
@@ -292,25 +244,7 @@ function extractAllQuestions(): ParsedQuestion[] {
   const counter = { value: 0 };
   const lr = extractLRQuestions(counter);
   const rc = extractRCQuestions(counter);
-  const deduped: ParsedQuestion[] = [];
-  const seen = new Set<string>();
-
-  for (const question of [...lr, ...rc]) {
-    const key = [
-      question.category,
-      question.ptId,
-      question.typeName,
-      question.passageTitle ?? '',
-      question.stimulus.replace(/\s+/g, ' ').trim(),
-      question.question.replace(/\s+/g, ' ').trim(),
-    ].join('|');
-
-    if (seen.has(key)) continue;
-    seen.add(key);
-    deduped.push(question);
-  }
-
-  return deduped;
+  return [...lr, ...rc];
 }
 
 const ALL_QUESTIONS = extractAllQuestions();
@@ -408,7 +342,7 @@ const QuestionCardItem: React.FC<{
   const truncated = plainStimulus.length > 180 ? plainStimulus.slice(0, 180) + '…' : plainStimulus;
 
   return (
-    <div className="group rounded-xl border-[1.5px] border-slate-300 bg-white hover:border-slate-400 transition-all duration-200 shadow-[0_4px_16px_rgba(15,23,42,0.06)] hover:shadow-md overflow-hidden">
+    <div className="group rounded-xl border border-slate-200 bg-white hover:border-slate-300 transition-all duration-200 shadow-sm hover:shadow-md overflow-hidden">
       <button onClick={onToggle} className="w-full text-left px-5 py-4 flex items-start gap-4">
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-2 flex-wrap">
@@ -454,7 +388,7 @@ const QuestionCardItem: React.FC<{
               >
                 <BookOpen size={12} />
                 <span>
-                  {getDisplayModuleLabel(drillCrossReferences[q.ptId].moduleId)}: {drillCrossReferences[q.ptId].moduleTitle} -{' '}
+                  Module {drillCrossReferences[q.ptId].moduleId}: {drillCrossReferences[q.ptId].moduleTitle} -{' '}
                   {drillCrossReferences[q.ptId].lessonTitle}
                 </span>
               </Link>
@@ -514,7 +448,6 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<'LR' | 'RC' | null>(null);
-  const [selectedReviewBundleId, setSelectedReviewBundleId] = useState<string | null>(null);
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<'real' | 'illustrative'>('real');
@@ -543,18 +476,12 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
     setActiveTab('real');
     setSelectedType(null);
     setSelectedCategory(null);
-    setSelectedReviewBundleId(null);
     setShowInUseOnly(false);
     setShowNotInUseOnly(false);
     setSearchQuery(ptParam);
     const exactMatch = ALL_QUESTIONS.find((question) => question.ptId === ptParam);
     setExpandedId(exactMatch?.id ?? null);
   }, [ptParam]);
-
-  const selectedReviewBundle = useMemo(
-    () => LR_REVIEW_BUNDLES.find((bundle) => bundle.id === selectedReviewBundleId) ?? null,
-    [selectedReviewBundleId],
-  );
 
   const lrTypeCountMap = useMemo(() => {
     const map = new Map<string, number>();
@@ -625,10 +552,6 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
   const filteredQuestions = useMemo(() => {
     let result = ALL_QUESTIONS;
 
-    if (selectedReviewBundle) {
-      result = result.filter((q) => q.category === 'LR' && selectedReviewBundle.typeNames.includes(q.typeName));
-    }
-
     if (selectedCategory) {
       result = result.filter((q) => q.category === selectedCategory);
     }
@@ -657,15 +580,7 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
     }
 
     return result;
-  }, [
-    selectedType,
-    selectedCategory,
-    searchQuery,
-    showInUseOnly,
-    showNotInUseOnly,
-    drillCrossReferences,
-    selectedReviewBundle,
-  ]);
+  }, [selectedType, selectedCategory, searchQuery, showInUseOnly, showNotInUseOnly, drillCrossReferences]);
 
   const exportRows = useMemo<QuestionBankExportRow[]>(() => {
     if (activeTab === 'real') {
@@ -762,7 +677,6 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
                   onClick={() => {
                     setSelectedType(null);
                     setSelectedCategory(null);
-                    setSelectedReviewBundleId(null);
                     setSidebarOpen(false);
                   }}
                   className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
@@ -788,7 +702,6 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
                     onClick={() => {
                       setSelectedType(name);
                       setSelectedCategory('LR');
-                      setSelectedReviewBundleId(null);
                       setSidebarOpen(false);
                     }}
                     className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
@@ -815,7 +728,6 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
                     onClick={() => {
                       setSelectedType(name);
                       setSelectedCategory('RC');
-                      setSelectedReviewBundleId(null);
                       setSidebarOpen(false);
                     }}
                     className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
@@ -838,7 +750,6 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
                 <button
                   onClick={() => {
                     setSelectedType(null);
-                    setSelectedReviewBundleId(null);
                     setSidebarOpen(false);
                   }}
                   className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
@@ -864,7 +775,6 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
                     onClick={() => {
                       setSelectedType(name);
                       setSelectedCategory(null);
-                      setSelectedReviewBundleId(null);
                       setSidebarOpen(false);
                     }}
                     className={`w-full text-left px-5 py-2.5 text-[13px] flex items-center justify-between transition-colors ${
@@ -898,7 +808,6 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
                     setActiveTab('real');
                     setSelectedType(null);
                     setSelectedCategory(null);
-                    setSelectedReviewBundleId(null);
                   }}
                 >
                   PrepTest Questions <span className="ml-1 text-xs text-slate-400">{ALL_QUESTIONS.length}</span>
@@ -909,7 +818,6 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
                     setActiveTab('illustrative');
                     setSelectedType(null);
                     setSelectedCategory(null);
-                    setSelectedReviewBundleId(null);
                   }}
                 >
                   Illustrative Questions <span className="ml-1 text-xs text-slate-400">{typedInventory.length}</span>
@@ -980,7 +888,7 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
                   <ChevronDown size={14} className={`${exportMenuOpen ? 'rotate-180' : ''} transition-transform`} />
                 </button>
                 {exportMenuOpen && (
-                  <div className="absolute right-0 mt-2 w-60 rounded-xl border-[1.5px] border-slate-300 bg-white shadow-xl z-30 p-1.5">
+                  <div className="absolute right-0 mt-2 w-60 rounded-xl border border-slate-200 bg-white shadow-xl z-30 p-1.5">
                     <button
                       onClick={() =>
                         downloadExport(
@@ -1094,60 +1002,7 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
                   </button>
                 </span>
               )}
-              {selectedReviewBundle && (
-                <span className="ml-2 inline-flex items-center gap-1">
-                  <span className="text-slate-300">·</span>
-                  <span className="font-medium text-indigo-600">{selectedReviewBundle.label}</span>
-                  <button
-                    onClick={() => setSelectedReviewBundleId(null)}
-                    className="ml-1 text-slate-400 hover:text-slate-600"
-                  >
-                    <X size={12} />
-                  </button>
-                </span>
-              )}
             </p>
-            {activeTab === 'real' && (
-              <div className="mt-4 rounded-2xl border-[1.5px] border-slate-300 bg-slate-50/80 p-4 sm:p-5">
-                <div className="flex flex-col gap-3">
-                  <div>
-                    <h2 className="text-sm font-semibold text-slate-900">LR Review Bundles</h2>
-                    <p className="mt-1 text-[13px] leading-relaxed text-slate-600">
-                      Use these cumulative, repository-backed bundles for review-layer drilling. After a miss, reopen
-                      the linked drill lesson when available, then revisit the relevant module reference guide before
-                      returning to the bundle.
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {LR_REVIEW_BUNDLES.map((bundle) => (
-                      <button
-                        key={bundle.id}
-                        onClick={() => {
-                          setSelectedReviewBundleId((current) => (current === bundle.id ? null : bundle.id));
-                          setSelectedCategory('LR');
-                          setSelectedType(null);
-                          setActiveTab('real');
-                        }}
-                        className={`inline-flex items-center rounded-full border px-3 py-1.5 text-xs font-medium transition-colors ${
-                          selectedReviewBundleId === bundle.id
-                            ? 'border-indigo-200 bg-indigo-50 text-indigo-700'
-                            : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:text-slate-800'
-                        }`}
-                        title={bundle.description}
-                      >
-                        {bundle.label}
-                      </button>
-                    ))}
-                  </div>
-                  {selectedReviewBundle && (
-                    <p className="text-[12px] text-slate-500">
-                      <span className="font-semibold text-slate-700">{selectedReviewBundle.label}:</span>{' '}
-                      {selectedReviewBundle.description}
-                    </p>
-                  )}
-                </div>
-              </div>
-            )}
           </div>
 
           {/* Question cards */}
@@ -1184,7 +1039,7 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
                   filteredIllustrative.map((item) => (
                     <div
                       key={`${item.file}-${item.cardId}`}
-                      className="p-4 rounded-lg border-[1.5px] border-slate-300 hover:border-amber-300 transition-colors"
+                      className="p-4 rounded-lg border border-slate-200 hover:border-amber-300 transition-colors"
                     >
                       <div className="flex items-center gap-2 mb-2 flex-wrap">
                         <span className="text-xs font-mono bg-amber-50 text-amber-700 px-2 py-0.5 rounded border border-amber-200">
@@ -1202,7 +1057,7 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ drillCrossReferences
                       </div>
                       <div className="text-sm text-slate-700 font-medium">{item.resolvedLessonTitle}</div>
                       <div className="text-xs text-slate-500 mt-1">
-                        {getDisplayModuleLabel(item.routeModuleId)}: {item.resolvedModuleTitle}
+                        Module {item.routeModuleId}: {item.resolvedModuleTitle}
                       </div>
                       <Link
                         to={`/module/${item.routeModuleId}/lesson/${item.lessonId}`}

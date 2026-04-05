@@ -1,163 +1,34 @@
 import { Lesson } from '../../types';
 
-const passageText = `Joy Kogawa’s Obasan is an account of a Japanese-Canadian family’s experiences during World War II. The events are seen from the viewpoint of a young girl who watches her family disintegrate as it undergoes the relocation that occurred in both Canada and the United States. Although the experience depicted in Obasan is mainly one of dislocation, Kogawa employs subtle techniques that serve to emphasize her major character’s heroism and to critique the majority culture. The former end is achieved through the novel’s form and the latter through the symbols it employs.
-
-The form of the novel parallels the three-stage structure noted by anthropologists in their studies of rites of passage. According to these anthropologists, a rite of passage begins with separation from a position of security in a highly structured society; proceeds to alienation in a deathlike state where one is stripped of status, property, and rank; and concludes with reintegration into society accompanied by a heightened status gained as a result of the second stage. The process thus has the effect of transforming a society’s victim into a hero. The first eleven chapters of Obasan situate the young protagonist Naomi Nakane in a close-knit, securely placed family within Vancouver society. Chapters 12–32 chronicle the fall into alienation, when Naomi’s family is dislodged from its structured social niche and removed from the city into work camps or exile. Separated from her parents, Naomi follows her aunt Aya Obasan to the ghost town of Slocan, where Naomi joins the surrogate family of her uncle and aunt. In chapters 33–39 this surrogate family nurtures Naomi as she develops toward a final integration with the larger society and with herself: as an adult, when she receives a bundle of family documents and letters from her aunt, Naomi breaks through the personal and cultural screens of silence and secretiveness that have enshrouded her past, and reconciles herself with her history.
-
-Kogawa’s use of motifs drawn from Christian rituals and symbols forms a subtle critique of the professed ethics of the majority culture that has shunned Naomi. In one example of such symbolism, Naomi’s reacquaintance with her past is compared with the biblical story of turning stone into bread. The bundle of documents—which Kogawa refers to as “stone-hard facts”—brings Naomi to the recognition of her country’s abuse of her people. But implicit in these hard facts, Kogawa suggests, is also the “bread” of a spiritual sustenance that will allow Naomi to affirm the durability of her people and herself. Through the careful deployment of structure and symbol, Kogawa thus manages to turn Naomi’s experience—and by extension the wartime experiences of many Japanese Canadians—into a journey of heroic transformation and a critique of the majority culture.`;
+const passageText = `In filmmaker Woody Allen’s Deconstructing Harry, the writer Harry Block is presented as extremely neurotic and narcissistic. Block uses his experiences as fodder for his work, no matter how embarrassing the result may be for the other people in his life. And while Allen exaggerates Block’s narcissism for comic effect, the effect is not simply comic: the film is emblematic of Allen’s career precisely because of its extravagantly exaggerated censure of a life dedicated to and obsessed with art. Deconstructing Harry may be the most unequivocally peevish of Allen’s depictions of artists, but it is less a new direction for Allen than a concentrated reprise of a theme present throughout his career.
+For instance, a film producer in Stardust Memories, Allen’s sourest portrait of artists before Harry, articulates a particularly cynical view of cinematic art after a screening of a film-in-progress by Stardust Memories’ main character, Sandy Bates. The producer says of Bates, “His insights are shallow and morbid. I’ve seen it all before. They try to document their private suffering and fob it off as art.” The producer, like all the figures in this film, often seems less a distinct individual than a projection of Bates’s personal self-recriminations. This effectively reinforces the charge of solipsism with which Bates, the unstable and demoralized artist, indicts himself. Indeed, the possibility that artists are merely “documenting their private suffering and fobbing it off as art” appears sufficiently often in Allen’s films to seem an unresolved personal issue.
+In Manhattan, the ex-wife of a television writer and aspiring novelist offers a denigratory take on the artistic enterprise that is similar to the producer’s in Stardust Memories. Her book documenting the collapse of her marriage punctures her ex-husband’s artistic pretensions by revealing that he “longed to be an artist but balked at the necessary sacrifices. In his most private moments, he spoke of the fear of death, which he elevated to tragic heights when, in fact, it was mere narcissism.”
+It is also significant that in Allen’s films, the less artistic the characters, the more likely their narrative is to result in a happy ending. Thus, the filmmaker in Crimes and Misdemeanors, the novelist in Husbands and Wives, and the screenwriter in Celebrity all wind up desolate and solitary, largely because of the egocentric and exploitative attitudes embodied in their art and the effects of those attitudes on those around them. On the other hand, the unpretentious, thoroughly inartistic title character in Zelig dies an untroubled, even happy, death, only slightly compromised by his failure to finish reading Moby-Dick. And the title character and talent agent in Broadway Danny Rose is the beneficiary of the most gratifying resolution Allen has scripted, primarily due to altruistic devotion to his utterly talentless nightclub performers.`;
 
 export const Lesson1_PassageAnalysis: Lesson = {
-  id: "42-1",
-  title: "Passage Analysis",
-  content: [
-    { type: 'passage-card', title: 'Obasan', passage: passageText, paragraphCount: 3, wordCount: 450 },
-    { type: 'h3', text: "Passage Analysis" },
-    { type: 'paragraph', text: "Alright, everyone, our next text is a deep dive into a novel called *Obasan* by Joy Kogawa. The passage isn't just telling us what the book is about; it's making an argument about *how* the author achieves her goals. This is literary criticism, and our job is to understand the critic's argument." },
-    { type: 'paragraph', text: "So, let's break down the passage and see how this analysis is constructed." },
-    { type: 'hr' },
-    { type: 'h4', text: "Paragraph 1: The Thesis Statement" },
-    { type: 'paragraph', text: "The first paragraph sets the entire stage. It gives us the basics: *Obasan* is a novel about a Japanese-Canadian family's traumatic experiences during World War II, told from the perspective of a young girl, Naomi. The central experience is one of \"dislocation\" and family disintegration." },
-    { type: 'paragraph', text: "But then, the author of the passage lays out their main argument, their thesis. They claim that even though the story is about suffering, Kogawa uses two specific literary techniques to achieve two specific goals." },
-    { 
-      type: 'breakdown',
-      labels: { title: 'Technique', text: 'Goal' },
-      items: [
-        { title: "The Novel's Form (Structure)", text: "To emphasize the main character's **heroism**.", badge: "Technique 1", badgeColor: "indigo" },
-        { title: "The Use of Symbols", text: "To **critique** the majority culture that oppressed her family.", badge: "Technique 2", badgeColor: "blue" }
-      ]
-    },
-    { type: 'paragraph', text: "This first paragraph is essentially a roadmap for the rest of the text. Now we know exactly what the next two paragraphs are going to explain." },
-    
-    { type: 'h4', text: "Paragraph 2: Heroism Through Form (The Rites of Passage)" },
-    { type: 'paragraph', text: "This paragraph is all about the first half of that thesis: how the novel's *structure* creates a hero. The author introduces a concept from anthropology called the \"rites of passage.\" This is a three-stage process that marks a person's transition from one state to another. The passage lays out the three stages very clearly:" },
-    { 
-      type: 'list', 
-      ordered: true,
-      items: [
-        "**Separation:** You start in a safe, structured society and are removed from it.",
-        "**Alienation:** You enter a \"deathlike state\" where you lose everything—status, property, identity. This is the trial or the ordeal.",
-        "**Reintegration:** You return to society, but you're not the same. You've been transformed by the ordeal and now have a \"heightened status.\""
-      ] 
-    },
-    { type: 'paragraph', text: "The key insight here is that this structure has the effect of \"transforming a society’s victim into a hero.\" The author then meticulously maps the plot of *Obasan* onto this three-stage framework, even using chapter numbers to prove the point. Stage 1 is Naomi's happy childhood. Stage 2 is the family's forced relocation and exile. Stage 3 is Naomi as an adult, finally confronting her past and reconciling with her history, emerging as a whole person. The structure of the story *is* the hero's journey." },
-
-    { type: 'h4', text: "Paragraph 3: Critique Through Symbolism (Stone into Bread)" },
-    { type: 'paragraph', text: "The final paragraph addresses the second half of the thesis: how Kogawa uses *symbols* to critique the dominant culture. The author points specifically to Kogawa's use of motifs from Christian rituals. This is a subtle but powerful choice, because Kogawa is using the symbols of the very culture that is oppressing her characters to highlight its hypocrisy." },
-    { type: 'paragraph', text: "The passage gives us a perfect example: the biblical story of turning stone into bread. Naomi receives a bundle of old family documents, which are described as \"stone-hard facts.\" These facts are the heavy, painful truth of her family's suffering. They are the \"stone.\"" },
-    { type: 'paragraph', text: "But the passage argues that by confronting this hard reality, Naomi finds spiritual nourishment, or \"bread.\" She finds the strength to affirm her own identity and the resilience of her people." },
-    { type: 'paragraph', text: "This symbol does double duty. It critiques a country that gave its Japanese-Canadian citizens stones instead of bread, while also showing how Naomi heroically transforms that stone *into* bread for herself. The paragraph concludes by neatly tying everything together, restating how structure and symbol work in tandem to achieve the novel's powerful effects." },
-    
-    { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "Let's boil down the argument presented in this passage into its essential parts.\n\n*   **The Central Argument:** The passage argues that Joy Kogawa's novel *Obasan* is not just a story of victimhood. It is a carefully constructed work that uses specific literary devices—form and symbolism—to transform the protagonist into a hero and to offer a sharp critique of the society that persecuted her.\n*   **Form as Heroism:** The novel's structure is deliberately modeled on the anthropological \"rite of passage\" (separation, alienation, reintegration). By taking the main character, Naomi, through this classic three-stage journey, Kogawa shapes a narrative of heroic transformation rather than simple suffering.\n*   **Symbol as Critique:** Kogawa employs symbols drawn from Christianity, the religion of the dominant culture. The key example is turning \"stone\" (the hard facts of historical abuse) into \"bread\" (spiritual sustenance), which simultaneously critiques the oppressive culture and highlights the protagonist's resilience." }
-  ],
-  alternates: {
-    diff: {
-      label: 'Diff-Highlighted',
+      id: "42-1",
+      title: "Passage Analysis",
       content: [
-        {
-          "type": "accordion",
-          "title": "Read Passage",
-          "content": "Joy Kogawa’s Obasan is an account of a Japanese-Canadian family’s experiences during World War II. The events are seen from the viewpoint of a young girl who watches her family disintegrate as it undergoes the relocation that occurred in both Canada and the United States. Although the experience depicted in Obasan is mainly one of dislocation, Kogawa employs subtle techniques that serve to emphasize her major character’s heroism and to critique the majority culture. The former end is achieved through the novel’s form and the latter through the symbols it employs.\n\nThe form of the novel parallels the three-stage structure noted by anthropologists in their studies of rites of passage. According to these anthropologists, a rite of passage begins with separation from a position of security in a highly structured society; proceeds to alienation in a deathlike state where one is stripped of status, property, and rank; and concludes with reintegration into society accompanied by a heightened status gained as a result of the second stage. The process thus has the effect of transforming a society’s victim into a hero. The first eleven chapters of Obasan situate the young protagonist Naomi Nakane in a close-knit, securely placed family within Vancouver society. Chapters 12–32 chronicle the fall into alienation, when Naomi’s family is dislodged from its structured social niche and removed from the city into work camps or exile. Separated from her parents, Naomi follows her aunt Aya Obasan to the ghost town of Slocan, where Naomi joins the surrogate family of her uncle and aunt. In chapters 33–39 this surrogate family nurtures Naomi as she develops toward a final integration with the larger society and with herself: as an adult, when she receives a bundle of family documents and letters from her aunt, Naomi breaks through the personal and cultural screens of silence and secretiveness that have enshrouded her past, and reconciles herself with her history.\n\nKogawa’s use of motifs drawn from Christian rituals and symbols forms a subtle critique of the professed ethics of the majority culture that has shunned Naomi. In one example of such symbolism, Naomi’s reacquaintance with her past is compared with the biblical story of turning stone into bread. The bundle of documents—which Kogawa refers to as “stone-hard facts”—brings Naomi to the recognition of her country’s abuse of her people. But implicit in these hard facts, Kogawa suggests, is also the “bread” of a spiritual sustenance that will allow Naomi to affirm the durability of her people and herself. Through the careful deployment of structure and symbol, Kogawa thus manages to turn Naomi’s experience—and by extension the wartime experiences of many Japanese Canadians—into a journey of heroic transformation and a critique of the majority culture."
-        },
-        {
-          "type": "h3",
-          "text": "Passage Analysis: PT-119-S-1-P-2"
-        },
-        {
-          "type": "paragraph",
-          "text": "Alright, everyone, our next text is a deep dive into a novel called *Obasan* by Joy Kogawa. The passage isn't just telling us what the book is about; it's making an argument about *how* the author achieves her goals. This is literary criticism, and our job is to understand the critic's argument."
-        },
-        {
-          "type": "paragraph",
-          "text": "So, let's break down the passage and see how this analysis is constructed."
-        },
-        {
-          "type": "hr"
-        },
-        {
-          "type": "h4",
-          "text": "Paragraph 1: The Thesis Statement"
-        },
-        {
-          "type": "paragraph",
-          "text": "The first paragraph sets the entire stage. It gives us the basics: *Obasan* is a novel about a Japanese-Canadian family's traumatic experiences during World War II, told from the perspective of a young girl, Naomi. The central experience is one of \"dislocation\" and family disintegration."
-        },
-        {
-          "type": "paragraph",
-          "text": "But then, the author of the passage lays out their main argument, their thesis. They claim that even though the story is about suffering, Kogawa uses two specific literary techniques to achieve two specific goals."
-        },
-        {
-          "type": "breakdown",
-          "labels": {
-            "title": "Technique",
-            "text": "Goal"
-          },
-          "items": [
-            {
-              "title": "The Novel's Form (Structure)",
-              "text": "To emphasize the main character's **heroism**.",
-              "badge": "Technique 1",
-              "badgeColor": "indigo"
-            },
-            {
-              "title": "The Use of Symbols",
-              "text": "To **critique** the majority culture that oppressed her family.",
-              "badge": "Technique 2",
-              "badgeColor": "blue"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "This first paragraph is essentially a roadmap for the rest of the text. Now we know exactly what the next two paragraphs are going to explain."
-        },
-        {
-          "type": "h4",
-          "text": "Paragraph 2: Heroism Through Form (The Rites of Passage)"
-        },
-        {
-          "type": "paragraph",
-          "text": "This paragraph is all about the first half of that thesis: how the novel's *structure* creates a hero. The author introduces a concept from anthropology called the \"rites of passage.\" This is a three-stage process that marks a person's transition from one state to another. The passage lays out the three stages very clearly:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Separation:** You start in a safe, structured society and are removed from it.",
-            "**Alienation:** You enter a \"deathlike state\" where you lose everything—status, property, identity. This is the trial or the ordeal.",
-            "**Reintegration:** You return to society, but you're not the same. You've been transformed by the ordeal and now have a \"heightened status.\""
-          ],
-          "ordered": true
-        },
-        {
-          "type": "paragraph",
-          "text": "The key insight here is that this structure has the effect of \"transforming a society’s victim into a hero.\" The author then meticulously maps the plot of *Obasan* onto this three-stage framework, even using chapter numbers to prove the point. Stage 1 is Naomi's happy childhood. Stage 2 is the family's forced relocation and exile. Stage 3 is Naomi as an adult, finally confronting her past and reconciling with her history, emerging as a whole person. The structure of the story *is* the hero's journey."
-        },
-        {
-          "type": "h4",
-          "text": "Paragraph 3: Critique Through Symbolism (Stone into Bread)"
-        },
-        {
-          "type": "paragraph",
-          "text": "The final paragraph addresses the second half of the thesis: how Kogawa uses *symbols* to critique the dominant culture. The author points specifically to Kogawa's use of motifs from Christian rituals. This is a subtle but powerful choice, because Kogawa is using the symbols of the very culture that is oppressing her characters to highlight its hypocrisy."
-        },
-        {
-          "type": "paragraph",
-          "text": "The passage gives us a perfect example: the biblical story of turning stone into bread. Naomi receives a bundle of old family documents, which are described as \"stone-hard facts.\" These facts are the heavy, painful truth of her family's suffering. They are the \"stone.\""
-        },
-        {
-          "type": "paragraph",
-          "text": "But the passage argues that by confronting this hard reality, Naomi finds spiritual nourishment, or \"bread.\" She finds the strength to affirm her own identity and the resilience of her people."
-        },
-        {
-          "type": "paragraph",
-          "text": "This symbol does double duty. It critiques a country that gave its Japanese-Canadian citizens stones instead of bread, while also showing how Naomi heroically transforms that stone *into* bread for herself. The paragraph concludes by neatly tying everything together, restating how structure and symbol work in tandem to achieve the novel's powerful effects."
-        },
-        {
-          "type": "callout",
-          "title": "Summary of the Argument",
-          "variant": "summary",
-          "text": "Let's boil down the argument presented in this passage into its essential parts.\n\n*   **The Central Argument:** The passage argues that Joy Kogawa's novel *Obasan* is not just a story of victimhood. It is a carefully constructed work that uses specific literary devices—form and symbolism—to transform the protagonist into a hero and to offer a sharp critique of the society that persecuted her.\n*   **Form as Heroism:** The novel's structure is deliberately modeled on the anthropological \"rite of passage\" (separation, alienation, reintegration). By taking the main character, Naomi, through this classic three-stage journey, Kogawa shapes a narrative of heroic transformation rather than simple suffering.\n*   **Symbol as Critique:** Kogawa employs symbols drawn from Christianity, the religion of the dominant culture. The key example is turning \"stone\" (the hard facts of historical abuse) into \"bread\" (spiritual sustenance), which simultaneously critiques the oppressive culture and highlights the protagonist's resilience."
-        }
-      ],
-    },
-  },
+        { type: 'accordion', title: 'Read Passage', content: passageText },
+        { type: 'h3', text: "Passage Analysis: PT-128-S-4-P-2" },
+        { type: 'paragraph', text: "This passage is a piece of film criticism that makes an argument about a pattern across Woody Allen's career. The author is not simply reviewing a single film; they are using one film as a launching pad to identify a recurring thematic preoccupation. Our job is to track the thesis, the evidence, and the logical structure connecting them." },
+        { type: 'hr' },
+        { type: 'h4', text: "Paragraph 1: The Thesis and the Prime Example" },
+        { type: 'paragraph', text: "The first paragraph introduces the film *Deconstructing Harry* and its protagonist, the \"extremely neurotic and narcissistic\" writer Harry Block. Block uses the people in his life as material for his work, regardless of the consequences. The author argues that while Allen exaggerates this narcissism for comedy, the effect is deeper than comedy: the film is an \"extravagantly exaggerated censure\" of a life obsessed with art." },
+        { type: 'paragraph', text: "The final sentence of the paragraph delivers the central thesis: *Deconstructing Harry*, while perhaps the most \"unequivocally peevish\" of Allen's portraits of artists, is not a new direction but rather a \"concentrated reprise of a theme present throughout his career.\" This sentence is the roadmap for the rest of the passage. Everything that follows is evidence for this claim of consistency." },
+        { type: 'hr' },
+        { type: 'h4', text: "Paragraph 2: Supporting Evidence, Part 1 — *Stardust Memories*" },
+        { type: 'paragraph', text: "To prove this is a recurring theme, the author turns to an earlier film, *Stardust Memories*, which is described as \"Allen's sourest portrait of artists before Harry.\" A cynical film producer criticizes the artist protagonist Sandy Bates, saying, \"They try to document their private suffering and fob it off as art.\"" },
+        { type: 'paragraph', text: "The author then adds a more sophisticated layer of analysis. They suggest that this producer, \"like all the figures in this film,\" may not be a truly independent character but rather a \"projection of Bates's personal self-recriminations.\" This means the critique is coming from *inside* the artist's own mind, reinforcing the charge of \"solipsism.\" The paragraph concludes with a powerful observation: this specific critique appears \"sufficiently often\" in Allen's films to seem an \"unresolved personal issue\" for the filmmaker himself. This bridges the gap from analyzing the art to analyzing the artist." },
+        { type: 'hr' },
+        { type: 'h4', text: "Paragraph 3: Supporting Evidence, Part 2 — *Manhattan*" },
+        { type: 'paragraph', text: "The third paragraph adds another piece of evidence from the film *Manhattan*. The ex-wife of a television writer publishes a book about their collapsed marriage that punctures his artistic pretensions. The key quote reveals that his fear of death, which he treated as something profound and tragic, was in fact \"mere narcissism.\"" },
+        { type: 'paragraph', text: "Notice how the author explicitly connects this example back to the previous one, stating it is \"similar to the producer's in *Stardust Memories*.\" This linking language reinforces the claim from paragraph two that the theme recurs \"sufficiently often\" to constitute a pattern." },
+        { type: 'hr' },
+        { type: 'h4', text: "Paragraph 4: The Final Proof — The Inverse Correlation" },
+        { type: 'paragraph', text: "The final paragraph presents the author's most powerful and broadest evidence: a systematic pattern across Allen's entire filmography. The author identifies an inverse correlation between a character's artistic nature and the happiness of their narrative outcome." },
+        { type: 'paragraph', text: "On one side, artistic characters in films like *Crimes and Misdemeanors*, *Husbands and Wives*, and *Celebrity* all end up \"desolate and solitary,\" largely due to the \"egocentric and exploitative attitudes embodied in their art.\" On the other side, the \"thoroughly inartistic\" title character in *Zelig* dies happy, and the talent agent in *Broadway Danny Rose* receives \"the most gratifying resolution Allen has scripted,\" primarily due to his \"altruistic devotion\" to talentless performers." },
+        { type: 'paragraph', text: "By showing that this is not just a matter of dialogue or quotes, but a structural feature of Allen's storytelling, the author completes their case. The critique of the artistic life is not just something characters *say* in Allen's films; it is embedded in the very way Allen constructs his narratives." },
+        { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "• **The Central Thesis:** The passage argues that a sustained critique of the artist's life — portraying artists as narcissistic, solipsistic, and exploitative — is a central, recurring theme in Woody Allen's films. *Deconstructing Harry* is the most intense expression of this career-long preoccupation, not a new direction.\n• **Evidence from Dialogue:** The author supports this claim with direct quotes and character critiques from *Stardust Memories* and *Manhattan*, where characters accuse artists of packaging their private suffering as art and being driven by narcissism. The author notes that the critique in *Stardust Memories* may even be a projection of the artist's own self-doubt.\n• **Evidence from Narrative Outcomes:** The most compelling evidence is a structural pattern: artistic characters consistently end up miserable and alone, while inartistic, altruistic characters are rewarded with happy endings. This shows the critique is embedded in the very fabric of Allen's storytelling, not just in his dialogue." }
+      ]
 };

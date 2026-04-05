@@ -2,7 +2,7 @@
 import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import { ModuleData, ContentBlock, Lesson } from '../types';
-import { getDisplayModuleLabel, getSourceModuleIdForRouteModuleId, isLrRouteModuleId } from './courseCatalog';
+import { getSourceModuleIdForRouteModuleId } from './courseCatalog';
 import { extractPtIds } from './lessonQuestionLinkage';
 import type {
   CanonicalCourseLesson,
@@ -517,7 +517,7 @@ export const generateModulePDF = (module: ModuleData) => {
     const doc = new jsPDF();
     cursorY = PAGE_MARGIN_TOP;
     
-    addWrappedText(doc, formatModuleHeading(module.id, module.title), { size: 26, style: 'bold', align: 'center', bottomSpacing: 10 });
+    addWrappedText(doc, `Module ${module.id}: ${module.title}`, { size: 26, style: 'bold', align: 'center', bottomSpacing: 10 });
     addWrappedText(doc, module.description, { size: 12, style: 'italic', align: 'center', bottomSpacing: 10 });
     
     doc.addPage();
@@ -547,7 +547,7 @@ export const generateUnitPDF = (unitName: string, modules: ModuleData[]) => {
         cursorY = PAGE_MARGIN_TOP;
         
         // Module Intro
-        addWrappedText(doc, formatModuleHeading(module.id, module.title), { size: 24, style: 'bold', align: 'center', bottomSpacing: 10 });
+        addWrappedText(doc, `Module ${module.id}: ${module.title}`, { size: 24, style: 'bold', align: 'center', bottomSpacing: 10 });
         addWrappedText(doc, module.description, { size: 14, style: 'italic', align: 'center', bottomSpacing: 10 });
 
         module.lessons.forEach((lesson) => {
@@ -568,7 +568,7 @@ export const generateSectionPDF = (sectionName: string, modules: ModuleData[]) =
     modules.forEach((module) => {
         doc.addPage();
         cursorY = PAGE_MARGIN_TOP;
-        addWrappedText(doc, formatModuleHeading(module.id, module.title), { size: 24, style: 'bold', align: 'center', bottomSpacing: 10 });
+        addWrappedText(doc, `Module ${module.id}: ${module.title}`, { size: 24, style: 'bold', align: 'center', bottomSpacing: 10 });
         
         module.lessons.forEach((lesson) => {
             doc.addPage();
@@ -588,7 +588,7 @@ export const generateCoursePDF = (modules: ModuleData[], filename = 'LSAT_Master
     modules.forEach((module) => {
         doc.addPage();
         cursorY = PAGE_MARGIN_TOP;
-        addWrappedText(doc, formatModuleHeading(module.id, module.title), { size: 24, style: 'bold', align: 'center' });
+        addWrappedText(doc, `Module ${module.id}: ${module.title}`, { size: 24, style: 'bold', align: 'center' });
         
         module.lessons.forEach((lesson) => {
             doc.addPage();
@@ -657,6 +657,8 @@ const lessonToPlainText = (lesson: Lesson): string => {
   return lesson.content.map(blockToText).join('').trim();
 };
 
+const isLrRouteModule = (routeModuleId: number): boolean => routeModuleId >= 1 && routeModuleId <= 22;
+
 const prefixMarkdownLines = (text: string, prefix: string): string =>
   text
     .split('\n')
@@ -667,12 +669,10 @@ const escapeMarkdownTableCell = (text: string): string => text.replace(/\|/g, '\
 
 const normalizeMarkdownOutput = (text: string): string => text.replace(/\n{3,}/g, '\n\n').trim();
 
-const formatModuleHeading = (moduleId: number, title: string): string => `${getDisplayModuleLabel(moduleId)}: ${title}`;
-
 const formatOptionsAsMarkdownList = (options: string[]): string => options.map((option) => `- ${option}`).join('\n');
 
 const getCanonicalQuestionPolicy = (routeModuleId: number, lesson: Lesson) =>
-  isLrRouteModuleId(routeModuleId) ? lesson.questionPolicy ?? 'none' : undefined;
+  isLrRouteModule(routeModuleId) ? lesson.questionPolicy ?? 'none' : undefined;
 
 const questionCardToMaterialMarkdown = (
   block: Extract<ContentBlock, { type: 'question-card' }>,
@@ -1005,7 +1005,7 @@ export const generateLessonText = (lesson: Lesson): string => {
 };
 
 export const generateModuleText = (module: ModuleData): string => {
-  const header = `${formatModuleHeading(module.id, module.title).toUpperCase()}\n${'='.repeat(40)}\n${module.description}\n\n`;
+  const header = `MODULE ${module.id}: ${module.title}\n${'='.repeat(40)}\n${module.description}\n\n`;
   const lessons = module.lessons.map(lessonToText).join('\n');
   return header + lessons;
 };
@@ -1031,7 +1031,7 @@ export const generateLessonRTF = (lesson: Lesson): string => {
 };
 
 export const generateModuleRTF = (module: ModuleData): string => {
-  const header = `\\pard\\sa200\\sl276\\slmult1\\qc\\b\\fs48 ${escapeRTF(formatModuleHeading(module.id, module.title).toUpperCase())}\\b0\\par\\fs24 ${escapeRTF(module.description)}\\par\\par\n`;
+  const header = `\\pard\\sa200\\sl276\\slmult1\\qc\\b\\fs48 MODULE ${module.id}: ${escapeRTF(module.title)}\\b0\\par\\fs24 ${escapeRTF(module.description)}\\par\\par\n`;
   const lessons = module.lessons.map(lessonToRTF).join('');
   return rtfHeader + header + lessons + rtfFooter;
 };
@@ -1128,7 +1128,8 @@ interface FullCourseExportPayload {
 
 const getSectionTitleForCategory = (category: string): string => {
   if (category === 'LR') return 'Logical Reasoning';
-  return 'Reading Comprehension';
+  if (category === 'RC') return 'Reading Comprehension';
+  return 'Advanced Passages';
 };
 
 const buildExportScopeSummary = (modules: ModuleData[]): ExportScopeSummary => ({
@@ -1217,7 +1218,7 @@ export const buildInterchangeCoursePayload = (canonicalPayload: CanonicalCourseP
   }));
 
 const groupModulesBySectionAndUnit = <T extends { category: string; unit: string }>(modules: T[]) => {
-  const sectionOrder = ['Logical Reasoning', 'Reading Comprehension'];
+  const sectionOrder = ['Logical Reasoning', 'Reading Comprehension', 'Advanced Passages'];
   const grouped = new Map<string, Map<string, T[]>>();
 
   for (const module of modules) {
@@ -1242,7 +1243,7 @@ const buildOutlineText = (payload: OutlineExportPayload): string => {
     for (const unit of section.units) {
       lines.push(`UNIT: ${unit.unit}`, '');
       for (const module of unit.modules) {
-        lines.push(`${getDisplayModuleLabel(module.routeModuleId).toUpperCase()}: ${module.title}`);
+        lines.push(`MODULE ${module.routeModuleId}: ${module.title}`);
         for (const lesson of module.lessons) {
           lines.push(`  ${lesson.order}. ${lesson.title}`);
         }
@@ -1263,7 +1264,7 @@ const buildOutlineRTF = (payload: OutlineExportPayload): string => {
     for (const unit of section.units) {
       parts.push(`\\pard\\sa200\\sl276\\slmult1\\b\\fs30 ${escapeRTF(unit.unit)}\\b0\\par\n`);
       for (const module of unit.modules) {
-        parts.push(`\\pard\\sa200\\sl276\\slmult1\\b ${escapeRTF(getDisplayModuleLabel(module.routeModuleId))}: ${escapeRTF(module.title)}\\b0\\par\n`);
+        parts.push(`\\pard\\sa200\\sl276\\slmult1\\b MODULE ${module.routeModuleId}: ${escapeRTF(module.title)}\\b0\\par\n`);
         for (const lesson of module.lessons) {
           parts.push(`\\pard\\li720\\sa200\\sl276\\slmult1 ${lesson.order}. ${escapeRTF(lesson.title)}\\par\n`);
         }
@@ -1309,7 +1310,7 @@ const generateOutlinePDF = (payload: OutlineExportPayload, filename: string) => 
     for (const unit of section.units) {
       addWrappedText(doc, unit.unit, { size: 14, style: 'bold', bottomSpacing: 4 });
       for (const module of unit.modules) {
-        addWrappedText(doc, `${getDisplayModuleLabel(module.routeModuleId)}: ${module.title}`, { size: 12, style: 'bold', bottomSpacing: 3 });
+        addWrappedText(doc, `Module ${module.routeModuleId}: ${module.title}`, { size: 12, style: 'bold', bottomSpacing: 3 });
         for (const lesson of module.lessons) {
           addWrappedText(doc, `${lesson.order}. ${lesson.title}`, { size: 11, indent: 5, bottomSpacing: 2 });
         }

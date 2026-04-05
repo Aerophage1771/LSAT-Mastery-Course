@@ -3,7 +3,6 @@ import React from 'react';
 import { ModuleData } from '../types';
 import { Book, ChevronRight, PlayCircle } from 'lucide-react';
 import { ExportControls } from './ExportControls';
-import { getDisplayModuleId } from '../utils/courseCatalog';
 import { 
   generateUnitText, generateUnitRTF, generateUnitJSON, generateUnitCSV, generateUnitPDF,
   generateModuleText, generateModuleRTF, generateModuleJSON, generateModuleCSV, generateModulePDF,
@@ -40,7 +39,6 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, fullModules, onSe
         { name: "Unit 1: Identification", description: "Recognize the fundamental building blocks of logical arguments." },
         { name: "Unit 2: Analysis", description: "Deconstruct arguments to identify their structural patterns and flaws." },
         { name: "Unit 3: Evaluation", description: "Assess the strength of arguments by identifying gaps and assumptions." },
-        { name: "Unit 3A: Causal Reasoning", description: "Learn the cross-question-type causal framework that sits between recognition and evaluation." },
         { name: "Unit 4: Principle", description: "Apply abstract rules to specific scenarios and justify reasoning." },
         { name: "Unit 5: Inference", description: "Derive logical conclusions strictly from the information provided." },
         { name: "Unit 6: Resolution", description: "Explain paradoxes and reconcile conflicting information." },
@@ -53,13 +51,19 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, fullModules, onSe
       title: "Reading Comprehension",
       description: "Develop strategies for deconstructing complex passages and identifying underlying structures.",
       units: [
-        { name: "Unit 10: Macro Questions", description: "Understand the big picture — main idea, author attitude, passage function, and structure." },
-        { name: "Unit 11: Role & Function Questions", description: "Determine why the author included a specific detail — phrase meaning, phrase function, and paragraph function." },
-        { name: "Unit 12: Inference Questions", description: "Identify claims that are stated or implied by the passage — inference, author viewpoint, and third-party viewpoint." },
-        { name: "Unit 13: Application & Evaluation Questions", description: "Apply passage logic to new contexts — analogy, application, weaken-strengthen, and more." },
-        { name: "Unit 14: Practice Passages", description: "Full passage breakdowns with question-by-question analysis." },
-        { name: "Unit 15: Reference", description: "Quick reference guide for RC strategies." },
-        { name: "Unit 16: Advanced Passages", description: "In-depth analysis of challenging passages across philosophy, science, law, and more." }
+        { name: "Unit 10: Summarizing the Passage", description: "Capture the main idea and primary purpose of complex texts." },
+        { name: "Unit 11: Analyzing the Components", description: "Understand the function and meaning of specific text elements." },
+        { name: "Unit 12: Identifying the Perspectives", description: "Track authorial attitude and distinguish multiple viewpoints." },
+        { name: "Unit 13: Extending the Reasoning", description: "Apply passage logic to new contexts and draw valid inferences." },
+        { name: "Unit 14: Sample Passages", description: "Full breakdowns of sample passages with detailed question analysis." },
+        { name: "Unit 15: Reference", description: "Quick reference guides and cheat sheets for all question types." }
+      ]
+    },
+    {
+      title: "Advanced Passages",
+      description: "In-depth analysis of the most challenging passages and question types.",
+      units: [
+        { name: "Unit 16: Advanced Passages", description: "Explore complex themes in philosophy, science, and law." }
       ]
     }
   ];
@@ -130,6 +134,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, fullModules, onSe
                             <div className={`px-3 py-1 rounded-md text-sm font-bold uppercase tracking-wider mr-3 ${
                                 section.title === 'Logical Reasoning' ? 'bg-indigo-100 text-indigo-700' : 
                                 section.title === 'Reading Comprehension' ? 'bg-emerald-100 text-emerald-700' : 
+                                section.title === 'Advanced Passages' ? 'bg-rose-100 text-rose-700' : 
                                 'bg-slate-100 text-slate-700'
                             }`}>
                               {unitNum}
@@ -159,12 +164,13 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, fullModules, onSe
                           <div 
                             key={module.id}
                             onClick={() => onSelectModule(module.id)}
-                            className="bg-white rounded-xl shadow-[0_4px_16px_rgba(15,23,42,0.06)] border-[1.5px] border-slate-300 p-6 hover:shadow-lg hover:border-indigo-200 transition-all duration-300 cursor-pointer group flex flex-col relative overflow-hidden"
+                            className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-lg hover:border-indigo-200 transition-all duration-300 cursor-pointer group flex flex-col relative overflow-hidden"
                           >
                             {/* Hover Accent */}
                             <div className={`absolute top-0 left-0 w-1 h-full opacity-0 group-hover:opacity-100 transition-opacity ${
                                 section.title === 'Logical Reasoning' ? 'bg-indigo-500' : 
                                 section.title === 'Reading Comprehension' ? 'bg-emerald-500' : 
+                                section.title === 'Advanced Passages' ? 'bg-rose-500' : 
                                 'bg-slate-500'
                             }`} />
 
@@ -172,9 +178,10 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, fullModules, onSe
                               <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-bold transition-colors ${
                                   section.title === 'Logical Reasoning' ? 'bg-slate-100 text-slate-600 group-hover:bg-indigo-100 group-hover:text-indigo-700' : 
                                   section.title === 'Reading Comprehension' ? 'bg-slate-100 text-slate-600 group-hover:bg-emerald-100 group-hover:text-emerald-700' : 
+                                  section.title === 'Advanced Passages' ? 'bg-slate-100 text-slate-600 group-hover:bg-rose-100 group-hover:text-rose-700' : 
                                   'bg-slate-100 text-slate-600'
                               }`}>
-                                MODULE {getDisplayModuleId(module.id)}
+                                MODULE {module.id}
                               </span>
                               <div className="flex items-center gap-2">
                                  <ExportControls 
@@ -190,6 +197,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, fullModules, onSe
                                  <span className={`text-slate-300 transition-colors transform group-hover:translate-x-1 duration-300 ${
                                      section.title === 'Logical Reasoning' ? 'group-hover:text-indigo-600' : 
                                      section.title === 'Reading Comprehension' ? 'group-hover:text-emerald-600' : 
+                                     section.title === 'Advanced Passages' ? 'group-hover:text-rose-600' : 
                                      'group-hover:text-slate-600'
                                  }`}>
                                   <ChevronRight size={20} />
@@ -200,6 +208,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, fullModules, onSe
                             <h4 className={`text-xl font-bold text-slate-900 mb-3 transition-colors ${
                                 section.title === 'Logical Reasoning' ? 'group-hover:text-indigo-600' : 
                                 section.title === 'Reading Comprehension' ? 'group-hover:text-emerald-600' : 
+                                section.title === 'Advanced Passages' ? 'group-hover:text-rose-600' : 
                                 'group-hover:text-slate-600'
                             }`}>
                               {module.title}
@@ -220,6 +229,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, fullModules, onSe
                                   <div className={`flex items-center opacity-0 group-hover:opacity-100 transition-opacity font-bold ${
                                     section.title === 'Logical Reasoning' ? 'text-indigo-600' : 
                                     section.title === 'Reading Comprehension' ? 'text-emerald-600' : 
+                                    section.title === 'Advanced Passages' ? 'text-rose-600' : 
                                     'text-slate-600'
                                 }`}>
                                   <PlayCircle size={14} className="mr-1.5" />
@@ -238,6 +248,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ modules, fullModules, onSe
                                 <div className={`flex items-center opacity-0 group-hover:opacity-100 transition-opacity font-bold ${
                                     section.title === 'Logical Reasoning' ? 'text-indigo-600' : 
                                     section.title === 'Reading Comprehension' ? 'text-emerald-600' : 
+                                    section.title === 'Advanced Passages' ? 'text-rose-600' : 
                                     'text-slate-600'
                                 }`}>
                                   <PlayCircle size={14} className="mr-1.5" />

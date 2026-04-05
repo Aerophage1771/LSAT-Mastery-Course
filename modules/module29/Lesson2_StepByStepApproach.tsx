@@ -2,143 +2,32 @@ import { Lesson } from '../../types';
 
 export const Lesson2_StepByStepApproach: Lesson = {
   id: "29-2",
-  title: "Step-by-Step: Author Attitude",
+  title: "Step-by-Step Approach",
   content: [
-    { type: 'h3', text: "Step-by-Step: Author Attitude" },
-    { type: 'h4', text: "Step 1: Locate the Specific Topic in the Passage" },
-    { type: 'paragraph', text: "First, identify the exact person, theory, or event that the question is asking about. Go to the specific sentences or paragraph(s) where the author discusses this topic. Your analysis should be focused only on these relevant sections." },
-    { type: 'list', items: [
-      "**Two-part stem check:** The task is always the author's attitude, but it is only the author's attitude **toward the exact issue named in the stem**.",
-      "**Narrow the issue before you judge tone:** A passage can admire a field, criticize one theory in that field, and stay neutral about a third debate inside it."
-    ]},
+    { type: 'h3', text: "Step-by-Step Approach" },
+    { type: 'h4', text: "Step 1: Identify the Specific Person or Group" },
+    { type: 'paragraph', text: "Read the question stem carefully to identify the exact third party whose viewpoint you need to find. This could be a named individual (\"According to Ellis...\"), a named group (\"The research team believes...\"), or a described group (\"The historians mentioned in the third sentence...\")." },
     
-    { type: 'h4', text: "Step 2: Hunt for \"Charged\" Language" },
-    { type: 'paragraph', text: "Read the relevant text, but this time, look specifically for words that reveal the author's opinion or judgment. Pay close attention to:" },
+    { type: 'h4', text: "Step 2: Locate All Mentions and Attributions" },
+    { type: 'paragraph', text: "Scan the passage for the name or description of the party from Step 1. Your goal is to find the specific sentences where the author explicitly attributes a belief, argument, or claim to them. Look for key attribution phrases like:" },
     { type: 'list', items: [
-      "**Adjectives:** Is the theory \"promising\" or \"flawed\"? Is the evidence \"compelling\" or \"unconvincing\"?",
-      "**Adverbs:** Did the event \"unfortunately\" happen? Was the finding \"surprisingly\" correct?",
-      "**Verbs:** Does the author \"endorse\" or \"dismiss\" the idea?"
+      "\"Smith argues that...\"",
+      "\"According to the critics...\"",
+      "\"Proponents of this view claim...\""
     ]},
 
-    { type: 'h4', text: "Step 3: Determine the Direction and Intensity" },
-    { type: 'paragraph', text: "Based on the words you found, characterize the author's attitude." },
-    { type: 'list', items: [
-      "**Direction:** Is it positive (approval, admiration), negative (criticism, skepticism), or neutral (objective, impartial)?",
-      "**Intensity:** Is it strong (emphatic disagreement, unreserved endorsement) or moderate (mild disapproval, cautious approval)?"
-    ]},
+    { type: 'h4', text: "Step 3: Isolate and Paraphrase Their Viewpoint" },
+    { type: 'paragraph', text: "Focus only on the text directly linked to the third party. Carefully read what the passage says they think, believe, or argue. Paraphrase this viewpoint in your own words to ensure you understand it. Crucially, ignore what the author thinks about their view and what other groups might think. Your only job is to accurately report on the specified party's position." },
 
-    { type: 'h4', text: "Step 4: Match Your Assessment to the Answer Choices" },
-    { type: 'paragraph', text: "Compare your assessment of the author's tone to the descriptive words in each answer choice. Eliminate any option that doesn't match both the direction and the intensity of the language in the passage." },
+    { type: 'h4', text: "Step 4: Match Your Paraphrase to the Answer Choices" },
+    { type: 'paragraph', text: "Compare your understanding of the third party's viewpoint to each answer choice. The correct answer will be a direct restatement or a logical inference that is provably true based only on the information attributed to that specific person or group. Eliminate any choice that represents the author's opinion, another group's opinion, or goes beyond the information provided." },
     
     { type: 'hr' },
     { type: 'h3', text: "If You Get Stuck Between Two Choices..." },
-    { type: 'h4', text: "Tie-Breaker #1: The Synonym Test" },
-    { type: 'paragraph', text: "Reread your final two answer choices (e.g., \"skepticism\" vs. \"disapproval\"). Ask yourself: \"Do these words mean the same thing, or is there a subtle difference?\" **Skepticism** implies doubt or questioning, while **disapproval** implies a negative moral or intellectual judgment. Go back to the text and see which nuanced meaning is a better fit. Does the author say the evidence is lacking (skepticism), or that the idea is fundamentally wrong (disapproval)?" },
+    { type: 'h4', text: "Tie-Breaker #1: The Strict Attribution Check" },
+    { type: 'paragraph', text: "The most common trap is confusing the third party's view with the author's commentary on it. Reread the sentences around your textual proof. Is the statement you're looking at something the third party actually believes, or is it the author's interpretation or criticism of their belief? The correct answer must be something the passage directly assigns to the third party." },
     
-    { type: 'h4', text: "Tie-Breaker #2: Find the Most Extreme Word" },
-    { type: 'paragraph', text: "Look at the most extreme or definitive word in each of your final two answer choices (e.g., \"wholehearted endorsement\" vs. \"qualified approval\"). Then, scan the passage one last time to see if the author's language is absolute and unqualified (\"wholehearted\") or if it contains any limitations or reservations (\"qualified\"). The presence of words like \"may,\" \"suggests,\" or \"likely\" often points toward a more moderate, qualified attitude." }
-  ],
-  alternates: {
-    diff: {
-      label: 'Diff-Highlighted',
-      content: [
-        {
-          "type": "h3",
-          "text": "Step-by-Step Approach"
-        },
-        {
-          "type": "h4",
-          "text": "Step 1: Locate the Specific Topic in the Passage"
-        },
-        {
-          "type": "paragraph",
-          "text": "First, identify the exact person, theory, or event that the question is asking about. Go to the specific sentences or paragraph(s) where the author discusses this topic. Your analysis should be focused only on these relevant sections."
-        },
-        {
-          "type": "h4",
-          "text": "Step 2: Hunt for \"Charged\" Language"
-        },
-        {
-          "type": "paragraph",
-          "text": "Read the relevant text, but this time, look specifically for words that reveal the author's opinion or judgment. Pay close attention to:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Adjectives:** Is the theory \"promising\" or \"flawed\"? Is the evidence \"compelling\" or \"unconvincing\"?",
-            "**Adverbs:** Did the event \"unfortunately\" happen? Was the finding \"surprisingly\" correct?",
-            "**Verbs:** Does the author \"endorse\" or \"dismiss\" the idea?"
-          ]
-        },
-        {
-          "type": "h4",
-          "text": "Step 3: Determine the Direction and Intensity"
-        },
-        {
-          "type": "paragraph",
-          "text": "Based on the words you found, characterize the author's attitude."
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Direction:** Is it positive (approval, admiration), negative (criticism, skepticism), or neutral (objective, impartial)?",
-            "**Intensity:** Is it strong (emphatic disagreement, unreserved endorsement) or moderate (mild disapproval, cautious approval)?"
-          ]
-        },
-        {
-          "type": "h4",
-          "text": "Step 4: Match Your Assessment to the Answer Choices"
-        },
-        {
-          "type": "paragraph",
-          "text": "Compare your assessment of the author's tone to the descriptive words in each answer choice. Eliminate any option that doesn't match both the direction and the intensity of the language in the passage."
-        },
-        {
-          "type": "hr"
-        },
-        {
-          "type": "h3",
-          "text": "If You Get Stuck Between Two Choices..."
-        },
-        {
-          "type": "h4",
-          "text": "Tie-Breaker #1: The Synonym Test"
-        },
-        {
-          "type": "paragraph",
-          "text": "Reread your final two answer choices (e.g., \"skepticism\" vs. \"disapproval\"). Ask yourself: \"Do these words mean the same thing, or is there a subtle difference?\" **Skepticism** implies doubt or questioning, while **disapproval** implies a negative moral or intellectual judgment. Go back to the text and see which nuanced meaning is a better fit. Does the author say the evidence is lacking (skepticism), or that the idea is fundamentally wrong (disapproval)?"
-        },
-        {
-          "type": "h4",
-          "text": "Tie-Breaker #2: Find the Most Extreme Word"
-        },
-        {
-          "type": "paragraph",
-          "text": "Look at the most extreme or definitive word in each of your final two answer choices (e.g., \"wholehearted endorsement\" vs. \"qualified approval\"). Then, scan the passage one last time to see if the author's language is absolute and unqualified (\"wholehearted\") or if it contains any limitations or reservations (\"qualified\"). The presence of words like \"may,\" \"suggests,\" or \"likely\" often points toward a more moderate, qualified attitude."
-        }
-      ],
-    },
-    playbook: {
-      label: "Playbook",
-      content: [
-        { type: 'h2', text: "RC Author Attitude — Playbook" },
-        { type: 'callout', variant: 'tip', title: "Timing Target", text: "Most Author Attitude questions can be solved in 45-60 seconds if you trained yourself to mark charged language during your first read. Highlight or mentally flag any adjective, adverb, or verb that carries evaluative weight as you go through the passage." },
-        { type: 'process', title: "Author Attitude Method", steps: [
-          "Locate the specific topic: Identify the exact person, theory, or event the stem names. Narrow to the relevant sentences or paragraph — do not judge tone from the whole passage if the stem asks about a narrower issue.",
-          "Hunt for charged language: Re-read the target section looking specifically for evaluative adjectives (\"promising,\" \"flawed\"), adverbs (\"unfortunately,\" \"surprisingly\"), and verbs (\"endorses,\" \"dismisses\").",
-          "Determine direction and intensity: Is the tone positive, negative, or neutral? Is it strong (emphatic disagreement, unreserved endorsement) or moderate (mild disapproval, cautious approval)? You need both dimensions.",
-          "Match your assessment to the answer choices: Eliminate any option that gets either the direction or the intensity wrong. The correct answer will match both.",
-          "When stuck, apply the synonym test: Do the two finalist words mean the same thing? \"Skepticism\" (doubt) is not \"disapproval\" (negative judgment). Go back to the text and see which nuance fits.",
-        ]},
-        { type: 'table', headers: ["If you see this in the passage...", "Do this"], rows: [
-          ["Strong evaluative words: \"groundbreaking,\" \"misguided,\" \"fatal flaw\"", "The tone is strong — look for unqualified positive or negative answer choices"],
-          ["Hedged language: \"may be,\" \"somewhat promising,\" \"not entirely convincing\"", "The tone is moderate — eliminate any extreme answer like \"unreserved endorsement\" or \"utter contempt\""],
-          ["Neutral reporting with no charged words", "The author may be genuinely objective — do not invent an attitude that is not there"],
-          ["Comparative stem: \"passage B's attitude compared to passage A\"", "Assess each author's tone independently, then compare direction and intensity side by side"],
-          ["Two answers with similar direction but different intensity", "Find the most extreme word in each answer and check whether the passage's language matches that level of certainty"],
-        ]},
-        { type: 'callout', variant: 'summary', title: "Method Chain", text: "Locate the stem's exact topic --> Hunt for charged adjectives, adverbs, and verbs --> Determine direction (positive/negative/neutral) AND intensity (strong/moderate) --> Match both dimensions to the answer choices --> Use the synonym test to break ties." },
-      ],
-    },
-  },
+    { type: 'h4', text: "Tie-Breaker #2: The \"Who Said What?\" Test" },
+    { type: 'paragraph', text: "If multiple viewpoints are presented, it's easy to misattribute a claim. For your final two choices, go back to the text and ask for each one: \"Who, specifically, is this statement about?\" One of the options may accurately reflect a view from the passage, but it's attributed to the wrong person or group. The correct answer must belong to the party named in the question stem." }
+  ]
 };

@@ -1,18 +1,12 @@
 import React, { useState, useEffect, useCallback, Suspense, useMemo } from 'react';
 import { BrowserRouter, Routes, Route, useParams, useNavigate } from 'react-router-dom';
 import { Layout } from './components/Layout';
-import { WebsiteShell } from './components/WebsiteShell';
 import { LessonViewer } from './components/LessonViewer';
-import { ModuleOverview } from './components/ModuleOverview';
 import { Dashboard } from './components/Dashboard';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { SearchDialog } from './components/SearchDialog';
 import { QuestionBank } from './components/QuestionBank';
-import { Analytics } from './components/Analytics';
-import { LessonFormatLab } from './components/LessonFormatLab';
-
 import { ProgressProvider, useProgressContext } from './contexts/ProgressContext';
-import { ViewSettingsProvider, useViewSettings } from './contexts/ViewSettingsContext';
 import { moduleRegistry, loadModule, getAllModuleMetadata } from './modules/registry';
 import inventoryData from './docs/operations/audits/invented-questions-inventory.json';
 import type { ModuleData } from './types';
@@ -54,7 +48,6 @@ function ModulePage({ loadedModules }: { loadedModules: ModuleData[] }) {
   const { moduleId, lessonId } = useParams<{ moduleId: string; lessonId?: string }>();
   const navigate = useNavigate();
   const { updateLastPosition, markLessonComplete, isLessonComplete } = useProgressContext();
-  const { websiteViewerMode } = useViewSettings();
 
   const [moduleData, setModuleData] = useState<ModuleData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -99,17 +92,15 @@ function ModulePage({ loadedModules }: { loadedModules: ModuleData[] }) {
     return buildLessonLinkageByLessonId(numericModuleId, canonicalModule.lessons);
   }, [moduleData, numericModuleId]);
 
-  // When a lessonId is present, resolve the active lesson; otherwise show module overview
-  const isOverviewMode = !lessonId;
-
   const activeLesson = useMemo(() => {
-    if (!normalizedModuleData || isOverviewMode) return undefined;
-    return normalizedModuleData.lessons.find((l) => l.id === lessonId) ?? normalizedModuleData.lessons[0];
-  }, [normalizedModuleData, lessonId, isOverviewMode]);
+    if (!normalizedModuleData) return undefined;
+    if (lessonId) return normalizedModuleData.lessons.find((l) => l.id === lessonId) ?? normalizedModuleData.lessons[0];
+    return normalizedModuleData.lessons[0];
+  }, [normalizedModuleData, lessonId]);
 
   useEffect(() => {
-    if (normalizedModuleData && activeLesson && lessonId) {
-      if (lessonId !== activeLesson.id) {
+    if (normalizedModuleData && activeLesson) {
+      if (!lessonId || lessonId !== activeLesson.id) {
         navigate(`/module/${numericModuleId}/lesson/${activeLesson.id}`, { replace: true });
       }
       updateLastPosition(numericModuleId, activeLesson.id);
@@ -155,65 +146,8 @@ function ModulePage({ loadedModules }: { loadedModules: ModuleData[] }) {
 
   if (loading) return <LoadingSpinner />;
   if (error) return <div className="flex items-center justify-center h-full text-red-500 font-medium">{error}</div>;
-  if (!normalizedModuleData)
+  if (!normalizedModuleData || !activeLesson)
     return <div className="flex items-center justify-center h-full text-slate-400">Module not found</div>;
-
-  // ── Website Viewer mode: use WebsiteShell ──
-  if (websiteViewerMode) {
-    const shellContent = isOverviewMode ? null : activeLesson ? (
-      <ErrorBoundary fallbackTitle="Error loading lesson" key={activeLesson.id}>
-        <Suspense fallback={<LoadingSpinner />}>
-          <LessonViewer
-            key={activeLesson.id}
-            title={activeLesson.title}
-            content={activeLesson.content}
-            questionStatus={questionStatus}
-            linkageMeta={lessonLinkageByLessonId[activeLesson.id]}
-            lessonId={activeLesson.id}
-            alternates={activeLesson.alternates}
-          />
-        </Suspense>
-      </ErrorBoundary>
-    ) : <div className="text-slate-400 text-center py-12">Lesson not found</div>;
-
-    return (
-      <WebsiteShell
-        modules={modulesFromMeta}
-        activeModuleId={numericModuleId}
-        activeLessonId={activeLesson?.id ?? null}
-        onSelectModule={(id) => navigate(`/module/${id}`)}
-        onSelectLesson={handleSelectLesson}
-        onGoHome={handleGoHome}
-        activeModuleData={normalizedModuleData}
-        isLessonComplete={isLessonComplete}
-      >
-        {shellContent}
-      </WebsiteShell>
-    );
-  }
-
-  // ── Normal mode: use Layout ──
-  if (isOverviewMode) {
-    return (
-      <Layout
-        modules={modulesFromMeta}
-        exportModules={loadedModules}
-        activeModuleId={numericModuleId}
-        activeLessonId={null}
-        onSelectModule={(id) => navigate(`/module/${id}`)}
-        onSelectLesson={handleSelectLesson}
-        onGoHome={handleGoHome}
-        activeModuleData={normalizedModuleData}
-        lessonLinkageMeta={lessonLinkageByLessonId}
-        isLessonComplete={isLessonComplete}
-      >
-        <ModuleOverview moduleData={normalizedModuleData} />
-      </Layout>
-    );
-  }
-
-  if (!activeLesson)
-    return <div className="flex items-center justify-center h-full text-slate-400">Lesson not found</div>;
 
   return (
     <Layout
@@ -250,8 +184,6 @@ function ModulePage({ loadedModules }: { loadedModules: ModuleData[] }) {
             content={activeLesson.content}
             questionStatus={questionStatus}
             linkageMeta={lessonLinkageByLessonId[activeLesson.id]}
-            lessonId={activeLesson.id}
-            alternates={activeLesson.alternates}
           />
         </Suspense>
       </ErrorBoundary>
@@ -262,25 +194,9 @@ function ModulePage({ loadedModules }: { loadedModules: ModuleData[] }) {
 function DashboardPage({ loadedModules }: { loadedModules: ModuleData[] }) {
   const navigate = useNavigate();
   const { getModuleProgress } = useProgressContext();
-  const { websiteViewerMode } = useViewSettings();
 
   const handleModuleSelect = useCallback((id: number) => navigate(`/module/${id}`), [navigate]);
   const handleGoHome = useCallback(() => navigate('/'), [navigate]);
-
-  if (websiteViewerMode) {
-    return (
-      <WebsiteShell
-        modules={modulesFromMeta}
-        activeModuleId={null}
-        activeLessonId={null}
-        onSelectModule={handleModuleSelect}
-        onSelectLesson={() => {}}
-        onGoHome={handleGoHome}
-      >
-        {null}
-      </WebsiteShell>
-    );
-  }
 
   return (
     <Layout
@@ -358,9 +274,6 @@ function AppRoutes() {
       <Routes>
         <Route path="/" element={<DashboardPage loadedModules={loadedModules} />} />
         <Route path="/question-bank" element={<QuestionBank drillCrossReferences={drillCrossReferences} />} />
-        <Route path="/analytics" element={<Analytics loadedModules={loadedModules} />} />
-        <Route path="/format-lab" element={<LessonFormatLab />} />
-
         <Route path="/module/:moduleId" element={<ModulePage loadedModules={loadedModules} />} />
         <Route path="/module/:moduleId/lesson/:lessonId" element={<ModulePage loadedModules={loadedModules} />} />
       </Routes>
@@ -373,9 +286,7 @@ const App: React.FC = () => {
     <ErrorBoundary fallbackTitle="Application error">
       <BrowserRouter>
         <ProgressProvider>
-          <ViewSettingsProvider>
-            <AppRoutes />
-          </ViewSettingsProvider>
+          <AppRoutes />
         </ProgressProvider>
       </BrowserRouter>
     </ErrorBoundary>

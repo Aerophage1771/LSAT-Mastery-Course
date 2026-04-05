@@ -1,75 +1,22 @@
 import { Lesson } from '../../types';
 
-const passageText = `In explaining the foundations of the discipline known as historical sociology—the examination of history using the methods of sociology—historical sociologist Philip Abrams argues that, while people are made by society as much as society is made by people, sociologists’ approach to the subject is usually to focus on only one of these forms of influence to the exclusion of the other. Abrams insists on the necessity for sociologists to move beyond these one-sided approaches to understand society as an entity constructed by individuals who are at the same time constructed by their society. Abrams refers to this continuous process as “structuring.”
-Abrams also sees history as the result of structuring. People, both individually and as members of collectives, make history. But our making of history is itself formed and informed not only by the historical conditions we inherit from the past, but also by the prior formation of our own identities and capacities, which are shaped by what Abrams calls “contingencies”—social phenomena over which we have varying degrees of control. Contingencies include such things as the social conditions under which we come of age, the condition of our household’s economy, the ideologies available to help us make sense of our situation, and accidental circumstances. The ways in which contingencies affect our individual or group identities create a structure of forces within which we are able to act, and that partially determines the sorts of actions we are able to perform.
-In Abrams’s analysis, historical structuring, like social structuring, is manifold and unremitting. To understand it, historical sociologists must extract from it certain significant episodes, or events, that their methodology can then analyze and interpret. According to Abrams, these events are points at which action and contingency meet, points that represent a cross section of the specific social and individual forces in play at a given time. At such moments, individuals stand forth as agents of history not simply because they possess a unique ability to act, but also because in them we see the force of the specific social conditions that allowed their actions to come forth. Individuals can “make their mark” on history, yet in individuals one also finds the convergence of wider social forces. In order to capture the various facets of this mutual interaction, Abrams recommends a fourfold structure to which he believes the investigations of historical sociologists should conform: first, description of the event itself; second, discussion of the social context that helped bring the event about and gave it significance; third, summary of the life history of the individual agent in the event; and fourth, analysis of the consequences of the event both for history and for the individual.`;
+const passageText = `Recent investigations into the psychology of decision making have sparked interest among scholars seeking to understand why governments sometimes take gambles that appear theoretically unjustifiable on the basis of expected costs and benefits. Researchers have demonstrated some significant discrepancies between objective measurements of possible decision outcomes and the ways in which people subjectively value such possible results. Many of these discrepancies relate to the observation that a possible outcome perceived as a loss typically motivates more strongly than the prospect of an equivalent gain. Risk-taking is thus a more common strategy for those who believe they will lose what they already possess than it is for those who wish to gain something they do not have.
+Previously, the notion that rational decision makers prefer risk-avoiding choices was considered to apply generally, epitomized by the assumption of many economists that entrepreneurs and consumers will choose a risky venture over a sure thing only when the expected measurable value of the outcome is sufficiently high to compensate the decision maker for taking the risk. What is the minimum prize that would be required to make a gamble involving a 50 percent chance of losing $100 and a 50 percent chance of winning the prize acceptable? It is commonplace that the pleasure of winning a sum of money is much less intense than the pain of losing the same amount; accordingly, such a gamble would typically be accepted only when the possible gain greatly exceeds the possible loss. Research subjects do, in fact, commonly judge that a 50 percent chance to lose $100 is unacceptable unless it is combined with an equal chance to win more than $300. Nevertheless, the recent studies indicate that risk-accepting strategies are common when the alternative to a sure loss is a substantial chance of losing an even larger amount, coupled with some chance—even a small one—of losing nothing.
+Such observations are quite salient to scholars of international conflict and crisis. For example, governments typically are cautious in foreign policy initiatives that entail risk, especially the risk of armed conflict. But nations also often take huge gambles to retrieve what they perceive to have been taken from them by other nations. This type of motivation, then, can lead states to take risks that far outweigh the objectively measurable value of the lost assets. For example, when Britain and Argentina entered into armed conflict in 1982 over possession of the Falkland Islands—or Malvinas, as they are called in Spanish—each viewed the islands as territory that had been taken from them by the other; thus each was willing to commit enormous resources—and risks—to recapturing them. In international affairs, it is vital that each actor in such a situation understand the other’s subjective view of what is at stake.`;
 
 export const Lesson1_PassageAnalysis: Lesson = {
   id: "56-1",
-  title: "Passage Analysis",
+  title: "Passage Analysis: Psychology of Risk",
   content: [
-    { type: 'passage-card', title: 'Historical Sociology', passage: passageText, paragraphCount: 1, wordCount: 444 },    { type: 'h3', text: "Passage Analysis" },
-    { type: 'paragraph', text: "This passage dives into some heady academic theory from a sociologist named Philip Abrams. The main takeaway is his argument that we can't understand society or history with a one-sided view. Instead, he proposes a two-way model where people and the world they live in are constantly shaping each other." },
-    { type: 'hr' },
-    { type: 'h4', text: "Paragraph 1: The Problem with Sociology & Abrams's Fix" },
-    { type: 'paragraph', text: "Abrams starts by pointing out a flaw in his field. He says sociologists tend to see things as a one-way street: either people make society, or society makes people. Abrams says this is wrong. His big idea, which he calls 'structuring,' is that it's a continuous, two-way process. People build society, and society builds people, all at the same time." },
-    { type: 'h4', text: "Paragraph 2: Applying 'Structuring' to History" },
-    { type: 'paragraph', text: "Next, the passage shows how Abrams applies this idea to history. Sure, people 'make history,' but they don't do it in a vacuum. Abrams argues that our ability to act is limited by the world we're born into—our 'contingencies.' These are things like our social class, our family's wealth, the political ideas around us, and even just plain luck. These contingencies shape who we are and what actions are possible for us." },
-    { type: 'h4', text: "Paragraph 3: A 'How-To' Guide for Historians" },
-    { type: 'paragraph', text: "The final paragraph gets practical. To understand this complex process, Abrams says historians should focus on specific, significant 'events' where an individual's action and their social circumstances (contingencies) collide. He argues a great historical figure isn't great in isolation; they are great because they perfectly embody the social forces that made their actions possible. To analyze these moments, he lays out a four-step method: describe the event, explain the social context, detail the life of the person involved, and analyze the consequences." },
-    { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "The passage explains sociologist Philip Abrams's theory of 'structuring'—a two-way process where people shape society and society shapes people. Abrams applies this to history, arguing that individuals can only 'make history' within the limits set by their social conditions ('contingencies'). To analyze this, he proposes a four-step method for studying key historical events where individual action and broader social forces intersect." }
-  ],
-  alternates: {
-    diff: {
-      label: 'Diff-Highlighted',
-      content: [
-        {
-          "type": "accordion",
-          "title": "Read Passage",
-          "content": "In explaining the foundations of the discipline known as historical sociology—the examination of history using the methods of sociology—historical sociologist Philip Abrams argues that, while people are made by society as much as society is made by people, sociologists’ approach to the subject is usually to focus on only one of these forms of influence to the exclusion of the other. Abrams insists on the necessity for sociologists to move beyond these one-sided approaches to understand society as an entity constructed by individuals who are at the same time constructed by their society. Abrams refers to this continuous process as “structuring.”\nAbrams also sees history as the result of structuring. People, both individually and as members of collectives, make history. But our making of history is itself formed and informed not only by the historical conditions we inherit from the past, but also by the prior formation of our own identities and capacities, which are shaped by what Abrams calls “contingencies”—social phenomena over which we have varying degrees of control. Contingencies include such things as the social conditions under which we come of age, the condition of our household’s economy, the ideologies available to help us make sense of our situation, and accidental circumstances. The ways in which contingencies affect our individual or group identities create a structure of forces within which we are able to act, and that partially determines the sorts of actions we are able to perform.\nIn Abrams’s analysis, historical structuring, like social structuring, is manifold and unremitting. To understand it, historical sociologists must extract from it certain significant episodes, or events, that their methodology can then analyze and interpret. According to Abrams, these events are points at which action and contingency meet, points that represent a cross section of the specific social and individual forces in play at a given time. At such moments, individuals stand forth as agents of history not simply because they possess a unique ability to act, but also because in them we see the force of the specific social conditions that allowed their actions to come forth. Individuals can “make their mark” on history, yet in individuals one also finds the convergence of wider social forces. In order to capture the various facets of this mutual interaction, Abrams recommends a fourfold structure to which he believes the investigations of historical sociologists should conform: first, description of the event itself; second, discussion of the social context that helped bring the event about and gave it significance; third, summary of the life history of the individual agent in the event; and fourth, analysis of the consequences of the event both for history and for the individual."
-        },
-        {
-          "type": "h3",
-          "text": "Passage Breakdown"
-        },
-        {
-          "type": "paragraph",
-          "text": "This passage dives into some heady academic theory from a sociologist named Philip Abrams. The main takeaway is his argument that we can't understand society or history with a one-sided view. Instead, he proposes a two-way model where people and the world they live in are constantly shaping each other."
-        },
-        {
-          "type": "hr"
-        },
-        {
-          "type": "h4",
-          "text": "Paragraph 1: The Problem with Sociology & Abrams's Fix"
-        },
-        {
-          "type": "paragraph",
-          "text": "Abrams starts by pointing out a flaw in his field. He says sociologists tend to see things as a one-way street: either people make society, or society makes people. Abrams says this is wrong. His big idea, which he calls 'structuring,' is that it's a continuous, two-way process. People build society, and society builds people, all at the same time."
-        },
-        {
-          "type": "h4",
-          "text": "Paragraph 2: Applying 'Structuring' to History"
-        },
-        {
-          "type": "paragraph",
-          "text": "Next, the passage shows how Abrams applies this idea to history. Sure, people 'make history,' but they don't do it in a vacuum. Abrams argues that our ability to act is limited by the world we're born into—our 'contingencies.' These are things like our social class, our family's wealth, the political ideas around us, and even just plain luck. These contingencies shape who we are and what actions are possible for us."
-        },
-        {
-          "type": "h4",
-          "text": "Paragraph 3: A 'How-To' Guide for Historians"
-        },
-        {
-          "type": "paragraph",
-          "text": "The final paragraph gets practical. To understand this complex process, Abrams says historians should focus on specific, significant 'events' where an individual's action and their social circumstances (contingencies) collide. He argues a great historical figure isn't great in isolation; they are great because they perfectly embody the social forces that made their actions possible. To analyze these moments, he lays out a four-step method: describe the event, explain the social context, detail the life of the person involved, and analyze the consequences."
-        },
-        {
-          "type": "callout",
-          "title": "Summary of the Argument",
-          "variant": "summary",
-          "text": "The passage explains sociologist Philip Abrams's theory of 'structuring'—a two-way process where people shape society and society shapes people. Abrams applies this to history, arguing that individuals can only 'make history' within the limits set by their social conditions ('contingencies'). To analyze this, he proposes a four-step method for studying key historical events where individual action and broader social forces intersect."
-        }
-      ],
-    },
-  },
+    { type: 'accordion', title: 'Read Passage', content: passageText },
+    { type: 'h3', text: "Passage Analysis" },
+    { type: 'paragraph', text: "This passage is about the psychology of risk. The big idea is that people (and countries) are wired to hate losing more than they love winning. This simple fact, called 'loss aversion,' explains why we sometimes make big, seemingly irrational gambles to avoid a loss." },
+    { type: 'h4', text: "Paragraph 1: The Main Idea - We Hate Losing" },
+    { type: 'paragraph', text: "The passage kicks off with a core concept from psychology: the fear of losing something you have is a much stronger motivator than the hope of gaining something of equal value. This makes people more willing to take big risks to avoid a loss they see as certain." },
+    { type: 'h4', text: "Paragraph 2: Old Theory vs. New Research" },
+    { type: 'paragraph', text: "This paragraph contrasts the new idea of loss aversion with the old economic view. The old theory said people are generally risk-averse. The new research shows the big exception: when facing a guaranteed loss, people suddenly become risk-takers. They'll risk a bigger loss for even a small chance to lose nothing at all." },
+    { type: 'h4', text: "Paragraph 3: Applying It to Countries" },
+    { type: 'paragraph', text: "The author applies this psychological rule to international politics. While governments are usually cautious, they become huge risk-takers when trying to get back territory they feel was taken from them. The Falklands/Malvinas war is the perfect example: both sides saw the islands as a loss to be recovered, so they were willing to take risks that seemed illogical from a cost-benefit standpoint." },
+    { type: 'callout', title: "Summary", variant: "summary", text: "The passage explains 'loss aversion'—the idea that the fear of losing is a more powerful motivator than the hope of winning. It contrasts this with older economic theories and uses it to explain why countries take huge, seemingly irrational risks in conflicts to get back what they believe they've lost." }
+  ]
 };

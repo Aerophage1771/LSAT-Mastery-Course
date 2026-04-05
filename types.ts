@@ -24,7 +24,6 @@ export type ContentBlock =
         badgeColor?: 'green' | 'red' | 'indigo' | 'slate' | 'blue';
       }[];
     }
-  | { type: 'diff-note'; text: string; variant?: 'add' | 'remove' | 'change' | 'comment' }
   | {
       type: 'question-card';
       id?: string;
@@ -58,17 +57,11 @@ export type ContentBlock =
 
 export type LessonQuestionPolicy = 'none' | 'repository_required';
 
-export interface LessonAlternate {
-  label: string;
-  content: string | ContentBlock[];
-}
-
 export interface Lesson {
   id: string;
   title: string;
   questionPolicy?: LessonQuestionPolicy;
   content: string | ContentBlock[]; // Markdown content OR structured blocks
-  alternates?: Record<string, LessonAlternate>;
 }
 
 export interface ModuleData {

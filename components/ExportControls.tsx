@@ -137,7 +137,7 @@ export const ExportControls: React.FC<ExportControlsProps> = ({
         </button>
 
         {menuOpen && (
-          <div className="absolute right-0 top-full mt-1 w-56 bg-white rounded-xl shadow-xl border-[1.5px] border-slate-300 z-[70] py-1.5 overflow-hidden animate-in fade-in slide-in-from-top-1">
+          <div className="absolute right-0 top-full mt-1 w-56 bg-white rounded-xl shadow-xl border border-slate-200 z-[70] py-1.5 overflow-hidden animate-in fade-in slide-in-from-top-1">
             {formats.map((format) => (
               <div key={format.id} className="flex items-center px-2 hover:bg-slate-50 transition-colors">
                 <button
@@ -165,7 +165,7 @@ export const ExportControls: React.FC<ExportControlsProps> = ({
   }
 
   return (
-    <div className="flex items-center gap-2 bg-white rounded-xl border-[1.5px] border-slate-300 p-1 shadow-[0_4px_16px_rgba(15,23,42,0.06)] relative" ref={menuRef} onClick={e => e.stopPropagation()}>
+    <div className="flex items-center gap-2 bg-white rounded-xl border border-slate-200 p-1 shadow-sm relative" ref={menuRef} onClick={e => e.stopPropagation()}>
       <span className="text-[10px] font-bold text-slate-400 uppercase px-3 tracking-widest">{label}</span>
       <div className="h-4 w-px bg-slate-200 mr-1"></div>
       
@@ -188,7 +188,7 @@ export const ExportControls: React.FC<ExportControlsProps> = ({
         </button>
 
         {menuOpen && (
-          <div className="absolute right-0 top-full mt-2 w-64 bg-white rounded-xl shadow-2xl border-[1.5px] border-slate-300 z-[70] py-2 overflow-hidden animate-in fade-in slide-in-from-top-2">
+          <div className="absolute right-0 top-full mt-2 w-64 bg-white rounded-xl shadow-2xl border border-slate-200 z-[70] py-2 overflow-hidden animate-in fade-in slide-in-from-top-2">
             <div className="px-4 py-2 mb-1 border-b border-slate-50">
               <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Select Format</span>
             </div>

@@ -1,85 +1,23 @@
 import { Lesson } from '../../types';
 
-const passageText = `The following passage was written in the mid-1990s.
-Users of the Internet—the worldwide network of interconnected computer systems—envision it as a way for people to have free access to information via their personal computers. Most Internet communication consists of sending electronic mail or exchanging ideas on electronic bulletin boards; however, a growing number of transmissions are of copyrighted works—books, photographs, videos and films, and sound recordings. In Canada, as elsewhere, the goals of Internet users have begun to conflict with reality as copyright holders look for ways to protect their material from unauthorized and uncompensated distribution.
-Copyright experts say that Canadian copyright law, which was revised in 1987 to cover works such as choreography and photography, has not kept pace with technology—specifically with digitalization, the conversion of data into a series of digits that are transmitted as electronic signals over computer networks. Digitalization makes it possible to create an unlimited number of copies of a book, recording, or movie and distribute them to millions of people around the world. Current law prohibits unauthorized parties from reproducing a work or any substantial part of it in any material form (e.g., photocopies of books or pirated audiotapes), but because digitalization merely transforms the work into electronic signals in a computer’s memory, it is not clear whether digitalization constitutes a material reproduction—and so unauthorized digitalization is not yet technically a crime.
-Some experts propose simply adding unauthorized digitalization to the list of activities proscribed under current law, to make it clear that copyright holders own electronic reproduction rights just as they own rights to other types of reproduction. But criminalizing digitalization raises a host of questions. For example, given that digitalization allows the multiple recipients of a transmission to re-create copies of a work, would only the act of digitalization itself be criminal, or should each copy made from the transmission be considered a separate instance of piracy—even though those who made the copies never had access to the original? In addition, laws against digitalization might be virtually unenforceable given that an estimated 20 million people around the world have access to the Internet, and that copying and distributing material is a relatively simple process. Furthermore, even an expanded law might not cover the majority of transmissions, given the vast numbers of users who are academics and the fact that current copyright law allows generous exemptions for those engaged in private study or research. But even if the law is revised to contain a more sophisticated treatment of digitalization, most experts think it will be hard to resolve the clash between the Internet community, which is accustomed to treating information as raw material available for everyone to use, and the publishing community, which is accustomed to treating it as a commodity owned by its creator.`;
+const passageText = `In explaining the foundations of the discipline known as historical sociology—the examination of history using the methods of sociology—historical sociologist Philip Abrams argues that, while people are made by society as much as society is made by people, sociologists’ approach to the subject is usually to focus on only one of these forms of influence to the exclusion of the other. Abrams insists on the necessity for sociologists to move beyond these one-sided approaches to understand society as an entity constructed by individuals who are at the same time constructed by their society. Abrams refers to this continuous process as “structuring.”
+Abrams also sees history as the result of structuring. People, both individually and as members of collectives, make history. But our making of history is itself formed and informed not only by the historical conditions we inherit from the past, but also by the prior formation of our own identities and capacities, which are shaped by what Abrams calls “contingencies”—social phenomena over which we have varying degrees of control. Contingencies include such things as the social conditions under which we come of age, the condition of our household’s economy, the ideologies available to help us make sense of our situation, and accidental circumstances. The ways in which contingencies affect our individual or group identities create a structure of forces within which we are able to act, and that partially determines the sorts of actions we are able to perform.
+In Abrams’s analysis, historical structuring, like social structuring, is manifold and unremitting. To understand it, historical sociologists must extract from it certain significant episodes, or events, that their methodology can then analyze and interpret. According to Abrams, these events are points at which action and contingency meet, points that represent a cross section of the specific social and individual forces in play at a given time. At such moments, individuals stand forth as agents of history not simply because they possess a unique ability to act, but also because in them we see the force of the specific social conditions that allowed their actions to come forth. Individuals can “make their mark” on history, yet in individuals one also finds the convergence of wider social forces. In order to capture the various facets of this mutual interaction, Abrams recommends a fourfold structure to which he believes the investigations of historical sociologists should conform: first, description of the event itself; second, discussion of the social context that helped bring the event about and gave it significance; third, summary of the life history of the individual agent in the event; and fourth, analysis of the consequences of the event both for history and for the individual.`;
 
 export const Lesson1_PassageAnalysis: Lesson = {
   id: "57-1",
-  title: "Passage Analysis",
+  title: "Passage Analysis: Historical Sociology",
   content: [
-    { type: 'passage-card', title: 'Digitalization and Copyright Law', passage: passageText, paragraphCount: 1, wordCount: 462 },    { type: 'h3', text: "Passage Analysis" },
-    { type: 'h4', text: "Paragraph 1: The Problem - Free Info vs. Copyright" },
-    { type: 'paragraph', text: "The passage kicks off by explaining a big conflict: the internet's culture of 'free information for everyone' is clashing with creators' need to protect their work. As more copyrighted material gets shared online, copyright holders are looking for ways to stop it, putting them in direct opposition to the goals of many internet users." },
-    { type: 'h4', text: "Paragraph 2: Why the Law is Outdated" },
-    { type: 'paragraph', text: "This paragraph explains the specific legal loophole. Canadian copyright law was written for the physical world and bans making unauthorized copies in a 'material form,' like a photocopy. But digitalization turns a work into electronic signals, not a physical object. The law isn't clear on whether this counts as 'material reproduction,' so making an unauthorized digital copy isn't technically illegal yet." },
-    { type: 'h4', text: "Paragraph 3: Why Fixing the Law is Hard" },
-    { type: 'paragraph', text: "The final paragraph explores why simply making digitalization a crime isn't an easy fix. The author brings up several major problems:" },
-    { type: 'list', items: [
-      "**What's the crime?** Is it just the first digital copy, or every copy made from it?",
-      "**How do you enforce it?** With millions of users, policing this would be nearly impossible.",
-      "**Who does it apply to?** The law already has big exceptions for academics, who are a huge group of users."
-    ] },
-    { type: 'paragraph', text: "The author concludes that even if the law is updated, the basic philosophical fight between the 'information wants to be free' internet culture and the 'information is a product' publishing world will be very hard to solve." },
-    { type: 'callout', title: "Summary", variant: "summary", text: "The passage argues that current Canadian copyright law is unprepared for the digital age. It highlights a legal loophole that makes it hard to prosecute unauthorized digital copying. While changing the law seems like the obvious answer, the author explains that doing so is full of practical challenges and doesn't solve the deeper philosophical conflict between the internet's open-access culture and the publishing industry's view of information as property." }
-  ],
-  alternates: {
-    diff: {
-      label: 'Diff-Highlighted',
-      content: [
-        {
-          "type": "accordion",
-          "title": "Read Passage",
-          "content": "The following passage was written in the mid-1990s.\nUsers of the Internet—the worldwide network of interconnected computer systems—envision it as a way for people to have free access to information via their personal computers. Most Internet communication consists of sending electronic mail or exchanging ideas on electronic bulletin boards; however, a growing number of transmissions are of copyrighted works—books, photographs, videos and films, and sound recordings. In Canada, as elsewhere, the goals of Internet users have begun to conflict with reality as copyright holders look for ways to protect their material from unauthorized and uncompensated distribution.\nCopyright experts say that Canadian copyright law, which was revised in 1987 to cover works such as choreography and photography, has not kept pace with technology—specifically with digitalization, the conversion of data into a series of digits that are transmitted as electronic signals over computer networks. Digitalization makes it possible to create an unlimited number of copies of a book, recording, or movie and distribute them to millions of people around the world. Current law prohibits unauthorized parties from reproducing a work or any substantial part of it in any material form (e.g., photocopies of books or pirated audiotapes), but because digitalization merely transforms the work into electronic signals in a computer’s memory, it is not clear whether digitalization constitutes a material reproduction—and so unauthorized digitalization is not yet technically a crime.\nSome experts propose simply adding unauthorized digitalization to the list of activities proscribed under current law, to make it clear that copyright holders own electronic reproduction rights just as they own rights to other types of reproduction. But criminalizing digitalization raises a host of questions. For example, given that digitalization allows the multiple recipients of a transmission to re-create copies of a work, would only the act of digitalization itself be criminal, or should each copy made from the transmission be considered a separate instance of piracy—even though those who made the copies never had access to the original? In addition, laws against digitalization might be virtually unenforceable given that an estimated 20 million people around the world have access to the Internet, and that copying and distributing material is a relatively simple process. Furthermore, even an expanded law might not cover the majority of transmissions, given the vast numbers of users who are academics and the fact that current copyright law allows generous exemptions for those engaged in private study or research. But even if the law is revised to contain a more sophisticated treatment of digitalization, most experts think it will be hard to resolve the clash between the Internet community, which is accustomed to treating information as raw material available for everyone to use, and the publishing community, which is accustomed to treating it as a commodity owned by its creator."
-        },
-        {
-          "type": "h3",
-          "text": "Passage Analysis"
-        },
-        {
-          "type": "h4",
-          "text": "Paragraph 1: The Problem - Free Info vs. Copyright"
-        },
-        {
-          "type": "paragraph",
-          "text": "The passage kicks off by explaining a big conflict: the internet's culture of 'free information for everyone' is clashing with creators' need to protect their work. As more copyrighted material gets shared online, copyright holders are looking for ways to stop it, putting them in direct opposition to the goals of many internet users."
-        },
-        {
-          "type": "h4",
-          "text": "Paragraph 2: Why the Law is Outdated"
-        },
-        {
-          "type": "paragraph",
-          "text": "This paragraph explains the specific legal loophole. Canadian copyright law was written for the physical world and bans making unauthorized copies in a 'material form,' like a photocopy. But digitalization turns a work into electronic signals, not a physical object. The law isn't clear on whether this counts as 'material reproduction,' so making an unauthorized digital copy isn't technically illegal yet."
-        },
-        {
-          "type": "h4",
-          "text": "Paragraph 3: Why Fixing the Law is Hard"
-        },
-        {
-          "type": "paragraph",
-          "text": "The final paragraph explores why simply making digitalization a crime isn't an easy fix. The author brings up several major problems:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "**What's the crime?** Is it just the first digital copy, or every copy made from it?",
-            "**How do you enforce it?** With millions of users, policing this would be nearly impossible.",
-            "**Who does it apply to?** The law already has big exceptions for academics, who are a huge group of users."
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "The author concludes that even if the law is updated, the basic philosophical fight between the 'information wants to be free' internet culture and the 'information is a product' publishing world will be very hard to solve."
-        },
-        {
-          "type": "callout",
-          "title": "Summary",
-          "variant": "summary",
-          "text": "The passage argues that current Canadian copyright law is unprepared for the digital age. It highlights a legal loophole that makes it hard to prosecute unauthorized digital copying. While changing the law seems like the obvious answer, the author explains that doing so is full of practical challenges and doesn't solve the deeper philosophical conflict between the internet's open-access culture and the publishing industry's view of information as property."
-        }
-      ],
-    },
-  },
+    { type: 'accordion', title: 'Read Passage', content: passageText },
+    { type: 'h3', text: "Passage Breakdown" },
+    { type: 'paragraph', text: "This passage dives into some heady academic theory from a sociologist named Philip Abrams. The main takeaway is his argument that we can't understand society or history with a one-sided view. Instead, he proposes a two-way model where people and the world they live in are constantly shaping each other." },
+    { type: 'hr' },
+    { type: 'h4', text: "Paragraph 1: The Problem with Sociology & Abrams's Fix" },
+    { type: 'paragraph', text: "Abrams starts by pointing out a flaw in his field. He says sociologists tend to see things as a one-way street: either people make society, or society makes people. Abrams says this is wrong. His big idea, which he calls 'structuring,' is that it's a continuous, two-way process. People build society, and society builds people, all at the same time." },
+    { type: 'h4', text: "Paragraph 2: Applying 'Structuring' to History" },
+    { type: 'paragraph', text: "Next, the passage shows how Abrams applies this idea to history. Sure, people 'make history,' but they don't do it in a vacuum. Abrams argues that our ability to act is limited by the world we're born into—our 'contingencies.' These are things like our social class, our family's wealth, the political ideas around us, and even just plain luck. These contingencies shape who we are and what actions are possible for us." },
+    { type: 'h4', text: "Paragraph 3: A 'How-To' Guide for Historians" },
+    { type: 'paragraph', text: "The final paragraph gets practical. To understand this complex process, Abrams says historians should focus on specific, significant 'events' where an individual's action and their social circumstances (contingencies) collide. He argues a great historical figure isn't great in isolation; they are great because they perfectly embody the social forces that made their actions possible. To analyze these moments, he lays out a four-step method: describe the event, explain the social context, detail the life of the person involved, and analyze the consequences." },
+    { type: 'callout', title: "Summary of the Argument", variant: "summary", text: "The passage explains sociologist Philip Abrams's theory of 'structuring'—a two-way process where people shape society and society shapes people. Abrams applies this to history, arguing that individuals can only 'make history' within the limits set by their social conditions ('contingencies'). To analyze this, he proposes a four-step method for studying key historical events where individual action and broader social forces intersect." }
+  ]
 };

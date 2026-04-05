@@ -1,17 +1,15 @@
 import { ModuleData } from '../types';
 import { Lesson1_Introduction } from './module33/Lesson1_Introduction';
 import { Lesson2_StepByStepApproach } from './module33/Lesson2_StepByStepApproach';
-import { Lesson3_PatternRecognition } from './module33/Lesson3_PatternRecognition';
 
 export const Module33: ModuleData = {
   id: 33,
-  title: "Passage Principle",
+  title: "RC: Paragraph Function",
   category: "RC",
-  unit: "Unit 11: Extending the Reasoning",
-  description: "Identify the underlying rule or generalization that supports an argument, action, or viewpoint within the text.",
+  unit: "Unit 9: Analyzing the Components",
+  description: "Identify the specific role a paragraph plays within the passage's overall structure.",
   lessons: [
     Lesson1_Introduction,
-    Lesson2_StepByStepApproach,
-    Lesson3_PatternRecognition
+    Lesson2_StepByStepApproach
   ]
 };

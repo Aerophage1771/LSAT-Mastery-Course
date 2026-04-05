@@ -224,7 +224,7 @@ export const styleGuideStructureContent: ContentBlock[] = [
   { type: 'h3', text: 'Module Structure' },
   { type: 'table', headers: ['Lesson Type', 'Position', 'Purpose', 'Content Format'], rows: [
     ['Introduction', '1st lesson', 'Define the question type and core concepts', 'Text + blockquotes + callouts'],
-    ['Step-by-Step: [Type]', '2nd lesson', 'Teach the solving algorithm', 'Process steps + worked example'],
+    ['Step-by-Step Guide', '2nd lesson', 'Teach the solving algorithm', 'Process steps + worked example'],
     ['Common Patterns', '3rd lesson', 'Catalog recurring argument structures', 'Breakdown tables + examples'],
     ['Drill Lessons', '4th-10th', 'Practice with real questions', '**Question Card** + analysis'],
     ['Advanced Concepts', 'After drills', 'High-level nuance and edge cases', 'Text + breakdown + callouts'],
@@ -234,7 +234,7 @@ export const styleGuideStructureContent: ContentBlock[] = [
   { type: 'h3', text: 'Naming Conventions' },
   { type: 'list', items: [
     '**Introduction:** Always the first lesson of every module.',
-    '**Step-by-Step: [Type]:** Typically the second lesson.',
+    '**Step-by-Step Guide:** Typically the second lesson.',
     '**Drill: [Concept] ([PT-ID]):** Practice lessons with a specific PT question ID.',
     '**Advanced: [Topic]:** Lessons focused on high-level nuance.',
     '**Reference Guide:** The final summary lesson.',

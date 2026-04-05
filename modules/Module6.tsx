@@ -1,35 +1,31 @@
 import { ModuleData } from '../types';
 import { Lesson1_Introduction } from './module6/Lesson1_Introduction';
 import { Lesson2_StepByStepGuide } from './module6/Lesson2_StepByStepGuide';
-import { Lesson3_FieldGuide } from './module6/Lesson3_FieldGuide';
-import { Lesson4 } from './module6/Lesson4';
-import { Lesson5 } from './module6/Lesson5';
-import { Lesson6 } from './module6/Lesson6';
-import { Lesson7 } from './module6/Lesson7';
-import { Lesson_AdvancedConcepts } from './module6/Lesson_AdvancedConcepts';
-import { Lesson_Advanced1 } from './module6/Lesson_Advanced1';
-import { Lesson_Advanced2 } from './module6/Lesson_Advanced2';
-import { Lesson_Advanced3 } from './module6/Lesson_Advanced3';
-import { Lesson_ReferenceGuide } from './module6/Lesson_ReferenceGuide';
+import { Lesson3_Drill_MistakenNegation } from './module6/Lesson3_Drill_MistakenNegation';
+import { Lesson4_Drill_CompositionFlaw } from './module6/Lesson4_Drill_CompositionFlaw';
+import { Lesson5_Drill_ComparedToWhatFlaw } from './module6/Lesson5_Drill_ComparedToWhatFlaw';
+import { Lesson6_Advanced_DeconstructingHighDifficulty } from './module6/Lesson6_Advanced_DeconstructingHighDifficulty';
+import { Lesson7_Drill_DoubleFlaw } from './module6/Lesson7_Drill_DoubleFlaw';
+import { Lesson8_Drill_NetEffectFlaw } from './module6/Lesson8_Drill_NetEffectFlaw';
+import { Lesson9_Drill_OverlapFlaw } from './module6/Lesson9_Drill_OverlapFlaw';
+import { Lesson10_ReferenceGuide } from './module6/Lesson10_ReferenceGuide';
 
 export const Module6: ModuleData = {
   id: 6,
-  title: 'Parallel Flaw',
-  category: 'LR',
-  description: '',
-  unit: '',
+  title: "Parallel Flaw",
+  category: "LR",
+  unit: "Unit 2: Analysis",
+  description: "Identify the argument with a logical error that mirrors the error in the stimulus.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,
-    Lesson3_FieldGuide,
-    Lesson4,
-    Lesson5,
-    Lesson6,
-    Lesson7,
-    Lesson_AdvancedConcepts,
-    Lesson_Advanced1,
-    Lesson_Advanced2,
-    Lesson_Advanced3,
-    Lesson_ReferenceGuide,
-  ],
+    Lesson3_Drill_MistakenNegation,
+    Lesson4_Drill_CompositionFlaw,
+    Lesson5_Drill_ComparedToWhatFlaw,
+    Lesson6_Advanced_DeconstructingHighDifficulty,
+    Lesson7_Drill_DoubleFlaw,
+    Lesson8_Drill_NetEffectFlaw,
+    Lesson9_Drill_OverlapFlaw,
+    Lesson10_ReferenceGuide
+  ]
 };
