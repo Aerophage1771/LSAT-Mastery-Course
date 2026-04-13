@@ -1,34 +1,23 @@
-# Content Catalog Audits
+# Content Catalog Audits: Cross-Module Validation
 
-**Purpose:** Define the roadmap bet for content catalog audits in this area.  
+**Purpose:** Unify question-bank validation across all modules to eliminate blind spots in content integrity.
 **Audience:** Maintainers, content editors, and future agents planning course improvements.  
-**Status:** draft  
+**Status:** active
 **Source of truth:** yes  
-**Last reviewed:** 2026-03-20  
+**Last reviewed:** 2026-05-15
 **Related docs:** [README.md](./README.md), [vision-and-decision-filter.md](./vision-and-decision-filter.md), [../../technical/content-and-validation.md](../../technical/content-and-validation.md)
 
-## Brief Problem Statement
+## User Problem
+Validation scripts currently hardcode `module48` (LR) for repository integrity checks, silently skipping `module49` (RC) and `module53` (Advanced RC). This creates a blind spot where cross-module duplicates, missing ID components, and broken links can silently break the course experience without failing CI checks.
 
-- The current repo already has meaningful implementation in this area.
-- The next bets should stay grounded in shipped behavior and current source-of-truth boundaries.
+## Proposed Direction
+Generalize existing validation scripts (`validate-questions.mjs` and `validate-lesson-question-linkage.mjs`) to dynamically map across all declared `QUESTION_BANK_MODULE_DIRS` rather than hardcoding `module48`.
 
-## Target Outcome
+## Why Now
+The course already relies heavily on `module48`, `module49`, and `module53`. As the question bank scales, the risk of undetected ID duplication, missing question components, and cross-type content drift grows exponentially.
 
-- Content Catalog Audits becomes a concrete next-step planning surface instead of an implied future direction.
-- Future work can be prioritized without describing unbuilt behavior as already shipped.
+## Likely Upside
+Absolute integrity of question IDs and linkage across the entire app. It enforces the single-source-of-truth rule globally, reducing "missing ID" crashes in lessons and preventing duplicate PT-backed entries across different module directories.
 
-## Likely Affected Surfaces
-
-- current product surfaces and docs for this area
-- runtime and workflow files when the bet affects operations
-- roadmap front-door docs and pathway references
-
-## Dependencies
-
-- the current repo boundaries stay explicit
-- active docs remain separate from archive-only context
-
-## Open Implementation Risks
-
-- roadmap drift can create confusion if front-door docs stop matching file names
-- future-facing docs are only useful if they stay tied to real current implementation
+## First Practical Milestone
+Update `validate-questions.mjs` to dynamically load and validate all `.tsx` files in `module48`, `module49`, and `module53`, rather than just `module48`.

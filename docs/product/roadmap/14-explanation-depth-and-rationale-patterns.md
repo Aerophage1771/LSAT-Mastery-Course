@@ -1,34 +1,23 @@
 # Explanation Depth and Rationale Patterns
 
-**Purpose:** Define the roadmap bet for explanation depth and rationale patterns in this area.  
+**Purpose:** Establish automated audits for explanation coverage to ensure high-quality rationale patterns.
 **Audience:** Maintainers, content editors, and future agents planning course improvements.  
-**Status:** draft  
+**Status:** active
 **Source of truth:** yes  
-**Last reviewed:** 2026-03-20  
+**Last reviewed:** 2026-05-15
 **Related docs:** [README.md](./README.md), [vision-and-decision-filter.md](./vision-and-decision-filter.md), [../../technical/content-and-validation.md](../../technical/content-and-validation.md)
 
-## Brief Problem Statement
+## User Problem
+There is currently no programmatic way to determine if an explanation comprehensively covers the reasoning for a question, leaving a gap where a student might not understand *why* an option is correct or incorrect. Editors lack visibility into which questions have shallow or missing rationales.
 
-- The current repo already has meaningful implementation in this area.
-- The next bets should stay grounded in shipped behavior and current source-of-truth boundaries.
+## Proposed Direction
+Introduce a new audit script that parses the `explanation` block in question repositories to evaluate coverage. It will flag questions lacking explanation text, lacking sufficient length, or missing explicit discussion of all answer choices.
 
-## Target Outcome
+## Why Now
+We currently have 126+ questions in the database. Maintaining content quality at this scale requires automated coverage checks to prioritize editorial efforts rather than manually hunting for weak explanations.
 
-- Explanation Depth and Rationale Patterns becomes a concrete next-step planning surface instead of an implied future direction.
-- Future work can be prioritized without describing unbuilt behavior as already shipped.
+## Likely Upside
+Content editors receive a clear, actionable punch list of shallow explanations. This drives targeted improvements to the student learning experience by ensuring every question has a robust rationale pattern.
 
-## Likely Affected Surfaces
-
-- current product surfaces and docs for this area
-- runtime and workflow files when the bet affects operations
-- roadmap front-door docs and pathway references
-
-## Dependencies
-
-- the current repo boundaries stay explicit
-- active docs remain separate from archive-only context
-
-## Open Implementation Risks
-
-- roadmap drift can create confusion if front-door docs stop matching file names
-- future-facing docs are only useful if they stay tied to real current implementation
+## First Practical Milestone
+Create an `audit-explanation-coverage.mjs` script that outputs an `explanation-coverage-audit.md`, listing questions with less than 50 words of explanation or missing structural analysis of choices.

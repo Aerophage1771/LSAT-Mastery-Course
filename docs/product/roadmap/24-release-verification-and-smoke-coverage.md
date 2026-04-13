@@ -1,34 +1,23 @@
-# Release Verification and Smoke Coverage
+# Release Verification: Answer-Key Drift Prevention
 
-**Purpose:** Define the roadmap bet for release verification and smoke coverage in this area.  
+**Purpose:** Prevent mismatches between the designated correct option and the explanation text.
 **Audience:** Maintainers, content editors, and future agents planning course improvements.  
-**Status:** draft  
+**Status:** active
 **Source of truth:** yes  
-**Last reviewed:** 2026-03-20  
+**Last reviewed:** 2026-05-15
 **Related docs:** [README.md](./README.md), [vision-and-decision-filter.md](./vision-and-decision-filter.md), [../../technical/content-and-validation.md](../../technical/content-and-validation.md)
 
-## Brief Problem Statement
+## User Problem
+Answer keys are determined by a `(Correct)` suffix in the `options` array, but the explanation text is a separate markdown string. During content edits, the `(Correct)` marker can be moved without updating the explanation, leading to a frustrating user experience where the app says one answer is correct while the explanation argues for another.
 
-- The current repo already has meaningful implementation in this area.
-- The next bets should stay grounded in shipped behavior and current source-of-truth boundaries.
+## Proposed Direction
+Implement a semantic verification step during release/validation that cross-references the `(Correct)` option with the explanation text. This will flag instances where the correct answer key has drifted from the stated rationale.
 
-## Target Outcome
+## Why Now
+As content is iteratively refined and AI tools or editors restructure options, the structural decoupling of the key and the rationale makes drift highly probable. Catching this before release builds trust with the users and ensures integrity.
 
-- Release Verification and Smoke Coverage becomes a concrete next-step planning surface instead of an implied future direction.
-- Future work can be prioritized without describing unbuilt behavior as already shipped.
+## Likely Upside
+Prevents frustrating student experiences caused by conflicting correct answers, reducing support requests and increasing confidence in the platform's reliability.
 
-## Likely Affected Surfaces
-
-- current product surfaces and docs for this area
-- runtime and workflow files when the bet affects operations
-- roadmap front-door docs and pathway references
-
-## Dependencies
-
-- the current repo boundaries stay explicit
-- active docs remain separate from archive-only context
-
-## Open Implementation Risks
-
-- roadmap drift can create confusion if front-door docs stop matching file names
-- future-facing docs are only useful if they stay tied to real current implementation
+## First Practical Milestone
+Enhance `validate-questions.mjs` to extract the correct option string and perform a basic heuristic check against the `explanation` text to flag potential answer-key drift for manual review.
