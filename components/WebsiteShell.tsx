@@ -22,12 +22,11 @@ import {
   Lightbulb,
   Menu,
 } from 'lucide-react';
-import type { ModuleData, LessonLinkageMeta } from '../types';
+import type { ModuleData } from '../types';
 import { useViewSettings } from '../contexts/ViewSettingsContext';
 import { ViewSettingsPopover } from './ViewSettingsPopover';
 import { websiteLessonCatalog } from '../data/websiteLessonCatalog';
-import { getDisplayModuleLabel } from '../utils/courseCatalog';
-import { PortalDashboard, PortalDashboardA, PortalDashboardB, PortalDashboardC, PortalDashboardD, PortalDashboardE, PortalQuestions, PortalHomeworkB, PortalReview, ReviewLandingD, ReviewWajD, ReviewBrB, PortalPastSessionsA } from './WebsitePortalPages';
+import { PortalDashboard, PortalDashboardA, PortalDashboardB, PortalDashboardC, PortalDashboardD, PortalDashboardE, PortalQuestions, PortalHomeworkB, ReviewLandingD, ReviewWajD, ReviewBrB, PortalPastSessionsA } from './WebsitePortalPages';
 
 const DASHBOARD_VARIANTS = [
   { key: 'default', label: 'Default', component: PortalDashboard },
@@ -61,7 +60,7 @@ interface WebsiteShellProps {
 
 export type PortalPage = 'dashboard' | 'course' | 'questions' | 'homework' | 'review' | 'sessions';
 
-const navItems: Array<{ icon: typeof LayoutDashboard; label: string; page: PortalPage }> = [
+const navItems: Array<{ icon: typeof LayoutDashboard; label: string; page: PortalPage; disabled?: boolean }> = [
   { icon: LayoutDashboard, label: 'Dashboard', page: 'dashboard' },
   { icon: Lightbulb, label: 'Course', page: 'course' },
   { icon: FileText, label: 'Questions', page: 'questions' },
@@ -1091,7 +1090,6 @@ const CourseOverview: React.FC<{
 }> = ({ modules, category, onSelectModule }) => {
   // Website only publishes modules 1-20 for LR. Modules 21+ (Causal, Conditional, Math) are Coming Soon.
   const WEBSITE_LR_MAX = 20;
-  const WEBSITE_RC_MIN = 24;
   const filtered = modules.filter((m) => {
     if (m.category !== category) return false;
     if (category === 'LR' && m.id > WEBSITE_LR_MAX) return false;
@@ -1224,7 +1222,7 @@ const CourseOverview: React.FC<{
                 );
               })()}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ml-12">
-                {mods.map((mod, idx) => {
+                {mods.map((mod) => {
                   const catalogLessons = websiteLessonCatalog[mod.id] ?? [];
                   const firstLesson = catalogLessons[0];
                   return (

@@ -209,7 +209,7 @@ describe('Export Utils', () => {
 
     expect(parsed.exportType).toBe('canonical-course');
     expect(parsed.modules[0]).toMatchObject({
-      routeModuleId: 22,
+      routeModuleId: 21,
       sourceModuleId: 55,
       title: 'Conditional Reasoning',
     });

@@ -73,6 +73,14 @@ export function getRouteModuleIdForContentModuleId(moduleId: number): number {
   return CONTENT_TO_ROUTE_MODULE_ID[moduleId] ?? moduleId;
 }
 
+export function getDisplayModuleId(routeModuleId: number): string {
+  return String(routeModuleId);
+}
+
+export function getDisplayModuleLabel(routeModuleId: number): string {
+  return `Module ${getDisplayModuleId(routeModuleId)}`;
+}
+
 export function getSourceModuleIdForRouteModuleId(routeModuleId: number): number {
   return ROUTE_TO_CONTENT_MODULE_ID[routeModuleId] ?? routeModuleId;
 }

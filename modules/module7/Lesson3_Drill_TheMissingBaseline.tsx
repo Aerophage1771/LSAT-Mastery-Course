@@ -1,7 +1,7 @@
 import { Lesson } from '../../types';
 
 export const Lesson3_Drill_TheMissingBaseline: Lesson = {
-  id: '7-3',
+  id: '7-3a',
   title: 'Drill: The Missing Baseline',
   questionPolicy: 'repository_required',
   content: [

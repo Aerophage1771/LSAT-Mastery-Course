@@ -8,6 +8,7 @@ export type ContentBlock =
   | { type: 'list'; items: string[]; ordered?: boolean }
   | { type: 'hr' }
   | { type: 'code'; text: string }
+  | { type: 'diff-note'; text: string; variant?: 'comment' }
   | { type: 'callout'; title?: string; text: string; variant?: 'default' | 'summary' | 'tip' }
   | { type: 'options'; items: string[] }
   | { type: 'process'; steps: string[]; title?: string }
@@ -57,11 +58,17 @@ export type ContentBlock =
 
 export type LessonQuestionPolicy = 'none' | 'repository_required';
 
+export interface LessonAlternate {
+  label: string;
+  content: string | ContentBlock[];
+}
+
 export interface Lesson {
   id: string;
   title: string;
   questionPolicy?: LessonQuestionPolicy;
   content: string | ContentBlock[]; // Markdown content OR structured blocks
+  alternates?: Record<string, LessonAlternate>;
 }
 
 export interface ModuleData {

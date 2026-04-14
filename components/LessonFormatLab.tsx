@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, Lightbulb, Info, ChevronRight, Sparkles, GraduationCap, ArrowRight, Quote } from 'lucide-react';
+import { Lightbulb, Info, ChevronRight, Sparkles, GraduationCap, Quote } from 'lucide-react';
 
 /* ═══════════════════════════════════════════════════════════════
    Lesson Format Lab — 8 rival rendering approaches

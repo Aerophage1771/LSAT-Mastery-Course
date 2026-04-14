@@ -11,7 +11,7 @@ import type { ModuleData } from '../types';
 describe('courseCatalog', () => {
   it('overrides module metadata and lesson count with canonical catalog values', () => {
     const meta = getCanonicalModuleMetadata({
-      id: 50,
+      id: 49,
       title: 'Placeholder Title',
       category: 'RC',
       description: 'desc',
@@ -36,10 +36,10 @@ describe('courseCatalog', () => {
       ],
     };
 
-    const resolved = applyCanonicalNamesToModule(moduleData, 22);
+    const resolved = applyCanonicalNamesToModule(moduleData, 21);
 
     expect(resolved.title).toBe('Conditional Reasoning');
-    expect(resolved.lessons[0]?.title).toBe('Introduction');
+    expect(resolved.lessons[0]?.title).toBe('Introduction to Conditional Reasoning');
     expect(resolved.lessons[1]?.title).toBe('Lesson 1: Foundations of the Material Conditional');
   });
 
@@ -51,14 +51,14 @@ describe('courseCatalog', () => {
       lessonTitle: 'Module Introduction: The Logic of Conditional Reasoning',
     });
 
-    expect(resolved.routeModuleId).toBe(22);
+    expect(resolved.routeModuleId).toBe(21);
     expect(resolved.lessonId).toBe('55-intro');
     expect(resolved.moduleTitle).toBe('Conditional Reasoning');
-    expect(resolved.lessonTitle).toBe('Introduction');
+    expect(resolved.lessonTitle).toBe('Introduction to Conditional Reasoning');
   });
 
-  it('uses numeric display ids after the route renumbering', () => {
-    expect(getRouteModuleIdForContentModuleId(60)).toBe(10);
+  it('uses numeric display ids for the current route map', () => {
+    expect(getRouteModuleIdForContentModuleId(55)).toBe(21);
     expect(getDisplayModuleId(10)).toBe('10');
     expect(getDisplayModuleId(57)).toBe('57');
   });
