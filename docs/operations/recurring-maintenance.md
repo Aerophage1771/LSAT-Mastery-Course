@@ -14,11 +14,13 @@
   - `npm run typecheck`
 - After drill or question-bank edits:
   - `npm run validate:questions`
+  - `npm run report:gaps`
   - `npm run typecheck`
 - After LR lesson card or title changes:
   - `npm run audit:lr-cards`
 - After route naming or export-contract changes:
   - `node scripts/export-website-release.mjs`
+  - `npm run metrics:content`
   - `npm run typecheck`
 
 ## Docs Hygiene

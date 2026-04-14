@@ -52,7 +52,10 @@ Generated audit outputs live under `docs/operations/audits/`.
 - `question-usage-audit.md`
 - `question-linkage-audit.md`
 - `lr-card-requirements-audit.md`
+- `content-metrics.json`
+- `content-metrics.md`
 
+There is also a `REPOSITORY_GAPS.txt` report generated at the repo root by `npm run report:gaps`.
 These reports are planning signals for the roadmap and maintenance work, but they are not hand-edited source-of-truth product docs.
 
 ## Validation Commands
@@ -61,6 +64,8 @@ These reports are planning signals for the roadmap and maintenance work, but the
 npm run inventory:invented
 npm run validate:questions
 npm run audit:lr-cards
+npm run metrics:content
+npm run report:gaps
 npm run typecheck
 ```
 

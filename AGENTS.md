@@ -57,8 +57,12 @@ npm run typecheck
 npm run inventory:invented
 npm run validate:questions
 npm run audit:lr-cards
+npm run metrics:content
+npm run report:gaps
+npm run backup:supabase
 ```
 
+`npm run report:gaps` checks for missing IDs or placeholder content in repositories, and `npm run metrics:content` generates course metrics.
 Generated reports live under `docs/operations/audits/`.
 
 ## High-Risk Areas

@@ -19,12 +19,18 @@
   - lesson/PT linkage audit
 - `lr-card-requirements-audit.md`
   - LR lesson card presence and title audit
+- `content-metrics.json`
+  - machine-readable course metrics
+- `content-metrics.md`
+  - readable markdown course metrics report
 
 ## Generators
 
 - `npm run inventory:invented`
 - `npm run validate:questions`
 - `npm run audit:lr-cards`
+- `npm run metrics:content`
+- `npm run backup:supabase`
 
 ## Rules
 

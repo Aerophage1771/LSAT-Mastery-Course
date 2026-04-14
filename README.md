@@ -50,11 +50,15 @@ The Vite dev server binds to `http://localhost:8002`.
 | `npm run inventory:invented` | Regenerate the invented-card inventory          |
 | `npm run audit:lr-cards`     | Regenerate the LR card requirements audit       |
 | `npm run docs:course-map`    | Regenerate the course content map               |
+| `npm run metrics:content`    | Generate course metrics report                  |
+| `npm run report:gaps`        | Check for missing IDs or placeholder content    |
+| `npm run backup:supabase`    | Backup curriculum data to Supabase              |
 | `node scripts/export-website-release.mjs` | Emit the website release artifact from current module source |
 | `npm run format`             | Run Prettier                                    |
 
 ## Repo Map
 
+- `REPOSITORY_GAPS.txt`: generated report of missing PT IDs or placeholder content
 - `App.tsx`: top-level routing and lesson loading
 - `components/`: layout shell, lesson renderer, question bank, search, export, style guide, roadmap
 - `modules/`: lesson content and module definitions
