@@ -17,7 +17,7 @@ export const Module4: ModuleData = {
   title: "Parallel Reasoning",
   category: "LR",
   unit: "Unit 2: Analysis",
-  description: "Identify an argument's pattern. Then find an answer choice that follows the exact same logical structure.",
+  description: "Identify an argument's pattern. Then find an answer choice that follows the exact same logical structure. By building on the abstract analysis skills developed in Module 3, you will learn to not only describe a pattern, but to flawlessly replicate it in a completely different context.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,

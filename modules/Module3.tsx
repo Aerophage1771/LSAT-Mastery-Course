@@ -18,7 +18,7 @@ export const Module3: ModuleData = {
   title: "Method of Reasoning",
   category: "LR",
   unit: "Unit 2: Analysis",
-  description: "Describe the argumentative strategy the author uses to support the conclusion. In other words, what is the logical structure of the argument?",
+  description: "Describe the argumentative strategy the author uses to support the conclusion. In other words, what is the logical structure of the argument? This module marks the critical transition from identification to analysis, requiring you to move beyond literal content and recognize abstract logical patterns.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,

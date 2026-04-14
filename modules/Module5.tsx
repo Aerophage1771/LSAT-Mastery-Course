@@ -17,7 +17,7 @@ export const Module5: ModuleData = {
   title: "Flaw",
   category: "LR",
   unit: "Unit 2: Analysis",
-  description: "Identify the specific reasoning error that makes the argument's conclusion unproven by its evidence. In other words, why is the logical connection between the premise and the conclusion broken?",
+  description: "Identify the specific reasoning error that makes the argument's conclusion unproven by its evidence. In other words, why is the logical connection between the premise and the conclusion broken? As the culmination of your analysis training, this module teaches you to use structural mapping not just to describe an argument, but to expose its fundamental flaws.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,

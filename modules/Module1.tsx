@@ -17,7 +17,7 @@ export const Module1: ModuleData = {
   title: "Argument Part",
   category: "LR",
   unit: "Unit 1: Identification",
-  description: "Define the specific function a particular sentence serves within the argument (e.g., main conclusion, subsidiary conclusion, premise, counter-premise).",
+  description: "Define the specific function a particular sentence serves within the argument (e.g., main conclusion, subsidiary conclusion, premise, counter-premise). This module serves as the foundational prerequisite for the entire course, teaching you how to systematically deconstruct an argument into its component parts before attempting to analyze or evaluate it.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,

@@ -16,7 +16,7 @@ export const Module2: ModuleData = {
   title: "Main Conclusion",
   category: "LR",
   unit: "Unit 1: Identification",
-  description: "Identify the single, overarching claim that the entire argument is constructed to prove. In other words, what is the one ultimate point the author wants the reader to accept?",
+  description: "Identify the single, overarching claim that the entire argument is constructed to prove. In other words, what is the one ultimate point the author wants the reader to accept? Building directly on the structural mapping skills from Module 1, this module teaches you how to trace the flow of support to locate the argument's final destination.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,
