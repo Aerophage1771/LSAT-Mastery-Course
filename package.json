@@ -15,6 +15,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
+    "smoke": "node scripts/smoke.mjs",
     "analyze": "vite build --mode analyze",
     "validate:questions": "node scripts/validate-questions.mjs && node scripts/validate-lesson-question-linkage.mjs",
     "validate:linkage": "node scripts/validate-lesson-question-linkage.mjs",

@@ -6,6 +6,7 @@ import { Lesson4_Drill_Causation } from './module5/Lesson4_Drill_Causation';
 import { Lesson5_Drill_NumbersVsPercentages } from './module5/Lesson5_Drill_NumbersVsPercentages';
 import { Lesson6_Drill_UnrepresentativeSample } from './module5/Lesson6_Drill_UnrepresentativeSample';
 import { Lesson7_Drill_ConditionalLogic } from './module5/Lesson7_Drill_ConditionalLogic';
+
 import { Lesson8_AdvancedConcepts } from './module5/Lesson8_AdvancedConcepts';
 import { Lesson9_Advanced_NecessaryVsSufficient } from './module5/Lesson9_Advanced_NecessaryVsSufficient';
 import { Lesson10_Advanced_StrategyVsCertainty } from './module5/Lesson10_Advanced_StrategyVsCertainty';

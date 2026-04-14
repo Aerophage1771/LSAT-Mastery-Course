@@ -1,10 +1,10 @@
 # LSAT Mastery Course
 
-**Purpose:** Orient contributors to the current product, repo shape, and canonical documentation entrypoints.  
-**Audience:** Engineers, content editors, operators, and future automation agents.  
-**Status:** active  
-**Source of truth:** yes  
-**Last reviewed:** 2026-04-03  
+**Purpose:** Orient contributors to the current product, repo shape, and canonical documentation entrypoints.
+**Audience:** Engineers, content editors, operators, and future automation agents.
+**Status:** active
+**Source of truth:** yes
+**Last reviewed:** 2026-04-03
 **Related docs:** [../README.md](../README.md), [AGENTS.md](./AGENTS.md), [JULES.md](./JULES.md), [docs/README.md](./docs/README.md), [../docs/README.md](../docs/README.md)
 
 ## Current Product Truth
@@ -34,9 +34,11 @@
 ```bash
 npm install
 npm run dev
+npm run smoke
 ```
 
 The Vite dev server binds to `http://localhost:8002`.
+`npm run smoke` is the app-owned workspace verification entrypoint for the course shell and route contract.
 
 ## Key Scripts
 
@@ -45,6 +47,7 @@ The Vite dev server binds to `http://localhost:8002`.
 | `npm run dev`                | Start the app locally                           |
 | `npm run build`              | Create a production build                       |
 | `npm run preview`            | Preview the production build                    |
+| `npm run smoke`              | Verify the live shell plus question-bank route contract |
 | `npm run typecheck`          | Run strict TypeScript checks                    |
 | `npm run validate:questions` | Run question-bank and lesson-linkage validation |
 | `npm run inventory:invented` | Regenerate the invented-card inventory          |
