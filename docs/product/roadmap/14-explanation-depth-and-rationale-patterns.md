@@ -1,34 +1,23 @@
 # Explanation Depth and Rationale Patterns
 
-**Purpose:** Define the roadmap bet for explanation depth and rationale patterns in this area.  
+**Purpose:** Define the roadmap bet for explanation depth and rationale patterns.
 **Audience:** Maintainers, content editors, and future agents planning course improvements.  
 **Status:** draft  
 **Source of truth:** yes  
-**Last reviewed:** 2026-03-20  
+**Last reviewed:** 2026-04-03
 **Related docs:** [README.md](./README.md), [vision-and-decision-filter.md](./vision-and-decision-filter.md), [../../technical/content-and-validation.md](../../technical/content-and-validation.md)
 
-## Brief Problem Statement
+## User Problem
+Students are often confused by shallow explanations or "wrong correct answer" bugs when rationales are missing or disconnected from the option text. Current validation ensures structural integrity (e.g., that an option is marked as `(Correct)`), but it does not evaluate whether the explanation effectively breaks down *why* it is correct or *why* other options are wrong.
 
-- The current repo already has meaningful implementation in this area.
-- The next bets should stay grounded in shipped behavior and current source-of-truth boundaries.
+## Proposed Direction
+Introduce an "Explanation Depth" metric to evaluate whether questions have sufficient rationales for each option. This involves building automated checks to measure explanation length, presence of specific rationale blocks (e.g., `breakdown`), and keyword alignment between options and explanations.
 
-## Target Outcome
+## Why Now
+We already have robust structural validation (`metrics:content` and `validate-questions.mjs`). Building on this existing foundation to measure *depth* is a natural next step that leverages our existing tooling without requiring net-new infrastructure.
 
-- Explanation Depth and Rationale Patterns becomes a concrete next-step planning surface instead of an implied future direction.
-- Future work can be prioritized without describing unbuilt behavior as already shipped.
+## Likely Upside
+This creates better operator leverage by automatically highlighting weak or missing explanations across the massive question bank. It allows content editors to target their review efforts where they are needed most, improving the overall quality of the course offer.
 
-## Likely Affected Surfaces
-
-- current product surfaces and docs for this area
-- runtime and workflow files when the bet affects operations
-- roadmap front-door docs and pathway references
-
-## Dependencies
-
-- the current repo boundaries stay explicit
-- active docs remain separate from archive-only context
-
-## Open Implementation Risks
-
-- roadmap drift can create confusion if front-door docs stop matching file names
-- future-facing docs are only useful if they stay tied to real current implementation
+## First Practical Milestone
+Write a validation script that iterates through the question bank (`module48`, `module49`, `module53`) to identify and report questions that have missing or unusually short `breakdown` blocks.

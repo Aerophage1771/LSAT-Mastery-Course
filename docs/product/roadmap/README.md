@@ -30,5 +30,5 @@
 - `07-11-*.md` cover diagnostic start quality, question-bank study modes, review queues, prerequisite clarity, and module landing quality
 - `12-16-*.md` cover study planning, search entrypoints, explanation depth, export trust, and offline/resume reliability
 - `17-21-*.md` cover catalog audits, progress milestones, practice-set assembly, student confidence loops, and keyboard-speed controls
-- `22-26-*.md` cover naming enforcement, style-guide parity, release verification, learning-analytics boundaries, and DataToolkit bridge quality
+- `22-27-*.md` cover naming enforcement, style-guide parity, release verification, learning-analytics boundaries, DataToolkit bridge quality, and answer key drift verification
 - Archived duplicate roadmap drafts: [../../archive/roadmaps/README.md](../../archive/roadmaps/README.md)

@@ -16,4 +16,4 @@
 
 ## Phase 3
 
-- `21-26`: long-tail hardening, visibility, and maintenance work
+- `21-27`: long-tail hardening, visibility, and maintenance work
