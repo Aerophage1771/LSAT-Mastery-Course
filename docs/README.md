@@ -5,13 +5,11 @@
 **Status:** active  
 **Source of truth:** yes  
 **Last reviewed:** 2026-04-03  
-**Related docs:** [../../README.md](../../README.md), [../README.md](../README.md), [../../docs/README.md](../../docs/README.md), [archive/README.md](./archive/README.md)
+**Related docs:** [../README.md](../README.md), [archive/README.md](./archive/README.md)
 
 ## Docs Layers
 
 - Root docs
-  - [../../README.md](../../README.md): workspace-level launcher, app map, and runtime truth
-  - [../../docs/README.md](../../docs/README.md): workspace docs index
   - [../README.md](../README.md): repo and product orientation
   - [../AGENTS.md](../AGENTS.md): execution rules, hazards, and content policy
 - Product docs

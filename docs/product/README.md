@@ -34,12 +34,11 @@
 
 ## Roadmap Set
 
-- [roadmap/01-content-trust-and-authenticity.md](./roadmap/01-content-trust-and-authenticity.md)
-- [roadmap/02-study-loop-clarity-and-progress-review.md](./roadmap/02-study-loop-clarity-and-progress-review.md)
-- [roadmap/03-question-bank-discovery-and-cross-linking.md](./roadmap/03-question-bank-discovery-and-cross-linking.md)
-- [roadmap/04-export-and-packaging-quality.md](./roadmap/04-export-and-packaging-quality.md)
-- [roadmap/05-reliability-performance-and-offline-resilience.md](./roadmap/05-reliability-performance-and-offline-resilience.md)
-- [roadmap/06-analytics-and-signals.md](./roadmap/06-analytics-and-signals.md)
+- [roadmap/07-diagnostic-start-and-placement.md](./roadmap/07-diagnostic-start-and-placement.md)
+- [roadmap/08-question-bank-study-modes.md](./roadmap/08-question-bank-study-modes.md)
+- [roadmap/09-review-queue-and-mistake-journal.md](./roadmap/09-review-queue-and-mistake-journal.md)
+- [roadmap/10-lesson-prerequisite-clarity.md](./roadmap/10-lesson-prerequisite-clarity.md)
+- [roadmap/11-module-landing-page-quality.md](./roadmap/11-module-landing-page-quality.md)
 
 ## Non-Goals For This Folder
 

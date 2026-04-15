@@ -56,8 +56,6 @@
 - Canonical route modules now use the live `1-57` sequence, with `Module 10` reserved for the standalone `Causal Reasoning` framework module.
 - Content modules are not identical to route modules in every case.
 - Current legacy mappings:
-  - route `10` uses content module `60`
-  - route `11` through `21` use content modules `10` through `20`
   - route `22` uses content module `55`
   - route `23` uses content module `59`
   - route `24` through `50` use content modules `21` through `47`

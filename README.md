@@ -5,7 +5,7 @@
 **Status:** active
 **Source of truth:** yes
 **Last reviewed:** 2026-04-03
-**Related docs:** [../README.md](../README.md), [AGENTS.md](./AGENTS.md), [JULES.md](./JULES.md), [docs/README.md](./docs/README.md), [../docs/README.md](../docs/README.md)
+**Related docs:** [AGENTS.md](./AGENTS.md), [JULES.md](./JULES.md), [docs/README.md](./docs/README.md)
 
 ## Current Product Truth
 
@@ -14,8 +14,6 @@
 - The live app surfaces are the dashboard at `/`, lesson routes at `/module/:moduleId/lesson/:lessonId`, and the standalone question bank at `/question-bank`.
 - Route modules now use the live `1-57` sequence, with `Module 10: Causal Reasoning` inserted directly between `Strengthen` and `Sufficient Assumption`.
 - Legacy content-module remapping is applied for the route catalog through `utils/courseCatalog.ts`:
-  - `10 -> 60`
-  - `11 -> 10` through `21 -> 20`
   - `22 -> 55`
   - `23 -> 59`
   - `24 -> 21` through `50 -> 47` (consecutive mapping)
@@ -49,11 +47,15 @@ The Vite dev server binds to `http://localhost:8002`.
 | `npm run preview`            | Preview the production build                    |
 | `npm run smoke`              | Verify the live shell plus question-bank route contract |
 | `npm run typecheck`          | Run strict TypeScript checks                    |
-| `npm run validate:questions` | Run question-bank and lesson-linkage validation |
+| `npm run test`               | Run unit tests                                  |
+| `npm run validate:questions` | Run question-bank validation                    |
+| `npm run validate:linkage`   | Run lesson-question linkage validation          |
 | `npm run inventory:invented` | Regenerate the invented-card inventory          |
 | `npm run audit:lr-cards`     | Regenerate the LR card requirements audit       |
 | `npm run docs:course-map`    | Regenerate the course content map               |
+| `npm run metrics:content`    | Generate content metrics report                 |
 | `node scripts/export-website-release.mjs` | Emit the website release artifact from current module source |
+| `npm run backup:supabase`    | Backup curriculum data                          |
 | `npm run format`             | Run Prettier                                    |
 
 ## Repo Map
@@ -74,15 +76,14 @@ The Vite dev server binds to `http://localhost:8002`.
 
 Use the docs layers in this order:
 
-1. [../README.md](../README.md) and [../docs/README.md](../docs/README.md) for workspace-level launcher, ownership, and runtime truth
-2. [JULES.md](./JULES.md) for recurring Jules task selections, cadence, and prompt text
-3. [docs/README.md](./docs/README.md) for the repo docs map and source-of-truth boundaries
-4. [AGENTS.md](./AGENTS.md) for execution rules, repo hazards, and content policy
-5. [docs/product/course-experience.md](./docs/product/course-experience.md) for live product behavior
-6. [docs/product/course-naming-conventions.md](./docs/product/course-naming-conventions.md) for canonical unit, module, and lesson naming rules
-7. [docs/product/course-content-map.md](./docs/product/course-content-map.md) for the compact unit/module/coverage inventory used for spot-checking missing concepts
-8. [docs/product/roadmap/README.md](./docs/product/roadmap/README.md) for planned work only, including the 20 numbered `07-26` bet docs
-9. [docs/technical/architecture.md](./docs/technical/architecture.md) and [docs/operations/content-operations.md](./docs/operations/content-operations.md) for implementation and workflow detail
+1. [JULES.md](./JULES.md) for recurring Jules task selections, cadence, and prompt text
+2. [docs/README.md](./docs/README.md) for the repo docs map and source-of-truth boundaries
+3. [AGENTS.md](./AGENTS.md) for execution rules, repo hazards, and content policy
+4. [docs/product/course-experience.md](./docs/product/course-experience.md) for live product behavior
+5. [docs/product/course-naming-conventions.md](./docs/product/course-naming-conventions.md) for canonical unit, module, and lesson naming rules
+6. [docs/product/course-content-map.md](./docs/product/course-content-map.md) for the compact unit/module/coverage inventory used for spot-checking missing concepts
+7. [docs/product/roadmap/README.md](./docs/product/roadmap/README.md) for planned work only, including the 20 numbered `07-26` bet docs
+8. [docs/technical/architecture.md](./docs/technical/architecture.md) and [docs/operations/content-operations.md](./docs/operations/content-operations.md) for implementation and workflow detail
 
 Generated audits live under [docs/operations/audits/README.md](./docs/operations/audits/README.md). Historical plans and brainstorms live under [docs/archive/README.md](./docs/archive/README.md).
 

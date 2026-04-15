@@ -5,7 +5,7 @@
 **Status:** active  
 **Source of truth:** yes  
 **Last reviewed:** 2026-04-03  
-**Related docs:** [../README.md](../README.md), [README.md](./README.md), [docs/README.md](./docs/README.md), [../docs/README.md](../docs/README.md)
+**Related docs:** [README.md](./README.md), [docs/README.md](./docs/README.md)
 
 ## Repo Identity
 
@@ -26,8 +26,6 @@
 - The question bank is standalone, not a numbered module route.
 - Route module ids are canonical. The live route set is now `1-57`, with `Module 10` reserved for the standalone `Causal Reasoning` framework module.
 - Legacy content module ids are remapped through `utils/courseCatalog.ts` once the public route numbering diverges from source-module ids.
-  - `10 -> 60`
-  - `11 -> 10` through `21 -> 20`
   - `22 -> 55`
   - `23 -> 59`
   - `24 -> 21` through `50 -> 47` (consecutive mapping)
@@ -82,7 +80,6 @@ Content-file syntax errors are common and usually come from unescaped quotes.
 
 ## Docs Expectations
 
-- Root workspace docs live at [../README.md](../README.md) and [../docs/README.md](../docs/README.md) for launcher, app-map, and cross-app runtime truth.
 - `README.md` is repo and product orientation.
 - `AGENTS.md` is execution guidance, repo hazards, and content-policy enforcement.
 - `docs/README.md` is the active docs index and source-of-truth map.

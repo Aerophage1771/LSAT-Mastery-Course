@@ -59,7 +59,7 @@
 - Product copy should not imply server-backed sync or online profiles.
 - Canonical lesson naming comes from `data/courseCatalog.json`, not from the raw lesson file titles alone.
 - The live numbered LR sequence now includes `Module 10: Causal Reasoning` directly between `Module 9` and `Module 11`.
-- Route ids and content-module ids diverge through the legacy remap table in `utils/courseCatalog.ts`: `10 -> 60`, `11-21 -> 10-20`, `22 -> 55`, `23 -> 59`, `24-50 -> 21-47`, `51 -> 50`, `52 -> 51`, `53 -> 52`, `54 -> 54`, and `55-57 -> 56-58`.
+- Route ids and content-module ids diverge through the legacy remap table in `utils/courseCatalog.ts`: `22 -> 55`, `23 -> 59`, `24-50 -> 21-47`, `51 -> 50`, `52 -> 51`, `53 -> 52`, `54 -> 54`, and `55-57 -> 56-58`.
 
 ## Related Systems
 
