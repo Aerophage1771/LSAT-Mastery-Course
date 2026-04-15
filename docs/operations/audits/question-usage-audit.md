@@ -4,12 +4,12 @@
 **Audience:** Maintainers validating lesson/question-bank alignment before or after content changes.  
 **Status:** reference  
 **Source of truth:** yes  
-**Last reviewed:** 2026-03-29  
+**Last reviewed:** 2026-04-15
 **Related docs:** [README.md](./README.md), [../../technical/content-and-validation.md](../../technical/content-and-validation.md), [question-linkage-audit.md](./question-linkage-audit.md)
 
-- **Total Questions in Database:** 126
-- **Used Questions (In Use):** 111
-- **Unused Questions:** 15
+- **Total Questions in Database:** 169
+- **Used Questions (In Use):** 108
+- **Unused Questions:** 61
 
 ## Missing Database Entries
 - None
