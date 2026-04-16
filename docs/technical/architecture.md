@@ -1,10 +1,10 @@
 # Architecture
 
-**Purpose:** Describe the live runtime architecture, route model, and system boundaries of the app.  
-**Audience:** Engineers and agents changing routing, data flow, or module loading behavior.  
-**Status:** active  
-**Source of truth:** yes  
-**Last reviewed:** 2026-03-27  
+**Purpose:** Describe the live runtime architecture, route model, and system boundaries of the app.
+**Audience:** Engineers and agents changing routing, data flow, or module loading behavior.
+**Status:** active
+**Source of truth:** yes
+**Last reviewed:** 2026-04-15
 **Related docs:** [../README.md](../README.md), [content-and-validation.md](./content-and-validation.md), [../product/course-experience.md](../product/course-experience.md)
 
 ## Overview
@@ -25,7 +25,7 @@
   - canonical naming in `data/courseCatalog.json`
   - generated audit data under `docs/operations/audits/`
 - Export contracts:
-  - `canonical-course` is the lossless JSON serialization boundary for course content and the active import contract consumed by DataToolkit Course Studio
+  - `canonical-course` is the lossless JSON serialization boundary for course content and a legacy backfill contract consumed by DataToolkit Course Studio
   - `interchange-course` remains a derived, simplified compatibility export surface; it is no longer the primary course-platform handoff
   - `full-course` remains available as a legacy-compatible export surface
 - Local persistence:
@@ -72,7 +72,7 @@
 - `applyCanonicalNamesToModule()` overlays route-facing names from `courseCatalog.json`
 - `LessonViewer` renders the active lesson's `ContentBlock[]`
 - Export flows serialize selected `ModuleData` into outline, full-course, canonical-course, or interchange-course artifacts without changing the runtime loader
-- Downstream course-platform work now treats this repo as the feeder/reference source: DataToolkit imports `canonical-course`, versions edited lessons, and publishes website-ready release artifacts from there
+- Downstream course-platform work now treats this repo as archived reference material: DataToolkit owns active course editing and release publishing, while this repo remains useful only for historical export and curriculum audits
 
 ## Known Risks / Gotchas
 

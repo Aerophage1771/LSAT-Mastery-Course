@@ -1,10 +1,10 @@
 # Content And Validation
 
-**Purpose:** Explain where lesson/question content comes from and how to validate it safely.  
-**Audience:** Engineers and content editors changing lessons, audits, or question-bank sources.  
-**Status:** active  
-**Source of truth:** yes  
-**Last reviewed:** 2026-04-03  
+**Purpose:** Explain where lesson/question content comes from and how to validate it safely.
+**Audience:** Engineers and content editors changing lessons, audits, or question-bank sources.
+**Status:** active
+**Source of truth:** yes
+**Last reviewed:** 2026-04-15
 **Related docs:** [architecture.md](./architecture.md), [../operations/content-operations.md](../operations/content-operations.md), [../product/roadmap/01-content-trust-and-authenticity.md](../product/roadmap/01-content-trust-and-authenticity.md)
 
 ## Overview
@@ -15,9 +15,9 @@ The repo mixes three content layers:
 - canonical naming in `data/courseCatalog.json`
 - question-bank repositories in `modules/module48`, `modules/module49`, and `modules/module53`
 
-It also owns the primary curriculum-export surfaces consumed downstream during the current migration:
+It also owns legacy curriculum-export surfaces that can still be useful downstream when historical backfill is required:
 
-- `canonical-course` is the lossless source-of-truth payload consumed by DataToolkit Course Studio
+- `canonical-course` is the lossless payload that DataToolkit can still ingest for legacy backfill
 - `interchange-course` is a simplified compatibility payload derived from `canonical-course`
 - `full-course` remains a legacy-compatible course dump
 - `scripts/export-website-release.mjs` emits the website release artifact from the same routed module source

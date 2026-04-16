@@ -1,10 +1,10 @@
 # Documentation Index
 
-**Purpose:** Provide the canonical entrypoint into the repository's documentation system.  
-**Audience:** Contributors who need to find the current source of truth quickly.  
-**Status:** active  
-**Source of truth:** yes  
-**Last reviewed:** 2026-04-03  
+**Purpose:** Provide the canonical entrypoint into the repository's documentation system.
+**Audience:** Contributors who need to find the current source of truth quickly.
+**Status:** active
+**Source of truth:** yes
+**Last reviewed:** 2026-04-15
 **Related docs:** [../../README.md](../../README.md), [../README.md](../README.md), [../../docs/README.md](../../docs/README.md), [archive/README.md](./archive/README.md)
 
 ## Docs Layers
@@ -14,6 +14,7 @@
   - [../../docs/README.md](../../docs/README.md): workspace docs index
   - [../README.md](../README.md): repo and product orientation
   - [../AGENTS.md](../AGENTS.md): execution rules, hazards, and content policy
+  - Archived-reference note: use this docs stack only for historical curriculum and legacy export context; active course editing now lives in `apps/data-toolkit`
 - Product docs
   - [product/README.md](./product/README.md): current product truth and roadmap entrypoints for the standalone curriculum reference app
   - [product/course-experience.md](./product/course-experience.md): live user-facing workflows

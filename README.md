@@ -4,13 +4,14 @@
 **Audience:** Engineers, content editors, operators, and future automation agents.
 **Status:** active
 **Source of truth:** yes
-**Last reviewed:** 2026-04-03
+**Last reviewed:** 2026-04-15
 **Related docs:** [../README.md](../README.md), [AGENTS.md](./AGENTS.md), [JULES.md](./JULES.md), [docs/README.md](./docs/README.md), [../docs/README.md](../docs/README.md)
 
 ## Current Product Truth
 
 - This repo is a client-only React + TypeScript SPA for LSAT prep. There is no backend, database, auth layer, or external service dependency in the app runtime.
-- During the current course-platform migration, this repo's business role is a standalone curriculum reference and export/source-of-truth surface, not the long-term owner of student delivery workflows.
+- This repo is now an archived curriculum-reference surface inside the active GT workspace, not an active launcher/startup target.
+- DataToolkit now owns day-to-day course authoring and release publishing, and GermaineTutoring.com owns student delivery.
 - The live app surfaces are the dashboard at `/`, lesson routes at `/module/:moduleId/lesson/:lessonId`, and the standalone question bank at `/question-bank`.
 - Route modules now use the live `1-57` sequence, with `Module 10: Causal Reasoning` inserted directly between `Strengthen` and `Sufficient Assumption`.
 - Legacy content-module remapping is applied for the route catalog through `utils/courseCatalog.ts`:
@@ -23,9 +24,9 @@
 - Progress is stored in `localStorage`.
 - The shell includes search, export flows, a style guide modal, and a roadmap modal.
 - The question bank is sourced from `modules/module48`, `modules/module49`, and `modules/module53`.
-- During the current course-platform migration, this repo is the canonical-course export source and curriculum reference feeding DataToolkit Course Studio. Student-portal course delivery and release ownership should be treated as downstream website/DataToolkit work, with this repo acting as feeder/reference rather than the long-term operator release owner.
+- This repo now exists mainly for historical curriculum-reference audits and occasional export-contract archaeology. Student-portal course delivery and operator release ownership now live downstream in DataToolkit and the website repo.
 - Course JSON exports now have distinct roles:
-  - `canonical-course` is the lossless JSON contract for this repo and the active import contract into DataToolkit Course Studio
+  - `canonical-course` is the lossless JSON contract for this repo and a legacy backfill contract into DataToolkit Course Studio
   - `interchange-course` remains a simplified compatibility export, but it is no longer the primary course-platform integration contract
   - `full-course` remains supported as a legacy-compatible export, not the canonical lossless contract
 
@@ -37,8 +38,8 @@ npm run dev
 npm run smoke
 ```
 
-The Vite dev server binds to `http://localhost:8002`.
-`npm run smoke` is the app-owned workspace verification entrypoint for the course shell and route contract.
+The Vite dev server binds to `http://localhost:8002` when you explicitly run it for archival review work.
+`npm run smoke` remains the repo-local verification entrypoint, but this repo is no longer part of the root workspace startup or launcher flow.
 
 ## Key Scripts
 
@@ -93,3 +94,4 @@ Generated audits live under [docs/operations/audits/README.md](./docs/operations
 - Do not document future-state features as if they already exist.
 - For lesson content work, follow the content and validation rules in [AGENTS.md](./AGENTS.md) and [docs/operations/content-operations.md](./docs/operations/content-operations.md).
 - When changing audit output paths or generated docs, update both the producing scripts and any runtime imports that read those files.
+- Do not describe this repo as the active course owner in workspace docs; that role now belongs to `apps/data-toolkit`.

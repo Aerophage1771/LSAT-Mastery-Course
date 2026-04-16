@@ -1,10 +1,10 @@
 # AGENTS.md
 
-**Purpose:** Define execution rules, repo hazards, and content-policy constraints for agents working in this repository.  
-**Audience:** Coding agents and human contributors making product or content changes.  
-**Status:** active  
-**Source of truth:** yes  
-**Last reviewed:** 2026-04-03  
+**Purpose:** Define execution rules, repo hazards, and content-policy constraints for agents working in this repository.
+**Audience:** Coding agents and human contributors making product or content changes.
+**Status:** active
+**Source of truth:** yes
+**Last reviewed:** 2026-04-15
 **Related docs:** [../README.md](../README.md), [README.md](./README.md), [docs/README.md](./docs/README.md), [../docs/README.md](../docs/README.md)
 
 ## Repo Identity
@@ -33,7 +33,7 @@
   - `24 -> 21` through `50 -> 47` (consecutive mapping)
   - `51 -> 50`, `52 -> 51`, `53 -> 52`, `54 -> 54`, `55 -> 56`, `56 -> 57`, `57 -> 58`
 - Lesson files under `modules/moduleN/` are data files exporting lesson objects. They are not React components.
-- This repo currently owns curriculum truth and export integrity, not downstream student-portal release behavior. Treat website-facing delivery details as downstream unless the local export/reference contract changes.
+- This repo is now an archived curriculum-reference surface. Treat DataToolkit as the active course owner and the website as the delivery surface unless you are explicitly auditing historical content or legacy export assumptions here.
 
 ## Key Constraints
 
@@ -87,7 +87,7 @@ Content-file syntax errors are common and usually come from unescaped quotes.
 - `AGENTS.md` is execution guidance, repo hazards, and content-policy enforcement.
 - `docs/README.md` is the active docs index and source-of-truth map.
 - `docs/product/course-experience.md` is live product truth.
-- `docs/technical/architecture.md` and `docs/technical/content-and-validation.md` should describe the current standalone curriculum-reference and export-source role whenever that boundary changes.
+- `docs/technical/architecture.md` and `docs/technical/content-and-validation.md` should describe the current archived-reference and legacy-export role whenever that boundary changes.
 - `docs/product/roadmap/` is planned work only and must not be written as shipped behavior.
 - `docs/archive/` is historical context only.
 - When changing active docs, keep metadata headers and `Related docs` links accurate. Add a `CHANGELOG.md` entry when the docs structure or source-of-truth boundaries materially change.
