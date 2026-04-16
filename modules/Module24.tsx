@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module24/Lesson2_StepByStepApproac
 
 export const Module24: ModuleData = {
   id: 24,
-  title: "RC: Application",
+  title: "Application",
   category: "RC",
   unit: "Unit 11: Extending the Reasoning",
   description: "Apply a rule, principle, or theory from the passage to a new, hypothetical situation.",

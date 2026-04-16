@@ -5,7 +5,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
   title: 'Step-by-Step Guide',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'Step-by-Step Guide: Paradox / Explain' },
+    { type: 'h2', text: 'Step-by-Step: Paradox/Explain' },
     { type: 'paragraph', text: 'Follow this four-step method to solve any Paradox question quickly and accurately.' },
     {
       type: 'process',

@@ -2,9 +2,9 @@ import { Lesson, ContentBlock } from '../../types';
 
 export const Lesson19_Module19_Questions: Lesson = {
   id: "48-19",
-  title: "Module 19: Paradox / Explain",
+  title: "Module 19: Paradox/Explain",
   content: [
-    { type: 'h2', text: 'Module 19: Paradox / Explain' },
+    { type: 'h2', text: 'Module 19: Paradox/Explain' },
     {
       type: 'accordion',
       title: 'Drill: Numbers vs. Percentages (PT-107-S-3-Q-21)',

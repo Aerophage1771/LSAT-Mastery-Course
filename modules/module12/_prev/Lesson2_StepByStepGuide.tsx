@@ -2,20 +2,20 @@ import { Lesson } from '../../types';
 
 export const Lesson2_StepByStepGuide: Lesson = {
   id: '12-2',
-  title: 'Step-by-Step: Principle-Strengthen',
+  title: 'Step-by-Step: Principle: Strengthen',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'Step-by-Step: Principle-Strengthen' },
+    { type: 'h2', text: 'Step-by-Step: Principle: Strengthen' },
     {
       type: 'paragraph',
-      text: 'This lesson provides a complete, repeatable method for solving any Principle-Strengthen question. The goal is the same every time: understand the author\'s argument, find the logical leap, abstract the general rule that would justify that leap, complete the application from the case to that rule, and then match it to the answer choices. Each step below includes concrete guidance, tips for tricky situations, and key insights.',
+      text: 'This lesson provides a complete, repeatable method for solving any Principle: Strengthen question. The goal is the same every time: understand the author\'s argument, find the logical leap, abstract the general rule that would justify that leap, complete the application from the case to that rule, and then match it to the answer choices. Each step below includes concrete guidance, tips for tricky situations, and key insights.',
     },
 
     {
       type: 'callout',
       variant: 'tip',
       title: 'Timing',
-      text: 'Budget roughly **1 minute and 20 seconds** per Principle-Strengthen question. Steps 1-3 (reading, gap-finding, and pre-phrasing) should take about 45 seconds combined. Step 4 (completing the application) should take about 10 seconds. Step 5 (evaluating and eliminating choices) should take about 25 seconds. The pre-phrase is critical - students who scan the answer choices without one waste time re-reading the stimulus for each option. A strong pre-phrase lets you identify the correct answer almost immediately and verify it quickly.',
+      text: 'Budget roughly **1 minute and 20 seconds** per Principle: Strengthen question. Steps 1-3 (reading, gap-finding, and pre-phrasing) should take about 45 seconds combined. Step 4 (completing the application) should take about 10 seconds. Step 5 (evaluating and eliminating choices) should take about 25 seconds. The pre-phrase is critical - students who scan the answer choices without one waste time re-reading the stimulus for each option. A strong pre-phrase lets you identify the correct answer almost immediately and verify it quickly.',
     },
 
     { type: 'hr' },
@@ -65,7 +65,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
       type: 'callout',
       variant: 'default',
       title: 'When the Conclusion Is Implicit',
-      text: 'Some Principle-Strengthen stimuli present an implicit conclusion. The author describes a situation and a response without using explicit conclusion language. When this happens, ask: "What is the author *advocating*?" The recommended action or judgment is the conclusion, even if it is not flagged with "therefore." For example: "The committee declined to fund the proposal because it lacked community support" — the implicit conclusion is that the committee\'s decision was justified.',
+      text: 'Some Principle: Strengthen stimuli present an implicit conclusion. The author describes a situation and a response without using explicit conclusion language. When this happens, ask: "What is the author *advocating*?" The recommended action or judgment is the conclusion, even if it is not flagged with "therefore." For example: "The committee declined to fund the proposal because it lacked community support" — the implicit conclusion is that the committee\'s decision was justified.',
     },
 
     { type: 'hr' },
@@ -77,7 +77,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
     },
     {
       type: 'paragraph',
-      text: 'The logical leap in Principle-Strengthen questions typically involves a move between two different *domains* of reasoning. Focus on identifying which type of leap the argument makes:',
+      text: 'The logical leap in Principle: Strengthen questions typically involves a move between two different *domains* of reasoning. Focus on identifying which type of leap the argument makes:',
     },
 
     {
@@ -127,7 +127,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
     { type: 'h2', text: 'Step 3: Abstract the Principle Needed (Pre-phrasing)' },
     {
       type: 'paragraph',
-      text: 'Before looking at the answer choices, formulate the general rule that the author must believe to make their argument work. This is the most important habit for Principle-Strengthen accuracy.',
+      text: 'Before looking at the answer choices, formulate the general rule that the author must believe to make their argument work. This is the most important habit for Principle: Strengthen accuracy.',
     },
     { type: 'paragraph', text: 'To pre-phrase effectively, perform a **two-part abstraction:**' },
     {
@@ -160,7 +160,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
       type: 'callout',
       variant: 'tip',
       title: 'The Abstraction Check',
-      text: 'After formulating your pre-phrase, ask: "Would this rule apply to cases *other* than the one in the stimulus?" If yes, you have a good principle. If your pre-phrase mentions the specific names, places, or details from the stimulus, it is too narrow — abstract further. The correct answer to a Principle-Strengthen question is always broader than the argument it supports.',
+      text: 'After formulating your pre-phrase, ask: "Would this rule apply to cases *other* than the one in the stimulus?" If yes, you have a good principle. If your pre-phrase mentions the specific names, places, or details from the stimulus, it is too narrow — abstract further. The correct answer to a Principle: Strengthen question is always broader than the argument it supports.',
     },
 
     { type: 'hr' },
@@ -168,7 +168,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
     { type: 'h2', text: 'Step 4: Complete the Application' },
     {
       type: 'paragraph',
-      text: 'Before you look at the answer choices, run the missing rule back through the case. This is the Module 13 move that keeps Principle-Strengthen from collapsing into either Module 11 or Module 14. You are not building a custom airtight bridge from scratch, and you are not merely checking whether a ready-made rule already fits. You are asking how a **broad rule** would operate on **these facts**.',
+      text: 'Before you look at the answer choices, run the missing rule back through the case. This is the Module 13 move that keeps Principle: Strengthen from collapsing into either Module 11 or Module 14. You are not building a custom airtight bridge from scratch, and you are not merely checking whether a ready-made rule already fits. You are asking how a **broad rule** would operate on **these facts**.',
     },
     {
       type: 'process',
@@ -190,7 +190,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
           'Premises + answer make the conclusion guaranteed',
         ],
         [
-          '**Principle-Strengthen**',
+          '**Principle: Strengthen**',
           'A broad rule plus its application to this case',
           'The rule justifies or strongly supports the reasoning once the facts satisfy the trigger',
         ],
@@ -232,7 +232,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
       type: 'callout',
       variant: 'summary',
       title: 'Key Takeaways',
-      text: '**The 5-Step Method gives you a reliable, repeatable process:** Find the Conclusion -> Identify the Leap -> Abstract the Principle -> Complete the Application -> Match the Answer.\n\n**Pre-phrasing is your most powerful tool.** The correct answer to a Principle-Strengthen question is almost always predictable once you identify the logical leap and abstract it into a general rule. Students who pre-phrase before reading the choices are faster and more accurate than those who evaluate each choice from scratch.\n\n**Complete the application before evaluating the answers.** Identify the trigger, case facts, bridge, and verdict. This extra step is what keeps Module 13 cleanly separated from both Sufficient Assumption and Principle-Apply.\n\n**Classify the leap type.** Is the argument moving from Fact -> Value? Means -> End? Role -> Duty? Features -> Category? Comparison -> Choice? The leap type tells you what kind of principle to look for.\n\n**Wrong answers fail in predictable ways.** Contradictions support the wrong side. Scope shifts address a different agent or concept. Premise restatements just echo the evidence. Reversals get the logic backward. Partial justifications only support a minor step. Knowing these traps lets you eliminate quickly.\n\n**Always verify by plugging in the specifics.** Take the general principle, substitute the stimulus facts back in, and confirm that the conclusion follows. If the principle does not bridge the specific gap you identified, it is wrong - no matter how reasonable it sounds in isolation.',
+      text: '**The 5-Step Method gives you a reliable, repeatable process:** Find the Conclusion -> Identify the Leap -> Abstract the Principle -> Complete the Application -> Match the Answer.\n\n**Pre-phrasing is your most powerful tool.** The correct answer to a Principle: Strengthen question is almost always predictable once you identify the logical leap and abstract it into a general rule. Students who pre-phrase before reading the choices are faster and more accurate than those who evaluate each choice from scratch.\n\n**Complete the application before evaluating the answers.** Identify the trigger, case facts, bridge, and verdict. This extra step is what keeps Module 13 cleanly separated from both Sufficient Assumption and Principle-Apply.\n\n**Classify the leap type.** Is the argument moving from Fact -> Value? Means -> End? Role -> Duty? Features -> Category? Comparison -> Choice? The leap type tells you what kind of principle to look for.\n\n**Wrong answers fail in predictable ways.** Contradictions support the wrong side. Scope shifts address a different agent or concept. Premise restatements just echo the evidence. Reversals get the logic backward. Partial justifications only support a minor step. Knowing these traps lets you eliminate quickly.\n\n**Always verify by plugging in the specifics.** Take the general principle, substitute the stimulus facts back in, and confirm that the conclusion follows. If the principle does not bridge the specific gap you identified, it is wrong - no matter how reasonable it sounds in isolation.',
     },
   ],
   alternates: {
@@ -246,17 +246,17 @@ export const Lesson2_StepByStepGuide: Lesson = {
         },
         {
           "type": "h2",
-          "text": "The 4-Step Method for Principle-Strengthen Questions"
+          "text": "The 4-Step Method for Principle: Strengthen Questions"
         },
         {
           "type": "paragraph",
-          "text": "This lesson provides a complete, repeatable method for solving any Principle-Strengthen question. The goal is the same every time: understand the author's argument, find the logical leap, abstract the general rule that would justify that leap, and match it to the answer choices. Each step below includes concrete guidance, tips for tricky situations, and key insights."
+          "text": "This lesson provides a complete, repeatable method for solving any Principle: Strengthen question. The goal is the same every time: understand the author's argument, find the logical leap, abstract the general rule that would justify that leap, and match it to the answer choices. Each step below includes concrete guidance, tips for tricky situations, and key insights."
         },
         {
           "type": "callout",
           "title": "Timing",
           "variant": "tip",
-          "text": "Budget roughly **1 minute and 20 seconds** per Principle-Strengthen question. Steps 1–3 (reading, gap-finding, and pre-phrasing) should take about 45 seconds combined. Step 4 (evaluating and eliminating choices) should take about 35 seconds. The pre-phrase is critical — students who scan the answer choices without one waste time re-reading the stimulus for each option. A strong pre-phrase lets you identify the correct answer almost immediately and verify it quickly."
+          "text": "Budget roughly **1 minute and 20 seconds** per Principle: Strengthen question. Steps 1–3 (reading, gap-finding, and pre-phrasing) should take about 45 seconds combined. Step 4 (evaluating and eliminating choices) should take about 35 seconds. The pre-phrase is critical — students who scan the answer choices without one waste time re-reading the stimulus for each option. A strong pre-phrase lets you identify the correct answer almost immediately and verify it quickly."
         },
         {
           "type": "hr"
@@ -301,7 +301,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
           "type": "callout",
           "title": "When the Conclusion Is Implicit",
           "variant": "default",
-          "text": "Some Principle-Strengthen stimuli present an implicit conclusion. The author describes a situation and a response without using explicit conclusion language. When this happens, ask: \"What is the author *advocating*?\" The recommended action or judgment is the conclusion, even if it is not flagged with \"therefore.\" For example: \"The committee declined to fund the proposal because it lacked community support\" — the implicit conclusion is that the committee's decision was justified."
+          "text": "Some Principle: Strengthen stimuli present an implicit conclusion. The author describes a situation and a response without using explicit conclusion language. When this happens, ask: \"What is the author *advocating*?\" The recommended action or judgment is the conclusion, even if it is not flagged with \"therefore.\" For example: \"The committee declined to fund the proposal because it lacked community support\" — the implicit conclusion is that the committee's decision was justified."
         },
         {
           "type": "hr"
@@ -321,7 +321,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
         },
         {
           "type": "paragraph",
-          "text": "The logical leap in Principle-Strengthen questions typically involves a move between two different *domains* of reasoning. Focus on identifying which type of leap the argument makes:"
+          "text": "The logical leap in Principle: Strengthen questions typically involves a move between two different *domains* of reasoning. Focus on identifying which type of leap the argument makes:"
         },
         {
           "type": "table",
@@ -377,7 +377,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
         },
         {
           "type": "paragraph",
-          "text": "Before looking at the answer choices, formulate the general rule that the author must believe to make their argument work. This is the most important habit for Principle-Strengthen accuracy."
+          "text": "Before looking at the answer choices, formulate the general rule that the author must believe to make their argument work. This is the most important habit for Principle: Strengthen accuracy."
         },
         {
           "type": "paragraph",
@@ -429,7 +429,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
           "type": "callout",
           "title": "The Abstraction Check",
           "variant": "tip",
-          "text": "After formulating your pre-phrase, ask: \"Would this rule apply to cases *other* than the one in the stimulus?\" If yes, you have a good principle. If your pre-phrase mentions the specific names, places, or details from the stimulus, it is too narrow — abstract further. The correct answer to a Principle-Strengthen question is always broader than the argument it supports."
+          "text": "After formulating your pre-phrase, ask: \"Would this rule apply to cases *other* than the one in the stimulus?\" If yes, you have a good principle. If your pre-phrase mentions the specific names, places, or details from the stimulus, it is too narrow — abstract further. The correct answer to a Principle: Strengthen question is always broader than the argument it supports."
         },
         {
           "type": "hr"
@@ -468,7 +468,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
         },
         {
           "type": "paragraph",
-          "text": "Wrong answers on Principle-Strengthen questions fail in predictable ways. Recognizing these traps lets you eliminate quickly and with confidence."
+          "text": "Wrong answers on Principle: Strengthen questions fail in predictable ways. Recognizing these traps lets you eliminate quickly and with confidence."
         },
         {
           "type": "table",
@@ -514,7 +514,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
         },
         {
           "type": "paragraph",
-          "text": "Let's apply all four steps to a complete Principle-Strengthen question from start to finish."
+          "text": "Let's apply all four steps to a complete Principle: Strengthen question from start to finish."
         },
         {
           "type": "paragraph",
@@ -559,7 +559,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
           "type": "callout",
           "title": "Final Check",
           "variant": "default",
-          "text": "The argument needs a rule about disclosure, not a rule about compensation, regulatory procedure, or shareholder value. Once you adopt the principle that known serious side effects must be disclosed regardless of rarity, the advocate's criticism follows directly. Principle-Strengthen questions often turn on this exact move: convert a factual description of conduct into a judgment by supplying the governing norm."
+          "text": "The argument needs a rule about disclosure, not a rule about compensation, regulatory procedure, or shareholder value. Once you adopt the principle that known serious side effects must be disclosed regardless of rarity, the advocate's criticism follows directly. Principle: Strengthen questions often turn on this exact move: convert a factual description of conduct into a judgment by supplying the governing norm."
         },
         {
           "type": "hr"
@@ -568,7 +568,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
           "type": "callout",
           "title": "Key Takeaways",
           "variant": "summary",
-          "text": "**The 4-Step Method gives you a reliable, repeatable process:** Find the Conclusion → Identify the Leap → Abstract the Principle → Match the Answer.\n\n**Pre-phrasing is your most powerful tool.** The correct answer to a Principle-Strengthen question is almost always predictable once you identify the logical leap and abstract it into a general rule. Students who pre-phrase before reading the choices are faster and more accurate than those who evaluate each choice from scratch.\n\n**Classify the leap type.** Is the argument moving from Fact → Value? Means → End? Role → Duty? Features → Category? Comparison → Choice? The leap type tells you what kind of principle to look for.\n\n**Wrong answers fail in predictable ways.** Contradictions support the wrong side. Scope shifts address a different agent or concept. Premise restatements just echo the evidence. Reversals get the logic backward. Partial justifications only support a minor step. Knowing these traps lets you eliminate quickly.\n\n**Always verify by plugging in the specifics.** Take the general principle, substitute the stimulus facts back in, and confirm that the conclusion follows. If the principle does not bridge the specific gap you identified, it is wrong — no matter how reasonable it sounds in isolation."
+          "text": "**The 4-Step Method gives you a reliable, repeatable process:** Find the Conclusion → Identify the Leap → Abstract the Principle → Match the Answer.\n\n**Pre-phrasing is your most powerful tool.** The correct answer to a Principle: Strengthen question is almost always predictable once you identify the logical leap and abstract it into a general rule. Students who pre-phrase before reading the choices are faster and more accurate than those who evaluate each choice from scratch.\n\n**Classify the leap type.** Is the argument moving from Fact → Value? Means → End? Role → Duty? Features → Category? Comparison → Choice? The leap type tells you what kind of principle to look for.\n\n**Wrong answers fail in predictable ways.** Contradictions support the wrong side. Scope shifts address a different agent or concept. Premise restatements just echo the evidence. Reversals get the logic backward. Partial justifications only support a minor step. Knowing these traps lets you eliminate quickly.\n\n**Always verify by plugging in the specifics.** Take the general principle, substitute the stimulus facts back in, and confirm that the conclusion follows. If the principle does not bridge the specific gap you identified, it is wrong — no matter how reasonable it sounds in isolation."
         }
       ],
     },
@@ -579,7 +579,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
           type: 'callout',
           variant: 'tip',
           title: 'Target',
-          text: '**Target:** 1:20 per Principle-Strengthen question',
+          text: '**Target:** 1:20 per Principle: Strengthen question',
         },
         {
           type: 'process',
@@ -588,7 +588,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
             '**Find the Conclusion** — Isolate the main claim and the evidence supporting it. Note the *type* of conclusion: value judgment, recommendation, blame, or classification.',
             '**Identify the Leap** — Find the gap between evidence and conclusion. What domain shift does the argument make? Classify the leap type to predict the principle type.',
             '**Abstract the Principle** — Generalize the gap into a broad rule. Replace specific facts with general categories, specific judgments with general verdicts. Ask: "Would this rule apply to other cases?"',
-            '**Complete the Application** — Before checking answers, identify the trigger, case facts, bridge, and verdict. This keeps Principle-Strengthen distinct from Sufficient Assumption and Principle-Apply.',
+            '**Complete the Application** — Before checking answers, identify the trigger, case facts, bridge, and verdict. This keeps Principle: Strengthen distinct from Sufficient Assumption and Principle-Apply.',
             '**Match the Answer** — Scan choices for the principle matching your pre-phrase. Verify by plugging stimulus facts back into the general rule.',
           ],
         },

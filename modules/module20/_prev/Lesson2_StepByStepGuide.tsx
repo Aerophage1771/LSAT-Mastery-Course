@@ -112,7 +112,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
       content: [
         {
           "type": "h2",
-          "text": "Step-by-Step Guide: Agree / Disagree"
+          "text": "Step-by-Step: Agree/Disagree"
         },
         {
           "type": "paragraph",

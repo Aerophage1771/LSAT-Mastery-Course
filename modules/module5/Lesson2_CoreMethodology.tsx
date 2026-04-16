@@ -2,9 +2,9 @@ import { Lesson } from '../../types';
 
 export const Lesson2_CoreMethodology: Lesson = {
   id: "5-2",
-  title: "Step-by-Step Guide: Flaw in the Reasoning",
+  title: "Step-by-Step: Flaw in the Reasoning",
   content: [
-    { type: 'h2', text: 'Step-by-Step Guide: Flaw in the Reasoning' },
+    { type: 'h2', text: 'Step-by-Step: Flaw in the Reasoning' },
     { type: 'paragraph', text: 'This section provides a clear, step-by-step guide for solving any **Flaw** question. The process is designed to help you identify the logical gap between the evidence and the conclusion and then match that gap to the abstract language of the correct answer choice.' },
     { type: 'h3', text: 'Step 1: Deconstruct the Argument' },
     { type: 'paragraph', text: 'Before you can find the flaw, you must understand the argument\'s structure. As you read the stimulus, your first task is to break it down into its core components.' },

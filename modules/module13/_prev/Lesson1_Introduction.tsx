@@ -38,7 +38,7 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h3', text: 'Recognizing the Question' },
     {
       type: 'paragraph',
-      text: 'Principle-Apply question stems are distinctive because they present the principle *in the stimulus* and ask you to find the answer choice that correctly instantiates it. The stem directs you downward — from the general rule to a specific case. Learn to distinguish these from Principle-Strengthen stems (which ask you to find the *rule itself*).',
+      text: 'Principle-Apply question stems are distinctive because they present the principle *in the stimulus* and ask you to find the answer choice that correctly instantiates it. The stem directs you downward — from the general rule to a specific case. Learn to distinguish these from Principle: Strengthen stems (which ask you to find the *rule itself*).',
     },
     {
       type: 'table',
@@ -107,7 +107,7 @@ export const Lesson1_Introduction: Lesson = {
       content: [
         {
           "type": "h2",
-          "text": "MODULE 13: Principle - Apply"
+          "text": "MODULE 13: Principle: Apply"
         },
         {
           "type": "paragraph",
@@ -147,7 +147,7 @@ export const Lesson1_Introduction: Lesson = {
         },
         {
           "type": "paragraph",
-          "text": "Principle-Apply question stems are distinctive because they present the principle *in the stimulus* and ask you to find the answer choice that correctly instantiates it. The stem directs you downward — from the general rule to a specific case. Learn to distinguish these from Principle-Strengthen stems (which ask you to find the *rule itself*)."
+          "text": "Principle-Apply question stems are distinctive because they present the principle *in the stimulus* and ask you to find the answer choice that correctly instantiates it. The stem directs you downward — from the general rule to a specific case. Learn to distinguish these from Principle: Strengthen stems (which ask you to find the *rule itself*)."
         },
         {
           "type": "table",
@@ -187,7 +187,7 @@ export const Lesson1_Introduction: Lesson = {
         },
         {
           "type": "paragraph",
-          "text": "The defining feature of Principle-Apply is that **the principle is given to you in the stimulus**. You are not hunting for the hidden rule — you already have it. Your task is to find the specific scenario among the answer choices that correctly applies it. This is the opposite direction from Principle-Strengthen, where you are given a specific argument and must find the general rule that supports it."
+          "text": "The defining feature of Principle-Apply is that **the principle is given to you in the stimulus**. You are not hunting for the hidden rule — you already have it. Your task is to find the specific scenario among the answer choices that correctly applies it. This is the opposite direction from Principle: Strengthen, where you are given a specific argument and must find the general rule that supports it."
         },
         {
           "type": "paragraph",
@@ -197,7 +197,7 @@ export const Lesson1_Introduction: Lesson = {
           "type": "list",
           "items": [
             "**Principle-Apply:** You have the *law*. Find the *case* it governs.",
-            "**Principle-Strengthen:** You have the *case*. Find the *law* that governs it."
+            "**Principle: Strengthen:** You have the *case*. Find the *law* that governs it."
           ]
         },
         {
@@ -206,7 +206,7 @@ export const Lesson1_Introduction: Lesson = {
         },
         {
           "type": "h3",
-          "text": "Principle-Apply vs. Principle-Strengthen"
+          "text": "Principle-Apply vs. Principle: Strengthen"
         },
         {
           "type": "paragraph",
@@ -217,7 +217,7 @@ export const Lesson1_Introduction: Lesson = {
           "headers": [
             "Feature",
             "Principle-Apply (This Module)",
-            "Principle-Strengthen (Module 12)"
+            "Principle: Strengthen (Module 12)"
           ],
           "rows": [
             [
@@ -256,7 +256,7 @@ export const Lesson1_Introduction: Lesson = {
           "type": "callout",
           "title": "The Direction Test",
           "variant": "default",
-          "text": "If the stimulus is a general rule and the answer choices are specific scenarios, you are doing **Principle-Apply**. If the stimulus is a specific argument and the answer choices are general rules, you are doing **Principle-Strengthen**. Always check the direction before you start solving."
+          "text": "If the stimulus is a general rule and the answer choices are specific scenarios, you are doing **Principle-Apply**. If the stimulus is a specific argument and the answer choices are general rules, you are doing **Principle: Strengthen**. Always check the direction before you start solving."
         },
         {
           "type": "hr"
@@ -471,7 +471,7 @@ export const Lesson1_Introduction: Lesson = {
           "type": "callout",
           "title": "Key Takeaways",
           "variant": "summary",
-          "text": "**1. Every condition in the principle must be satisfied by the correct answer.** This is the golden rule of Principle-Apply. If a scenario matches three of four conditions, it is wrong. Treat the principle as a checklist and verify each item.\n\n**2. The principle is given — your job is precision, not creativity.** Unlike Principle-Strengthen, you don't need to abstract or generalize. You need to decompose the rule and match it methodically.\n\n**3. Break every principle into Conditions + Consequence.** Regardless of the principle's structure (conditional rule, definitional criterion, ethical guideline, causal principle), it can always be decomposed into conditions that trigger a consequence.\n\n**4. Wrong answers fail in predictable ways.** They satisfy most conditions but miss one, they reach a different consequence, they apply a different standard than the one in the principle, or they ignore a required weighing or comparison.\n\n**5. Check the direction of the match.** The correct answer may apply the principle positively (all conditions met → consequence follows) or negatively (a condition fails → consequence does not follow). Both are valid applications. Make sure the answer's reasoning aligns with the principle's logic in whichever direction it goes.\n\n**6. Principle-Apply is the mirror image of Principle-Strengthen.** Apply gives you the rule and asks for the case. Strengthen gives you the case and asks for the rule. Always check which direction you're solving before you begin."
+          "text": "**1. Every condition in the principle must be satisfied by the correct answer.** This is the golden rule of Principle-Apply. If a scenario matches three of four conditions, it is wrong. Treat the principle as a checklist and verify each item.\n\n**2. The principle is given — your job is precision, not creativity.** Unlike Principle: Strengthen, you don't need to abstract or generalize. You need to decompose the rule and match it methodically.\n\n**3. Break every principle into Conditions + Consequence.** Regardless of the principle's structure (conditional rule, definitional criterion, ethical guideline, causal principle), it can always be decomposed into conditions that trigger a consequence.\n\n**4. Wrong answers fail in predictable ways.** They satisfy most conditions but miss one, they reach a different consequence, they apply a different standard than the one in the principle, or they ignore a required weighing or comparison.\n\n**5. Check the direction of the match.** The correct answer may apply the principle positively (all conditions met → consequence follows) or negatively (a condition fails → consequence does not follow). Both are valid applications. Make sure the answer's reasoning aligns with the principle's logic in whichever direction it goes.\n\n**6. Principle-Apply is the mirror image of Principle: Strengthen.** Apply gives you the rule and asks for the case. Strengthen gives you the case and asks for the rule. Always check which direction you're solving before you begin."
         }
       ],
     },

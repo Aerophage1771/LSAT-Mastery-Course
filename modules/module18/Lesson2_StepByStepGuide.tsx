@@ -5,7 +5,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
   title: 'Step-by-Step Guide',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'Step-by-Step Guide: Must Be False' },
+    { type: 'h2', text: 'Step-by-Step: Must Be False' },
     {
       type: 'paragraph',
       text: 'Follow this four-step method to solve any **Must Be False** question. Your goal is to find the one answer that creates a logical impossibility when combined with the stimulus.',

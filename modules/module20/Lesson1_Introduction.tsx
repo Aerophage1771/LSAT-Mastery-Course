@@ -5,7 +5,7 @@ export const Lesson1_Introduction: Lesson = {
   title: 'Introduction',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'MODULE 20: Agree / Disagree (Point at Issue)' },
+    { type: 'h2', text: 'MODULE 20: Agree/Disagree (Point at Issue)' },
     { type: 'h3', text: 'Why This Matters' },
     {
       type: 'paragraph',

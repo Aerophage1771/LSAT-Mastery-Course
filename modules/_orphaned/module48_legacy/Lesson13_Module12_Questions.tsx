@@ -2,14 +2,14 @@ import { Lesson, ContentBlock } from '../../../types';
 
 export const Lesson13_Module12_Questions: Lesson = {
   id: "48-13",
-  title: "Module 13: Principle-Strengthen",
+  title: "Module 13: Principle: Strengthen",
   content: [
-    { type: 'h2', text: "Module 13: Principle-Strengthen" },
+    { type: 'h2', text: "Module 13: Principle: Strengthen" },
     {
       type: 'accordion',
       title: "Drill: Strengthening with a Normative Bridge (PT-117-S-4-Q-2) (PT-117-S-4-Q-2)",
       content: [
-        { type: 'paragraph', text: "Question Type: Principle-Strengthen" },
+        { type: 'paragraph', text: "Question Type: Principle: Strengthen" },
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: "Pacifist: It is immoral to do anything that causes harm to another person. But, since using force causes harm to another person, it is also immoral to threaten to use force, even when such a threat is made in self-defense." },
         { type: 'h4', text: 'Question' },

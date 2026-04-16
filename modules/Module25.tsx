@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module25/Lesson2_StepByStepApproac
 
 export const Module25: ModuleData = {
   id: 25,
-  title: "RC: Approach",
+  title: "Approach",
   category: "RC",
   unit: "Unit 9: Analyzing the Components",
   description: "Describe the author's argumentative strategy or the overall structure of the passage.",

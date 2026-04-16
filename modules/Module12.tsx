@@ -9,7 +9,7 @@ import { Lesson7_ReferenceGuide } from './module12/Lesson7_ReferenceGuide';
 
 export const Module12: ModuleData = {
   id: 12,
-  title: "Principle-Strengthen",
+  title: "Principle: Strengthen",
   category: "LR",
   unit: "Unit 4: Principle",
   description: "Find the general rule that, if valid, strengthens the argument's reasoning.",

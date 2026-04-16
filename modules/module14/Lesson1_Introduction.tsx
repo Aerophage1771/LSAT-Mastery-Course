@@ -5,7 +5,7 @@ export const Lesson1_Introduction: Lesson = {
   title: 'Introduction',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'MODULE 14: Principle - Generalization' },
+    { type: 'h2', text: 'MODULE 14: Principle: Generalization' },
     {
       type: 'paragraph',
       text: '**Question Goal**\n\nYou are given a specific, concrete situation in the stimulus — an experiment, an anecdote, a natural phenomenon, or a policy outcome. Your job is to identify the **abstract, general rule or proposition** that this specific situation perfectly exemplifies. If the stimulus is treated as a case study, which answer choice provides the most accurate "lesson" or "moral of the story"?',
@@ -74,7 +74,7 @@ export const Lesson1_Introduction: Lesson = {
       type: 'callout',
       variant: 'default',
       title: 'Direction Check',
-      text: 'If the stimulus is a **specific scenario** and the answer choices are **general rules**, you are doing Principle-Generalization. If the stimulus is a **general rule** and the answer choices are **specific scenarios**, you are doing Principle-Apply (Module 13). If the stimulus is a **specific argument** and the answer choices are **general rules that justify it**, you are doing Principle-Strengthen (Module 12). Always check the direction before you start solving.',
+      text: 'If the stimulus is a **specific scenario** and the answer choices are **general rules**, you are doing Principle-Generalization. If the stimulus is a **general rule** and the answer choices are **specific scenarios**, you are doing Principle-Apply (Module 13). If the stimulus is a **specific argument** and the answer choices are **general rules that justify it**, you are doing Principle: Strengthen (Module 12). Always check the direction before you start solving.',
     },
 
     { type: 'hr' },
@@ -88,7 +88,7 @@ export const Lesson1_Introduction: Lesson = {
       type: 'table',
       headers: [
         'Feature',
-        'Principle-Strengthen (Module 12)',
+        'Principle: Strengthen (Module 12)',
         'Principle-Apply (Module 13)',
         'Principle-Generalization (This Module)',
       ],
@@ -133,7 +133,7 @@ export const Lesson1_Introduction: Lesson = {
     },
     {
       type: 'paragraph',
-      text: 'The critical distinction between Principle-Strengthen and Principle-Generalization is subtle but important. Both move from concrete to abstract. However, in Strengthen, the stimulus is an *argument* (with a conclusion that needs support), and the principle must *justify the reasoning*. In Generalization, the stimulus is a *scenario* (often descriptive, without a formal conclusion), and the principle must *describe the pattern*. Strengthen asks "What rule makes this argument work?" Generalization asks "What rule does this situation illustrate?"',
+      text: 'The critical distinction between Principle: Strengthen and Principle-Generalization is subtle but important. Both move from concrete to abstract. However, in Strengthen, the stimulus is an *argument* (with a conclusion that needs support), and the principle must *justify the reasoning*. In Generalization, the stimulus is a *scenario* (often descriptive, without a formal conclusion), and the principle must *describe the pattern*. Strengthen asks "What rule makes this argument work?" Generalization asks "What rule does this situation illustrate?"',
     },
 
     { type: 'hr' },

@@ -5,7 +5,7 @@ import { Lesson3_PatternRecognition } from './module30/Lesson3_PatternRecognitio
 
 export const Module30: ModuleData = {
   id: 30,
-  title: "RC: Passage Principle",
+  title: "Passage Principle",
   category: "RC",
   unit: "Unit 11: Extending the Reasoning",
   description: "Identify the underlying rule or generalization that supports an argument, action, or viewpoint within the text.",

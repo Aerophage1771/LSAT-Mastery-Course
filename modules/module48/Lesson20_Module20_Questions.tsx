@@ -2,9 +2,9 @@ import { Lesson, ContentBlock } from '../../types';
 
 export const Lesson20_Module20_Questions: Lesson = {
   id: "48-20",
-  title: "Module 20: Agree / Disagree (Point at Issue)",
+  title: "Module 20: Agree/Disagree (Point at Issue)",
   content: [
-    { type: 'h2', text: 'Module 20: Agree / Disagree (Point at Issue)' },
+    { type: 'h2', text: 'Module 20: Agree/Disagree (Point at Issue)' },
     {
       type: 'accordion',
       title: 'Practice Drill: Disagreement (Definitional Rule) (PT-122-S-2-Q-1)',

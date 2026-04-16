@@ -10,7 +10,7 @@ import { Lesson8_Question15 } from './module39/Lesson8_Question15';
 
 export const Module39: ModuleData = {
   id: 39,
-  title: "RC: Practice Passage 1",
+  title: "Practice Passage 1",
   category: "RC",
   unit: "Unit 12: Sample Passages",
   description: "A complete breakdown of a literary criticism passage, analyzing structure, symbolism, and question strategies.",

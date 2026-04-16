@@ -9,7 +9,7 @@ import { Lesson7_Question12 } from './module42/Lesson7_Question12';
 
 export const Module42: ModuleData = {
   id: 42,
-  title: "RC: Practice Passage 4",
+  title: "Practice Passage 4",
   category: "RC",
   unit: "Unit 12: Sample Passages",
   description: "A breakdown of an art criticism passage about Woody Allen's films, focusing on the recurring theme of narcissistic artists.",

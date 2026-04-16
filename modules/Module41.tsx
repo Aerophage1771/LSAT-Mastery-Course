@@ -11,7 +11,7 @@ import { Lesson9_Question21 } from './module41/Lesson9_Question21';
 
 export const Module41: ModuleData = {
   id: 41,
-  title: "RC: Practice Passage 3",
+  title: "Practice Passage 3",
   category: "RC",
   unit: "Unit 12: Sample Passages",
   description: "A breakdown of a humanities passage exploring how cultural identities are constructed, featuring analysis of main idea, inference, and author attitude.",

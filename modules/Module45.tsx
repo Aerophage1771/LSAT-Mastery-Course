@@ -9,7 +9,7 @@ import { Lesson7_Question21 } from './module45/Lesson7_Question21';
 
 export const Module45: ModuleData = {
   id: 45,
-  title: "RC: Practice Passage 7",
+  title: "Practice Passage 7",
   category: "RC",
   unit: "Unit 12: Sample Passages",
   description: "A breakdown of a philosophy/social criticism passage about advertising and Herbert Marcuse's 'false needs' theory, focusing on the main idea and the author's rebuttal.",

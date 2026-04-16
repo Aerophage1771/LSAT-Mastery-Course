@@ -285,7 +285,7 @@ export const Lesson3_Drill_DirectApplication: Lesson = {
         {
           "type": "question-card",
           "id": "PT-104-S-4-Q-1",
-          "questionType": "Principle - Apply",
+          "questionType": "Principle: Apply",
           "stimulus": "Politician: Governments should tax any harmful substance that is available to the general public at a level that the tax would discourage continued use of the substance.",
           "question": "Which one of the following is an application of the politician's principle of taxation?",
           "options": [

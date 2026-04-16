@@ -5,7 +5,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
   title: 'Step-by-Step Guide',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'Step-by-Step Guide: Most Strongly Supported' },
+    { type: 'h2', text: 'Step-by-Step: Most Strongly Supported' },
     { type: 'paragraph', text: 'Follow this four-step method to solve any MSS question efficiently and accurately.' },
     { type: 'h3', text: 'The 4-Step Method' },
     {

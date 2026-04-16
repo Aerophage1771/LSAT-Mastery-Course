@@ -5,10 +5,10 @@ export const Lesson10_ReferenceGuide: Lesson = {
   title: 'Reference Guide',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'Module 19: Paradox / Explain \u2014 Reference Guide' },
+    { type: 'h2', text: 'Module 19: Paradox/Explain \u2014 Reference Guide' },
     {
       type: 'paragraph',
-      text: 'This reference guide consolidates everything from Module 19 into a single, quick-access resource. Use it for pre-test review, timed practice sessions, and as a checklist before attempting Paradox / Explain questions.',
+      text: 'This reference guide consolidates everything from Module 19 into a single, quick-access resource. Use it for pre-test review, timed practice sessions, and as a checklist before attempting Paradox/Explain questions.',
     },
 
     { type: 'hr' },
@@ -16,7 +16,7 @@ export const Lesson10_ReferenceGuide: Lesson = {
     { type: 'h2', text: '1. The 4-Step Method' },
     {
       type: 'paragraph',
-      text: 'Every Paradox / Explain question follows the same repeatable process. Memorize this sequence and apply it consistently.',
+      text: 'Every Paradox/Explain question follows the same repeatable process. Memorize this sequence and apply it consistently.',
     },
     {
       type: 'process',
@@ -97,7 +97,7 @@ export const Lesson10_ReferenceGuide: Lesson = {
 
     {
       type: 'table',
-      headers: ['Feature', 'Paradox / Explain', 'Strengthen', 'Weaken'],
+      headers: ['Feature', 'Paradox/Explain', 'Strengthen', 'Weaken'],
       rows: [
         [
           '**Stimulus structure**',
@@ -248,7 +248,7 @@ export const Lesson10_ReferenceGuide: Lesson = {
     { type: 'h2', text: '7. Test Day Checklist' },
     {
       type: 'paragraph',
-      text: 'Run through this checklist on every Paradox / Explain question during timed practice and on test day.',
+      text: 'Run through this checklist on every Paradox/Explain question during timed practice and on test day.',
     },
 
     {
@@ -354,7 +354,7 @@ export const Lesson10_ReferenceGuide: Lesson = {
       type: 'callout',
       variant: 'summary',
       title: 'Module 19 Summary',
-      text: '**Paradox / Explain = Reconciliation.** You receive a set of facts that seem to contradict each other and find the answer that makes both facts simultaneously true.\n\n**The 4-Step Method:** Identify Facts \u2192 Articulate Tension \u2192 Prephrase Bridge \u2192 Match Answer.\n\n**Six paradox types:** Numbers vs. Percentages, Selection Bias, Causal Mechanism, Hidden Distinction, Counterintuitive Causal Web, Temporal Shift.\n\n**The Resolution Test:** The correct answer must make BOTH facts simultaneously true. If it addresses only one fact, deepens the mystery, or is irrelevant, it fails.\n\n**Seven common traps:** Explains only one fact, deepens the paradox, irrelevant information, too extreme, restates the paradox, explains the wrong direction, confuses correlation and causation.\n\n**EXCEPT Strategy:** Four answers resolve the paradox; one does not. Label each choice as RESOLVES or FAILS and find the outlier.\n\n**The Resolution Test is your safeguard.** Always ask: "If this answer is true, does it explain how BOTH facts can be true at the same time?" If the answer is yes, you have found the correct choice (or, in an EXCEPT question, an answer to eliminate).',
+      text: '**Paradox/Explain = Reconciliation.** You receive a set of facts that seem to contradict each other and find the answer that makes both facts simultaneously true.\n\n**The 4-Step Method:** Identify Facts \u2192 Articulate Tension \u2192 Prephrase Bridge \u2192 Match Answer.\n\n**Six paradox types:** Numbers vs. Percentages, Selection Bias, Causal Mechanism, Hidden Distinction, Counterintuitive Causal Web, Temporal Shift.\n\n**The Resolution Test:** The correct answer must make BOTH facts simultaneously true. If it addresses only one fact, deepens the mystery, or is irrelevant, it fails.\n\n**Seven common traps:** Explains only one fact, deepens the paradox, irrelevant information, too extreme, restates the paradox, explains the wrong direction, confuses correlation and causation.\n\n**EXCEPT Strategy:** Four answers resolve the paradox; one does not. Label each choice as RESOLVES or FAILS and find the outlier.\n\n**The Resolution Test is your safeguard.** Always ask: "If this answer is true, does it explain how BOTH facts can be true at the same time?" If the answer is yes, you have found the correct choice (or, in an EXCEPT question, an answer to eliminate).',
     },
   ],
 };

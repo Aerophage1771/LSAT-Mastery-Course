@@ -14,7 +14,7 @@ export const Lesson4: Lesson = {
     },
     {
       "type": "paragraph",
-      "text": "This is the most common pattern in Principle-Strengthen questions. The argument presents a set of facts and then draws a judgmental conclusion about them (e.g., something is \"unfair,\" \"unethical,\" or someone is \"to blame\"). The logical leap is from the \"is\" of the evidence to the \"ought\" of the judgment."
+      "text": "This is the most common pattern in Principle: Strengthen questions. The argument presents a set of facts and then draws a judgmental conclusion about them (e.g., something is \"unfair,\" \"unethical,\" or someone is \"to blame\"). The logical leap is from the \"is\" of the evidence to the \"ought\" of the judgment."
     },
     {
       "type": "paragraph",

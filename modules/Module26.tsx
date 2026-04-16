@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module26/Lesson2_StepByStepApproac
 
 export const Module26: ModuleData = {
   id: 26,
-  title: "RC: Author Attitude",
+  title: "Author Attitude",
   category: "RC",
   unit: "Unit 10: Identifying the Perspectives",
   description: "Identify the author's opinion, tone, or perspective regarding a specific subject.",

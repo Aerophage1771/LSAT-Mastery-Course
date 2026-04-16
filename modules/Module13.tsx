@@ -10,7 +10,7 @@ import { Lesson7_ReferenceGuide } from './module13/Lesson7_ReferenceGuide';
 
 export const Module13: ModuleData = {
   id: 13,
-  title: "Principle - Apply",
+  title: "Principle: Apply",
   category: "LR",
   unit: "Unit 4: Principle",
   description: "Find the specific case that perfectly follows the logic of a given rule.",

@@ -2,11 +2,11 @@ import { Lesson } from '../../types';
 
 export const Lesson3_FieldGuide: Lesson = {
   id: '19-3',
-  title: 'Section 3: Paradox / Explain — A Field Guide to Resolution Patterns',
+  title: 'Section 3: Paradox/Explain — A Field Guide to Resolution Patterns',
   content: [
     {
       "type": "h2",
-      "text": "Section 3: Paradox / Explain — A Field Guide to Resolution Patterns"
+      "text": "Section 3: Paradox/Explain — A Field Guide to Resolution Patterns"
     },
     {
       "type": "paragraph",

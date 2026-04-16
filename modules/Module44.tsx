@@ -11,7 +11,7 @@ import { Lesson9_Question15 } from './module44/Lesson9_Question15';
 
 export const Module44: ModuleData = {
   id: 44,
-  title: "RC: Practice Passage 6",
+  title: "Practice Passage 6",
   category: "RC",
   unit: "Unit 12: Sample Passages",
   description: "A breakdown of an art criticism passage on Julia Margaret Cameron's photography, exploring the paradox that the work's artistic success stems from its technical failures and amateurish qualities.",

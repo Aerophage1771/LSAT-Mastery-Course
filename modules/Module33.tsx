@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module33/Lesson2_StepByStepApproac
 
 export const Module33: ModuleData = {
   id: 33,
-  title: "RC: Paragraph Function",
+  title: "Paragraph Function",
   category: "RC",
   unit: "Unit 9: Analyzing the Components",
   description: "Identify the specific role a paragraph plays within the passage's overall structure.",

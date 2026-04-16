@@ -8,7 +8,7 @@ Modern bankruptcy law has attempted to address the shortcomings of the punitive 
 
 export const Lesson6_Question10: Lesson = {
   id: "40-6",
-  title: "Question 10: 3rd-Party Viewpoint",
+  title: "Question 10: Third-Party Viewpoint",
   content: [
     { type: 'accordion', title: 'Read Passage', content: passageText },
     { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-2-Q-10" },

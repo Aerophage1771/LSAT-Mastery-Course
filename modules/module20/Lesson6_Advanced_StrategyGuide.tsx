@@ -5,7 +5,7 @@ export const Lesson6_Advanced_StrategyGuide: Lesson = {
   title: 'Advanced Strategy Guide',
   questionPolicy: 'none',
   content: [
-    { type: 'h3', text: 'Advanced Strategy Guide: Mastering the Hardest Agree / Disagree Questions' },
+    { type: 'h3', text: 'Advanced Strategy Guide: Mastering the Hardest Agree/Disagree Questions' },
     {
       type: 'paragraph',
       text: 'Easy Agree/Disagree questions involve direct, explicit contradictions. The hardest questions, however, are rarely so straightforward. They conceal the point of contention or consensus within layers of abstraction, unstated assumptions, or competing frameworks. This guide covers the three core difficulty factors, an advanced trap pattern, and a challenging practice question.',

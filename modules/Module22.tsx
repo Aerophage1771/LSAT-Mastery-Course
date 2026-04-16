@@ -6,7 +6,7 @@ import { Lesson4_TrapAnswerTypes } from './module22/Lesson4_TrapAnswerTypes';
 
 export const Module22: ModuleData = {
   id: 22,
-  title: "RC: Inference",
+  title: "Inference",
   category: "RC",
   unit: "Unit 11: Extending the Reasoning",
   description: "Identify a statement that is very likely to be true based on the information provided in the passage, using strict evidential backing.",

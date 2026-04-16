@@ -11,7 +11,7 @@ import { Lesson9_Question27 } from './module43/Lesson9_Question27';
 
 export const Module43: ModuleData = {
   id: 43,
-  title: "RC: Practice Passage 5",
+  title: "Practice Passage 5",
   category: "RC",
   unit: "Unit 12: Sample Passages",
   description: "A breakdown of a comparative law passage analyzing the concepts of 'cosmic' and 'traditional' justice, with questions on main idea, author viewpoint, and logical structure.",

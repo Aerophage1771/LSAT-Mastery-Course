@@ -8,7 +8,7 @@ export const Lesson2b_WorkedExamples: Lesson = {
     { type: 'h2', text: 'Common Wrong Answer Patterns' },
     {
       type: 'paragraph',
-      text: 'Wrong answers on Principle-Strengthen questions fail in predictable ways. Recognizing these traps lets you eliminate quickly and with confidence.',
+      text: 'Wrong answers on Principle: Strengthen questions fail in predictable ways. Recognizing these traps lets you eliminate quickly and with confidence.',
     },
     {
       type: 'table',
@@ -47,7 +47,7 @@ export const Lesson2b_WorkedExamples: Lesson = {
     { type: 'h2', text: 'Full Worked Example' },
     {
       type: 'paragraph',
-      text: "Let's apply all five steps to a complete Principle-Strengthen question from start to finish.",
+      text: "Let's apply all five steps to a complete Principle: Strengthen question from start to finish.",
     },
     { type: 'paragraph', text: 'Consider this illustrative argument:' },
     {
@@ -78,7 +78,7 @@ export const Lesson2b_WorkedExamples: Lesson = {
       type: 'callout',
       variant: 'default',
       title: 'Final Check',
-      text: "The argument needs a rule about disclosure, not a rule about compensation, regulatory procedure, or shareholder value. Once you adopt the principle that known serious side effects must be disclosed regardless of rarity, the advocate's criticism follows directly. Principle-Strengthen questions often turn on this exact move: convert a factual description of conduct into a judgment by supplying the governing norm.",
+      text: "The argument needs a rule about disclosure, not a rule about compensation, regulatory procedure, or shareholder value. Once you adopt the principle that known serious side effects must be disclosed regardless of rarity, the advocate's criticism follows directly. Principle: Strengthen questions often turn on this exact move: convert a factual description of conduct into a judgment by supplying the governing norm.",
     },
   ],
   alternates: {

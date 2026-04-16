@@ -169,7 +169,7 @@ export const Lesson7_ReferenceGuide: Lesson = {
 
     {
       type: 'table',
-      headers: ['Feature', 'Principle-Strengthen (PS)', 'Principle-Apply (PA)', 'Principle-Generalization (PG)'],
+      headers: ['Feature', 'Principle: Strengthen (PS)', 'Principle-Apply (PA)', 'Principle-Generalization (PG)'],
       rows: [
         [
           '**Stimulus contains**',
@@ -220,7 +220,7 @@ export const Lesson7_ReferenceGuide: Lesson = {
       type: 'callout',
       variant: 'default',
       title: 'Quick Direction Check',
-      text: '**Specific scenario in stimulus + general rules in answers = Principle-Generalization (this module).**\n\nGeneral rule in stimulus + specific scenarios in answers = Principle-Apply (Module 14).\n\nSpecific argument in stimulus + general rules in answers + "justify" language = Principle-Strengthen (Module 13).\n\nAlways check the direction before solving.',
+      text: '**Specific scenario in stimulus + general rules in answers = Principle-Generalization (this module).**\n\nGeneral rule in stimulus + specific scenarios in answers = Principle-Apply (Module 14).\n\nSpecific argument in stimulus + general rules in answers + "justify" language = Principle: Strengthen (Module 13).\n\nAlways check the direction before solving.',
     },
 
     { type: 'h3', text: 'Principle vs. Explanation' },
@@ -579,7 +579,7 @@ export const Lesson7_ReferenceGuide: Lesson = {
           "type": "table",
           "headers": [
             "Feature",
-            "Principle-Strengthen (PS)",
+            "Principle: Strengthen (PS)",
             "Principle-Apply (PA)",
             "Principle-Generalization (PG)"
           ],
@@ -632,7 +632,7 @@ export const Lesson7_ReferenceGuide: Lesson = {
           "type": "callout",
           "title": "Quick Direction Check",
           "variant": "default",
-          "text": "**Specific scenario in stimulus + general rules in answers = Principle-Generalization (this module).**\n\nGeneral rule in stimulus + specific scenarios in answers = Principle-Apply (Module 13).\n\nSpecific argument in stimulus + general rules in answers + \"justify\" language = Principle-Strengthen (Module 12).\n\nAlways check the direction before solving."
+          "text": "**Specific scenario in stimulus + general rules in answers = Principle-Generalization (this module).**\n\nGeneral rule in stimulus + specific scenarios in answers = Principle-Apply (Module 13).\n\nSpecific argument in stimulus + general rules in answers + \"justify\" language = Principle: Strengthen (Module 12).\n\nAlways check the direction before solving."
         },
         {
           "type": "hr"

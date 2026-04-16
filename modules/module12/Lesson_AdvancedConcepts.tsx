@@ -2,15 +2,15 @@ import { Lesson } from '../../types';
 
 export const Lesson_AdvancedConcepts: Lesson = {
   id: '12-adv',
-  title: 'Advanced Concepts: Difficult Principle-Strengthen Questions',
+  title: 'Advanced Concepts: Difficult Principle: Strengthen Questions',
   content: [
     {
       "type": "h2",
-      "text": "Advanced Concepts: Difficult Principle-Strengthen Questions"
+      "text": "Advanced Concepts: Difficult Principle: Strengthen Questions"
     },
     {
       "type": "paragraph",
-      "text": "You have mastered the basic skill of bridging a gap between premises and a conclusion. But on harder Principle-Strengthen questions, the test-makers increase the difficulty by making the argument structure more nuanced and the answer choices more abstract. Here are the three main factors that elevate these questions."
+      "text": "You have mastered the basic skill of bridging a gap between premises and a conclusion. But on harder Principle: Strengthen questions, the test-makers increase the difficulty by making the argument structure more nuanced and the answer choices more abstract. Here are the three main factors that elevate these questions."
     },
     {
       "type": "h3",

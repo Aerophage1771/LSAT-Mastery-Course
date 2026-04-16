@@ -9,7 +9,7 @@ import { Lesson7_Question27 } from './module46/Lesson7_Question27';
 
 export const Module46: ModuleData = {
   id: 46,
-  title: "RC: Practice Passage 8",
+  title: "Practice Passage 8",
   category: "RC",
   unit: "Unit 12: Sample Passages",
   description: "A breakdown of a comparative law passage analyzing principles of justice in property acquisition, transfer, and rectification.",

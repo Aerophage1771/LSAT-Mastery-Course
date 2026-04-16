@@ -5,7 +5,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
   title: 'Step-by-Step Guide',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'Step-by-Step Guide: Weaken' },
+    { type: 'h2', text: 'Step-by-Step: Weaken' },
     {
       type: 'paragraph',
       text: 'This lesson provides a complete, repeatable method for solving any Weaken question. Each step includes concrete examples, tips for when the step gets tricky, and a callout highlighting a key insight. At the end, you will work through a full question applying all four steps from start to finish.',

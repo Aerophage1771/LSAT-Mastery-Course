@@ -463,7 +463,7 @@ export const Lesson1_RCReferenceGuide: Lesson = {
         },
         {
           "type": "h4",
-          "text": "10. 3rd-Party Viewpoint"
+          "text": "10. Third-Party Viewpoint"
         },
         {
           "type": "breakdown",

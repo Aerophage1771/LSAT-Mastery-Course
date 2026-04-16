@@ -68,7 +68,7 @@ export const Lesson1_Introduction: Lesson = {
       content: [
         {
           "type": "h2",
-          "text": "MODULE 20: Agree / Disagree (Point at Issue)"
+          "text": "MODULE 20: Agree/Disagree (Point at Issue)"
         },
         {
           "type": "h3",

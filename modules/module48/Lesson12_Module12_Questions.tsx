@@ -2,9 +2,9 @@ import { Lesson, ContentBlock } from '../../types';
 
 export const Lesson12_Module12_Questions: Lesson = {
   id: "48-12",
-  title: "Module 12: Principle-Strengthen",
+  title: "Module 12: Principle: Strengthen",
   content: [
-    { type: 'h2', text: 'Module 12: Principle-Strengthen' },
+    { type: 'h2', text: 'Module 12: Principle: Strengthen' },
     {
       type: 'accordion',
       title: 'Drill: Strengthening with a Normative Bridge (PT-117-S-4-Q-2)',

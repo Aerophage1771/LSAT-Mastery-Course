@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module28/Lesson2_StepByStepApproac
 
 export const Module28: ModuleData = {
   id: 28,
-  title: "RC: Complete the Passage",
+  title: "Complete the Passage",
   category: "RC",
   unit: "Unit 11: Extending the Reasoning",
   description: "Select the sentence that would most logically conclude the passage or a specific paragraph.",

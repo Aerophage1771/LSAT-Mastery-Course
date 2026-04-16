@@ -78,14 +78,14 @@ export const Lesson7_ReferenceGuide: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h3', text: 'Principle-Apply vs. Principle-Strengthen vs. Principle-Generalization' },
+    { type: 'h3', text: 'Principle-Apply vs. Principle: Strengthen vs. Principle-Generalization' },
     {
       type: 'paragraph',
       text: 'These three Principle question types share vocabulary but require fundamentally different cognitive tasks. Confusing them is one of the most common errors on the LSAT.',
     },
     {
       type: 'table',
-      headers: ['Feature', 'Principle-Apply', 'Principle-Strengthen', 'Principle-Generalization'],
+      headers: ['Feature', 'Principle-Apply', 'Principle: Strengthen', 'Principle-Generalization'],
       rows: [
         [
           '**What you\u2019re given**',
@@ -148,7 +148,7 @@ export const Lesson7_ReferenceGuide: Lesson = {
       type: 'callout',
       variant: 'default',
       title: 'The Direction Test',
-      text: 'The fastest way to distinguish these three question types:\n\n\u2022 **Principle-Apply:** You START with the rule and FIND the case. (Rule \u2192 Case)\n\u2022 **Principle-Strengthen:** You START with the argument and FIND the rule that fixes it. (Argument \u2192 Rule)\n\u2022 **Principle-Generalization:** You START with the case and FIND the rule it exemplifies. (Case \u2192 Rule)\n\nIf the stimulus is a principle, you\u2019re applying. If the stimulus is an argument, you\u2019re strengthening. If the stimulus is a scenario and the question asks for a generalization, you\u2019re generalizing.',
+      text: 'The fastest way to distinguish these three question types:\n\n\u2022 **Principle-Apply:** You START with the rule and FIND the case. (Rule \u2192 Case)\n\u2022 **Principle: Strengthen:** You START with the argument and FIND the rule that fixes it. (Argument \u2192 Rule)\n\u2022 **Principle-Generalization:** You START with the case and FIND the rule it exemplifies. (Case \u2192 Rule)\n\nIf the stimulus is a principle, you\u2019re applying. If the stimulus is an argument, you\u2019re strengthening. If the stimulus is a scenario and the question asks for a generalization, you\u2019re generalizing.',
     },
 
     { type: 'hr' },
@@ -252,7 +252,7 @@ export const Lesson7_ReferenceGuide: Lesson = {
       type: 'callout',
       variant: 'summary',
       title: 'Final Review',
-      text: 'Principle-Apply questions test one core skill: matching a concrete scenario to an abstract rule. The principle provides the rule; your job is to find the case that perfectly follows it.\n\n**Remember the fundamentals:**\n\u2022 The correct answer satisfies EVERY condition in the principle \u2014 not most, not the important ones, but all of them.\n\u2022 Know the five application types: Direct, Contrapositive, Definitional, Ethical/Abstract, and Multi-Condition/High-Threshold. Each requires a slightly different approach.\n\u2022 Distinguish Principle-Apply from Principle-Strengthen (find the rule that fixes an argument) and Principle-Generalization (find the rule a scenario illustrates). The stem language always tells you which type.\n\u2022 Build the condition checklist BEFORE reading the answers. This transforms a subjective judgment into a mechanical process.\n\u2022 The Sufficient-Necessary Reversal is the #1 trap. When you see necessary-condition language, form the contrapositive immediately and watch for answers that treat "required" as "guaranteed."\n\u2022 High-threshold words are load-bearing. "Overwhelming," "disastrous," "solely," "always" \u2014 these words set precise bars that must be fully cleared. Be hyper-literal.\n\u2022 Wrong answers fail in predictable patterns: Reversal, Distortion, Wrong Conclusion, Threshold Failure, Scope Mismatch, Excluded Category, and Overly Broad Interpretation. Knowing these traps accelerates elimination.\n\nMaster the 4-step method, internalize the application types, and build the checklist habit until it becomes automatic. Principle-Apply appears 1\u20132 times per scored section, and the systematic matching skill it develops strengthens performance across all conditional-reasoning questions.',
+      text: 'Principle-Apply questions test one core skill: matching a concrete scenario to an abstract rule. The principle provides the rule; your job is to find the case that perfectly follows it.\n\n**Remember the fundamentals:**\n\u2022 The correct answer satisfies EVERY condition in the principle \u2014 not most, not the important ones, but all of them.\n\u2022 Know the five application types: Direct, Contrapositive, Definitional, Ethical/Abstract, and Multi-Condition/High-Threshold. Each requires a slightly different approach.\n\u2022 Distinguish Principle-Apply from Principle: Strengthen (find the rule that fixes an argument) and Principle-Generalization (find the rule a scenario illustrates). The stem language always tells you which type.\n\u2022 Build the condition checklist BEFORE reading the answers. This transforms a subjective judgment into a mechanical process.\n\u2022 The Sufficient-Necessary Reversal is the #1 trap. When you see necessary-condition language, form the contrapositive immediately and watch for answers that treat "required" as "guaranteed."\n\u2022 High-threshold words are load-bearing. "Overwhelming," "disastrous," "solely," "always" \u2014 these words set precise bars that must be fully cleared. Be hyper-literal.\n\u2022 Wrong answers fail in predictable patterns: Reversal, Distortion, Wrong Conclusion, Threshold Failure, Scope Mismatch, Excluded Category, and Overly Broad Interpretation. Knowing these traps accelerates elimination.\n\nMaster the 4-step method, internalize the application types, and build the checklist habit until it becomes automatic. Principle-Apply appears 1\u20132 times per scored section, and the systematic matching skill it develops strengthens performance across all conditional-reasoning questions.',
     },
   ],
 };

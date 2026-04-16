@@ -6,7 +6,7 @@ import { Lesson4_TrapAnswerTypes } from './module21/Lesson4_TrapAnswerTypes';
 
 export const Module21: ModuleData = {
   id: 21,
-  title: "RC: Main Idea",
+  title: "Main Idea",
   category: "RC",
   unit: "Unit 8: Summarizing the Passage",
   description: "Identify the central idea of a passage, synthesizing the author's primary conclusion and scope.",

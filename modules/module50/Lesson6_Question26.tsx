@@ -7,7 +7,7 @@ In pursuing the implications of this theory, linguists have reached the point at
 
 export const Lesson6_Question26: Lesson = {
   id: "50-6",
-  title: "Question 26: 3rd-Party Viewpoint",
+  title: "Question 26: Third-Party Viewpoint",
   content: [
     { type: 'accordion', title: 'Read Passage', content: passageText },
     { type: 'h3', text: "Question Breakdown: PT-108-S-1-P-4-Q-26" },

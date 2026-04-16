@@ -98,23 +98,23 @@ export const drillCrossReferences: Record<string, DrillReference> = {
   'PT-112-S-3-Q-18': { moduleId: 11, lessonId: '11-12', moduleTitle: 'Necessary Assumption', lessonTitle: 'Drill: The \'Behavioral Link\' Assumption' },
   'PT-114-S-4-Q-20': { moduleId: 11, lessonId: '11-13', moduleTitle: 'Necessary Assumption', lessonTitle: 'Drill: \'Definitional Standard\'' },
 
-  // Module 12: Principle-Strengthen
-  'PT-117-S-4-Q-2': { moduleId: 12, lessonId: '12-3', moduleTitle: 'Principle-Strengthen', lessonTitle: 'Drill: Strengthening with a Normative Bridge' },
-  'PT-112-S-1-Q-15': { moduleId: 12, lessonId: '12-4', moduleTitle: 'Principle-Strengthen', lessonTitle: 'Drill: Strengthening with an Efficiency Principle' },
-  'PT-114-S-2-Q-4': { moduleId: 12, lessonId: '12-5', moduleTitle: 'Principle-Strengthen', lessonTitle: 'Drill: Strengthening with a Principle of Accountability' },
-  'PT-113-S-2-Q-22': { moduleId: 12, lessonId: '12-6', moduleTitle: 'Principle-Strengthen', lessonTitle: 'Drill: Strengthening a \'Lesser of Two Evils\' Argument' },
+  // Module 12: Principle: Strengthen
+  'PT-117-S-4-Q-2': { moduleId: 12, lessonId: '12-3', moduleTitle: 'Principle: Strengthen', lessonTitle: 'Drill: Strengthening with a Normative Bridge' },
+  'PT-112-S-1-Q-15': { moduleId: 12, lessonId: '12-4', moduleTitle: 'Principle: Strengthen', lessonTitle: 'Drill: Strengthening with an Efficiency Principle' },
+  'PT-114-S-2-Q-4': { moduleId: 12, lessonId: '12-5', moduleTitle: 'Principle: Strengthen', lessonTitle: 'Drill: Strengthening with a Principle of Accountability' },
+  'PT-113-S-2-Q-22': { moduleId: 12, lessonId: '12-6', moduleTitle: 'Principle: Strengthen', lessonTitle: 'Drill: Strengthening a \'Lesser of Two Evils\' Argument' },
 
-  // Module 13: Principle - Apply
-  'PT-104-S-4-Q-1': { moduleId: 13, lessonId: '13-3', moduleTitle: 'Principle - Apply', lessonTitle: 'Drill: Direct Application' },
-  'PT-106-S-1-Q-10': { moduleId: 13, lessonId: '13-4', moduleTitle: 'Principle - Apply', lessonTitle: 'Drill: Contrapositive Application' },
-  'PT-123-S-2-Q-7': { moduleId: 13, lessonId: '13-5', moduleTitle: 'Principle - Apply', lessonTitle: 'Drill: Definitional Checklist' },
-  'PT-119-S-2-Q-21': { moduleId: 13, lessonId: '13-6', moduleTitle: 'Principle - Apply', lessonTitle: 'Drill: Advanced Application' },
+  // Module 13: Principle: Apply
+  'PT-104-S-4-Q-1': { moduleId: 13, lessonId: '13-3', moduleTitle: 'Principle: Apply', lessonTitle: 'Drill: Direct Application' },
+  'PT-106-S-1-Q-10': { moduleId: 13, lessonId: '13-4', moduleTitle: 'Principle: Apply', lessonTitle: 'Drill: Contrapositive Application' },
+  'PT-123-S-2-Q-7': { moduleId: 13, lessonId: '13-5', moduleTitle: 'Principle: Apply', lessonTitle: 'Drill: Definitional Checklist' },
+  'PT-119-S-2-Q-21': { moduleId: 13, lessonId: '13-6', moduleTitle: 'Principle: Apply', lessonTitle: 'Drill: Advanced Application' },
 
-  // Module 14: Principle - Generalization
-  'PT-116-S-3-Q-3': { moduleId: 14, lessonId: '14-3', moduleTitle: 'Principle - Generalization', lessonTitle: 'Drill: Experiment Generalization' },
-  'PT-119-S-3-Q-8': { moduleId: 14, lessonId: '14-4', moduleTitle: 'Principle - Generalization', lessonTitle: 'Drill: Contextual Value' },
-  'PT-124-S-1-Q-5': { moduleId: 14, lessonId: '14-5', moduleTitle: 'Principle - Generalization', lessonTitle: 'Drill: Unintended Consequences' },
-  'PT-109-S-1-Q-18': { moduleId: 14, lessonId: '14-6', moduleTitle: 'Principle - Generalization', lessonTitle: 'Drill: Motivated Blindness' },
+  // Module 14: Principle: Generalization
+  'PT-116-S-3-Q-3': { moduleId: 14, lessonId: '14-3', moduleTitle: 'Principle: Generalization', lessonTitle: 'Drill: Experiment Generalization' },
+  'PT-119-S-3-Q-8': { moduleId: 14, lessonId: '14-4', moduleTitle: 'Principle: Generalization', lessonTitle: 'Drill: Contextual Value' },
+  'PT-124-S-1-Q-5': { moduleId: 14, lessonId: '14-5', moduleTitle: 'Principle: Generalization', lessonTitle: 'Drill: Unintended Consequences' },
+  'PT-109-S-1-Q-18': { moduleId: 14, lessonId: '14-6', moduleTitle: 'Principle: Generalization', lessonTitle: 'Drill: Motivated Blindness' },
 
   // Module 15: Fill in the Blank
   'PT-102-S-2-Q-3': { moduleId: 15, lessonId: '15-3', moduleTitle: 'Fill in the Blank', lessonTitle: 'Drill: Mechanistic Chain' },
@@ -141,12 +141,12 @@ export const drillCrossReferences: Record<string, DrillReference> = {
   'PT-113-S-3-Q-8': { moduleId: 18, lessonId: '18-4', moduleTitle: 'Must Be False', lessonTitle: 'Drill: Quantifier Clashes' },
   'PT-102-S-4-Q-15': { moduleId: 18, lessonId: '18-5', moduleTitle: 'Must Be False', lessonTitle: 'Drill: Exclusive Boundaries' },
 
-  // Module 19: Explain / Resolve
-  'PT-103-S-1-Q-20': { moduleId: 19, lessonId: '19-4', moduleTitle: 'Explain / Resolve', lessonTitle: 'Drill: Selection Bias' },
-  'PT-122-S-4-Q-11': { moduleId: 19, lessonId: '19-5', moduleTitle: 'Explain / Resolve', lessonTitle: 'Drill: Causal Mechanisms' },
-  'PT-105-S-1-Q-25': { moduleId: 19, lessonId: '19-7', moduleTitle: 'Explain / Resolve', lessonTitle: 'Drill: The Hidden Distinction' },
-  'PT-103-S-1-Q-23': { moduleId: 19, lessonId: '19-8', moduleTitle: 'Explain / Resolve', lessonTitle: 'Drill: The Counterintuitive Causal Web' },
-  'PT-124-S-3-Q-22': { moduleId: 19, lessonId: '19-9', moduleTitle: 'Explain / Resolve', lessonTitle: 'Drill: Flawed Logic in "EXCEPT" Questions' },
+  // Module 19: Explain/Resolve
+  'PT-103-S-1-Q-20': { moduleId: 19, lessonId: '19-4', moduleTitle: 'Explain/Resolve', lessonTitle: 'Drill: Selection Bias' },
+  'PT-122-S-4-Q-11': { moduleId: 19, lessonId: '19-5', moduleTitle: 'Explain/Resolve', lessonTitle: 'Drill: Causal Mechanisms' },
+  'PT-105-S-1-Q-25': { moduleId: 19, lessonId: '19-7', moduleTitle: 'Explain/Resolve', lessonTitle: 'Drill: The Hidden Distinction' },
+  'PT-103-S-1-Q-23': { moduleId: 19, lessonId: '19-8', moduleTitle: 'Explain/Resolve', lessonTitle: 'Drill: The Counterintuitive Causal Web' },
+  'PT-124-S-3-Q-22': { moduleId: 19, lessonId: '19-9', moduleTitle: 'Explain/Resolve', lessonTitle: 'Drill: Flawed Logic in "EXCEPT" Questions' },
 
   // Module 20: Point at Issue
   'PT-122-S-2-Q-1': { moduleId: 20, lessonId: '20-3', moduleTitle: 'Point at Issue', lessonTitle: 'Practice Drill: Disagreement (Definitional Rule)' },

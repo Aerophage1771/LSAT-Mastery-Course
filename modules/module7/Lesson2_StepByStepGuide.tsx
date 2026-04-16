@@ -2,7 +2,7 @@ import { Lesson } from '../../types';
 
 export const Lesson2_StepByStepGuide: Lesson = {
   id: '7-2',
-  title: 'Step-by-Step Guide: Evaluate the Argument',
+  title: 'Step-by-Step: Evaluate the Argument',
   questionPolicy: 'none',
   content: [
     { type: 'h2', text: 'The 4-Step Method for Evaluate the Argument' },

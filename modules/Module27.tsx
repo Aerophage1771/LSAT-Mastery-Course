@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module27/Lesson2_StepByStepApproac
 
 export const Module27: ModuleData = {
   id: 27,
-  title: "RC: Author Viewpoint",
+  title: "Author Viewpoint",
   category: "RC",
   unit: "Unit 10: Identifying the Perspectives",
   description: "Determine which statement the author would most likely agree with or support.",

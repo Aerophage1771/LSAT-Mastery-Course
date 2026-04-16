@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module32/Lesson2_StepByStepApproac
 
 export const Module32: ModuleData = {
   id: 32,
-  title: "RC: Phrase Function",
+  title: "Phrase Function",
   category: "RC",
   unit: "Unit 9: Analyzing the Components",
   description: "Determine the rhetorical purpose of a specific word, phrase, or example within the author's argument.",

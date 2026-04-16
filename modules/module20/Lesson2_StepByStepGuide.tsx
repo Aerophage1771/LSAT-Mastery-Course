@@ -5,7 +5,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
   title: 'Step-by-Step Guide',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'Step-by-Step Guide: Agree / Disagree' },
+    { type: 'h2', text: 'Step-by-Step: Agree/Disagree' },
     {
       type: 'paragraph',
       text: 'This guide provides a reliable four-step method for solving Point at Issue questions. The method works identically for both disagreement and agreement variants; only the target pattern in Step 3 changes.',

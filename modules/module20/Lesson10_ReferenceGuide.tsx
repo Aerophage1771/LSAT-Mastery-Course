@@ -5,10 +5,10 @@ export const Lesson10_ReferenceGuide: Lesson = {
   title: 'Reference Guide',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'Module 20: Agree / Disagree (Point at Issue) \u2014 Reference Guide' },
+    { type: 'h2', text: 'Module 20: Agree/Disagree (Point at Issue) \u2014 Reference Guide' },
     {
       type: 'paragraph',
-      text: 'This reference guide consolidates everything from Module 20 into a single, quick-access resource. Use it for pre-test review, timed practice sessions, and as a checklist before attempting Agree / Disagree questions.',
+      text: 'This reference guide consolidates everything from Module 20 into a single, quick-access resource. Use it for pre-test review, timed practice sessions, and as a checklist before attempting Agree/Disagree questions.',
     },
 
     { type: 'hr' },
@@ -16,7 +16,7 @@ export const Lesson10_ReferenceGuide: Lesson = {
     { type: 'h2', text: '1. The 4-Step Method' },
     {
       type: 'paragraph',
-      text: 'Every Agree / Disagree question follows the same repeatable process. Memorize this sequence and apply it consistently.',
+      text: 'Every Agree/Disagree question follows the same repeatable process. Memorize this sequence and apply it consistently.',
     },
     {
       type: 'process',
@@ -147,7 +147,7 @@ export const Lesson10_ReferenceGuide: Lesson = {
     { type: 'h2', text: '5. Committed vs. Uncommitted' },
     {
       type: 'paragraph',
-      text: 'The most common error on Agree / Disagree questions is attributing a position to a speaker who has not actually taken one. Understanding the difference between a committed and an uncommitted speaker is essential.',
+      text: 'The most common error on Agree/Disagree questions is attributing a position to a speaker who has not actually taken one. Understanding the difference between a committed and an uncommitted speaker is essential.',
     },
 
     {
@@ -193,7 +193,7 @@ export const Lesson10_ReferenceGuide: Lesson = {
     { type: 'h2', text: '6. Common Traps' },
     {
       type: 'paragraph',
-      text: 'Wrong answers on Agree / Disagree questions exploit predictable reasoning errors. Memorize these patterns to eliminate traps quickly during timed practice.',
+      text: 'Wrong answers on Agree/Disagree questions exploit predictable reasoning errors. Memorize these patterns to eliminate traps quickly during timed practice.',
     },
 
     {
@@ -250,7 +250,7 @@ export const Lesson10_ReferenceGuide: Lesson = {
     { type: 'h2', text: '7. Test Day Checklist' },
     {
       type: 'paragraph',
-      text: 'Run through this checklist on every Agree / Disagree question during timed practice and on test day.',
+      text: 'Run through this checklist on every Agree/Disagree question during timed practice and on test day.',
     },
 
     {
@@ -341,7 +341,7 @@ export const Lesson10_ReferenceGuide: Lesson = {
       type: 'callout',
       variant: 'summary',
       title: 'Module 20 Summary',
-      text: "**Agree / Disagree = Comparative Commitment Analysis.** You receive a dialogue between two speakers and identify the specific proposition on which they hold opposing views (disagreement) or shared views (agreement).\n\n**The 4-Step Method:** Map Positions \u2192 Identify Claims \u2192 Apply Overlap Test \u2192 Verify Commitment.\n\n**Four disagreement types:** Definitional Rule, Explanatory Cause, Clash of Criteria, Definitional Clash.\n\n**Two agreement types:** Shared Assumption, Shared Diagnosis.\n\n**The Overlap Test:** For disagreement, one speaker says YES and the other says NO. For agreement, both speakers say YES. If either speaker's position is UNKNOWN, eliminate the choice immediately.\n\n**Committed vs. Uncommitted:** A speaker is committed only if they explicitly state a claim or their argument logically requires it. Silence, topical proximity, and thematic relevance are not commitment.\n\n**Seven common traps:** One speaker uncommitted, both actually agree, surface disagreement masks deeper agreement, implicit vs. explicit commitment overreach, scope mismatch, mischaracterization, related but distinct topic.\n\n**The Overlap Test is your safeguard.** Always determine each speaker's commitment (YES / NO / UNKNOWN) before selecting an answer. If you cannot assign a clear commitment to both speakers, the choice is wrong.",
+      text: "**Agree/Disagree = Comparative Commitment Analysis.** You receive a dialogue between two speakers and identify the specific proposition on which they hold opposing views (disagreement) or shared views (agreement).\n\n**The 4-Step Method:** Map Positions \u2192 Identify Claims \u2192 Apply Overlap Test \u2192 Verify Commitment.\n\n**Four disagreement types:** Definitional Rule, Explanatory Cause, Clash of Criteria, Definitional Clash.\n\n**Two agreement types:** Shared Assumption, Shared Diagnosis.\n\n**The Overlap Test:** For disagreement, one speaker says YES and the other says NO. For agreement, both speakers say YES. If either speaker's position is UNKNOWN, eliminate the choice immediately.\n\n**Committed vs. Uncommitted:** A speaker is committed only if they explicitly state a claim or their argument logically requires it. Silence, topical proximity, and thematic relevance are not commitment.\n\n**Seven common traps:** One speaker uncommitted, both actually agree, surface disagreement masks deeper agreement, implicit vs. explicit commitment overreach, scope mismatch, mischaracterization, related but distinct topic.\n\n**The Overlap Test is your safeguard.** Always determine each speaker's commitment (YES / NO / UNKNOWN) before selecting an answer. If you cannot assign a clear commitment to both speakers, the choice is wrong.",
     },
   ],
 };

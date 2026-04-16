@@ -12,7 +12,7 @@ import { Lesson10_ReferenceGuide } from './module20/Lesson10_ReferenceGuide';
 
 export const Module20: ModuleData = {
   id: 20,
-  title: "Agree / Disagree (Point at Issue)",
+  title: "Agree/Disagree (Point at Issue)",
   category: "LR",
   unit: "Unit 7: Conflict",
   description: "Identify the specific proposition on which two speakers hold opposing views (Point at Issue) or shared views (Point of Agreement).",

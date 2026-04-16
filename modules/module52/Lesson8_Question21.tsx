@@ -7,7 +7,7 @@ Last, Meyerson takes issue with the CLS charge that legal formalism, the belief 
 
 export const Lesson8_Question21: Lesson = {
   id: "52-8",
-  title: "Question 21: Inference (3rd-Party Viewpoint)",
+  title: "Question 21: Inference (Third-Party Viewpoint)",
   content: [
     { type: 'accordion', title: 'Read Passage', content: passageText },
     { type: 'h3', text: "Question 21 Breakdown" },

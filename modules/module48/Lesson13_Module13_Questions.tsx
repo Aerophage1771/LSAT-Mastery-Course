@@ -2,9 +2,9 @@ import { Lesson, ContentBlock } from '../../types';
 
 export const Lesson13_Module13_Questions: Lesson = {
   id: "48-13",
-  title: "Module 13: Principle - Apply",
+  title: "Module 13: Principle: Apply",
   content: [
-    { type: 'h2', text: 'Module 13: Principle - Apply' },
+    { type: 'h2', text: 'Module 13: Principle: Apply' },
     {
       type: 'accordion',
       title: 'Drill: Direct Application (PT-104-S-4-Q-1)',

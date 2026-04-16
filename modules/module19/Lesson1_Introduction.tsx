@@ -5,7 +5,7 @@ export const Lesson1_Introduction: Lesson = {
   title: 'Introduction',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'MODULE 19: Paradox / Explain' },
+    { type: 'h2', text: 'MODULE 19: Paradox/Explain' },
     { type: 'h3', text: 'Why This Matters' },
     {
       type: 'paragraph',

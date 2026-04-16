@@ -5,7 +5,7 @@ export const Lesson1_Introduction: Lesson = {
   title: 'Introduction',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'MODULE 12: Principle-Strengthen' },
+    { type: 'h2', text: 'MODULE 12: Principle: Strengthen' },
     {
       type: 'paragraph',
       text: '**Question Goal**\n\n**Identify the general rule or broad principle that, if valid, provides the strongest support for the argument\'s conclusion.** You are looking for an abstract, universal statement — a "law" — that connects the specific facts of the case to the author\'s reasoning and makes the conclusion more defensible.',
@@ -16,7 +16,7 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h3', text: 'Why This Matters' },
     {
       type: 'paragraph',
-      text: 'Principle-Strengthen questions are the **bridge between abstract rules and concrete cases**. Every argument makes an implicit appeal to some broader standard — a moral norm, a policy guideline, an efficiency rule, a definitional boundary. In everyday reasoning, these principles remain in the background; on the LSAT, you are asked to drag them into the spotlight and evaluate them explicitly.',
+      text: 'Principle: Strengthen questions are the **bridge between abstract rules and concrete cases**. Every argument makes an implicit appeal to some broader standard — a moral norm, a policy guideline, an efficiency rule, a definitional boundary. In everyday reasoning, these principles remain in the background; on the LSAT, you are asked to drag them into the spotlight and evaluate them explicitly.',
     },
     {
       type: 'paragraph',
@@ -24,13 +24,13 @@ export const Lesson1_Introduction: Lesson = {
     },
     {
       type: 'paragraph',
-      text: 'Mastering Principle-Strengthen also pays dividends on related question types. The ability to identify the implicit principle behind an argument is the same skill you need for Flaw questions (where the principle is *violated*), Parallel Reasoning questions (where the principle is *replicated*), and Sufficient Assumption questions (where the principle is *completed*). This module is not an isolated topic — it is a lens that sharpens your entire Logical Reasoning game.',
+      text: 'Mastering Principle: Strengthen also pays dividends on related question types. The ability to identify the implicit principle behind an argument is the same skill you need for Flaw questions (where the principle is *violated*), Parallel Reasoning questions (where the principle is *replicated*), and Sufficient Assumption questions (where the principle is *completed*). This module is not an isolated topic — it is a lens that sharpens your entire Logical Reasoning game.',
     },
     {
       type: 'callout',
       variant: 'tip',
       title: 'Frequency & Difficulty',
-      text: 'Expect **1–2 Principle-Strengthen questions per scored section**. They tend to cluster in the medium-to-hard range. Because the correct answer is always more abstract than the argument itself, students who practice identifying the underlying principle before reading the answer choices consistently outperform those who evaluate each choice in isolation.',
+      text: 'Expect **1–2 Principle: Strengthen questions per scored section**. They tend to cluster in the medium-to-hard range. Because the correct answer is always more abstract than the argument itself, students who practice identifying the underlying principle before reading the answer choices consistently outperform those who evaluate each choice in isolation.',
     },
 
     { type: 'hr' },
@@ -38,7 +38,7 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h3', text: 'Recognizing the Question' },
     {
       type: 'paragraph',
-      text: "Principle-Strengthen stems are distinctive because they combine the language of **principles** (or generalizations, propositions) with the language of **justification** (justify, conform to, support). The question asks you to find a general rule that makes the argument's reasoning more defensible — not a specific fact that adds evidence. Learn to distinguish these from regular Strengthen stems (which ask for helpful facts) and Sufficient Assumption stems (which ask for the exact missing logical piece).",
+      text: "Principle: Strengthen stems are distinctive because they combine the language of **principles** (or generalizations, propositions) with the language of **justification** (justify, conform to, support). The question asks you to find a general rule that makes the argument's reasoning more defensible — not a specific fact that adds evidence. Learn to distinguish these from regular Strengthen stems (which ask for helpful facts) and Sufficient Assumption stems (which ask for the exact missing logical piece).",
     },
     {
       type: 'table',
@@ -93,14 +93,14 @@ export const Lesson1_Introduction: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h2', text: 'Principle-Strengthen vs. Regular Strengthen' },
+    { type: 'h2', text: 'Principle: Strengthen vs. Regular Strengthen' },
     {
       type: 'paragraph',
       text: 'Both question types ask you to support the argument, but the *type* of support they require is fundamentally different. Confusing them is one of the most common mistakes students make in the Principle family.',
     },
     {
       type: 'table',
-      headers: ['Feature', 'Regular Strengthen', 'Principle-Strengthen'],
+      headers: ['Feature', 'Regular Strengthen', 'Principle: Strengthen'],
       rows: [
         [
           'What you add',
@@ -132,25 +132,25 @@ export const Lesson1_Introduction: Lesson = {
     },
     {
       type: 'paragraph',
-      text: 'Think of it this way: a **Regular Strengthen** answer is like presenting a new piece of evidence at trial. A **Principle-Strengthen** answer is like citing a law from the statute book. The evidence makes the case *stronger*; the law makes the verdict *justified*.',
+      text: 'Think of it this way: a **Regular Strengthen** answer is like presenting a new piece of evidence at trial. A **Principle: Strengthen** answer is like citing a law from the statute book. The evidence makes the case *stronger*; the law makes the verdict *justified*.',
     },
     {
       type: 'callout',
       variant: 'default',
       title: 'The Critical Distinction',
-      text: 'On Regular Strengthen, you are looking for the most helpful *fact*. On Principle-Strengthen, you are looking for the most applicable *rule*. If you find yourself gravitating toward specific, concrete details in the answer choices of a Principle-Strengthen question, you are solving the wrong question type.',
+      text: 'On Regular Strengthen, you are looking for the most helpful *fact*. On Principle: Strengthen, you are looking for the most applicable *rule*. If you find yourself gravitating toward specific, concrete details in the answer choices of a Principle: Strengthen question, you are solving the wrong question type.',
     },
 
     { type: 'hr' },
 
-    { type: 'h2', text: 'Principle-Strengthen vs. Sufficient Assumption' },
+    { type: 'h2', text: 'Principle: Strengthen vs. Sufficient Assumption' },
     {
       type: 'paragraph',
       text: 'These two question types are closely related — both ask you to add a new premise that supports the argument. However, they differ in the *nature* and *precision* of the premise they require.',
     },
     {
       type: 'table',
-      headers: ['Feature', 'Principle-Strengthen', 'Sufficient Assumption'],
+      headers: ['Feature', 'Principle: Strengthen', 'Sufficient Assumption'],
       rows: [
         [
           'What you add',
@@ -186,13 +186,13 @@ export const Lesson1_Introduction: Lesson = {
     },
     {
       type: 'paragraph',
-      text: 'Think of it this way: a **Sufficient Assumption** is a custom-fitted key that opens exactly one lock. A **Principle-Strengthen** answer is a master key — it is broader and less precise, but it works on this lock and many others. The SA answer is *exactly* what the argument needs; the Principle answer is a *general rule* that *covers* what the argument needs.',
+      text: 'Think of it this way: a **Sufficient Assumption** is a custom-fitted key that opens exactly one lock. A **Principle: Strengthen** answer is a master key — it is broader and less precise, but it works on this lock and many others. The SA answer is *exactly* what the argument needs; the Principle answer is a *general rule* that *covers* what the argument needs.',
     },
     {
       type: 'callout',
       variant: 'tip',
       title: 'When They Overlap',
-      text: 'Some Principle-Strengthen questions are close to Sufficient Assumption questions — the principle, if valid, essentially guarantees the conclusion. Other Principle-Strengthen questions have correct answers that strongly support but do not fully guarantee the conclusion. The distinguishing factor is always the stem: if it says "principle" + "justify," treat it as Principle-Strengthen. If it says "if assumed" + "follows logically," treat it as Sufficient Assumption.',
+      text: 'Some Principle: Strengthen questions are close to Sufficient Assumption questions — the principle, if valid, essentially guarantees the conclusion. Other Principle: Strengthen questions have correct answers that strongly support but do not fully guarantee the conclusion. The distinguishing factor is always the stem: if it says "principle" + "justify," treat it as Principle: Strengthen. If it says "if assumed" + "follows logically," treat it as Sufficient Assumption.',
     },
 
     { type: 'hr' },
@@ -200,7 +200,7 @@ export const Lesson1_Introduction: Lesson = {
     { type: 'h2', text: 'Common Principle Types' },
     {
       type: 'paragraph',
-      text: 'While every Principle-Strengthen argument is unique, the types of principles tested fall into a small number of recurring categories. Recognizing these patterns gives you a head start on identifying the gap and predicting the correct answer.',
+      text: 'While every Principle: Strengthen argument is unique, the types of principles tested fall into a small number of recurring categories. Recognizing these patterns gives you a head start on identifying the gap and predicting the correct answer.',
     },
     {
       type: 'table',
@@ -235,13 +235,13 @@ export const Lesson1_Introduction: Lesson = {
     },
     {
       type: 'paragraph',
-      text: 'Each of these principle types is explored through worked drills in the lessons that follow. For now, recognize that the correct answer to a Principle-Strengthen question will almost always be one of these broad patterns — a general rule connecting the *type* of evidence to the *type* of conclusion.',
+      text: 'Each of these principle types is explored through worked drills in the lessons that follow. For now, recognize that the correct answer to a Principle: Strengthen question will almost always be one of these broad patterns — a general rule connecting the *type* of evidence to the *type* of conclusion.',
     },
 
     { type: 'hr' },
 
     { type: 'h2', text: 'Worked Example' },
-    { type: 'paragraph', text: "Let's apply everything from this lesson to a complete Principle-Strengthen question." },
+    { type: 'paragraph', text: "Let's apply everything from this lesson to a complete Principle: Strengthen question." },
     { type: 'paragraph', text: 'Consider this illustrative argument:' },
     {
       type: 'blockquote',
@@ -249,7 +249,7 @@ export const Lesson1_Introduction: Lesson = {
     },
     {
       type: 'paragraph',
-      text: 'This is a useful Principle-Strengthen example because the evidence already points toward a value judgment, but the argument still needs a general funding rule to turn that value into a conclusion.',
+      text: 'This is a useful Principle: Strengthen example because the evidence already points toward a value judgment, but the argument still needs a general funding rule to turn that value into a conclusion.',
     },
 
     { type: 'h3', text: 'Walkthrough' },
@@ -285,7 +285,7 @@ export const Lesson1_Introduction: Lesson = {
       type: 'callout',
       variant: 'summary',
       title: 'Key Takeaways',
-      text: '**1. The correct answer is always more abstract and general than the argument itself.** Principle-Strengthen answers replace specific details with broad categories. If the answer uses the same proper nouns or specific facts as the stimulus, it is almost certainly wrong.\n\n**2. Identify the logical leap, then abstract it.** The gap between the evidence and the conclusion is the key. Your job is to find the general rule that bridges this gap — the "law" that the author is implicitly invoking.\n\n**3. Distinguish Principle-Strengthen from Regular Strengthen and Sufficient Assumption.** Regular Strengthen adds a *fact*. Principle-Strengthen adds a *rule*. Sufficient Assumption adds the *exact missing piece*. The stem language will always tell you which type you are dealing with.\n\n**4. Watch for scope shifts in wrong answers.** The most common trap is a principle that sounds relevant but applies to a different agent, concept, or situation than the one in the argument. Always check: does this principle address the *specific* logical leap in the argument?\n\n**5. Know the five common principle types.** Normative Bridge, Efficiency Principle, Accountability, Lesser-of-Two-Evils, and Definitional Principle cover the vast majority of Principle-Strengthen questions. Recognizing the pattern accelerates your gap identification and pre-phrasing.\n\n**6. The principle must bridge the evidence to the conclusion.** A principle that merely restates a premise or addresses a tangential concern does not justify the reasoning. The correct principle always connects *what the author knows* to *what the author concludes*.',
+      text: '**1. The correct answer is always more abstract and general than the argument itself.** Principle: Strengthen answers replace specific details with broad categories. If the answer uses the same proper nouns or specific facts as the stimulus, it is almost certainly wrong.\n\n**2. Identify the logical leap, then abstract it.** The gap between the evidence and the conclusion is the key. Your job is to find the general rule that bridges this gap — the "law" that the author is implicitly invoking.\n\n**3. Distinguish Principle: Strengthen from Regular Strengthen and Sufficient Assumption.** Regular Strengthen adds a *fact*. Principle: Strengthen adds a *rule*. Sufficient Assumption adds the *exact missing piece*. The stem language will always tell you which type you are dealing with.\n\n**4. Watch for scope shifts in wrong answers.** The most common trap is a principle that sounds relevant but applies to a different agent, concept, or situation than the one in the argument. Always check: does this principle address the *specific* logical leap in the argument?\n\n**5. Know the five common principle types.** Normative Bridge, Efficiency Principle, Accountability, Lesser-of-Two-Evils, and Definitional Principle cover the vast majority of Principle: Strengthen questions. Recognizing the pattern accelerates your gap identification and pre-phrasing.\n\n**6. The principle must bridge the evidence to the conclusion.** A principle that merely restates a premise or addresses a tangential concern does not justify the reasoning. The correct principle always connects *what the author knows* to *what the author concludes*.',
     },
   ],
 };

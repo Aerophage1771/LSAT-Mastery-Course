@@ -384,7 +384,7 @@ export const Lesson3_Drill_ExperimentGeneralization: Lesson = {
         {
           "type": "question-card",
           "id": "PT-116-S-3-Q-3",
-          "questionType": "Principle - Generalization",
+          "questionType": "Principle: Generalization",
           "difficulty": "medium",
           "stimulus": "In an experiment, tennis players who were told that their performance would be used to assess only the quality of their rackets performed much better than an equally skilled group of tennis players who were told that their tennis-playing talent would be measured.",
           "question": "The situation described above most closely conforms to which one of the following propositions?",

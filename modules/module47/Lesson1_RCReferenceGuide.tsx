@@ -93,7 +93,7 @@ export const Lesson1_RCReferenceGuide: Lesson = {
         { title: 'Stem Identifiers', text: 'Stems will ask which statement the **"author would agree with"** or what the **"author believes."**' }
     ]},
     
-    { type: 'h4', text: "**10. 3rd-Party Viewpoint**" },
+    { type: 'h4', text: "**10. Third-Party Viewpoint**" },
     { type: 'breakdown', items: [
         { title: 'Core Task', text: 'Isolate the views of a specific person/group mentioned (e.g., "The Critics," "The Scientists").' },
         { title: 'The Approach', text: '1.  **Locate the Source:** Scan the passage for the name of the specific person or group.\n2.  **Isolate Their Claims:** Find the exact sentences where a view is explicitly attributed to them.\n3.  **Report the Facts:** Your only job is to accurately paraphrase what the text says that specific party believes.' },

@@ -9,7 +9,7 @@ export const Lesson15_Module14_Questions: Lesson = {
       type: 'accordion',
       title: "Drill: Experiment Generalization (PT-116-S-3-Q-3) (PT-116-S-3-Q-3)",
       content: [
-        { type: 'paragraph', text: "Question Type: Principle - Generalization" },
+        { type: 'paragraph', text: "Question Type: Principle: Generalization" },
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: "In an experiment, tennis players who were told that their performance would be used to assess only the quality of their rackets performed much better than an equally skilled group of tennis players who were told that their tennis-playing talent would be measured." },
         { type: 'h4', text: 'Question' },

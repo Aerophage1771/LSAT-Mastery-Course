@@ -4,9 +4,9 @@ export const Lesson1_Introduction: Lesson = {
   id: "29-1",
   title: "Introduction",
   content: [
-    { type: 'h3', text: "Germaine's Guide to RC 3rd-Party Viewpoint Questions" },
+    { type: 'h3', text: "Germaine's Guide to RC Third-Party Viewpoint Questions" },
     { type: 'h4', text: "What's this question asking?" },
-    { type: 'paragraph', text: "3rd-Party Viewpoint questions ask you to identify the specific belief, argument, or perspective of a person or group mentioned in the passage. Your goal is to isolate the ideas that the text explicitly attributes to that specific party." },
+    { type: 'paragraph', text: "Third-Party Viewpoint questions ask you to identify the specific belief, argument, or perspective of a person or group mentioned in the passage. Your goal is to isolate the ideas that the text explicitly attributes to that specific party." },
     { type: 'paragraph', text: "This involves distinguishing between different voices in the passage to ensure the answer choice accurately reflects only the claims made by the subject of the question. To do this effectively:" },
     { type: 'list', items: [
       "**Locate the specific party:** Find the mentions of the individual (e.g., a specific researcher) or group (e.g., \"legal scholars\") named in the question.",
@@ -15,8 +15,8 @@ export const Lesson1_Introduction: Lesson = {
       "**Check for evidential backing:** Ensure the answer choice is supported by the specific section of the text where that party's view is discussed."
     ]},
     { type: 'hr' },
-    { type: 'h3', text: "Stem Identification: How to Spot a 3rd-Party Viewpoint Question" },
-    { type: 'paragraph', text: "3rd-Party Viewpoint questions ask you to identify the specific belief, argument, or perspective of a person or group mentioned in the passage who is not the author. The chart below breaks down the common phrasing patterns used to pinpoint these specific perspectives." },
+    { type: 'h3', text: "Stem Identification: How to Spot a Third-Party Viewpoint Question" },
+    { type: 'paragraph', text: "Third-Party Viewpoint questions ask you to identify the specific belief, argument, or perspective of a person or group mentioned in the passage who is not the author. The chart below breaks down the common phrasing patterns used to pinpoint these specific perspectives." },
     { 
       type: 'breakdown', 
       labels: { title: 'Category', text: 'Examples & Keywords' }, 
@@ -30,7 +30,7 @@ export const Lesson1_Introduction: Lesson = {
       ] 
     },
     { type: 'callout', title: "Overarching Takeaway", variant: "summary", text: "Your task is to act as a neutral reporter, isolating exactly what the passage attributes to the specific person or group in the question. Always find the direct textual evidence that links the viewpoint to the party in question (e.g., \"According to Smith,\" \"the critics claim\"). Be careful not to confuse the third party's opinion with the author's own view or with a different group's perspective." },
-    { type: 'h3', text: "The Importance of 3rd-Party Viewpoint Questions" },
-    { type: 'paragraph', text: "3rd-Party Viewpoint questions appear 108 times in the dataset, accounting for over 5% of all RC questions. These questions test your ability to track and differentiate between multiple perspectives within a single passage. This skill is critical for navigating complex texts, especially comparative passages, and for avoiding the common trap of confusing a third party's opinion with the author's own." }
+    { type: 'h3', text: "The Importance of Third-Party Viewpoint Questions" },
+    { type: 'paragraph', text: "Third-Party Viewpoint questions appear 108 times in the dataset, accounting for over 5% of all RC questions. These questions test your ability to track and differentiate between multiple perspectives within a single passage. This skill is critical for navigating complex texts, especially comparative passages, and for avoiding the common trap of confusing a third party's opinion with the author's own." }
   ]
 };

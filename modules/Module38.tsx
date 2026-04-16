@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module38/Lesson2_StepByStepApproac
 
 export const Module38: ModuleData = {
   id: 38,
-  title: "RC: Weaken-Strengthen",
+  title: "Weaken-Strengthen",
   category: "RC",
   unit: "Unit 11: Extending the Reasoning",
   description: "Evaluate how a new piece of information would affect an argument or hypothesis from the passage.",

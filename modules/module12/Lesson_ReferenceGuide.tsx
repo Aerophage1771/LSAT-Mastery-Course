@@ -2,11 +2,11 @@ import { Lesson } from '../../types';
 
 export const Lesson_ReferenceGuide: Lesson = {
   id: '12-ref',
-  title: 'MODULE 12: Principle-Strengthen Reference Guide',
+  title: 'MODULE 12: Principle: Strengthen Reference Guide',
   content: [
     {
       "type": "h2",
-      "text": "MODULE 12: Principle-Strengthen Reference Guide"
+      "text": "MODULE 12: Principle: Strengthen Reference Guide"
     },
     {
       "type": "h3",

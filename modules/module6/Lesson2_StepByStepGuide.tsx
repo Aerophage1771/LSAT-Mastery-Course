@@ -2,7 +2,7 @@ import { Lesson } from '../../types';
 
 export const Lesson2_StepByStepGuide: Lesson = {
   id: '6-2',
-  title: 'Step-by-Step Guide: Parallel Flaw',
+  title: 'Step-by-Step: Parallel Flaw',
   questionPolicy: 'none',
   content: [
     { type: 'h2', text: 'The 3-Step Method for Parallel Flaw Questions' },

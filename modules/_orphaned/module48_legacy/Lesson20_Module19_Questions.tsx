@@ -9,7 +9,7 @@ export const Lesson20_Module19_Questions: Lesson = {
       type: 'accordion',
       title: "Drill: Numbers vs. Percentages (PT-107-S-3-Q-21)",
       content: [
-        { type: 'paragraph', text: "Question Type: Paradox / Explain" },
+        { type: 'paragraph', text: "Question Type: Paradox/Explain" },
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: "A study of the difference in earnings between men and women in the country of Naota found that the average annual earnings of women who are employed full time is 80 percent of the average annual earnings of men who are employed full time. However, other research consistently shows that, in Naota, the average annual earnings of all employed women is 65 percent of the average annual earnings of all employed men." },
         { type: 'h4', text: 'Question' },

@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module36/Lesson2_StepByStepApproac
 
 export const Module36: ModuleData = {
   id: 36,
-  title: "RC: Structure",
+  title: "Structure",
   category: "RC",
   unit: "Unit 8: Summarizing the Passage",
   description: "Identify the overall logical organization of the passage, mapping the flow of the argument.",

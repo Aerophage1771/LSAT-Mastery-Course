@@ -66,7 +66,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
       content: [
         {
           "type": "h2",
-          "text": "Step-by-Step Guide: Must Be False"
+          "text": "Step-by-Step: Must Be False"
         },
         {
           "type": "paragraph",

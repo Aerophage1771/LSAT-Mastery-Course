@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module31/Lesson2_StepByStepApproac
 
 export const Module31: ModuleData = {
   id: 31,
-  title: "RC: Phrase Meaning",
+  title: "Phrase Meaning",
   category: "RC",
   unit: "Unit 9: Analyzing the Components",
   description: "Identify the specific definition of a word or phrase based on its immediate context.",

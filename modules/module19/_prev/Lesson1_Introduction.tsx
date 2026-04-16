@@ -93,7 +93,7 @@ export const Lesson1_Introduction: Lesson = {
       content: [
         {
           "type": "h2",
-          "text": "MODULE 19: Paradox / Explain"
+          "text": "MODULE 19: Paradox/Explain"
         },
         {
           "type": "h3",

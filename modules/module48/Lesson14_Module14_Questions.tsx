@@ -2,9 +2,9 @@ import { Lesson, ContentBlock } from '../../types';
 
 export const Lesson14_Module14_Questions: Lesson = {
   id: "48-14",
-  title: "Module 14: Principle - Generalization",
+  title: "Module 14: Principle: Generalization",
   content: [
-    { type: 'h2', text: 'Module 14: Principle - Generalization' },
+    { type: 'h2', text: 'Module 14: Principle: Generalization' },
     {
       type: 'accordion',
       title: 'Drill: Experiment Generalization (PT-116-S-3-Q-3)',

@@ -12,7 +12,7 @@ export const Lesson6_Drill_LesserOfTwoEvils: Lesson = {
     },
     {
       type: 'paragraph',
-      text: 'These arguments are among the most difficult Principle-Strengthen questions because the correct answer is often a highly abstract statement about risk management or comparative value — not a topically specific rule. The argument\'s structure involves a concession ("Yes, Option A has this cost"), a practical problem ("But Option B has a worse risk"), and a conclusion ("Therefore, choose Option A"). The unstated principle is a **hierarchy of errors**: a meta-rule about which type of mistake is more acceptable.',
+      text: 'These arguments are among the most difficult Principle: Strengthen questions because the correct answer is often a highly abstract statement about risk management or comparative value — not a topically specific rule. The argument\'s structure involves a concession ("Yes, Option A has this cost"), a practical problem ("But Option B has a worse risk"), and a conclusion ("Therefore, choose Option A"). The unstated principle is a **hierarchy of errors**: a meta-rule about which type of mistake is more acceptable.',
     },
 
     { type: 'hr' },
@@ -183,7 +183,7 @@ export const Lesson6_Drill_LesserOfTwoEvils: Lesson = {
     },
     {
       type: 'paragraph',
-      text: 'This pairing shows how a Principle-Strengthen answer can feel almost complete without becoming Sufficient Assumption. The answer is a broad hierarchy-of-errors rule, and the current sentencing dispute is one instance of that rule.',
+      text: 'This pairing shows how a Principle: Strengthen answer can feel almost complete without becoming Sufficient Assumption. The answer is a broad hierarchy-of-errors rule, and the current sentencing dispute is one instance of that rule.',
     },
 
     { type: 'h4', text: 'Step 5: Evaluate the Choices' },
@@ -286,7 +286,7 @@ export const Lesson6_Drill_LesserOfTwoEvils: Lesson = {
         },
         {
           "type": "paragraph",
-          "text": "These arguments are among the most difficult Principle-Strengthen questions because the correct answer is often a highly abstract statement about risk management or comparative value — not a topically specific rule. The argument's structure involves a concession (\"Yes, Option A has this cost\"), a practical problem (\"But Option B has a worse risk\"), and a conclusion (\"Therefore, choose Option A\"). The unstated principle is a **hierarchy of errors**: a meta-rule about which type of mistake is more acceptable."
+          "text": "These arguments are among the most difficult Principle: Strengthen questions because the correct answer is often a highly abstract statement about risk management or comparative value — not a topically specific rule. The argument's structure involves a concession (\"Yes, Option A has this cost\"), a practical problem (\"But Option B has a worse risk\"), and a conclusion (\"Therefore, choose Option A\"). The unstated principle is a **hierarchy of errors**: a meta-rule about which type of mistake is more acceptable."
         },
         {
           "type": "hr"

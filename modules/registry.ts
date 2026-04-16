@@ -86,9 +86,9 @@ export const moduleRegistry: RegistryEntry[] = [
   entry({ id: 11, title: 'Necessary Assumption', category: 'LR', description: 'Find the answer choice that the argument requires to be true. If this assumption is false, the argument falls apart.', unit: 'Unit 3: Evaluation', lessonCount: 12 }, () => import('./Module11')),
 
   // Unit 4: Principle
-  entry({ id: 12, title: 'Principle-Strengthen', category: 'LR', description: 'Find a broad, abstract rule that, if true, would justify or support the specific argument presented in the stimulus.', unit: 'Unit 4: Principle', lessonCount: 12 }, () => import('./Module12')),
-  entry({ id: 13, title: 'Principle - Apply', category: 'LR', description: 'Apply a given abstract rule or principle to a specific scenario to determine which answer choice conforms to the principle.', unit: 'Unit 4: Principle', lessonCount: 12 }, () => import('./Module13')),
-  entry({ id: 14, title: 'Principle - Generalization', category: 'LR', description: 'Identify the general rule or principle that best explains or justifies the specific reasoning in the stimulus.', unit: 'Unit 4: Principle', lessonCount: 12 }, () => import('./Module14')),
+  entry({ id: 12, title: 'Principle: Strengthen', category: 'LR', description: 'Find a broad, abstract rule that, if true, would justify or support the specific argument presented in the stimulus.', unit: 'Unit 4: Principle', lessonCount: 12 }, () => import('./Module12')),
+  entry({ id: 13, title: 'Principle: Apply', category: 'LR', description: 'Apply a given abstract rule or principle to a specific scenario to determine which answer choice conforms to the principle.', unit: 'Unit 4: Principle', lessonCount: 12 }, () => import('./Module13')),
+  entry({ id: 14, title: 'Principle: Generalization', category: 'LR', description: 'Identify the general rule or principle that best explains or justifies the specific reasoning in the stimulus.', unit: 'Unit 4: Principle', lessonCount: 12 }, () => import('./Module14')),
 
   // Unit 5: Inference
   entry({ id: 15, title: 'Fill in the Blank', category: 'LR', description: "Complete the argument by selecting the answer choice that best fills in the blank, typically representing the argument's conclusion.", unit: 'Unit 5: Inference', lessonCount: 12 }, () => import('./Module15')),
@@ -97,7 +97,7 @@ export const moduleRegistry: RegistryEntry[] = [
   entry({ id: 18, title: 'Must Be False', category: 'LR', description: 'Find the answer choice that cannot be true given the information in the stimulus.', unit: 'Unit 5: Inference', lessonCount: 12 }, () => import('./Module18')),
 
   // Unit 6: Resolution
-  entry({ id: 19, title: 'Explain / Resolve', category: 'LR', description: 'Find the answer choice that best explains a surprising result or resolves an apparent contradiction in the stimulus.', unit: 'Unit 6: Resolution', lessonCount: 12 }, () => import('./Module19')),
+  entry({ id: 19, title: 'Explain/Resolve', category: 'LR', description: 'Find the answer choice that best explains a surprising result or resolves an apparent contradiction in the stimulus.', unit: 'Unit 6: Resolution', lessonCount: 12 }, () => import('./Module19')),
 
   // Unit 7: Conflict
   entry({ id: 20, title: 'Point at Issue', category: 'LR', description: 'Identify the specific claim about which two speakers in a dialogue disagree.', unit: 'Unit 7: Conflict', lessonCount: 12 }, () => import('./Module20')),

@@ -104,7 +104,7 @@ export const Lesson1_AdvancedRCQuestionRepository: Lesson = {
     },
     { 
       type: 'accordion', 
-      title: 'Question 26: 3rd-Party Viewpoint',
+      title: 'Question 26: Third-Party Viewpoint',
       content: [
         { type: 'blockquote', text: "**Question:** Based on the passage, linguists who subscribe to the theory that “the relationship between language and things is purely a matter of agreed-upon conventions\" (near the end of the second paragraph) would hold that the statement “The ball is red” is true because" },
         { type: 'options', items: [
@@ -298,7 +298,7 @@ export const Lesson1_AdvancedRCQuestionRepository: Lesson = {
     },
     { 
       type: 'accordion', 
-      title: 'Question 21: Inference (3rd-Party Viewpoint)',
+      title: 'Question 21: Inference (Third-Party Viewpoint)',
       content: [
         { type: 'blockquote', text: "**Question:** It can be inferred from the passage that proponents of the Critical Legal Studies movement would be most likely to hold which one of the following views about the law?" },
         { type: 'options', items: [
@@ -388,7 +388,7 @@ export const Lesson1_AdvancedRCQuestionRepository: Lesson = {
     },
     { 
       type: 'accordion', 
-      title: 'Question 26: 3rd-Party Viewpoint',
+      title: 'Question 26: Third-Party Viewpoint',
       content: [
         { type: 'blockquote', text: "**Question:** It can be inferred that legal positivists, as described in the passage, agree with which one of the following statements?" },
         { type: 'options', items: [

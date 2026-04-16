@@ -5,7 +5,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
   title: 'Step-by-Step Guide',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'Step-by-Step Guide: Must Be True' },
+    { type: 'h2', text: 'Step-by-Step: Must Be True' },
     {
       type: 'paragraph',
       text: 'This guide gives you a repeatable four-step method for every Must Be True question. Because MBT demands certainty, each step is designed to tighten your reasoning and prevent you from selecting an answer that merely *could* be true.',

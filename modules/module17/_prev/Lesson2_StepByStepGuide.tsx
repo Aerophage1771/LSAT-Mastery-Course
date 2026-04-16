@@ -154,7 +154,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
       content: [
         {
           "type": "h2",
-          "text": "Step-by-Step Guide: Must Be True"
+          "text": "Step-by-Step: Must Be True"
         },
         {
           "type": "diff-note",

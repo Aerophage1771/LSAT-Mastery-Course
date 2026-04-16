@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module23/Lesson2_StepByStepApproac
 
 export const Module23: ModuleData = {
   id: 23,
-  title: "RC: Analogy",
+  title: "Analogy",
   category: "RC",
   unit: "Unit 11: Extending the Reasoning",
   description: "Identify a scenario in the answer choices that mirrors the logic or structure of a situation in the passage.",

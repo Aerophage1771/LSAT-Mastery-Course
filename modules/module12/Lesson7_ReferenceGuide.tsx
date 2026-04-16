@@ -5,19 +5,19 @@ export const Lesson7_ReferenceGuide: Lesson = {
   title: 'Reference Guide',
   questionPolicy: 'none',
   content: [
-    { type: 'h2', text: 'Principle-Strengthen \u2014 Complete Reference Guide' },
+    { type: 'h2', text: 'Principle: Strengthen \u2014 Complete Reference Guide' },
     {
       type: 'paragraph',
-      text: "This reference guide consolidates everything you've learned about Principle-Strengthen questions into a single resource. Use it for quick review before practice sets, for pattern identification during drilling, and as a final refresher before test day.",
+      text: "This reference guide consolidates everything you've learned about Principle: Strengthen questions into a single resource. Use it for quick review before practice sets, for pattern identification during drilling, and as a final refresher before test day.",
     },
 
     { type: 'hr' },
 
     { type: 'h3', text: 'The 4-Step Method' },
-    { type: 'paragraph', text: 'Use this systematic approach for every Principle-Strengthen question:' },
+    { type: 'paragraph', text: 'Use this systematic approach for every Principle: Strengthen question:' },
     {
       type: 'process',
-      title: 'Principle-Strengthen \u2014 4 Steps',
+      title: 'Principle: Strengthen \u2014 4 Steps',
       steps: [
         "**Step 1 \u2014 Find the Conclusion:** Read the stimulus, isolate the author's main claim, and identify the evidence supporting it. Pay close attention to the *nature* of the conclusion: is it a value judgment, recommendation, classification, or assignment of blame? The type of conclusion tells you what type of principle you need.",
         '**Step 2 \u2014 Identify the Logical Leap:** Find the gap between the evidence and the conclusion. Ask: "What type of reasoning connects these specific facts to that specific judgment?" Classify the leap: Fact \u2192 Value? Comparison \u2192 Choice? Role \u2192 Duty? Features \u2192 Category? The leap type predicts the principle type.',
@@ -29,7 +29,7 @@ export const Lesson7_ReferenceGuide: Lesson = {
       type: 'callout',
       variant: 'tip',
       title: 'Timing',
-      text: 'Budget roughly **1 minute and 20 seconds** per Principle-Strengthen question. Steps 1\u20133 (reading, gap-finding, and pre-phrasing) should take about 45 seconds combined. Step 4 (evaluating and eliminating choices) should take about 35 seconds. The pre-phrase is critical \u2014 students who scan the answer choices without one waste time re-reading the stimulus for each option.',
+      text: 'Budget roughly **1 minute and 20 seconds** per Principle: Strengthen question. Steps 1\u20133 (reading, gap-finding, and pre-phrasing) should take about 45 seconds combined. Step 4 (evaluating and eliminating choices) should take about 35 seconds. The pre-phrase is critical \u2014 students who scan the answer choices without one waste time re-reading the stimulus for each option.',
     },
 
     { type: 'hr' },
@@ -78,14 +78,14 @@ export const Lesson7_ReferenceGuide: Lesson = {
 
     { type: 'hr' },
 
-    { type: 'h3', text: 'Principle-Strengthen vs. Regular Strengthen vs. Sufficient Assumption' },
+    { type: 'h3', text: 'Principle: Strengthen vs. Regular Strengthen vs. Sufficient Assumption' },
     {
       type: 'paragraph',
       text: 'These three question types all ask you to support an argument, but they require fundamentally different types of support. Confusing them is one of the most common errors students make.',
     },
     {
       type: 'table',
-      headers: ['Feature', 'Regular Strengthen', 'Principle-Strengthen', 'Sufficient Assumption'],
+      headers: ['Feature', 'Regular Strengthen', 'Principle: Strengthen', 'Sufficient Assumption'],
       rows: [
         [
           '**What you add**',
@@ -143,7 +143,7 @@ export const Lesson7_ReferenceGuide: Lesson = {
     { type: 'h3', text: 'Abstraction Levels \u2014 How to Match the Generality of the Principle' },
     {
       type: 'paragraph',
-      text: 'One of the trickiest skills in Principle-Strengthen is getting the right level of abstraction. The correct principle must be general enough to be a *rule* but specific enough to *apply* to the argument. Here is a guide to calibrating your abstraction:',
+      text: 'One of the trickiest skills in Principle: Strengthen is getting the right level of abstraction. The correct principle must be general enough to be a *rule* but specific enough to *apply* to the argument. Here is a guide to calibrating your abstraction:',
     },
 
     { type: 'h4', text: 'The Abstraction Spectrum' },
@@ -195,7 +195,7 @@ export const Lesson7_ReferenceGuide: Lesson = {
     { type: 'h3', text: 'Common Traps' },
     {
       type: 'paragraph',
-      text: 'Wrong answers on Principle-Strengthen questions fail in predictable ways. Memorize these traps to eliminate quickly and with confidence.',
+      text: 'Wrong answers on Principle: Strengthen questions fail in predictable ways. Memorize these traps to eliminate quickly and with confidence.',
     },
     {
       type: 'breakdown',
@@ -248,7 +248,7 @@ export const Lesson7_ReferenceGuide: Lesson = {
       type: 'list',
       ordered: true,
       items: [
-        '**Read the question stem first.** Confirm it\'s a Principle-Strengthen question. Look for: "principle," "generalization," "proposition" combined with "justify," "conforms to," "most helps to justify," or "established."',
+        '**Read the question stem first.** Confirm it\'s a Principle: Strengthen question. Look for: "principle," "generalization," "proposition" combined with "justify," "conforms to," "most helps to justify," or "established."',
         '**Find the conclusion.** Look for conclusion indicators: "therefore," "thus," "so," "consequently," "should," "must." Identify the *type* of conclusion: value judgment, recommendation, blame assignment, or classification.',
         '**Identify the logical leap.** Compare the nature of the evidence to the nature of the conclusion. Classify the gap: Fact \u2192 Value (Normative Bridge)? Comparison \u2192 Choice (Efficiency)? Role \u2192 Duty (Accountability)? Concession + trade-off (Lesser of Two Evils)? Features \u2192 Category (Definitional)?',
         '**Pre-phrase the principle.** Abstract the evidence and conclusion into general categories. Combine into a rule: "If [general evidence type], then [general conclusion type]." This is your prediction for the correct answer.',
@@ -265,7 +265,7 @@ export const Lesson7_ReferenceGuide: Lesson = {
       type: 'callout',
       variant: 'summary',
       title: 'Final Review',
-      text: "Principle-Strengthen questions test one core skill: identifying the unstated general rule that bridges an argument's logical gap. The author's conclusion relies on a principle they never explicitly state. Your job is to find it.\n\n**Remember the fundamentals:**\n\u2022 The correct answer is always more abstract and general than the argument itself \u2014 it replaces specific details with broad categories.\n\u2022 Identify the logical leap, then abstract it into a general rule. The gap between evidence and conclusion is the key.\n\u2022 Know the five principle types: Normative Bridge, Efficiency, Accountability, Lesser of Two Evils, and Definitional. Recognizing the pattern accelerates gap identification.\n\u2022 Distinguish Principle-Strengthen from Regular Strengthen (adds a fact) and Sufficient Assumption (adds the exact missing piece). The stem language always tells you which type.\n\u2022 Pre-phrase before reading choices. Students who pre-phrase are faster and more accurate.\n\u2022 Wrong answers fail in predictable ways: too narrow, too broad, wrong direction, wrong gap, contradiction, or topically-relevant trap.\n\nMaster the 4-step method, internalize the principle types, and practice pre-phrasing until it becomes automatic. Principle-Strengthen appears 1\u20132 times per scored section, and the abstraction skill it develops pays dividends across the entire Logical Reasoning domain.",
+      text: "Principle: Strengthen questions test one core skill: identifying the unstated general rule that bridges an argument's logical gap. The author's conclusion relies on a principle they never explicitly state. Your job is to find it.\n\n**Remember the fundamentals:**\n\u2022 The correct answer is always more abstract and general than the argument itself \u2014 it replaces specific details with broad categories.\n\u2022 Identify the logical leap, then abstract it into a general rule. The gap between evidence and conclusion is the key.\n\u2022 Know the five principle types: Normative Bridge, Efficiency, Accountability, Lesser of Two Evils, and Definitional. Recognizing the pattern accelerates gap identification.\n\u2022 Distinguish Principle: Strengthen from Regular Strengthen (adds a fact) and Sufficient Assumption (adds the exact missing piece). The stem language always tells you which type.\n\u2022 Pre-phrase before reading choices. Students who pre-phrase are faster and more accurate.\n\u2022 Wrong answers fail in predictable ways: too narrow, too broad, wrong direction, wrong gap, contradiction, or topically-relevant trap.\n\nMaster the 4-step method, internalize the principle types, and practice pre-phrasing until it becomes automatic. Principle: Strengthen appears 1\u20132 times per scored section, and the abstraction skill it develops pays dividends across the entire Logical Reasoning domain.",
     },
   ],
 };

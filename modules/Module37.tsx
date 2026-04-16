@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module37/Lesson2_StepByStepApproac
 
 export const Module37: ModuleData = {
   id: 37,
-  title: "RC: Title",
+  title: "Title",
   category: "RC",
   unit: "Unit 8: Summarizing the Passage",
   description: "Select the phrase that best summarizes the passage or the relationship between two passages.",

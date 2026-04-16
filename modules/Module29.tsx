@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module29/Lesson2_StepByStepApproac
 
 export const Module29: ModuleData = {
   id: 29,
-  title: "RC: 3rd-Party Viewpoint",
+  title: "Third-Party Viewpoint",
   category: "RC",
   unit: "Unit 10: Identifying the Perspectives",
   description: "Identify the specific belief, argument, or perspective of a person or group mentioned in the passage who is not the author.",

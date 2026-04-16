@@ -9,7 +9,7 @@ export const Lesson14_Module13_Questions: Lesson = {
       type: 'accordion',
       title: "Drill: Direct Application (PT-104-S-4-Q-1) (PT-104-S-4-Q-1)",
       content: [
-        { type: 'paragraph', text: "Question Type: Principle - Apply" },
+        { type: 'paragraph', text: "Question Type: Principle: Apply" },
         { type: 'h4', text: 'Stimulus' },
         { type: 'blockquote', text: "Politician: Governments should tax any harmful substance that is available to the general public at a level that the tax would discourage continued use of the substance." },
         { type: 'h4', text: 'Question' },

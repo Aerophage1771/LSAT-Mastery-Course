@@ -217,7 +217,7 @@ export const Lesson6_Advanced_StrategyGuide: Lesson = {
       content: [
         {
           "type": "h3",
-          "text": "Advanced Strategy Guide: Mastering the Hardest Agree / Disagree Questions"
+          "text": "Advanced Strategy Guide: Mastering the Hardest Agree/Disagree Questions"
         },
         {
           "type": "paragraph",

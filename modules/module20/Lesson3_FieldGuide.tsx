@@ -2,11 +2,11 @@ import { Lesson } from '../../types';
 
 export const Lesson3_FieldGuide: Lesson = {
   id: '20-3',
-  title: 'Section 3: Agree / Disagree — A Field Guide to Common Patterns',
+  title: 'Section 3: Agree/Disagree — A Field Guide to Common Patterns',
   content: [
     {
       "type": "h2",
-      "text": "Section 3: Agree / Disagree — A Field Guide to Common Patterns"
+      "text": "Section 3: Agree/Disagree — A Field Guide to Common Patterns"
     },
     {
       "type": "paragraph",

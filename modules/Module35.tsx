@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module35/Lesson2_StepByStepApproac
 
 export const Module35: ModuleData = {
   id: 35,
-  title: "RC: Relationship",
+  title: "Relationship",
   category: "RC",
   unit: "Unit 10: Identifying the Perspectives",
   description: "Define the logical connection between two passages, paragraphs, or specific claims.",

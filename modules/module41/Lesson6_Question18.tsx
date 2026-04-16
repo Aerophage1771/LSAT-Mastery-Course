@@ -10,7 +10,7 @@ Though for the most part colonized societies have won their independence, in man
 
 export const Lesson6_Question18: Lesson = {
   id: "41-6",
-  title: "Question 18: 3rd-Party Viewpoint",
+  title: "Question 18: Third-Party Viewpoint",
   content: [
     { type: 'accordion', title: 'Read Passage', content: passageText },
     { type: 'h3', text: "Question Breakdown: PT-128-S-1-P-3-Q-18" },

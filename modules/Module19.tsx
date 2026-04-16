@@ -12,7 +12,7 @@ import { Lesson10_ReferenceGuide } from './module19/Lesson10_ReferenceGuide';
 
 export const Module19: ModuleData = {
   id: 19,
-  title: "Paradox / Explain",
+  title: "Paradox/Explain",
   category: "LR",
   unit: "Unit 6: Resolution",
   description: "Find the new fact that makes two clashing statements make sense.",

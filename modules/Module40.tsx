@@ -11,7 +11,7 @@ import { Lesson9_Question13 } from './module40/Lesson9_Question13';
 
 export const Module40: ModuleData = {
   id: 40,
-  title: "RC: Practice Passage 2",
+  title: "Practice Passage 2",
   category: "RC",
   unit: "Unit 12: Sample Passages",
   description: "A complete breakdown of a persuasive essay on bankruptcy law, analyzing argument structure, author attitude, and weaken strategies.",

@@ -55,7 +55,7 @@ export const Lesson2_StepByStepGuide: Lesson = {
       content: [
         {
           "type": "h2",
-          "text": "Step-by-Step Guide: Paradox / Explain"
+          "text": "Step-by-Step: Paradox/Explain"
         },
         {
           "type": "paragraph",

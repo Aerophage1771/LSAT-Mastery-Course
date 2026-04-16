@@ -4,7 +4,7 @@ import { Lesson2_StepByStepApproach } from './module34/Lesson2_StepByStepApproac
 
 export const Module34: ModuleData = {
   id: 34,
-  title: "RC: Passage Function",
+  title: "Passage Function",
   category: "RC",
   unit: "Unit 8: Summarizing the Passage",
   description: "Identify the author's primary reason for writing the text—their overarching intent and central task.",

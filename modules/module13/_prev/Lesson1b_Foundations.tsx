@@ -8,14 +8,14 @@ export const Lesson1b_Foundations: Lesson = {
     { type: 'h2', text: 'What Makes Apply Different' },
     {
       type: 'paragraph',
-      text: 'The defining feature of Principle-Apply is that **the principle is given to you in the stimulus**. You are not hunting for the hidden rule — you already have it. Your task is to find the specific scenario among the answer choices that correctly applies it. This is the opposite direction from Principle-Strengthen, where you are given a specific argument and must find the general rule that supports it.',
+      text: 'The defining feature of Principle-Apply is that **the principle is given to you in the stimulus**. You are not hunting for the hidden rule — you already have it. Your task is to find the specific scenario among the answer choices that correctly applies it. This is the opposite direction from Principle: Strengthen, where you are given a specific argument and must find the general rule that supports it.',
     },
     { type: 'paragraph', text: 'Think of it this way:' },
     {
       type: 'list',
       items: [
         '**Principle-Apply:** You have the *law*. Find the *case* it governs.',
-        '**Principle-Strengthen:** You have the *case*. Find the *law* that governs it.',
+        '**Principle: Strengthen:** You have the *case*. Find the *law* that governs it.',
       ],
     },
     {
@@ -23,14 +23,14 @@ export const Lesson1b_Foundations: Lesson = {
       text: "Because the principle is already provided, Principle-Apply questions reward **precision over creativity**. You don't need to abstract or generalize. You need to decompose the rule into its exact trigger and verdict, then systematically check each answer choice's case facts against that checklist. The correct answer will satisfy every part of the trigger and reach the verdict stated by the rule. Wrong answers will fail on at least one trigger element — and the LSAT designs those failures to be subtle.",
     },
 
-    { type: 'h3', text: 'Principle-Apply vs. Principle-Strengthen' },
+    { type: 'h3', text: 'Principle-Apply vs. Principle: Strengthen' },
     {
       type: 'paragraph',
       text: 'These two question types are mirror images. Confusing them leads to solving the wrong problem entirely. Here is a precise comparison:',
     },
     {
       type: 'table',
-      headers: ['Feature', 'Principle-Apply (This Module)', 'Principle-Strengthen (Module 12)'],
+      headers: ['Feature', 'Principle-Apply (This Module)', 'Principle: Strengthen (Module 12)'],
       rows: [
         [
           'What the stimulus contains',
@@ -69,7 +69,7 @@ export const Lesson1b_Foundations: Lesson = {
       type: 'callout',
       variant: 'default',
       title: 'The Direction Test',
-      text: 'If the stimulus is a general rule and the answer choices are specific scenarios, you are doing **Principle-Apply**. If the stimulus is a specific argument and the answer choices are general rules, you are doing **Principle-Strengthen**. Always check the direction before you start solving.',
+      text: 'If the stimulus is a general rule and the answer choices are specific scenarios, you are doing **Principle-Apply**. If the stimulus is a specific argument and the answer choices are general rules, you are doing **Principle: Strengthen**. Always check the direction before you start solving.',
     },
 
     { type: 'h3', text: 'Shared Principle Vocabulary' },

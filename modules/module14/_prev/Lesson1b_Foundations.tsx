@@ -22,7 +22,7 @@ export const Lesson1b_Foundations: Lesson = {
       type: 'table',
       headers: [
         'Feature',
-        'Principle-Strengthen (Module 13)',
+        'Principle: Strengthen (Module 13)',
         'Principle-Apply (Module 14)',
         'Principle-Generalization (This Module)',
       ],
@@ -67,7 +67,7 @@ export const Lesson1b_Foundations: Lesson = {
     },
     {
       type: 'paragraph',
-      text: 'The critical distinction between Principle-Strengthen and Principle-Generalization is subtle but important. Both move from concrete to abstract. However, in Strengthen, the stimulus is an *argument* (with a conclusion that needs support), and the principle must *justify the reasoning*. In Generalization, the stimulus is a *scenario* (often descriptive, without a formal conclusion), and the principle must *describe the pattern*. Strengthen asks "What rule makes this argument work?" Generalization asks "What rule does this situation illustrate?"',
+      text: 'The critical distinction between Principle: Strengthen and Principle-Generalization is subtle but important. Both move from concrete to abstract. However, in Strengthen, the stimulus is an *argument* (with a conclusion that needs support), and the principle must *justify the reasoning*. In Generalization, the stimulus is a *scenario* (often descriptive, without a formal conclusion), and the principle must *describe the pattern*. Strengthen asks "What rule makes this argument work?" Generalization asks "What rule does this situation illustrate?"',
     },
 
     { type: 'hr' },

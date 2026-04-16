@@ -9,7 +9,7 @@ import { Lesson7_ReferenceGuide } from './module14/Lesson7_ReferenceGuide';
 
 export const Module14: ModuleData = {
   id: 14,
-  title: "Principle - Generalization",
+  title: "Principle: Generalization",
   category: "LR",
   unit: "Unit 4: Principle",
   description: "Find the general rule or \"moral of the story\" that the specific situation in the stimulus best illustrates.",

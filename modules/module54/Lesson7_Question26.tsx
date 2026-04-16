@@ -8,7 +8,7 @@ The positivist’s mistake, as Dworkin points out, is assuming that the meaning 
 
 export const Lesson7_Question26: Lesson = {
   id: "54-7",
-  title: "Question 26: 3rd-Party Viewpoint",
+  title: "Question 26: Third-Party Viewpoint",
   content: [
     { type: 'accordion', title: 'Read Passage', content: passageText },
     { type: 'h3', text: "Question 26 Breakdown" },
@@ -20,7 +20,7 @@ export const Lesson7_Question26: Lesson = {
       "(D) The meaning of a law derives from jurists’ interpretations of that law. [39.0%] (Correct)",
       "(E) There is no legal fact of the matter when jurists have differing moral convictions about an issue. [21.0%]"
     ]},
-    { type: 'paragraph', text: "This is a 3rd-Party Viewpoint question. We need to infer the position of 'legal positivists' based only on their description in the passage." },
+    { type: 'paragraph', text: "This is a Third-Party Viewpoint question. We need to infer the position of 'legal positivists' based only on their description in the passage." },
     { type: 'callout', title: "Evidence Hunt", variant: "tip", text: "The second paragraph is our primary source. It states that for positivists, the meaning of law 'rests on social convention,' which is resolved by 'registering a consensus.' This means what jurists agree upon *is* the law. The final paragraph adds that the positivist's mistake is assuming meaning 'can only consist in what people think it means... a majority of the interpreter’s peers.'" },
     { type: 'breakdown', labels: { title: 'Option', text: 'Analysis' }, items: [
         { title: "(A)", text: "This is incorrect. The passage states positivists believe 'law and morality are wholly distinct.' They would not support using personal moral convictions.", badge: "Incorrect", badgeColor: "red" },
