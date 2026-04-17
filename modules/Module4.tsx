@@ -17,7 +17,7 @@ export const Module4: ModuleData = {
   title: "Parallel Reasoning",
   category: "LR",
   unit: "Unit 2: Analysis",
-  description: "Identify an argument's pattern. Then find an answer choice that follows the exact same logical structure.",
+  description: "Identify an argument's pattern and find an answer choice that follows the exact same logical structure. This major module marks a shift from evaluating content to abstracting arguments, serving as the foundational toolkit for the rest of Unit 2. Over 12 lessons, you will learn to strip away the subject matter to reveal the underlying logical skeleton.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,

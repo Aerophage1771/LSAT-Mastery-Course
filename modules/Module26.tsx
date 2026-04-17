@@ -7,7 +7,7 @@ export const Module26: ModuleData = {
   title: "RC: Author Attitude",
   category: "RC",
   unit: "Unit 10: Identifying the Perspectives",
-  description: "Identify the author's opinion, tone, or perspective regarding a specific subject.",
+  description: "Identify the author's opinion, tone, or perspective regarding a specific subject. This module transitions from mapping the passage's structure to analyzing the author's voice and subjective positioning within the text.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepApproach

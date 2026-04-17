@@ -7,7 +7,7 @@ export const Module34: ModuleData = {
   title: "RC: Passage Function",
   category: "RC",
   unit: "Unit 8: Summarizing the Passage",
-  description: "Identify the author's primary reason for writing the text—their overarching intent and central task.",
+  description: "Identify the author's primary reason for writing the text—their overarching intent and central task. This module concludes the passage summary unit by moving beyond the factual main point to analyze the author's deeper purpose and rhetorical goal.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepApproach

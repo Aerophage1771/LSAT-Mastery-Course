@@ -7,7 +7,7 @@ export const Module25: ModuleData = {
   title: "RC: Approach",
   category: "RC",
   unit: "Unit 9: Analyzing the Components",
-  description: "Describe the author's argumentative strategy or the overall structure of the passage.",
+  description: "Describe the author's argumentative strategy or the overall structure of the passage. This module bridges Main Idea comprehension with structural analysis, helping you unpack how the passage is built before you dive into Author Attitude and Passage Function.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepApproach
