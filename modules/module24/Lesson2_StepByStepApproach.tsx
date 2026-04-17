@@ -5,17 +5,19 @@ export const Lesson2_StepByStepApproach: Lesson = {
   title: "Step-by-Step Approach",
   content: [
     { type: 'h3', text: "Step-by-Step Approach" },
-    { type: 'h4', text: "Step 1: Locate the Principle in the Passage" },
-    { type: 'paragraph', text: "The question stem will almost always direct you to a specific idea. Look for phrases that name a concept, theory, or standard. Your first task is to return to the passage and locate the exact sentences that define and explain this principle. Do not rely on your memory." },
+    { type: 'h4', text: "Step 1: Read for the Overall Argument and Predict the Main Idea" },
+    { type: 'paragraph', text: "Your primary goal while reading is to understand the passage as a total argument. Before looking at the answer choices, synthesize the author's core point into a single, comprehensive sentence. If your prediction matches only one choice, you are almost certainly right." },
     
-    { type: 'h4', text: "Step 2: Isolate the Principle and Its Conditions" },
-    { type: 'paragraph', text: "Don't just read the principle—dissect it. Your goal is to create a simple checklist of the necessary conditions or criteria that must be met for the principle to apply." },
+    { type: 'h4', text: "Step 2: Evaluate Answer Choices Using a Two-Step Test" },
+    { type: 'paragraph', text: "Don't just read the answer choice—dissect it using a strict Two-Step Test: Accuracy and Comprehensiveness." },
     { type: 'list', items: [
-      "**Example:** If the passage defines a specific type of legal fraud as \"an intentional misrepresentation of a material fact,\" your checklist would be:\n1. Was there a misrepresentation?\n2. Was it intentional?\n3. Was the fact material (i.e., important)?"
+      "**1. The Accuracy Test:** Is every single word in this answer choice true according to the passage? If it includes a detail the passage never mentioned, or reverses the author's stance, eliminate it immediately.",
+      "**2. The Comprehensiveness Test:** Does this answer choice cover the entire passage, or just a small part of it? If it accurately summarizes paragraph 2, but ignores paragraphs 1, 3, and 4 entirely, it is too narrow. Eliminate it."
     ]},
+    { type: 'callout', variant: 'tip', title: 'Worked Example: The Two-Step Test', text: "Imagine a passage where Paragraph 1 introduces a new tax policy, Paragraph 2 explains its benefits, and Paragraph 3 argues it will ultimately fail due to loopholes.\n\n**Choice A:** \"The new tax policy will fail because of loopholes.\"\n*Analysis:* Passes the Accuracy Test (the author does argue this in Para 3). Fails the Comprehensiveness Test (it completely ignores the context and benefits discussed in Paras 1 and 2). This is a 'Too Narrow' trap.\n\n**Choice B:** \"A new tax policy has both benefits and flaws, but loopholes will prevent it from succeeding.\"\n*Analysis:* Passes the Accuracy Test AND passes the Comprehensiveness Test. This captures the full narrative arc." },
 
-    { type: 'h4', text: "Step 3: Apply the Checklist to Each Answer Choice" },
-    { type: 'paragraph', text: "Treat each answer choice as a separate case study. Go through your checklist from Step 1 and apply it to the scenario described. Your goal is to find the one answer choice that satisfies every single condition on your list. If a scenario fails even one condition, eliminate it immediately." },
+    { type: 'h4', text: "Step 3: Confirm Your Final Choice" },
+    { type: 'paragraph', text: "The answer you are left with should be both accurate and the most comprehensive summary. Treat each remaining answer choice as a separate case study. Your goal is to find the one answer choice that satisfies every single condition on your list. If a scenario fails even one condition, eliminate it immediately." },
     
     { type: 'hr' },
     { type: 'h3', text: "If You Get Stuck Between Two Choices..." },

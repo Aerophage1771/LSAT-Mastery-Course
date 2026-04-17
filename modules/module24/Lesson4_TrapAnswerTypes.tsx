@@ -12,25 +12,25 @@ export const Lesson4_TrapAnswerTypes: Lesson = {
       items: [
         { 
           title: "1. Inaccurate Information", 
-          text: "These choices contain a detail or claim that is factually incorrect according to the text. Often, the first half is correct, but the second half slips in an error.\n\n**The Flaw:** A Main Idea choice must be 100% accurate.", 
+          text: "These choices contain a detail or claim that is factually incorrect according to the text. Often, the first half is correct, but the second half slips in an error.\n\n**The Flaw:** A Main Idea choice must be 100% accurate.\n\n**Example Trap:** If the passage says that a new drug is effective for *some* patients, the trap answer might claim the drug is the *only* effective treatment.",
           badge: "Factual Error", 
           badgeColor: "red" 
         },
         { 
           title: "2. Outside the Scope or Too Extreme", 
-          text: "These choices make a claim that goes beyond the evidence. They might be **Too Broad** (applying an argument too widely) or **Too Extreme** (using words like \"always\" or \"prove\" when the author was cautious).\n\n**The Flaw:** Making a claim the author never supported.", 
+          text: "These choices make a claim that goes beyond the evidence. They might be **Too Broad** (applying an argument too widely) or **Too Extreme** (using words like \"always\" or \"prove\" when the author was cautious).\n\n**The Flaw:** Making a claim the author never supported.\n\n**Example Trap:** If the author argues that *one specific* banking regulation is outdated, the trap answer might claim that *all* banking regulations should be abolished.",
           badge: "Unsupported", 
           badgeColor: "red" 
         },
         { 
           title: "3. Too Narrow", 
-          text: "The most frequent distractor. The answer is factually correct, but it only summarizes one paragraph or one example rather than the whole text.\n\n**The Flaw:** Lacks the comprehensiveness to represent the entire passage.", 
+          text: "The most frequent distractor. The answer is factually correct, but it only summarizes one paragraph or one example rather than the whole text.\n\n**The Flaw:** Lacks the comprehensiveness to represent the entire passage.\n\n**Example Trap:** If a passage discusses both the causes and the effects of deforestation, a too-narrow answer would summarize only the causes, completely ignoring the effects discussed in the second half.",
           badge: "Partial Truth", 
           badgeColor: "red" 
         },
         { 
           title: "4. Opposing Viewpoint", 
-          text: "In debate passages, these choices accurately summarize the viewpoint the author is *arguing against*.\n\n**The Flaw:** Identifies the topic but misidentifies the author's stance.", 
+          text: "In debate passages, these choices accurately summarize the viewpoint the author is *arguing against*.\n\n**The Flaw:** Identifies the topic but misidentifies the author's stance.\n\n**Example Trap:** If the author spends the whole passage arguing *against* the traditional view that the dinosaurs were killed by a comet, the trap answer will perfectly summarize the comet theory as if it were the author's own conclusion.",
           badge: "Wrong Side", 
           badgeColor: "red" 
         }
