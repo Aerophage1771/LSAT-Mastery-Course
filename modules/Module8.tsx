@@ -17,7 +17,7 @@ export const Module8: ModuleData = {
   title: "Weaken",
   category: "LR",
   unit: "Unit 3: Evaluation",
-  description: "Find the fact that, if true, would undermine the argument or cast doubt on the conclusion.",
+  description: "Find the fact that, if true, would undermine the argument or cast doubt on the conclusion. Building on Evaluate, this module shifts you from identifying gaps to actively attacking them by introducing evidence that severs the logical link between premise and conclusion.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,

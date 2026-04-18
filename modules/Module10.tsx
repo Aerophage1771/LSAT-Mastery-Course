@@ -17,7 +17,7 @@ export const Module10: ModuleData = {
   title: "Sufficient Assumption",
   category: "LR",
   unit: "Unit 3: Evaluation",
-  description: "Provide a premise that, when added, makes the argument 100% logically valid.",
+  description: "Provide a premise that, when added, makes the argument 100% logically valid. Unlike Strengthen which just helps the argument, Sufficient Assumption demands mathematical certainty. You will learn to guarantee the conclusion by finding the missing link that forces it to be true.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,

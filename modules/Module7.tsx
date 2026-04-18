@@ -17,7 +17,7 @@ export const Module7: ModuleData = {
   title: "Evaluate the Argument",
   category: "LR",
   unit: "Unit 3: Evaluation",
-  description: "Find the one question that can prove an argument right or wrong.",
+  description: "Find the one question that can prove an argument right or wrong. This module bridges your Flaw analysis with Weaken and Strengthen by teaching you to isolate the specific vulnerability in an argument before attempting to manipulate it.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,

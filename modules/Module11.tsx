@@ -19,7 +19,7 @@ export const Module11: ModuleData = {
   title: "Necessary Assumption",
   category: "LR",
   unit: "Unit 3: Evaluation",
-  description: "Identify a premise the author must believe for the argument to have a chance of being valid.",
+  description: "Identify a premise the author must believe for the argument to have a chance of being valid. Unlike Sufficient Assumptions that guarantee the conclusion, Necessary Assumptions are the foundation that prevents the argument from immediately collapsing. You will learn the Negation Test to prove what the argument cannot survive without.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,

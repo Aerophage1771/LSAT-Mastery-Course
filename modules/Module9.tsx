@@ -18,7 +18,7 @@ export const Module9: ModuleData = {
   title: "Strengthen",
   category: "LR",
   unit: "Unit 3: Evaluation",
-  description: "Select a new fact that makes the conclusion more likely to follow from the premises.",
+  description: "Select a new fact that makes the conclusion more likely to follow from the premises. The exact opposite of Weaken, this module teaches you to protect the argument by adding evidence that directly repairs the specific vulnerability you identified in your initial analysis.",
   lessons: [
     Lesson1_Introduction,
     Lesson2_StepByStepGuide,
