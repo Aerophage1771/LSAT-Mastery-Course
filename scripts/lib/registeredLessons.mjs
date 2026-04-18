@@ -53,7 +53,7 @@ export const LEGACY_ROUTE_ALIASES = {
   59: 23,
   60: 10,
 };
-export const LR_CONTENT_MODULE_IDS = new Set([...Array.from({ length: 20 }, (_, index) => index + 1), 55, 59, 60]);
+export const LR_CONTENT_MODULE_IDS = new Set([...Array.from({ length: 20 }, (_, index) => index + 1), 55, 59]);
 export const QUESTION_BANK_MODULE_DIRS = new Set(['module48', 'module49', 'module53']);
 
 const LESSON_DECLARATION_REGEX =
