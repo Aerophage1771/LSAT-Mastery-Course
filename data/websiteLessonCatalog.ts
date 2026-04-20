@@ -8,7 +8,7 @@ export interface WebsiteLesson {
 export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   1: [
     { id: '1-1', title: 'MODULE 1: Argument Part' },
-    { id: '1-2', title: 'Step-by-Step Guide: Argument Part' },
+    { id: '1-2', title: 'Step-by-Step: Argument Part' },
     { id: '1-3', title: 'Section 3: Argument Part — Common Roles & Patterns' },
     { id: '1-4', title: 'Lesson 1: Premises vs. Conclusions (Argument Part)' },
     { id: '1-5', title: 'Lesson 2: The Intermediate Conclusion (Argument Part)' },
@@ -22,7 +22,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   2: [
     { id: '2-1', title: 'MODULE 2: Main Conclusion' },
-    { id: '2-2', title: 'Step-by-Step Guide: Main Conclusion' },
+    { id: '2-2', title: 'Step-by-Step: Main Conclusion' },
     { id: '2-3', title: 'Section 3: Main Conclusion — Common Patterns & Types' },
     { id: '2-4', title: 'Lesson 1: The Rebuttal (Main Conclusion)' },
     { id: '2-5', title: 'Lesson 2: The Prescription (Main Conclusion)' },
@@ -35,7 +35,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   3: [
     { id: '3-1', title: 'MODULE 3: Method of Reasoning' },
-    { id: '3-2', title: 'Step-by-Step Guide: Method of Reasoning' },
+    { id: '3-2', title: 'Step-by-Step: Method of Reasoning' },
     { id: '3-3', title: 'Section 3: Method of Reasoning — A Field Guide to Common Strategies' },
     { id: '3-4', title: 'Lesson 1: Refutation by Analogy (Method of Reasoning)' },
     { id: '3-5', title: 'Lesson 2: Process of Elimination (Method of Reasoning)' },
@@ -49,7 +49,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   4: [
     { id: '4-1', title: 'MODULE 4: Parallel Reasoning' },
-    { id: '4-2', title: 'Step-by-Step Guide: Parallel Reasoning' },
+    { id: '4-2', title: 'Step-by-Step: Parallel Reasoning' },
     { id: '4-3', title: 'Section 3: Parallel Reasoning — Common Argument Structures' },
     { id: '4-4', title: 'Lesson 1: The Conditional Chain (Parallel Reasoning)' },
     { id: '4-5', title: 'Lesson 2: The Eliminative Argument (Parallel Reasoning)' },
@@ -63,7 +63,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   5: [
     { id: '5-1', title: 'MODULE 5: Flaw' },
-    { id: '5-2', title: 'Step-by-Step Guide: Flaw in the Reasoning' },
+    { id: '5-2', title: 'Step-by-Step: Flaw in the Reasoning' },
     { id: '5-3', title: 'Section 3: Flaw — A Field Guide to Common Error Types' },
     { id: '5-4', title: 'Lesson 1: Correlation Does Not Equal Causation (Flaw)' },
     { id: '5-5', title: 'Lesson 2: The Numbers vs. Percentages Flaw (Flaw)' },
@@ -77,7 +77,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   6: [
     { id: '6-1', title: 'MODULE 6: Parallel Flaw' },
-    { id: '6-2', title: 'Step-by-Step Guide: Parallel Flaw' },
+    { id: '6-2', title: 'Step-by-Step: Parallel Flaw' },
     { id: '6-3', title: 'Section 3: Parallel Flaw — A Field Guide to Common Flaws' },
     { id: '6-4', title: 'Lesson 1: The Mistaken Reversal' },
     { id: '6-5', title: 'Lesson 2: From the Whole to the Part (The Fallacy of Division)' },
@@ -91,7 +91,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   7: [
     { id: '7-1', title: 'MODULE 7: Evaluate the Argument' },
-    { id: '7-2', title: 'Step-by-Step Guide: Evaluate the Argument' },
+    { id: '7-2', title: 'Step-by-Step: Evaluate the Argument' },
     { id: '7-3', title: 'Section 3: Evaluate the Argument — A Field Guide to Common Patterns' },
     { id: '7-4', title: 'Lesson 1: The Missing Baseline (Evaluate the Argument)' },
     { id: '7-5', title: 'Lesson 2: The Alternative Cause (Evaluate the Argument)' },
@@ -103,7 +103,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   8: [
     { id: '8-1', title: 'MODULE 8: Weaken' },
-    { id: '8-2', title: 'Step-by-Step Guide: Weaken' },
+    { id: '8-2', title: 'Step-by-Step: Weaken' },
     { id: '8-3', title: 'Section 3: Weaken — A Field Guide to Common Answer Types' },
     { id: '8-4', title: 'Lesson 1: The Alternative Cause' },
     { id: '8-5', title: 'Lesson 2: Questioning the Data' },
@@ -117,7 +117,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   9: [
     { id: '9-1', title: 'MODULE 9: Strengthen' },
-    { id: '9-2', title: 'Step-by-Step Guide: Strengthen' },
+    { id: '9-2', title: 'Step-by-Step: Strengthen' },
     { id: '9-3', title: 'Section 3: Strengthen — A Field Guide to Correct Answer Types' },
     { id: '9-4', title: 'Lesson 1: The \\' },
     { id: '9-5', title: 'Lesson 2: The \\' },
@@ -131,7 +131,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   10: [
     { id: '10-1', title: 'MODULE 10: Sufficient Assumption' },
-    { id: '10-2', title: 'Step-by-Step Guide: Sufficient Assumption' },
+    { id: '10-2', title: 'Step-by-Step: Sufficient Assumption' },
     { id: '10-3', title: 'Section 3: Sufficient Assumption — Answer Types' },
     { id: '10-4', title: 'Lesson 1: The Conditional Bridge' },
     { id: '10-5', title: 'Lesson 2: Bridging the ' },
@@ -145,7 +145,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   11: [
     { id: '11-1', title: 'MODULE 11: Necessary Assumption' },
-    { id: '11-2', title: 'Step-by-Step Guide: Necessary Assumption' },
+    { id: '11-2', title: 'Step-by-Step: Necessary Assumption' },
     { id: '11-3', title: 'Section 3: Necessary Assumption — A Field Guide to Common Assumption Types' },
     { id: '11-4', title: 'Lesson 1: The Linker (Necessary Assumption)' },
     { id: '11-5', title: 'Lesson 2: The Defender (Necessary Assumption)' },
@@ -158,8 +158,8 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
     { id: '11-ref', title: 'MODULE 11: Necessary Assumption Reference Guide' },
   ],
   12: [
-    { id: '12-1', title: 'MODULE 12: Principle-Strengthen' },
-    { id: '12-2', title: 'Step-by-Step Guide: Principle-Strengthen' },
+    { id: '12-1', title: 'MODULE 12: Principle: Strengthen' },
+    { id: '12-2', title: 'Step-by-Step: Principle: Strengthen' },
     { id: '12-3', title: 'Section 3: A Field Guide to Justifying Principles' },
     { id: '12-4', title: 'Lesson 1: Justifying a Value Judgment' },
     { id: '12-5', title: 'Lesson 2: Justifying a Prediction' },
@@ -168,12 +168,12 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
     { id: '12-9', title: 'Advanced Lesson 1: Justifying a Risk-Averse Choice' },
     { id: '12-10', title: 'Advanced Lesson 2: Navigating Constraints' },
     { id: '12-11', title: 'Advanced Lesson 3: Justifying a Chain of Reasoning' },
-    { id: '12-adv', title: 'Advanced Concepts: Difficult Principle-Strengthen Questions' },
-    { id: '12-ref', title: 'MODULE 12: Principle-Strengthen Reference Guide' },
+    { id: '12-adv', title: 'Advanced Concepts: Difficult Principle: Strengthen Questions' },
+    { id: '12-ref', title: 'MODULE 12: Principle: Strengthen Reference Guide' },
   ],
   13: [
-    { id: '13-1', title: 'MODULE 13: Principle - Apply' },
-    { id: '13-2', title: 'Step-by-Step Guide: Principle-Apply' },
+    { id: '13-1', title: 'MODULE 13: Principle: Apply' },
+    { id: '13-2', title: 'Step-by-Step: Principle: Apply' },
     { id: '13-3', title: 'Section 3: Principle-Apply — A Field Guide to Correct Answers' },
     { id: '13-4', title: 'Lesson 1: The Perfect Match' },
     { id: '13-5', title: 'Lesson 2: The Logical Flip' },
@@ -182,11 +182,11 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
     { id: '13-9', title: 'Advanced Lesson 2: Bridging the Nested Gap' },
     { id: '13-10', title: 'Advanced Lesson 3: The Near-Perfect Counterfeit' },
     { id: '13-adv', title: 'Advanced Concepts: Difficult Principle-Apply Questions' },
-    { id: '13-ref', title: 'MODULE 13: Principle - Apply Reference Guide' },
+    { id: '13-ref', title: 'MODULE 13: Principle: Apply Reference Guide' },
   ],
   14: [
-    { id: '14-1', title: 'MODULE 14: Principle - Generalization' },
-    { id: '14-2', title: 'Step-by-Step Guide: Principle-Generalization' },
+    { id: '14-1', title: 'MODULE 14: Principle: Generalization' },
+    { id: '14-2', title: 'Step-by-Step: Principle: Generalization' },
     { id: '14-3', title: 'Section 3: Principle-Generalization — A Field Guide to Correct Answer Types' },
     { id: '14-4', title: 'Lesson 1: The Behavioral Principle' },
     { id: '14-5', title: 'Lesson 2: The Unintended Consequence' },
@@ -199,7 +199,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   15: [
     { id: '15-1', title: 'MODULE 15: Fill in the Blank' },
-    { id: '15-2', title: 'Step-by-Step Guide: Fill in the Blank' },
+    { id: '15-2', title: 'Step-by-Step: Fill in the Blank' },
     { id: '15-3', title: 'Section 3: Fill in the Blank — A Field Guide to Correct Answers' },
     { id: '15-4', title: 'Lesson 1: Completing the Causal Chain' },
     { id: '15-5', title: 'Lesson 2: Completing the Analogy' },
@@ -212,7 +212,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   16: [
     { id: '16-1', title: 'MODULE 16: Most Strongly Supported' },
-    { id: '16-2', title: 'Step-by-Step Guide: Most Strongly Supported' },
+    { id: '16-2', title: 'Step-by-Step: Most Strongly Supported' },
     { id: '16-3', title: 'Section 3: Most Strongly Supported — A Field Guide to Common Inference Patterns' },
     { id: '16-4', title: 'Lesson 1: The Direct Consequence' },
     { id: '16-5', title: 'Lesson 2: The Necessary Reconciliation' },
@@ -224,7 +224,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   17: [
     { id: '17-1', title: 'MODULE 17: Must Be True' },
-    { id: '17-2', title: 'Step-by-Step Guide: Must Be True' },
+    { id: '17-2', title: 'Step-by-Step: Must Be True' },
     { id: '17-3', title: 'Section 3: Must Be True — A Field Guide to Correct Answer Types' },
     { id: '17-4', title: 'Lesson 1: The Conditional Chain' },
     { id: '17-5', title: 'Lesson 2: The Quantifier Combination' },
@@ -237,7 +237,7 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
   ],
   18: [
     { id: '18-1', title: 'MODULE 18: Must Be False' },
-    { id: '18-2', title: 'Step-by-Step Guide: Must Be False' },
+    { id: '18-2', title: 'Step-by-Step: Must Be False' },
     { id: '18-3', title: 'Section 3: Must Be False — A Field Guide to Contradictions' },
     { id: '18-4', title: 'Lesson 1: The Direct Contradiction' },
     { id: '18-5', title: 'Lesson 2: The Mathematical Contradiction' },
@@ -248,9 +248,9 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
     { id: '18-adv', title: 'Advanced Concepts: Difficult Must Be False Questions' },
   ],
   19: [
-    { id: '19-1', title: 'MODULE 19: Paradox / Explain' },
-    { id: '19-2', title: 'Step-by-Step Guide: Paradox / Explain' },
-    { id: '19-3', title: 'Section 3: Paradox / Explain — A Field Guide to Resolution Patterns' },
+    { id: '19-1', title: 'MODULE 19: Paradox/Explain' },
+    { id: '19-2', title: 'Step-by-Step: Paradox/Explain' },
+    { id: '19-3', title: 'Section 3: Paradox/Explain — A Field Guide to Resolution Patterns' },
     { id: '19-4', title: 'Lesson 1: The Alternative Cause (Self-Selection)' },
     { id: '19-5', title: 'Lesson 2: Distinguishing Concepts (Rate vs. Number)' },
     { id: '19-6', title: 'Lesson 3: The Hidden Downside (When Solutions Backfire)' },
@@ -261,9 +261,9 @@ export const websiteLessonCatalog: Record<number, WebsiteLesson[]> = {
     { id: '19-adv', title: 'Advanced Concepts: Difficult Paradox Questions' },
   ],
   20: [
-    { id: '20-1', title: 'MODULE 20: Agree / Disagree (Point at Issue)' },
-    { id: '20-2', title: 'Step-by-Step Guide: Agree / Disagree' },
-    { id: '20-3', title: 'Section 3: Agree / Disagree — A Field Guide to Common Patterns' },
+    { id: '20-1', title: 'MODULE 20: Agree/Disagree (Point at Issue)' },
+    { id: '20-2', title: 'Step-by-Step: Agree/Disagree (Point at Issue)' },
+    { id: '20-3', title: 'Section 3: Agree/Disagree — A Field Guide to Common Patterns' },
     { id: '20-4', title: 'Lesson 1: The Causal Disagreement' },
     { id: '20-5', title: 'Lesson 2: The Disputed Standard' },
     { id: '20-6', title: 'Lesson 3: The Prescriptive Debate' },

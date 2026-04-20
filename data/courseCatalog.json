@@ -3,7 +3,7 @@
     "title": "Argument Part",
     "lessons": [
       "Introduction to Argument Part",
-      "Step-by-Step Guide: Argument Part",
+      "Step-by-Step: Argument Part",
       "Common Roles & Patterns",
       "Lesson 1: Premises vs. Conclusions",
       "Lesson 2: The Intermediate Conclusion",
@@ -20,7 +20,7 @@
     "title": "Main Conclusion",
     "lessons": [
       "Introduction to Main Conclusion",
-      "Step-by-Step Guide: Main Conclusion",
+      "Step-by-Step: Main Conclusion",
       "Common Patterns & Types",
       "Lesson 1: The Rebuttal",
       "Lesson 2: The Prescription",
@@ -36,7 +36,7 @@
     "title": "Method of Reasoning",
     "lessons": [
       "Introduction to Method of Reasoning",
-      "Step-by-Step Guide: Method of Reasoning",
+      "Step-by-Step: Method of Reasoning",
       "A Field Guide to Common Strategies",
       "Lesson 1: Refutation by Analogy",
       "Lesson 2: Process of Elimination",
@@ -53,7 +53,7 @@
     "title": "Parallel Reasoning",
     "lessons": [
       "Introduction to Parallel Reasoning",
-      "Step-by-Step Guide: Parallel Reasoning",
+      "Step-by-Step: Parallel Reasoning",
       "Common Argument Structures",
       "Lesson 1: The Conditional Chain",
       "Lesson 2: The Eliminative Argument",
@@ -70,7 +70,7 @@
     "title": "Flaw",
     "lessons": [
       "Introduction to Flaw",
-      "Step-by-Step Guide: Flaw",
+      "Step-by-Step: Flaw",
       "A Field Guide to Common Flaws",
       "Lesson 1: Causal Flaw (Correlation vs. Causation)",
       "Lesson 2: Numbers vs. Percentages Flaw",
@@ -87,7 +87,7 @@
     "title": "Parallel Flaw",
     "lessons": [
       "Introduction to Parallel Flaw",
-      "Step-by-Step Guide: Parallel Flaw",
+      "Step-by-Step: Parallel Flaw",
       "Lesson 1: Mistaken Negation",
       "Lesson 2: The Composition Flaw",
       "Lesson 3: The 'Compared to What?' Flaw",
@@ -104,7 +104,7 @@
     "title": "Evaluate the Argument",
     "lessons": [
       "Introduction to Evaluate the Argument",
-      "Step-by-Step Guide: Evaluate the Argument",
+      "Step-by-Step: Evaluate the Argument",
       "Lesson 1: The Missing Baseline",
       "Lesson 2: Unrepresentative Samples",
       "Lesson 3: Evaluating Causal Claims",
@@ -120,7 +120,7 @@
     "title": "Weaken",
     "lessons": [
       "Introduction to Weaken",
-      "Step-by-Step Guide: Weaken",
+      "Step-by-Step: Weaken",
       "Lesson 1: The Scope Shift Flaw",
       "Lesson 2: The Baseline Flaw",
       "Lesson 3: Attacking the Data",
@@ -136,7 +136,7 @@
     "title": "Strengthen",
     "lessons": [
       "Introduction to Strengthen",
-      "Step-by-Step Guide: Strengthen",
+      "Step-by-Step: Strengthen",
       "Lesson 1: Strengthening Causal Claims",
       "Lesson 2: Strengthening Arguments with Numbers",
       "Lesson 3: Strengthening Comparative Claims",
@@ -154,7 +154,7 @@
     "title": "Sufficient Assumption",
     "lessons": [
       "Introduction to Sufficient Assumption",
-      "Step-by-Step Guide: Sufficient Assumption",
+      "Step-by-Step: Sufficient Assumption",
       "Lesson 1: The Concept Link",
       "Lesson 2: The Exclusivity Rule",
       "Lesson 3: The Binary Assumption",
@@ -171,7 +171,7 @@
     "title": "Necessary Assumption",
     "lessons": [
       "Introduction to Necessary Assumption",
-      "Step-by-Step Guide: Necessary Assumption",
+      "Step-by-Step: Necessary Assumption",
       "Lesson 1: The 'Key Ingredient' Assumption",
       "Lesson 2: The 'Definitional Gap' Assumption",
       "Lesson 3: The 'Only Way' Assumption",
@@ -187,10 +187,10 @@
     ]
   },
   "12": {
-    "title": "Principle-Strengthen",
+    "title": "Principle: Strengthen",
     "lessons": [
-      "Introduction to Principle-Strengthen",
-      "Step-by-Step Guide: Principle-Strengthen",
+      "Introduction to Principle: Strengthen",
+      "Step-by-Step: Principle: Strengthen",
       "Lesson 1: Strengthening with a Normative Bridge",
       "Lesson 2: Strengthening with an Efficiency Principle",
       "Lesson 3: Strengthening with a Principle of Accountability",
@@ -199,10 +199,10 @@
     ]
   },
   "13": {
-    "title": "Principle - Apply",
+    "title": "Principle: Apply",
     "lessons": [
-      "Introduction to Principle - Apply",
-      "Step-by-Step Guide: Principle - Apply",
+      "Introduction to Principle: Apply",
+      "Step-by-Step: Principle: Apply",
       "Lesson 1: Direct Application",
       "Lesson 2: Contrapositive Application",
       "Lesson 3: Definitional Checklist",
@@ -211,10 +211,10 @@
     ]
   },
   "14": {
-    "title": "Principle - Generalization",
+    "title": "Principle: Generalization",
     "lessons": [
-      "Introduction to Principle - Generalization",
-      "Step-by-Step Guide: Principle - Generalization",
+      "Introduction to Principle: Generalization",
+      "Step-by-Step: Principle: Generalization",
       "Lesson 1: Experiment Generalization",
       "Lesson 2: Contextual Value",
       "Lesson 3: Unintended Consequences",
@@ -226,7 +226,7 @@
     "title": "Fill in the Blank",
     "lessons": [
       "Introduction to Fill in the Blank",
-      "Step-by-Step Guide: Fill in the Blank",
+      "Step-by-Step: Fill in the Blank",
       "Lesson 1: Mechanistic Chain",
       "Lesson 2: Analogy",
       "Lesson 3: Problem and Solution",
@@ -239,7 +239,7 @@
     "title": "Most Strongly Supported",
     "lessons": [
       "Introduction to Most Strongly Supported",
-      "Step-by-Step Guide: Most Strongly Supported",
+      "Step-by-Step: Most Strongly Supported",
       "Lesson 1: Synthesis of Causal Claims",
       "Lesson 2: Applying Strict Definitions",
       "Lesson 3: Causal Chaining",
@@ -255,7 +255,7 @@
     "title": "Must Be True",
     "lessons": [
       "Introduction to Must Be True",
-      "Step-by-Step Guide: Must Be True",
+      "Step-by-Step: Must Be True",
       "Lesson 1: Conditional Logic",
       "Lesson 2: Quantifiers",
       "Lesson 3: Numerical Reasoning",
@@ -271,7 +271,7 @@
     "title": "Must Be False",
     "lessons": [
       "Introduction to Must Be False",
-      "Step-by-Step Guide: Must Be False",
+      "Step-by-Step: Must Be False",
       "Lesson 1: Conditional Breakers",
       "Lesson 2: Quantifier Clashes",
       "Lesson 3: Exclusive Boundaries",
@@ -281,10 +281,10 @@
     ]
   },
   "19": {
-    "title": "Paradox / Explain",
+    "title": "Paradox/Explain",
     "lessons": [
       "Introduction to Explain / Resolve",
-      "Step-by-Step Guide: Explain / Resolve",
+      "Step-by-Step: Explain/Resolve",
       "Lesson 1: Numbers vs. Percentages",
       "Lesson 2: Selection Bias",
       "Lesson 3: Causal Mechanisms",
@@ -296,10 +296,10 @@
     ]
   },
   "20": {
-    "title": "Agree / Disagree (Point at Issue)",
+    "title": "Agree/Disagree (Point at Issue)",
     "lessons": [
       "Introduction to Point at Issue",
-      "Step-by-Step Guide: Point at Issue",
+      "Step-by-Step: Agree/Disagree (Point at Issue)",
       "Lesson 1: Disagreement - Definitional Rule",
       "Lesson 2: Disagreement - Explanatory Cause",
       "Lesson 3: Point of Agreement - Shared Assumption",
@@ -337,76 +337,135 @@
     ]
   },
   "23": {
-    "title": "RC: Main Idea",
-    "lessons": ["Introduction", "Step-by-Step Approach", "Pattern Recognition", "Trap Answer Types"]
+    "title": "Main Idea",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Main Idea",
+      "Pattern Recognition",
+      "Trap Answer Types"
+    ]
   },
   "24": {
-    "title": "RC: Inference",
-    "lessons": ["Introduction", "Step-by-Step Approach", "Pattern Recognition", "Trap Answer Types"]
+    "title": "Inference",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Inference",
+      "Pattern Recognition",
+      "Trap Answer Types"
+    ]
   },
   "25": {
-    "title": "RC: Analogy",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Analogy",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Analogy"
+    ]
   },
   "26": {
-    "title": "RC: Application",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Application",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Application"
+    ]
   },
   "27": {
-    "title": "RC: Approach",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Approach",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Approach"
+    ]
   },
   "28": {
-    "title": "RC: Author Attitude",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Author Attitude",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Author Attitude"
+    ]
   },
   "29": {
-    "title": "RC: Author Viewpoint",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Author Viewpoint",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Author Viewpoint"
+    ]
   },
   "30": {
-    "title": "RC: Complete the Passage",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Complete the Passage",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Complete the Passage"
+    ]
   },
   "31": {
-    "title": "RC: 3rd-Party Viewpoint",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Third-Party Viewpoint",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Third-Party Viewpoint"
+    ]
   },
   "32": {
-    "title": "RC: Passage Principle",
-    "lessons": ["Introduction", "Step-by-Step Approach", "Pattern Recognition"]
+    "title": "Passage Principle",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Passage Principle",
+      "Pattern Recognition"
+    ]
   },
   "33": {
-    "title": "RC: Phrase Meaning",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Phrase Meaning",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Phrase Meaning"
+    ]
   },
   "34": {
-    "title": "RC: Phrase Function",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Phrase Function",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Phrase Function"
+    ]
   },
   "35": {
-    "title": "RC: Paragraph Function",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Paragraph Function",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Paragraph Function"
+    ]
   },
   "36": {
-    "title": "RC: Passage Function",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Passage Function",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Passage Function"
+    ]
   },
   "37": {
-    "title": "RC: Relationship",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Relationship",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Relationship"
+    ]
   },
   "38": {
-    "title": "RC: Structure",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Structure",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Structure"
+    ]
   },
   "39": {
-    "title": "RC: Title",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Title",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Title"
+    ]
   },
   "40": {
-    "title": "RC: Weaken-Strengthen",
-    "lessons": ["Introduction", "Step-by-Step Approach"]
+    "title": "Weaken-Strengthen",
+    "lessons": [
+      "Introduction",
+      "Step-by-Step: Weaken-Strengthen"
+    ]
   },
   "41": {
     "title": "RC Practice Passage 1: Obasan",
@@ -516,7 +575,9 @@
   },
   "49": {
     "title": "RC Quick Reference Guide",
-    "lessons": ["Framework for LSAT Reading Comprehension Question Types"]
+    "lessons": [
+      "Framework for LSAT Reading Comprehension Question Types"
+    ]
   },
   "50": {
     "title": "Advanced Passage 1: Mathematics as Language",
