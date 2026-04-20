@@ -17,3 +17,7 @@
 ## Phase 3
 
 - `21-26`: long-tail hardening, visibility, and maintenance work
+
+## Phase 4
+
+- `27-29`: curriculum coherence and depth work
