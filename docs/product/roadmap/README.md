@@ -21,6 +21,16 @@
 4. [10-lesson-prerequisite-clarity.md](./10-lesson-prerequisite-clarity.md)
 5. [11-module-landing-page-quality.md](./11-module-landing-page-quality.md)
 
+## Jules Campaign Inputs
+
+Roadmap-bet campaigns from the Jules ledger scoped to LSAT Mastery Course. Lift decisions into numbered bet files above, then close the campaigns.
+
+- **Question Integrity Roadmap Bets** (`campaign-question-integrity-roadmap-bets-07b02f1af2`) — 3 PRs, medium confidence. Duplication risk and stronger explanation patterns.
+- **LSAT Roadmap Bets** (`campaign-lsat-roadmap-bets-3a0c73c9a7`) — 5 PRs, medium confidence. Shared with Editorial (LSAT Content Creation). Content-sequence realism and question-bank integrity.
+- **Learning Platform Roadmap Bets** (`campaign-learning-roadmap-bets-b04f13334a`) — 3 PRs, medium confidence. Shared with DataToolkit. Curriculum depth and question-bank balance for learning products.
+
+See [../../../../../apps/jules-app/data/campaigns.json](../../../../../apps/jules-app/data/campaigns.json) and [../../../../../docs/product/jules-campaign-analysis.md](../../../../../docs/product/jules-campaign-analysis.md).
+
 ## Document Map
 
 - [vision-and-decision-filter.md](./vision-and-decision-filter.md)
