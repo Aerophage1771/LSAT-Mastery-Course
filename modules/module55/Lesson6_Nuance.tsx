@@ -47,6 +47,14 @@ export const Lesson6_Nuance: Lesson = {
     },
 
     { type: 'h4', text: 'LSAT in Action: The Modal Fallacy' },
+    {
+      type: 'blockquote',
+      text: 'Parents who wish to provide a strong foundation for the musical ability of their children should provide them with a good musical education. Since formal instruction is often a part of a good musical education, parents who wish to provide this strong foundation need to ensure that their children receive formal instruction.',
+    },
+    {
+      type: 'paragraph',
+      text: '{{+**Try this:** Attempt the question before reading the analysis below.+}}',
+    },
     { type: 'h3', text: 'Explanation' },
     { type: 'paragraph', text: '**Goal:** Analyze the logical structure.' },
     { type: 'h4', text: 'Argument Breakdown' },
@@ -120,6 +128,14 @@ export const Lesson6_Nuance: Lesson = {
     },
 
     { type: 'h4', text: 'LSAT in Action: Possibility vs. Certainty' },
+    {
+      type: 'blockquote',
+      text: 'Caffeine can cause jitters. John drank caffeine. Therefore, John will definitely have jitters.',
+    },
+    {
+      type: 'paragraph',
+      text: '{{+**Try this:** Attempt the question before reading the analysis below.+}}',
+    },
     { type: 'h3', text: 'Explanation' },
     { type: 'paragraph', text: '**Goal:** Identify the flaw in moving from possibility to certainty.' },
     { type: 'h4', text: 'Argument Breakdown' },
