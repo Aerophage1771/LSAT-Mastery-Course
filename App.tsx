@@ -6,6 +6,7 @@ import { Dashboard } from './components/Dashboard';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { SearchDialog } from './components/SearchDialog';
 import { QuestionBank } from './components/QuestionBank';
+import { NegationLessonVariantsPreview } from './components/NegationLessonVariantsPreview';
 import { ProgressProvider, useProgressContext } from './contexts/ProgressContext';
 import { moduleRegistry, loadModule, getAllModuleMetadata } from './modules/registry';
 import inventoryData from './docs/operations/audits/invented-questions-inventory.json';
@@ -274,6 +275,7 @@ function AppRoutes() {
       <Routes>
         <Route path="/" element={<DashboardPage loadedModules={loadedModules} />} />
         <Route path="/question-bank" element={<QuestionBank drillCrossReferences={drillCrossReferences} />} />
+        <Route path="/variants/negation" element={<NegationLessonVariantsPreview />} />
         <Route path="/module/:moduleId" element={<ModulePage loadedModules={loadedModules} />} />
         <Route path="/module/:moduleId/lesson/:lessonId" element={<ModulePage loadedModules={loadedModules} />} />
       </Routes>
