@@ -26,12 +26,10 @@
 - The question bank is standalone, not a numbered module route.
 - Route module ids are canonical. The live route set is now `1-57`, with `Module 10` reserved for the standalone `Causal Reasoning` framework module.
 - Legacy content module ids are remapped through `utils/courseCatalog.ts` once the public route numbering diverges from source-module ids.
-  - `10 -> 60`
-  - `11 -> 10` through `21 -> 20`
-  - `22 -> 55`
-  - `23 -> 59`
-  - `24 -> 21` through `50 -> 47` (consecutive mapping)
-  - `51 -> 50`, `52 -> 51`, `53 -> 52`, `54 -> 54`, `55 -> 56`, `56 -> 57`, `57 -> 58`
+  - `21 -> 55`
+  - `22 -> 59`
+  - `23 -> 21` through `49 -> 47` (consecutive mapping)
+  - `50 -> 50`, `51 -> 51`, `52 -> 52`, `53 -> 54`, `54 -> 56`, `55 -> 57`, `56 -> 58`
 - Lesson files under `modules/moduleN/` are data files exporting lesson objects. They are not React components.
 - This repo is now an archived curriculum-reference surface. Treat DataToolkit as the active course owner and the website as the delivery surface unless you are explicitly auditing historical content or legacy export assumptions here.
 
@@ -66,7 +64,7 @@ Generated reports live under `docs/operations/audits/`.
 - `utils/courseCatalog.ts`: route/content module mapping and canonical naming after the `Module 10: Causal Reasoning` insertion
 - `data/courseCatalog.json`: canonical lesson titles shown in navigation and exports
 - `data/websiteLessonCatalog.ts`: generated website-facing lesson-title snapshot that should stay aligned with routed lesson naming
-- `utils/export.ts` and `scripts/export-website-release.mjs`: canonical-course and website-release contract surfaces consumed downstream
+- `utils/export.ts`: canonical-course and website-release contract surfaces consumed downstream
 - `App.tsx` and `components/QuestionBank.tsx`: runtime consumers of generated audit data
 - `components/LessonViewer.tsx`: renderer behavior for all lesson block types
 - `modules/Module55.tsx` and `modules/Module59.tsx`: legacy content-module mapping points used by route remapping logic (not a one-to-one route/content relationship)

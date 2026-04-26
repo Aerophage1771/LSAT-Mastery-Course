@@ -15,12 +15,10 @@
 - The live app surfaces are the dashboard at `/`, lesson routes at `/module/:moduleId/lesson/:lessonId`, and the standalone question bank at `/question-bank`.
 - Route modules now use the live `1-57` sequence, with `Module 10: Causal Reasoning` inserted directly between `Strengthen` and `Sufficient Assumption`.
 - Legacy content-module remapping is applied for the route catalog through `utils/courseCatalog.ts`:
-  - `10 -> 60`
-  - `11 -> 10` through `21 -> 20`
-  - `22 -> 55`
-  - `23 -> 59`
-  - `24 -> 21` through `50 -> 47` (consecutive mapping)
-  - `51 -> 50`, `52 -> 51`, `53 -> 52`, `54 -> 54`, `55 -> 56`, `56 -> 57`, `57 -> 58`
+  - `21 -> 55`
+  - `22 -> 59`
+  - `23 -> 21` through `49 -> 47` (consecutive mapping)
+  - `50 -> 50`, `51 -> 51`, `52 -> 52`, `53 -> 54`, `54 -> 56`, `55 -> 57`, `56 -> 58`
 - Progress is stored in `localStorage`.
 - The shell includes search, export flows, a style guide modal, and a roadmap modal.
 - The question bank is sourced from `modules/module48`, `modules/module49`, and `modules/module53`.
@@ -54,7 +52,6 @@ The Vite dev server binds to `http://localhost:8002` when you explicitly run it 
 | `npm run inventory:invented` | Regenerate the invented-card inventory          |
 | `npm run audit:lr-cards`     | Regenerate the LR card requirements audit       |
 | `npm run docs:course-map`    | Regenerate the course content map               |
-| `node scripts/export-website-release.mjs` | Emit the website release artifact from current module source |
 | `npm run format`             | Run Prettier                                    |
 
 ## Repo Map
@@ -67,7 +64,6 @@ The Vite dev server binds to `http://localhost:8002` when you explicitly run it 
 - `data/author-attitude-corpus/`: generated text corpus of RC `Author Attitude` questions plus the standard-of-proof breakdown file derived from `DataToolkit`
 - `utils/courseCatalog.ts`: route/content module mapping and canonical title helpers
 - `utils/export.ts`: text, PDF, CSV, full-course, canonical-course, and interchange-course export builders
-- `scripts/export-website-release.mjs`: website release exporter that serializes the current routed curriculum into the downstream website artifact
 - `scripts/`: validation, inventory, and audit generators
 - `docs/`: active product, technical, operations, and archived documentation
 

@@ -56,12 +56,10 @@
 - Canonical route modules now use the live `1-57` sequence, with `Module 10` reserved for the standalone `Causal Reasoning` framework module.
 - Content modules are not identical to route modules in every case.
 - Current legacy mappings:
-  - route `10` uses content module `60`
-  - route `11` through `21` use content modules `10` through `20`
-  - route `22` uses content module `55`
-  - route `23` uses content module `59`
-  - route `24` through `50` use content modules `21` through `47`
-  - route `51` through `57` continue the advanced-source remap through content modules `50`, `51`, `52`, `54`, `56`, `57`, and `58`
+  - route `21` uses content module `55`
+  - route `22` uses content module `59`
+  - route `23` through `49` use content modules `21` through `47`
+  - route `50` through `56` continue the advanced-source remap through content modules `50`, `51`, `52`, `54`, `56`, `57`, and `58`
 - Do not change route ids casually. They affect deep links, progress keys, canonical naming, and audit outputs.
 
 ## Data Flow

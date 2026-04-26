@@ -13,7 +13,7 @@
 2. Confirm whether the route uses a legacy content module mapping.
 3. Edit the lesson content file under `modules/moduleN/`.
 4. If the lesson title or order changed, update `data/courseCatalog.json`.
-5. If the change affects downstream packaging, review `utils/export.ts`, `data/websiteLessonCatalog.ts`, and `scripts/export-website-release.mjs` for alignment.
+5. If the change affects downstream packaging, review `utils/export.ts` and `data/websiteLessonCatalog.ts` for alignment.
 6. Run the smallest relevant validation set.
 7. Regenerate any audits your change affects.
 
@@ -36,7 +36,6 @@
 - `npm run inventory:invented` when touching lesson 1-3 content or audit tooling
 - `npm run validate:questions` when touching question-bank or lesson drill usage
 - `npm run audit:lr-cards` when changing LR lesson card presence or naming
-- `node scripts/export-website-release.mjs` when changing route naming, lesson naming, or export-relevant content structure
 
 ## Important Constraints
 
