@@ -11,7 +11,7 @@
 
 - The repo already delivers a client-only course shell, lesson routes, a question bank, validation scripts, and export formats backed by repository content.
 - The course becomes easier to trust, easier to validate, and easier to operate without inventing backend systems the repo does not have.
-- Archived duplicate roadmap drafts now live under `docs/archive/roadmaps/` and are not part of the active `07-26` roadmap library.
+- Archived duplicate roadmap drafts now live under `docs/archive/roadmaps/` and are not part of the active `07-29` roadmap library.
 
 ## Top 5 Active Bets
 
@@ -41,4 +41,5 @@ See [../../../../../apps/jules-app/data/campaigns.json](../../../../../apps/jule
 - `12-16-*.md` cover study planning, search entrypoints, explanation depth, export trust, and offline/resume reliability
 - `17-21-*.md` cover catalog audits, progress milestones, practice-set assembly, student confidence loops, and keyboard-speed controls
 - `22-26-*.md` cover naming enforcement, style-guide parity, release verification, learning-analytics boundaries, and DataToolkit bridge quality
+- `27-29-*.md` cover answer-key drift, question deduplication, and explanation coverage matrix
 - Archived duplicate roadmap drafts: [../../archive/roadmaps/README.md](../../archive/roadmaps/README.md)
