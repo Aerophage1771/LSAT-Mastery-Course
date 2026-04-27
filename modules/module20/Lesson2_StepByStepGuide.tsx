@@ -52,11 +52,23 @@ export const Lesson2_StepByStepGuide: Lesson = {
     { type: 'h3', text: 'Worked Method Snapshot' },
     {
       type: 'paragraph',
+      text: 'Consider the following illustrative dialogue:',
+    },
+    {
+      type: 'blockquote',
+      text: '**Chen:** Mandatory recycling programs are the most effective way to reduce landfill waste. The data clearly shows that cities with these mandates divert significantly more tonnage than those without them.\n\n**Dara:** I disagree. The apparent success in those cities is really driven by their parallel composting initiatives. Voluntary recycling incentives could achieve the same waste reduction without the heavy-handed mandates.'
+    },
+    {
+      type: 'paragraph',
       text: 'Start by mapping Chen and Dara separately. Chen is committed to the claim that mandatory recycling programs are the most effective way to reduce landfill waste. Dara rejects that and argues that the apparent success is really driven by composting and that voluntary incentives could do just as well.',
     },
     {
       type: 'paragraph',
       text: 'Once both positions are written out, the point at issue becomes clear: whether mandatory recycling programs are in fact the most effective tool. Other statements in the dialogue may be discussed or implied, but unless both speakers are committed on opposite sides, they are not the answer.',
+    },
+    {
+      type: 'paragraph',
+      text: 'For instance, if an answer choice suggested "composting initiatives are necessary for waste reduction," Chen never mentions composting (Unknown), so we can immediately eliminate it based on the Overlap Test.',
     },
     { type: 'hr' },
     { type: 'h3', text: 'Wrong Answer Patterns' },

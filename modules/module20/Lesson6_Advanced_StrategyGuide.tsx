@@ -98,6 +98,24 @@ export const Lesson6_Advanced_StrategyGuide: Lesson = {
     },
     { type: 'paragraph', text: '<br/><br/><br/>' },
     { type: 'hr' },
+    {
+      type: 'paragraph',
+      text: '**Try this:** Attempt the question before reading the analysis below.'
+    },
+    {
+      type: 'question-card',
+      questionType: 'Point at Issue',
+      stimulus: '**Martinez:** Our city\'s aging bus fleet is a major contributor to poor local air quality in residential neighborhoods. To address this crisis, we should replace the entire fleet with electric buses. While expensive, eliminating tailpipe emissions will drastically improve air quality where people live.\n\n**Chandra:** I agree we must address the fleet, but replacing every bus is the wrong approach. We should retrofit the current diesel buses with advanced scrubbers instead. While retrofitted buses still emit more locally than electric ones, manufacturing an entirely new fleet of electric buses generates a massive carbon footprint that dwarfs the localized benefits.',
+      question: 'Martinez and Chandra disagree over whether',
+      options: [
+        'the city\'s aging bus fleet needs to be addressed',
+        'replacing the fleet with electric buses would eliminate tailpipe emissions',
+        'manufacturing emissions should be considered when evaluating the environmental impact of the city\'s transit policy (Correct)',
+        'poor local air quality is a significant cause of respiratory illness in residential neighborhoods',
+        'reducing emissions is a worthwhile goal for the city'
+      ],
+      isIllustrative: true
+    },
     { type: 'h3', text: 'Analysis of Advanced Question' },
     { type: 'h4', text: 'Step 1: Deconstruction' },
     {
