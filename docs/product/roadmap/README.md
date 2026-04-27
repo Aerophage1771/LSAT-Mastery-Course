@@ -41,4 +41,5 @@ See [../../../../../apps/jules-app/data/campaigns.json](../../../../../apps/jule
 - `12-16-*.md` cover study planning, search entrypoints, explanation depth, export trust, and offline/resume reliability
 - `17-21-*.md` cover catalog audits, progress milestones, practice-set assembly, student confidence loops, and keyboard-speed controls
 - `22-26-*.md` cover naming enforcement, style-guide parity, release verification, learning-analytics boundaries, and DataToolkit bridge quality
+- `27-29-*.md` cover answer key drift detection, explanation coverage audits, and semantic duplication prevention
 - Archived duplicate roadmap drafts: [../../archive/roadmaps/README.md](../../archive/roadmaps/README.md)
