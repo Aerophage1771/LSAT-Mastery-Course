@@ -82,7 +82,15 @@ export const Lesson4_Quantifiers: Lesson = {
       text: 'This pattern frequently appears on the LSAT as a two-step derivation: first you derive an overlap using the Overlap Rule, then you chain that overlap through an "All" statement to reach a final conclusion.',
     },
 
-    { type: 'h4', text: 'LSAT in Action: Applying the Overlap Rule' },
+        { type: 'h4', text: 'LSAT in Action: Applying the Overlap Rule' },
+    {
+      type: 'blockquote',
+      text: 'Most serious students are happy students, and most serious students go to graduate school. Furthermore, all students who go to graduate school are overworked.',
+    },
+    {
+      type: 'paragraph',
+      text: '{{+**Try this:** Attempt the question before reading the analysis below.+}}',
+    },
     { type: 'h4', text: 'Analysis:' },
     {
       type: 'paragraph',
@@ -130,7 +138,15 @@ export const Lesson4_Quantifiers: Lesson = {
       text: "Just as important as knowing what you can conclude is knowing what you cannot. It is crucial to distinguish a valid double overlap from an invalid chain. The invalid pattern is: **Most A are B + Most B are C -> NO CONCLUSION about A and C.** The difference is that in the valid Overlap Rule, the shared term is the source (B <-m- A -m-> C), while in the invalid chain, the shared term is in the middle (A -m-> B -m-> C). It fails because the group of \"A's that are B's\" might be the specific minority of B's that are NOT C's. There is no guaranteed overlap.",
     },
 
-    { type: 'h4', text: 'LSAT in Action: Spotting the Flaw' },
+        { type: 'h4', text: 'LSAT in Action: Spotting the Flaw' },
+    {
+      type: 'blockquote',
+      text: 'Most of the employees of the Compujack Corporation are computer programmers. Since most computer programmers receive excellent salaries from their employers, at least one Compujack employee must receive an excellent salary from Compujack.',
+    },
+    {
+      type: 'paragraph',
+      text: '{{+**Try this:** Attempt the question before reading the analysis below.+}}',
+    },
     { type: 'h4', text: 'Analysis:' },
     {
       type: 'paragraph',

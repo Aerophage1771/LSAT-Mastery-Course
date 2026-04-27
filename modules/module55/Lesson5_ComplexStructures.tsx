@@ -31,6 +31,14 @@ export const Lesson5_ComplexStructures: Lesson = {
 
     { type: 'h4', text: 'LSAT in Action: Building a Multi-Step Chain' },
     {
+      type: 'blockquote',
+      text: 'Politician: The current crisis in mathematics education must be overcome if we are to remain competitive in the global economy. Alleviating this crisis requires the employment of successful teaching methods. No method of teaching a subject can succeed that does not get students to spend a significant amount of time outside of class studying that subject.',
+    },
+    {
+      type: 'paragraph',
+      text: '{{+**Try this:** Attempt the question before reading the analysis below.+}}',
+    },
+    {
       type: 'paragraph',
       text: 'Difficult "Must Be True" questions often hide a logical chain within a dense paragraph. Your job is to extract and link the rules.',
     },
@@ -101,7 +109,15 @@ The word NO introduces a global exclusion, often translated as \`A -> ~B\`. Howe
       ],
     },
 
-    { type: 'h4', text: 'LSAT in Action: The "Unless" Rule' },
+        { type: 'h4', text: 'LSAT in Action: The "Unless" Rule' },
+    {
+      type: 'blockquote',
+      text: 'Superconductors are substances that conduct electricity without resistance at low temperatures. Their use, however, will never be economically feasible, unless there is a substance that superconducts at a temperature above minus 148 degrees Celsius. If there is such a substance, that substance must be an alloy of niobium and germanium. Unfortunately, such alloys superconduct at temperatures no higher than minus 160 degrees Celsius.',
+    },
+    {
+      type: 'paragraph',
+      text: '{{+**Try this:** Attempt the question before reading the analysis below.+}}',
+    },
     { type: 'h3', text: 'Deep Dive Analysis' },
     {
       type: 'callout',
@@ -173,7 +189,15 @@ The word NO introduces a global exclusion, often translated as \`A -> ~B\`. Howe
       ],
     },
 
-    { type: 'h4', text: "LSAT in Action: De Morgan's Laws in Practice" },
+        { type: 'h4', text: "LSAT in Action: De Morgan's Laws in Practice" },
+    {
+      type: 'blockquote',
+      text: 'The Rienzi, a passenger ship, sank as a result of a hole in its hull, possibly caused by sabotage. Normally, when a holed ship sinks as rapidly as the Rienzi did, water does not enter the ship quickly enough for the ship to be fully flooded when it reaches the ocean floor. Full flooding can be achieved, however, by sabotage. Any ship that sinks deep into the ocean when not fully flooded will implode. Deep-sea photographs, taken of the sunken Rienzi where it rests on the ocean floor, reveal that the Rienzi did not implode.',
+    },
+    {
+      type: 'paragraph',
+      text: '{{+**Try this:** Attempt the question before reading the analysis below.+}}',
+    },
     { type: 'h3', text: 'Deep Dive Analysis' },
     {
       type: 'callout',
